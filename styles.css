@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'MuseoModerno', sans-serif;
+    background-color: #191919;
+    color: #FFEEC8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+h1, h2 {
+    margin-top: 3.5rem;
+    margin: 100;
+    line-height: 65px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+h1 span {
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 0rem;
+}
+
+nav {
+    margin-top: -30px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+nav ul li {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
+}
+
+footer {
+    width: 100%;
+    background-color: #191919;
+    padding: 0rem 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Ensure alignment starts at the left */
+    gap: 0.25rem; /* Reduce the vertical gap */
+}
+
+.email-subscription {
+    display: flex;
+    gap: 0rem;
+}
+
+.email-subscription input[type="email"] {
+    font-family: 'MuseoModerno', sans-serif;
+    background-color: #191919;
+    border: 1px solid #FFEEC8;
+    padding: 0.3rem;
+    padding-left: 1rem; /* Adjust this value to move the placeholder right */
+    color: #FFEEC8;
+    font-size: 1rem;
+    border-radius: 10px;
+    width: 250px; /* Adjust the width to your preference */
+}
+
+.email-subscription button {
+    font-family: 'MuseoModerno', sans-serif;
+    background-color: transparent;
+    border: none;
+    color: #FFEEC8;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.email-subscription button:hover {
+    text-decoration: underline;
+}
+
+.footer-text {
+    margin-top: 0.25rem; /* Pull the text closer to the input field */
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-socials a img {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
