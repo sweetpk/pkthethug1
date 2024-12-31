@@ -6,7 +6,7 @@
 
 body {
     min-height: 100vh;
-    padding: 5vh 2rem;
+    padding: 4vh 2rem;
     font-family: 'MuseoModerno', sans-serif;
     background-color: #191919;
     color: #FFEEC8;
@@ -17,7 +17,7 @@ body {
 /* Main content area */
 header {
     flex: 0 0 auto;
-    margin-bottom: 5vh;
+    margin-bottom: 0vh;
 }
 
 h1 {
@@ -160,7 +160,7 @@ footer {
 /* Mobile styles */
 @media (max-width: 480px) {
     body {
-        padding: 4vh 1rem;
+        padding: 6vh 1rem;
     }
 
     .footer-container {
