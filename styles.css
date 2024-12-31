@@ -1,102 +1,119 @@
-/* General Styles */
-body {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 5vh 2rem;
     font-family: 'MuseoModerno', sans-serif;
     background-color: #191919;
     color: #FFEEC8;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;
 }
 
-h1, h2 {
-    margin-top: 3.5rem;
-    margin: 100;
-    line-height: 65px;
+/* Main content area */
+header {
+    flex: 0 0 auto;
+    margin-bottom: 5vh;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: min(4rem, 8vw);
     font-weight: 100;
     text-align: center;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
+    line-height: 1.4;
 }
 
 h1 span {
     font-weight: 900;
 }
 
-h2 {
-    font-size: 60px;
-    font-weight: 100;
-    text-align: center;
-    margin-top: 0rem;
-}
-
+/* Navigation */
 nav {
-    margin-top: -30px;
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+    margin: 2vh 0;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    align-items: center;
+    gap: min(4vh, 2rem);
+    width: 100%;
 }
 
 nav ul li {
-    text-align: center;
-    font-size: 30px;
-    font-weight: 400;
+    font-size: min(2rem, 5vw);
     cursor: pointer;
+    position: relative;
 }
 
-nav ul li:hover {
-    text-decoration: underline;
-}
-
-footer {
+nav ul li::after {
+    content: '';
+    position: absolute;
     width: 100%;
-    background-color: #191919;
-    padding: 0rem 0;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: #FFEEC8;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav ul li:hover::after {
+    transform: scaleX(1);
+}
+
+/* Footer */
+footer {
+    flex: 0 0 auto;
+    margin-top: auto;
+    width: 100%;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    max-width: 1400px;
+    gap: 2rem;
+    max-width: 100%;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .form {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Ensure alignment starts at the left */
-    gap: 0.25rem; /* Reduce the vertical gap */
+    gap: 0.8rem;
 }
 
 .email-subscription {
     display: flex;
-    gap: 0rem;
+    gap: 1rem;
 }
 
 .email-subscription input[type="email"] {
     font-family: 'MuseoModerno', sans-serif;
-    background-color: #191919;
+    background-color: transparent;
     border: 1px solid #FFEEC8;
-    padding: 0.3rem;
-    padding-left: 1rem; /* Adjust this value to move the placeholder right */
+    padding: 0.5rem 1rem;
     color: #FFEEC8;
     font-size: 1rem;
     border-radius: 10px;
-    width: 250px; /* Adjust the width to your preference */
+    width: clamp(200px, 30vw, 300px);
+    outline: none;
+}
+
+.email-subscription input[type="email"]::placeholder {
+    color: #FFEEC8;
+    opacity: 0.7;
 }
 
 .email-subscription button {
@@ -104,30 +121,65 @@ footer {
     background-color: transparent;
     border: none;
     color: #FFEEC8;
-    font-size: 15px;
-    font-weight: 400;
-    padding: 0.5rem 1rem;
+    font-size: 1rem;
     cursor: pointer;
-    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
 }
 
 .email-subscription button:hover {
-    text-decoration: underline;
+    opacity: 0.8;
 }
 
 .footer-text {
-    margin-top: 0.25rem; /* Pull the text closer to the input field */
-    font-size: 20px;
-    font-weight: 100;
+    font-size: clamp(0.875rem, 2vw, 1.25rem);
+    font-weight: 300;
+    opacity: 0.9;
 }
 
 .footer-socials {
     display: flex;
-    gap: 2rem;
+    gap: clamp(1rem, 3vw, 2rem);
 }
 
-.footer-socials a img {
-    display: block;
-    width: 40px;
-    height: 40px;
+.footer-socials a {
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.footer-socials a:hover {
+    opacity: 1;
+}
+
+.footer-socials img {
+    width: clamp(30px, 4vw, 40px);
+    height: clamp(30px, 4vw, 40px);
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+    body {
+        padding: 4vh 1rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .form {
+        align-items: center;
+    }
+
+    .email-subscription {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .email-subscription input[type="email"] {
+        width: min(300px, 90vw);
+    }
 }
