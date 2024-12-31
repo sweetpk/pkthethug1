@@ -176,8 +176,38 @@ footer {
     height: clamp(30px, 4vw, 40px);
 }
 
-/* Add these new styles to your existing styles.css file */
+
+/* Mobile styles */
+@media (max-width: 480px) {
+    body {
+        padding: 6vh 1rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .form {
+        align-items: center;
+    }
+
+    .email-subscription {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .email-subscription input[type="email"] {
+        width: min(300px, 90vw);
+    }
+}
+
+
+/* WIP Page Stuff */
 #home-nav {
+    flex: 1;
     position: absolute;
     top: 20px;
     left: 25px;
@@ -215,37 +245,84 @@ footer {
 }
 
 #wip-header {
+    flex: 1;
     font-size: min(3.5rem, 7vw);
     font-weight: 100;
     text-align: center;
     letter-spacing: 0.04em;
     line-height: 1.4;
-    margin-top: 27.5vh;
+    margin-top: 25vh;
 }
 
-/* Mobile styles */
+
+/* Blogs page stuff */
+/* Blogs header styling */
+#blogs-header {
+    font-size: min(4rem, 8vw);
+    font-weight: 100;
+    color: #FFEEC8;
+    margin-bottom: 0rem;
+    margin-top: 7rem;
+    text-transform: lowercase;
+    text-align: left;
+    margin-left: 2rem; /* Adjust this for alignment */
+    padding-bottom: 5rem;
+}
+
+/* Blogs list styling */
+#blogs-list {
+    list-style: none;
+    padding-top: 0rem;
+    padding-bottom: 5rem;
+    margin: auto;
+    margin-top: -6rem;
+    margin-left: 2rem; /* Align with the header */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#blogs-list li {
+    font-size: min(1.5rem, 5vw);
+    position: relative;
+}
+
+#blogs-list li a {
+    color: #FFEEC8;
+    text-decoration: none;
+    position: relative; /* This makes the a tag the reference for the pseudo-element */
+    transition: color 0.3s ease;
+}
+
+#blogs-list li a::after {
+    content: '';
+    position: absolute;
+    width: 0; /* Start with no underline */
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: #FFEEC8;
+    transform-origin: left;
+    transition: width 0.3s ease; /* Animate the width */
+}
+
+#blogs-list li a:hover::after {
+    width: 100%; /* Grow the underline only to the width of the text */
+}
+
+#blogs-list li a:hover {
+    color: #FFEEC8; /* Optional: keep text color consistent */
+}
+
+
+/* Responsive spacing for mobile */
 @media (max-width: 480px) {
-    body {
-        padding: 6vh 1rem;
+    #blogs-header,
+    #blogs-list {
+        margin-left: 1rem;
     }
 
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-        gap: 2rem;
-    }
-
-    .form {
-        align-items: center;
-    }
-
-    .email-subscription {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-    }
-
-    .email-subscription input[type="email"] {
-        width: min(300px, 90vw);
+    #blogs-list li {
+        gap: 1rem;
     }
 }
