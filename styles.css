@@ -334,7 +334,7 @@ footer {
     color: #FFEEC8;
     margin-bottom: 1rem;
     text-transform: lowercase;
-    text-align: left;
+    text-align: center;
     margin-left: 2rem; /* Adjust alignment */
     margin-top: 5rem;
 }
@@ -349,14 +349,14 @@ footer {
     margin: auto;
     margin-top: 1rem;
     margin-bottom: 5rem;
-    margin-left: 2rem; /* Adjust alignment */
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     font-size: min(1.5rem, 4vw);
     font-weight: 200;
     line-height: 1.8;
     color: #FFEEC8;
     text-align: left;
+    
 }
 
 #blog-content p {
@@ -364,18 +364,21 @@ footer {
 }
 
 
-/*music player related*/
+/*Music player related*/
 
 .audio-player {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 1rem;
     font-family: 'MuseoModerno', sans-serif;
     color: #FFEEC8;
-    margin: 1rem 0;
-    margin-left: 2.5rem;
-    padding: 0.5rem;
-    padding-right: 6rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3rem;
+    padding-right: 5rem;
     background-color: #191919;
     border-radius: 8px;
     width: 100%;
@@ -471,22 +474,23 @@ footer {
         font-size: 3rem;
         margin-left: 1rem;
         margin-top: 3rem;
+        text-align: left;
     }
 
     #blog-content {
         padding-right: 2rem;
-        padding-left: 0.5rem;
+        padding-left: 2rem;
         font-size: 1.25rem;
         margin-right: 0rem;
     }
 
     .audio-player {
-        margin-left: 0.5rem;
-        padding-right: 2.5rem;
+        padding-left: 1rem;
+        padding-right: 2rem;
     }
 
     #volume-slider {
-        width: 3rem;
+        width: 3.5rem;
     }
 }
 
