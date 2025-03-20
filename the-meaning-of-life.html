@@ -101,59 +101,32 @@
     
     <main>
         <section id="blog-content">
-            <p>I don’t know what the fuck I’m supposed to do anymore.
-            </p>
-            <p>I mean, I know what I should do. I should pivot, find something else, start fresh, hustle harder, blah blah blah. But knowing that doesn’t really help, does it? If life were that simple—acknowledge failure, course correct, move forward—then nobody would be stuck. And I feel stuck.
-            </p>
-            <p>Pixacity was supposed to be it. The thing. The one project that would prove to myself that I wasn’t just another kid with big ideas and no execution. And for a while, I truly believed in it. I thought it had the potential to be a revolution, something massive, something... meaningful. And now, all I can see is its slow, inevitable death.
-            </p>
-            <p>So what does that mean? If Pixacity fails, do I fail? And more importantly, was I always destined to?
-            </p>
-            <p>Because here’s the thing—if I let myself sit with it for too long, I start seeing the cracks in the whole damn system. Not just Pixacity, but my entire way of thinking. I needed this to work. I needed to be different. Better. Because deep down, I was convinced that I was meant for something bigger. Maybe it was ego. Maybe it was fear. Probably both.
-            </p>
-            <p>I studied at the best college in the country. Surrounded by some of the smartest minds, the ones who are now off doing incredible things with their lives. And for the longest time, I thought I had something they didn’t. Purpose. They were heading into high-paying jobs, top-tier firms, research, entrepreneurship, whatever. And I? I had vision. I wasn’t following a roadmap, I was drawing my own.
-            </p>
-            <p>What an arrogant fat fucker.
-            </p>
-            <p>Because now? Now they’re successful, and I’m here questioning if I even have what it takes to exist meaningfully. I can’t even delude myself into thinking they’re cogs in a system, because they’re not. They’re thriving. They’re making an impact. And I, with all my grand vision, am staring at the ruins of something that barely even got off the ground.
-            </p>
-            <p>That’s where the fear kicks in.
-            </p>
-            <p>Because if I wasn’t different, if I wasn’t special, then what am I?
-            </p>
-            <p>Because then what? Then life is just a sequence of things that happen, and I become just another guy who once had dreams and then let them slip away? I could already see it—settling for some dull job, telling people at some house party years from now, “Oh yeah, I once worked on this metaverse thing,” and watching their polite, uninterested nods.
-            </p>
-            <p>God, that terrifies me.
-            </p>
-            <p>But okay. Let’s think about this logically. Let’s break it down.
-            </p>
-            <p>I have two choices. One: I let this fear consume me. I spiral into the abyss, get lost in self-hatred, do absolutely fucking nothing. Two: I do something. It doesn’t have to be Pixacity. Maybe it’s another project. Maybe it’s something completely different. But something.
-            </p>
-            <p>Because here’s another terrifying thought—what if this isn’t my only shot?
-            </p>
-            <p>I say that like it’s a good thing, but really, it’s exhausting. Because if this isn’t my one chance at greatness, then that means I have to keep going. Over and over again. Reinventing myself. Trying. Failing. Trying again. That’s the reality, isn’t it? Nobody gets it right the first time.
-            </p>
-            <p>The world doesn’t owe me an easy win just because I had ambition.
-            </p>
-            <p>Fuck, that’s frustrating. I wanted to be the guy who did it right straight out of the gate. The prodigy. The one who skipped all the struggle and arrived at the finish line with a smirk, saying, Told you I was special.
-            </p>
-            <p>But I’m not that guy. Clearly.
-            </p>
-            <p>And yet, I’m still here. Still thinking. Still caring. If I truly believed life was meaningless, why would I even be bothering to write this? Why would I still be questioning, searching, reaching for something?
-            </p>
-            <p>Because I don’t actually want to give up.
-            </p>
-            <p>Because somewhere, deep down, some stubborn, idiotic part of me still believes.
-            </p>
-            <p>Believes in what, exactly? I don’t fucking know. Maybe that I still have time. Maybe that failure isn’t the same as finality. Maybe that if I just keep moving, something—anything—will click into place.
-            </p>
-            <p>So no, this isn’t me standing on some mountain of enlightenment saying, “What if?” with a hopeful gleam in my eye.
-            </p>
-            <p>This is me, standing in the rubble of my own expectations, saying, “Fuck it. Let’s see what happens.”
-            </p>
-            
+            <!-- Blog content will be dynamically loaded here from first-blog.txt -->
         </section>
     </main>
+
+    <!-- Script to load blog content from second-blog.txt -->
+    <script>
+      fetch('first-blog.txt')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.text();
+        })
+        .then(text => {
+          const container = document.getElementById('blog-content');
+          container.innerHTML = ''; // Clear any existing content
+          // Split text by empty lines to create paragraphs
+          const paragraphs = text.split(/\n\s*\n/);
+          paragraphs.forEach(paragraph => {
+            const p = document.createElement('p');
+            p.textContent = paragraph.trim();
+            container.appendChild(p);
+          });
+        })
+        .catch(error => console.error('Error loading blog content:', error));
+    </script>
 
     <footer>
         <div class="footer-container">
