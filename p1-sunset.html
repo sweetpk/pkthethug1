@@ -107,26 +107,31 @@
 
     <!-- Script to load blog content from second-blog.txt -->
     <script>
-      fetch('poem-texts/p1-sunset.txt')
-        .then(response => {
-          if (!response.ok) {
-            throw new Error('Network response was not ok');
-          }
-          return response.text();
-        })
-        .then(text => {
-          const container = document.getElementById('blog-content');
-          container.innerHTML = ''; // Clear any existing content
-          // Split text by empty lines to create paragraphs
-          const paragraphs = text.split(/\n\s*\n/);
-          paragraphs.forEach(paragraph => {
-            const p = document.createElement('p');
-            p.textContent = paragraph.trim();
-            container.appendChild(p);
-          });
-        })
-        .catch(error => console.error('Error loading blog content:', error));
-    </script>
+        fetch('poem-texts/p1-sunset.txt')
+            .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+            })
+            .then(text => {
+            const container = document.getElementById('blog-content');
+            container.innerHTML = ''; // Clear existing content
+
+            // Replace line breaks with <br> and wrap paragraphs
+            const html = text
+                .trim()
+                .split(/\n\s*\n/) // Split by empty lines (paragraphs)
+                .map(paragraph =>
+                '<p>' + paragraph.trim().replace(/\n/g, '<br>') + '</p>'
+                )
+                .join('');
+
+            container.innerHTML = html;
+            })
+            .catch(error => console.error('Error loading blog content:', error));
+        </script>
+
 
     <footer>
         <div class="footer-container">
