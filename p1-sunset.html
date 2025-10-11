@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>like watching a beautiful sunset…at noon</title>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="home-nav">
+        <ul>
+            <li><a href="index.html">home</a></li>
+        </ul>
+    </nav>
+    
+    <header>
+        <h1 id="blog-title">like watching a beautiful sunset…<span>at noon</span></h1>
+    </header>
+
+    <div class="audio-player">
+        <button class="play-pause" id="play-pause-btn">
+            <img src="images/Play.png" alt="Play" id="play-icon">
+            <img src="images/Pause.png" alt="Pause" id="pause-icon" style="display: none;">
+        </button>        
+        <div class="progress-bar" id="progress-container">
+            <div class="progress" id="progress"></div>
+        </div>
+        <span class="time" id="current-time">0:00</span>/<span class="time" id="duration">0:00</span>
+        <input type="range" id="volume-slider" min="0" max="1" step="0.02" value="1">
+        <audio id="audio" src="assets/p1-sunset/Vangelis - Tears In Rain.mp3"></audio>
+    </div>    
+
+    <script>
+        const audio = document.getElementById('audio');
+        const progressContainer = document.getElementById('progress-container');
+        const progress = document.getElementById('progress');
+        const currentTimeEl = document.getElementById('current-time');
+        const durationEl = document.getElementById('duration');
+        const playPauseBtn = document.getElementById('play-pause-btn');
+        const playIcon = document.getElementById('play-icon');
+        const pauseIcon = document.getElementById('pause-icon');
+
+        let isPlaying = false;
+
+        // Play/Pause toggle
+        playPauseBtn.addEventListener('click', () => {
+            if (isPlaying) {
+                audio.pause();
+                playIcon.style.display = 'block';
+                pauseIcon.style.display = 'none';
+            } else {
+                audio.play();
+                playIcon.style.display = 'none';
+                pauseIcon.style.display = 'block';
+            }
+            isPlaying = !isPlaying;
+        });
+
+
+        // Update progress bar and time
+        audio.addEventListener('timeupdate', () => {
+            const currentTime = audio.currentTime;
+            const duration = audio.duration;
+            const progressPercent = (currentTime / duration) * 100;
+            progress.style.width = `${progressPercent}%`;
+
+            // Update time display
+            currentTimeEl.textContent = formatTime(currentTime);
+            durationEl.textContent = formatTime(duration);
+        });
+
+        // Set audio progress
+        progressContainer.addEventListener('click', (e) => {
+            const width = progressContainer.clientWidth;
+            const clickX = e.offsetX;
+            const duration = audio.duration;
+
+            audio.currentTime = (clickX / width) * duration;
+        });
+
+        // Format time (mm:ss)
+        function formatTime(time) {
+            const minutes = Math.floor(time / 60);
+            const seconds = Math.floor(time % 60);
+            return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+        }
+
+        const volumeSlider = document.getElementById('volume-slider');
+
+        // Set initial volume
+        audio.volume = volumeSlider.value;
+
+        // Update audio volume when slider changes
+        volumeSlider.addEventListener('input', () => {
+            audio.volume = volumeSlider.value;
+        });
+
+    </script>
+    
+    
+    <main>
+        <section id="blog-content">
+            <!-- Blog content will be dynamically loaded here from second-blog.txt -->
+        </section>
+    </main>
+
+    <!-- Script to load blog content from second-blog.txt -->
+    <script>
+      fetch('poem-texts/p1-sunset.txt')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.text();
+        })
+        .then(text => {
+          const container = document.getElementById('blog-content');
+          container.innerHTML = ''; // Clear any existing content
+          // Split text by empty lines to create paragraphs
+          const paragraphs = text.split(/\n\s*\n/);
+          paragraphs.forEach(paragraph => {
+            const p = document.createElement('p');
+            p.textContent = paragraph.trim();
+            container.appendChild(p);
+          });
+        })
+        .catch(error => console.error('Error loading blog content:', error));
+    </script>
+
+    <footer>
+        <div class="footer-container">
+            <div class="form">
+                <div class="email-subscription">
+                    <form action="https://script.google.com/macros/s/AKfycbzonX0G6GFRdC-sG7LsboDOTNGik_qf_2Ud517Xhx5Og6XKJYGaRTc9VYGaYeimQqvWLQ/exec" method="post" target="_blank">
+                        <input type="email" name="email" placeholder="enter email..." required>
+                        <button type="submit">submit</button>
+                    </form>
+                </div>
+                <p class="footer-text">to ping you when yours truly drops a new blog or essay</p>
+            </div>
+            <div class="footer-socials">
+                <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="images/youtube-icon.png" alt="YouTube"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
