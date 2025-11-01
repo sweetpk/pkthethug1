@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>the first one...</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>the first one.</title>
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -15,7 +15,7 @@
     </nav>
     
     <header>
-        <h1 id="blog-title">the <span>first</span> one...</h1>
+        <h1 id="blog-title">the <span>first</span> one.</h1>
     </header>
 
     <div class="audio-player">
@@ -31,109 +31,19 @@
         <audio id="audio" src="assets/the-first-one/Beginnings Are Such Delicate Times.mp3"></audio>
     </div>    
 
-    <script>
-        const audio = document.getElementById('audio');
-        const progressContainer = document.getElementById('progress-container');
-        const progress = document.getElementById('progress');
-        const currentTimeEl = document.getElementById('current-time');
-        const durationEl = document.getElementById('duration');
-        const playPauseBtn = document.getElementById('play-pause-btn');
-        const playIcon = document.getElementById('play-icon');
-        const pauseIcon = document.getElementById('pause-icon');
-
-        let isPlaying = false;
-
-        // Play/Pause toggle
-        playPauseBtn.addEventListener('click', () => {
-            if (isPlaying) {
-                audio.pause();
-                playIcon.style.display = 'block';
-                pauseIcon.style.display = 'none';
-            } else {
-                audio.play();
-                playIcon.style.display = 'none';
-                pauseIcon.style.display = 'block';
-            }
-            isPlaying = !isPlaying;
-        });
-
-
-        // Update progress bar and time
-        audio.addEventListener('timeupdate', () => {
-            const currentTime = audio.currentTime;
-            const duration = audio.duration;
-            const progressPercent = (currentTime / duration) * 100;
-            progress.style.width = `${progressPercent}%`;
-
-            // Update time display
-            currentTimeEl.textContent = formatTime(currentTime);
-            durationEl.textContent = formatTime(duration);
-        });
-
-        // Set audio progress
-        progressContainer.addEventListener('click', (e) => {
-            const width = progressContainer.clientWidth;
-            const clickX = e.offsetX;
-            const duration = audio.duration;
-
-            audio.currentTime = (clickX / width) * duration;
-        });
-
-        // Format time (mm:ss)
-        function formatTime(time) {
-            const minutes = Math.floor(time / 60);
-            const seconds = Math.floor(time % 60);
-            return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
-        }
-
-        const volumeSlider = document.getElementById('volume-slider');
-
-        // Set initial volume
-        audio.volume = volumeSlider.value;
-
-        // Update audio volume when slider changes
-        volumeSlider.addEventListener('input', () => {
-            audio.volume = volumeSlider.value;
-        });
-
-    </script>
-    
-    
     <main>
-        <section id="blog-content">
-            <!-- Blog content will be dynamically loaded here from second-blog.txt -->
+        <!-- added data-src so consolidated JS will fetch and render the text -->
+        <section id="blog-content" data-src="blog-texts/the-first-one.txt">
+            <!-- content will be injected here by scripts/site.js -->
         </section>
     </main>
-
-    <!-- Script to load blog content from second-blog.txt -->
-    <script>
-      fetch('blog-texts/the-first-one.txt')
-        .then(response => {
-          if (!response.ok) {
-            throw new Error('Network response was not ok');
-          }
-          return response.text();
-        })
-        .then(text => {
-          const container = document.getElementById('blog-content');
-          container.innerHTML = ''; // Clear any existing content
-          // Split text by empty lines to create paragraphs
-          const paragraphs = text.split(/\n\s*\n/);
-          paragraphs.forEach(paragraph => {
-            const p = document.createElement('p');
-            p.textContent = paragraph.trim();
-            container.appendChild(p);
-          });
-        })
-        .catch(error => console.error('Error loading blog content:', error));
-    </script>
 
     <footer>
         <div class="footer-container">
             <div class="form">
                 <div class="email-subscription">
                     <form action="https://script.google.com/macros/s/AKfycbzonX0G6GFRdC-sG7LsboDOTNGik_qf_2Ud517Xhx5Og6XKJYGaRTc9VYGaYeimQqvWLQ/exec" method="post" target="_blank">
-                        <input type="email" name="email" placeholder="enter email..." required>
+                        <input type="email" name="email" placeholder="enter email." required>
                         <button type="submit">submit</button>
                     </form>
                 </div>
@@ -147,5 +57,8 @@
             </div>
         </div>
     </footer>
+
+    <!-- single consolidated script that handles audio + text fetching -->
+    <script src="scripts/site.js"></script>
 </body>
 </html>
