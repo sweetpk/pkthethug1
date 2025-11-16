@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>poems</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>the book my father shouldn’t have bought</title>
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -15,14 +15,27 @@
     </nav>
     
     <header>
-        <h1 id="blogs-header">poems</h1>
+        <h1 id="blog-title">the book my father <span>shouldn’t</span> have bought</h1>
     </header>
 
+    <div class="audio-player">
+        <button class="play-pause" id="play-pause-btn">
+            <img src="images/Play.png" alt="Play" id="play-icon">
+            <img src="images/Pause.png" alt="Pause" id="pause-icon" style="display: none;">
+        </button>        
+        <div class="progress-bar" id="progress-container">
+            <div class="progress" id="progress"></div>
+        </div>
+        <span class="time" id="current-time">0:00</span>/<span class="time" id="duration">0:00</span>
+        <input type="range" id="volume-slider" min="0" max="1" step="0.02" value="1">
+        <audio id="audio" src="assets/p1-sunset/Vangelis - Tears In Rain.mp3"></audio>
+    </div>    
+
     <main>
-        <ul id="blogs-list">
-            <li><a href="p1-sunset.html">like watching a beautiful sunset...at noon</a></li>
-            <li><a href="p2-book.html">the book my father shouldn’t have bought</a></li>
-        </ul>
+        <!-- added data-src so consolidated JS will fetch and render the poem text -->
+        <section id="blog-content" data-src="poem-texts/p2-book.txt">
+            <!-- content will be injected here by scripts/site.js -->
+        </section>
     </main>
 
     <footer>
@@ -52,5 +65,8 @@
             </div>
         </div>
     </footer>
+
+    <!-- single consolidated script that handles audio + text fetching -->
+    <script src="scripts/site.js"></script>
 </body>
 </html>
