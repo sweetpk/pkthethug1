@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>happy birthday, meri milkcake 🎂</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet"/>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --maroon:       #6B1A2E;
+    --maroon-deep:  #4A0F1F;
+    --maroon-mid:   #8C2A40;
+    --blush:        #E8A0A8;
+    --blush-light:  #F2C8CC;
+    --lavender:     #C5A0C8;
+    --lavender-mid: #9B6FA0;
+    --petal:        #F7E8EA;
+    --cream:        #FDF5F0;
+    --dark-bg:      #1A0810;
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --sans:  'Jost', sans-serif;
+  }
+
+  html, body {
+    width: 100%; height: 100%;
+    overflow: hidden;
+    background: var(--dark-bg);
+    font-family: var(--serif);
+    color: var(--cream);
+    touch-action: none;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+  }
+
+  /* ── CANVAS ── */
+  #slideshow {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+  }
+
+  /* ── SLIDE BASE ── */
+  .slide {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.9s cubic-bezier(.4,0,.2,1);
+  }
+  .slide.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .slide.prev {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* ── PHOTO BACKGROUND ── */
+  .slide-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 8s ease-out;
+  }
+  .slide.active .slide-bg {
+    transform: scale(1.04);
+  }
+
+  /* overlay layers */
+  .overlay-dark {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(26,8,16,0.15) 0%,
+      rgba(26,8,16,0.45) 50%,
+      rgba(74,15,31,0.75) 100%
+    );
+  }
+  .overlay-vignette {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at center, transparent 40%, rgba(26,8,16,0.6) 100%);
+  }
+
+  /* ── SLIDE CONTENT LAYERS ── */
+  .slide-content {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 60px 32px 100px;
+    text-align: center;
+  }
+
+  /* ── TYPOGRAPHY ── */
+  .poem-stanza {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-style: italic;
+    font-size: clamp(1.15rem, 4.5vw, 1.6rem);
+    line-height: 1.85;
+    color: var(--cream);
+    max-width: 520px;
+    text-shadow: 0 2px 24px rgba(26,8,16,0.9), 0 0 60px rgba(26,8,16,0.6);
+    letter-spacing: 0.01em;
+  }
+  .poem-stanza em {
+    color: var(--blush-light);
+    font-style: normal;
+  }
+  .poem-label {
+    font-family: var(--sans);
+    font-weight: 200;
+    font-size: 0.65rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--lavender);
+    margin-bottom: 20px;
+    opacity: 0.85;
+  }
+  .poem-divider {
+    width: 38px;
+    height: 1px;
+    background: var(--blush);
+    margin: 20px auto 0;
+    opacity: 0.5;
+  }
+
+  /* ── OPENING SLIDE ── */
+  #slide-0 {
+    background: radial-gradient(ellipse at 60% 40%, #4A0F1F 0%, #2A0616 40%, #1A0810 100%);
+  }
+  .opening-pre {
+    font-family: var(--sans);
+    font-weight: 200;
+    font-size: clamp(0.65rem, 2.5vw, 0.75rem);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--lavender);
+    margin-bottom: 28px;
+    opacity: 0;
+    animation: fadeUp 1s 0.4s forwards;
+  }
+  .opening-name {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(3.5rem, 16vw, 8rem);
+    line-height: 0.95;
+    color: var(--cream);
+    opacity: 0;
+    animation: fadeUp 1.1s 0.7s forwards;
+    letter-spacing: -0.01em;
+  }
+  .opening-name span {
+    display: block;
+    color: var(--blush);
+    font-style: italic;
+  }
+  .opening-sub {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: clamp(1rem, 4vw, 1.3rem);
+    color: var(--lavender);
+    margin-top: 22px;
+    opacity: 0;
+    animation: fadeUp 1s 1.1s forwards;
+  }
+  .open-btn {
+    margin-top: 52px;
+    font-family: var(--sans);
+    font-weight: 300;
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--cream);
+    background: transparent;
+    border: 1px solid rgba(232,160,168,0.4);
+    padding: 14px 36px;
+    border-radius: 2px;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeUp 1s 1.5s forwards;
+    transition: background 0.3s, border-color 0.3s, color 0.3s;
+  }
+  .open-btn:hover, .open-btn:active {
+    background: rgba(107,26,46,0.5);
+    border-color: var(--blush);
+    color: var(--blush-light);
+  }
+
+  /* floating petals on opening */
+  .petal-wrap {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  .petal {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50% 0 50% 0;
+    opacity: 0;
+    animation: petalFall linear infinite;
+  }
+
+  /* ── CLOSING SLIDE ── */
+  #slide-closing {
+    background: radial-gradient(ellipse at 40% 55%, #3D1020 0%, #250A14 45%, #1A0810 100%);
+  }
+  .closing-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 32px;
+  }
+  .closing-heart {
+    font-size: 2.4rem;
+    line-height: 1;
+    opacity: 0;
+    animation: heartbeat 1.4s 0.3s ease-out forwards;
+  }
+  .closing-title {
+    font-family: var(--serif);
+    font-size: clamp(2rem, 8vw, 3.5rem);
+    font-weight: 300;
+    font-style: italic;
+    color: var(--cream);
+    text-align: center;
+    opacity: 0;
+    animation: fadeUp 1s 0.6s forwards;
+  }
+  .closing-msg {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(1rem, 3.8vw, 1.25rem);
+    color: var(--blush-light);
+    line-height: 1.8;
+    text-align: center;
+    max-width: 480px;
+    opacity: 0;
+    animation: fadeUp 1s 0.9s forwards;
+  }
+  .closing-sig {
+    font-family: var(--sans);
+    font-weight: 200;
+    font-size: 0.7rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--lavender);
+    margin-top: 10px;
+    opacity: 0;
+    animation: fadeUp 1s 1.2s forwards;
+  }
+  .restart-btn {
+    margin-top: 12px;
+    font-family: var(--sans);
+    font-weight: 300;
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--lavender);
+    background: transparent;
+    border: 1px solid rgba(197,160,200,0.3);
+    padding: 12px 28px;
+    border-radius: 2px;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeUp 1s 1.5s forwards;
+    transition: all 0.3s;
+  }
+  .restart-btn:hover { border-color: var(--lavender); color: var(--blush-light); }
+
+  /* ── INTERACTIVE SLIDE ── */
+  .question-text {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-style: italic;
+    font-size: clamp(1.3rem, 5vw, 1.9rem);
+    color: var(--cream);
+    text-align: center;
+    line-height: 1.6;
+    max-width: 500px;
+    margin-bottom: 36px;
+    text-shadow: 0 2px 20px rgba(26,8,16,0.9);
+  }
+  .choice-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 360px;
+  }
+  .choice-btn {
+    font-family: var(--sans);
+    font-weight: 300;
+    font-size: 0.82rem;
+    letter-spacing: 0.1em;
+    color: var(--cream);
+    background: rgba(107,26,46,0.25);
+    border: 1px solid rgba(232,160,168,0.3);
+    padding: 15px 24px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: left;
+  }
+  .choice-btn:hover, .choice-btn:active {
+    background: rgba(107,26,46,0.6);
+    border-color: var(--blush);
+    color: var(--blush-light);
+  }
+  .response-bubble {
+    display: none;
+    background: rgba(74,15,31,0.7);
+    border: 1px solid rgba(232,160,168,0.25);
+    border-radius: 4px;
+    padding: 20px 24px;
+    max-width: 420px;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: clamp(1rem, 3.8vw, 1.25rem);
+    color: var(--blush-light);
+    line-height: 1.75;
+    text-align: center;
+    margin-top: 16px;
+    animation: fadeUp 0.6s forwards;
+  }
+  .response-bubble.shown { display: block; }
+  .continue-hint {
+    font-family: var(--sans);
+    font-weight: 200;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--lavender);
+    margin-top: 20px;
+    opacity: 0.7;
+    display: none;
+  }
+  .continue-hint.shown { display: block; }
+
+  /* ── PROGRESS BAR ── */
+  #progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--maroon-mid), var(--blush), var(--lavender));
+    transition: width 0.5s ease;
+    z-index: 100;
+    width: 0%;
+  }
+
+  /* ── COUNTER ── */
+  #counter {
+    position: fixed;
+    top: 18px;
+    right: 20px;
+    font-family: var(--sans);
+    font-weight: 200;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    color: rgba(242,200,204,0.6);
+    z-index: 100;
+    transition: opacity 0.4s;
+  }
+
+  /* ── NAV ARROWS ── */
+  .nav-btn {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 20px 12px;
+    opacity: 0.4;
+    transition: opacity 0.3s;
+    color: var(--cream);
+  }
+  .nav-btn:hover { opacity: 0.85; }
+  #nav-prev { left: 4px; }
+  #nav-next { right: 4px; }
+  .nav-btn svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.5; }
+  #nav-prev.hidden, #nav-next.hidden { display: none; }
+
+  /* ── SWIPE HINT ── */
+  #swipe-hint {
+    position: fixed;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--sans);
+    font-weight: 200;
+    font-size: 0.6rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: rgba(242,200,204,0.45);
+    z-index: 100;
+    white-space: nowrap;
+    animation: pulse 2.5s ease-in-out infinite;
+    transition: opacity 0.5s;
+  }
+  #swipe-hint.hidden { opacity: 0; pointer-events: none; }
+
+  /* ── DECORATIVE CORNER ── */
+  .corner-decor {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 100;
+    opacity: 0.25;
+    pointer-events: none;
+  }
+  .corner-decor svg { width: 40px; height: 40px; }
+
+  /* ── KEYFRAMES ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; } to { opacity: 1; }
+  }
+  @keyframes heartbeat {
+    0%   { opacity: 0; transform: scale(0.5); }
+    60%  { opacity: 1; transform: scale(1.15); }
+    80%  { transform: scale(0.95); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  @keyframes petalFall {
+    0%   { opacity: 0; transform: translateY(-20px) rotate(0deg); }
+    10%  { opacity: 0.7; }
+    90%  { opacity: 0.5; }
+    100% { opacity: 0; transform: translateY(100vh) rotate(360deg); }
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 0.45; }
+    50%       { opacity: 0.15; }
+  }
+  @keyframes contentReveal {
+    from { opacity: 0; transform: translateY(22px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .slide.active .slide-content > * {
+    animation: contentReveal 0.9s cubic-bezier(.4,0,.2,1) forwards;
+  }
+  .slide.active .slide-content > *:nth-child(1) { animation-delay: 0.15s; opacity: 0; }
+  .slide.active .slide-content > *:nth-child(2) { animation-delay: 0.3s;  opacity: 0; }
+  .slide.active .slide-content > *:nth-child(3) { animation-delay: 0.45s; opacity: 0; }
+  .slide.active .slide-content > *:nth-child(4) { animation-delay: 0.55s; opacity: 0; }
+  .slide.active .slide-content > *:nth-child(5) { animation-delay: 0.65s; opacity: 0; }
+
+  /* ── PHOTO-ONLY SLIDE ── */
+  .caption-tag {
+    font-family: var(--sans);
+    font-weight: 200;
+    font-size: clamp(0.7rem, 2.8vw, 0.85rem);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(242,200,204,0.7);
+    background: rgba(74,15,31,0.5);
+    border: 1px solid rgba(232,160,168,0.2);
+    padding: 8px 18px;
+    border-radius: 1px;
+  }
+
+  /* ── TEXT-ONLY SLIDE ── */
+  .text-slide-inner {
+    background: rgba(26,8,16,0.5);
+    border: 1px solid rgba(197,160,200,0.18);
+    border-radius: 3px;
+    padding: 40px 36px;
+    max-width: 500px;
+  }
+
+  @media (min-width: 600px) {
+    .choice-grid { flex-direction: row; flex-wrap: wrap; justify-content: center; }
+    .choice-btn  { flex: 1 1 calc(50% - 6px); min-width: 140px; }
+  }
+</style>
+</head>
+<body>
+
+<div id="progress-bar"></div>
+<div id="counter"></div>
+
+<button class="nav-btn" id="nav-prev" aria-label="Previous">
+  <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+</button>
+<button class="nav-btn" id="nav-next" aria-label="Next">
+  <svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg>
+</button>
+
+<div id="swipe-hint">swipe to continue</div>
+
+<div class="corner-decor">
+  <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20 5 C20 5, 35 12, 35 22 C35 30, 28 36, 20 36 C12 36, 5 30, 5 22 C5 12, 20 5 20 5Z" stroke="#E8A0A8" stroke-width="0.8" fill="none"/>
+    <circle cx="20" cy="20" r="2" fill="#E8A0A8" opacity="0.6"/>
+  </svg>
+</div>
+
+<div id="slideshow">
+
+  <!-- ══════════════════════════════════════════
+       SLIDE 0 — OPENING
+  ══════════════════════════════════════════ -->
+  <div class="slide active" id="slide-0" data-type="opening">
+    <div class="petal-wrap" id="petals"></div>
+    <div class="slide-content" style="gap: 0;">
+      <p class="opening-pre">for my milkcake &nbsp;✦&nbsp; on her special day</p>
+      <h1 class="opening-name">
+        Happy<br/><span>Birthday</span><br/>Shreya
+      </h1>
+      <p class="opening-sub">there are 18 reasons I adore you — shall we?</p>
+      <button class="open-btn" id="open-btn">begin →</button>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SLIDES 1–18  (PHOTO + POEM)
+       ─────────────────────────────────────────
+       To customise each slide, edit:
+         bg     → path to your image, e.g. "images/1.jpg"
+         label  → small uppercase label above the stanza
+         poem   → the stanza lines (use <br/> for line breaks)
+         type   → "photo-poem"  | "photo-only" | "text-only" | "interactive"
+  ══════════════════════════════════════════ -->
+
+  <!-- SLIDE 1 -->
+  <div class="slide" data-type="photo-poem" data-bg="images/1.jpg">
+    <div class="slide-bg"></div>
+    <div class="overlay-dark"></div>
+    <div class="overlay-vignette"></div>
+    <div class="slide-content">
+      <p class="poem-label">one</p>
+      <p class="poem-stanza">
+        I remember the first time I really looked at you —<br/>
+        the world just quietly rearranged itself,<br/>
+        like it had been waiting for this all along.
+      </p>
+      <div class="poem-divider"></div>
+    </div>
+  </div>
+
+  <!-- SLIDE 2 -->
+  <div class="slide" data-type="photo-poem" data-bg="images/2.jpg">
+    <div class="slide-bg"></div>
+    <div class="overlay-dark"></div>
+    <div class="overlay-vignette"></div>
+    <div class="slide-content">
+      <p class="poem-label">two</p>
+      <p class="poem-stanza">
+        You laugh and I forget<br/>
+        every single thing I was worried about.<br/>
+        That's not nothing. That's everything.
+      </p>
+      <div class="poem-divider"></div>
+    </div>
+  </div>
+
+  <!-- SLIDE 3 — INTERACTIVE -->
+  <div class="slide" data-type="interactive" data-bg="images/3.jpg">
+    <div class="slide-bg"></div>
+    <div class="overlay-dark"></div>
+    <div class="overlay-vignette"></div>
+    <div class="slide-content">
+      <p class="question-text">okay, quick question —<br/>what's your favourite memory of us?</p>
+      <div class="choice-grid" id="q1-choices">
+        <button class="choice-btn" data-reply="that one made me smile writing it too. hold onto it.">✦ the first time we talked for hours</button>
+        <button class="choice-btn" data-reply="I knew that was the one. you looked so beautiful.">✦ the day we dressed up together</button>
+        <button class="choice-btn" data-reply="those quiet ones are the ones I'll remember forever.">✦ some random quiet afternoon</button>
+        <button class="choice-btn" data-reply="there are too many, honestly. and we're just getting started.">✦ I can't pick just one 🥹</button>
+      </div>
+      <div class="response-bubble" id="q1-reply"></div>
+      <p class="continue-hint" id="q1-hint">swipe to keep going →</p>
+    </div>
+  </div>
+
+  <!-- SLIDE 4 -->
+  <div class="slide" data-type="photo-poem" data-bg="images/4.jpg">
+    <div class="slide-bg"></div>
+    <div class="overlay-dark"></div>
+    <div class="overlay-vignette"></div>
+    <div class="slide-content">
+      <p class="poem-label">four</p>
+      <p class="poem-stanza">
+        You carry softness like it's armour —<br/>
+        and honestly, <em>it is.</em><br/>
+        Nobody knows how strong you really are.
+      </p>
+      <div class="poem-divider"></div>
+    </div>
+  </div>
+
+  <!-- SLIDE 5 -->
+  <div class="slide" data-type="photo-poem" data-bg="images/5.jpg">
+    <div class="slide-bg"></div>
+    <div class="overlay-dark"></div>
+    <div class="overlay-vignette"></div>
+    <div class="slide-content">
+      <p class="poem-label">five</p>
+      <p class="poem-stanza">
+        I love the way you get excited<br/>
+        about small things —<br/>
+        it reminds me the world is worth paying attention to.
+      </p>
+      <div class="poem-divider"></div>
+    </div>
+  </div>
+
+  <!-- SLIDE 6 — PHOTO ONLY -->
+  <div class="slide" data-type="photo-only" data-bg="images/6.jpg">
+    <div class="slide-bg"></div>
+    <div class="overlay-dark"></div>
+    <div class="overlay-vignette"></div>
+    <div class="slide-content">
+      <span class="caption-tag">my favourite photo of you</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 7 -->
+  <div class="slide" data-type="photo-poem" data-bg="images/7.jpg">
+    <div class="slide-bg"></div>
+    <div class="overlay-dark"></div>
+    <div class="overlay-vignette"></div>
+    <div class="slide-content">
+      <p class="poem-label">seven</p>
+      <p class="poem-stanza">
+        Some days I just watch you<br/>
+        and think — how did I get this lucky?<br/>
+        I still haven't figured it out.
+      </p>
+      <div class="poem-divider"></div>
+    </div>
+  </div>
+
+  <!-- SLIDE 8 — INTERACTIVE -->
+  <div class="slide" data-type="interactive" data-bg="images/8.jpg">
+    <div class="slide-bg"></div>
+    <div class="overlay-dark"></div>
+    <div class="overlay-vignette"></div>
+    <div class="slide-content">
+      <p class="question-text">if you could describe us<br/>in one word, what would it be?</p>
+      <div class="choice-grid" id="q2-choices">
+        <button class="choice-btn" data-reply="yes. always home. wherever you are.">✦ home</button>
+        <button class="choice-btn" data-reply="and it's only going to get louder. promise.">✦ chaotic</button>
+        <button class="choice-btn" data-reply="the kind that's once-in-a-lifetime, I think.">✦ rare</button>
+        <button class="choice-btn" data-reply="we really are, aren't we? I feel it too.">✦ forever</button>
+      </div>
+      <div class="response-bubble" id="q2-reply"></div>
+      <p class="continue-hint" id="q2-hint">swipe to keep going →</p>
+    </div>
+  </div>
+
+  <!-- SLIDE 9 -->
+  <div class="slide" data-type="photo-poem" data-bg="images/9.jpg">
+    <div class="slide-bg"></div>
+    <div class="overlay-dark"></div>
+    <div class="overlay-vignette"></div>
+    <div class="slide-content">
+      <p class="poem-label">nine</p>
+      <p class="poem-stanza">
+        You are annoying and wonderful<br/>
+        in equal, perfect measure —<br/>
+        and I wouldn't change a single bit.
+      </p>
+      <div class="poem-divider"></div>
+    </div>
+  </div>
+
+  <!-- SLIDE 10 — TEXT ONLY -->
+  <div class="slide" data-type="text-only" id="slide-10">
+    <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 55% 45%, #3D1020 0%, #250A14 45%, #1A0810 100%);"></div>
+    <div class="overlay-vignette"></div>
+    <div class="slide-content">
+      <div class="text-slide-inner">
+        <p class="poem-label" style="margin-bottom:24px;">a small confession</p>
+        <p class="poem-stanza" style="font-size:clamp(1.1rem,4.2vw,1.5rem);">
+          Sometimes when you're asleep<br/>
+          and I'm still awake,<br/>
+          I look at you and think —<br/>
+          <em>this is it. this is the whole point.</em>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 11 -->
+  <div class="slide" data-type="photo-poem" data-bg="images/11.jpg">
+    <div class="slide-bg"></div>
+    <div class="overlay-dark"></div>
+    <div class="overlay-vignette"></div>
+    <div class="slide-content">
+      <p class="poem-label">eleven</p>
+      <p class="poem-stanza">
+        I love your brain — the way it works,<br/>
+        the way it worries, the way it wonders.<br/>
+        You are genuinely one of a kind.
+      </p>
+      <div class="poem-divider"></div>
+    </div>
+  </div>
+
+  <!-- SLIDE 12 -->
+  <div class="slide" data-type="photo-poem" data-bg="images/12.jpg">
+    <div class="slide-bg"></div>
+    <div class="overlay-dark"></div>
+    <div class="overlay-vignette"></div>
+    <div class="slide-content">
+      <p class="poem-label">twelve</p>
+      <p class="poem-stanza">
+        Even on your worst days,<br/>
+        you are still the most beautiful thing<br/>
+        in any room you walk into.
+      </p>
+      <div class="poem-divider"></div>
+    </div>
+  </div>
+
+  <!-- SLIDE 13 — INTERACTIVE -->
+  <div class="slide" data-type="interactive" data-bg="images/13.jpg">
+    <div class="slide-bg"></div>
+    <div class="overlay-dark"></div>
+    <div class="overlay-vignette"></div>
+    <div class="slide-content">
+      <p class="question-text">what do you want us to do<br/>this year, my milkcake?</p>
+      <div class="choice-grid" id="q3-choices">
+        <button class="choice-btn" data-reply="then we're going. start dreaming about it.">✦ go on a trip together</button>
+        <button class="choice-btn" data-reply="okay fine but you're doing the dishes.">✦ cook more meals together</button>
+        <button class="choice-btn" data-reply="I'm in. let's have a thousand of them.">✦ make more memories like these</button>
+        <button class="choice-btn" data-reply="then just be here. that's more than enough.">✦ honestly just this — be happy</button>
+      </div>
+      <div class="response-bubble" id="q3-reply"></div>
+      <p class="continue-hint" id="q3-hint">swipe to keep going →</p>
+    </div>
+  </div>
+
+  <!-- SLIDE 14 -->
+  <div class="slide" data-type="photo-poem" data-bg="images/14.jpg">
+    <div class="slide-bg"></div>
+    <div class="overlay-dark"></div>
+    <div class="overlay-vignette"></div>
+    <div class="slide-content">
+      <p class="poem-label">fourteen</p>
+      <p class="poem-stanza">
+        Thank you for being patient with me<br/>
+        when I didn't deserve it.<br/>
+        I notice. I always notice.
+      </p>
+      <div class="poem-divider"></div>
+    </div>
+  </div>
+
+  <!-- SLIDE 15 — PHOTO ONLY -->
+  <div class="slide" data-type="photo-only" data-bg="images/15.jpg">
+    <div class="slide-bg"></div>
+    <div class="overlay-dark"></div>
+    <div class="overlay-vignette"></div>
+    <div class="slide-content">
+      <span class="caption-tag">one of my favourites ✦</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 16 -->
+  <div class="slide" data-type="photo-poem" data-bg="images/16.jpg">
+    <div class="slide-bg"></div>
+    <div class="overlay-dark"></div>
+    <div class="overlay-vignette"></div>
+    <div class="slide-content">
+      <p class="poem-label">sixteen</p>
+      <p class="poem-stanza">
+        You make ordinary days feel<br/>
+        like something worth writing about —<br/>
+        and I've been writing about you ever since.
+      </p>
+      <div class="poem-divider"></div>
+    </div>
+  </div>
+
+  <!-- SLIDE 17 -->
+  <div class="slide" data-type="photo-poem" data-bg="images/17.jpg">
+    <div class="slide-bg"></div>
+    <div class="overlay-dark"></div>
+    <div class="overlay-vignette"></div>
+    <div class="slide-content">
+      <p class="poem-label">seventeen</p>
+      <p class="poem-stanza">
+        Wherever we end up —<br/>
+        whatever this becomes —<br/>
+        I want you in it. Simple as that.
+      </p>
+      <div class="poem-divider"></div>
+    </div>
+  </div>
+
+  <!-- SLIDE 18 -->
+  <div class="slide" data-type="photo-poem" data-bg="images/18.jpg">
+    <div class="slide-bg"></div>
+    <div class="overlay-dark"></div>
+    <div class="overlay-vignette"></div>
+    <div class="slide-content">
+      <p class="poem-label">eighteen</p>
+      <p class="poem-stanza">
+        So here is reason eighteen —<br/>
+        the simplest one, the truest one:<br/>
+        <em>I love you. That's it. That's the whole poem.</em>
+      </p>
+      <div class="poem-divider"></div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       CLOSING SLIDE
+  ══════════════════════════════════════════ -->
+  <div class="slide" id="slide-closing" data-type="closing">
+    <div class="slide-content">
+      <div class="closing-wrap">
+        <div class="closing-heart">♥</div>
+        <h2 class="closing-title">Happy Birthday,<br/>my milkcake</h2>
+        <p class="closing-msg">
+          You deserve every good thing<br/>
+          this year and every year after.<br/>
+          I'm so glad you exist.
+        </p>
+        <p class="closing-sig">with everything — always ✦</p>
+        <button class="restart-btn" id="restart-btn">↺ &nbsp; relive it from the start</button>
+      </div>
+    </div>
+  </div>
+
+</div><!-- #slideshow -->
+
+<script>
+(function() {
+  const slides       = Array.from(document.querySelectorAll('.slide'));
+  const progressBar  = document.getElementById('progress-bar');
+  const counter      = document.getElementById('counter');
+  const prevBtn      = document.getElementById('nav-prev');
+  const nextBtn      = document.getElementById('nav-next');
+  const swipeHint    = document.getElementById('swipe-hint');
+  const openBtn      = document.getElementById('open-btn');
+  const restartBtn   = document.getElementById('restart-btn');
+
+  let current        = 0;
+  let isAnimating    = false;
+  let hintHidden     = false;
+  const TOTAL        = slides.length;
+
+  /* ── SET BACKGROUND IMAGES ── */
+  slides.forEach(slide => {
+    const bg   = slide.getAttribute('data-bg');
+    const bgEl = slide.querySelector('.slide-bg');
+    if (bg && bgEl) bgEl.style.backgroundImage = `url('${bg}')`;
+  });
+
+  /* ── PROGRESS & COUNTER ── */
+  function updateUI() {
+    const pct = ((current) / (TOTAL - 1)) * 100;
+    progressBar.style.width = pct + '%';
+
+    const type = slides[current].getAttribute('data-type');
+    if (type === 'opening' || type === 'closing') {
+      counter.style.opacity = '0';
+    } else {
+      const photoSlides = slides.slice(1, TOTAL - 1);
+      const idx = current - 1;
+      counter.textContent = (idx + 1) + ' / ' + photoSlides.length;
+      counter.style.opacity = '1';
+    }
+
+    prevBtn.classList.toggle('hidden', current === 0);
+    nextBtn.classList.toggle('hidden', current === TOTAL - 1);
+  }
+
+  /* ── NAVIGATE ── */
+  function goTo(index, skipInteractiveCheck) {
+    if (isAnimating) return;
+    if (index < 0 || index >= TOTAL) return;
+
+    // block swipe on interactive slide unless choice made
+    if (!skipInteractiveCheck) {
+      const curType = slides[current].getAttribute('data-type');
+      if (curType === 'interactive' && index > current) {
+        const replyId = slides[current].querySelector('.response-bubble');
+        if (replyId && !replyId.classList.contains('shown')) return;
+      }
+    }
+
+    isAnimating = true;
+    slides[current].classList.remove('active');
+    slides[current].classList.add('prev');
+
+    setTimeout(() => {
+      slides[current].classList.remove('prev');
+    }, 950);
+
+    current = index;
+    slides[current].classList.add('active');
+    updateUI();
+
+    if (!hintHidden && current > 0) {
+      hintHidden = true;
+      swipeHint.classList.add('hidden');
+    }
+
+    setTimeout(() => { isAnimating = false; }, 950);
+  }
+
+  function next() { goTo(current + 1); }
+  function prev() { goTo(current - 1, true); }
+
+  /* ── OPENING BUTTON ── */
+  openBtn.addEventListener('click', () => goTo(1));
+
+  /* ── RESTART ── */
+  restartBtn.addEventListener('click', () => {
+    document.querySelectorAll('.response-bubble').forEach(b => b.classList.remove('shown'));
+    document.querySelectorAll('.choice-grid').forEach(g => {
+      g.style.display = 'flex';
+      Array.from(g.children).forEach(btn => { btn.disabled = false; btn.style.opacity = '1'; });
+    });
+    document.querySelectorAll('.continue-hint').forEach(h => h.classList.remove('shown'));
+    goTo(0, true);
+    hintHidden = false;
+    swipeHint.classList.remove('hidden');
+  });
+
+  /* ── KEYBOARD ── */
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') next();
+    if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')   prev();
+  });
+
+  /* ── NAV BUTTONS ── */
+  prevBtn.addEventListener('click', prev);
+  nextBtn.addEventListener('click', next);
+
+  /* ── TOUCH / SWIPE ── */
+  let touchStartX = 0, touchStartY = 0;
+  document.addEventListener('touchstart', e => {
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+  }, { passive: true });
+  document.addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    const dy = e.changedTouches[0].clientY - touchStartY;
+    if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 40) {
+      if (dx < 0) next(); else prev();
+    }
+  }, { passive: true });
+
+  /* ── INTERACTIVE CHOICES ── */
+  document.querySelectorAll('.choice-grid').forEach(grid => {
+    grid.addEventListener('click', e => {
+      const btn = e.target.closest('.choice-btn');
+      if (!btn || btn.disabled) return;
+
+      const reply    = btn.getAttribute('data-reply');
+      const gridId   = grid.id;
+      const n        = gridId.replace('q', '').replace('-choices', '');
+      const replyEl  = document.getElementById('q' + n + '-reply');
+      const hintEl   = document.getElementById('q' + n + '-hint');
+
+      if (replyEl) {
+        replyEl.textContent = reply;
+        replyEl.classList.add('shown');
+      }
+      if (hintEl) hintEl.classList.add('shown');
+
+      // disable all buttons in this grid
+      Array.from(grid.children).forEach(b => {
+        b.disabled = true;
+        b.style.opacity = b === btn ? '1' : '0.35';
+      });
+    });
+  });
+
+  /* ── FLOATING PETALS ── */
+  const colors = ['#E8A0A8','#C5A0C8','#F2C8CC','#9B6FA0','#8C2A40'];
+  const petalWrap = document.getElementById('petals');
+  if (petalWrap) {
+    for (let i = 0; i < 18; i++) {
+      const p = document.createElement('div');
+      p.className = 'petal';
+      p.style.cssText = [
+        `left:${Math.random()*100}%`,
+        `top:${Math.random()*-20}%`,
+        `background:${colors[Math.floor(Math.random()*colors.length)]}`,
+        `width:${4+Math.random()*5}px`,
+        `height:${4+Math.random()*5}px`,
+        `animation-duration:${6+Math.random()*8}s`,
+        `animation-delay:${Math.random()*6}s`,
+        `opacity:0`
+      ].join(';');
+      petalWrap.appendChild(p);
+    }
+  }
+
+  /* ── INIT ── */
+  updateUI();
+})();
+</script>
+</body>
+</html>
