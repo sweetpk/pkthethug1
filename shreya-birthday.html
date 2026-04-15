@@ -210,6 +210,7 @@
     inset: 0;
     overflow: hidden;
     pointer-events: none;
+    z-index: 15; /* ensures visible on all slides */
   }
   .petal {
     position: absolute;
@@ -522,12 +523,12 @@
 </div>
 
 <div id="slideshow">
+  <div class="petal-wrap" id="petals"></div>
 
   <!-- ══════════════════════════════════════════
        SLIDE 0 — OPENING
   ══════════════════════════════════════════ -->
   <div class="slide active" id="slide-0" data-type="opening">
-    <div class="petal-wrap" id="petals"></div>
     <div class="slide-content" style="gap: 0;">
       <p class="opening-pre">for my milkcake &nbsp;✦&nbsp; on her special day</p>
       <h1 class="opening-name">
