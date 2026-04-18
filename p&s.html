@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>P&S Love Center</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --cream:#FDF5F0;
+  --blush:#E8A0A8;
+  --lavender:#C5A0C8;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html,body{
+  height:100%;
+  overflow:hidden;
+}
+
+/* MAIN WRAPPER (prevents scroll issues) */
+.wrapper{
+  position:fixed;
+  inset:0;
+  overflow:hidden;
+  font-family:'Cormorant Garamond', serif;
+  color:var(--cream);
+}
+
+/* BACKGROUND IMAGE (EDIT THIS) */
+.bg{
+  position:absolute;
+  inset:0;
+  background: url('images/love-center-bg.jpg') center/cover no-repeat;
+  transform:scale(1.05);
+}
+
+/* GRADIENT OVERLAY */
+.overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    to bottom,
+    rgba(26,8,16,0.3),
+    rgba(26,8,16,0.65),
+    rgba(74,15,31,0.85)
+  );
+}
+
+/* VIGNETTE */
+.vignette{
+  position:absolute;
+  inset:0;
+  background:radial-gradient(ellipse at center, transparent 45%, rgba(0,0,0,0.7));
+}
+
+/* CONTENT */
+.container{
+  position:relative;
+  z-index:2;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  padding:32px 20px;
+  text-align:center;
+}
+
+/* TITLE */
+.title{
+  font-size:clamp(2rem,7vw,3rem);
+  line-height:1.1;
+  font-weight:300;
+  margin-bottom:12px;
+}
+
+.title span{
+  display:block;
+  color:var(--blush);
+  font-style:italic;
+}
+
+/* SUBTITLE */
+.subtitle{
+  font-family:'Jost', sans-serif;
+  font-size:clamp(0.65rem,2.5vw,0.8rem);
+  letter-spacing:0.25em;
+  text-transform:uppercase;
+  color:var(--lavender);
+  margin-bottom:36px;
+}
+
+/* LIST */
+.list{
+  width:100%;
+  max-width:380px;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+/* BUTTON */
+.item{
+  font-family:'Jost', sans-serif;
+  font-size:clamp(0.8rem,3vw,0.9rem);
+  letter-spacing:0.1em;
+  text-decoration:none;
+  color:var(--cream);
+
+  padding:16px 18px;
+  border-radius:4px;
+
+  background:rgba(74,15,31,0.5);
+  border:1px solid rgba(232,160,168,0.25);
+
+  backdrop-filter:blur(10px);
+  transition:all 0.25s ease;
+}
+
+.item:active{
+  transform:scale(0.96);
+  background:rgba(107,26,46,0.7);
+  border-color:var(--blush);
+  color:var(--blush);
+}
+
+/* FLOATING ELEMENTS */
+.float{
+  position:absolute;
+  bottom:-20px;
+  pointer-events:none;
+  animation:floatUp linear forwards;
+}
+
+.heart{
+  color:#ff6fb5;
+  font-size:14px;
+}
+
+.bubble{
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:rgba(255,255,255,0.3);
+}
+
+@keyframes floatUp{
+  from{
+    transform:translateY(0) scale(0.6);
+    opacity:0;
+  }
+  20%{opacity:0.7;}
+  to{
+    transform:translateY(-110vh) scale(1.2);
+    opacity:0;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <div class="bg"></div>
+  <div class="overlay"></div>
+  <div class="vignette"></div>
+
+  <div class="container">
+    <div class="subtitle">our private space</div>
+
+    <h1 class="title">
+      ❤️P&S❤️<br><span>Love Center</span>
+    </h1>
+
+    <div class="list">
+      <a href="shreya-birthday.html" class="item">✦ Shreyu Birthday 2026 ✦</a>
+      <a href="page2.html" class="item">✦ Surprise Space</a>
+    </div>
+  </div>
+
+</div>
+
+<script>
+
+/* HEART + BUBBLE FLOAT */
+function spawn(){
+  const el=document.createElement("div");
+  el.className="float";
+
+  if(Math.random()>0.5){
+    el.classList.add("heart");
+    el.innerHTML="❤";
+  } else {
+    el.classList.add("bubble");
+  }
+
+  el.style.left=Math.random()*100+"vw";
+  el.style.animationDuration=(Math.random()*4+6)+"s";
+
+  document.querySelector(".wrapper").appendChild(el);
+
+  setTimeout(()=>el.remove(),10000);
+}
+
+setInterval(spawn,400);
+
+</script>
+
+</body>
+</html>
