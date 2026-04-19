@@ -1635,13 +1635,7 @@ function getTagType(tag = '') {
 // ============================================================
 // AUTO-DETECT QUESTION BANKS
 // ============================================================
-const KNOWN_FILES = [
-  'ca_oct25_1.json','ca_oct25_2.json','ca_nov25_1.json','ca_nov25_2.json',
-  'ca_dec25_1.json','ca_jan26_1.json','ca_feb26_1.json','ca_mar26_1.json',
-  'schemes_oct25_1.json','schemes_nov25_1.json','reports_oct25_1.json',
-  'rbinews_oct25_1.json','rbinews_nov25_1.json','budget_feb26_1.json',
-  'agri_oct25_1.json','banking_oct25_1.json','misc_oct25_1.json',
-];
+// File list is now driven by question-banks/manifest.json — no hardcoded names needed.
 
 async function tryLoadBankFile(filename) {
   try {
@@ -1654,10 +1648,22 @@ async function tryLoadBankFile(filename) {
 }
 
 async function autoDetectBanks() {
-  // Try loading each known file pattern
   const results = {};
+
+  // Fetch manifest.json for the list of files
+  let filelist = [];
+  try {
+    const resp = await fetch('question-banks/manifest.json');
+    if (resp.ok) {
+      const parsed = await resp.json();
+      if (Array.isArray(parsed)) filelist = parsed;
+    }
+  } catch { /* no manifest found */ }
+
+  if (filelist.length === 0) return results;
+
   const attempts = await Promise.allSettled(
-    KNOWN_FILES.map(async f => {
+    filelist.map(async f => {
       const data = await tryLoadBankFile(f);
       return { file: f, data };
     })
