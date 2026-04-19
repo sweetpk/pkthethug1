@@ -1,0 +1,752 @@
+[
+  {
+    "category": "Banking",
+    "sub_category": "Payments",
+    "question": "Regarding the JPYC stablecoin launched in October 2025, which of the following statements is/are correct?\nI. It is pegged at a 1:1 ratio to the Japanese Yen (JPY).\nII. It is fully backed by domestic JPY deposits and Japanese Government Bonds (JGBs).\nIII. The company aims to issue up to 10 trillion JPY over the next 3 years.",
+    "options": {
+      "A": "Only I",
+      "B": "Only I and II",
+      "C": "Only II and III",
+      "D": "Only I and III",
+      "E": "All I, II, and III"
+    },
+    "answer": "E",
+    "rationale": "As per page 146, the JPYC stablecoin is pegged 1:1 to JPY, is fully backed by JPY deposits and JGBs, and aims for a 10 trillion JPY issuance over 3 years.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Economy",
+    "question": "The World Bank's 'South Asia Update October 2025' report downgraded India's GDP projection for FY27 to 6.3%. What is the primary reason cited for this downward revision?",
+    "options": {
+      "A": "Decline in agricultural output due to poor monsoon",
+      "B": "3% drop in the benchmark Sensex",
+      "C": "50% tariff imposed by the USA on about 3-quarters of exports from India",
+      "D": "Rise in global crude oil prices beyond USD 100 per barrel",
+      "E": "Decrease in domestic private consumption"
+    },
+    "answer": "C",
+    "rationale": "According to page 149, the GDP projection for FY27 was downgraded to 6.3% due to a 50% tariff imposed by the USA on approximately 3-quarters of Indian exports.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Reports",
+    "question": "According to the WTO 'Global Trade Outlook: October 2025', what is the forecasted global merchandise trade volume growth for the Calendar Year 2026 (CY26)?",
+    "options": {
+      "A": "2.4%",
+      "B": "1.8%",
+      "C": "0.5%",
+      "D": "2.7%",
+      "E": "4.4%"
+    },
+    "answer": "C",
+    "rationale": "Page 149 states that the WTO has lowered its forecast for global merchandise trade volume growth to 0.5% for CY26.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Inflation",
+    "question": "As per the National Statistics Office (NSO) data for September 2025, India’s retail inflation (CPI) dropped to a 99-month low. What was the recorded CPI percentage?",
+    "options": {
+      "A": "2.07%",
+      "B": "1.54%",
+      "C": "4.00%",
+      "D": "2.28%",
+      "E": "3.10%"
+    },
+    "answer": "B",
+    "rationale": "Page 150 specifies that retail inflation measured by CPI dropped to a 99-month low of 1.54% in September 2025.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Growth Projections",
+    "question": "In its October 2025 World Economic Outlook, the IMF revised India’s FY26 growth forecast. By how many basis points (bps) was the forecast raised compared to the previous estimate?",
+    "options": {
+      "A": "50 bps",
+      "B": "10 bps",
+      "C": "20 bps",
+      "D": "25 bps",
+      "E": "15 bps"
+    },
+    "answer": "C",
+    "rationale": "Page 151 mentions that the IMF revised India’s GDP growth forecast for FY26 upward by 20 basis points (bps) to 6.6%.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Industry",
+    "question": "Aero engine rotative components manufacturing facility was inaugurated at Adibatla, Telangana. What is the total investment in this joint venture between TASL and Safran Aircraft Engines?",
+    "options": {
+      "A": "Rs. 600 crore",
+      "B": "Rs. 425 crore",
+      "C": "Rs. 855 crore",
+      "D": "Rs. 1,500 crore",
+      "E": "Rs. 2,430 crore"
+    },
+    "answer": "B",
+    "rationale": "Page 152 states that the facility has a total investment of Rs. 425 crore.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Environment",
+    "question": "The Tata Steel Nederland decarbonisation project aims to decommissioning which specific plant units during Phase 1?",
+    "options": {
+      "A": "Blast Furnace 5 and Coke Plant 1",
+      "B": "Blast Furnace 7 and Coke and Gas Plant 2",
+      "C": "Electric Arc Furnace and DRP Plant",
+      "D": "Sinter Plant and Pellet Plant 3",
+      "E": "Coke Plant 4 and Blast Furnace 6"
+    },
+    "answer": "B",
+    "rationale": "Page 153 mentions that Phase 1 involves decommissioning Blast Furnace 7 and Coke and Gas Plant 2.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Innovation",
+    "question": "DPIIT and Thermo Fisher Scientific signed an MoU to launch 'BioVerse'. What is the specific target for the 'BioVerse Mentors Circle' component?",
+    "options": {
+      "A": "Mentor 100 top biotech startups",
+      "B": "Train and guide 400 additional startups",
+      "C": "Invest in 500 biotech startups",
+      "D": "Provide R&D access to 1000 students",
+      "E": "Establish 50 new incubation centers"
+    },
+    "answer": "B",
+    "rationale": "Page 153 states that the BioVerse Mentors Circle aims to train and guide 400 additional startups in biotech skills.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Transport",
+    "question": "Which organization has secured a multi-year contract from the Indian Railways Security Operations Centre (IRSOC) to provide cybersecurity protection for 26 railway locations?",
+    "options": {
+      "A": "Reliance Jio",
+      "B": "Airtel Business",
+      "C": "Tata Communications",
+      "D": "Wipro",
+      "E": "Infosys"
+    },
+    "answer": "B",
+    "rationale": "Page 156 notes that Airtel Business secured a multi-year contract from IRSOC to protect critical IT infrastructure across 26 railway locations.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Govt Schemes",
+    "question": "The 'Samriddh Gram Phygital Services Pilot Project' is being implemented in 3 villages. Which of the following is NOT one of the selected villages?",
+    "options": {
+      "A": "Ari (Madhya Pradesh)",
+      "B": "Umri (Madhya Pradesh)",
+      "C": "Chaurawala (Uttar Pradesh)",
+      "D": "Narakoduru (Andhra Pradesh)",
+      "E": "Sojitra (Gujarat)"
+    },
+    "answer": "E",
+    "rationale": "Page 173 identifies the 3 villages as Ari & Umri (MP), Chaurawala (UP), and Narakoduru (AP).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Energy",
+    "question": "Regarding the India-Nepal cross-border energy transmission agreement, what is the debt-equity financing model followed for the projects?",
+    "options": {
+      "A": "70% debt and 30% equity",
+      "B": "80% debt and 20% equity",
+      "C": "90% debt and 10% equity",
+      "D": "50% debt and 50% equity",
+      "E": "60% debt and 40% equity"
+    },
+    "answer": "B",
+    "rationale": "Page 172 states that both projects will follow a financing model comprising 80% debt and 20% equity.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Infrastructure",
+    "question": "Bharat Petroleum Corporation Limited (BPCL) and Oil India Limited (OIL) signed an MoU for a greenfield refinery in Andhra Pradesh. What is the estimated petrochemical intensity of the planned Ethylene Cracker Unit?",
+    "options": {
+      "A": "25%",
+      "B": "30%",
+      "C": "35%",
+      "D": "40%",
+      "E": "20%"
+    },
+    "answer": "C",
+    "rationale": "Page 175 specifies the complex will include a 1.5 MTPA ethylene cracker unit with 35% petrochemical intensity.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "FM",
+    "sub_category": "ESG",
+    "question": "According to the 'India ESG Outlook Report 2025' by CSRBOX, which sector relies on around 99% fossil energy?",
+    "options": {
+      "A": "Power and Oil & Gas",
+      "B": "Metals & Mining and Services",
+      "C": "Realty and Construction",
+      "D": "Financial Services",
+      "E": "Agriculture"
+    },
+    "answer": "B",
+    "rationale": "Page 176 states that Metals & Mining and Services rely on around 99% fossil energy.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Social Security",
+    "question": "Regarding the 238th meeting of the Central Board of Trustees (CBT) of EPF, which of the following is correct regarding the 'Minimum Balance' requirement?",
+    "options": {
+      "A": "Members must maintain 10% of EPF contributions.",
+      "B": "Members must maintain 25% of EPF contributions.",
+      "C": "Members can withdraw 100% of their balance with no minimum.",
+      "D": "Members must maintain a fixed amount of Rs 50,000.",
+      "E": "Minimum balance is only required for housing withdrawals."
+    },
+    "answer": "B",
+    "rationale": "Page 177 mentions the CBT clarified that 25% of EPF contributions must be maintained as a minimum balance.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Social Security",
+    "question": "The 'Vishwas Scheme' was launched by EPFO to resolve disputes over delayed Provident Fund (PF) payments. Under this scheme, penal damages for delays up to 2 months are capped at what rate?",
+    "options": {
+      "A": "1% per month",
+      "B": "0.50% per month",
+      "C": "0.25% per month",
+      "D": "2% per month",
+      "E": "0.10% per month"
+    },
+    "answer": "C",
+    "rationale": "Page 177 states that under the Vishwas Scheme, penal damages are capped at a graded rate of 0.25% for delays up to 2 months.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Social Security",
+    "question": "The PM-VRBY employment scheme is expected to generate over 3.5 crore new jobs over a 2-year period. What is the target number for '1st-time employees' in this goal?",
+    "options": {
+      "A": "1.00 crore",
+      "B": "1.92 crore",
+      "C": "2.50 crore",
+      "D": "1.50 crore",
+      "E": "3.00 crore"
+    },
+    "answer": "B",
+    "rationale": "Page 178 specifies the scheme is expected to generate over 3.5 crore new jobs, including 1.92 crore 1st-time employees.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Health",
+    "question": "The 78th session of the WHO Regional Committee for South-East Asia adopted the Colombo Declaration. What is the primary focus of this declaration?",
+    "options": {
+      "A": "Eradication of Tuberculosis",
+      "B": "Healthy Ageing through strengthened primary health care",
+      "C": "Digital health infrastructure expansion",
+      "D": "Universal Social Protection by 2030",
+      "E": "Prevention of Smokeless Tobacco"
+    },
+    "answer": "B",
+    "rationale": "Page 180 states the member nations unanimously adopted the Colombo Declaration on ‘Healthy Ageing through strengthened primary health care’.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "International",
+    "sub_category": "Finance",
+    "question": "During the 4th FATF Plenary Meeting in October 2025, which of the following countries was REMOVED from the 'Grey List'?",
+    "options": {
+      "A": "Vietnam",
+      "B": "South Africa",
+      "C": "Myanmar",
+      "D": "Yemen",
+      "E": "Kenya"
+    },
+    "answer": "B",
+    "rationale": "Page 181 lists Burkina Faso, Mozambique, Nigeria, and South Africa as the jurisdictions removed from the grey list.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Social Issues",
+    "question": "As per the ISSA 2025 report, India's social security coverage has expanded significantly. What was the coverage percentage recorded in 2025 compared to 19% in 2015?",
+    "options": {
+      "A": "55.5%",
+      "B": "60.8%",
+      "C": "64.3%",
+      "D": "70.2%",
+      "E": "50.0%"
+    },
+    "answer": "C",
+    "rationale": "Page 192 states India has increased social security coverage from 19% in 2015 to 64.3% in 2025.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Trade",
+    "question": "The India-EFTA Trade and Economic Partnership Agreement (TEPA) includes a specific investment commitment. What is the total value of FDI pledged by EFTA over the next 15 years?",
+    "options": {
+      "A": "USD 50 billion",
+      "B": "USD 75 billion",
+      "C": "USD 100 billion",
+      "D": "USD 120 billion",
+      "E": "USD 25 billion"
+    },
+    "answer": "C",
+    "rationale": "Page 193 mentions that EFTA has pledged to attract foreign direct investments worth USD 100 billion in India in the next 15 years.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Finance",
+    "question": "During the Global Fintech Fest (GFF) 2025, a Foreign Currency Settlement System (FCSS) was launched at GIFT City. Which bank's India branch was selected to handle USD clearances under this system?",
+    "options": {
+      "A": "HSBC",
+      "B": "Standard Chartered",
+      "C": "Citibank",
+      "D": "Deutsche Bank",
+      "E": "J.P. Morgan"
+    },
+    "answer": "B",
+    "rationale": "Page 196 clarifies that Standard Chartered’s India branch has been selected to handle USD clearances under this system.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Finance",
+    "question": "Which company became the first to integrate its digital wallet into the OpenAI ChatGPT chatbot to allow agentic payments?",
+    "options": {
+      "A": "Paytm",
+      "B": "PhonePe",
+      "C": "PayPal",
+      "D": "Razorpay",
+      "E": "Google Pay"
+    },
+    "answer": "C",
+    "rationale": "Page 144 and 199 mention that PayPal became the first digital wallet to be integrated into the AI chatbot.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Technology",
+    "question": "India's 'Finternet' initiative, a digital infrastructure framework integrating tokenization and AI, is projected to expand across how many ecosystems globally?",
+    "options": {
+      "A": "10",
+      "B": "15",
+      "C": "20",
+      "D": "25",
+      "E": "30"
+    },
+    "answer": "C",
+    "rationale": "Page 200 states the Finternet initiative is projected to expand across 20 ecosystems on four continents.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Economy",
+    "question": "According to the India Mobile Congress (IMC) 2025 data, the telecom sector's contribution to India’s GDP is projected to rise to what percentage by 2037?",
+    "options": {
+      "A": "15%",
+      "B": "18%",
+      "C": "20%",
+      "D": "22%",
+      "E": "25%"
+    },
+    "answer": "C",
+    "rationale": "Page 201 states the telecom sector’s contribution to India’s GDP is projected to rise from 14% to 20% by 2037.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Space/Telecom",
+    "question": "During IMC 2025, a National SATCOM Monitoring Facility was announced to safeguard spectrum assets. What is the total outlay for this facility?",
+    "options": {
+      "A": "Rs 500 crore",
+      "B": "Rs 750 crore",
+      "C": "Rs 900 crore",
+      "D": "Rs 1,000 crore",
+      "E": "Rs 1,200 crore"
+    },
+    "answer": "C",
+    "rationale": "Page 203 mentions the announcement of a Rs 900 crore National SATCOM Monitoring Facility.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Environment",
+    "question": "Under the 'National Red List Roadmap of India' launched in 2025, how many species of plants and animals are targeted for assessment?",
+    "options": {
+      "A": "5,000",
+      "B": "10,000",
+      "C": "11,000",
+      "D": "15,000",
+      "E": "7,500"
+    },
+    "answer": "C",
+    "rationale": "Page 208 states that under the roadmap, over 11,000 species of plants and animals will be assessed.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Wealth Ranking",
+    "question": "According to the M3M Hurun India Rich List 2025, who became the richest woman in India for the first time, ranking 3rd overall?",
+    "options": {
+      "A": "Falguni Nayar",
+      "B": "Kiran Mazumdar-Shaw",
+      "C": "Roshni Nadar",
+      "D": "Savitri Jindal",
+      "E": "Alpana Dangi"
+    },
+    "answer": "C",
+    "rationale": "Page 218 mentions that for the 1st time, Roshni Nadar and family featured into the top 3, becoming the richest woman in India.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Wealth Ranking",
+    "question": "As per the Hurun Rich List 2025, which city continues to be the 'billionaire hub' of India with 451 billionaires?",
+    "options": {
+      "A": "New Delhi",
+      "B": "Bengaluru",
+      "C": "Mumbai",
+      "D": "Hyderabad",
+      "E": "Chennai"
+    },
+    "answer": "C",
+    "rationale": "Page 218 notes that Mumbai continues to be the billionaire hub in India with 451 billionaires.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Wealth Ranking",
+    "question": "Who is the 'Youngest Debutant' on the Hurun India Rich List 2025 at 22 years of age?",
+    "options": {
+      "A": "Aadit Palicha",
+      "B": "Aravind Srinivas",
+      "C": "Kaivalya Vohra",
+      "D": "Vijay Shekhar Sharma",
+      "E": "Niraj Bajaj"
+    },
+    "answer": "C",
+    "rationale": "Page 219 identifies 22-year-old Kaivalya Vohra, co-founder of Zepto, as the youngest entrant.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "International",
+    "sub_category": "Reports",
+    "question": "In the Henley Passport Index 2025 (October edition), India's rank slipped to 85th. With which country is India's rank currently tied?",
+    "options": {
+      "A": "Afghanistan",
+      "B": "Mauritius",
+      "C": "Singapore",
+      "D": "South Africa",
+      "E": "Bhutan"
+    },
+    "answer": "B",
+    "rationale": "Page 222 states the Indian passport has fallen to 85th position and is tied with Mauritius.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "International",
+    "sub_category": "Finance",
+    "question": "Which city topped the Global Financial Centres Index (GFCI 38) as the premier financial hub, as of October 2025?",
+    "options": {
+      "A": "London",
+      "B": "Hong Kong",
+      "C": "New York",
+      "D": "Singapore",
+      "E": "San Francisco"
+    },
+    "answer": "C",
+    "rationale": "Page 224 shows New York (USA) continues to hold the top position with a rating of 766.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "International",
+    "sub_category": "Reports",
+    "question": "According to the Mercer CFA Global Pension Index 2025, which country topped the list with an overall index score of 85.4?",
+    "options": {
+      "A": "Iceland",
+      "B": "Denmark",
+      "C": "Netherlands",
+      "D": "Singapore",
+      "E": "Israel"
+    },
+    "answer": "C",
+    "rationale": "Page 225 states that the Netherlands topped the Pension Index with 85.4.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "International",
+    "sub_category": "Reports",
+    "question": "In the Mercer CFA Global Pension Index 2025, Singapore became the first Asian country to achieve which grade ranking?",
+    "options": {
+      "A": "Grade B+",
+      "B": "Grade B",
+      "C": "Grade A",
+      "D": "Grade C+",
+      "E": "Grade D"
+    },
+    "answer": "C",
+    "rationale": "Page 226 mentions Singapore became the first Asian country to achieve a Grade A ranking.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "International",
+    "sub_category": "Defence",
+    "question": "According to the WDMMA 2025 Rankings, the Indian Air Force (IAF) is ranked as the world’s ____ most powerful air force in terms of overall effectiveness.",
+    "options": {
+      "A": "6th",
+      "B": "4th",
+      "C": "3rd",
+      "D": "5th",
+      "E": "7th"
+    },
+    "answer": "C",
+    "rationale": "Page 227 states the IAF surpassed China to become the world's 3rd most powerful air force (though it holds the 6th spot in 'TruVal Rating' specifically, the effectiveness rank is 3rd).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Environment",
+    "question": "As per the Global Forest Resource Assessment (GFRA) 2025, which country holds the largest forest area globally, accounting for 20% of the world's total?",
+    "options": {
+      "A": "Brazil",
+      "B": "Canada",
+      "C": "Russian Federation",
+      "D": "USA",
+      "E": "China"
+    },
+    "answer": "C",
+    "rationale": "Page 229 states the Russian Federation ranks first globally with 832.6 Mha, accounting for 20% of the world’s forests.",
+    "tag": "Static-Conceptual"
+  },
+  {
+    "category": "National",
+    "sub_category": "Reports",
+    "question": "According to the 'Crime in India 2023' report by NCRB, which city has become the 'most unsafe' in India with a crime rate of 3,192.4?",
+    "options": {
+      "A": "New Delhi",
+      "B": "Mumbai",
+      "C": "Kochi",
+      "D": "Surat",
+      "E": "Patna"
+    },
+    "answer": "C",
+    "rationale": "Page 231 mentions that Kochi (Kerala) has become the most unsafe city in India.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Social Justice",
+    "question": "The ILO 'State of Social Justice 2025' report highlights that extreme poverty has decreased significantly. What was the poverty rate in 2024 compared to 27.9% in 2000?",
+    "options": {
+      "A": "10.0%",
+      "B": "8.5%",
+      "C": "6.9%",
+      "D": "5.2%",
+      "E": "12.0%"
+    },
+    "answer": "C",
+    "rationale": "Page 233 states that working poverty declined significantly to 6.9% in 2024.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Health",
+    "question": "The WHO Global Report on Tobacco Use Projections 2025-30 indicates that children are on average how many times more likely than adults to use vapes?",
+    "options": {
+      "A": "3 times",
+      "B": "5 times",
+      "C": "9 times",
+      "D": "2 times",
+      "E": "7 times"
+    },
+    "answer": "C",
+    "rationale": "Page 235 states the report projected that children are on average 9 times more likely than adults to vape.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Blue Economy",
+    "question": "The NITI Aayog report on India’s Blue Economy proposes a three-phase strategy. What is the total estimated cost for 'Phase 2: Scaling up and achieving global competitiveness'?",
+    "options": {
+      "A": "Rs. 2,430 crore",
+      "B": "Rs. 1,690 crore",
+      "C": "Rs. 4,210 crore",
+      "D": "Rs. 5,000 crore",
+      "E": "Rs. 3,500 crore"
+    },
+    "answer": "C",
+    "rationale": "Page 237 provides the cost for Phase 2 as Rs. 4210 cr.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Employment",
+    "question": "As per the PLFS Monthly Bulletin for September 2025, what was the Labour Force Participation Rate (LFPR) for that month?",
+    "options": {
+      "A": "5.2%",
+      "B": "52.4%",
+      "C": "55.3%",
+      "D": "34.1%",
+      "E": "57.4%"
+    },
+    "answer": "C",
+    "rationale": "Page 238 indicates the overall LFPR was 55.3% in September 2025.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Services Sector",
+    "question": "According to the NITI Aayog inaugural reports on India's Services Sector, what is the 'Region-wise Share' of services in rural areas?",
+    "options": {
+      "A": "60.8%",
+      "B": "29.7%",
+      "C": "18.9%",
+      "D": "22.7%",
+      "E": "32.8%"
+    },
+    "answer": "C",
+    "rationale": "Page 240 lists the region-wise share as 60.8% (urban areas) and 18.9% (rural areas).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Appointments",
+    "question": "Who was appointed as the Managing Director (MD) and Chief Executive Officer (CEO) of Central Bank of India (CBI) for a period of three years starting from September 2025?",
+    "options": {
+      "A": "Asheesh Pandey",
+      "B": "A. Manimekalai",
+      "C": "Kalyan Kumar",
+      "D": "Matam Venkata Rao",
+      "E": "Raman Aggarwal"
+    },
+    "answer": "C",
+    "rationale": "Page 242 states Kalyan Kumar was appointed as MD & CEO of Central Bank of India.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Appointments",
+    "question": "Lieutenant General Virendra Vats assumed charge as the Director General (DG) of which organization in October 2025?",
+    "options": {
+      "A": "Border Security Force (BSF)",
+      "B": "National Security Guard (NSG)",
+      "C": "National Cadet Corps (NCC)",
+      "D": "Indian Coast Guard (ICG)",
+      "E": "Central Reserve Police Force (CRPF)"
+    },
+    "answer": "C",
+    "rationale": "Page 243 states Lt Gen Virendra Vats assumed charge as the 35th DG of NCC.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Appointments",
+    "question": "Who was appointed as the first Indian CEO of Capgemini in India, with the term starting from January 1, 2026?",
+    "options": {
+      "A": "Ashwin Yardi",
+      "B": "Sanjay Chalke",
+      "C": "Tarun Garg",
+      "D": "Rajeev Juneja",
+      "E": "Anant Goenka"
+    },
+    "answer": "B",
+    "rationale": "Page 244 states Sanjay Chalke will take over as Capgemini India’s CEO from January 1, 2026.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "International",
+    "sub_category": "Appointments",
+    "question": "Sebastien Lecornu was re-appointed as the Prime Minister of which country in October 2025, after his first government collapsed within 14 hours?",
+    "options": {
+      "A": "Madagascar",
+      "B": "Seychelles",
+      "C": "France",
+      "D": "Belgium",
+      "E": "Norway"
+    },
+    "answer": "C",
+    "rationale": "Page 247 mentions that French President Emmanuel Macron reappointed Sebastien Lecornu as the PM of France.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Appointments",
+    "question": "The Appointments Committee of the Cabinet (ACC) granted an extension to A. Robert J. Ravi. He serves as the CMD of which of the following organizations?\nI. BSNL\nII. MTNL\nIII. BBNL",
+    "options": {
+      "A": "Only I",
+      "B": "Only I and II",
+      "C": "Only II and III",
+      "D": "Only I and III",
+      "E": "All I, II, and III"
+    },
+    "answer": "E",
+    "rationale": "Page 254 states the 3-month extension for A. Robert J. Ravi as CMD of BSNL, MTNL, and BBNL.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Awards",
+    "question": "The 2nd edition of the 'Rashtriya Vigyan Puraskar' (RVP 2025) awarded the 'Vigyan Ratna' (VR) posthumously to which scientist for contributions to Physics?",
+    "options": {
+      "A": "Dr. A.P.J. Abdul Kalam",
+      "B": "Prof. Jayant Vishnu Narlikar",
+      "C": "Dr. C.V. Raman",
+      "D": "Prof. Pradeep Thalappil",
+      "E": "Dr. S. Chandrasekhar"
+    },
+    "answer": "B",
+    "rationale": "Page 284 confirms Prof. Jayant Vishnu Narlikar was honoured posthumously with the Vigyan Ratna (VR) for Physics.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Awards",
+    "question": "The World Food Prize Foundation honored Chef Sanjeev Kapoor as a 'Top Agri-Food Pioneer' (TAP) 2025. In which year was he conferred with the Padma Shri award?",
+    "options": {
+      "A": "2015",
+      "B": "2016",
+      "C": "2017",
+      "D": "2018",
+      "E": "2020"
+    },
+    "answer": "C",
+    "rationale": "Page 286 mentions that in 2017, Sanjeev Kapoor was conferred with the Padma Shri.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Reports",
+    "question": "The report 'Resilience Pays: Financing and Investing for our Future' by UNDRR states that disaster-related economic losses now surpass which annual threshold?",
+    "options": {
+      "A": "USD 100 billion",
+      "B": "USD 202 billion",
+      "C": "USD 150 billion",
+      "D": "USD 250 billion",
+      "E": "USD 300 billion"
+    },
+    "answer": "B",
+    "rationale": "Page 378 states that the GAR 2025 reports a sharp rise in disaster-related economic losses, now surpassing USD 202 billion annually.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Agriculture",
+    "question": "Which state has been identified as the top producer of eggs in India according to the 'Basic Animal Husbandry Statistics – 2024' mentioned in the report?",
+    "options": {
+      "A": "Tamil Nadu",
+      "B": "Telangana",
+      "C": "Andhra Pradesh (AP)",
+      "D": "Maharashtra",
+      "E": "Karnataka"
+    },
+    "answer": "C",
+    "rationale": "Page 375 and 376 specify that Andhra Pradesh (AP) continues to lead in egg production in India.",
+    "tag": "Static-Conceptual"
+  }
+]
