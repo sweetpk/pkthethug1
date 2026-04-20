@@ -1272,7 +1272,6 @@ input[type="range"]::-webkit-slider-thumb {
           <div class="toggle-group">
             <button class="toggle-btn active" data-mode="none" onclick="setTimerMode(this)">None</button>
             <button class="toggle-btn" data-mode="overall" onclick="setTimerMode(this)">Overall</button>
-            <button class="toggle-btn" data-mode="per-q" onclick="setTimerMode(this)">Per Q</button>
           </div>
         </div>
       </div>
@@ -1302,17 +1301,11 @@ input[type="range"]::-webkit-slider-thumb {
       <div class="switch-row">
         <div class="switch-info">
           <h4>Negative Marking</h4>
-          <p>Deduct 1/3 mark for each wrong answer</p>
+          <p>Deduct 0.25 mark for each wrong answer (+1.00 for correct)</p>
         </div>
         <label class="switch"><input type="checkbox" id="neg-marking"><span class="switch-track"></span></label>
       </div>
-      <div class="switch-row">
-        <div class="switch-info">
-          <h4>Lock Answer on Next</h4>
-          <p>Cannot change answer after moving to next question</p>
-        </div>
-        <label class="switch"><input type="checkbox" id="lock-answer"><span class="switch-track"></span></label>
-      </div>
+
     </div>
   </div>
 
@@ -1327,9 +1320,8 @@ input[type="range"]::-webkit-slider-thumb {
     <div class="setup-section-body">
       <div class="toggle-group" id="practice-mode-group" style="margin-bottom:16px">
         <button class="toggle-btn active" data-pm="standard" onclick="setPracticeMode(this)">Standard</button>
-        <button class="toggle-btn" data-pm="weak-areas" onclick="setPracticeMode(this)">Weak Areas</button>
         <button class="toggle-btn" data-pm="wrong-qs" onclick="setPracticeMode(this)">Wrong Qs</button>
-        <button class="toggle-btn" data-pm="mock" onclick="setPracticeMode(this)">Mock Exam</button>
+        <button class="toggle-btn" data-pm="drill" onclick="setPracticeMode(this)">⚡ Drill</button>
       </div>
       <p id="mode-desc" class="text-sm" style="color:var(--text2)">Standard quiz with your configured settings.</p>
     </div>
@@ -1457,15 +1449,12 @@ input[type="range"]::-webkit-slider-thumb {
     <button class="result-tab active" onclick="switchResultTab('overview', this)">📊 Overview</button>
     <button class="result-tab" onclick="switchResultTab('breakdown', this)">📂 Breakdown</button>
     <button class="result-tab" onclick="switchResultTab('mistakes', this)">❌ Mistakes</button>
-    <button class="result-tab" onclick="switchResultTab('weak', this)">🧠 Weak Areas</button>
   </div>
   <div id="tab-overview" class="result-panel active"></div>
   <div id="tab-breakdown" class="result-panel"></div>
   <div id="tab-mistakes" class="result-panel"></div>
-  <div id="tab-weak" class="result-panel"></div>
   <div class="result-actions">
     <button class="ctrl-btn" onclick="startReview()">🔍 Review All</button>
-    <button class="ctrl-btn" onclick="practiceWeak()">🎯 Practice Weak Areas</button>
     <button class="ctrl-btn primary" onclick="goHome()">↩ New Quiz</button>
   </div>
 </div>
@@ -1499,11 +1488,10 @@ const STATE = {
   selectedSubcats: new Set(['ALL']),
   selectedTags: new Set(['ALL']),
   questionCount: 10,
-  timerMode: 'none',      // none | overall | per-q
+  timerMode: 'none',      // none | overall
   timerMinutes: 30,
   questionOrder: 'random',
   negativeMarking: false,
-  lockAnswer: false,
   difficultyMix: 'balanced',
   practiceMode: 'standard',
 
@@ -1515,8 +1503,6 @@ const STATE = {
   startTime: null,
   elapsed: 0,
   timerInterval: null,
-  perQTimer: null,
-  perQRemaining: 0,
   quizConfig: {},
 
   // History
@@ -1565,7 +1551,6 @@ function goHome() {
 
 function clearTimers() {
   clearInterval(STATE.timerInterval);
-  clearTimeout(STATE.perQTimer);
   STATE.timerInterval = null;
 }
 
@@ -1587,15 +1572,36 @@ function formatTime(seconds) {
 }
 
 // Extract month from filename like ca_oct25_1.json
+// Handles: jan,feb,mar,apr/april,may,jun/june,jul/july,aug,sep/sept,oct,nov,dec + year suffix
 function extractMonthFromFilename(filename) {
   const name = filename.toLowerCase().replace('.json', '');
-  const months = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
-  for (const m of months) {
-    if (name.includes(m)) {
-      // Try to get year too
-      const yearMatch = name.match(new RegExp(m + '(\\d{2})'));
-      if (yearMatch) return `${m}${yearMatch[1]}`;
-      return m;
+
+  // Map of patterns -> canonical 3-letter key
+  // Order matters: longer variants first to avoid partial matches (e.g. "april" before "apr")
+  const patterns = [
+    { re: /april(\d{2})?/, key: 'apr' },
+    { re: /july(\d{2})?/,  key: 'jul' },
+    { re: /june(\d{2})?/,  key: 'jun' },
+    { re: /sept(\d{2})?/,  key: 'sep' },
+    { re: /jan(\d{2})?/,   key: 'jan' },
+    { re: /feb(\d{2})?/,   key: 'feb' },
+    { re: /mar(\d{2})?/,   key: 'mar' },
+    { re: /apr(\d{2})?/,   key: 'apr' },
+    { re: /may(\d{2})?/,   key: 'may' },
+    { re: /jun(\d{2})?/,   key: 'jun' },
+    { re: /jul(\d{2})?/,   key: 'jul' },
+    { re: /aug(\d{2})?/,   key: 'aug' },
+    { re: /sep(\d{2})?/,   key: 'sep' },
+    { re: /oct(\d{2})?/,   key: 'oct' },
+    { re: /nov(\d{2})?/,   key: 'nov' },
+    { re: /dec(\d{2})?/,   key: 'dec' },
+  ];
+
+  for (const { re, key } of patterns) {
+    const m = name.match(re);
+    if (m) {
+      const year = m[1] || '';
+      return key + year;
     }
   }
   return null;
@@ -1995,22 +2001,14 @@ function toggleSection(id) {
 // QUIZ SETTINGS
 // ============================================================
 function setTimerMode(btn) {
-  document.querySelectorAll('#sec-settings .toggle-group:first-of-type .toggle-btn').forEach(b => b.classList.remove('active'));
-  // Actually we have multiple toggle groups, so use the button's group
   btn.closest('.toggle-group').querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   STATE.timerMode = btn.dataset.mode;
   const timerConfig = $('timer-config');
   timerConfig.style.display = STATE.timerMode === 'none' ? 'none' : 'grid';
-  if (STATE.timerMode === 'per-q') {
-    $('timer-val-label').textContent = '(seconds per question)';
-    $('timer-minutes').value = 60;
-    $('timer-minutes').placeholder = 'Seconds';
-  } else {
-    $('timer-val-label').textContent = '(minutes)';
-    $('timer-minutes').value = 30;
-    $('timer-minutes').placeholder = 'Minutes';
-  }
+  $('timer-val-label').textContent = '(minutes)';
+  $('timer-minutes').value = 30;
+  $('timer-minutes').placeholder = 'Minutes';
   updateSummaries();
 }
 
@@ -2023,9 +2021,8 @@ function setOrder(btn) {
 
 const modDescs = {
   'standard': 'Standard quiz with your configured settings.',
-  'weak-areas': 'Focus on categories where accuracy < 60% from past quizzes.',
   'wrong-qs': 'Reattempt questions you answered incorrectly before.',
-  'mock': 'Full exam simulation: 200 questions, 120 min, negative marking.',
+  'drill':    '⚡ Drill Mode: Answer is revealed instantly after each selection, along with the rationale. Great for rapid learning.',
 };
 
 function setPracticeMode(btn) {
@@ -2050,7 +2047,6 @@ function setupEventListeners() {
   $('q-count-custom').addEventListener('input', updateStartButton);
   $('timer-minutes').addEventListener('input', () => { STATE.timerMinutes = parseInt($('timer-minutes').value) || 30; });
   $('neg-marking').addEventListener('change', e => { STATE.negativeMarking = e.target.checked; });
-  $('lock-answer').addEventListener('change', e => { STATE.lockAnswer = e.target.checked; });
   $('diff-mix').addEventListener('change', e => { STATE.difficultyMix = e.target.value; });
 
   // File upload
@@ -2140,19 +2136,9 @@ function startQuiz() {
   if (!qs.length) return;
 
   // Handle special practice modes
-  if (STATE.practiceMode === 'weak-areas') {
-    qs = filterWeakAreaQuestions(qs);
-    if (!qs.length) { showToast('No weak areas found. Take more quizzes first!'); return; }
-  } else if (STATE.practiceMode === 'wrong-qs') {
+  if (STATE.practiceMode === 'wrong-qs') {
     qs = filterWrongQuestions(qs);
     if (!qs.length) { showToast('No previous wrong questions found!'); return; }
-  } else if (STATE.practiceMode === 'mock') {
-    // Mock exam settings override
-    $('neg-marking').checked = true;
-    STATE.negativeMarking = true;
-    STATE.timerMode = 'overall';
-    STATE.timerMinutes = 120;
-    qs = qs; // use all
   }
 
   // Apply difficulty mix
@@ -2175,7 +2161,7 @@ function startQuiz() {
     timerMode: STATE.timerMode,
     timerMinutes: parseInt($('timer-minutes').value) || 30,
     negativeMarking: STATE.negativeMarking,
-    lockAnswer: STATE.lockAnswer,
+    drillMode: STATE.practiceMode === 'drill',
   };
 
   showScreen('quiz');
@@ -2184,31 +2170,10 @@ function startQuiz() {
   startTimer();
 }
 
-function filterWeakAreaQuestions(qs) {
-  const weakCats = getWeakCategories();
-  if (!weakCats.length) return [];
-  return qs.filter(q => weakCats.includes(q.category) || weakCats.includes(q.sub_category));
-}
-
 function filterWrongQuestions(qs) {
   const wrongIds = getWrongQuestionIds();
   if (!wrongIds.size) return [];
   return qs.filter(q => wrongIds.has(q.question?.slice(0,60)));
-}
-
-function getWeakCategories() {
-  // From history, find cats with < 60% accuracy
-  const catStats = {};
-  STATE.history.forEach(h => {
-    h.breakdown?.forEach(b => {
-      if (!catStats[b.cat]) catStats[b.cat] = { correct: 0, total: 0 };
-      catStats[b.cat].correct += b.correct;
-      catStats[b.cat].total += b.total;
-    });
-  });
-  return Object.entries(catStats)
-    .filter(([, v]) => v.total > 0 && v.correct / v.total < 0.6)
-    .map(([k]) => k);
 }
 
 function getWrongQuestionIds() {
@@ -2236,22 +2201,36 @@ function renderQuestion() {
   $('q-text').textContent = q.question;
 
   const answered = STATE.answers[STATE.current];
-  const locked = STATE.quizConfig.lockAnswer && answered !== undefined;
+  const isDrill = STATE.quizConfig.drillMode;
+  // In drill mode, once answered we show correct/wrong immediately
+  const showAnswers = isDrill && answered !== undefined;
   const optKeys = Object.keys(q.options || {});
   
   $('q-options').innerHTML = optKeys.map(key => {
     let cls = '';
-    if (answered === key) cls = 'selected';
+    if (showAnswers) {
+      if (key === q.answer) cls = 'correct';
+      else if (key === answered && answered !== q.answer) cls = 'wrong';
+    } else if (answered === key) {
+      cls = 'selected';
+    }
+    // In drill mode after answering, options are not clickable
+    const clickHandler = (isDrill && answered !== undefined) ? '' : `onclick="selectOption('${key}')"`;
     return `
-      <div class="option-item ${cls}" data-key="${key}" onclick="selectOption('${key}')">
+      <div class="option-item ${cls}" data-key="${key}" ${clickHandler} style="${isDrill && answered !== undefined ? 'cursor:default' : ''}">
         <div class="option-key">${key}</div>
         <div class="option-text">${q.options[key]}</div>
       </div>
     `;
   }).join('');
 
-  // Hide rationale during quiz
-  $('q-rationale').classList.add('hidden');
+  // Show rationale in drill mode after answering, otherwise hide
+  if (showAnswers) {
+    $('rationale-text').textContent = q.rationale || 'No explanation provided.';
+    $('q-rationale').classList.remove('hidden');
+  } else {
+    $('q-rationale').classList.add('hidden');
+  }
 
   // Navigation
   $('q-current').textContent = STATE.current + 1;
@@ -2266,28 +2245,37 @@ function renderQuestion() {
 
   updatePalette();
   updateSidebarStats();
-  
-  // Per-Q timer
-  if (STATE.quizConfig.timerMode === 'per-q') {
-    clearTimeout(STATE.perQTimer);
-    STATE.perQRemaining = STATE.quizConfig.timerMinutes;
-    updatePerQTimer();
+}
+
+// Drill mode: show a brief toast indicating correct/wrong
+function showDrillFeedback() {
+  const q = STATE.questions[STATE.current];
+  const answered = STATE.answers[STATE.current];
+  if (answered === q.answer) {
+    showToast('✅ Correct! +1.00', 1500);
+  } else {
+    const penalty = STATE.quizConfig.negativeMarking ? ' (−0.25)' : '';
+    showToast(`❌ Wrong${penalty} — See explanation below`, 1800);
   }
 }
 
 function selectOption(key) {
   const answered = STATE.answers[STATE.current];
-  if (STATE.quizConfig.lockAnswer && answered !== undefined) {
-    showToast('Answer locked — cannot change');
-    return;
-  }
+  // In drill mode, once answered, cannot change
+  if (STATE.quizConfig.drillMode && answered !== undefined) return;
   STATE.answers[STATE.current] = key;
-  renderQuestion();
+  if (STATE.quizConfig.drillMode) {
+    renderQuestion();
+    showDrillFeedback();
+  } else {
+    renderQuestion();
+  }
 }
 
 function clearResponse() {
-  if (STATE.quizConfig.lockAnswer && STATE.answers[STATE.current] !== undefined) {
-    showToast('Answer locked — cannot clear');
+  // Cannot clear in drill mode (answer locked after selection)
+  if (STATE.quizConfig.drillMode && STATE.answers[STATE.current] !== undefined) {
+    showToast('Answer locked in Drill Mode');
     return;
   }
   delete STATE.answers[STATE.current];
@@ -2394,17 +2382,6 @@ function startTimer() {
   }
 }
 
-function updatePerQTimer() {
-  const display = $('timer-display');
-  display.textContent = `⏱ ${STATE.perQRemaining}s`;
-  display.classList.toggle('warning', STATE.perQRemaining <= 10);
-  if (STATE.perQRemaining <= 0) {
-    navigate(1); return;
-  }
-  STATE.perQRemaining--;
-  STATE.perQTimer = setTimeout(updatePerQTimer, 1000);
-}
-
 // ============================================================
 // SUBMIT
 // ============================================================
@@ -2468,7 +2445,7 @@ function computeAndShowResults(elapsed) {
       tagMap[tag].correct++;
     } else {
       wrong++;
-      if (neg) score -= 1/3;
+      if (neg) score -= 0.25;
       wrongIds.push(q.question?.slice(0,60));
     }
   });
@@ -2585,29 +2562,6 @@ function showResultScreen({ correct, wrong, skipped, score, pct, elapsed, catMap
     }).join('');
   }
 
-  // Weak areas tab
-  const weakItems = Object.entries({...catMap,...subMap})
-    .filter(([,v]) => v.total >= 2)
-    .map(([name, v]) => ({ name, acc: Math.round(v.correct/v.total*100), ...v }))
-    .sort((a,b) => a.acc - b.acc)
-    .slice(0, 8);
-  
-  if (!weakItems.length) {
-    $('tab-weak').innerHTML = `<div class="empty-state"><div class="empty-icon">💪</div><h3>No weak areas</h3><p>Answer more questions to identify patterns.</p></div>`;
-  } else {
-    $('tab-weak').innerHTML = `<h3 style="font-family:var(--font-display);margin-bottom:16px;font-size:1rem">🧠 Areas Needing Attention</h3>` +
-      weakItems.map((item, idx) => `
-        <div class="weak-area-item">
-          <div class="weak-rank">${idx+1}</div>
-          <div class="weak-info">
-            <h4>${item.name}</h4>
-            <p>${item.correct}/${item.total} correct · ${item.total - item.correct} wrong</p>
-          </div>
-          <div class="weak-acc">${item.acc}%</div>
-        </div>
-      `).join('');
-  }
-
   // Store for review
   STATE.reviewQuestions = qs;
   STATE.reviewAnswers = answers;
@@ -2630,14 +2584,6 @@ function startReview() {
   STATE.reviewIndex = 0;
   showScreen('review');
   renderReviewQuestion();
-}
-
-function practiceWeak() {
-  // Set practice mode to weak areas and go home
-  STATE.practiceMode = 'weak-areas';
-  showToast('Weak areas mode set — configure & start!');
-  goHome();
-  document.querySelector('[data-pm="weak-areas"]')?.click();
 }
 
 function renderReviewQuestion() {
