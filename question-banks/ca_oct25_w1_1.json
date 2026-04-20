@@ -1,0 +1,752 @@
+[
+  {
+    "category": "National",
+    "sub_category": "Events & Summits",
+    "question": "Consider the following statements regarding the 4th edition of World Food India (2025):\n\n1. The event was organized by the Ministry of Food Processing Industries (MoFPI) in New Delhi.\n2. The total investment secured during the event was Rs. 1.02 Lakh Crore.\n3. Reliance Consumer Products Limited (RCPL) and Coca-Cola were the major contributors in terms of investment secured.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2 and 3",
+      "E": "None of the above"
+    },
+    "answer": "D",
+    "rationale": "According to the PDF on page 4, the 4th edition of World Food India was organized by MoFPI in New Delhi. The total investment secured was Rs. 1.02 Lakh Crore. Major contributors listed are Reliance Consumer Products Limited (RCPL) at Rs. 40,000 Cr and Coca-Cola at Rs. 25,760 Cr.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Agriculture & MSP",
+    "question": "The Union Cabinet has approved the Minimum Support Prices (MSP) for 6 rabi crops for the 2026-27 marketing season. Arrange the following crops in descending order of their absolute MSP (Rs. per quintal):\n\n1. Lentil (Masur)\n2. Safflower\n3. Gram\n4. Wheat\n\nSelect the correct code:",
+    "options": {
+      "A": "1-2-3-4",
+      "B": "1-2-4-3",
+      "C": "2-1-3-4",
+      "D": "2-1-4-3",
+      "E": "1-3-2-4"
+    },
+    "answer": "A",
+    "rationale": "From the data provided on page 9, the MSP rates for 2026-27 are: Lentil (Masur) = Rs. 7000; Safflower = Rs. 6540; Gram = Rs. 5875; Wheat = Rs. 2585. Therefore, the descending order is 1 (7000) > 2 (6540) > 3 (5875) > 4 (2585).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Bilateral Agreements",
+    "question": "Match the following details regarding the cross-border rail connectivity between India and Bhutan listed on page 6:\n\nColumn I (Route):\n1. Kokrajhar (Assam) – Gelephu (Bhutan)\n2. Banarhat (West Bengal) – Samtse (Bhutan)\n\nColumn II (Attributes):\nA. Length: 69 km\nB. Length: 20 km\nC. Cost: Rs. 3,456 crore\nD. Cost: Rs. 577 crore\n\nSelect the correct match code:",
+    "options": {
+      "A": "1-A-C, 2-B-D",
+      "B": "1-A-D, 2-B-C",
+      "C": "1-B-C, 2-A-D",
+      "D": "1-B-D, 2-A-C",
+      "E": "1-A-B, 2-C-D"
+    },
+    "answer": "A",
+    "rationale": "Based on page 6, Route 1 (Kokrajhar-Gelephu) has a length of 69 km and a cost of Rs. 3,456 crore (Matches A and C). Route 2 (Banarhat-Samtse) has a length of 20 km and a cost of Rs. 577 crore (Matches B and D).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Small Savings Schemes",
+    "question": "As per the interest rates announced for Small Savings Schemes (SSS) for Q3 of FY 2025-26, which of the following statements is/are INCORRECT?\n\n1. Public Provident Fund (PPF) and Kisan Vikas Patra (KVP) offer the exact same interest rate of 7.5%.\n2. Senior Citizen Savings Scheme (SCSS) and Sukanya Samriddhi Yojana (SSY) both offer an interest rate of 8.2%.\n3. The Kisan Vikas Patra (KVP) will mature in 115 months.\n\nSelect the correct code:",
+    "options": {
+      "A": "1 only",
+      "B": "2 only",
+      "C": "3 only",
+      "D": "1 and 3 only",
+      "E": "None of the above"
+    },
+    "answer": "A",
+    "rationale": "On page 7, the table shows PPF interest rate is 7.1% and KVP is 7.5%. Hence statement 1 is incorrect. Statement 2 is correct (both offer 8.2%). Statement 3 is correct (KVP matures in 115 months).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Schemes & Initiatives",
+    "question": "Fill in the blank with the appropriate data point from page 5:\nUnder the Swachh Shehar Jodi (SSJ) Initiative launched by Manohar Lal Khattar, each city pair will develop joint action plans. Nearly ____ MoUs were signed simultaneously at the launch, commencing a 100-day pilot phase.",
+    "options": {
+      "A": "100",
+      "B": "200",
+      "C": "300",
+      "D": "400",
+      "E": "500"
+    },
+    "answer": "C",
+    "rationale": "On page 5, under point 2 regarding the SSJ Initiative, it states: 'MoUs: Nearly 300 MoUs signed simultaneously at launch, commencing a 100-day pilot phase.'",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Government Schemes",
+    "question": "The 'Mission for Aatmanirbharta in Pulses' was approved on October 01, 2025. Consider the target specifics:\n\nAssertion (A): The scheme targets to increase the production of pulses to 35 MT by 2030-31.\nReason (R): The existing production of pulses stands at 24.2 MT in 2024-25.\n\nWhich of the following is correct?",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "B",
+    "rationale": "Both statements are correct facts mentioned on page 10 under point 11 ('Target: Increase in production of pulses from 24.2 MT (2024-25) to 35 MT (2030-31)'). However, the fact that current production is 24.2 MT is simply a base year fact and not a functional cause/reason for target determination of 35 MT.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Security & Defense",
+    "question": "In September 2025, the Indian Navy signed a contract worth Rs.47 Crore with EyeROV for Underwater Drones (UWROVs). These vehicles are also known as:",
+    "options": {
+      "A": "Unmanned Water Rescue Operations Vehicles",
+      "B": "Underwater Remotely Operated Vehicles",
+      "C": "Underwater Reconnaissance Oceanographic Vehicles",
+      "D": "Universal Water Robotic Oceanic Vehicles",
+      "E": "None of the above"
+    },
+    "answer": "B",
+    "rationale": "On page 9, point 9 specifies that UWROVs stand for 'Underwater Remotely Operated Vehicles'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Governance",
+    "question": "The Union Public Service Commission (UPSC) entered its 100th Year of Service on October 1, 2025. Which of the following details about its Centenary Logo is correct?",
+    "options": {
+      "A": "The feature is a wave motif signifying a progressive journey.",
+      "B": "The final '0' in '100' contains the UPSC logo.",
+      "C": "Both A and B",
+      "D": "Neither A nor B",
+      "E": "The logo contains a motif of Ashoka Pillar."
+    },
+    "answer": "C",
+    "rationale": "According to page 11, under Point 13, the Centenary Logo features 'A wave motif signifying a progressive, enduring, and adaptive journey over a century' and 'The final '0' in '100' contains the UPSC logo'. Thus both A and B are correct.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Economy & Industry",
+    "question": "Consider the following statements regarding the critical mineral recycling guidelines issued on page 19 by the Ministry of Mines (MoM):\n\n1. The financial outlay allocation for E-waste Recycling is Rs. 650 crore.\n2. Small Recyclers and Start-ups are classified as Group B with revenue criteria below Rs. 200 crore.\n3. The scheme application window is open from 2nd October 2025 to 1st April 2026.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 only",
+      "B": "1 and 2 only",
+      "C": "3 only",
+      "D": "1, 2 and 3",
+      "E": "None of the above"
+    },
+    "answer": "D",
+    "rationale": "Page 19 details that the scheme window is from 2nd October 2025 to 1st April 2026. E-waste recycling allocation is Rs. 650 crore. Small recyclers/startups are categorized in Group B with revenue criteria below Rs 200 crore.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "RBI Guidelines",
+    "question": "The Reserve Bank of India has revised the inoperative accounts and unclaimed deposits settlement scheme. Match the payout percentages to banks based on the aging category of the account listed on page 24:\n\n1. Up to 4 years\n2. 4-8 years\n3. 8-10 years\n4. 10 years and above\n\nA. 6% of amount\nB. 7% of amount\nC. 5% of amount\nD. 7.5% of amount\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-A, 3-B, 4-D",
+      "B": "1-A, 2-C, 3-B, 4-D",
+      "C": "1-C, 2-B, 3-A, 4-D",
+      "D": "1-D, 2-A, 3-B, 4-C",
+      "E": "1-B, 2-C, 3-A, 4-D"
+    },
+    "answer": "A",
+    "rationale": "Based on page 24: Up to 4 years = 5% (C); 4-8 years = 6% (A); 8-10 years = 7% (B); 10 years and above = 7.5% (D). This matches option A.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Transport & Infrastructure",
+    "question": "Consider the cabinet approvals regarding the Kalibor-Numaligarh NH-715 project in Assam on page 13:\n\n1. The length of the project is 85.675 km.\n2. It includes a 34.45 km Elevated Corridor for unrestricted wildlife movement between Kaziranga National Park and Karbi-Anglong Hills.\n3. The mode of execution is EPC (Engineering, Procurement, and Construction).\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2 and 3",
+      "E": "None of the above"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct as per page 13 point 18, sub-point 2: Length is 85.675 km, cost Rs. 6,957 Crore, mode is EPC, and it includes a 34.45 km elevated corridor in Kaziranga National Park.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Awards & Recognitions",
+    "question": "According to the M3M Hurun India Rich List 2025, which Bollywood actor debuted in the billionaire category with a net worth of Rs. 12,490 crore?",
+    "options": {
+      "A": "Amitabh Bachchan",
+      "B": "Aamir Khan",
+      "C": "Shah Rukh Khan",
+      "D": "Salman Khan",
+      "E": "Akshay Kumar"
+    },
+    "answer": "C",
+    "rationale": "Page 30 highlights the M3M Hurun India Rich List and mentions that 'Shah Rukh Khan, Bollywood Actor and founder of Red Chillies Entertainment, debuted in the billionaire category with a net worth of Rs 12,490 crore.'",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Education & Skill Development",
+    "question": "Under the PM-SETU (Pradhan Mantri Skilling and Employability Transformation through Upgraded ITIs) scheme detailed on page 14, what is the approved financial outlay?",
+    "options": {
+      "A": "Rs. 40,000 crore",
+      "B": "Rs. 50,000 crore",
+      "C": "Rs. 60,000 crore",
+      "D": "Rs. 62,000 crore",
+      "E": "Rs. 65,000 crore"
+    },
+    "answer": "C",
+    "rationale": "Page 14 point 23 indicates the PM-SETU outlay is Rs. 60,000 crore to transform ITIs into advanced skilling centers.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Index & Reports",
+    "question": "The 71st edition of the 'Crime in India 2023' report was released. Arrange the following top 5 safest Indian cities in ascending order of their crime rate per lakh population, as per the data on page 18:\n\n1. Hyderabad\n2. Kolkata\n3. Pune\n4. Mumbai\n5. Coimbatore\n\nSelect the correct answer code:",
+    "options": {
+      "A": "2-1-3-4-5",
+      "B": "2-3-1-4-5",
+      "C": "1-2-3-4-5",
+      "D": "2-1-4-3-5",
+      "E": "None of the above"
+    },
+    "answer": "A",
+    "rationale": "Crime rates per lakh population (lower is safer): Kolkata (83.9) < Hyderabad (332.3) < Pune (337.1) < Mumbai (355.4) < Coimbatore (409.7). The correct ascending order is 2-1-3-4-5.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "RBI Monetary Policy",
+    "question": "Consider the following statements from the highlights of the 4th Bi-monthly MPC Meeting for FY 2025-26 listed on page 27:\n\n1. The reverse repo rate is set at 3.35%.\n2. The GDP growth projection for FY26 is 6.8%.\n3. The CPI Inflation projection for FY26 is 2.6%.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2 and 3",
+      "E": "None of the above"
+    },
+    "answer": "D",
+    "rationale": "All points are correct. On page 27, the table and section show Reverse Repo Rate = 3.35%, GDP Growth for FY26 = 6.8%, and CPI Inflation for FY26 = 2.6%.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "MoUs & Agreements",
+    "question": "DPIIT signed an MoU with Thermo Fisher Scientific on page 11 to bolster India's biotech startup ecosystem. Through which platform will this initiative be delivered to support top startups?",
+    "options": {
+      "A": "BioHealth",
+      "B": "BioVerse",
+      "C": "StartBio",
+      "D": "ThermoBio",
+      "E": "BioLaunch"
+    },
+    "answer": "B",
+    "rationale": "On page 11, point 14 states: 'Initiative: BioVerse Platform to support 100 top biotech startups and train 400 additional startups.'",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Agreements & Treaties",
+    "question": "The India-EFTA Trade and Economic Partnership Agreement (TEPA) came into force on October 1, 2025. Which of the following is NOT an EFTA member country?",
+    "options": {
+      "A": "Switzerland",
+      "B": "Norway",
+      "C": "Iceland",
+      "D": "Liechtenstein",
+      "E": "Sweden"
+    },
+    "answer": "E",
+    "rationale": "Page 15 under point 24 states that EFTA Members are Switzerland, Norway, Iceland, and Liechtenstein. Sweden is not a member of EFTA (it is an EU member).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Awards & Honors",
+    "question": "Match the 2025 Nobel Laureates in Physiology or Medicine with the organization that awarded them, as per the PDF on page 31:\n\n1. Nobel Assembly at Karolinska Institute, Sweden\n2. Alfred Nobel\n\nA. Origin of funds for the prize\nB. Organization declaring the winners\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-A",
+      "B": "1-A, 2-B",
+      "C": "Both are A",
+      "D": "Both are B",
+      "E": "None of the above"
+    },
+    "answer": "A",
+    "rationale": "Page 31 outlines that the winners were declared by the Nobel Assembly at Karolinska Institute (Matches B) and the prize is funded by Alfred Nobel (Matches A).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Aviation",
+    "question": "Assertion (A): The government of Maharashtra renamed the Navi Mumbai International Airport after DB Patil.\nReason (R): This proposal received approval from PM Narendra Modi and clearance from the State Legislature.\n\nWhich of the following is correct?",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "A",
+    "rationale": "According to page 13 and 50, the Government of Maharashtra renamed the airport to Loknete Dinkar Balu (DB) Patil Navi Mumbai International Airport. This was done after receiving approval from PM Modi and both houses of the legislature, establishing the cause-effect relationship between the clearance and the successful renaming.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Sports",
+    "question": "At the 15th World Para Archery Championships 2025 held in South Korea, arrange the top 4 participating countries in descending order of their total medals won, based on the tally on page 35:\n\n1. China\n2. India\n3. Turkey\n4. Mongolia\n\nSelect the correct answer code:",
+    "options": {
+      "A": "1-2-3-4",
+      "B": "1-2-4-3",
+      "C": "2-1-3-4",
+      "D": "1-3-2-4",
+      "E": "2-1-4-3"
+    },
+    "answer": "A",
+    "rationale": "From page 35, the total medals are: China (12), India (5), Turkey (4), Mongolia (2). Hence, the descending order is 1-2-3-4.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Schemes & Guidelines",
+    "question": "Consider the SVAMITVA Scheme mentioned on page 19 and 20. What is the full form of SVAMITVA?",
+    "options": {
+      "A": "Survey of Villages And Mapping with Improvised Technology in Village Areas",
+      "B": "System for Village Assets Mapping and Improvised Technology in Vernacular Areas",
+      "C": "Satellite View of All Mapped Inhabited Tracts in Village Areas",
+      "D": "Sovereign Village Administration and Mapping Initiative for True Value Assessment",
+      "E": "None of the above"
+    },
+    "answer": "A",
+    "rationale": "On page 20, SVAMITVA is expanded as 'Survey of Villages And Mapping with Improvised Technology in Village Areas'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Reports",
+    "question": "As per the 'Crime in India 2023' report on page 18, which city became the most unsafe city in India with a crime rate of 3,192.4?",
+    "options": {
+      "A": "New Delhi",
+      "B": "Patna",
+      "C": "Kochi",
+      "D": "Jaipur",
+      "E": "Surat"
+    },
+    "answer": "C",
+    "rationale": "On page 18, in the 'Top 5 Most Unsafe Indian Cities in 2023' table, Kochi (Kerala) is ranked 1st with a crime rate of 3,192.4.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Disaster Management",
+    "question": "Point 26 on page 16 discusses budget approvals for mitigation, recovery, and reconstruction projects. Fill in the blanks:\nAdvance Fund Releases (FY26) for State Disaster Response Fund (SDRF) involved Rs. _____ released to 27 states, and National Disaster Response Fund (NDRF) involved Rs. _____ released to 12 states.",
+    "options": {
+      "A": "Rs. 13,578.80 crore; Rs. 2,024.04 crore",
+      "B": "Rs. 12,000 crore; Rs. 3,000 crore",
+      "C": "Rs. 10,000 crore; Rs. 2,500 crore",
+      "D": "Rs. 15,000.50 crore; Rs. 1,000 crore",
+      "E": "Rs. 11,440 crore; Rs. 1,500 crore"
+    },
+    "answer": "A",
+    "rationale": "According to page 16, under Point 26, the specific amounts are: SDRF Rs. 13,578.80 crore and NDRF Rs. 2,024.04 crore.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "RBI Guidelines",
+    "question": "Based on page 23, Revision for Small Business Loans (SBL) will now allow banks to adjust the credit risk spread on small business loans once every ____ years.",
+    "options": {
+      "A": "One",
+      "B": "Two",
+      "C": "Three",
+      "D": "Four",
+      "E": "Five"
+    },
+    "answer": "C",
+    "rationale": "Page 23 states under point 2 (Revision for Small Business Loans): 'Banks can now adjust the credit risk spread on small business loans once every three years.'",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Aviation",
+    "question": "A landmark deal was signed between TASL and Airbus to manufacture which helicopter in Vemagal, Karnataka?",
+    "options": {
+      "A": "Airbus H135",
+      "B": "Airbus H145",
+      "C": "Airbus H125",
+      "D": "Airbus H160",
+      "E": "Airbus H225"
+    },
+    "answer": "C",
+    "rationale": "Page 12 point 15 states that the manufacturing in Vemagal, Karnataka is for the 'Airbus H125 helicopter'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "MoUs & Agreements",
+    "question": "Consider the digital monitoring initiatives of DDWS and MoJS with BISAG-N on page 21. What portal/platform will be developed through this MoA?",
+    "options": {
+      "A": "GIS-integrated, decision-support platform for JJM and SBM(G)",
+      "B": "Real-time water mapping for PM-KUSUM",
+      "C": "Satellite tracker for Swachh Bharat Urban",
+      "D": "Groundwater monitoring app for Jal Shakti",
+      "E": "None of the above"
+    },
+    "answer": "A",
+    "rationale": "Page 21 point 39 states that MoA signed to strengthen digital monitoring and 'To develop GIS-integrated, decision-support platform for JJM and SBM(G) portals'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Sports",
+    "question": "The 12th World Para Athletics Championships 2025 was hosted in Delhi. Arrange the top 3 countries in the final medal tally by ranking as given on page 36:\n\n1. China\n2. Brazil\n3. Neutral Paralympic Athletes\n\nSelect the correct descending rank order (Rank 1 to 3):",
+    "options": {
+      "A": "2-1-3",
+      "B": "1-2-3",
+      "C": "3-2-1",
+      "D": "2-3-1",
+      "E": "1-3-2"
+    },
+    "answer": "A",
+    "rationale": "From page 36, the ranks are: Brazil (Rank 1, 44 medals), China (Rank 2, 52 medals), and Neutral Paralympic Athletes (Ranked below China with 46 medals). Therefore, the correct ranking order from 1 to 3 is 2 (Brazil), 1 (China), 3 (Neutral).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Important Days",
+    "question": "Match the following Days with their specified dates from page 38-39:\n\n1. International Translation Day\n2. World Heart Day\n3. World Rivers Day\n\nA. September 29, 2025\nB. September 30, 2025\nC. September 28, 2025\n\nSelect the correct code:",
+    "options": {
+      "A": "1-B, 2-A, 3-C",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-B, 2-C, 3-A",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-C, 2-B, 3-A"
+    },
+    "answer": "A",
+    "rationale": "Based on pages 38-39: International Translation Day is September 30 (1-B); World Heart Day is September 29 (2-A); World Rivers Day is September 28 (3-C).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "States",
+    "question": "Which of the following points regarding the E-Bond system launched in Maharashtra on page 43 is INCORRECT?",
+    "options": {
+      "A": "It is for high-value import and export transactions.",
+      "B": "Maharashtra is the 10th state in India to adopt this system.",
+      "C": "It features e-signatures and real-time verification.",
+      "D": "It replaces Rs. 500 paper stamp bonds digitally.",
+      "E": "All are correct."
+    },
+    "answer": "B",
+    "rationale": "On page 43, under Point 1 of State News, it mentions: 'Significance: 16th state in India to adopt', not 10th. All other options match the facts given.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Maritime MoUs",
+    "question": "On page 8, under Point 7 regarding Maritime MoUs, which lighthouse museum is cited as the world's tallest lighthouse museum (77 metres)?",
+    "options": {
+      "A": "Tuticorin Lighthouse Museum",
+      "B": "NMHC Lighthouse Museum, Lothal",
+      "C": "Paradip Lighthouse Museum",
+      "D": "Visakhapatnam Lighthouse Museum",
+      "E": "None of the above"
+    },
+    "answer": "B",
+    "rationale": "Page 8 states under the 'Lighthouse Museum' heading: 'Feature: World's tallest lighthouse museum (77 metres)' and 'Location: National Maritime Heritage Complex (NMHC), Lothal, Gujarat'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "RBI Monetary Policy",
+    "question": "Fill in the blank from page 27:\nIn the 4th Bi-monthly MPC meeting for FY 2025-26, the RBI Projected CPI Inflation for Q2 & Q3 of FY26 to be ____ each.",
+    "options": {
+      "A": "1.8%",
+      "B": "2.6%",
+      "C": "4.0%",
+      "D": "4.5%",
+      "E": "5.5%"
+    },
+    "answer": "A",
+    "rationale": "According to the Quarterly Breakdown of CPI Inflation on page 27, Q2 & Q3 FY26 projection is '1.8% each'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Sports",
+    "question": "Match the shooters who won gold medals at the ISSF Junior World Cup 2025 with their corresponding events based on page 36:\n\n1. Jonathan Gavin Antony\n2. Ojasvi Thakur\n3. Himanshu\n\nA. Men's 10m Air Rifle (Individual)\nB. Men's 10m Air Pistol (Individual)\nC. Women's 10m Air Rifle (Individual)\n\nSelect the correct code:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "From page 36: Jonathan Gavin Antony won Men's 10m Air Pistol (Individual) -> 1-B; Ojasvi Thakur won Women's 10m Air Rifle (Individual) -> 2-C; Himanshu won Men's 10m Air Rifle (Individual) -> 3-A.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "RBI Penalties",
+    "question": "On page 26, the RBI imposed penalties on two financial entities. Fill in the blank:\nAmerican Express Banking Corporation was penalized Rs. 31.80 lakhs because it failed to _____.",
+    "options": {
+      "A": "obtain PAN/e-document",
+      "B": "return credit balances",
+      "C": "verify digital transactions",
+      "D": "implement auto-pay features",
+      "E": "secure customer data"
+    },
+    "answer": "B",
+    "rationale": "Page 26 explicitly states the reason for the Rs. 31.80 lakh penalty on American Express: 'Reason: Failed to return credit balances.'",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Science & Tech",
+    "question": "Consider the information about ICGS Akshar on page 34. Which statements are correct?\n\n1. It is the 2nd of 8 Adamya-class FPVs.\n2. It has a maximum speed of 27 knots.\n3. It was developed by Goa Shipyard Limited.\n\nSelect the correct option:",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2 and 3",
+      "E": "None of the above"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. Page 34 notes: '2nd of 8th Adamya-class FPVs', 'Maximum speed of 27 knots', and 'indigenously designed and built by Goa Shipyard Limited'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Awards & Recognitions",
+    "question": "The Hurun Rich List 2025 details the top 5 richest Indians. Arrange them in descending order of their total wealth (INR Crore):\n\n1. Cyrus S. Poonawalla & family\n2. Gautam Adani & family\n3. Roshani Nadar & family\n4. Mukesh Ambani & family\n5. Kumar Mangalam Birla & family\n\nSelect the correct code:",
+    "options": {
+      "A": "4-2-3-1-5",
+      "B": "4-2-1-3-5",
+      "C": "4-3-2-1-5",
+      "D": "2-4-3-1-5",
+      "E": "4-2-5-3-1"
+    },
+    "answer": "A",
+    "rationale": "Page 30 lists total wealth: Mukesh Ambani (9,55,410) > Gautam Adani (8,14,720) > Roshani Nadar (2,84,120) > Cyrus Poonawalla (2,46,460) > Kumar Mangalam Birla (2,32,850). The order is 4-2-3-1-5.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Awards & Recognitions",
+    "question": "According to page 31, the 2025 Nobel Prize in Physiology or Medicine was awarded for discoveries concerning what?",
+    "options": {
+      "A": "Discoveries of regulatory T Cells",
+      "B": "Peripheral immune tolerance that prevents the immune system from harming the body",
+      "C": "Discoveries of the FOXP3 Gene in humans",
+      "D": "Both A and B",
+      "E": "All of the above"
+    },
+    "answer": "B",
+    "rationale": "Page 31 explicitly states the prize was awarded 'For their discoveries concerning peripheral immune tolerance that prevents the immune system from harming the body.' While Tregs and FOXP3 are noted under 'Key Discoveries', the main award rationale directly cited is option B.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "RBI Guidelines",
+    "question": "Assertion (A): Lenders can now provide working capital to any borrower who uses gold as a raw material.\nReason (R): The RBI expanded lending against gold and silver rules beyond financing only the purchase of gold/silver as working capital for jewellers.\n\nWhich of the following is correct?",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "A",
+    "rationale": "Based on page 23 under Point 3 (Expansion of Lending Against Gold & Silver), the reason correctly explains the shift from the old rule (financing jewellers) to the new rule (any borrower using gold as a raw material).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Disaster Management",
+    "question": "Match the following elements of the tri-party MoU on railway disaster relief listed on page 20:\n\n1. RPF\n2. NDRF\n3. IRIDM\n\nA. Railway Protection Force\nB. National Disaster Response Force\nC. Indian Railway Institute of Disaster Management\n\nSelect the correct code:",
+    "options": {
+      "A": "1-A, 2-B, 3-C",
+      "B": "1-B, 2-A, 3-C",
+      "C": "1-A, 2-C, 3-B",
+      "D": "1-C, 2-B, 3-A",
+      "E": "None of the above"
+    },
+    "answer": "A",
+    "rationale": "All listed directly match their standard names as given on page 20.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Important Days",
+    "question": "Which of the following is NOT correct regarding the International Day of Older Persons 2025 as stated on page 39?",
+    "options": {
+      "A": "Date: October 1, 2025.",
+      "B": "Theme: Older Persons Driving Local and Global Action: Our Aspirations, Our Well-Being, and Our Rights.",
+      "C": "1st Observance was in 1991.",
+      "D": "People aged above 60 is expected to reach 5 billion by 2050.",
+      "E": "None of the above."
+    },
+    "answer": "D",
+    "rationale": "On page 39, it states: 'People aged above 60 is expected to reach 2.1 bn by 2050,' not 5 billion. All other options are correct.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Co-Lending Agreements",
+    "question": "On page 23, Bank of Baroda entered into a co-lending agreement with which NBFC to provide credit on gold for agricultural activities?",
+    "options": {
+      "A": "Muthoot Finance",
+      "B": "Manappuram Finance",
+      "C": "IIFL",
+      "D": "Bajaj Finserv",
+      "E": "Tata Capital"
+    },
+    "answer": "C",
+    "rationale": "Page 23 point 2 specifies the co-lending agreement is between 'Bank of Baroda + IIFL NBFC'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Sports",
+    "question": "Arrange the following top 4 events in Formula 1 Singapore Grand Prix in descending order of the final driver rankings given on page 37:\n\n1. George Russell\n2. Lando Norris\n3. Max Verstappen\n\nSelect the correct code:",
+    "options": {
+      "A": "1-3-2",
+      "B": "1-2-3",
+      "C": "2-3-1",
+      "D": "3-2-1",
+      "E": "3-1-2"
+    },
+    "answer": "A",
+    "rationale": "Page 37 lists the rankings as: Rank 1 - George Russell, Rank 2 - Max Verstappen, Rank 3 - Lando Norris. Thus descending order of ranking position is 1, 3, 2.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Science & Tech",
+    "question": "Fill in the blanks from page 34 regarding the tripartite MoU for the AMCA Program:\nThe MoU was signed between Goodluck India, BATL, and Axiscades Technologies. Goodluck India secured an industrial license under the Indian Arms Act, 1959, to manufacture medium-calibre artillery shells of ____ size.",
+    "options": {
+      "A": "105–155 mm",
+      "B": "100-120 mm",
+      "C": "155-200 mm",
+      "D": "80-100 mm",
+      "E": "None of the above"
+    },
+    "answer": "A",
+    "rationale": "Page 34 states: 'To manufacture medium-calibre artillery shells (105–155 mm).'",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Schemes & Projects",
+    "question": "Consider the details on the 'NaMo Semiconductor Laboratory' on page 21. Which statement is INCORRECT?",
+    "options": {
+      "A": "Approved by Union Minister Ashwini Vaishnaw.",
+      "B": "It will be established at IIT Bhubaneswar.",
+      "C": "Funding Source is the MPLAD Scheme.",
+      "D": "Total Allocation is Rs. 10.50 crore.",
+      "E": "All are correct."
+    },
+    "answer": "D",
+    "rationale": "Page 21 states that the total allocation is 'Rs. 4.95 crore', not Rs. 10.50 crore. All other statements are correct.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Bancassurance",
+    "question": "According to page 26, which bank entered into a bancassurance tie-up with LIC to offer LIC's suite of life insurance products?",
+    "options": {
+      "A": "RBL Bank",
+      "B": "Axis Bank",
+      "C": "HDFC Bank",
+      "D": "Equitas SFB",
+      "E": "Federal Bank"
+    },
+    "answer": "A",
+    "rationale": "Point 10 on page 26 notes: 'RBL Bank + LIC Bancassurance Tie-Up'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Aviation",
+    "question": "Assertion (A): The 42nd ICAO Assembly Session was held in Montreal, Canada.\nReason (R): India was re-elected to Part II of the ICAO Council for the 2025-2028 term.\n\nWhich of the following is correct?",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "B",
+    "rationale": "Both statements are correct according to page 22. However, the re-election of India is a separate outcome of the session and not the cause or reason for the venue of the session being in Montreal.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Important Days",
+    "question": "Match the 2025 themes with their corresponding awareness days from page 40-42:\n\n1. Embracing Collaboration More Than Ever\n2. Recasting teaching as a collaborative profession\n3. Unique and United\n\nA. World Teacher's Day\nB. World Cerebral Palsy Day\nC. International Coffee Day\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-C, 3-B",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "A",
+    "rationale": "From pages 40-42: International Coffee Day theme is 'Embracing Collaboration More Than Ever' (1-C); World Teacher's Day theme is 'Recasting teaching as a collaborative profession' (2-A); World Cerebral Palsy Day theme is 'Unique and United' (3-B).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Pulses Mission",
+    "question": "Under the Mission for Aatmanirbharta in Pulses on page 10, NAFED and NCCF will undertake 100% procurement of which pulses in participating states for 4 years?",
+    "options": {
+      "A": "Tur, Urad, and Masur",
+      "B": "Chana, Moong, and Masur",
+      "C": "Tur, Moong, and Urad",
+      "D": "Lentil, Gram, and Wheat",
+      "E": "None of the above"
+    },
+    "answer": "A",
+    "rationale": "Page 10 points out: 'Agencies: NAFED & NCCF to undertake 100% procurement of Tur, Urad, Masur in participating states for 4 years.'",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "States in News",
+    "question": "In October 2025, which district in Chhattisgarh became India's 1st Child Marriage-Free district, as stated on page 14?",
+    "options": {
+      "A": "Bastar",
+      "B": "Balod",
+      "C": "Raipur",
+      "D": "Durg",
+      "E": "Bilaspur"
+    },
+    "answer": "B",
+    "rationale": "Point 21 on page 14 explicitly states: 'Chhattisgarh's Balod District became India's 1st Child Marriage-Free district'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Events & Summits",
+    "question": "Consider the highlights of the World Social Security Forum (WSSF) 2025 on page 22:\n\n1. The forum was held in Kuala Lumpur, Malaysia.\n2. India won the ISSA Award 2025 for Outstanding Achievement in Social Security.\n3. The theme was 'Shaping Social Security for a World in Transition'.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2 and 3",
+      "E": "None of the above"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct as per page 22. WSSF 2025 was held in Kuala Lumpur, with the specified theme, and India won the noted ISSA award.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "RBI Monetary Policy",
+    "question": "The newly introduced risk-based premium model for deposit insurance by RBI on page 27 replaces what current system?",
+    "options": {
+      "A": "Tiered rate model",
+      "B": "Flat rate of 12 paise per Rs.100 of deposits",
+      "C": "Dynamic slab rate model",
+      "D": "Fixed rate of 10 paise per Rs.1000 of deposits",
+      "E": "None of the above"
+    },
+    "answer": "B",
+    "rationale": "Page 27 under 'Key Regulatory & Developmental Measures' states that the current system being replaced is a 'Flat rate of 12 paise per Rs.100 of deposits' by the new 'Risk-Based Premium (RBP) model'.",
+    "tag": "Current-Transient"
+  }
+]

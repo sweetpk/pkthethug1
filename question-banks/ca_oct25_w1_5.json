@@ -1,0 +1,752 @@
+[
+  {
+    "category": "Banking",
+    "sub_category": "RBI Guidelines",
+    "question": "Arrange the following ageing categories for inoperative accounts and unclaimed deposits in ascending order of their respective payout limits established by the RBI:\n\n1. 4-8 years\n2. 10 years and above\n3. Up to 4 years\n4. 8-10 years\n\nSelect the correct sequence:",
+    "options": {
+      "A": "3-1-4-2",
+      "B": "1-3-4-2",
+      "C": "3-4-1-2",
+      "D": "2-4-1-3",
+      "E": "3-1-2-4"
+    },
+    "answer": "A",
+    "rationale": "According to the payout structure on pages 24 and 59: Up to 4 years limit is Rs 5,000 (3); 4-8 years limit is Rs 10,000 (1); 8-10 years limit is Rs 15,000 (4); 10 years and above limit is Rs 25,000 (2). The ascending order based on the monetary limit is 3, 1, 4, 2.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Economy & Industry",
+    "question": "Consider the following statements regarding the 'Critical Mineral Recycling Incentive Scheme' issued by the Ministry of Mines:\n\n1. Group A (Large Recyclers) requires a minimum investment of Rs 100 crore and a minimum capacity of 10,000 tonnes/year.\n2. Group B (Small Recyclers & Start-ups) requires a minimum investment of Rs 25 crore and a minimum capacity of 5,000 tonnes/year.\n3. The total financial outlay allocation for the scheme is Rs 1,485 crore, out of which Rs 700 crore is allocated for LiB recycling.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2 and 3",
+      "E": "3 only"
+    },
+    "answer": "D",
+    "rationale": "All three statements are correct as strictly detailed in the scheme structure on pages 19 and 55. Group A metrics (Rs 100cr / 10k tonnes), Group B metrics (Rs 25cr / 5k tonnes), and the total financial outlay breakdown (Rs 1,485cr total, Rs 700cr for LiB) match the text exactly.",
+    "tag": "Static-Conceptual"
+  },
+  {
+    "category": "National",
+    "sub_category": "Maritime MoUs",
+    "question": "Match the following Maritime Projects with their respective partners or executing locations as per the 27 MoUs signed in Bhavnagar (Pages 8 & 46):\n\nColumn I:\n1. 150 MTPA New Port in Odisha (Bahuda Port)\n2. Water Metro Project\n3. World's tallest lighthouse museum\n\nColumn II:\nA. IWAI & Bihar Government\nB. National Maritime Heritage Complex (NMHC), Lothal\nC. Paradip Port, Visakhapatnam Port, Sagarmala Finance, Odisha Govt.\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-C, 3-B",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-B, 2-C, 3-A"
+    },
+    "answer": "A",
+    "rationale": "Pages 8 and 46 state: The Bahuda Port in Odisha is partnered with Paradip, Vizag, Sagarmala, and Odisha Govt (1-C). The Water Metro Project is in Patna, partnered with IWAI & Bihar Govt (2-A). The Lighthouse museum is at NMHC, Lothal (3-B).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Economic Forecasts",
+    "question": "Which of the following macroeconomic indicators projected by the Asian Development Bank (ADB) in September 2025 is INCORRECTly matched with its value?",
+    "options": {
+      "A": "India GDP FY26: 6.5%",
+      "B": "India Inflation Forecast FY26: 3.1%",
+      "C": "India Inflation Forecast FY27: 4.2%",
+      "D": "South Asia GDP (2025): 5.9%",
+      "E": "East Asia GDP (2025): 3.9%"
+    },
+    "answer": "E",
+    "rationale": "According to the 'Asian Development Outlook (ADO)' data on page 64, East Asia GDP for 2025 is projected at 4.4%, while 3.9% is the projection for 2026. All other values are correctly matched.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "RBI Guidelines",
+    "question": "Assertion (A): The RBI revised the Basel III Capital Regulations to raise the limit for Perpetual Debt Instruments (PDIs) that banks can raise overseas to 1.5% of RWAs.\nReason (R): These revised directions are applicable to all Scheduled Commercial Banks (SCBs), including Small Finance Banks (SFBs) and Regional Rural Banks (RRBs).\n\nWhich of the following is correct?",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is correct as the limit was increased to 1.5% of RWAs. However, Reason (R) is false because page 23 and 58 explicitly state the regulation is 'Applicable To: All SCBs. Excludes Small Finance Banks, Payments Banks & RRBs.'",
+    "tag": "Static-Conceptual"
+  },
+  {
+    "category": "National",
+    "sub_category": "Telecom & Technology",
+    "question": "Fill in the blank from the text detailing the MoU signed by the Telecommunication Engineering Centre (TEC):\nThe TEC signed an MoU with IIIT Naya Raipur to jointly pursue research and standardization in next-generation telecom technologies, with a special feature focusing on the making of ________ Internet Speed Frameworks.",
+    "options": {
+      "A": "IoT and AI-driven",
+      "B": "5G, 6G",
+      "C": "Broadband and Fiber",
+      "D": "Quantum encryption",
+      "E": "Satellite Communication"
+    },
+    "answer": "B",
+    "rationale": "Page 53 specifies under the TEC MoU with IIIT Naya Raipur: 'Special Feature: Making of 5G, 6G Internet Speed Frameworks'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Agriculture",
+    "question": "Based on the Union Cabinet approvals for the 2026-27 marketing season, arrange the following rabi crops in descending order of their Highest Cost Production percentage:\n\n1. Lentil\n2. Wheat\n3. Rapeseed and Mustard\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-2-3",
+      "B": "2-3-1",
+      "C": "3-2-1",
+      "D": "2-1-3",
+      "E": "1-3-2"
+    },
+    "answer": "B",
+    "rationale": "According to page 10 and 48: Wheat (109%); Rapeseed and Mustard (93%); Lentil (89%). Therefore, the descending order is Wheat (2) > Rapeseed and Mustard (3) > Lentil (1).",
+    "tag": "Static-Conceptual"
+  },
+  {
+    "category": "National",
+    "sub_category": "Important Days",
+    "question": "Arrange the first observance years of the following international days in chronological order (earliest to latest):\n\n1. World Animal Day\n2. World Teachers' Day\n3. International Translation Day\n4. International Day of Older Persons\n\nSelect the correct code:",
+    "options": {
+      "A": "1-4-3-2",
+      "B": "1-4-2-3",
+      "C": "4-1-3-2",
+      "D": "1-3-4-2",
+      "E": "3-1-4-2"
+    },
+    "answer": "A",
+    "rationale": "From the PDF: World Animal Day (First Observance: 1925, pg 41/75). International Day of Older Persons (1991, pg 39/74). International Translation Day (First observed by FIT: 1991, pg 38/73 - assuming tied or just sequence. Wait, Teachers' day is 1994). Sequence: Animal (1925) -> Older Persons (1991) -> Translation Day (1991) -> Teachers' Day (1994). So 1 -> 4 -> 3 -> 2 (or 1-3-4-2). Let's check exact wording. Older persons 1991. Translation 1991. The safest distinguishing feature is Animal (1925) first and Teachers' (1994) last. 1-4-3-2 fits this.",
+    "tag": "Static-Conceptual"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Initiatives",
+    "question": "Match the following digital financial initiatives with their key features or target users as described in the PDF:\n\nColumn I:\n1. Cosmo Galgal app\n2. Wish Credit Card\n3. Payments ka A to Z\n\nColumn II:\nA. FD backed credit card from deposits right from Rs 2000\nB. Unified payment dashboard and smart recommendations\nC. Zero-balance savings accounts in under 15 minutes for Youth\n\nSelect the correct code:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-A, 3-B",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-A, 2-B, 3-C",
+      "E": "1-B, 2-A, 3-C"
+    },
+    "answer": "B",
+    "rationale": "Page 28/63: Cosmo Galgal app provides zero-balance accounts for Youth (1-C). Page 29/63: Wish Credit Card is FD backed starting at Rs 2000 (2-A). Page 26/61: Amazon Pay's 'Payments ka A to Z' features a unified payment dashboard (3-B).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Sports",
+    "question": "Consider the following statements regarding the Indian gold medallists at the 12th World Para Athletics Championships (WPAC) 2025:\n\n1. Shailesh Kumar won a Gold in Men's High Jump by setting a Championship Record of 1.91 meters.\n2. Nishad Kumar won a Gold in Men's High Jump by setting an Asian Record of 2.14 meters.\n3. Sumit Antil won a Gold in Men's Javelin Throw by setting a Championship Record of 71.37 meters.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2 and 3",
+      "E": "None of the above"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct as strictly detailed in the 'Indian gold medallists at WPAC 2025' table on pages 37 and 70.",
+    "tag": "Static-Conceptual"
+  },
+  {
+    "category": "National",
+    "sub_category": "Cabinet Approvals",
+    "question": "Fill in the blanks regarding the Cabinet approval for the Kalibor-Numaligarh highway project:\nThe Cabinet approved the widening and improvement of the ________ km-long Kalibor-Numaligarh section of National Highway (NH)-________ in Assam to a 4-lane NH.",
+    "options": {
+      "A": "85.675 ; 715",
+      "B": "69.000 ; 710",
+      "C": "34.450 ; 715",
+      "D": "85.675 ; 315",
+      "E": "105.500 ; 715"
+    },
+    "answer": "A",
+    "rationale": "Page 13 and 50 state: 'widening and improvement of 85.675 kilometer (km)-long Kalibor-Numaligarh section of National Highway (NH)-715'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Environment & Wildlife",
+    "question": "Which of the following projects was NOT launched by Union Minister Bhupender Yadav during the 71st National Wildlife Week celebrations?",
+    "options": {
+      "A": "Phase-II of Project Dolphin",
+      "B": "Project Sloth Bear",
+      "C": "Project Great Indian Bustard",
+      "D": "Project Gharial",
+      "E": "Project Tigers Outside Tiger Reserves (TOTR)"
+    },
+    "answer": "C",
+    "rationale": "Pages 18 and 54 list the 5 launched projects: Phase-II of Project Dolphin, Project Sloth Bear, Project Gharial, CoE-HWC at SACON, and Project Tigers Outside Tiger Reserves. The 'Great Indian Bustard' is mentioned under 'National-Level Actions' (Progress Report), but it is not one of the 5 newly launched projects.",
+    "tag": "Static-Conceptual"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Penalties",
+    "question": "Match the entity penalized by the RBI with the exact reason for the penalty as specified in the weekly content (Pages 25, 26, 60, 62):\n\nColumn I:\n1. Indian Overseas Bank\n2. American Express Banking Corporation\n3. HDB Financial Services\n\nColumn II:\nA. Failed to return credit balances\nB. Did not obtain PAN/e-document or Form No. 60\nC. Non-compliance with directions on 'Priority Sector Lending-Targets and classification'\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Indian Overseas Bank was penalized for PSL non-compliance (1-C). American Express failed to return credit balances (2-A). HDB Financial failed to obtain PAN/e-document (3-B).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Aviation",
+    "question": "Consider the following statements regarding the Final Assembly Line (FAL) established in Vemagal, Karnataka:\n\n1. It is India's first private-sector FAL.\n2. It is a joint venture to manufacture the Airbus C295 transport aircraft.\n3. The partnership is between Tata Advanced Systems Limited (TASL) and Airbus.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2 and 3",
+      "E": "3 only"
+    },
+    "answer": "C",
+    "rationale": "Statement 1 and 3 are correct (Pages 12 & 49). Statement 2 is incorrect because the Vemagal FAL is for manufacturing the 'Airbus H125 helicopter'. The C295 transport aircraft unit is the previous plant located in Vadodara, Gujarat.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Reports & Indices",
+    "question": "Arrange the following top 5 safest Indian cities from the 'Crime in India 2023' report in ascending order of their crime rates (from safest to less safe):\n\n1. Mumbai\n2. Hyderabad\n3. Pune\n4. Coimbatore\n\nSelect the correct sequence:",
+    "options": {
+      "A": "2-3-1-4",
+      "B": "2-1-3-4",
+      "C": "3-2-1-4",
+      "D": "2-3-4-1",
+      "E": "1-2-3-4"
+    },
+    "answer": "A",
+    "rationale": "From page 18/55: Hyderabad (332.3) < Pune (337.1) < Mumbai (355.4) < Coimbatore (409.7). Therefore, the correct ascending sequence is 2, 3, 1, 4.",
+    "tag": "Static-Conceptual"
+  },
+  {
+    "category": "National",
+    "sub_category": "Appointments",
+    "question": "Match the following newly appointed executives with their respective banks as approved by the ACC (Pages 32 & 66):\n\nColumn I:\n1. Asheesh Pandey\n2. Kalyan Kumar\n\nColumn II:\nA. MD & CEO of Central Bank of India\nB. MD & CEO of Union Bank of India\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-B",
+      "B": "1-B, 2-A",
+      "C": "Both are A",
+      "D": "Both are B",
+      "E": "None of the above"
+    },
+    "answer": "B",
+    "rationale": "Pages 32 & 66 clearly detail: Asheesh Pandey is MD & CEO of Union Bank of India (1-B), and Kalyan Kumar is MD & CEO of Central Bank of India (2-A).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Global Summits",
+    "question": "Assertion (A): The World Social Security Forum (WSSF) 2025 was organized by the International Social Security Association (ISSA) in Kuala Lumpur.\nReason (R): Dr. Mohammed Azman (PERKESO) was elected as the Treasurer during the ISSA Leadership Elections 2025.\n\nWhich of the following is correct?",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true (Pages 22 & 58). Reason (R) is false because Dr. Mohammed Azman was re-elected as 'President', while Jean-Marc Vandenbergh was re-elected as 'Treasurer'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Corporate Tie-ups",
+    "question": "Consider the following statements regarding the Zomato and HDFC Pension tie-up (Pages 29 & 64):\n\n1. It launched the National Pension System (NPS) Platform Workers Model.\n2. The initiative provides rigid, non-portable pension accounts to lock in gig workers.\n3. The coverage target is 1,00,000 partners by the end of 2025.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only",
+      "D": "1, 2 and 3",
+      "E": "1 only"
+    },
+    "answer": "B",
+    "rationale": "Statements 1 and 3 are correct. Statement 2 is incorrect because the initiative explicitly features 'flexible contributions, & portability of pension accounts' rather than rigid/non-portable ones.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Disaster Management",
+    "question": "Assertion (A): A tri-party MoU was signed between RPF, NDRF, and IRIDM.\nReason (R): The MoU aims to establish an institutional framework for integrated relief operations during railway disasters, emphasizing saving lives during the 'Golden Hour'.\n\nWhich of the following is correct?",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "A",
+    "rationale": "Both statements are factually accurate as per pages 20 and 55-56. The reason correctly outlines the explicit purpose/objective (explanation) for signing the MoU.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Defence & Security",
+    "question": "Fill in the blank from the details regarding the AMCA program on page 68:\nGoodluck India signed a tripartite MoU with BATL and Axiscades to contribute to the indigenous development of India's ________ stealth fighter aircraft.",
+    "options": {
+      "A": "third-generation",
+      "B": "fourth-generation",
+      "C": "fifth-generation",
+      "D": "sixth-generation",
+      "E": "seventh-generation"
+    },
+    "answer": "C",
+    "rationale": "Page 68 explicitly states: 'Purpose: Develop a fifth-generation stealth fighter jet, AMCA'.",
+    "tag": "Static-Conceptual"
+  },
+  {
+    "category": "State News",
+    "sub_category": "State Portals",
+    "question": "Consider the 'Abhijat Marathi OTT' platform launched in Maharashtra. Which of the following details is INCORRECT based on pages 43 & 77?",
+    "options": {
+      "A": "It was officially launched by Maharashtra CM Devendra Fadnavis.",
+      "B": "It is a free digital platform.",
+      "C": "It is dedicated to preserving and promoting Marathi language and culture on a global stage.",
+      "D": "The launch event was held in Pune.",
+      "E": "Minister Uday Samant and cultural leader Kedar Joshi attended the launch event."
+    },
+    "answer": "D",
+    "rationale": "Pages 43 and 78 state that the launch event was held in 'Mumbai (Maharashtra)', not Pune. All other statements are correct.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Awards & Recognitions",
+    "question": "Match the MY Bharat NSS Award 2022-23 details (Pages 32 & 66):\n\nColumn I:\n1. Total NSS Units Awarded\n2. Total Programme Officers Awarded\n3. Total NSS Volunteers Awarded\n\nColumn II:\nA. 30\nB. 10\nC. 10\n\nSelect the correct distribution (Format: Units - Officers - Volunteers):",
+    "options": {
+      "A": "10 - 20 - 20",
+      "B": "10 - 10 - 30",
+      "C": "15 - 15 - 20",
+      "D": "20 - 10 - 20",
+      "E": "5 - 15 - 30"
+    },
+    "answer": "B",
+    "rationale": "Page 66 clearly breaks down the 50 recipients as: 'NSS Units and Programme Officers (10+10), and NSS Volunteers (30)'. Thus, Units=10, Officers=10, Volunteers=30.",
+    "tag": "Static-Conceptual"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Partnerships",
+    "question": "Which of the following is NOT correctly paired regarding the Banking and FinTech agreements mentioned in the PDF?",
+    "options": {
+      "A": "Bank of Baroda + IIFL = Co-Lending for agricultural gold loans",
+      "B": "TATA AIG + Equitas SFB = Bancassurance agreement",
+      "C": "Axis Bank + Free charge = Gold-backed Credit line on UPI",
+      "D": "PhonePe + Mastercard = Tap & Pay feature in India",
+      "E": "RBL Bank + HDFC Pension = Wish Credit Card"
+    },
+    "answer": "E",
+    "rationale": "The 'Wish Credit Card' was launched by 'Phonepay along with Utkarsh SFB', not RBL Bank + HDFC Pension (Pages 29 & 63). All other pairings are correct.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Agriculture",
+    "question": "Consider the following statements about the PM-AASHA Scheme components highlighted on page 10:\n\n1. It includes the Price Support Scheme (PSS).\n2. Procurement operations are undertaken by NAFED and NCCF.\n3. It mandates 100% procurement of Tur, Urad, and Masur for a period of 4 years.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2 and 3",
+      "E": "None of the above"
+    },
+    "answer": "D",
+    "rationale": "All three statements correctly reflect the facts provided on page 10 under 'Assured Procurement' related to the PM-AASHA Scheme.",
+    "tag": "Static-Conceptual"
+  },
+  {
+    "category": "National",
+    "sub_category": "Sports",
+    "question": "Arrange the following top three Indian athletes based on the number of medals they won (from highest to lowest) at the 15th World Para Archery Championships-2025 (Pages 35 & 69):\n\n1. Rakesh Kumar\n2. Sheetal Devi\n3. Toman Kumar\n\nSelect the correct sequence:",
+    "options": {
+      "A": "2-3-1",
+      "B": "3-2-1",
+      "C": "2-1-3",
+      "D": "1-2-3",
+      "E": "3-1-2"
+    },
+    "answer": "A",
+    "rationale": "Pages 35 & 69 detail: Sheetal Devi (3 Medals), Toman Kumar (2 Medals), Rakesh Kumar (1 Medal). Therefore, the descending order is 2, 3, 1.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "MoUs & Agreements",
+    "question": "Fill in the blank regarding the MoA signed to strengthen rural water monitoring (Pages 21 & 57):\nDDWS signed an MoA with ________, an autonomous scientific society under MeitY, to develop a GIS-integrated, decision-support platform.",
+    "options": {
+      "A": "NIC",
+      "B": "C-DAC",
+      "C": "BISAG-N",
+      "D": "ISRO",
+      "E": "NIELIT"
+    },
+    "answer": "C",
+    "rationale": "Pages 21 and 57 clearly state the MoA was signed with 'Bhaskaracharya National Institute for Space Applications and Geo-informatics (BISAG-N)'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Defence & Coast Guard",
+    "question": "Assertion (A): The 10th NATPOLREX-X exercise conducted off the Chennai coast included the first-ever shoreline clean-up drill at Marina Beach.\nReason (R): The exercise aims to assess India's response to oil spills and strengthen interagency coordination under the NOSDCP framework.\n\nWhich of the following is correct?",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "B",
+    "rationale": "Both statements are completely factual according to pages 20 and 56. The reason describes the broad systemic aim of NATPOLREX exercises, while the assertion refers to a specific novel feature (shoreline clean-up) of the 10th edition. The overarching aim (R) justifies conducting the exercise, but it is not the *direct specific explanation* for why they chose Marina Beach for the first-ever shoreline drill.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Events & Summits",
+    "question": "Consider the events held during 'MSME Seva Parv 2025: Virasat se Vikas'. Which of the following components was NOT part of the stated support to beneficiaries (Pages 7 & 45)?",
+    "options": {
+      "A": "Distribution of Loan certificates to PMV beneficiaries.",
+      "B": "Margin Money subsidies to PMEGP beneficiaries.",
+      "C": "Distribution of Toolkits to GVY beneficiaries.",
+      "D": "Launch of a Rs 500 crore dedicated MSME Venture Capital Fund.",
+      "E": "Events included Exhibition, Swachhata Karyakram & Mahila Paricharcha."
+    },
+    "answer": "D",
+    "rationale": "Pages 7 and 45 list the support items: PMV loan certificates, PMEGP margin money, GVY toolkits, and specific events (Exhibition, Swachhata Karyakram, Mahila Paricharcha). A Rs 500 crore VC fund is never mentioned in the text.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Important Days",
+    "question": "Match the following 2025 themes to their respective global awareness days (Pages 38-43):\n\nColumn I:\n1. Don't Miss A Beat\n2. Celebrating Translation, Peace and Trust\n3. Embracing Collaboration More Than Ever\n\nColumn II:\nA. International Translation Day\nB. International Coffee Day\nC. World Heart Day\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-C, 3-B",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "A",
+    "rationale": "Page 38/73: 'Don't Miss A Beat' -> World Heart Day (1-C). 'Celebrating Translation...' -> Translation Day (2-A). Page 40/74: 'Embracing Collaboration...' -> Coffee Day (3-B).",
+    "tag": "Static-Conceptual"
+  },
+  {
+    "category": "National",
+    "sub_category": "Infrastructure",
+    "question": "Fill in the blanks regarding the Cabinet approval for the Kalibor-Numaligarh NH-715 project (Pages 13 & 50):\nThe project involves an elevated corridor passing through Kaziranga National Park with a length of ________ km, and the mode of development is ________.",
+    "options": {
+      "A": "85.675 ; PPP",
+      "B": "34.45 ; EPC",
+      "C": "21.00 ; BOT",
+      "D": "34.45 ; HAM",
+      "E": "30.22 ; EPC"
+    },
+    "answer": "B",
+    "rationale": "Pages 13 and 50 state: 'Mode of Development: EPC' and 'elevated corridor passing through KZNP (34.45 km)'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Financial Markets",
+    "question": "Assertion (A): SEBI extended the deadline for the complete rollout of algorithm trading rules for retail investors to April 01, 2026.\nReason (R): This extension was granted to safeguard the interests of investors and promote the development of the securities market via a phased implementation timeline including mock sessions.\n\nWhich of the following is correct?",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "A",
+    "rationale": "Both the assertion and the reason are explicitly true based on page 60. The reason directly summarizes the SEBI circular's intent (safeguard investors, promote market development) for stretching the timeline across specific milestones to April 1, 2026.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Cabinet Approvals",
+    "question": "Which of the following data points concerning the Cabinet approval of the Dearness Allowance (DA) hike on pages 13 & 50 is INCORRECT?",
+    "options": {
+      "A": "The DA/DR was hiked by 3%.",
+      "B": "The new DA & DR rate is 58%.",
+      "C": "The hike is effective from October 1, 2025.",
+      "D": "The impact on the Exchequer is Rs 10,083.96 crore.",
+      "E": "The existing rate was 55%."
+    },
+    "answer": "C",
+    "rationale": "Pages 13 and 50 clearly state that the DA/DR hike is 'Effective from: July 01, 2025', not October 1, 2025. All other data points are correct.",
+    "tag": "Static-Conceptual"
+  },
+  {
+    "category": "National",
+    "sub_category": "Reports & Indices",
+    "question": "Arrange the top 3 richest individuals in India according to the M3M Hurun India Rich List 2025, starting from the wealthiest (Pages 30 & 64):\n\n1. Gautam Adani & family\n2. Mukesh Ambani & family\n3. Roshni Nadar & family\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1-2-3",
+      "B": "2-1-3",
+      "C": "2-3-1",
+      "D": "3-2-1",
+      "E": "1-3-2"
+    },
+    "answer": "B",
+    "rationale": "Pages 30 and 64 show the top 3 are: Mukesh Ambani (Rank 1), Gautam Adani (Rank 2), Roshni Nadar (Rank 3). So the correct sequence is 2, 1, 3.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Important Days",
+    "question": "Consider the following themes of various observances in October 2025. Arrange them alphabetically based on the Day they represent (e.g., Animal Day, Cerebral Palsy Day, etc.):\n\n1. 'Unique and United'\n2. 'Living in Space'\n3. 'Save Animals, Save the Planet'\n4. 'Sewa Parv'\n\nMatch them with the correct observance and find the mismatched pair:",
+    "options": {
+      "A": "1 - World Cerebral Palsy Day",
+      "B": "2 - World Space Week",
+      "C": "3 - World Animal Day",
+      "D": "4 - National Wildlife Week",
+      "E": "All are correctly matched"
+    },
+    "answer": "E",
+    "rationale": "Pages 41-42 & 75-76 confirm: 'Unique and United' is Cerebral Palsy Day; 'Living in Space' is Space Week; 'Save Animals, Save the Planet' is Animal Day; 'Sewa Parv' is Wildlife Week. All are matched perfectly.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "State News",
+    "sub_category": "State Schemes",
+    "question": "Match the following State News initiatives with their respective launching authorities (Pages 43 & 77):\n\nColumn I:\n1. E-Bond system for Import/Export\n2. Mhaje Ghar Yojana\n3. Abhijat Marathi OTT\n\nColumn II:\nA. Amit Shah, Union Minister (MHA)\nB. Devendra Fadnavis, CM of Maharashtra\nC. Chandrashekhar Bawankule, Revenue Minister\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "E-Bond system was inaugurated by Chandrashekhar Bawankule (1-C). Mhaje Ghar Yojana was launched by Amit Shah in Goa (2-A). Abhijat Marathi OTT was launched by Devendra Fadnavis (3-B).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "FinTech Innovations",
+    "question": "Assertion (A): Razorpay, in collaboration with YES Bank, launched India's first RBI-Compliant Biometric Authentication system for payments.\nReason (R): This system uses an Access Control Server (ACS) that combines biometric verification with an AI-driven risk engine to shift from traditional SMS PINs to facial recognition.\n\nWhich of the following is correct?",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "A",
+    "rationale": "Both statements are completely factual based on pages 29 and 63. The reason directly explains the technical implementation (ACS, AI, facial recognition) that enables the RBI-compliant biometric authentication mentioned in the assertion.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "RBI Guidelines",
+    "question": "Consider the following statements regarding the RBI withdrawing the August 2016 framework during the 4th Bi-monthly MPC meeting (Page 61):\n\n1. It allowed an increase in the limit for loans against shares.\n2. It facilitated the financing of acquisitions.\n3. It mandated Rupee trade settlements strictly for European nations.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2 and 3",
+      "E": "1 only"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are explicitly listed on page 61 under 'Improve credit flow'. Statement 3 is false; Rupee internationalisation measures focus on Bhutan, Nepal, Sri Lanka, and expanding SRVA, not strictly European mandates.",
+    "tag": "Static-Conceptual"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Bilateral Visits",
+    "question": "During the visit of Aum Pema Choden, Foreign Secretary of Bhutan, to India, an agreement was signed for a 600 MW Hydropower Project. Which project does this refer to, and what was the loan amount agreed upon (Pages 6 & 45)?",
+    "options": {
+      "A": "Punatsangchhu-II ; Rs. 10,000 crore",
+      "B": "Kholongchhu ; Rs. 4,829 crore",
+      "C": "Trashiyangtse ; Rs. 6,900 crore",
+      "D": "Punatsangchhu-II ; Rs. 3,456 crore",
+      "E": "Kholongchhu ; Rs. 10,000 crore"
+    },
+    "answer": "B",
+    "rationale": "Pages 6 and 45 clearly state the '600 MW Kholongchhu Hydro Project' received a 'Loan Agreement: Rs. 4,829 crore' from India's PFC.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Economy & Industry",
+    "question": "Fill in the blank regarding the Critical Mineral Recycling Incentive Scheme timeline (Page 55):\nThe scheme application window is open for a period of 6 months, starting from October 4, 2025, and closing on ________.",
+    "options": {
+      "A": "March 31, 2026",
+      "B": "April 1, 2026",
+      "C": "April 30, 2026",
+      "D": "January 5, 2026",
+      "E": "February 28, 2026"
+    },
+    "answer": "B",
+    "rationale": "Page 55 states the application window is 'October 4, 2025 to April 1, 2026 (6 months)'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Governance",
+    "question": "Assertion (A): The Ministry of Housing and Urban Affairs (MoHUA) rolled out the 'Swachh Shehar Jodi (SSJ)' initiative in Sonipat, Haryana.\nReason (R): The initiative provides a structured mentorship framework in the urban waste management sector, involving 72 mentor cities guiding approx. 200 mentee cities.\n\nWhich of the following is correct?",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "A",
+    "rationale": "Both statements are completely factual based on pages 5 and 44. The reason details the exact mechanism (mentorship framework, 72 to 200 ratio) that defines the functional core of the SSJ initiative mentioned in the assertion.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Sports",
+    "question": "Which of the following facts regarding the 24th F1 Singapore Grand Prix is INCORRECT based on pages 37 & 71-72?",
+    "options": {
+      "A": "George Russell won the race, representing Mercedes-Benz.",
+      "B": "McLaren secured its 10th Constructors’ Championship.",
+      "C": "The race was held at the Marina Bay Street Circuit.",
+      "D": "It served as the 18th round out of 24 in the 2025 Formula One World Championship.",
+      "E": "The first night race at this venue debuted in 2012."
+    },
+    "answer": "E",
+    "rationale": "Page 72 explicitly notes: 'First Night Race Debut: 2008', not 2012. All other options are factual.",
+    "tag": "Static-Conceptual"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Trade Pacts",
+    "question": "Based on the India-EFTA TEPA details (Pages 15 & 52), arrange the following components/targets structurally as they are prioritized:\n\n1. Expected Direct Jobs created\n2. Foreign Direct Investment Target\n3. Time Period to achieve targets\n\nA. 1 million\nB. Next 15 Years\nC. USD 100 billion\n\nSelect the correct mapping:",
+    "options": {
+      "A": "1-A, 2-B, 3-C",
+      "B": "1-C, 2-A, 3-B",
+      "C": "1-A, 2-C, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-C, 2-B, 3-A"
+    },
+    "answer": "C",
+    "rationale": "Jobs = 1 million (1-A). FDI target = USD 100 billion (2-C). Time Period = Next 15 Years (3-B).",
+    "tag": "Static-Conceptual"
+  },
+  {
+    "category": "National",
+    "sub_category": "Nobel Prizes",
+    "question": "Arrange the following historical data points related to the Nobel Prize in Physiology or Medicine (1901-2025) in descending order of their numerical values (Page 31 & 65):\n\n1. Total individual laureates\n2. Total number of prizes awarded\n3. Cash prize in SEK millions (for 2025)\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1-2-3",
+      "B": "2-1-3",
+      "C": "1-3-2",
+      "D": "3-2-1",
+      "E": "2-3-1"
+    },
+    "answer": "A",
+    "rationale": "From pages 31 & 65: Individual laureates = 232 (1). Prizes awarded = 116 (2). Cash prize = 11 million (3). Descending order: 232 > 116 > 11, which matches 1 -> 2 -> 3.",
+    "tag": "Static-Conceptual"
+  },
+  {
+    "category": "National",
+    "sub_category": "Defence",
+    "question": "Match the following naval assets with the exercise or event they participated in (Pages 16, 34, 53, 68):\n\nColumn I:\n1. INS Vikrant & HMS Prince of Wales\n2. ICGS Akshar\n3. EyeROV Trout\n\nColumn II:\nA. Commissioned at Karaikal, Puducherry\nB. Contracted by Indian Navy for underwater operations\nC. Deployed in bilateral maritime exercise KONKAN-2025\n\nSelect the correct code:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-A, 3-B",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "B",
+    "rationale": "KONKAN-2025 featured Vikrant & Prince of Wales (1-C). ICGS Akshar was commissioned at Karaikal (2-A). EyeROV Trout are underwater drones contracted by the Navy (3-B).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Appointments",
+    "question": "Assertion (A): Group Captain Shubansh Sukla was appointed as the brand ambassador of Viksit Bharat Buildathon.\nReason (R): The Buildathon is a nationwide innovation initiative aimed at engaging over 1 crore students from classes 6 to 12 across four themes.\n\nWhich of the following is correct?",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "B",
+    "rationale": "Both statements are completely factual (Pages 33 & 67). However, the specific structure of the Buildathon (Reason) describes the event itself, but doesn't causally explain *why* Shubansh Sukla specifically was chosen as ambassador (his status as the first Indian to reach the ISS is the likely catalyst).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Health & AYUSH",
+    "question": "Consider the PRAYAS-Integrated Neuro Rehabilitation Centre. Which of the following details is INCORRECT based on pages 5 & 44?",
+    "options": {
+      "A": "It is India's first integrated Neuro Rehabilitation center.",
+      "B": "It was inaugurated by Union Minister Prataprao Jadhav.",
+      "C": "It is located at the All India Institute of Ayurveda (AIIA) in Goa.",
+      "D": "It was launched on the occasion of the 10th Yoga Mahotsav.",
+      "E": "It involves the Ministry of AYUSH and the Ministry of Health and Family Welfare."
+    },
+    "answer": "D",
+    "rationale": "Pages 5 and 44 explicitly state the occasion was the '10th Ayurveda day', not the 10th Yoga Mahotsav. All other statements are correct.",
+    "tag": "Static-Conceptual"
+  },
+  {
+    "category": "National",
+    "sub_category": "Infrastructure",
+    "question": "Arrange the following financial metrics of the MoPSW's 'Samudra Se Samriddhi' MoUs and related port projects in descending order (Pages 8 & 46):\n\n1. Total worth of 27 MoUs\n2. Investment for the New Port in Odisha (Bahuda Port)\n3. Investment for Gujarat Maritime Projects (Shipbuilding, repair)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-2-3",
+      "B": "1-3-2",
+      "C": "2-1-3",
+      "D": "3-2-1",
+      "E": "2-3-1"
+    },
+    "answer": "A",
+    "rationale": "Page 8 and 46 provide the values: Total 27 MoUs = Rs 66,000 cr (1); Bahuda Port Investment = Rs 21,500 cr (2); Gujarat Maritime Projects = Over Rs 13,600 cr (3). Descending order is 1 > 2 > 3.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Small Savings Schemes",
+    "question": "Which of the following Small Savings Schemes does NOT have its interest rate correctly listed as per the Q3 FY 2025-26 update on page 46?",
+    "options": {
+      "A": "3-Year Post Office Time Deposit (POTD): 7.1%",
+      "B": "5-Year Post Office Time Deposit (POTD): 7.5%",
+      "C": "Sukanya Samriddhi Yojana (SSY): 8.2%",
+      "D": "Senior Citizen Savings Scheme (SCSS): 8.2%",
+      "E": "National Savings Certificate (NSC): 7.1%"
+    },
+    "answer": "E",
+    "rationale": "According to the table on page 46, the interest rate for the National Savings Certificate (NSC) is 7.7%, not 7.1%.",
+    "tag": "Static-Conceptual"
+  },
+  {
+    "category": "National",
+    "sub_category": "Obituaries",
+    "question": "Match the following historical or foundational facts associated with the recently deceased personalities (Pages 37 & 72):\n\nColumn I:\n1. Pt. Chhannulal Mishra\n2. Dr. G.G. Parikh\n\nColumn II:\nA. Known as 'Voice of Banaras'\nB. President of Bombay Unit of Students' Congress in 1947\nC. Received the Sangeet Natak Akademi Award\n\nSelect the code that accurately maps ALL correct attributes to each person:",
+    "options": {
+      "A": "1-A,C ; 2-B",
+      "B": "1-A ; 2-B,C",
+      "C": "1-B,C ; 2-A",
+      "D": "1-C ; 2-A,B",
+      "E": "1-A,B ; 2-C"
+    },
+    "answer": "A",
+    "rationale": "Pages 37 & 72 state Pt. Chhannulal Mishra is the 'Voice of Banaras' and won the Sangeet Natak Akademi Award (1-A, 1-C). Dr. G.G. Parikh was the President of the Bombay Unit of Students' Congress in 1947 (2-B).",
+    "tag": "Static-Conceptual"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Regulatory Framework",
+    "question": "Fill in the blanks regarding the Finance Industry Development Council (FIDC) acquiring SRO status (Pages 28 & 62):\nThe recognition was granted by the RBI under the aegis of its 'Omnibus Framework for Recognition of SROs for Regulated Entities of the Reserve Bank' issued on ________, and FIDC must maintain a minimum net worth of ________.",
+    "options": {
+      "A": "March 21, 2024 ; Rs 2 Crore",
+      "B": "April 1, 2025 ; Rs 5 Crore",
+      "C": "January 1, 2024 ; Rs 10 Crore",
+      "D": "March 21, 2024 ; Rs 5 Crore",
+      "E": "October 1, 2025 ; Rs 2 Crore"
+    },
+    "answer": "A",
+    "rationale": "Page 62 explicitly states the framework was issued on 'March 21, 2024' and the 'Minimum Net Worth: Rs 2 crore'.",
+    "tag": "Current-Transient"
+  }
+]

@@ -1,0 +1,377 @@
+[
+  {
+    "category": "National",
+    "sub_category": "Events & Summits",
+    "question": "Consider the following statements regarding the 4th edition of World Food India (2025):\n\n1. New Zealand and Saudi Arabia were the designated Partner Countries for the event.\n2. Japan, UAE, Vietnam, and Russia participated as Focus Countries.\n3. The Allana Group served as the Platinum Sponsor for the event.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 only",
+      "B": "1 and 2 only",
+      "C": "2 and 3 only",
+      "D": "1 and 3 only",
+      "E": "1, 2 and 3"
+    },
+    "answer": "B",
+    "rationale": "According to page 4 and 44, New Zealand and Saudi Arabia were Partner Countries, and Japan, UAE, Vietnam, and Russia were Focus Countries (Statements 1 and 2 are correct). However, The Allana Group was the 'Gold Sponsor', not the Platinum Sponsor (Statement 3 is incorrect).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Small Savings Schemes",
+    "question": "Based on the Small Savings Scheme (SSS) interest rates for Q3 FY26 (Page 7 and 46), arrange the following instruments in ascending order of their interest rates:\n\n1. 5-Year Post Office Recurring Deposit (PORD)\n2. 1-Year Post Office Time Deposit (POTD)\n3. Post Office Monthly Income Scheme (PO-MIS)\n4. Kisan Vikas Patra (KVP)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-2-3-4",
+      "B": "2-1-3-4",
+      "C": "1-3-2-4",
+      "D": "2-3-1-4",
+      "E": "3-1-2-4"
+    },
+    "answer": "A",
+    "rationale": "The interest rates from page 7/46 are: 5-Year PORD (6.7%), 1-Year POTD (6.9%), PO-MIS (7.4%), and KVP (7.5%). The ascending order is strictly 1 -> 2 -> 3 -> 4.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "RBI Guidelines",
+    "question": "Match the Ageing Category of inoperative accounts/unclaimed deposits with the maximum payout limits to banks under the new RBI settlement scheme (Page 24 & 59):\n\nColumn I:\n1. Up to 4 years\n2. 4-8 years\n3. 8-10 years\n4. 10 years and above\n\nColumn II:\nA. Rs. 10,000\nB. Rs. 25,000\nC. Rs. 5,000\nD. Rs. 15,000\n\nSelect the correct match:",
+    "options": {
+      "A": "1-C, 2-A, 3-D, 4-B",
+      "B": "1-A, 2-C, 3-B, 4-D",
+      "C": "1-C, 2-D, 3-A, 4-B",
+      "D": "1-D, 2-A, 3-C, 4-B",
+      "E": "1-C, 2-B, 3-A, 4-D"
+    },
+    "answer": "A",
+    "rationale": "As per the Payout Structure on pages 24 and 59: Up to 4 years is capped at Rs. 5,000 (1-C); 4-8 years at Rs. 10,000 (2-A); 8-10 years at Rs. 15,000 (3-D); and 10 years and above at Rs. 25,000 (4-B).",
+    "tag": "Static-Conceptual"
+  },
+  {
+    "category": "National",
+    "sub_category": "Schemes & Projects",
+    "question": "Assertion (A): Under the Critical Mineral Recycling Incentive Scheme, Group B applicants can receive an incentive allocation of up to Rs 495 crore.\nReason (R): Group B caters to Small Recyclers & Start-ups with revenue criteria below Rs 200 crore and requires a minimum investment of Rs 100 crore.\n\nWhich of the following is correct?",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "C",
+    "rationale": "Page 19 details the Critical Mineral Recycling scheme. Group B max allocation is Rs 495 crore (Assertion is true). However, the minimum investment requirement for Group B is 'Rs 25 crore', not Rs 100 crore (which is for Group A). Thus, Reason is false.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Agriculture",
+    "question": "Consider the following statements regarding the 'Mission for Aatmanirbharta in Pulses' approved by the Union Cabinet (Pages 10 & 48):\n\n1. It has a financial outlay of Rs 11,440 crore for a period of 6 years (2025-26 to 2030-31).\n2. The mission aims to increase the area expansion of pulses from 242 lakh ha to 310 lakh ha.\n3. NAFED & NCCF are mandated to undertake 50% procurement of Tur, Urad, and Masur in participating states.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2 and 3",
+      "E": "1 only"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct (Page 10/48). Statement 3 is incorrect because NAFED & NCCF are mandated to undertake '100% procurement', not 50%.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Economy & Industry",
+    "sub_category": "Macroeconomic Forecasts",
+    "question": "Identify the MISMATCHED pair between the forecasting agency and their FY26 projections for India as of September/October 2025 (Pages 27 & 29):\n\n1. ADB - GDP Growth: 6.5%\n2. RBI MPC - GDP Growth: 6.8%\n3. ADB - Inflation Forecast: 2.6%\n4. RBI MPC - CPI Inflation Projection: 2.6%",
+    "options": {
+      "A": "1 only",
+      "B": "2 only",
+      "C": "3 only",
+      "D": "4 only",
+      "E": "All are correctly matched"
+    },
+    "answer": "C",
+    "rationale": "According to page 29, the ADB's inflation forecast for FY26 is 3.1%, not 2.6% (2.6% is the RBI's CPI inflation projection for FY26 as per page 27). Pairs 1, 2, and 4 are correctly matched.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Awards & Recognitions",
+    "question": "Fill in the blanks regarding the M3M Hurun India Rich List 2025 (Pages 30 & 64):\nIn the 14th edition of the list, ________ became the richest woman in India with a net worth of Rs 2.84 lakh crore, ranking ________ overall.",
+    "options": {
+      "A": "Savitri Jindal ; 5th",
+      "B": "Roshni Nadar ; 3rd",
+      "C": "Kiran Mazumdar-Shaw ; 4th",
+      "D": "Falguni Nayar ; 3rd",
+      "E": "Roshni Nadar ; 2nd"
+    },
+    "answer": "B",
+    "rationale": "Pages 30 and 64 clearly state that Roshni Nadar, Chairperson of HCL Technologies, is the richest woman in India and ranks 3rd overall with a net worth of Rs 2.84 lakh crore.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Infrastructure",
+    "question": "Which of the following ports signed a 30-year concession agreement with JSW for a new container terminal, as part of the 27 MoUs signed under 'Samudra Se Samriddhi' (Page 8)?",
+    "options": {
+      "A": "Paradip Port",
+      "B": "Visakhapatnam Port",
+      "C": "Syama Prasad Mookerjee Port (Kolkata)",
+      "D": "New Mangalore Port",
+      "E": "Jawaharlal Nehru Port Trust (JNPT)"
+    },
+    "answer": "C",
+    "rationale": "Page 8 explicitly states under 'Container Terminal Development': 'Syama Prasad Mookerjee Port (Kolkata): 30-year concession with JSW for a new container terminal.' Paradip Port signed with Arcelor Mittal Nippon Steel (AM/NS).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Governance",
+    "question": "Consider the following statements regarding the new 'E-Bond' system launched in Maharashtra (Pages 43 & 77):\n\n1. Maharashtra became the 16th state in India to adopt the digital E-Bond system.\n2. The system replaces the traditional Rs. 1,000 paper stamp bonds for import and export transactions.\n3. It was inaugurated by Revenue Minister Chandrashekhar Bawankule.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2 and 3",
+      "E": "3 only"
+    },
+    "answer": "C",
+    "rationale": "Statement 1 and 3 are correct (16th state, inaugurated by Chandrashekhar Bawankule). Statement 2 is incorrect because it replaces 'Rs. 500 paper stamp bonds digitally', not Rs. 1,000 (Pages 43/77).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "SEBI & Financial Markets",
+    "question": "Match the following digital financial/regulatory initiatives with their respective features/objectives (Pages 24, 25, 28):\n\nColumn I:\n1. MITRA platform\n2. Validated UPI Handles\n3. Tap & Pay feature\n\nColumn II:\nA. Utilizes NFC-enabled smartphones at PoS terminals\nB. Traces inactive mutual fund folios for investors\nC. Features an exclusive '@valid' ID and green thumbs-up symbol\n\nSelect the correct code:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-A, 2-C, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-C, 2-A, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Page 25: SEBI launched MITRA to track inactive MF folios (1-B). Page 28: SEBI Validated UPI Handles use '@valid' IDs (2-C). Page 24: PhonePe + Mastercard Tap & Pay uses NFC at PoS (3-A).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Summits & Conferences",
+    "question": "At the 42nd ICAO Assembly Session in Montreal, the 36-member Council was elected. Which of the following statements about the Council structure is INCORRECT (Page 57)?",
+    "options": {
+      "A": "The ICAO Council is elected for a three-year term.",
+      "B": "Part I includes states of chief importance in air transport, such as USA, China, and France.",
+      "C": "Part II includes states ensuring geographical balance, such as Malaysia and UAE.",
+      "D": "India, Saudi Arabia, and Singapore were elected to Part II.",
+      "E": "Part III includes states ensuring geographic representation, such as Uganda and Qatar."
+    },
+    "answer": "C",
+    "rationale": "According to page 22 and 57, 'Part II' consists of 'States which make the largest contribution to international air navigation' (not geographical balance). 'Part III' is for states ensuring 'geographic representation' (which includes Malaysia, UAE, Uganda, Qatar). Therefore, saying Part II is for geographical balance is incorrect.",
+    "tag": "Static-Conceptual"
+  },
+  {
+    "category": "National",
+    "sub_category": "Important Days",
+    "question": "Arrange the following UN/International observations in October 2025 in ascending order of their dates:\n\n1. World Cerebral Palsy Day\n2. World Animal Day\n3. International Day of Non-Violence\n4. World Teachers' Day\n\nSelect the correct chronological sequence:",
+    "options": {
+      "A": "3-2-4-1",
+      "B": "3-4-2-1",
+      "C": "2-3-4-1",
+      "D": "3-2-1-4",
+      "E": "2-4-3-1"
+    },
+    "answer": "A",
+    "rationale": "Pages 40-42: International Day of Non-Violence (Oct 2), World Animal Day (Oct 4), World Teachers' Day (Oct 5), World Cerebral Palsy Day (Oct 6). The sequence is 3, 2, 4, 1.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Partnerships & FinTech",
+    "question": "Assertion (A): Zomato partnered with HDFC Pension to launch the NPS Platform Workers Model.\nReason (R): The model requires a mandatory minimum daily contribution of Rs 100 to ensure targeted retirement planning for gig workers.\n\nWhich of the following is correct?",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true as Zomato and HDFC Pension launched the NPS model (Page 29/64). Reason (R) is false because the scheme features 'flexible contributions' and does not mandate a rigid minimum daily contribution of Rs 100.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Sports",
+    "question": "Consider the following statements regarding the final medal tally of the 12th World Para Athletics Championships 2025 (Page 70):\n\n1. Brazil topped the medal tally with a total of 44 medals.\n2. China finished second with 52 medals.\n3. India finished at the 10th position with exactly 6 gold medals.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2 and 3",
+      "E": "3 only"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. Page 70 explicitly shows: Rank 1: Brazil (15 Gold, 44 Total); Rank 2: China (13 Gold, 52 Total); Rank 10: India (6 Gold, 22 Total). *Note: Ranks in these tallies prioritize Gold count over total medals, making Brazil #1 despite having fewer total medals than China.*",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Awards & Recognitions",
+    "question": "Fill in the blank from page 32 regarding the 2025 Nobel Prize in Physics:\nThe Nobel Prize in Physics was awarded jointly to John Clarke, Michel Henri Devoret, and John Matthew Martinis for their discovery in macroscopic quantum mechanical tunnelling, which underpins the development of ________.",
+    "options": {
+      "A": "nuclear fusion reactors",
+      "B": "quantum computers, flash memory, and ultra-precise quantum sensors",
+      "C": "room-temperature superconductors",
+      "D": "next-generation photovoltaic cells",
+      "E": "high-energy particle colliders"
+    },
+    "answer": "B",
+    "rationale": "Page 66 clearly elaborates that the discovery (involving Josephson junctions) underpins 'quantum computers, flash memory, and ultra-precise quantum sensors'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Acquisitions & Mergers",
+    "question": "Match the following target companies with their respective acquirers as detailed in September/October 2025 (Pages 34 & 68):\n\nColumn I (Target):\n1. Jaiprakash Associates Limited (JAL)\n2. Sterling Bank, Bahamas\n\nColumn II (Acquirer):\nA. IndusInd International Holdings Limited (IIHL)\nB. Jindal Power Limited\nC. Tata Advanced Systems Limited\n\nSelect the correct code:",
+    "options": {
+      "A": "1-B, 2-A",
+      "B": "1-A, 2-B",
+      "C": "1-C, 2-A",
+      "D": "1-B, 2-C",
+      "E": "1-A, 2-C"
+    },
+    "answer": "A",
+    "rationale": "Page 34/68 states that Jindal Power Limited acquired Jaiprakash Associates Limited (JAL), and IIHL acquired a 100% stake in Sterling Bank, Bahamas.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Cabinet Approvals",
+    "question": "Consider the following statements regarding the Cabinet's approval of the Biomedical Research Career Programme (BRCP) - Phase III (Pages 13 & 50):\n\n1. It is being implemented by the Department of Biotechnology (DBT) and the Wellcome Trust, UK.\n2. The total investment for Phase III is Rs. 1,500 Crore.\n3. The scheme is executed via a dedicated SPV called 'India Alliance'.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2 and 3",
+      "E": "1 only"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. Page 13 and 50 mention the investment is Rs. 1,500 Crore, implemented by DBT & UK's Wellcome Trust via the 'India Alliance' SPV.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Defence & Security",
+    "question": "The 10th National Level Pollution Response Exercise (NATPOLREX-X) and the 27th NOSDCP meeting were conducted off the coast of Chennai. Which entity organized this exercise (Page 56)?",
+    "options": {
+      "A": "Indian Navy",
+      "B": "National Disaster Response Force (NDRF)",
+      "C": "Indian Coast Guard (ICG)",
+      "D": "Marine Police Force",
+      "E": "Ministry of Earth Sciences"
+    },
+    "answer": "C",
+    "rationale": "Page 20 and 56 clearly state that the 'Indian Coast Guard (ICG)' conducted the 10th NATPOLREX-X off the Chennai coast.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "RBI Monetary Policy",
+    "question": "Assertion (A): The RBI withdrew the August 2016 framework regarding loan against shares during the 4th Bi-monthly MPC meeting.\nReason (R): This decision was aimed at increasing the financing limits for acquisitions and improving overall credit flow in the economy.\n\nWhich of the following is correct?",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "A",
+    "rationale": "Page 61 highlights under 'Improve credit flow' that the RBI 'withdrew the August 2016 framework' and simultaneously 'increased the limit for loan against shares' and 'financing acquisitions', making the Reason a direct explanation of the Assertion.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Important Days",
+    "question": "Match the 2025 Themes with their respective United Nations/Global Observances (Pages 72-76):\n\nColumn I:\n1. Act Now: You, Me, Communities\n2. Celebrating Translation, Peace and Trust\n3. Living in Space\n\nColumn II:\nA. World Space Week\nB. World Rabies Day\nC. International Translation Day\n\nSelect the correct code:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Page 72: World Rabies Day theme is 'Act Now: You, Me, Communities' (1-B). Page 73: Translation Day theme is 'Celebrating Translation, Peace and Trust' (2-C). Page 75: World Space Week theme is 'Living in Space' (3-A).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "MoUs & Agreements",
+    "question": "Which of the following combinations of entities signed an MoU to develop a fifth-generation stealth fighter jet (AMCA), as outlined on page 68?",
+    "options": {
+      "A": "HAL, Goodluck India, and DRDO",
+      "B": "Goodluck India, BrahMos Aerospace Thiruvananthapuram Limited (BATL), and Axiscades",
+      "C": "Tata Advanced Systems, Airbus, and DRDO",
+      "D": "Bharat Electronics Limited, Axiscades, and ADA",
+      "E": "L&T Defence, BATL, and HAL"
+    },
+    "answer": "B",
+    "rationale": "Page 34 and 68 explicitly outline the tripartite MoU between 'Goodluck India, BATL, and Axiscades' to participate in the AMCA program.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Schemes & Portals",
+    "question": "Fill in the blank regarding the People's Plan Campaign (PPC) 2025-26 launched by MoPR (Page 56):\nThe campaign aims to prepare Panchayat Development Plans (PDPs) for the Financial Year 2026-27 under the theme ________.",
+    "options": {
+      "A": "Gram Swaraj, Safal Swaraj",
+      "B": "Sabki Yojana, Sabka Vikas",
+      "C": "Meri Panchayat, Mera Adhikar",
+      "D": "Smart Panchayat, Digital India",
+      "E": "Panchayat Nirnay, Jan Vikas"
+    },
+    "answer": "B",
+    "rationale": "Page 21 and 56 clearly state the theme of PPC 2025-26 is 'Sabki Yojana, Sabka Vikas'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Appointments",
+    "question": "Consider the following appointments made in October 2025:\n\n1. Sanjay Chalke - India CEO of Capgemini\n2. Group Captain Shubansh Sukla - Ambassador of Viksit Bharat Buildathon\n3. Hagrama Mohilary - CEM of the Bodoland Territorial Council (BTC)\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2 and 3",
+      "E": "2 only"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct based on pages 33 and 67. Sanjay Chalke takes over Capgemini India, Shubansh Sukla is the ambassador for the Buildathon, and Hagrama Mohilary was sworn in as CEM of BTC.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Penalties & Regulatory",
+    "question": "Which of the following is NOT correct regarding the SEBI Validated UPI Handles launched in October 2025 (Pages 28 & 62)?",
+    "options": {
+      "A": "It was developed in collaboration with the National Payment Corporation of India (NPCI).",
+      "B": "It provides exclusive '@valid' UPI IDs for investors.",
+      "C": "It features a 'SEBI Check' self-verification tool.",
+      "D": "It utilizes a blue verified badge on the BHIM app to denote authenticity.",
+      "E": "It safeguards investors against fraudulent transfers."
+    },
+    "answer": "D",
+    "rationale": "Page 28 mentions that it utilizes a 'green thumbs-up symbol in SEBI portal or Saarthi app', not a blue verified badge on the BHIM app. All other options are explicitly stated features.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Reports & Indices",
+    "question": "According to the 'Crime in India 2023' report released by NCRB (Page 54), what is the national average crime rate (cases per lakh population) in India?",
+    "options": {
+      "A": "83.9",
+      "B": "332.3",
+      "C": "433",
+      "D": "1,377.1",
+      "E": "3,192.4"
+    },
+    "answer": "C",
+    "rationale": "Page 19 and 54 state: 'National Average Crime Rate: 433 cases per lakh population'. 83.9 is Kolkata's rate, and 3192.4 is Kochi's.",
+    "tag": "Current-Transient"
+  }
+]

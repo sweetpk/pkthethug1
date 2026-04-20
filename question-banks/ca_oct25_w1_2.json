@@ -1,0 +1,752 @@
+[
+  {
+    "category": "National",
+    "sub_category": "Agriculture & MSP",
+    "question": "The Union Cabinet has approved the minimum support prices (MSP) for 6 rabi crops for the 2026-27 marketing season. Arrange the following crops in descending order based on their absolute increase in MSP (Rs. per quintal) from the previous season:\n\n1. Lentil (Masur)\n2. Safflower\n3. Gram\n4. Rapeseed & Mustard\n\nSelect the correct answer:",
+    "options": {
+      "A": "2-1-4-3",
+      "B": "2-1-3-4",
+      "C": "1-2-4-3",
+      "D": "1-2-3-4",
+      "E": "2-4-1-3"
+    },
+    "answer": "A",
+    "rationale": "According to the table on page 9, the absolute increase in MSP is: Safflower (Rs. 600), Lentil/Masur (Rs. 300), Rapeseed & Mustard (Rs. 250), and Gram (Rs. 225). Therefore, the descending order is Safflower (2), Lentil (1), Rapeseed & Mustard (4), and Gram (3).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Small Savings Schemes",
+    "question": "Match the following Small Savings Schemes (SSS) with their respective interest rates for Q3 of FY 2025-26:\n\nColumn I (Scheme):\n1. Sukanya Samriddhi Yojana (SSY)\n2. Public Provident Fund (PPF)\n3. Post Office Monthly Income Scheme (PO-MIS)\n4. Kisan Vikas Patra (KVP)\n\nColumn II (Interest Rate):\nA. 7.1%\nB. 7.4%\nC. 7.5%\nD. 8.2%\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-D, 2-A, 3-C, 4-B",
+      "B": "1-D, 2-B, 3-A, 4-C",
+      "C": "1-D, 2-A, 3-B, 4-C",
+      "D": "1-C, 2-A, 3-B, 4-D",
+      "E": "1-B, 2-A, 3-D, 4-C"
+    },
+    "answer": "C",
+    "rationale": "As per the table on page 7 and 46: SSY is 8.2% (1-D), PPF is 7.1% (2-A), PO-MIS is 7.4% (3-B), and KVP is 7.5% (4-C).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Disaster Management",
+    "question": "Consider the following statements regarding the High-Level Committee (HLC) approval for disaster mitigation, recovery, and reconstruction projects:\n\n1. The HLC chaired by Union Minister Amit Shah approved projects worth Rs 4,645.60 crore.\n2. The approved projects cover 9 states, including Assam, Kerala, and Madhya Pradesh.\n3. Under Approval-1, Rs 692.05 crore was allocated for the restoration of 24 wetlands across 9 districts in the Brahmaputra river system in Assam.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2 and 3",
+      "E": "3 only"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. Page 16 and 52-53 clearly state that the HLC approved Rs 4,645.60 crore for 9 states. Approval-1 focuses on the restoration of wetlands in Assam with an outlay of Rs 692.05 crore covering 24 wetlands across 9 districts.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Economy & Industry",
+    "sub_category": "Trade & Indices",
+    "question": "Assertion (A): The India-EFTA Trade and Economic Partnership Agreement (TEPA) aims to attract investments worth USD 100 billion in India over the next 15 years.\nReason (R): EFTA is a bloc comprising four developed European nations: Switzerland, Norway, Iceland, and Liechtenstein.\n\nWhich of the following is correct?",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "B",
+    "rationale": "Both statements are factually correct based on page 15 and 52. The TEPA targets USD 100 billion in FDI and 1 million jobs. EFTA does comprise those four nations. However, the composition of EFTA (Reason) is not the direct causal explanation for the specific USD 100 billion target set in the agreement (Assertion).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Cabinet Approvals",
+    "question": "Fill in the blank with the correct data from page 13:\nThe Union Cabinet has approved a hike in Dearness Allowance (DA) for Central Employees and Dearness Relief (DR) for Pensioners by 3%, bringing the new DA & DR rate to ____, effective from July 01, 2025.",
+    "options": {
+      "A": "50%",
+      "B": "53%",
+      "C": "55%",
+      "D": "58%",
+      "E": "60%"
+    },
+    "answer": "D",
+    "rationale": "Page 13 (and page 50) details the DA & DR hike: '3% increase (from 55% to 58% of Basic Pay/Pension)'. Thus, the new rate is 58%.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "RBI Monetary Policy",
+    "question": "Which of the following is INCORRECT regarding the RBI's 4th Bi-monthly Monetary Policy (FY2025-26) rates highlighted on page 27?",
+    "options": {
+      "A": "The Repo Rate was kept unchanged at 5.50%.",
+      "B": "The Standing Deposit Facility (SDF) rate is 5.25%.",
+      "C": "The Marginal Standing Facility (MSF) rate is 5.75%.",
+      "D": "The Cash Reserve Ratio (CRR) is maintained at 4.50%.",
+      "E": "The Statutory Liquidity Ratio (SLR) is 18.00%."
+    },
+    "answer": "D",
+    "rationale": "According to the RBI Policy Rates table on page 27 and 61, the Cash Reserve Ratio (CRR) is 3.5%, not 4.50%. All other rates are listed correctly.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Settlement Schemes",
+    "question": "Under the new RBI scheme for settling inoperative accounts and unclaimed deposits, what is the required time frame within which the RBI will settle claims submitted by banks?",
+    "options": {
+      "A": "Within 15 days of submission",
+      "B": "Within 30 days of submission",
+      "C": "Within 45 days of submission",
+      "D": "Within 60 days of submission",
+      "E": "At the end of the respective quarter"
+    },
+    "answer": "B",
+    "rationale": "Page 24 clearly mentions under the 'Process for Banks' section: 'Settlement by RBI: Claims will be settled by the RBI within 30 days of submission.'",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Infrastructure",
+    "question": "Consider the following statements regarding the world's highest motorable road constructed by the Border Roads Organisation (BRO):\n\n1. It is located at Mig La Pass in Ladakh at an altitude of 19,400 feet.\n2. It surpasses the previous Guinness World Record set at Umling La Pass.\n3. The project was led by Brigadier Vishal Srivastava under Project Himank.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2 and 3",
+      "E": "None of the above"
+    },
+    "answer": "D",
+    "rationale": "All three statements are correct as per page 17 and 53. The road is at Mig La Pass (19,400 feet), surpassing Umling La Pass (19,024 feet), and was constructed under Project Himank led by Brigadier Vishal Srivastava.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Digital Payments",
+    "question": "Arrange the following features/initiatives launched by digital payment platforms in October/September 2025 as they appear in the text:\n\n1. Launch of Gold-Backed Credit line on UPI\n2. Launch of 'Tap & Pay' feature for contactless payments\n3. Launch of 'Payments ka A to Z' unified payment interface\n4. Launch of RBI-Compliant Biometric Authentication for Payments\n\nMatch them with their respective launching entities:\nA. Axis Bank & Free charge\nB. Razorpay & YES Bank\nC. Amazon Pay\nD. PhonePe & Mastercard\n\nSelect the correct combination code:",
+    "options": {
+      "A": "1-A, 2-D, 3-C, 4-B",
+      "B": "1-D, 2-A, 3-B, 4-C",
+      "C": "1-A, 2-C, 3-D, 4-B",
+      "D": "1-B, 2-D, 3-A, 4-C",
+      "E": "1-C, 2-B, 3-A, 4-D"
+    },
+    "answer": "A",
+    "rationale": "From pages 24, 26, 29: Axis Bank + Free charge launched Gold-Backed Credit on UPI (1-A). PhonePe + Mastercard launched Tap & Pay (2-D). Amazon Pay launched Payments ka A to Z (3-C). Razorpay + YES Bank launched Biometric Authentication (4-B).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Sports",
+    "question": "Match the following Indian athletes with the medals they won at the 15th World Para Archery Championships-2025, as detailed on page 35:\n\nColumn I:\n1. Sheetal Devi\n2. Toman Kumar\n3. Rakesh Kumar\n\nColumn II:\nA. 1 Silver (Men's Compound Individual)\nB. 2 Gold (Women's Compound Individual, Men's Compound Individual)\nC. 2 Medals (1 Gold, 1 Bronze)\nD. 3 Medals (1 Gold, 2 Silver/Bronze combo)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-D, 2-C, 3-A",
+      "B": "1-B, 2-A, 3-C",
+      "C": "1-D, 2-A, 3-B",
+      "D": "1-C, 2-D, 3-A",
+      "E": "1-B, 2-C, 3-D"
+    },
+    "answer": "A",
+    "rationale": "Based on page 35: Sheetal Devi won 3 Medals (1 Individual Gold, 2 Team Silver/Bronze) -> 1-D. Toman Kumar won 2 Medals (1 Individual Gold, 1 Team Bronze) -> 2-C. Rakesh Kumar won Silver in Men's Compound Individual -> 3-A.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Awards & Recognitions",
+    "question": "Which of the following statements about the M3M Hurun India Rich List 2025 is INCORRECT?",
+    "options": {
+      "A": "Mukesh Ambani reclaimed the top spot as India's Richest Man with a net worth of Rs 9.55 lakh crore.",
+      "B": "Gautam Adani dropped to the 2nd spot in the 2025 rankings.",
+      "C": "Roshni Nadar became the richest woman in India, ranking 3rd overall.",
+      "D": "The cumulative wealth of the listers is roughly equivalent to 50% of India's GDP.",
+      "E": "The list is currently in its 15th edition."
+    },
+    "answer": "E",
+    "rationale": "Page 30 and 64 clearly state that the M3M Hurun India Rich List released in September 2025 is the '14th edition', not the 15th. All other statements are factual.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Global Organizations",
+    "question": "Assertion (A): India was re-elected to Part II of the ICAO Council for the 2025-2028 term.\nReason (R): Part II of the ICAO Council consists of states that make the largest contribution to international air navigation.\n\nWhich of the following is correct?",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "B",
+    "rationale": "As per page 22, India was indeed re-elected to Part II (Assertion is true). Part II is defined as states making the largest contribution to international air navigation (Reason is true). However, being defined as a Part II state is the *category criteria*, not the explicit *reason* why India specifically won the election (which requires votes from the Assembly).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Initiatives",
+    "question": "Fill in the blank from page 14 regarding PM Modi's youth-focused initiatives:\nThe Kaushal Deekshant Samaroh felicitated 46 All-India ITI toppers. Furthermore, the Jan Nayak Karpoori Thakur Skill University was inaugurated in ________.",
+    "options": {
+      "A": "Darbhanga, Bihar",
+      "B": "Patna, Bihar",
+      "C": "Varanasi, UP",
+      "D": "New Delhi, Delhi",
+      "E": "Muzaffarpur, Bihar"
+    },
+    "answer": "B",
+    "rationale": "Page 14 states: 'Jan Nayak Karpoori Thakur Skill University. Location: Patna, Bihar'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "RBI Guidelines",
+    "question": "Consider the following statements regarding the RBI granting Self-Regulatory Organisation (SRO) status in October 2025:\n\n1. SRO status was granted to the Finance Industry Development Council (FIDC).\n2. The recognition requires a minimum net worth of Rs 5 Crore.\n3. Raman Aggarwal is the CEO of FIDC.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 only",
+      "B": "1 and 2 only",
+      "C": "1 and 3 only",
+      "D": "2 and 3 only",
+      "E": "1, 2 and 3"
+    },
+    "answer": "C",
+    "rationale": "According to page 28, SRO status was granted to FIDC (Statement 1 is true). The CEO is Raman Aggarwal (Statement 3 is true). However, the minimum net worth requirement to achieve recognition is Rs. 2 Crore, not Rs 5 Crore (Statement 2 is false).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Economy & Industry",
+    "sub_category": "Growth Forecasts",
+    "question": "The Asian Development Bank (ADB) released the 'Asian Development Outlook (ADO) September 2025'. Arrange the following regions in descending order of their projected GDP growth for the year 2025:\n\n1. India\n2. South Asia\n3. East Asia\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-2-3",
+      "B": "1-3-2",
+      "C": "2-1-3",
+      "D": "3-2-1",
+      "E": "2-3-1"
+    },
+    "answer": "A",
+    "rationale": "Based on page 29: India's GDP projection is 6.5%. South Asia's GDP projection is 5.9%. East Asia's GDP projection is 4.4%. Thus, descending order is India (1) > South Asia (2) > East Asia (3).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "MoUs & Agreements",
+    "question": "Match the following MoUs and Partnerships signed in September/October 2025 with their respective objectives:\n\nColumn I:\n1. TEC + IIIT Naya Raipur\n2. Zomato + HDFC Pension\n3. DDWS + BISAG-N\n\nColumn II:\nA. GIS-integrated monitoring for JJM and SBM(G)\nB. Advance next-generation telecom technologies\nC. Launch NPS Platform Workers Model\n\nSelect the correct code:",
+    "options": {
+      "A": "1-A, 2-B, 3-C",
+      "B": "1-B, 2-A, 3-C",
+      "C": "1-B, 2-C, 3-A",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "C",
+    "rationale": "Page 17 (TEC + IIIT Naya Raipur) -> B (Telecom tech); Page 29 (Zomato + HDFC Pension) -> C (NPS Model); Page 21 (DDWS + BISAG-N) -> A (GIS platform for JJM/SBM-G).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Schemes & Projects",
+    "question": "Which of the following details about the PM Shram Yogi Mandhan Yojana or similar pension initiatives is NOT directly found in the weekly PDF, but rather the Zomato/HDFC initiative focuses on?",
+    "options": {
+      "A": "It targets gig-based delivery partners.",
+      "B": "It operates under the supervision of PFRDA.",
+      "C": "It integrates workers into the formal financial system via NPS.",
+      "D": "It mandates a rigid, non-flexible contribution of Rs. 1000 per month.",
+      "E": "It aims to cover 1,00,000 partners by 2025-end."
+    },
+    "answer": "D",
+    "rationale": "Page 29 explicitly states the Zomato + HDFC Pension NPS model features 'flexible contributions, & portability of pension accounts'. It does NOT mandate a rigid contribution of Rs. 1000. All other options are explicitly stated features of the initiative.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Important Days",
+    "question": "Assertion (A): The theme for World Rabies Day 2025 is 'Act Now: You, Me, Communities'.\nReason (R): World Rabies Day is observed annually on September 28 to commemorate the anniversary of the death of Louis Pasteur, the developer of the first rabies vaccine.\n\nWhich of the following is correct?",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "B",
+    "rationale": "Both Assertion and Reason are true facts extracted from page 38. However, the reason for the specific *theme* ('Act Now...') is not because it is Louis Pasteur's death anniversary; the date is chosen for that reason, not the 2025 theme.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Awards & Recognitions",
+    "question": "Fill in the blank based on the Nobel Prize in Physics 2025 on page 32:\nThe Nobel Prize in Physics was jointly awarded to John Clarke, Michel Henri Devoret, and John Matthew Martinis for their discovery of ________ in an electric circuit.",
+    "options": {
+      "A": "Quantum entanglement and photon mapping",
+      "B": "Macroscopic quantum mechanical tunnelling and energy quantisation",
+      "C": "Josephson junction supercooling techniques",
+      "D": "Peripheral immune tolerance mechanisms",
+      "E": "Artificial neural networks using machine learning"
+    },
+    "answer": "B",
+    "rationale": "Page 32 explicitly notes the discovery is: 'Macroscopic quantum mechanical tunnelling and energy quantisation in an electric circuit'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Penalties",
+    "question": "Consider the following statements regarding the penalties imposed by RBI:\n\n1. Indian Overseas Bank (IOB) was penalized Rs 31.8 lakh for non-compliance with Priority Sector Lending (PSL) targets.\n2. American Express Banking Corporation was penalized Rs 31.80 lakh for failing to return credit balances.\n3. HDB Financial Services was penalized Rs 4.2 lakh for failing to obtain PAN/e-document.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2 and 3",
+      "E": "None of the above"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. Page 25 mentions IOB penalized Rs 31.8 lakh for PSL targets. Page 26 mentions AmEx penalized Rs 31.80 lakh and HDB penalized Rs 4.2 lakh for the stated reasons.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Appointments",
+    "question": "Arrange the following new appointees with their respective roles/organizations as listed on page 32-33:\n\n1. Asheesh Pandey\n2. Kalyan Kumar\n3. Sanjay Chalke\n4. Lt Gen Virendra Vats\n\nA. DG of NCC\nB. CEO of Capgemini India\nC. MD & CEO of UBI\nD. MD & CEO of CBI\n\nSelect the correct matching code:",
+    "options": {
+      "A": "1-D, 2-C, 3-B, 4-A",
+      "B": "1-C, 2-D, 3-B, 4-A",
+      "C": "1-C, 2-D, 3-A, 4-B",
+      "D": "1-D, 2-C, 3-A, 4-B",
+      "E": "1-B, 2-C, 3-D, 4-A"
+    },
+    "answer": "B",
+    "rationale": "From pages 32-33: Asheesh Pandey is MD & CEO of Union Bank of India (1-C); Kalyan Kumar is MD & CEO of Central Bank of India (2-D); Sanjay Chalke is CEO of Capgemini India (3-B); Lt Gen Virendra Vats is DG of NCC (4-A).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Digital Initiatives",
+    "question": "Which fintech platform launched India's first youth-focused digital banking app named 'Cosmo Galgal app' offering zero-balance savings accounts in under 15 minutes?",
+    "options": {
+      "A": "Equitas Small Finance Bank",
+      "B": "FatakPay Digital",
+      "C": "Cosmos Co-operative Bank",
+      "D": "Utkarsh Small Finance Bank",
+      "E": "Saraswat Co-operative Bank"
+    },
+    "answer": "C",
+    "rationale": "Page 28 highlights that 'Cosmos Co-operative Bank & Umunthu System Private Limited launched Cosmos Galgal App -> India's First Youth-Focused Digital Banking App'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Infrastructure",
+    "question": "Regarding the 27 MoUs signed by the Ministry of Ports, Shipping and Waterways (MoPSW) in Bhavnagar, which of the following statements is INCORRECT?",
+    "options": {
+      "A": "The total worth of the MoUs is over Rs. 66,000 crores.",
+      "B": "The event was named 'Samudra Se Samriddhi – Transforming India’s Maritime Sector'.",
+      "C": "A 30-year concession was signed with JSW for a new container terminal at Paradip Port.",
+      "D": "The world's tallest lighthouse museum will be located at NMHC, Lothal.",
+      "E": "A Water Metro Project MoU was signed between IWAI & Bihar Government."
+    },
+    "answer": "C",
+    "rationale": "Page 8 states that the 30-year concession with JSW is for the 'Syama Prasad Mookerjee Port (Kolkata)', not Paradip Port. The concession at Paradip Port is with Arcelor Mittal Nippon Steel (AM/NS). Thus, statement C is incorrect.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Events & Campaigns",
+    "question": "Match the following campaigns/initiatives with the respective Ministries or entities organizing them:\n\n1. MSME Seva Parv 2025: Virasat se Vikas\n2. People's Plan Campaign (PPC) 2025-26\n3. Aapki Punji Aapka Adhikar\n\nA. Ministry of Panchayati Raj (MoPR)\nB. Ministry of Finance (MoF)\nC. Ministry of Micro, Small and Medium Enterprises (MoMSME)\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-C, 2-A, 3-B",
+      "C": "1-A, 2-C, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "B",
+    "rationale": "From the PDF: MSME Seva Parv is by MoMSME (Page 7). People's Plan Campaign (Sabki Yojana, Sabka Vikas) is by MoPR (Page 21). Aapki Punji Aapka Adhikar is launched by Union Finance Minister Nirmala Sitharaman, Ministry of Finance (Page 17).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Wildlife & Conservation",
+    "question": "Assertion (A): During the 71st National Wildlife Week celebrations in Dehradun, Union Minister Bhupender Yadav launched five national projects for species conservation.\nReason (R): One of these projects is 'Tigers Outside Tiger Reserve', which aims to redress conflicts outside protected areas.\n\nWhich of the following is correct?",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "B",
+    "rationale": "Both statements are correct based on page 18. He launched 5 projects, and 'Tigers Outside Tiger Reserve' is explicitly one of them. However, R is just an example/component of A, not the explanatory reason *why* A occurred.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Securities Market",
+    "question": "Fill in the blank regarding the SEBI initiative launched on page 25:\nSEBI extended the deadline for the complete roll out of rules for Retail Algorithmic Trading from October 1, 2025 to ________.",
+    "options": {
+      "A": "December 31, 2025",
+      "B": "January 1, 2026",
+      "C": "April 1, 2026",
+      "D": "July 1, 2026",
+      "E": "September 30, 2026"
+    },
+    "answer": "C",
+    "rationale": "Page 25 clearly shows the deadline extension arrow from October 1, 2025 to 'April 1, 2026'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Sports",
+    "question": "Consider the following sports events and venues listed in the weekly content. Which of them is MISMATCHED?",
+    "options": {
+      "A": "15th World Para Archery Championships-2025: Gwangju, South Korea",
+      "B": "12th World Para Athletics Championships 2025: New Delhi, India",
+      "C": "ISSF Junior World Cup 2025: Suhl, Germany",
+      "D": "Inaugural Women's T20 World Cup Cricket for the Blind: India and Sri Lanka",
+      "E": "24th F1 Singapore Grand Prix: Marina Bay Street Circuit"
+    },
+    "answer": "C",
+    "rationale": "Page 36 indicates that the ISSF Junior World Cup 2025 was held in New Delhi, India. Suhl, Germany was the venue for the *previous* edition (May 2025), not the current one being reported in Oct.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Appointments",
+    "question": "Arrange the following officials according to the sequence in which their appointments or roles are mentioned in the Capgemini CEO transition (Page 33):\n\n1. Sanjay Chalke assumes the role of CEO of Capgemini India.\n2. Ashwin Yardi becomes the non-executive Chairman of Capgemini India.\n\nWhich chronological or logical sequence reflects the transition date given?",
+    "options": {
+      "A": "Both occur simultaneously on January 01, 2026",
+      "B": "Both occur simultaneously on October 01, 2025",
+      "C": "1 occurs in Oct 2025, 2 occurs in Jan 2026",
+      "D": "2 occurs in Oct 2025, 1 occurs in Jan 2026",
+      "E": "None of the above"
+    },
+    "answer": "A",
+    "rationale": "Page 33 states: 'Effective from: January 01, 2026'. Sanjay Chalke will take over as CEO, and the predecessor Ashwin Yardi becomes the Non-Executive Chairman at the same transition time.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Acquisitions & Mergers",
+    "question": "Which entity successfully acquired a 100% stake in Sterling Bank, Bahamas, as approved and detailed on page 34?",
+    "options": {
+      "A": "Jindal Power Limited",
+      "B": "IndusInd International Holdings Limited (IIHL)",
+      "C": "Reliance Strategic Investments",
+      "D": "Tata Advanced Systems Limited (TASL)",
+      "E": "HDFC Holdings"
+    },
+    "answer": "B",
+    "rationale": "Page 34 under 'Acquisitions & Mergers' shows that 'IndusInd International Holdings Limited -> 100% Stake in Sterling Bank, Bahamas -> Renamed IIHL Bank & Trust Ltd'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Defence Exercises",
+    "question": "Consider the details of the bilateral maritime exercise 'KONKAN-2025' on page 16. Which of the following statements is correct?\n\n1. It is a bilateral exercise between the Indian Navy and the Royal Navy of the UK.\n2. It marks the first time both navies deployed their full Carrier Strike Groups (CSGs).\n3. Assets deployed include INS Vikrant and HMS Prince of Wales.\n\nSelect the correct code:",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2 and 3",
+      "E": "1 only"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. Page 16 mentions it is between India and UK, it is the first time both deployed full CSGs, and the naval assets deployed include INS Vikrant and HMS Prince of Wales.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Economy & Industry",
+    "sub_category": "Global Initiatives",
+    "question": "Match the funding sources for the Tata Steel decarbonisation project in the Netherlands as detailed on page 30:\n\n1. Dutch Government\n2. EU Innovation Fund\n\nA. EUR 300 million\nB. Up to EUR 2 billion\nC. EUR 500 million\n\nSelect the correct code:",
+    "options": {
+      "A": "1-B, 2-A",
+      "B": "1-A, 2-B",
+      "C": "1-C, 2-A",
+      "D": "1-B, 2-C",
+      "E": "1-A, 2-C"
+    },
+    "answer": "A",
+    "rationale": "Page 30 details the funding structure: 'Dutch Government: Up to EUR 2 billion' and 'EU Innovation Fund: EUR 300 million'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Cabinet Approvals",
+    "question": "Which of the following is NOT a feature of the Biomedical Research Career Programme (BRCP) - Phase III approved by the Union Cabinet (page 13)?",
+    "options": {
+      "A": "It has an investment of Rs. 1,500 Crore.",
+      "B": "It is implemented by DBT and Wellcome Trust.",
+      "C": "It focuses on establishing 57 new Kendriya Vidyalayas.",
+      "D": "It has a duration of 6 years (2025-26 to 2030-31) + 6-year extension.",
+      "E": "It is implemented via the 'India Alliance' SPV."
+    },
+    "answer": "C",
+    "rationale": "Establishing 57 new Kendriya Vidyalayas is a separate Cabinet approval (point 3 on page 13) and is completely unrelated to the BRCP, which focuses on biomedical research.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Scheme Upgrades",
+    "question": "Fill in the blanks regarding the SIDBI 'DIA' Scheme launched on page 25:\nThe scheme is named 'Development of ________' and aims to transform MSME clusters through a cost-effective, innovative, & self-sustaining development model.",
+    "options": {
+      "A": "Industrial Automation",
+      "B": "Investment Agencies",
+      "C": "Industry Associations",
+      "D": "Infrastructure Assets",
+      "E": "Inclusive Agriculture"
+    },
+    "answer": "C",
+    "rationale": "Page 25 explicitly expands DIA as 'Development of Industry Associations'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "State Initiatives",
+    "question": "Assertion (A): Maharashtra launched the 'Abhijat Marathi OTT' platform.\nReason (R): The platform aims to preserve and promote the Marathi language and culture on a global stage.\n\nWhich of the following is correct?",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "A",
+    "rationale": "Based on page 43, Maharashtra CM Devendra Fadnavis launched the 'Abhijat Marathi OTT'. The text explicitly states its purpose is to 'Preserve and promote Marathi language and culture on a global stage', establishing a clear cause-and-effect relationship.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Important Days",
+    "question": "Consider the following statements regarding the 19th World Rabies Day (Page 38):\n\n1. It is observed on September 28.\n2. It commemorates the death anniversary of Louis Pasteur.\n3. The theme for 2025 is 'Save Animals, Save the Planet'.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 only",
+      "B": "1 and 2 only",
+      "C": "2 and 3 only",
+      "D": "1, 2 and 3",
+      "E": "1 and 3 only"
+    },
+    "answer": "B",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the theme for Rabies Day is 'Act now: you, me, communities'. 'Save Animals, Save the Planet' is the theme for World Animal Day (Page 41).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Important Days",
+    "question": "Arrange the following UN/International observances in chronological order of their dates in October 2025:\n\n1. World Habitat Day (First Monday of October)\n2. World Teachers' Day\n3. World Animal Day\n4. International Day of Older Persons\n\nSelect the correct sequence:",
+    "options": {
+      "A": "4-3-2-1",
+      "B": "4-1-3-2",
+      "C": "1-4-3-2",
+      "D": "4-3-1-2",
+      "E": "4-2-3-1"
+    },
+    "answer": "A",
+    "rationale": "From pages 39-43: International Day of Older Persons (Oct 1) -> World Animal Day (Oct 4) -> World Teachers' Day (Oct 5) -> World Habitat Day (Oct 6, First Monday). Sequence is 4, 3, 2, 1.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "RBI Monetary Policy",
+    "question": "Which of the following points regarding the 'Rupee Internationalisation Measures' introduced in the 4th Bi-monthly MPC meeting (Page 27) is correct?",
+    "options": {
+      "A": "Authorised Dealer banks can now extend Rupee-denominated loans to non-residents from Bhutan, Nepal, and Sri Lanka for trade.",
+      "B": "Foreign investors are allowed to hold 100% of sovereign green bonds.",
+      "C": "Rupee trade settlements are made mandatory with GCC countries.",
+      "D": "Only State Bank of India is authorized to issue overseas Rupee loans.",
+      "E": "None of the above."
+    },
+    "answer": "A",
+    "rationale": "Page 27 explicitly states under Rupee Internationalisation Measures: 'Rupee Loans: Authorised Dealer (AD) banks can now extend Indian Rupees-denominated loans to non-residents from Bhutan, Nepal, and Sri Lanka for trade.'",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Awards",
+    "question": "Match the winners of the MY Bharat NSS Award 2022-23 (Page 32) with their respective prize categories:\n\n1. NSS Unit\n2. Programme Officer\n3. NSS Volunteer\n\nA. Rs 1 Lakh\nB. Rs 1.50 lakh\nC. Rs 2 lakh\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-B, 2-C, 3-A",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Page 32 shows: NSS Unit = Rs 2 lakh (C); Programme Officer = Rs 1.50 lakh (B); NSS Volunteer = Rs. 1 Lakh (A).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Important Days",
+    "question": "Which global health initiative targets a reduction in mortality by 2.5% annually by 2040, as mentioned in the context of Breast Cancer Awareness Month on page 40?",
+    "options": {
+      "A": "UNICEF Health 2040",
+      "B": "WHO GBCI (Global Breast Cancer Initiative)",
+      "C": "Pink Month Eradication Drive",
+      "D": "GARC World Health Fund",
+      "E": "None of the above"
+    },
+    "answer": "B",
+    "rationale": "Page 40 explicitly mentions under Breast Cancer Awareness Month: 'WHO Initiative: GBCI (2021) to reduce mortality by 2.5% annually by 2040'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Platform Integrations",
+    "question": "Fill in the blank regarding the SEBI Validated UPI Handles feature on page 28:\nThe exclusive UPI handles introduced for investors will feature a ________ symbol in the SEBI portal or Saarthi app to indicate successful self-verification.",
+    "options": {
+      "A": "Blue tick mark",
+      "B": "Green thumbs-up",
+      "C": "Golden shield",
+      "D": "Red asterisk",
+      "E": "Silver padlock"
+    },
+    "answer": "B",
+    "rationale": "Page 28 notes the feature as 'Exclusive \"@valid\" IDs; Self-verification tool verified green thumbs-up symbol in SEBI portal or Saarthi app'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Sports",
+    "question": "Consider the following statements about the World Para Athletics Championships 2025 hosted in Delhi (Page 36-37):\n\n1. India became the first country in South Asia to host this prestigious championship.\n2. Simran Sharma won a Gold medal in Women's 100m.\n3. Sumit Antil set a Championship Record of 71.37 m in Men's Javelin Throw.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2 and 3",
+      "E": "None of the above"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. Page 36 notes India is the first in South Asia to host. Page 37 lists Simran Sharma winning Gold in 100m, and Sumit Antil setting a record of 71.37m in Javelin.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Disaster Management",
+    "question": "The National Conference on Land Administration & Disaster Management was held in Gandhinagar, Gujarat. Which of the following digital tools was launched during this event, according to page 19?",
+    "options": {
+      "A": "Bhuvan Portal",
+      "B": "RO Mobile App",
+      "C": "Disaster Alert App",
+      "D": "Mhaje Ghar Portal",
+      "E": "E-Bond Ledger"
+    },
+    "answer": "B",
+    "rationale": "Page 19 states that during the conference, 'Key Initiatives Launched' included the 'RO Mobile App' to digitize work logs and inspections.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "UN Missions",
+    "question": "Assertion (A): Major General Robert Yaw Affram honoured Indian Peacemakers for their dedicated service.\nReason (R): India remains the largest contributor to UN peacekeeping efforts with 5,000 troops globally.\n\nWhich of the following is correct?",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "B",
+    "rationale": "Page 31 confirms that Major Gen. Robert Yaw Affram honored Indian Peacemakers in Abyei, Sudan (A is true). It also states India is the largest contributor with 5,000 troops (R is true). However, they were honoured specifically for their local dedication/service in Abyei (UNISFA), not simply because India is the largest contributor overall.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Economy",
+    "question": "Arrange the following top cities in terms of their Swachh Survekshan (SS) status based on the mentor/mentee cities logic in the MoHUA 'SSJ' initiative from page 5. Actually, since specific cities aren't ranked by score, let's look at the participation figures.\nThe SSJ initiative involves ____ mentor cities guiding ____ mentee cities.",
+    "options": {
+      "A": "50, 150",
+      "B": "72, 200",
+      "C": "100, 300",
+      "D": "20, 100",
+      "E": "65, 180"
+    },
+    "answer": "B",
+    "rationale": "Page 5 explicitly states under Coverage: 'Involves 72 mentor cities and approx. 200 mentee cities'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Penalties",
+    "question": "Match the following entities with the respective penalties imposed on them by the RBI, as stated on pages 25-26:\n\n1. Indian Overseas Bank\n2. American Express Banking Corporation\n3. HDB Financial Services\n\nA. Rs. 4.2 lakhs\nB. Rs. 31.80 lakhs\nC. Rs. 32 Lakh (Rs. 31.8 lakh exact)\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-B, 2-C, 3-A"
+    },
+    "answer": "A",
+    "rationale": "From pages 25-26: Indian Overseas Bank = ~Rs 32 lakh / Rs 31.8 lakh (1-C); American Express = Rs 31.80 lakh (2-B); HDB Financial = Rs 4.2 lakh (3-A).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Obituaries",
+    "question": "Which of the following veteran leaders, known for founding the Yusuf Meherally Centre, passed away recently at the age of 101, as reported on page 37?",
+    "options": {
+      "A": "Pt. Chhannulal Mishra",
+      "B": "Dr. G.G. Parikh",
+      "C": "Dr. Keshav Baliram Hedgewar",
+      "D": "Loknete DB Patil",
+      "E": "None of the above"
+    },
+    "answer": "B",
+    "rationale": "Page 37 details that Dr. Gunvantri Ganpatlal (G.G) Parikh, a veteran socialist and freedom fighter who founded the Yusuf Meherally Centre, passed away.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Initiatives",
+    "question": "Fill in the blank regarding the MoMSME 'Seva Parv 2025' on page 7:\nDuring the event, an MoU was signed between ________ and NSIC for marketing to promote heritage and support artisans.",
+    "options": {
+      "A": "SIDBI",
+      "B": "NABARD",
+      "C": "KVIC",
+      "D": "TRIFED",
+      "E": "NCDC"
+    },
+    "answer": "C",
+    "rationale": "Page 7 mentions: 'MoU signed: b/w KVIC and NSIC for marketing'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Science & Tech",
+    "question": "Consider the following statements regarding the 'Wish Credit Card' launched in October 2025 (Page 29):\n\n1. It was launched by Phonepay along with Utkarsh Small Finance Bank.\n2. It is a Fixed Deposit (FD) backed credit card.\n3. The minimum deposit required for the card is Rs 5000.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2 and 3",
+      "E": "None of the above"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct based on page 29. Statement 3 is incorrect because the minimum deposit specified is Rs 2000, not Rs 5000.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Awards",
+    "question": "Which of the following organizations received the Edward Warner Award 2025 (referred to as ICAO's highest honour) as mentioned on page 22?",
+    "options": {
+      "A": "African Civil Aviation Commission",
+      "B": "African Civil Aviation and Flight Safety Foundation",
+      "C": "Both A and B",
+      "D": "Asian Civil Aviation Authority",
+      "E": "None of the above"
+    },
+    "answer": "C",
+    "rationale": "Page 22 explicitly lists the recipients of the Edward Warner Award 2025 as the 'African Civil Aviation Commission' and 'African Civil Aviation and Flight Safety Foundation'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Schemes & Portals",
+    "question": "Assertion (A): The Union Minister Ashwini Vaishnaw launched the NIELIT Digital University (NDU) platform.\nReason (R): It aims to democratize access to high-quality digital education and train 40 lakh students by 2030.\n\nWhich of the following is correct?",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "A",
+    "rationale": "Page 10 states that the NDU platform was launched by Ashwini Vaishnaw (A is true). The objective and targets mentioned perfectly justify the reason for launching the platform (R is true and explains A).",
+    "tag": "Current-Transient"
+  }
+]
