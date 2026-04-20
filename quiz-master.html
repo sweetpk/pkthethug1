@@ -2198,7 +2198,7 @@ function renderQuestion() {
     ${q.sub_category ? `<span class="badge" style="background:var(--bg4);color:var(--text2);border:1px solid var(--border)">${q.sub_category}</span>` : ''}
     <span class="badge ${tagType === 'Current' ? 'badge-current' : 'badge-static'}">${q.tag || tagType}</span>
   `;
-  $('q-text').textContent = q.question;
+  $('q-text').innerHTML = q.question.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>');
 
   const answered = STATE.answers[STATE.current];
   const isDrill = STATE.quizConfig.drillMode;
@@ -2548,7 +2548,7 @@ function showResultScreen({ correct, wrong, skipped, score, pct, elapsed, catMap
           <span class="badge ${tagType==='Current'?'badge-current':'badge-static'}">${tagType}</span>
           <span class="badge" style="background:var(--bg4);color:var(--text3);border:1px solid var(--border)">Q${i+1}</span>
         </div>
-        <div class="wrong-q-text">${q.question}</div>
+        <div class="wrong-q-text">${q.question.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>')}</div>
         <div class="wrong-answers">
           ${isSkipped 
             ? `<span class="answer-pill skipped-pill">— Skipped</span>` 
@@ -2609,7 +2609,7 @@ function renderReviewQuestion() {
       <span class="badge ${tagType==='Current'?'badge-current':'badge-static'}">${tagType}</span>
       <span class="badge" style="background:var(--bg4);color:var(--text3);border:1px solid var(--border)">Q${i+1}</span>
     </div>
-    <div style="font-size:1rem;font-weight:500;line-height:1.7;margin-bottom:24px">${q.question}</div>
+    <div style="font-size:1rem;font-weight:500;line-height:1.7;margin-bottom:24px">${q.question.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>')}</div>
     <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:20px">
       ${optKeys.map(key => {
         let cls = '';
