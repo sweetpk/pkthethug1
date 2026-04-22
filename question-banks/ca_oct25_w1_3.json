@@ -12,7 +12,8 @@
     },
     "answer": "B",
     "rationale": "According to page 4 and 44, New Zealand and Saudi Arabia were Partner Countries, and Japan, UAE, Vietnam, and Russia were Focus Countries (Statements 1 and 2 are correct). However, The Allana Group was the 'Gold Sponsor', not the Platinum Sponsor (Statement 3 is incorrect).",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_3.json"
   },
   {
     "category": "Banking",
@@ -27,7 +28,8 @@
     },
     "answer": "A",
     "rationale": "The interest rates from page 7/46 are: 5-Year PORD (6.7%), 1-Year POTD (6.9%), PO-MIS (7.4%), and KVP (7.5%). The ascending order is strictly 1 -> 2 -> 3 -> 4.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_3.json"
   },
   {
     "category": "Banking",
@@ -42,7 +44,8 @@
     },
     "answer": "A",
     "rationale": "As per the Payout Structure on pages 24 and 59: Up to 4 years is capped at Rs. 5,000 (1-C); 4-8 years at Rs. 10,000 (2-A); 8-10 years at Rs. 15,000 (3-D); and 10 years and above at Rs. 25,000 (4-B).",
-    "tag": "Static-Conceptual"
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ca_oct25_w1_3.json"
   },
   {
     "category": "National",
@@ -57,7 +60,8 @@
     },
     "answer": "C",
     "rationale": "Page 19 details the Critical Mineral Recycling scheme. Group B max allocation is Rs 495 crore (Assertion is true). However, the minimum investment requirement for Group B is 'Rs 25 crore', not Rs 100 crore (which is for Group A). Thus, Reason is false.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_3.json"
   },
   {
     "category": "National",
@@ -72,7 +76,8 @@
     },
     "answer": "A",
     "rationale": "Statements 1 and 2 are correct (Page 10/48). Statement 3 is incorrect because NAFED & NCCF are mandated to undertake '100% procurement', not 50%.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_3.json"
   },
   {
     "category": "Economy & Industry",
@@ -87,7 +92,8 @@
     },
     "answer": "C",
     "rationale": "According to page 29, the ADB's inflation forecast for FY26 is 3.1%, not 2.6% (2.6% is the RBI's CPI inflation projection for FY26 as per page 27). Pairs 1, 2, and 4 are correctly matched.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_3.json"
   },
   {
     "category": "National",
@@ -102,7 +108,8 @@
     },
     "answer": "B",
     "rationale": "Pages 30 and 64 clearly state that Roshni Nadar, Chairperson of HCL Technologies, is the richest woman in India and ranks 3rd overall with a net worth of Rs 2.84 lakh crore.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_3.json"
   },
   {
     "category": "National",
@@ -117,7 +124,8 @@
     },
     "answer": "C",
     "rationale": "Page 8 explicitly states under 'Container Terminal Development': 'Syama Prasad Mookerjee Port (Kolkata): 30-year concession with JSW for a new container terminal.' Paradip Port signed with Arcelor Mittal Nippon Steel (AM/NS).",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_3.json"
   },
   {
     "category": "National",
@@ -132,7 +140,8 @@
     },
     "answer": "C",
     "rationale": "Statement 1 and 3 are correct (16th state, inaugurated by Chandrashekhar Bawankule). Statement 2 is incorrect because it replaces 'Rs. 500 paper stamp bonds digitally', not Rs. 1,000 (Pages 43/77).",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_3.json"
   },
   {
     "category": "Banking",
@@ -147,7 +156,8 @@
     },
     "answer": "A",
     "rationale": "Page 25: SEBI launched MITRA to track inactive MF folios (1-B). Page 28: SEBI Validated UPI Handles use '@valid' IDs (2-C). Page 24: PhonePe + Mastercard Tap & Pay uses NFC at PoS (3-A).",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_3.json"
   },
   {
     "category": "International Affairs",
@@ -162,7 +172,8 @@
     },
     "answer": "C",
     "rationale": "According to page 22 and 57, 'Part II' consists of 'States which make the largest contribution to international air navigation' (not geographical balance). 'Part III' is for states ensuring 'geographic representation' (which includes Malaysia, UAE, Uganda, Qatar). Therefore, saying Part II is for geographical balance is incorrect.",
-    "tag": "Static-Conceptual"
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ca_oct25_w1_3.json"
   },
   {
     "category": "National",
@@ -177,7 +188,8 @@
     },
     "answer": "A",
     "rationale": "Pages 40-42: International Day of Non-Violence (Oct 2), World Animal Day (Oct 4), World Teachers' Day (Oct 5), World Cerebral Palsy Day (Oct 6). The sequence is 3, 2, 4, 1.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_3.json"
   },
   {
     "category": "Banking",
@@ -192,7 +204,8 @@
     },
     "answer": "C",
     "rationale": "Assertion (A) is true as Zomato and HDFC Pension launched the NPS model (Page 29/64). Reason (R) is false because the scheme features 'flexible contributions' and does not mandate a rigid minimum daily contribution of Rs 100.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_3.json"
   },
   {
     "category": "National",
@@ -207,7 +220,8 @@
     },
     "answer": "D",
     "rationale": "All statements are correct. Page 70 explicitly shows: Rank 1: Brazil (15 Gold, 44 Total); Rank 2: China (13 Gold, 52 Total); Rank 10: India (6 Gold, 22 Total). *Note: Ranks in these tallies prioritize Gold count over total medals, making Brazil #1 despite having fewer total medals than China.*",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_3.json"
   },
   {
     "category": "National",
@@ -222,7 +236,8 @@
     },
     "answer": "B",
     "rationale": "Page 66 clearly elaborates that the discovery (involving Josephson junctions) underpins 'quantum computers, flash memory, and ultra-precise quantum sensors'.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_3.json"
   },
   {
     "category": "National",
@@ -237,7 +252,8 @@
     },
     "answer": "A",
     "rationale": "Page 34/68 states that Jindal Power Limited acquired Jaiprakash Associates Limited (JAL), and IIHL acquired a 100% stake in Sterling Bank, Bahamas.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_3.json"
   },
   {
     "category": "National",
@@ -252,7 +268,8 @@
     },
     "answer": "D",
     "rationale": "All statements are correct. Page 13 and 50 mention the investment is Rs. 1,500 Crore, implemented by DBT & UK's Wellcome Trust via the 'India Alliance' SPV.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_3.json"
   },
   {
     "category": "National",
@@ -267,7 +284,8 @@
     },
     "answer": "C",
     "rationale": "Page 20 and 56 clearly state that the 'Indian Coast Guard (ICG)' conducted the 10th NATPOLREX-X off the Chennai coast.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_3.json"
   },
   {
     "category": "Banking",
@@ -282,7 +300,8 @@
     },
     "answer": "A",
     "rationale": "Page 61 highlights under 'Improve credit flow' that the RBI 'withdrew the August 2016 framework' and simultaneously 'increased the limit for loan against shares' and 'financing acquisitions', making the Reason a direct explanation of the Assertion.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_3.json"
   },
   {
     "category": "National",
@@ -297,7 +316,8 @@
     },
     "answer": "A",
     "rationale": "Page 72: World Rabies Day theme is 'Act Now: You, Me, Communities' (1-B). Page 73: Translation Day theme is 'Celebrating Translation, Peace and Trust' (2-C). Page 75: World Space Week theme is 'Living in Space' (3-A).",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_3.json"
   },
   {
     "category": "National",
@@ -312,7 +332,8 @@
     },
     "answer": "B",
     "rationale": "Page 34 and 68 explicitly outline the tripartite MoU between 'Goodluck India, BATL, and Axiscades' to participate in the AMCA program.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_3.json"
   },
   {
     "category": "National",
@@ -327,7 +348,8 @@
     },
     "answer": "B",
     "rationale": "Page 21 and 56 clearly state the theme of PPC 2025-26 is 'Sabki Yojana, Sabka Vikas'.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_3.json"
   },
   {
     "category": "National",
@@ -342,7 +364,8 @@
     },
     "answer": "D",
     "rationale": "All statements are correct based on pages 33 and 67. Sanjay Chalke takes over Capgemini India, Shubansh Sukla is the ambassador for the Buildathon, and Hagrama Mohilary was sworn in as CEM of BTC.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_3.json"
   },
   {
     "category": "Banking",
@@ -357,7 +380,8 @@
     },
     "answer": "D",
     "rationale": "Page 28 mentions that it utilizes a 'green thumbs-up symbol in SEBI portal or Saarthi app', not a blue verified badge on the BHIM app. All other options are explicitly stated features.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_3.json"
   },
   {
     "category": "National",
@@ -372,6 +396,7 @@
     },
     "answer": "C",
     "rationale": "Page 19 and 54 state: 'National Average Crime Rate: 433 cases per lakh population'. 83.9 is Kolkata's rate, and 3192.4 is Kochi's.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_3.json"
   }
 ]

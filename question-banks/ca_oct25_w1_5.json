@@ -12,7 +12,8 @@
     },
     "answer": "A",
     "rationale": "According to the payout structure on pages 24 and 59: Up to 4 years limit is Rs 5,000 (3); 4-8 years limit is Rs 10,000 (1); 8-10 years limit is Rs 15,000 (4); 10 years and above limit is Rs 25,000 (2). The ascending order based on the monetary limit is 3, 1, 4, 2.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -27,7 +28,8 @@
     },
     "answer": "D",
     "rationale": "All three statements are correct as strictly detailed in the scheme structure on pages 19 and 55. Group A metrics (Rs 100cr / 10k tonnes), Group B metrics (Rs 25cr / 5k tonnes), and the total financial outlay breakdown (Rs 1,485cr total, Rs 700cr for LiB) match the text exactly.",
-    "tag": "Static-Conceptual"
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -42,7 +44,8 @@
     },
     "answer": "A",
     "rationale": "Pages 8 and 46 state: The Bahuda Port in Odisha is partnered with Paradip, Vizag, Sagarmala, and Odisha Govt (1-C). The Water Metro Project is in Patna, partnered with IWAI & Bihar Govt (2-A). The Lighthouse museum is at NMHC, Lothal (3-B).",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "Economy & Business",
@@ -57,7 +60,8 @@
     },
     "answer": "E",
     "rationale": "According to the 'Asian Development Outlook (ADO)' data on page 64, East Asia GDP for 2025 is projected at 4.4%, while 3.9% is the projection for 2026. All other values are correctly matched.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "Banking",
@@ -72,7 +76,8 @@
     },
     "answer": "C",
     "rationale": "Assertion (A) is correct as the limit was increased to 1.5% of RWAs. However, Reason (R) is false because page 23 and 58 explicitly state the regulation is 'Applicable To: All SCBs. Excludes Small Finance Banks, Payments Banks & RRBs.'",
-    "tag": "Static-Conceptual"
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -87,7 +92,8 @@
     },
     "answer": "B",
     "rationale": "Page 53 specifies under the TEC MoU with IIIT Naya Raipur: 'Special Feature: Making of 5G, 6G Internet Speed Frameworks'.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -102,7 +108,8 @@
     },
     "answer": "B",
     "rationale": "According to page 10 and 48: Wheat (109%); Rapeseed and Mustard (93%); Lentil (89%). Therefore, the descending order is Wheat (2) > Rapeseed and Mustard (3) > Lentil (1).",
-    "tag": "Static-Conceptual"
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -117,7 +124,8 @@
     },
     "answer": "A",
     "rationale": "From the PDF: World Animal Day (First Observance: 1925, pg 41/75). International Day of Older Persons (1991, pg 39/74). International Translation Day (First observed by FIT: 1991, pg 38/73 - assuming tied or just sequence. Wait, Teachers' day is 1994). Sequence: Animal (1925) -> Older Persons (1991) -> Translation Day (1991) -> Teachers' Day (1994). So 1 -> 4 -> 3 -> 2 (or 1-3-4-2). Let's check exact wording. Older persons 1991. Translation 1991. The safest distinguishing feature is Animal (1925) first and Teachers' (1994) last. 1-4-3-2 fits this.",
-    "tag": "Static-Conceptual"
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "Banking",
@@ -132,7 +140,8 @@
     },
     "answer": "B",
     "rationale": "Page 28/63: Cosmo Galgal app provides zero-balance accounts for Youth (1-C). Page 29/63: Wish Credit Card is FD backed starting at Rs 2000 (2-A). Page 26/61: Amazon Pay's 'Payments ka A to Z' features a unified payment dashboard (3-B).",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -147,7 +156,8 @@
     },
     "answer": "D",
     "rationale": "All statements are correct as strictly detailed in the 'Indian gold medallists at WPAC 2025' table on pages 37 and 70.",
-    "tag": "Static-Conceptual"
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -162,7 +172,8 @@
     },
     "answer": "A",
     "rationale": "Page 13 and 50 state: 'widening and improvement of 85.675 kilometer (km)-long Kalibor-Numaligarh section of National Highway (NH)-715'.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -177,7 +188,8 @@
     },
     "answer": "C",
     "rationale": "Pages 18 and 54 list the 5 launched projects: Phase-II of Project Dolphin, Project Sloth Bear, Project Gharial, CoE-HWC at SACON, and Project Tigers Outside Tiger Reserves. The 'Great Indian Bustard' is mentioned under 'National-Level Actions' (Progress Report), but it is not one of the 5 newly launched projects.",
-    "tag": "Static-Conceptual"
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "Banking",
@@ -192,7 +204,8 @@
     },
     "answer": "A",
     "rationale": "Indian Overseas Bank was penalized for PSL non-compliance (1-C). American Express failed to return credit balances (2-A). HDB Financial failed to obtain PAN/e-document (3-B).",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -207,7 +220,8 @@
     },
     "answer": "C",
     "rationale": "Statement 1 and 3 are correct (Pages 12 & 49). Statement 2 is incorrect because the Vemagal FAL is for manufacturing the 'Airbus H125 helicopter'. The C295 transport aircraft unit is the previous plant located in Vadodara, Gujarat.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -222,7 +236,8 @@
     },
     "answer": "A",
     "rationale": "From page 18/55: Hyderabad (332.3) < Pune (337.1) < Mumbai (355.4) < Coimbatore (409.7). Therefore, the correct ascending sequence is 2, 3, 1, 4.",
-    "tag": "Static-Conceptual"
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -237,7 +252,8 @@
     },
     "answer": "B",
     "rationale": "Pages 32 & 66 clearly detail: Asheesh Pandey is MD & CEO of Union Bank of India (1-B), and Kalyan Kumar is MD & CEO of Central Bank of India (2-A).",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "International Affairs",
@@ -252,7 +268,8 @@
     },
     "answer": "C",
     "rationale": "Assertion (A) is true (Pages 22 & 58). Reason (R) is false because Dr. Mohammed Azman was re-elected as 'President', while Jean-Marc Vandenbergh was re-elected as 'Treasurer'.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "Economy & Business",
@@ -267,7 +284,8 @@
     },
     "answer": "B",
     "rationale": "Statements 1 and 3 are correct. Statement 2 is incorrect because the initiative explicitly features 'flexible contributions, & portability of pension accounts' rather than rigid/non-portable ones.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -282,7 +300,8 @@
     },
     "answer": "A",
     "rationale": "Both statements are factually accurate as per pages 20 and 55-56. The reason correctly outlines the explicit purpose/objective (explanation) for signing the MoU.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -297,7 +316,8 @@
     },
     "answer": "C",
     "rationale": "Page 68 explicitly states: 'Purpose: Develop a fifth-generation stealth fighter jet, AMCA'.",
-    "tag": "Static-Conceptual"
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "State News",
@@ -312,7 +332,8 @@
     },
     "answer": "D",
     "rationale": "Pages 43 and 78 state that the launch event was held in 'Mumbai (Maharashtra)', not Pune. All other statements are correct.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -327,7 +348,8 @@
     },
     "answer": "B",
     "rationale": "Page 66 clearly breaks down the 50 recipients as: 'NSS Units and Programme Officers (10+10), and NSS Volunteers (30)'. Thus, Units=10, Officers=10, Volunteers=30.",
-    "tag": "Static-Conceptual"
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "Banking",
@@ -342,7 +364,8 @@
     },
     "answer": "E",
     "rationale": "The 'Wish Credit Card' was launched by 'Phonepay along with Utkarsh SFB', not RBL Bank + HDFC Pension (Pages 29 & 63). All other pairings are correct.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -357,7 +380,8 @@
     },
     "answer": "D",
     "rationale": "All three statements correctly reflect the facts provided on page 10 under 'Assured Procurement' related to the PM-AASHA Scheme.",
-    "tag": "Static-Conceptual"
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -372,7 +396,8 @@
     },
     "answer": "A",
     "rationale": "Pages 35 & 69 detail: Sheetal Devi (3 Medals), Toman Kumar (2 Medals), Rakesh Kumar (1 Medal). Therefore, the descending order is 2, 3, 1.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -387,7 +412,8 @@
     },
     "answer": "C",
     "rationale": "Pages 21 and 57 clearly state the MoA was signed with 'Bhaskaracharya National Institute for Space Applications and Geo-informatics (BISAG-N)'.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -402,7 +428,8 @@
     },
     "answer": "B",
     "rationale": "Both statements are completely factual according to pages 20 and 56. The reason describes the broad systemic aim of NATPOLREX exercises, while the assertion refers to a specific novel feature (shoreline clean-up) of the 10th edition. The overarching aim (R) justifies conducting the exercise, but it is not the *direct specific explanation* for why they chose Marina Beach for the first-ever shoreline drill.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -417,7 +444,8 @@
     },
     "answer": "D",
     "rationale": "Pages 7 and 45 list the support items: PMV loan certificates, PMEGP margin money, GVY toolkits, and specific events (Exhibition, Swachhata Karyakram, Mahila Paricharcha). A Rs 500 crore VC fund is never mentioned in the text.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -432,7 +460,8 @@
     },
     "answer": "A",
     "rationale": "Page 38/73: 'Don't Miss A Beat' -> World Heart Day (1-C). 'Celebrating Translation...' -> Translation Day (2-A). Page 40/74: 'Embracing Collaboration...' -> Coffee Day (3-B).",
-    "tag": "Static-Conceptual"
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -447,7 +476,8 @@
     },
     "answer": "B",
     "rationale": "Pages 13 and 50 state: 'Mode of Development: EPC' and 'elevated corridor passing through KZNP (34.45 km)'.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "Banking",
@@ -462,7 +492,8 @@
     },
     "answer": "A",
     "rationale": "Both the assertion and the reason are explicitly true based on page 60. The reason directly summarizes the SEBI circular's intent (safeguard investors, promote market development) for stretching the timeline across specific milestones to April 1, 2026.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -477,7 +508,8 @@
     },
     "answer": "C",
     "rationale": "Pages 13 and 50 clearly state that the DA/DR hike is 'Effective from: July 01, 2025', not October 1, 2025. All other data points are correct.",
-    "tag": "Static-Conceptual"
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -492,7 +524,8 @@
     },
     "answer": "B",
     "rationale": "Pages 30 and 64 show the top 3 are: Mukesh Ambani (Rank 1), Gautam Adani (Rank 2), Roshni Nadar (Rank 3). So the correct sequence is 2, 1, 3.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -507,7 +540,8 @@
     },
     "answer": "E",
     "rationale": "Pages 41-42 & 75-76 confirm: 'Unique and United' is Cerebral Palsy Day; 'Living in Space' is Space Week; 'Save Animals, Save the Planet' is Animal Day; 'Sewa Parv' is Wildlife Week. All are matched perfectly.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "State News",
@@ -522,7 +556,8 @@
     },
     "answer": "A",
     "rationale": "E-Bond system was inaugurated by Chandrashekhar Bawankule (1-C). Mhaje Ghar Yojana was launched by Amit Shah in Goa (2-A). Abhijat Marathi OTT was launched by Devendra Fadnavis (3-B).",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "Banking",
@@ -537,7 +572,8 @@
     },
     "answer": "A",
     "rationale": "Both statements are completely factual based on pages 29 and 63. The reason directly explains the technical implementation (ACS, AI, facial recognition) that enables the RBI-compliant biometric authentication mentioned in the assertion.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "Banking",
@@ -552,7 +588,8 @@
     },
     "answer": "A",
     "rationale": "Statements 1 and 2 are explicitly listed on page 61 under 'Improve credit flow'. Statement 3 is false; Rupee internationalisation measures focus on Bhutan, Nepal, Sri Lanka, and expanding SRVA, not strictly European mandates.",
-    "tag": "Static-Conceptual"
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "International Affairs",
@@ -567,7 +604,8 @@
     },
     "answer": "B",
     "rationale": "Pages 6 and 45 clearly state the '600 MW Kholongchhu Hydro Project' received a 'Loan Agreement: Rs. 4,829 crore' from India's PFC.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -582,7 +620,8 @@
     },
     "answer": "B",
     "rationale": "Page 55 states the application window is 'October 4, 2025 to April 1, 2026 (6 months)'.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -597,7 +636,8 @@
     },
     "answer": "A",
     "rationale": "Both statements are completely factual based on pages 5 and 44. The reason details the exact mechanism (mentorship framework, 72 to 200 ratio) that defines the functional core of the SSJ initiative mentioned in the assertion.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -612,7 +652,8 @@
     },
     "answer": "E",
     "rationale": "Page 72 explicitly notes: 'First Night Race Debut: 2008', not 2012. All other options are factual.",
-    "tag": "Static-Conceptual"
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "International Affairs",
@@ -627,7 +668,8 @@
     },
     "answer": "C",
     "rationale": "Jobs = 1 million (1-A). FDI target = USD 100 billion (2-C). Time Period = Next 15 Years (3-B).",
-    "tag": "Static-Conceptual"
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -642,7 +684,8 @@
     },
     "answer": "A",
     "rationale": "From pages 31 & 65: Individual laureates = 232 (1). Prizes awarded = 116 (2). Cash prize = 11 million (3). Descending order: 232 > 116 > 11, which matches 1 -> 2 -> 3.",
-    "tag": "Static-Conceptual"
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -657,7 +700,8 @@
     },
     "answer": "B",
     "rationale": "KONKAN-2025 featured Vikrant & Prince of Wales (1-C). ICGS Akshar was commissioned at Karaikal (2-A). EyeROV Trout are underwater drones contracted by the Navy (3-B).",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -672,7 +716,8 @@
     },
     "answer": "B",
     "rationale": "Both statements are completely factual (Pages 33 & 67). However, the specific structure of the Buildathon (Reason) describes the event itself, but doesn't causally explain *why* Shubansh Sukla specifically was chosen as ambassador (his status as the first Indian to reach the ISS is the likely catalyst).",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -687,7 +732,8 @@
     },
     "answer": "D",
     "rationale": "Pages 5 and 44 explicitly state the occasion was the '10th Ayurveda day', not the 10th Yoga Mahotsav. All other statements are correct.",
-    "tag": "Static-Conceptual"
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -702,7 +748,8 @@
     },
     "answer": "A",
     "rationale": "Page 8 and 46 provide the values: Total 27 MoUs = Rs 66,000 cr (1); Bahuda Port Investment = Rs 21,500 cr (2); Gujarat Maritime Projects = Over Rs 13,600 cr (3). Descending order is 1 > 2 > 3.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "Banking",
@@ -717,7 +764,8 @@
     },
     "answer": "E",
     "rationale": "According to the table on page 46, the interest rate for the National Savings Certificate (NSC) is 7.7%, not 7.1%.",
-    "tag": "Static-Conceptual"
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "National",
@@ -732,7 +780,8 @@
     },
     "answer": "A",
     "rationale": "Pages 37 & 72 state Pt. Chhannulal Mishra is the 'Voice of Banaras' and won the Sangeet Natak Akademi Award (1-A, 1-C). Dr. G.G. Parikh was the President of the Bombay Unit of Students' Congress in 1947 (2-B).",
-    "tag": "Static-Conceptual"
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   },
   {
     "category": "Banking",
@@ -747,6 +796,7 @@
     },
     "answer": "A",
     "rationale": "Page 62 explicitly states the framework was issued on 'March 21, 2024' and the 'Minimum Net Worth: Rs 2 crore'.",
-    "tag": "Current-Transient"
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ca_oct25_w1_5.json"
   }
 ]

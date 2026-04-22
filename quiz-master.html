@@ -1182,7 +1182,7 @@ input[type="range"]::-webkit-slider-thumb {
     </div>
   </div>
 
-  <!-- Month Selection -->
+  <!-- Month / File Selection (multi-layer) -->
   <div class="setup-section" id="sec-months">
     <div class="setup-section-header open" onclick="toggleSection('sec-months')">
       <div class="section-icon blue">📅</div>
@@ -1191,16 +1191,56 @@ input[type="range"]::-webkit-slider-thumb {
       <span class="chevron open">▼</span>
     </div>
     <div class="setup-section-body open">
-      <p class="text-sm" style="color:var(--text2);margin-bottom:12px;">Auto-detected from <code style="color:var(--accent);font-family:var(--font-mono)">question-banks/</code> folder. Select one or more months to include.</p>
-      <div id="months-grid">
-        <div class="empty-state" style="grid-column:1/-1;padding:24px">
-          <div class="empty-icon">📂</div>
-          <h3>No files detected</h3>
-          <p>Make sure JSON files are in the <code style="font-family:var(--font-mono)">question-banks/</code> folder, or upload them below.</p>
+
+      <!-- Upload-only notice -->
+      <div id="upload-only-notice" style="display:none;margin-bottom:14px;padding:10px 14px;background:var(--blue-bg);border:1px solid rgba(59,130,246,0.25);border-radius:var(--radius-sm);font-size:0.82rem;color:var(--blue)">
+        📁 Using <strong>uploaded files only</strong>. Remove uploads to switch back to the question bank.
+      </div>
+
+      <!-- LAYER 1: Month -->
+      <div style="margin-bottom:20px">
+        <p class="form-label" style="margin-bottom:8px">① Select Month(s)</p>
+        <p class="text-sm" style="color:var(--text2);margin-bottom:10px">Click one or more months. All questions from that month are included, across all sources — unless you filter below.</p>
+        <div id="months-grid">
+          <div class="empty-state" style="grid-column:1/-1;padding:24px">
+            <div class="empty-icon">📂</div>
+            <h3>No files detected</h3>
+            <p>Make sure JSON files are in the <code style="font-family:var(--font-mono)">question-banks/</code> folder, or upload them below.</p>
+          </div>
         </div>
       </div>
-      <div style="margin-top:16px">
-        <p class="form-label" style="margin-bottom:10px">📤 Upload Additional Files</p>
+
+      <!-- LAYER 2: Source -->
+      <div id="source-chips-section" style="margin-bottom:20px;display:none">
+        <p class="form-label" style="margin-bottom:8px">② Filter by Source <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--text3);font-size:0.75rem">(optional — default: all sources)</span></p>
+        <div class="chip-group" id="source-chips">
+          <span class="chip all-chip selected" data-val="ALL" onclick="toggleSourceChip(this,'ALL')">All Sources</span>
+        </div>
+      </div>
+
+      <!-- LAYER 3: Week -->
+      <div id="week-filter-row" style="display:none;margin-bottom:20px;align-items:center;gap:12px;flex-wrap:wrap">
+        <div style="flex:1;min-width:200px">
+          <p class="form-label" style="margin-bottom:8px">③ Week Filter <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--text3);font-size:0.75rem">(optional — files without a week tag are always included)</span></p>
+          <select class="form-control" id="week-select" onchange="STATE.selectedWeek=this.value; STATE.selectedFiles.clear(); buildFilePickerDropdown(); updateFiltersAndUI(); updateSummaries()">
+            <option value="ALL">All Weeks</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- LAYER 4: Direct File Picker -->
+      <div style="margin-bottom:20px">
+        <p class="form-label" style="margin-bottom:6px">④ Pick Specific Files <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--text3);font-size:0.75rem">(overrides all filters above if any are selected)</span></p>
+        <p class="text-sm" style="color:var(--text2);margin-bottom:8px">Hold <kbd class="kbd-hint" style="display:inline-flex">Ctrl</kbd> / <kbd class="kbd-hint" style="display:inline-flex">⌘</kbd> to multi-select. Selecting files here bypasses month/source/week filters entirely.</p>
+        <select class="form-control" id="file-picker-select" multiple size="5" style="font-family:var(--font-mono);font-size:0.78rem;line-height:1.7" onchange="handleFilePickerChange(this)">
+          <option disabled>No files available</option>
+        </select>
+        <button onclick="clearFilePicker()" style="margin-top:6px;padding:5px 14px;border-radius:var(--radius-sm);background:var(--bg4);border:1px solid var(--border);color:var(--text2);font-size:0.78rem;cursor:pointer" onmouseover="this.style.color='var(--red)'" onmouseout="this.style.color='var(--text2)'">✕ Clear file selection</button>
+      </div>
+
+      <!-- File Upload -->
+      <div style="border-top:1px solid var(--border);padding-top:16px">
+        <p class="form-label" style="margin-bottom:10px">📤 Upload Files <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--text3);font-size:0.75rem">(uses only uploaded files when present)</span></p>
         <div class="upload-area" id="upload-area">
           <input type="file" id="file-input" multiple accept=".json">
           <div class="upload-icon">⬆️</div>
@@ -1209,6 +1249,7 @@ input[type="range"]::-webkit-slider-thumb {
         </div>
         <div id="upload-status"></div>
       </div>
+
     </div>
   </div>
 
@@ -1484,6 +1525,10 @@ const STATE = {
   
   // Setup
   selectedMonths: new Set(),
+  selectedSources: new Set(['ALL']),  // NEW: source prefix filter
+  selectedWeek: 'ALL',                // NEW: 'ALL' | 'w1' | 'w2' etc.
+  selectedFiles: new Set(),           // NEW: direct file picker (bypasses other filters)
+  useUploadedOnly: false,             // NEW: when uploads exist, use only those
   selectedCats: new Set(['ALL']),
   selectedSubcats: new Set(['ALL']),
   selectedTags: new Set(['ALL']),
@@ -1607,15 +1652,53 @@ function extractMonthFromFilename(filename) {
   return null;
 }
 
-// Extract category from filename
-function extractCatFromFilename(filename) {
+// Source prefix map — order matters (longer prefixes first)
+const SOURCE_PREFIX_MAP = [
+  { prefix: 'eduagrireports', label: 'EduTap Agriculture Reports' },
+  { prefix: 'eduagrica',      label: 'EduTap Agriculture CA' },
+  { prefix: 'eduschemes',     label: 'EduTap Schemes' },
+  { prefix: 'edureports',     label: 'EduTap Reports' },
+  { prefix: 'edubanking',     label: 'EduTap Banking' },
+  { prefix: 'edubudget',      label: 'EduTap Budget & Survey' },
+  { prefix: 'eduallinone',    label: 'EduTap All In One' },
+  { prefix: 'edurbi',         label: 'EduTap RBI News' },
+  { prefix: 'educa',          label: 'EduTap CA' },
+  { prefix: 'edumisc',        label: 'EduTap Miscellaneous' },
+  { prefix: 'obschemes',      label: 'Oliveboard Schemes' },
+  { prefix: 'obpib',          label: 'Oliveboard PIB' },
+  { prefix: 'obrbi',          label: 'Oliveboard RBI News' },
+  { prefix: 'obga',           label: 'Oliveboard GA' },
+  { prefix: 'misc',           label: 'Random Miscellaneous' },
+  { prefix: 'other',          label: 'Other Sources' },
+  { prefix: 'ca',             label: 'Cloud Affairs' },
+];
+
+// Extract source prefix key from filename
+function extractSourcePrefix(filename) {
   const name = filename.toLowerCase().replace('.json', '');
-  const knownCats = ['ca','schemes','reports','rbinews','budget','agri','banking','misc','miscellaneous'];
-  for (const c of knownCats) {
-    if (name.startsWith(c + '_') || name.startsWith(c)) return c;
+  for (const { prefix } of SOURCE_PREFIX_MAP) {
+    if (name.startsWith(prefix + '_') || name === prefix) return prefix;
   }
   const parts = name.split('_');
   return parts[0] || 'unknown';
+}
+
+// Get pretty label for a source prefix
+function getSourceLabel(prefix) {
+  const found = SOURCE_PREFIX_MAP.find(s => s.prefix === prefix);
+  return found ? found.label : prefix.charAt(0).toUpperCase() + prefix.slice(1);
+}
+
+// Extract week from filename like ca_oct25_w1_2.json → 'w1' or null
+function extractWeekFromFilename(filename) {
+  const name = filename.toLowerCase().replace('.json', '');
+  const m = name.match(/_w(\d+)(_|$)/);
+  return m ? 'w' + m[1] : null;
+}
+
+// Extract category from filename (legacy alias used elsewhere)
+function extractCatFromFilename(filename) {
+  return extractSourcePrefix(filename);
 }
 
 // Pretty month label
@@ -1699,6 +1782,9 @@ async function init() {
   
   mergeAllQuestions();
   buildMonthGrid();
+  buildSourceChips();
+  buildWeekDropdown();
+  buildFilePickerDropdown();
   buildCategoryChips();
   refreshHomeStats();
   renderHistory();
@@ -1710,9 +1796,16 @@ function mergeAllQuestions() {
   const all = [];
   const seen = new Set();
 
+  // If uploads exist, only use uploaded files
+  const hasUploads = Object.keys(STATE.uploadedFiles).length > 0;
+  const filesToUse = hasUploads
+    ? STATE.uploadedFiles
+    : STATE.bankFiles;
+
   function addQuestions(questions, sourceName) {
     const month = extractMonthFromFilename(sourceName);
-    const fileCat = extractCatFromFilename(sourceName);
+    const fileCat = extractSourcePrefix(sourceName);
+    const week = extractWeekFromFilename(sourceName);
     for (const q of questions) {
       const key = q.question?.slice(0,60);
       if (seen.has(key)) continue;
@@ -1722,18 +1815,17 @@ function mergeAllQuestions() {
         _source: sourceName,
         _month: month,
         _fileCat: fileCat,
+        _week: week,
       });
     }
   }
 
-  for (const [fname, qs] of Object.entries(STATE.bankFiles)) {
-    addQuestions(qs, fname);
-  }
-  for (const [fname, qs] of Object.entries(STATE.uploadedFiles)) {
+  for (const [fname, qs] of Object.entries(filesToUse)) {
     addQuestions(qs, fname);
   }
   
   STATE.allQuestions = all;
+  STATE.useUploadedOnly = hasUploads;
 }
 
 // ============================================================
@@ -1744,7 +1836,7 @@ function buildMonthGrid() {
   
   // Collect unique months from all loaded files
   const monthMap = {}; // monthKey -> count
-  const allFiles = { ...STATE.bankFiles, ...STATE.uploadedFiles };
+  const allFiles = STATE.useUploadedOnly ? STATE.uploadedFiles : STATE.bankFiles;
   
   for (const [fname, qs] of Object.entries(allFiles)) {
     const month = extractMonthFromFilename(fname);
@@ -1790,18 +1882,183 @@ function toggleMonth(btn, month) {
     STATE.selectedMonths.add(month);
     btn.classList.add('selected');
   }
+  // Reset file picker when month changes
+  STATE.selectedFiles.clear();
+  buildSourceChips();
+  buildWeekDropdown();
+  buildFilePickerDropdown();
   updateFiltersAndUI();
+}
+
+// ============================================================
+// SOURCE CHIPS (2nd layer: file prefix filter)
+// ============================================================
+function buildSourceChips() {
+  const container = $('source-chips');
+  if (!container) return;
+
+  // Collect which source prefixes exist in the current month-filtered files
+  const allFiles = STATE.useUploadedOnly ? STATE.uploadedFiles : STATE.bankFiles;
+  const monthFiltered = Object.entries(allFiles).filter(([fname]) => {
+    if (STATE.selectedMonths.size === 0) return true;
+    const m = extractMonthFromFilename(fname);
+    return STATE.selectedMonths.has(m);
+  });
+
+  const presentPrefixes = new Set(monthFiltered.map(([fname]) => extractSourcePrefix(fname)));
+
+  // Remove selected sources that no longer exist
+  for (const s of [...STATE.selectedSources]) {
+    if (s !== 'ALL' && !presentPrefixes.has(s)) STATE.selectedSources.delete(s);
+  }
+  if (STATE.selectedSources.size === 0) STATE.selectedSources.add('ALL');
+
+  const sorted = [...presentPrefixes].sort((a, b) => {
+    const ai = SOURCE_PREFIX_MAP.findIndex(x => x.prefix === a);
+    const bi = SOURCE_PREFIX_MAP.findIndex(x => x.prefix === b);
+    return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi);
+  });
+
+  container.innerHTML = `<span class="chip all-chip ${STATE.selectedSources.has('ALL') ? 'selected' : ''}" data-val="ALL" onclick="toggleSourceChip(this,'ALL')">All Sources</span>`;
+  sorted.forEach(prefix => {
+    const sel = STATE.selectedSources.has(prefix);
+    container.innerHTML += `<span class="chip ${sel ? 'selected' : ''}" data-val="${prefix}" onclick="toggleSourceChip(this,'${prefix}')">${getSourceLabel(prefix)}</span>`;
+  });
+
+  $('source-chips-section').style.display = presentPrefixes.size <= 1 ? 'none' : 'block';
+}
+
+function toggleSourceChip(chip, val) {
+  if (val === 'ALL') {
+    STATE.selectedSources.clear();
+    STATE.selectedSources.add('ALL');
+    $('source-chips').querySelectorAll('.chip').forEach(c => c.classList.toggle('selected', c.dataset.val === 'ALL'));
+  } else {
+    STATE.selectedSources.delete('ALL');
+    $('source-chips').querySelector('[data-val="ALL"]')?.classList.remove('selected');
+    if (STATE.selectedSources.has(val)) {
+      STATE.selectedSources.delete(val);
+      chip.classList.remove('selected');
+      if (STATE.selectedSources.size === 0) {
+        STATE.selectedSources.add('ALL');
+        $('source-chips').querySelector('[data-val="ALL"]')?.classList.add('selected');
+      }
+    } else {
+      STATE.selectedSources.add(val);
+      chip.classList.add('selected');
+    }
+  }
+  STATE.selectedFiles.clear();
+  buildWeekDropdown();
+  buildFilePickerDropdown();
+  updateFiltersAndUI();
+}
+
+// ============================================================
+// WEEK DROPDOWN
+// ============================================================
+function buildWeekDropdown() {
+  const sel = $('week-select');
+  if (!sel) return;
+
+  // Find which weeks exist in current month+source filtered files
+  const allFiles = STATE.useUploadedOnly ? STATE.uploadedFiles : STATE.bankFiles;
+  const relevantFiles = Object.keys(allFiles).filter(fname => {
+    if (STATE.selectedMonths.size > 0) {
+      const m = extractMonthFromFilename(fname);
+      if (!STATE.selectedMonths.has(m)) return false;
+    }
+    if (!STATE.selectedSources.has('ALL')) {
+      const p = extractSourcePrefix(fname);
+      if (!STATE.selectedSources.has(p)) return false;
+    }
+    return true;
+  });
+
+  const weeks = new Set(relevantFiles.map(f => extractWeekFromFilename(f)).filter(Boolean));
+  const sortedWeeks = [...weeks].sort();
+
+  // If no weeks at all, hide the row
+  const weekRow = $('week-filter-row');
+  if (weekRow) weekRow.style.display = weeks.size === 0 ? 'none' : 'flex';
+
+  // Rebuild options
+  sel.innerHTML = '<option value="ALL">All Weeks</option>';
+  sortedWeeks.forEach(w => {
+    const label = 'Week ' + w.slice(1); // w1 -> Week 1
+    sel.innerHTML += `<option value="${w}" ${STATE.selectedWeek === w ? 'selected' : ''}>${label}</option>`;
+  });
+  // Ensure selected week still valid
+  if (STATE.selectedWeek !== 'ALL' && !weeks.has(STATE.selectedWeek)) {
+    STATE.selectedWeek = 'ALL';
+    sel.value = 'ALL';
+  }
+}
+
+// ============================================================
+// FILE PICKER DROPDOWN
+// ============================================================
+function buildFilePickerDropdown() {
+  const container = $('file-picker-list');
+  if (!container) return;
+
+  const allFiles = STATE.useUploadedOnly ? STATE.uploadedFiles : STATE.bankFiles;
+  
+  // Get files matching current month + source + week filters (for context), but show ALL files
+  // File picker shows all available files regardless; selection bypasses other filters
+  const allFnames = Object.keys(allFiles).sort();
+
+  if (allFnames.length === 0) {
+    container.innerHTML = '<option disabled>No files available</option>';
+    return;
+  }
+
+  container.innerHTML = allFnames.map(fname => {
+    const month = extractMonthFromFilename(fname);
+    const prefix = extractSourcePrefix(fname);
+    const week = extractWeekFromFilename(fname);
+    const qs = allFiles[fname];
+    const label = `${fname} (${qs.length}Q${month ? ' · ' + prettyMonth(month) : ''}${week ? ' · W' + week.slice(1) : ''} · ${getSourceLabel(prefix)})`;
+    return `<option value="${fname}" ${STATE.selectedFiles.has(fname) ? 'selected' : ''}>${label}</option>`;
+  }).join('');
+}
+
+function handleFilePickerChange(selectEl) {
+  const selected = Array.from(selectEl.selectedOptions).map(o => o.value);
+  STATE.selectedFiles = new Set(selected);
+  updateFiltersAndUI();
+  updateSummaries();
+}
+
+function clearFilePicker() {
+  STATE.selectedFiles.clear();
+  const sel = $('file-picker-select');
+  if (sel) Array.from(sel.options).forEach(o => o.selected = false);
+  updateFiltersAndUI();
+  updateSummaries();
 }
 
 // ============================================================
 // CATEGORY CHIPS
 // ============================================================
 function buildCategoryChips() {
-  // Get categories from JSON field "category"
+  // Use questions filtered by month + source + week (or file picker), before cat/subcat/tag filtering
+  let base;
+  if (STATE.selectedFiles.size > 0) {
+    base = STATE.allQuestions.filter(q => STATE.selectedFiles.has(q._source));
+  } else {
+    base = getFilteredByMonth();
+    if (!STATE.selectedSources.has('ALL') && STATE.selectedSources.size > 0) {
+      base = base.filter(q => STATE.selectedSources.has(q._fileCat));
+    }
+    if (STATE.selectedWeek !== 'ALL') {
+      base = base.filter(q => q._week === null || q._week === STATE.selectedWeek);
+    }
+  }
+
   const cats = new Set();
   const subcats = new Set();
-  
-  getFilteredByMonth().forEach(q => {
+  base.forEach(q => {
     if (q.category) cats.add(q.category);
     if (q.sub_category) subcats.add(q.sub_category);
   });
@@ -1860,18 +2117,43 @@ function getFilteredByMonth() {
 }
 
 function getFilteredQuestions() {
+  // FILE PICKER MODE: bypasses all other filters except cat/subcat/tag
+  if (STATE.selectedFiles.size > 0) {
+    let qs = STATE.allQuestions.filter(q => STATE.selectedFiles.has(q._source));
+    qs = applyInnerFilters(qs);
+    return qs;
+  }
+
   let qs = getFilteredByMonth();
 
+  // Source filter
+  if (!STATE.selectedSources.has('ALL') && STATE.selectedSources.size > 0) {
+    qs = qs.filter(q => STATE.selectedSources.has(q._fileCat));
+  }
+
+  // Week filter — smart: only restrict to week if the file HAS a week label
+  // Files without a week label are ALWAYS included unless the week filter clashes
+  if (STATE.selectedWeek !== 'ALL') {
+    qs = qs.filter(q => {
+      // If the file has a week, it must match selected week
+      // If the file has NO week label, include it always
+      return q._week === null || q._week === STATE.selectedWeek;
+    });
+  }
+
+  qs = applyInnerFilters(qs);
+  return qs;
+}
+
+function applyInnerFilters(qs) {
   // Category filter
   if (!STATE.selectedCats.has('ALL') && STATE.selectedCats.size > 0) {
     qs = qs.filter(q => STATE.selectedCats.has(q.category));
   }
-
   // Subcat filter
   if (!STATE.selectedSubcats.has('ALL') && STATE.selectedSubcats.size > 0) {
     qs = qs.filter(q => STATE.selectedSubcats.has(q.sub_category));
   }
-
   // Tag filter
   if (!STATE.selectedTags.has('ALL') && STATE.selectedTags.size > 0) {
     qs = qs.filter(q => {
@@ -1879,7 +2161,6 @@ function getFilteredQuestions() {
       return STATE.selectedTags.has(t);
     });
   }
-
   return qs;
 }
 
@@ -1918,16 +2199,23 @@ function updateFiltersAndUI() {
   const warn = $('no-q-warn');
   const cntDiv = $('filtered-count');
   
-  if (STATE.selectedMonths.size === 0 && Object.keys({...STATE.bankFiles,...STATE.uploadedFiles}).length === 0) {
+  const hasFiles = Object.keys(STATE.useUploadedOnly ? STATE.uploadedFiles : STATE.bankFiles).length > 0;
+  const hasSelection = STATE.selectedMonths.size > 0 || STATE.selectedFiles.size > 0;
+
+  if (!hasFiles) {
     warn.classList.remove('show');
     cntDiv.style.display = 'none';
-  } else if (count === 0) {
+  } else if (hasSelection && count === 0) {
     warn.classList.add('show');
     cntDiv.style.display = 'none';
-  } else {
+  } else if (count > 0) {
     warn.classList.remove('show');
     cntDiv.style.display = 'block';
-    $('filtered-count-text').textContent = `✓ ${count} questions available matching filters`;
+    const filePicker = STATE.selectedFiles.size > 0 ? ` (${STATE.selectedFiles.size} file${STATE.selectedFiles.size>1?'s':''} selected)` : '';
+    $('filtered-count-text').textContent = `✓ ${count} questions available${filePicker}`;
+  } else {
+    warn.classList.remove('show');
+    cntDiv.style.display = 'none';
   }
   
   updateStartButton();
@@ -1938,6 +2226,21 @@ function updateStartButton() {
   const filtered = getFilteredQuestions();
   const btn = $('start-btn');
   
+  const hasSelection = STATE.selectedMonths.size > 0 || STATE.selectedFiles.size > 0;
+  const hasFiles = Object.keys(STATE.useUploadedOnly ? STATE.uploadedFiles : STATE.bankFiles).length > 0;
+
+  if (!hasFiles) {
+    btn.disabled = true;
+    btn.textContent = 'Upload or add question banks to begin';
+    return;
+  }
+
+  if (!hasSelection) {
+    btn.disabled = true;
+    btn.textContent = 'Select a month or pick files to begin →';
+    return;
+  }
+
   if (filtered.length === 0) {
     btn.disabled = true;
     btn.textContent = 'No questions match filters';
@@ -1961,7 +2264,20 @@ function getQuestionCount(available) {
 
 function updateSummaries() {
   const months = [...STATE.selectedMonths];
-  $('sum-months').textContent = months.length === 0 ? 'None selected' : months.map(prettyMonth).join(', ');
+  let monthStr = months.length === 0 ? 'None selected' : months.map(prettyMonth).join(', ');
+  
+  // Append source / week / file info to month summary
+  if (STATE.selectedFiles.size > 0) {
+    monthStr += ` · ${STATE.selectedFiles.size} file(s) picked`;
+  } else {
+    if (!STATE.selectedSources.has('ALL')) {
+      monthStr += ' · ' + [...STATE.selectedSources].map(getSourceLabel).join(', ');
+    }
+    if (STATE.selectedWeek !== 'ALL') {
+      monthStr += ' · Week ' + STATE.selectedWeek.slice(1);
+    }
+  }
+  $('sum-months').textContent = monthStr;
   
   const cats = STATE.selectedCats.has('ALL') ? 'All' : [...STATE.selectedCats].join(', ');
   $('sum-cats').textContent = cats;
@@ -1977,10 +2293,15 @@ function updateSummaries() {
 // ============================================================
 function refreshHomeStats() {
   $('stat-total-q').textContent = STATE.allQuestions.length;
-  $('stat-files').textContent = Object.keys({...STATE.bankFiles,...STATE.uploadedFiles}).length;
+  const filePool = STATE.useUploadedOnly ? STATE.uploadedFiles : STATE.bankFiles;
+  $('stat-files').textContent = Object.keys(filePool).length;
   const cats = new Set(STATE.allQuestions.map(q => q.category).filter(Boolean));
   $('stat-cats').textContent = cats.size;
   $('stat-quizzes').textContent = STATE.history.length;
+
+  // Show/hide the uploaded-only notice
+  const notice = $('upload-only-notice');
+  if (notice) notice.style.display = STATE.useUploadedOnly ? 'block' : 'none';
 }
 
 // ============================================================
@@ -2092,14 +2413,23 @@ async function handleFileUpload(e) {
     }
   }
   
+  // Reset all selection state when new uploads come in
+  STATE.selectedMonths.clear();
+  STATE.selectedSources = new Set(['ALL']);
+  STATE.selectedWeek = 'ALL';
+  STATE.selectedFiles.clear();
+
   mergeAllQuestions();
   buildMonthGrid();
+  buildSourceChips();
+  buildWeekDropdown();
+  buildFilePickerDropdown();
   buildCategoryChips();
   refreshHomeStats();
   renderUploadStatus();
   updateFiltersAndUI();
   hideLoading();
-  showToast(`✓ ${files.length} file(s) loaded`);
+  showToast(`✓ ${files.length} file(s) loaded — using uploaded files only`);
 }
 
 function renderUploadStatus() {
@@ -2118,8 +2448,15 @@ function renderUploadStatus() {
 
 function removeUploadedFile(fname) {
   delete STATE.uploadedFiles[fname];
+  STATE.selectedFiles.delete(fname);
+  STATE.selectedMonths.clear();
+  STATE.selectedSources = new Set(['ALL']);
+  STATE.selectedWeek = 'ALL';
   mergeAllQuestions();
   buildMonthGrid();
+  buildSourceChips();
+  buildWeekDropdown();
+  buildFilePickerDropdown();
   buildCategoryChips();
   refreshHomeStats();
   renderUploadStatus();
