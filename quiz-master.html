@@ -1106,6 +1106,56 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 4px; padding: 2px 6px;
   font-size: 0.7rem; font-family: var(--font-mono); color: var(--text3);
 }
+
+/* File picker cards */
+.file-pick-card {
+  display: flex; align-items: center; gap: 10px;
+  padding: 9px 13px;
+  background: var(--bg3);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--transition);
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.file-pick-card:hover { border-color: var(--border2); background: var(--bg4); }
+.file-pick-card.selected {
+  border-color: var(--accent);
+  background: var(--accent-glow);
+}
+.file-pick-card .fpc-check {
+  width: 18px; height: 18px; flex-shrink: 0;
+  border-radius: 5px;
+  border: 1.5px solid var(--border2);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.7rem; color: transparent;
+  background: var(--bg4);
+  transition: all var(--transition);
+}
+.file-pick-card.selected .fpc-check {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+.file-pick-card .fpc-name {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text2);
+  flex: 1;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.file-pick-card.selected .fpc-name { color: var(--accent); }
+.file-pick-card .fpc-meta {
+  display: flex; gap: 5px; flex-shrink: 0; flex-wrap: wrap; justify-content: flex-end;
+}
+.fpc-tag {
+  font-size: 0.65rem; font-family: var(--font-mono);
+  padding: 2px 6px; border-radius: 4px;
+  background: var(--bg4); color: var(--text3);
+  border: 1px solid var(--border);
+  white-space: nowrap;
+}
 </style>
 </head>
 <body data-theme="dark">
@@ -1230,12 +1280,14 @@ input[type="range"]::-webkit-slider-thumb {
 
       <!-- LAYER 4: Direct File Picker -->
       <div style="margin-bottom:20px">
-        <p class="form-label" style="margin-bottom:6px">④ Pick Specific Files <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--text3);font-size:0.75rem">(overrides all filters above if any are selected)</span></p>
-        <p class="text-sm" style="color:var(--text2);margin-bottom:8px">Hold <kbd class="kbd-hint" style="display:inline-flex">Ctrl</kbd> / <kbd class="kbd-hint" style="display:inline-flex">⌘</kbd> to multi-select. Selecting files here bypasses month/source/week filters entirely.</p>
-        <select class="form-control" id="file-picker-select" multiple size="5" style="font-family:var(--font-mono);font-size:0.78rem;line-height:1.7" onchange="handleFilePickerChange(this)">
-          <option disabled>No files available</option>
-        </select>
-        <button onclick="clearFilePicker()" style="margin-top:6px;padding:5px 14px;border-radius:var(--radius-sm);background:var(--bg4);border:1px solid var(--border);color:var(--text2);font-size:0.78rem;cursor:pointer" onmouseover="this.style.color='var(--red)'" onmouseout="this.style.color='var(--text2)'">✕ Clear file selection</button>
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:8px">
+          <p class="form-label" style="margin-bottom:0">④ Pick Specific Files <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--text3);font-size:0.75rem">(overrides all filters above)</span></p>
+          <button id="clear-file-picker-btn" onclick="clearFilePicker()" style="display:none;padding:4px 12px;border-radius:var(--radius-sm);background:var(--red-bg);border:1px solid rgba(239,68,68,0.3);color:var(--red);font-size:0.78rem;cursor:pointer">✕ Clear</button>
+        </div>
+        <p class="text-sm" style="color:var(--text2);margin-bottom:10px">Tap to select/deselect files. Multiple selections allowed. Bypasses month/source/week filters.</p>
+        <div id="file-picker-list" style="display:flex;flex-direction:column;gap:6px;max-height:260px;overflow-y:auto;padding-right:2px">
+          <p style="color:var(--text3);font-size:0.82rem;padding:10px 0">No files loaded yet.</p>
+        </div>
       </div>
 
       <!-- File Upload -->
@@ -2003,13 +2055,10 @@ function buildFilePickerDropdown() {
   if (!container) return;
 
   const allFiles = STATE.useUploadedOnly ? STATE.uploadedFiles : STATE.bankFiles;
-  
-  // Get files matching current month + source + week filters (for context), but show ALL files
-  // File picker shows all available files regardless; selection bypasses other filters
   const allFnames = Object.keys(allFiles).sort();
 
   if (allFnames.length === 0) {
-    container.innerHTML = '<option disabled>No files available</option>';
+    container.innerHTML = '<p style="color:var(--text3);font-size:0.82rem;padding:10px 0">No files loaded yet.</p>';
     return;
   }
 
@@ -2018,12 +2067,45 @@ function buildFilePickerDropdown() {
     const prefix = extractSourcePrefix(fname);
     const week = extractWeekFromFilename(fname);
     const qs = allFiles[fname];
-    const label = `${fname} (${qs.length}Q${month ? ' · ' + prettyMonth(month) : ''}${week ? ' · W' + week.slice(1) : ''} · ${getSourceLabel(prefix)})`;
-    return `<option value="${fname}" ${STATE.selectedFiles.has(fname) ? 'selected' : ''}>${label}</option>`;
+    const sel = STATE.selectedFiles.has(fname);
+    const tags = [
+      qs.length + 'Q',
+      month ? prettyMonth(month) : null,
+      week ? 'W' + week.slice(1) : null,
+    ].filter(Boolean);
+
+    return `<div class="file-pick-card ${sel ? 'selected' : ''}" onclick="toggleFilePick('${fname}')" data-file="${fname}">
+      <div class="fpc-check">✓</div>
+      <div class="fpc-name" title="${fname}">${fname}</div>
+      <div class="fpc-meta">${tags.map(t => `<span class="fpc-tag">${t}</span>`).join('')}</div>
+    </div>`;
   }).join('');
+
+  // Show/hide clear button
+  const clearBtn = $('clear-file-picker-btn');
+  if (clearBtn) clearBtn.style.display = STATE.selectedFiles.size > 0 ? 'inline-block' : 'none';
+}
+
+function toggleFilePick(fname) {
+  if (STATE.selectedFiles.has(fname)) {
+    STATE.selectedFiles.delete(fname);
+  } else {
+    STATE.selectedFiles.add(fname);
+  }
+  // Update card UI instantly without full rebuild
+  const card = document.querySelector(`[data-file="${fname}"]`);
+  if (card) card.classList.toggle('selected', STATE.selectedFiles.has(fname));
+
+  // Show/hide clear button
+  const clearBtn = $('clear-file-picker-btn');
+  if (clearBtn) clearBtn.style.display = STATE.selectedFiles.size > 0 ? 'inline-block' : 'none';
+
+  updateFiltersAndUI();
+  updateSummaries();
 }
 
 function handleFilePickerChange(selectEl) {
+  // Legacy — no longer used, kept for safety
   const selected = Array.from(selectEl.selectedOptions).map(o => o.value);
   STATE.selectedFiles = new Set(selected);
   updateFiltersAndUI();
@@ -2032,8 +2114,9 @@ function handleFilePickerChange(selectEl) {
 
 function clearFilePicker() {
   STATE.selectedFiles.clear();
-  const sel = $('file-picker-select');
-  if (sel) Array.from(sel.options).forEach(o => o.selected = false);
+  document.querySelectorAll('.file-pick-card').forEach(c => c.classList.remove('selected'));
+  const clearBtn = $('clear-file-picker-btn');
+  if (clearBtn) clearBtn.style.display = 'none';
   updateFiltersAndUI();
   updateSummaries();
 }
