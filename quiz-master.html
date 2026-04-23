@@ -101,9 +101,19 @@ ul { list-style: none; }
   font-size: 0.7rem; font-weight: 600; letter-spacing: 0.04em;
   text-transform: uppercase;
 }
-.badge-current { background: var(--yellow-bg); color: var(--yellow); border: 1px solid rgba(245,158,11,0.25); }
-.badge-static { background: var(--blue-bg); color: var(--blue); border: 1px solid rgba(59,130,246,0.25); }
-.badge-cat { background: var(--accent-glow); color: var(--accent); border: 1px solid rgba(108,99,255,0.25); }
+.badge-pdf {
+  background: rgba(249,115,22,0.08);
+  color: var(--orange);
+  border: 1px solid rgba(249,115,22,0.2);
+  font-size: 0.65rem;
+  font-family: var(--font-mono);
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+
 
 /* ===== LAYOUT ===== */
 #app { min-height: 100vh; }
@@ -562,7 +572,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 .options-list { display: flex; flex-direction: column; gap: 10px; }
 .option-item {
-  display: flex; align-items: center; gap: 0;
+  display: flex; align-items: stretch; gap: 0;
   border: 1.5px solid var(--border);
   border-radius: var(--radius);
   cursor: pointer;
@@ -572,7 +582,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 .option-item:hover { border-color: var(--accent); transform: translateX(2px); }
 .option-key {
-  width: 52px; min-width: 52px; height: 100%; min-height: 54px;
+  width: 52px; min-width: 52px;
   display: flex; align-items: center; justify-content: center;
   font-size: 0.88rem; font-weight: 800;
   font-family: var(--font-mono);
@@ -581,7 +591,6 @@ input[type="range"]::-webkit-slider-thumb {
   border-right: 1.5px solid var(--border);
   transition: all var(--transition);
   flex-shrink: 0;
-  align-self: stretch;
 }
 .option-text {
   font-size: 0.93rem; line-height: 1.5;
@@ -2612,11 +2621,13 @@ function renderQuestion() {
   if (!q) return;
 
   const tagType = getTagType(q.tag);
+  const pdfTag = q['pdf/question-bank'];
   $('q-meta').innerHTML = `
     <span style="font-family:var(--font-mono);font-size:0.7rem;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:0.08em;margin-right:4px">Q${STATE.current + 1} / ${STATE.questions.length}</span>
     <span class="badge badge-cat">${q.category || 'Unknown'}</span>
     ${q.sub_category ? `<span class="badge" style="background:var(--bg4);color:var(--text2);border:1px solid var(--border)">${q.sub_category}</span>` : ''}
     <span class="badge ${tagType === 'Current' ? 'badge-current' : 'badge-static'}">${q.tag || tagType}</span>
+    ${pdfTag ? `<span class="badge badge-pdf">📄 ${pdfTag}</span>` : ''}
   `;
   $('q-text').innerHTML = q.question.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>');
 
@@ -2962,11 +2973,13 @@ function showResultScreen({ correct, wrong, skipped, score, pct, elapsed, catMap
     $('tab-mistakes').innerHTML = wrongQs.map(({q, i, user}) => {
       const tagType = getTagType(q.tag);
       const isSkipped = !user;
+      const pdfTag = q['pdf/question-bank'];
       return `<div class="wrong-card">
         <div class="wrong-card-header">
           <span class="badge badge-cat">${q.category}</span>
           <span class="badge ${tagType==='Current'?'badge-current':'badge-static'}">${tagType}</span>
           <span class="badge" style="background:var(--bg4);color:var(--text3);border:1px solid var(--border)">Q${i+1}</span>
+          ${pdfTag ? `<span class="badge badge-pdf">📄 ${pdfTag}</span>` : ''}
         </div>
         <div class="wrong-q-text">${q.question.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>')}</div>
         <div class="wrong-answers">
@@ -3022,12 +3035,14 @@ function renderReviewQuestion() {
   const userAns = answers[i];
   const optKeys = Object.keys(q.options || {});
 
+  const reviewPdfTag = q['pdf/question-bank'];
   $('review-card').innerHTML = `
     <div class="question-meta" style="margin-bottom:16px;display:flex;gap:8px;flex-wrap:wrap">
       <span class="badge badge-cat">${q.category}</span>
       ${q.sub_category ? `<span class="badge" style="background:var(--bg4);color:var(--text2);border:1px solid var(--border)">${q.sub_category}</span>` : ''}
       <span class="badge ${tagType==='Current'?'badge-current':'badge-static'}">${tagType}</span>
       <span class="badge" style="background:var(--bg4);color:var(--text3);border:1px solid var(--border)">Q${i+1}</span>
+      ${reviewPdfTag ? `<span class="badge badge-pdf">📄 ${reviewPdfTag}</span>` : ''}
     </div>
     <div style="font-size:1rem;font-weight:500;line-height:1.7;margin-bottom:24px">${q.question.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>')}</div>
     <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:20px">
