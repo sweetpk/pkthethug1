@@ -266,6 +266,29 @@ ul { list-style: none; }
 .month-btn.selected .month-label { color: var(--accent); }
 .month-btn:hover:not(.selected) { border-color: var(--border2); background: var(--bg4); color: var(--text); }
 
+/* ===== MONTHLESS FILE BUTTONS ===== */
+.monthless-btn {
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--bg3);
+  color: var(--text2);
+  font-size: 0.82rem; font-weight: 500;
+  text-align: left;
+  transition: all var(--transition);
+  display: flex; flex-direction: column; gap: 2px;
+  cursor: pointer;
+}
+.monthless-btn .ml-label { font-weight: 700; color: var(--text); font-family: var(--font-display); font-size: 0.78rem; word-break: break-all; }
+.monthless-btn .ml-count { font-size: 0.7rem; color: var(--text3); font-family: var(--font-mono); }
+.monthless-btn.selected {
+  border-color: var(--accent);
+  background: var(--accent-glow);
+  color: var(--accent);
+}
+.monthless-btn.selected .ml-label { color: var(--accent); }
+.monthless-btn:hover:not(.selected) { border-color: var(--border2); background: var(--bg4); color: var(--text); }
+
 /* ===== FILE UPLOAD AREA ===== */
 .upload-area {
   border: 2px dashed var(--border);
@@ -1241,12 +1264,12 @@ input[type="range"]::-webkit-slider-thumb {
     </div>
   </div>
 
-  <!-- Month / File Selection (multi-layer) -->
+  <!-- File Selection (multi-layer) -->
   <div class="setup-section" id="sec-months">
     <div class="setup-section-header open" onclick="toggleSection('sec-months')">
-      <div class="section-icon blue">📅</div>
-      <h3>Month / File Selection</h3>
-      <span class="section-summary" id="sum-months">Select months</span>
+      <div class="section-icon blue">📂</div>
+      <h3>File Selection</h3>
+      <span class="section-summary" id="sum-months">Select a source</span>
       <span class="chevron open">▼</span>
     </div>
     <div class="setup-section-body open">
@@ -1256,28 +1279,32 @@ input[type="range"]::-webkit-slider-thumb {
         📁 Using <strong>uploaded files only</strong>. Remove uploads to switch back to the question bank.
       </div>
 
-      <!-- LAYER 1: Month -->
-      <div style="margin-bottom:20px">
-        <p class="form-label" style="margin-bottom:8px">① Select Month(s)</p>
-        <p class="text-sm" style="color:var(--text2);margin-bottom:10px">Click one or more months. All questions from that month are included, across all sources — unless you filter below.</p>
-        <div id="months-grid">
-          <div class="empty-state" style="grid-column:1/-1;padding:24px">
-            <div class="empty-icon">📂</div>
-            <h3>No files detected</h3>
-            <p>Make sure JSON files are in the <code style="font-family:var(--font-mono)">question-banks/</code> folder, or upload them below.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- LAYER 2: Source -->
-      <div id="source-chips-section" style="margin-bottom:20px;display:none">
-        <p class="form-label" style="margin-bottom:8px">② Filter by Source <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--text3);font-size:0.75rem">(optional — default: all sources)</span></p>
+      <!-- LAYER 1: Source (Category) -->
+      <div id="source-chips-section" style="margin-bottom:20px">
+        <p class="form-label" style="margin-bottom:8px">① Select Source <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--text3);font-size:0.75rem">(required — pick one or more sources)</span></p>
+        <p class="text-sm" style="color:var(--text2);margin-bottom:10px">Choose the source(s) to draw questions from. Month and week filters appear below when applicable.</p>
         <div class="chip-group" id="source-chips">
           <span class="chip all-chip selected" data-val="ALL" onclick="toggleSourceChip(this,'ALL')">All Sources</span>
         </div>
       </div>
 
-      <!-- LAYER 3: Week -->
+      <!-- LAYER 2: Month / File Selection (always visible when files exist) -->
+      <div id="month-filter-section" style="margin-bottom:20px;display:none">
+        <!-- Month sub-section (shown only if month-tagged files exist) -->
+        <div id="month-subsection" style="display:none;margin-bottom:16px">
+          <p class="form-label" style="margin-bottom:6px">② Select Month(s) <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--text3);font-size:0.75rem">(optional — all months included by default)</span></p>
+          <p class="text-sm" style="color:var(--text2);margin-bottom:10px">Click one or more months to narrow down. All files with the same source and month are grouped together.</p>
+          <div id="months-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px;margin-bottom:0"></div>
+        </div>
+        <!-- Monthless files sub-section (shown only if monthless files exist) -->
+        <div id="monthless-subsection" style="display:none">
+          <p class="form-label" style="margin-bottom:6px" id="monthless-label">② Select File(s) <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--text3);font-size:0.75rem">(optional — all files included by default)</span></p>
+          <p class="text-sm" style="color:var(--text2);margin-bottom:10px" id="monthless-desc">These files have no month tag. Click to select specific ones.</p>
+          <div id="monthless-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px"></div>
+        </div>
+      </div>
+
+      <!-- LAYER 3: Week (only shown if files have weeks) -->
       <div id="week-filter-row" style="display:none;margin-bottom:20px;align-items:center;gap:12px;flex-wrap:wrap">
         <div style="flex:1;min-width:200px">
           <p class="form-label" style="margin-bottom:8px">③ Week Filter <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--text3);font-size:0.75rem">(optional — files without a week tag are always included)</span></p>
@@ -1293,7 +1320,7 @@ input[type="range"]::-webkit-slider-thumb {
           <p class="form-label" style="margin-bottom:0">④ Pick Specific Files <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--text3);font-size:0.75rem">(overrides all filters above)</span></p>
           <button id="clear-file-picker-btn" onclick="clearFilePicker()" style="display:none;padding:4px 12px;border-radius:var(--radius-sm);background:var(--red-bg);border:1px solid rgba(239,68,68,0.3);color:var(--red);font-size:0.78rem;cursor:pointer">✕ Clear</button>
         </div>
-        <p class="text-sm" style="color:var(--text2);margin-bottom:10px">Tap to select/deselect files. Multiple selections allowed. Bypasses month/source/week filters.</p>
+        <p class="text-sm" style="color:var(--text2);margin-bottom:10px">Tap to select/deselect files. Multiple selections allowed. Bypasses all filters above.</p>
         <div id="file-picker-list" style="display:flex;flex-direction:column;gap:6px;max-height:260px;overflow-y:auto;padding-right:2px">
           <p style="color:var(--text3);font-size:0.82rem;padding:10px 0">No files loaded yet.</p>
         </div>
@@ -1586,6 +1613,7 @@ const STATE = {
   
   // Setup
   selectedMonths: new Set(),
+  selectedMonthlessFiles: new Set(), // for monthless file selection (step 2b)
   selectedSources: new Set(['ALL']),  // NEW: source prefix filter
   selectedWeek: 'ALL',                // NEW: 'ALL' | 'w1' | 'w2' etc.
   selectedFiles: new Set(),           // NEW: direct file picker (bypasses other filters)
@@ -1757,6 +1785,22 @@ function extractWeekFromFilename(filename) {
   return m ? 'w' + m[1] : null;
 }
 
+// Extract the identifier label for monthless files — everything after prefix_ stripped of .json
+// e.g. "educa_schemes_v2.json" with prefix "educa" → "schemes_v2"
+// e.g. "misc_rbi_report.json" with prefix "misc" → "rbi_report"
+function extractMonthlessIdentifier(filename) {
+  const name = filename.toLowerCase().replace('.json', '');
+  for (const { prefix } of SOURCE_PREFIX_MAP) {
+    if (name.startsWith(prefix + '_') || name === prefix) {
+      const after = name.slice(prefix.length).replace(/^_/, '');
+      return after || filename.replace('.json', '');
+    }
+  }
+  // Fallback: strip the first segment
+  const parts = name.split('_');
+  return parts.slice(1).join('_') || name;
+}
+
 // Extract category from filename (legacy alias used elsewhere)
 function extractCatFromFilename(filename) {
   return extractSourcePrefix(filename);
@@ -1842,8 +1886,8 @@ async function init() {
   hideLoading();
   
   mergeAllQuestions();
-  buildMonthGrid();
   buildSourceChips();
+  buildMonthGrid();
   buildWeekDropdown();
   buildFilePickerDropdown();
   buildCategoryChips();
@@ -1890,49 +1934,134 @@ function mergeAllQuestions() {
 }
 
 // ============================================================
-// MONTH GRID
+// MONTH / MONTHLESS GRID (2nd layer: always shown when files exist for selected source)
 // ============================================================
 function buildMonthGrid() {
+  const section = $('month-filter-section');
+  const monthSubsection = $('month-subsection');
+  const monthlessSubsection = $('monthless-subsection');
   const grid = $('months-grid');
-  
-  // Collect unique months from all loaded files
-  const monthMap = {}; // monthKey -> count
+  const monthlessGrid = $('monthless-grid');
+
   const allFiles = STATE.useUploadedOnly ? STATE.uploadedFiles : STATE.bankFiles;
-  
-  for (const [fname, qs] of Object.entries(allFiles)) {
+
+  // Get files that match selected source
+  const sourceFiles = Object.entries(allFiles).filter(([fname]) => {
+    if (!STATE.selectedSources.has('ALL')) {
+      const p = extractSourcePrefix(fname);
+      if (!STATE.selectedSources.has(p)) return false;
+    }
+    return true;
+  });
+
+  if (sourceFiles.length === 0) {
+    if (section) section.style.display = 'none';
+    return;
+  }
+
+  // Separate into month-tagged and monthless
+  const monthMap = {}; // monthKey -> count
+  const monthlessFiles = []; // { fname, identifier, count }
+
+  for (const [fname, qs] of sourceFiles) {
     const month = extractMonthFromFilename(fname);
     if (month) {
       if (!monthMap[month]) monthMap[month] = 0;
       monthMap[month] += qs.length;
+    } else {
+      const identifier = extractMonthlessIdentifier(fname);
+      monthlessFiles.push({ fname, identifier, count: qs.length });
     }
   }
 
-  if (Object.keys(monthMap).length === 0) {
-    grid.innerHTML = `<div class="empty-state" style="grid-column:1/-1;padding:24px">
-      <div class="empty-icon">📂</div>
-      <h3>No question banks found</h3>
-      <p>Upload JSON files below, or add them to the <code style="font-family:var(--font-mono)">question-banks/</code> folder.</p>
-    </div>`;
-    return;
+  const hasMonths = Object.keys(monthMap).length > 0;
+  const hasMonthless = monthlessFiles.length > 0;
+
+  // Show the whole section
+  if (section) section.style.display = 'block';
+
+  // ---- Month sub-section ----
+  if (hasMonths) {
+    monthSubsection.style.display = 'block';
+
+    const label = monthSubsection.querySelector('.form-label');
+    if (label) {
+      const stepNum = hasMonthless ? '②a' : '②';
+      label.innerHTML = `${stepNum} Select Month(s) <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--text3);font-size:0.75rem">(optional — all months included by default)</span>`;
+    }
+
+    const monthOrder = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
+    const sortedMonths = Object.entries(monthMap).sort((a, b) => {
+      const ma = monthOrder.indexOf(a[0].slice(0,3));
+      const mb = monthOrder.indexOf(b[0].slice(0,3));
+      const ya = parseInt(a[0].slice(3) || '0');
+      const yb = parseInt(b[0].slice(3) || '0');
+      return (ya * 12 + ma) - (yb * 12 + mb);
+    });
+
+    // Remove stale selected months
+    for (const m of [...STATE.selectedMonths]) {
+      if (!monthMap[m]) STATE.selectedMonths.delete(m);
+    }
+
+    grid.innerHTML = sortedMonths.map(([month, count]) => `
+      <button class="month-btn ${STATE.selectedMonths.has(month) ? 'selected' : ''}" 
+        data-month="${month}" onclick="toggleMonth(this,'${month}')">
+        <span class="month-label">${prettyMonth(month)}</span>
+        <span class="month-count">${count} Qs</span>
+      </button>
+    `).join('');
+  } else {
+    monthSubsection.style.display = 'none';
+    STATE.selectedMonths.clear();
   }
 
-  // Sort months chronologically
-  const monthOrder = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
-  const sortedMonths = Object.entries(monthMap).sort((a, b) => {
-    const ma = monthOrder.indexOf(a[0].slice(0,3));
-    const mb = monthOrder.indexOf(b[0].slice(0,3));
-    const ya = parseInt(a[0].slice(3) || '0');
-    const yb = parseInt(b[0].slice(3) || '0');
-    return (ya * 12 + ma) - (yb * 12 + mb);
-  });
+  // ---- Monthless sub-section ----
+  if (hasMonthless) {
+    monthlessSubsection.style.display = 'block';
 
-  grid.innerHTML = sortedMonths.map(([month, count]) => `
-    <button class="month-btn ${STATE.selectedMonths.has(month) ? 'selected' : ''}" 
-      data-month="${month}" onclick="toggleMonth(this,'${month}')">
-      <span class="month-label">${prettyMonth(month)}</span>
-      <span class="month-count">${count} Qs</span>
-    </button>
-  `).join('');
+    const stepNum = hasMonths ? '②b' : '②';
+    const label = $('monthless-label');
+    const desc = $('monthless-desc');
+    if (label) label.innerHTML = `${stepNum} Select File(s) <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--text3);font-size:0.75rem">(optional — all included by default when none selected)</span>`;
+    if (desc) desc.textContent = monthlessFiles.length === 1
+      ? `This source has 1 file with no month tag — it's included automatically.`
+      : `These files have no month tag. Select specific ones to narrow down, or leave all unselected to include everything.`;
+
+    // Remove stale monthless selections
+    const monthlessNames = new Set(monthlessFiles.map(f => f.fname));
+    for (const f of [...STATE.selectedMonthlessFiles]) {
+      if (!monthlessNames.has(f)) STATE.selectedMonthlessFiles.delete(f);
+    }
+
+    monthlessGrid.innerHTML = monthlessFiles.map(({ fname, identifier, count }) => {
+      const sel = STATE.selectedMonthlessFiles.has(fname);
+      const display = identifier || fname.replace('.json', '');
+      return `<button class="monthless-btn ${sel ? 'selected' : ''}"
+        data-file="${fname}" onclick="toggleMonthlessFile(this,'${fname}')">
+        <span class="ml-label">${display}</span>
+        <span class="ml-count">${count} Qs</span>
+      </button>`;
+    }).join('');
+  } else {
+    monthlessSubsection.style.display = 'none';
+    STATE.selectedMonthlessFiles.clear();
+  }
+}
+
+function toggleMonthlessFile(btn, fname) {
+  if (STATE.selectedMonthlessFiles.has(fname)) {
+    STATE.selectedMonthlessFiles.delete(fname);
+    btn.classList.remove('selected');
+  } else {
+    STATE.selectedMonthlessFiles.add(fname);
+    btn.classList.add('selected');
+  }
+  // Monthless selection doesn't affect month or week — just rebuild downstream
+  STATE.selectedFiles.clear();
+  buildFilePickerDropdown();
+  updateFiltersAndUI();
+  updateSummaries();
 }
 
 function toggleMonth(btn, month) {
@@ -1943,30 +2072,25 @@ function toggleMonth(btn, month) {
     STATE.selectedMonths.add(month);
     btn.classList.add('selected');
   }
-  // Reset file picker when month changes
+  // Reset downstream filters when month changes
   STATE.selectedFiles.clear();
-  buildSourceChips();
+  STATE.selectedWeek = 'ALL';
   buildWeekDropdown();
   buildFilePickerDropdown();
   updateFiltersAndUI();
+  updateSummaries();
 }
 
 // ============================================================
-// SOURCE CHIPS (2nd layer: file prefix filter)
+// SOURCE CHIPS (1st layer: primary file prefix / category filter)
 // ============================================================
 function buildSourceChips() {
   const container = $('source-chips');
   if (!container) return;
 
-  // Collect which source prefixes exist in the current month-filtered files
+  // Collect ALL source prefixes from all files — no pre-filtering
   const allFiles = STATE.useUploadedOnly ? STATE.uploadedFiles : STATE.bankFiles;
-  const monthFiltered = Object.entries(allFiles).filter(([fname]) => {
-    if (STATE.selectedMonths.size === 0) return true;
-    const m = extractMonthFromFilename(fname);
-    return STATE.selectedMonths.has(m);
-  });
-
-  const presentPrefixes = new Set(monthFiltered.map(([fname]) => extractSourcePrefix(fname)));
+  const presentPrefixes = new Set(Object.keys(allFiles).map(fname => extractSourcePrefix(fname)));
 
   // Remove selected sources that no longer exist
   for (const s of [...STATE.selectedSources]) {
@@ -1986,7 +2110,9 @@ function buildSourceChips() {
     container.innerHTML += `<span class="chip ${sel ? 'selected' : ''}" data-val="${prefix}" onclick="toggleSourceChip(this,'${prefix}')">${getSourceLabel(prefix)}</span>`;
   });
 
-  $('source-chips-section').style.display = presentPrefixes.size <= 1 ? 'none' : 'block';
+  // Always show source chips section (it's now the primary step)
+  const section = $('source-chips-section');
+  if (section) section.style.display = 'block';
 }
 
 function toggleSourceChip(chip, val) {
@@ -2009,29 +2135,37 @@ function toggleSourceChip(chip, val) {
       chip.classList.add('selected');
     }
   }
+  // Source changed — reset downstream filters
+  STATE.selectedMonths.clear();
+  STATE.selectedMonthlessFiles.clear();
   STATE.selectedFiles.clear();
+  STATE.selectedWeek = 'ALL';
+  buildMonthGrid();
   buildWeekDropdown();
   buildFilePickerDropdown();
   updateFiltersAndUI();
+  updateSummaries();
 }
 
 // ============================================================
-// WEEK DROPDOWN
+// WEEK DROPDOWN (3rd layer: shown only when week-tagged files exist in source+month selection)
 // ============================================================
 function buildWeekDropdown() {
   const sel = $('week-select');
   if (!sel) return;
 
-  // Find which weeks exist in current month+source filtered files
+  // Find which weeks exist in current source+month filtered files
   const allFiles = STATE.useUploadedOnly ? STATE.uploadedFiles : STATE.bankFiles;
   const relevantFiles = Object.keys(allFiles).filter(fname => {
-    if (STATE.selectedMonths.size > 0) {
-      const m = extractMonthFromFilename(fname);
-      if (!STATE.selectedMonths.has(m)) return false;
-    }
+    // Source filter (primary)
     if (!STATE.selectedSources.has('ALL')) {
       const p = extractSourcePrefix(fname);
       if (!STATE.selectedSources.has(p)) return false;
+    }
+    // Month filter (secondary — only applied if months are selected)
+    if (STATE.selectedMonths.size > 0) {
+      const m = extractMonthFromFilename(fname);
+      if (!STATE.selectedMonths.has(m)) return false;
     }
     return true;
   });
@@ -2134,15 +2268,23 @@ function clearFilePicker() {
 // CATEGORY CHIPS
 // ============================================================
 function buildCategoryChips() {
-  // Use questions filtered by month + source + week (or file picker), before cat/subcat/tag filtering
+  // Use questions filtered by source + month + week (or file picker), before cat/subcat/tag filtering
   let base;
   if (STATE.selectedFiles.size > 0) {
     base = STATE.allQuestions.filter(q => STATE.selectedFiles.has(q._source));
   } else {
-    base = getFilteredByMonth();
-    if (!STATE.selectedSources.has('ALL') && STATE.selectedSources.size > 0) {
-      base = base.filter(q => STATE.selectedSources.has(q._fileCat));
+    // Source first (primary)
+    base = getFilteredBySource();
+    // Then month + monthless (secondary)
+    const hasMonthSel = STATE.selectedMonths.size > 0;
+    const hasMonthlessSel = STATE.selectedMonthlessFiles.size > 0;
+    if (hasMonthSel || hasMonthlessSel) {
+      base = base.filter(q => {
+        if (q._month) return hasMonthSel ? STATE.selectedMonths.has(q._month) : true;
+        else return hasMonthlessSel ? STATE.selectedMonthlessFiles.has(q._source) : true;
+      });
     }
+    // Then week
     if (STATE.selectedWeek !== 'ALL') {
       base = base.filter(q => q._week === null || q._week === STATE.selectedWeek);
     }
@@ -2203,6 +2345,12 @@ function toggleChip(chip, type) {
 // ============================================================
 // FILTERING
 // ============================================================
+function getFilteredBySource() {
+  // Primary filter: source prefix
+  if (STATE.selectedSources.has('ALL') || STATE.selectedSources.size === 0) return STATE.allQuestions;
+  return STATE.allQuestions.filter(q => STATE.selectedSources.has(q._fileCat));
+}
+
 function getFilteredByMonth() {
   if (STATE.selectedMonths.size === 0) return STATE.allQuestions;
   return STATE.allQuestions.filter(q => STATE.selectedMonths.has(q._month));
@@ -2216,19 +2364,28 @@ function getFilteredQuestions() {
     return qs;
   }
 
-  let qs = getFilteredByMonth();
+  // Start with source filter (primary — step 1)
+  let qs = getFilteredBySource();
 
-  // Source filter
-  if (!STATE.selectedSources.has('ALL') && STATE.selectedSources.size > 0) {
-    qs = qs.filter(q => STATE.selectedSources.has(q._fileCat));
+  // Step 2: month + monthless file filtering
+  const hasMonthSel = STATE.selectedMonths.size > 0;
+  const hasMonthlessSel = STATE.selectedMonthlessFiles.size > 0;
+
+  if (hasMonthSel || hasMonthlessSel) {
+    qs = qs.filter(q => {
+      if (q._month) {
+        // This is a month-tagged file — include if its month is selected (or no month filter active)
+        return hasMonthSel ? STATE.selectedMonths.has(q._month) : true;
+      } else {
+        // This is a monthless file — include if it's selected (or no monthless filter active)
+        return hasMonthlessSel ? STATE.selectedMonthlessFiles.has(q._source) : true;
+      }
+    });
   }
 
-  // Week filter — smart: only restrict to week if the file HAS a week label
-  // Files without a week label are ALWAYS included unless the week filter clashes
+  // Week filter — step 3, smart: only restrict files that have a week label
   if (STATE.selectedWeek !== 'ALL') {
     qs = qs.filter(q => {
-      // If the file has a week, it must match selected week
-      // If the file has NO week label, include it always
       return q._week === null || q._week === STATE.selectedWeek;
     });
   }
@@ -2292,7 +2449,7 @@ function updateFiltersAndUI() {
   const cntDiv = $('filtered-count');
   
   const hasFiles = Object.keys(STATE.useUploadedOnly ? STATE.uploadedFiles : STATE.bankFiles).length > 0;
-  const hasSelection = STATE.selectedMonths.size > 0 || STATE.selectedFiles.size > 0;
+  const hasSelection = hasFiles; // source chips always hold a valid state once files are loaded
 
   if (!hasFiles) {
     warn.classList.remove('show');
@@ -2318,18 +2475,16 @@ function updateStartButton() {
   const filtered = getFilteredQuestions();
   const btn = $('start-btn');
   
-  const hasSelection = STATE.selectedMonths.size > 0 || STATE.selectedFiles.size > 0;
   const hasFiles = Object.keys(STATE.useUploadedOnly ? STATE.uploadedFiles : STATE.bankFiles).length > 0;
+  // In the new model, a selection is valid as long as we have files loaded
+  // (source chips default to "All Sources" which is a valid selection)
+  // The user must have files loaded to proceed
+  const hasSelection = hasFiles; // source chips always have a valid selection (ALL or specific)
+  const hasSpecificPick = STATE.selectedFiles.size > 0 || STATE.selectedMonths.size > 0 || !STATE.selectedSources.has('ALL');
 
   if (!hasFiles) {
     btn.disabled = true;
     btn.textContent = 'Upload or add question banks to begin';
-    return;
-  }
-
-  if (!hasSelection) {
-    btn.disabled = true;
-    btn.textContent = 'Select a month or pick files to begin →';
     return;
   }
 
@@ -2355,21 +2510,21 @@ function getQuestionCount(available) {
 }
 
 function updateSummaries() {
-  const months = [...STATE.selectedMonths];
-  let monthStr = months.length === 0 ? 'None selected' : months.map(prettyMonth).join(', ');
-  
-  // Append source / week / file info to month summary
+  // Source is primary now
+  let selectionStr;
   if (STATE.selectedFiles.size > 0) {
-    monthStr += ` · ${STATE.selectedFiles.size} file(s) picked`;
+    selectionStr = `${STATE.selectedFiles.size} file(s) picked`;
   } else {
-    if (!STATE.selectedSources.has('ALL')) {
-      monthStr += ' · ' + [...STATE.selectedSources].map(getSourceLabel).join(', ');
-    }
-    if (STATE.selectedWeek !== 'ALL') {
-      monthStr += ' · Week ' + STATE.selectedWeek.slice(1);
-    }
+    const sourceStr = STATE.selectedSources.has('ALL') 
+      ? 'All Sources' 
+      : [...STATE.selectedSources].map(getSourceLabel).join(', ');
+    const months = [...STATE.selectedMonths];
+    const monthStr = months.length > 0 ? ' · ' + months.map(prettyMonth).join(', ') : '';
+    const monthlessStr = STATE.selectedMonthlessFiles.size > 0 ? ` · ${STATE.selectedMonthlessFiles.size} file(s)` : '';
+    const weekStr = STATE.selectedWeek !== 'ALL' ? ' · Week ' + STATE.selectedWeek.slice(1) : '';
+    selectionStr = sourceStr + monthStr + monthlessStr + weekStr;
   }
-  $('sum-months').textContent = monthStr;
+  $('sum-months').textContent = selectionStr;
   
   const cats = STATE.selectedCats.has('ALL') ? 'All' : [...STATE.selectedCats].join(', ');
   $('sum-cats').textContent = cats;
@@ -2507,13 +2662,14 @@ async function handleFileUpload(e) {
   
   // Reset all selection state when new uploads come in
   STATE.selectedMonths.clear();
+  STATE.selectedMonthlessFiles.clear();
   STATE.selectedSources = new Set(['ALL']);
   STATE.selectedWeek = 'ALL';
   STATE.selectedFiles.clear();
 
   mergeAllQuestions();
-  buildMonthGrid();
   buildSourceChips();
+  buildMonthGrid();
   buildWeekDropdown();
   buildFilePickerDropdown();
   buildCategoryChips();
@@ -2542,11 +2698,12 @@ function removeUploadedFile(fname) {
   delete STATE.uploadedFiles[fname];
   STATE.selectedFiles.delete(fname);
   STATE.selectedMonths.clear();
+  STATE.selectedMonthlessFiles.clear();
   STATE.selectedSources = new Set(['ALL']);
   STATE.selectedWeek = 'ALL';
   mergeAllQuestions();
-  buildMonthGrid();
   buildSourceChips();
+  buildMonthGrid();
   buildWeekDropdown();
   buildFilePickerDropdown();
   buildCategoryChips();
