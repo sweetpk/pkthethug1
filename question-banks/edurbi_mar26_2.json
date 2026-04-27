@@ -1,0 +1,962 @@
+[
+  {
+    "category": "Banking",
+    "sub_category": "NBFC Prudential Norms",
+    "question": "Consider the following statements regarding the treatment of lease-related assets for NBFCs while calculating Owned Funds:\n\n1. Under Ind AS 116, the right to use a leased asset is recognized as a Right-of-Use (ROU) asset.\n2. The recent amendment mandates that ROU assets arising from leasing a tangible asset must be strictly deducted from Owned Funds for all NBFCs.\n3. Mortgage Guarantee Companies (MGCs) and Core Investment Companies (CICs) are explicitly exempted from deducting tangible ROU assets from their Owned Funds.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only",
+      "D": "1 and 2 only",
+      "E": "1, 2, and 3"
+    },
+    "answer": "B",
+    "rationale": "Statement 1 is correct (Page 7). Statement 2 is incorrect because the amendment explicitly provides that ROU assets arising from tangible assets shall NOT be deducted for MGCs, CICs, and HFCs. Statement 3 is correct.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "NBFC Prudential Norms",
+    "question": "According to the formula for computing 'Owned Fund' for NBFCs, which of the following combinations correctly represents items that are 'Added' to the base capital?",
+    "options": {
+      "A": "Paid-up Equity Capital, Deferred Revenue Expenditure, Capital Reserves",
+      "B": "Compulsorily Convertible Preference Shares, Free Reserves, Intangible Assets",
+      "C": "Paid-up Equity Capital, Share Premium Account, Free Reserves",
+      "D": "Capital Reserves, Accumulated Losses, Paid-up Equity Capital",
+      "E": "Free Reserves, Share Premium Account, Deferred Revenue Expenditure"
+    },
+    "answer": "C",
+    "rationale": "Page 5 outlines the 'Add' items: Paid-up Equity Capital, Compulsorily Convertible Preference Shares, Free Reserves, Share Premium Account, and Capital Reserves. Accumulated losses, deferred revenue expenditure, and intangible assets are deducted.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Primary Dealers",
+    "question": "Assertion (A): Interim or quarterly profits of the current financial year were previously not considered for inclusion in free reserves for Standalone Primary Dealers (SPDs) until accounts were finalised.\nReason (R): SPDs are highly liquid entities, and recognizing interim profits immediately poses a risk of capital overstatement before statutory audit finalisation.\n\nSelect the correct code:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "C",
+    "rationale": "Assertion A is true (Page 7). Reason R is false based on the text. The document states they were not considered because 'such profits were not yet treated as realised reserves in the balance sheet', not explicitly due to liquidity or capital overstatement risks.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Commercial Banks Dividend Norms",
+    "question": "Which of the following classes of banks are explicitly 'Not applicable' under the RBI (Commercial Banks – Prudential Norms on Declaration of Dividend and Remittances of Profits) Directions, 2026?\n\n1. State Bank of India\n2. Regional Rural Banks (RRBs)\n3. Small Finance Banks (SFBs)\n4. Foreign Banks operating as branches\n5. Local Area Banks (LABs)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1, 2, and 3 only",
+      "B": "2, 3, and 5 only",
+      "C": "3, 4, and 5 only",
+      "D": "2 and 5 only",
+      "E": "1 and 4 only"
+    },
+    "answer": "B",
+    "rationale": "Page 9 states under 'Not applicable to': Small Finance Banks, Payment Banks, Regional Rural Banks, and Local Area Banks. Commercial banks, SBI, and Foreign banks operating as branches are covered.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Commercial Banks Dividend Norms",
+    "question": "Under the new Prudential Norms on Declaration of Dividend, a commercial bank calculates its 'Adjusted Profit After Tax (PAT)'. If Bank X has a reported PAT of ₹2,000 crore, Gross NPAs of ₹800 crore, and Net NPAs of ₹400 crore, what is the maximum Adjusted PAT eligible for bucketing?",
+    "options": {
+      "A": "₹1,200 crore",
+      "B": "₹1,600 crore",
+      "C": "₹1,800 crore",
+      "D": "₹2,000 crore",
+      "E": "₹2,200 crore"
+    },
+    "answer": "C",
+    "rationale": "Page 9 states Adjusted PAT is calculated by reducing reported PAT by 50% of the Net NPAs. Net NPAs = ₹400 crore. 50% = ₹200 crore. Adjusted PAT = 2000 - 200 = ₹1,800 crore.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Commercial Banks Dividend Norms",
+    "question": "Match the following minimum prudential requirements for a commercial bank to be eligible to declare dividends:\n\nColumn I:\n1. Regulatory Capital Norms\n2. Minimum required capital adequacy\n3. Adjusted Profit After Tax (PAT)\n\nColumn II:\nA. Must be positive for the period for which dividend is proposed.\nB. Must comply at the end of the previous year and the current year.\nC. Must be maintained even after paying the dividend.\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-C, 3-B",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "B",
+    "rationale": "Page 9: Bank must comply with regulatory capital norms at the end of previous year as well as current year (1-B). It should continue to maintain minimum required capital adequacy after paying dividend (2-C). It must have a positive adjusted PAT (3-A).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Dividend Norms - Buckets",
+    "question": "If a commercial bank falls into Bucket 4 (B4) based on its CET 1 ratio at the end of the previous FY, what is the maximum permissible dividend payout allowed as a percentage of adjusted PAT?",
+    "options": {
+      "A": "20%",
+      "B": "30%",
+      "C": "40%",
+      "D": "50%",
+      "E": "60%"
+    },
+    "answer": "C",
+    "rationale": "Page 10 Table 1 specifies that Bucket B4 allows a maximum permissible dividend payout of 40% of Adjusted PAT.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Commercial Banks Dividend Norms",
+    "question": "Consider the following statements regarding final permissible dividends for commercial banks:\n\n1. The absolute ceiling on dividend distribution is 75% of the Adjusted PAT.\n2. The bank must select the lower of two values: the amount permitted under the CET1 bucket or 75% of the reported PAT.\n3. Banks with lower capital levels are subject to stricter dividend limits compared to those with higher capital levels.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "2 only",
+      "E": "1, 2, and 3"
+    },
+    "answer": "B",
+    "rationale": "Statement 1 is incorrect because the overall ceiling is 75% of the 'reported PAT', not Adjusted PAT (Page 11). Statement 2 is correct (Page 11). Statement 3 is correct (Page 10).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Dividend Norms - SFB, PB, LAB, RRB",
+    "question": "Which specific capital ratio serves as the key input to determine the dividend payout bucket for a Local Area Bank (LAB)?",
+    "options": {
+      "A": "Common Equity Tier 1 (CET1) Ratio",
+      "B": "Tier 1 Capital Ratio",
+      "C": "Capital to Risk-Weighted Assets Ratio (CRAR)",
+      "D": "Tier 2 Capital Ratio",
+      "E": "Net NPA Ratio"
+    },
+    "answer": "C",
+    "rationale": "Page 12 explicitly states: 'Relevant ratio for Local Area Banks – Capital to Risk-Weighted Assets Ratio (CRAR)'.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Dividend Norms - SFB, PB, LAB, RRB",
+    "question": "Arrange the following categories of banks in descending order of their absolute overall ceiling limits on dividend distribution (from highest ceiling % to lowest ceiling %):\n\n1. Commercial Banks\n2. Payment Banks\n3. Regional Rural Banks (RRBs)\n4. Local Area Banks (LABs)\n\nSelect the correct arrangement code:",
+    "options": {
+      "A": "3=4 > 1=2",
+      "B": "1=2=3 > 4",
+      "C": "1 > 2=3 > 4",
+      "D": "4 > 3 > 1=2",
+      "E": "1=2 > 3=4"
+    },
+    "answer": "A",
+    "rationale": "Page 11 & 13 states the overall ceiling is 75% for Commercial Banks, SFBs, and Payment Banks. For RRBs and LABs, it is 80%. Therefore, RRBs (80%) = LABs (80%) > Commercial Banks (75%) = Payment Banks (75%).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Dividend Norms - SFB, PB, LAB, RRB",
+    "question": "Assertion (A): For Regional Rural Banks (RRBs), unrealised valuation gains from Level 3 financial instruments can be used to pay dividends.\nReason (R): The 2026 RBI Direction explicitly states that the non-eligibility of Level 3 financial instruments does not apply to RRBs.\n\nSelect the correct code:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "A",
+    "rationale": "Page 14 states: 'Unrealised valuation gains from Level 3 financial instruments that are not yet realised in cash cannot be paid as dividend. This particular non-eligibility does not apply to RRBs.' Hence, both A and R are true and logically connected.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Dividend Norms - Exclusions",
+    "question": "What happens if a bank reverses excess provisions and records profits from loan transfers or government-guaranteed security receipts during the financial year?",
+    "options": {
+      "A": "These profits are completely barred from being used for dividends.",
+      "B": "These profits are subject to the RBI's 2025 credit risk transfer guidelines for dividend treatment.",
+      "C": "These profits are added to Adjusted PAT but subjected to a 50% discount.",
+      "D": "These profits are transferred to Tier 2 Capital reserves.",
+      "E": "These profits can be distributed freely without any specific regulatory restriction."
+    },
+    "answer": "B",
+    "rationale": "Page 11 explicitly mentions: 'If a bank reverses excess provisions or records profits from loan transfers or government-guaranteed security receipts, the way these profits are treated for dividend payment must follow the RBI’s 2025 credit risk transfer guidelines.'",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Capital Adequacy - CCR",
+    "question": "Which of the following equations correctly represents the calculation of 'Credit Exposure' under the Current Exposure Method (CEM)?",
+    "options": {
+      "A": "Credit Exposure = Potential Future Exposure - Current Credit Exposure",
+      "B": "Credit Exposure = Current Credit Exposure × Potential Future Exposure",
+      "C": "Credit Exposure = Current Credit Exposure + Potential Future Exposure",
+      "D": "Credit Exposure = (Current Credit Exposure + Notional) × Add-on Factor",
+      "E": "Credit Exposure = Potential Future Exposure / Add-on Factor"
+    },
+    "answer": "C",
+    "rationale": "Page 15 notes: 'Credit Exposure = Current Credit Exposure + Potential Future Exposure'.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Capital Adequacy - CCR",
+    "question": "Identify the incorrect pair regarding the Add-on Factor (%) for market-related off-balance sheet items for contracts with a residual maturity of '1 year or less':",
+    "options": {
+      "A": "Interest Rate Contracts : 0.25%",
+      "B": "Exchange Rate Contracts & Gold : 1.00%",
+      "C": "Equities : 6.00%",
+      "D": "Precious Metals except gold : 7.00%",
+      "E": "Interest Rate Contracts : 1.00%"
+    },
+    "answer": "E",
+    "rationale": "Page 16 table: Interest Rate Contracts for 1 year or less is 0.25%, not 1.00%. Exchange rate & Gold is 1.00%, Equities is 6.00%, Precious Metals (except gold) is 7.00%. Hence, option E is the incorrect pairing.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Capital Adequacy - CCR",
+    "question": "In calculating the Potential Future Credit Exposure (PFCE), an exception is made for derivative contracts where the market value is periodically reset to zero. In such cases, what is taken as the 'residual maturity'?",
+    "options": {
+      "A": "The time since the last reset date.",
+      "B": "The total remaining maturity of the contract.",
+      "C": "The time remaining until the next reset.",
+      "D": "A standard maturity of 1 year.",
+      "E": "The original tenure of the contract at inception."
+    },
+    "answer": "C",
+    "rationale": "Page 16 under 'EXCEPTION' states: 'the residual maturity used for PFCE calculation is taken as the time remaining until the next reset, rather than the total remaining maturity of the contract.'",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Capital Adequacy - CCR",
+    "question": "According to the Special Rule for Interest Rate Contracts with a total maturity of over one year, what is the absolute minimum Add-on Factor allowed, regardless of periodic resets that reduce exposure?",
+    "options": {
+      "A": "0.10%",
+      "B": "0.25%",
+      "C": "0.50%",
+      "D": "1.00%",
+      "E": "2.00%"
+    },
+    "answer": "C",
+    "rationale": "Page 16 'SPECIAL RULE' block explicitly states: 'If total maturity > 1 year. Minimum add-on factor = 0.50%'.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Capital Adequacy - CCR",
+    "question": "Consider the following statements regarding banks acting as clearing members in derivative markets:\n\n1. If a client defaults, the clearing member bank may still have to settle the payment with the clearing system.\n2. When calculating exposure, clearing member banks must apply add-on factors prescribed for Interest Rate Contracts exclusively.\n3. The RBI requires clearing members to maintain capital against Counterparty Credit Risk (CCR) arising from clearing exposures.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only",
+      "D": "3 only",
+      "E": "1, 2, and 3"
+    },
+    "answer": "B",
+    "rationale": "Statement 1 is correct (Page 17). Statement 2 is incorrect because Page 17 states they must apply add-on factors prescribed for 'Equities, Precious Metals (except gold), and Other Commodities', not exclusively Interest Rate Contracts. Statement 3 is correct.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Capital Adequacy - CCR",
+    "question": "What risk weight is applied to a bank's trade exposure if it clears trades for its clients through a Qualifying Central Counterparty (QCCP) and is legally responsible to compensate the client in case the QCCP fails?",
+    "options": {
+      "A": "0%",
+      "B": "2%",
+      "C": "5%",
+      "D": "10%",
+      "E": "20%"
+    },
+    "answer": "B",
+    "rationale": "Page 18 explicitly states: 'In this case, if the bank is legally responsible to compensate the client for losses in case the QCCP fails, then the bank must again apply the same 2% risk weight to its exposure.'",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "National",
+    "sub_category": "FEMA Currency Declaration",
+    "question": "Under the FEMA (Export and Import of Currency) Amendment Regulations 2026, the newly inserted standardized format for passengers bringing foreign exchange into Customs is known as:",
+    "options": {
+      "A": "Foreign Exchange Entry Form (FEEF)",
+      "B": "Standard Currency Record (SCR)",
+      "C": "Currency Declaration Form (CDF)",
+      "D": "Passenger Forex Ledger (PFL)",
+      "E": "Customs Forex Declaration (CFD)"
+    },
+    "answer": "C",
+    "rationale": "Page 21 states that RBI has inserted a standardised 'Currency Declaration Form (CDF)'.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Unique Identifiers - LEI & UTI",
+    "question": "Which international entity initiated the Legal Entity Identifier (LEI) system under the mandate of the G20?",
+    "options": {
+      "A": "International Monetary Fund (IMF)",
+      "B": "Financial Action Task Force (FATF)",
+      "C": "Financial Stability Board (FSB)",
+      "D": "Basel Committee on Banking Supervision (BCBS)",
+      "E": "World Bank Group"
+    },
+    "answer": "C",
+    "rationale": "Page 21 states: 'LEI was initiated by the Financial Stability Board under the mandate of the G20.'",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Unique Identifiers - LEI & UTI",
+    "question": "Match the following transactions with their LEI requirements as per the RBI's consolidated Master Direction:\n\nColumn I:\n1. Derivative Foreign Exchange swaps by a company\n2. Simple purchase of Foreign Currency by a non-individual equivalent to USD 1.5 million\n3. Simple purchase of Foreign Currency by an individual equivalent to USD 2 million\n\nColumn II:\nA. LEI is strictly mandatory.\nB. LEI is required because the amount is ≥ USD 1 million.\nC. LEI is not mandatory for this entity type.\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-C, 3-B",
+      "B": "1-B, 2-A, 3-C",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-B, 2-C, 3-A"
+    },
+    "answer": "C",
+    "rationale": "1 is A (mandatory for specified derivative products). 2 is B (for non-derivative FX by non-individuals, required if ≥ USD 1 million). 3 is C (LEI is only for 'non-individual entities', so individuals do not require it). (Page 22)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Unique Identifiers - LEI & UTI",
+    "question": "Which of the following defines an 'Over the Counter (OTC) Trade' in financial markets as described in the RBI Directions on Unique Identifiers?",
+    "options": {
+      "A": "Trades executed strictly on regulated stock exchanges.",
+      "B": "Retail banking transactions executed at a bank's physical branch.",
+      "C": "Privately negotiated deals between parties, typically done through dealers or electronic platforms, not executed on an exchange.",
+      "D": "International remittance transfers using the SWIFT network.",
+      "E": "Purchases of physical gold coins over the counter at jewelry stores."
+    },
+    "answer": "C",
+    "rationale": "Page 22 text box provides the definition: 'OTC trades are privately negotiated deals between parties, typically done through dealers or electronic platforms, and are not executed on an exchange.'",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "RBI Central Board",
+    "question": "Assertion (A): The Central Board of the Reserve Bank of India meets only when the Governor identifies an immediate crisis in the banking sector.\nReason (R): The Central Board is the top governing body of the RBI and requires emergency triggers to convene.\n\nSelect the correct code:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "E",
+    "rationale": "Both statements are false. The Central Board has a mandated meeting schedule: 'It meets at least six times in a year, and at least one meeting is held in each quarter' (Page 24). It does not meet 'only' during a crisis.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "NOP-INR",
+    "question": "A position where a bank has bought foreign currency but has not yet fully reversed the trade is referred to as an 'open position'. In the context of NOP-INR, what action must the bank take to 'square off' a position where it is currently 'short' in dollars?",
+    "options": {
+      "A": "It must sell dollars.",
+      "B": "It must buy dollars.",
+      "C": "It must sell rupees.",
+      "D": "It must hold the position past midnight.",
+      "E": "It must convert the dollars to SDRs."
+    },
+    "answer": "B",
+    "rationale": "Page 24 notes: 'To close it, the bank must sell dollars (if long) or buy dollars (if short).' Since the bank is short in dollars, it must buy dollars.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "NOP-INR",
+    "question": "The RBI guidelines require Authorised Dealer (AD) banks to maintain their NOP-INR limit at the end of each day. By what date must banks comply with this new directive?",
+    "options": {
+      "A": "March 31, 2026",
+      "B": "April 1, 2026",
+      "C": "April 10, 2026",
+      "D": "July 1, 2026",
+      "E": "December 31, 2026"
+    },
+    "answer": "C",
+    "rationale": "Page 25 explicitly mentions: 'Banks have been asked to comply as early as possible, and in any case by April 10, 2026.'",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "WMA Limits",
+    "question": "If the Government of India utilises Ways and Means Advances (WMA) and the borrowing stretches beyond 90 days, it is classified as an overdraft. What will be the interest rate applied to this overdraft amount?",
+    "options": {
+      "A": "Repo Rate",
+      "B": "Reverse Repo Rate + 1%",
+      "C": "Repo Rate + 2%",
+      "D": "Bank Rate + 1%",
+      "E": "Marginal Standing Facility (MSF) Rate"
+    },
+    "answer": "C",
+    "rationale": "Page 25 states: 'In case of Overdraft (>90 days): Interest Rate: Repo Rate + 2%'.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Bilateral Swap Arrangement",
+    "question": "The India–Japan Bilateral Swap Arrangement (BSA) allows the central banks to exchange currencies. This swap involves the borrowing country returning the foreign currency along with ________ to the lending country.",
+    "options": {
+      "A": "a mutually agreed percentage of its SDRs",
+      "B": "sovereign gold bonds",
+      "C": "interest",
+      "D": "a premium equivalent to the exchange rate fluctuation",
+      "E": "a matching deposit in an escrow account"
+    },
+    "answer": "C",
+    "rationale": "Page 5 notes: 'the borrowing country returning the foreign currency along with interest to the lending country.'",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "NBFC Prudential Norms",
+    "question": "While calculating 'Owned Fund' for an NBFC, an entity reduces a fraction of the average dividend paid in the last three years from the current-year quarterly profit. What is the RBI's core rationale for this specific deduction?",
+    "options": {
+      "A": "To account for expected inflation affecting purchasing power.",
+      "B": "To conservatively estimate the portion of profits that may eventually leave the company as dividend payouts.",
+      "C": "To create a buffer against bad loans and NPAs.",
+      "D": "To comply with international Basel III norms on Tier 1 capital adjustments.",
+      "E": "To penalize companies that have paid excessive dividends in the past."
+    },
+    "answer": "B",
+    "rationale": "Page 6 explains: 'The three-year average helps NBFCs conservatively estimate the portion of profits that may leave the company, ensuring that only the truly retained earnings are added to the Owned Fund.'",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Dividend Norms - Buckets",
+    "question": "A Local Area Bank (LAB) with a CRAR between 11% and 13% is categorized under Bucket 3 (B3). What is the maximum permissible dividend payout for this bank as a percentage of its Adjusted PAT?",
+    "options": {
+      "A": "0%",
+      "B": "20%",
+      "C": "30%",
+      "D": "40%",
+      "E": "50%"
+    },
+    "answer": "C",
+    "rationale": "According to the Table on Page 13, for a LAB, CRAR >11% and <=13% falls under Bucket B3, and the 'Dividend allowed as a % of adjusted PAT' is 30.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Commercial Banks Dividend Norms",
+    "question": "A commercial bank wants to remit profits to its Head Office. Under what condition is a foreign bank restricted from remitting profits earned from its Indian operations?",
+    "options": {
+      "A": "If its Head Office does not maintain a branch in at least three G20 nations.",
+      "B": "If it reports a negative Profit After Tax (PAT) for its Indian operations.",
+      "C": "If it has not operated in India for a minimum of 5 consecutive years.",
+      "D": "If its Adjusted PAT is exactly equal to its reported PAT.",
+      "E": "If it fails to seek prior approval from the RBI Department of Supervision."
+    },
+    "answer": "B",
+    "rationale": "Page 9 states: 'In the case of foreign banks operating in India, remittance of profits to the Head Office is permitted only if they report a positive Profit After Tax (PAT).' Thus, a negative PAT restricts remittance. (Prior approval is not needed if prudential norms are met, per Page 11).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Capital Adequacy - CCR",
+    "question": "Arrange the following asset classes in ascending order based on their Add-on Factor (%) for a contract with a residual maturity of 'Over 5 years':\n\n1. Precious Metals except gold\n2. Equities\n3. Exchange Rate Contracts & Gold\n4. Interest Rate Contracts\n\nSelect the correct answer:",
+    "options": {
+      "A": "4, 3, 1, 2",
+      "B": "4, 1, 3, 2",
+      "C": "3, 4, 1, 2",
+      "D": "1, 2, 3, 4",
+      "E": "4, 3, 2, 1"
+    },
+    "answer": "A",
+    "rationale": "From Page 16 table for 'Over 5 years': Interest Rate (1.50%) < Exchange Rate & Gold (7.50%) < Precious Metals (8.00%) < Equities (10.00%). Hence the order is 4, 3, 1, 2.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Unique Identifiers - LEI & UTI",
+    "question": "Assertion (A): The Unique Transaction Identifier (UTI) is a 20-character alpha-numeric code used to uniquely identify parties to financial transactions.\nReason (R): UTI was mandated by the Financial Stability Board to ensure standard tracking of OTC derivative trades globally.\n\nSelect the correct code:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "D",
+    "rationale": "Assertion A is false because UTI is a 52-character code used to track a 'specific transaction', not the 'parties' (LEI is the 20-character code for parties). Reason R is true conceptually regarding its tracking role.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Digital Payments Awareness Week",
+    "question": "The RBI has been observing Digital Payments Awareness Week annually to promote awareness and adoption of digital payment systems. Since which year did this annual observation begin?",
+    "options": {
+      "A": "2018",
+      "B": "2019",
+      "C": "2020",
+      "D": "2021",
+      "E": "2023"
+    },
+    "answer": "D",
+    "rationale": "Page 21 under Background states: 'annually in the second week of March since 2021'.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "WMA Limits",
+    "question": "Consider the following statements regarding the Ways and Means Advances (WMA) framework:\n\n1. It provides short-term loans strictly limited to a tenure of 3 months.\n2. Overdrafts stretching beyond 90 days are penalized with an interest rate of Repo Rate + 5%.\n3. The WMA limits are reviewed periodically, generally on an annual basis.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "1 only",
+      "B": "2 only",
+      "C": "2 and 3 only",
+      "D": "1 and 3 only",
+      "E": "1, 2, and 3"
+    },
+    "answer": "C",
+    "rationale": "Statement 1 is correct (Page 25: Tenure is 3 months). Statement 2 is incorrect (Overdraft rate is Repo Rate + 2%). Statement 3 is incorrect (Limits are reviewed on a 'half-yearly basis'). Therefore, 2 and 3 are incorrect.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Dividend Norms - RRB",
+    "question": "A Regional Rural Bank (RRB) has an Adjusted PAT of ₹100 Crore. Its Tier 1 Capital Ratio places it in Bucket B8, which allows an 80% payout. What is the maximum permissible dividend the RRB can distribute under the 2026 RBI Directions?",
+    "options": {
+      "A": "₹75 Crore",
+      "B": "₹80 Crore",
+      "C": "₹100 Crore",
+      "D": "0 Crore",
+      "E": "₹50 Crore"
+    },
+    "answer": "B",
+    "rationale": "The permissible amount is the lower of: % allowed under bucket (80% of 100 = 80 Cr) OR the absolute ceiling (80% of PAT = 80 Cr). Thus, ₹80 Crore is permitted (Page 13).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Primary Dealers",
+    "question": "Which of the following capital tiers represents the 'core capital' of a bank, forming the most reliable component of its capital base, as defined within the CRAR framework?",
+    "options": {
+      "A": "Tier 2 Capital",
+      "B": "Tier 3 Capital",
+      "C": "Tier 1 Capital",
+      "D": "Supplementary Capital",
+      "E": "Contingent Capital"
+    },
+    "answer": "C",
+    "rationale": "Page 12 defines: 'Tier 1 capital is the core capital of a bank and forms the most reliable component of its capital base within the CRAR framework.'",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "National",
+    "sub_category": "FEMA Currency Declaration",
+    "question": "A passenger arrives in India carrying USD 3,000 in currency notes, USD 4,000 in traveler's cheques, and a forex prepaid card loaded with USD 5,000. Under the FEMA Regulations 2026, must this passenger fill the Currency Declaration Form (CDF)?",
+    "options": {
+      "A": "Yes, because the currency notes exceed USD 5,000.",
+      "B": "Yes, because the 'total' foreign exchange exceeds USD 10,000.",
+      "C": "No, because the currency notes are less than USD 5,000.",
+      "D": "No, because prepaid cards are exempt from FEMA declaration entirely.",
+      "E": "Yes, because all incoming travelers are now required to fill the CDF regardless of amount."
+    },
+    "answer": "B",
+    "rationale": "Page 21 states CDF is required if 'total' foreign exchange exceeds USD 10,000. The passenger's total forex is 3000 + 4000 + 5000 = USD 12,000. Hence, it exceeds the USD 10,000 limit, making the CDF mandatory.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Unique Identifiers - LEI & UTI",
+    "question": "In the context of Unique Identifiers for financial markets, what does LOU stand for?",
+    "options": {
+      "A": "Legal Operational Unit",
+      "B": "Local Operating Unit",
+      "C": "Ledger Oversight Unit",
+      "D": "Legal Operating Union",
+      "E": "Locational Oversight Utility"
+    },
+    "answer": "B",
+    "rationale": "Page 22 outlines that entities must obtain an LEI Code from a 'Local Operating Unit (LOU)'.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "NBFC Prudential Norms",
+    "question": "When an entity acquires an asset on lease, it obtains the right to use that asset for a specified period. Under which accounting standard is this right recognized in financial statements?",
+    "options": {
+      "A": "Ind AS 109",
+      "B": "Ind AS 115",
+      "C": "Ind AS 116",
+      "D": "Ind AS 16",
+      "E": "Ind AS 38"
+    },
+    "answer": "C",
+    "rationale": "Page 7 explicitly states: 'Under Ind AS 116 – Leases, this right is recognised in the financial statements as a Right-of-Use (ROU) asset.'",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Commercial Banks Dividend Norms",
+    "question": "Which specific branch of the Reserve Bank of India receives reports from commercial banks within a fortnight of dividend declaration or profit remittance?",
+    "options": {
+      "A": "Department of Payment and Settlement Systems",
+      "B": "Financial Markets Regulation Department",
+      "C": "Department of Supervision",
+      "D": "Foreign Exchange Department",
+      "E": "Monetary Policy Department"
+    },
+    "answer": "C",
+    "rationale": "Page 11 states: 'A bank paying dividend... shall report to the Department of Supervision of the RBI within a fortnight'.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Capital Adequacy - CCR",
+    "question": "Consider a 3-year interest rate swap contract that does *not* reset frequently. Under the general principle for calculating PFCE, what residual maturity is used?",
+    "options": {
+      "A": "1 year",
+      "B": "2 years",
+      "C": "3 years",
+      "D": "It depends on the first coupon payment date",
+      "E": "It is treated as an overnight maturity"
+    },
+    "answer": "C",
+    "rationale": "Page 16 provides the example: 'a 3-year interest rate swap that does not reset frequently will have its PFCE calculated based on the full 3-year period.'",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Dividend Norms - SFB, PB, LAB, RRB",
+    "question": "For a Payment Bank to be eligible for a 60% dividend payout (Bucket B6), what must its Tier 1 Capital Ratio be according to the RBI norms?",
+    "options": {
+      "A": "> 9.5% and ≤ 11.5%",
+      "B": "> 11.5% and ≤ 13.5%",
+      "C": "> 13.5% and ≤ 15.5%",
+      "D": "> 15.5% and ≤ 16.5%",
+      "E": "> 16.5% and ≤ 17.5%"
+    },
+    "answer": "D",
+    "rationale": "Page 13 Table 1 for Bucket B6 (60%) under 'Tier 1 Capital Ratio for SFBs and PBs' indicates >15.5% and ≤ 16.5%.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Capital Adequacy - CCR",
+    "question": "Assertion (A): Payments Banks are required to apply add-on factors prescribed for Equities and Precious Metals when acting as clearing members in derivative markets.\nReason (R): The RBI's Capital Adequacy Directions 2025 mandated universal applicability of CCR calculations for all bank categories without exception.\n\nSelect the correct code:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "E",
+    "rationale": "Assertion A is false because Payments Banks are exempt as they are 'not permitted to act as clearing members in derivative markets' (Page 17). Reason R is false because the 2026 amendment includes specific exceptions (like for PBs).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Unique Identifiers - LEI & UTI",
+    "question": "Which of the following instruments is explicitly covered under the 'Scope of LEI Code' as requiring an LEI for non-individual entities?",
+    "options": {
+      "A": "Retail personal loans",
+      "B": "Government securities",
+      "C": "Equity shares listed on the NSE",
+      "D": "Overnight fixed deposits",
+      "E": "Aadhaar-enabled Payment System (AePS) transfers"
+    },
+    "answer": "B",
+    "rationale": "Page 22 lists dealings in: 'Government securities, money market instruments, foreign exchange instruments, and specified derivative products'.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Bilateral Swap Arrangement",
+    "question": "When the India-Japan Bilateral Swap Arrangement (BSA) was originally established in 2011, what was its initial swap size?",
+    "options": {
+      "A": "USD 5 billion",
+      "B": "USD 10 billion",
+      "C": "USD 15 billion",
+      "D": "USD 50 billion",
+      "E": "USD 75 billion"
+    },
+    "answer": "C",
+    "rationale": "Page 5 states: 'The India–Japan Bilateral Swap Arrangement (BSA) was first established in 2011 with a swap size of USD 15 billion.'",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Primary Dealers",
+    "question": "In the formula for calculating Tier 1 Capital for Standalone Primary Dealers (SPDs), which of the following is deducted from the capital?",
+    "options": {
+      "A": "Statutory reserves",
+      "B": "Share Premium Account",
+      "C": "Losses brought forward from previous accounting periods",
+      "D": "Quarterly profits of the current year",
+      "E": "Paid-up capital"
+    },
+    "answer": "C",
+    "rationale": "Page 7 details the 'Less:' part of the formula, which includes 'losses brought forward from previous accounting periods'.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Commercial Banks Dividend Norms",
+    "question": "Which ratio measures how strong a commercial bank's core capital is relative to the risks it takes, serving as the central metric for dividend bucket classification?",
+    "options": {
+      "A": "Statutory Liquidity Ratio (SLR)",
+      "B": "Net Stable Funding Ratio (NSFR)",
+      "C": "Common Equity Tier 1 (CET1) Ratio",
+      "D": "Liquidity Coverage Ratio (LCR)",
+      "E": "Provisioning Coverage Ratio (PCR)"
+    },
+    "answer": "C",
+    "rationale": "Page 8 defines CET1: 'shows how strong a bank's core capital is relative to the risks it takes', and Page 10 uses it as the key input for dividend bucketing.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "NOP-INR",
+    "question": "Regarding the Net Open Position involving INR (NOP-INR) for Authorised Dealer (AD) banks, where is the limit settlement practically verified?",
+    "options": {
+      "A": "In the international SWIFT network logs.",
+      "B": "In the foreign parent bank's daily consolidated ledger.",
+      "C": "At the end of each day in the domestic market.",
+      "D": "At the start of the trading day in the global currency exchange.",
+      "E": "Only during the quarterly audit by RBI."
+    },
+    "answer": "C",
+    "rationale": "Page 24 explicitly states: 'This limit is to be maintained at the end of each day in the domestic market (i.e., where actual currency settlement occurs).'",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Capital Adequacy - CCR",
+    "question": "If an entity acts as an intermediary standing between two parties in a trade, becoming the buyer to the seller and seller to the buyer, thereby guaranteeing the transaction, what is this entity called?",
+    "options": {
+      "A": "Standalone Primary Dealer (SPD)",
+      "B": "Asset Reconstruction Company (ARC)",
+      "C": "Qualifying Central Counterparty (QCCP)",
+      "D": "Core Investment Company (CIC)",
+      "E": "Local Operating Unit (LOU)"
+    },
+    "answer": "C",
+    "rationale": "Page 18 defines QCCP as: 'An intermediary that stands between two parties in a trade, becoming the buyer to the seller and seller to the buyer, thereby guaranteeing the transaction and reducing CCR.'",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "RBI Central Board",
+    "question": "The RBI's Medium Term Strategy Framework, 'Utkarsh 3.0', builds upon earlier frameworks. In which year was the foundational strategy framework established before it was formally named 'Utkarsh'?",
+    "options": {
+      "A": "2010",
+      "B": "2012",
+      "C": "2015",
+      "D": "2017",
+      "E": "2019"
+    },
+    "answer": "C",
+    "rationale": "Page 24 diagram shows 'Utkarsh builds on RBI's Strategic Management Framework (2015)'.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "WMA Limits",
+    "question": "Match the following attributes related to Ways and Means Advances (WMA) for the Government of India:\n\nColumn I:\n1. Purpose of Loan\n2. Tenure\n3. Trigger for fresh market borrowing\n\nColumn II:\nA. 3 Months\nB. ~75% limit utilisation\nC. Managing temporary mismatches between revenue and expenditure\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-B, 2-A, 3-C",
+      "C": "1-A, 2-C, 3-B",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "A",
+    "rationale": "Page 25 explicitly matches: Purpose is managing temporary mismatches (1-C), Tenure is 3 Months (2-A), and Trigger is ~75% utilisation (3-B).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Commercial Banks Dividend Norms",
+    "question": "Which of the following equations correctly defines the final maximum permissible dividend calculation step for commercial banks?",
+    "options": {
+      "A": "Maximum (CET1 Bucket Amount, 75% of Reported PAT)",
+      "B": "Minimum (CET1 Bucket Amount, 75% of Reported PAT)",
+      "C": "Average of (CET1 Bucket Amount, 75% of Adjusted PAT)",
+      "D": "Minimum (CRAR Bucket Amount, 100% of Adjusted PAT)",
+      "E": "Maximum (Adjusted PAT, Reported PAT)"
+    },
+    "answer": "B",
+    "rationale": "Page 11 dictates: 'the final maximum permissible dividend is determined by selecting the lower of the two values: the dividend amount permitted under the applicable CET1 bucket... or 75% of the reported PAT.' Hence, 'Minimum' operation.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Digital Payments Awareness Week",
+    "question": "Assertion (A): The \"Thoda Dhyan Se\" campaign was launched by the RBI to encourage safe digital transactions.\nReason (R): The campaign was part of the Digital Payments Awareness Week 2026, marking its sixth edition.\n\nSelect the correct code:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "B",
+    "rationale": "Both statements are true based on Page 21. However, being the 6th edition is not the *reason* why the campaign was launched (the reason is to promote awareness and adoption). Thus, they are independent facts.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Unique Identifiers - LEI & UTI",
+    "question": "A foreign branch of an Indian corporate is executing a complex cross-border derivative transaction. To fulfill the RBI's consolidated Master Direction requirements, what identifier must it acquire to uniquely identify the 'specific transaction' itself?",
+    "options": {
+      "A": "SWIFT Code",
+      "B": "Legal Entity Identifier (LEI)",
+      "C": "Unique Transaction Identifier (UTI)",
+      "D": "Global OTC Tracker (GOT)",
+      "E": "International Securities Identification Number (ISIN)"
+    },
+    "answer": "C",
+    "rationale": "Page 22 defines UTI as the code 'assigned to an OTC derivative transaction to uniquely identify and track that specific transaction'. (LEI identifies the parties, not the transaction itself).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Capital Adequacy - CCR",
+    "question": "Consider the following statement regarding Group-Level Counterparty Credit Risk: 'The RBI requires banks to compute their capital requirement against counterparty credit risk by considering the risks of...'\n\nComplete the sentence:",
+    "options": {
+      "A": "only their domestic branches to shield the local economy.",
+      "B": "the entire group of entities under their control.",
+      "C": "their top 5 highest exposure corporate clients.",
+      "D": "only off-balance sheet exposures over USD 10 million.",
+      "E": "the standalone bank explicitly ignoring subsidiary operations."
+    },
+    "answer": "B",
+    "rationale": "Page 18 explicitly states: 'by considering the risks of the entire group of entities under their control, rather than considering only the standalone bank.'",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Dividend Norms - SFB, PB, LAB, RRB",
+    "question": "What is the absolute ceiling on dividend distribution specified for Payment Banks under the 2026 Prudential Norms?",
+    "options": {
+      "A": "50% of the PAT",
+      "B": "75% of the PAT",
+      "C": "80% of the PAT",
+      "D": "100% of the PAT",
+      "E": "There is no ceiling for Payment Banks."
+    },
+    "answer": "B",
+    "rationale": "Page 13 specifically notes: 'cannot exceed 75% of the PAT for the relevant period in the case of SFBs and Payment Banks'.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "NBFC Prudential Norms",
+    "question": "To calculate the 'Owned Fund', which of the following is an example of an item that must be SUBTRACTED according to the standard formula provided by RBI?",
+    "options": {
+      "A": "Share Premium Account",
+      "B": "Capital Reserves",
+      "C": "Compulsorily Convertible Preference Shares",
+      "D": "Deferred Revenue Expenditure",
+      "E": "Paid-up Equity Capital"
+    },
+    "answer": "D",
+    "rationale": "Page 5 under the Owned Fund formula lists 'Deferred Revenue Expenditure' under the 'Less:' (subtract) section.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Capital Adequacy - CCR",
+    "question": "Under the new CCR directions for off-balance sheet items, which class of contracts generally attracts the highest Add-on Factor (%) across all maturity brackets?",
+    "options": {
+      "A": "Interest Rate Contracts",
+      "B": "Exchange Rate Contracts & Gold",
+      "C": "Equities",
+      "D": "Precious Metals except gold",
+      "E": "Government bonds"
+    },
+    "answer": "C",
+    "rationale": "Looking at the table on Page 16, Equities attract 6.00% (1yr), 8.00% (1-5yr), and 10.00% (>5yr). This is consistently higher than Interest Rates (max 1.50%), Exchange Rates/Gold (max 7.50%), and Precious Metals (max 8.00%).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Dividend Norms - Exclusions",
+    "question": "When assessing whether a bank's reported profit can be entirely used for dividend payouts, the RBI notes a scenario where 'Unrealised valuation gains' cannot be used. From which level of financial instruments must these gains be derived to be rendered ineligible?",
+    "options": {
+      "A": "Level 1",
+      "B": "Level 2",
+      "C": "Level 3",
+      "D": "Level 4",
+      "E": "Level A"
+    },
+    "answer": "C",
+    "rationale": "Page 11 states: 'Unrealised valuation gains (not yet realised in cash) from Level 3 financial instruments cannot be paid as dividend.'",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Commercial Banks Dividend Norms",
+    "question": "Which of the following conditions is NOT a prerequisite for a commercial bank incorporated in India to be eligible to declare dividends under the 2026 rules?",
+    "options": {
+      "A": "Compliance with regulatory capital norms at the end of the previous year.",
+      "B": "Compliance with regulatory capital norms at the end of the current year.",
+      "C": "Maintaining the minimum required capital adequacy after paying the dividend.",
+      "D": "Possessing a positive adjusted Profit After Tax (PAT).",
+      "E": "A mandatory review and clearance by the Ministry of Finance prior to declaration."
+    },
+    "answer": "E",
+    "rationale": "Page 9 lists all conditions (A through D). There is no requirement for clearance by the Ministry of Finance.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "RBI NewsTap March 2026"
+  }
+]
