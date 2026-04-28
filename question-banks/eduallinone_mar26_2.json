@@ -1,0 +1,802 @@
+[
+  {
+    "category": "ESI",
+    "sub_category": "Social Sector - Health",
+    "question": "Consider the following statements regarding the GARBH-INi Initiative:\n\n1. It is India’s largest pregnancy cohort study, involving around 12,000 pregnant women, and was launched in May 2015.\n2. The initiative is spearheaded by the Ministry of Health and Family Welfare to combat maternal mortality in Aspirational Districts.\n3. A key component is GARBH-INi-DRISHTI, a dedicated data-sharing platform designed to enable collaborative research into maternal and child health.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "C",
+    "rationale": "Statements 1 and 3 are correct. Statement 2 is incorrect because the GARBH-INi initiative is driven by the Department of Biotechnology (DBT) under the Ministry of Science and Technology, not the Ministry of Health and Family Welfare. (Pages 16-17)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "GA in News",
+    "sub_category": "Days and Themes",
+    "question": "Match the following significant days observed in 2026 with their respective themes:\n\nColumn I:\n1. Rare Disease Day (Feb 28)\n2. World Civil Defence Day (Mar 1)\n3. Zero Discrimination Day (Mar 1)\n4. World Obesity Day (Mar 4)\n\nColumn II:\nA. \"People First\"\nB. \"More Than You Can Imagine\"\nC. \"8 Billion Reasons to Act on Obesity\"\nD. “A Safe Environment … for a Sustainable Future.”\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-D, 3-A, 4-C",
+      "B": "1-D, 2-B, 3-C, 4-A",
+      "C": "1-A, 2-C, 3-B, 4-D",
+      "D": "1-B, 2-A, 3-D, 4-C",
+      "E": "1-C, 2-D, 3-A, 4-B"
+    },
+    "answer": "A",
+    "rationale": "1 is B (Rare Disease Day: \"More Than You Can Imagine\"). 2 is D (World Civil Defence Day: \"A Safe Environment...\"). 3 is A (Zero Discrimination Day: \"People First\"). 4 is C (World Obesity Day: \"8 Billion Reasons...\"). (Page 14)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Employment Generation & Initiatives",
+    "question": "Assertion (A): The SWAYATT initiative, which recently celebrated its 7th anniversary, exclusively targets the inclusion of large corporate enterprises in the Government e-Marketplace (GeM) to boost bulk procurement.\nReason (R): SWAYATT stands for Startups, Women & Youth Advantage through e-Transactions and focuses on addressing critical challenges like access to markets, finance, and value addition for emerging enterprises.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "D",
+    "rationale": "Assertion (A) is false because SWAYATT explicitly targets startups, women entrepreneurs, and youth (MSEs, SHGs), not large corporate enterprises. Reason (R) is completely true as it correctly defines the acronym and the core objectives of the initiative. (Pages 20-21)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "Finance",
+    "sub_category": "Corporate Laws Amendment Bill, 2026",
+    "question": "The Corporate Laws (Amendment) Bill, 2026 introduces revised financial thresholds for various company classifications and exemptions. Arrange the following new limits in ascending order of their monetary value:\n\n1. Increased net profit threshold for CSR compliance exemption.\n2. Increased paid-up capital limit for the definition of Small Companies.\n3. Increased turnover limit for the definition of Small Companies.\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1 -> 2 -> 3",
+      "B": "2 -> 1 -> 3",
+      "C": "1 -> 3 -> 2",
+      "D": "3 -> 2 -> 1",
+      "E": "2 -> 3 -> 1"
+    },
+    "answer": "A",
+    "rationale": "The values are: 1. CSR profit threshold increased to ₹10 crore. 2. Small Companies paid-up capital limit increased to ₹20 crore. 3. Small Companies turnover limit increased to ₹200 crore. Ascending order is 10cr (1) -> 20cr (2) -> 200cr (3). (Pages 81-82)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Social Justice & Digital Infrastructure",
+    "question": "Which of the following statements regarding the UIDAI Bug Bounty Programme is INCORRECT?",
+    "options": {
+      "A": "It is implemented by the Unique Identification Authority of India to identify and fix security vulnerabilities in digital systems.",
+      "B": "The programme strictly limits participation to internal government IT auditors and completely prohibits independent ethical hackers.",
+      "C": "It covers key platforms such as the UIDAI official website, myAadhaar portal, and Secure QR Code application.",
+      "D": "Rewards or bounties are distributed to participants based on the severity of the vulnerabilities discovered.",
+      "E": "The initiative utilizes a crowdsourced security approach involving a selected panel of around 20 cybersecurity experts."
+    },
+    "answer": "B",
+    "rationale": "Option B is incorrect. The programme explicitly utilizes a 'crowdsourced security approach involving ethical hackers' and a selected panel of around 20 cybersecurity experts, contradicting the claim that it prohibits independent ethical hackers. (Page 18)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Digital Connectivity & Rural Development",
+    "question": "The Samriddhi Gram Phygital Services Pilot Initiative, inaugurated recently in Madhya Pradesh, aims to bridge the digital divide in rural areas. This pilot project is being implemented by various partners under the TTDF. What does TTDF stand for in this context?",
+    "options": {
+      "A": "Targeted Technology Deployment Fund",
+      "B": "Telecom Technology Development Fund",
+      "C": "Transitional Trade and Digital Fund",
+      "D": "Technical Training and Development Foundation",
+      "E": "Terminal Telecommunications Distribution Fund"
+    },
+    "answer": "B",
+    "rationale": "Under the Samriddhi Gram Phygital Services Pilot Initiative, the funding and operational backbone is supported under the 'Telecom Technology Development Fund (TTDF)', managed by the Department of Telecommunications (DoT). (Pages 24-25)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Cultural Heritage & Tribal Affairs",
+    "question": "Consider the following statements regarding the 'Adi Sanskriti' digital platform:\n\n1. It is the world's first digital tribal university and e-learning platform, recently renamed as 'TribeX'.\n2. It was exclusively developed by the Ministry of Culture without the involvement of state-level research institutes.\n3. The platform aims to digitally map, archive, and preserve tribal art forms and socio-cultural practices while promoting fair trade for tribal artisans.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "3 only"
+    },
+    "answer": "C",
+    "rationale": "Statements 1 and 3 are correct. Statement 2 is incorrect because the platform was developed by the Ministry of Tribal Affairs (not Culture) in partnership with State Tribal Research Institutes (TRIs), such as the Jharkhand Tribal Research Institute. (Page 24)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Sustainable Development - Water",
+    "question": "A nationwide campaign to strengthen community participation in rural drinking water management, the 'Jal Mahotsav 2026', includes various targeted phases. Arrange the following attributes/events of this campaign in the correct chronological/factual order as presented by the Ministry:\n\n1. Conclusion of the campaign on World Water Day.\n2. Commencement of the campaign with 'Jal Arpan' (handover of assets).\n3. Promotion of skilled human resources via the Nal Jal Mitra Programme on World Plumbers Day.\n\nSelect the logical flow of these campaign events:",
+    "options": {
+      "A": "2 -> 1 -> 3",
+      "B": "2 -> 3 -> 1",
+      "C": "3 -> 2 -> 1",
+      "D": "1 -> 2 -> 3",
+      "E": "3 -> 1 -> 2"
+    },
+    "answer": "B",
+    "rationale": "The campaign begins on 8 March (Women's Day) with 'Jal Arpan' (2). It then aligns with World Plumbers Day (March 11) for the Nal Jal Mitra Programme (3). It concludes on 22 March, which is World Water Day (1). Thus, the chronological order is 2 -> 3 -> 1. (Page 29)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Employment Generation & Livelihood",
+    "question": "Assertion (A): The newly operationalized 'Mission Sah-SANKALP' primarily targets the promotion of sustainable livelihood systems using science and technology-based interventions in rural and tribal areas.\nReason (R): It explicitly discourages the inclusion of women and marginalized communities like Scheduled Castes (SC) to focus entirely on advanced technological deployment in urban centers.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true; the mission does promote sustainable livelihoods using S&T. Reason (R) is completely false because the infographic for Mission Sah-SANKALP explicitly highlights a special emphasis on Scheduled Caste (SC) communities under the SCSP and focuses heavily on rural/tribal areas, not exclusively urban centers. (Page 33)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Gender Issues & Judiciary",
+    "question": "Following a recent Supreme Court judgment regarding the Social Security Code, 2020, what significant change has been mandated regarding maternity leave for adoptive mothers?",
+    "options": {
+      "A": "Adoptive mothers are now entitled to 26 weeks of leave, strictly matching the leave for biological mothers.",
+      "B": "The age-based restriction limiting benefits to adoptions of children under three months old has been struck down, qualifying all adoptive mothers for 12 weeks of leave.",
+      "C": "Maternity leave for adoptive mothers has been completely abolished to promote uniformity in labour laws.",
+      "D": "Adoptive mothers must undergo a mandatory 30-day waiting period before claiming the 6 weeks of leave.",
+      "E": "The ruling transferred the authority to grant adoptive maternity leave exclusively to State Governments."
+    },
+    "answer": "B",
+    "rationale": "The Supreme Court declared the age-based maternity leave restriction unconstitutional. It struck down the rule limiting benefits to adoptions of children under 3 months old, allowing all adoptive mothers to qualify for 12 weeks of leave regardless of the child's age. (Page 44)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "Finance",
+    "sub_category": "Digital Reforms for EoDB",
+    "question": "Match the following digital platforms associated with India's Digital Reforms for Enhancing Ease of Doing Business (EoDB) with their primary functions:\n\nColumn I:\n1. MCA21 Version 3\n2. Udyam Registration Portal\n3. SPICE+ Form\n4. ICEGATE\n\nColumn II:\nA. Fully digital, paperless MSME registration integrated with CBDT & GSTN\nB. Centralized hub for Indian customs and trading community offering online duty payment\nC. AI-enabled platform for end-to-end registry and incorporation of Companies & LLPs\nD. Single integrated form providing 11 services across 3 Central Govt Ministries and 3 State Governments\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-D, 4-B",
+      "B": "1-A, 2-C, 3-B, 4-D",
+      "C": "1-D, 2-B, 3-A, 4-C",
+      "D": "1-C, 2-D, 3-A, 4-B",
+      "E": "1-B, 2-A, 3-C, 4-D"
+    },
+    "answer": "A",
+    "rationale": "1 is C (MCA21 is the AI-enabled registry platform). 2 is A (Udyam is for MSME registration). 3 is D (SPICE+ is the single integrated form for 11 services). 4 is B (ICEGATE is the Indian Customs Electronic Gateway). (Page 39)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "Finance",
+    "sub_category": "International Economic Issues",
+    "question": "Consider the following statements regarding the renewal of the Bilateral Swap Arrangement (BSA) between India and Japan:\n\n1. The BSA was renewed for a maximum swap size of US$ 75 billion, reinforcing liquidity and confidence support.\n2. The agreement is a strictly one-way framework where only India can swap its local currency for US dollars from Japan.\n3. The Bank of Japan acts as an agent for Japan’s Ministry of Finance, while the Reserve Bank of India acts for India under this third amendment of the agreement.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "3 only"
+    },
+    "answer": "B",
+    "rationale": "Statements 1 and 3 are correct. Statement 2 is incorrect because the arrangement is explicitly described as a 'two-way currency swap framework', meaning both authorities can swap their local currencies for the US dollar. (Pages 54, 85)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "Finance",
+    "sub_category": "Fintech & SWIFT",
+    "question": "Which of the following statements concerning the Society for Worldwide Interbank Financial Telecommunication (SWIFT) and its new framework is INCORRECT?",
+    "options": {
+      "A": "SWIFT is launching a new framework for faster cross-border retail payments, supported by Indian banks like SBI, HDFC, ICICI, and Axis Bank.",
+      "B": "The new initiative aims to make cross-border payments as smooth as domestic ones, aligning with the G20 roadmap.",
+      "C": "SWIFT itself functions as a centralized global payment system that directly processes, holds, and settles funds between individuals.",
+      "D": "The framework guarantees 'Full-Value Delivery', ensuring the exact amount sent reaches the recipient without hidden deductions.",
+      "E": "Founded in 1973 and headquartered in Belgium, SWIFT provides a secure messaging network used by over 11,000 financial institutions."
+    },
+    "answer": "C",
+    "rationale": "Option C is incorrect. The document includes a specific note stating: \"SWIFT is not a payment system itself; it is a global financial messaging network used by banks to transmit payment instructions securely.\" It does not hold or settle funds directly. (Pages 56-57)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "Finance",
+    "sub_category": "RBI Guidelines & Limits",
+    "question": "The Reserve Bank of India mandates specific operational and borrowing limits for macroeconomic stability. Arrange the following prescribed limits for 2026 in descending order of their US Dollar or INR equivalent value (assuming an approximate exchange rate of USD 1 = INR 80 for comparison purposes):\n\n1. Maximum swap size under the India-Japan Bilateral Swap Arrangement.\n2. WMA Limit for the Government of India (H1 FY 2026-27).\n3. Authorized Dealers (AD) banks' net open position limit involving INR (NOP-INR).\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1 -> 2 -> 3",
+      "B": "2 -> 1 -> 3",
+      "C": "1 -> 3 -> 2",
+      "D": "3 -> 1 -> 2",
+      "E": "2 -> 3 -> 1"
+    },
+    "answer": "A",
+    "rationale": "1. India-Japan Swap = US$ 75 billion (approx. ₹600,000 crore). 2. WMA Limit = ₹2,50,000 crore (approx. US$ 31.25 billion). 3. NOP-INR Limit = US$ 100 million (approx. ₹800 crore). Descending order: 1 -> 2 -> 3. (Pages 54, 91, 92)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "Finance",
+    "sub_category": "Mutual Funds Regulations",
+    "question": "Assertion (A): Under a recent SEBI rule, two equity mutual fund schemes of the same fund house are strictly prohibited from investing more than 50% of their money in the same companies, with an exception provided for large-cap mutual funds.\nReason (R): Large-cap mutual funds are exempted because they are mandated to invest mainly in the top 100 companies by market capitalisation, making a high degree of similarity between their portfolios mathematically natural and unavoidable.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Assertion (A) is true; SEBI implemented the 50% rule to ensure diversification, exempting large caps. Reason (R) is true and correctly explains why large caps are exempted—because investing in the restricted universe of the top 100 companies inevitably leads to portfolio overlap. (Page 61)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "Finance",
+    "sub_category": "Insurance Sector Innovations",
+    "question": "Consider the following statements regarding the 'Bima Sugam' platform and the broader 'Bima Trinity':\n\n1. Bima Sugam is designed as a unified digital platform often described as the “UPI-like platform for insurance.”\n2. It operates on a high-commission model to heavily incentivize intermediaries and brokers.\n3. The Bima Trinity includes Bima Vistaar (a rural-focused composite product) and Bima Vahaak (a women-centric agent network).\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "3 only"
+    },
+    "answer": "C",
+    "rationale": "Statements 1 and 3 are correct. Statement 2 is incorrect because Bima Sugam explicitly operates on a 'Zero-commission model' to reduce costs and improve transparency, not a high-commission model. (Page 78)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "Finance",
+    "sub_category": "Unclaimed Deposits Initiatives",
+    "question": "Match the following digital platforms and initiatives with the regulatory body responsible for launching or developing them to help citizens reclaim unclaimed financial assets:\n\nColumn I:\n1. UDGAM (Unclaimed Deposits – Gateway to Access Information)\n2. Bima Bharosa\n3. MITRA platform\n4. Incentive Scheme (5%–7.5%) for claim settlement\n\nColumn II:\nA. Securities and Exchange Board of India (SEBI)\nB. Insurance Regulatory and Development Authority of India (IRDAI)\nC. Reserve Bank of India (RBI)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-B, 3-A, 4-C",
+      "B": "1-A, 2-C, 3-B, 4-A",
+      "C": "1-C, 2-A, 3-B, 4-C",
+      "D": "1-B, 2-B, 3-A, 4-C",
+      "E": "1-C, 2-B, 3-C, 4-A"
+    },
+    "answer": "A",
+    "rationale": "1 is C (UDGAM is by RBI). 2 is B (Bima Bharosa is by IRDAI). 3 is A (MITRA is by SEBI for mutual funds). 4 is C (Incentive Scheme from the DEA fund is an RBI measure). Therefore, 1-C, 2-B, 3-A, 4-C. (Pages 79-80)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "FCRA Amendment Bill 2026",
+    "question": "The Foreign Contribution (Regulation) Amendment Bill, 2026 seeks to tighten oversight on foreign-funded NGOs. One of the key provisions of this bill is the reduction of the penalty for illegally accepting or assisting in the acceptance of foreign contributions. The penalty is proposed to be reduced from ________ of imprisonment to ________.",
+    "options": {
+      "A": "Seven years; three years",
+      "B": "Five years; one year",
+      "C": "Three years; six months",
+      "D": "Ten years; five years",
+      "E": "Five years; two years"
+    },
+    "answer": "B",
+    "rationale": "The document states that the FCRA Amendment Bill proposes reducing the penalty for illegally accepting or assisting in the acceptance of foreign contributions from five years to one year of imprisonment. (Page 80)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "Finance",
+    "sub_category": "Buyback Taxation",
+    "question": "Consider the following statements regarding the key amendments in Buyback Taxation under the Finance Bill 2026:\n\n1. The amendments shift the taxation of buyback proceeds to dividend income in the hands of shareholders, rather than treating them as capital gains.\n2. A 12% surcharge has been introduced on the additional income tax on buyback gains, which significantly impacts promoters.\n3. The bill clarifies that the additional tax on share buybacks will apply exclusively to domestic companies under Section 68 of the Companies Act, 2013.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "3 only"
+    },
+    "answer": "B",
+    "rationale": "Statements 2 and 3 are correct. Statement 1 is incorrect because the amendment actually shifts taxation of buyback proceeds *to* capital gains in the hands of shareholders, *instead of* dividend income. (Pages 80-81)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "Finance",
+    "sub_category": "RBI Committees & Frameworks",
+    "question": "Which of the following is an INCORRECT detail regarding the 622nd Meeting of the Central Board of the RBI and the 'Utkarsh 3.0' framework?",
+    "options": {
+      "A": "The Central Board approved Utkarsh 3.0 during its 622nd meeting.",
+      "B": "Utkarsh 3.0 serves as the Reserve Bank of India’s Medium-Term Strategy Framework.",
+      "C": "The period covered by the Utkarsh 3.0 strategy framework is 2026–29.",
+      "D": "The 'Utkarsh' initiative originally launched its first iteration (Utkarsh 1.0) covering the period 2015-2018.",
+      "E": "Utkarsh builds on the RBI's Strategic Management Framework originally introduced in 2015."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect. According to the \"Evolution Timeline\" infographic, Utkarsh 1.0 covered the period 2019–22 (not 2015-2018). Utkarsh 2.0 covered 2023-25, and Utkarsh 3.0 covers 2026-29. (Page 90)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "Government Schemes",
+    "sub_category": "Skill Development & Employment",
+    "question": "A comparison between the Craftsmen Training Scheme (CTS) and the Prime Minister’s Internship Scheme (PMIS) reveals distinct operational parameters. Which of the following accurately describes a feature of these schemes?",
+    "options": {
+      "A": "CTS mandates a 50% reservation of seats for women, whereas PMIS is exclusively reserved for men.",
+      "B": "PMIS offers a monthly stipend of ₹9,000 to interns and provides a one-time grant of ₹6,000 for incidental expenses.",
+      "C": "CTS was launched recently in 2024 to complement PMIS, focusing solely on AI Programming and Drone tech.",
+      "D": "Under PMIS, graduates from IITs, IIMs, and individuals who have completed apprenticeships under NATS are given top priority for enrollment.",
+      "E": "Both CTS and PMIS require candidates to undergo a mandatory 150 hours of On-the-Job Training (OJT) to receive their final grading."
+    },
+    "answer": "B",
+    "rationale": "Option B is correct. PMIS increased the stipend to ₹9,000 and offers a ₹6,000 one-time grant. A is wrong (CTS has 30% women reservation). C is wrong (CTS launched in 1950, not 2024). D is wrong (IIT/IIM grads and NATS candidates are explicitly EXCLUDED from PMIS). E is wrong (The 150-hour OJT mandate applies to CTS under the 2026 reform, not PMIS which requires 50% of the 12-month period as hands-on experience). (Pages 97-98)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "Reports & Indices",
+    "sub_category": "International Arms Transfers",
+    "question": "According to the SIPRI 'Trends in International Arms Transfers, 2025' report, arrange the following countries in descending order based on their rank as the largest importers of major arms in 2021-25:\n\n1. Saudi Arabia\n2. Ukraine\n3. India\n4. Qatar\n\nSelect the correct sequence:",
+    "options": {
+      "A": "2 -> 3 -> 1 -> 4",
+      "B": "3 -> 2 -> 1 -> 4",
+      "C": "2 -> 1 -> 3 -> 4",
+      "D": "1 -> 2 -> 3 -> 4",
+      "E": "3 -> 1 -> 2 -> 4"
+    },
+    "answer": "A",
+    "rationale": "The correct descending order of largest importers is: 1. Ukraine (2), 2. India (3), 3. Saudi Arabia (1), 4. Qatar (4). Therefore, the sequence is 2 -> 3 -> 1 -> 4. (Page 103)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "Government Schemes",
+    "sub_category": "Aviation Sector",
+    "question": "Consider the following statements concerning the 'Modified UDAN Scheme':\n\n1. The scheme's tenure has been officially extended for another 10-year period from FY 2026-27 to FY 2035-36, with a drastically increased financial allocation of ₹28,840 crore.\n2. The Viability Gap Funding (VGF) subsidy window for operators has been extended from 3 years to 5 years, funded directly by the government exchequer.\n3. The scheme strictly prohibits the procurement of indigenous aircraft, mandating the use of imported wide-body jets to ensure financial viability.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is completely false because the scheme actually includes an 'Indigenous Procurement' component, explicitly directing the procurement of HAL Dhruv helicopters and HAL Dornier aircraft to advance the Atmanirbhar Bharat vision. (Page 100)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "Government Schemes",
+    "sub_category": "Jal Jeevan Mission Allocation",
+    "question": "The Jal Jeevan Mission utilizes specific criteria for allocating funds to States/UTs. Based on these criteria, what is the combined total percentage weightage given to 'Rural Population' and 'States under DDP, DPAP, HADP and special category Hill States in terms of rural areas'?",
+    "options": {
+      "A": "30%",
+      "B": "40%",
+      "C": "50%",
+      "D": "60%",
+      "E": "70%"
+    },
+    "answer": "D",
+    "rationale": "The weightage for 'Rural Population' is 30%. The weightage for 'States under DDP, DPAP, HADP...' is also 30%. Combined, they represent 30% + 30% = 60% of the fund allocation criteria. (Page 94)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "Government Schemes",
+    "sub_category": "Financial Inclusion",
+    "question": "Assertion (A): By March 2026, the number of accounts under the Pradhan Mantri Jan Dhan Yojana (PMJDY) increased to 57.71 crore, with women owning approximately 56% of these accounts.\nReason (R): PMJDY guarantees a mandatory direct cash transfer of ₹10,000 annually to all female account holders to sustain their banking activity.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true based on the provided Account Statistics for March 2026. Reason (R) is false; PMJDY offers features like an overdraft facility (up to ₹10,000) and insurance, but it does NOT guarantee a mandatory annual cash transfer of ₹10,000 to female account holders. (Page 96)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "Finance",
+    "sub_category": "Investor Facilitation & Claims",
+    "question": "The Investor Education and Protection Fund Authority (IEPFA) and SEBI recently organized the 'Niveshak Shivir'. Alongside this, IRDAI introduced time-bound reforms for health insurance claims. Consider the following:\n\n1. Niveshak Shivir aims to facilitate the recovery of unclaimed dividends and shares held for six to seven years.\n2. Under the new IRDAI guidelines, cashless health insurance claims require pre-authorisation within 1 hour and final authorisation within 3 hours.\n3. The Niveshak Shivir provides on-the-spot KYC updation and immediate resolution of pending IEPFA claims.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "3 only"
+    },
+    "answer": "D",
+    "rationale": "All three statements accurately reflect the facts provided in the document. Niveshak Shivir assists with 6-7 year unclaimed dividends and immediate KYC/claim resolution (Page 55). IRDAI mandates 1-hour pre-authorisation and 3-hour final authorisation for health claims (Pages 57-58).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "Finance",
+    "sub_category": "Green Infrastructure Bonds",
+    "question": "Which of the following statements regarding the recent Green Infrastructure Bonds issued by the Bank of Baroda is INCORRECT?",
+    "options": {
+      "A": "Bank of Baroda raised ₹10,000 crore, making it the first bank in India to issue such long-term green infrastructure bonds domestically.",
+      "B": "The bonds carry a tenure of 7 years and a coupon rate of 7.10%.",
+      "C": "The issue included a base size of ₹5,000 crore along with a greenshoe option of another ₹5,000 crore.",
+      "D": "The bonds received a poor credit rating of BBB- from rating agencies due to the high risk of greenwashing in infrastructure projects.",
+      "E": "Issuers of these bonds must adhere to compliance frameworks such as the ICMA Green Bond Principles and SEBI guidelines."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect. The text explicitly states that \"The bonds are rated AAA (Stable) by rating agencies CARE Ratings and ICRA\", indicating a very high credit quality, not a poor BBB- rating. (Page 63)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "Finance",
+    "sub_category": "RBI Identifiers & Regulations",
+    "question": "Match the following RBI directives and frameworks with their specific operational thresholds or rules:\n\nColumn I:\n1. NOP-INR position limit for Authorized Dealers\n2. LEI requirement for non-derivative foreign exchange transactions\n3. Exception to the 2% risk weight for QCCP exposure\n4. Currency Declaration Form (CDF) exemption limit for foreign currency notes\n\nColumn II:\nA. USD 5,000 (or equivalent)\nB. USD 1 million or above\nC. USD 100 million\nD. Payment Banks\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-B, 3-D, 4-A",
+      "B": "1-B, 2-C, 3-A, 4-D",
+      "C": "1-C, 2-D, 3-B, 4-A",
+      "D": "1-A, 2-B, 3-D, 4-C",
+      "E": "1-C, 2-A, 3-D, 4-B"
+    },
+    "answer": "A",
+    "rationale": "1 is C (NOP-INR limit is USD 100 million). 2 is B (LEI for non-derivative forex is USD 1 million+). 3 is D (Risk weight for QCCP exception applies to Payment Banks). 4 is A (CDF not required if foreign currency notes do not exceed USD 5,000). (Pages 90-91)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "Finance",
+    "sub_category": "Cross-Border Payments",
+    "question": "Consider the following statements distinguishing the 'New SWIFT Framework for retail payments' from traditional cross-border systems:\n\n1. It aims to process many payments within minutes, mitigating traditional cross-border delays.\n2. It provides upfront transparency on fees, exchange rates, and delivery times before the payment is initiated.\n3. It establishes SWIFT as a direct central bank digital currency (CBDC) issuer to bypass commercial banks entirely.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "2 only"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are core features of the new SWIFT framework. Statement 3 is false; SWIFT remains a financial messaging network used by banks and is not transitioning into a direct CBDC issuer bypassing banks. (Page 57)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Environment & Biodiversity",
+    "question": "India recently submitted its Seventh National Report to the Convention on Biological Diversity (CBD). To showcase its \"on track\" status, the report mapped national indicators against a specific number of National Biodiversity Targets (NBTs). How many indicators and NBTs were utilized in this mapping?",
+    "options": {
+      "A": "100 indicators against 17 NBTs",
+      "B": "125 indicators against 20 NBTs",
+      "C": "142 indicators against 23 NBTs",
+      "D": "150 indicators against 25 NBTs",
+      "E": "180 indicators against 30 NBTs"
+    },
+    "answer": "C",
+    "rationale": "The document states that India's report is \"Based on 142 national indicators mapped against 23 National Biodiversity Targets (NBTs).\" (Page 33)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "Reports & Indices",
+    "sub_category": "World Happiness Report",
+    "question": "Based on the World Happiness Report (WHR) 2026, arrange the following countries in descending order of their happiness ranking (from happiest to least happy):\n\n1. India\n2. Finland\n3. Afghanistan\n4. Malawi\n\nSelect the correct sequence:",
+    "options": {
+      "A": "2 -> 1 -> 4 -> 3",
+      "B": "2 -> 1 -> 3 -> 4",
+      "C": "1 -> 2 -> 4 -> 3",
+      "D": "2 -> 4 -> 1 -> 3",
+      "E": "3 -> 4 -> 1 -> 2"
+    },
+    "answer": "A",
+    "rationale": "Finland is 1st. India is 116th. Malawi is 145th. Afghanistan is 147th (the absolute bottom). Therefore, the descending order of happiness (happiest to least) is Finland (2) -> India (1) -> Malawi (4) -> Afghanistan (3). (Page 105)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "Balance of Payment",
+    "sub_category": "FPIs and Capital Flows",
+    "question": "Assertion (A): Foreign Portfolio Investors (FPIs) infused ₹22,615 crore into Indian equities in February 2026, driven by relaxed limits allowing them direct management control over Indian domestic companies.\nReason (R): FPIs are overseas investors who invest in financial assets of another country without acquiring direct control over the businesses they invest in.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "D",
+    "rationale": "Assertion (A) is false because FPIs, by definition, do *not* have direct management control over businesses; that characteristic defines Foreign Direct Investment (FDI). Reason (R) is true as it correctly defines the nature of FPIs. (Page 52)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "Finance",
+    "sub_category": "Macroeconomic Indicators",
+    "question": "Consider the following statements regarding the RBI's NOP-INR position and the Government's WMA limits:\n\n1. The RBI mandates that Authorized Dealers (AD) banks must maintain their net open position involving INR (NOP-INR) under USD 100 million at the end of each day in the domestic market.\n2. The Ways and Means Advances (WMA) limit for the Government of India for H1 FY 2026–27 has been fixed at ₹2,50,000 crore.\n3. The RBI may initiate fresh market borrowing for the Government only after 95% of the WMA limit is utilized.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "2 only"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the RBI may initiate the process for fresh market borrowing when about 75% (not 95%) of the WMA limit is utilized. (Pages 91-92)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "GA in News",
+    "sub_category": "Places in News",
+    "question": "Match the following 'Places in News' with the reason they were highlighted in the document:\n\nColumn I:\n1. Jahazpur\n2. Strait of Hormuz\n3. Echinus Geyser\n4. Khavda\n\nColumn II:\nA. World's largest acidic geyser that erupted after six years of dormancy\nB. Historic place in Rajasthan renamed to Yajnapur\nC. Site of the world's largest renewable energy project under construction\nD. A strategic maritime chokepoint temporarily shut due to regional tensions\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-D, 3-A, 4-C",
+      "B": "1-D, 2-A, 3-C, 4-B",
+      "C": "1-B, 2-C, 3-A, 4-D",
+      "D": "1-A, 2-D, 3-B, 4-C",
+      "E": "1-C, 2-B, 3-D, 4-A"
+    },
+    "answer": "A",
+    "rationale": "1 is B (Jahazpur renamed Yajnapur). 2 is D (Strait of Hormuz is a maritime chokepoint). 3 is A (Echinus is the acidic geyser). 4 is C (Khavda in Gujarat hosts the massive renewable project). (Pages 10, 13-14)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "GA in News",
+    "sub_category": "Defence Exercises",
+    "question": "Which of the following military operations/exercises is INCORRECTLY paired with its respective description?",
+    "options": {
+      "A": "Exercise Kalari Leap: A joint maritime-air exercise conducted by the Southern Air Command in Lakshadweep.",
+      "B": "Operation Epic Fury: An ongoing U.S. military offensive against Iran to dismantle nuclear capabilities.",
+      "C": "Operation True Promise 4: Iran’s escalating military campaign targeting Israeli territory with hypersonic missiles.",
+      "D": "Operation Sankalp: A joint naval exercise between the Indian Navy and the Japanese Navy in the South China Sea.",
+      "E": "None of the above (all are correctly paired)."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrectly paired. Operation Sankalp is an ongoing maritime security operation by the Indian Navy to ensure the safe passage of Indian-flagged merchant vessels through the Strait of Hormuz and surrounding gulfs; it is not a joint exercise with Japan in the South China Sea. (Page 12)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Energy & Ethanol Blending",
+    "question": "The Government of India has advanced its target for 20% ethanol blending in petrol (E20). By which date must all States and Union Territories mandate the sale of E20 petrol with a minimum Research Octane Number (RON) of 95?",
+    "options": {
+      "A": "April 1, 2025",
+      "B": "April 1, 2026",
+      "C": "December 31, 2026",
+      "D": "April 1, 2030",
+      "E": "October 1, 2025"
+    },
+    "answer": "B",
+    "rationale": "The document specifies that the Government of India mandated the sale of ethanol-blended petrol (E20) with a minimum RON of 95 from April 1, 2026 across all States and UTs. (Page 14)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Consumer Rights",
+    "question": "Under the Consumer Protection Act, 2019, various tiers of commissions handle complaints based on the consideration paid. Which of the following statements accurately reflects the jurisdiction limits?",
+    "options": {
+      "A": "District Consumer Commission handles cases up to ₹1 crore.",
+      "B": "State Consumer Commission handles cases exceeding ₹50 lakh but not exceeding ₹5 crore.",
+      "C": "National Consumer Commission (NCDRC) handles cases where the consideration exceeds ₹2 crore.",
+      "D": "Consumer complaints can be filed within five years from the date of the last cause of action.",
+      "E": "District Consumer Commission handles cases exceeding ₹2 crore."
+    },
+    "answer": "C",
+    "rationale": "As per the text: District Commission handles up to ₹50 lakh. State Commission handles ₹50 lakh to ₹2 crore. National Commission (NCDRC) handles cases exceeding ₹2 crore. Complaints must be filed within TWO years. Option C is the only correct statement. (Page 15)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Social Sector - Health vs Technology",
+    "question": "The NITI Aayog–UNICEF Pact utilizes the IMPAct4Nutrition (I4N) platform, while the BioE3 Policy focuses on biotechnology. Which of the following is a shared or contrasting feature correctly identified between these two distinct initiatives?",
+    "options": {
+      "A": "Both initiatives are exclusively funded by the World Bank under the 'Delivering Prosperity at Scale' program.",
+      "B": "The I4N platform focuses on mobilizing private sector/CSR investments for nutrition literacy, whereas BioE3 promotes Biomanufacturing Hubs for a $300 billion bioeconomy.",
+      "C": "Both initiatives heavily rely on the 'Nal Jal Mitra' workforce for grassroots implementation.",
+      "D": "I4N strictly mandates the use of Bio-AI Hubs to track child stunting metrics in aspirational districts.",
+      "E": "The BioE3 policy is a sub-component of the POSHAN 2.0 Jan Andolan movement."
+    },
+    "answer": "B",
+    "rationale": "Option B correctly identifies the core, contrasting objectives of both policies. I4N leverages private CSR for nutrition (Page 15), while BioE3 aims for a $300 billion bioeconomy via Biomanufacturing Hubs (Page 30). The other options conflate unrelated schemes.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Education & Social Sector",
+    "question": "Assertion (A): Under the 3-Year Action Plan for 'Nasha Mukt Vidyalaya', the Ministry of Education has mandated the declaration of a 500-metre radius around schools as drug-free zones.\nReason (R): The 'Nasha Mukt Vidyalaya' action plan was introduced specifically as a component of the SAMARTH Panchayat Portal to increase local tax revenues from commercial zones near schools.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true; the plan mandates a 500-metre drug-free radius. Reason (R) is completely false because the initiative is part of the 'Nasha Mukt Bharat Abhiyan' to tackle substance abuse among students, having absolutely nothing to do with the SAMARTH Panchayat Portal or increasing local tax revenues. (Pages 17, 26)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "Measurement of Growth",
+    "sub_category": "National Accounts Estimates",
+    "question": "Based on the New Series of Annual and Quarterly National Accounts Estimates (with base year 2022-23), arrange the following growth parameters for Q3 FY 2025-26 in descending order of their reported percentage growth:\n\n1. Nominal GDP Growth\n2. Real GDP Growth\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1 -> 2",
+      "B": "2 -> 1",
+      "C": "Both are equal at 7.8%",
+      "D": "Both are equal at 8.9%",
+      "E": "Data is unavailable for nominal GDP"
+    },
+    "answer": "A",
+    "rationale": "According to the Quarterly Estimates (Q3 FY 2025-26), Nominal GDP grew by 8.9% (1), while Real GDP grew by 7.8% (2). Therefore, in descending order, it is 1 -> 2. (Page 50)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "Finance",
+    "sub_category": "Digital Reforms for EoDB",
+    "question": "Match the following digital trade and compliance facilitation tools with their distinct features or targets:\n\nColumn I:\n1. e-Way Bill System\n2. ICEGATE\n3. 3.eCoO\n4. Trade Connect e-Platform\n\nColumn II:\nA. Provides comprehensive international trade info to exporters, including MSMEs, connecting global buyers with Indian missions.\nB. Electronic document required for transporting goods worth more than INR 50,000.\nC. Enhanced Certificate of Origin 2.0 with Aadhaar-based e-sign.\nD. Centralized hub for Indian customs offering e-filing and IGST refund processing.\n\nSelect the correct code:",
+    "options": {
+      "A": "1-B, 2-D, 3-C, 4-A",
+      "B": "1-D, 2-B, 3-A, 4-C",
+      "C": "1-B, 2-A, 3-C, 4-D",
+      "D": "1-C, 2-D, 3-B, 4-A",
+      "E": "1-A, 2-C, 3-D, 4-B"
+    },
+    "answer": "A",
+    "rationale": "1 is B (e-Way Bill is for transport > 50k). 2 is D (ICEGATE is the customs hub). 3 is C (3.eCoO is the Certificate of Origin). 4 is A (Trade Connect connects exporters globally). (Page 39)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Education & Entrepreneurship",
+    "question": "Consider the following statements regarding the SATHEE App and the SPARK Collective:\n\n1. The SATHEE App, launched by the MoE and IIT Kanpur, provides free digital support for competitive exams like JEE, NEET, and CUET.\n2. The SPARK Collective is an initiative supported by the British Council aiming to empower 1 lakh women entrepreneurs across India.\n3. Both SATHEE and SPARK are exclusively funded under the NITI Aayog's 'Sashakt Panchayat-Netri Abhiyan'.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is false because neither SATHEE nor SPARK has any relation to the 'Sashakt Panchayat-Netri Abhiyan' (which focuses on women in Panchayats). (Pages 34, 40-41, 44-45)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "FATF",
+    "question": "Which of the following countries is INCORRECTLY placed in its respective Financial Action Task Force (FATF) list as of early 2026?",
+    "options": {
+      "A": "Kuwait is on the Grey list (increased monitoring).",
+      "B": "Papua New Guinea is on the Grey list (increased monitoring).",
+      "C": "Iran is on the Black list (high-risk jurisdictions).",
+      "D": "Myanmar is on the Black list (high-risk jurisdictions).",
+      "E": "The Democratic Republic of the Congo is on the Black list (high-risk jurisdictions)."
+    },
+    "answer": "E",
+    "rationale": "Option E is incorrect because the text explicitly lists the Democratic Republic of the Congo under the Grey list (increased monitoring), not the Black list. The Black list includes Iran, DPRK, and Myanmar. (Pages 47-48)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Globalisation & WTO",
+    "question": "During the 14th Ministerial Conference of the WTO (MC14), discussions included the E-commerce moratorium on digital trade tariffs. This moratorium, first adopted in ________, was due to expire at MC14 or by ________.",
+    "options": {
+      "A": "1995; December 31, 2025",
+      "B": "1998; March 31, 2026",
+      "C": "2001; January 1, 2027",
+      "D": "1998; June 30, 2026",
+      "E": "2010; March 31, 2026"
+    },
+    "answer": "B",
+    "rationale": "The text states that the e-commerce moratorium was first adopted in 1998 and extended repeatedly, due to expire at MC14 or by March 31, 2026. (Page 49)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "Measurement of Growth",
+    "sub_category": "GST Collections",
+    "question": "Based on the data for GST collections in February 2026, arrange the following revenue components in descending order of their reported monetary value:\n\n1. Net GST collection\n2. Gross domestic revenue\n3. Gross import revenue\n4. Net cess revenue\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1 -> 2 -> 3 -> 4",
+      "B": "2 -> 1 -> 3 -> 4",
+      "C": "1 -> 3 -> 2 -> 4",
+      "D": "2 -> 3 -> 1 -> 4",
+      "E": "1 -> 2 -> 4 -> 3"
+    },
+    "answer": "A",
+    "rationale": "Values: Net GST collection (over ₹1.61 trillion) [1]; Gross domestic revenue (about ₹1.36 trillion) [2]; Gross import revenue (₹47,837 crore) [3]; Net cess revenue (₹5,063 crore) [4]. Thus, descending order is 1 -> 2 -> 3 -> 4. (Note: Total Gross GST is 1.83 trillion, but that is not an option in the list). (Page 50)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "Measurement of Growth",
+    "sub_category": "Purchasing Managers' Index (PMI)",
+    "question": "Assertion (A): India’s Purchasing Managers’ Index (PMI) is considered a lagging indicator because it officially confirms economic trends only after formal GDP data is finalized.\nReason (R): In February 2026, India's Services PMI stood at 58.1, indicating an expansion in economic activity since any index value above 50 implies expansion.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "D",
+    "rationale": "Assertion (A) is false because PMI is explicitly described as a 'leading indicator' (not a lagging one) because it signals trends *before* official GDP data is released. Reason (R) is true as Services PMI was 58.1, and values above 50 do indicate expansion. (Page 52)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "Measurement of Growth",
+    "sub_category": "Industrial Production",
+    "question": "Consider the following statements regarding the Index of Industrial Production (IIP) for January 2026:\n\n1. The General IIP index grew by 4.8% year-on-year, reaching 169.4.\n2. Among the three major sectors tracked by IIP, Electricity recorded the highest sector-wise growth at 5.1%.\n3. The base year utilized by the Ministry of Statistics and Programme Implementation (MoSPI) for IIP calculations is 2015-16 = 100.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct (Electricity grew 5.1%, Mfg 4.8%, Mining 4.3%). Statement 3 is incorrect because the base year for IIP is 2011–12 = 100. (Page 53)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "Reports & Indices",
+    "sub_category": "Banking and Fiscal Indices",
+    "question": "Match the following indices/reports with the top-ranking entity as stated in the document:\n\nColumn I:\n1. Fiscal Health Index 2026 (General Major States)\n2. Banking 500 2026 (Most valuable bank in the world)\n3. Fiscal Health Index 2026 (NE/Himalayan States)\n4. World's Best Full-Service Airlines 2026\n\nColumn II:\nA. Industrial and Commercial Bank of China (ICBC)\nB. Odisha\nC. Qatar Airways\nD. Arunachal Pradesh\n\nSelect the correct code:",
+    "options": {
+      "A": "1-B, 2-A, 3-D, 4-C",
+      "B": "1-D, 2-A, 3-B, 4-C",
+      "C": "1-B, 2-C, 3-D, 4-A",
+      "D": "1-A, 2-B, 3-C, 4-D",
+      "E": "1-C, 2-A, 3-B, 4-D"
+    },
+    "answer": "A",
+    "rationale": "1 is B (Odisha ranked highest in General States). 2 is A (ICBC is world's most valuable). 3 is D (Arunachal Pradesh ranks highest in Himalayan states). 4 is C (Qatar Airways is world's best airline). (Pages 102-103, 109)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "Finance",
+    "sub_category": "Income Tax Rules 2026",
+    "question": "Under the new Income Tax Rules 2026 for simplified tax law, several exemptions have been modified. Which of the following represents an INCORRECT modification?",
+    "options": {
+      "A": "The 50% HRA exemption limit has been expanded from 4 cities to 8 cities, including Pune and Bengaluru.",
+      "B": "The Children’s Education Allowance has been increased from ₹100 per month per child to ₹3,000 per month per child (up to 2 children).",
+      "C": "The Hostel Allowance has been increased from ₹300 per month per child to ₹9,000 per month per child.",
+      "D": "Free Food / Meal Vouchers have been made entirely taxable regardless of the amount per meal.",
+      "E": "Gifts, Vouchers, or Tokens are now tax-free up to ₹15,000 annually."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect. The text explicitly states that Free Food / Meal Vouchers are 'Exempt up to ₹200 per meal', meaning daily benefits become tax-free and reduce taxable income. They were not made entirely taxable. (Page 75)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  },
+  {
+    "category": "Finance",
+    "sub_category": "Fiscal Management",
+    "question": "The Finance Ministry recently sought Lok Sabha approval for Supplementary Demands for Grants for FY26. In parallel, the MCA aligned Accounting Standard 22 with the OECD Pillar Two Model Rules. Which of the following is true combining these contexts?",
+    "options": {
+      "A": "A massive ₹59,000 crore from the Supplementary Demands was exclusively injected into the UN's Central Emergency Response Fund.",
+      "B": "The OECD Pillar Two Model establishes a global minimum corporate tax rate of 15% to prevent Base Erosion and Profit Shifting (BEPS).",
+      "C": "The Supplementary Demands for Grants requested ₹15,000 crore specifically to subsidize SME compliance costs for Pillar Two implementation.",
+      "D": "Under the amended AS 22, companies are now strictly mandated to recognize deferred tax assets related to Pillar Two income taxes.",
+      "E": "The MCA ruling dictates that only large multinational enterprises with revenues below €750 million are subject to the 15% tax."
+    },
+    "answer": "B",
+    "rationale": "Option B is correct. The OECD Pillar Two Model Rules establish a global minimum corporate tax rate of 15%. Option A is wrong (₹59,000 cr is for Economic Stabilisation Fund and Gold Reserve Fund). Option C is wrong (₹15,000 cr is for fertiliser subsidy). Option D is wrong (Companies are exempt from recognizing deferred tax assets/liabilities related to Pillar Two). Option E is wrong (It applies to enterprises with revenue of *at least* €750 million). (Pages 76-78)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "All in One Current Affairs Booster - March 2026"
+  }
+]

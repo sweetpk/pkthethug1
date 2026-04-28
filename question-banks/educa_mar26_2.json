@@ -1,0 +1,802 @@
+[
+  {
+    "category": "General Awareness",
+    "sub_category": "Defence & Security",
+    "question": "Match the following women pioneers in the Indian Armed Forces with their respective historical milestones:\n\nColumn I:\n1. Sadhna Saxena Nair\n2. Ponung Doming\n3. Bhawana Kanth\n4. Avani Chaturvedi\n\nColumn II:\nA. First woman officer to command the world’s highest Border Task Force in Ladakh\nB. First woman Director General Medical Services (Army)\nC. First woman fighter pilot to take part in an aerial wargame abroad\nD. First day-time Indian woman fighter pilot to qualify for combat missions\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-A, 3-D, 4-C",
+      "B": "1-A, 2-B, 3-C, 4-D",
+      "C": "1-B, 2-C, 3-D, 4-A",
+      "D": "1-D, 2-A, 3-B, 4-C",
+      "E": "1-C, 2-D, 3-A, 4-B"
+    },
+    "answer": "A",
+    "rationale": "Sadhna Saxena Nair is the first woman DG Medical Services (1-B). Ponung Doming commanded the highest Border Task Force (2-A). Bhawana Kanth is the first day-time fighter pilot (3-D). Avani Chaturvedi participated in an aerial wargame abroad (Veer Guardian) (4-C). (Page 12)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / Social Issues",
+    "sub_category": "Health & Nutrition",
+    "question": "Consider the following statements regarding the NITI Aayog–UNICEF Pact for Nutrition in Aspirational Regions:\n\n1. The collaboration leverages UNICEF’s IMPAct4Nutrition (I4N) platform to channel corporate social responsibility (CSR) investments.\n2. The I4N platform utilizes the 'ACE' framework, which stands for Assets, Cash/CSR, and Employees.\n3. A core objective of the pact is to promote the '5% land for water' model to enhance nutrition via improved agriculture.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect: The '5% land for water' model is part of the 'Jal Sanchay Jan Bhagidari' initiative, not the NITI-UNICEF nutrition pact (Pages 47-48, 51).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "Finance",
+    "sub_category": "Taxation Rules",
+    "question": "Arrange the following tax-free allowances under the new Income Tax Rules, 2026 in ascending order based on their maximum prescribed monetary limits (per annum/per child basis, where applicable):\n\n1. Hostel Allowance (per child, per month)\n2. Children’s Education Allowance (per child, per month)\n3. Gifts / Vouchers / Tokens (annually)\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1 - 2 - 3",
+      "B": "2 - 1 - 3",
+      "C": "3 - 2 - 1",
+      "D": "2 - 3 - 1",
+      "E": "1 - 3 - 2"
+    },
+    "answer": "B",
+    "rationale": "Children's Education Allowance: ₹3,000/month. Hostel Allowance: ₹9,000/month. Gifts/Vouchers: ₹15,000 annually. Ascending order of the absolute limit numbers mentioned in the rules: 3,000 -> 9,000 -> 15,000 (2 - 1 - 3) (Page 131).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / Environment",
+    "sub_category": "Biotechnology",
+    "question": "Assertion (A): The newly launched BioE3 Policy promotes the use of 'Bio-enablers' like Biofoundries to drive India's transition to a clean and green bioeconomy.\nReason (R): Under this policy, India's first Biofoundry Network has been launched at 8 academic institutions to support bioproduction scale-up, targeting a $300 billion bioeconomy by 2030.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true but (R) is not the correct explanation of (A).",
+      "C": "(A) is true, but (R) is false.",
+      "D": "(A) is false, but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "B",
+    "rationale": "Both Assertion and Reason are factually true statements extracted from the BioE3 Policy updates. However, the launch of the 8 institutions (R) is a specific implementation step and not the fundamental *reason* why the policy promotes bio-enablers globally (A) (Pages 53-54).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / Environment",
+    "sub_category": "Green Credit Programme",
+    "question": "Which of the following statements is INCORRECT regarding the methodology and digital platform of the Green Credit Programme?",
+    "options": {
+      "A": "It encompasses eight key types of activities aimed at enhancing environmental sustainability.",
+      "B": "Under the tree plantation methodology, 1 Green Credit is equal to 1 new tree that is over 5 years old.",
+      "C": "Green Credits are highly liquid assets that can be freely traded and transferred multiple times on the open market.",
+      "D": "A claim of Green Credit can be made after 5 years of restoration on degraded forest land, achieving a minimum 40% canopy density.",
+      "E": "It is distinct from the Carbon Credit Trading Scheme, as it rewards broader environmental actions beyond carbon reduction."
+    },
+    "answer": "C",
+    "rationale": "Statement C is incorrect: The framework explicitly states that \"Credits are non-tradable and non-transferable and may be exchanged once but cannot be reused\" (Page 57).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / National",
+    "sub_category": "Digital Public Infrastructure",
+    "question": "Fill in the blanks with the correct data points regarding Aadhaar's expanding scope in the digital economy.\n\nAadhaar is the world's largest biometric identity system with approximately _____ live Aadhaar holders. Under its data security and privacy protocols, authentication logs are retained for _____, archived for _____, and then deleted.",
+    "options": {
+      "A": "115 crores ; one year ; three years",
+      "B": "134 crores ; two years ; five years",
+      "C": "142 crores ; three years ; seven years",
+      "D": "125 crores ; six months ; five years",
+      "E": "134 crores ; five years ; ten years"
+    },
+    "answer": "B",
+    "rationale": "Aadhaar has approximately 134 crore live holders. Authentication logs are retained for two years, archived for five years, and then deleted (Page 72).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / National",
+    "sub_category": "Census 2027",
+    "question": "Consider the following statements regarding the upcoming Census 2027:\n\n1. It will be India's 16th Census overall and the 8th since Independence.\n2. The official mascots for the census are 'Pragati' and 'Vikas', highlighting gender equality and inclusive participation.\n3. The electronic capture of caste data will be conducted exclusively in the first phase (Houselisting and Housing Census).\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect: The electronic capture of caste data will be done in the *second phase* (Population Enumeration), not the first phase (Pages 93-94).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / e-Governance",
+    "sub_category": "Government Portals",
+    "question": "Match the following digital portals/applications with their designated implementing ministries or core functions:\n\nColumn I:\n1. SAMARTH Panchayat Portal\n2. UMEED Central Portal\n3. e-Sankhyiki Portal\n4. Niveshak Shivir\n\nColumn II:\nA. Ministry of Minority Affairs (Waqf Management)\nB. Ministry of Panchayati Raj (Own Source Revenue)\nC. IEPFA (Investor grievance and unclaimed dividends)\nD. MoSPI (Data dissemination and microdata access)\n\nSelect the correct code:",
+    "options": {
+      "A": "1-B, 2-A, 3-D, 4-C",
+      "B": "1-A, 2-B, 3-C, 4-D",
+      "C": "1-B, 2-D, 3-A, 4-C",
+      "D": "1-D, 2-C, 3-B, 4-A",
+      "E": "1-C, 2-A, 3-D, 4-B"
+    },
+    "answer": "A",
+    "rationale": "SAMARTH is for Panchayati Raj revenue (1-B). UMEED is for Waqf management under Minority Affairs (2-A). e-Sankhyiki is for MoSPI data (3-D). Niveshak Shivir is by IEPFA for investors (4-C) (Pages 67, 72, 79, 105).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "Finance",
+    "sub_category": "International Organizations",
+    "question": "The Financial Action Task Force (FATF) recently updated its monitoring lists. Based on the updates, which of the following countries are correctly mapped to their respective FATF list status?\n\n1. Kuwait - Grey List (Increased Monitoring)\n2. Papua New Guinea - Grey List (Increased Monitoring)\n3. Myanmar - Black List (High-Risk Jurisdictions)\n4. Democratic People's Republic of Korea (DPRK) - Grey List (Increased Monitoring)\n\nSelect the correct code:",
+    "options": {
+      "A": "1, 2, and 3 only",
+      "B": "2, 3, and 4 only",
+      "C": "1, 3, and 4 only",
+      "D": "1, 2, and 4 only",
+      "E": "All 1, 2, 3, and 4"
+    },
+    "answer": "A",
+    "rationale": "Kuwait and PNG were added to the Grey List. Myanmar is on the Black List. DPRK is on the Black List, not the Grey List. Therefore, statement 4 is incorrect (Pages 81-82).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / National",
+    "sub_category": "Measurement of Growth (WPI)",
+    "question": "Arrange the following major sub-groups of the Wholesale Price Index (WPI) in ascending order of their assigned weightage in the index basket:\n\n1. Primary Articles\n2. Manufactured Products\n3. Fuel & Power\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1 - 3 - 2",
+      "B": "3 - 1 - 2",
+      "C": "2 - 1 - 3",
+      "D": "3 - 2 - 1",
+      "E": "1 - 2 - 3"
+    },
+    "answer": "B",
+    "rationale": "The weightages are: Fuel & Power (13.15%), Primary Articles (22.62%), and Manufactured Products (64.23%). Ascending order is Fuel & Power -> Primary Articles -> Manufactured Products (3 - 1 - 2) (Page 81).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / Economy",
+    "sub_category": "Industrial Developments",
+    "question": "Consider the following statements regarding the Committee for SEZ Policy Reforms:\n\n1. The government constituted a 17-member committee to recommend reforms and develop an SEZ 2.0 framework.\n2. Under current SEZ features, 100% Foreign Direct Investment (FDI) is allowed in most sectors.\n3. The committee will examine issues related strictly to international exports, barring any matters related to Domestic Tariff Area (DTA) sales.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect: The committee's scope of work explicitly includes examining issues related to Domestic Tariff Area (DTA) sales, incentives, and compliance requirements (Pages 84-85).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / Environment",
+    "sub_category": "Carbon Credit Trading",
+    "question": "Fill in the blanks regarding the regulatory structure of the Carbon Credit Trading Scheme (CCTS).\n\nUnder the CCTS framework, carbon trading is strictly regulated by the _____, while the implementation and formulation of targets are overseen by the _____.",
+    "options": {
+      "A": "Securities and Exchange Board of India (SEBI) ; Ministry of Environment",
+      "B": "Central Electricity Regulatory Commission (CERC) ; Bureau of Energy Efficiency (BEE)",
+      "C": "Reserve Bank of India (RBI) ; NITI Aayog",
+      "D": "Bureau of Energy Efficiency (BEE) ; Central Electricity Regulatory Commission (CERC)",
+      "E": "National Steering Committee (NSC-ICM) ; Ministry of Power"
+    },
+    "answer": "B",
+    "rationale": "Carbon trading under the CCTS is regulated by the Central Electricity Regulatory Commission (CERC), and the implementing agency is the Bureau of Energy Efficiency (BEE) (Page 88).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "Finance",
+    "sub_category": "Accounting Standards",
+    "question": "Assertion (A): The transition from the old Indian GAAP to Ind AS 117 fundamentally shifts the liability valuation for insurance companies from a market-consistent model to an actuarial-based model.\nReason (R): Under Ind AS 117, insurers are required to estimate how much money they may have to pay in the future based strictly on historical, static risk assumptions.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true but (R) is not the correct explanation of (A).",
+      "C": "(A) is true, but (R) is false.",
+      "D": "(A) is false, but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "E",
+    "rationale": "Both Assertion and Reason are false. The transition is the *exact opposite*: it shifts from an actuarial-based model to a *market-consistent liability valuation* (A is false). Ind AS 117 uses current market conditions for realistic, up-to-date valuations, not historical static risks (R is false) (Page 123).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "General Awareness",
+    "sub_category": "Sports",
+    "question": "Match the following sports personalities with their recent achievements or respective sports:\n\nColumn I:\n1. Lin Chun-Yi\n2. Fanny Utagushimaninde\n3. Kimi Antonelli\n4. Stefanos Sakellaridis\n\nColumn II:\nA. Delhi Open 2026 singles title (Tennis)\nB. Formula 1 victory for Mercedes (Chinese GP)\nC. All England Open Badminton winner\nD. Youngest cricketer to score a T20I century on debut\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1-C, 2-D, 3-B, 4-A",
+      "B": "1-D, 2-C, 3-A, 4-B",
+      "C": "1-C, 2-A, 3-B, 4-D",
+      "D": "1-B, 2-D, 3-C, 4-A",
+      "E": "1-A, 2-B, 3-D, 4-C"
+    },
+    "answer": "A",
+    "rationale": "Lin Chun-Yi won All England Open (1-C). Fanny Utagushimaninde scored T20I century on debut (2-D). Kimi Antonelli won F1 Chinese GP (3-B). Stefanos Sakellaridis won Delhi Open tennis (4-A) (Pages 22, 25, 31, 37).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "International Payment Systems",
+    "question": "Which of the following statements is INCORRECT regarding the SWIFT messaging network?",
+    "options": {
+      "A": "SWIFT stands for Society for Worldwide Interbank Financial Telecommunication.",
+      "B": "It is a global financial messaging network used by banks to transmit payment instructions securely.",
+      "C": "It functions as an autonomous payment system that holds funds and directly settles transactions between international banks.",
+      "D": "The new SWIFT framework aims to make international transfers as seamless as domestic payments by improving predictability.",
+      "E": "Its new framework aligns with the G20 roadmap for improving global cross-border payments."
+    },
+    "answer": "C",
+    "rationale": "Statement C is incorrect. The document explicitly notes: \"SWIFT is not a payment system itself; it is a global financial messaging network used by banks to transmit payment instructions securely.\" It does not hold funds or settle directly (Pages 106-107).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "Finance",
+    "sub_category": "Corporate Law Amendments",
+    "question": "Arrange the following financial thresholds mentioned under the proposed Corporate Laws (Amendment) Bill, 2026 in ascending order of their numerical value:\n\n1. Revised net profit threshold for CSR compliance applicability.\n2. Revised maximum paid-up capital limit for the definition of a 'Small Company'.\n3. Revised maximum turnover limit for the definition of a 'Small Company'.\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1 - 2 - 3",
+      "B": "2 - 1 - 3",
+      "C": "3 - 2 - 1",
+      "D": "1 - 3 - 2",
+      "E": "2 - 3 - 1"
+    },
+    "answer": "A",
+    "rationale": "CSR net profit threshold increased to ₹10 crore (1). Small company paid-up capital limit increased to ₹20 crore (2). Small company turnover limit increased to ₹200 crore (3). Ascending order: 10, 20, 200 -> (1 - 2 - 3) (Page 138).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / Social Issues",
+    "sub_category": "Transgender Rights",
+    "question": "Consider the following statements regarding the Transgender Persons (Protection of Rights) Amendment Bill, 2026:\n\n1. It broadens the definition of 'transgender person' to explicitly include gender-fluid persons based solely on self-perceived identity.\n2. It replaces the self-declaration affidavit system with mandatory medical verification through a Medical Board for gender identity certification.\n3. The Bill requires hospitals to report gender-affirming surgeries to authorities.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 2"
+    },
+    "answer": "B",
+    "rationale": "Statement 1 is incorrect: The amendment *narrows* the definition, explicitly *excluding* categories such as gender-fluid persons and those based solely on self-perceived identity. Statements 2 and 3 are correct (Pages 90-91).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "EPFO Reforms",
+    "question": "The Central Board of Trustees (CBT) recently approved a new Standard Operating Procedure (SOP) for Exempted Establishments under the EPFO. Which of the following features is a part of this new SOP?\n\n1. Allowing the online surrender of company-managed PF trusts back to the EPFO.\n2. Introducing a risk-based online audit system to replace annual physical audits.\n3. A one-time amnesty scheme granting 12 months for trusts to attain formal compliance.\n\nSelect the correct code:",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect: The amnesty scheme provides *six months* (not 12 months) for unrecognised trusts to come into formal compliance (Pages 126-128).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "General Awareness",
+    "sub_category": "Books and Awards",
+    "question": "Match the following literary works or awards with their respective authors/recipients:\n\nColumn I:\n1. Janjati Gaurav (Book)\n2. Karuna: The Power of Compassion (Book)\n3. 60th Jnanpith Award\n4. 2026 Mark Lynton History Prize\n\nColumn II:\nA. Kailash Satyarthi\nB. Vairamuthu\nC. William Dalrymple\nD. Indira Gandhi National Centre for the Arts (IGNCA)\n\nSelect the correct combination:",
+    "options": {
+      "A": "1-D, 2-A, 3-B, 4-C",
+      "B": "1-A, 2-D, 3-C, 4-B",
+      "C": "1-D, 2-B, 3-A, 4-C",
+      "D": "1-B, 2-C, 3-D, 4-A",
+      "E": "1-C, 2-A, 3-B, 4-D"
+    },
+    "answer": "A",
+    "rationale": "Janjati Gaurav was published by IGNCA (1-D). Karuna: The Power of Compassion is authored by Kailash Satyarthi (2-A). 60th Jnanpith Award went to Vairamuthu (3-B). Mark Lynton Prize went to William Dalrymple (4-C) (Pages 19, 27, 39, 43).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / Social Issues",
+    "sub_category": "Legal & Gender Issues",
+    "question": "Assertion (A): The Dowry Prohibition Act, 1961 defines dowry offences as non-cognizable, ensuring that police cannot harass families without a direct warrant from a magistrate.\nReason (R): The Act provides for specialized 'Dowry Prohibition Officers' to enforce the legal action mechanisms without requiring prior court permission.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true but (R) is not the correct explanation of (A).",
+      "C": "(A) is true, but (R) is false.",
+      "D": "(A) is false, but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "D",
+    "rationale": "Assertion (A) is false: The Dowry Prohibition Act explicitly defines offences as *cognizable*, meaning police *can* take action without prior permission from a court. Reason (R) is true: The Act provides for Dowry Prohibition Officers and cognizable action (Pages 78-79).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / Environment",
+    "sub_category": "Climate Finance",
+    "question": "Fill in the blanks regarding the new climate cooperation initiative between India and Germany.\n\nIndia and Germany have strengthened climate cooperation through a new _____ climate resilience initiative under the International Climate Initiative (IKI). The IKI, a global climate finance programme of the German government, was originally launched in _____.",
+    "options": {
+      "A": "EUR 50 million ; 2012",
+      "B": "EUR 20 million ; 2008",
+      "C": "USD 20 million ; 2015",
+      "D": "EUR 100 million ; 2008",
+      "E": "USD 50 million ; 2010"
+    },
+    "answer": "B",
+    "rationale": "The initiative is a new EUR 20 million climate resilience initiative under the IKI, which was launched in 2008 (Pages 88-89).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / Economy",
+    "sub_category": "National Income",
+    "question": "Which of the following statements regarding the new series of National Accounts Estimates released by MoSPI is INCORRECT?",
+    "options": {
+      "A": "The base year for GDP calculations has been revised from 2011–12 to 2022–23.",
+      "B": "According to the Q3 FY2025-26 estimates, real GDP grew by 7.8%.",
+      "C": "The Gross Capital Formation (GCF) for the recent period stood at ₹109.25 lakh crore.",
+      "D": "The revision places the base year as 2023-24 to align precisely with post-pandemic recovery data.",
+      "E": "The Private Final Consumption Expenditure (PFCE) stood at 56.5% of GDP at current prices."
+    },
+    "answer": "D",
+    "rationale": "Statement D is incorrect: The new base year for GDP calculations is 2022-23, not 2023-24. All other data points (A, B, C, E) are accurately reflected in the new estimates (Page 99).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / Governance",
+    "sub_category": "Right to Information",
+    "question": "Consider the following statements regarding the latest data and provisions of the Right to Information (RTI) Act 2005 highlighted in Parliament:\n\n1. The rejection rate of RTI applications has significantly increased from 3.26% in 2013-14 to 7.21% in 2024-25.\n2. A First Appeal must be filed within 30 days if no reply is received within the prescribed limit.\n3. The maximum penalty that can be imposed on a Public Information Officer (PIO) for wrongful denial is Rs. 25,000.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 3"
+    },
+    "answer": "B",
+    "rationale": "Statement 1 is incorrect: The rejection rate *declined* to 3.26% in 2024-25 from 7.21% in 2013-14, it did not increase. Statements 2 and 3 are correct (Pages 73-74).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "Finance",
+    "sub_category": "Government Borrowing",
+    "question": "Arrange the following financial/borrowing targets or fund corpuses mentioned in the document in descending order of their total monetary value:\n\n1. Gross market borrowing for FY 2026-27 (H1 Revised)\n2. Immediate allocation for the Economic Stabilization Fund\n3. Sovereign Green Bonds (SGrBs) issuance in H1 FY 2026-27\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1 - 2 - 3",
+      "B": "2 - 1 - 3",
+      "C": "1 - 3 - 2",
+      "D": "3 - 2 - 1",
+      "E": "2 - 3 - 1"
+    },
+    "answer": "A",
+    "rationale": "Gross market borrowing H1 revised: ₹16.09 lakh crore (1). Immediate allocation for Economic Stab Fund: ₹57,381.84 crore (2). SGrBs issuance in H1: ₹15,000 crore (3). Descending order: ₹16.09 lakh cr > ₹57,381 cr > ₹15,000 cr (1 - 2 - 3) (Pages 109, 135).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / State Initiatives",
+    "sub_category": "Welfare Schemes",
+    "question": "Match the following recent welfare schemes/initiatives with their respective State/Entity:\n\nColumn I:\n1. MeHEALTH platform\n2. Saheli Pink National Common Mobility Card\n3. SHINE app (Sexual Harassment Notification)\n4. Sikhya Kranti 2.0\n\nColumn II:\nA. Government of Delhi\nB. Government of Punjab\nC. Kerala Government\nD. Indian Railways\n\nSelect the correct combination:",
+    "options": {
+      "A": "1-C, 2-A, 3-D, 4-B",
+      "B": "1-A, 2-C, 3-B, 4-D",
+      "C": "1-C, 2-D, 3-A, 4-B",
+      "D": "1-B, 2-A, 3-C, 4-D",
+      "E": "1-D, 2-C, 3-B, 4-A"
+    },
+    "answer": "A",
+    "rationale": "MeHEALTH is a Kerala Govt initiative (1-C). Saheli Pink Card is by Govt of Delhi (2-A). SHINE app is by Indian Railways (3-D). Sikhya Kranti 2.0 is by Punjab in partnership with the World Bank (4-B) (Pages 31-32).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "Finance",
+    "sub_category": "Capital Markets",
+    "question": "Consider the following statements regarding the newly launched 'Global Access' platform by NSE IX:\n\n1. It allows Indian retail investors to execute overseas stock trades from GIFT City with a foreign broker handling execution.\n2. Investors are permitted to trade in international stocks, exchange-traded funds (ETFs), and cryptocurrencies.\n3. The platform allows fractional investing and is compliant with the RBI's Liberalised Remittance Scheme (LRS) limit of $250,000 per year.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "C",
+    "rationale": "Statement 2 is incorrect: The Global Access platform explicitly *does not allow* trading in cryptocurrencies, Bitcoin, or derivatives. Statements 1 and 3 are correct (Pages 110-111).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / Social Issues",
+    "sub_category": "Legal Rights",
+    "question": "Assertion (A): The Supreme Court of India's recent landmark judgment explicitly legalized active euthanasia under Article 21 of the Constitution.\nReason (R): Euthanasia by 'omission', such as withdrawing life support, was classified as a permissible practice when done under strict guidelines.\n\nSelect the correct option:",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true but (R) is not the correct explanation of (A).",
+      "C": "(A) is true, but (R) is false.",
+      "D": "(A) is false, but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "D",
+    "rationale": "Assertion (A) is false: The Supreme Court judgment allowed *passive* euthanasia, not *active* euthanasia (which remains illegal). Reason (R) is true: Passive euthanasia involves 'omission' (withdrawing/withholding life support) and is permissible under SC guidelines (Page 90).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Insurance Sector",
+    "question": "Fill in the blanks regarding the Bima Sugam initiative.\n\nThe Bima Sugam platform operates on a _____ model to reduce costs and improve transparency. It is being implemented by the _____ and acts as a UPI-like digital marketplace for insurance.",
+    "options": {
+      "A": "low-commission ; Life Insurance Corporation (LIC)",
+      "B": "zero-commission ; Bima Sugam India Federation (BSIF)",
+      "C": "standard-commission ; Insurance Regulatory and Development Authority (IRDAI)",
+      "D": "zero-commission ; National Payments Corporation of India (NPCI)",
+      "E": "flat-fee ; Ministry of Finance"
+    },
+    "answer": "B",
+    "rationale": "Bima Sugam operates on a zero-commission model and is implemented by the Bima Sugam India Federation (BSIF) (Pages 134-135).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / Social Issues",
+    "sub_category": "Livelihood & Skilling",
+    "question": "Which of the following is an INCORRECT statement regarding the SUNIL Programme?",
+    "options": {
+      "A": "It was previously known as Technology Advancement for Rural Areas (TARA).",
+      "B": "It is implemented by SEED under the Ministry of Science & Technology.",
+      "C": "It relies exclusively on a top-down, centralized research model strictly avoiding local NGO participation.",
+      "D": "It utilizes the Land–Lab–Land (LLL) model for field-driven technology solutions.",
+      "E": "Mandatory participation includes at least one Knowledge Institution and at least one NGO."
+    },
+    "answer": "C",
+    "rationale": "Statement C is incorrect: The program encourages network-based collaboration (Hub & Spoke, Peer-to-peer) and mandates the participation of at least one NGO alongside a Knowledge Institution, explicitly avoiding an exclusive top-down approach (Pages 60-61).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / e-Governance",
+    "sub_category": "Cybersecurity",
+    "question": "Consider the following statements regarding the Bug Bounty Programme recently launched in India:\n\n1. It was launched by the Unique Identification Authority of India (UIDAI) to strengthen the Aadhaar ecosystem.\n2. It exclusively tests external private vendor applications while barring tests on the myAadhaar portal and Secure QR Code.\n3. The program utilizes a crowdsourced security approach involving a selected panel of around 20 cybersecurity experts and ethical hackers.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 3"
+    },
+    "answer": "C",
+    "rationale": "Statement 2 is incorrect: The scope of the program explicitly covers key platforms such as the UIDAI official website, the myAadhaar portal, and the Secure QR Code application. Statements 1 and 3 are correct (Pages 61-62).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / National",
+    "sub_category": "Macroeconomic Indicators (IIP)",
+    "question": "Arrange the following broad sectors in descending order of their year-on-year growth rate as recorded in the Index of Industrial Production (IIP) for January 2026:\n\n1. Manufacturing\n2. Mining\n3. Electricity\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1 - 2 - 3",
+      "B": "3 - 1 - 2",
+      "C": "2 - 1 - 3",
+      "D": "3 - 2 - 1",
+      "E": "1 - 3 - 2"
+    },
+    "answer": "B",
+    "rationale": "Electricity: 5.1%. Manufacturing: 4.8%. Mining: 4.3%. Descending order: Electricity -> Manufacturing -> Mining (3 - 1 - 2) (Page 101).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "General Awareness",
+    "sub_category": "Defence & Security",
+    "question": "Match the following international military exercises with their participating nations or organizational alliances:\n\nColumn I:\n1. LAMITIYE-2026\n2. Exercise Freedom Shield\n3. Cold Response 2026\n4. Exercise Kakadu 2026\n\nColumn II:\nA. NATO\nB. India and Seychelles\nC. Royal Australian Navy (Multinational)\nD. United States and South Korea\n\nSelect the correct code:",
+    "options": {
+      "A": "1-B, 2-D, 3-A, 4-C",
+      "B": "1-A, 2-B, 3-C, 4-D",
+      "C": "1-D, 2-A, 3-B, 4-C",
+      "D": "1-B, 2-A, 3-D, 4-C",
+      "E": "1-C, 2-D, 3-A, 4-B"
+    },
+    "answer": "A",
+    "rationale": "LAMITIYE is India-Seychelles (1-B). Freedom Shield is US-South Korea (2-D). Cold Response is a NATO exercise (3-A). Kakadu is hosted by the Royal Australian Navy (4-C) (Pages 10, 36-37).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "Finance",
+    "sub_category": "Taxation Rules",
+    "question": "The Income-tax Rules 2026 expanded the financial account reporting framework to include digital assets. In this context, consider the following laws/standards and their origins:\n\n1. CBDCs are now included as reportable financial assets.\n2. The FATCA agreement, under which India shares data, is originally a UN mandate drafted in 2020.\n3. The Common Reporting Standard (CRS) was developed by the OECD in 2014 to combat tax evasion globally.\n\nWhich of the above statements is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "C",
+    "rationale": "Statement 2 is incorrect: FATCA is a U.S. domestic law enacted in 2010 (not a UN mandate in 2020), and India signed an Inter-Governmental Agreement (IGA) in 2015. Statements 1 and 3 are correct (Pages 129-130).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Insurance Regulations",
+    "question": "Consider the following timelines prescribed by IRDAI for cashless health insurance claim processing:\n\n1. Pre-authorisation must be completed within 1 hour.\n2. Final authorisation must be completed within 3 hours.\n3. Claim settlement delays beyond 24 hours incur a mandatory penalty payable to the hospital.\n\nWhich of the statements given above is/are explicitly mentioned in the recent reforms highlighted?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct as per the newly prescribed timelines by IRDAI (1 hour pre-auth, 3 hours final auth). Statement 3 is not mentioned in the provided text (Pages 108-109).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "Finance",
+    "sub_category": "Payments & Fintech",
+    "question": "Assertion (A): The Parliamentary Standing Committee recommended heavily subsidizing Merchant Discount Rates (MDR) to maintain the zero-MDR policy indefinitely for all UPI transactions.\nReason (R): Zero MDR puts massive financial pressure on banks and limits investment in cybersecurity and infrastructure, as government incentives cover only about 11% of actual operational costs.\n\nSelect the correct option:",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true but (R) is not the correct explanation of (A).",
+      "C": "(A) is true, but (R) is false.",
+      "D": "(A) is false, but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "D",
+    "rationale": "Assertion (A) is false: The Committee actually recommended *reintroducing* MDR, especially for large merchants, via a tiered structure, not subsidizing it indefinitely. Reason (R) is true and accurately describes the problem causing the recommendation (Page 120).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / Finance",
+    "sub_category": "Government Borrowing",
+    "question": "Fill in the blanks regarding the Government's Borrowing Plan for H1 FY 2026-27.\n\nThe revised gross market borrowing for the first half is _____ lakh crore. Out of the dated securities planned, the largest share of approximately 29% is allocated to _____ securities.",
+    "options": {
+      "A": "₹17.20 ; 5-year",
+      "B": "₹16.09 ; 10-year",
+      "C": "₹8.20 ; 15-year",
+      "D": "₹16.09 ; 30-year",
+      "E": "₹15.00 ; 10-year"
+    },
+    "answer": "B",
+    "rationale": "The revised gross market borrowing is ₹16.09 lakh crore. The largest share of dated securities is allocated to 10-year securities (~29%) (Page 109).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "Finance",
+    "sub_category": "Mutual Fund Regulations",
+    "question": "Which of the following is an INCORRECT statement regarding SEBI's new regulatory rule for equity mutual fund schemes?",
+    "options": {
+      "A": "Two equity mutual fund schemes of the same fund house cannot invest more than 50% of their money in the same companies.",
+      "B": "Large-cap mutual funds are exempt from this rule as they are required to invest mainly in top 100 companies by market cap.",
+      "C": "The level of similarity between schemes must be checked by the fund house every quarter.",
+      "D": "Fund houses have exactly one year to completely realign their overlapping portfolios to meet the new criteria.",
+      "E": "If compliance is not met within the grace period, the non-compliant scheme will be required to merge with another scheme."
+    },
+    "answer": "D",
+    "rationale": "Statement D is incorrect: The regulations give fund houses *three years* (not one year) to gradually change their investments and reduce the similarity (Page 112).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "General Awareness",
+    "sub_category": "International Summits",
+    "question": "Consider the following statements regarding the 14th Ministerial Conference of the WTO:\n\n1. It was hosted in Yaoundé, Cameroon, marking the first time the conference was held in Africa.\n2. The conference successfully made the moratorium on digital trade tariffs permanent without an expiration date.\n3. India strongly supported the immediate inclusion of the Investment Facilitation for Development (IFD) agreement.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 1 and 2",
+      "C": "Only 2 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 3"
+    },
+    "answer": "A",
+    "rationale": "Statement 1 is correct. Statement 2 is incorrect: The moratorium was extended, but it is due to expire at MC14 or by March 31, 2026 (not permanent). Statement 3 is incorrect: India *opposed* adding the IFD agreement immediately (Page 96).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / Finance",
+    "sub_category": "Rates & Indices",
+    "question": "Match the following financial/economic metrics with their corresponding values as of early 2026:\n\nColumn I:\n1. EPF Interest Rate for FY 25-26\n2. Maximum incentive for bank settling unclaimed DEA funds\n3. Surcharge on additional income tax for buyback gains\n4. Reduced GST on Common Effluent Treatment Plants (CETPs)\n\nColumn II:\nA. 5%\nB. 7.5%\nC. 8.25%\nD. 12%\n\nSelect the correct combination:",
+    "options": {
+      "A": "1-C, 2-B, 3-D, 4-A",
+      "B": "1-C, 2-D, 3-A, 4-B",
+      "C": "1-D, 2-C, 3-B, 4-A",
+      "D": "1-B, 2-A, 3-C, 4-D",
+      "E": "1-A, 2-B, 3-C, 4-D"
+    },
+    "answer": "A",
+    "rationale": "EPF Interest Rate retained at 8.25% (1-C). Max incentive for DEA fund settlement is 7.5% (2-B). Buyback gains surcharge is 12% (3-D). GST on CETPs reduced to 5% (4-A) (Pages 58, 128, 135, 137).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / National",
+    "sub_category": "Macroeconomic Indicators",
+    "question": "Arrange the following broad economic activities in descending order based on their share of Gross Value Added (GVA) according to recent estimates:\n\n1. Manufacturing\n2. Financial, Real Estate, IT, Professional Services\n3. Agriculture, Livestock, Forestry & Fishing\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1 - 3 - 2",
+      "B": "2 - 1 - 3",
+      "C": "3 - 2 - 1",
+      "D": "2 - 3 - 1",
+      "E": "3 - 1 - 2"
+    },
+    "answer": "D",
+    "rationale": "Financial/Real Estate/IT is 27%. Agriculture is 18%. Manufacturing is 15%. Descending order: Financial (2) -> Agriculture (3) -> Manufacturing (1) (Page 100).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "General Awareness",
+    "sub_category": "Environment & Conservation",
+    "question": "Assertion (A): The Project Cheetah initiative marked its third intercontinental translocation by bringing nine cheetahs from Botswana to India.\nReason (R): This transfer helped India's cheetah population cross the 50 mark, reaching 53 individuals, aided by recent births in Kuno National Park.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true but (R) is not the correct explanation of (A).",
+      "C": "(A) is true, but (R) is false.",
+      "D": "(A) is false, but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "B",
+    "rationale": "Both statements are factually true according to the text. The Botswana transfer is the 3rd intercontinental translocation, and the population has reached 53. However, the resulting population growth (R) is an *outcome*, not the fundamental *reason* for initiating the third translocation (A) (Page 10).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "Finance",
+    "sub_category": "Market Infrastructure",
+    "question": "Fill in the blanks regarding SEBI's proposed framework for Market Infrastructure Institutions (MIIs).\n\nSEBI has proposed an IT _____ Index for MIIs to ensure smooth functioning of securities markets. The index uses multiple weighted parameters, with 'Availability: Ensuring system uptime' holding a weight of _____.",
+    "options": {
+      "A": "Readiness ; 10%",
+      "B": "Resilience ; 20%",
+      "C": "Robustness ; 25%",
+      "D": "Resilience ; 10%",
+      "E": "Reliability ; 15%"
+    },
+    "answer": "B",
+    "rationale": "SEBI proposed the IT Resilience Index (ITRI). The parameter 'Availability: Ensuring system uptime' carries a weight of 20% (Pages 117-118).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "Finance",
+    "sub_category": "Taxation",
+    "question": "Which of the following statements is INCORRECT regarding the Finance Bill 2026 amendments related to Buyback Taxation?",
+    "options": {
+      "A": "The additional tax on share buybacks will apply only to buybacks undertaken by domestic companies.",
+      "B": "The Bill introduces a 12% surcharge on additional income tax on buyback gains.",
+      "C": "The taxation of buyback proceeds has been shifted to capital gains in the hands of shareholders, instead of dividend income.",
+      "D": "The turnover threshold for startup tax holiday eligibility was reduced from ₹300 crore to ₹100 crore.",
+      "E": "The Bill removes coercive recovery measures such as arrest and detention for tax arrears."
+    },
+    "answer": "D",
+    "rationale": "Statement D is incorrect: The turnover threshold for startup tax holiday eligibility was *increased* from ₹100 crore to ₹300 crore, not reduced (Page 137).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / Social Issues",
+    "sub_category": "Panchayati Raj Initiatives",
+    "question": "Consider the following statements regarding the 'Sashakt Panchayat-Netri Abhiyan':\n\n1. It was launched to provide capacity building and training on leadership and legal awareness for women Elected Representatives in PRIs.\n2. Currently, women constitute exactly 33% of elected representatives in Panchayati Raj Institutions.\n3. The initiative runs parallel to the 'Nirbhay Raho' initiative which focuses on the installation of CCTV cameras in rural areas.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "C",
+    "rationale": "Statement 2 is incorrect: Women currently constitute around 46% of elected representatives in PRIs, far above the constitutional mandate of 33%. Statements 1 and 3 are correct (Page 77).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Regulatory Platforms",
+    "question": "Match the following regulatory platforms/frameworks with their respective regulatory bodies:\n\nColumn I:\n1. UDGAM Portal\n2. MF Central\n3. PRARAMBH 2026\n4. e-Sankhyiki\n\nColumn II:\nA. SEBI\nB. MoSPI\nC. Ministry of Finance (CBDT)\nD. RBI\n\nSelect the correct combination:",
+    "options": {
+      "A": "1-D, 2-A, 3-C, 4-B",
+      "B": "1-A, 2-D, 3-B, 4-C",
+      "C": "1-D, 2-C, 3-A, 4-B",
+      "D": "1-B, 2-A, 3-D, 4-C",
+      "E": "1-C, 2-A, 3-B, 4-D"
+    },
+    "answer": "A",
+    "rationale": "UDGAM is by RBI (1-D). MF Central is regulated under SEBI guidance via AMFI (2-A). PRARAMBH 2026 is an Income Tax awareness campaign by the Finance Ministry (3-C). e-Sankhyiki is by MoSPI (4-B) (Pages 79, 107, 113, 136).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / Economy",
+    "sub_category": "Foreign Portfolio Investment (FPI)",
+    "question": "Regarding the flow of Foreign Portfolio Investments (FPIs) into India, consider the following data points:\n\n1. In Q3FY26, FPIs recorded a net outflow of US$ 11.4 billion from Indian markets.\n2. In February 2026, FPIs infused ₹22,615 crore into Indian equities, marking the highest monthly inflow in 17 months.\n\nWhich of the above statements is/are factually correct based on recent reports?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Both 1 and 2",
+      "D": "Neither 1 nor 2",
+      "E": "Data insufficient to determine"
+    },
+    "answer": "B",
+    "rationale": "Statement 1 is incorrect: In Q3FY26, FPI recorded a net outflow of US$ 0.2 billion. The US$ 11.4 billion outflow happened *a year ago* (Q3FY25). Statement 2 is correct (Pages 102-103).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / National",
+    "sub_category": "Macroeconomic Indicators",
+    "question": "Arrange the following macroeconomic indicators recorded in early 2026 in descending order of their percentage values:\n\n1. Retail Inflation (CPI-based) for February\n2. WPI Primary Articles Inflation for February\n3. Overall WPI Inflation for February\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1 - 2 - 3",
+      "B": "2 - 1 - 3",
+      "C": "3 - 2 - 1",
+      "D": "2 - 3 - 1",
+      "E": "1 - 3 - 2"
+    },
+    "answer": "B",
+    "rationale": "WPI Primary Articles: 3.27%. CPI Retail Inflation: 3.21%. Overall WPI: 2.13%. Descending order: 3.27% -> 3.21% -> 2.13% (2 - 1 - 3) (Pages 80-81, 101-102).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / Environment",
+    "sub_category": "Carbon Credit Trading",
+    "question": "Consider the following statements regarding the regulatory and operational framework of the Carbon Credit Trading Scheme (CCTS):\n\n1. It features a mandatory compliance mechanism for specified industrial sectors.\n2. It features a voluntary offset mechanism for emission-reduction projects.\n3. The Central Electricity Regulatory Commission (CERC) is designated as the implementing agency, while BEE acts strictly as the market regulator.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the roles are reversed: CERC is the regulator of carbon trading, while BEE is the implementing agency (Page 88).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Fintech Initiatives",
+    "question": "Assertion (A): The MoU signed between DPIIT and Razorpay is primarily aimed at boosting India’s startup ecosystem by specifically supporting fintech and manufacturing startups.\nReason (R): Razorpay's newly launched 'Startup Sahayak' platform under this MoU offers early-stage founders end-to-end assistance including company incorporation and access to funding.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true but (R) is not the correct explanation of (A).",
+      "C": "(A) is true, but (R) is false.",
+      "D": "(A) is false, but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "B",
+    "rationale": "Both Assertion and Reason are true facts regarding the DPIIT-Razorpay MoU. However, the features of 'Startup Sahayak' (R) are the operational details of how the support is given, not the overarching *reason* why DPIIT chose to support fintech/manufacturing startups (A) (Page 122).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Payment Aggregators",
+    "question": "Which of the following is an INCORRECT statement regarding the Payment Aggregator (PA) framework and recent developments?",
+    "options": {
+      "A": "A Payment Aggregator acts as an intermediary between customers and merchants.",
+      "B": "It allows the acceptance of payments via multiple instruments like UPI, wallets, and cards.",
+      "C": "PAs handle fund collection, processing, settlement, and refunds.",
+      "D": "CRED recently received final approval from SEBI to operate as a Payment Aggregator.",
+      "E": "Operating as a PA requires RBI authorisation and compliance with data localisation norms."
+    },
+    "answer": "D",
+    "rationale": "Statement D is incorrect: CRED received final approval from the *Reserve Bank of India (RBI)*, not SEBI, to operate as a Payment Aggregator (Page 120).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  }
+]
