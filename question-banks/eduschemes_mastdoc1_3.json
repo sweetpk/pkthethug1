@@ -1,0 +1,786 @@
+[
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Micro, Small & Medium Enterprises Schemes",
+    "question": "Regarding the Modified Market Development Assistance (MMDA) under the Khadi Vikas Yojana, match the following beneficiary categories with their correct share distribution for Silk Khadi:\n\nColumn I:\n1. Khadi Artisans (Incentive)\n2. Karyakartas (Incentive)\n3. Khadi Institutions (KIs Share)\n\nColumn II:\nA. 10%\nB. 30%\nC. 60%\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-A, 3-C",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "According to the MMDA Funds Distribution for Silk Khadi: Khadi Artisans get 30%, Karyakartas get 10%, and Khadi Institutions get 60%. For Cotton/Muslin/Woolen, it is 35%, 14%, and 51% respectively. (Page 126 infographic)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "The Pradhan Mantri Jan Dhan Yojana (PMJDY) is structured around six foundational pillars. Which of the following is NOT one of these six foundational pillars?",
+    "options": {
+      "A": "Universal Access to banking services",
+      "B": "Basic Savings Account with overdraft facility",
+      "C": "Mandatory Micro-ATM deployment in every village",
+      "D": "Financial Literacy Programme",
+      "E": "Credit Guarantee Fund"
+    },
+    "answer": "C",
+    "rationale": "The six pillars of PMJDY are: Universal Access, Basic Savings Account, Financial Literacy, Credit Guarantee Fund, Insurance Coverage, and Pension Scheme. Mandatory Micro-ATM deployment is not listed as a core foundational pillar. (Page 29)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Skill Development and Entrepreneurship Schemes",
+    "question": "Under the 2026 Reforms for the Craftsmen Training Scheme (CTS), which of the following statements regarding the alignment with the National Education Policy (NEP) 2020 is correct?",
+    "options": {
+      "A": "Annual training duration has been optimized from 1,200 to 1,600 hours.",
+      "B": "Annual training duration has been optimized from 1,600 to 1,200 hours.",
+      "C": "On-the-job training has been made optional rather than mandatory.",
+      "D": "Trainees are now exempted from completing group projects.",
+      "E": "NEP 2020 mandates 100% online delivery of theoretical courses."
+    },
+    "answer": "B",
+    "rationale": "Under the 2026 Reform/NEP Alignment for CTS, the annual training duration has been optimized from 1,600 to 1,200 hours. (Page 100)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Commerce & Industry Schemes",
+    "question": "Fill in the blanks regarding the usage and validity of the e-scrip under the RoDTEP Scheme:\n\nThe e-scrip maintained in an electronic ledger can be used only for the payment of _____ duty and is valid for a period of _____ from the date of creation in the ledger.",
+    "options": {
+      "A": "Excise; 6 months",
+      "B": "Customs; 1 year",
+      "C": "Goods and Services Tax; 2 years",
+      "D": "Customs; 6 months",
+      "E": "Export; 1 year"
+    },
+    "answer": "B",
+    "rationale": "Under the 'Usage & Validity of E-Scrip' of the RoDTEP Scheme, the e-scrip can be used only for payment of Customs duty and is valid for 1 year from the date of creation. (Page 81)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Consider the following statements regarding the Sovereign Gold Bonds (SGBs) Scheme:\n\n1. Payment can be made via cash up to a maximum of ₹20,000.\n2. The bonds are issued as Government of India Stock under the Government Securities Act, 2006.\n3. The bonds are not eligible for conversion into demat form.\n4. The issue price is ₹50 per gram lower for investors who subscribe online and pay through digital mode.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2 and 3 only",
+      "B": "1, 2 and 4 only",
+      "C": "2, 3 and 4 only",
+      "D": "1 and 4 only",
+      "E": "1, 2, 3 and 4"
+    },
+    "answer": "B",
+    "rationale": "Statement 3 is incorrect: SGBs are explicitly eligible for conversion into demat form. Statements 1, 2, and 4 are correct features of SGBs concerning payment, issuance form, and online discounts. (Page 41)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Labour & Employment Schemes",
+    "question": "Match the following monthly wage slabs with their corresponding employer incentive amounts under Part-B of the PMVBRY scheme:\n\nColumn I:\n1. Up to ₹10,000 wage\n2. ₹10,001 – ₹20,000 wage\n3. ₹20,001 – ₹1,00,000 wage\n\nColumn II:\nA. ₹3,000 per month\nB. ₹1,000 per month\nC. ₹2,000 per month\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-C, 2-A, 3-B"
+    },
+    "answer": "A",
+    "rationale": "According to the PMVBRY employer incentive wage slabs: Up to ₹10,000 gets ₹1,000/month. ₹10,001 – ₹20,000 gets ₹2,000/month. ₹20,001 – ₹1,00,000 gets ₹3,000/month. (Page 58)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Micro, Small & Medium Enterprises Schemes",
+    "question": "Arrange the following stages of the 3-step enrolment verification process for the PM Vishwakarma Yojana in chronological order:\n\n1. Vetting & recommendation by the District Implementation Committee.\n2. Verification at Gram Panchayat / ULB level.\n3. Approval by the Screening Committee.\n\nSelect the correct sequence:",
+    "options": {
+      "A": "2, 1, 3",
+      "B": "1, 2, 3",
+      "C": "2, 3, 1",
+      "D": "3, 2, 1",
+      "E": "1, 3, 2"
+    },
+    "answer": "A",
+    "rationale": "Under the enrolment governance of PM Vishwakarma, the sequence is: First, verification at Gram Panchayat / ULB level (2). Second, vetting & recommendation by the District Implementation Committee (1). Third, final approval by the Screening Committee (3). (Page 104)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "RBI Specific Schemes",
+    "question": "Under the Liberalised Remittance Scheme (LRS), which of the following is an INCORRECT provision or prohibited item?",
+    "options": {
+      "A": "PAN requirement is mandatory for all transactions under LRS.",
+      "B": "Resident individuals can remit up to USD 2,50,000 per financial year.",
+      "C": "Remittances are permitted for margins or margin calls to overseas exchanges.",
+      "D": "Unused foreign exchange must be repatriated within 180 days unless reinvested.",
+      "E": "Remittances are not permitted for trading in foreign exchange abroad."
+    },
+    "answer": "C",
+    "rationale": "Option C is incorrect because remittances for margins or margin calls to overseas exchanges or overseas counterparties are strictly PROHIBITED under LRS. All other points describe permissible rules or legitimate prohibitions accurately. (Pages 141-142)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Skill Development and Entrepreneurship Schemes",
+    "question": "Consider the following statements regarding the Skill Hubs established under PMKVY 4.0:\n\n1. They are established by the Ministry of Skill Development and Entrepreneurship in consultation with the Ministry of Education.\n2. They provide vocational training to Class 6-8 students with an orientation to bag-less days.\n3. They entirely exclude school dropouts to focus exclusively on enrolled formal students.\n4. They provide exposure to skill development opportunities for Class 9-12 students.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2 and 3 only",
+      "B": "1, 2 and 4 only",
+      "C": "2, 3 and 4 only",
+      "D": "1 and 4 only",
+      "E": "1, 2, 3 and 4"
+    },
+    "answer": "B",
+    "rationale": "Statement 3 is incorrect: Skill Hubs specifically include 'School dropouts and out-of-education youth' for academic credit and reintegration. Statements 1, 2, and 4 correctly describe the establishing ministries and target student groups. (Page 96)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Micro, Small & Medium Enterprises Schemes",
+    "question": "Fill in the blanks regarding the subsidy structure of the 'ZED' component under the MSME Champions Scheme:\n\nThe core certification subsidies are _____ for Micro Enterprises, _____ for Small Enterprises, and 50% for Medium Enterprises.",
+    "options": {
+      "A": "70%; 60%",
+      "B": "80%; 60%",
+      "C": "90%; 70%",
+      "D": "80%; 70%",
+      "E": "100%; 80%"
+    },
+    "answer": "B",
+    "rationale": "Under the ZED component's subsidy structure, core certification subsidies are: 80% for Micro Enterprises and 60% for Small Enterprises (Medium gets 50%). (Page 120 infographic)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Assertion (A): The NPS Swasthya Pension Scheme (NSPS) is a limited-duration Proof of Concept, operational only during the Regulatory Sandbox period.\nReason (R): The scheme aims to assess operational, technological, and regulatory implications before integrating healthcare benefits with NPS on a wider scale.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "A",
+    "rationale": "Both Assertion and Reason are true, and R correctly explains A. The scheme's tenure is limited to the Sandbox period precisely to test and assess its feasibility before permanent rollout. (Page 47)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Commerce & Industry Schemes",
+    "question": "Consider the following statements regarding the financial outlay of Part A of the UNNATI 2024 scheme:\n\n1. It earmarks 60% of the outlay of Part A to the 8 North-Eastern states.\n2. The remaining 40% is allocated strictly on a First-In-First-Out (FIFO) basis.\n3. New units are completely barred from Part A to prioritize only expanding existing units.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1 only",
+      "E": "1, 2 and 3"
+    },
+    "answer": "A",
+    "rationale": "Statement 3 is incorrect: Both new Industrial units and expanding units are explicitly eligible for incentives under Part A. Statements 1 and 2 are correct according to the scheme's outlay distribution. (Pages 79-80)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Labour & Employment Schemes",
+    "question": "Which of the following describes an INCORRECT eligibility or timeline condition for the ESIC Amnesty Scheme (2025)?",
+    "options": {
+      "A": "The operational tenure is from 1 October 2025 to 30 September 2026.",
+      "B": "All cases must be settled within 6 months from the date of application.",
+      "C": "The scheme allows even those who availed earlier Amnesty Schemes to benefit.",
+      "D": "For closed units pending for over 15 years with dues up to ₹25,000, cases may be entirely closed.",
+      "E": "The scheme is available only to MSMEs with a valid Udyam registration."
+    },
+    "answer": "E",
+    "rationale": "Option E is incorrect. The ESIC Amnesty Scheme 2025 does not specify that it is restricted only to MSMEs with Udyam registration; it is applicable to units covered under the ESI Act facing disputes. All other points describe actual conditions. (Pages 67-68)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Under the Atal Pension Yojana (APY), what happens regarding government co-contribution in the event of a voluntary exit by the subscriber before the age of 60?",
+    "options": {
+      "A": "The entire accumulated corpus, including the government co-contribution, is refunded to the subscriber.",
+      "B": "The government co-contribution is forfeited, and only the beneficiary's contributions and net actual accrued income are refunded.",
+      "C": "The government co-contribution is transferred to the subscriber's bank account with a penalty of 10%.",
+      "D": "Voluntary exit is strictly prohibited before the age of 60.",
+      "E": "The government co-contribution is handed over to the spouse of the subscriber."
+    },
+    "answer": "B",
+    "rationale": "Under APY's Voluntary Exit rules: 'In case of Government co-contribution: only contributions by beneficiary refunded along with net actual accrued income... (government co-contribution and its income are not refunded).' (Page 14)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Micro, Small & Medium Enterprises Schemes",
+    "question": "Match the following financial breakdown categories under the Self-Reliant India (SRI) Fund with their respective targets:\n\nColumn I:\n1. Total Leveraged Fund\n2. Mother Fund (MF) provided by Govt of India\n3. Daughter Funds (DFs) mobilized from outside\n\nColumn II:\nA. ₹10,000 Crore\nB. ₹40,000 Crore\nC. ₹50,000 Crore\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Under the SRI Fund: Mother Fund is ₹10k crore. Daughter Funds raise ₹40k crore. Total Leveraged Fund is ₹50k crore. (Page 107 infographic)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Skill Development and Entrepreneurship Schemes",
+    "question": "Under the PM-SETU scheme, what is the Hub-and-Spoke model ratio for the upgradation of 1,000 Government ITIs?",
+    "options": {
+      "A": "500 hubs + 500 spokes",
+      "B": "100 hubs + 900 spokes",
+      "C": "200 hubs + 800 spokes",
+      "D": "300 hubs + 700 spokes",
+      "E": "250 hubs + 750 spokes"
+    },
+    "answer": "C",
+    "rationale": "Component I of PM-SETU involves the upgradation of 1,000 Government ITIs with a breakdown of 200 hubs + 800 spokes. (Page 98)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Micro, Small & Medium Enterprises Schemes",
+    "question": "Regarding the Common Facility Centers (CFCs) under the MSME Cluster Development Programme (MSE-CDP), what is the maximum limit of Government of India (GoI) assistance, even if a project costs more than ₹30 crore?",
+    "options": {
+      "A": "₹10 crore",
+      "B": "₹15 crore",
+      "C": "₹20 crore",
+      "D": "₹30 crore",
+      "E": "₹50 crore"
+    },
+    "answer": "D",
+    "rationale": "Under the Funding Pattern for CFCs, 'Project costing more than ₹30 crore also considered but GoI assistance limited to maximum ₹30 crore.' (Page 123)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Consider the following statements regarding the Pradhan Mantri Suraksha Bima Yojana (PMSBY):\n\n1. The risk coverage is in addition to any other insurance scheme held by the subscriber.\n2. Coverage includes death due to suicide.\n3. Death due to murder is covered under the scheme.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1 only",
+      "E": "1, 2 and 3"
+    },
+    "answer": "C",
+    "rationale": "Statement 2 is incorrect: PMSBY does NOT cover death due to suicide. Statements 1 and 3 are correct. Murder is treated as an accident and is covered under risk coverage. (Page 19)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Commerce & Industry Schemes",
+    "question": "Under the Export Promotion Mission (EPM), the financial support component is called 'Niryat Protsahan'. Which of the following is a feature of this sub-scheme?",
+    "options": {
+      "A": "It provides a base interest subvention of 2.75% on pre- and post-shipment rupee export credit.",
+      "B": "It operates with a total financial allocation of ₹50,000 crore.",
+      "C": "It reimburses 100% of testing costs for MSMEs.",
+      "D": "It strictly forbids support for E-Commerce exporters.",
+      "E": "It guarantees 100% credit lines for all large corporate exporters."
+    },
+    "answer": "A",
+    "rationale": "Under the Niryat Protsahan component of EPM, it provides a base interest subvention of 2.75% on pre- and post-shipment rupee export credit. Its financial allocation is ₹10,401 crore out of the ₹25,060 crore total. (Page 85)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Under the old tax regime, an individual investing in the Sukanya Samriddhi Yojana (SSY) is eligible for tax benefits under which section of the Income Tax Act?",
+    "options": {
+      "A": "Section 80D",
+      "B": "Section 80C",
+      "C": "Section 80CCD(1B)",
+      "D": "Section 80E",
+      "E": "Section 80G"
+    },
+    "answer": "B",
+    "rationale": "As per the SSY benefits: 'Eligible for Tax Benefit under Section 80C (Old Tax Regime only).' (Page 27)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "RBI Specific Schemes",
+    "question": "Match the following loan guarantee percentages with their corresponding loan amounts under the Credit Enhancement Guarantee Scheme for Scheduled Castes (CEGSSC):\n\nColumn I:\n1. 100% Full Guarantee\n2. 80% High Guarantee\n3. 70% Moderate Guarantee\n4. 60% Lower Guarantee\n\nColumn II:\nA. ₹15 lakhs to ₹1 crore\nB. ₹1 crore to ₹2 crores\nC. ₹2 crores to ₹5 crores\nD. Above ₹5 crores\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-B, 3-C, 4-D",
+      "B": "1-B, 2-A, 3-C, 4-D",
+      "C": "1-C, 2-D, 3-A, 4-B",
+      "D": "1-A, 2-C, 3-B, 4-D",
+      "E": "1-D, 2-C, 3-B, 4-A"
+    },
+    "answer": "A",
+    "rationale": "Under the CEGSSC infographic: ₹15 lakhs to ₹1 crore gets 100% guarantee. ₹1 crore to ₹2 crores gets 80% guarantee. ₹2 crores to ₹5 crores gets 70% guarantee. Above ₹5 crores gets 60% guarantee. (Page 143 infographic)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Labour & Employment Schemes",
+    "question": "Under the National Pension Scheme for Traders and Self Employed (NPS-Traders), which of the following is an explicit membership exclusion?",
+    "options": {
+      "A": "Any citizen with an income tax slab of 5%.",
+      "B": "Vyaparis and retail traders.",
+      "C": "Individuals who are members of government-funded schemes like EPFO, ESIC, or PM-SYM.",
+      "D": "Shopkeepers with an annual turnover of ₹50 lakh.",
+      "E": "Individuals who are sole proprietors."
+    },
+    "answer": "C",
+    "rationale": "The exclusion criteria explicitly state that the applicant 'Should not be a member of NPS - GOVT FUNDED, ESIC, EPFO, or Pradhan Mantri Shram Yogi Maandhan Yojana (PM-SYM).' (Page 61)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Micro, Small & Medium Enterprises Schemes",
+    "question": "Fill in the blanks regarding the procurement targets under the National Scheduled Caste and Scheduled Tribe Hub (NSSH) Scheme:\n\nThe scheme encourages SC/ST owned units to achieve a share of at least _____% of total procurement made by Central Government, State Governments, and Central Public Sector Enterprises.",
+    "options": {
+      "A": "2%",
+      "B": "3%",
+      "C": "4%",
+      "D": "5%",
+      "E": "10%"
+    },
+    "answer": "C",
+    "rationale": "The functions of NSSH include to 'Encourage SC/ST owned units to achieve a share of at least 4% of total procurement...' (Page 108)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Commerce & Industry Schemes",
+    "question": "Match the following startup eligibility criteria with their corresponding conditions under the Startup India Seed Fund Scheme (SISFS):\n\nColumn I:\n1. DPIIT Recognition\n2. Monetary Support Limit\n3. Shareholding\n\nColumn II:\nA. Not received more than ₹10 lakh of monetary support under any other Central or State scheme.\nB. Shareholding by Indian promoters of at least 51%.\nC. Incorporated not more than 2 years ago.\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-B, 2-C, 3-A",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Under SISFS eligibility: Recognition requires incorporation not more than 2 years ago (1-C). Monetary support from other schemes must not exceed ₹10 lakh (2-A). Promoter shareholding must be at least 51% (3-B). (Page 74 infographic)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Regarding the accounts under NPS Vatsalya, which of the following is true?",
+    "options": {
+      "A": "The accounts are fixed and non-portable across locations.",
+      "B": "Accounts are issued a PRAN, which is unique and fully portable across locations and service providers.",
+      "C": "Accounts can only be opened through physical post offices.",
+      "D": "Only the mother of the child can be registered as the guardian.",
+      "E": "The accounts automatically close once the child turns 15 years old."
+    },
+    "answer": "B",
+    "rationale": "Under the key features of account accessibility: 'The account is fully portable across locations and service providers.' A PRAN is issued to the subscriber. (Page 24)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Skill Development and Entrepreneurship Schemes",
+    "question": "Under the National Apprenticeship Promotion Scheme (NAPS-2), which of the following categories of organizations are explicitly EXCLUDED from getting stipend support from the government?",
+    "options": {
+      "A": "Private sector manufacturing units",
+      "B": "Micro, Small & Medium Enterprises (MSMEs)",
+      "C": "Central/State government departments, PSUs, and banks.",
+      "D": "Information technology companies with more than 100 employees.",
+      "E": "Proprietorship firms registered under state laws."
+    },
+    "answer": "C",
+    "rationale": "Under NAPS-2 key features: 'No stipend support for Central/State government departments, PSUs, or banks.' (Page 94)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Micro, Small & Medium Enterprises Schemes",
+    "question": "Under the Credit Guarantee Fund Scheme for Micro and Small Enterprises (CGSMSE), a special provision offers a concession in guarantee fees and enhanced guarantee coverage of 85% for which category of entrepreneurs?",
+    "options": {
+      "A": "Women entrepreneurs",
+      "B": "SC/ST entrepreneurs",
+      "C": "Transgender Entrepreneurs",
+      "D": "Entrepreneurs in Aspirational Districts",
+      "E": "Ex-servicemen"
+    },
+    "answer": "C",
+    "rationale": "Under CGSMSE key features: 'Transgender Entrepreneurs: A special provision offers a 10% concession in guarantee fees and an enhanced guarantee coverage of 85%.' (Page 112)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Commerce & Industry Schemes",
+    "question": "Under the Production Linked Incentive (PLI) Scheme for White Goods, what is the length of the gestation period permitted before the 5-year incentive period begins?",
+    "options": {
+      "A": "6 months",
+      "B": "1 year",
+      "C": "2 years",
+      "D": "3 years",
+      "E": "No gestation period is allowed."
+    },
+    "answer": "B",
+    "rationale": "Under the PLI incentive structure: 'Incentive period: 5 years, after a 1-year gestation period (post base year).' (Page 83)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "RBI Specific Schemes",
+    "question": "The Payments Infrastructure Development Fund (PIDF) Scheme focuses primarily on creating payment acceptance infrastructure in which Tier centers?",
+    "options": {
+      "A": "Tier-1 and Tier-2 centers exclusively",
+      "B": "Only in state capitals",
+      "C": "Tier-3 to Tier-6 centers",
+      "D": "Only in coastal and port cities",
+      "E": "In Tier-1 centers for international tourism."
+    },
+    "answer": "C",
+    "rationale": "Under the target geographies for PIDF: 'Primary focus shall be to create payment acceptance infrastructure in Tier-3 to Tier-6 centres.' (Page 133)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Match the following stipend structures with their corresponding engagement years for a Bima Sakhi under the Bima Sakhi Yojana:\n\nColumn I:\n1. First Year\n2. Second Year\n3. Third Year\n\nColumn II:\nA. ₹6,000 per month\nB. ₹7,000 per month\nC. ₹5,000 per month\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-A, 3-C",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-C, 2-B, 3-A"
+    },
+    "answer": "A",
+    "rationale": "The stipend structure under Bima Sakhi is: ₹7,000 per month for the first year. ₹6,000 per month for the second year. ₹5,000 per month for the third year. (Page 28)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Labour & Employment Schemes",
+    "question": "Under the Employees’ Deposit Linked Insurance Scheme (EDLI), what is the minimum assurance benefit guaranteed to eligible family members if the deceased was a continuous member for 12 months?",
+    "options": {
+      "A": "₹1 Lakh",
+      "B": "₹2 Lakh",
+      "C": "₹2.5 Lakh",
+      "D": "₹3 Lakh",
+      "E": "₹5 Lakh"
+    },
+    "answer": "C",
+    "rationale": "Under the benefit enhancements of EDLI: 'Minimum assurance benefit: ₹2.5 lakh to eligible family members if the deceased was a member for a continuous 12 months...' (Page 65)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Micro, Small & Medium Enterprises Schemes",
+    "question": "Under the PMEGP scheme, what is the definition of a 'Family' for checking project eligibility and limits?",
+    "options": {
+      "A": "Includes uncles, aunts, and cousins living in the same district.",
+      "B": "Only one person from one family is eligible (Family includes self and spouse).",
+      "C": "Up to 3 members from a single household can take separate loans.",
+      "D": "A family means all individuals registered on a single ration card regardless of relations.",
+      "E": "There is no family limit under the latest guidelines."
+    },
+    "answer": "B",
+    "rationale": "Under the Enterprise Eligibility of PMEGP: 'Only one person from one family is eligible.' The infographic defines family as self and spouse. (Page 114, 116)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "RBI Specific Schemes",
+    "question": "Arrange the following institutional bodies of the Lead Bank Scheme in ascending order of their operational levels (from block level up to the state apex level):\n\n1. District Consultative Committee (DCC)\n2. Block Level Bankers' Committee (BLBC)\n3. State Level Bankers' Committee (SLBC)\n\nSelect the correct sequence:",
+    "options": {
+      "A": "2, 1, 3",
+      "B": "1, 2, 3",
+      "C": "2, 3, 1",
+      "D": "3, 2, 1",
+      "E": "1, 3, 2"
+    },
+    "answer": "A",
+    "rationale": "The structure in ascending order (base to top) is: Block Level Bankers' Committee (2) at the block level. District Consultative Committee (1) at the district level. State Level Bankers' Committee (3) at the state level. Sequence: 2, 1, 3. (Page 136)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Fill in the blanks regarding account status norms under the PMJDY scheme:\n\nA PMJDY account is treated as inoperative if there are no customer-induced transactions for over _____ years.",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "5",
+      "E": "10"
+    },
+    "answer": "B",
+    "rationale": "Under the PMJDY account status norm, an account is treated as inoperative if there are no customer-induced transactions for over 2 years. (Page 29)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Commerce & Industry Schemes",
+    "question": "Under the Income Tax Exemption rules of the Startup India Initiative, startups incorporated on or after which date can apply for income tax exemption?",
+    "options": {
+      "A": "1st January, 2015",
+      "B": "1st April, 2016",
+      "C": "1st April, 2020",
+      "D": "1st January, 2021",
+      "E": "1st April, 2014"
+    },
+    "answer": "B",
+    "rationale": "Under the funding support & incentives of Startup India: 'Startups incorporated on or after 1st April 2016 can apply for income tax exemption.' (Page 71)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Micro, Small & Medium Enterprises Schemes",
+    "question": "Under the cluster selection criteria for the SFURTI scheme, what is the required geographical concentration for regular clusters?",
+    "options": {
+      "A": "Around 100 beneficiaries’ families.",
+      "B": "Around 500 beneficiaries’ families, with at least 10% from the North-East.",
+      "C": "Exactly 1000 artisans from one specific village.",
+      "D": "A concentration across 5 different states.",
+      "E": "There is no geographical concentration rule."
+    },
+    "answer": "B",
+    "rationale": "Under the cluster selection criteria for SFURTI: 'Geographical concentration around 500 beneficiaries’ families, with at least 10% from North-East.' (Page 110)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Labour & Employment Schemes",
+    "question": "Under the Vishwas Scheme (2025), what is the key outcome regarding covered litigation cases once compliance is completed?",
+    "options": {
+      "A": "Cases are paused for 2 years.",
+      "B": "Cases are transferred to state fast-track courts.",
+      "C": "All covered cases stand abated once compliance is completed.",
+      "D": "The litigation continues but the penalty is capped at 50%.",
+      "E": "The employer must pay all litigation costs of the employees."
+    },
+    "answer": "C",
+    "rationale": "Under the 'Coverage Outcome' of the Vishwas Scheme: 'All covered cases will stand abated once compliance is completed under the scheme.' (Page 60)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Skill Development and Entrepreneurship Schemes",
+    "question": "Under the Jan Shikshan Sansthan (JSS) scheme, what is the specific target allocation percentage for the 'Rudimentary Education' group (non-literates, neo-literates)?",
+    "options": {
+      "A": "20%",
+      "B": "10%",
+      "C": "50%",
+      "D": "70%",
+      "E": "30%"
+    },
+    "answer": "D",
+    "rationale": "Under the JSS eligibility criteria, the target allocation for the non-literates, neo-literates, and persons with a rudimentary level of education is 70%. (Page 92-93 infographic)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Corporate Affairs Schemes",
+    "question": "Under the Prime Minister’s Internship Scheme, what is the prescribed duration of the internship?",
+    "options": {
+      "A": "3 to 6 months",
+      "B": "6 to 9 months",
+      "C": "1 to 2 years",
+      "D": "Exactly 1 year",
+      "E": "1 to 3 months"
+    },
+    "answer": "B",
+    "rationale": "According to the internship structure: 'Duration: 6-9 months.' (Page 130)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Assertion (A): Under the Pradhan Mantri Mudra Scheme, MUDRA directly delivers working capital loans to micro-enterprises.\nReason (R): MUDRA acts as a refinance agency providing capital support to Last Mile Financiers such as NBFCs, MFIs, and Regional Rural Banks.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "D",
+    "rationale": "Assertion (A) is false: MUDRA does not directly deliver loans to enterprises. Reason (R) is true: It operates exclusively as a refinance agency for last-mile delivery partners. (Page 31)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Commerce & Industry Schemes",
+    "question": "The RELIEF Scheme 2026 aims to provide a financial safety net to mitigate logistical costs arising from geopolitical disruptions in which specific corridor?",
+    "options": {
+      "A": "The South China Sea corridor",
+      "B": "The West Asia maritime corridor",
+      "C": "The Arctic trade route",
+      "D": "The trans-Pacific corridor",
+      "E": "The Indo-Nepal border transit points"
+    },
+    "answer": "B",
+    "rationale": "The RELIEF Scheme 2026 was launched to provide a financial safety net and ensure supply chain resilience amid geopolitical disruptions in the West Asia maritime corridor. (Page 87)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Fill in the blanks comparing the tax benefits of Kisan Vikas Patra (KVP) and the National Savings Certificate (NSC):\n\nUnlike NSC, where investors can claim tax benefits under Section 80C, KVP _____ offer tax benefits under Section 80C, and its invested amount doubles on maturity in a period of _____ months.",
+    "options": {
+      "A": "does; 100",
+      "B": "does not; 115",
+      "C": "does; 115",
+      "D": "does not; 120",
+      "E": "does not; 60"
+    },
+    "answer": "B",
+    "rationale": "Under the Small Savings Schemes rules: KVP does not offer tax benefits under Section 80C. The maturity period is 115 months (9.7 years), during which the invested amount doubles. (Page 53)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Micro, Small & Medium Enterprises Schemes",
+    "question": "Which of the following sub-schemes under the RAMP initiative synergises legal support with AI to address incidences of delayed payments for MSMEs?",
+    "options": {
+      "A": "MSE GIFT Scheme",
+      "B": "MSE SPICE Scheme",
+      "C": "MSE ODR Scheme",
+      "D": "MSME TEAM Initiative",
+      "E": "MSE Climate Fund"
+    },
+    "answer": "C",
+    "rationale": "The MSE ODR (Online Dispute Resolution) Scheme is specifically described as a first-of-its-kind scheme to synergise legal support with AI to address incidences of delayed payments. (Page 118)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Skill Development and Entrepreneurship Schemes",
+    "question": "Under the Craftsmen Training Scheme (CTS), what percentage of seats are reserved for women candidates across all courses in both government and private ITIs?",
+    "options": {
+      "A": "10%",
+      "B": "20%",
+      "C": "30%",
+      "D": "33%",
+      "E": "50%"
+    },
+    "answer": "C",
+    "rationale": "Under CTS key features: 'A 30% reservation of seats for women candidates has been implemented in all ITIs (government and private) across all courses.' (Page 100)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Under the Sovereign Gold Bonds (SGBs) Scheme, redemption price calculation involves simple average of the closing price of gold of 999 purity published by IBJA Ltd for the previous how many working days?",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "5",
+      "E": "10"
+    },
+    "answer": "C",
+    "rationale": "The SGB redemption price is based on the 'Simple average of closing price of gold (999 purity) of the previous 3 working days, published by IBJA Ltd.' (Page 41)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Under the Mahila Samman Savings Certificate (MSSC) rules, what is the mandatory gap required between opening an existing account and opening another account?",
+    "options": {
+      "A": "1 month",
+      "B": "3 months",
+      "C": "6 months",
+      "D": "1 year",
+      "E": "No gap required as long as the limit is not breached."
+    },
+    "answer": "B",
+    "rationale": "Under the rules for opening multiple MSSC accounts: 'A 3-month gap between opening an existing account and opening another account' is mandated. (Page 44)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "RBI Specific Schemes",
+    "question": "According to the Reserve Bank - Integrated Ombudsman Scheme 2026, complaints will no longer be rejected simply on the account of which of the following grounds?",
+    "options": {
+      "A": "The complaint is non-maintainable.",
+      "B": "The complaint is filed after the 1-year window.",
+      "C": "The complaint is 'not covered under the grounds listed in the scheme'.",
+      "D": "The complaint involves amount exceeding ₹30 Lakh.",
+      "E": "The complaint has already been adjudicated by a civil court."
+    },
+    "answer": "C",
+    "rationale": "Under the scheme's 'Simplified Grounds for Complaint' rules: 'Complaints will no longer be rejected simply on the account of \"not covered under the grounds listed in the scheme\"' as 'Deficiency in service' acts as the universal ground. (Page 138)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Skill Development and Entrepreneurship Schemes",
+    "question": "The Skill India Assistant (SIA) Chatbot deployed on the Skill India Digital Hub and WhatsApp has been developed by which of the following pairs of organizations?",
+    "options": {
+      "A": "Google & NSDC",
+      "B": "Meta & NSDC",
+      "C": "Microsoft & Ministry of Education",
+      "D": "OpenAI & PFRDA",
+      "E": "Meta & MeitY"
+    },
+    "answer": "B",
+    "rationale": "The Skill India Assistant (SIA) Chatbot was 'Developed by Meta & NSDC using the Llama Large Language Model.' (Page 90)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Are multiple Atal Pension Yojana (APY) accounts permitted for a single individual according to the scheme guidelines?",
+    "options": {
+      "A": "Yes, an individual can open up to 3 separate accounts.",
+      "B": "Multiple APY accounts are not permitted.",
+      "C": "Yes, if the total guaranteed pension across accounts doesn't exceed ₹10,000.",
+      "D": "Yes, but they must be opened in different post offices or banks.",
+      "E": "Yes, multiple accounts are permitted exclusively for women subscribers."
+    },
+    "answer": "B",
+    "rationale": "Under the 'Other Important Provisions' for APY: 'Multiple APY accounts are not permitted.' (Page 15)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  }
+]
