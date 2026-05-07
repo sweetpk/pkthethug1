@@ -922,15 +922,130 @@ input[type="range"]::-webkit-slider-thumb {
 
 /* ===== REVIEW SCREEN ===== */
 #screen-review {
-  max-width: 800px; margin: 0 auto;
-  padding: calc(56px + 24px) 20px 80px;
+  padding-top: calc(56px + 0px);
+  min-height: 100vh;
 }
+#review-body {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  min-height: calc(100vh - 56px);
+  align-items: start;
+}
+#review-main {
+  padding: 24px 32px 100px;
+  border-right: 1px solid var(--border);
+}
+#review-sidebar {
+  display: flex; flex-direction: column;
+  background: var(--bg2);
+  border-left: 1px solid var(--border);
+  position: sticky;
+  top: 56px;
+  height: calc(100vh - 56px);
+  overflow-y: auto;
+}
+.review-sidebar-top {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+}
+.review-sidebar-title {
+  font-size: 0.72rem; font-weight: 700;
+  color: var(--text3); text-transform: uppercase; letter-spacing: 0.06em;
+  margin-bottom: 10px;
+}
+.review-palette-legend {
+  display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 0;
+}
+.review-palette-section {
+  padding: 16px; flex: 1; overflow-y: auto;
+}
+#review-palette {
+  display: grid; grid-template-columns: repeat(5, 1fr); gap: 5px;
+}
+.rev-palette-num {
+  aspect-ratio: 1;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 6px;
+  font-size: 0.7rem; font-weight: 600;
+  font-family: var(--font-mono);
+  cursor: pointer;
+  background: var(--bg4);
+  border: 1.5px solid var(--border);
+  color: var(--text2);
+  transition: all var(--transition);
+}
+.rev-palette-num:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-glow); }
+.rev-palette-num.rev-correct { background: var(--green-bg); border-color: var(--green); color: var(--green); }
+.rev-palette-num.rev-wrong { background: var(--red-bg); border-color: var(--red); color: var(--red); }
+.rev-palette-num.rev-skipped { background: var(--yellow-bg); border-color: var(--yellow); color: var(--yellow); }
+.rev-palette-num.rev-current {
+  background: var(--accent); border-color: var(--accent); color: white;
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}
+.review-sidebar-stats {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 8px;
+  margin-bottom: 12px;
+}
+.rev-ss-item {
+  background: var(--bg3); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); padding: 8px;
+  text-align: center;
+}
+.rev-ss-val {
+  font-family: var(--font-display);
+  font-size: 1.2rem; font-weight: 800; line-height: 1.2;
+}
+.rev-ss-key { font-size: 0.6rem; color: var(--text3); text-transform: uppercase; letter-spacing: 0.04em; margin-top: 2px; }
 .review-nav {
-  position: fixed; bottom: 0; left: 0; right: 0;
+  position: fixed; bottom: 0; left: 0; right: 280px;
   background: var(--bg2); border-top: 1px solid var(--border);
   padding: 12px 20px;
-  display: flex; gap: 10px; justify-content: center;
-  z-index: 50;
+  display: flex; gap: 8px; justify-content: center; align-items: center;
+  z-index: 50; flex-wrap: nowrap;
+}
+/* Review palette mobile drawer */
+#review-palette-drawer {
+  display: none;
+  position: fixed; inset: 0; z-index: 150;
+  background: rgba(0,0,0,0.6); backdrop-filter: blur(4px);
+}
+#review-palette-drawer.open { display: flex; align-items: flex-end; }
+#review-palette-drawer-inner {
+  background: var(--bg2);
+  border-top: 1px solid var(--border);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  padding: 20px;
+  width: 100%;
+  max-height: 75vh; overflow-y: auto;
+}
+#review-drawer-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 14px;
+}
+#review-drawer-header h3 { font-family: var(--font-display); font-size: 1rem; font-weight: 700; }
+#review-drawer-stats {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px;
+  margin-bottom: 12px;
+}
+#review-drawer-legend { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+#review-drawer-palette { display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; }
+#review-palette-toggle-btn {
+  display: none;
+  padding: 9px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--bg3); color: var(--text2);
+  border: 1.5px solid var(--border);
+  font-size: 0.82rem; font-weight: 600;
+  align-items: center; gap: 6px;
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  #review-body { grid-template-columns: 1fr; }
+  #review-sidebar { display: none; }
+  .review-nav { right: 0; padding: 10px 12px; gap: 6px; }
+  #review-palette-toggle-btn { display: flex !important; }
+  #review-main { padding: 16px 16px 100px; border-right: none; }
 }
 
 /* ===== MODAL ===== */
@@ -1047,7 +1162,6 @@ input[type="range"]::-webkit-slider-thumb {
   #screen-result { padding: calc(56px + 16px) 16px 60px; }
   .result-stats-grid { grid-template-columns: repeat(2, 1fr); }
   .modal-stats { grid-template-columns: 1fr 1fr 1fr; }
-  #screen-review { padding: calc(56px + 16px) 16px 80px; }
   #months-grid { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); }
   #palette-toggle-btn { display: flex !important; }
 }
@@ -1063,6 +1177,8 @@ input[type="range"]::-webkit-slider-thumb {
 @media (max-width: 380px) {
   #quiz-controls { padding: 8px 10px; gap: 5px; }
   #quiz-controls .ctrl-btn { padding: 8px 10px; font-size: 0.75rem; }
+  .review-nav { padding: 8px 8px; gap: 5px; }
+  .review-nav .ctrl-btn { padding: 8px 10px; font-size: 0.75rem; }
 }
 
 /* Palette mobile drawer */
@@ -1590,14 +1706,57 @@ input[type="range"]::-webkit-slider-thumb {
 
 <!-- ===== REVIEW SCREEN ===== -->
 <div id="screen-review" class="screen hidden">
-  <div class="question-card" id="review-card" style="max-width:800px;margin:0 auto 80px"></div>
+  <div id="review-body">
+    <!-- LEFT: question card -->
+    <div id="review-main">
+      <div class="question-card" id="review-card"></div>
+    </div>
+
+    <!-- RIGHT: palette sidebar (desktop) -->
+    <div id="review-sidebar">
+      <div class="review-sidebar-top">
+        <div class="review-sidebar-title">Review Palette</div>
+        <div class="review-sidebar-stats">
+          <div class="rev-ss-item"><div class="rev-ss-val" id="rev-ss-correct" style="color:var(--green)">0</div><div class="rev-ss-key">Correct</div></div>
+          <div class="rev-ss-item"><div class="rev-ss-val" id="rev-ss-wrong" style="color:var(--red)">0</div><div class="rev-ss-key">Wrong</div></div>
+          <div class="rev-ss-item"><div class="rev-ss-val" id="rev-ss-skipped" style="color:var(--yellow)">0</div><div class="rev-ss-key">Skipped</div></div>
+          <div class="rev-ss-item"><div class="rev-ss-val" id="rev-ss-total" style="color:var(--text2)">0</div><div class="rev-ss-key">Total</div></div>
+        </div>
+        <div class="review-palette-legend">
+          <div class="legend-item"><div class="legend-dot" style="background:var(--accent)"></div>Current</div>
+          <div class="legend-item"><div class="legend-dot answered"></div>Correct</div>
+          <div class="legend-item"><div class="legend-dot" style="background:var(--red)"></div>Wrong</div>
+          <div class="legend-item"><div class="legend-dot marked"></div>Skipped</div>
+        </div>
+      </div>
+      <div class="review-palette-section">
+        <div id="review-palette"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom nav bar (stops before sidebar on desktop, full-width on mobile) -->
   <div class="review-nav">
     <button class="ctrl-btn" id="rev-prev" onclick="reviewNavigate(-1)">← Prev</button>
     <span style="font-size:0.85rem;color:var(--text2);padding:0 10px;align-self:center">
       <span id="rev-cur">1</span> / <span id="rev-tot">1</span>
     </span>
     <button class="ctrl-btn primary" id="rev-next" onclick="reviewNavigate(1)">Next →</button>
-    <button class="ctrl-btn" onclick="showScreen('result')" style="margin-left:8px">✕ Close</button>
+    <button id="review-palette-toggle-btn" class="ctrl-btn" onclick="toggleReviewPaletteDrawer()">🗂 Palette</button>
+    <button class="ctrl-btn" onclick="showScreen('result')" style="margin-left:4px">✕ Close</button>
+  </div>
+</div>
+
+<!-- ===== REVIEW PALETTE MOBILE DRAWER ===== -->
+<div id="review-palette-drawer" onclick="closeReviewPaletteDrawer(event)">
+  <div id="review-palette-drawer-inner">
+    <div id="review-drawer-header">
+      <h3>🗂 Review Palette</h3>
+      <button class="close-drawer" onclick="toggleReviewPaletteDrawer()">✕</button>
+    </div>
+    <div id="review-drawer-stats"></div>
+    <div id="review-drawer-legend"></div>
+    <div id="review-drawer-palette"></div>
   </div>
 </div>
 
@@ -3218,6 +3377,8 @@ function renderReviewQuestion() {
       <strong>💡 Explanation</strong>${q.rationale || 'No explanation provided.'}
     </div>
   `;
+
+  renderReviewPalette();
 }
 
 function reviewNavigate(dir) {
@@ -3226,6 +3387,98 @@ function reviewNavigate(dir) {
   if (next >= STATE.reviewQuestions.length) { showScreen('result'); return; }
   STATE.reviewIndex = next;
   renderReviewQuestion();
+}
+
+function renderReviewPalette() {
+  const qs = STATE.reviewQuestions;
+  const answers = STATE.reviewAnswers;
+  const palette = $('review-palette');
+  if (!palette) return;
+
+  let correct = 0, wrong = 0, skipped = 0;
+  qs.forEach((q, idx) => {
+    const user = answers[idx];
+    if (!user) skipped++;
+    else if (user === q.answer) correct++;
+    else wrong++;
+  });
+
+  // Update desktop sidebar stats
+  $('rev-ss-correct').textContent = correct;
+  $('rev-ss-wrong').textContent = wrong;
+  $('rev-ss-skipped').textContent = skipped;
+  $('rev-ss-total').textContent = qs.length;
+
+  // Build palette tiles HTML
+  const tilesHTML = qs.map((q, idx) => {
+    const user = answers[idx];
+    let cls = '';
+    if (idx === STATE.reviewIndex) cls = 'rev-current';
+    else if (!user) cls = 'rev-skipped';
+    else if (user === q.answer) cls = 'rev-correct';
+    else cls = 'rev-wrong';
+    return `<div class="rev-palette-num ${cls}" onclick="reviewJump(${idx})" title="Q${idx+1}">${idx+1}</div>`;
+  }).join('');
+
+  palette.innerHTML = tilesHTML;
+
+  // Also populate mobile drawer palette
+  const drawerPalette = $('review-drawer-palette');
+  if (drawerPalette) {
+    drawerPalette.innerHTML = qs.map((q, idx) => {
+      const user = answers[idx];
+      let cls = '';
+      if (idx === STATE.reviewIndex) cls = 'rev-current';
+      else if (!user) cls = 'rev-skipped';
+      else if (user === q.answer) cls = 'rev-correct';
+      else cls = 'rev-wrong';
+      return `<div class="rev-palette-num ${cls}" onclick="reviewJump(${idx});toggleReviewPaletteDrawer()" title="Q${idx+1}">${idx+1}</div>`;
+    }).join('');
+  }
+
+  // Populate mobile drawer stats
+  const drawerStats = $('review-drawer-stats');
+  if (drawerStats) {
+    drawerStats.innerHTML = `
+      <div class="rev-ss-item"><div class="rev-ss-val" style="color:var(--green)">${correct}</div><div class="rev-ss-key">Correct</div></div>
+      <div class="rev-ss-item"><div class="rev-ss-val" style="color:var(--red)">${wrong}</div><div class="rev-ss-key">Wrong</div></div>
+      <div class="rev-ss-item"><div class="rev-ss-val" style="color:var(--yellow)">${skipped}</div><div class="rev-ss-key">Skipped</div></div>
+      <div class="rev-ss-item"><div class="rev-ss-val" style="color:var(--text2)">${qs.length}</div><div class="rev-ss-key">Total</div></div>
+    `;
+  }
+
+  // Populate mobile drawer legend (once)
+  const drawerLegend = $('review-drawer-legend');
+  if (drawerLegend && !drawerLegend.innerHTML) {
+    drawerLegend.innerHTML = `
+      <div class="legend-item"><div class="legend-dot" style="background:var(--accent)"></div>Current</div>
+      <div class="legend-item"><div class="legend-dot answered"></div>Correct</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--red)"></div>Wrong</div>
+      <div class="legend-item"><div class="legend-dot marked"></div>Skipped</div>
+    `;
+  }
+
+  // Scroll active palette tile into view (desktop)
+  const activeEl = palette.querySelector('.rev-current');
+  if (activeEl) activeEl.scrollIntoView({ block: 'nearest' });
+}
+
+function toggleReviewPaletteDrawer() {
+  $('review-palette-drawer').classList.toggle('open');
+}
+
+function closeReviewPaletteDrawer(e) {
+  if (e.target === $('review-palette-drawer')) {
+    $('review-palette-drawer').classList.remove('open');
+  }
+}
+
+function reviewJump(idx) {
+  STATE.reviewIndex = idx;
+  renderReviewQuestion();
+  // scroll question into view
+  const card = $('review-card');
+  if (card) card.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 // ============================================================
