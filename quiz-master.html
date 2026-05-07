@@ -1044,6 +1044,8 @@ input[type="range"]::-webkit-slider-thumb {
   #review-body { grid-template-columns: 1fr; }
   #review-sidebar { display: none; }
   .review-nav { right: 0; padding: 10px 12px; gap: 6px; }
+  .review-nav .ctrl-btn { padding: 8px 12px; font-size: 0.82rem; }
+  #rev-counter { display: none; }
   #review-palette-toggle-btn { display: flex !important; }
   #review-main { padding: 16px 16px 100px; border-right: none; }
 }
@@ -1738,12 +1740,12 @@ input[type="range"]::-webkit-slider-thumb {
   <!-- Bottom nav bar (stops before sidebar on desktop, full-width on mobile) -->
   <div class="review-nav">
     <button class="ctrl-btn" id="rev-prev" onclick="reviewNavigate(-1)">← Prev</button>
-    <span style="font-size:0.85rem;color:var(--text2);padding:0 10px;align-self:center">
+    <span id="rev-counter" style="font-size:0.85rem;color:var(--text2);padding:0 6px;align-self:center;white-space:nowrap">
       <span id="rev-cur">1</span> / <span id="rev-tot">1</span>
     </span>
     <button class="ctrl-btn primary" id="rev-next" onclick="reviewNavigate(1)">Next →</button>
-    <button id="review-palette-toggle-btn" class="ctrl-btn" onclick="toggleReviewPaletteDrawer()">🗂 Palette</button>
-    <button class="ctrl-btn" onclick="showScreen('result')" style="margin-left:4px">✕ Close</button>
+    <button id="review-palette-toggle-btn" class="ctrl-btn" onclick="toggleReviewPaletteDrawer()" title="Palette" style="padding:9px 12px">🗂</button>
+    <button class="ctrl-btn" onclick="showScreen('result')" title="Close" style="padding:9px 12px">✕</button>
   </div>
 </div>
 
