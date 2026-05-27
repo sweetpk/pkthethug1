@@ -1,0 +1,802 @@
+[
+  {
+    "category": "National Affairs",
+    "sub_category": "Energy Statistics",
+    "question": "Consider the following statements regarding the 'Energy Statistics India 2026' publication by the NSO:\n\n1. It is the 33rd edition of the annual publication released under the Ministry of Statistics and Programme Implementation (MoSPI).\n2. The report highlights India's Renewable Energy (RE) potential at 47,04,043 MegaWatt (MW) as of March 31, 2025.\n3. Over 70% of India's total RE potential is concentrated in only four states: Rajasthan, Gujarat, Maharashtra, and Tamil Nadu.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 2"
+    },
+    "answer": "A",
+    "rationale": "Statement 1 and 2 are correct. Statement 3 is incorrect because over 70% of India's total RE potential is concentrated in six states: Rajasthan (23.70%), Maharashtra (14.26%), Gujarat (9.10%), Andhra Pradesh (9.1%), Karnataka (8.59%), and Madhya Pradesh (8.09%). Tamil Nadu is not listed among the top six in this specific data point. (Page 28)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Small Savings Schemes",
+    "question": "Match the following Small Savings Schemes with their retained interest rates for Q1FY27 (April 1 to June 30, 2026):\n\nColumn I:\n1. Sukanya Samriddhi Yojana (SSY)\n2. Kisan Vikas Patra (KVP)\n3. Post Office Monthly Income Scheme (PO-MIS)\n4. 1-Year Post Office Time Deposits (POTD)\n\nColumn II:\nA. 7.5%\nB. 8.2%\nC. 6.9%\nD. 7.4%\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-A, 3-D, 4-C",
+      "B": "1-B, 2-D, 3-A, 4-C",
+      "C": "1-A, 2-B, 3-C, 4-D",
+      "D": "1-A, 2-D, 3-B, 4-C",
+      "E": "1-B, 2-A, 3-C, 4-D"
+    },
+    "answer": "A",
+    "rationale": "As per the MoF notification for Q1FY27: Sukanya Samriddhi Yojana (SSY) is 8.2%, Kisan Vikas Patra (KVP) is 7.5% (maturity 115 months), PO-MIS is 7.4%, and 1-Year POTD is 6.9%. (Page 36)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "RBI Guidelines",
+    "question": "Which of the following statements is INCORRECT regarding the RBI's revised Capital Market Exposure (CME) framework?",
+    "options": {
+      "A": "The implementation deadline for the revised CME framework has been extended by 3 months to July 01, 2026.",
+      "B": "It introduces a principle-based framework for lending to Capital Market Intermediaries (CMIs).",
+      "C": "Loans against eligible securities are restricted to Rs 1 crore per individual.",
+      "D": "The limit for Initial Public Offering (IPO)-related loans is capped at Rs 50 lakh per individual.",
+      "E": "The framework aims to provide an enabling environment for banks to finance acquisitions by Indian corporates."
+    },
+    "answer": "D",
+    "rationale": "Statement D is incorrect. Under the revised CME framework, the limit for Initial Public Offering (IPO)-related loans, Follow-on-Public Offer (FPOs), and ESOP subscriptions is restricted to Rs 25 lakh (not Rs 50 lakh) per individual. (Page 36)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "State Borrowings",
+    "question": "Arrange the following financial figures related to the RBI's indicative state borrowing plan for Q1 FY27 in descending order:\n\n1. Collective borrowing target for all state governments and UTs.\n2. Borrowing projected under the Benchmark Issuance Strategy (BIS) pilot by 9 states.\n3. Borrowing to be raised through traditional market borrowing methods by remaining states and UTs.\n\nSelect the correct order:",
+    "options": {
+      "A": "1, 2, 3",
+      "B": "1, 3, 2",
+      "C": "2, 1, 3",
+      "D": "3, 2, 1",
+      "E": "2, 3, 1"
+    },
+    "answer": "A",
+    "rationale": "1. Collective target: Rs 2,54,509 crore. 2. BIS pilot borrowing: Rs 1,53,900 crore. 3. Traditional borrowing: Rs 1,00,609 crore. The correct descending order is 1 (Highest), 2, 3 (Lowest). (Page 37)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Electronics Manufacturing",
+    "question": "The Ministry of Electronics and Information Technology (MeitY) approved 29 proposals under the 4th tranche of the Electronics Components Manufacturing Scheme (ECMS). What is the projected direct employment generation from these 29 projects?",
+    "options": {
+      "A": "65,040",
+      "B": "84,515",
+      "C": "14,246",
+      "D": "10,325",
+      "E": "34,800"
+    },
+    "answer": "C",
+    "rationale": "The 29 proposals under the 4th tranche of ECMS have a projected investment of Rs 7,104 crore, projected production of Rs 84,515 crore, and aim to generate 14,246 direct employment opportunities. 65,040 is the cumulative employment from the total 75 approved applications. (Page 28)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Renewable Energy",
+    "question": "Fill in the blanks with the correct data:\n\nThe Ministry of New and Renewable Energy (MNRE) has extended the commissioning deadline for projects under the PM KUSUM scheme to ________. The scheme aims to add ________ MW of solar capacity with central financial assistance of Rs 34,422 crore.",
+    "options": {
+      "A": "March 31, 2028; 47,043",
+      "B": "March 31, 2027; 34,800",
+      "C": "July 31, 2026; 34,800",
+      "D": "March 31, 2027; 84,515",
+      "E": "June 30, 2026; 47,043"
+    },
+    "answer": "B",
+    "rationale": "The commissioning deadline for certain PM KUSUM projects has been extended to March 31, 2027. The overall target of the scheme is to add 34,800 MW of solar capacity. (Page 29)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Airport Rankings",
+    "question": "Arrange the following airports in ascending order of their global ranks (1st to 4th) as per the Skytrax World Airport Awards 2026:\n\n1. Tokyo Haneda International Airport\n2. Hong Kong International Airport\n3. Singapore Changi Airport\n4. Incheon International Airport\n\nSelect the correct answer:",
+    "options": {
+      "A": "3, 4, 1, 2",
+      "B": "3, 1, 4, 2",
+      "C": "4, 3, 1, 2",
+      "D": "3, 4, 2, 1",
+      "E": "1, 2, 3, 4"
+    },
+    "answer": "A",
+    "rationale": "As per the rankings: Rank 1 is Singapore Changi Airport (3). Rank 2 is Incheon International Airport (4). Rank 3 is Tokyo Haneda International Airport (1). Rank 4 is Hong Kong International Airport (2). The correct ascending order of ranks (1st to 4th) is 3, 4, 1, 2. (Page 35)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "E-Governance",
+    "question": "Assertion (A): VP C.P. Radhakrishnan unveiled the 'Nyaya Setu AI Chatbot' and its mascot 'Dishika' during the DISHA programme.\nReason (R): 'Dishika' serves as a friendly digital interface guiding users through complex income tax filing procedures.\n\nSelect the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true as Nyaya Setu and Dishika were unveiled at the DISHA programme for Holistic Access to Justice. Reason (R) is false because 'Dishika' guides users through *legal queries*, not income tax filing. The income tax chatbot is 'Kar Saathi' launched by CBDT. (Page 30, 32)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "Deep-Sea Biodiversity",
+    "question": "Under which section of the Biological Diversity Act, 2002 was the Bhavasagara Referral Centre at CMLRE Kochi officially designated as India's first National Repository for Deep-Sea Fauna?",
+    "options": {
+      "A": "Section 12",
+      "B": "Section 22",
+      "C": "Section 37",
+      "D": "Section 39",
+      "E": "Section 41"
+    },
+    "answer": "D",
+    "rationale": "The recognition was granted under section 39 of the Biological Diversity Act, 2002, designating the Bhavasagara Referral Centre as a key national facility. (Page 30)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Insurance Regulations",
+    "question": "Consider the following statements regarding the IRDAI's mandate for Indian Accounting Standards (Ind AS):\n\n1. IRDAI has mandated insurers to adopt Ind AS effective from April 01, 2026.\n2. A parallel reporting period of 2 years has been approved alongside the existing accounting framework.\n3. A joint expert group on Ind AS was constituted, chaired by Whole Time Member Mr. Rajay Kumar Sinha.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All three statements are completely accurate. IRDAI mandated Ind AS from April 1, 2026, allowed parallel reporting for 2 years, and the expert group is chaired by Rajay Kumar Sinha. (Page 37)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Infrastructure Projects",
+    "question": "Match the development projects inaugurated/dedicated by PM Narendra Modi in Gujarat with their respective locations:\n\nColumn I:\n1. Samrat Samprati Museum\n2. Kaynes Semicon Plant\n3. Commercial semiconductor production commencement\n\nColumn II:\nA. Sanand\nB. Koba Tirth, Gandhinagar\nC. GIDC, Ahmedabad\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-A, 3-C",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-B, 2-C, 3-A",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Samrat Samprati Museum is at Koba Tirth in Gandhinagar. The Kaynes Semicon Plant is at Sanand, Gujarat. Commercial semiconductor production commenced at GIDC, Ahmedabad. (Page 29, 30)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Energy Infrastructure",
+    "question": "The Government of India extended the National Piped Natural Gas (PNG) Drive 2.0 to June 30, 2026. Which of the following accurately reflects the targeted expansion metrics under this initiative?",
+    "options": {
+      "A": "37 additional Geographical Areas (GAs) and 44 districts",
+      "B": "44 additional Geographical Areas (GAs) and 37 districts",
+      "C": "80,000 metered homes across 18 months",
+      "D": "1.20 lakh homes in 37 districts",
+      "E": "15 additional Geographical Areas (GAs) and 20 districts"
+    },
+    "answer": "A",
+    "rationale": "Under the PNG Drive 2.0 initiative, the government aims to extend natural gas pipeline connectivity to 37 additional Geographical Areas (GAs) and 44 districts without PNG network access. (Page 30)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "Biodiversity",
+    "question": "According to the data from the Access and Benefit-Sharing (ABS) Clearing-House regarding the Nagoya Protocol, which of the following statements is INCORRECT?",
+    "options": {
+      "A": "India has emerged as the global leader in issuing Internationally Recognised Certificates of Compliance (IRCCs).",
+      "B": "India has issued 3,561 IRCCs, accounting for more than 56% of all certificates worldwide.",
+      "C": "A total of 142 countries are registered on the ABS Clearing-House.",
+      "D": "All 142 registered countries have actively issued IRCCs under the protocol.",
+      "E": "The total number of globally issued IRCCs stood at 6,311."
+    },
+    "answer": "D",
+    "rationale": "Statement D is incorrect because out of 142 countries registered on the ABS Clearing-House, only 34 countries have issued IRCCs, showing limited global participation. (Page 31)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Education Initiatives",
+    "question": "The Ministry of Education (MoE) in collaboration with CBSE launched a new curriculum on Computational Thinking (CT) and Artificial Intelligence (AI). This curriculum is specifically designed to be implemented for which classes starting from the 2026–27 academic session?",
+    "options": {
+      "A": "Classes 1 to 5",
+      "B": "Classes 6 to 10",
+      "C": "Classes 3 to 8",
+      "D": "Classes 9 to 12",
+      "E": "Classes 5 to 8"
+    },
+    "answer": "C",
+    "rationale": "The new curriculum on Computational Thinking (CT) and Artificial Intelligence (AI) is designed for Classes 3 to 8, implemented from the 2026–27 academic session. (Page 31)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Telecom Sector",
+    "question": "Which Ministry and Department extended the deadline for Over-The-Top (OTT) platforms to implement Subscriber Identity Module (SIM)-binding to 31st December 2026?",
+    "options": {
+      "A": "Ministry of Electronics and Information Technology (MeitY)",
+      "B": "Department of Telecommunications (DoT) under the Ministry of Communications",
+      "C": "Ministry of Information and Broadcasting (MIB)",
+      "D": "Unique Identification Authority of India (UIDAI)",
+      "E": "Capacity Building Commission (CBC)"
+    },
+    "answer": "B",
+    "rationale": "The Department of Telecommunications (DoT), under the Ministry of Communications, extended the deadline for OTT platforms to implement SIM-binding by 31st December 2026. (Page 31)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Industrial Projects",
+    "question": "Bharat Coal Gasification and Chemicals Limited (BCGCL) and Mahanadi Coalfields Limited (MCL) signed a land lease agreement to set up India's first indigenous coal-to-ammonium nitrate project. In which state is this project located?",
+    "options": {
+      "A": "Chhattisgarh",
+      "B": "Jharkhand",
+      "C": "Odisha",
+      "D": "Madhya Pradesh",
+      "E": "Telangana"
+    },
+    "answer": "C",
+    "rationale": "The landmark land lease agreement was signed for setting up India's first indigenous coal-to-ammonium nitrate project at Lakhanpur, Odisha. (Page 31)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Capacity Building",
+    "question": "Consider the following statements regarding the 'Karmayogi Sadhana Saptah 2026':\n\n1. It is a national learning week initiative celebrating the five-year milestone of Mission Karmayogi.\n2. It was organized by the Capacity Building Commission (CBC) from April 2 to 8, 2026.\n3. The programme is built solely on one pillar: Tangible Outcomes for future-ready governance.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the programme is built on three pillars: Technology, Tradition, and Tangible Outcomes. (Page 31, 32)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Taxation",
+    "question": "What is the name of the AI-powered assistant launched by the Central Board of Direct Taxes (CBDT) to simplify the procedure of tax filing under the PRARAMBH 2026 campaign?",
+    "options": {
+      "A": "Nyaya Setu",
+      "B": "Kar Saathi",
+      "C": "Dishika",
+      "D": "Shrutlekh",
+      "E": "SAMPANN"
+    },
+    "answer": "B",
+    "rationale": "The CBDT launched an AI-powered assistant called 'Kar Saathi' to simplify tax filing, available in both Hindi and English, under the PRARAMBH 2026 campaign. (Page 32)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Digital Initiatives",
+    "question": "Assertion (A): UIDAI signed an agreement with MapmyIndia to integrate authorised Aadhaar service centres into the Mappls app.\nReason (R): This initiative will exclusively list Aadhaar Seva Kendras (ASKs) and exclude all other authorised centres to prevent mapping inaccuracies.\n\nSelect the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true. Reason (R) is false because the initiative will include Aadhaar Seva Kendras (ASKs) *along with other authorised Aadhaar centres*, ensuring distinct and accurate listings, rather than excluding them. (Page 32)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "Defence",
+    "sub_category": "Acquisitions",
+    "question": "Israel Weapon Industries (IWI) delivered the first batch of 2,000 NEGEV 7.62×51 Light Machine Guns (LMGs) to India. This delivery was carried out by PLR Systems, which is a joint venture between IWI and which Indian conglomerate?",
+    "options": {
+      "A": "Tata Advanced Systems",
+      "B": "Larsen & Toubro",
+      "C": "Reliance Defence",
+      "D": "Adani Group",
+      "E": "Mahindra Defence"
+    },
+    "answer": "D",
+    "rationale": "The delivery was carried out by PLR Systems, a joint venture (JV) between IWI and the Adani Group, under the 'Make in India' initiative. (Page 32)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "Education",
+    "sub_category": "Institutional Status",
+    "question": "Consider the following statements regarding the NCERT's new status as a 'Deemed to be University':\n\n1. It was declared under a distinct category as per Section 3 of the UGC Act, 1956.\n2. NCERT is now permitted to divert funds and engage in commercial profit-making activities without prior permission.\n3. It can now offer Undergraduate (UG), Postgraduate (PG), and PhD programmes.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 3"
+    },
+    "answer": "C",
+    "rationale": "Statement 1 and 3 are correct. Statement 2 is incorrect because NCERT shall *not* divert assets or funds without prior permission from UGC/Central Govt and must *not* engage in commercial or profit-making activities. (Page 33)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Postal Services",
+    "question": "To mark the Platinum Jubilee (75 years) of the Postal Training Centre (PTC) Saharanpur, a Rs 5 commemorative postage stamp was released. In which year was PTC Saharanpur established?",
+    "options": {
+      "A": "1947",
+      "B": "1951",
+      "C": "1956",
+      "D": "1964",
+      "E": "1972"
+    },
+    "answer": "B",
+    "rationale": "PTC Saharanpur was established on April 2, 1951. The commemorative stamp marks its 75 years of contribution to capacity building. (Page 33)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Tribal Affairs",
+    "question": "Match the following tribal weaves/crafts showcased at the Bharat Tribes Fest 2026 with their respective communities and states:\n\nColumn I:\n1. Eri Silk\n2. Santal Cotton\n3. Changpa Pashmina\n4. Kotpad Cotton\n\nColumn II:\nA. Changpa Community (Ladakh)\nB. Mirgan Community (Odisha)\nC. Bodo Community (Assam)\nD. Santal Community (Jharkhand)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-D, 3-B, 4-A",
+      "B": "1-D, 2-C, 3-A, 4-B",
+      "C": "1-C, 2-D, 3-A, 4-B",
+      "D": "1-A, 2-B, 3-C, 4-D",
+      "E": "1-B, 2-A, 3-D, 4-C"
+    },
+    "answer": "C",
+    "rationale": "Eri Silk belongs to Bodo Community (Assam). Santal Cotton is from Santal Community (Jharkhand). Changpa Pashmina is from Changpa Community (Ladakh). Kotpad Cotton is from Mirgan Community (Odisha). (Page 11)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Media Regulations",
+    "question": "Which of the following is an INCORRECT provision under the new 'Television (TV) Rating Policy (TRP 2026)' notified by the MIB?",
+    "options": {
+      "A": "Viewership arising out of landing pages will be excluded from viewership measurement.",
+      "B": "The minimum net worth requirement for registering as a TV rating agency has been increased from Rs 5 crore to Rs 20 crore.",
+      "C": "Rating agencies must scale up operations to 80,000 metered homes within 18 months.",
+      "D": "There is a long-term goal of reaching 1.20 lakh metered homes.",
+      "E": "It replaces the existing 2014 guidelines governing audience measurement in India."
+    },
+    "answer": "B",
+    "rationale": "Statement B is incorrect. The minimum net worth requirement was actually *eased* (reduced) from existing Rs 20 crore to Rs 5 crore. (Page 34)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Capacity Building",
+    "question": "Union MoS Dr. Jitendra Singh launched the first-ever 'Administrative Capacity Building Programme for Scientists & Academicians'. During this launch, which portal was revamped to bolster institutional capacity-building ecosystems?",
+    "options": {
+      "A": "iGOT Karmayogi",
+      "B": "UNNATI Portal",
+      "C": "SAMPANN Platform",
+      "D": "BHASHINI Portal",
+      "E": "Nyaya Setu"
+    },
+    "answer": "B",
+    "rationale": "During the special session of 'SADHANA Saptah', the revamped Unified New-Age National Training Institutions (UNNATI) portal was unveiled. (Page 34)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Bilateral Relations",
+    "question": "Russia's First Deputy Prime Minister Denis Manturov visited India to co-chair a key institutional mechanism to review strategic economic ties between the two countries. Identify the mechanism.",
+    "options": {
+      "A": "India-Russia Strategic Economic Dialogue (IRSED)",
+      "B": "India-Russia Inter-Governmental Commission on Trade, Economic, Scientific, Technological and Cultural Cooperation (IRIGC-TEC)",
+      "C": "Bilateral Trade and Investment Framework Agreement (TIFA)",
+      "D": "Joint Working Group on Defence and Economy (JWG-DE)",
+      "E": "India-Eurasia Economic Corridor Commission (IEECC)"
+    },
+    "answer": "B",
+    "rationale": "Denis Manturov co-chaired the India-Russia Inter-Governmental Commission on Trade, Economic, Scientific, Technological and Cultural Cooperation (IRIGC-TEC) with Union Minister Dr. S. Jaishankar. (Page 34)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Innovation Initiatives",
+    "question": "Which of the following bodies launched the 'ATL Sarthi' and 'Mentor India Academy' initiatives at Vardhaman College of Engineering in Telangana?",
+    "options": {
+      "A": "Capacity Building Commission (CBC)",
+      "B": "National Informatics Centre (NIC)",
+      "C": "NITI Aayog's Atal Innovation Mission (AIM)",
+      "D": "Ministry of Science and Technology (MoS&T)",
+      "E": "Council of Scientific and Industrial Research (CSIR)"
+    },
+    "answer": "C",
+    "rationale": "NITI Aayog's Atal Innovation Mission (AIM) launched the ATL Sarthi and Mentor India Academy to nurture innovation from the school-level. (Page 34)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "WTO Conference",
+    "question": "Consider the following statements regarding the WTO's 14th Ministerial Conference (MC14):\n\n1. It was held from March 26 to 30, 2026 in Yaoundé, Cameroon.\n2. The conference resulted in a full final agreement resolving all fisheries subsidies.\n3. A \"Yaoundé Package\" was developed to serve as a basis for finalization in Geneva, Switzerland.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "C",
+    "rationale": "Statement 1 and 3 are correct. Statement 2 is incorrect because while a full final agreement was *not* reached, the 'Yaoundé Package' was developed to finalize negotiations later in Geneva. (Page 35)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Environmental Conservation",
+    "question": "Fill in the blanks regarding the CMS COP15:\n\nThe 15th Meeting of the Conference of the Parties (COP15) to the Convention on the Conservation of Migratory Species of Wild Animals (CMS) concluded in ________. During the conference, a total of ________ species, subspecies, and populations were newly included or reclassified for protection.",
+    "options": {
+      "A": "Geneva, Switzerland; 24",
+      "B": "Yaoundé, Cameroon; 34",
+      "C": "Campo Grande, Brazil; 40",
+      "D": "New Delhi, India; 49",
+      "E": "London, UK; 40"
+    },
+    "answer": "C",
+    "rationale": "The CMS COP15 was held in Campo Grande, Brazil, where 40 new species/subspecies/populations were accorded protection under Appendices I and II. (Page 35)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Insurance Regulations",
+    "question": "Arrange the following actions taken by the Insurance Regulatory and Development Authority of India (IRDAI) chronologically as per the latest notifications:\n\n1. Mandating Ind AS adoption for insurers effective from April 01, 2026.\n2. Permitting a parallel reporting period covering financial statements prepared under Ind AS alongside existing accounting framework.\n3. Designating LIC, GIC Re, and NIACL as Domestic-Systemically Important Insurers (D-SIIs) for FY26.\n\nWait, these are from the same period. Instead, which of the following insurers was NOT designated as a D-SII for FY26 by IRDAI?",
+    "options": {
+      "A": "Life Insurance Corporation of India (LIC)",
+      "B": "The New India Assurance Company Limited (NIACL)",
+      "C": "General Insurance Corporation of India (GIC Re)",
+      "D": "United India Insurance Company",
+      "E": "None of the above; all were designated as D-SIIs."
+    },
+    "answer": "D",
+    "rationale": "IRDAI designated LIC, NIACL, and GIC Re as D-SIIs for FY26. United India Insurance Company is not among the designated D-SIIs. (Page 37)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "RBI Data",
+    "question": "According to RBI data released in April 2026, the share of Current Account and Savings Account (CASA) deposits in total bank deposits declined to a 2-year low in the December 2025 quarter. What was this percentage?",
+    "options": {
+      "A": "40.1%",
+      "B": "28.9%",
+      "C": "37.9%",
+      "D": "10.0%",
+      "E": "17.0%"
+    },
+    "answer": "C",
+    "rationale": "The CASA ratio fell to a 2-year low of 37.9% in the December 2025 quarter, compared to 40.1% in December 2023. Savings accounts specifically fell to 28.9%. (Page 38)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Aviation",
+    "question": "Assertion (A): Air India signed a codeshare agreement with Uzbekistan Airways to expand connectivity between India and Central Asia.\nReason (R): Under the interline arrangement, passengers cannot travel beyond Tashkent to other Uzbek cities using a single network.\n\nSelect the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true as Air India did sign a codeshare with Uzbekistan Airways. Reason (R) is false because the interline arrangement specifically *enables* passengers to travel to Tashkent and connect further to cities like Samarkand, Qarshi, Nukus, etc. (Page 38)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Financial Markets",
+    "question": "The National Stock Exchange of India (NSE) announced a strategic collaboration to launch India's first exchange-traded natural gas derivatives. Which entity did NSE partner with for this initiative?",
+    "options": {
+      "A": "Multi Commodity Exchange of India (MCX)",
+      "B": "Gas Authority of India Limited (GAIL)",
+      "C": "Indian Energy Exchange (IEX)",
+      "D": "Indian Gas Exchange Limited (IGX)",
+      "E": "Petroleum and Natural Gas Regulatory Board (PNGRB)"
+    },
+    "answer": "D",
+    "rationale": "NSE partnered with Indian Gas Exchange Limited (IGX), India's first automated national-level gas trading platform, to launch domestic benchmark natural gas derivatives. (Page 38)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "GDP Forecast",
+    "question": "Consider the following statements regarding the 'Credit Opinion Report on India' released by Moody's Ratings in April 2026:\n\n1. Moody's lowered India's GDP growth forecast for FY27 by 80 basis points to 6%.\n2. The GDP growth in Calendar Year 2025 (CY25) remained strong at 7.5%.\n3. Inflation is projected to average at 6.8% in FY27.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statement 1 and 2 are correct. Statement 3 is incorrect because inflation is projected to average at 4.8% in FY27, whereas 6.8% was the earlier estimate for the GDP forecast before the downgrade to 6%. (Page 38)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Sports Awards",
+    "question": "Match the winners of the Asian Squash Federation (ASF) Performance Awards 2025 with their respective categories:\n\nColumn I:\n1. Anahat Singh\n2. Abhay Singh\n3. Satomi Watanabe\n4. Wa-sern Low\n\nColumn II:\nA. DATO ALEX LEE Award – Men\nB. DATO ALEX LEE Award – Women\nC. HASSAN MUSA Award – Men's U19\nD. HASSAN MUSA Award – Women's U19\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-D, 2-A, 3-B, 4-C",
+      "B": "1-C, 2-A, 3-D, 4-B",
+      "C": "1-D, 2-B, 3-A, 4-C",
+      "D": "1-A, 2-D, 3-B, 4-C",
+      "E": "1-B, 2-A, 3-C, 4-D"
+    },
+    "answer": "A",
+    "rationale": "Anahat Singh won the HASSAN MUSA Award (Women's U19). Abhay Singh won the DATO ALEX LEE Award (Men). Satomi Watanabe won the DATO ALEX LEE Award (Women). Wa-sern Low won the HASSAN MUSA Award (Men's U19). (Page 39)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Panchayat Awards",
+    "question": "In the DDUPSVP & NDPSVP 2025 Awards, three Panchayats from Tripura secured top honours. Which of the following is NOT correctly matched regarding these awards?",
+    "options": {
+      "A": "Sepahijala District Panchayat - 1st rank in Best DP category",
+      "B": "Kanchanbari Gram Panchayat - 1st rank in Healthy Panchayat category",
+      "C": "Baikunthapur Gram Panchayat - 3rd rank in Women-Friendly Panchayat category",
+      "D": "Gomati District Panchayat - 1st rank in Child-Friendly Panchayat category",
+      "E": "All the above are correctly matched"
+    },
+    "answer": "D",
+    "rationale": "Options A, B, and C are correctly matched based on the PDF. Option D is entirely fabricated and not mentioned in the awards list for Tripura. (Page 39)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "Military",
+    "question": "Arrange the following Indian Army officers in the correct order of the commands they assumed (Vice Chief of Army Staff, Western Command, Eastern Command respectively):\n\n1. Lt Gen V.M.B. Krishnan\n2. Lt Gen Pushpendra Pal Singh\n3. Lt Gen Dhiraj Seth\n\nSelect the correct option:",
+    "options": {
+      "A": "3, 2, 1",
+      "B": "3, 1, 2",
+      "C": "1, 2, 3",
+      "D": "2, 3, 1",
+      "E": "2, 1, 3"
+    },
+    "answer": "A",
+    "rationale": "Lt Gen Dhiraj Seth assumed charge as VCOAS (3). Lt Gen Pushpendra Pal Singh assumed command of Western Command (2). Lt Gen V.M.B. Krishnan took over Eastern Command (1). Thus, the correct sequence matching VCOAS, Western, Eastern is 3, 2, 1. (Page 40)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "World Leaders",
+    "question": "Senior General Min Aung Hlaing was elected as the 11th President of Myanmar by the Pyidaungsu Hluttaw. Who among the following were elected as the Vice-Presidents of Myanmar?",
+    "options": {
+      "A": "Uchral Nyam-Osor and Faiz Ahmed Kidwai",
+      "B": "Nan Ni Ni Aye and U Nyo Saw",
+      "C": "Pieter Elbers and William Walsh",
+      "D": "Chandrikapersad Santokhi and Luc Magloire Mbarga",
+      "E": "Nan Ni Ni Aye and Aung San Suu Kyi"
+    },
+    "answer": "B",
+    "rationale": "Nan Ni Ni Aye and U Nyo Saw were elected as Vice-Presidents of Myanmar. (Page 40)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Defence Ships",
+    "question": "Match the frontline platforms delivered to the Indian Navy/Coast Guard with their respective shipbuilders:\n\nColumn I:\n1. 'Dunagiri' (guided missile frigate)\n2. 'Shachi' (Next Generation Offshore Patrol Vessel)\n3. 'Malwan' (ASW shallow water craft)\n4. 'Achal' (Indian Coast Guard Ship)\n\nColumn II:\nA. Garden Reach Shipbuilders and Engineers Ltd (GRSE)\nB. Goa Shipyard Limited (GSL)\nC. Cochin Shipyard Ltd (CSL)\n\nSelect the correct matching code:",
+    "options": {
+      "A": "1-A, 2-B, 3-C, 4-B",
+      "B": "1-B, 2-A, 3-C, 4-A",
+      "C": "1-C, 2-A, 3-B, 4-A",
+      "D": "1-A, 2-C, 3-B, 4-C",
+      "E": "1-A, 2-B, 3-A, 4-C"
+    },
+    "answer": "A",
+    "rationale": "GRSE delivered Dunagiri, Sanshodhak, and Agray (1 is A). GSL launched INS Shachi and delivered ICGS Achal (2 is B, 4 is B). CSL delivered ASW-SWC Malwan (3 is C). (Page 41, 42)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space Missions",
+    "question": "Consider the following statements about NASA's Artemis II mission:\n\n1. It is the first crewed test flight to the Moon's vicinity using the Space Launch System (SLS) rocket and Orion crew capsule.\n2. It marks the first human journey beyond low Earth orbit since Apollo 17 in 1972.\n3. The four-member crew includes astronauts exclusively from the United States of America (USA).\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statement 1 and 2 are correct. Statement 3 is incorrect because the crew includes Jeremy Hansen, a Mission Specialist from Canada (Canadian Space Agency), making it an international crew, not exclusively from the USA. (Page 42)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Naval Additions",
+    "question": "Union Minister Rajnath Singh formally commissioned the advanced stealth frigate 'INS Taragiri' into the Indian Navy at Visakhapatnam. Under which project was INS Taragiri built, and by which shipbuilder?",
+    "options": {
+      "A": "Project 75I; Larsen & Toubro",
+      "B": "Project 17A; Mazagon Dock Shipbuilders Limited (MDL)",
+      "C": "Project 15B; Garden Reach Shipbuilders and Engineers Ltd (GRSE)",
+      "D": "Project 17A; Cochin Shipyard Ltd (CSL)",
+      "E": "Project 71; Goa Shipyard Limited (GSL)"
+    },
+    "answer": "B",
+    "rationale": "INS Taragiri is the fourth stealth frigate under Project 17A, built by Mazagon Dock Shipbuilders Limited (MDL). (Page 42)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space Infrastructure",
+    "question": "In April 2026, NewSpace India Limited (NSIL) signed a Memorandum of Understanding (MoU) with aerospace company Dhruva Space Private Limited. What is the primary purpose of this collaboration?",
+    "options": {
+      "A": "Design and supply of lunar rovers",
+      "B": "Development of low-cost launch vehicles",
+      "C": "Manufacture, testing, and supply of solar panels for global satellite manufacturers",
+      "D": "Setting up an AI-based ground control station",
+      "E": "Creation of astronaut suits for the Gaganyaan mission"
+    },
+    "answer": "C",
+    "rationale": "The MoU between NSIL and Dhruva Space Private Limited is to forge a collaboration in the design, manufacture, testing, and supply of solar panels for global satellite manufacturers. (Page 42)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space Safety Tests",
+    "question": "Consider the following statements regarding ISRO's 'Mission MITRA':\n\n1. It stands for Mapping of Interoperable Traits & Reliability Assessment.\n2. It is a high-altitude analogue mission conducted in Leh, Ladakh at an altitude of 3,500 metres.\n3. The initiative aims to simulate space-like conditions to study team behavior and resilience for India's Gaganyaan crew.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 3"
+    },
+    "answer": "D",
+    "rationale": "All three statements are completely factual and correct. It was conducted by ISRO's HSFC in collaboration with Protoplanet Pvt Ltd. (Page 42, 43)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Khelo India Tribal Games",
+    "question": "Arrange the following states in descending order based on the total number of Gold medals won at the inaugural Khelo India Tribal Games 2026:\n\n1. Jharkhand\n2. Karnataka\n3. Odisha\n4. Maharashtra\n\nSelect the correct order:",
+    "options": {
+      "A": "3, 2, 1, 4",
+      "B": "2, 3, 1, 4",
+      "C": "2, 1, 3, 4",
+      "D": "3, 1, 2, 4",
+      "E": "4, 1, 3, 2"
+    },
+    "answer": "B",
+    "rationale": "The gold medals won are: Karnataka (23), Odisha (21), Jharkhand (16), Maharashtra (6). The correct descending order is 2, 3, 1, 4. (Page 43)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Cricket Retirements",
+    "question": "South African top-order batter Rassie van der Dussen announced his retirement from international cricket in April 2026. Which of the following statements about him is INCORRECT?",
+    "options": {
+      "A": "He is 37 years old.",
+      "B": "He holds the second-highest ODI average for South Africa after AB de Villiers.",
+      "C": "He was among the leading run-scorers in the 2019 and 2023 ODI World Cups.",
+      "D": "He will no longer play domestic cricket for the Lions.",
+      "E": "He was named in the ICC Men's ODI Team of the Year in 2021."
+    },
+    "answer": "D",
+    "rationale": "Statement D is incorrect because the text specifically mentions that he \"will continue to play for the Lions and mentor young players.\" (Page 23, 43)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "Books & Authors",
+    "sub_category": "Political History",
+    "question": "Fill in the blanks regarding recent book releases:\n\nThe book 'Tides of Time: Bharat's History through Murals in Parliament' is authored by ________ and was released by ________.",
+    "options": {
+      "A": "R.K. Raghavan; Droupadi Murmu",
+      "B": "Sudha Murty; C.P. Radhakrishnan",
+      "C": "Nandini Azad; R.T. Chari",
+      "D": "Sudha Murty; Narendra Modi",
+      "E": "C.P. Radhakrishnan; Sudha Murty"
+    },
+    "answer": "B",
+    "rationale": "The book 'Tides of Time' is authored by Sudha Murty and was released by the Vice President of India, C.P. Radhakrishnan. (Page 44)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Autism Awareness",
+    "question": "Consider the following statements regarding the World Autism Awareness Day (WAAD) 2026:\n\n1. It is observed annually on April 2.\n2. The 2026 Theme is \"Autism and Humanity – Every Life Has Value.\"\n3. The ribbon symbol adopted for Autism Awareness features a puzzle pattern with bright colours such as red, yellow, and blue.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. It is observed on April 2, the theme is \"Autism and Humanity - Every Life Has Value\", and the symbol is the puzzle ribbon featuring bright colors. (Page 44)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "April Observances",
+    "question": "Match the following important days observed in April 2026 with their respective themes/purposes:\n\nColumn I:\n1. International Children's Book Day\n2. International Day of Conscience\n3. International Day for Mine Awareness\n4. International Day of Sport for Development and Peace\n\nColumn II:\nA. \"Acting with Ethics, Empathy, and Integrity\"\nB. \"Plant stories and the world will bloom\"\nC. \"Sport: Building Bridges, Breaking Barriers\"\nD. \"Invest in Peace; Invest in Mine Action\"\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-A, 3-D, 4-C",
+      "B": "1-A, 2-B, 3-C, 4-D",
+      "C": "1-B, 2-D, 3-A, 4-C",
+      "D": "1-C, 2-A, 3-B, 4-D",
+      "E": "1-B, 2-C, 3-D, 4-A"
+    },
+    "answer": "A",
+    "rationale": "Children's Book Day theme is 'Plant stories and the world will bloom'. Conscience Day is 'Acting with Ethics, Empathy, and Integrity'. Mine Awareness is 'Invest in Peace; Invest in Mine Action'. Sport for Development and Peace is 'Sport: Building Bridges, Breaking Barriers'. (Page 45, 46)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Welfare Schemes",
+    "question": "The Government of Andhra Pradesh launched a free electricity scheme targeting specific communities. What is the annual outlay for this scheme, and who are the primary beneficiaries?",
+    "options": {
+      "A": "Rs 100 crore; Marginal farmers",
+      "B": "Rs 150 crore; Handloom and powerloom weavers",
+      "C": "Rs 200 crore; Scheduled Caste (SC) women",
+      "D": "Rs 150 crore; Small-scale MSME owners",
+      "E": "Rs 50 crore; Fishermen"
+    },
+    "answer": "B",
+    "rationale": "AP CM N. Chandrababu Naidu launched a free electricity scheme for handloom and power loom weavers across the state with an annual outlay of Rs 150 crore. (Page 46)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Digital Connectivity",
+    "question": "Fill in the blank:\n\nThe Government of Meghalaya signed a Letter of Intent (LoI) with Starlink India to boost internet connectivity. Meghalaya thereby became the ________ Indian state to collaborate with Elon Musk's satellite internet venture.",
+    "options": {
+      "A": "1st",
+      "B": "2nd",
+      "C": "3rd",
+      "D": "4th",
+      "E": "5th"
+    },
+    "answer": "C",
+    "rationale": "Meghalaya became the 3rd Indian state after Maharashtra and Gujarat to collaborate with Starlink. (Page 46)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 1st Week"
+  }
+]

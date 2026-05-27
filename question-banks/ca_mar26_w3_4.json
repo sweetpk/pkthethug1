@@ -1,0 +1,786 @@
+[
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Minimum Public Shareholding (MPS)",
+    "question": "Consider the following statements regarding the Department of Economic Affairs' (DEA) revised rules for Minimum Public Shareholding (MPS) for large companies:\n\n1. The rules were revised under the Securities Contracts (Regulation) Rules, 1957.\n2. The amendment introduced a graded framework allowing companies to offer a smaller proportion of shares at the time of their Initial Public Offering (IPO).\n3. The MPS required at the time of listing has been increased from 2.5% to 5% to ensure higher retail participation.\n\nWhich of the statements given above is/are CORRECT?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "2 only"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct as per page 45 of the PDF. Statement 3 is incorrect because the amendment 'reduces' the MPS required at the time of listing from 5% to 2.5%, not increases it.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "20th Electric Power Survey",
+    "question": "Based on the Central Electricity Authority's (CEA) 'National Generation Adequacy Plan (2026-27 to 2035-36)', arrange the following energy sources in descending order of their projected percentage share in the Energy Mix by 2035-36:\n\n1. Wind\n2. Solar Photovoltaic (PV)\n3. Hydropower\n4. Coal\n\nSelect the correct answer using the codes given below:",
+    "options": {
+      "A": "2, 4, 1, 3",
+      "B": "4, 2, 1, 3",
+      "C": "2, 1, 4, 3",
+      "D": "4, 2, 3, 1",
+      "E": "2, 4, 3, 1"
+    },
+    "answer": "A",
+    "rationale": "According to page 42 of the PDF, the projected Energy Mix shares are: Solar PV (45%), Coal (28%), Wind (14%), and Hydropower (7%). Therefore, the descending order is Solar PV (2), Coal (4), Wind (1), Hydropower (3), which is 2, 4, 1, 3.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "DCM Shriram IFC Funding",
+    "question": "In March 2026, DCM Shriram Limited secured funding from the International Finance Corporation (IFC). Fill in the blanks appropriately:\n\nDCM Shriram secured ________ from IFC, the private sector arm of the World Bank Group, via sustainability-linked ________.",
+    "options": {
+      "A": "USD 50 million ; Foreign Currency Convertible Bonds (FCCBs)",
+      "B": "USD 90 million ; Non-Convertible Debentures (NCDs)",
+      "C": "USD 150 million ; Green Bonds",
+      "D": "USD 90 million ; External Commercial Borrowings (ECBs)",
+      "E": "USD 300 million ; Sovereign Gold Bonds (SGBs)"
+    },
+    "answer": "B",
+    "rationale": "As explicitly stated on page 45 of the PDF, DCM Shriram Limited secured 'USD 90 million' from IFC via sustainability-linked 'Non-Convertible Debentures (NCDs)'.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Gujarat Sounding Rocket",
+    "question": "Gujarat achieved a major milestone in the space sector with the successful launch of its first sounding rocket. Which of the following details correctly identifies the developer and the payload of this rocket?",
+    "options": {
+      "A": "Agnikul Cosmos ; Communication Nano-satellite",
+      "B": "Skyroot Aerospace ; Earth Observation Micro-satellite",
+      "C": "Omspace Rocket and Exploration Pvt Ltd ; Weather mini-satellite",
+      "D": "Dhruva Space ; Climate Monitoring payload",
+      "E": "Bellatrix Aerospace ; Solar observation sensor"
+    },
+    "answer": "C",
+    "rationale": "According to the infographic on page 26 of the PDF, the developer is 'Omspace Rocket and Exploration Pvt Ltd' and the payload is a 'Weather mini-satellite'.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "March 14 Observances",
+    "question": "Consider the following statements regarding the observances that fell on March 14, 2026:\n\n1. The 7th International Day of Mathematics (IDM) commemorates the birth anniversary of Albert Einstein and is also known as Pi Day.\n2. The 29th International Day of Action for Rivers highlighted that the Nile is the world's longest river at 6,650 km.\n3. The IDM was organized by UNESCO's International Basic Sciences Programme (IBSP) and the International Mathematical Union (IMU).\n\nWhich of the combinations of statements given above is/are CORRECT?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "3 only"
+    },
+    "answer": "D",
+    "rationale": "All three statements are correct. Page 30 notes IDM is celebrated as Pi Day, marks Einstein's birth anniversary, and is organized by UNESCO's IBSP and the IMU. Page 30 also notes the Day of Action for Rivers highlights the Nile as the longest river (6,650 km).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Himachal Pradesh Dairy MoUs",
+    "question": "Match the following infrastructure projects with their designated locations under the MoUs signed between the Himachal Pradesh Government and NDDB:\n\nColumn I (Project Type):\n1. Kangra Milk Union formation + new dairy facilities\n2. 2 Plants\n3. 2 Chilling centres\n4. Mega plant (1.5-3 lakh litres per day)\n\nColumn II (Location):\nA. Nahan, Nalagarh\nB. Dhagwar\nC. Jalari, Jhalera\nD. Kangra\n\nSelect the correct answer using the codes given below:",
+    "options": {
+      "A": "1-D, 2-A, 3-C, 4-B",
+      "B": "1-C, 2-A, 3-D, 4-B",
+      "C": "1-A, 2-D, 3-C, 4-B",
+      "D": "1-D, 2-C, 3-A, 4-B",
+      "E": "1-B, 2-A, 3-C, 4-D"
+    },
+    "answer": "A",
+    "rationale": "Based on page 34: Kangra Milk Union formation corresponds to Kangra (implicitly from the name, 1-D). The 2 plants are at Nahan, Nalagarh (2-A). The 2 chilling centres are at Jalari, Jhalera (3-C). The mega plant is at Dhagwar (4-B).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "World Para Athletics Grand Prix 2026",
+    "question": "At the World Para Athletics Grand Prix (WPAGP) 2026 – New Delhi leg, arrange the following countries in descending order based strictly on the number of SILVER medals won:\n\n1. Bosnia & Herzegovina\n2. Russia\n3. India\n4. Egypt\n\nSelect the correct answer using the codes given below:",
+    "options": {
+      "A": "3, 2, 1, 4",
+      "B": "3, 1, 2, 4",
+      "C": "2, 3, 1, 4",
+      "D": "3, 2, 4, 1",
+      "E": "2, 3, 4, 1"
+    },
+    "answer": "A",
+    "rationale": "According to the Medal Tally on page 28 (and 52): India won 69 silver medals (3). Russia won 14 silver medals (2). Bosnia & Herzegovina won 2 silver medals (1). Egypt won 1 silver medal (4). Thus, the descending order is 3, 2, 1, 4.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "National Quantum Mission Hubs",
+    "question": "The Government of India approved the establishment of quantum teaching laboratories in 23 institutions. Which of the following Thematic Hubs (T-Hubs) is MISMATCHED with its designated nodal agency/institution?",
+    "options": {
+      "A": "Quantum Computing — IISc Bengaluru",
+      "B": "Quantum Communication — IIT Madras",
+      "C": "Quantum Sensing & Metrology — IIT Bombay",
+      "D": "Quantum Materials & Devices — IIT Kanpur",
+      "E": "All of the above are correctly matched"
+    },
+    "answer": "D",
+    "rationale": "Option D is mismatched. According to page 8 of the PDF, the 'Quantum Materials & Devices' hub is located at 'IIT Delhi', not IIT Kanpur. All other hubs are correctly matched.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "World Happiness Report 2026",
+    "question": "Assertion (A): In the World Happiness Report 2026, Finland secured the 1st place for the ninth year in a row.\n\nReason (R): The report highlighted that India improved its standing significantly, securing the 116th rank globally.\n\nSelect the most appropriate answer from the options given below:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Assertion (A) is true as Finland secured 1st place for the 9th year (page 54). Reason (R) is also true as India ranked 116th (page 32 & 54). However, R is NOT the correct explanation of A, as India's rank does not explain why Finland ranked first.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "NIRYAT Data FY25",
+    "question": "Consider the following statements regarding the NIRYAT Data for FY25 released by DPIIT:\n\n1. Tamil Nadu emerged as India's top state in textile exports, registering USD 7,997.17 million.\n2. Gujarat ranked second with an export value of USD 5,646.01 million.\n3. Maharashtra ranked third, contributing USD 3,831.28 million to textile exports.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "D",
+    "rationale": "All three statements correctly represent the exact figures and rankings for textile exports provided in the NIRYAT data table on page 13 of the PDF.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Chandigarh University AI CoE",
+    "question": "Chandigarh University (CU) in Uttar Pradesh launched a Centre of Excellence (CoE) in Smart Healthcare. As part of its associated initiatives, a massive AI Ethics Training Programme was launched with the goal of training how many youth over a span of 5 years?",
+    "options": {
+      "A": "50,000 youth",
+      "B": "1 lakh youth",
+      "C": "1.5 lakh youth",
+      "D": "2.5 lakh youth",
+      "E": "5 lakh youth"
+    },
+    "answer": "C",
+    "rationale": "According to the 'Highlights' section on page 35, the AI Ethics Training Programme with upGrad aims to train '1.5 lakh youth in 5 years'.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "World Oral Health Day",
+    "question": "Assertion (A): World Oral Health Day (WOHD) is currently observed annually on 20 March to raise awareness about oral health.\n\nReason (R): The observance was initially declared in 2007 and observed on 12 September to mark the birth anniversary of FDI founder Dr. Charles Godon.\n\nSelect the most appropriate answer from the options given below:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both Assertion (A) and Reason (R) are factually true based on pages 33 and 55. However, Dr. Charles Godon's birth anniversary on September 12 (Reason) explains why it was *originally* observed on that date, but it does NOT explain why the date was shifted to 20 March (Assertion). Therefore, R is not the correct explanation of A.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "NIPL UPI Expansion",
+    "question": "NPCI International Payments Limited (NIPL) expanded the acceptance of India's UPI across merchant establishments in Sri Lanka. According to the document, in which of the following countries is UPI NOT currently listed as operational?",
+    "options": {
+      "A": "United Arab Emirates (UAE)",
+      "B": "Mauritius",
+      "C": "France",
+      "D": "Maldives",
+      "E": "Qatar"
+    },
+    "answer": "D",
+    "rationale": "According to pages 19 and 46 of the PDF, UPI is operational in 'UAE, Singapore, Bhutan, Nepal, Sri Lanka, France, Mauritius, Qatar'. The Maldives is not included in this list.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "NBSL Brand Ambassador",
+    "question": "Assertion (A): NPCI BHIM Services Limited (NBSL) appointed Mahendra Singh Dhoni as the brand ambassador for the BHIM Payments App.\n\nReason (R): The BHIM Payments app was developed under NPCI and originally launched in 2016 on the UPI platform.\n\nSelect the most appropriate answer from the options given below:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both Assertion (A) and Reason (R) are factually correct statements extracted from pages 26 and 50. However, the launch date and developer of the app (R) is historical context and does not logically explain *why* MS Dhoni was chosen as the brand ambassador (A).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Sahitya Akademi Awards 2025 Details",
+    "question": "The 2025 Sahitya Akademi Awards recognized literary excellence in 24 Indian languages. Match the genre with the exact number of books awarded in that category for 2025:\n\nColumn I (Genre):\n1. Poetry\n2. Short Stories\n3. Novels\n4. Essays / Memoirs\n\nColumn II (Number of Books):\nA. 4\nB. 8\nC. 2\nD. 6\n\nSelect the correct answer using the codes given below:",
+    "options": {
+      "A": "1-B, 2-D, 3-A, 4-C",
+      "B": "1-D, 2-B, 3-A, 4-C",
+      "C": "1-B, 2-A, 3-D, 4-C",
+      "D": "1-A, 2-D, 3-C, 4-B",
+      "E": "1-C, 2-B, 3-A, 4-D"
+    },
+    "answer": "A",
+    "rationale": "Based on page 49 of the PDF: 8 books of Poetry (1-B), 6 Short Stories (2-D), 4 Novels (3-A), 2 Essays and 2 Memoirs (4-C).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "National Dental Commission",
+    "question": "Consider the following statements regarding the structure of the newly constituted National Dental Commission (NDC):\n\n1. It comprises three autonomous boards.\n2. The UG & PG Dental Education Board is one of the autonomous boards, with Dr. Chandrashekhar Janakiram as its President.\n3. The Dental Assessment & Rating Board is headed by Nanda Kishore Sahoo as President.\n4. The Ethics & Dental Registration Board functions directly under the Ministry of Corporate Affairs (MoCA).\n\nWhich of the combinations of statements given above is/are CORRECT?",
+    "options": {
+      "A": "1, 2, and 3 only",
+      "B": "2, 3, and 4 only",
+      "C": "1, 3, and 4 only",
+      "D": "1 and 2 only",
+      "E": "All 1, 2, 3, and 4"
+    },
+    "answer": "A",
+    "rationale": "Statements 1, 2, and 3 are correct as per page 14 of the PDF. Statement 4 is incorrect because the Ethics & Dental Registration Board is one of the three autonomous boards under the NDC, which operates under the Ministry of Health and Family Welfare (MoHFW), not MoCA.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Environment Audit Rules (EAR)",
+    "question": "Assertion (A): The National Productivity Council (NPC) signed an agreement with MoEF&CC to act as the Environment Audit Designated Agency (EADA).\n\nReason (R): This agreement enforces the Environment Audit Rules (EAR) 2025, which were officially notified on August 29, 2025, to institutionalize standardized environmental auditing.\n\nSelect the most appropriate answer from the options given below:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Both Assertion (A) and Reason (R) are true based on page 43. R correctly explains A, because the NPC was designated specifically to operationalize and enforce the mandate set out by the EAR 2025 notification.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "World Sparrow Day",
+    "question": "World Sparrow Day 2026 was observed to highlight the alarming decline in house sparrow populations. What is the current conservation status of the house sparrow (*Passer domesticus*) according to the IUCN, following its reclassification?",
+    "options": {
+      "A": "Endangered",
+      "B": "Critically Endangered",
+      "C": "Vulnerable",
+      "D": "Least Concern",
+      "E": "Near Threatened"
+    },
+    "answer": "D",
+    "rationale": "According to page 33 of the PDF, the IUCN listed the house sparrow as Endangered in 2002 and later reclassified it as 'Least Concern' in 2018.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Tripura Budget Scheme",
+    "question": "During the presentation of Tripura's FY27 budget, a new scheme named MAKP (Mukhyamantri Antarjatik Kormosangstan Prokolpa) was announced. What is the primary objective of this scheme?",
+    "options": {
+      "A": "To provide agricultural subsidies for indigenous farming communities.",
+      "B": "To facilitate overseas employment for nursing, ITI, diploma, and graduate students.",
+      "C": "To establish 1,460 cattle shelters across the state to protect stray animals.",
+      "D": "To provide a 5% increase in Dearness Allowance for state pensioners.",
+      "E": "To fund startup incubators focusing exclusively on artificial intelligence."
+    },
+    "answer": "B",
+    "rationale": "As explicitly stated on page 35 of the PDF, the objective of the MAKP scheme is 'To facilitate overseas employment for nursing, ITI, diploma, and graduate student'.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Mayank Chakraborty Grandmaster",
+    "question": "In March 2026, a 17-year-old International Master created history by becoming India's 94th Grandmaster (GM). Fill in the blanks regarding this achievement:\n\n________ from ________ became the first-ever GM from the North East region of India at a tournament held in ________.",
+    "options": {
+      "A": "Harshit Rana ; Shillong, Meghalaya ; Oslo, Norway",
+      "B": "Mayank Chakraborty ; Guwahati, Assam ; Stockholm, Sweden",
+      "C": "Rameshbabu Praggnanandhaa ; Chennai, Tamil Nadu ; Reykjavik, Iceland",
+      "D": "Mayank Chakraborty ; Agartala, Tripura ; Helsinki, Finland",
+      "E": "N Sree Charani ; Guwahati, Assam ; Stockholm, Sweden"
+    },
+    "answer": "B",
+    "rationale": "According to page 52 of the PDF, 'Mayank Chakraborty', a 17-year-old from 'Guwahati (Assam)', became India's 94th GM at the First Hotels Young Talents Tournament held in 'Stockholm, Sweden'.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "March Observances & Themes",
+    "question": "Match the following Important Days observed in March 2026 with their respective official themes:\n\nColumn I (Important Day):\n1. International Day to Combat Islamophobia\n2. National Vaccination Day\n3. Global Recycling Day\n\nColumn II (Theme / Purpose):\nA. To commemorate the first dose of the OPV in India\nB. Don't Think Waste – Think Opportunity\nC. Respect Every Person's Dignity\n\nSelect the correct answer using the codes given below:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-C, 3-B",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "A",
+    "rationale": "As per pages 31 and 32: Combat Islamophobia theme is 'Respect Every Person's Dignity' (1-C). National Vaccination Day purpose is 'To commemorate the first dose of the OPV in India (1995)' (2-A). Global Recycling Day theme is 'Don't Think Waste – Think Opportunity' (3-B).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Stockholm Water Prize Laureate",
+    "question": "Assertion (A): Professor Kaveh Madani was named the 2026 Stockholm Water Prize Laureate.\n\nReason (R): The prize recognized his contributions while serving as the Director of the United Nations University Institute for Water, Environment and Health (UNU-INWEH), marking him as the first UN official to receive the award.\n\nSelect the most appropriate answer from the options given below:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both Assertion and Reason contain true facts based on pages 22 and 49. However, R is NOT the specific explanation of A. The specific reason he received the prize (as detailed on page 22) is for his work introducing 'Water Bankruptcy' and applying 'Game Theory in water management'. His status as a UN official is a notable milestone, but not the scientific reason for the award.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "AIC Krishi Sakhi Programme",
+    "question": "Consider the following statements regarding the 'Krishi Sakhi' programme launched in March 2026:\n\n1. It was launched by the Agriculture Insurance Company of India Limited (AIC), a Central Public Sector Enterprise (CPSE).\n2. The AIC operates under the jurisdiction of the Ministry of Agriculture and Farmers Welfare (MoA&FW).\n3. The initiative aligns with the UN's designation of 2026 as the International Year of the Woman Farmer by the FAO.\n\nWhich of the combinations of statements given above is/are CORRECT?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "3 only"
+    },
+    "answer": "C",
+    "rationale": "Statement 2 is incorrect because page 46 of the PDF explicitly states that AIC works under the 'Ministry of Finance (MoF)', not MoA&FW. Statements 1 and 3 are correct.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Asia Africa Agri Alliance (AAAA)",
+    "question": "The Asia Africa Agri Alliance (AAAA) was launched as a new institutional platform. Which of the following statements is INCORRECT regarding this alliance?",
+    "options": {
+      "A": "It was formally launched in New Delhi, India.",
+      "B": "The launch involved senior ambassadors, diplomats, policymakers, and agribusiness leaders from over ten nations.",
+      "C": "Its primary aim is to establish a unified currency system across Asia and Africa to bypass the US Dollar in agricultural trade.",
+      "D": "It aims to strengthen trade, agricultural cooperation, investment, and technology exchange between Asia and Africa.",
+      "E": "The initiative seeks to create a structured framework for trade partnerships and policy alignment across the agri-food value chain."
+    },
+    "answer": "C",
+    "rationale": "Option C is entirely fabricated. Page 38-39 mentions no such unified currency or dollar-bypass strategy. The aims are strictly related to agricultural cooperation, investment, technology exchange, and trade partnerships.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Global Recycling Day",
+    "question": "Consider the following statements regarding Global Recycling Day 2026:\n\n1. The 9th observance of Global Recycling Day was marked on 18th March 2026.\n2. The origin of the day traces back to the Bureau of International Recycling (BIR).\n3. The concept of recycling as the '7th natural resource' was introduced by Ranjit Baxi.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "2 only"
+    },
+    "answer": "D",
+    "rationale": "All three statements are correct and accurately reflect the details provided on pages 32 and 54 of the PDF.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Telangana Budget Allocations",
+    "question": "Match the major allocations in the Telangana State Budget for FY26-27 with their respective funding amounts:\n\nColumn I (Sector):\n1. Agriculture\n2. Irrigation\n3. Education\n4. Health\n\nColumn II (Allocation):\nA. Rs 26,674 crore\nB. Rs 23,179 crore\nC. Rs 13,679 crore\nD. Rs 22,615 crore\n\nSelect the correct answer using the codes given below:",
+    "options": {
+      "A": "1-B, 2-D, 3-A, 4-C",
+      "B": "1-D, 2-B, 3-C, 4-A",
+      "C": "1-A, 2-C, 3-B, 4-D",
+      "D": "1-B, 2-A, 3-D, 4-C",
+      "E": "1-C, 2-D, 3-A, 4-B"
+    },
+    "answer": "A",
+    "rationale": "According to the 'Major Allocations' box on page 36: Agriculture is Rs 23,179 crore (1-B). Irrigation is Rs 22,615 crore (2-D). Education is Rs 26,674 crore (3-A). Health is Rs 13,679 crore (4-C).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Jnanpith Award 2025",
+    "question": "Consider the following statements regarding the 60th Jnanpith Award (for 2025):\n\n1. It was awarded to renowned Tamil poet and lyricist R. Vairamuthu.\n2. The award carries a cash prize of Rs 11 lakh.\n3. The award includes a bronze statue of Vagdevi (Goddess Saraswati) and a citation.\n4. The Jnanpith Award was instituted by the Bharatiya Jnanpith in 1965.\n\nWhich of the combinations of statements given above is/are CORRECT?",
+    "options": {
+      "A": "1, 2, and 3 only",
+      "B": "2, 3, and 4 only",
+      "C": "1, 3, and 4 only",
+      "D": "1, 2, 3, and 4",
+      "E": "1 and 4 only"
+    },
+    "answer": "D",
+    "rationale": "All four statements are correct. Pages 22 and 48 detail R. Vairamuthu's win, the prize components (Rs 11 lakh, Vagdevi statue, citation), and the fact that it was first awarded/instituted in 1965 by Bharatiya Jnanpith.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "India's Trade Performance Snapshot",
+    "question": "Based on India's Merchandise and Services Trade Performance for April–February 2025-26, evaluate the following statements:\n\n1. The estimated value of service exports (USD 387.93 Bn) exceeded the estimated value of merchandise exports (USD 402.93 Bn) during this period.\n2. Both merchandise exports and imports registered growth compared to the previous year.\n3. The cumulative overall trade deficit worsened from USD -91.11 Bn to USD -109.64 Bn year-on-year.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "3 only"
+    },
+    "answer": "B",
+    "rationale": "Statement 1 is incorrect because merchandise exports (USD 402.93 Bn) were higher than service exports (USD 387.93 Bn), not the other way around. Statements 2 and 3 are correct based on the data on pages 5 and 38.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Sarfaraz Ahmed Retirement",
+    "question": "Consider the following statements regarding the retirement of Sarfaraz Ahmed:\n\n1. He announced his retirement from international cricket in March 2026.\n2. His international career spanned from 2007 to 2023.\n3. He was the winning captain for Pakistan in the International Cricket Council (ICC) Champions Trophy 2017.\n\nWhich of the combinations of statements given above is/are CORRECT?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "D",
+    "rationale": "All three statements are correct as per the information provided on pages 28 and 52 of the PDF.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "National Geo-Heritage Site",
+    "question": "The Geological Survey of India (GSI) declared the hill area surrounding Kalinjar Fort as a National Geo-Heritage Site. Fill in the blanks with the correct geographical and geological details:\n\nThe site is located in the ________ district of Uttar Pradesh and is home to the ________, representing a temporal gap of approximately 1.3 billion years.\n\nSelect the correct option:",
+    "options": {
+      "A": "Jhansi ; Vindhyan Supergroup",
+      "B": "Banda ; Eparchaean Unconformity",
+      "C": "Mirzapur ; Deccan Traps",
+      "D": "Banda ; Great Boundary Fault",
+      "E": "Chitrakoot ; Eparchaean Unconformity"
+    },
+    "answer": "B",
+    "rationale": "According to page 41 of the PDF, the site is in the 'Banda district, Uttar Pradesh', and features the 'Eparchaean Unconformity'.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Acquisitions & Mergers",
+    "sub_category": "Bain Capital Investment",
+    "question": "Consider the following statements regarding the RBI's approval of Bain Capital's investment:\n\n1. The RBI approved an investment of around Rs 4,385 crore by Bain Capital.\n2. The investment grants joint management control in Manappuram Finance Limited (MFL).\n3. The approval also covers joint management control in two MFL subsidiaries: Asirvad Micro Finance Limited (AMFL) and Manappuram Home Finance Limited (MHFL).\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "3 only"
+    },
+    "answer": "D",
+    "rationale": "All three statements correctly represent the details of the Bain Capital investment approved by the RBI, as stated on page 51 of the PDF.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Books & Authors",
+    "sub_category": "Karuna: The Power of Compassion",
+    "question": "Assertion (A): Nobel Peace Prize laureate Kailash Satyarthi's latest book titled 'Karuna: The Power of Compassion' was formally launched by the Satyarathi Movement for Global Compassion (SMGC).\n\nReason (R): The launch took place exclusively at the 19th Jaipur Literature Festival (JLF) in January 2026 in Jaipur, Rajasthan, as planned.\n\nSelect the most appropriate answer from the options given below:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true (page 53). Reason (R) is false because the text states, 'Previously, the book was scheduled for release at the 19th Jaipur Literature Festival (JLF) in January 2026', implying the formal launch event with CJI Surya Kant happened separately later, not exclusively as planned at JLF.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Edelweiss Hybrid Index Fund Structure",
+    "question": "Edelweiss Asset Management Company launched a hybrid passive index fund. The fund is named 'Edelweiss Nifty LargeMidcap250 Plus 8-13 yr G-sec 70:30 Index Fund'. What does the '70:30' specifically denote in this structure?",
+    "options": {
+      "A": "70% allocation to Large Cap equities and 30% to Mid Cap equities.",
+      "B": "70% allocation to Government Securities (G-Secs) and 30% to Equities.",
+      "C": "70% allocation to Equities and 30% to Government Securities (G-Secs).",
+      "D": "70% allocation to passive index tracking and 30% to active fund management.",
+      "E": "70% domestic market investment and 30% international market investment."
+    },
+    "answer": "C",
+    "rationale": "Based on the name and the description on page 46 (integrating equities and G-Secs), a '70:30' structure typically reflects the primary asset allocations mentioned in the title: Nifty LargeMidcap250 (Equity) taking the 70% share, and the 8-13 yr G-sec taking the 30% share.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "French Language Day History",
+    "question": "Consider the following statements regarding the evolution of the organizations associated with French Language Day:\n\n1. The Intergovernmental Agency of La Francophonie was originally formed in 1998 from the ACCT.\n2. In 2005, it was renamed as the Organisation Internationale de la Francophonie (OIF).\n3. French is one of the six official UN languages, which include Arabic, Chinese, English, Russian, and Spanish.\n\nWhich of the combinations of statements given above is/are CORRECT?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "D",
+    "rationale": "All three statements accurately reflect the historical progression of the OIF and the UN's six official languages as detailed on pages 54 and 55 of the PDF.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Tata Steel Low-Carbon Initiative",
+    "question": "Tata Steel Limited signed a Memorandum of Understanding (MoU) with a Chinese university. Which of the following statements correctly identifies the partner institution and the core aim of the MoU?",
+    "options": {
+      "A": "Tsinghua University ; to co-develop zero-carbon aluminium smelting techniques.",
+      "B": "Peking University ; to deploy AI in blast furnace operations.",
+      "C": "University of Science and Technology Beijing (USTB) ; to develop low-carbon steelmaking technologies.",
+      "D": "Shanghai Jiao Tong University ; to manufacture green methanol dual-fuel engines.",
+      "E": "University of Science and Technology Beijing (USTB) ; to develop fully automated guided vehicles."
+    },
+    "answer": "C",
+    "rationale": "According to page 47 of the PDF, the MoU was signed with the University of Science and Technology Beijing (USTB) to develop low-carbon steelmaking technologies.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Puducherry SEZ Financials",
+    "question": "The Government of India granted approval for a Special Economic Zone (SEZ) IT park in Puducherry. Fill in the blanks with the correct numerical data representing the project's scale:\n\nThe project, to be developed at a cost of ________, is projected to outcome in ________ worth of service exports over 10 years.",
+    "options": {
+      "A": "Rs 1,000 crore ; Rs 5,000 crore",
+      "B": "Rs 1,250 crore ; Rs 10,000 crore",
+      "C": "Rs 1,500 crore ; Rs 15,000 crore",
+      "D": "Rs 1,250 crore ; Rs 20,000 crore",
+      "E": "Rs 10,000 crore ; Rs 1,250 crore"
+    },
+    "answer": "B",
+    "rationale": "As explicitly stated on pages 7 and 39 of the PDF, the project cost is 'Rs 1,250 crore' and it projects 'Rs. 10,000 crore' in service exports over 10 years.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "BoB Digital Credit Solution",
+    "question": "Match the target audience and facility features of the UPI-linked Credit Line launched by Bank of Baroda (BoB):\n\nColumn I:\n1. Target Audience\n2. Requisite Account Type\n3. Facility Type & Limit\n\nColumn II:\nA. Pradhan Mantri Jan Dhan Yojana (PMJDY)\nB. Overdraft (OD) up to maximum Rs 5,000\nC. Verified women Self-Help Group (SHG) members\n\nSelect the correct answer using the codes given below:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-C, 3-B",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "A",
+    "rationale": "According to pages 19 and 46: The target audience is verified women SHG members (1-C). They must hold PMJDY accounts (2-A). The facility is an OD up to Rs 5,000 (3-B).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "F1 Chinese GP 2026 Cars",
+    "question": "Arrange the following Formula 1 drivers in descending order based on their finishing positions (1st to 3rd) at the 2026 Chinese Grand Prix, and simultaneously match them with their respective car brands:\n\n1. George Russell (Mercedes)\n2. Lewis Hamilton (Ferrari)\n3. Kimi Antonelli (Mercedes)\n\nSelect the correct sequence representing the podium order (1st, 2nd, 3rd):",
+    "options": {
+      "A": "3, 1, 2",
+      "B": "1, 2, 3",
+      "C": "3, 2, 1",
+      "D": "2, 1, 3",
+      "E": "1, 3, 2"
+    },
+    "answer": "A",
+    "rationale": "According to the table on page 52: Kimi Antonelli finished 1st (3). George Russell finished 2nd (1). Lewis Hamilton finished 3rd (2). The sequence representing 1st, 2nd, 3rd is 3, 1, 2.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "BCCI Naman Awards Trophies",
+    "question": "The BCCI Naman Awards 2026 recognized several domestic cricket achievements. Which of the following domestic trophies is INCORRECTLY paired with the winning player's category as outlined in the report?",
+    "options": {
+      "A": "Jagmohan Dalmiya Trophy — Senior Domestic One Day (Women) won by Shafali Verma",
+      "B": "Jagmohan Dalmiya Trophy — Junior Domestic (Women) won by Ira Jadhav",
+      "C": "Madhavrao Scindia Award (Ranji Trophy) — Highest Run Getter (Elite Group) won by Y.V. Rathod",
+      "D": "Lala Amarnath Award — Best All-Rounder (Ranji Trophy) won by Harsh Dubey",
+      "E": "Polly Umrigar Award — Best International Debut (Men) won by Harshit Rana"
+    },
+    "answer": "E",
+    "rationale": "Option E is incorrectly paired. According to page 23, the 'Polly Umrigar Award' is for the 'Best International Cricketer – Men' (won by Shubman Gill). The 'Best International Debut (Men)' was won by Harshit Rana, but it does not carry the title of the Polly Umrigar Award.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "Species Discovery Matching",
+    "question": "Match the newly discovered species reported in March 2026 with their respective geographical regions of discovery in India:\n\nColumn I (Species):\n1. Osbeckia zubeengargiana\n2. Caulocerahollowayi S. Singh\n3. Drawida vazhania\n\nColumn II (Region/State):\nA. Peechi-Vazhani Wildlife Sanctuary, Kerala\nB. Manas National Park, Assam\nC. Eastern Himalayas\n\nSelect the correct answer using the codes given below:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-A, 2-C, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-C, 2-A, 3-B"
+    },
+    "answer": "A",
+    "rationale": "As per pages 27 and 51: Osbeckia zubeengargiana was found in Manas NP, Assam (1-B). Caulocerahollowayi S. Singh (Lichen Moth) was found in the Eastern Himalayas (2-C). Drawida vazhania was found in Kerala (3-A).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "24 Speed Post Rollout",
+    "question": "Assertion (A): The Department of Posts (DoP) launched the '24 Speed Post' premium express service to provide next-day (D+1) guaranteed delivery for urgent consignments.\n\nReason (R): The service was introduced under the Post Office (Second Amendment) Regulations, 2026, and its initial phase covers six metro cities including Chennai and Bengaluru.\n\nSelect the most appropriate answer from the options given below:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both Assertion (A) and Reason (R) are factually true based on pages 6 and 39 of the PDF. However, R is NOT the correct explanation of A. The regulations and coverage area (R) describe the legal backing and scope of the rollout, but they are not the reason *why* the service was created (which is to ensure fast, reliable delivery for urgent consignments).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "SGIC Health Plan",
+    "question": "Consider the following statements regarding the new product launched by Shriram General Insurance Company (SGIC) in March 2026:\n\n1. SGIC launched an upgraded health insurance plan named 'Shri Health Suraksha 2.0'.\n2. The primary design of this plan is to provide flexible and comprehensive medical coverage while drastically increasing premiums for senior citizens.\n3. A core feature of the plan is reducing out-of-pocket expenses for the insured.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "C",
+    "rationale": "Statement 2 is incorrect because page 46 mentions nothing about 'drastically increasing premiums for senior citizens'. It highlights flexible coverage and reducing out-of-pocket expenses. Statements 1 and 3 accurately reflect the text.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "SHP Development Scheme Allocations",
+    "question": "Under the 'Small Hydro Power (SHP) Development Scheme', the central financial assistance has specific caps for projects located in North Eastern (NE) states and districts with international borders. What is the dual limit defined for this assistance?",
+    "options": {
+      "A": "Rs 2.4 crore per MW or 25% of the project cost, whichever is lower.",
+      "B": "Rs 3.6 crore per MW or 30% of the project cost, whichever is lower.",
+      "C": "Rs 5.0 crore per MW or 40% of the project cost, whichever is lower.",
+      "D": "Rs 3.6 crore per MW or 30% of the project cost, whichever is higher.",
+      "E": "Rs 2.4 crore per MW or 30% of the project cost, whichever is higher."
+    },
+    "answer": "B",
+    "rationale": "As detailed on page 41 of the PDF, the assistance is 'Rs 3.6 crore per MW or 30% of the project cost, whichever is lower' with an upper limit of Rs 30 crore per project.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Chhattisgarh Gaudham Yojana Target",
+    "question": "The Gaudham Yojana launched by Chhattisgarh CM Vishnu Deo Sai aims to establish 1,460 cattle shelters across the state. In the first phase inaugurated at Bilaspur, how many 'Surabhi Gaudhams' were made operational, and across how many districts?",
+    "options": {
+      "A": "10 Gaudhams across 5 districts",
+      "B": "29 Gaudhams across 11 districts",
+      "C": "15 Gaudhams across 10 districts",
+      "D": "29 Gaudhams across 33 districts",
+      "E": "146 Gaudhams across 11 districts"
+    },
+    "answer": "B",
+    "rationale": "According to page 34 and 55 of the PDF, the first phase saw the virtual inauguration of '29 Gaudhams across 11 districts'.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "World Sleep Day Facts",
+    "question": "Consider the following statements regarding the observation of World Sleep Day:\n\n1. It is an annual global campaign observed on the Friday before the Spring Vernal Equinox.\n2. The 2026 theme was 'Sleep Well, Live Better'.\n3. The campaign is conducted by the World Sleep Society (WSS) and was first observed on 14 March 2008.\n\nWhich of the combinations of statements given above is/are CORRECT?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "D",
+    "rationale": "All three statements correctly reflect the data provided on pages 31 and 54 of the PDF regarding World Sleep Day.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Oscars 2026 Metrics",
+    "question": "Based on the 98th Academy Awards (Oscars 2026) outcomes, arrange the following films in descending order based on the metric specified in brackets:\n\n1. 'One Battle After Another' (Number of Oscar wins)\n2. 'Sinners' (Number of Oscar nominations)\n\nWait, arrangement requires similar metrics. Let's arrange these specific numbers in descending order:\n1. Total Oscar wins for 'One Battle After Another'\n2. Total Oscar nominations for 'Sinners'\n3. Total categories at the 98th Academy Awards\n\nSelect the correct answer:",
+    "options": {
+      "A": "2, 3, 1",
+      "B": "3, 2, 1",
+      "C": "1, 2, 3",
+      "D": "3, 1, 2",
+      "E": "2, 1, 3"
+    },
+    "answer": "B",
+    "rationale": "According to page 48: Total Oscar wins for 'One Battle After Another' = 6 (1). Total Oscar nominations for 'Sinners' = 16 (2). Total categories at the 98th Academy Awards = 24 (3). Arranging these numbers in descending order (24, 16, 6) corresponds to 3, 2, 1.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Nagoya Protocol Implementation Report",
+    "question": "Consider the following statements regarding India's First National Report (NR1) on the implementation of the Nagoya Protocol:\n\n1. It was prepared in accordance with Article 29 of the Protocol on Monitoring and Reporting.\n2. The report covers the implementation period stretching from November 1, 2017, to December 31, 2025.\n3. The total funds released through National Biodiversity Authority (NBA) approvals reached Rs 216.31 crore.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "3 only"
+    },
+    "answer": "D",
+    "rationale": "All three statements are exactly correct as detailed on page 38 of the PDF under the Nagoya Protocol submission data.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "World Indoor Athletics Championships",
+    "question": "Fill in the blanks with the appropriate details regarding the World Indoor Athletics Championships awarded to India:\n\nIn March 2026, the World Athletics Council (WAC) awarded India the hosting rights for the ________ edition of the World Indoor Athletics Championships, which will be held in 2028 at the ________ in Odisha.\n\nSelect the correct option:",
+    "options": {
+      "A": "20th ; Kalinga Stadium",
+      "B": "22nd ; Kalinga Indoor Athletics Stadium",
+      "C": "24th ; Jawaharlal Nehru Stadium",
+      "D": "22nd ; Barabati Stadium",
+      "E": "25th ; Kalinga Indoor Athletics Stadium"
+    },
+    "answer": "B",
+    "rationale": "As per page 53 of the PDF, India was awarded the hosting rights for the '22nd edition' of the WIAC, to be held at the 'Kalinga Indoor Athletics Stadium (KIAS)'.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "ALMM Framework",
+    "question": "Consider the following statements regarding the Ministry of New and Renewable Energy's (MNRE) expansion of the Approved List of Models and Manufacturers (ALMM) framework:\n\n1. The ALMM List-III for solar ingots and wafers will become effective from 1 June 2028.\n2. Bids submitted more than 7 days after notification under Section 63 of the Electricity Act, 2003 must use ALMM List-III wafers.\n3. The framework requires the availability of at least three independent manufacturers with a combined capacity of 15 GW for List-III issuance.\n\nWhich of the combinations of statements given above is/are CORRECT?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "D",
+    "rationale": "All three statements accurately reflect the rules and capacity requirements for the new ALMM List-III framework as detailed on page 40 of the PDF.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF March 2026 3rd Week"
+  }
+]
