@@ -1,0 +1,802 @@
+[
+  {
+    "category": "Economy & Business",
+    "sub_category": "GDP Forecasts",
+    "question": "Consider the following projections made by Goldman Sachs for the Calendar Year 2026 (CY26):\n\n1. India's Gross Domestic Product (GDP) growth forecast was lowered to 5.9%.\n2. India's inflation is projected to increase to 4.6%.\n3. The growth projection for the South Asian economy was lowered to 6.5%.\n4. India's Current Account Deficit (CAD) is expected to widen to 3% of GDP.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2, and 3 only",
+      "B": "2, 3, and 4 only",
+      "C": "1, 3, and 4 only",
+      "D": "1, 2, and 4 only",
+      "E": "All 1, 2, 3, and 4"
+    },
+    "answer": "A",
+    "rationale": "Statements 1, 2, and 3 are correct. Statement 4 is incorrect because Goldman Sachs expects India's Current Account Deficit (CAD) to widen to 2% of GDP, not 3%. (Page 21, 50)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Sports Awards",
+    "question": "Match the following recipients of the Hockey India 8th Annual Awards 2025 with their corresponding cash prizes:\n\nColumn I:\n1. Jugraj Singh (Upcoming Player Men - U21)\n2. Pargat Singh Award for Defender of the Year\n3. Major Dhyan Chand Lifetime Achievement Award\n4. President Award for Umpire/Umpire Manager\n\nColumn II:\nA. Rs 25,00,000\nB. Rs 10,00,000\nC. Rs 5,00,000\nD. Rs 2,50,000\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-B, 3-A, 4-D",
+      "B": "1-B, 2-C, 3-A, 4-D",
+      "C": "1-A, 2-D, 3-B, 4-C",
+      "D": "1-B, 2-D, 3-A, 4-C",
+      "E": "1-C, 2-A, 3-B, 4-D"
+    },
+    "answer": "B",
+    "rationale": "Jugraj Singh (Upcoming Player) won Rs 10,00,000. Pargat Singh Award for Defender (Sanjay) carries Rs 5,00,000. Major Dhyan Chand Lifetime (Zafar Iqbal) carries Rs 25,00,000. President Award for Umpire (Sourabh Singh Rajput) carries Rs 2,50,000. (Page 23, 51-52)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Observance Editions",
+    "question": "Arrange the following United Nations observances in descending order based on their edition number marked in March 2026 (Highest edition number to Lowest):\n\n1. World Theatre Day\n2. International Day for the Elimination of Racial Discrimination\n3. World Water Day\n4. World Poetry Day\n\nSelect the correct answer:",
+    "options": {
+      "A": "1 - 2 - 3 - 4",
+      "B": "2 - 1 - 3 - 4",
+      "C": "1 - 3 - 2 - 4",
+      "D": "2 - 3 - 1 - 4",
+      "E": "1 - 2 - 4 - 3"
+    },
+    "answer": "A",
+    "rationale": "Editions marked in 2026: World Theatre Day (64th), Elimination of Racial Discrimination (61st), World Water Day (34th), World Poetry Day (27th). The descending order is 64 > 61 > 34 > 27, which corresponds to 1, 2, 3, 4. (Page 29, 30, 32, 34, 57, 58, 59)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Budgets",
+    "question": "Regarding the Delhi Government's budget for FY27 presented by CM Rekha Gupta, which of the following statements is INCORRECT?",
+    "options": {
+      "A": "The annual budget presented for FY27 was Rs 1,03,700 crore.",
+      "B": "The budget outlay marks a 3.7% increase compared to the previous year's budget.",
+      "C": "Rs 260 crore was specifically allocated for the distribution of domestic LPG cylinders on Holi and Diwali.",
+      "D": "The previous year's budget for Delhi stood exactly at Rs 1.5 lakh crore.",
+      "E": "The GSDP Growth for FY27 is estimated at 5.09%."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect because the previous year's budget for Delhi was Rs 1 lakh crore, not Rs 1.5 lakh crore (an increase of 3.7% leads to 1.03 lakh crore). (Page 36, 60)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Defense & Security",
+    "sub_category": "Defense Proposals",
+    "question": "Assertion (A): The Defence Acquisition Council (DAC) granted Acceptance of Necessity (AoN) for various defence procurement proposals worth approximately Rs 2.38 lakh crore.\nReason (R): The DAC meeting, chaired by Union Minister Rajnath Singh, aimed to enhance the operational capabilities of the Indian Army, Indian Air Force, and Indian Coast Guard.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Both statements are correct. The DAC, chaired by Rajnath Singh, approved AoN for Rs 2.38 lakh crore specifically to enhance the capabilities of the IA, IAF, and ICG, making Reason (R) the direct operational motive for Assertion (A). (Page 13, 44)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "MoUs & Startups",
+    "question": "Match the following entities with the specific startup ecosystem objectives they aim to achieve under their respective MoUs signed with DPIIT:\n\nColumn I:\n1. Razorpay\n2. Blue Star Limited\n3. KRAFTON India\n4. Repos Energy India\n\nColumn II:\nA. Digital entertainment and gaming sectors.\nB. Launching the 'Startup Sahayak' platform.\nC. Promoting product-based startups focused on HVAC technologies.\nD. Supporting startups and innovators in deep-tech sectors.\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-A, 4-D",
+      "B": "1-C, 2-B, 3-D, 4-A",
+      "C": "1-B, 2-A, 3-C, 4-D",
+      "D": "1-A, 2-C, 3-B, 4-D",
+      "E": "1-B, 2-C, 3-D, 4-A"
+    },
+    "answer": "A",
+    "rationale": "Razorpay signed for 'Startup Sahayak' (B). Blue Star signed for HVAC tech (C). KRAFTON signed for gaming/digital entertainment (A). Repos Energy signed for deep-tech sectors (D). (Page 7, 11, 13, 40, 42, 44)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "UNESCO Reports",
+    "question": "Fill in the blanks regarding the Global Education Monitoring (GEM) Report 2026 released by UNESCO:\n\nThe report reveals that _________ million children, adolescents, and youth are out of school globally, which means one in _________ school-age children are out of education, and only two in _________ complete secondary schooling.",
+    "options": {
+      "A": "273 ; 6 ; 3",
+      "B": "350 ; 5 ; 4",
+      "C": "273 ; 4 ; 5",
+      "D": "250 ; 6 ; 3",
+      "E": "273 ; 5 ; 4"
+    },
+    "answer": "A",
+    "rationale": "The GEM Report states that 273 million are out of school, equating to 1 in 6 children globally out of education, and only 2 in 3 complete secondary schooling. (Page 18, 47-48)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Formula One",
+    "question": "Based on the Top 3 Driver's Championship 2026 standings following the Japanese Grand Prix, arrange the drivers in ascending order of the points they have secured (Lowest to Highest):\n\n1. George Russell\n2. Andrea Kimi Antonelli\n3. Charles Leclerc\n\nSelect the correct answer:",
+    "options": {
+      "A": "3 - 1 - 2",
+      "B": "1 - 2 - 3",
+      "C": "3 - 2 - 1",
+      "D": "2 - 1 - 3",
+      "E": "1 - 3 - 2"
+    },
+    "answer": "A",
+    "rationale": "The points are: Charles Leclerc (49 points), George Russell (63 points), and Andrea Kimi Antonelli (72 points). The ascending order is 3, 1, 2. (Page 28, 56)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Aviation",
+    "question": "Consider the following statements regarding the financial allocation of the revamped UDAN scheme over its 10-year period (FY27 to FY36):\n\n1. The total financial outlay of the scheme is Rs 28,840 crore.\n2. Rs 12,159 crore is allocated for the Development of Aerodromes (CAPEX).\n3. Rs 10,043 crore is provisioned for Viability Gap Funding (VGF) to support market development.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. Total outlay is Rs 28,840 Cr; CAPEX is Rs 12,159 Cr; VGF is Rs 10,043 Cr. (Page 8, 40-41)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "International Summits",
+    "question": "Which of the following elements was NOT a part of the 6th edition of the BRICS CCI WE Summit 2026 held in New Delhi?",
+    "options": {
+      "A": "The theme was \"Women in Innovation, Science Leadership, Innovation & Entrepreneurship (WISE)\".",
+      "B": "The summit was supported by the BRICS Women Business Alliance (BRICS WBA).",
+      "C": "An MoU was signed with SEBRAE, the Brazilian Micro and Small Business Support Service.",
+      "D": "Mission ShakthiSAT was unveiled by Nirmala Sitharaman.",
+      "E": "The objective of Mission ShakthiSAT is to empower 12,000 girls in STEM and space engineering."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect because Mission ShakthiSAT was unveiled by Meenakshi Lekhi, former MoS for External Affairs, not Nirmala Sitharaman. All other elements (WISE theme, SEBRAE MoU, 12,000 girls in STEM) are correct. (Page 10, 41-42)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Skill Development",
+    "question": "Consider the following statements regarding the financial assistance sanctioned by NITI Aayog to the RISE Centre:\n\n1. NITI Aayog sanctioned Rs 1.55 crore to support programmes at the RISE Centre.\n2. The RISE Centre is located at Guntupalli in Ibrahimpatnam mandal, NTR district, Andhra Pradesh.\n3. The initiative is aimed exclusively at supporting retired military personnel transitioning into agricultural entrepreneurship.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "1, 2, and 3"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the initiative aims to empower women and help transform women from rural areas into entrepreneurs, not retired military personnel. (Page 6, 39)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Governance",
+    "question": "Fill in the blanks regarding the new internal portal launched for rural development oversight:\n\nThe Ministry of _________ announced the operationalization of a comprehensive 'Internal Audit Portal', which was developed by the _________ to transition from conventional manual audit processes to a real-time digital system.",
+    "options": {
+      "A": "Panchayati Raj ; Centre for Development of Advanced Computing (C-DAC)",
+      "B": "Rural Development (MoRD) ; National Informatics Centre (NIC)",
+      "C": "Finance ; Reserve Bank of India (RBI)",
+      "D": "Rural Development (MoRD) ; Tata Consultancy Services (TCS)",
+      "E": "Agriculture ; National Informatics Centre (NIC)"
+    },
+    "answer": "B",
+    "rationale": "The Ministry of Rural Development (MoRD) launched the 'Internal Audit Portal', which was developed by the National Informatics Centre (NIC). (Page 6, 39)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Retirements",
+    "question": "Which of the following statements about Spanish badminton champion Carolina Marin is INCORRECT?",
+    "options": {
+      "A": "She announced her retirement from professional badminton at the age of 32.",
+      "B": "She became the first non-Asian woman to win the Olympic gold in singles badminton at the 2016 Rio Games.",
+      "C": "She secured World Championships titles three times in 2014, 2015, and 2018.",
+      "D": "She held the World Number One ranking for a record of 66 weeks during her career.",
+      "E": "She retired after failing to recover from a serious shoulder injury."
+    },
+    "answer": "E",
+    "rationale": "Option E is incorrect because Carolina Marin retired after failing to fully recover from a third serious *knee injury*, not a shoulder injury. All other statements are correct. (Page 27, 55)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Obituaries",
+    "sub_category": "Political Figures",
+    "question": "Assertion (A): Veteran BJP leader Datta Meghe served in multiple legislative bodies across a political career spanning over five decades.\nReason (R): He was a four-time Lok Sabha MP representing Nagpur, Ramtek, and Wardha, and also served as an RS member from 2002 to 2008.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Both statements are true. His service as an MLC, a 4-time LS MP from various constituencies, and a Rajya Sabha member substantiates the assertion that his career spanned multiple legislative bodies over five decades, making R a correct explanation of A. (Page 28, 56)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Environment & Geospatial Tech",
+    "question": "Match the following organizations involved in the recent MoU to boost the use of geospatial technologies in forestry with their roles/descriptions:\n\nColumn I:\n1. FSI\n2. BISAG-N\n3. SC-NBWL\n\nColumn II:\nA. Standing Committee chaired by Union Minister Bhupendra Yadav.\nB. Bhaskaracharya National Institute for Space Applications and Geo-informatics.\nC. Forest Survey of India, operating under MoEFCC.\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-A, 2-B, 3-C",
+      "E": "1-B, 2-A, 3-C"
+    },
+    "answer": "A",
+    "rationale": "FSI is the Forest Survey of India (C). BISAG-N is the Bhaskaracharya National Institute for Space Applications and Geo-informatics (B). SC-NBWL is the Standing Committee of the National Board for Wildlife chaired by Bhupendra Yadav (A). (Page 5, 38)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Manufacturing & Materials",
+    "question": "Fill in the blanks regarding the newly established rare earth magnet plant:\n\nThe Government of India established a pilot plant for manufacturing _________ rare earth permanent magnets at the International Advanced Research Centre for Powder Metallurgy and New Materials (ARCI) located in _________.",
+    "options": {
+      "A": "Samarium-Cobalt (Sm-Co) ; Bengaluru, Karnataka",
+      "B": "Neodymium-Iron-Boron (Nd-Fe-B) ; Hyderabad, Telangana",
+      "C": "Alnico ; Chennai, Tamil Nadu",
+      "D": "Neodymium-Iron-Boron (Nd-Fe-B) ; Pune, Maharashtra",
+      "E": "Ferrite ; Hyderabad, Telangana"
+    },
+    "answer": "B",
+    "rationale": "The pilot plant manufactures Neodymium-Iron-Boron (Nd-Fe-B) rare earth permanent magnets and is located at ARCI in Hyderabad, Telangana. (Page 5, 38)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Social Initiatives",
+    "question": "Consider the following statements regarding the 'Nasha Mukt Bharat Abhiyan' (NMBA):\n\n1. A 3-year Action Plan has been issued for the nationwide implementation of NMBA in schools.\n2. The joint advisory was issued by the Ministry of Education (MoE) and the Ministry of Home Affairs (MHA).\n3. The primary aim is to promote digital literacy and coding skills among students in Tier-2 and Tier-3 cities.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "1, 2, and 3"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the primary aim of NMBA is to create a drug-free India, focusing on preventing substance abuse among students, not promoting digital literacy. (Page 11, 42)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Defense & Security",
+    "sub_category": "Naval Operations",
+    "question": "Regarding the Indian Navy's 'Operation Urja Suraksha', which of the following combinations of data is correct?",
+    "options": {
+      "A": "22 total India-bound vessels identified for escort; 15 high-priority ships; deployed in the Gulf of Aden.",
+      "B": "22 total India-bound vessels identified for escort; 20 high-priority ships; deployed in the Strait of Hormuz.",
+      "C": "30 total India-bound vessels identified for escort; 20 high-priority ships; deployed in the Malacca Strait.",
+      "D": "20 total India-bound vessels identified for escort; 15 high-priority ships; deployed in the Strait of Hormuz.",
+      "E": "25 total India-bound vessels identified for escort; 22 high-priority ships; deployed in the Arabian Sea."
+    },
+    "answer": "B",
+    "rationale": "The correct data for Operation Urja Suraksha is: 22 India-bound vessels identified, including 20 high-priority ships carrying LNG, LPG, and crude oil, deployed around the Strait of Hormuz using more than 5 frontline warships. (Page 11, 42)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Cultural Promotion",
+    "question": "Fill in the blanks regarding the MoU signed to globally promote Indian music:\n\nThe Ministry of Culture signed an MoU with _________ in New Delhi to globally promote India's folk and tribal music. The MoU was signed in the presence of Union Minister _________.",
+    "options": {
+      "A": "Spotify ; Ashwini Vaishnaw",
+      "B": "YouTube ; Gajendra Singh Shekhawat",
+      "C": "Meta ; Bhupendra Yadav",
+      "D": "Google Arts & Culture ; Rajnath Singh",
+      "E": "YouTube ; Manohar Lal"
+    },
+    "answer": "B",
+    "rationale": "The Ministry of Culture signed an MoU with YouTube to globally promote India's folk and tribal music. It was signed in the presence of Union Minister Gajendra Singh Shekhawat. (Page 12, 43)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Railways",
+    "question": "Consider the following statements combining details about India's first hydrogen-powered trainset:\n\n1. It successfully completed its oscillation trials and will run between Jind and Sonipat in Haryana.\n2. The trainset is manufactured by the Integral Coach Factory (ICF), Chennai, Tamil Nadu.\n3. The configuration of the trainset is a 10-coach setup.\n4. With this, India joins Germany, Sweden, Japan, and China in operating hydrogen trains.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2, and 3 only",
+      "B": "2, 3, and 4 only",
+      "C": "1, 3, and 4 only",
+      "D": "1, 2, and 4 only",
+      "E": "All 1, 2, 3, and 4"
+    },
+    "answer": "E",
+    "rationale": "All four statements perfectly match the details provided in the text regarding India's first hydrogen-powered trainset. (Page 12, 43)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Defense & Security",
+    "sub_category": "Procurements",
+    "question": "Match the following defence contracts signed by the Ministry of Defence (MoD) with their respective contract values:\n\nColumn I:\n1. Tunguska Air Defence Missile System\n2. P-8I Aircraft Maintenance\n3. Acceptance of Necessity (AoN) for overall defence proposals\n\nColumn II:\nA. Rs 2.38 lakh crore\nB. Rs 445 crore\nC. Rs 413 crore\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-A, 2-C, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-C, 2-A, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Tunguska System costs Rs 445 crore (B). P-8I maintenance costs Rs 413 crore (C). DAC approved AoN proposals worth Rs 2.38 lakh crore (A). (Page 12, 13, 43-44)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Skill Development",
+    "question": "Which of the following statements about the MoU signed between the National Council for Cement and Building Materials (NCB) and UltraTech Cement Limited is INCORRECT?",
+    "options": {
+      "A": "The MoU aims to strengthen skill development in India's construction sector.",
+      "B": "The agreement was formalised by Dr. L. P. Singh (NCB) and Er. Rahul Goel (UltraTech).",
+      "C": "The target group includes civil engineers, masons, and Ready-Mix Concrete professionals.",
+      "D": "The implementation timeline for this skill development initiative is 10 years.",
+      "E": "The agreement was signed at the NCB campus in Ballabgarh, Haryana."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect because the timeline for the implementation of the MoU is 3-5 years, not 10 years. All other statements are correct. (Page 14, 44-45)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "International Summits",
+    "question": "Assertion (A): Telangana's Tourism and Culture Minister Jupally Krishna Rao was honoured with the 'Grand Prize for Contribution to World Peace'.\nReason (R): The award was presented during the inaugural edition of the World Buddhist Peace Conference 2026 held in Hyderabad and Buddhavanam, Telangana.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both statements are factually correct. However, Reason (R) states the *venue/event* where the award was given, but it is not the *underlying explanation/cause* for why he received the prize (which would be his actual contributions to peace/tourism). Therefore, R is not the correct explanation of A. (Page 15, 45)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "Global Observances",
+    "question": "Consider the following statements regarding Earth Hour 2026:\n\n1. It was observed globally on March 28, 2026, which was the last or penultimate Saturday of March.\n2. Earth Hour 2026 marks the 20th year of the global event, which first began in Sydney, Australia in 2007.\n3. In India, the MoEFCC collaborated with WWF-India to organize awareness activities in Gwalior, Madhya Pradesh.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "1, 2, and 3",
+      "E": "Only 2"
+    },
+    "answer": "D",
+    "rationale": "All three statements are correct as per the document. Earth Hour was observed on March 28 (20th year, began 2007), and MoEFCC + WWF-India organized activities in Gwalior. (Page 15, 35, 46, 59)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "March Observances",
+    "question": "Fill in the blanks regarding the International Day for the Right to the Truth:\n\nThe UN observes this day annually on March 24. The day specifically commemorates _________, who was assassinated on 24 March 1980 in _________ for opposing oppression and violence.",
+    "options": {
+      "A": "Alec Collett ; Lebanon",
+      "B": "Monsignor Oscar Arnulfo Romero ; El Salvador",
+      "C": "Prakash Kardaley ; India",
+      "D": "Monsignor Oscar Arnulfo Romero ; Nicaragua",
+      "E": "Alec Collett ; El Salvador"
+    },
+    "answer": "B",
+    "rationale": "The day commemorates Monsignor Oscar Arnulfo Romero of El Salvador, assassinated on 24 March 1980. (Alec Collett is associated with the Day of Solidarity with Detained Staff on March 25). (Page 34, 59)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "March Observances",
+    "question": "Which of the following statements is INCORRECT regarding the International Day of Solidarity with Detained and Missing Staff Members 2026?",
+    "options": {
+      "A": "It is observed annually on 25 March.",
+      "B": "It honours personnel who face detention, abduction, or violence during peace and humanitarian missions.",
+      "C": "The day marks the anniversary of the 1985 abduction of Alec Collett.",
+      "D": "Alec Collett was a journalist working with UNRWA who was kidnapped in El Salvador.",
+      "E": "Alec Collett was kidnapped by the Abu Nidal group."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect because Alec Collett was kidnapped in Lebanon, not El Salvador (El Salvador is linked to Monsignor Romero). All other statements are correct. (Page 34, 59)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Cultural Observances",
+    "question": "Match the following cultural UN observances with their specific details for 2026:\n\nColumn I:\n1. World Poetry Day\n2. World Theatre Day\n3. World Piano Day\n\nColumn II:\nA. Celebrated on the 88th day of the year.\nB. The 2026 celebration was held in Luxembourg City by the ITI.\nC. Rabat (Morocco) was named the World Book Capital for 2026.\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-A, 2-C, 3-B",
+      "E": "1-B, 2-A, 3-C"
+    },
+    "answer": "C",
+    "rationale": "World Poetry Day saw Rabat named World Book Capital (C). World Theatre Day 2026 was celebrated in Luxembourg City by the ITI (B). World Piano Day is observed on the 88th day of the year (A). (Page 30, 34-35, 57, 59)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "March Observances",
+    "question": "Consider the following statements regarding International Nowruz Day:\n\n1. It is observed annually on March 21 to promote cultural exchange, peace, and solidarity.\n2. Nowruz was inscribed on UNESCO's Representative List of the Intangible Cultural Heritage of Humanity in 2009.\n3. In India, the Parsi community celebrates Nowruz twice: on March 21 (Solar Hijri calendar) and August 15 (Shahenshahi calendar).\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "None of the above"
+    },
+    "answer": "D",
+    "rationale": "All three statements are factually correct according to the details provided for International Nowruz Day. (Page 30, 57)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Economic Forecasts",
+    "question": "Arrange the following financial years in ascending order based on S&P Global's GDP growth projections for India (from lowest projected growth to highest projected growth):\n\n1. FY27\n2. FY28\n3. FY29\n\nSelect the correct answer:",
+    "options": {
+      "A": "1 - 2 - 3",
+      "B": "3 - 1 - 2",
+      "C": "2 - 1 - 3",
+      "D": "1 - 3 - 2",
+      "E": "3 - 2 - 1"
+    },
+    "answer": "B",
+    "rationale": "According to S&P Global: FY29 is 7.0%; FY27 is 7.1%; FY28 is 7.2%. The ascending order (lowest to highest) is 7.0% (FY29), 7.1% (FY27), 7.2% (FY28). Thus: 3, 1, 2. (Page 21, 50)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Economic Forecasts",
+    "question": "According to the OECD Interim Report released in March 2026, the global growth outlook for the year 2027 has been lowered to:",
+    "options": {
+      "A": "2.9%",
+      "B": "3.1%",
+      "C": "3.0%",
+      "D": "6.1%",
+      "E": "6.4%"
+    },
+    "answer": "C",
+    "rationale": "The OECD report kept the global growth outlook unchanged for 2026 at 2.9%, but estimates for 2027 have been lowered to 3.0% from 3.1%. (Page 22, 50)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "SEBI Regulations",
+    "question": "Assertion (A): SEBI approved amendments allowing Infrastructure Investment Trusts (InvITs) inside the Social Impact Fund framework to hold beyond the concession period.\nReason (R): Under the new SEBI guidelines introduced at the 213th board meeting, liquid MF investments are expanded for REIT and InvIT, and 'Under Construction' is allowed for InvIT up to 10%.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "D",
+    "rationale": "Assertion (A) is false because InvITs are allowed to hold beyond the concession period under the \"REITs & InvITs Reforms\" specifically (Investment in SPV), and it is not a part of the \"Social Impact Fund\" framework. Reason (R) is true as these are the exact reforms introduced for REITs and InvITs (liquid MF expanded, under construction allowed up to 10%). (Page 19, 48)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Journalism",
+    "question": "Consider the following statements regarding the 20th Ramnath Goenka Excellence in Journalism Awards:\n\n1. Vice President C.P. Radhakrishnan presented awards to 25 journalists across 18 categories.\n2. Sandeep Dighe of The Times of India (TOI) was honored with the Prakash Kardaley Memorial Award for Civic Journalism.\n3. The awards commemorated the birth centenary of Ramnath Goenka, founder of the Indian Express Group.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "1, 2, and 3",
+      "E": "Only 3"
+    },
+    "answer": "D",
+    "rationale": "All three statements are correct. VP Radhakrishnan presented to 25 journalists in 18 categories. Sandeep Dighe won the Prakash Kardaley award. It was the birth centenary of Ramnath Goenka. (Page 24, 53)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Sports",
+    "question": "Match the following World Archery 2025 awardees with their respective countries/categories:\n\nColumn I:\n1. Emircan Haney\n2. Sheetal Devi\n3. Baptiste Addis\n\nColumn II:\nA. Para Archer of the Year (India)\nB. Archer of the Year (Türkiye)\nC. Young Archer of the Year (France)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-A, 3-C",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-A, 2-C, 3-B",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "A",
+    "rationale": "Emircan Haney (Türkiye) won Archer of the Year (B). Sheetal Devi (India) won Para Archer of the Year (A). Baptiste Addis (France) won Young Archer of the Year (C). (Page 24, 52)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "International",
+    "question": "Which young leader from Sikkim was recently selected to represent India at the World Youth Parliament (WYP) 2026?",
+    "options": {
+      "A": "Stuti Pradhan",
+      "B": "Balendra Shah",
+      "C": "Kiran Umesh Mahalle",
+      "D": "Sreya Chatterjee",
+      "E": "Navneet Kaur"
+    },
+    "answer": "A",
+    "rationale": "Stuti Pradhan, a young leader from Sikkim, was selected to represent India at the World Youth Parliament (WYP) 2026. (Page 25, 53-54)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space Innovations",
+    "question": "Fill in the blanks regarding the recent space technology test in India:\n\nAgnikul Cosmos Private Limited successfully conducted a critical booster engine test of its rocket engine named '_________', which is the world's first fully 3D-printed _________ engine, at the Agnikul Launchpad (ALP-01) in Chennai.",
+    "options": {
+      "A": "Agnibaan ; cryogenic",
+      "B": "Agnite ; semi-cryogenic",
+      "C": "Vayu Baan ; semi-cryogenic",
+      "D": "Agnite ; solid-fuel",
+      "E": "Agnibaan ; liquid-fuel"
+    },
+    "answer": "B",
+    "rationale": "The engine is named 'Agnite' and it is the world's first fully 3D-printed semi-cryogenic engine. (Page 26, 54)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space Exploration",
+    "question": "Consider the following statements regarding the European Space Agency's (ESA) recent mission:\n\n1. ESA launched the first two satellites (IOD-1 and IOD-2) of its Celeste mission.\n2. The mission aims to demonstrate a Low Earth Orbit (LEO) navigation layer.\n3. The satellites were launched from the Rocket Lab launch site in New Zealand.\n4. It is designed to replace Europe's existing Galileo and EGNOS systems entirely.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2, and 4 only",
+      "B": "1, 3, and 4 only",
+      "C": "1, 2, and 3 only",
+      "D": "2, 3, and 4 only",
+      "E": "All 1, 2, 3, and 4"
+    },
+    "answer": "C",
+    "rationale": "Statements 1, 2, and 3 are correct. Statement 4 is incorrect because the mission aims to *complement* Europe's existing Galileo (MEO) and EGNOS systems, marking a shift towards a multi-layered navigation architecture, not to replace them entirely. (Page 26-27, 55)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "Species Discovery",
+    "question": "Assertion (A): Scientists from the Zoological Survey of India (ZSI) discovered a new species of cockroach named 'Neoloboptera peninsularis' in Maharashtra.\nReason (R): This discovery is published in the scientific journal 'Records of ZSI' because it represents the first DNA-based cockroach identification in India.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both statements are true facts from the text. ZSI discovered the cockroach in Maharashtra, and it is the first DNA-based identification published in 'Records of ZSI'. However, being published in the journal is standard scientific procedure; the fact that it is DNA-based is its significance, not the direct causative reason *why* it was discovered or solely why it was published (journals publish morphological discoveries too). The logic connection is weak for 'correct explanation'. (Page 27, 55)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Budgets",
+    "question": "Which of the following statements about the Himachal Pradesh State Budget for FY27 is INCORRECT?",
+    "options": {
+      "A": "CM Sukhvinder Singh Sukhu presented his fourth budget for the state.",
+      "B": "The total budget outlay for the financial year 2026-27 is Rs 54,928 crores.",
+      "C": "The budget has expanded by Rs 3,586 crore compared to the previous fiscal year.",
+      "D": "The budget focuses on fiscal consolidation, green energy, and rural development.",
+      "E": "The previous fiscal year's budget (FY26) was Rs 58,514 crore."
+    },
+    "answer": "C",
+    "rationale": "Option C is incorrect because the HP budget has *contracted* by Rs 3,586 crore compared to the previous fiscal year, not expanded. All other statements are correct. (Page 36, 60)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Digital Platforms",
+    "question": "Consider the following statements regarding the initiatives launched by UP CM Yogi Adityanath:\n\n1. He launched 'Nivesh Mitra 3.0', an upgraded digital single-window platform for Ease of Doing Business.\n2. He unveiled the 'UP Private Business Park Development Scheme-2025'.\n3. He launched the 'Plug-and-Play Industrial Sheds Scheme' to offer ready-to-use facilities.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 1 and 2",
+      "C": "Only 2 and 3",
+      "D": "Only 1 and 3",
+      "E": "1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All three statements are correct. UP CM launched Nivesh Mitra 3.0, the UP Private Business Park Development Scheme-2025, and the Plug-and-Play Industrial Sheds Scheme. (Page 37, 60)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Labor Statistics",
+    "question": "Match the following statistics from the PLFS Annual Report 2025 with their respective percentages for the 15+ years category in urban areas:\n\nColumn I:\n1. Overall LFPR\n2. Overall WPR\n3. Female LFPR\n4. Female WPR\n\nColumn II:\nA. 57.4%\nB. 59.3%\nC. 38.8%\nD. 40.0%\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-A, 3-D, 4-C",
+      "B": "1-A, 2-B, 3-C, 4-D",
+      "C": "1-B, 2-A, 3-C, 4-D",
+      "D": "1-A, 2-B, 3-D, 4-C",
+      "E": "1-B, 2-C, 3-A, 4-D"
+    },
+    "answer": "A",
+    "rationale": "Overall LFPR is 59.3% (B). Overall WPR is 57.4% (A). Female LFPR is 40.0% (D). Female WPR is 38.8% (C). (Page 14, 45)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Rural Development",
+    "question": "Regarding the National Award for Outstanding Performance in SHG-Bank Linkage 2024-25, which of the following statements is true?",
+    "options": {
+      "A": "The award was conferred by the Ministry of Finance to Karnataka Grameena Bank (KGB).",
+      "B": "Union Minister Shivraj Singh Chouhan presented the award to V.M. Rukmini Devi during the 25th Central Level Coordination Committee meeting.",
+      "C": "The bank extended Rs 2,835 crore credit to 1 lakh SHGs under the DAY-NRLM.",
+      "D": "The award ceremony was held in Bengaluru, Karnataka.",
+      "E": "The bank extended Rs 5,000 crore credit to 80,904 SHGs."
+    },
+    "answer": "B",
+    "rationale": "The award was conferred by the Ministry of Rural Development (MoRD), not Finance. Union Minister Shivraj Singh Chouhan presented it to V.M. Rukmini Devi (GM of KGB) in Hyderabad (not Bengaluru). The bank extended Rs 2,835 crore to 80,904 SHGs (not 1 lakh or 5,000 cr). Thus, B is the only true statement. (Page 23, 52)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Foreign Assistance",
+    "question": "The Japan International Cooperation Agency (JICA) provided ODA loans worth Rs 16,420 crore for projects in India. Which of the following correctly pairs a project with its specific loan amount in Japanese Yen (JPY)?",
+    "options": {
+      "A": "Healthcare Project in Maharashtra – 102,480 million JPY",
+      "B": "Climate-Resilient Horticulture in Punjab – 92,400 million JPY",
+      "C": "Bengaluru Metro Rail Project (Phase 3) in Karnataka – 102,480 million JPY",
+      "D": "Mumbai Metro Line 11 Project in Maharashtra – 62,294 million JPY",
+      "E": "None of the above are correctly matched."
+    },
+    "answer": "C",
+    "rationale": "Healthcare (Maha) is 62,294m JPY. Horticulture (Punjab) is 18,684m JPY. Bengaluru Metro Ph 3 is 102,480m JPY. Mumbai Metro Line 11 is 92,400m JPY. Thus, only C is correctly matched. (Page 19, 48)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Digital Payments Vision",
+    "question": "Fill in the blanks regarding the RBI's strategic roadmap for digital payments:\n\nThe Reserve Bank of India unveiled its 'Payment Vision 2028' document, charting a roadmap consisting of _________ specific initiatives, extending up to _________ 2028.",
+    "options": {
+      "A": "10 ; March",
+      "B": "15 ; December",
+      "C": "20 ; March",
+      "D": "15 ; September",
+      "E": "12 ; December"
+    },
+    "answer": "B",
+    "rationale": "The Payment Vision 2028 consists of 15 specific initiatives and charts a roadmap extending up to December 2028. (Page 21, 49)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Defense Technology",
+    "question": "Assertion (A): The 'Vayu Baan' project developed by the Indian Air Force (IAF) is a significant step in indigenous defense technology.\nReason (R): It is a small, autonomous drone designed to be dropped from a moving helicopter mid-flight with a payload capacity of 1 kg.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both statements are true. Vayu Baan is indeed a major step in indigenous tech (India's first helicopter-launched drone), and R accurately describes its specs (dropped mid-flight, 1 kg payload). However, the specific 1 kg payload spec is a feature, not the primary fundamental reason why it is considered a significant step in indigenous tech (which is the stand-off capability and joining an elite group of countries). (Page 11, 42-43)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Labor Statistics",
+    "question": "Based on the PLFS Annual Report 2025 released by NSO (MoSPI), the survey period covered data from:",
+    "options": {
+      "A": "April 2024 to March 2025",
+      "B": "January 2025 to December 2025",
+      "C": "July 2024 to June 2025",
+      "D": "October 2024 to September 2025",
+      "E": "January 2024 to December 2024"
+    },
+    "answer": "B",
+    "rationale": "The Periodic Labour Force Survey (PLFS) Annual Report 2025 explicitly states the survey period is January 2025 – December 2025. (Page 14, 45)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Defense & Security",
+    "sub_category": "Military Exercises",
+    "question": "Consider the following statements about the IMEX TTX 2026:\n\n1. It marks the 3rd edition of the Indian Ocean Naval Symposium (IONS) Maritime Exercise Tabletop Exercise.\n2. It was conducted at the Maritime Warfare Centre, Southern Naval Command, Kochi.\n3. The exercise highlighted India assuming the IONS Chairmanship for the 2026–2028 cycle after a gap of 16 years.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "None of the above"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. It is the 3rd edition, conducted in Kochi, marking India's assumption of the IONS Chairmanship for 2026-2028 (a 16-year gap since 2010). (Page 15, 46)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Defense & Security",
+    "sub_category": "Military Exercises",
+    "question": "Fill in the blanks regarding India's participation in Exercise Kakadu 2026:\n\nIndian Naval Ship (INS) Nilgiri participated in the _________ edition of Exercise Kakadu 2026 in Australia, which witnessed participation from over _________ nations and 6,000 personnel, commemorating the 125th anniversary of the Royal Australian Navy (RAN).",
+    "options": {
+      "A": "15th ; 25",
+      "B": "17th ; 19",
+      "C": "18th ; 15",
+      "D": "17th ; 25",
+      "E": "16th ; 19"
+    },
+    "answer": "B",
+    "rationale": "It was the 17th edition of Exercise Kakadu 2026, which saw participation from over 19 nations and 6,000 personnel. (Page 17, 47)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "Conservation Initiatives",
+    "question": "Regarding the Earth Hour awareness campaign organized in Gwalior, MP, which specific programme's framework were the activities conducted under?",
+    "options": {
+      "A": "National Clean Air Programme (NCAP)",
+      "B": "Environmental Information, Awareness, Capacity Building & Livelihood Programme (EIACP)",
+      "C": "Green Skill Development Programme (GSDP)",
+      "D": "National Afforestation Programme (NAP)",
+      "E": "Project Tiger Framework"
+    },
+    "answer": "B",
+    "rationale": "The Earth Hour awareness activities organized by MoEFCC & WWF-India in Gwalior were conducted under the framework of the EIACP (Environmental Information, Awareness, Capacity Building & Livelihood Programme). (Page 15-16, 46)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Corporate Mergers",
+    "question": "Assertion (A): The Competition Commission of India (CCI) approved MUFG Bank's acquisition of a 20% stake in Shriram Finance Limited (SFL) for Rs 39,618 crore.\nReason (R): This acquisition is equivalent to approximately USD 4.4 billion and marks the largest cross-border investment in the financial sector of India to date.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both statements are factually correct. However, R is a factual consequence/equivalency of the acquisition, not the reason *why* CCI approved the acquisition. Thus, R does not explain A. (Page 26, 54)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "March Observances",
+    "question": "Match the following themes for 2026 with their respective International Days observed in March:\n\nColumn I:\n1. \"Forests and Economies\"\n2. \"Water and Gender\"\n3. \"Observing Today, Protecting Tomorrow\"\n\nColumn II:\nA. World Meteorological Day\nB. International Day of Forests\nC. World Water Day\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-A, 3-B",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-A, 2-C, 3-B",
+      "E": "1-C, 2-B, 3-A"
+    },
+    "answer": "A",
+    "rationale": "Forests and Economies (International Day of Forests); Water and Gender (World Water Day); Observing Today, Protecting Tomorrow (World Meteorological Day). (Page 31-33, 58)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  }
+]

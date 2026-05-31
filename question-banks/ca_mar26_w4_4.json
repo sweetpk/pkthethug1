@@ -1,0 +1,946 @@
+[
+  {
+    "category": "National Affairs",
+    "sub_category": "Energy & Climate Reforms",
+    "question": "Consider the following statements regarding the first edition of the Bharat Electricity Summit (BES 2026):\n\n1. The summit was organised by the Bureau of Energy Efficiency (BEE) under the Ministry of Power (MoP) at Yashobhoomi, New Delhi.\n2. The theme for the event was \"Electrifying Growth. Empowering Sustainability. Connecting Globally.\"\n3. The summit highlighted India's non-fossil target of achieving 500 GW of non-fossil capacity by 2030 and Net Zero by 2070.\n4. During the summit, the 'Prakriti 2026' International Conference on Carbon Markets was organised exclusively by the Ministry of Environment, Forest and Climate Change (MoEFCC).\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2, and 3 only",
+      "B": "2, 3, and 4 only",
+      "C": "1, 3, and 4 only",
+      "D": "1, 2, and 4 only",
+      "E": "All 1, 2, 3, and 4"
+    },
+    "answer": "A",
+    "rationale": "Statements 1, 2, and 3 are correct. Statement 4 is incorrect because the 'Prakriti 2026' conference was jointly organised by BEE under MoP and MoEFCC, not exclusively by MoEFCC. (Page 4, 38)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Digital Initiatives & Skilling",
+    "question": "Match the following initiatives launched by Union Minister Ashwini Vaishnaw with their specific features/implementing bodies:\n\nColumn I:\n1. National AI Skilling Initiative\n2. MyWAVES\n3. In-built Satellite Tuner in TV Sets\n\nColumn II:\nA. Enables viewers to watch DD Free Dish channels directly without a set-top box.\nB. Designed to train 15,000 participants from the creative/media sectors, implemented through IICT.\nC. A feature within a citizen creator platform for creating, uploading, and sharing content.\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-A, 2-B, 3-C",
+      "E": "1-C, 2-B, 3-A"
+    },
+    "answer": "B",
+    "rationale": "National AI Skilling Initiative aims to train 15,000 participants via IICT (B). MyWAVES is a citizen creator feature on the WAVES OTT platform (C). In-built Satellite Tuner allows direct access to DD Free Dish (A). (Page 5, 39)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Governance & Administration",
+    "question": "Assertion (A): The Ministry of Rural Development (MoRD) announced the operationalization of an 'Internal Audit Portal' developed by the National Informatics Centre (NIC).\nReason (R): The primary objective of this portal is to transition from a centralized digital system to highly secure manual audit processes to prevent cyber threats in rural programs.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true. Reason (R) is false because the objective is precisely the opposite: to transition *from* conventional manual audit processes *to* a real-time, centralized digital system. (Page 6, 39)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Legislations",
+    "question": "Fill in the blanks regarding the Uniform Civil Code (UCC) Bill passed in Gujarat:\n\nGujarat became the _________ state in India to pass the Uniform Civil Code after Uttarakhand. The law specifies that failure to register a live-in relationship within _________ month(s) could attract a maximum of _________ months of imprisonment or a fine of Rs 10,000.",
+    "options": {
+      "A": "Second ; 1 ; 3",
+      "B": "Third ; 3 ; 6",
+      "C": "Second ; 2 ; 3",
+      "D": "First ; 1 ; 6",
+      "E": "Second ; 1 ; 12"
+    },
+    "answer": "A",
+    "rationale": "Gujarat became the 2nd state in India after Uttarakhand to pass the UCC. Failure to register a live-in relationship within 1 month attracts maximum 3 months imprisonment or Rs 10,000 fine. (Page 7, 40)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Aviation",
+    "question": "Consider the specific financial outlays allocated under the revamped UDAN scheme over its 10-year period (FY27 to FY36). Which of the following allocations is INCORRECTLY matched?",
+    "options": {
+      "A": "Total Financial Outlay: Rs 28,840 Crore",
+      "B": "Development of Aerodromes (CAPEX): Rs 12,159 Crore",
+      "C": "Viability Gap Funding (VGF): Rs 10,043 Crore",
+      "D": "CAPEX Goal: Develop 100 airports from existing unserved airstrips over 8 years",
+      "E": "Operation & Maintenance (O&M) Support: Rs 15,000 Crore"
+    },
+    "answer": "E",
+    "rationale": "Option E is incorrect because the document states there is \"Provision: 3 years of O&M support\" but does not allocate a specific distinct figure of Rs 15,000 Crore for it. All other figures and goals are explicitly stated and correct. (Page 8, 40-41)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Climate Targets",
+    "question": "The Union Cabinet approved India's Nationally Determined Contribution (NDC) targets for 2031–35. Arrange the following metrics associated with India's climate ambitions based on their target values (from lowest numerical value to highest):\n\n1. Target percentage reduction in GDP emissions intensity by 2035 compared to 2005.\n2. Target percentage of installed electric power capacity from non-fossil fuel resources by 2035.\n3. The lower bound of the carbon sink target (in billion tonnes of CO2 equivalent) to be achieved by 2035.\n\nSelect the correct answer:",
+    "options": {
+      "A": "3 - 1 - 2",
+      "B": "1 - 2 - 3",
+      "C": "3 - 2 - 1",
+      "D": "2 - 1 - 3",
+      "E": "1 - 3 - 2"
+    },
+    "answer": "A",
+    "rationale": "1. GDP emissions intensity reduction: 47%. 2. Non-fossil capacity: 60%. 3. Carbon sink lower bound: 3.5 (billion tonnes). Arranging these numerical values from lowest to highest: 3.5 -> 47 -> 60. Therefore, the order is 3, 1, 2. (Page 9, 41)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "International Summits",
+    "question": "Regarding the 6th edition of the BRICS CCI WE Summit 2026, which of the following statements is NOT correct?",
+    "options": {
+      "A": "It was held from 21 to 23 March 2026 in New Delhi, India.",
+      "B": "An MoU was signed with SEBRAE, a Brazilian micro and small business support service.",
+      "C": "Mission ShakthiSAT was launched to empower 12,000 girls in STEM and space engineering.",
+      "D": "The summit was organized exclusively by the BRICS Women Business Alliance (BRICS WBA) without other vertical support.",
+      "E": "The theme was \"Women in Innovation, Science Leadership, Innovation & Entrepreneurship (WISE) – Inspiring Change, Shaping Tomorrow.\""
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect because the summit was organised by the BRICS CCI WE vertical *with support from* the BRICS Women Business Alliance (BRICS WBA), not exclusively by them. (Page 10, 41)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Technological Portals",
+    "question": "Match the following digital platforms and their primary objectives launched recently in India:\n\nColumn I:\n1. BHASHINI for Seva-Sanchalan\n2. PRISM-SG\n3. MyWAVES\n\nColumn II:\nA. A citizen creator platform for creating, uploading, and sharing content.\nB. Enhances multilingual accessibility of pension services across 22 Scheduled languages.\nC. Digitizes and streamlines approval processes for Road Over Bridges and railway infrastructure.\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-A, 2-C, 3-B",
+      "E": "1-C, 2-A, 3-B"
+    },
+    "answer": "A",
+    "rationale": "BHASHINI for Seva-Sanchalan is for PFRDA pension services (B). PRISM-SG is for Road Over Bridges (C). MyWAVES is an OTT citizen creator platform (A). (Page 5, 10, 11, 39, 42, 43)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Defense & Security",
+    "sub_category": "Procurements",
+    "question": "The Ministry of Defence (MoD) signed two contracts worth Rs 858 crore with Russian and US-based companies. Consider the following pairs:\n\n1. Tunguska Air Defence Missile System — JSC Rosoboronexport, Russia\n2. P-8I Long-Range Maritime Reconnaissance Aircraft DLI — Boeing India Defense Private Limited, USA\n3. Acceptance of Necessity (AoN) for overall defence proposals — Rs 2.38 lakh crore\n\nHow many of the above pairs are correctly matched?",
+    "options": {
+      "A": "Only one pair",
+      "B": "Only two pairs",
+      "C": "All three pairs",
+      "D": "None of the pairs",
+      "E": "Only pair 1 and 3"
+    },
+    "answer": "C",
+    "rationale": "All three pairs are correctly matched. Tunguska is a Rs 445cr contract with Russia. P-8I maintenance (DLI) is a Rs 413cr contract with Boeing (USA). DAC approved AoN for proposals worth Rs 2.38 lakh crore. (Page 12, 13, 43-44)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Aerospace & Defense",
+    "question": "Assertion (A): The 'Vayu Baan' project makes India part of an elite group of countries, reducing its reliance on foreign air-launched drone technologies.\nReason (R): Vayu Baan is a 3D-printed semi-cryogenic booster engine designed to be dropped from a moving helicopter mid-flight.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true as Vayu Baan is an indigenous helicopter-launched UAS project. Reason (R) is false because Vayu Baan is a drone, whereas the \"3D-printed semi-cryogenic booster engine\" describes 'Agnite' tested by Agnikul Cosmos, not Vayu Baan. (Page 11, 26, 42-43, 54)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Surveys & Reports",
+    "question": "According to the Periodic Labour Force Survey (PLFS) Annual Report 2025 released by NSO (MoSPI), which of the following combinations of demographic statistics for urban areas (15+ years) is mathematically correct as per the report findings?",
+    "options": {
+      "A": "Overall LFPR: 57.4%, Male LFPR: 79.1%, Female LFPR: 38.8%",
+      "B": "Overall LFPR: 59.3%, Overall WPR: 57.4%, Youth Unemployment Rate: 10.3%",
+      "C": "Overall WPR: 57.4%, Male WPR: 76.6%, Female WPR: 38.8%",
+      "D": "Overall LFPR: 59.3%, Male LFPR: 76.6%, Female LFPR: 40.0%",
+      "E": "Overall WPR: 59.3%, Male WPR: 79.1%, Female WPR: 38.8%"
+    },
+    "answer": "C",
+    "rationale": "The correct stats are: Overall LFPR (59.3%), Male LFPR (79.1%), Female LFPR (40.0%). Overall WPR (57.4%), Male WPR (76.6%), Female WPR (38.8%). Youth Unemployment Rate decreased to 9.9% (not 10.3% which was in 2024). Option C correctly matches the WPR statistics. (Page 14, 45)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Global Indices",
+    "question": "In the Global Terrorism Index (GTI) 2026 published by the Institute for Economics and Peace (IEP), Pakistan replaced Afghanistan as the country most impacted by terrorism. Arrange the following countries from Rank 2 to Rank 5 in the exact order as per the index:\n\n1. Mali\n2. Nigeria\n3. Burkina Faso\n4. Niger\n\nSelect the correct answer:",
+    "options": {
+      "A": "3 - 4 - 2 - 1",
+      "B": "3 - 2 - 4 - 1",
+      "C": "4 - 3 - 2 - 1",
+      "D": "3 - 4 - 1 - 2",
+      "E": "2 - 3 - 4 - 1"
+    },
+    "answer": "A",
+    "rationale": "The order of rankings from 2nd to 5th is: 2. Burkina Faso, 3. Niger, 4. Nigeria, 5. Mali. Therefore, the sequence is 3 (Burkina Faso), 4 (Niger), 2 (Nigeria), 1 (Mali). (Page 16, 47)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "SEBI Reforms",
+    "question": "Fill in the blanks regarding the regulatory changes approved at the 213th SEBI board meeting:\n\nSEBI approved amendments to reduce the minimum value of investment by individual investors in the _________ Fund, a sub-category of Category-I AIF, from Rs 2 lakhs to Rs _________. Furthermore, SEBI allowed InvITs to hold beyond their _________ period.",
+    "options": {
+      "A": "Angel Investment ; 50,000 ; maturity",
+      "B": "Social Impact ; 1,000 ; concession",
+      "C": "Real Estate ; 10,000 ; lock-in",
+      "D": "Social Impact ; 10,000 ; concession",
+      "E": "Venture Capital ; 1,000 ; dividend"
+    },
+    "answer": "B",
+    "rationale": "SEBI reduced the minimum investment in the Social Impact Fund (SIF) from Rs 2 lakhs to Rs 1,000, and allowed InvITs to hold beyond the concession period under SPV reforms. (Page 19, 48)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Macroeconomic Indicators",
+    "question": "Match the following financial entities with their respective GDP/Inflation projections for India for the upcoming periods:\n\nColumn I:\n1. Goldman Sachs\n2. S&P Global\n3. OECD\n4. Government of India\n\nColumn II:\nA. Inflation Target at 4% for 2026-31.\nB. GDP Growth of 6.1% for FY27.\nC. GDP Growth of 5.9% for CY26.\nD. GDP Growth of 7.1% for FY27.\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-D, 3-B, 4-A",
+      "B": "1-D, 2-C, 3-B, 4-A",
+      "C": "1-C, 2-B, 3-D, 4-A",
+      "D": "1-B, 2-D, 3-C, 4-A",
+      "E": "1-C, 2-D, 3-A, 4-B"
+    },
+    "answer": "A",
+    "rationale": "Goldman Sachs: 5.9% for CY26 (C). S&P Global: 7.1% for FY27 (D). OECD: 6.1% for FY27 (B). GoI: 4% inflation target 2026-31 (A). (Page 21-22, 50-51)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Hockey India Awards",
+    "question": "Consider the following statements regarding the 8th Hockey India Annual Awards 2025:\n\n1. Hardik Singh and Navneet Kaur won the Balbir Singh Sr. Award for Player of the Year in Men’s and Women’s categories, respectively.\n2. The cash prize for the Balbir Singh Sr. Award is Rs 20 lakh each.\n3. The prize money for the Major Dhyan Chand Lifetime Achievement Award, conferred upon Zafar Iqbal, is Rs 10 lakh.\n\nWhich of the statements given above is/are NOT correct?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 2",
+      "E": "None of the above"
+    },
+    "answer": "C",
+    "rationale": "Statement 3 is not correct because the prize money for the Major Dhyan Chand Lifetime Achievement Award is Rs 25 lakh, not Rs 10 lakh. Statements 1 and 2 are correct. (Page 23, 51)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "JICA Loans",
+    "question": "The Japan International Cooperation Agency (JICA) provided ODA loans worth Rs 16,420 crore. Arrange the following funded projects based on their loan amount in Japanese Yen (JPY) from highest to lowest:\n\n1. Bengaluru Metro Rail Project (Phase 3)\n2. Mumbai Metro Line 11 Project\n3. Healthcare Project in Maharashtra\n4. Climate-Resilient Horticulture in Punjab\n\nSelect the correct answer:",
+    "options": {
+      "A": "1 - 2 - 3 - 4",
+      "B": "2 - 1 - 3 - 4",
+      "C": "1 - 3 - 2 - 4",
+      "D": "4 - 3 - 2 - 1",
+      "E": "1 - 2 - 4 - 3"
+    },
+    "answer": "A",
+    "rationale": "Amounts in JPY: Bengaluru Metro Ph3 (102,480m), Mumbai Metro Line 11 (92,400m), Healthcare Maha (62,294m), Horticulture Punjab (18,684m). The descending order is exactly 1, 2, 3, 4. (Page 19, 48)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "RBI Penalties",
+    "question": "Assertion (A): The RBI imposed a monetary penalty of Rs 95.40 lakh on Union Bank of India (UBI).\nReason (R): The penalties on UBI, Central Bank of India, Bank of India, and Pine Labs were imposed due to non-compliance with KYC, Priority Sector Lending (PSL), and Prepaid Payment Instruments (PPIs) norms.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Both A and R are true, and R provides the direct regulatory context (non-compliance with specific norms like KYC, PSL, PPI) for why the penalties (including the one on UBI in A) were imposed by the RBI. (Page 20, 49)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Mergers & Acquisitions",
+    "question": "Which of the following corporate restructuring events is correctly matched with its outcome?",
+    "options": {
+      "A": "Kotak Mahindra Capital Company Limited divested 30.99% in Infina Finance to acquire a 20% stake in Shriram Finance.",
+      "B": "Svatantra Microfin amalgamated with Chaitanya India Fin Credit to become India's largest NBFC-MFI.",
+      "C": "Japan's MUFG Bank acquired a 20% stake in Shriram Finance Limited for Rs 39,618 crore.",
+      "D": "Svatantra Microfin amalgamated with Svatantra Holding Private Limited to become a scheduled commercial bank.",
+      "E": "Mitsubishi UFJ Financial Group divested its 20% stake in Shriram Finance to Kotak Mahindra Bank."
+    },
+    "answer": "C",
+    "rationale": "Option C is correct. MUFG Bank acquired a 20% stake in Shriram Finance for Rs 39,618 cr. Option A is mixing two different events. Option B is incorrect as it became the *2nd* largest NBFC-MFI. Option D is incorrect. (Page 26, 54)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space Exploration",
+    "question": "Fill in the blanks regarding the latest satellite launches:\n\nThe European Space Agency (ESA) launched the first two satellites, IOD-1 and IOD-2, under its _________ mission. These satellites were launched from the _________ launch site in New Zealand to demonstrate a Low Earth Orbit (LEO) navigation layer.",
+    "options": {
+      "A": "Galileo ; Rocket Lab",
+      "B": "Celeste ; Rocket Lab",
+      "C": "EGNOS ; Ariane",
+      "D": "Celeste ; Vandenberg",
+      "E": "ShakthiSAT ; Mahia Peninsula"
+    },
+    "answer": "B",
+    "rationale": "ESA launched the Celeste mission satellites (IOD-1 and IOD-2) from the Rocket Lab launch site in New Zealand. (Page 27, 55)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Formula One & Olympics",
+    "question": "Match the following sports personalities/organizations with their corresponding news for 2026:\n\nColumn I:\n1. Andrea Kimi Antonelli\n2. Carolina Marín\n3. International Olympic Committee (IOC)\n4. Gurjant Singh\n\nColumn II:\nA. Approved 'Protection of the Female Category' policy for LA28.\nB. Retired from international hockey at age 31 due to a back injury.\nC. Became the youngest F1 Championship leader after winning the Japanese GP.\nD. Spanish badminton champion who retired at age 32 after knee injuries.\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-D, 3-A, 4-B",
+      "B": "1-C, 2-B, 3-A, 4-D",
+      "C": "1-A, 2-D, 3-C, 4-B",
+      "D": "1-D, 2-C, 3-B, 4-A",
+      "E": "1-C, 2-D, 3-B, 4-A"
+    },
+    "answer": "A",
+    "rationale": "Antonelli won Japanese GP (C). Carolina Marin retired from badminton (D). IOC approved female category policy (A). Gurjant Singh retired from hockey (B). (Page 27, 28, 55, 56)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Obituaries",
+    "sub_category": "Global Figures",
+    "question": "Consider the following statements regarding Lionel Robert Jospin:\n\n1. He passed away at the age of 88 in Paris, France.\n2. He served as the Prime Minister of France from 1997 to 2002 under President Emmanuel Macron.\n3. He was known as the architect of the 35-hour work week.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "1, 2, and 3"
+    },
+    "answer": "C",
+    "rationale": "Statements 1 and 3 are correct. Statement 2 is incorrect because he served as PM under President Jacques Chirac, not Emmanuel Macron. (Page 28, 56)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "State News",
+    "sub_category": "State Budgets",
+    "question": "Assertion (A): The budget presented by Delhi's CM Rekha Gupta for FY27 marks a 3.7% increase compared to the previous year's budget.\nReason (R): The budget for FY27 is Rs 1,03,700 crore, while the previous year's budget was exactly Rs 1 lakh crore.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Both statements are true. A 3.7% increase on Rs 1 lakh crore mathematically equates to Rs 1,03,700 crore, making R the exact statistical explanation of A. (Page 36, 60)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Environment & Nature",
+    "question": "Match the following Environmental/Nature observances in March with their key highlights for 2026:\n\nColumn I:\n1. Earth Hour\n2. World Glacier Day\n3. International Day of Forests\n4. World Water Day\n\nColumn II:\nA. Theme: \"Forests and Economies\"\nB. Observed globally on the last/penultimate Saturday of March (March 28 in 2026)\nC. Theme: \"Water and Gender\"\nD. Highlighted that glaciers are projected to disappear from one-third of current sites by 2050\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-D, 3-A, 4-C",
+      "B": "1-D, 2-B, 3-C, 4-A",
+      "C": "1-A, 2-C, 3-D, 4-B",
+      "D": "1-B, 2-A, 3-D, 4-C",
+      "E": "1-C, 2-D, 3-B, 4-A"
+    },
+    "answer": "A",
+    "rationale": "Earth Hour is observed on the last Saturday (B). World Glacier Day highlights disappearance by 2050 (D). Int. Day of Forests theme is \"Forests and Economies\" (A). World Water Day theme is \"Water and Gender\" (C). (Page 30, 31, 32, 35, 57-59)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Health & Human Rights",
+    "question": "Fill in the blanks regarding key UN observances:\n\nThe World Tuberculosis Day was observed on March _________ with the theme \"Yes! We Can End TB! Led by Countries, Powered by People\". The International Day for the Right to the Truth is observed on the same date, commemorating Monsignor _________ of El Salvador.",
+    "options": {
+      "A": "21 ; Alec Collett",
+      "B": "23 ; Bhagat Singh",
+      "C": "24 ; Oscar Arnulfo Romero",
+      "D": "25 ; Oscar Arnulfo Romero",
+      "E": "24 ; Alec Collett"
+    },
+    "answer": "C",
+    "rationale": "World TB Day and the International Day for the Right to the Truth are both observed on March 24. The latter commemorates Monsignor Oscar Arnulfo Romero of El Salvador. (Page 33-34, 58-59)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Aviation",
+    "question": "Under the modified Ude Desh ka Aam Naagrik (UDAN) scheme approved by the Union Cabinet, what is the specific financial allocation provisioned for Operation & Maintenance (O&M) Support?",
+    "options": {
+      "A": "Rs 12,159 Crore for 8 years",
+      "B": "Rs 10,043 Crore for 10 years",
+      "C": "Support provision for 3 years without a specific distinct figure outlined",
+      "D": "Rs 28,840 Crore overall",
+      "E": "Rs 1,800 Crore for 5 years"
+    },
+    "answer": "C",
+    "rationale": "The document specifies \"Provision: 3 years of O&M support\" under the scheme's components, but no distinct financial figure is assigned strictly to O&M in the given text (unlike CAPEX at 12,159 cr and VGF at 10,043 cr). (Page 8, 40-41)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Women Empowerment",
+    "question": "Consider the following statements regarding 'Mission ShakthiSAT':\n\n1. It was unveiled by Meenakshi Lekhi during the 6th edition of the BRICS CCI WE Summit in New Delhi.\n2. The mission aims to empower 12,000 girls in STEM and space engineering globally.\n3. The BRICS CCI WE Summit's theme was \"Women in Innovation, Science Leadership, Innovation & Entrepreneurship (WISE)\".\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "1, 2, and 3",
+      "E": "Only 2"
+    },
+    "answer": "D",
+    "rationale": "All three statements are factually correct. Mission ShakthiSAT targets 12,000 girls in STEM/space engineering and was unveiled by Meenakshi Lekhi at the BRICS CCI WE Summit, which had the WISE theme. (Page 10, 41-42)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Bilateral Trade",
+    "question": "Assertion (A): The Cochin Chamber of Commerce and Industry (CCCI) became the first Chamber of Commerce in South India to enter into an agreement with the Latvian Chamber of Commerce and Industry (LCCI).\nReason (R): This MoU was signed to bolster bilateral trade and economic cooperation exclusively between the states of Kerala and Latvia.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true as CCCI is the first in South India to sign with LCCI. Reason (R) is false because the MoU is signed to bolster bilateral trade and economic cooperation between \"Latvia and India\", not exclusively Kerala. (Page 22, 50)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Regulatory Penalties",
+    "question": "Arrange the following banks based on the penalty amount imposed by the RBI in ascending order (Lowest to Highest):\n\n1. Central Bank of India\n2. Bank of India (BoI)\n3. Union Bank of India (UBI)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1 - 2 - 3",
+      "B": "2 - 1 - 3",
+      "C": "3 - 1 - 2",
+      "D": "2 - 3 - 1",
+      "E": "1 - 3 - 2"
+    },
+    "answer": "B",
+    "rationale": "The penalties are: Bank of India (Rs 58.50 Lakh), Central Bank of India (Rs 63.60 Lakh), Union Bank of India (Rs 95.40 Lakh). Ascending order is 2 (BoI), 1 (CBI), 3 (UBI). (Page 20, 49)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Infrastructure Innovation",
+    "question": "Fill in the blanks regarding the MoU for Smart Campus innovation:\n\nTech Mahindra Limited signed an MoU with _________ to develop a 3D Digital Twin of the _________ Building as a pilot project for smart campus innovation.",
+    "options": {
+      "A": "IIT Delhi ; Administration",
+      "B": "IIT Madras ; Research",
+      "C": "IIT Bombay ; Gymkhana",
+      "D": "IIT Kanpur ; Library",
+      "E": "IIT-ISM Dhanbad ; Mineral"
+    },
+    "answer": "C",
+    "rationale": "Tech Mahindra signed an MoU with IIT Bombay to develop a 3D Digital Twin of the Gymkhana Building, Mumbai. (Page 22, 51)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "Commissions & Bodies",
+    "question": "Consider the following statements regarding recent appointments:\n\n1. K.V. Ramana Murty was appointed as a Whole-Time Member (WTM) of SEBI, bringing the total complement to four WTMs.\n2. P.V. Narayana Rao was appointed as a Co-opted Member of ICAI’s Sustainability Reporting Standards Board (SRSB) for 2026-27.\n3. Kiran Umesh Mahalle succeeded Hansraj Gangaram Ahir as the Chairperson of the National Commission for Backward Classes (NCBC).\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because Sadhvi Niranjan Jyoti succeeded Hansraj Gangaram Ahir as Chairperson of NCBC, while Kiran Umesh Mahalle joined as a Member (succeeding Bhuvan Bhushan Kamal). (Page 25, 53-54)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "UNESCO Reports",
+    "question": "Match the specific demographic data point with its corresponding value according to the UNESCO GEM Report 2026:\n\nColumn I:\n1. Total out-of-school children, adolescents, and youth globally.\n2. Ratio of school-age children out of education globally.\n3. Additional estimated out-of-school children in ten conflict-affected countries.\n\nColumn II:\nA. 13 million\nB. 273 million\nC. 1 in 6\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Total out of school is 273 million (B). This represents 1 in 6 children globally (C). The figure excludes an additional 13 million in 10 conflict-affected countries (A). (Page 18, 47-48)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Railways",
+    "question": "Under the 'Reform Express' initiative by the Ministry of Railways, which of the following is NOT one of the specified focus areas for the newly announced reforms?",
+    "options": {
+      "A": "Ticket Cancellation & Refund Rules",
+      "B": "Salt Transportation efficiency",
+      "C": "Automobile Transportation rail share",
+      "D": "Digital Change of Boarding Point timeline",
+      "E": "Hydrogen Train configuration standards"
+    },
+    "answer": "E",
+    "rationale": "The 5 new reforms under 'Reform Express' cover: Salt Transportation, Automobile Transportation, Construction Quality, Ticket Cancellation & Refund Rules, and Digital Change of Boarding Point. Hydrogen Train configuration (10-coach) is a separate project, not part of the specified 5 new reforms. (Page 7, 40)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Budgets & Policies",
+    "question": "Assertion (A): UP CM Yogi Adityanath launched the 'Plug-and-Play Industrial Sheds Scheme'.\nReason (R): The scheme aims to boost industrial infrastructure by offering ready-to-use facilities through a combination of government land and private investment.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Both A and R are true, and Reason R directly explains the purpose (why it was launched) of the 'Plug-and-Play Industrial Sheds Scheme' launched in UP. (Page 37, 60)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Digital Payments",
+    "question": "Fill in the blanks regarding the MoU signed by the Department for Promotion of Industry and Internal Trade (DPIIT):\n\nDPIIT signed an MoU with _________ to launch the _________ platform, aimed at promoting innovation-led growth and incorporation schemes.",
+    "options": {
+      "A": "Pine Labs ; Gruh Sugam",
+      "B": "Razorpay ; Startup Sahayak",
+      "C": "Paytm ; NxtOption",
+      "D": "Razorpay ; MyWAVES",
+      "E": "PhonePe ; Nivesh Mitra"
+    },
+    "answer": "B",
+    "rationale": "DPIIT signed an MoU with Razorpay to launch the 'Startup Sahayak' platform. (Page 11, 42)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Immigration Policies",
+    "question": "Consider the following statements regarding the extension of the IVFRT Scheme:\n\n1. The Union Cabinet approved the extension of the Immigration, Visa, Foreigners Registration & Tracking (IVFRT) Scheme till March 31, 2031.\n2. The scheme aligns with the Immigration and Foreigners Act, 2025.\n3. The total budget outlay for this extension is Rs 28,840 crore.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the total budget outlay for the IVFRT scheme extension is Rs 1,800 crore, not Rs 28,840 crore (which is the outlay for the UDAN scheme). (Page 9, 41)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Literature",
+    "question": "Arrange the chronological history details of the Saraswati Samman based on the text:\n\n1. The award was instituted by the K.K. Birla Foundation.\n2. Harivansh Rai Bachchan became the first recipient of the award.\n3. Ramkumar Mukhopadhyay published his novel 'Hara Parbati Katha'.\n4. Ramkumar Mukhopadhyay was selected for the 35th edition of the award.\n\nWhich of the following represents the correct chronological sequence of these events?",
+    "options": {
+      "A": "1 - 2 - 3 - 4",
+      "B": "2 - 1 - 3 - 4",
+      "C": "1 - 3 - 2 - 4",
+      "D": "3 - 1 - 2 - 4",
+      "E": "1 - 2 - 4 - 3"
+    },
+    "answer": "A",
+    "rationale": "The award was instituted in 1991 (1), Harivansh Rai Bachchan was the first recipient in 1991 (2), 'Hara Parbati Katha' was published in 2020 (3), and Mukhopadhyay was selected for the 35th edition in 2025/26 (4). Order: 1, 2, 3, 4. (Page 23, 52)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Global Indices",
+    "question": "Match the following countries with their respective scores in the Global Terrorism Index (GTI) 2026:\n\nColumn I:\n1. Pakistan\n2. Burkina Faso\n3. India\n4. Mali\n\nColumn II:\nA. 8.324\nB. 6.428\nC. 7.586\nD. 8.574\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-D, 2-A, 3-B, 4-C",
+      "B": "1-D, 2-C, 3-A, 4-B",
+      "C": "1-A, 2-D, 3-B, 4-C",
+      "D": "1-D, 2-A, 3-C, 4-B",
+      "E": "1-B, 2-A, 3-D, 4-C"
+    },
+    "answer": "A",
+    "rationale": "Pakistan is 1st (8.574). Burkina Faso is 2nd (8.324). India is 13th (6.428). Mali is 5th (7.586). So, 1-D, 2-A, 3-B, 4-C. (Page 16, 47)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Corporate Mergers",
+    "question": "Assertion (A): Kotak Mahindra Capital Company Limited (KMCC) entered into definitive agreements to divest 30.99% of its shareholding in Infina Finance Private Limited.\nReason (R): The divestment value aggregates to Rs 39,618 crore and makes Kotak Mahindra Bank the largest foreign investor in India.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true. Reason (R) is false because the divestment value is Rs 1,293.91 crore, not Rs 39,618 crore (which is the MUFG-Shriram deal), and KMCC is a subsidiary of an Indian bank, not a foreign investor. (Page 26, 54)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Digital Innovations",
+    "question": "Fill in the blanks regarding the 'MyWAVES' initiative:\n\nUnion Minister Ashwini Vaishnaw launched 'MyWAVES', a new feature within the WAVES _________ platform. This initiative includes an Advanced Electronic Programme Guide (EPG) and in-built _________ tuners in TV sets to view DD Free Dish channels.",
+    "options": {
+      "A": "Social Media ; Radio",
+      "B": "OTT ; Satellite",
+      "C": "E-commerce ; Antenna",
+      "D": "OTT ; Cable",
+      "E": "EdTech ; Satellite"
+    },
+    "answer": "B",
+    "rationale": "MyWAVES is introduced as a new feature within the WAVES OTT platform. It incorporates an Advanced EPG and in-built satellite tuners in TV sets. (Page 5, 39)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "March Observances",
+    "question": "Consider the following statements regarding the World Theatre Day for Children and Young People:\n\n1. It is observed annually on March 20 to advocate for the cultural rights of youth.\n2. The 2026 campaign is centered on the theme: \"Staging the Rights of the Child to Arts and Culture.\"\n3. It was established in 2001 by the International Association of Theatre for Children and Young People (ASSITEJ).\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "None of the above"
+    },
+    "answer": "D",
+    "rationale": "All statements are factually correct as per the text. It is observed on March 20, the 2026 theme is accurate, and it was established by ASSITEJ in 2001. (Page 29, 56-57)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Railways",
+    "question": "Match the following railway projects/initiatives with their respective financial outlays or associated numbers:\n\nColumn I:\n1. Kosamba Rail Over Rail (RoR) Flyover\n2. Bhagalpur Bypass\n3. Total approved reforms under 'Reform Express' in 2026\n\nColumn II:\nA. Nine\nB. Rs 344.38 crore\nC. Rs 303.20 crore\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-C, 2-A, 3-B"
+    },
+    "answer": "B",
+    "rationale": "Kosamba RoR Flyover cost is Rs 344.38 crore. Bhagalpur Bypass cost is Rs 303.20 crore. Total approved reforms in 2026 reached nine (after adding 5 new ones). (Page 7, 8, 40)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Defense & Security",
+    "sub_category": "Strategic Assets",
+    "question": "Assertion (A): The 'PRISM-SG Portal' was jointly launched by the Ministry of Road Transport and Highways (MoRTH) and Ministry of Railways, among others.\nReason (R): The portal aims to digitize and streamline the approval and inspection processes for Road Over Bridges (ROBs) and railway infrastructure projects.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Both A and R are true. Because the portal is meant for Road Over Bridges (ROBs) which intersect both road and rail domains, it logically requires the joint launch/collaboration of MoRTH and MoR, making R the correct explanation of A. (Page 11, 43)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Bilateral Trade",
+    "question": "Which of the following is INCORRECT regarding the MoU signed by the Cochin Chamber of Commerce and Industry (CCCI)?",
+    "options": {
+      "A": "It was signed with the Latvian Chamber of Commerce and Industry (LCCI).",
+      "B": "It aims to bolster bilateral trade and economic cooperation between Latvia and India.",
+      "C": "With this MoU, CCCI became the first Chamber of Commerce in South India to enter into an agreement with LCCI.",
+      "D": "CCCI became the third Chamber of Commerce overall in India to enter into an agreement with LCCI.",
+      "E": "The MoU was signed in March 2026."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect because the text explicitly states that CCCI became the *second* Chamber of Commerce in India (not third) to enter into an agreement with LCCI. All other options are correct. (Page 22, 50)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "RBI Monetary Policy",
+    "question": "Fill in the blanks regarding the Government of India's stance on inflation targets:\n\nThe Government kept the inflation target unchanged at _________% for the period _________, marking the second consecutive instance of unchanged targets, acting in consultation with the RBI under Section _________ of the RBI Act, 1934.",
+    "options": {
+      "A": "4 ; 2026-31 ; 45ZA",
+      "B": "6 ; 2025-30 ; 45ZB",
+      "C": "4 ; 2026-31 ; 45ZC",
+      "D": "5 ; 2026-30 ; 45ZA",
+      "E": "4 ; 2027-32 ; 45ZA"
+    },
+    "answer": "A",
+    "rationale": "The inflation target was kept at 4% for the 2026-31 period (next 5 years), under Section 45ZA of the RBI Act, 1934. (Page 22, 50-51)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Innovations",
+    "question": "Consider the following statements regarding 'Agnite':\n\n1. It is the world's first fully 3D-printed semi-cryogenic booster engine.\n2. It was successfully test-fired by Agnikul Cosmos Private Limited.\n3. The test was conducted at the Satish Dhawan Space Centre in Sriharikota.\n\nWhich of the statements given above is/are NOT correct?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 3",
+      "E": "1, 2, and 3"
+    },
+    "answer": "C",
+    "rationale": "Statement 3 is incorrect because the test was conducted at the Agnikul Launchpad (ALP-01) in Chennai, Tamil Nadu, not Sriharikota. Statements 1 and 2 are correct. (Page 26, 54)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Budgets",
+    "question": "Arrange the following financial metrics from the Himachal Pradesh State Budget for FY27 in descending order (highest numerical value to lowest):\n\n1. Total Budget Outlay for FY26 (Previous Year)\n2. Total Budget Outlay for FY27 (Current Year)\n3. Amount by which the budget contracted (Difference)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1 - 2 - 3",
+      "B": "2 - 1 - 3",
+      "C": "3 - 2 - 1",
+      "D": "1 - 3 - 2",
+      "E": "2 - 3 - 1"
+    },
+    "answer": "A",
+    "rationale": "FY26 Outlay was Rs 58,514 cr (1). FY27 Outlay is Rs 54,928 cr (2). The contraction amount is Rs 3,586 cr (3). Descending order: 58,514 > 54,928 > 3,586. Thus, 1 - 2 - 3. (Page 36, 60)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "March Observances",
+    "question": "Match the following historical events commemorated by International Days with the specific individuals they honour:\n\nColumn I:\n1. 1980 Assassination in El Salvador\n2. 1985 Abduction in Lebanon\n3. Execution by the British on March 23\n\nColumn II:\nA. Bhagat Singh, Shivaram Rajguru, and Sukhdev Thapar\nB. Alec Collett\nC. Monsignor Oscar Arnulfo Romero\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-A, 2-B, 3-C",
+      "E": "1-B, 2-A, 3-C"
+    },
+    "answer": "B",
+    "rationale": "1980 El Salvador assassination corresponds to Monsignor Romero (C). 1985 Lebanon abduction corresponds to Alec Collett (B). The execution on March 23 corresponds to Bhagat Singh, Rajguru, and Sukhdev (A). (Page 32, 34, 58, 59)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Journalism & Literature",
+    "question": "Assertion (A): Sandeep Dighe of The Times of India (TOI) received the Prakash Kardaley Memorial Award for Civic Journalism.\nReason (R): The award was presented by Vice President C.P. Radhakrishnan during the 35th Saraswati Samman ceremony.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true as Sandeep Dighe did win this award. Reason (R) is false because the award was presented during the 20th Ramnath Goenka (RNG) Excellence in Journalism Awards, not the 35th Saraswati Samman (which is a literary award). (Page 24, 53)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Infrastructure",
+    "question": "Fill in the blanks regarding the Noida International Airport (NIA):\n\nPM Narendra Modi inaugurated Phase I of the NIA at _________, which was developed at a cost of Rs _________ crore under a PPP model in collaboration with _________.",
+    "options": {
+      "A": "Jewar ; 11,200 ; Zurich Airport International AG",
+      "B": "Gurugram ; 12,159 ; Frankfurt Airport Services",
+      "C": "Jewar ; 10,043 ; Zurich Airport International AG",
+      "D": "Ghaziabad ; 11,200 ; Changi Airport Group",
+      "E": "Jewar ; 28,840 ; Zurich Airport International AG"
+    },
+    "answer": "A",
+    "rationale": "Phase I of NIA is at Jewar (UP), developed at Rs 11,200 crore under a PPP model in collaboration with Zurich Airport International AG, Switzerland. (Page 14, 45)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Defense & Security",
+    "sub_category": "International Cooperation",
+    "question": "Consider the following statements regarding the EU-South Asia Aviation Partnership Project:\n\n1. India signed an aviation pact with the European Union (EU) in the field of industrial aviation production.\n2. The pact was signed to bolster bilateral cooperation in the manufacturing sector.\n3. The working arrangement was signed following a regional aviation workshop held in Geneva, Switzerland.\n\nWhich of the statements given above is/are NOT correct?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 3",
+      "E": "1, 2, and 3"
+    },
+    "answer": "C",
+    "rationale": "Statement 3 is not correct because the arrangement was signed *ahead of* a regional aviation workshop held in *New Delhi* (Delhi), not Geneva, Switzerland. Statements 1 and 2 are correct. (Page 13, 44)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "Banking",
+    "question": "Match the following Indian banks with the individuals who have recently taken up key positions or brand ambassador roles:\n\nColumn I:\n1. South Indian Bank\n2. City Union Bank\n3. Karnataka Grameena Bank\n\nColumn II:\nA. Conferred with the National Award for SHG-Bank Linkage 2024-25\nB. Ravindra Jadeja\nC. Jose Joseph Kattoor\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-A, 2-C, 3-B",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "A",
+    "rationale": "South Indian Bank appointed Jose Joseph Kattoor as Non-Executive Part-Time Chairman (C). City Union Bank appointed Ravindra Jadeja as Brand Ambassador (B). Karnataka Grameena Bank won the SHG-Bank Linkage award (A). (Page 23-24, 52-53)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Government Schemes",
+    "question": "Assertion (A): The Credit Guarantee Scheme for Microfinance Institutions 2.0 (CGSMFI-2.0) sets specific loan allocation targets for Member Lending Institutions (MLIs).\nReason (R): At least 10% of the total loan amount under the scheme must be allocated to Small NBFC-MFIs, and at least 5% to Medium NBFC-MFIs.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true as targets are indeed set. Reason (R) is false because the targets are swapped: at least 5% is for Small NBFC-MFIs, and at least 10% is for Medium NBFC-MFIs. (Page 4, 38)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "University Rankings",
+    "question": "According to the QS World University Rankings by Subject 2026, which of the following subjects saw India's debut in its top global subject rankings due to IIM Ahmedabad's placement?",
+    "options": {
+      "A": "Development Studies",
+      "B": "Electrical Engineering",
+      "C": "Marketing",
+      "D": "Engineering – Mineral and Mining",
+      "E": "Business & Management Studies"
+    },
+    "answer": "C",
+    "rationale": "IIM Ahmedabad secured 21st place in both Business and Management Studies and Marketing, which marked India's debut in the 'Marketing' subject ranking. (Page 17, 46)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Economic Forecasts",
+    "question": "Fill in the blanks regarding the S&P Global growth outlook:\n\nS&P Global raised India's GDP forecast by _________ basis points to _________% for the financial year 2026-27 (FY27).",
+    "options": {
+      "A": "20 ; 7.2",
+      "B": "10 ; 6.1",
+      "C": "40 ; 7.1",
+      "D": "20 ; 7.0",
+      "E": "40 ; 7.2"
+    },
+    "answer": "C",
+    "rationale": "S&P Global raised India's GDP by 40 basis points (bps) to 7.1% for FY27. (Page 21, 50)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Obituaries",
+    "sub_category": "Global Figures",
+    "question": "Consider the following statements regarding the recent obituaries:\n\n1. Dr. Vijaypat Lala Kailashpat Singhania authored an autobiography titled 'An Angel in the Cockpit'.\n2. Lionel Robert Jospin served as the head of the Socialist Party in France starting in 1981.\n3. Datta Meghe served as a four-time Lok Sabha MP and was known for the 35-hour work week policy.\n\nWhich of the statements given above is/are NOT correct?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 3",
+      "E": "1, 2, and 3"
+    },
+    "answer": "C",
+    "rationale": "Statement 3 is incorrect because the 35-hour work week policy is associated with Lionel Robert Jospin, the former PM of France, not Datta Meghe. Statements 1 and 2 are correct based on the profiles. (Page 28-29, 56)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "March Observances",
+    "question": "Match the following UN observances with the number of years they have been officially observed as of March 2026:\n\nColumn I:\n1. World Down Syndrome Day\n2. World Glacier Day\n3. International Day of Forests\n\nColumn II:\nA. 2nd observance\nB. 14th observance\nC. 15th observance\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-A, 2-C, 3-B",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "A",
+    "rationale": "World Down Syndrome Day marks its 15th observance (C). World Glacier Day marks its 2nd observance (A). International Day of Forests marks its 14th observance (B). (Page 30-31, 57-58)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Railways",
+    "question": "Assertion (A): India's first hydrogen-powered train completed oscillation trials and its route is proposed between Kalka and Shimla.\nReason (R): The hydrogen-powered trainset was manufactured by the Integral Coach Factory (ICF), Chennai, and consists of a 10-coach configuration.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "D",
+    "rationale": "Assertion (A) is false because the proposed route for the hydrogen-powered train is between Jind and Sonipat in Haryana, not Kalka and Shimla. Reason (R) is factually true as it was built by ICF Chennai and has a 10-coach setup. (Page 12, 43)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "App Security",
+    "question": "Fill in the blanks regarding the 'Verified App Label' initiative:\n\nSEBI registered intermediaries will display a verified badge on the _________ to help investors identify genuine apps, following the removal of over _________ fraudulent investment apps.",
+    "options": {
+      "A": "Apple App Store ; 66,000",
+      "B": "Google Play Store ; 1.3 lakh",
+      "C": "SEBI Official Website ; 10,000",
+      "D": "Google Play Store ; 50,000",
+      "E": "Apple App Store ; 1.3 lakh"
+    },
+    "answer": "B",
+    "rationale": "The verified badge will be displayed on the Google Play Store, and over 1.3 lakh fraudulent apps were reported and removed. (Page 20, 49)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Climate Change Targets",
+    "question": "Consider the following statements regarding the updated NDC targets:\n\n1. India's Nationally Determined Contribution (NDC) for 2031–2035 was approved under the United Nations Framework Convention on Climate Change (UNFCCC).\n2. A 36% reduction in GDP emissions intensity was already achieved between 2005 and 2020.\n3. The new target is to reach an 80% non-fossil power capacity by 2035.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "1, 2, and 3"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the target is to achieve 60% (not 80%) installed electric power capacity from non-fossil fuel resources by 2035. (Page 9, 41)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 4th Week (24 - 31)"
+  }
+]
