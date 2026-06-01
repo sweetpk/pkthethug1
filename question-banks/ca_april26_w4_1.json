@@ -1,0 +1,802 @@
+[
+  {
+    "category": "National",
+    "sub_category": "International Reports & Rankings",
+    "question": "According to the SIPRI Fact Sheet April 2026 titled 'Trends in World Military Expenditure, 2025', arrange the following countries in descending order based on their military spending:\n\n1. Germany\n2. India\n3. China\n4. Russia\n5. United States of America (USA)\n\nSelect the correct answer:",
+    "options": {
+      "A": "5, 3, 4, 1, 2",
+      "B": "5, 4, 3, 2, 1",
+      "C": "5, 3, 2, 4, 1",
+      "D": "3, 5, 4, 1, 2",
+      "E": "5, 3, 1, 4, 2"
+    },
+    "answer": "A",
+    "rationale": "As per the SIPRI Fact Sheet April 2026, the military spending in 2025 was: USA (USD 954 billion), China (USD 336 billion), Russia (USD 190 billion), Germany (USD 114 billion), and India (USD 92.1 billion). Therefore, the correct descending order is 5, 3, 4, 1, 2. Reference: Page 17, 43.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Global Designations",
+    "question": "Match the newly designated UNESCO Global Geoparks (2026) in Column I with their respective host countries in Column II:\n\nColumn I:\n1. Nisyros UNESCO Global Geopark\n2. Lenggong UNESCO Global Geopark\n3. Toratau UNESCO Global Geopark\n4. Dahar UNESCO Global Geopark\n\nColumn II:\nA. Malaysia\nB. Greece\nC. Tunisia\nD. Russia\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-D, 3-A, 4-C",
+      "B": "1-B, 2-A, 3-D, 4-C",
+      "C": "1-C, 2-A, 3-D, 4-B",
+      "D": "1-B, 2-A, 3-C, 4-D",
+      "E": "1-D, 2-B, 3-A, 4-C"
+    },
+    "answer": "B",
+    "rationale": "According to the UNESCO Global Geoparks 2026 list: Nisyros is in Greece, Lenggong is in Malaysia, Toratau is in Russia, and Dahar is in Tunisia. Reference: Page 16, 42.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Bilateral Relations",
+    "question": "Consider the following statements regarding the state visit of South Korean President Lee Jae Myung to India in April 2026:\n\n1. Both nations agreed to upgrade the Comprehensive Economic Partnership Agreement (CEPA) with targeted completion by the first half of 2027.\n2. The Republic of Korea officially joined the International Solar Alliance (ISA), while India joined the Global Green Growth Institute (GGGI).\n3. The bilateral trade target was revised from USD 27 billion to USD 50 billion by 2030, projecting an 18% annual growth.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "2 only",
+      "E": "1, 2 and 3"
+    },
+    "answer": "E",
+    "rationale": "All statements are correct. The CEPA upgrade is targeted for completion by the first half of 2027. ROK joined the ISA, and India joined the GGGI. The bilateral trade target is set to USD 50 billion by 2030 (18% annual growth). Reference: Page 4, 34.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Regulatory Frameworks",
+    "question": "The Reserve Bank of India (RBI) issued a Master Direction for a shift towards an Expected Credit Loss (ECL) based approach. This new framework will come into force from ________. Additionally, a phased rollout of a new reporting framework for all over-the-counter (OTC) foreign exchange (FX) derivative contracts involving the rupee will be effective from ________.",
+    "options": {
+      "A": "April 1, 2026; July 1, 2026",
+      "B": "April 1, 2027; July 1, 2027",
+      "C": "July 1, 2027; April 1, 2027",
+      "D": "January 1, 2027; July 1, 2027",
+      "E": "April 1, 2027; December 31, 2027"
+    },
+    "answer": "B",
+    "rationale": "The Master Direction for the ECL framework comes into force from April 1, 2027. The new reporting framework for OTC FX derivative contracts involving the Indian rupee is effective from July 1, 2027. Reference: Page 20, 45.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Penalties and Restrictions",
+    "question": "Match the following financial institutions in Column I with the respective penalties imposed on them by the RBI in April 2026 in Column II:\n\nColumn I:\n1. Bandhan Bank\n2. Muthoot Housing Finance Company\n3. Ebix Payments Services & Cooperative Banks\n\nColumn II:\nA. Rs 2.60 lakh\nB. Rs 41.8 lakh\nC. Rs 80,000\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-B, 3-C",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "B",
+    "rationale": "Bandhan Bank was penalized Rs 41.8 lakh for KYC non-compliance. Muthoot Housing Finance was penalized Rs 80,000 under the Fair Practices Code. Ebix Payments Services & two cooperative banks were fined a total of Rs 2.60 lakh. Reference: Page 18, 44.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "NITI Aayog Reports",
+    "question": "Consider the following statements regarding the NITI Aayog report titled 'DPI@2047 for Viksit Bharat-A Strategic Roadmap':\n\n1. The roadmap outlines a two-phase strategy: DPI 2.0 (2025–2035) focusing on scaling livelihood-driven growth, and DPI 3.0 (2035–2047) aimed at achieving broad-based prosperity.\n2. Digital Public Infrastructure (DPI) initiatives currently contribute nearly 1% of India's GDP and are projected to rise to 4% by 2030.\n3. The report was developed internally by NITI Aayog without any collaboration from external think-tanks or consultancies.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 only",
+      "B": "1 and 2 only",
+      "C": "2 and 3 only",
+      "D": "1 and 3 only",
+      "E": "1, 2 and 3"
+    },
+    "answer": "B",
+    "rationale": "Statement 1 and 2 are correct. Statement 3 is incorrect because the roadmap was developed in collaboration with EkStep Foundation and Deloitte. Reference: Page 13, 40.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "Economy / Business",
+    "sub_category": "Wealth Reports",
+    "question": "According to Knight Frank's 'The Wealth Report 2026', arrange the following Indian cities in descending order based on their share of Ultra-High Net-Worth Individuals (UHNWIs):\n\n1. Delhi\n2. Hyderabad\n3. Mumbai\n\nSelect the correct answer:",
+    "options": {
+      "A": "1, 3, 2",
+      "B": "3, 2, 1",
+      "C": "3, 1, 2",
+      "D": "1, 2, 3",
+      "E": "2, 3, 1"
+    },
+    "answer": "C",
+    "rationale": "As per the report, Mumbai has the highest share (35.4%), followed by Delhi (22.8%), and Hyderabad (6.3%). The correct descending order is Mumbai, Delhi, Hyderabad (3, 1, 2). Reference: Page 15.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Environment and Ecology",
+    "question": "Consider the following statements regarding the recent addition to India's Ramsar sites:\n\n1. The Shekha Jheel Bird Sanctuary in Aligarh, Uttar Pradesh, was designated as a Ramsar site, increasing India's total wetlands count to 99.\n2. With this addition, Uttar Pradesh now has the highest number of Ramsar sites in India with 12 designated wetlands.\n3. Tamil Nadu currently holds the highest number of Ramsar sites in the country with 20 designated wetlands.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 only",
+      "B": "1 and 2 only",
+      "C": "1 and 3 only",
+      "D": "2 and 3 only",
+      "E": "1, 2 and 3"
+    },
+    "answer": "C",
+    "rationale": "Statement 1 is correct. Total Ramsar sites in India are now 99. Statement 3 is correct. Tamil Nadu has the highest number of sites (20). Statement 2 is incorrect because Uttar Pradesh has the 2nd highest number of Ramsar sites (12), not the highest. Reference: Page 5, 35.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "State Affairs",
+    "question": "In April 2026, the Ladakh Lieutenant Governor officially notified the creation of five new districts in the Union Territory, increasing the total number of districts from two to seven. Which of the following is NOT one of the newly created districts?",
+    "options": {
+      "A": "Nubra",
+      "B": "Sham",
+      "C": "Kargil",
+      "D": "Zanskar",
+      "E": "Drass"
+    },
+    "answer": "C",
+    "rationale": "The five new districts are Nubra, Sham, Changthang, Zanskar, and Drass. Kargil, along with Leh, was already one of the two existing districts in Ladakh. Reference: Page 13, 40.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Global Organizations",
+    "question": "Consider the following Assertion (A) and Reason (R):\n\nAssertion (A): The United Arab Emirates (UAE) officially announced its decision to exit the Organization of the Petroleum Exporting Countries (OPEC) and the wider OPEC+ alliance, effective May 1, 2026.\nReason (R): The UAE's state-owned ADNOC has significantly expanded its oil production capacity to around 5 million barrels per day, but OPEC+ production quotas limited the full utilisation of this capacity.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A",
+      "B": "Both A and R are true, but R is NOT the correct explanation of A",
+      "C": "A is true, but R is false",
+      "D": "A is false, but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "A",
+    "rationale": "The UAE decided to leave OPEC/OPEC+ effective May 1, 2026, primarily due to production constraints imposed by the organization's quotas, which restricted the utilization of ADNOC's newly expanded 5 million barrels per day capacity. Both statements are true and correctly linked. Reference: Page 17, 43.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Government Schemes",
+    "question": "Consider the following statements regarding the expanded eligibility for the Prime Minister Internship Scheme (PMIS) in April 2026:\n\n1. The Ministry of Corporate Affairs (MCA) expanded the eligibility to include final-year undergraduate and postgraduate students.\n2. The age bracket for the scheme was revised to 18–25 years, replacing the earlier 21–24 years requirement.\n3. The monthly stipend of Rs. 9,000 is 100% funded by the Government of India, along with an additional Rs. 6,000 financial assistance provided in two installments.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 only",
+      "B": "1 and 2 only",
+      "C": "2 and 3 only",
+      "D": "1 and 3 only",
+      "E": "1, 2 and 3"
+    },
+    "answer": "B",
+    "rationale": "Statement 1 and 2 are correct. Statement 3 is incorrect because the Rs. 9,000 monthly stipend is 90% funded by the Government of India, not 100%. Reference: Page 5, 34.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Appointments",
+    "question": "Match the following newly appointed officials in Column I with their respective organizations/roles in Column II:\n\nColumn I:\n1. Dr. Ashok Lahiri\n2. Srikanth Velamakanni\n3. Parminder Singh\n4. B. Ramesh Babu\n\nColumn II:\nA. Chairman, NASSCOM\nB. CEO, Reliance Enterprise Intelligence Limited\nC. Vice-Chairman, NITI Aayog\nD. MD & CEO, Karur Vysya Bank\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-B, 3-A, 4-D",
+      "B": "1-A, 2-C, 3-B, 4-D",
+      "C": "1-C, 2-A, 3-B, 4-D",
+      "D": "1-D, 2-A, 3-B, 4-C",
+      "E": "1-B, 2-A, 3-C, 4-D"
+    },
+    "answer": "C",
+    "rationale": "Dr. Ashok Lahiri is the new Vice-Chairman of NITI Aayog. Srikanth Velamakanni is the Chairman of NASSCOM. Parminder Singh is the CEO of Reliance Enterprise Intelligence Limited. B. Ramesh Babu was reappointed as MD & CEO of Karur Vysya Bank. Reference: Page 23, 24, 46, 47.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Important Days",
+    "question": "Arrange the following Important Days observed globally in April 2026 in chronological order of their occurrence:\n\n1. International Chernobyl Disaster Remembrance Day\n2. World Malaria Day\n3. World Day for Laboratory Animals\n4. International Jazz Day\n\nSelect the correct answer:",
+    "options": {
+      "A": "3, 2, 1, 4",
+      "B": "2, 3, 1, 4",
+      "C": "3, 1, 2, 4",
+      "D": "1, 2, 3, 4",
+      "E": "2, 1, 3, 4"
+    },
+    "answer": "A",
+    "rationale": "World Day for Laboratory Animals is April 24. World Malaria Day is April 25. International Chernobyl Disaster Remembrance Day is April 26. International Jazz Day is April 30. Therefore, the order is 3, 2, 1, 4. Reference: Page 30-32, 51-52.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "Economy / Business",
+    "sub_category": "Trade Agreements",
+    "question": "Under the recently signed India–New Zealand Free Trade Agreement (IN-NZ FTA) in April 2026, New Zealand commits an investment of USD ________ over a period of ________ years in sectors including infrastructure, renewable energy, manufacturing, and startups.",
+    "options": {
+      "A": "10 billion; 10",
+      "B": "15 billion; 20",
+      "C": "20 billion; 15",
+      "D": "25 billion; 10",
+      "E": "30 billion; 15"
+    },
+    "answer": "C",
+    "rationale": "The India-New Zealand FTA agreement includes an investment commitment from New Zealand of USD 20 billion over 15 years in various infrastructure and renewable sectors. Reference: Page 11, 39.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "International Tournaments",
+    "question": "At the ISSF Junior World Cup 2026 held in Cairo, India topped the medal tally with 16 medals. Which of the following Indian athletes did NOT win an individual gold medal at this event?",
+    "options": {
+      "A": "Shiva Narwal",
+      "B": "Prachi Gaikwad",
+      "C": "Vanshika Chaudhary",
+      "D": "Divyanshu Dewangan",
+      "E": "None of the above"
+    },
+    "answer": "D",
+    "rationale": "Shiva Narwal, Prachi Gaikwad, and Vanshika Chaudhary won Individual Gold medals. Divyanshu Dewangan won a Gold in the 10m Air Rifle Mixed Team event, not an individual event. Reference: Page 26, 49.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "Science and Tech",
+    "sub_category": "Space Exploration",
+    "question": "Consider the following statements regarding recent developments in the space sector in April 2026:\n\n1. NASA unveiled the 'Nancy Grace Roman Space Telescope', designed to probe dark matter and transmit around 11 terabytes of data daily.\n2. Blue Origin successfully launched and orbited the AST SpaceMobile’s BlueBird 7 communications satellite using its New Glenn rocket.\n3. China launched Pakistan’s PRSC-EO3 satellite aboard a Long March-6 rocket from the Taiyuan Satellite Launch Center.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "1 only",
+      "B": "2 only",
+      "C": "3 only",
+      "D": "1 and 2 only",
+      "E": "2 and 3 only"
+    },
+    "answer": "B",
+    "rationale": "Statement 2 is incorrect because the Blue Origin mission failed to achieve the intended orbit during its third flight, causing the BlueBird 7 satellite to deorbit. Statements 1 and 3 are correct. Reference: Page 24, 25, 47, 48.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "International Finance",
+    "question": "Consider the following statements regarding the SAARC Currency Swap Framework arrangement with the Maldives:\n\n1. The Government of India approved a Rs. 30 billion currency swap facility for the Maldives in April 2026.\n2. Previously, the Maldives had settled a USD 400 million swap facility in October 2024 under the US Dollar/Euro Swap Window.\n3. So far, the RBI has extended aggregate swap support worth USD 1.1 billion to the Maldives under this framework.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1 only",
+      "E": "1, 2 and 3"
+    },
+    "answer": "E",
+    "rationale": "All statements are correct. India approved a Rs 30 billion swap for Maldives. Earlier, a USD 400 million facility was utilized in October 2024. The total aggregate swap support extended by the RBI under the SAARC framework to the Maldives stands at USD 1.1 billion. Reference: Page 6, 35, 36.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Important Days",
+    "question": "Match the following Important Days observed in April 2026 in Column I with their respective themes in Column II:\n\nColumn I:\n1. National Panchayati Raj Day\n2. International Girls in ICT Day\n3. World Veterinary Day\n4. World Intellectual Property Day\n\nColumn II:\nA. AI for Development: Girls shaping the digital future\nB. IP and Sports: Ready, Set, Innovate\nC. Sashakt Panchayat, Sarvangeen Vikas\nD. Veterinarians: Guardians of Food and Health\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-B, 4-D",
+      "B": "1-A, 2-C, 3-D, 4-B",
+      "C": "1-C, 2-A, 3-D, 4-B",
+      "D": "1-D, 2-A, 3-C, 4-B",
+      "E": "1-C, 2-D, 3-A, 4-B"
+    },
+    "answer": "C",
+    "rationale": "National Panchayati Raj Day: 'Sashakt Panchayat, Sarvangeen Vikas'. International Girls in ICT Day: 'AI for Development: Girls shaping the digital future'. World Veterinary Day: 'Veterinarians: Guardians of Food and Health'. World IP Day: 'IP and Sports: Ready, Set, Innovate'. Reference: Page 29-32, 51-52.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "Economy / Business",
+    "sub_category": "Wealth Reports",
+    "question": "Based on Knight Frank’s 'The Wealth Report 2026', arrange the following countries in descending order of their projected number of billionaires in 2026:\n\n1. India\n2. United States of America\n3. China\n\nSelect the correct answer:",
+    "options": {
+      "A": "1, 2, 3",
+      "B": "3, 2, 1",
+      "C": "2, 3, 1",
+      "D": "2, 1, 3",
+      "E": "1, 3, 2"
+    },
+    "answer": "C",
+    "rationale": "According to the report, the USA has the highest number of billionaires (914), followed by China (485), and India (207). The descending order is USA, China, India (2, 3, 1). Reference: Page 15.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Regulatory Actions",
+    "question": "Consider the following Assertion (A) and Reason (R):\n\nAssertion (A): The Reserve Bank of India (RBI) revoked the banking licence of Paytm Payments Bank Limited (PPBL) in April 2026, forcing it to cease banking operations.\nReason (R): PPBL failed to comply with the norms stipulated in its payment bank licence, violating Section 22(4) of the Banking Regulation Act, 1949.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A",
+      "B": "Both A and R are true, but R is NOT the correct explanation of A",
+      "C": "A is true, but R is false",
+      "D": "A is false, but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "A",
+    "rationale": "The RBI revoked PPBL's licence because of its failure to comply with the banking norms set under its license, an action taken utilizing Section 22(4) of the BR Act, 1949. Thus, both A and R are true and logically connected. Reference: Page 18, 44.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Forex Guidelines",
+    "question": "Consider the following statements regarding the RBI's recent easing of forex rules for banks in April 2026:\n\n1. The RBI withdrew some restrictions on forex dealers taking positions in the offshore non-deliverable forwards (NDF) market.\n2. In March 2026, the RBI had initially capped a bank's net open positions in the offshore derivatives market at USD 100 million to control volatility.\n3. As part of the tightened rules, banks are explicitly permitted to offer non-deliverable forwards to corporate clients.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 only",
+      "B": "1 and 2 only",
+      "C": "2 and 3 only",
+      "D": "1 and 3 only",
+      "E": "1, 2 and 3"
+    },
+    "answer": "B",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the further ban on April 1, 2026, explicitly prohibited banks from offering non-deliverable forwards to corporate clients and banned arbitrage trades. Reference: Page 18, 44.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Committees and Panels",
+    "question": "The Government of India constituted a panel under the chairmanship of State Bank of India (SBI) Chairman ________ to assess potential risks from the advanced Artificial Intelligence (AI) platform ________ and suggest mitigating measures.",
+    "options": {
+      "A": "Dinesh Kumar Khara; ChatGPT",
+      "B": "Challa Sreenivasulu (C.S.) Setty; Claude",
+      "C": "Challa Sreenivasulu (C.S.) Setty; Mythos",
+      "D": "Rajneesh Karnatak; Mythos",
+      "E": "Ashwini Vaishnaw; Gemini"
+    },
+    "answer": "C",
+    "rationale": "The GoI formed a panel led by SBI Chairman Challa Sreenivasulu (C.S.) Setty to evaluate risks from the advanced AI platform Mythos developed by Anthropic. Reference: Page 7, 36.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Rural Development",
+    "question": "The Government of India included six strategically located border villages in Jammu & Kashmir's Kathua district under the second phase of the Vibrant Villages Programme (VVP-II) in April 2026. Which of the following is NOT among the selected villages?",
+    "options": {
+      "A": "Bobiya",
+      "B": "Kadyala",
+      "C": "Gajnal",
+      "D": "Sovima",
+      "E": "Rathua"
+    },
+    "answer": "D",
+    "rationale": "The 6 villages in J&K included in VVP-II are Bobiya, Kadyala, Gajnal, Karol Krishna, Rathua, and Gujjar Chak. Sovima is located in Nagaland, where an Indoor Cricket Academy was launched by PM Modi. Reference: Page 9, 38, 40.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "Economy / Business",
+    "sub_category": "MoUs and Agreements",
+    "question": "Match the following entities in Column I with the purpose of their Memorandum of Understanding (MoU) signed in April 2026 in Column II:\n\nColumn I:\n1. DataKaveri Systems & ONESTRUCTION Inc.\n2. BharatGen & L&T\n3. CMEC & Delhi University\n4. Department of Posts & DTDC\n\nColumn II:\nA. To boost logistics and e-commerce delivery networks\nB. To integrate construction data into AI-ready urban data exchange\nC. To build an end-to-end Sovereign AI compute platform for India\nD. To strengthen maritime education and research\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-A, 4-D",
+      "B": "1-C, 2-B, 3-D, 4-A",
+      "C": "1-B, 2-C, 3-D, 4-A",
+      "D": "1-D, 2-C, 3-B, 4-A",
+      "E": "1-B, 2-D, 3-C, 4-A"
+    },
+    "answer": "C",
+    "rationale": "DataKaveri and ONESTRUCTION signed to integrate construction data into AI-ready urban data exchange. BharatGen & L&T collaborated for an end-to-end Sovereign AI compute platform. CMEC & Delhi Univ aimed to strengthen maritime education. DoP & DTDC aimed to boost logistics networks. Reference: Page 6, 7, 9, 14, 36, 38, 41.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Environment Projects",
+    "question": "Consider the following statements regarding the 5-year project launched by MoEFCC and the National Biodiversity Authority (NBA):\n\n1. The project is titled 'Strengthening Institutional Capacities for Securing Biodiversity Conservation Commitments'.\n2. It will be implemented in the Sathyamangalam landscape of Tamil Nadu and the Garo Hills of Meghalaya.\n3. The initiative is exclusively funded by the Government of India without any external international grants.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 only",
+      "B": "1 and 2 only",
+      "C": "2 and 3 only",
+      "D": "1 and 3 only",
+      "E": "1, 2 and 3"
+    },
+    "answer": "B",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the project is supported by the Global Environment Facility (GEF) and the United Nations Development Programme (UNDP) with a grant of USD 4.88 million. Reference: Page 9, 38.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "State Affairs",
+    "question": "Under the 'CM-INSPIRE' scheme launched by the Meghalaya government for UPSC aspirants, arrange the following stages of the examination in ascending order of the financial support provided:\n\n1. Clearing the Preliminary Examination\n2. Clearing the Mains Examination and qualifying for the Interview/Personality Test stage\n\nSelect the correct answer:",
+    "options": {
+      "A": "1, 2",
+      "B": "2, 1",
+      "C": "Both have equal financial support",
+      "D": "None of the above",
+      "E": "Insufficient data to determine"
+    },
+    "answer": "A",
+    "rationale": "The CM-INSPIRE scheme provides Rs. 50,000 for clearing the Preliminary Examination and Rs. 1,00,000 for clearing the Mains and qualifying for the Interview stage. Therefore, the ascending order of financial support is 1, 2. Reference: Page 33, 53.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Judicial Rulings",
+    "question": "Consider the following Assertion (A) and Reason (R):\n\nAssertion (A): The Supreme Court of India officially declared that the 'Right to Safe Road Travel' is an integral part of the Right to Life under Article 21 of the Constitution.\nReason (R): The judgment was delivered in the matter of In Re: Phalodi Accident, where the Court examined issues related to road safety and accountability on highways and expressways.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A",
+      "B": "Both A and R are true, but R is NOT the correct explanation of A",
+      "C": "A is true, but R is false",
+      "D": "A is false, but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "A",
+    "rationale": "The Supreme Court recognized the Right to Safe Road Travel under Article 21 specifically during the proceedings and ruling of the 'In Re: Phalodi Accident' matter, focusing on highway safety. Thus, A and R are true, and R directly provides the context for A. Reference: Page 12, 39.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Corporate Initiatives",
+    "question": "Consider the following statements regarding recent joint ventures and approvals in the corporate and banking sector:\n\n1. Jio Financial Services Limited formed a 50:50 Joint Venture with Allianz Europe B.V. to set up 'Allianz Jio Reinsurance Limited'.\n2. The Reserve Bank of India approved the NBFC application of One MobiKwik Systems Limited to set up its subsidiary as a lending arm.\n3. Pay Point India Network became the first private-sector fintech company to secure membership in the Centralised Payment System (CPS) operated by the RBI.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "3 only",
+      "E": "1, 2 and 3"
+    },
+    "answer": "E",
+    "rationale": "All statements are correct. JFSL and Allianz formed a 50:50 JV for insurance in India. MobiKwik secured RBI approval for its NBFC lending arm. Pay Point India became the first non-bank fintech to join the RBI's CPS. Reference: Page 18, 19, 44, 45.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Government Initiatives",
+    "question": "Consider the following statements regarding the revised guidelines for the Technology Development and Investment Promotion (TDIP) Scheme:\n\n1. The revised guidelines were released by the Union Minister Jyotiraditya M. Scindia under the Department of Telecommunications (DoT).\n2. The initiative features a financial outlay of Rs. 203 crore for the period 2026–2031.\n3. The scheme is primarily designed to reinforce India's participation in global telecom standards and speed up innovation in 5G Advanced and 6G technologies.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1 only",
+      "E": "1, 2 and 3"
+    },
+    "answer": "E",
+    "rationale": "All three statements accurately reflect the facts about the revised TDIP Scheme guidelines released by the MoC, which has an outlay of Rs 203 crore for 2026-31 and focuses on 5G Advanced and 6G. Reference: Page 5, 34.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Cultural Heritage",
+    "question": "The Ministry of Culture launched the 'VM Frames' national filmmaking competition to creatively celebrate India's heritage, marking the ________ anniversary of the song 'Vande Mataram', originally written by Bankim Chandra Chattopadhyay in ________.",
+    "options": {
+      "A": "100th; 1926",
+      "B": "125th; 1901",
+      "C": "150th; 1875",
+      "D": "175th; 1850",
+      "E": "200th; 1826"
+    },
+    "answer": "C",
+    "rationale": "The 'VM Frames' competition was launched to mark the 150th anniversary of 'Vande Mataram', which was written by Bankim Chandra Chattopadhyay in 1875. Reference: Page 6, 36.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Defence Collaborations",
+    "question": "Match the following defence-related developments in Column I with their respective details in Column II:\n\nColumn I:\n1. Taimoor ALCM\n2. INS Nireekshak\n3. GT-IRSS\n4. Advanced Armoured Platforms\n\nColumn II:\nA. Unveiled by DRDO with 65% indigenous content under the FICV programme\nB. Participated in the 'IN-SLN DIVEX 2026' in Colombo, Sri Lanka\nC. An indigenously developed air-launched anti-ship cruise missile test-fired by Pakistan\nD. Licensing agreement signed between BHEL and DRDO’s NSTL for naval vessels\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-D, 4-A",
+      "B": "1-C, 2-B, 3-A, 4-D",
+      "C": "1-C, 2-B, 3-D, 4-A",
+      "D": "1-D, 2-B, 3-C, 4-A",
+      "E": "1-A, 2-B, 3-D, 4-C"
+    },
+    "answer": "C",
+    "rationale": "Taimoor is a Pakistani ALCM. INS Nireekshak participated in IN-SLN DIVEX 2026. GT-IRSS is linked to the BHEL and NSTL licensing agreement. Advanced Armoured Platforms were unveiled by DRDO under the FICV programme with 65% indigenous content. Reference: Page 10, 14, 24, 38, 41, 47.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "International Affiliations",
+    "question": "The International Chess Federation (FIDE) officially joined the International World Games Association (IWGA) in April 2026. Which of the following statements regarding this event is INCORRECT?",
+    "options": {
+      "A": "The decision was formalized during the IWGA Annual General Meeting (AGM 2026).",
+      "B": "The AGM was held at the Olympic Museum in Lausanne, Switzerland.",
+      "C": "This milestone makes FIDE the 50th member of the International World Games Association.",
+      "D": "The inclusion marks a significant step in the recognition of 'mind sports' globally.",
+      "E": "None of the above."
+    },
+    "answer": "C",
+    "rationale": "FIDE became the 40th member of the IWGA, not the 50th member. All other statements represent factual details about the induction. Reference: Page 27, 49.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Environment and Ecology",
+    "question": "Based on the data released in April 2026 regarding India's Ramsar sites, arrange the following states in descending order of the number of designated wetlands they possess:\n\n1. Uttar Pradesh\n2. Tamil Nadu\n\nSelect the correct answer:",
+    "options": {
+      "A": "1, 2",
+      "B": "2, 1",
+      "C": "Both states have an equal number",
+      "D": "None of the above",
+      "E": "Insufficient data to determine"
+    },
+    "answer": "B",
+    "rationale": "Tamil Nadu has the highest number of Ramsar sites with 20 wetlands. Uttar Pradesh has the 2nd highest number with 12 wetlands. The descending order is Tamil Nadu, then Uttar Pradesh (2, 1). Reference: Page 5, 35.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Bilateral Summits",
+    "question": "Consider the following statements regarding the 4th India-Africa Forum Summit (IAFS-IV):\n\n1. The logo for the summit features a Lion superimposed on interlocked maps of India and Africa.\n2. The theme for the summit is 'IA SPIRIT: India-Africa Strategic Partnership for Innovation, Resilience, and Inclusive Transformation'.\n3. The third summit of the India-Africa Forum was held in the year 2015.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1 only",
+      "E": "1, 2 and 3"
+    },
+    "answer": "E",
+    "rationale": "All three statements correctly detail the specifics of the 4th India-Africa Forum Summit, which resumes after the third edition was held in 2015. Reference: Page 8, 37.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "Economy / Business",
+    "sub_category": "International Trade",
+    "question": "Consider the following Assertion (A) and Reason (R):\n\nAssertion (A): India and Kenya signed a customs cooperation Memorandum of Understanding (MoU) during the 10th India-Kenya Joint Trade Committee (JTC) meeting in Nairobi.\nReason (R): This meeting marked the resumption of trade talks at the Commerce Secretary level between the two nations after a gap of seven years.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A",
+      "B": "Both A and R are true, but R is NOT the correct explanation of A",
+      "C": "A is true, but R is false",
+      "D": "A is false, but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "B",
+    "rationale": "While both the Assertion and the Reason are factually true (an MoU was signed at the 10th JTC meeting, and this occurred after a 7-year gap), the 7-year gap is not the *reason* why the MoU was signed; it is rather contextual background. The signing of the MoU was to strengthen economic ties. Reference: Page 16, 43.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "Economy / Business",
+    "sub_category": "Wealth Reports",
+    "question": "Consider the following statements derived from Knight Frank’s 'The Wealth Report 2026':\n\n1. India's Ultra-High Net-Worth Individuals (UHNWIs) population is projected to reach 25,217 by 2031, representing a 27% growth.\n2. Globally, India holds a 6.7% share of the total billionaire population in 2026, which is projected to increase to 8% by 2031.\n3. The United States of America topped the list with the highest number of UHNWIs, estimated at over 2.5 lakh individuals.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1 only",
+      "E": "1, 2 and 3"
+    },
+    "answer": "E",
+    "rationale": "All statements are correct. India's UHNWIs will grow 27% to 25,217. India's global billionaire share is 6.7%, growing to 8% by 2031. The USA topped the list with 251,352 UHNWIs. Reference: Page 15, 42.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Defence Developments",
+    "question": "Consider the following statements regarding the Advanced Armoured Platforms (Tracked & Wheeled) unveiled by DRDO in April 2026:\n\n1. The platforms were developed to replace the ageing BMP-2K Sarath Infantry Fighting Vehicles (IFVs) under the Future Infantry Combat Vehicle (FICV) programme.\n2. They were designed and developed by the Vehicles Research and Development Establishment (VRDE), a DRDO laboratory.\n3. The platforms currently feature 65% indigenous content, which is planned to be increased to 90%.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "3 only",
+      "E": "1, 2 and 3"
+    },
+    "answer": "E",
+    "rationale": "All the statements correctly describe the unveiling of the Advanced Armoured Platforms by DRDO for the FICV program to replace BMP-2K Sarath IFVs, developed by VRDE with initial 65% indigenous content. Reference: Page 10, 38.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "Economy / Business",
+    "sub_category": "FDI and Investments",
+    "question": "Union Minister Ashwini Vaishnaw and Andhra Pradesh Chief Minister N. Chandrababu Naidu laid the foundation stone for the Google Cloud India Artificial Intelligence (AI) Hub in ________. The project, valued at USD ________, is recognized as the largest single Foreign Direct Investment (FDI) project in India.",
+    "options": {
+      "A": "Hyderabad; 10 billion",
+      "B": "Amaravati; 12 billion",
+      "C": "Visakhapatnam; 15 billion",
+      "D": "Tirupati; 20 billion",
+      "E": "Visakhapatnam; 25 billion"
+    },
+    "answer": "C",
+    "rationale": "The foundation for the Google Cloud AI Hub was laid in Visakhapatnam (Tarluvada) and is valued at USD 15 billion, making it the largest single FDI project in India. Reference: Page 13, 40.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Obituaries",
+    "question": "Match the following prominent personalities who passed away in April 2026 in Column I with their respective fields/achievements in Column II:\n\nColumn I:\n1. Nadendla Bhaskara Rao\n2. Dean Tavoularis\n3. Raghu Rai\n4. Gurbax Singh Grewal\n\nColumn II:\nA. Oscar-winning Production Designer\nB. Olympic Bronze Medallist in Hockey\nC. Former Chief Minister of undivided Andhra Pradesh\nD. Renowned Photojournalist and Padma Shri awardee\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-C, 3-B, 4-D",
+      "B": "1-C, 2-A, 3-D, 4-B",
+      "C": "1-C, 2-A, 3-B, 4-D",
+      "D": "1-B, 2-A, 3-D, 4-C",
+      "E": "1-C, 2-D, 3-A, 4-B"
+    },
+    "answer": "B",
+    "rationale": "Nadendla Bhaskara Rao was the former CM of AP. Dean Tavoularis was an Oscar-winning production designer. Raghu Rai was a veteran photojournalist. Gurbax Singh Grewal was an Olympic bronze medallist in hockey. Reference: Page 27, 28, 49, 50.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "Economy / Business",
+    "sub_category": "Indices and Reports",
+    "question": "The Ministry of Statistics and Programme Implementation (MoSPI) proposed the creation of a new Index of Service Production (ISP) in April 2026. Which of the following statements regarding this index is INCORRECT?",
+    "options": {
+      "A": "The index will measure the performance of India’s services sector on a monthly basis.",
+      "B": "It will adopt 2024–25 as the base year.",
+      "C": "The index will primarily rely on data from the Goods and Services Tax Network (GSTN) as a key input.",
+      "D": "It was developed without any consultation from the Technical Advisory Committee.",
+      "E": "None of the above."
+    },
+    "answer": "D",
+    "rationale": "Statement D is incorrect because the Index of Service Production (ISP) was explicitly developed using global best practices with Technical Advisory Committee on ISP (TAC-ISP) consultation. Reference: Page 14, 40, 41.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "Economy / Business",
+    "sub_category": "Economic Projections",
+    "question": "Arrange the following financial milestones/investments mentioned in the April 2026 reports in descending order of their financial value:\n\n1. NITI Aayog's target size for India's economy by 2047.\n2. New Zealand's committed investment under the India-NZ FTA over 15 years.\n3. Google Cloud's AI Hub FDI project in Visakhapatnam.\n\nSelect the correct answer:",
+    "options": {
+      "A": "1, 2, 3",
+      "B": "1, 3, 2",
+      "C": "3, 2, 1",
+      "D": "2, 3, 1",
+      "E": "2, 1, 3"
+    },
+    "answer": "A",
+    "rationale": "NITI Aayog's target for India's economy by 2047 is USD 30 trillion. New Zealand's committed investment is USD 20 billion. Google Cloud's AI Hub is valued at USD 15 billion. The descending order is 30 trillion, 20 billion, 15 billion (1, 2, 3). Reference: Page 11, 13, 39, 40.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Agriculture and Procurement",
+    "question": "Consider the following statements regarding the Ministry of Consumer Affairs, Food and Public Distribution's procurement initiatives in April 2026:\n\n1. Procurement operations under the PM-AASHA scheme have been expanded in the state of Chhattisgarh.\n2. The first-ever structured pulse procurement initiative under the Atmanirbhar Pulses Mission (APM) was launched in Bihar.\n3. The procurement drive is being spearheaded solely by the Food Corporation of India (FCI).\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 only",
+      "B": "1 and 2 only",
+      "C": "2 and 3 only",
+      "D": "1 and 3 only",
+      "E": "1, 2 and 3"
+    },
+    "answer": "B",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the procurement drive is spearheaded by NCCF (National Cooperative Consumers' Federation of India) and NAFED (National Agricultural Cooperative Marketing Federation of India), not FCI. Reference: Page 8, 37.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "State Affairs",
+    "question": "Match the following state-specific initiatives/projects in Column I with the respective states in Column II:\n\nColumn I:\n1. 10-year 'Warranty' model for rural water schemes under Jal Jeevan Mission\n2. CM-INSPIRE scheme for UPSC Aspirants\n3. India’s first integrated lithium-ion battery and rare earth magnet recycling facility\n4. India's first operating alkaline battery manufacturing facility by Eveready\n\nColumn II:\nA. Meghalaya\nB. Jammu & Kashmir\nC. Uttar Pradesh\nD. Uttar Pradesh (Bulandshahr)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-D, 4-B",
+      "B": "1-D, 2-B, 3-C, 4-A",
+      "C": "1-C, 2-B, 3-A, 4-D",
+      "D": "1-A, 2-C, 3-D, 4-B",
+      "E": "1-B, 2-A, 3-C, 4-D"
+    },
+    "answer": "A",
+    "rationale": "UP introduced the 10-year warranty for JJM. Meghalaya launched CM-INSPIRE. Rocklink inaugurated the Li-ion recycling plant in UP (Bulandshahr). Eveready opened the alkaline battery unit in J&K (Samba). Reference: Page 5, 21, 33, 35, 45, 53.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "Economy / Business",
+    "sub_category": "Aviation",
+    "question": "Consider the following Assertion (A) and Reason (R):\n\nAssertion (A): SkyHop Aviation Private Limited received an Air Operator Certificate (AOC) from the DGCA to launch India's first commercial seaplane services.\nReason (R): The initial operations for these commercial seaplane services are planned to be launched in the Union Territory of Andaman and Nicobar Islands.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A",
+      "B": "Both A and R are true, but R is NOT the correct explanation of A",
+      "C": "A is true, but R is false",
+      "D": "A is false, but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "C",
+    "rationale": "Assertion A is true; SkyHop Aviation did receive DGCA approval for seaplane services. Reason R is false because the initial operations are planned in the Union Territory of Lakshadweep, not the Andaman and Nicobar Islands. Reference: Page 14, 41.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Awareness Programs",
+    "question": "Consider the following statements regarding regulatory initiatives by the RBI and SEBI:\n\n1. The RBI launched 'Mission Saksham', a nationwide capacity-building programme aimed at strengthening the Urban Co-operative Banking (UCBs) sector.\n2. Union Minister Nirmal Sitharaman launched 'Mission Jagrook' at the 38th SEBI Foundation Day to protect retail investors from misinformation and unregistered fin-fluencers.\n3. SEBI's Mission Jagrook was launched exclusively for institutional investors and foreign portfolio managers.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 only",
+      "B": "1 and 2 only",
+      "C": "2 and 3 only",
+      "D": "1 and 3 only",
+      "E": "1, 2 and 3"
+    },
+    "answer": "B",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because SEBI's 'Mission Jagrook' is a nationwide investor awareness campaign aimed at protecting retail investors, not exclusively for institutional or foreign investors. Reference: Page 19, 44, 45.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Appointments",
+    "question": "In April 2026, the National Association of Software and Service Companies (NASSCOM) appointed ________, Co-Founder and Group Chief Executive of Fractal, as its new Chairman for the 2026–2027 term, succeeding ________.",
+    "options": {
+      "A": "Debadatta Chand; Sindhu Gangadharan",
+      "B": "Srikanth Velamakanni; Sindhu Gangadharan",
+      "C": "Parminder Singh; Ashok Lahiri",
+      "D": "Rajneesh Karnatak; Srikanth Velamakanni",
+      "E": "Srikanth Velamakanni; Ashutosh Choudhary"
+    },
+    "answer": "B",
+    "rationale": "NASSCOM appointed Srikanth Velamakanni as its new Chairman for the 2026-2027 term. He succeeds Sindhu Gangadharan. Reference: Page 23, 46.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "International Tournaments",
+    "question": "The South Asian Football Federation (SAFF) announced that India will host the SAFF Women’s Championship 2026. Which of the following statements regarding this tournament is INCORRECT?",
+    "options": {
+      "A": "The tournament is scheduled to take place from May 24 to June 7, 2026.",
+      "B": "The matches will be held at the Pandit Jawaharlal Nehru (Fatorda) Stadium in Margao, Goa.",
+      "C": "This marks the first time India is hosting the SAFF Women’s Championship since 2010.",
+      "D": "Goa had previously hosted a SAFF event during the men’s championship in 1999.",
+      "E": "None of the above."
+    },
+    "answer": "C",
+    "rationale": "Statement C is incorrect because this marks India's first time hosting the SAFF Women's Championship since 2016 in Siliguri, not 2010. The other statements correctly represent the event details. Reference: Page 27, 49.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "Science and Tech",
+    "sub_category": "Meteorology",
+    "question": "Consider the following statements regarding the new weather infrastructure commissioned by IITM Pune in April 2026:\n\n1. An X-Band Dual-Polarization Doppler Weather Radar (DWR) was commissioned at the High Altitude Cloud Physics Laboratory (HACPL) in Mahabaleshwar, Maharashtra.\n2. The installation was carried out under 'Mission Mausam', a multi-year initiative of the Government of India.\n3. The radar aims to transform India into a Weather-Ready Nation by enhancing precision in cloud and precipitation monitoring.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1 only",
+      "E": "1, 2 and 3"
+    },
+    "answer": "E",
+    "rationale": "All statements are correct. IITM Pune commissioned the X-Band DWR at Mahabaleshwar under 'Mission Mausam', aiming to transform India into a Weather-Ready Nation. Reference: Page 10, 38, 39.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Books and Authors",
+    "question": "Match the following books/publications in Column I with their respective authors or publishers in Column II:\n\nColumn I:\n1. The Curious and the Classified: Unearthing Military Myths and Mysteries\n2. Moving Towards Effective City Government – A framework for Million-plus Cities\n3. TRENDS IN WORLD MILITARY EXPENDITURE, 2025\n\nColumn II:\nA. SIPRI\nB. NITI Aayog\nC. General Manoj Mukund Naravane (Retd)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-B, 3-C",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-B, 2-A, 3-C"
+    },
+    "answer": "D",
+    "rationale": "General MM Naravane wrote 'The Curious and the Classified'. NITI Aayog released the report 'Moving Towards Effective City Government'. SIPRI published 'TRENDS IN WORLD MILITARY EXPENDITURE, 2025'. Reference: Page 11, 17, 28, 39, 43, 50.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Global Designations",
+    "question": "In April 2026, UNESCO designated 12 new Global Geoparks. Arrange the following newly added geoparks in alphabetical order of their respective host countries:\n\n1. Terres d’Hérault UNESCO Global Geopark\n2. Changshan UNESCO Global Geopark\n3. Dahar UNESCO Global Geopark\n4. Toratau UNESCO Global Geopark\n\nSelect the correct answer:",
+    "options": {
+      "A": "1, 2, 3, 4",
+      "B": "2, 1, 4, 3",
+      "C": "2, 1, 3, 4",
+      "D": "4, 3, 2, 1",
+      "E": "2, 4, 1, 3"
+    },
+    "answer": "B",
+    "rationale": "The host countries are: 1. France, 2. China, 3. Tunisia, 4. Russia. Alphabetically, the order of countries is China, France, Russia, Tunisia. Therefore, the sequence is 2, 1, 4, 3. Reference: Page 16, 42.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - April 2026 - 4th Week"
+  }
+]

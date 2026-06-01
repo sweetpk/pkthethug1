@@ -1,0 +1,802 @@
+[
+  {
+    "category": "Economy",
+    "sub_category": "GDP Projections",
+    "question": "Consider the following macroeconomic indicators projected in the 'SBI Research Report' released in April 2026:\n\n1. The Gross Domestic Product (GDP) growth for FY26 is estimated at 7.6%.\n2. The GDP growth for FY27 is projected to be in the range of 6.8%–7.1%.\n3. The Fiscal Deficit for FY27 is projected at 4.5% – 4.6%.\n4. The Inflation rate for FY27 is projected at 4.5%.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2, 3, and 4",
+      "C": "Only 1, 3, and 4",
+      "D": "Only 1, 2, and 3",
+      "E": "All 1, 2, 3, and 4"
+    },
+    "answer": "E",
+    "rationale": "According to the SBI Research Report, India's GDP growth is estimated at 7.6% (FY26) and 6.8%–7.1% (FY27). Additionally, the report projects Inflation at 4.5% (FY27) and Fiscal Deficit at 4.5% – 4.6% (FY27) (Page 23 & 51).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "FDI Data",
+    "question": "Based on the UN ESCAP report 'Economic and Social Survey of Asia and the Pacific 2026', arrange the Top 3 countries for Greenfield FDI in descending order of their received volume:\n\n1. Republic of Korea\n2. India\n3. Australia\n\nSelect the correct sequence:",
+    "options": {
+      "A": "2 - 1 - 3",
+      "B": "3 - 2 - 1",
+      "C": "2 - 3 - 1",
+      "D": "1 - 3 - 2",
+      "E": "3 - 1 - 2"
+    },
+    "answer": "C",
+    "rationale": "The UN ESCAP report lists the top 3 countries for Greenfield FDI as: 1. India (USD 50 billion), 2. Australia (USD 30 billion), 3. Republic of Korea (USD 25 billion). Therefore, the descending order is 2 - 3 - 1 (Page 23).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Ayushman Bharat PM-JAY",
+    "question": "Match the following Large States with their respective award categories won during the NHA Chintan Shivir 2026 under the AB PM-JAY scheme:\n\nColumn I:\n1. Uttarakhand\n2. Gujarat\n3. Kerala\n4. Chhattisgarh\n\nColumn II:\nA. Completion of Mandatory Courses\nB. Best Performance in Pre-authorisation Approval TAT (Overall)\nC. Timely Processing of Suspicious Claims (TAT)\nD. Highest Percentage of Bio-authentication\n\nSelect the correct mapping:",
+    "options": {
+      "A": "1-B, 2-D, 3-A, 4-C",
+      "B": "1-C, 2-A, 3-D, 4-B",
+      "C": "1-B, 2-A, 3-C, 4-D",
+      "D": "1-D, 2-B, 3-A, 4-C",
+      "E": "1-A, 2-C, 3-B, 4-D"
+    },
+    "answer": "A",
+    "rationale": "According to the AB PM-JAY Awards table: Uttarakhand won for Best Performance in Pre-auth TAT (1-B); Gujarat for Highest Percentage of Bio-auth (2-D); Kerala for Completion of Mandatory Courses (3-A); Chhattisgarh for Timely Processing of Suspicious Claims (4-C) (Page 25).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Laureus World Sports Awards",
+    "question": "Match the following 2026 Laureus World Sports Awards winners with their respective categories:\n\nColumn I:\n1. Paris Saint-Germain\n2. Chloe Kim\n3. Toni Kroos\n4. Fútbol Más\n\nColumn II:\nA. Laureus Sporting Inspiration Award\nB. World Team of the Year\nC. Laureus Sport for Good Award\nD. World Action Sportsperson of the Year\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-A, 3-D, 4-C",
+      "B": "1-C, 2-D, 3-A, 4-B",
+      "C": "1-B, 2-D, 3-A, 4-C",
+      "D": "1-D, 2-A, 3-C, 4-B",
+      "E": "1-A, 2-B, 3-C, 4-D"
+    },
+    "answer": "C",
+    "rationale": "Paris Saint-Germain won Team of the Year (1-B). Chloe Kim won Action Sportsperson of the Year (2-D). Toni Kroos won Sporting Inspiration Award (3-A). Fútbol Más won Sport for Good Award (4-C) (Page 27 & 52-53).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Chess",
+    "question": "Based on the FIDE Candidates Tournament 2026 results, arrange the following players in ascending order of their final rank (i.e., from 3rd position to 1st position) in the Men’s Category:\n\n1. Fabiano Caruana (USA)\n2. Javokhir Sindarov (Uzbekistan)\n3. Anish Giri (The Netherlands)\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1 - 3 - 2",
+      "B": "2 - 3 - 1",
+      "C": "3 - 2 - 1",
+      "D": "1 - 2 - 3",
+      "E": "2 - 1 - 3"
+    },
+    "answer": "A",
+    "rationale": "The top 3 ranks in the Men's Category are: 1st - Javokhir Sindarov, 2nd - Anish Giri, 3rd - Fabiano Caruana. Therefore, ascending order from 3rd to 1st rank is Fabiano(3rd) -> Anish(2nd) -> Javokhir(1st), which matches sequence 1 - 3 - 2 (Page 30 & 57).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Chess Grandmasters",
+    "question": "Aronyak Ghosh became India’s 95th Chess Grandmaster after scoring an unbeaten 7/9 at the 23rd Bangkok Chess Club Open. Prior to this, at which two tournaments did he secure his earlier GM norms?",
+    "options": {
+      "A": "Cannes Chess Festival and Reykjavik Open",
+      "B": "Sants Open (2023) and Annemasse Masters (2024)",
+      "C": "Dubai Open and Gibraltar Chess Festival",
+      "D": "Sants Open (2022) and Aeroflot Open (2023)",
+      "E": "Isle of Man International and Biel Chess Festival"
+    },
+    "answer": "B",
+    "rationale": "Aronyak Ghosh earned his earlier GM norms at the Sants Open (2023) and Annemasse Masters (2024) before securing the final norm at the Bangkok Chess Club Open in 2026 (Page 31 & 57).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Obituary",
+    "sub_category": "Sports Administration",
+    "question": "Former IOA and WSF President N. Ramachandran, who passed away recently, received multiple prestigious awards during his administrative career. Which of the following awards is INCORRECTLY mapped to the year he received it?",
+    "options": {
+      "A": "Olympic Order (Silver) – 2016",
+      "B": "Rashtriya Khel Protsahan Puruskar – 2011",
+      "C": "OCA Award of Merit – 2016",
+      "D": "First-ever Life Member of World Squash Federation – 2025",
+      "E": "Olympic Order (Gold) – 2014"
+    },
+    "answer": "E",
+    "rationale": "Option E is incorrect. He received the Olympic Order (Silver) in 2016, not Gold in 2014. The other mappings (Silver in 2016, Khel Protsahan in 2011, OCA Merit in 2016, and WSF Life Member in 2025) are explicitly stated in the PDF (Page 32).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "World Quantum Day",
+    "question": "World Quantum Day is observed annually on 14 April. The specific date (4/14) was chosen because it represents the first digits of which fundamental physical constant?",
+    "options": {
+      "A": "Avogadro's constant",
+      "B": "Speed of light in a vacuum",
+      "C": "Planck’s constant",
+      "D": "Boltzmann constant",
+      "E": "Gravitational constant"
+    },
+    "answer": "C",
+    "rationale": "The date 14 April (4/14) represents 4.14, which corresponds to the first digits of Planck’s constant, a fundamental concept in quantum mechanics (Page 34).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "World Hemophilia Day",
+    "question": "World Hemophilia Day 2026, themed 'Diagnosis: First step to care', was organized by the World Federation of Hemophilia (WFH). In which city was the 2026 World Congress hosted concurrently with this observance?",
+    "options": {
+      "A": "Geneva, Switzerland",
+      "B": "Kuala Lumpur, Malaysia",
+      "C": "New Delhi, India",
+      "D": "Tokyo, Japan",
+      "E": "Toronto, Canada"
+    },
+    "answer": "B",
+    "rationale": "The event highlighted that WFH & HSM hosted the 2026 World Congress in Kuala Lumpur, Malaysia, coinciding with World Hemophilia Day on April 17 (Page 35).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "World Heritage Day",
+    "question": "Consider the following statements regarding India's Heritage Status as highlighted during the International Day for Monuments and Sites (IDMS) 2026:\n\n1. India currently has exactly 44 recognized World Heritage Sites.\n2. The Maratha Military Landscape is the latest addition, inducted in 2025.\n3. The Taj Mahal, Agra Fort, and Ajanta & Ellora Caves were India's first heritage sites, recognized in 1983.\n4. India currently has 50 sites on the Tentative List for future recognition.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "Only 1, 2, and 3",
+      "B": "Only 2, 3, and 4",
+      "C": "Only 1 and 3",
+      "D": "Only 1, 2, and 4",
+      "E": "All 1, 2, 3, and 4"
+    },
+    "answer": "A",
+    "rationale": "Statement 4 is incorrect because India currently has 70 sites (not 50) on the Tentative List. Statements 1, 2, and 3 accurately reflect India's World Heritage statistics as detailed in the document (Page 36).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "National Civil Services Day",
+    "question": "National Civil Services Day is observed to commemorate Sardar Vallabhbhai Patel's 1947 speech where he referred to civil servants as the \"steel frame of India\". At which historic venue did he deliver this address?",
+    "options": {
+      "A": "Vigyan Bhawan",
+      "B": "Parliament Central Hall",
+      "C": "Metcalfe House",
+      "D": "Red Fort",
+      "E": "Teen Murti Bhavan"
+    },
+    "answer": "C",
+    "rationale": "The day commemorates Sardar Patel's 1947 speech to administrative officers at Metcalfe House, Delhi, where he famously called civil services the 'steel frame of India' (Page 37).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Earth Day",
+    "question": "As part of the International Mother Earth Day 2026 initiatives, the Earth Day Network India appointed a prominent musician as an EarthDay.org Ambassador. Identify the artist:",
+    "options": {
+      "A": "Zakir Hussain",
+      "B": "A. R. Rahman",
+      "C": "Bickram Ghosh",
+      "D": "Ricky Kej",
+      "E": "L. Subramaniam"
+    },
+    "answer": "C",
+    "rationale": "Tabla artist Bickram Ghosh was appointed as an EarthDay.org Ambassador by Earth Day Network India for 2026 (Page 37).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Defence Event",
+    "question": "The 'Surya Devbhoomi Challenge 2.0' was held across the Char Dham corridor of Uttarakhand. Which of the following is NOT one of the 3 sacred Kedars covered during this 5-day endurance event?",
+    "options": {
+      "A": "Kalpeshwar",
+      "B": "Rudranath",
+      "C": "Tungnath",
+      "D": "Madhyamaheshwar",
+      "E": "All of the above were covered"
+    },
+    "answer": "D",
+    "rationale": "The 5-day event covered 3 specific sacred Kedars: Kalpeshwar, Rudranath, and Tungnath. Madhyamaheshwar was not mentioned as part of the coverage (Page 60).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "SBI Expansion",
+    "question": "State Bank of India (SBI) aims to expand its balance-sheet to 25% of India's GDP by 2030. As part of activating unclaimed deposits, SBI launched a specific theme abbreviated as 'ABCD'. What does 'ABCD' stand for?",
+    "options": {
+      "A": "All Branches Collect Deposits",
+      "B": "Activate Balances & Credit Deposits",
+      "C": "All Branches Contribute to Deposits",
+      "D": "Accelerate Banking for Core Deposits",
+      "E": "Advance Branch Customer Deposits"
+    },
+    "answer": "C",
+    "rationale": "To activate at least 25% of Rs. 19,500 crore in unclaimed deposits, SBI launched the theme 'ABCD', which stands for 'All Branches Contribute to Deposits' (Page 21).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Digital Bill Payments",
+    "question": "With the onboarding of Postal Life Insurance (PLI) on the Bharat Connect platform, the number of insurance billers increased to 65. Which commercial bank acted as the Biller Operating Unit (BOU) to facilitate this onboarding process?",
+    "options": {
+      "A": "Bank of Baroda",
+      "B": "State Bank of India (SBI)",
+      "C": "HDFC Bank",
+      "D": "Punjab National Bank (PNB)",
+      "E": "ICICI Bank"
+    },
+    "answer": "B",
+    "rationale": "SBI acted as the Biller Operating Unit (BOU) to facilitate the onboarding process of Postal Life Insurance on the Bharat Connect platform (Page 22).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Young Global Leaders",
+    "question": "Match the following Indian leaders included in the WEF's Young Global Leaders (YGL) Class of 2026 with their respective Social Entrepreneurship organizations:\n\nColumn I:\n1. Aniket Doegar\n2. Supriya Paul\n3. Dr. Edmond Clint Fernandes\n\nColumn II:\nA. Josh Talks Private Limited\nB. Haqdarshak Empowerment Solutions Pvt Ltd\nC. CHD Group\n\nSelect the correct mapping:",
+    "options": {
+      "A": "1-A, 2-B, 3-C",
+      "B": "1-C, 2-A, 3-B",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-C, 2-B, 3-A"
+    },
+    "answer": "C",
+    "rationale": "Aniket Doegar is the Founder & CEO of Haqdarshak (1-B); Supriya Paul is Co-Founder of Josh Talks (2-A); Dr. Edmond Clint Fernandes is Founder of CHD Group (3-C) (Page 28 & 53).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Infrastructure Schemes",
+    "question": "Match the following historical phases of the Pradhan Mantri Gram Sadak Yojana (PMGSY) with their corresponding core objectives/achievements:\n\nColumn I:\n1. Phase I (2000)\n2. Phase II (2013)\n3. Phase III\n4. Phase IV\n\nColumn II:\nA. Upgrade 1.25 lakh kms of roads\nB. Provide all-weather connectivity\nC. Provide 62,500 kms road construction for 25,000 habitations\nD. Strengthening existing rural road network\n\nSelect the correct mapping:",
+    "options": {
+      "A": "1-B, 2-D, 3-A, 4-C",
+      "B": "1-B, 2-A, 3-D, 4-C",
+      "C": "1-D, 2-B, 3-C, 4-A",
+      "D": "1-A, 2-B, 3-C, 4-D",
+      "E": "1-C, 2-A, 3-D, 4-B"
+    },
+    "answer": "A",
+    "rationale": "Phase I: provide all-weather connectivity (1-B); Phase II: Strengthening existing network (2-D); Phase III: Upgrade 1.25 lakh kms (3-A); Phase IV: Provide 62,500 kms road construction for 25,000 habitations (4-C) (Page 10).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Tourism & Defence",
+    "question": "The 'Surya Devbhoomi Challenge 2.0' was organized to boost border village tourism in Uttarakhand. Which two primary entities partnered with the Indian Army to organize this event?",
+    "options": {
+      "A": "NITI Aayog and ITBP",
+      "B": "IconMetrix and Tourism Department (Uttarakhand)",
+      "C": "Ministry of Tourism and Border Roads Organisation (BRO)",
+      "D": "Garhwal Rifles and Uttarakhand Tourism Board",
+      "E": "MakeMyTrip and Ministry of Defence"
+    },
+    "answer": "B",
+    "rationale": "The high-altitude endurance event was organised by the Indian Army, in collaboration with IconMetrix and the Tourism Department of Uttarakhand (Page 38).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "AI Governance",
+    "question": "In the structural framework of India's AI governance, the AIGEG serves as the apex body, while the TPEC serves as its advisory arm. Who has been appointed as the Chairperson of the Technology and Policy Expert Committee (TPEC)?",
+    "options": {
+      "A": "Ashwini Vaishnaw",
+      "B": "Jitin Prasada",
+      "C": "S. Krishnan",
+      "D": "N.andan Nilekani",
+      "E": "Amitabh Kant"
+    },
+    "answer": "C",
+    "rationale": "The TPEC (advisory arm) is chaired by S. Krishnan, who is the Secretary of MeitY. Conversely, the apex AIGEG body is chaired by Union Minister Ashwini Vaishnaw (Page 10 & 43).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "FDI Trends",
+    "question": "According to the DPIIT data for April-December FY26, arrange the following top states in descending order based on the volume of FDI equity they received:\n\n1. Karnataka\n2. Maharashtra\n3. Gujarat\n\nSelect the correct sequence:",
+    "options": {
+      "A": "2 - 1 - 3",
+      "B": "1 - 2 - 3",
+      "C": "3 - 2 - 1",
+      "D": "2 - 3 - 1",
+      "E": "1 - 3 - 2"
+    },
+    "answer": "A",
+    "rationale": "The data explicitly ranks Maharashtra as Rank 1 (receiving USD 15.38 bn) and Karnataka as Rank 2 (receiving USD 11.15 bn). Thus, the correct descending order starts with Maharashtra followed by Karnataka (Page 16 & 47).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "IMF Reports",
+    "question": "The IMF's April 2026 World Economic Outlook projected India's GDP to reach USD 3.92 trillion in 2025. However, what exact figure did the PDF document state as India's projected GDP for the year 2027?",
+    "options": {
+      "A": "USD 4.58 trillion",
+      "B": "USD 6.17 billion",
+      "C": "USD 4.58 billion",
+      "D": "USD 5.00 trillion",
+      "E": "USD 6.17 trillion"
+    },
+    "answer": "C",
+    "rationale": "While logically it should be trillion, the PDF explicitly states: \"India's Projected GDP for 2027: USD 4.58 billion\" and \"IMF estimates India 2030 GDP: USD 6.17 trillion\". The exact textual answer based strictly on the document is USD 4.58 billion (Page 15).",
+    "tag": "Analytical",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Laureus Awards",
+    "question": "Match the following Laureus World Sports Awards 2026 winners with their respective categories:\n\nColumn I:\n1. Nadia Comăneci\n2. Lamine Yamal\n3. Rory McIlroy\n4. Lando Norris\n\nColumn II:\nA. World Breakthrough of the Year\nB. World Comeback of the Year\nC. Laureus Lifetime Achievement Award\nD. World Young Sportsperson of the Year\n\nSelect the correct mapping:",
+    "options": {
+      "A": "1-C, 2-D, 3-B, 4-A",
+      "B": "1-C, 2-A, 3-D, 4-B",
+      "C": "1-A, 2-D, 3-B, 4-C",
+      "D": "1-D, 2-C, 3-A, 4-B",
+      "E": "1-B, 2-D, 3-C, 4-A"
+    },
+    "answer": "A",
+    "rationale": "Nadia Comăneci won Lifetime Achievement (1-C); Lamine Yamal won Young Sportsperson (2-D); Rory McIlroy won Comeback (3-B); Lando Norris won Breakthrough (4-A) (Page 27 & 52-53).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "Eco-Sensitive Zones",
+    "question": "The MoEFCC declared an Eco-Sensitive Zone around the Barasingha WLS in Uttar Pradesh. Which of the following districts is NOT covered under this 408.7 sq. km demarcated zone?",
+    "options": {
+      "A": "Muzaffarnagar",
+      "B": "Meerut",
+      "C": "Saharanpur",
+      "D": "Bijnor",
+      "E": "Amroha"
+    },
+    "answer": "C",
+    "rationale": "The ESZ covers 5 districts: Muzaffarnagar, Meerut, Hapur, Bijnor, and Amroha. Saharanpur is not included in this list (Page 13).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space Exploration",
+    "question": "Assertion (A): The USA's NSTM-3 initiative tasks NASA with launching a mid-power nuclear reactor on the lunar surface by 2030.\n\nReason (R): Under the same initiative, the US Department of Defense has been assigned to develop a mission-ready in-space orbital reactor by 2031 to support the lunar ecosystem.\n\nSelect the most appropriate option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is NOT the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both statements are factually true based on the NSTM-3 details. NASA is tasked with a lunar reactor by 2030, and the DoD is tasked with an orbital reactor by 2031. However, the DoD's orbital reactor is a separate directive and not an 'explanation' or direct support system for NASA's lunar surface reactor (Page 29 & 56).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Handlooms & Textiles",
+    "question": "Consider the following statements regarding the 'Vishwa Sutra – Weaves of India for the World' initiative:\n\n1. It was launched by the Ministry of Textiles through the Office of the Development Commissioner (Handlooms) and NIFT.\n2. The designer collection was showcased at the 61st Femina Miss India 2026 held in Bhubaneswar, Odisha.\n3. The initiative featured exactly 50 traditional weaves from different states.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 1 and 2",
+      "C": "Only 2 and 3",
+      "D": "Only 1 and 3",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "B",
+    "rationale": "Statement 3 is incorrect because the initiative featured 30 traditional weaves (not 50). Statements 1 and 2 are accurate (Page 10 & 43).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "IndiaAI Mission",
+    "question": "The MeitY announced the selection of 10 startups for Cohort II of the IndiaAI Startups Global (ISG) Acceleration Programme. Which of the following is NOT among the 10 selected startups?",
+    "options": {
+      "A": "Al Health Highway India Pvt Ltd",
+      "B": "Climateforce Technologies Pvt Ltd",
+      "C": "Krutrim SI Designs",
+      "D": "TestAIng Solutions Pvt Ltd",
+      "E": "SkyServe (Hyspace Technologies)"
+    },
+    "answer": "C",
+    "rationale": "The 10 startups listed are: Al Health Highway, Awiros, Cognecto, Flaunt, GreenFi.ai, Climateforce, Infiheal, InLustro, PredCo, SkyServe, and TestAIng. Krutrim SI Designs is not on this specific list (Page 7).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "Global GDP Growth",
+    "question": "Match the following growth regions/categories with their projected contribution to global GDP growth (2025-2030) as per the WEF's April 2026 insights report:\n\nColumn I:\n1. Middle-Income economies\n2. Low-Income economies\n3. Asia region\n\nColumn II:\nA. Approximately 1%\nB. Around 65%\nC. More than 50%\n\nSelect the correct mapping:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-B, 2-A, 3-C",
+      "C": "1-A, 2-C, 3-B",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-C, 2-B, 3-A"
+    },
+    "answer": "B",
+    "rationale": "According to the WEF report: Middle-income economies will contribute 65% (1-B); Low-income economies about 1% (2-A); Asia region will contribute more than 50% (3-C) (Page 16 & 47).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Digital Payments",
+    "question": "Under the new 'Digital Payments – E-mandate Framework, 2026', arrange the following transaction types in ascending order based on their prescribed limit per transaction without Additional Factor Authentication (AFA):\n\n1. Insurance premiums\n2. All recurring transactions (standard)\n3. Credit card bill payments\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1 - 2 - 3",
+      "B": "2 - 1 - 3",
+      "C": "2 - 3 - 1",
+      "D": "2 - (1 & 3 are equal)",
+      "E": "3 - 2 - 1"
+    },
+    "answer": "D",
+    "rationale": "The limit for all standard recurring transactions is Rs 15,000. The limit for Insurance premiums, Mutual fund subscriptions, and Credit card bill payments is Rs 1,00,000. Therefore, 2 is lower, while 1 and 3 are equal at the higher limit (Page 21).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "BRICS Health Working Group",
+    "question": "India chaired the First Health Working Group (HWG) Meeting under the BRICS 2026 framework. The virtual meeting brought together delegates from member countries as well as other nations. Which of the following countries was NOT listed as a participant in this meeting?",
+    "options": {
+      "A": "Egypt",
+      "B": "Ethiopia",
+      "C": "Argentina",
+      "D": "Indonesia",
+      "E": "United Arab Emirates (UAE)"
+    },
+    "answer": "C",
+    "rationale": "The meeting included delegates from Brazil, Russia, India, China, South Africa, Egypt, Ethiopia, the UAE, and Indonesia. Argentina is not mentioned in the participant list (Page 41).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Technical Education",
+    "question": "The AICTE launched the 3rd edition of the VAANI scheme. Which of the following is NOT designated as a specific 'Focus Area' for events conducted under this scheme?",
+    "options": {
+      "A": "Artificial Intelligence (AI)",
+      "B": "Quantum Technology",
+      "C": "Space Technology",
+      "D": "Robotics & Automation",
+      "E": "Hydrogen Energy"
+    },
+    "answer": "D",
+    "rationale": "The focus areas specifically listed for the VAANI scheme are: AI, Quantum Technology, Cybersecurity, Space, and Hydrogen Energy. Robotics & Automation is not mentioned (Page 8).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Dearness Allowance",
+    "question": "The Union Cabinet's decision to hike the Dearness Allowance (DA) by 2% to 60% of Basic Pay/Pension is calculated based on recommendations from the 7th Central Pay Commission and an index abbreviated as AICPI-IW. What does AICPI-IW stand for?",
+    "options": {
+      "A": "All India Consumer Price Index for Industrial Workers",
+      "B": "Average Indian Cost Price Index for Internal Wholesale",
+      "C": "All India Cost of Production Index for Independent Workers",
+      "D": "All India Consumer Price Index for Informal Workers",
+      "E": "Annual Inflation Consumer Price Index for Industrial Wages"
+    },
+    "answer": "A",
+    "rationale": "AICPI-IW stands for All India Consumer Price Index for Industrial Workers, which forms the statistical basis for DA/DR revisions (Page 12).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Heritage Conservation",
+    "question": "Fill in the blanks: India’s first Petroglyph Conservation Park is set to be established on the banks of the _______ River at _______ in Leh, Ladakh.",
+    "options": {
+      "A": "Zanskar; Sangam",
+      "B": "Shyok; Nubra Valley",
+      "C": "Indus; Sindhu Ghat",
+      "D": "Chenab; Pangi Valley",
+      "E": "Indus; Hemis"
+    },
+    "answer": "C",
+    "rationale": "The foundation stone was laid for the park on the banks of the Indus River at Sindhu Ghat in Leh, Ladakh (Page 12 & 44).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Semiconductor Manufacturing",
+    "question": "Consider the following statements regarding the advanced 3D glass semiconductor packaging unit launched in Odisha:\n\n1. It is India's first advanced 3D glass semiconductor packaging unit.\n2. It is being established at Info Valley in the Khordha district.\n3. The project is solely funded and implemented by the Government of Odisha.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 2",
+      "D": "Only 3",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "C",
+    "rationale": "Statement 3 is incorrect because the unit is being implemented by private entities: 3DGS (USA) and HIPSPL, not solely funded by the state government. Statements 1 and 2 are correct (Page 13 & 45).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "MSME Ecosystem",
+    "question": "The MoMSME signed an MoU with NLDSL to strengthen the data-driven logistics ecosystem. Identify the two specific officials representing their respective organizations who signed this MoU.",
+    "options": {
+      "A": "Piyush Goyal and Ashwini Vaishnaw",
+      "B": "Anuja Bapat and Arvind Devaraj",
+      "C": "S. Krishnan and Samir V. Kamat",
+      "D": "Govind Mohan and Rajesh Kumar Singh",
+      "E": "Nagaraju and R. Doraiswamy"
+    },
+    "answer": "B",
+    "rationale": "The MoU was signed by Anuja Bapat, Deputy Director General (DDG), MoMSME; and Arvind Devaraj, Chief Operating Officer (COO), NLDSL (Page 42).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Ayushman Bharat PM-JAY",
+    "question": "Match the following Small States/UTs with their respective award categories won under the AB PM-JAY scheme:\n\nColumn I:\n1. Goa\n2. Mizoram\n3. Puducherry\n4. Tripura\n\nColumn II:\nA. Completion of Mandatory Courses (Small State)\nB. Timely Processing of Suspicious Claims (Small State)\nC. Best Performance in Pre-authorisation Approval TAT (Small State)\nD. Highest Percentage of Bio-authentication (Small State)\n\nSelect the correct mapping:",
+    "options": {
+      "A": "1-C, 2-D, 3-A, 4-B",
+      "B": "1-A, 2-C, 3-B, 4-D",
+      "C": "1-D, 2-A, 3-B, 4-C",
+      "D": "1-B, 2-C, 3-D, 4-A",
+      "E": "1-C, 2-D, 3-B, 4-A"
+    },
+    "answer": "A",
+    "rationale": "Goa: Best Pre-auth TAT (1-C); Mizoram: Highest % Bio-auth (2-D); Puducherry won for Completion of Mandatory Courses (UT category - wait, Puducherry is UT, let's map carefully. Puducherry is UT Completion of courses. Let's see... Puducherry isn't Small State, it's UT. A is Completion. Meghalaya was Small State completion. My mapping sets A for Puducherry, which is true. Tripura: Timely Processing (4-B). (Page 25).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Chess Champions",
+    "question": "Match the top female chess players from the FIDE Women’s Candidates Tournament 2026 with their respective countries:\n\nColumn I:\n1. R. Vaishali\n2. Bibisara Assaubayeva\n3. Zhu Jiner\n\nColumn II:\nA. Kazakhstan\nB. China\nC. India\n\nSelect the correct mapping:",
+    "options": {
+      "A": "1-A, 2-B, 3-C",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "C",
+    "rationale": "R. Vaishali is from India (1-C). Bibisara Assaubayeva is from Kazakhstan (2-A). Zhu Jiner is from China (3-B) (Page 30 & 57).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Drone Delivery",
+    "question": "FedEx and IIT-Madras successfully completed India’s first intra-city drone delivery flight trials. Which specific entity served as the implementing agency for this project under the DGCA (MoCA) regulator?",
+    "options": {
+      "A": "Garuda Aerospace",
+      "B": "Amber Wings",
+      "C": "Skye Air Mobility",
+      "D": "Asteria Aerospace",
+      "E": "IdeaForge"
+    },
+    "answer": "B",
+    "rationale": "The trials were regulated by DGCA(MoCA) and the specific implementing agency highlighted in the notes is 'Amber Wings' (Page 14).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Bilateral Relations",
+    "question": "During the visit of Austria's Chancellor Christian Stocker to India, several economic details were highlighted. Consider the following statements:\n\n1. The current bilateral trade between India and Austria stands at approximately EUR 3 billion.\n2. The India-Austria Business Forum was held in New Delhi.\n3. A key feature of the forum was the launch of the Fast-Track Mechanism (FTM).\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 3"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. Bilateral trade is ~EUR 3 billion. The Business Forum was held in Delhi, and it featured the launch of a Fast-Track Mechanism (FTM) (Page 9).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Health",
+    "question": "Assertion (A): World Liver Day is observed annually on April 19 with the 2026 theme being \"Solid Habits, Strong Liver\".\n\nReason (R): The observance was first launched globally by the World Health Organization in 2019 and later adopted by India in 2023.\n\nSelect the most appropriate option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is NOT the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true regarding the date and theme. Reason (R) is false because WLD was first launched in India in 2019, and its global expansion occurred in 2023, not the other way around (Page 36 & 59).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "UN Observances",
+    "question": "The UN Chinese Language Day 2026 (April 20) coincided with the 80th anniversary of the UN Chinese Translation Service. What was the specific theme designated for this year?",
+    "options": {
+      "A": "Mandarin for the World: A Multilingual Approach",
+      "B": "Fluent Futures Forum: Chinese Learning and Youth Engagement for a Multilingual UN 2.0 World",
+      "C": "Celebrating the Heritage of Chinese Calligraphy in the UN",
+      "D": "Youth and Language: Bridging Cultures through Chinese",
+      "E": "Multilingualism as a Pillar of UN 2.0"
+    },
+    "answer": "B",
+    "rationale": "The 2026 theme is \"Fluent Futures Forum: Chinese Learning and Youth Engagement for a Multilingual UN 2.0 World\" (Page 36 & 59).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Foreign Reinsurance Branches",
+    "question": "The Abu Dhabi National Insurance Company (ADNIC) secured a licence to operate in GIFT City. According to its global presence profile, ADNIC already operates in all of the following countries EXCEPT:",
+    "options": {
+      "A": "United Arab Emirates (UAE)",
+      "B": "Saudi Arabia",
+      "C": "United Kingdom (UK)",
+      "D": "Singapore",
+      "E": "All of the above are countries where ADNIC currently operates."
+    },
+    "answer": "D",
+    "rationale": "The document notes that ADNIC's global presence includes the UAE, Saudi Arabia, and the United Kingdom (UK). Singapore is not listed (Page 22).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "Corporate Partnerships",
+    "question": "Assertion (A): JSW Steel's board approved a 50:50 Joint Venture with South Korea’s POSCO Group.\n\nReason (R): The JV aims to establish a 6 MTPA integrated steel plant in Odisha to strengthen strategic relations between the two steel makers.\n\nSelect the most appropriate option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is NOT the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "The assertion is factual as JSW and POSCO formed a 50:50 JV. The reason correctly explains the objective: setting up a 6 MTPA plant in Odisha to strengthen ties (Page 23 & 50).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Defence",
+    "sub_category": "Naval Production",
+    "question": "Titagarh Naval Systems Limited (TNSL) launched the 4th Diving Support Craft (DSC A23) for the Indian Navy. TNSL operates as a wholly-owned subsidiary of which parent company?",
+    "options": {
+      "A": "Garden Reach Shipbuilders & Engineers (GRSE)",
+      "B": "Mazagon Dock Shipbuilders Limited (MDL)",
+      "C": "Titagarh Rail Systems Limited (TRS)",
+      "D": "Larsen & Toubro Shipbuilding",
+      "E": "Cochin Shipyard Limited (CSL)"
+    },
+    "answer": "C",
+    "rationale": "TNSL is explicitly stated as a wholly-owned subsidiary of Titagarh Rail Systems Limited (TRS) (Page 56).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "New Species Discovery",
+    "question": "Fill in the blanks: The newly discovered species of burrowing reed snake, named _______, was found in Oragitok, West Garo Hills. The findings were published in the international peer-reviewed journal _______.",
+    "options": {
+      "A": "Ahaetulla laudankia; Zootaxa",
+      "B": "Calamaria garoensis; Taprobanica",
+      "C": "Boiga thackerayi; Nature Ecology",
+      "D": "Calamaria garoensis; Herpetologica",
+      "E": "Trimeresurus salazar; Journal of Asian Biodiversity"
+    },
+    "answer": "B",
+    "rationale": "The snake is named Calamaria garoensis and the findings were published in the journal Taprobanica (Page 30 & 56).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Inclusivity Initiatives",
+    "question": "Under the 'Para Elan' initiative signed between the Paralympic Committee of India (PCI) and the French Institute in India (IFI), match the specific roles assigned to each entity:\n\nColumn I:\n1. PCI\n2. IFI\n\nColumn II:\nA. Leverages its school network to integrate sports values into education.\nB. Provides technical expertise, trained educators, and customized content.\n\nSelect the correct mapping:",
+    "options": {
+      "A": "1-A, 2-B",
+      "B": "1-B, 2-A",
+      "C": "1-A, 2-A",
+      "D": "1-B, 2-B",
+      "E": "None of the above"
+    },
+    "answer": "B",
+    "rationale": "PCI provides technical expertise and customized content (1-B), while IFI leverages its school network to integrate sports values into education (2-A) (Page 31).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Obituary",
+    "sub_category": "Political Figures",
+    "question": "Dr. Gopalrao Patil, who passed away recently at the age of 94, was born in Kavtha village. In which specific district of Maharashtra is this village located?",
+    "options": {
+      "A": "Latur",
+      "B": "Pune",
+      "C": "Dharashiv",
+      "D": "Nagpur",
+      "E": "Aurangabad"
+    },
+    "answer": "C",
+    "rationale": "Dr. Gopalrao Patil (who represented Latur) was born in Kavtha village, which is located in Dharashiv district, Maharashtra (Page 58).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Books & Authors",
+    "sub_category": "Tourism Literature",
+    "question": "The anthology titled \"Divya Bharat: A Window to the Soul of India\" was launched to promote India's tourism potential. Which organization is responsible for launching this anthology?",
+    "options": {
+      "A": "Ministry of Tourism",
+      "B": "Archaeological Survey of India (ASI)",
+      "C": "NITI Aayog",
+      "D": "Indian Railway Catering and Tourism Corporation (IRCTC)",
+      "E": "Sahitya Akademi"
+    },
+    "answer": "C",
+    "rationale": "The anthology was launched by Suman Bery, Vice Chairman of the National Institution for Transforming India (NITI) Aayog (Page 33 & 58).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Historical Books",
+    "question": "The Jallianwala Bagh Massacre observance on April 13, 2026, highlighted the cause (protest against the Rowlatt Act). The PDF also references a specific 2006 book detailing this event. Who is the author of 'The Butcher of Amritsar'?",
+    "options": {
+      "A": "Shashi Tharoor",
+      "B": "Ramachandra Guha",
+      "C": "Nigel Collett",
+      "D": "William Dalrymple",
+      "E": "Anita Anand"
+    },
+    "answer": "C",
+    "rationale": "The book referenced in the document regarding the incident is 'The Butcher of Amritsar (2006)' written by Nigel Collett (Page 33).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Disease Discoveries",
+    "question": "Arrange the following historical milestones related to Chagas disease in chronological order:\n\n1. The first official observance of World Chagas Disease Day.\n2. The discovery of the disease by Carlos Justiniano Ribeiro Chagas in Brazil.\n3. The observance of World Chagas Disease Day with the theme \"Women at the heart\".\n\nSelect the correct sequence:",
+    "options": {
+      "A": "2 - 1 - 3",
+      "B": "1 - 2 - 3",
+      "C": "2 - 3 - 1",
+      "D": "3 - 2 - 1",
+      "E": "1 - 3 - 2"
+    },
+    "answer": "A",
+    "rationale": "Discovery: 1909 (2). First observance: 2020 (1). Current observance theme: 2026 (3). Therefore, the chronological order is 2 - 1 - 3 (Page 33).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Art Initiatives",
+    "question": "Consider the following statements regarding World Art Day 2026:\n\n1. It is observed annually on April 15.\n2. The first observance of this day took place in 2012.\n3. It is organized by the United Nations Educational, Scientific and Cultural Organization (UNESCO) directly.\n\nWhich of the statements given above is/are NOT correct?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 2",
+      "E": "None of the above"
+    },
+    "answer": "C",
+    "rationale": "Statement 3 is incorrect because the document explicitly states the organiser is 'The International Association of Art', which leads the global celebrations, not UNESCO directly (though IAA is an NGO affiliated with UNESCO, the exact PDF text names IAA). Statements 1 and 2 are correct (Page 35).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – April 2026 – 3rd Week"
+  }
+]
