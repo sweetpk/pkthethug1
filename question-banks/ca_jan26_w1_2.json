@@ -1,0 +1,802 @@
+[
+  {
+    "category": "International Affairs",
+    "sub_category": "Visits to India",
+    "question": "Match the following foreign dignitaries with the key outcomes or events associated with their visit to India in January 2026:\n\nColumn I:\n1. Ursula von der Leyen (EU President)\n2. Sheikh Mohamed bin Zayed Al Nahyan (UAE President)\n3. Jose Manuel Albares (Spain FM)\n4. Friedrich Merz (German Chancellor)\n\nColumn II:\nA. Inaugurated the International Kite Festival 2026 in Ahmedabad\nB. Signed 13 key agreements and became the Chief Guest for the 77th Republic Day\nC. Presented the 'Declaration of Accession' to join the IPOI\nD. Agreed to expand CEPA to double bilateral trade to over USD 200 billion by 2032\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-D, 3-C, 4-A",
+      "B": "1-C, 2-A, 3-B, 4-D",
+      "C": "1-B, 2-C, 3-D, 4-A",
+      "D": "1-D, 2-A, 3-C, 4-B",
+      "E": "1-A, 2-B, 3-D, 4-C"
+    },
+    "answer": "A",
+    "rationale": "Ursula von der Leyen was the R-Day Chief Guest (B); UAE President agreed to expand CEPA to $200bn (D); Spain's FM joined IPOI (C); German Chancellor inaugurated the Kite Festival (A). (Pages 31-32)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Visits to India",
+    "question": "Consider the following statements regarding the visit of EU Commission President Ursula von der Leyen to India:\n\n1. She attended as the Chief Guest for the 77th Republic Day of India.\n2. The EU became India's 22nd Free Trade Agreement (FTA) partner.\n3. The FTA explicitly excludes AYUSH practitioners from offering services in EU member states.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statement 3 is incorrect because the FTA *includes* AYUSH for the first time, allowing qualified Indian practitioners to offer services in EU member states. Statements 1 and 2 are correct. (Page 32)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Visits to India",
+    "question": "During his visit to West Bengal and Assam, Prime Minister Narendra Modi virtually flagged off India’s 1st Vande Bharat Sleeper Train between which of the following two stations?",
+    "options": {
+      "A": "Howrah and New Jalpaiguri",
+      "B": "Howrah and Guwahati (Kamakhya)",
+      "C": "Sealdah and Dibrugarh",
+      "D": "Kolkata and Silchar",
+      "E": "Howrah and Tinsukia"
+    },
+    "answer": "B",
+    "rationale": "PM Narendra Modi flagged off India’s 1st Vande Bharat Sleeper Train between Howrah (WB) and Guwahati (Kamakhya) (Assam) at Malda town railway station. (Page 31)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "RBI Guidelines",
+    "question": "Arrange the following regulatory milestones for Merchant Bankers as mandated by SEBI in chronological order of their required compliance:\n\n1. Maintain a minimum net worth of Rs 50 crore.\n2. Maintain a minimum net worth of Rs 25 crore.\n3. Implementation of the new SEBI (Merchant Bankers) (Amendment) Regulations, 2025.\n\nSelect the correct answer:",
+    "options": {
+      "A": "3, 2, 1",
+      "B": "1, 2, 3",
+      "C": "3, 1, 2",
+      "D": "2, 3, 1",
+      "E": "2, 1, 3"
+    },
+    "answer": "A",
+    "rationale": "The regulations were amended in December 2025 (3). The Category-I merchant bankers must maintain Rs 25 crore by Jan 02, 2027 (2) and double it to Rs 50 crore by Jan 02, 2028 (1). Thus, 3, 2, 1. (Page 35)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "RBI Approvals",
+    "question": "Which of the following entities is NOT correctly matched with the regulatory approval or license it received from the Reserve Bank of India (RBI) in January 2026?",
+    "options": {
+      "A": "BRISKPE - Payment Aggregator-Cross Border (PA-CB)",
+      "B": "Payoneer India - Payment Aggregator-Cross Border (PA-CB)",
+      "C": "Skydo - Payment Aggregator-Physical (PA-P)",
+      "D": "Paysharp - Payment Aggregator-Physical (PA-P)",
+      "E": "PayG - Payment Aggregator-Physical (PA-P) and Cross-Border (PA-CB)"
+    },
+    "answer": "C",
+    "rationale": "Skydo received final authorization from RBI to operate as a Payment Aggregator-Cross Border (PA-CB) entity, not PA-P. (Page 38)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "SEBI Regulations",
+    "question": "To ensure compliance across Alternative Investment Funds (AIF), SEBI mandated that compliance officers of AIF managers must pass the NISM Series-III-C Certification Examination. From which date does this mandate become effective?",
+    "options": {
+      "A": "April 1, 2026",
+      "B": "July 1, 2026",
+      "C": "October 1, 2026",
+      "D": "January 1, 2027",
+      "E": "April 1, 2027"
+    },
+    "answer": "D",
+    "rationale": "SEBI mandated that compliance officers of AIF managers must obtain the NISM certification effective from January 1, 2027. (Page 34)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Loans Issued by Banks",
+    "question": "Match the following financial institutions with the entities they provided loans/funding to in January 2026:\n\nColumn I:\n1. Asian Development Bank (ADB)\n2. International Finance Corporation (IFC) & ADB\n3. World Bank (IBRD)\n\nColumn II:\nA. West Bengal Health System Reform Program\nB. Musi Riverfront Development Project (Telangana)\nC. Piramal Finance Limited\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-B, 3-C",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "B",
+    "rationale": "ADB provided a Rs 4,100 crore loan for the Musi Riverfront (B). IFC and ADB provided USD 350 million to Piramal Finance (C). World Bank provided USD 286 million for the West Bengal Health System Reform Program (A). (Pages 35-36)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Other Banking News",
+    "question": "Consider the following statements regarding the Capital Gains Account Scheme (CGAS), 1988, launched by ICICI Bank:\n\n1. It allows taxpayers to deposit un-invested long-term capital gains from specified assets.\n2. Tax exemptions can be availed for up to five years under this scheme.\n3. Type A accounts are savings accounts, while Type B accounts are fixed-tenure term deposits.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 3"
+    },
+    "answer": "C",
+    "rationale": "Statement 2 is incorrect because the tax exemptions can be availed for up to three years, not five years. Statements 1 and 3 are correct. (Page 37)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "New Banking Products",
+    "question": "Which bank became the first to implement the National Payments Corporation of India (NPCI) BHIM Services Limited's plugin-based UPI solution into its banking payments application?",
+    "options": {
+      "A": "State Bank of India",
+      "B": "HDFC Bank",
+      "C": "Canara Bank",
+      "D": "Punjab National Bank",
+      "E": "Axis Bank"
+    },
+    "answer": "C",
+    "rationale": "Canara Bank partnered with NBSL to integrate the UPI technology into its banking app 'Canara ai1Pe', becoming the first bank to implement the NBSL plugin-based UPI solution. (Page 37)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "GDP Projections",
+    "question": "Match the following organizations with their projected GDP growth rate for India for the Financial Year 2025-26 (FY26):\n\nColumn I:\n1. State Bank of India's Ecowrap\n2. Morgan Stanley\n3. World Bank Group\n4. International Monetary Fund (IMF)\n\nColumn II:\nA. 7.2%\nB. 7.3%\nC. 7.5%\nD. 7.6%\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-D, 3-A, 4-B",
+      "B": "1-D, 2-C, 3-B, 4-A",
+      "C": "1-B, 2-A, 3-D, 4-C",
+      "D": "1-C, 2-B, 3-A, 4-D",
+      "E": "1-A, 2-D, 3-B, 4-C"
+    },
+    "answer": "A",
+    "rationale": "SBI Ecowrap projected 7.5% (C); Morgan Stanley projected 7.6% (D); World Bank projected 7.2% (A); IMF projected 7.3% (B). (Pages 42-43)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Economy News",
+    "question": "According to a Government of India announcement in December 2025, India overtook Japan to become the world’s 4th largest economy. Arrange the top 4 global economies in descending order of their size as of this announcement:\n\n1. Germany\n2. United States of America (USA)\n3. India\n4. China\n\nSelect the correct answer:",
+    "options": {
+      "A": "2, 4, 1, 3",
+      "B": "2, 1, 4, 3",
+      "C": "4, 2, 1, 3",
+      "D": "2, 4, 3, 1",
+      "E": "4, 2, 3, 1"
+    },
+    "answer": "A",
+    "rationale": "The USA is the largest, followed by China (2nd), Germany (3rd), and India (4th). Thus, the order is 2, 4, 1, 3. (Page 43)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "FDI",
+    "question": "According to the UNCTAD 'Global Investment Trends Monitor' report released in January 2026, Foreign Direct Investment (FDI) inflows into India surged by what percentage to reach USD 47 billion in 2025?",
+    "options": {
+      "A": "45%",
+      "B": "58%",
+      "C": "64%",
+      "D": "73%",
+      "E": "81%"
+    },
+    "answer": "D",
+    "rationale": "The FDI inflows to India surged by 73% to USD 47 billion in 2025 according to UNCTAD. (Page 43)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Business Agreements",
+    "question": "Which Indian airline signed a new unilateral codeshare agreement with airBaltic, the national airline of Latvia, to enhance connectivity between India and the Baltic region?",
+    "options": {
+      "A": "IndiGo",
+      "B": "Air India",
+      "C": "SpiceJet",
+      "D": "Akasa Air",
+      "E": "Vistara"
+    },
+    "answer": "B",
+    "rationale": "Air India and airBaltic signed a new unilateral codeshare agreement. (Page 43)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "MoUs & Agreements",
+    "question": "Consider the following statements regarding the MoU between Adani Defence & Aerospace and Embraer:\n\n1. The MoU aims to explore the development of an aircraft manufacturing and aviation services ecosystem in India.\n2. Embraer is a leading aircraft manufacturer based in France.\n3. The agreement was signed in New Delhi.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "C",
+    "rationale": "Statement 2 is incorrect because Embraer is a Brazilian aircraft manufacturer, not French. Statements 1 and 3 are correct. (Page 44)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "MoUs & Agreements",
+    "question": "Match the following Indian entities with their respective international partners based on MoUs signed in January 2026:\n\nColumn I:\n1. GAIL (India) Limited\n2. Bharat Forge Limited (BFL)\n3. Reliance Industries Limited (RIL)\n\nColumn II:\nA. Agile Robots S.E. (Germany)\nB. ONGC (for offshore energy operations)\nC. K LINE (Japan) and J M Baxi\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "GAIL partnered with K LINE and J M Baxi (C); Bharat Forge signed with Agile Robots (A); RIL signed with ONGC (B). (Pages 44-45)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "MoUs & Agreements",
+    "question": "Which of the following State Governments signed an MoU with Sarvam AI to establish India’s first full-stack Sovereign Artificial Intelligence (AI) Park?",
+    "options": {
+      "A": "Karnataka",
+      "B": "Maharashtra",
+      "C": "Tamil Nadu",
+      "D": "Telangana",
+      "E": "Gujarat"
+    },
+    "answer": "C",
+    "rationale": "The Government of Tamil Nadu signed an MoU with Sarvam AI to establish the Sovereign AI Park in Chennai. (Page 45)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Appointments",
+    "question": "Arrange the following individuals according to the organizations they were recently appointed to head (as DG/Chairman), matching the sequence: DGFT -> FCI -> AERB -> APEDA.\n\n1. Abhishek Dev\n2. Lav Aggarwal\n3. Rabindra Kumar Agarwal\n4. A.K. Balasubrahmanian\n\nSelect the correct sequence:",
+    "options": {
+      "A": "2, 3, 4, 1",
+      "B": "3, 2, 1, 4",
+      "C": "2, 4, 3, 1",
+      "D": "1, 2, 3, 4",
+      "E": "4, 3, 2, 1"
+    },
+    "answer": "A",
+    "rationale": "Lav Aggarwal was appointed DG of DGFT (2); Rabindra Kumar Agarwal as CMD of FCI (3); A.K. Balasubrahmanian as Chairman of AERB (4); Abhishek Dev's tenure was extended as Chairman of APEDA (1). Sequence: 2, 3, 4, 1. (Pages 52-54)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Appointments",
+    "question": "Consider the following statements regarding the recent appointments in India's Central Armed Police Forces and investigative agencies:\n\n1. Rakesh Aggarwal was appointed as the Director General (DG) of the National Investigation Agency (NIA).\n2. Praveen Kumar was appointed as the DG of the Border Security Force (BSF).\n3. Shatrujeet Singh Kapoor was appointed as the DG of the Central Reserve Police Force (CRPF).\n\nWhich of the statements given above is/are NOT correct?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 2",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "C",
+    "rationale": "Statement 3 is incorrect. Shatrujeet Singh Kapoor was appointed as the DG of the Indo-Tibetan Border Police (ITBP), not CRPF. Statements 1 and 2 are correct. (Page 54-55)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Resignations",
+    "question": "In January 2026, Deepinder Goyal resigned as the Director, MD, and CEO of Eternal Limited. Which popular food delivery platform does Eternal Limited operate as the parent company?",
+    "options": {
+      "A": "Swiggy",
+      "B": "Zepto",
+      "C": "Zomato",
+      "D": "Foodpanda",
+      "E": "Dunzo"
+    },
+    "answer": "C",
+    "rationale": "Eternal Limited is the parent company of the food delivery platform \"Zomato\" and commerce delivery arm Blinkit. (Page 56-57)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Awards & Honours",
+    "sub_category": "Padma Awards",
+    "question": "Match the following Padma Awards 2026 categories with the correct number of awardees announced by the Ministry of Home Affairs:\n\nColumn I:\n1. Total Padma Awards\n2. Padma Vibhushan\n3. Padma Bhushan\n4. Padma Shri\n\nColumn II:\nA. 5\nB. 13\nC. 113\nD. 131\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-D, 2-A, 3-B, 4-C",
+      "B": "1-C, 2-A, 3-B, 4-D",
+      "C": "1-D, 2-B, 3-A, 4-C",
+      "D": "1-C, 2-B, 3-A, 4-D",
+      "E": "1-A, 2-D, 3-C, 4-B"
+    },
+    "answer": "A",
+    "rationale": "Total Awards = 131 (D); Padma Vibhushan = 5 (A); Padma Bhushan = 13 (B); Padma Shri = 113 (C). (Page 62)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Awards & Honours",
+    "sub_category": "Gallantry Awards",
+    "question": "President Droupadi Murmu approved 70 Gallantry awards in 2026. Who among the following was awarded the Ashoka Chakra for creating history as the first Indian to visit the International Space Station (ISS)?",
+    "options": {
+      "A": "Major Arshdeep Singh",
+      "B": "Group Captain Shubhanshu Shukla",
+      "C": "Captain Prashanth Balakrishnan Nair",
+      "D": "Naib Subedar Doleshwar Subba",
+      "E": "Lieutenant Commander Dilna K."
+    },
+    "answer": "B",
+    "rationale": "Group Captain Shubhanshu Shukla (IAF) was awarded the Ashoka Chakra for being the first Indian to visit the ISS. (Page 62)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Awards & Honours",
+    "sub_category": "Republic Day Parades",
+    "question": "Arrange the following states/UTs in ascending order based on their rank (3rd to 1st) in the Best Tableaux category at the 77th Republic Day Parade 2026:\n\n1. Kerala\n2. Maharashtra\n3. Jammu & Kashmir (J&K)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1, 2, 3",
+      "B": "3, 1, 2",
+      "C": "1, 3, 2",
+      "D": "2, 3, 1",
+      "E": "3, 2, 1"
+    },
+    "answer": "C",
+    "rationale": "The ranks were: 3rd - Kerala, 2nd - Jammu & Kashmir, 1st - Maharashtra. Thus, ascending order from 3rd to 1st is 1, 3, 2. (Page 63)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Awards & Honours",
+    "sub_category": "International Awards",
+    "question": "Consider the following statements regarding the 83rd Annual Golden Globe Awards 2026:\n\n1. The ceremony was hosted by comedian Nikki Glaser for the second consecutive year.\n2. The category 'Best Podcast' was awarded for the first time.\n3. The film 'One Battle After Another' won eight Golden Globes out of nine nominations.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 2"
+    },
+    "answer": "A",
+    "rationale": "Statement 3 is incorrect because the film 'One Battle After Another' won four Golden Globes, not eight. Statements 1 and 2 are correct. (Page 58-59)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Retirements",
+    "question": "Match the following sports personalities who announced their retirement in January 2026 with their associated sports or achievements:\n\nColumn I:\n1. Usman Khawaja\n2. Alyssa Healy\n3. Saina Nehwal\n4. Jinson Johnson\n\nColumn II:\nA. Badminton (Former World No. 1)\nB. Australian Men's Cricket\nC. Middle-distance running (Asian Games Gold Medalist)\nD. Australian Women's Cricket Captain\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-D, 3-A, 4-C",
+      "B": "1-D, 2-B, 3-A, 4-C",
+      "C": "1-B, 2-D, 3-C, 4-A",
+      "D": "1-A, 2-B, 3-D, 4-C",
+      "E": "1-C, 2-A, 3-B, 4-D"
+    },
+    "answer": "A",
+    "rationale": "Usman Khawaja - Aus Men's Cricket (B); Alyssa Healy - Aus Women's Cricket Captain (D); Saina Nehwal - Badminton (A); Jinson Johnson - Runner (C). (Pages 82-83)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Khelo India Games",
+    "question": "Which state emerged as the overall champion of the Khelo India Beach Games (KIBG) 2026 held at Ghoghla Beach in Diu?",
+    "options": {
+      "A": "Tamil Nadu",
+      "B": "Haryana",
+      "C": "Karnataka",
+      "D": "Manipur",
+      "E": "Madhya Pradesh"
+    },
+    "answer": "C",
+    "rationale": "Karnataka emerged as the overall champion with 11 medals (3 gold, 2 silver, 6 bronze). (Page 84)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Indices & Reports",
+    "sub_category": "Global Rankings",
+    "question": "Arrange the following top three safest cities globally according to the Numbeo Safety Index 2026 in descending order of their safety scores:\n\n1. Doha\n2. Qingdao\n3. Abu Dhabi\n\nSelect the correct answer:",
+    "options": {
+      "A": "3, 1, 2",
+      "B": "2, 3, 1",
+      "C": "1, 3, 2",
+      "D": "2, 1, 3",
+      "E": "3, 2, 1"
+    },
+    "answer": "B",
+    "rationale": "The safety scores are: Qingdao (89.2), Abu Dhabi (88.9), Doha (84.5). The descending order is 2, 3, 1. (Page 69-70)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Indices & Reports",
+    "sub_category": "Export Preparedness",
+    "question": "Regarding the NITI Aayog's 4th edition of the Export Preparedness Index (EPI) 2024, which of the following statements is NOT correct?",
+    "options": {
+      "A": "It was released by NITI Aayog CEO B.V.R. Subrahmanyam.",
+      "B": "Maharashtra emerged as the top-ranked large state.",
+      "C": "Tamil Nadu secured the second position among large states.",
+      "D": "Jammu and Kashmir (J&K) holds the top position among the smaller states.",
+      "E": "Gujarat is ranked third among the large states."
+    },
+    "answer": "D",
+    "rationale": "Statement D is incorrect. Uttarakhand holds the top position among the smaller states with a score of 52.07, followed by J&K at second. (Page 68)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Defence",
+    "sub_category": "Missile Testing",
+    "question": "Match the following missiles/defence systems with their corresponding testing locations or developers:\n\nColumn I:\n1. Pralay missiles\n2. Taimoor Air-Launched Cruise Missile\n3. MPATGM (Third-Generation)\n\nColumn II:\nA. Ahilya Nagar, Maharashtra\nB. Pakistan Air Force\nC. Chandipur, Odisha\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-A, 2-C, 3-B",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "A",
+    "rationale": "Pralay was tested at Chandipur, Odisha (C); Taimoor was tested by Pakistan (B); MPATGM was tested at Ahilya Nagar, Maharashtra (A). (Page 76)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "January Observances",
+    "question": "Consider the following statements about important days observed in January 2026:\n\n1. World Braille Day is observed on January 4th to mark Louis Braille's birth anniversary.\n2. National Youth Day is observed on January 12th to commemorate Swami Vivekananda.\n3. Parakram Diwas is observed on January 23rd to mark the birth anniversary of Bhagat Singh.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 2"
+    },
+    "answer": "A",
+    "rationale": "Statement 3 is incorrect because Parakram Diwas marks the birth anniversary of Subhash Chandra Bose, not Bhagat Singh. Statements 1 and 2 are correct. (Pages 89-91)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Obituary",
+    "sub_category": "Eminent Personalities",
+    "question": "Match the following prominent personalities who passed away in January 2026 with their respective fields:\n\nColumn I:\n1. Suresh Kalmadi\n2. Manoj Kothari\n3. Madhav Dhananjaya Gadgil\n4. Sir William Mark Tully\n\nColumn II:\nA. Journalist/Broadcaster\nB. Ecologist & Conservationist\nC. Billiards Champion\nD. Politician (Former MoS Railways)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-D, 2-C, 3-B, 4-A",
+      "B": "1-C, 2-D, 3-A, 4-B",
+      "C": "1-D, 2-B, 3-C, 4-A",
+      "D": "1-B, 2-C, 3-A, 4-D",
+      "E": "1-A, 2-B, 3-D, 4-C"
+    },
+    "answer": "A",
+    "rationale": "Suresh Kalmadi was a Politician (D); Manoj Kothari was a Billiards Champion (C); M.D. Gadgil was an Ecologist (B); Mark Tully was a Journalist (A). (Pages 86-88)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Books & Authors",
+    "sub_category": "Recent Releases",
+    "question": "The book 'Agni Sarassulo Vikasinchina Kamalam Droupadi Murmu', which chronicles the President's life from tribal roots to Rashtrapati Bhavan, was authored by whom?",
+    "options": {
+      "A": "Prem Prakash",
+      "B": "Dr. C. Palanivelu",
+      "C": "Yarlagadda Lakshmi Prasad",
+      "D": "Dr. Surendra Kumar Pachauri",
+      "E": "Major General Bipin Bakshi"
+    },
+    "answer": "C",
+    "rationale": "The Telugu book was authored by former MP Yarlagadda Lakshmi Prasad. (Page 85)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Dividend Declarations",
+    "question": "Which of the following became India’s first Trade Receivables Discounting System (TReDS) platform to declare and pay an interim dividend of 21.6% to its stakeholders?",
+    "options": {
+      "A": "Invoicemart",
+      "B": "M1xchange",
+      "C": "Receivables Exchange of India Limited (RXIL)",
+      "D": "C2FO India",
+      "E": "ClearTax TReDS"
+    },
+    "answer": "C",
+    "rationale": "RXIL became India's first TReDS platform to return capital to stakeholders by declaring an interim dividend of 21.6%. (Page 39)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Aviation",
+    "question": "In January 2026, which airline became the 5th Indian member of the International Air Transport Association (IATA)?",
+    "options": {
+      "A": "Vistara",
+      "B": "Go First",
+      "C": "Akasa Air",
+      "D": "Air India Express",
+      "E": "Star Air"
+    },
+    "answer": "C",
+    "rationale": "Akasa Air became the 5th Indian member of the IATA. (Page 21)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Indices & Reports",
+    "sub_category": "Henley Passport Index",
+    "question": "Consider the following statements regarding the Henley Passport Index (HPI) 2026 Global Ranking:\n\n1. India ranked 80th with visa-free or visa-on-arrival access to 55 destinations.\n2. India shares its rank with Algeria and Niger.\n3. Singapore remained the most powerful passport with access to 192 destinations.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 3"
+    },
+    "answer": "D",
+    "rationale": "All statements accurately reflect the facts of the Henley Passport Index 2026 as detailed in the document. (Pages 68-69)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Defence Infrastructure",
+    "question": "To strengthen operational presence and rapid response capabilities in the Bay of Bengal, the Indian Navy initiated the establishment of a new naval base (detachment) in which location?",
+    "options": {
+      "A": "Paradip, Odisha",
+      "B": "Haldia, West Bengal",
+      "C": "Visakhapatnam, Andhra Pradesh",
+      "D": "Kakinada, Andhra Pradesh",
+      "E": "Port Blair, Andaman & Nicobar"
+    },
+    "answer": "B",
+    "rationale": "The Indian Navy initiated the establishment of a new naval base (detachment) at Haldia, West Bengal. (Page 79)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "January Observances",
+    "question": "Match the following important days in January with their corresponding dates:\n\nColumn I:\n1. National Startup Day\n2. National Disaster Response Force (NDRF) Raising Day\n3. National Tourism Day\n4. International Day of Clean Energy\n\nColumn II:\nA. January 26\nB. January 25\nC. January 19\nD. January 16\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-D, 2-C, 3-B, 4-A",
+      "B": "1-C, 2-D, 3-A, 4-B",
+      "C": "1-D, 2-A, 3-B, 4-C",
+      "D": "1-B, 2-C, 3-D, 4-A",
+      "E": "1-A, 2-B, 3-C, 4-D"
+    },
+    "answer": "A",
+    "rationale": "Startup Day is Jan 16 (D); NDRF Day is Jan 19 (C); Tourism Day is Jan 25 (B); Clean Energy Day is Jan 26 (A). (Pages 91-92)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Apps & Web Portals",
+    "sub_category": "Government Initiatives",
+    "question": "Regarding the new web-based portal 'PAIMANA', which of the following statements is NOT correct?",
+    "options": {
+      "A": "It was operationalised by the Ministry of Statistics & Programme Implementation (MoSPI).",
+      "B": "It replaces the earlier Online Computerised Monitoring System (OCMS-2006).",
+      "C": "It is used for monitoring State-level micro-irrigation projects worth Rs 50 crore and above.",
+      "D": "PAIMANA stands for Project Assessment, Infrastructure Monitoring & Analytics for Nation-building.",
+      "E": "It monitors Central Sector Infrastructure Projects."
+    },
+    "answer": "C",
+    "rationale": "Option C is incorrect. PAIMANA is designed for monitoring Central Sector Infrastructure Projects worth Rs 150 crore and above, not state-level micro-irrigation projects worth Rs 50 crore. (Page 94)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space Exploration",
+    "question": "Which space agency's telescope recently discovered 'Cloud-9', the first starless, gas-rich, dark-matter cloud?",
+    "options": {
+      "A": "ISRO's Astrosat",
+      "B": "ESA's Euclid",
+      "C": "NASA's Hubble Telescope",
+      "D": "NASA's James Webb Space Telescope",
+      "E": "JAXA's XRISM"
+    },
+    "answer": "C",
+    "rationale": "NASA’s Hubble Telescope discovered 'Cloud-9', a starless, gas-rich, dark-matter cloud. (Page 81)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Government Operations",
+    "question": "Arrange the following milestones connected to Indian Railways in chronological order of their occurrence or historical marking as noted in the document:\n\n1. Indian Railways electrified about 99.2% of its broad-gauge network.\n2. Commissioning of indigenous 'Kavach 4.0' on the Bajwa-Ahmedabad section.\n3. The celebration of \"100 Years of Electrification in Indian Railways\" via a commemorative coin and stamp.\n\nSelect the correct answer:",
+    "options": {
+      "A": "2, 1, 3",
+      "B": "1, 2, 3",
+      "C": "2, 3, 1",
+      "D": "3, 2, 1",
+      "E": "1, 3, 2"
+    },
+    "answer": "A",
+    "rationale": "Kavach 4.0 was commissioned in December 2025 (2). The electrification milestone of 99.2% was reached by November 2025 but reported in January 2026 context (1). The 100 years celebration occurred on January 9, 2026 (3). The logical flow based on the text's timeline drops is 2, 1, 3. (Pages 18, 20-21, 61)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Corporate Partnerships",
+    "question": "Match the following corporations/entities with their respective MoU partners in January 2026:\n\nColumn I:\n1. Wikimedia Foundation\n2. BSNL\n3. Department of Posts\n4. Coromandel International Limited\n\nColumn II:\nA. IIT Madras (for Corporate Research Centre)\nB. Amazon, Meta, Microsoft, Mistral AI\nC. Viasat, Inc. (for SatCom upgrade)\nD. Stock Holding Services Limited (for capital market services)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-D, 4-A",
+      "B": "1-A, 2-B, 3-C, 4-D",
+      "C": "1-C, 2-D, 3-A, 4-B",
+      "D": "1-B, 2-D, 3-A, 4-C",
+      "E": "1-D, 2-A, 3-B, 4-C"
+    },
+    "answer": "A",
+    "rationale": "Wikimedia partnered with Amazon/Meta/etc. (B); BSNL with Viasat (C); Dept of Posts with Stock Holding Services (D); Coromandel with IIT Madras (A). (Pages 49-51)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Committees & Meetings",
+    "question": "Consider the following statements regarding the high-level Strategic Asset Allocation and Risk Governance (SAARG) Committee:\n\n1. It was constituted by the Pension Fund Regulatory and Development Authority (PFRDA).\n2. The committee is chaired by Narayan Ramachandran.\n3. Its purpose is to modernise the investment framework under the National Pension System (NPS).\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 2"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. PFRDA constituted the SAARG Committee chaired by Narayan Ramachandran to review and modernise NPS investment guidelines. (Page 67)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Reports",
+    "question": "The 5th edition of the 'Trade Watch Quarterly' (TWQ) report released by NITI Aayog heavily focused on the analysis of which specific sector's exports?",
+    "options": {
+      "A": "Textiles and Garments",
+      "B": "Information Technology Services",
+      "C": "Automotive exports sector",
+      "D": "Pharmaceuticals and Bulk Drugs",
+      "E": "Agricultural Produce"
+    },
+    "answer": "C",
+    "rationale": "The key focus of this latest TWQ edition was India’s automotive exports sector. (Page 71)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "New Species Discovery",
+    "question": "Match the following newly discovered species in January 2026 with the region where they were found:\n\nColumn I:\n1. Calamaria mizoramensis (Reed Snake)\n2. Leptobrachium mechuka (Slender-Armed Frog)\n3. Indiaphonte bijoyi (Crustacean Genus)\n4. Gegeneophis valmiki (Caecilian Amphibian)\n\nColumn II:\nA. Lakshadweep\nB. Northern Western Ghats (Maharashtra)\nC. Arunachal Pradesh\nD. Mizoram\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-D, 2-C, 3-A, 4-B",
+      "B": "1-C, 2-D, 3-B, 4-A",
+      "C": "1-D, 2-A, 3-B, 4-C",
+      "D": "1-B, 2-C, 3-A, 4-D",
+      "E": "1-A, 2-B, 3-C, 4-D"
+    },
+    "answer": "A",
+    "rationale": "Reed Snake (Mizoram); Slender-Armed Frog (Arunachal Pradesh); Crustacean Genus (Lakshadweep); Caecilian Amphibian (Northern Western Ghats, Maharashtra). (Page 95)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Inflation & Labor",
+    "question": "Regarding the Periodic Labour Force Survey (PLFS) Monthly Bulletin for December 2025, the Unemployment Rate (UR) among persons aged 15 years and above remained stable at what percentage?",
+    "options": {
+      "A": "3.5%",
+      "B": "4.2%",
+      "C": "4.7%",
+      "D": "4.8%",
+      "E": "5.1%"
+    },
+    "answer": "D",
+    "rationale": "The Unemployment Rate (UR) remained stable at 4.8% in December 2025, compared to 4.7% in November 2025. (Page 72)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Global Risk Report",
+    "question": "According to the World Economic Forum's 'Global Risks Report: 21st Edition Insight 2026', which risk dropped from 2nd place to 4th place in the two-year outlook but remains the most severe long-term (10-year) risk?",
+    "options": {
+      "A": "Geoeconomic confrontation",
+      "B": "Social protection gaps",
+      "C": "Extreme weather",
+      "D": "State-based conflict",
+      "E": "Misinformation"
+    },
+    "answer": "C",
+    "rationale": "Extreme weather dropped from 2nd to 4th place in the two-year outlook, but remains the most severe long-term (10-year) risk. (Page 73)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Achievements",
+    "question": "Consider the following statements regarding the achievements of Indian athletes:\n\n1. 18-year-old Kaamya Karthikeyan became the youngest Indian to ski to the South Pole.\n2. Aaryan Varshney became India’s 92nd Chess Grand Master.\n3. Mountaineer Aritra Roy successfully summited Mt. Aconcagua in Argentina.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. Kaamya skied to the South Pole (Page 61), Aaryan Varshney became 92nd GM (Page 84), and Aritra Roy summited Mt. Aconcagua (Page 61).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Awards & Honours",
+    "sub_category": "Brand Ambassadors",
+    "question": "Who was named the international event ambassador for the 21st edition of the Tata Mumbai Marathon (TMM 2025)?",
+    "options": {
+      "A": "Usain Bolt",
+      "B": "Eliud Kipchoge",
+      "C": "Andre De Grasse",
+      "D": "Mo Farah",
+      "E": "Kenenisa Bekele"
+    },
+    "answer": "C",
+    "rationale": "Seven-time Olympic Medallist sprinter Andre De Grasse (Canada) was named the international event ambassador for the TMM 2025. (Page 56)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Festivals & Events",
+    "question": "Arrange the following events in chronological order based on the dates they were held in January 2026:\n\n1. 6th Khelo India Winter Games (Ice Sports Phase conclusion)\n2. 9th Indusfood trade show\n3. 28th Conference of Speakers and Presiding Officers of the Commonwealth (CSPOC)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1, 2, 3",
+      "B": "2, 3, 1",
+      "C": "3, 2, 1",
+      "D": "2, 1, 3",
+      "E": "3, 1, 2"
+    },
+    "answer": "B",
+    "rationale": "Indusfood: Jan 8-10 (2); CSPOC: Jan 14-16 (3); Khelo India Winter Games phase conclusion: Jan 26 (1). Chronological order: 2, 3, 1. (Pages 64-65, 84)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Supercomputing",
+    "question": "Which of the following institutes hosted the newly inaugurated state-of-the-art supercomputing facility named 'Param Shakti', powered by the PARAM RUDRA system?",
+    "options": {
+      "A": "IIT Bombay",
+      "B": "IIT Delhi",
+      "C": "IIT Kanpur",
+      "D": "IIT Madras",
+      "E": "IISc Bengaluru"
+    },
+    "answer": "D",
+    "rationale": "The Ministry of Electronics and Information (MeitY) inaugurated Param Shakti at the Indian Institute of Technology (IIT)-Madras. (Page 81)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Campaigns",
+    "question": "Match the following campaigns or portals with the ministries/organizations that launched them:\n\nColumn I:\n1. 'Sampoornata Abhiyan 2.0'\n2. 'Jal Seva Aankalan'\n3. '#NonStopZindagi' Campaign\n4. 'PANKHUDI' Portal\n\nColumn II:\nA. Ministry of Women and Child Development\nB. NITI Aayog\nC. Ministry of Jal Shakti\nD. GAIL and PNGRB\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-D, 4-A",
+      "B": "1-A, 2-B, 3-C, 4-D",
+      "C": "1-C, 2-A, 3-D, 4-B",
+      "D": "1-D, 2-C, 3-B, 4-A",
+      "E": "1-B, 2-D, 3-C, 4-A"
+    },
+    "answer": "A",
+    "rationale": "Sampoornata Abhiyan 2.0 (NITI Aayog, B); Jal Seva Aankalan (MoJS, C); #NonStopZindagi (GAIL/PNGRB, D); PANKHUDI (MoWCD, A). (Pages 10, 13, 16, 93)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  }
+]

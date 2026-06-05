@@ -1,0 +1,802 @@
+[
+  {
+    "category": "National Affairs",
+    "sub_category": "Other National News",
+    "question": "Consider the following statements regarding the UN Fellowship Training Programme on SALW Control:\n\n1. The Indian Army (IA) hosted the first-ever UN Fellowship Training Programme on Small Arms and Light Weapons (SALW) Control.\n2. The programme was particularly focused on the Asia-Pacific region.\n3. It was held at the Military College of Materials Management (MCMM) in Jabalpur, Madhya Pradesh.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct as per page 25 of the PDF. This marks the first time the programme is being held in Asia, specifically in Jabalpur, MP.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Statewise National News",
+    "question": "Match the following states with the financial size of their budgets presented for FY27 in February 2026:\n\nColumn I:\n1. Meghalaya\n2. Tamil Nadu\n3. Madhya Pradesh\n4. Jharkhand\n\nColumn II:\nA. Rs 2.55 Lakh Crore (Interim)\nB. Rs 1.58 Lakh Crore\nC. Rs 32,023 Crore\nD. Rs 4.38 Lakh Crore\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-D, 4-B",
+      "B": "1-B, 2-D, 3-A, 4-C",
+      "C": "1-C, 2-D, 3-A, 4-B",
+      "D": "1-D, 2-A, 3-C, 4-B",
+      "E": "1-A, 2-B, 3-D, 4-C"
+    },
+    "answer": "A",
+    "rationale": "Based on the PDF: Meghalaya presented Rs 32,023 crore (Page 11). Tamil Nadu presented Rs 2.55 Lakh Crore (Page 11). Madhya Pradesh presented Rs 4.38 Lakh Crore (Page 10). Jharkhand presented Rs 1.58 Lakh Crore (Page 9).",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Other National News",
+    "question": "The Employees’ State Insurance Corporation (ESIC) commenced its Platinum Jubilee celebrations in February 2026. The Government of India issued a commemorative coin of what denomination to mark this occasion?",
+    "options": {
+      "A": "Rs 50",
+      "B": "Rs 75",
+      "C": "Rs 100",
+      "D": "Rs 150",
+      "E": "Rs 200"
+    },
+    "answer": "B",
+    "rationale": "Page 28 of the PDF states that the Government of India issued a Rs.75 commemorative coin to mark the 75th Foundation Day of ESIC.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "RBI in News",
+    "question": "Which of the following statements is NOT correct regarding the highly secure second data centre launched by the Reserve Bank of India (RBI)?",
+    "options": {
+      "A": "It is a greenfield facility located in Bhubaneswar, Odisha.",
+      "B": "It is situated at the Info Valley-II campus in Khordha.",
+      "C": "It is designed to be away from potential enemy strikes and seismic risks.",
+      "D": "The site has secured a Tier III design certification for reliability.",
+      "E": "It manages cash supply, digital payments, and financial data monitoring."
+    },
+    "answer": "D",
+    "rationale": "Statement D is incorrect because page 34 of the PDF explicitly states that the site has secured \"Tier IV\" design certification, not Tier III.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Defence",
+    "sub_category": "Exercise",
+    "question": "Arrange the following joint military exercises in ascending order based on their edition number held in February/March 2026:\n\n1. Exercise VAJRA PRAHAR\n2. Exercise KHANJAR\n3. Exercise DHARMA GUARDIAN\n\nSelect the correct answer:",
+    "options": {
+      "A": "1, 2, 3",
+      "B": "3, 2, 1",
+      "C": "2, 3, 1",
+      "D": "3, 1, 2",
+      "E": "2, 1, 3"
+    },
+    "answer": "B",
+    "rationale": "Based on pages 83-84 of the PDF: DHARMA GUARDIAN was the 7th edition. KHANJAR was the 13th edition. VAJRA PRAHAR was the 16th edition. The ascending order is 3, 2, 1.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Agreements & MoUs Signed",
+    "question": "Read the following pairs of banks/financial institutions and their recent initiatives. Which of the pairs is/are correctly matched?\n\n1. Axis Bank - Co-branded credit cards with IndiGo\n2. Equitas Small Finance Bank - Bancassurance partnership with Bharti AXA Life Insurance\n3. Central Bank of India - Distribution agreement with SBI Mutual Fund\n\nSelect the correct answer:",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 1 and 2",
+      "C": "Only 2 and 3",
+      "D": "Only 1 and 3",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "B",
+    "rationale": "Pair 3 is incorrectly matched because page 37 of the PDF states the Central Bank of India signed a distribution agreement with HSBC Asset Management, not SBI Mutual Fund. Pairs 1 and 2 are correct.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Defence",
+    "sub_category": "Testing",
+    "question": "Given below are two statements, one labeled as Assertion (A) and the other as Reason (R).\n\nAssertion (A): India successfully test-fired the Agni-3 missile from the Integrated Test Range (ITR) in Chandipur, Odisha.\nReason (R): Agni-3 is an Intercontinental Ballistic Missile (ICBM) with a range of over 5,000 kilometers.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true as per page 85 of the PDF. Reason (R) is false because Agni-3 is an Intermediate Range Ballistic Missile (IRBM) with a range of 3,000–3,500 kilometers, not an ICBM.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Finance News",
+    "question": "According to the 16th Finance Commission's criteria for the distribution of central taxes among states, what percentage weightage is assigned to the 'Forest' and 'Area' parameters respectively?",
+    "options": {
+      "A": "10% and 15%",
+      "B": "15% and 10%",
+      "C": "10% and 10%",
+      "D": "12.5% and 10%",
+      "E": "17.5% and 15%"
+    },
+    "answer": "C",
+    "rationale": "Based on the table on page 41 of the PDF, both 'Area' and 'Forest' have been assigned a 10% weightage under the 16th Finance Commission.",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Books & Authors",
+    "sub_category": "Book Launches",
+    "question": "Match the following books released in February 2026 with their respective subjects or central figures:\n\nColumn I:\n1. The Sage who Reimagined Hinduism\n2. Atal Bihari Vajpayee: The Eternal Statesman\n3. Vishwaguru Srila Prabhupada\n\nColumn II:\nA. A.C. Bhaktivedanta Swami\nB. Sree Narayana Guru\nC. Former Prime Minister of India\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-C, 3-B",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "B",
+    "rationale": "Based on page 94 of the PDF: 'The Sage who Reimagined Hinduism' is about Sree Narayana Guru (1-B). 'Atal Bihari Vajpayee' is about the former PM (2-C). 'Vishwaguru Srila Prabhupada' is about A.C. Bhaktivedanta Swami (3-A).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Badminton & Tennis",
+    "question": "Indian shuttler Devika Sihag won her maiden BWF Super 300 title by clinching the women's singles final at the Thailand Masters 2026. She hails from which Indian state?",
+    "options": {
+      "A": "Punjab",
+      "B": "Haryana",
+      "C": "Telangana",
+      "D": "Karnataka",
+      "E": "Maharashtra"
+    },
+    "answer": "B",
+    "rationale": "Page 91 of the PDF states that Indian Shuttler Devika Sihag (from Haryana) won her maiden BWF Super 300 title.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Apps & Web Portals",
+    "sub_category": "Digital Initiatives",
+    "question": "Consider the following statements regarding digital portals and applications launched recently:\n\n1. Teacher App 2.0 was developed by Bharti Airtel Foundation in collaboration with the CK-12 Foundation.\n2. The upgraded National Youth Parliament Scheme (NYPS 2.0) portal was unveiled by the Ministry of Education.\n3. The Certificates of Origin (CoO) digital portal for cultivated medicinal plants was launched by the National Biodiversity Authority (NBA).\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "C",
+    "rationale": "Statement 2 is incorrect because page 104 of the PDF states that the NYPS 2.0 portal was unveiled by the Ministry of Parliamentary Affairs (MoPA), not the Ministry of Education. Statements 1 and 3 are correct.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Global Observances",
+    "question": "Consider the following statements regarding important days observed in February 2026:\n\n1. National Productivity Day is observed annually on 12 February by the National Productivity Council (NPC).\n2. International Darwin Day is observed globally on 12 February to commemorate the birth of Charles Robert Darwin.\n3. World Radio Day is observed on 13 February with the 2026 theme \"Radio and Artificial Intelligence (AI): AI is a tool, not a voice\".\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 2"
+    },
+    "answer": "D",
+    "rationale": "All three statements are factually correct based on pages 100-101 of the PDF.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Defence",
+    "sub_category": "Acquisition",
+    "question": "The Ministry of Defence signed a contract worth Rs 2,312 crore with Hindustan Aeronautics Limited (HAL) for the procurement of aircraft for the Indian Coast Guard. Which aircraft model is being procured under this deal?",
+    "options": {
+      "A": "Tejas Light Combat Aircraft",
+      "B": "C-295 Transport Aircraft",
+      "C": "Dornier 228 Aircraft",
+      "D": "Netra AEW&C Aircraft",
+      "E": "Boeing P-8I"
+    },
+    "answer": "C",
+    "rationale": "Page 86 of the PDF states that the MoD signed a deal for the procurement of 08 Dornier 228 Aircraft along with Operational Role Equipment (ORE) for the Indian Coast Guard.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Obituary",
+    "sub_category": "National Personalities",
+    "question": "Match the following prominent personalities who passed away recently with their respective professions/fields:\n\nColumn I:\n1. Thomas V. Kunnunkal\n2. Hugh Gantzer\n3. Mani Shankar Mukhopadhyay\n4. R. Nallakannu\n\nColumn II:\nA. Travel Writer\nB. Jesuit Priest & Educationist\nC. Veteran Political Leader (CPI)\nD. Bengali Novelist\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-A, 3-D, 4-C",
+      "B": "1-A, 2-B, 3-C, 4-D",
+      "C": "1-B, 2-D, 3-A, 4-C",
+      "D": "1-C, 2-A, 3-D, 4-B",
+      "E": "1-D, 2-C, 3-B, 4-A"
+    },
+    "answer": "A",
+    "rationale": "Based on pages 94-96 of the PDF: Thomas V. Kunnunkal (Priest - 1-B), Hugh Gantzer (Writer - 2-A), Mani Shankar Mukhopadhyay (Novelist - 3-D), R. Nallakannu (Communist Party leader - 4-C).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Themes & Observances",
+    "question": "Which of the following days is NOT matched correctly with its 2026 theme?",
+    "options": {
+      "A": "World Wetlands Day - Wetlands and Traditional Knowledge: Celebrating Cultural Heritage",
+      "B": "World Cancer Day - United by Unique",
+      "C": "International Day of Zero Tolerance for FGM - Towards 2030: No End To FGM Without Sustained Commitment and Investment",
+      "D": "World Pulses Day - Pulses of the World: From Modesty to Excellence",
+      "E": "Safer Internet Day - Connectivity for All, Safely"
+    },
+    "answer": "E",
+    "rationale": "Option E is incorrectly matched. Page 100 of the PDF states that the 2026 theme for Safer Internet Day is \"Smart Tech, Safe Choices\".",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Reports & Indices",
+    "sub_category": "Rankings",
+    "question": "Arrange the following top 4 countries in descending order based on their Gross Square Meters (GSM) of LEED-certified space according to the USGBC LEED List 2025:\n\n1. India\n2. Canada\n3. Mainland China\n4. Republic of Korea\n\nSelect the correct answer:",
+    "options": {
+      "A": "3, 1, 2, 4",
+      "B": "1, 3, 2, 4",
+      "C": "3, 2, 1, 4",
+      "D": "1, 2, 3, 4",
+      "E": "3, 1, 4, 2"
+    },
+    "answer": "A",
+    "rationale": "Based on the table on page 77 of the PDF, the ranking is: Mainland China (1st), India (2nd), Canada (3rd), Republic of Korea (4th). Therefore, the order is 3, 1, 2, 4.",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space Agreements",
+    "question": "Consider the following statements regarding recent space technology agreements:\n\n1. Digantra Industries signed an agreement with Singapore's DSTA to co-develop tools protecting satellites from space debris.\n2. BEML signed a Tripartite Master Research Agreement (MRA) with IISc Bengaluru and Foundation for Science, Innovation and Development (FSID).\n3. GalaxEye partnered with ISRO’s NSIL to become the first private Indian satellite operator to resell Earth Observation data.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 2"
+    },
+    "answer": "D",
+    "rationale": "All three statements are factually correct based on pages 88-89 of the PDF detailing space sector MoUs and agreements.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "FDI",
+    "question": "According to the Ministry of Finance, the Foreign Direct Investment (FDI) equity inflows into the banking sector declined in Financial Year 2024-25 (FY25). What was the recorded FDI inflow in the banking sector in FY25?",
+    "options": {
+      "A": "USD 898 million",
+      "B": "USD 500 million",
+      "C": "USD 350 million",
+      "D": "USD 225 million",
+      "E": "USD 115 million"
+    },
+    "answer": "E",
+    "rationale": "Page 41 of the PDF states that FDI equity inflows into the banking sector declined to USD 115 million in FY25, down from USD 898 million in FY23.",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "New Species",
+    "question": "Consider the following statements about new species discovered in February 2026:\n\n1. Two new marine worm species belonging to the Nereididae family were discovered in the Bay of Bengal.\n2. These worms are commonly known as ragworms or clam worms.\n3. A new dragonfly species named Lyriothemis keralensis was discovered in the coastal areas of Karnataka.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statement 3 is incorrect because page 105 of the PDF notes that the new dragonfly species Lyriothemis keralensis was discovered in the low-lying coastal areas of Kerala, not Karnataka. Statements 1 and 2 are correct.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "Corporate Appointments",
+    "question": "In February 2026, Toyota Motor Corporation (TMC) appointed its Chief Financial Officer (CFO) as the new President and CEO, effective from April 1, 2026. Who is the new appointee?",
+    "options": {
+      "A": "Koji Sato",
+      "B": "Akio Toyoda",
+      "C": "Kenta Kon",
+      "D": "Tetsuo Ogawa",
+      "E": "Masahiko Maeda"
+    },
+    "answer": "C",
+    "rationale": "Page 62 of the PDF states that Toyota Motor Corporation appointed its CFO Kenta Kon as its new President and CEO, replacing Koji Sato.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Committees & Meetings",
+    "sub_category": "Summits & Conferences",
+    "question": "Match the following summits/conferences with the cities where they were hosted in February 2026:\n\nColumn I:\n1. 2nd India–AI Impact Summit 2026\n2. BioAsia 2026\n3. Wings India 2026\n4. International Conference on Dam Safety 2026\n\nColumn II:\nA. Bengaluru\nB. Hyderabad\nC. New Delhi\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-B, 3-B, 4-A",
+      "B": "1-C, 2-A, 3-B, 4-A",
+      "C": "1-B, 2-C, 3-A, 4-B",
+      "D": "1-A, 2-B, 3-C, 4-C",
+      "E": "1-C, 2-B, 3-A, 4-A"
+    },
+    "answer": "A",
+    "rationale": "Based on pages 72-74 of the PDF: India-AI Summit was in New Delhi (1-C). BioAsia was in Hyderabad (2-B). Wings India was in Hyderabad (3-B). Dam Safety Conference was in Bengaluru (4-A).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Other National News",
+    "question": "Read the following statements regarding the Lengtekai Bridge ('Faith Bridge') and the 'Chintan Shivir' event. Which statement is correct?",
+    "options": {
+      "A": "The Lengtekai Bridge was inaugurated over the Brahmaputra River in Assam.",
+      "B": "The Lengtekai Bridge, constructed at a cost of Rs. 43.83 crore, is located in Aizawl, Mizoram.",
+      "C": "The 'Chintan Shivir' organized by the Ministry of Minority Affairs was held in Varanasi, Uttar Pradesh.",
+      "D": "The 'Chintan Shivir' event focused entirely on resolving border disputes between northeastern states.",
+      "E": "Both A and C are correct."
+    },
+    "answer": "B",
+    "rationale": "Page 26 of the PDF confirms that the Lengtekai Bridge was inaugurated over the Tlawng River in Aizawl, Mizoram, at a cost of Rs 43.83 crore. The Chintan Shivir was held at Nalanda University in Rajgir, Bihar.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Global Observances",
+    "question": "Which of the following statements about World Radio Day (WRD) 2026 is NOT correct?",
+    "options": {
+      "A": "It is observed annually on 13th February across the globe.",
+      "B": "It honours the role of radio as a trusted communication medium.",
+      "C": "The 2026 Theme was \"Radio and Artificial Intelligence (AI): AI is a tool, not a voice\".",
+      "D": "The theme emphasizes AI as a complete replacement for human voices in radio broadcasting.",
+      "E": "The focus of the theme is on using AI as a support tool."
+    },
+    "answer": "D",
+    "rationale": "Statement D is incorrect because page 101 of the PDF explicitly states the focus of the theme emphasises AI as a support tool for radio broadcasting, *not* a replacement for the human voice.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "New Species",
+    "question": "Researchers discovered a new dragonfly species in the low-lying coastal areas of Kerala. What is the scientific name given to this new species?",
+    "options": {
+      "A": "Lyriothemis keralensis",
+      "B": "Nereididae keralensis",
+      "C": "Pantala flavescens",
+      "D": "Orthetrum sabina",
+      "E": "Diplacodes trivialis"
+    },
+    "answer": "A",
+    "rationale": "Page 105 of the PDF states that researchers discovered a new dragon species, named Lyriothemis keralensis, in the low-lying coastal areas of Kerala.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Govt Schemes",
+    "sub_category": "Central Govt Schemes",
+    "question": "Given below are two statements, one labeled as Assertion (A) and the other as Reason (R).\n\nAssertion (A): The Ministry of Cooperation's 'White Revolution 2.0' targets to increase milk procurement by dairy cooperatives by 50% over the next 5 years.\nReason (R): The newly launched initiative aims to expand cooperative coverage in the dairy sector, generate job opportunities, and strengthen women’s empowerment.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Both statements are true as per page 14 of the PDF. Reason (R) provides the broader objectives (generating jobs, empowering women) that justify the aggressive target set in Assertion (A) to expand cooperative coverage and procurement.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Govt Schemes",
+    "sub_category": "State Govt Schemes",
+    "question": "Match the following State schemes with their core objectives based on February 2026 announcements:\n\nColumn I:\n1. Mukhyamantri Gramotthan Yojana\n2. Sthree Suraksha Scheme\n3. Banglar Yuva Sathi\n4. Rah-Veer\n\nColumn II:\nA. Financial assistance to unemployed youth\nB. Rewarding citizens who help road accident victims\nC. Providing urban-equivalent facilities in rural areas\nD. Social security pension for unemployed women and transgender women\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-D, 3-A, 4-B",
+      "B": "1-D, 2-C, 3-B, 4-A",
+      "C": "1-C, 2-A, 3-D, 4-B",
+      "D": "1-B, 2-C, 3-A, 4-D",
+      "E": "1-A, 2-B, 3-C, 4-D"
+    },
+    "answer": "A",
+    "rationale": "Based on page 29 of the PDF: Mukhyamantri Gramotthan Yojana (Gujarat) focuses on rural infrastructure (1-C). Sthree Suraksha (Kerala) provides pensions (2-D). Banglar Yuva Sathi (WB) assists unemployed youth (3-A). Rah-Veer (Delhi) rewards citizens helping accident victims (4-B).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Khelo India",
+    "question": "Arrange the following teams in descending order based on their total gold medals won at the 6th edition of the Khelo India Winter Games 2026:\n\n1. Himachal Pradesh (HP)\n2. Indian Army\n3. Haryana\n4. Maharashtra\n\nSelect the correct answer:",
+    "options": {
+      "A": "2, 1, 3, 4",
+      "B": "1, 2, 4, 3",
+      "C": "2, 3, 1, 4",
+      "D": "2, 1, 4, 3",
+      "E": "3, 2, 1, 4"
+    },
+    "answer": "A",
+    "rationale": "According to the table on page 93 of the PDF, the gold medals won are: Indian Army (9), Himachal Pradesh (6), Haryana (4), Maharashtra (3). Therefore, the descending order is 2, 1, 3, 4.",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Reports & Indices",
+    "sub_category": "PLFS Report",
+    "question": "The Periodic Labour Force Survey (PLFS) Quarterly Bulletin for Oct-Dec 2025 indicated that the Unemployment Rate (UR) among persons aged 15 years and above in rural areas dropped to what percentage in Q3 FY26?",
+    "options": {
+      "A": "3.8%",
+      "B": "4.0%",
+      "C": "4.4%",
+      "D": "4.8%",
+      "E": "5.2%"
+    },
+    "answer": "B",
+    "rationale": "Page 80 of the PDF states that the UR among persons aged 15 years and above in rural areas dropped to 4% (in Q3FY26), from 4.4% in the previous quarter.",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Acquisition & Mergers",
+    "sub_category": "Corporate Restructuring",
+    "question": "Consider the following statements regarding the merger of POWERGRID subsidiaries:\n\n1. The MCA approved the merger and amalgamation of 17 wholly-owned subsidiary companies of POWERGRID.\n2. They will be merged into two other wholly-owned subsidiaries.\n3. The restructuring consolidates project-specific SPVs into three distinct schemes: Group-A, Group-B, and Group-C.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statement 3 is incorrect because page 82 of the PDF states that the restructuring consolidates the SPVs into *two* distinct schemes: Scheme Group-A and Scheme Group-B. Statements 1 and 2 are correct.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Other National News",
+    "question": "Which of the following pillars is NOT one of the 7 key pillars represented by the term 'PRAHAAR' in India's new national counter-terrorism policy?",
+    "options": {
+      "A": "It adopts a whole-of-government approach.",
+      "B": "It adopts a whole-of-society approach.",
+      "C": "It encourages coordination between law enforcement agencies.",
+      "D": "It promotes exclusive reliance on international military alliances.",
+      "E": "It underpins India's policy of zero tolerance against terrorism."
+    },
+    "answer": "D",
+    "rationale": "Page 27 of the PDF describes the 'PRAHAAR' framework involving a whole-of-government and whole-of-society approach, coordination with private sectors and civil society, and zero tolerance. Exclusive reliance on international military alliances is not mentioned.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Defence",
+    "sub_category": "Navy News",
+    "question": "The first indigenously designed and built Cadet Training Ship (CTS) of the Indian Navy was launched at L&T Kattupalli, Chennai. What is the name of this ship?",
+    "options": {
+      "A": "INS Godavari",
+      "B": "INS Narmada",
+      "C": "River Krishna (Yard 18003)",
+      "D": "INS Kaveri",
+      "E": "INS Brahmaputra"
+    },
+    "answer": "C",
+    "rationale": "Page 87 of the PDF states that the Cadet Training Ship (CTS) is named 'Krishna (Yard 18003)', after River Krishna, India's 3rd longest river.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Reports & Indices",
+    "sub_category": "Rankings",
+    "question": "Match the following indices/reports with the organization that released them in February 2026:\n\nColumn I:\n1. 2025 Corruption Perceptions Index (CPI)\n2. Global Mind Health in 2025\n3. AI Governance in a Global Context (NRI 2025)\n4. Henley Passport Index\n\nColumn II:\nA. Henley & Partners\nB. Portulans Institute\nC. Transparency International\nD. Sapien Labs\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-D, 3-B, 4-A",
+      "B": "1-D, 2-C, 3-B, 4-A",
+      "C": "1-B, 2-A, 3-D, 4-C",
+      "D": "1-C, 2-B, 3-A, 4-D",
+      "E": "1-A, 2-D, 3-C, 4-B"
+    },
+    "answer": "A",
+    "rationale": "Based on pages 77-79 of the PDF: CPI by Transparency International (1-C), Global Mind Health by Sapien Labs (2-D), NRI by Portulans Institute (3-B), Henley Passport Index by Henley & Partners (4-A).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space Industry",
+    "question": "Under IN-SPACe's 'Satellite Bus as a Service (SBaaS)' initiative, three Indian private startups were selected for a grant. Which of the following is NOT one of the selected startups?",
+    "options": {
+      "A": "Astrome Technologies Private Limited",
+      "B": "Azista Industries Private Limited",
+      "C": "Dhruva Space Private Limited",
+      "D": "Agnikul Cosmos Private Limited",
+      "E": "All of the above were selected"
+    },
+    "answer": "D",
+    "rationale": "Page 88 of the PDF mentions the selected startups are Astrome, Azista, and Dhruva Space. Agnikul Cosmos is not among them.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "International Appointments",
+    "question": "Read the following statements about international political appointments in February 2026. Which statement is correct?",
+    "options": {
+      "A": "Sanae Takaichi secured a victory to become the first female Prime Minister of South Korea.",
+      "B": "Tarique Rahman was sworn in as the 11th Prime Minister of Bangladesh following the July Revolution.",
+      "C": "Rob Arnoldus Adrianus Jetten became the oldest Prime Minister in the history of the Netherlands.",
+      "D": "Anutin Charnvirakul won the general election to become the Prime Minister of Malaysia.",
+      "E": "Andrey Gyurov was appointed as the permanent Prime Minister of Bulgaria."
+    },
+    "answer": "B",
+    "rationale": "Page 63 of the PDF confirms that Tarique Rahman was sworn in as the 11th PM of Bangladesh. Sanae Takaichi is the PM of Japan, Jetten is the youngest-ever PM of the Netherlands, Charnvirakul is PM of Thailand, and Gyurov is the interim PM of Bulgaria.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Global Observances",
+    "question": "World Pangolin Day is observed globally to raise awareness about pangolin conservation. When is it celebrated annually?",
+    "options": {
+      "A": "First Sunday of February",
+      "B": "Second Tuesday of February",
+      "C": "Third Saturday of February",
+      "D": "Last Friday of February",
+      "E": "21st of February strictly every year"
+    },
+    "answer": "C",
+    "rationale": "Page 102 of the PDF states that World Pangolin Day is observed every year on the third Saturday of February.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Reports & Indices",
+    "sub_category": "Rankings",
+    "question": "Arrange the following Global Indices in ascending order based on India's numerical rank (from best rank/lowest number to worst rank/highest number) as published in February 2026:\n\n1. Corruption Perceptions Index (CPI)\n2. Henley Passport Index\n3. AI Governance in a Global Context (NRI)\n4. Global Mind Health (Youth adults aged 18-34)\n\nSelect the correct answer:",
+    "options": {
+      "A": "3, 4, 2, 1",
+      "B": "3, 2, 4, 1",
+      "C": "1, 2, 4, 3",
+      "D": "4, 3, 2, 1",
+      "E": "2, 3, 1, 4"
+    },
+    "answer": "A",
+    "rationale": "Based on pages 77-79 of the PDF: NRI Rank = 45. Mind Health (Youth) Rank = 60. Henley Rank = 75. CPI Rank = 91. The ascending order of rank numbers is 45, 60, 75, 91 (3, 4, 2, 1).",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Other National News",
+    "question": "Given below are two statements, one labeled as Assertion (A) and the other as Reason (R).\n\nAssertion (A): The Supreme Court of India officially recognized 'Menstrual Health and Hygiene (MHH)' as a Fundamental Right.\nReason (R): This recognition falls under Article 21 (Right to Life and Dignity) of the Constitution, as menstrual health is intrinsic to the right to life with dignity.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Both statements are true. Reason (R) accurately explains why Assertion (A) was declared by the Supreme Court, as the denial of such facilities subjects girls to stigma and violates their dignity under Article 21 (Page 25).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Launches & Inauguration",
+    "question": "Under the National Monetisation Pipeline 2.0 (NMP 2.0), the Power sector has the second highest aggregate monetisation potential. What is the estimated Total Monetisation Value (TMV) percentage of the Power sector?",
+    "options": {
+      "A": "13%",
+      "B": "16%",
+      "C": "17%",
+      "D": "20%",
+      "E": "26%"
+    },
+    "answer": "C",
+    "rationale": "According to the table on page 17 of the PDF, the Power sector accounts for 17% of the Total Monetisation Value.",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Other National News",
+    "question": "Consider the following statements regarding the MoU signed by Digital Bharat Nidhi (DBN) for the Amended BharatNet Programme (ABP):\n\n1. DBN signed the MoU with the Andhra Pradesh Government.\n2. The GoI approved Rs 2,432 crore for the execution of the program in the state.\n3. The state government is required to facilitate Right of Way (RoW) and infrastructure access.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All three statements correctly describe the Memorandum of Cooperation signed between DBN and the AP Government for the Amended BharatNet Programme as detailed on page 27 of the PDF.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Cabinet Approvals",
+    "question": "The Cabinet Committee on Economic Affairs fixed the Minimum Support Price (MSP) of Raw Jute (TD-3 grade, Fair quality) for the 2026–27 marketing season. What is the approved MSP per quintal?",
+    "options": {
+      "A": "Rs 5,050",
+      "B": "Rs 5,500",
+      "C": "Rs 5,925",
+      "D": "Rs 6,200",
+      "E": "Rs 6,500"
+    },
+    "answer": "C",
+    "rationale": "Page 7 of the PDF mentions that the CCEA fixed the MSP of Raw Jute at Rs 5,925 per quintal for the 2026–27 marketing season.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Other Important Awards",
+    "question": "Rouble Nagi, an Indian teacher and social activist, won the Global Teacher Prize 2026. This award was instituted by which organization in collaboration with UNESCO?",
+    "options": {
+      "A": "Bill & Melinda Gates Foundation",
+      "B": "Varkey Foundation and GEMS Education",
+      "C": "Reliance Foundation",
+      "D": "Azim Premji Foundation",
+      "E": "World Economic Forum"
+    },
+    "answer": "B",
+    "rationale": "Page 67 of the PDF states the award was instituted in 2014 by Global Education Management Systems (GEMS) Education and the Varkey Foundation in collaboration with UNESCO.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Other Important Awards",
+    "question": "Match the following awards presented in February 2026 with their respective recipients:\n\nColumn I:\n1. Crafoord Prize in Geosciences\n2. Soldier of Humanity Award\n3. Chang-Crandall Humanitarian Award\n\nColumn II:\nA. Gyalyum Ashi Dorji Wangmo Wangchuck\nB. Dr. Haripriya Aravind and Dr. R. Venkatesh\nC. Veerabhadran Ramanathan\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-B, 2-C, 3-A",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Based on pages 66-67 of the PDF: Crafoord Prize went to Veerabhadran Ramanathan (1-C). Soldier of Humanity went to Gyalyum Ashi Dorji Wangmo Wangchuck (2-A). Chang-Crandall went to Dr. Haripriya Aravind and Dr. R. Venkatesh (3-B).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Agreements & MoUs Signed",
+    "question": "ICICI Prudential AMC received RBI approval to acquire up to 9.95% stake in eight Indian banks. Which of the following banks is NOT included in this approval?",
+    "options": {
+      "A": "Bandhan Bank Limited",
+      "B": "City Union Bank Limited",
+      "C": "Equitas Small Finance Bank",
+      "D": "Federal Bank Limited",
+      "E": "South Indian Bank"
+    },
+    "answer": "E",
+    "rationale": "Page 83 of the PDF lists the eight banks as Bandhan Bank, City Union Bank, Equitas SFB, Federal Bank, IDFC FIRST Bank, HDFC Bank, Karur Vysya Bank, and RBL Bank. South Indian Bank is not included.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Other Banking News",
+    "question": "Consider the following statements regarding new credit card launches by banks:\n\n1. Punjab National Bank (PNB) launched the 'LUXURA Metal Credit Card' on the Visa Infinite platform.\n2. Tripura Gramin Bank launched India's first RRB Co-Branded RuPay Credit Card in collaboration with PNB.\n3. Both these credit cards cater exclusively to corporate and institutional clients.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct as per page 38 of the PDF. Statement 3 is incorrect because the LUXURA card is for high-net-worth and lifestyle-driven customers, and the TGB card marks its golden jubilee for general customers, not exclusively corporate.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Govt Schemes",
+    "sub_category": "Central Govt Schemes",
+    "question": "The Ministry of Petroleum & Natural Gas mandated the sale of E20 petrol nationwide starting April 01, 2026. What does E20 petrol signify?",
+    "options": {
+      "A": "Petrol with a maximum of 20% ethanol blend",
+      "B": "Petrol with an energy efficiency rating of 20",
+      "C": "Petrol containing 20% synthetic additives",
+      "D": "Petrol restricted to 20 states in India",
+      "E": "Petrol emitting 20% less carbon monoxide"
+    },
+    "answer": "A",
+    "rationale": "Page 28 of the PDF specifies that E20 petrol mandates the sale of petrol with a maximum 20% of ethanol blend.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Global Observances",
+    "question": "Arrange the following important global days in chronological order of their observance in the month of February:\n\n1. World Pulses Day\n2. World Radio Day\n3. World Cancer Day\n4. World Wetlands Day\n\nSelect the correct answer:",
+    "options": {
+      "A": "4, 3, 1, 2",
+      "B": "3, 4, 1, 2",
+      "C": "4, 1, 3, 2",
+      "D": "1, 2, 3, 4",
+      "E": "4, 3, 2, 1"
+    },
+    "answer": "A",
+    "rationale": "Based on pages 98-101 of the PDF: World Wetlands Day is Feb 2. World Cancer Day is Feb 4. World Pulses Day is Feb 10. World Radio Day is Feb 13. The chronological order is 4, 3, 1, 2.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Reports & Indices",
+    "sub_category": "Reports",
+    "question": "According to the 'Trade Watch Quarterly-Thematic Analysis: Electronics Trade' report by NITI Aayog, India's electronics exports reached USD 42.1B in 2024. This makes it the second largest export category for India after which category?",
+    "options": {
+      "A": "Automobiles",
+      "B": "Pharmaceuticals",
+      "C": "Gems/Jewellery",
+      "D": "Textiles and Apparel",
+      "E": "Petroleum Products"
+    },
+    "answer": "C",
+    "rationale": "Page 80 of the PDF states that electronics exports emerged as the 2nd largest category after gems/jewellery.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Visits",
+    "sub_category": "Visit to India",
+    "question": "Given below are two statements, one labeled as Assertion (A) and the other as Reason (R).\n\nAssertion (A): PM Narendra Modi dedicated the 82 km Delhi-Meerut Namo Bharat Corridor to the nation.\nReason (R): The Delhi-Meerut Namo Bharat Corridor is India’s first Regional Rapid Transit System (RRTS).\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both statements are true as per page 31 of the PDF. However, while R provides additional factual context about what the corridor is, it is not the direct causative *reason* why the PM dedicated it (which is a procedural inauguration of a completed infrastructure project).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "Apps & Web Portals",
+    "sub_category": "Government Portals",
+    "question": "Match the following digital portals/initiatives with their launching authority/ministry:\n\nColumn I:\n1. NYPS 2.0\n2. Certificates of Origin (CoO) Portal\n3. Provincialization Management System (PMS)\n\nColumn II:\nA. Chief Minister of Assam\nB. Ministry of Parliamentary Affairs\nC. National Biodiversity Authority\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-A, 2-C, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-C, 2-A, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Based on page 104 of the PDF: NYPS 2.0 was launched by the Ministry of Parliamentary Affairs (1-B). CoO Portal was launched by the National Biodiversity Authority (2-C). PMS Portal was launched by the Chief Minister of Assam (3-A).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "General",
+    "question": "New York City recently joined the World Health Organization’s Global Outbreak Alert and Response Network (GOARN). Which US state had joined GOARN earlier in the same month?",
+    "options": {
+      "A": "California",
+      "B": "Texas",
+      "C": "Illinois",
+      "D": "Florida",
+      "E": "New York State"
+    },
+    "answer": "C",
+    "rationale": "Page 29 of the PDF states that earlier, Illinois (USA) joined the WHO’s GOARN on February 3, 2026.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF February 2026"
+  }
+]

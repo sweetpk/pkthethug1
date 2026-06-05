@@ -1,0 +1,802 @@
+[
+  {
+    "category": "National Affairs",
+    "sub_category": "Government Initiatives",
+    "question": "The Department of Financial Services (DFS) launched the ‘Composite Salary Account Package for Central Government Employees’. Which group of employees is explicitly excluded from the standardized benefits of this package?",
+    "options": {
+      "A": "Group A",
+      "B": "Group B",
+      "C": "Group C",
+      "D": "Group D",
+      "E": "Gazetted Officers"
+    },
+    "answer": "D",
+    "rationale": "The package standardizes benefits for employees across Group A, B, and C cadres and explicitly excludes Group D. (Page 14)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "MoUs & Agreements",
+    "question": "Match the following Government Departments/Entities with the partners they signed MoUs with in January 2026:\n\nColumn I:\n1. Technology Development Board (TDB)\n2. Department of Posts (DoP)\n3. ONGC\n4. Digital India BHASHINI Division\n\nColumn II:\nA. Ministry of Tribal Affairs (for EMRS funding)\nB. Survey of India (for digitizing toponyms)\nC. SIDBI (for Contact Point Verification of micro enterprises)\nD. Vijai Marine Services (for Smart Sea Project)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-D, 2-C, 3-A, 4-B",
+      "B": "1-A, 2-B, 3-C, 4-D",
+      "C": "1-D, 2-B, 3-A, 4-C",
+      "D": "1-C, 2-D, 3-B, 4-A",
+      "E": "1-B, 2-C, 3-D, 4-A"
+    },
+    "answer": "A",
+    "rationale": "TDB + Vijai Marine (D); DoP + SIDBI (C); ONGC + MoTA (A); BHASHINI + Survey of India (B). (Pages 47, 50)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "Conservation Projects",
+    "question": "Consider the following statements regarding the new conservation project launched by BNHS and NMCG:\n\n1. It aims to safeguard the breeding habitats of the Indian Skimmer in the Brahmaputra Basin.\n2. The Indian Skimmer is classified as an Endangered (EN) bird species.\n3. The main objective of the project is protecting river sandbars, which are crucial nesting sites.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 3"
+    },
+    "answer": "B",
+    "rationale": "Statement 1 is incorrect because the project safeguards breeding habitats in the Ganga Basin, not the Brahmaputra Basin. Statements 2 and 3 are correct. (Pages 14-15)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Energy Capacity",
+    "question": "According to the Ministry of New and Renewable Energy (MNRE), India's non-fossil fuel electricity capacity reached 266.78 GW in 2025. This marks a _______ increase from the year 2024.",
+    "options": {
+      "A": "15.4%",
+      "B": "18.5%",
+      "C": "20.1%",
+      "D": "22.6%",
+      "E": "25.0%"
+    },
+    "answer": "D",
+    "rationale": "India's non-fossil fuel electricity capacity reached 266.78 GW in 2025, marking a 22.6% increase from 2024. (Page 21)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Appointments",
+    "question": "Which of the following recent appointments (January 2026) is NOT matched correctly?",
+    "options": {
+      "A": "Karthikeyan Manickam - Chairman of ESAF Small Finance Bank",
+      "B": "A. K. Balasubrahmanian - Chairman of the Atomic Energy Regulatory Board (AERB)",
+      "C": "Sandeep Bakshi - Managing Director and CEO of Axis Bank",
+      "D": "Praveen Vashista - Vigilance Commissioner in the CVC",
+      "E": "Hardeep Singh Ahluwalia - Interim MD and CEO of Canara Bank"
+    },
+    "answer": "C",
+    "rationale": "Sandeep Bakshi was re-appointed as the Managing Director (MD) and Chief Executive Officer (CEO) of ICICI Bank Limited, not Axis Bank. (Pages 53-54)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Indices & Reports",
+    "sub_category": "Global Indices",
+    "question": "Arrange the following top three countries in descending order of their overall score in the inaugural Responsible Nations Index (RNI) 2026:\n\n1. Denmark\n2. Singapore\n3. Switzerland\n\nSelect the correct answer:",
+    "options": {
+      "A": "2, 3, 1",
+      "B": "3, 2, 1",
+      "C": "1, 2, 3",
+      "D": "2, 1, 3",
+      "E": "1, 3, 2"
+    },
+    "answer": "A",
+    "rationale": "Singapore topped the ranking (1st), followed by Switzerland (2nd) and Denmark (3rd). Thus, the descending order is 2, 3, 1. (Page 69)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Brand Valuations",
+    "question": "According to the 'Brand Finance Global 500 2026' report, which Indian company ranked as the world’s third most valuable Information Technology (IT) Services Brand, valued at USD 16.4 billion?",
+    "options": {
+      "A": "Tata Consultancy Services (TCS)",
+      "B": "Infosys",
+      "C": "Wipro",
+      "D": "HCLTech",
+      "E": "Tech Mahindra"
+    },
+    "answer": "B",
+    "rationale": "Infosys ranked as the world’s third most valuable IT Services Brand, valued at USD 16.4 billion. (Page 70)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Retirements",
+    "question": "Consider the following combinations of sports personalities who retired in January 2026 and their respective fields:\n\n1. Usman Khawaja - Cricket\n2. Jinson Johnson - Athletics (Middle-distance running)\n3. Saina Nehwal - Tennis\n\nWhich of the combinations given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Combination 3 is incorrect because Saina Nehwal is associated with Badminton, not Tennis. Combinations 1 and 2 are correct. (Pages 82-83)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "January Observances",
+    "question": "Which of the following important days observed in January 2026 is NOT correctly matched with its Theme?",
+    "options": {
+      "A": "National Siddha Day - \"Siddha for Global Health\"",
+      "B": "International Day of Clean Energy - \"Clean Energy for People and Planet\"",
+      "C": "National Voters’ Day - \"My India, My Vote\"",
+      "D": "World Neglected Tropical Diseases Day - \"Holocaust Remembrance for Dignity and Human Rights\"",
+      "E": "International Customs Day - \"Customs protecting society through vigilance and commitment\""
+    },
+    "answer": "D",
+    "rationale": "World Neglected Tropical Diseases Day (WNTDD) has the theme \"Unite. Act. Eliminate\". The theme \"Holocaust Remembrance for Dignity and Human Rights\" belongs to the International Day of Commemoration in Memory of the Victims of the Holocaust. (Pages 89-93)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "State Budgets",
+    "question": "Kerala Finance Minister KN Balagopal presented the state budget for FY27. Out of the proposed Rs 2.40 lakh crore, what specific amount has been allocated to support social security pensioners and fund new community programs?",
+    "options": {
+      "A": "Rs 8,500 crore",
+      "B": "Rs 10,000 crore",
+      "C": "Rs 12,500 crore",
+      "D": "Rs 14,500 crore",
+      "E": "Rs 18,000 crore"
+    },
+    "answer": "D",
+    "rationale": "Among the major allocations, Rs 14,500 crore has been allocated to support social security pensioners and fund new community programs. (Page 8)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Defence Communications",
+    "question": "Consider the following statements regarding the partnership between BSNL and Viasat, Inc.:\n\n1. It supports the next phase of the Indian Air Force's (IAF) Satellite Communications upgrade programme.\n2. Viasat’s Ka-band systems will integrate with BSNL’s L-band network.\n3. The integration will enable multi-band SATCOM connectivity.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 3"
+    },
+    "answer": "B",
+    "rationale": "Statement 1 is incorrect because the partnership supports the Indian Navy’s (IN) SATCOM upgrade programme, not the IAF. Statements 2 and 3 are correct. (Page 51)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Defence",
+    "sub_category": "Missile Testing",
+    "question": "Match the following missiles successfully tested in December 2025/January 2026 with their defining features:\n\nColumn I:\n1. Pralay missiles\n2. Taimoor Air-Launched Cruise Missile\n3. MPATGM\n\nColumn II:\nA. Third-Generation Man-Portable Anti-Tank Guided Missile with top-attack capability\nB. Salvo launch (simultaneous firing) in quick succession from the same launcher\nC. Deployed from a Mirage IIIE fighter aircraft to strike targets up to 600 km away\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Pralay involved a salvo launch (B); Taimoor ALCM was deployed from Mirage IIIE by Pakistan (C); MPATGM is a man-portable anti-tank missile (A). (Page 76)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Fisheries",
+    "question": "Assertion (A): According to the MoFAHD report in January 2026, India's fish production more than doubled over the past decade, rising to 197.75 lakh tonnes in FY25.\nReason (R): India currently holds the position as the world's largest fish producer and leads in both aquaculture and capture fisheries.\n\nSelect the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true. However, Reason (R) is false because India is the world's *second-largest* fish producer, ranks second in aquaculture, and is the second-largest producer in capture fisheries (it leads in shrimp production and exports). (Page 74)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "State Schemes",
+    "sub_category": "Assam",
+    "question": "The Government of Assam launched the 'Mukhya Mantrir Eti Koli Duti Paat Scheme' to honour the contribution of tea garden workers. Under this scheme, what is the one-time financial assistance provided to each worker?",
+    "options": {
+      "A": "Rs 2,000",
+      "B": "Rs 3,000",
+      "C": "Rs 5,000",
+      "D": "Rs 10,000",
+      "E": "Rs 15,000"
+    },
+    "answer": "C",
+    "rationale": "Under the scheme, the Government of Assam will provide one-time financial assistance of Rs 5,000 to more than six lakh tea garden workers. (Page 29)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Books & Authors",
+    "sub_category": "Recent Releases",
+    "question": "Which of the following books is NOT correctly matched with its author(s)?",
+    "options": {
+      "A": "History That India Ignored - Prem Prakash",
+      "B": "Palanivelu GUTS - Dr. C. Palanivelu",
+      "C": "Chalice of Ambrosia: Ram Janmabhoomi Challenge and Response - Dr. Surendra Kumar Pachauri",
+      "D": "Red Lines Redrawn: Operation Sindoor and India’s New Normal - Major General Bipin Bakshi and others",
+      "E": "Agni Sarassulo Vikasinchina Kamalam Droupadi Murmu - Lakshmamma"
+    },
+    "answer": "E",
+    "rationale": "The book 'Agni Sarassulo Vikasinchina Kamalam Droupadi Murmu' was authored by Yarlagadda Lakshmi Prasad. Lakshmamma is the sanitation worker who unveiled the book. (Pages 85-86)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Indices & Reports",
+    "sub_category": "Global Labour Trends",
+    "question": "Consider the following statements regarding the ILO's 'Employment and Social Trends 2026: World of Work Series' report:\n\n1. The global unemployment rate is projected to remain unchanged at 4.9% in 2026.\n2. The global jobs gap is expected to reach 408 million in 2026.\n3. The report highlighted that 186 million people/workers worldwide still lack access to quality jobs.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct as per the ILO report. The unemployment rate remains at 4.9% (equivalent to 186 million people), and the broader jobs gap is 408 million. (Pages 72-73)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Indices & Reports",
+    "sub_category": "Police Rankings",
+    "question": "Arrange the following state police forces in descending order of their scores in the Inter-Operable Criminal Justice System (ICJS) 2.0 rankings released by the NCRB:\n\n1. Haryana Police\n2. Assam Police\n3. Uttarakhand Police\n\nSelect the correct answer:",
+    "options": {
+      "A": "1, 2, 3",
+      "B": "3, 1, 2",
+      "C": "3, 2, 1",
+      "D": "2, 3, 1",
+      "E": "1, 3, 2"
+    },
+    "answer": "B",
+    "rationale": "Uttarakhand Police ranked first (93.46), Haryana Police secured second (93.41), followed by Assam (93.16). Descending order: 3, 1, 2. (Page 68)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Summits & Conferences",
+    "sub_category": "January Events",
+    "question": "Match the following conferences/summits with their respective host venues in January 2026:\n\nColumn I:\n1. 28th Conference of Speakers and Presiding Officers of the Commonwealth (CSPOC)\n2. National Textiles Ministers’ Conference\n3. Vibrant Gujarat Regional Conference\n4. 6th ASEAN–India Digital Ministers’ Meeting\n\nColumn II:\nA. Vietnam (Virtual Host)\nB. Rajkot, Gujarat\nC. Guwahati, Assam\nD. New Delhi, Delhi\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-D, 2-C, 3-B, 4-A",
+      "B": "1-B, 2-D, 3-C, 4-A",
+      "C": "1-D, 2-A, 3-B, 4-C",
+      "D": "1-C, 2-D, 3-B, 4-A",
+      "E": "1-A, 2-B, 3-C, 4-D"
+    },
+    "answer": "A",
+    "rationale": "CSPOC was in New Delhi (D); Textiles Ministers in Guwahati (C); Vibrant Gujarat Regional in Rajkot (B); ASEAN-India Digital Ministers hosted virtually by Vietnam (A). (Pages 64-67)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "MSME Interventions",
+    "question": "The Directorate General of Foreign Trade (DGFT) launched two key financial interventions under the Export Promotion Mission (EPM) worth Rs 7,295 crore. What is the primary aim of the 2nd intervention?",
+    "options": {
+      "A": "Interest subvention for post-shipment export credit",
+      "B": "Collateral support for export credit to address collateral constraints faced by MSME exporters",
+      "C": "Direct cash transfers to first-time MSME exporters",
+      "D": "Digital marketing subsidies for MSMEs",
+      "E": "Reduction of import duties on raw materials"
+    },
+    "answer": "B",
+    "rationale": "The 2nd intervention relates to collateral support for export credit, aimed to address collateral constraints faced by MSME exporters and enhance access to bank finance. (Page 11)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Road Safety",
+    "question": "National Road Safety Week was observed from January 11-17, 2026. The 'Good Samaritan Scheme (Rah-Veer)' encourages bystanders to assist accident victims during the Golden Hour. What is the maximum cash reward offered per incident under this scheme?",
+    "options": {
+      "A": "Rs. 10,000",
+      "B": "Rs. 15,000",
+      "C": "Rs. 25,000",
+      "D": "Rs. 50,000",
+      "E": "Rs. 1,00,000"
+    },
+    "answer": "C",
+    "rationale": "The Good Samaritan Scheme (Rah-Veer) offers a cash reward of Rs. 25,000 per incident (up to five times a year) along with a Certificate of Appreciation. (Page 90)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Apps & Web Portals",
+    "sub_category": "Infrastructure Monitoring",
+    "question": "The Ministry of Statistics & Programme Implementation (MoSPI) operationalised PAIMANA, a web-based portal. This portal replaces the earlier OCMS-2006 for monitoring Central Sector Infrastructure Projects worth above what monetary threshold?",
+    "options": {
+      "A": "Rs 50 crore",
+      "B": "Rs 100 crore",
+      "C": "Rs 150 crore",
+      "D": "Rs 250 crore",
+      "E": "Rs 500 crore"
+    },
+    "answer": "C",
+    "rationale": "PAIMANA is used for monitoring Central Sector Infrastructure Projects worth Rs 150 crore and above. (Page 94)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Defence",
+    "sub_category": "Procurement",
+    "question": "Regarding the two defence procurement contracts worth Rs 4,666 crore signed by the MoD, which of the following statements is NOT correct?",
+    "options": {
+      "A": "A contract worth Rs 2,770 crore was signed for the procurement of over 4.25 lakh battle carbines.",
+      "B": "The carbine contract was signed with Bharat Forge Limited and PLR Systems Pvt. Ltd.",
+      "C": "A contract worth approximately Rs 1,896 crore was signed for 48 Heavy Weight Torpedoes.",
+      "D": "The torpedoes will be integrated into the Indian Navy's Arihant Class Submarines.",
+      "E": "The torpedo contract was signed with WASS Submarine Systems S.R.L. (Italy)."
+    },
+    "answer": "D",
+    "rationale": "The torpedoes are meant for the Indian Navy's *Kalvari Class* Submarines under Project-75(P-75), not the Arihant Class. All other details are correct. (Pages 76-77)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Aviation",
+    "question": "Consider the following statements regarding the Dagadarthi greenfield airport project:\n\n1. It was approved by the cabinet of the Andhra Pradesh government.\n2. The airport will be located in the Nellore district.\n3. Following this approval, Dagadarthi will become the 8th airport of Andhra Pradesh.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. AP cabinet approved the Dagadarthi greenfield airport project in Nellore district, making it the 8th airport of AP. (Page 7)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "International",
+    "question": "Match the following international leaders/executives with their newly appointed roles in January 2026:\n\nColumn I:\n1. Dina Powell McCormick\n2. Shaea Muhssin Mohammed Al-Zindani\n3. Yoweri Museveni\n4. Ida Liu\n\nColumn II:\nA. Chief Executive Officer (CEO) of HSBC Private Bank\nB. President of Uganda (7th term)\nC. Prime Minister of Yemen\nD. President and Vice Chairman of Meta Platforms Inc.\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-D, 2-C, 3-B, 4-A",
+      "B": "1-C, 2-D, 3-A, 4-B",
+      "C": "1-A, 2-B, 3-C, 4-D",
+      "D": "1-D, 2-B, 3-C, 4-A",
+      "E": "1-B, 2-A, 3-D, 4-C"
+    },
+    "answer": "A",
+    "rationale": "Dina Powell McCormick is President/Vice Chairman of Meta (D); Shaea Muhssin is Yemen PM (C); Yoweri Museveni is Uganda Prez (B); Ida Liu is HSBC Private Bank CEO (A). (Pages 55-56)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Khelo India Games",
+    "question": "Arrange the following states/UTs in descending order of their overall gold medals in the Ice Sports Phase of the 6th Khelo India Winter Games 2026:\n\n1. Ladakh\n2. Haryana\n3. Karnataka\n\nSelect the correct answer:",
+    "options": {
+      "A": "1, 2, 3",
+      "B": "2, 1, 3",
+      "C": "3, 2, 1",
+      "D": "2, 3, 1",
+      "E": "1, 3, 2"
+    },
+    "answer": "B",
+    "rationale": "Haryana won 4 Gold (1st rank), Ladakh won 2 Gold (2nd rank), and Karnataka won 1 Gold (5th rank). Thus, descending order is 2, 1, 3. (Pages 84-85)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "Species Discoveries",
+    "question": "Consider the following combinations of newly discovered species and the region they were discovered in:\n\n1. Soman’s Slender Arm Frog - Arunachal Pradesh\n2. Calamaria mizoramensis (Reed snake) - Mizoram\n3. Metadon ghorpadei (Ant Fly) - Delhi’s Northern Ridge Forest\n\nWhich of the combinations given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 2"
+    },
+    "answer": "D",
+    "rationale": "All combinations are correct as per the Environment section. (Page 95)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Government Operations",
+    "question": "To mark seven years of the 'Womaniya Initiative', the Government e-Marketplace (GeM) noted that women-led Micro and Small Enterprises (MSEs) accounted for what percentage of GeM’s total order value?",
+    "options": {
+      "A": "3.0%",
+      "B": "3.5%",
+      "C": "4.7%",
+      "D": "5.5%",
+      "E": "7.0%"
+    },
+    "answer": "C",
+    "rationale": "Women-led MSEs accounted for 4.7% of GeM’s total order value, significantly surpassing the mandated 3% procurement target. (Page 22)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Supercomputers",
+    "question": "Regarding the newly inaugurated 'Param Shakti' supercomputing facility at IIT Madras, which of the following statements is NOT correct?",
+    "options": {
+      "A": "It was inaugurated by Shri S. Krishnan, Secretary, MeitY.",
+      "B": "It is powered by the PARAM RUDRA supercomputing system.",
+      "C": "It offers a peak performance of 10.5 petaflops.",
+      "D": "It can perform over 3.1 quadrillion calculations per second.",
+      "E": "It is located in Chennai, Tamil Nadu."
+    },
+    "answer": "C",
+    "rationale": "Statement C is incorrect because Param Shakti offers a peak performance of 3.1 petaflops, not 10.5 petaflops. (Page 81)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Mutual Funds",
+    "question": "Consider the following statements:\n\n1. Ashika Group received in-principle approval from SEBI to launch a Mutual Fund (MF).\n2. This enables the group to form an Asset Management Company (AMC).\n3. The approval was received on December 31, 2025.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct regarding the Ashika Group receiving SEBI in-principle approval to establish a Mutual Fund and AMC. (Page 37)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "MoUs & Agreements",
+    "question": "Match the following organizations with their respective partners for agreements signed in January 2026:\n\nColumn I:\n1. Andhra Pradesh Economic Development Board (APEDB)\n2. National Institution for Transforming India (NITI) Aayog\n3. Ayush Export Promotion Council (AYUSHEXCIL)\n\nColumn II:\nA. Zepto Limited\nB. FICCI Ladies Organisation (FICCI-FLO)\nC. NIIT Foundation\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-A, 2-C, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-C, 2-A, 3-B"
+    },
+    "answer": "A",
+    "rationale": "APEDB signed with FICCI-FLO to establish a Women Entrepreneurs’ Industrial Park (B); NITI Aayog with NIIT Foundation (C); AYUSHEXCIL with Zepto (A). (Pages 47, 51)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "IRDAI Committees",
+    "question": "Assertion (A): The Insurance Regulatory and Development Authority of India (IRDAI) reconstituted its Reinsurance Advisory Committee (RAC) with A.V. Girija Kumar as its chairman.\nReason (R): The Reinsurance Advisory Committee (RAC) will serve a tenure of five years to oversee the regulatory sandbox framework.\n\nSelect the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true as A.V. Girija Kumar was appointed chairman. Reason (R) is false because the committee will serve a three-year tenure, not five years. (Page 39)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "GDP Projections",
+    "question": "According to the First Advance Estimates (FAE) of GDP released by the National Statistics Office (NSO) for FY26, what is the estimated Real GVA?",
+    "options": {
+      "A": "Rs 150.25 lakh crore",
+      "B": "Rs 165.70 lakh crore",
+      "C": "Rs 171.87 lakh crore",
+      "D": "Rs 184.50 lakh crore",
+      "E": "Rs 192.10 lakh crore"
+    },
+    "answer": "D",
+    "rationale": "Real GVA is estimated at Rs 184.50 lakh crore in FY26 against the PE for FY25 of Rs 171.87 lakh crore. (Pages 41-42)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Postal Services",
+    "question": "Regarding the new services announced by India Post in Madhya Pradesh, which of the following statements is NOT correct?",
+    "options": {
+      "A": "The launch was announced by Union Minister Jyotiraditya Scindia.",
+      "B": "The two new products are named Speed Post 24 and Speed Post 48.",
+      "C": "Speed Post 24 aims to deliver documents and parcels within 24 hours.",
+      "D": "The programme was held in Shivpuri district of Madhya Pradesh.",
+      "E": "Speed Post 48 aims to deliver shipments within 48 business days."
+    },
+    "answer": "E",
+    "rationale": "Statement E is incorrect because Speed Post 48 will deliver shipments within two days (48 hours), not 48 business days. (Page 13)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "MoUs & Agreements",
+    "question": "Match the following organizations with the primary purpose of their MoUs signed in January 2026:\n\nColumn I:\n1. ICAR and NDDB\n2. GeM and WTC Mumbai\n3. DoP and SIDBI\n\nColumn II:\nA. To conduct Contact Point Verification (CPV) of informal micro enterprises.\nB. To enhance collaboration in multidisciplinary research and capacity building across the dairy sector.\nC. To promote domestic and international collaboration and enhance MSME participation in public procurement.\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-C, 2-B, 3-A"
+    },
+    "answer": "A",
+    "rationale": "ICAR & NDDB (Dairy sector research - B); GeM & WTC Mumbai (MSME procurement - C); DoP & SIDBI (CPV - A). (Pages 47, 50)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Satellites",
+    "question": "Consider the following statements regarding the launch of COSMO-SkyMed Second Generation-Flight Model 3 (CSG-FM3):\n\n1. It was launched by SpaceX aboard a Falcon 9 rocket.\n2. It is an Earth Observation Satellite (EOS) for the Italian Space Agency (ASI) and Italian Ministry of Defence.\n3. The launch marked the first orbital rocket launch globally in 2026.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. SpaceX launched the Italian satellite CSG-FM3, marking the first orbital launch of 2026. (Page 80)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Republic Day",
+    "question": "Consider the following statements about the 77th Republic Day celebrations:\n\n1. The celebrations were held under the theme “150 Years of Vande Mataram”.\n2. The National Anthem was followed by a 21-gun salute using 105-millimeter Light Field Guns.\n3. The Ministry of Culture won the Best Tableau award among Central Ministries/Departments.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All three statements are correct. The theme was \"150 Years of Vande Mataram\", a 21-gun salute was fired using 105-mm guns, and the Ministry of Culture won best tableau among central ministries. (Pages 24, 63)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Digital Currencies",
+    "question": "Which bank integrated the Reserve Bank of India’s (RBI) Central Bank Digital Currency (CBDC), the Digital Rupee (e₹), into its online merchant payment platform, SmartGateway?",
+    "options": {
+      "A": "State Bank of India",
+      "B": "HDFC Bank",
+      "C": "ICICI Bank",
+      "D": "Axis Bank",
+      "E": "Kotak Mahindra Bank"
+    },
+    "answer": "B",
+    "rationale": "HDFC Bank integrated Digital Rupee CBDC into its SmartGateway platform, allowing merchants to accept payments at zero transaction cost. (Page 38)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "January Observances",
+    "question": "Arrange the following important days in the correct chronological order of their observance in the month of January:\n\n1. Parakram Diwas\n2. World Braille Day\n3. National Youth Day\n4. Armed Forces Veterans’ Day\n\nSelect the correct answer:",
+    "options": {
+      "A": "2, 3, 4, 1",
+      "B": "3, 2, 4, 1",
+      "C": "2, 4, 3, 1",
+      "D": "4, 2, 1, 3",
+      "E": "2, 3, 1, 4"
+    },
+    "answer": "A",
+    "rationale": "World Braille Day (Jan 4); National Youth Day (Jan 12); Armed Forces Veterans’ Day (Jan 14); Parakram Diwas (Jan 23). Chronological order is 2, 3, 4, 1. (Pages 89-91)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Defence",
+    "sub_category": "Aviation",
+    "question": "Regarding the 25th anniversary of the indigenously developed Tejas Light Combat Aircraft (LCA) first flight, which of the following statements is NOT correct?",
+    "options": {
+      "A": "The Indian Air Force marked its 25th anniversary on January 4, 2026.",
+      "B": "The maiden flight took place on 4 January 2001.",
+      "C": "The maiden flight was flown by Wing Commander Rajiv Kothiyal.",
+      "D": "It was flown in the Technology Demonstrator-1 (TD-1).",
+      "E": "The historic flight took place from the Safdarjung Airport in Kolkata."
+    },
+    "answer": "E",
+    "rationale": "Statement E is incorrect. The historic maiden flight took place from Hindustan Aeronautics Limited (HAL) airport in Bengaluru, Karnataka, not Safdarjung Airport in Kolkata. (Page 78)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "RBI Guidelines",
+    "question": "Consider the following statements regarding the RBI canceling the Certificate of Registration (CoR) of 35 NBFCs:\n\n1. The CoRs were canceled for non-compliance with regular requirements under Section 45-IA (6) of the RBI Act, 1934.\n2. 16 other NBFCs voluntarily surrendered their CoR.\n3. The canceled companies are now restricted to carry out the business of Non-banking Financial Institutions (NBFIs) as defined in clause (a) of Section 45-I.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All three statements accurately detail the RBI's actions and the resulting restrictions on the NBFCs whose CoRs were canceled or surrendered. (Page 33)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "PSB Approvals",
+    "question": "Bank of Baroda secured in-principle approval from the RBI to switch its Bank Primary Dealer (PD) business into a wholly-owned subsidiary for Standalone Primary Dealer (SPD) business. Under this, what is the new aggregate limit available to SPDs under the Standing Liquidity Facility?",
+    "options": {
+      "A": "Rs 10,000 crore",
+      "B": "Rs 12,000 crore",
+      "C": "Rs 15,000 crore",
+      "D": "Rs 20,000 crore",
+      "E": "Rs 25,000 crore"
+    },
+    "answer": "C",
+    "rationale": "RBI increased the aggregate limit available to SPDs under the Standing Liquidity Facility from Rs 10,000 crore to Rs 15,000 crore. (Page 38)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Personalities",
+    "question": "Match the following sports personalities with their respective sports disciplines:\n\nColumn I:\n1. Aaryan Varshney\n2. Jinson Johnson\n3. Ilyas Pasha\n4. Davinder Singh Garcha\n\nColumn II:\nA. Football\nB. Hockey\nC. Chess\nD. Middle-distance running\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-D, 3-A, 4-B",
+      "B": "1-C, 2-A, 3-B, 4-D",
+      "C": "1-D, 2-C, 3-B, 4-A",
+      "D": "1-B, 2-C, 3-A, 4-D",
+      "E": "1-C, 2-B, 3-D, 4-A"
+    },
+    "answer": "A",
+    "rationale": "Aaryan Varshney is a Chess Grand Master (C); Jinson Johnson is an athlete/runner (D); Ilyas Pasha was a football defender (A); Davinder Singh Garcha was an Olympian hockey player (B). (Pages 83-84, 87-88)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Personalities",
+    "question": "Indian-origin NASA astronaut Sunita Williams retired after a 27-year career in human space exploration. In which year was she conferred with the Padma Bhushan by the Indian government?",
+    "options": {
+      "A": "2006",
+      "B": "2008",
+      "C": "2010",
+      "D": "2012",
+      "E": "2015"
+    },
+    "answer": "B",
+    "rationale": "In 2008, she was conferred with the Padma Bhushan, the third highest civilian award, in the field of Science and Engineering. (Page 30)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Joint Ventures",
+    "question": "Assertion (A): The Government of India established the National Shipbuilding & Heavy Industries Park (NSHIP) in Thoothukudi, Tamil Nadu.\nReason (R): NSHIP is a Special Purpose Vehicle (SPV) formed as a Joint Venture between VOC Port and SIPCOT to develop India’s first mega shipbuilding cluster.\n\nSelect the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Both statements are factually true according to the text, and R correctly explains the purpose and structure of the NSHIP (A). (Page 26)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Agriculture Statistics",
+    "question": "According to the Ministry of Agriculture and Farmers Welfare (MoAFW), the total area sown under Rabi crops reached 64.42 million hectares. What was the specific area sown under Pulses recorded for the 2025-26 period?",
+    "options": {
+      "A": "13.20 Mn ha",
+      "B": "13.64 Mn ha",
+      "C": "14.10 Mn ha",
+      "D": "15.00 Mn ha",
+      "E": "18.50 Mn ha"
+    },
+    "answer": "B",
+    "rationale": "The total area under Pulses increased from 13.2 Mn ha (2024-25) to 13.64 Mn ha (2025-26). (Page 74)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Rebranding",
+    "question": "Regarding the refreshed brand identity of Federal Bank Limited, which of the following statements is NOT correct?",
+    "options": {
+      "A": "The refreshed brand entity is named 'The Fortuna Wave'.",
+      "B": "It was launched in Mumbai, Maharashtra.",
+      "C": "The launch event featured brand ambassador Vidya Balan.",
+      "D": "The visual insignia consists of three wave elements.",
+      "E": "The three waves symbolize authenticity, competitiveness, and profitability."
+    },
+    "answer": "E",
+    "rationale": "Statement E is incorrect. The three wave elements symbolize authenticity, togetherness, and prosperity, not competitiveness and profitability. (Page 38)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Awards & Honours",
+    "sub_category": "Police Medals",
+    "question": "Consider the following statements regarding the President’s Police Colour Award conferred in January 2026:\n\n1. It was conferred on the Sikkim Police.\n2. Sikkim became the 15th state overall to receive the award.\n3. Sikkim is the 3rd state in the North East to receive this honour.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. Sikkim Police received the President's Police Colour Award (Nishaan), making Sikkim the 15th state nationally and 3rd in the North East. (Page 60)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "MoUs & Agreements",
+    "question": "Match the following international agreements/partnerships signed by India in January 2026 with their respective partner countries:\n\nColumn I:\n1. Recognition of traditional medical system (AYUSH) via CEPA/FTA\n2. Joint Declaration of Intent on fisheries and aquaculture\n3. MoU on election management during IICDEM 2026\n\nColumn II:\nA. Israel\nB. Namibia\nC. Oman & New Zealand\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-B, 2-A, 3-C",
+      "C": "1-A, 2-C, 3-B",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "A",
+    "rationale": "AYUSH recognition was through agreements with Oman and New Zealand (C); Fisheries cooperation with Israel (A); Election management with Namibia (B). (Pages 45, 66)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "January Observances",
+    "question": "Arrange the following important days in the chronological order of their observance dates in January:\n\n1. World Neglected Tropical Diseases Day\n2. International Customs Day\n3. Martyrs’ Day (Shaheed Diwas)\n\nSelect the correct answer:",
+    "options": {
+      "A": "2, 1, 3",
+      "B": "2, 3, 1",
+      "C": "1, 2, 3",
+      "D": "3, 1, 2",
+      "E": "1, 3, 2"
+    },
+    "answer": "B",
+    "rationale": "International Customs Day is Jan 26 (2). Both Martyrs' Day and World Neglected Tropical Diseases Day are observed on Jan 30. Therefore, 2 comes first, followed by 1 and 3 (or 3 and 1 simultaneously). Option B (2, 3, 1) correctly places Jan 26 before the Jan 30 events. (Page 93)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Apps & Web Portals",
+    "sub_category": "Pension Apps",
+    "question": "Consider the following statements regarding the integration of SAMPANN with the UMANG platform:\n\n1. It was done by the Office of Controller General of Communication Accounts (CGCA).\n2. It benefits nearly 4 lakh pensioners of the Department of Telecommunications (DoT).\n3. It allows seamless access to PPO numbers and Life Certificate validity via the UMANG app.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All three statements correctly describe the integration of the SAMPANN pension management system with the UMANG app. (Page 94)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  }
+]
