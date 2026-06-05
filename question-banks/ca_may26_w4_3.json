@@ -1,0 +1,802 @@
+[
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "Government Bodies",
+    "question": "In May 2026, who among the following officially assumed charge as the Chairman of the Marine Products Export Development Authority (MPEDA)?",
+    "options": {
+      "A": "Ketan Merchant",
+      "B": "Dodda Venkata Swamy",
+      "C": "Packirisamy (P.) Jawahar",
+      "D": "Sandeep Bakhshi",
+      "E": "Anurag Garg"
+    },
+    "answer": "C",
+    "rationale": "Packirisamy (P.) Jawahar officially assumed charge as the Chairman of MPEDA, succeeding Dodda Venkata Swamy. (Page 59)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Leadership Appointments",
+    "question": "The Reserve Bank of India (RBI) approved a 3-month extension for Ketan Merchant to continue serving as the Interim Chief Executive Officer (CEO) of which of the following banks?",
+    "options": {
+      "A": "Airtel Payments Bank",
+      "B": "Jio Payments Bank",
+      "C": "India Post Payments Bank",
+      "D": "Fino Payments Bank",
+      "E": "Paytm Payments Bank"
+    },
+    "answer": "D",
+    "rationale": "RBI approved a three-month extension for Ketan Merchant as the Interim CEO of Fino Payments Bank. (Page 59)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Global Leaders",
+    "question": "Janez Janša was elected as the Prime Minister for a fourth term in May 2026. He is the leader of the Democratic Party of which country?",
+    "options": {
+      "A": "Slovakia",
+      "B": "Slovenia",
+      "C": "Serbia",
+      "D": "Croatia",
+      "E": "Senegal"
+    },
+    "answer": "B",
+    "rationale": "Janez Janša, leader of the Slovenian Democratic Party (SDS), was elected as the Prime Minister of Slovenia for a fourth term. (Page 59)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Joint Ventures",
+    "question": "Fill in the blank:\nIn May 2026, Nibe Group signed a Joint Venture (JV) with ________ to set up advanced energetic materials and propellant manufacturing facilities in India.",
+    "options": {
+      "A": "Lockheed Martin (USA)",
+      "B": "Dassault Aviation (France)",
+      "C": "Elbit Systems (Israel)",
+      "D": "BAE Systems (UK)",
+      "E": "Saab AB (Sweden)"
+    },
+    "answer": "C",
+    "rationale": "Nibe Group and Israel’s Elbit Systems signed a Joint Venture (JV) to set up advanced energetic materials and propellant manufacturing facilities in India. (Page 56)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Chronological Order",
+    "question": "Arrange the following Important Days observed in May 2026 in chronological order (from earliest to latest in the month):\n\n1. World Hunger Day\n2. International Missing Children's Day\n3. World Turtle Day\n4. International Day for Biological Diversity\n\nSelect the correct answer:",
+    "options": {
+      "A": "4, 3, 2, 1",
+      "B": "3, 4, 1, 2",
+      "C": "4, 2, 3, 1",
+      "D": "2, 3, 4, 1",
+      "E": "3, 2, 4, 1"
+    },
+    "answer": "A",
+    "rationale": "Biological Diversity Day (May 22) -> World Turtle Day (May 23) -> Missing Children's Day (May 25) -> World Hunger Day (May 28). Thus, the order is 4, 3, 2, 1. (Pages 64-65)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Obituary",
+    "sub_category": "Literature",
+    "question": "Dr. Bashir Badr, who passed away in May 2026 at the age of 91, was a renowned poet in which of the following languages?",
+    "options": {
+      "A": "Hindi",
+      "B": "Urdu",
+      "C": "Persian",
+      "D": "Marathi",
+      "E": "Bengali"
+    },
+    "answer": "B",
+    "rationale": "Dr. Bashir Badr was a renowned Urdu poet and Padma Shri awardee. (Page 62)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Books & Authors",
+    "sub_category": "Match the Following",
+    "question": "Match the following books with their respective authors:\n\nColumn I:\n1. Bazaar (2nd Edition)\n2. Apnapan: Narendra Modi Sang Mere Anubhav\n3. Better Never Stops\n\nColumn II:\nA. Shyam Srinivasan\nB. Niranjan Dev Sharma\nC. Shivraj Singh Chouhan\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-C, 2-A, 3-B"
+    },
+    "answer": "B",
+    "rationale": "Bazaar is by Niranjan Dev Sharma; Apnapan is by Shivraj Singh Chouhan; Better Never Stops is by Shyam Srinivasan. (Page 63)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Symbols and Themes",
+    "question": "Which of the following days is associated with the 'Silver ribbon' as its global awareness symbol?",
+    "options": {
+      "A": "World Multiple Sclerosis Day",
+      "B": "World Thyroid Day",
+      "C": "World Schizophrenia Awareness Day",
+      "D": "International Day to End Obstetric Fistula",
+      "E": "World Menstrual Hygiene Day"
+    },
+    "answer": "C",
+    "rationale": "The silver ribbon is the global symbol of schizophrenia awareness, marked on World Schizophrenia Awareness Day (May 24). (Page 64)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "E-Governance Partnerships",
+    "question": "Match the following state governments/departments with the corporate partner they signed an MoU with in May 2026:\n\nColumn I:\n1. Delhi e-Governance Society (DeGS)\n2. Government of Gujarat\n3. Government of Andhra Pradesh (AP)\n\nColumn II:\nA. SIDBI (Angel Fund)\nB. State Bank of India (e-Pay)\nC. Meta Platforms (WhatsApp Chatbot)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-A, 3-B",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-A, 2-C, 3-B",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "A",
+    "rationale": "Delhi Govt (DeGS) partnered with SBI for e-Pay. Gujarat Govt partnered with Meta for a WhatsApp chatbot. AP Govt partnered with SIDBI for an Angel Fund. (Page 66)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Themes Matching",
+    "question": "Consider the following pairs of Important Days and their 2026 themes:\n\n1. World Hunger Day - \"The End of Hunger is in our Hands\"\n2. International Day of UN Peacekeepers - \"Invest in Peace\"\n3. World Digestive Health Day - \"Thyroid and Nutrition\"\n\nWhich of the pairs given above is/are correctly matched?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 2",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "A",
+    "rationale": "Pairs 1 and 2 are correct. Pair 3 is incorrect because \"Thyroid and Nutrition\" is the theme for World Thyroid Day. The theme for World Digestive Health Day is \"Chronic Diarrhea: Don't Flush the Signs Away.\" (Page 65)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Institutions & CoEs",
+    "question": "Under the Anusandhan National Research Foundation (ANRF) Convergence Research CoEs programme, selected centres receive funding support for a maximum duration of:",
+    "options": {
+      "A": "3 years",
+      "B": "4 years",
+      "C": "5 years",
+      "D": "7 years",
+      "E": "10 years"
+    },
+    "answer": "C",
+    "rationale": "Selected Centres can receive funding support of up to Rs 25 crore for projects with a maximum duration of five years. (Page 44)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Agricultural Forecasts",
+    "question": "Assertion (A): The Third Advance Estimates for 2025-26 project India's total foodgrain production at 376.563 Million Tonnes.\nReason (R): This marks a 5.3% decrease compared to the previous year's production due to uneven monsoon distribution.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true as foodgrain production is estimated at 376.563 MT. Reason (R) is false because this represents a 5.3% higher production than last year, marking the highest-ever production, not a decrease. (Page 50)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Defence Infrastructure",
+    "question": "Which private sector group launched India's first 300-km Universal Rocket Launching System 'Suryastra' at its manufacturing complex in Shirdi?",
+    "options": {
+      "A": "Tata Advanced Systems",
+      "B": "Kalyani Strategic Systems",
+      "C": "NIBE Group",
+      "D": "Larsen & Toubro (L&T)",
+      "E": "Adani Defence"
+    },
+    "answer": "C",
+    "rationale": "Union Minister Rajnath Singh inaugurated the NIBE Group's private defence manufacturing complex and flagged off 'Suryastra'. (Page 45)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Space Corridors",
+    "question": "Fill in the blank:\nThe Department of Space (DoS) approved the establishment of Common Technical Facilities (CTFs) in Gujarat and ________ to promote domestic manufacturing capabilities.",
+    "options": {
+      "A": "Karnataka",
+      "B": "Maharashtra",
+      "C": "Tamil Nadu",
+      "D": "Andhra Pradesh",
+      "E": "Kerala"
+    },
+    "answer": "C",
+    "rationale": "DoS granted approval for the establishment of CTFs in Gujarat and Tamil Nadu. (Page 45)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Digital Logistics",
+    "question": "Which organization signed an agreement with Flipkart India to bolster the country's e-commerce logistics ecosystem and enhance parcel delivery efficiency?",
+    "options": {
+      "A": "Indian Railways",
+      "B": "Department of Posts (DoP)",
+      "C": "Blue Dart Express",
+      "D": "Air India Cargo",
+      "E": "Container Corporation of India (CONCOR)"
+    },
+    "answer": "B",
+    "rationale": "Department of Posts (DoP) signed an agreement with Flipkart India Private Limited to bolster the e-commerce logistics ecosystem. (Page 46)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "LIC Initiatives",
+    "question": "Consider the following statements regarding the new products launched by LIC in May 2026:\n\n1. LIC launched two new joint life insurance savings plans named 'New Jeevan Sathi Single Premium' and 'New Jeevan Sathi Limited Premium'.\n2. The plans are designed exclusively for parents and their children.\n3. The plans offer premium waiver on the first death among the insured.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "C",
+    "rationale": "Statement 2 is incorrect because the plans are designed for couples, offering joint life financial protection, not for parents and children. Statements 1 and 3 are correct. (Page 55)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Payment Systems",
+    "question": "Which entity secured the in-principle approval from RBI for a Payment Aggregator-Physical (PA-P) licence to enable offline merchant payments?",
+    "options": {
+      "A": "Razorpay",
+      "B": "One Mobikwik Systems Limited",
+      "C": "PayU",
+      "D": "PhonePe",
+      "E": "BharatPe"
+    },
+    "answer": "B",
+    "rationale": "One Mobikwik Systems Limited secured the in-principle approval from RBI for a Payment Aggregator-Physical (PA-P) licence. (Page 55)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "International Investments",
+    "question": "The Development Bank of Japan (DBJ) partnered with HDFC Capital to invest in real estate funds in India. Under this, the H-DREAM fund has a target fund corpus of _______ with a matching green shoe option.",
+    "options": {
+      "A": "USD 100 million",
+      "B": "USD 250 million",
+      "C": "USD 500 million",
+      "D": "USD 750 million",
+      "E": "USD 1 billion"
+    },
+    "answer": "C",
+    "rationale": "The H-DREAM fund has a target fund corpus of USD 500 million, including a USD 500 million green shoe option (making it a total targeted corpus of USD 1 billion). (Page 56)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Cricket",
+    "question": "Which Indian all-rounder, who represented India in the 2019 ICC World Cup, announced his retirement from domestic cricket and the IPL in May 2026?",
+    "options": {
+      "A": "Kedar Jadhav",
+      "B": "Stuart Binny",
+      "C": "Vijay Shankar",
+      "D": "Hardik Pandya",
+      "E": "Shivam Dube"
+    },
+    "answer": "C",
+    "rationale": "Indian all-rounder Vijay Shankar announced his retirement from domestic cricket and the IPL. (Page 61)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Wildlife & Conservation",
+    "question": "Which country recently joined the International Big Cat Alliance (IBCA) as its 26th member nation during the Pre-Summit held in Bhopal?",
+    "options": {
+      "A": "United Arab Emirates",
+      "B": "Saudi Arabia",
+      "C": "Qatar",
+      "D": "Oman",
+      "E": "Kuwait"
+    },
+    "answer": "B",
+    "rationale": "On 22 May 2026, Saudi Arabia joined the IBCA as its 26th member nation. (Page 46)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "MSME Sector",
+    "question": "On SIDBI's 37th Foundation Day, the 'MoRE Programme' was launched. It is an initiative designed to support _______ rural micro and artisan units through cluster-based interventions over the next 3 years.",
+    "options": {
+      "A": "5,000",
+      "B": "10,000",
+      "C": "25,000",
+      "D": "50,000",
+      "E": "100,000"
+    },
+    "answer": "B",
+    "rationale": "The Modernization of Rural Enterprises (MoRE) Programme is designed to support 10,000 rural micro and artisan units. (Page 47)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Traditional Medicine",
+    "question": "Which council signed an MoU with the Spices Board of India to boost the global promotion of Ayush products and medicinal spices?",
+    "options": {
+      "A": "CHEMEXCIL",
+      "B": "PHARMEXCIL",
+      "C": "AYUSHEXCIL",
+      "D": "CAPEXIL",
+      "E": "APEDA"
+    },
+    "answer": "C",
+    "rationale": "The Ayush Export Promotion Council (AYUSHEXCIL) and the Spices Board of India signed an MoU. (Page 47)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Treaties & Pacts",
+    "question": "Consider the following statements regarding the framework signed between India and the USA in May 2026:\n\n1. It aims to secure the supply, mining, and processing of Critical Minerals and Rare Earth Elements.\n2. The agreement was signed by External Affairs Minister Dr. S. Jaishankar and US Secretary of State Marco Rubio.\n3. The US government is allocating over USD 100 billion to strengthen critical mineral supply chains.\n\nWhich of the statements given above is/are NOT correct?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 2",
+      "E": "Only 2 and 3"
+    },
+    "answer": "C",
+    "rationale": "Statement 3 is incorrect because the US government is allocating over USD 30 billion, not USD 100 billion. Statements 1 and 2 are correct. (Page 49)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Aviation & Transport",
+    "question": "The newly inaugurated Centre of Excellence (CoE) 'CHIRAG' at Indian Railways is dedicated to which of the following domains?",
+    "options": {
+      "A": "High-Speed Rail Technology",
+      "B": "Human Resource Management training and research",
+      "C": "Locomotive Maintenance and Diagnostics",
+      "D": "Passenger Amenities Innovation",
+      "E": "Cybersecurity in Railway Signaling"
+    },
+    "answer": "B",
+    "rationale": "CHIRAG (Centre for HR Information Systems, Research and Analytics in Governance) is dedicated to Human Resource Management training, research, and digital transformation. (Page 50)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Infrastructure Consultancies",
+    "question": "Which company signed an MoU with CRISIL to jointly develop data-driven infrastructure consultancy solutions across multiple sectors in India and overseas?",
+    "options": {
+      "A": "Engineers India Limited (EIL)",
+      "B": "RITES Limited",
+      "C": "Ircon International",
+      "D": "Rail Vikas Nigam Limited (RVNL)",
+      "E": "WAPCOS Limited"
+    },
+    "answer": "B",
+    "rationale": "RITES Limited signed an MoU with CRISIL to jointly develop data-driven infrastructure consultancy solutions. (Page 51)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Research & Innovation",
+    "question": "The 'Medical Innovations Patent Mitra: Innovators-to-Industry (I2I) Connect' event was organised by which organization, leading to the transfer of 41 public health technologies?",
+    "options": {
+      "A": "Council of Scientific and Industrial Research (CSIR)",
+      "B": "Indian Council of Medical Research (ICMR)",
+      "C": "All India Institute of Medical Sciences (AIIMS)",
+      "D": "Department of Biotechnology (DBT)",
+      "E": "National Institute of Virology (NIV)"
+    },
+    "answer": "B",
+    "rationale": "The Indian Council of Medical Research (ICMR) organised the event and launched an Innovator–Industry Platform transferring 41 health technologies. (Page 49)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Global Health",
+    "question": "The World Health Organization (WHO) organised the 79th World Health Assembly (WHA79) under the theme 'Reshaping Global Health: A Shared Responsibility' in which city?",
+    "options": {
+      "A": "New York, USA",
+      "B": "Paris, France",
+      "C": "Geneva, Switzerland",
+      "D": "Rome, Italy",
+      "E": "London, UK"
+    },
+    "answer": "C",
+    "rationale": "The 79th World Health Assembly (WHA79) was held in Geneva, Switzerland. (Page 54)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Women Empowerment",
+    "question": "The West Bengal government's 'Annapurna Yojana' is designed to provide monthly financial assistance. What is the financial assistance amount provided under this scheme?",
+    "options": {
+      "A": "Rs. 1000",
+      "B": "Rs. 1500",
+      "C": "Rs. 2000",
+      "D": "Rs. 3000",
+      "E": "Rs. 5000"
+    },
+    "answer": "D",
+    "rationale": "The Annapurna Yojana (Annapurna Bhandar) provides a monthly financial assistance of Rs. 3000 to eligible women. (Page 67)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "May Observances",
+    "question": "Match the following historical figures with the days observed to commemorate them in India:\n\nColumn I:\n1. Rajiv Gandhi\n2. Queen Victoria\n\nColumn II:\nA. Commonwealth Day\nB. National Anti-Terrorism Day\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-B",
+      "B": "1-B, 2-A",
+      "C": "1-B, 2-B",
+      "D": "1-A, 2-A",
+      "E": "None of the above"
+    },
+    "answer": "B",
+    "rationale": "Rajiv Gandhi's death anniversary is observed as National Anti-Terrorism Day (May 21). Queen Victoria's birth anniversary is commemorated as Commonwealth Day in India (May 24). (Pages 63-64)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space Exploration",
+    "question": "Which Indian observatory was associated with Dr. Ronaldo Laishram, who led the international team that discovered the 'Loktak Protocluster'?",
+    "options": {
+      "A": "Indian Astronomical Observatory (Hanle)",
+      "B": "National Centre for Radio Astrophysics (Pune)",
+      "C": "National Astronomical Observatory of Japan (NAOJ)",
+      "D": "Vainu Bappu Observatory (Kavalur)",
+      "E": "Solar Observatory (Kodaikanal)"
+    },
+    "answer": "C",
+    "rationale": "Dr. Ronaldo Laishram led the team from the National Astronomical Observatory of Japan (NAOJ). He is an Indian scientist working there. (Page 60)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "E-Governance Services",
+    "question": "Assertion (A): The 'bob इ Pay' app launched by Bank of Baroda uses UIDAI-based face authentication for UPI services.\nReason (R): This feature allows customers to authenticate their payments without needing an internet connection.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true as BoB launched UIDAI-based face authentication on its 'bob इ Pay' app. Reason (R) is false because face authentication for UPI still requires internet and is meant for secure authentication, not specifically offline transactions (which is handled by IoT or other modalities, but UPI itself primarily uses internet). (Page 56)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Derivatives Ecosystem",
+    "question": "The National Stock Exchange of India Limited (NSE) partnered with SUFI to develop a derivatives ecosystem for the steel industry. What does SUFI stand for?",
+    "options": {
+      "A": "Steel Undertakings Federation of India",
+      "B": "Steel Users Federation of India",
+      "C": "Standardised Users Federation of India",
+      "D": "Syndicate of Union Foundry Industries",
+      "E": "State Undertakings for Ferrous Industries"
+    },
+    "answer": "B",
+    "rationale": "SUFI stands for Steel Users Federation of India. (Page 52)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Dividend Transfers",
+    "question": "The record surplus transfer by RBI to the Government of India for FY26 was finalized during which meeting of the Central Board of Directors (CBoDs) of RBI?",
+    "options": {
+      "A": "615th meeting",
+      "B": "620th meeting",
+      "C": "623rd meeting",
+      "D": "625th meeting",
+      "E": "630th meeting"
+    },
+    "answer": "C",
+    "rationale": "The decision was taken during the 623rd meeting of the Central Board of Directors of RBI, chaired by Dr. Sanjay Malhotra. (Page 54)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Official Visits",
+    "question": "During PM Modi's visit to Italy, leaders reviewed the progress of the Joint Strategic Action Plan spanning which of the following periods?",
+    "options": {
+      "A": "2024-2028",
+      "B": "2025-2029",
+      "C": "2026-2030",
+      "D": "2023-2027",
+      "E": "2025-2035"
+    },
+    "answer": "B",
+    "rationale": "The leaders reviewed the progress made in bilateral cooperation across all segments of the Joint Strategic Action Plan 2025-2029. (Page 53)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Olympic Anniversaries",
+    "question": "The book 'India's Olympic Gold: Hockey Triumph at Amsterdam' marks the anniversary of India's first Olympic gold in hockey. In which year did India win this historic gold medal?",
+    "options": {
+      "A": "1924",
+      "B": "1928",
+      "C": "1932",
+      "D": "1936",
+      "E": "1948"
+    },
+    "answer": "B",
+    "rationale": "The book marks the 98th anniversary of India's first Olympic Gold in hockey obtained at Amsterdam, Netherlands in 1928. (Page 63)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Obituary",
+    "sub_category": "Sports Personalities",
+    "question": "Five-time Olympian shooter Raja Randhir Singh passed away in May 2026. He received the Arjuna Award for his outstanding contribution to shooting sports in which year?",
+    "options": {
+      "A": "1972",
+      "B": "1975",
+      "C": "1979",
+      "D": "1982",
+      "E": "1985"
+    },
+    "answer": "C",
+    "rationale": "Raja Randhir Singh was honoured with the Arjuna Award in 1979. (Page 62)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Agriculture Infrastructure",
+    "question": "The 'Tripura Mission Queen Pineapple' envisages the development of a 'Hub and Spoke' post-harvest ecosystem. Where will the central processing hub be located under this project?",
+    "options": {
+      "A": "Near Dharmanagar Railway Station",
+      "B": "Near Agartala airport",
+      "C": "In Sepahijala district headquarters",
+      "D": "In Khowai market area",
+      "E": "Near Sabroom ICP"
+    },
+    "answer": "B",
+    "rationale": "The project envisages a central processing hub near Agartala airport and eight collection centres across West Tripura, Khowai, and Sepahijala districts. (Page 50)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Rural Banking",
+    "question": "Which of the following Regional Rural Banks (RRBs) collaborated with Canara HSBC Life Insurance Company Limited to strengthen life insurance coverage in its operational areas?",
+    "options": {
+      "A": "Kerala Gramin Bank",
+      "B": "Baroda UP Bank",
+      "C": "West Bengal Gramin Bank (WBGB)",
+      "D": "Dakshin Bihar Gramin Bank",
+      "E": "Andhra Pradesh Grameena Vikas Bank"
+    },
+    "answer": "C",
+    "rationale": "West Bengal Gramin Bank (WBGB) collaborated with Canara HSBC Life Insurance Company Limited. (Page 56)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Mountaineering",
+    "question": "International Everest Day is observed annually to commemorate the first successful ascent of Mount Everest by Sir Edmund Hillary and Tenzing Norgay. On which date did they achieve this feat?",
+    "options": {
+      "A": "29 May 1950",
+      "B": "29 May 1953",
+      "C": "25 May 1955",
+      "D": "23 May 1960",
+      "E": "28 May 1965"
+    },
+    "answer": "B",
+    "rationale": "They successfully ascended Mount Everest on 29 May 1953. (Page 65)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Chhattisgarh Initiatives",
+    "question": "Fill in the blank:\nThe Government of Chhattisgarh launched the 'Adarsh Shahar Samriddhi Yojana' allocating _______ in the 2026–27 budget to develop modern civic infrastructure.",
+    "options": {
+      "A": "Rs. 100 crore",
+      "B": "Rs. 150 crore",
+      "C": "Rs. 200 crore",
+      "D": "Rs. 250 crore",
+      "E": "Rs. 500 crore"
+    },
+    "answer": "C",
+    "rationale": "The Chhattisgarh government announced the scheme allocating Rs. 200 crore in the 2026–27 budget. (Page 67)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Missile Systems",
+    "question": "The Agni-1 missile, successfully test-fired by India at Chandipur, Odisha, is categorized as a:",
+    "options": {
+      "A": "Medium-Range Ballistic Missile (MRBM)",
+      "B": "Intercontinental Ballistic Missile (ICBM)",
+      "C": "Short-Range Ballistic Missile (SRBM)",
+      "D": "Submarine-Launched Ballistic Missile (SLBM)",
+      "E": "Cruise Missile"
+    },
+    "answer": "C",
+    "rationale": "The Agni-1 is a Short-Range Ballistic Missile (SRBM) tested from the Integrated Test Range (ITR). (Page 60)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Cross-Border Payments",
+    "question": "Which fintech platform, operating from GIFT City, became the 1st Indian Payment Aggregator to secure final approval to operate as a PSP from IFSCA?",
+    "options": {
+      "A": "Razorpay",
+      "B": "BillDesk",
+      "C": "Skydo",
+      "D": "Decentro",
+      "E": "Pine Labs"
+    },
+    "answer": "D",
+    "rationale": "Decentro became the 1st Indian Payment Aggregator (PA) to secure final approval from IFSCA to operate as a PSP at GIFT City. (Page 56)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Film Festivals",
+    "question": "At the 2026 Cannes Film Festival, who won the award for Best Director for the film 'La Bola Negra' (The Black Ball)?",
+    "options": {
+      "A": "Lukas Dhont",
+      "B": "Cristian Mungiu",
+      "C": "Andrey Zvyagintsev",
+      "D": "Javier Calvo & Javier Ambrossi",
+      "E": "Ryusuke Hamaguchi"
+    },
+    "answer": "D",
+    "rationale": "The Best Director award was shared by Javier Calvo & Javier Ambrossi for the film 'La Bola Negra'. (Page 58)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Semiconductor Mission",
+    "question": "The online 'Investors Support' portal launched under the India Semiconductor Mission (ISM) aims to provide a single-window facilitation mechanism. ISM functions under which Ministry?",
+    "options": {
+      "A": "Ministry of Commerce and Industry",
+      "B": "Ministry of Electronics and Information Technology",
+      "C": "Ministry of Heavy Industries",
+      "D": "Ministry of Science and Technology",
+      "E": "Ministry of Finance"
+    },
+    "answer": "B",
+    "rationale": "The India Semiconductor Mission (ISM) operates under the Ministry of Electronics and Information Technology (MeitY). (Page 48)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Global Tourism & Culture",
+    "question": "Which of the following years has been declared as the \"Year of Culture & Tourism\" between India and Italy?",
+    "options": {
+      "A": "2025",
+      "B": "2026",
+      "C": "2027",
+      "D": "2028",
+      "E": "2030"
+    },
+    "answer": "C",
+    "rationale": "According to the handwritten notes (Page 19), India & Italy declared 2027 as the \"Year of Culture & Tourism\".",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Digital Innovations",
+    "question": "Which Public Sector Bank (PSB) launched 'bob इ Pay' with Internet of Things (IoT)-based payment capabilities?",
+    "options": {
+      "A": "State Bank of India",
+      "B": "Punjab National Bank",
+      "C": "Bank of Baroda",
+      "D": "Union Bank of India",
+      "E": "Canara Bank"
+    },
+    "answer": "C",
+    "rationale": "Bank of Baroda (BoB) launched the biometric payment authentication and IoT-based payment capabilities on its 'bob इ Pay' app. (Page 56)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Themes Identification",
+    "question": "The theme \"Chronic Diarrhea: Don't Flush the Signs Away\" is associated with which of the following days observed on May 29?",
+    "options": {
+      "A": "World Hunger Day",
+      "B": "World Menstrual Hygiene Day",
+      "C": "World Thyroid Day",
+      "D": "World Digestive Health Day",
+      "E": "International Day of Action for Womens Health"
+    },
+    "answer": "D",
+    "rationale": "The theme for World Digestive Health Day 2026 is \"Chronic Diarrhea: Don't Flush the Signs Away.\" (Page 65)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Chess Champions",
+    "question": "Swara Lakshmi Nair became the second Woman International Master (WIM) from Karnataka after achieving her final norm at a tournament held in which of the following countries?",
+    "options": {
+      "A": "Poland",
+      "B": "Italy (Sardinia)",
+      "C": "Slovenia",
+      "D": "Croatia",
+      "E": "Serbia"
+    },
+    "answer": "C",
+    "rationale": "She achieved the WIM title after a draw in the 9th round of the Ptuj International Masters tournament in Slovenia. (Page 62)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Books & Authors",
+    "sub_category": "Sports Books",
+    "question": "Which of the following sports historians authored the book \"India's Olympic Gold: Hockey Triumph at Amsterdam\"?",
+    "options": {
+      "A": "Novy Kapadia",
+      "B": "K. Arumugam",
+      "C": "Boria Majumdar",
+      "D": "Ramachandra Guha",
+      "E": "Mihir Bose"
+    },
+    "answer": "B",
+    "rationale": "The book was authored by renowned hockey historian K. Arumugam. (Page 63)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Social Justice Programs",
+    "question": "Assertion (A): The 'SHATAYU' dashboard was launched to provide information on geriatric caregiver availability across districts and states in India.\nReason (R): It was developed by the Ministry of Health and Family Welfare to combat rising chronic diseases among the elderly.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true as SHATAYU is a digital caregiving dashboard. Reason (R) is false because it was launched by the Ministry of Social Justice and Empowerment (MSJE), not the Ministry of Health and Family Welfare. (Page 44)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  }
+]
