@@ -1,120 +1,8 @@
 [
   {
-    "category": "National",
-    "sub_category": "International Visits",
-    "question": "Consider the following statements regarding the visit of the United Nations General Assembly (UNGA) President to India in April 2026:\n\n1. Annalena Baerbock, the 80th President of the UNGA, visited India on April 28, 2026.\n2. The visit was undertaken at the official invitation of Prime Minister Narendra Modi.\n3. The primary aim of the visit was to reinforce India's commitment to engaging with the United Nations.\n\nWhich of the statements given above is/are correct?",
-    "options": {
-      "A": "Only 1 and 2",
-      "B": "Only 2 and 3",
-      "C": "Only 1 and 3",
-      "D": "Only 1",
-      "E": "All 1, 2, and 3"
-    },
-    "answer": "C",
-    "rationale": "Statement 2 is incorrect because Annalena Baerbock visited India at the invitation of Union Minister Dr. S. Jaishankar (MEA), not Prime Minister Narendra Modi. Statements 1 and 3 are correct.",
-    "tag": "Current-Transient",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "National",
-    "sub_category": "State Infrastructure",
-    "question": "Fill in the blanks regarding the recent judicial milestone achieved in India:\n\nIn May 2026, ________ became the first state in India to have a fully paperless judiciary. The announcement was made by Chief Justice of India (CJI) Justice Surya Kant during the 'Conclave on Technology and Judicial Education' held at Chintan Bhawan in ________, marking the state's 50 years of statehood.",
-    "options": {
-      "A": "Assam ; Guwahati",
-      "B": "Sikkim ; Gangtok",
-      "C": "Tripura ; Agartala",
-      "D": "Sikkim ; Namchi",
-      "E": "Himachal Pradesh ; Shimla"
-    },
-    "answer": "B",
-    "rationale": "Sikkim became India's first fully paperless judiciary state, announced by CJI Surya Kant at Chintan Bhawan in Gangtok.",
-    "tag": "Static-Conceptual",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "National",
-    "sub_category": "Governance & Technology",
-    "question": "Consider the following hybrid statements combining technological launches and administrative pacts:\n\n1. NITI Aayog's interim CEO Nidhi Chhibber launched the CPO Portal to strengthen real-time governance under the Aspirational Districts and Blocks Programmes.\n2. UIDAI signed a 5-year MoU with the National Forensic Sciences University (NFSU) to bolster cybersecurity and digital forensic capabilities.\n3. NLC India Limited signed a Non-Disclosure Agreement (NDA) with Électricité de France (EDF) aiming to achieve 100 GW nuclear power capacity by 2047.\n\nWhich of the statements given above is/are correct?",
-    "options": {
-      "A": "Only 1 and 2",
-      "B": "Only 1 and 3",
-      "C": "Only 2 and 3",
-      "D": "Only 3",
-      "E": "All 1, 2, and 3"
-    },
-    "answer": "E",
-    "rationale": "All three statements correctly reflect the recent administrative and technological developments outlined in the PDF.",
-    "tag": "Current-Transient",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "National",
-    "sub_category": "Water Governance",
-    "question": "Assertion (A): The Ministry of Jal Shakti (MoJS) signed reform-linked MoUs with Uttarakhand, Karnataka, and Tripura under the Jal Jeevan Mission (JJM) 2.0.\nReason (R): The primary objective of these MoUs is to strengthen Gram Panchayat (GP)-led rural water governance and ensure sustainable drinking water supply.\n\nChoose the correct statement:",
-    "options": {
-      "A": "Both A and R are true and R is the correct explanation of A.",
-      "B": "Both A and R are true but R is NOT the correct explanation of A.",
-      "C": "A is true but R is false.",
-      "D": "A is false but R is true.",
-      "E": "Both A and R are false."
-    },
-    "answer": "A",
-    "rationale": "Both Assertion (A) and Reason (R) are explicitly stated in the document. The strengthening of GP-led rural water governance is the direct objective (reason) for signing the reform-linked MoUs under JJM 2.0.",
-    "tag": "Static-Conceptual",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "Economy",
-    "sub_category": "Banking Credit Data",
-    "question": "Identify the INCORRECT statement regarding the Scheduled Commercial Banks (SCBs) credit growth data for FY26 released by the MoF:\n\n1. SCBs recorded a 15.9% year-on-year growth in non-food credit.\n2. The Services Sector recorded the highest growth at 19%, up from 12% in the previous year.\n3. The Industrial Sector's credit deployment expanded to 15.0%, representing a decline from the 18.2% growth registered last year.\n4. Credit to agriculture and allied activities grew by 15.7%, up from 10.4% in FY25.\n\nSelect the INCORRECT statement(s):",
-    "options": {
-      "A": "Only 1",
-      "B": "Only 2",
-      "C": "Only 3",
-      "D": "Only 4",
-      "E": "Both 2 and 3"
-    },
-    "answer": "C",
-    "rationale": "Statement 3 is incorrect because the Industrial Sector's 15.0% growth was almost double the rate of the 8.2% growth registered last year, not a decline from 18.2%.",
-    "tag": "Static-Conceptual",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "Awards",
-    "sub_category": "Pulitzer Prize 2026",
-    "question": "Match the following 2026 Pulitzer Prize winning entities/individuals with their respective categories:\n\nColumn I:\n1. The Staff of The Minnesota Star Tribune\n2. Susie Neilson, Megan Fan Munce and Sara DiNatale\n3. Staff of 'Pablo Torre Finds Out'\n4. Dave Altimari and Ginny Monk\n\nColumn II:\nA. Explanatory Reporting\nB. Audio Reporting\nC. Breaking News Reporting\nD. Local Reporting\n\nSelect the correct answer:",
-    "options": {
-      "A": "1-C, 2-A, 3-D, 4-B",
-      "B": "1-C, 2-A, 3-B, 4-D",
-      "C": "1-B, 2-C, 3-A, 4-D",
-      "D": "1-A, 2-C, 3-D, 4-B",
-      "E": "1-D, 2-B, 3-A, 4-C"
-    },
-    "answer": "B",
-    "rationale": "Minnesota Star Tribune won Breaking News (C). Susie Neilson et al. won Explanatory Reporting (A). 'Pablo Torre Finds Out' won Audio Reporting (B). Dave Altimari et al. won Local Reporting (D).",
-    "tag": "Static-Conceptual",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "National",
-    "sub_category": "Governance Indices",
-    "question": "According to the 'Panchayat Advancement Index (PAI) 2.0' for FY24, arrange the following States/UTs in ascending order based on the percentage of their Panchayats in the 'Front Runner' category:\n\n1. Odisha\n2. Kerala\n3. Dadra and Nagar Haveli and Daman and Diu\n4. Andhra Pradesh\n\nSelect the correct answer:",
-    "options": {
-      "A": "3 - 4 - 1 - 2",
-      "B": "3 - 4 - 2 - 1",
-      "C": "4 - 3 - 1 - 2",
-      "D": "1 - 2 - 4 - 3",
-      "E": "4 - 3 - 2 - 1"
-    },
-    "answer": "A",
-    "rationale": "The percentages are: Dadra (2.4%), AP (4.4%), Odisha (8.2%), Kerala (10.1%). Therefore, the ascending order (lowest to highest) is 3 - 4 - 1 - 2.",
-    "tag": "Static-Conceptual",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "General Awareness",
-    "sub_category": "Important Days",
-    "question": "Consider the following multi-concept statements regarding important observances:\n\n1. Ayushman Bharat Diwas is observed annually on April 30 under the Gram Swaraj Abhiyan to promote awareness of the UHC initiative launched in 2018.\n2. World Tuna Day, observed on May 2, saw the FAO launch the Common Oceans Tuna Project in 2022 to ensure sustainable fishing by 2027.\n3. The Sudanese Journalists Syndicate was awarded the 2026 UNESCO/Guillermo Cano World Press Freedom Prize on May 3.\n\nWhich of the statements given above is/are correct?",
+    "category": "National Affairs",
+    "sub_category": "Cabinet Approvals",
+    "question": "Consider the following statements regarding the Ahmedabad–Dholera Rail Project approved by the CCEA in May 2026:\n\n1. It is a 134-kilometer Semi High-Speed Double-Line railway project in Gujarat.\n2. It will be the first Indian Railways project using indigenous semi high-speed technology up to 220 kmph.\n3. It was approved at an estimated cost of Rs 20,667 crore.\n\nWhich of the statements given above is/are correct?",
     "options": {
       "A": "Only 1 and 2",
       "B": "Only 2 and 3",
@@ -123,222 +11,78 @@
       "E": "All 1, 2, and 3"
     },
     "answer": "E",
-    "rationale": "All statements correctly reflect the details provided in the Important Days section regarding Ayushman Bharat Diwas, World Tuna Day, and World Press Freedom Day.",
-    "tag": "Static-Conceptual",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
+    "rationale": "All statements are correct. The CCEA approved the Rs 20,667 crore Ahmedabad–Dholera Semi High-Speed Double-Line railway project of 134 km, running up to 220 kmph. (Page 7)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
   },
   {
-    "category": "Science & Tech",
-    "sub_category": "Space Missions",
-    "question": "Fill in the blanks regarding the recent international space mission:\n\nThe ________ satellite, weighing 534 kg, was developed by the Korea Aerospace Research Institute (KARI) and launched via a SpaceX Falcon 9 rocket from the ________ in California.",
+    "category": "International Affairs",
+    "sub_category": "Global Initiatives",
+    "question": "Match the following global initiatives or exchanges with the respective partner entities or countries involved:\n\nColumn I:\n1. Project Freedom\n2. IUCAA Banner Handover\n3. Recycling of EV Batteries Initiative\n\nColumn II:\nA. South African Astronomical Observatory (SAAO)\nB. European Union (EU) TTC\nC. United States of America (USA)\n\nSelect the correct matching code:",
     "options": {
-      "A": "CAS500-2 ; Kennedy Space Center",
-      "B": "KARI-Sat 1 ; Space Launch Complex 4 East (SLC-4E)",
-      "C": "CAS500-2 ; Space Launch Complex 4 East (SLC-4E)",
-      "D": "OptoSAR-1 ; Vandenberg Space Force Base",
-      "E": "CAS500-1 ; Space Launch Complex 40"
+      "A": "1-B, 2-A, 3-C",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-A, 2-C, 3-B",
+      "E": "1-A, 2-B, 3-C"
     },
     "answer": "C",
-    "rationale": "The CAS500-2 satellite was launched via Falcon 9 from Space Launch Complex 4 East (SLC-4E) at Vandenberg Space Force Base, California.",
+    "rationale": "Project Freedom was launched by the USA to escort ships through the Strait of Hormuz. The IUCAA Banner was handed over to SAAO in South Africa. The EV Battery Recycling initiative was launched by India and the EU under TTC. (Pages 10, 27)",
     "tag": "Current-Transient",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
   },
   {
-    "category": "National",
-    "sub_category": "Environmental Tech",
-    "question": "Consider the following statements regarding recent scientific and environmental infrastructure established in India:\n\n1. The Coastal Atmospheric Research Testbed (C-ART) was established by IITM under Mission Mausam at an estimated cost of Rs 180 crore.\n2. India's first green methanol production plant at Deendayal Port Authority converts the Prosopis juliflora shrub into green marine fuel.\n3. The green methanol plant utilizes advanced biomass gasification technology.\n\nWhich of the statements given above is/are correct?",
+    "category": "International Affairs",
+    "sub_category": "Visits",
+    "question": "Fill in the blanks regarding the official visit of the United Nations General Assembly (UNGA) President to India:\n\n______ , the ______ President of the UNGA, visited India on April 28, 2026, at the invitation of Union Minister Dr. S. Jaishankar.",
     "options": {
-      "A": "Only 1 and 2",
-      "B": "Only 2 and 3",
-      "C": "Only 1 and 3",
-      "D": "Only 3",
-      "E": "All 1, 2, and 3"
-    },
-    "answer": "E",
-    "rationale": "All three statements accurately describe the C-ART facility and the green methanol plant at Deendayal Port Authority as detailed in the document.",
-    "tag": "Static-Conceptual",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "National",
-    "sub_category": "Policy & Legislation",
-    "question": "Identify the INCORRECT statement regarding the Citizenship (Amendment) Rules, 2026:\n\n1. The rules were notified by the Ministry of Home Affairs (MHA) and came into force on April 30, 2026.\n2. A Dual Passport Ban specifically restricts minor children from holding both Indian and foreign passports simultaneously.\n3. OCI card renunciation must be filed via an offline physical application to the nearest immigration office.\n4. The rules permit the issuance of physical or electronic OCI cards by maintaining a central database.\n\nSelect the INCORRECT statement(s):",
-    "options": {
-      "A": "Only 1",
-      "B": "Only 2",
-      "C": "Only 3",
-      "D": "Only 4",
-      "E": "Both 2 and 3"
-    },
-    "answer": "C",
-    "rationale": "Statement 3 is incorrect because the renunciation of the OCI card must be filed *electronically*, after which acknowledgement is issued online.",
-    "tag": "Static-Conceptual",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "Economy",
-    "sub_category": "Foreign Direct Investment",
-    "question": "Assertion (A): The Ministry of Finance notified amendments allowing 100% FDI in Indian insurance companies and intermediaries via the automatic route.\nReason (R): This amendment explicitly removed all foreign investment caps across the entire insurance sector, including for the Life Insurance Corporation of India (LIC).\n\nChoose the correct statement:",
-    "options": {
-      "A": "Both A and R are true and R is the correct explanation of A.",
-      "B": "Both A and R are true but R is NOT the correct explanation of A.",
-      "C": "A is true but R is false.",
-      "D": "A is false but R is true.",
-      "E": "Both A and R are false."
-    },
-    "answer": "C",
-    "rationale": "Assertion (A) is true as 100% FDI was permitted for insurance companies and intermediaries. Reason (R) is false because the MoF clarified that the FDI cap for LIC is retained at 20% under the automatic route, meaning not *all* caps were removed.",
-    "tag": "Current-Transient",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "Economy",
-    "sub_category": "Remittances",
-    "question": "According to the IOM's World Migration Report 2026, arrange the following countries in ascending order of their total remittance received in 2024 (from lowest to highest):\n\n1. The Philippines\n2. France\n3. Pakistan\n4. Mexico\n5. India\n\nSelect the correct answer:",
-    "options": {
-      "A": "3 - 2 - 1 - 4 - 5",
-      "B": "2 - 3 - 1 - 4 - 5",
-      "C": "3 - 1 - 2 - 4 - 5",
-      "D": "1 - 2 - 3 - 4 - 5",
-      "E": "3 - 2 - 4 - 1 - 5"
-    },
-    "answer": "A",
-    "rationale": "The amounts received are: Pakistan (34.9 bn), France (38.8 bn), The Philippines (40.3 bn), Mexico (67.6 bn), India (137.7 bn). Therefore, the ascending order is 3 - 2 - 1 - 4 - 5.",
-    "tag": "Static-Conceptual",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "National",
-    "sub_category": "Health Tech Standards",
-    "question": "Match the following Indian Standards (IS) published for assistive technologies with their specific descriptions:\n\nColumn I:\n1. IS 18558 Part 1: 2025\n2. IS 19631: 2026\n3. IS 19189: 2025\n4. IS 5145: 2026\n\nColumn II:\nA. Indigenous standard for single-point walking sticks (wood, aluminium, plastic)\nB. Guidelines for tactile maps to help blind or low-vision users\nC. Ergonomics and test methods for crutches with handgrips\nD. New indigenous standard for portable ramps used by wheelchair users\n\nSelect the correct answer:",
-    "options": {
-      "A": "1-C, 2-D, 3-B, 4-A",
-      "B": "1-C, 2-B, 3-D, 4-A",
-      "C": "1-D, 2-A, 3-B, 4-C",
-      "D": "1-A, 2-D, 3-B, 4-C",
-      "E": "1-C, 2-D, 3-A, 4-B"
-    },
-    "answer": "A",
-    "rationale": "IS 18558 Part 1 is Elbow Crutches (C). IS 19631 is Portable Ramps (D). IS 19189 is Tactile Guide Maps (B). IS 5145 is single-point Walking Sticks (A).",
-    "tag": "Static-Conceptual",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "National",
-    "sub_category": "Governance Indices & Statistics",
-    "question": "Consider the following hybrid statements combining facts from national indices and statistical reports:\n\n1. In the PAI 2.0 index, a total of 2,59,867 GPs submitted validated data, representing 97.30% of the total Panchayats.\n2. Tripura emerged as the top-performing state with 943 'Front Runner' panchayats, constituting 80.2% of its rural local bodies.\n3. The MoS&PI report revealed that the urban Total Fertility Rate (TFR) has overtaken the rural TFR in 2023.\n\nWhich of the statements given above is/are correct?",
-    "options": {
-      "A": "Only 1 and 2",
-      "B": "Only 2 and 3",
-      "C": "Only 1 and 3",
-      "D": "Only 1",
-      "E": "All 1, 2, and 3"
-    },
-    "answer": "A",
-    "rationale": "Statement 3 is incorrect because the rural TFR (2.1) is still higher than the urban TFR (1.5) in 2023. Statements 1 and 2 are correct.",
-    "tag": "Current-Transient",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "International",
-    "sub_category": "Trade Relations",
-    "question": "Consider the following statements regarding the USTR Special 301 Report 2026:\n\n1. It is the 38th annual report released by the United States Trade Representative.\n2. Vietnam was designated as a Priority Foreign Country (PFC) for the first time in 13 years.\n3. The report highlighted core global concerns such as strict patentability criteria and overly aggressive trademark enforcement.\n\nWhich of the statements given above is/are correct?",
-    "options": {
-      "A": "Only 1 and 2",
-      "B": "Only 2 and 3",
-      "C": "Only 1 and 3",
-      "D": "Only 1",
-      "E": "All 1, 2, and 3"
-    },
-    "answer": "A",
-    "rationale": "Statement 3 is incorrect because the report cited *weak* copyright/trademark enforcement and *lack* of data exclusivity, not overly aggressive enforcement. Statements 1 and 2 are correct.",
-    "tag": "Static-Conceptual",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "Economy",
-    "sub_category": "FDI Guidelines",
-    "question": "Fill in the blanks regarding the revised DPIIT FDI clearance framework:\n\nThe DPIIT set a ________ clearance timeframe for FDI proposals from countries sharing a land border with India across ________ identified sub-sectors, which fall under ________ main segments.\n\nSelect the correct option:",
-    "options": {
-      "A": "30-day ; 40 ; 5",
-      "B": "60-day ; 40 ; 6",
-      "C": "90-day ; 50 ; 6",
-      "D": "60-day ; 30 ; 4",
-      "E": "45-day ; 40 ; 6"
+      "A": "Dennis Francis ; 78th",
+      "B": "Annalena Baerbock ; 80th",
+      "C": "Csaba Kőrösi ; 77th",
+      "D": "Abdulla Shahid ; 76th",
+      "E": "Volkan Bozkir ; 75th"
     },
     "answer": "B",
-    "rationale": "The DPIIT updated the SOP to process FDI proposals within 60 days for 40 specific sub-sectors grouped into 6 main segments.",
-    "tag": "Static-Conceptual",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
+    "rationale": "Annalena Baerbock, the 80th President of the UNGA, visited India on April 28, 2026. (Page 28)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
   },
   {
-    "category": "International",
-    "sub_category": "Multilateral Financing",
-    "question": "Identify the INCORRECT statement regarding the Asian Development Bank (ADB) initiatives launched in May 2026:\n\n1. ADB launched a USD 70 billion initiative to expand energy and digital infrastructure across Asia-Pacific.\n2. The initiative includes a USD 50 billion Pan-Asia Power Grid Initiative and a USD 20 billion Asia-Pacific Digital Highway.\n3. A new 'Critical Minerals-to-Manufacturing Financing Partnership Facility' was launched to strengthen supply chains.\n4. All these initiatives were launched during the 59th Annual Meeting of the Board of Governors held in New Delhi, India.\n\nSelect the INCORRECT statement(s):",
+    "category": "Banking & Finance",
+    "sub_category": "RBI in News",
+    "question": "Which of the following statements is NOT correct regarding the regulatory framework for Investment Fluctuation Reserve (IFR) revised by the RBI?",
     "options": {
-      "A": "Only 1",
-      "B": "Only 2",
-      "C": "Only 3",
-      "D": "Only 4",
-      "E": "Both 3 and 4"
+      "A": "IFR is a reserve created by banks out of their profits to absorb losses from MTM valuation changes.",
+      "B": "It acts as an additional buffer to protect banks against depreciation in their investment portfolios.",
+      "C": "The revised framework is applicable to various categories of banks and regulated entities.",
+      "D": "The RBI has mandated all Urban Co-operative Banks to permanently retain IFR starting May 2026.",
+      "E": "The requirement of IFR has been discontinued with effect from May 18, 2026."
     },
     "answer": "D",
-    "rationale": "Statement 4 is incorrect because the 59th Annual Meeting of the ADB was held in Samarkand, Uzbekistan, not New Delhi.",
+    "rationale": "Option D is incorrect because the RBI has discontinued the requirement of Investment Fluctuation Reserve (IFR) with effect from May 18, 2026, rather than making it permanent. (Pages 32-33)",
     "tag": "Current-Transient",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
   },
   {
-    "category": "Banking",
-    "sub_category": "Fintech Partnerships",
-    "question": "Assertion (A): Jio Payments Bank Limited (JBPL) announced a partnership with the fintech platform Ezeepay.\nReason (R): The partnership aims to deploy Ezeepay as a Business Correspondent (BC) to strengthen last-mile digital banking services across rural and semi-urban India.\n\nChoose the correct statement:",
+    "category": "Reports",
+    "sub_category": "Social Data",
+    "question": "According to the PLFS Quarterly Bulletin for January-March 2026 released by NSO, what was the estimated Labour Force Participation Rate (LFPR) and the Urban Unemployment Rate (UR) for persons aged 15 years and above in Q4 FY26?",
     "options": {
-      "A": "Both A and R are true and R is the correct explanation of A.",
-      "B": "Both A and R are true but R is NOT the correct explanation of A.",
-      "C": "A is true but R is false.",
-      "D": "A is false but R is true.",
-      "E": "Both A and R are false."
+      "A": "LFPR 54.5% ; UR 6.8%",
+      "B": "LFPR 55.5% ; UR 6.6%",
+      "C": "LFPR 55.8% ; UR 6.7%",
+      "D": "LFPR 56.5% ; UR 6.4%",
+      "E": "LFPR 55.0% ; UR 6.5%"
     },
-    "answer": "A",
-    "rationale": "Both statements are correct. Reason (R) directly explains the strategic purpose of the partnership mentioned in Assertion (A).",
+    "answer": "B",
+    "rationale": "The PLFS report shows the overall LFPR was estimated at 55.5% in Q4 FY26, and the urban unemployment rate (UR) declined to 6.6%. (Page 78)",
     "tag": "Current-Transient",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
   },
   {
-    "category": "General Awareness",
-    "sub_category": "Important Days",
-    "question": "Arrange the following important days in chronological order based on their observance dates in May:\n\n1. Ayushman Bharat Diwas\n2. World Hand Hygiene Day\n3. World Press Freedom Day\n4. International Workers' Day\n\nSelect the correct sequence:",
-    "options": {
-      "A": "1 - 4 - 3 - 2",
-      "B": "4 - 1 - 3 - 2",
-      "C": "1 - 3 - 4 - 2",
-      "D": "4 - 3 - 1 - 2",
-      "E": "1 - 4 - 2 - 3"
-    },
-    "answer": "A",
-    "rationale": "Ayushman Bharat Diwas is April 30 (1). International Workers' Day is May 1 (4). World Press Freedom Day is May 3 (3). World Hand Hygiene Day is May 5 (2). Sequence: 1 - 4 - 3 - 2.",
-    "tag": "Static-Conceptual",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "National",
-    "sub_category": "State Infrastructure",
-    "question": "Consider the following multi-concept statements regarding recent state government initiatives:\n\n1. The Telangana government acquired 100% equity in Hyderabad Metro Phase I, which includes refinancing Rs. 13,538.53 crore of debt.\n2. The Nagaland government launched the '100 Days Ayushman Student Coverage Mission' as an extension of AB-PMJAY and CMHIS.\n3. The Bihar state cabinet approved a USD 500 million loan from the World Bank for the 'Bihar Urban Transformation Programme'.\n\nWhich of the statements given above is/are correct?",
-    "options": {
-      "A": "Only 1 and 2",
-      "B": "Only 2 and 3",
-      "C": "Only 1 and 3",
-      "D": "Only 3",
-      "E": "All 1, 2, and 3"
-    },
-    "answer": "E",
-    "rationale": "All three statements accurately reflect the financial and health coverage initiatives undertaken by Telangana, Nagaland, and Bihar respectively.",
-    "tag": "Current-Transient",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "Economy",
-    "sub_category": "Economic Forecasts",
-    "question": "Consider the following statements regarding the report jointly released by S&P Global Market Intelligence and CRISIL Ratings:\n\n1. The report is titled \"India Forward-Emerging Perspectives\".\n2. India's Gross Domestic Product (GDP) forecast for FY27 was revised down by 50 basis points to 6.6%.\n3. The previous GDP estimate for FY27 was 7.1%.\n\nWhich of the statements given above is/are correct?",
+    "category": "Apps & Web Portal",
+    "sub_category": "Healthcare Portals",
+    "question": "Consider the following portals and their respective purposes:\n\n1. JANANI platform: Creates a Longitudinal Digital Record System for women across reproductive stages.\n2. Ayush Anudan Portal: Strengthens digital governance for the submission and approval of Ayush funding proposals.\n3. Swasth Bharat Portal: Provides AI-driven networking and business matchmaking for healthcare textile workers.\n\nWhich of the combinations given above is/are correctly matched?",
     "options": {
       "A": "Only 1 and 2",
       "B": "Only 2 and 3",
@@ -346,415 +90,143 @@
       "D": "Only 1",
       "E": "All 1, 2, and 3"
     },
-    "answer": "E",
-    "rationale": "All statements are correct. The report downgraded India's FY27 GDP forecast from 7.1% to 6.6% (a 50 bps drop) due to West Asia conflict disruptions.",
-    "tag": "Current-Transient",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "General Awareness",
-    "sub_category": "Obituaries",
-    "question": "Match the following personalities who recently passed away with the specific details of their lives/careers:\n\nColumn I:\n1. Alex Zanardi\n2. Ted Turner\n3. Vijay Kumar\n4. JJ Edmondson\n\nColumn II:\nA. Passed away at 57 in Lucknow\nB. Proposed observing IFFD annually on May 4\nC. Passed away at 59 in Veneto, Italy\nD. Passed away at 87 in Atlanta, Georgia\n\nSelect the correct answer:",
-    "options": {
-      "A": "1-C, 2-D, 3-A, 4-B",
-      "B": "1-D, 2-C, 3-A, 4-B",
-      "C": "1-C, 2-A, 3-D, 4-B",
-      "D": "1-B, 2-D, 3-A, 4-C",
-      "E": "1-C, 2-D, 3-B, 4-A"
-    },
     "answer": "A",
-    "rationale": "Zanardi (1) died in Veneto at 59 (C). Turner (2) died in Atlanta at 87 (D). Vijay Kumar (3) died in Lucknow at 57 (A). Edmondson (4) proposed IFFD (B).",
-    "tag": "Static-Conceptual",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "National",
-    "sub_category": "Energy Pacts",
-    "question": "Fill in the blanks regarding the recent nuclear power agreement signed in Tamil Nadu:\n\nNLC India Limited signed a Non-Disclosure Agreement (NDA) with ________ to explore potential development of nuclear power projects based on ________ and ________ technologies.",
-    "options": {
-      "A": "Rosatom ; VVER ; Fast Breeder Reactor",
-      "B": "Électricité de France (EDF) ; EPR ; SMR",
-      "C": "Westinghouse Electric ; AP1000 ; SMR",
-      "D": "Électricité de France (EDF) ; VVER ; PHWR",
-      "E": "GE Hitachi ; BWR ; SMR"
-    },
-    "answer": "B",
-    "rationale": "NLCIL signed an NDA with Électricité de France (EDF) to explore European Pressurised Reactor (EPR) and Small Modular Reactor (SMR) technologies.",
-    "tag": "Static-Conceptual",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
+    "rationale": "Combination 3 is incorrectly matched. The Swasth Bharat Portal integrates fragmented health programme systems for real-time monitoring and evidence-based planning. AI-driven business matchmaking was for the Bharat Tex 2026 Event Application. (Pages 108-109)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
   },
   {
     "category": "Sports",
-    "sub_category": "Badminton World Federation",
-    "question": "Identify the INCORRECT statement regarding the BWF Thomas & Uber Cup Finals 2026:\n\n1. It marked the 34th edition of the Thomas Cup and the 31st edition of the Uber Cup.\n2. The tournaments were held in Horsens, Denmark.\n3. China's men's team secured their 13th overall Thomas Cup title.\n4. Japan won 1 Silver medal in the women's category.\n\nSelect the INCORRECT statement:",
+    "sub_category": "Formula 1",
+    "question": "Arrange the following Formula One drivers in descending order based on their final positions (1st, 2nd, 3rd) at the Canadian Grand Prix 2026:\n\n1. Kimi Antonelli\n2. Max Verstappen\n3. Lewis Hamilton\n\nSelect the correct sequence:",
     "options": {
-      "A": "Only 1",
-      "B": "Only 2",
-      "C": "Only 3",
-      "D": "Only 4",
-      "E": "Both 3 and 4"
+      "A": "1, 2, 3",
+      "B": "1, 3, 2",
+      "C": "2, 3, 1",
+      "D": "3, 2, 1",
+      "E": "3, 1, 2"
     },
-    "answer": "D",
-    "rationale": "Statement 4 is incorrect because Japan won 1 Bronze medal (not Silver) in the Women's category, according to the medal table.",
-    "tag": "Static-Conceptual",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "National",
-    "sub_category": "Technology & Innovation",
-    "question": "Assertion (A): The IIT Madras Global Research Foundation announced its first international centre in Menlo Park, USA.\nReason (R): The primary objective of establishing this centre is to expand India's deep-tech innovation presence into global ecosystems.\n\nChoose the correct statement:",
-    "options": {
-      "A": "Both A and R are true and R is the correct explanation of A.",
-      "B": "Both A and R are true but R is NOT the correct explanation of A.",
-      "C": "A is true but R is false.",
-      "D": "A is false but R is true.",
-      "E": "Both A and R are false."
-    },
-    "answer": "A",
-    "rationale": "Both statements are correct, and Reason (R) is the direct strategic objective driving the establishment of the international centre mentioned in Assertion (A).",
+    "answer": "B",
+    "rationale": "The finishing order was: 1st - Kimi Antonelli, 2nd - Lewis Hamilton, 3rd - Max Verstappen. Therefore, the sequence is 1, 3, 2. (Pages 91-92)",
     "tag": "Current-Transient",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
   },
   {
-    "category": "International",
-    "sub_category": "University Rankings",
-    "question": "According to the THE Asia University Rankings 2026, arrange the following Indian institutions in ascending order of their rank (from best rank/lowest number to worst rank/highest number):\n\n1. IIT Indore\n2. Shoolini University of Biotechnology and Management Sciences\n3. IISc Bengaluru\n4. Saveetha Institute of Medical and Technical Sciences\n\nSelect the correct sequence:",
+    "category": "MoU's & Agreements",
+    "sub_category": "MoU's With Country",
+    "question": "Assertion (A): India and the United States of America signed a Framework on \"Securing of Supply in the Mining and Processing of Critical Minerals and Rare Earths\".\n\nReason (R): The U.S. government is allocating over USD 30 billion through investments, loans, and public–private partnerships to strengthen critical mineral supply chains.\n\nChoose the correct option:",
     "options": {
-      "A": "3 - 4 - 1 - 2",
-      "B": "3 - 1 - 4 - 2",
-      "C": "3 - 4 - 2 - 1",
-      "D": "4 - 3 - 1 - 2",
-      "E": "3 - 2 - 4 - 1"
-    },
-    "answer": "A",
-    "rationale": "IISc (43), Saveetha (128), IIT Indore (141), Shoolini (158). The ascending order by rank value is 3 - 4 - 1 - 2.",
-    "tag": "Static-Conceptual",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "International",
-    "sub_category": "Bilateral Agreements",
-    "question": "Consider the following statements regarding the bilateral agreements signed between India and Japan:\n\n1. The agreements were signed to strengthen cooperation in quantum technology and health research.\n2. The Indian Council of Medical Research (ICMR) and Japan Agency for Medical Research and Development (AMED) were key signatories.\n3. The signing took place in the presence of Union Minister of State Jitendra Singh and Japan's Minister Kimi.\n\nWhich of the statements given above is/are correct?",
-    "options": {
-      "A": "Only 1 and 2",
-      "B": "Only 2 and 3",
-      "C": "Only 1 and 3",
-      "D": "Only 1",
-      "E": "All 1, 2, and 3"
-    },
-    "answer": "E",
-    "rationale": "All statements accurately summarize the quantum technology and health research pacts signed between India and Japan in New Delhi.",
-    "tag": "Current-Transient",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "Economy",
-    "sub_category": "Agriculture Pricing",
-    "question": "Consider the following multi-concept statements regarding the sugarcane Fair and Remunerative Price (FRP):\n\n1. The CCEA approved increasing the FRP to Rs 365 per quintal for the 2026-27 season.\n2. The calculation is based on a basic recovery rate of 10.25%.\n3. This marks a 2.81% increase compared to the Rs 355 per quintal rate for the 2025-26 season.\n\nWhich of the statements given above is/are correct?",
-    "options": {
-      "A": "Only 1 and 2",
-      "B": "Only 2 and 3",
-      "C": "Only 1 and 3",
-      "D": "Only 1",
-      "E": "All 1, 2, and 3"
-    },
-    "answer": "E",
-    "rationale": "All three statements accurately capture the economic data regarding the sugarcane FRP approval by the CCEA.",
-    "tag": "Current-Transient",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "Defence",
-    "sub_category": "Systems & Missiles",
-    "question": "Match the following Indian defence systems with their respective testing/development partners or platforms:\n\nColumn I:\n1. GBMES (Ground-Based Mobile Electronic Systems)\n2. NASM-SR (Naval Anti-Ship Missile-Short Range)\n3. LR-AShM (Long-Range Hypersonic Anti-ship Missile)\n4. Mahendragiri (Y-12654)\n\nColumn II:\nA. Developed for Indian Navy; tested from ITR, APJ Abdul Kalam Island\nB. Developed by DLRL, manufactured by BEL\nC. Delivered by Mazagon Dock Shipbuilders Limited (MDL)\nD. Maiden salvo launch from a naval helicopter off Odisha coast\n\nSelect the correct answer:",
-    "options": {
-      "A": "1-B, 2-D, 3-A, 4-C",
-      "B": "1-B, 2-A, 3-D, 4-C",
-      "C": "1-C, 2-D, 3-A, 4-B",
-      "D": "1-B, 2-D, 3-C, 4-A",
-      "E": "1-D, 2-B, 3-A, 4-C"
-    },
-    "answer": "A",
-    "rationale": "GBMES (1) is DLRL/BEL (B). NASM-SR (2) had a maiden salvo launch from a helicopter (D). LR-AShM (3) tested at ITR Abdul Kalam Island (A). Mahendragiri (4) delivered by MDL (C).",
-    "tag": "Static-Conceptual",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "Defence",
-    "sub_category": "Procurements",
-    "question": "Fill in the blanks regarding the procurement deal signed by the Ministry of Defence:\n\nThe MoD signed a Rs ________ crore contract with Bharat Electronics Limited (BEL) for ________ Ground-Based Mobile Electronic Systems under the ________ category.\n\nSelect the correct option:",
-    "options": {
-      "A": "1,476 ; five ; Buy Indian-IDDM",
-      "B": "1,570 ; four ; Make in India",
-      "C": "1,476 ; six ; Buy Global",
-      "D": "1,200 ; five ; Buy Indian-IDDM",
-      "E": "1,476 ; five ; Buy Indian-Manufactured"
-    },
-    "answer": "A",
-    "rationale": "The MoD signed a Rs 1,476 crore contract with BEL for five GBMES under the Buy Indian-IDDM category.",
-    "tag": "Static-Conceptual",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "National",
-    "sub_category": "Technology & Portals",
-    "question": "Consider the following hybrid statements combining facts on new digital platforms:\n\n1. The EPFO launched the 'E-PRAAPTI' portal to track, link, and activate inoperative EPF accounts using Aadhaar.\n2. Union Minister Jyotiraditya Scindia launched the 'Cell Broadcast System' developed by C-DOT to warn citizens about natural disasters.\n3. The E-PRAAPTI platform aims to reduce manual intervention while completely bypassing the UAN requirement.\n\nWhich of the statements given above is/are correct?",
-    "options": {
-      "A": "Only 1 and 2",
-      "B": "Only 2 and 3",
-      "C": "Only 1 and 3",
-      "D": "Only 1",
-      "E": "All 1, 2, and 3"
-    },
-    "answer": "A",
-    "rationale": "Statement 3 is incorrect because the E-PRAAPTI portal explicitly facilitates *UAN linking*, it does not bypass the UAN requirement. Statements 1 and 2 are correct.",
-    "tag": "Current-Transient",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "National",
-    "sub_category": "Healthcare Portals & Guidelines",
-    "question": "Identify the INCORRECT statement regarding the health initiatives launched in May 2026:\n\n1. The Swasth Bharat Portal was launched to integrate fragmented health programme systems into a unified digital platform.\n2. The Swasth Bharat Portal was unveiled at the 10th National Summit on Good Practices held in Chandigarh.\n3. The RBSK 2.0 Guidelines strictly focus on early intervention for infants aged birth to 5 years.\n4. The Guidance Document on Diabetes Mellitus in Children introduces a free-of-cost care package at public health facilities.\n\nSelect the INCORRECT statement(s):",
-    "options": {
-      "A": "Only 1",
-      "B": "Only 2",
-      "C": "Only 3",
-      "D": "Only 4",
-      "E": "Both 3 and 4"
-    },
-    "answer": "C",
-    "rationale": "Statement 3 is incorrect because the RBSK 2.0 Guidelines expand child health screening and early intervention for children from birth to 18 years, not just up to 5 years.",
-    "tag": "Static-Conceptual",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "International",
-    "sub_category": "Clean Energy Agreements",
-    "question": "Assertion (A): Under the India-EU Trade & Technology Council (TTC), a third coordinated call for proposals was launched focusing on Electric Vehicle (EV) battery recycling.\nReason (R): This initiative is funded through a combined pool of EUR 15.2 million provided by the EU's Horizon Europe programme and India's Ministry of Heavy Industries (MHI).\n\nChoose the correct statement:",
-    "options": {
-      "A": "Both A and R are true and R is the correct explanation of A.",
-      "B": "Both A and R are true but R is NOT the correct explanation of A.",
-      "C": "A is true but R is false.",
-      "D": "A is false but R is true.",
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
       "E": "Both A and R are false."
     },
     "answer": "B",
-    "rationale": "Both statements are correct facts. However, the funding source (R) is a structural detail of the initiative, not the causal *reason* why the proposal call was focused on EV battery recycling (which is driven by TTC Working Group 2's clean energy goals).",
+    "rationale": "Both Assertion and Reason are factually true based on the document. However, the U.S. allocation of USD 30 billion is a broad funding initiative to support the supply chain, while the framework with India is a bilateral agreement; R provides additional context but is not the sole 'explanation' of why the framework was signed. (Page 44)",
     "tag": "Current-Transient",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
   },
   {
-    "category": "Economy",
-    "sub_category": "Fisheries Data",
-    "question": "Based on the 'ICAR-CMFRI Annual Report 2025', arrange the following Top 5 states in ascending order of their Marine Fish Production (from lowest production to highest):\n\n1. Tamil Nadu\n2. Gujarat\n3. Kerala\n4. Karnataka\n5. Maharashtra\n\nSelect the correct sequence:",
-    "options": {
-      "A": "5 - 4 - 3 - 2 - 1",
-      "B": "1 - 2 - 3 - 4 - 5",
-      "C": "5 - 3 - 4 - 2 - 1",
-      "D": "4 - 5 - 3 - 2 - 1",
-      "E": "5 - 4 - 2 - 3 - 1"
-    },
-    "answer": "A",
-    "rationale": "The ascending order (lowest to highest) is Maharashtra (3.66), Karnataka (5.78), Kerala (6.24), Gujarat (6.43), Tamil Nadu (6.85). This matches sequence 5 - 4 - 3 - 2 - 1.",
-    "tag": "Static-Conceptual",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "Banking",
-    "sub_category": "Market Regulation",
-    "question": "Consider the following statements regarding SEBI's recent technological and regulatory initiatives:\n\n1. The PaRRVA framework aims to independently validate performance claims made by unregistered finfluencers and regulated intermediaries.\n2. CARE Ratings Limited will serve as the PaRRVA Data Centre (PDC).\n3. SEBI set up the 'Cyber-suraksha.ai' task force specifically to assess threats linked to AI-driven vulnerability tools like Claude Mythos.\n\nWhich of the statements given above is/are correct?",
+    "category": "Banking & Finance",
+    "sub_category": "SEBI",
+    "question": "Consider the following statements regarding the 'Cyber-suraksha.ai' Task Force constituted by SEBI:\n\n1. It aims to evaluate cybersecurity risks arising from advanced Artificial Intelligence (AI) tools.\n2. The task force specifically assesses threats linked to AI-driven vulnerability identification tools such as Claude Mythos.\n3. It will directly penalize non-compliant unregistered finfluencers under the PaRRVA framework.\n\nWhich of the statements given above is/are correct?",
     "options": {
       "A": "Only 1 and 2",
-      "B": "Only 1 and 3",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "A",
+    "rationale": "Statement 3 is incorrect because penalizing finfluencers under the PaRRVA framework is a separate initiative focused on risk and return verification, not part of the Cyber-suraksha.ai task force's mandate. Statements 1 and 2 are correct. (Page 34)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "National",
+    "question": "Match the following personalities with their respective appointments announced in May 2026:\n\nColumn I:\n1. Rohit Jain\n2. Prasoon Joshi\n3. Shashi Shekhar Vempati\n\nColumn II:\nA. Chairman of Prasar Bharati\nB. Chairperson of the Central Board of Film Certification (CBFC)\nC. Deputy Governor of Reserve Bank of India (RBI)\n\nSelect the correct matching code:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-B, 2-A, 3-C",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-A, 2-B, 3-C",
+      "E": "1-B, 2-C, 3-A"
+    },
+    "answer": "C",
+    "rationale": "Rohit Jain was appointed as Deputy Governor of RBI. Prasoon Joshi was appointed as Chairman of Prasar Bharati. Shashi Shekhar Vempati was appointed as Chairperson of the CBFC. (Page 54)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "National",
+    "question": "Fill in the blank regarding Skyroot Aerospace's recent funding milestone:\n\nSkyroot Aerospace became India’s first space-tech unicorn after raising USD 60 million, which propelled its valuation to USD _____ billion.",
+    "options": {
+      "A": "1.0",
+      "B": "1.1",
+      "C": "1.2",
+      "D": "1.5",
+      "E": "2.0"
+    },
+    "answer": "B",
+    "rationale": "Skyroot Aerospace raised USD 60 million, taking its valuation to USD 1.1 billion. (Page 67)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Reports",
+    "sub_category": "National Reports",
+    "question": "Which of the following is NOT correct regarding the 'Crime in India 2024' report released by the NCRB?",
+    "options": {
+      "A": "India recorded 58.86 lakh cognisable crimes in 2024.",
+      "B": "There was a 6% decline in cognisable crimes compared to 62.41 lakh cases reported in 2023.",
+      "C": "The overall crime rate in India increased from 418.9 in 2023 to 448.3 in 2024.",
+      "D": "35.44 lakh cases were registered under the IPC/BNS.",
+      "E": "A total of 1,70,746 suicide cases were registered in 2024."
+    },
+    "answer": "C",
+    "rationale": "Option C is incorrect because the overall crime rate in India *declined* from 448.3 (in 2023) to 418.9 (in 2024). (Page 77)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Apps & Web Portal",
+    "sub_category": "Social Justice & Semiconductor",
+    "question": "Consider the following digital platforms and their objectives:\n\n1. PM-AJAY Portal: Digitizes the implementation of Scheduled Caste (SC) communities welfare schemes.\n2. Investors Support Portal: Facilitates real-time tracking of universal account numbers for EPFO subscribers.\n3. E-PRAAPTI: Acts as a single-window facilitation mechanism for semiconductor investors in India.\n\nWhich of the combinations given above is/are correctly matched?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 1 and 2",
       "C": "Only 2 and 3",
       "D": "Only 3",
       "E": "All 1, 2, and 3"
     },
-    "answer": "B",
-    "rationale": "Statement 2 is incorrect because the National Stock Exchange (NSE) will serve as the PaRRVA Data Centre (PDC), while CARE Ratings Limited is the recognized PaRRVA agency. Statements 1 and 3 are correct.",
+    "answer": "A",
+    "rationale": "Only combination 1 is correct. The Investors Support Portal is for semiconductor investors (MeitY/ISM), and E-PRAAPTI is for EPFO subscribers to track inoperative accounts. (Pages 107, 110)",
     "tag": "Current-Transient",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
   },
   {
-    "category": "National",
-    "sub_category": "Infrastructure Schemes",
-    "question": "Fill in the blanks regarding the PMGSY-IV scheme launched in Odisha:\n\nUnion Minister Shivraj Singh Chouhan launched PMGSY-IV covering ________ road projects spanning ________ km, designed to connect ________ habitations with all-weather roads.",
+    "category": "MoU's & Agreements",
+    "sub_category": "MoU's with State",
+    "question": "Match the following State Governments with their respective partners and fields for MoUs signed in May 2026:\n\nColumn I:\n1. Andhra Pradesh\n2. Maharashtra\n3. Gujarat\n\nColumn II:\nA. Meta Platforms Inc. (for public services on WhatsApp)\nB. DBN & DoT (for Amended BharatNet Programme)\nC. NTPC, Adani, Reliance (for Nuclear Energy Projects)\n\nSelect the correct matching code:",
     "options": {
-      "A": "827 ; 1,701.84 ; 898",
-      "B": "943 ; 1,500.50 ; 898",
-      "C": "827 ; 1,698.04 ; 943",
-      "D": "898 ; 1,701.84 ; 827",
-      "E": "827 ; 1,700.00 ; 898"
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-C, 2-A, 3-B"
     },
     "answer": "A",
-    "rationale": "Under PMGSY-IV in Odisha, 827 road projects covering 1,701.84 km were taken up to connect 898 habitations.",
-    "tag": "Static-Conceptual",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "National",
-    "sub_category": "Cabinet Approvals",
-    "question": "Consider the following multi-concept statements regarding recent CCEA approvals:\n\n1. The CCEA approved an increase in the sanctioned strength of Supreme Court judges to 37.\n2. A Rs 1,570 crore ship repair facility was approved at Vadinar, Gujarat, to be implemented by DPA and Cochin Shipyard Limited.\n3. The CCEA approved 3 railway multi-tracking projects covering 19 districts across 6 states for Rs 23,437 crore.\n\nWhich of the statements given above is/are correct?",
-    "options": {
-      "A": "Only 1 and 2",
-      "B": "Only 2 and 3",
-      "C": "Only 1 and 3",
-      "D": "Only 3",
-      "E": "All 1, 2, and 3"
-    },
-    "answer": "E",
-    "rationale": "All three statements accurately reflect the major infrastructure, railway, and judicial expansion proposals approved by the CCEA on May 5, 2026.",
+    "rationale": "Andhra Pradesh partnered with Digital Bharat Nidhi (DBN) for BharatNet. Maharashtra partnered with power companies for nuclear energy. Gujarat partnered with Meta for a WhatsApp chatbot. (Pages 45-46)",
     "tag": "Current-Transient",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
   },
   {
-    "category": "General Awareness",
-    "sub_category": "Important Days",
-    "question": "Match the following themes with the correct observances for the year 2026:\n\nColumn I:\n1. 'Action saves lives– Safer care starts with clean hands'\n2. 'Shaping a Future at Peace'\n3. 'One Million More Midwives'\n4. 'World Peace through Laughter'\n\nColumn II:\nA. World Press Freedom Day\nB. World Laughter Day\nC. International Day of the Midwife\nD. World Hand Hygiene Day\n\nSelect the correct answer:",
-    "options": {
-      "A": "1-D, 2-B, 3-C, 4-A",
-      "B": "1-D, 2-A, 3-C, 4-B",
-      "C": "1-A, 2-D, 3-C, 4-B",
-      "D": "1-C, 2-A, 3-D, 4-B",
-      "E": "1-D, 2-A, 3-B, 4-C"
-    },
-    "answer": "B",
-    "rationale": "Hand Hygiene (1) is D. Press Freedom (2) is A. Midwife (3) is C. Laughter Day (4) is B.",
-    "tag": "Static-Conceptual",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "National",
-    "sub_category": "Resource Management",
-    "question": "Identify the INCORRECT statement regarding the Incentive Scheme for Promotion of Critical Mineral Recycling (IS-PCMR):\n\n1. It was approved by the Ministry of Mines under the National Critical Mineral Mission (NCMM).\n2. The total scheme outlay is Rs 1,500 crore.\n3. The scheme focuses exclusively on building domestic recycling capacity for lithium-ion batteries and e-waste, explicitly omitting industrial scrap.\n\nSelect the INCORRECT statement(s):",
-    "options": {
-      "A": "Only 1",
-      "B": "Only 2",
-      "C": "Only 3",
-      "D": "Only 1 and 2",
-      "E": "All 1, 2, and 3"
-    },
-    "answer": "C",
-    "rationale": "Statement 3 is incorrect because the scheme aims to build recycling capacity for lithium-ion batteries, e-waste, *and* industrial scrap. It does not omit industrial scrap.",
-    "tag": "Static-Conceptual",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "National",
-    "sub_category": "Space & Startups",
-    "question": "Assertion (A): Skyroot Aerospace Private Limited became India's first space-tech unicorn after raising USD 60 million.\nReason (R): This funding round pushed the company's valuation to USD 1.1 billion, nearly doubling its 2023 valuation of USD 550 million.\n\nChoose the correct statement:",
-    "options": {
-      "A": "Both A and R are true and R is the correct explanation of A.",
-      "B": "Both A and R are true but R is NOT the correct explanation of A.",
-      "C": "A is true but R is false.",
-      "D": "A is false but R is true.",
-      "E": "Both A and R are false."
-    },
-    "answer": "A",
-    "rationale": "Both statements are correct. Reaching a valuation over USD 1 billion (USD 1.1 billion) is the exact financial reason (R) why Skyroot achieved 'unicorn' status (A).",
-    "tag": "Current-Transient",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "National",
-    "sub_category": "Statistical Reports",
-    "question": "According to the 'Women and Men in India 2025' report, arrange the following statistical figures in descending order of their numerical values:\n\n1. Sex ratio at birth (2021-23)\n2. Female Gross Enrolment Ratio at Higher Education (2022-23)\n3. Male Gross Enrolment Ratio at Higher Education (2022-23)\n4. Rural Total Fertility Rate (2023)\n\nSelect the correct sequence:",
-    "options": {
-      "A": "1 - 3 - 2 - 4",
-      "B": "1 - 2 - 3 - 4",
-      "C": "2 - 3 - 1 - 4",
-      "D": "1 - 4 - 2 - 3",
-      "E": "4 - 3 - 2 - 1"
-    },
-    "answer": "B",
-    "rationale": "The numerical values are: Sex ratio (917), Female GER (30.2), Male GER (28.9), Rural TFR (2.1). Descending order: 917 > 30.2 > 28.9 > 2.1, corresponding to 1 - 2 - 3 - 4.",
-    "tag": "Static-Conceptual",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "National",
-    "sub_category": "Panchayati Raj Index",
-    "question": "Consider the following statements regarding the Panchayat Advancement Index (PAI) 2.0 for FY24:\n\n1. It was launched by the Ministry of Panchayati Raj to assess the overall holistic development of Gram Panchayats.\n2. A total of 2,59,867 GPs submitted validated data, representing 97.30% of participating Panchayats.\n3. Kerala emerged as the top-performing state with 943 'Front Runner' panchayats, constituting 80% of its local bodies.\n\nWhich of the statements given above is/are correct?",
-    "options": {
-      "A": "Only 1 and 2",
-      "B": "Only 2 and 3",
-      "C": "Only 1 and 3",
-      "D": "Only 1",
-      "E": "All 1, 2, and 3"
-    },
-    "answer": "A",
-    "rationale": "Statement 3 is incorrect because Tripura (not Kerala) emerged as the top-performing state with 943 'Front Runner' panchayats, constituting 80.2% of its rural local bodies.",
-    "tag": "Current-Transient",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "National",
-    "sub_category": "Digital Security Agreements",
-    "question": "Fill in the blanks regarding the pact signed between UIDAI and NFSU:\n\nUIDAI and the National Forensic Sciences University (NFSU) signed a ________ MoU to bolster cybersecurity and digital forensic capabilities. The agreement was exchanged between UIDAI CEO ________ and NFSU Director Dr. S.O. Junare.\n\nSelect the correct option:",
-    "options": {
-      "A": "3-year ; Saurabh Garg",
-      "B": "5-year ; Vivek Chandra Verma",
-      "C": "5-year ; Amit Agrawal",
-      "D": "10-year ; Vivek Chandra Verma",
-      "E": "3-year ; Amit Agrawal"
-    },
-    "answer": "B",
-    "rationale": "UIDAI and NFSU signed a 5-year MoU. The agreement was exchanged between Vivek Chandra Verma, CEO of UIDAI, and Dr. S.O. Junare.",
-    "tag": "Static-Conceptual",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "National",
-    "sub_category": "Infrastructure & Innovation",
-    "question": "Consider the following hybrid statements combining facts on new infrastructure and schemes:\n\n1. Union Minister Nitin Gadkari launched India's first MLFF barrier-less tolling system at Chorayasi Toll Plaza in Gujarat.\n2. Union MoS Sanjay Seth launched the 'Namo Stall Scheme' for street vendors in Ranchi under the PM SVANidhi Scheme.\n3. The C-ART Open-Field Observatory in Visakhapatnam is a Rs 180 crore project developed under the National Critical Mineral Mission.\n\nWhich of the statements given above is/are correct?",
-    "options": {
-      "A": "Only 1 and 2",
-      "B": "Only 2 and 3",
-      "C": "Only 1 and 3",
-      "D": "Only 1",
-      "E": "All 1, 2, and 3"
-    },
-    "answer": "A",
-    "rationale": "Statement 3 is incorrect because the C-ART Open-Field Observatory was developed under 'Mission Mausam', not the National Critical Mineral Mission. Statements 1 and 2 are correct.",
-    "tag": "Current-Transient",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "Banking",
-    "sub_category": "Insurance & Savings",
-    "question": "Identify the INCORRECT statement regarding recent financial products launched by Tata AIA and IPPB:\n\n1. Tata AIA Life Insurance launched a unit-linked health fund plan named 'Shubh Health Criti'.\n2. The 'Shubh Health Criti' plan offers coverage for over 60 critical illnesses and includes a 30-year premium guarantee.\n3. India Post Payments Bank (IPPB) launched a zero-balance current account specifically targeting Micro, Small and Medium Enterprises (MSMEs).\n\nSelect the INCORRECT statement(s):",
-    "options": {
-      "A": "Only 1",
-      "B": "Only 2",
-      "C": "Only 3",
-      "D": "Only 1 and 3",
-      "E": "Only 2 and 3"
-    },
-    "answer": "C",
-    "rationale": "Statement 3 is incorrect because IPPB launched a zero-balance 'Savings Account' targeting Self Help Groups (SHGs) and women-led micro-enterprises, not a current account for all MSMEs.",
-    "tag": "Static-Conceptual",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "National",
-    "sub_category": "State News",
-    "question": "Match the following states with their recent significant governance or technological initiatives:\n\nColumn I:\n1. Sikkim\n2. Maharashtra\n3. Mizoram\n4. Karnataka (Bengaluru)\n\nColumn II:\nA. 'Namma 112' AI-powered emergency response\nB. First state with a fully paperless judiciary\nC. AI Policy 2026 with Rs 10,000 crore investment target\nD. 'Khuarel' mobile application for disaster response\n\nSelect the correct answer:",
-    "options": {
-      "A": "1-B, 2-C, 3-D, 4-A",
-      "B": "1-B, 2-A, 3-C, 4-D",
-      "C": "1-D, 2-C, 3-B, 4-A",
-      "D": "1-C, 2-B, 3-D, 4-A",
-      "E": "1-A, 2-C, 3-D, 4-B"
-    },
-    "answer": "A",
-    "rationale": "Sikkim has a paperless judiciary (B). Maharashtra approved the AI Policy (C). Mizoram launched Khuarel (D). Bengaluru (Karnataka) launched Namma 112 (A).",
-    "tag": "Current-Transient",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
-  },
-  {
-    "category": "International",
-    "sub_category": "Diplomatic Meetings",
-    "question": "Consider the following multi-concept statements regarding recent diplomatic meetings:\n\n1. Dr. Neena Malhotra chaired the BRICS MENA meeting in New Delhi focusing on regional stability in West Asia.\n2. EAM S. Jaishankar's visit to Jamaica resulted in MoUs covering health, solarisation, and broadcasting.\n3. Union Minister Rajnath Singh attended the 23rd SCO Defence Ministers' Meeting in Bishkek, Kyrgyzstan.\n\nWhich of the statements given above is/are correct?",
+    "category": "Reports",
+    "sub_category": "National Health Accounts",
+    "question": "Consider the following statements regarding the National Health Accounts (NHA) estimates for India (FY23):\n\n1. It is the 10th report on health expenditure estimates released by MoHFW.\n2. The Government Health Expenditure (GHE) increased to Rs 3.85 lakh crore in 2022-23.\n3. The Total Health Expenditure (THE) is estimated at Rs 8.81 lakh crore, representing 3.37% of GDP.\n\nWhich of the statements given above is/are correct?",
     "options": {
       "A": "Only 1 and 2",
       "B": "Only 2 and 3",
@@ -763,30 +235,126 @@
       "E": "All 1, 2, and 3"
     },
     "answer": "E",
-    "rationale": "All three statements accurately capture the details of the BRICS MENA meeting, the EAM's visit to Jamaica, and the SCO Defence Ministers' Meeting.",
+    "rationale": "All statements accurately reflect the findings of the 10th National Health Accounts (NHA) estimates for FY23. (Page 79)",
     "tag": "Current-Transient",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
   },
   {
-    "category": "National",
-    "sub_category": "Disaster Management Tech",
-    "question": "Assertion (A): Union Minister Jyotiraditya Scindia launched the 'Cell Broadcast System (CBS)' developed by C-DOT.\nReason (R): The technology enables simultaneous near real-time alerts to all mobile devices within a defined geographic area to warn citizens about emergencies.\n\nChoose the correct statement:",
+    "category": "Sports",
+    "sub_category": "Badminton",
+    "question": "Assertion (A): The People’s Republic of China men’s team won the Thomas Cup 2026 title by defeating France.\n\nReason (R): The Republic of Korea women’s team won the Uber Cup 2026 title by defeating China.\n\nChoose the correct option:",
     "options": {
-      "A": "Both A and R are true and R is the correct explanation of A.",
-      "B": "Both A and R are true but R is NOT the correct explanation of A.",
-      "C": "A is true but R is false.",
-      "D": "A is false but R is true.",
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
       "E": "Both A and R are false."
     },
-    "answer": "A",
-    "rationale": "Both statements are correct. The capability to send simultaneous, near real-time geographical alerts (R) is the core reason and functionality explaining why the Cell Broadcast System was launched for disaster warnings (A).",
-    "tag": "Static-Conceptual",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
+    "answer": "B",
+    "rationale": "Both Assertion (A) and Reason (R) are factually true based on the BWF Thomas & Uber Cup Finals 2026 results. However, R is completely independent and does not explain A. (Page 90)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
   },
   {
-    "category": "Banking",
-    "sub_category": "Scale Based Regulations",
-    "question": "Consider the following statements regarding the RBI's Scale Based Regulation (SBR) framework amendments for NBFCs:\n\n1. NBFCs not availing public funds and lacking a customer interface are exempt from registration if their asset size is less than Rs 1,000 crore.\n2. These specific exempted NBFCs will be classified as 'Unregistered Type I NBFCs', while all others will be 'Type II NBFCs'.\n3. The revised regulations come into effect from July 1, 2026.\n\nWhich of the statements given above is/are correct?",
+    "category": "Banking & Finance",
+    "sub_category": "Other Banking News",
+    "question": "Fill in the blanks regarding the first weather derivatives contract launched by NCDEX:\n\nNCDEX launched 'RAINMUMBAI', an exchange-traded weather derivatives contract. The contract uses a tick size of _____ millimeter (mm) with a maximum order size of _____ lots.",
+    "options": {
+      "A": "1 ; 50",
+      "B": "2 ; 100",
+      "C": "1 ; 25",
+      "D": "5 ; 50",
+      "E": "0.5 ; 50"
+    },
+    "answer": "A",
+    "rationale": "The 'RAINMUMBAI' contract uses a tick size of 1 millimeter (mm) with a lot multiplier of Rs 50 per mm and a maximum order size of 50 lots. (Page 38)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "May Observances",
+    "question": "Arrange the following Important Days observed in May 2026 in the correct chronological order of their observance dates:\n\n1. World Laughter Day\n2. World Portuguese Language Day\n3. International Firefighters’ Day\n4. International Day of Vesak\n\nSelect the correct sequence:",
+    "options": {
+      "A": "4, 1, 3, 2",
+      "B": "4, 3, 1, 2",
+      "C": "1, 4, 3, 2",
+      "D": "4, 1, 2, 3",
+      "E": "1, 4, 2, 3"
+    },
+    "answer": "A",
+    "rationale": "International Day of Vesak (May 1); World Laughter Day (First Sunday of May -> May 3, 2026); International Firefighters’ Day (May 4); World Portuguese Language Day (May 5). The sequence is 4, 1, 3, 2. (Pages 97-98)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Books & Authors",
+    "sub_category": "Book Releases",
+    "question": "Which of the following books is NOT correctly matched with its author?",
+    "options": {
+      "A": "Apnapan: Narendra Modi Sang Mere Anubhav – Union Minister Shivraj Singh Chouhan",
+      "B": "Bazaar – Niranjan Dev Sharma",
+      "C": "Dogri-Punjabi Dictionary – Chandan Negi",
+      "D": "The Library Man of India: The Story of P.N. Panicker – P. P. Sathyan",
+      "E": "Better Never Stops – K. Arumugam"
+    },
+    "answer": "E",
+    "rationale": "Option E is incorrect because 'Better Never Stops' is authored by Shyam Srinivasan, while K. Arumugam authored 'India’s Olympic Gold: Hockey Triumph at Amsterdam'. (Pages 92-93)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Agriculture Estimates",
+    "question": "According to the Third Advance Estimates of Production of Major Agricultural Crops for 2025–26, what is the estimated production of sugarcane (a commercial crop)?",
+    "options": {
+      "A": "357.732 MT",
+      "B": "376.563 MT",
+      "C": "43.059 MT",
+      "D": "500.063 MT",
+      "E": "29.024 MT"
+    },
+    "answer": "D",
+    "rationale": "The estimated production of sugarcane is 500.063 Million Tonnes (MT). (Page 79)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "Defence",
+    "question": "Consider the following statements regarding key defence appointments in May 2026:\n\n1. Lt Gen (Retd) NS Raja Subramani was appointed as the 3rd Chief of Defence Staff (CDS).\n2. He succeeds Anil Chauhan.\n3. Vice Admiral Krishna Swaminathan was appointed as the 27th Chief of the Naval Staff (CNS).\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 2",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All statements are correct. NS Raja Subramani became the 3rd CDS succeeding Anil Chauhan, and Krishna Swaminathan became the 27th CNS. (Page 55)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Awards",
+    "sub_category": "Various Awards",
+    "question": "Match the following Award winners with the respective recognition they received in May 2026:\n\nColumn I:\n1. Ishaan Khatter\n2. Taiwanese author Yáng Shuāng-zǐ\n3. Bengaluru Water Supply and Sewerage Board (BWSSB)\n\nColumn II:\nA. International Booker Prize 2026\nB. Top five global water utilities in Global Water Awards 2026\nC. Honorary membership of the 45 Cavalry Regiment\n\nSelect the correct matching code:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-C, 3-B",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-B, 2-C, 3-A"
+    },
+    "answer": "A",
+    "rationale": "Ishaan Khatter received honorary membership of the 45 Cavalry Regiment. Yáng Shuāng-zǐ won the International Booker Prize 2026. BWSSB secured top five globally at the Global Water Awards. (Page 65)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Committees & Meetings",
+    "sub_category": "Plenary Sessions",
+    "question": "Consider the following statements regarding the 35th Plenary and Working Groups meetings of the ISO Technical Committee 20 / Subcommittee 14 (Space Systems and Operations):\n\n1. It was organised by the Bureau of Indian Standards (BIS).\n2. The event witnessed participation of 131 international delegates from 13 countries.\n3. It was held at Bharat Mandapam, New Delhi.\n\nWhich of the statements given above is/are correct?",
     "options": {
       "A": "Only 1 and 2",
       "B": "Only 2 and 3",
@@ -795,8 +363,440 @@
       "E": "All 1, 2, and 3"
     },
     "answer": "E",
-    "rationale": "All three statements are completely correct based on the RBI (Non-Banking Financial Companies – Registration, Exemptions and Framework for Scale Based Regulation) Amendment Directions, 2026.",
+    "rationale": "All statements are correct. BIS organised the 35th Plenary of ISO TC 20/SC 14 at Bharat Mandapam with 131 delegates from 13 countries. (Page 72)",
     "tag": "Current-Transient",
-    "pdf/question-bank": "Current Affairs Weekly Content - May 2026 1st Week"
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "MoU's & Agreements",
+    "sub_category": "MoU's With Country",
+    "question": "Assertion (A): India and Ethiopia signed a bilateral accession protocol in Geneva, Switzerland.\n\nReason (R): The protocol is related to Ethiopia’s membership in the World Trade Organization (WTO).\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Both Assertion (A) and Reason (R) are true. India signed the bilateral accession protocol specifically to support Ethiopia's membership in the WTO. (Page 44)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Other Banking News",
+    "question": "Fill in the blank regarding the approval given to Decentro in GIFT City:\n\nDecentro became the 1st Indian Payment Aggregator (PA) to secure final approval from IFSCA to operate as a _____ at Gujarat International Finance Tec-City (GIFT City).",
+    "options": {
+      "A": "Prepaid Payment Instrument (PPI) issuer",
+      "B": "Payment Service Provider (PSP)",
+      "C": "Business Correspondent (BC)",
+      "D": "Digital Banking Unit (DBU)",
+      "E": "Corporate Agency"
+    },
+    "answer": "B",
+    "rationale": "Decentro secured approval to operate as a Payment Service Provider (PSP) at GIFT City. (Page 40)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "Species Discovery",
+    "question": "Which of the following statements is NOT correct regarding the recent discoveries by the Zoological Survey of India (ZSI) in May 2026?",
+    "options": {
+      "A": "ZSI discovered two new spider species in Nagaland.",
+      "B": "The two new spider species are named Psechrus ntu and Psechrus phenshunyu.",
+      "C": "ZSI completed the first comprehensive taxonomic revision of Indian whip scorpions in over 100 years.",
+      "D": "The findings were published in the international journal Herpetozoa.",
+      "E": "The revised whip scorpions belong to the group 'Thelyphonids'."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect because the ZSI findings on spiders and whip scorpions were published in the journal 'Zootaxa'. The discovery of the worm-eating snake 'Trachischium lalremsangai' was published in 'Herpetozoa'. (Page 111)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "May Observances",
+    "question": "Arrange the following Important Days observed in May 2026 in chronological order (earliest to latest):\n\n1. International Day of Families\n2. World Bee Day\n3. International Day of Living Together in Peace\n4. World Telecommunication and Information Society Day\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1, 3, 4, 2",
+      "B": "1, 4, 3, 2",
+      "C": "3, 1, 4, 2",
+      "D": "1, 3, 2, 4",
+      "E": "3, 1, 2, 4"
+    },
+    "answer": "A",
+    "rationale": "International Day of Families (May 15), International Day of Living Together in Peace (May 16), World Telecommunication and Information Society Day (May 17), World Bee Day (May 20). The correct order is 1, 3, 4, 2. (Pages 101, 103)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Defence",
+    "sub_category": "Missiles & Defence Systems",
+    "question": "Match the following missiles/defence systems with their respective testing features conducted in Odisha/Andhra Pradesh:\n\nColumn I:\n1. TARA\n2. NASM-SR\n3. ULPGM-V3\n\nColumn II:\nA. Maiden salvo launch from a naval helicopter off the coast of Bay of Bengal\nB. India’s first indigenous glide weapon system kit to convert unguided warheads\nC. UAV-Launched Precision Guided Missile tested in Air-to-Ground and Air-to-Air modes\n\nSelect the correct matching code:",
+    "options": {
+      "A": "1-B, 2-A, 3-C",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "TARA is the modular range extension kit (glide weapon). NASM-SR had its maiden salvo launch from a helicopter. ULPGM-V3 is a UAV-launched missile. (Pages 82-84)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Reports",
+    "sub_category": "Education Data",
+    "question": "Consider the following statements regarding the NITI Aayog policy report titled 'School Education System in India: Temporal Analysis and Policy Roadmap for Quality Enhancement':\n\n1. It provides a decade-long assessment covering 2014 to 2025.\n2. It highlights that India has 14.71 lakh schools.\n3. The system serves over 24.69 crore students across all 36 States and UTs.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All statements are correct based on the NITI Aayog report on the School Education System. (Pages 77-78)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Apps & Web Portal",
+    "sub_category": "Digital Platforms",
+    "question": "Match the following digital applications/portals with the organization/ministry that launched them:\n\nColumn I:\n1. E-PRAAPTI\n2. Q-FORCE\n3. JEEVAN\n\nColumn II:\nA. Indian Army\nB. Ministry of Social Justice and Empowerment (MSJE)\nC. Employees Provident Fund Organisation (EPFO)\n\nSelect the correct matching code:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "E-PRAAPTI is by EPFO; Q-FORCE is an integrated digital application by the Indian Army; JEEVAN is a mobile app by MSJE. (Pages 107, 109)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Insurance",
+    "question": "Fill in the blanks regarding the new health insurance plan launched by Tata AIA Life Insurance:\n\nTata AIA Life Insurance Company Limited launched 'Shubh Health Criti', offering coverage for over _____ critical illnesses and available to individuals aged _____ years.",
+    "options": {
+      "A": "40 ; 18–60",
+      "B": "50 ; 21–65",
+      "C": "60 ; 18–65",
+      "D": "75 ; 25–60",
+      "E": "60 ; 21–70"
+    },
+    "answer": "C",
+    "rationale": "The plan offers coverage for over 60 critical illnesses and is available to individuals aged 18–65 years. (Page 39)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Economy News",
+    "question": "Assertion (A): Taiwan Stock Exchange surpassed India to become the world's fifth-largest stock market in May 2026.\n\nReason (R): This rise was driven by the artificial intelligence (AI)-led semiconductor boom led by Taiwan Semiconductor Manufacturing Company (TSMC), despite India having a higher GDP.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Both Assertion (A) and Reason (R) are true, and the AI boom led by TSMC explains Taiwan's stock market surge past India. (Pages 42-43)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "MoU's & Agreements",
+    "sub_category": "Between Organizations",
+    "question": "Match the following organizations with their partners in agreements signed to boost distinct capabilities in India:\n\nColumn I:\n1. NLC India Limited (NLCIL)\n2. Cape Breton University (CBU)\n3. Maritime India Foundation (MIF)\n\nColumn II:\nA. IIT Madras, IIT Bombay, and IMU Chennai (for Maritime Innovation Hubs)\nB. Électricité de France (EDF) (for nuclear power projects)\nC. Indian academic institutions (for higher education partnerships)\n\nSelect the correct matching code:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-A, 2-C, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "A",
+    "rationale": "NLCIL partnered with EDF; CBU partnered with Indian academic institutions; MIF partnered with IIT Madras, IIT Bombay, and IMU Chennai. (Pages 47-48)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "May Observances",
+    "question": "Which of the following Important Days observed in May is NOT correctly paired with its exact date of observance?",
+    "options": {
+      "A": "World Hunger Day – 28 May",
+      "B": "International Day of Action for Womens Health – 28 May",
+      "C": "World Menstrual Hygiene Day – 28 May",
+      "D": "World Digestive Health Day – 29 May",
+      "E": "World Schizophrenia Awareness Day – 29 May"
+    },
+    "answer": "E",
+    "rationale": "World Schizophrenia Awareness Day is observed annually on 24 May, not 29 May. (Pages 104-106)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Weightlifting",
+    "question": "Consider the following statements regarding the Asian Weightlifting Championships (AWC) 2026 held in Gandhinagar, Gujarat:\n\n1. India won 10 medals, including 1 silver and 9 bronze.\n2. China topped the medal tally with 41 medals.\n3. North Korea finished third behind Chinese Taipei.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 2",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "A",
+    "rationale": "Statement 3 is incorrect because North Korea finished second with 30 medals, while Chinese Taipei finished third with 13 medals. Statements 1 and 2 are correct. (Page 91)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "National",
+    "question": "Match the following individuals with their respective appointments in May 2026:\n\nColumn I:\n1. Dr. Harvansh Chawla\n2. R Mukundan\n3. Saurabh Vijay\n\nColumn II:\nA. Chief Executive Officer (CEO) of UIDAI\nB. President of Confederation of Indian Industry (CII)\nC. Chairman of BRISEC Chamber of Commerce & Industry\n\nSelect the correct matching code:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-B, 2-A, 3-C",
+      "C": "1-A, 2-C, 3-B",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-B, 2-C, 3-A"
+    },
+    "answer": "A",
+    "rationale": "Dr. Harvansh Chawla was appointed Chairman of BRISEC CCI. R Mukundan became President of CII. Saurabh Vijay became CEO of UIDAI. (Pages 55-57)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Cabinet Approvals",
+    "question": "Consider the following statements regarding the major infrastructure, railway, and judicial expansion proposals approved by CCEA in May 2026:\n\n1. A Rs 1,570 crore ship repair facility will be built at Vadinar in Gujarat.\n2. The CCEA approved an increase in the sanctioned strength of judges in the Supreme Court of India to 37.\n3. The CCEA approved 3 railway multi-tracking projects covering 19 districts across 6 states.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All statements are correct. CCEA approved a ship repair facility in Gujarat, 3 railway projects, and increased SC judge strength to 37. (Page 6)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Other National News",
+    "question": "Assertion (A): Flying Wedge Defence & Aerospace (FWDA) announced that 'Kaal Bhairava' will be manufactured at its first international production facility in Portugal.\n\nReason (R): 'Kaal Bhairava' is India’s First AI-Powered Unmanned Combat Aerial Vehicle (UCAV).\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both Assertion (A) and Reason (R) are factually true according to the text. However, R is just a descriptive fact about 'Kaal Bhairava' and does not explain *why* it is being manufactured in Portugal. (Page 21)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Business News",
+    "sub_category": "Corporate Partnerships",
+    "question": "Match the following Corporate Partnerships signed in May 2026 with their respective objectives:\n\nColumn I:\n1. TCS and SKF\n2. TCS and Mistral AI\n3. Google and Blackstone\n\nColumn II:\nA. To deliver enterprise generative AI solutions for global clients\nB. To rollout next-generation AI-led Enterprise Resource Planning (ERP) platform\nC. To establish an AI cloud infrastructure company with TPU infrastructure\n\nSelect the correct matching code:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-C, 3-B",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-C, 2-B, 3-A"
+    },
+    "answer": "C",
+    "rationale": "TCS and SKF partnered for an AI-led ERP platform. TCS and Mistral AI partnered for enterprise Generative AI solutions. Google and Blackstone launched an AI cloud venture. (Page 43)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Reports",
+    "sub_category": "Carbon Pricing",
+    "question": "Which of the following is NOT correct regarding the 'State and Trends of Carbon Pricing 2026' report released by the World Bank Group?",
+    "options": {
+      "A": "It identified India among the world’s largest new carbon markets following the launch of CCTS.",
+      "B": "Global carbon pricing systems currently cover 29% of greenhouse gas emissions.",
+      "C": "Annual revenues from emissions trading systems and carbon taxes tripled over the last decade.",
+      "D": "Annual revenues increased from less than USD 30 billion in 2016 to over USD 107 billion in 2025.",
+      "E": "Globally, direct carbon prices decreased by 7% compared to last year’s report."
+    },
+    "answer": "E",
+    "rationale": "Option E is incorrect because the report highlighted that globally, the direct carbon prices have *increased* by 7% compared to last year’s report, nearly doubling over the last 10 years. (Page 79)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Army, Navy & Air Force News",
+    "sub_category": "Defence Ships",
+    "question": "Fill in the blank regarding the launch of the 'INS Sanghmitra':\n\nThe Next Generation Offshore Patrol Vessel (NGOPV) 'INS Sanghmitra', launched by GRSE in Kolkata, belongs to the ______ class of NGOPVs.",
+    "options": {
+      "A": "Nilgiri",
+      "B": "Adamya",
+      "C": "Shachi",
+      "D": "Kamorta",
+      "E": "Talwar"
+    },
+    "answer": "C",
+    "rationale": "INS Sanghmitra is a Shachi-class NGOPV built under the Buy (Indian-IDDM) category. (Page 86)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space Tech",
+    "question": "Match the following space-related discoveries or launches with the respective entity or location associated with them:\n\nColumn I:\n1. Loktak Protocluster\n2. VISTA Stratospheric Super Pressure Balloon (SPB)\n3. Evidence of subsurface water ice in Lunar Craters\n\nColumn II:\nA. Physical Research Laboratory (PRL), Ahmedabad\nB. National Astronomical Observatory of Japan (NAOJ)\nC. Red Balloon Aerospace Private Limited\n\nSelect the correct matching code:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Loktak Protocluster was discovered by an international team from NAOJ. VISTA SPB was launched by Red Balloon Aerospace. Subsurface ice was detected by scientists at PRL analyzing Chandrayaan-2 data. (Page 88)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Committees & Meetings",
+    "sub_category": "Global Health",
+    "question": "Consider the following statements regarding the 79th World Health Assembly (WHA79) held in Geneva:\n\n1. It was held under the theme \"Reshaping Global Health: A Shared Responsibility\".\n2. The WHA passed its first-ever resolution on stroke, formally recognising it as a global public health priority.\n3. The resolution on stroke was led by India and co-sponsored by Egypt and Tunisia.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 2",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "A",
+    "rationale": "Statement 3 is incorrect because the resolution on stroke was led by Egypt (not India) and co-sponsored by Chile, Georgia, Palestine, Paraguay, and Tunisia. Statements 1 and 2 are correct. (Page 73)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "National",
+    "question": "Arrange the following Chief Ministers appointed/sworn-in during May 2026 along with their respective states. However, the question asks you to select the option that correctly matches the CM to the state:\n\n1. Vadasseri Damodara Menon Satheesan\n2. Suvendu Adhikari\n3. N. Rangasamy\n\nWhich of the following pairings is absolutely correct?",
+    "options": {
+      "A": "1-Tamil Nadu, 2-West Bengal, 3-Puducherry",
+      "B": "1-Kerala, 2-Assam, 3-Tamil Nadu",
+      "C": "1-Kerala, 2-West Bengal, 3-Puducherry",
+      "D": "1-Puducherry, 2-West Bengal, 3-Kerala",
+      "E": "1-Kerala, 2-West Bengal, 3-Tamil Nadu"
+    },
+    "answer": "C",
+    "rationale": "Vadasseri Damodara Menon Satheesan is the CM of Kerala; Suvendu Adhikari is the CM of West Bengal; N. Rangasamy is the CM of Puducherry. (Pages 55-57)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Agreements & MoUs Signed",
+    "question": "Which of the following banking/financial partnerships is NOT correctly matched?",
+    "options": {
+      "A": "Jio Payments Bank – Partnered with Ezeepay for last-mile digital banking.",
+      "B": "Airtel Payments Bank – Partnered with Delhi Metro Rail Corporation for RuPay 'On-The-Go' NCMC.",
+      "C": "West Bengal Gramin Bank – Partnered with Canara HSBC Life Insurance.",
+      "D": "National Institute of Securities Markets (NISM) – Partnered with Indian Institute of Corporate Affairs (IICA).",
+      "E": "Bank of Baroda – Partnered with Jio Financial Services to launch 'bob इ Pay'."
+    },
+    "answer": "E",
+    "rationale": "Option E is incorrect because Bank of Baroda launched biometric & UIDAI face authentication on its *own* UPI app 'bob इ Pay'; there is no mention of a partnership with Jio Financial Services for this. (Pages 34-35, 38)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Committees & Meetings",
+    "sub_category": "Meetings",
+    "question": "Consider the following international dialogues and meetings hosted/attended by India:\n\n1. Indian Ocean Dialogue (IOD-10) was hosted in New Delhi.\n2. The 23rd Defence Ministers' Meeting of the SCO was held in Bishkek, Kyrgyzstan.\n3. The Kimberley Process Intersessional Meeting 2026 was hosted in Mumbai.\n\nWhich of the combinations given above is/are correctly matched with their venues?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 3",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All venues are correctly matched. IOD-10 in New Delhi, SCO Defence Ministers in Bishkek, and Kimberley Process in Mumbai. (Pages 70-72)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Insurance",
+    "question": "Consider the following statements regarding LIC's newly launched 'New Jeevan Sathi' products:\n\n1. They are joint life insurance savings plans available from June 2026.\n2. The products offer guaranteed returns, premium waiver on first death, and loan facilities.\n3. They are exclusively term insurance plans without any maturity benefits.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "A",
+    "rationale": "Statement 3 is incorrect because they are joint life insurance *savings* plans providing guaranteed returns, not exclusively term insurance. Statements 1 and 2 are correct. (Page 38)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Other Banking News",
+    "question": "Fill in the blanks regarding the new financing facility announced by AIIB:\n\nThe Asian Infrastructure Investment Bank (AIIB) launched the Energy, Food Security and Economic Resilience Facility (EFSERF) worth USD ______ billion to help member countries tackle the economic impact of the ______ conflict.",
+    "options": {
+      "A": "5 ; Ukraine",
+      "B": "10 ; Middle East",
+      "C": "15 ; Red Sea",
+      "D": "20 ; South China Sea",
+      "E": "10 ; Global Supply Chain"
+    },
+    "answer": "B",
+    "rationale": "AIIB launched a USD 10 billion relief shield (EFSERF) to help member countries tackle the economic impact arising from the ongoing Middle East conflict. (Page 38)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Obituary",
+    "sub_category": "Important Personalities",
+    "question": "Match the following eminent personalities who recently passed away with their primary profession or field of achievement:\n\nColumn I:\n1. Dr. Bashir Badr\n2. Raja Randhir Singh\n3. Robert Edward Turner III\n\nColumn II:\nA. Founder of CNN and philanthropist\nB. Five-time Olympian and shooter\nC. Padma Shri awardee and Urdu poet\n\nSelect the correct matching code:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-B, 2-A, 3-C",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-B, 2-C, 3-A"
+    },
+    "answer": "A",
+    "rationale": "Dr. Bashir Badr was an Urdu poet; Raja Randhir Singh was an Indian shooter; Robert Edward Turner III was the founder of CNN. (Pages 95-96)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
+  },
+  {
+    "category": "Summits, Events & Conference",
+    "sub_category": "Summits",
+    "question": "Assertion (A): The second edition of the India Aircraft Leasing and Financing Summit (IALFS 2.0) was held at GIFT City in Gandhinagar, Gujarat.\n\nReason (R): During the summit, it was highlighted that India is set to emerge as the world's 3rd-largest civil aviation market by 2035 with an estimated fleet of nearly 2,250 aircraft.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both statements are factually true based on the PDF. However, the projection about India's civil aviation market (Reason) is a fact shared at the summit, not the direct logical explanation for *why* the summit was held at GIFT City. (Pages 69-70)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF May – 2026"
   }
 ]

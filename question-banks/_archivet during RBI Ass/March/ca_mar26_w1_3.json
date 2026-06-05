@@ -1,0 +1,962 @@
+[
+  {
+    "category": "Economy & Business",
+    "sub_category": "GDP Expenditure Components",
+    "question": "Based on the New GDP Series (Base Year 2022-23) released by MoSPI in February 2026, arrange the following expenditure components in descending order of their estimated percentage growth for Q3FY26:\n\n1. Gross Fixed Capital Formation (GFCF)\n2. Government Final Consumption Expenditure (GFCE)\n3. Private Final Consumption Expenditure (PFCE)\n\nSelect the correct answer:",
+    "options": {
+      "A": "3, 1, 2",
+      "B": "1, 3, 2",
+      "C": "3, 2, 1",
+      "D": "2, 1, 3",
+      "E": "1, 2, 3"
+    },
+    "answer": "A",
+    "rationale": "According to the MoSPI estimates for Q3FY26: PFCE growth is 8.7%, GFCF growth is 7.8%, and GFCE growth is 4.7%. Therefore, the descending order is PFCE (3) > GFCF (1) > GFCE (2). (Refer Page 21 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "Governors of UTs",
+    "question": "Match the following Union Territories with their newly appointed Lieutenant Governors announced by President Droupadi Murmu on March 6, 2026:\n\nColumn I:\n1. Delhi\n2. Ladakh\n\nColumn II:\nA. Taranjit Singh Sandhu\nB. Vinai Kumar Saxena\nC. D.K. Joshi\n\nSelect the correct mapping:",
+    "options": {
+      "A": "1-A, 2-B",
+      "B": "1-B, 2-A",
+      "C": "1-A, 2-C",
+      "D": "1-C, 2-B",
+      "E": "1-B, 2-C"
+    },
+    "answer": "A",
+    "rationale": "According to the newly appointed Governors list in March 2026: Taranjit Singh Sandhu was appointed to Delhi, and Vinai Kumar Saxena was appointed to Ladakh. (Refer Page 24/50 of PDF).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "National Arogya Fair 2026",
+    "question": "Consider the following statements regarding the National Arogya Fair 2026:\n\n1. It was held from 25–28 February 2026 in Shegaon, Buldhana district, Maharashtra.\n2. The President of India felicitated six senior Vaidyas during the event for their significant contributions.\n3. The 'Jeevan Gaurav' award was presented to Vaidya Devendra Triguna.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "None of the above"
+    },
+    "answer": "D",
+    "rationale": "All three statements are completely factual based on the event description. The fair was held in Shegaon, Maharashtra, six senior Vaidyas were felicitated, and Vaidya Devendra Triguna received the Jeevan Gaurav award. (Refer Page 38 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "IRDAI Accounting Standards",
+    "question": "The exposure draft released by IRDAI in March 2026 mandates the adoption of Indian Accounting Standards (Ind AS) for insurers effective April 1, 2026. Under which specific Ind AS are Insurance Contracts and Financial Instruments required to be reported, respectively?",
+    "options": {
+      "A": "Ind AS 115 and Ind AS 109",
+      "B": "Ind AS 117 and Ind AS 109",
+      "C": "Ind AS 109 and Ind AS 116",
+      "D": "Ind AS 117 and Ind AS 115",
+      "E": "Ind AS 103 and Ind AS 117"
+    },
+    "answer": "B",
+    "rationale": "The IRDAI regulations mandate reporting under Ind AS 117 for Insurance Contracts and Ind AS 109 for Financial Instruments. (Refer Page 19 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Historical Observances",
+    "question": "Arrange the following international/national observances based on the chronological order of the year they were FIRST observed (from earliest to latest):\n\n1. National Science Day\n2. World Civil Defence Day\n3. World Obesity Day\n4. World Seagrass Day\n\nSelect the correct answer:",
+    "options": {
+      "A": "1, 2, 3, 4",
+      "B": "2, 1, 3, 4",
+      "C": "1, 3, 2, 4",
+      "D": "2, 3, 1, 4",
+      "E": "1, 2, 4, 3"
+    },
+    "answer": "A",
+    "rationale": "National Science Day (1st observance: 1987). World Civil Defence Day (1st observed: 1990). World Obesity Day (1st observed: 2015). World Seagrass Day (1st observance: 2023). Thus, the correct chronological order is 1, 2, 3, 4. (Refer Pages 28, 29, 31 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Publications",
+    "question": "Match the following newly discovered species in India with the scientific journals in which their findings were published in March 2026:\n\nColumn I:\n1. Moniligaster girishi (Earthworm)\n2. Gitchak nakan (Blind fish)\n\nColumn II:\nA. Nature Portfolio journal Scientific Reports\nB. Zootaxa\nC. Journal of Threatened Taxa\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-B",
+      "B": "1-B, 2-A",
+      "C": "1-C, 2-A",
+      "D": "1-B, 2-C",
+      "E": "1-A, 2-C"
+    },
+    "answer": "B",
+    "rationale": "The findings of the new earthworm species (Moniligaster girishi) were published in 'Zootaxa' (1-B). The discovery of the blind fish (Gitchak nakan) was published in the Nature Portfolio journal 'Scientific Reports' (2-A). (Refer Pages 25, 50-51 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Hurun Global Rich List",
+    "question": "Which of the following statements regarding the 15th edition of the Hurun Global Rich List 2026 is/are INCORRECT?\n\n1. Elon Musk retained the top spot with a net worth of USD 792 billion.\n2. Jeff Bezos ranked second with a net worth of USD 300 billion.\n3. India's youngest billionaire featured on the list is Ritesh Agarwal (OYO founder) at age 32.\n4. Alice Walton was recognized as the Richest Self-Made Woman Globally.\n\nSelect the correct code:",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "3 only",
+      "C": "4 only",
+      "D": "3 and 4 only",
+      "E": "1 and 4 only"
+    },
+    "answer": "C",
+    "rationale": "Statement 4 is incorrect because Alice Walton is recognized as the 'Richest Woman Globally', whereas the 'Richest Self-Made Woman Globally' is Diane Hendricks (USA, ABC Supply). Statements 1, 2, and 3 are correct. (Refer Page 16-17, 44 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Haryana Budget Analysis",
+    "question": "According to the Haryana State budget for FY27 presented by CM Nayab Singh Saini, match the following major allocations with their respective budgeted amounts (in Rs Crore):\n\nColumn I:\n1. Agriculture\n2. Education & Sports\n3. Health\n4. Rural Development\n\nColumn II:\nA. 23,603.69\nB. 8,319.77\nC. 8,703.74\nD. 14,007.28\n\nSelect the correct match:",
+    "options": {
+      "A": "1-A, 2-B, 3-C, 4-D",
+      "B": "1-B, 2-A, 3-D, 4-C",
+      "C": "1-B, 2-D, 3-A, 4-C",
+      "D": "1-C, 2-A, 3-D, 4-B",
+      "E": "1-D, 2-A, 3-B, 4-C"
+    },
+    "answer": "B",
+    "rationale": "Allocations: Agriculture = 8,319.77 (1-B); Education & Sports = 23,603.69 (2-A); Health = 14,007.28 (3-D); Rural Development = 8,703.74 (4-C). (Refer Page 33 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Symbols and Organizations",
+    "question": "Fill in the blanks regarding Zero Discrimination Day 2026:\n\nObserved on March 1, the official symbol of Zero Discrimination Day is the _______, representing transformation and dignity. The campaign is actively driven by _______, a joint United Nations program.\n\nChoose the correct option:",
+    "options": {
+      "A": "Dove, UNHCR",
+      "B": "Butterfly, UNAIDS",
+      "C": "Ribbon, WHO",
+      "D": "Butterfly, UNESCO",
+      "E": "Lotus, UN Women"
+    },
+    "answer": "B",
+    "rationale": "The official symbol of Zero Discrimination Day is the Butterfly (representing transformation and dignity), and it is observed and driven by UNAIDS. (Refer Page 28 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "MoPSW Infrastructure",
+    "question": "Consider the following components of the inland waterways infrastructure projects inaugurated on NW-2 in Dibrugarh:\n\n1. The Bogibeel Complex features a modern tourist-cum-cargo terminal.\n2. The Dhubri Gateway enhances export-import operations positioned for trade with Bangladesh and Bhutan.\n3. The Heritage Building project is located at Pandu port and focuses entirely on passenger ferry services.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "1 and 2",
+      "E": "2 and 3"
+    },
+    "answer": "C",
+    "rationale": "Statement 3 is incorrect because the renovated IWAI Heritage Building is located at *Dibrugarh* (not Pandu), and it combines architectural restoration with upgraded operational infrastructure supporting NW-2 administration and riverine tourism. Statements 1 and 2 are correct. (Refer Page 4, 36 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Historical Figures",
+    "question": "Regarding National Science Day (NSD) observed on February 28, 2026, which of the following historical milestones associated with Sir C.V. Raman is factually correct as per the document?",
+    "options": {
+      "A": "He received the Nobel Prize in Physics in 1928, becoming the first non-white laureate.",
+      "B": "He was knighted by the British Crown in 1954.",
+      "C": "He was awarded the Lenin Peace Prize in 1957.",
+      "D": "He was elected a Fellow of the Royal Society (FRS) in 1930.",
+      "E": "He discovered the Raman Effect in 1930."
+    },
+    "answer": "C",
+    "rationale": "Option C is correct (Lenin Peace Prize in 1957). Let's review the others: A is wrong (Nobel in 1930, not 1928); B is wrong (Knighted in 1929, Bharat Ratna in 1954); D is wrong (Elected FRS in 1924); E is wrong (Discovered Raman Effect in 1928). (Refer Page 28 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "EPFO Meeting",
+    "question": "Assertion (A): During the 239th CBT meeting, a pilot project was approved for auto-initiation of claim settlement for inoperative EPFO accounts.\nReason (R): This specific pilot project targets inoperative EPFO accounts with unclaimed balances of Rs 5,000 or less to reduce the administrative burden on the organization.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true as the pilot project was approved. Reason (R) is false because the target threshold for the auto-initiation pilot is unclaimed balances of *Rs 1,000 or less*, not Rs 5,000. (Refer Page 11, 41 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Space Tech Startups",
+    "question": "In March 2026, BEL signed an MoU with Bellatrix Aerospace for developing payloads. Which of the following defines the altitude range of the Very Low Earth Orbit (VLEO) targeted in this MoU?",
+    "options": {
+      "A": "50 km – 100 km above Earth",
+      "B": "150 km – 450 km above Earth",
+      "C": "500 km – 800 km above Earth",
+      "D": "800 km – 1200 km above Earth",
+      "E": "35,000 km above Earth"
+    },
+    "answer": "B",
+    "rationale": "The MoU targets satellite systems and payloads for Very Low Earth Orbit (VLEO) operations, specifically designated as 150 km – 450 km above Earth. (Refer Page 22 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "MWC 2026 Awards",
+    "question": "Which of the following awards and accolades distributed at the Mobile World Congress (MWC) 2026 is correctly matched with its recipient?",
+    "options": {
+      "A": "Government Leadership Award: Republic of India",
+      "B": "Best in Show Device: Huawei Mate 60 Pro",
+      "C": "Lifetime Achievement Award: Mark Carney",
+      "D": "Top Winner (8 awards): Huawei",
+      "E": "Curtain Raiser Host: Shenzhen, China"
+    },
+    "answer": "D",
+    "rationale": "Huawei was the Top Winner with 8 awards. Let's check others: A is wrong (Govt Leadership Award went to Viet Nam); B is wrong (Best in Show was Samsung Galaxy S26 Ultra); C is wrong (Lifetime Achievement went to Sunil Bharti Mittal); E is wrong (Curtain Raiser was for India Mobile Congress in New Delhi). (Refer Page 16 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Dark Sky Parks",
+    "question": "Regarding the newly inaugurated Dark Sky Park at Ariyur Shola Reserve Forest in Tamil Nadu, which of the following statements details its exact operational window throughout the year?",
+    "options": {
+      "A": "It operates year-round with advanced solar-powered telescopes.",
+      "B": "It operates from October 1 to March 31, avoiding the summer heat.",
+      "C": "It operates from January 15 to June 15 and remains closed during the monsoon season.",
+      "D": "It operates exclusively during the winter months of November to February.",
+      "E": "It operates from August 15 to December 15 to align with peak astronomical events."
+    },
+    "answer": "C",
+    "rationale": "The park operates from January 15 to June 15 and remains closed during the monsoon season. (Refer Page 36 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Blue Bonds",
+    "question": "Sri Lanka's 1st Blue Bond was dually listed on the NSE IX at GIFT City in February 2026. What was the exact issuance value of this bond, and what is the specific purpose of a 'Blue Bond' as defined in the document?",
+    "options": {
+      "A": "LKR 5 billion; to raise funds for afforestation and land-based renewable energy.",
+      "B": "LKR 3 billion; a subset of Green Bonds to raise funds for marine & ocean-related projects.",
+      "C": "USD 3 billion; to fund water purification infrastructure across urban centers.",
+      "D": "LKR 1 billion; a sovereign bond issued specifically for port development.",
+      "E": "USD 3 million; a subset of Green Bonds for atmospheric climate research."
+    },
+    "answer": "B",
+    "rationale": "The issuance was worth LKR 3 billion. Blue Bonds are defined as a subset of Green Bonds to raise funds for marine & ocean-related projects. (Refer Page 19, 46 of PDF).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Culture Portal",
+    "question": "Consider the following statements regarding the upgraded Indian Culture Portal (Version 2.0):\n\n1. It was launched by Vivek Aggarwal, Secretary of the Ministry of Culture.\n2. It provides immersive experiences including 3D walkthroughs and 360-degree virtual tours.\n3. The portal is hosted at Kartavya Bhawan in New Delhi.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "Only 2"
+    },
+    "answer": "D",
+    "rationale": "All three statements are correct based on the launch details of the Indian Culture Portal (ICP) Version 2.0. (Refer Page 14, 43 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Government Accounts",
+    "question": "In March 2026, the Controller General of Accounts (CGA) launched the Government Bank Dashboard. The CGA functions under the Department of Expenditure. Which of the following days is celebrated as 'Civil Accounts Day' marking the foundation of the Indian Civil Accounts Service (ICAS)?",
+    "options": {
+      "A": "February 28",
+      "B": "March 1",
+      "C": "March 3",
+      "D": "March 4",
+      "E": "March 5"
+    },
+    "answer": "B",
+    "rationale": "Civil Accounts Day is observed annually on March 1 to mark the foundation day of the Indian Civil Accounts Service (ICAS), which functions under the Department of Expenditure. (Refer Page 29, 52 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Defense Tests",
+    "question": "The VSHORADS missile system, successfully flight-tested in February 2026, was tested from the Integrated Test Range (ITR) located at:",
+    "options": {
+      "A": "Pokhran, Rajasthan",
+      "B": "Sriharikota, Andhra Pradesh",
+      "C": "Kalam Island, Odisha",
+      "D": "Chandipur, Odisha",
+      "E": "Thiruvananthapuram, Kerala"
+    },
+    "answer": "D",
+    "rationale": "The VSHORADS flight trials were conducted by DRDO from the Integrated Test Range (ITR) at Chandipur, off the coast of Odisha. (Refer Page 25, 50 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Welfare Schemes Delhi",
+    "question": "Match the following welfare schemes dedicated by President Droupadi Murmu in Delhi with the broader program under which they were launched:\n\nColumn I:\n1. Saheli Pink Smart Card\n2. Delhi Lakhpati Bitiya Yojana\n3. Meri Poonji Mera Adhikaar\n\nColumn II:\nA. Program 'Sashakt Nari Samriddh Delhi'\nB. To provide seamless access to Delhi Metro and public transport\nC. Target group includes girls from birth to graduation\n\nSelect the best corresponding descriptive match:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Saheli Pink Smart Card provides access to Delhi Metro/Transport (1-B). Lakhpati Bitiya Yojana targets girls from birth to graduation (2-C). All these schemes fall under the broader umbrella event 'Sashakt Nari Samriddh Delhi' (3 maps to A contextually as the unifying event, though technically all are under A, 1 and 2 have specific definitions provided in the handwritten notes). Let's refine based on PDF: Notes say Saheli Card is for transport; Lakhpati Bitiya is for girls birth to graduation. (Refer Page 33, 54 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Tribal Festivals Order",
+    "question": "Arrange the following tribal festivals announced by MoTA in 2026 in chronological order of their start dates in March:\n\n1. Bharat Tribes Fest (BTF)\n2. Tribes Art Fest (TAF)\n3. Living Roots Festival (LRF)\n\nSelect the correct answer:",
+    "options": {
+      "A": "2, 3, 1",
+      "B": "1, 2, 3",
+      "C": "3, 2, 1",
+      "D": "2, 1, 3",
+      "E": "3, 1, 2"
+    },
+    "answer": "A",
+    "rationale": "TAF (March 2-13) -> LRF (March 13-15) -> BTF (March 18-30). Therefore, the chronological order is 2, 3, 1. (Refer Page 7, 38 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "RBI Guidelines",
+    "question": "Fill in the blanks regarding the regulatory action taken by RBI in February 2026:\n\nRBI imposed a monetary penalty of Rs ______ lakh on ______ for regulatory non-compliances observed during its annual inspection for ____.",
+    "options": {
+      "A": "11.50, Mahindra & Mahindra Financial Services Limited, FY25",
+      "B": "10.00, Shriram Finance Limited, FY24",
+      "C": "15.50, IIFL Home Finance Limited, FY25",
+      "D": "11.50, Motilal Oswal Home Finance Limited, FY26",
+      "E": "12.00, Jio Financial Services, FY24"
+    },
+    "answer": "A",
+    "rationale": "RBI imposed a monetary penalty of Rs 11.50 lakh on Mahindra & Mahindra Financial Services Limited (MMFSL) for regulatory non-compliances observed during its FY25 inspection. (Refer Page 19, 46 of PDF).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Decadal Themes",
+    "question": "Assertion (A): The theme for World Hearing Day 2026 emphasizes targeting hearing care in educational settings.\nReason (R): The official theme set by the WHO for 2026 is \"From communities to classrooms: hearing care for all children\".\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Both statements are true, and the theme \"From communities to classrooms: hearing care for all children\" directly explains the emphasis on educational settings. (Refer Page 30, 53 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Acquisitions & Mergers",
+    "sub_category": "Insurance Sector",
+    "question": "In March 2026, the Competition Commission of India (CCI) approved the Central Bank of India's stake hike to 26% in two insurance joint ventures. Which foreign entity partners in these joint ventures?",
+    "options": {
+      "A": "Allianz SE",
+      "B": "Generali Group",
+      "C": "Prudential plc",
+      "D": "MetLife",
+      "E": "AIG"
+    },
+    "answer": "B",
+    "rationale": "The joint ventures are Generali Central Insurance Company Limited (GCICL) and Generali Central Life Insurance Company Limited (GCLICL), which indicates the foreign partner is the Generali Group. (Refer Page 24, 50 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Books & Authors",
+    "sub_category": "Political Biographies",
+    "question": "Consider the following statements regarding the book \"Mahatma: A Great Communicator\":\n\n1. It was released by Union Minister Mansukh Mandaviya at Gandhi Darshan, Rajghat.\n2. The book was authored by Dr Dhiraj Kakadia, Additional Director General (DG) of Akashvani.\n3. The book release event was co-organized by the Ministry of Labour & Employment and Ministry of Culture.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "1 and 2",
+      "E": "2 and 3"
+    },
+    "answer": "C",
+    "rationale": "Statement 3 is incorrect because the event was co-organized by the Ministry of Labour & Employment (MoL&E) and the Ministry of Youth Affairs & Sports (MYAS), not the Ministry of Culture. Statements 1 and 2 are correct. (Refer Page 27, 52 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Telecommunication Innovations",
+    "question": "Which of the following defines the specific technological advancement achieved through the partnership between Bharti Airtel and Google in February 2026?",
+    "options": {
+      "A": "Implementation of 6G testbeds in urban centers.",
+      "B": "A world-first application of telecom-grade accountability to Over-the-Top (OTT) messaging via Secure RCS.",
+      "C": "Launch of satellite-based internet connectivity for remote areas.",
+      "D": "Integration of Generali AI into basic feature phones.",
+      "E": "Deployment of Agentic AI for international voice calls."
+    },
+    "answer": "B",
+    "rationale": "The Bharti Airtel and Google partnership is a world-first collaboration applying telecom-grade accountability to OTT messaging through Secure RCS (Rich Communications Services). (Refer Page 22, 47 of PDF).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Andhra Pradesh Projects",
+    "question": "Fill in the blank regarding the environmental initiative in Andhra Pradesh:\n\nProject HANUMAN was launched by Deputy CM Pawan Kalyan to mark _______ on March 3, 2026, specifically targeting the mitigation of human-wildlife conflict.",
+    "options": {
+      "A": "World Environment Day",
+      "B": "World Forestry Day",
+      "C": "World Wildlife Day",
+      "D": "National Science Day",
+      "E": "Earth Day"
+    },
+    "answer": "C",
+    "rationale": "Project HANUMAN was launched to mark World Wildlife Day on 3 March 2026. (Refer Page 34, 54 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Israel Bilateral Ties",
+    "question": "During PM Narendra Modi's visit to Israel in February 2026, MoUs were signed across several sectors. Which of the following is NOT a sector specifically mentioned in the MoU outcomes?",
+    "options": {
+      "A": "Geophysical exploration",
+      "B": "Maritime Heritage Complex at Lothal",
+      "C": "Cybersecurity establishing an Indo-Israel Cyber Centre of Excellence",
+      "D": "Labour mobility with a 5-year quota for 50,000 Indian workers",
+      "E": "Joint development of VSHORADS missile systems"
+    },
+    "answer": "E",
+    "rationale": "There is no mention of joint development of VSHORADS with Israel (VSHORADS was an indigenous DRDO test). All other options (Geophysical exploration, Maritime Heritage at Lothal, Cybersecurity Centre of Excellence, and Labour mobility quota) are explicitly mentioned as outcomes of the visit. (Refer Page 15 of PDF).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Energy Efficiency Apps",
+    "question": "Consider the following regarding the BEE Star Label Mobile Application launched on BEE's 25th Foundation Day:\n\n1. It was developed with the Collaborative Labeling and Appliance Standards Program (CLASP).\n2. It enables consumers to scan QR codes on star-labelled appliances.\n3. It aims to provide access to authentic energy performance details.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "None of the above"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. The app was developed with CLASP, uses QR code scanning, and provides authentic energy performance details. (Refer Page 9, 40 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "New Earthworms",
+    "question": "With the discovery of two new species in Silent Valley National Park, the total number of recognized moniligastrid earthworm species in India has increased to 95. What percentage (approximate) of these species are found in the Western Ghats, based on the count provided in the document?",
+    "options": {
+      "A": "50%",
+      "B": "60%",
+      "C": "73%",
+      "D": "85%",
+      "E": "95%"
+    },
+    "answer": "C",
+    "rationale": "The document states that of the 95 recognized species in India, 70 species are found in the Western Ghats. (70 / 95) * 100 = 73.68%, which is approximately 73%. (Refer Page 25, 50 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Jio Financial Services",
+    "question": "Which subsidiary of Jio Financial Services Limited launched the 'JioFinance' app with 'Finsider' featuring Agentic AI and Neural Networks?",
+    "options": {
+      "A": "Jio Payment Solutions Limited (JPSL)",
+      "B": "Jio Finance Platform and Service Limited (JFPSL)",
+      "C": "Jio Insurance Broking Limited (JIBL)",
+      "D": "Jio Asset Management Company (JAMC)",
+      "E": "Reliance Retail Finance Limited (RRFL)"
+    },
+    "answer": "B",
+    "rationale": "Jio Finance Platform and Service Limited (JFPSL), a wholly owned subsidiary of Jio Financial Services Limited (JFSL), launched the app. (Refer Page 18, 45 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "World Defense and Safety",
+    "question": "Match the following historical establishment/adoption years with their respective observances marking them in early March:\n\nColumn I:\n1. 1966\n2. 1972\n\nColumn II:\nA. Adoption of ICDO Constitution (World Civil Defence Day)\nB. Formation of National Safety Council (National Safety Day)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-B",
+      "B": "1-B, 2-A",
+      "C": "Both happened in 1972",
+      "D": "Both happened in 1966",
+      "E": "None of the above"
+    },
+    "answer": "A",
+    "rationale": "The ICDO Constitution was adopted on October 17, 1966 (marked by World Civil Defence Day). The first observance of National Safety Day was in 1972 (to mark the NSC's foundation). (Refer Page 29, 31 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Ranji Trophy Wickets",
+    "question": "In the Ranji Trophy 2025-26, J&K won its first-ever title. Who was named the Player of the Tournament, and how many wickets did he take?",
+    "options": {
+      "A": "Abdul Samad – 55 wickets",
+      "B": "Auqib Nabi – 62 wickets",
+      "C": "Parvez Rasool – 58 wickets",
+      "D": "Umran Malik – 60 wickets",
+      "E": "Auqib Nabi – 50 wickets"
+    },
+    "answer": "B",
+    "rationale": "Auqib Nabi (J&K) was named Player of the Tournament for taking 62 wickets. (Refer Page 26 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "MoUs and Research",
+    "question": "Consider the following statements regarding the MoU signed by the Survey of India (SoI):\n\n1. SoI signed a 5-year MoU with the Kerala Digital University (KDU).\n2. The collaboration aims at advancing excellence in geospatial data collection, processing, and analysis.\n3. SoI functions under the Ministry of Earth Sciences (MoES).\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "1 and 2",
+      "E": "2 and 3"
+    },
+    "answer": "C",
+    "rationale": "Statement 3 is incorrect because the Survey of India (SoI) functions under the Department of Science and Technology (DST), Ministry of Science and Technology (MoS&T), not MoES. Statements 1 and 2 are correct. (Refer Page 9, 40 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Obituary",
+    "sub_category": "Padma Awardees",
+    "question": "Veteran journalist H.K. Dua passed away in March 2026. In which year was he honored by the Government of India with the Padma Bhushan in the 'Literature and Education' (Journalism) category?",
+    "options": {
+      "A": "1992",
+      "B": "1998",
+      "C": "2004",
+      "D": "2010",
+      "E": "2020"
+    },
+    "answer": "B",
+    "rationale": "H.K. Dua was honored by the Government of India in 1998 with the Padma Bhushan. (Refer Page 27, 51 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Economics Awards",
+    "question": "Fill in the blank:\nDr. K.V. Subramanian became the first Indian economist to win the Chicago Alumni Award for Professional Achievement since it was established in _______. He joins the ranks of distinguished economists like Paul Samuelson and Gary Becker.",
+    "options": {
+      "A": "1930",
+      "B": "1941",
+      "C": "1955",
+      "D": "1968",
+      "E": "1975"
+    },
+    "answer": "B",
+    "rationale": "The Chicago Alumni Award for Professional Achievement was established in 1941. (Refer Page 48 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "GIFT City Alliances",
+    "question": "Match the following financial activities occurring at GIFT City in early 2026 with the corresponding entities involved:\n\nColumn I:\n1. Dual listing of 1st Blue Bond on NSE IX\n2. Expanding overseas investment access via IFSC Banking Unit\n\nColumn II:\nA. India INX GA & HSBC IBU\nB. DFCC Bank Plc\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-B",
+      "B": "1-B, 2-A",
+      "C": "Both are A",
+      "D": "Both are B",
+      "E": "None of the above"
+    },
+    "answer": "B",
+    "rationale": "DFCC Bank Plc issued the 1st Blue Bond listed on NSE IX at GIFT City (1-B). India INX GA partnered with HSBC IBU to expand overseas investment access (2-A). (Refer Pages 19, 22, 46, 48 of PDF).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "West Bengal Budgets",
+    "question": "Consider the following statements regarding the 'Nodi Bandhan' initiative in West Bengal:\n\n1. It was announced in the 2025–26 State Budget with an allocation of Rs 200 crore.\n2. It aims to prepare basin-based masterplans for 39 river sub-basins.\n3. The initiative begins with the Ichhamati and Jalangi rivers in the upper Ganga delta.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "Only 3"
+    },
+    "answer": "D",
+    "rationale": "All three statements are correct. The Nodi Bandhan initiative (Rs 200 cr budget) covers 39 river sub-basins, starting with Ichhamati and Jalangi, via an MoU with GIZ and SMCG. (Refer Page 32, 54 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Foreign Exchange Swaps",
+    "question": "Assertion (A): The Bilateral Swap Arrangement (BSA) between RBI and BoJ for USD 75 billion aims to enhance economic stability between India and Japan.\nReason (R): This agreement allows India to draw upon USD 75 billion exclusively in Japanese Yen to stabilize the Rupee against Asian currencies.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true as the BSA aims to enhance economic stability. Reason (R) is false because the BSA is for USD 75 billion (US Dollars), not exclusively in Japanese Yen. The text states the swap arrangement is for 'up to USD 75 billion'. (Refer Page 19, 46 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Riverine Lighthouses",
+    "question": "Arrange the following features/locations of the inland waterway projects in Assam as inaugurated by MoPSW from West to East based on standard geographical knowledge of the Brahmaputra (or as listed sequentially in the document for NW-2):\n\n1. Dhubri Gateway (CIC)\n2. Pandu (Kamrup Metro)\n3. Silghat (Nagaon)\n4. Bogibeel (Dibrugarh)\n\nSelect the logical geographical arrangement (West to East along the river):",
+    "options": {
+      "A": "1, 2, 3, 4",
+      "B": "4, 3, 2, 1",
+      "C": "2, 1, 3, 4",
+      "D": "1, 3, 2, 4",
+      "E": "4, 1, 2, 3"
+    },
+    "answer": "A",
+    "rationale": "While the exact geographical coordinates aren't in the text, Dhubri is at the western border (gateway for BD/Bhutan). Pandu (Guwahati) is central. Silghat (Nagaon) is further east, and Bogibeel (Dibrugarh) is the furthest east. The order 1, 2, 3, 4 perfectly represents West to East on NW-2. (Refer Page 4, 14, 36, 43 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Naval Vessels",
+    "question": "Match the following Anti-Submarine Warfare Shallow Water Craft (ASW SWC) vessels with their sequence number of induction/commissioning:\n\nColumn I:\n1. INS Arnala\n2. INS Androth\n3. INS Anjadip\n\nColumn II:\nA. 1st\nB. 2nd\nC. 3rd\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-B, 3-C",
+      "B": "1-B, 2-A, 3-C",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-A, 2-C, 3-B",
+      "E": "1-B, 2-C, 3-A"
+    },
+    "answer": "A",
+    "rationale": "As explicitly listed in the notes: 1st - INS Arnala; 2nd - INS Androth; 3rd - INS Anjadip. (Refer Page 25 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Agriculture Reforms",
+    "question": "Consider the following statements regarding the New Seed Act 2026:\n\n1. The act introduces mandatory registration for all seed companies.\n2. Fines for violations have been increased to a maximum of Rs 30 lakh.\n3. The seed packets will feature a unique barcode, but QR codes are optional.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "1 and 2",
+      "E": "2 and 3"
+    },
+    "answer": "C",
+    "rationale": "Statement 3 is incorrect because the seed packets will *mandatorily* feature unique Quick Response (QR) codes, not optional. Statements 1 and 2 are correct. (Refer Page 8, 39 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Wildlife Conservation",
+    "question": "Fill in the blank regarding the theme for World Wildlife Day 2026:\n\nThe UN's World Wildlife Day 2026 theme is \"Medicinal and Aromatic Plants: Conserving Health, _______ and Livelihoods\".",
+    "options": {
+      "A": "Ecosystems",
+      "B": "Habitat",
+      "C": "Heritage",
+      "D": "Humanity",
+      "E": "Harmony"
+    },
+    "answer": "C",
+    "rationale": "The exact theme is \"Medicinal and Aromatic Plants: Conserving Health, Heritage and Livelihoods\". (Refer Page 30, 52 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Diplomatic Addresses",
+    "question": "During PM Modi's historic visit to Israel, he became the first Indian PM to address the Israeli Parliament. What is the official name of the Israeli Parliament?",
+    "options": {
+      "A": "Diet",
+      "B": "Duma",
+      "C": "Knesset",
+      "D": "Majlis",
+      "E": "Bundestag"
+    },
+    "answer": "C",
+    "rationale": "The Israeli Parliament is known as the Knesset. PM Modi addressed the Knesset and was awarded the 'Medal of the Knesset'. (Refer Page 15, 43 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "Drug Control Infrastructure",
+    "question": "Assertion (A): The Appointments Committee of the Cabinet (ACC) re-appointed Dr. Rajeev Singh Raghuvanshi as DCGI for a standard 3-year term.\nReason (R): His initial appointment was in February 2023, and the current reappointment marks his second tenure extension.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "D",
+    "rationale": "Assertion (A) is false because he was re-appointed on a contract basis for a further period of *1 year*, not a standard 3-year term. Reason (R) is true as his initial appointment was Feb 2023 and this is his second extension. (Refer Page 24, 49 of PDF).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Government Programs",
+    "question": "Match the following Indian states with their respective initiatives/programs launched or budgeted in early 2026:\n\nColumn I:\n1. Andhra Pradesh\n2. Telangana\n3. Haryana\n4. West Bengal\n\nColumn II:\nA. Rs 12.66 Crore Challenge Fund\nB. Nodi Bandhan masterplans\nC. Project HANUMAN\nD. AMRIT pharmacies in all district hospitals\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-D, 4-B",
+      "B": "1-A, 2-C, 3-B, 4-D",
+      "C": "1-C, 2-D, 3-A, 4-B",
+      "D": "1-B, 2-A, 3-D, 4-C",
+      "E": "1-C, 2-B, 3-D, 4-A"
+    },
+    "answer": "A",
+    "rationale": "AP -> Project HANUMAN (1-C); Telangana -> Rs 12.66 Cr Challenge Fund (2-A); Haryana -> AMRIT pharmacies (part of the state budget announcements) (3-D); West Bengal -> Nodi Bandhan (4-B). (Refer Pages 32-34 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "EPF Interest Rates",
+    "question": "In the 239th meeting of the Central Board of Trustees (CBT) of EPF, the board recommended retaining the interest rate for Provident Fund (PF) deposits for Financial Year 2025-26 (FY26). What is this recommended interest rate?",
+    "options": {
+      "A": "8.10%",
+      "B": "8.15%",
+      "C": "8.25%",
+      "D": "8.50%",
+      "E": "8.65%"
+    },
+    "answer": "C",
+    "rationale": "The board recommended retaining the interest rate of Provident Fund (PF) deposits at 8.25% for FY26. (Refer Page 11, 41 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Corporate Partnerships",
+    "question": "Which of the following organizations launched the Sangam Infrastructure Innovation Center in Bengaluru to boost enterprise AI development?",
+    "options": {
+      "A": "Microsoft India",
+      "B": "Google Cloud",
+      "C": "Amazon Web Services (AWS)",
+      "D": "International Business Machines Corporation (IBM)",
+      "E": "Intel India"
+    },
+    "answer": "D",
+    "rationale": "International Business Machines Corporation (IBM) launched its first Sangam Infrastructure Innovation Center at the ISDL campus in Bengaluru. (Refer Page 14, 43 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Biotechnology Books",
+    "question": "During the inauguration of the Central Facility for Recombinant Cells and Sensors in Kerala, a book titled \"Quantum Physics: One Hundred Magical Years\" was released. Who is the author of this book?",
+    "options": {
+      "A": "Dr. Jitendra Singh",
+      "B": "Dr. V. K. Saraswat",
+      "C": "V. P. N. Nampoori",
+      "D": "K. Kasturirangan",
+      "E": "G. Madhavan Nair"
+    },
+    "answer": "C",
+    "rationale": "The book \"Quantum Physics: One Hundred Magical Years\" is authored by V. P. N. Nampoori. (Refer Page 38 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Tribal Affairs",
+    "question": "Assertion (A): MoTA announced the 'Living Roots Festival' (LRF) to be held from 13–15 March 2026 at Sunder Nursery, New Delhi.\nReason (R): This festival is part of three flagship events designed to showcase India's tribal heritage and promote cultural expression.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "D",
+    "rationale": "Assertion (A) is false because the 'Living Roots Festival' (LRF) is held at Bikaner House and India Gate, New Delhi. Sunder Nursery is the venue for the Bharat Tribes Fest (BTF). Reason (R) is true. (Refer Page 7, 38 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Digital Payments",
+    "question": "Consider the following statements regarding the Gnani.ai & Razorpay collaboration:\n\n1. They launched an agentic AI-powered collections platform.\n2. The platform can complete Unified Payments Interface (UPI) payments during live customer calls.\n3. Gnani.ai is an American fintech firm operating in India.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "1 and 2",
+      "E": "2 and 3"
+    },
+    "answer": "C",
+    "rationale": "Statement 3 is incorrect because Gnani.ai is explicitly described as an 'Indian AI firm', not an American fintech firm. Statements 1 and 2 are correct. (Refer Page 18, 46 of PDF).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Hurun Richest Globally",
+    "question": "Match the following top billionaires with their corresponding net worths (in USD billion) as per the Hurun Global Rich List 2026:\n\nColumn I:\n1. Elon Musk\n2. Jeff Bezos\n3. Larry Page\n4. Larry Ellison\n\nColumn II:\nA. 300\nB. 267\nC. 271\nD. 792\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-D, 2-A, 3-C, 4-B",
+      "B": "1-A, 2-D, 3-C, 4-B",
+      "C": "1-D, 2-C, 3-A, 4-B",
+      "D": "1-D, 2-A, 3-B, 4-C",
+      "E": "1-B, 2-C, 3-A, 4-D"
+    },
+    "answer": "A",
+    "rationale": "According to the table: Elon Musk = 792 (1-D), Jeff Bezos = 300 (2-A), Larry Page = 271 (3-C), Larry Ellison = 267 (4-B). (Refer Page 16 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Haryana Capital Expenditure",
+    "question": "In the Haryana State budget for FY27, what is the proposed capital expenditure (CapEx) amount, and what approximate percentage of the total budget allocation does it represent?",
+    "options": {
+      "A": "Rs 28,205 Cr; 12.6%",
+      "B": "Rs 40,293 Cr; 15.4%",
+      "C": "Rs 23,603 Cr; 10.5%",
+      "D": "Rs 14,007 Cr; 8.2%",
+      "E": "Rs 30,000 Cr; 13.0%"
+    },
+    "answer": "A",
+    "rationale": "The Budget proposes capital expenditure of Rs 28,205 Cr for FY27, accounting for around 12.6% of the total allocation. (Refer Page 33, 54 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Naval Base Upgrades",
+    "question": "Fill in the blanks regarding the naval contracts signed in March 2026:\n\nThe Indian Navy signed a contract worth Rs ______ crore with JSC Rosoboronexport for the procurement of ______ missiles along with associated holding frames.",
+    "options": {
+      "A": "2,901; BrahMos",
+      "B": "2,182; VL-Shtil",
+      "C": "5,083; ALH Mk-III",
+      "D": "2,182; Barak-8",
+      "E": "1,500; Nirbhay"
+    },
+    "answer": "B",
+    "rationale": "The MoD signed a contract worth Rs 2,182 crore with JSC Rosoboronexport for Surface-to-Air VL-Shtil missiles for the Indian Navy. (Refer Page 12, 41 of PDF).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Decadal Trends",
+    "question": "Consider the following statements about 'World Seagrass Day':\n\n1. It is observed annually on 1 March.\n2. The first World Seagrass Day was observed globally in 1990.\n3. According to the IUCN Red List, around 21% of seagrass species are classified as Near Threatened, Vulnerable, or Endangered.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "Only 3"
+    },
+    "answer": "C",
+    "rationale": "Statements 1 and 3 are correct. Statement 2 is incorrect because the first World Seagrass Day was observed globally recently, on 1 March *2023*, not 1990 (1990 was the first observance for World Civil Defence Day). (Refer Page 29 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "Governor Transfers",
+    "question": "Match the following Governors with the States/UTs they were serving in *before* their new appointments or the ones they replaced (Predecessors) in March 2026:\n\nColumn I (Predecessor):\n1. Arif Mohammed Khan\n2. Rajendra Vishwanath Arlekar\n3. Bhagat Singh Koshyari\n4. Ajay Kumar Bhalla\n\nColumn II (State/UT where they were preceded):\nA. Maharashtra\nB. Nagaland\nC. Bihar\nD. Himachal Pradesh\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-D, 3-A, 4-B",
+      "B": "1-A, 2-B, 3-C, 4-D",
+      "C": "1-C, 2-A, 3-D, 4-B",
+      "D": "1-D, 2-C, 3-A, 4-B",
+      "E": "1-B, 2-D, 3-A, 4-C"
+    },
+    "answer": "A",
+    "rationale": "According to the table of predecessors: Arif Mohammed Khan preceded the new Governor in Bihar (1-C); Rajendra Vishwanath Arlekar preceded in HP (2-D); Bhagat Singh Koshyari preceded in Maharashtra (3-A); Ajay Kumar Bhalla preceded in Nagaland (4-B). (Refer Page 24 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Ranji Trophy Sponsors",
+    "question": "Which bank was the official sponsor for the Ranji Trophy Title 2025-26, won by the Jammu & Kashmir cricket team?",
+    "options": {
+      "A": "State Bank of India",
+      "B": "HDFC Bank",
+      "C": "IDFC First Bank",
+      "D": "ICICI Bank",
+      "E": "Bank of Baroda"
+    },
+    "answer": "C",
+    "rationale": "The official sponsor for the tournament was 'IDFC First Bank Ranji Trophy'. (Refer Page 26 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Educational Initiatives",
+    "question": "Arrange the following stages of education/fellowships addressed by Canada's educational MoUs with India during PM Mark Carney's visit in descending order of the number of individuals/scholarships targeted per year:\n\n1. AICTE & Mitacs Inc. MoU for student internships\n2. University of Toronto Scholarships for fully funded scholarships\n\nSelect the correct answer:",
+    "options": {
+      "A": "1, 2",
+      "B": "2, 1",
+      "C": "Both are equal (200 each)",
+      "D": "Both are equal (300 each)",
+      "E": "Insufficient data provided in the document"
+    },
+    "answer": "A",
+    "rationale": "The AICTE & Mitacs Inc. MoU targets *300* Indian students/year for research internships. The University of Toronto targets *200* fully funded scholarships. Thus, in descending order: 300 > 200, which is 1, 2. (Refer Page 10 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Obituary",
+    "sub_category": "Art and Culture",
+    "question": "Assertion (A): Utsav Charan Das, who passed away in February 2026, was recognized for his lifelong dedication to performing Ghoda Nacha across Odisha.\nReason (R): He was awarded the Padma Vibhushan in 2020 for his unparalleled contribution to Indian classical dance.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true as he dedicated over six decades to Ghoda Nacha. Reason (R) is false because he was awarded the *Padma Shri* in 2020 (India's fourth highest civilian award), not the Padma Vibhushan. (Refer Page 26, 51 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Awareness Campaigns",
+    "question": "Consider the following regarding 'Janaushadhi Saptah 2026':\n\n1. It is observed from 1 to 7 March 2026.\n2. The concluding day marks the observance of the 8th Janaushadhi Diwas.\n3. The organizer of the week is the Pharmaceuticals and Medical Devices Bureau of India.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "Only 2"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. It runs from Mar 1-7, concludes with the 8th Janaushadhi Diwas, and is organized by the Pharmaceuticals and Medical Devices Bureau of India under PMBJP. (Refer Page 12, 42 of PDF).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content PDF - March 2026 - 1st Week"
+  }
+]
