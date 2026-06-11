@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Convincing my Shreyu 💌</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --pink: #FF6B9D;
+    --yellow: #FFD93D;
+    --teal: #4ECDC4;
+    --green: #6BCB77;
+    --purple: #2D1B69;
+    --lavender: #C084FC;
+    --bg: #FFFDF0;
+    --card-radius: 24px;
+    --shadow: 0 8px 32px rgba(45,27,105,0.13);
+  }
+
+  html, body {
+    height: 100%;
+    overflow: hidden;
+    background: var(--bg);
+    font-family: 'Nunito', sans-serif;
+    color: var(--purple);
+    touch-action: manipulation;
+  }
+
+  /* ── GLOBAL SCREEN WRAPPER ── */
+  #app {
+    width: 100vw;
+    height: 100%;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  /* ── FLOATING DOODLES BG ── */
+  .doodle-bg {
+    position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    overflow: hidden;
+  }
+  .doodle-bg span {
+    position: absolute;
+    font-size: clamp(1.4rem, 4vw, 2.2rem);
+    animation: floatDoodle linear infinite;
+    opacity: 0.18;
+    user-select: none;
+  }
+  @keyframes floatDoodle {
+    0%   { transform: translateY(110vh) rotate(0deg); }
+    100% { transform: translateY(-20vh) rotate(360deg); }
+  }
+
+  /* ── SCREEN BASE ── */
+  .screen {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    padding: 20px 16px;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 0; pointer-events: none; transform: scale(0.96);
+    z-index: 2;
+  }
+  .screen.active {
+    opacity: 1; pointer-events: all; transform: scale(1);
+  }
+
+  /* ══════════════ INTRO SCREEN ══════════════ */
+  #screen-intro {
+    text-align: center;
+    gap: 18px;
+  }
+  .intro-emoji {
+    font-size: clamp(4rem, 18vw, 7rem);
+    animation: bounce 1.2s ease-in-out infinite alternate;
+    display: block;
+  }
+  @keyframes bounce {
+    from { transform: translateY(0) rotate(-4deg); }
+    to   { transform: translateY(-14px) rotate(4deg); }
+  }
+  .intro-title {
+    font-family: 'Baloo 2', cursive;
+    font-size: clamp(1.7rem, 7vw, 2.8rem);
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--purple);
+  }
+  .intro-title span { color: var(--pink); }
+  .intro-sub {
+    font-size: clamp(0.95rem, 3.5vw, 1.15rem);
+    color: #6b5b95;
+    max-width: 320px;
+    line-height: 1.5;
+  }
+  .btn-primary {
+    margin-top: 8px;
+    background: linear-gradient(135deg, var(--pink), var(--lavender));
+    color: #fff;
+    font-family: 'Baloo 2', cursive;
+    font-size: clamp(1rem, 4.5vw, 1.3rem);
+    font-weight: 700;
+    border: none; cursor: pointer;
+    padding: 14px 36px;
+    border-radius: 50px;
+    box-shadow: 0 6px 20px rgba(255,107,157,0.4);
+    transition: transform 0.15s, box-shadow 0.15s;
+    letter-spacing: 0.3px;
+  }
+  .btn-primary:active { transform: scale(0.95); box-shadow: 0 2px 8px rgba(255,107,157,0.3); }
+
+  /* ══════════════ SLIDESHOW SCREEN ══════════════ */
+  #screen-slides {
+    gap: 0;
+    overflow: hidden;
+  }
+  .slide-counter-wrap {
+    position: absolute;
+    top: 20px; left: 0; right: 0;
+    display: flex; align-items: center; justify-content: center;
+    gap: 7px; z-index: 5;
+  }
+  .dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: #ddd;
+    transition: background 0.3s, transform 0.3s;
+  }
+  .dot.active { background: var(--pink); transform: scale(1.35); }
+  .dot.done   { background: var(--teal); }
+
+  .slide-carousel {
+    width: 100%; max-width: 420px;
+    flex: 1;
+    display: flex; align-items: center; justify-content: center;
+    position: relative; overflow: visible;
+  }
+  .slide-card {
+    position: absolute;
+    width: calc(100% - 20px); max-width: 400px;
+    background: #fff;
+    border-radius: var(--card-radius);
+    box-shadow: var(--shadow);
+    padding: clamp(24px, 6vw, 40px) clamp(20px, 5vw, 36px);
+    text-align: center;
+    display: flex; flex-direction: column; align-items: center; gap: 16px;
+    transition: opacity 0.4s ease, transform 0.4s cubic-bezier(.34,1.56,.64,1);
+    opacity: 0; transform: translateX(80px) scale(0.92);
+    pointer-events: none;
+  }
+  .slide-card.active {
+    opacity: 1; transform: translateX(0) scale(1);
+    pointer-events: all;
+  }
+  .slide-card.exit-left {
+    opacity: 0; transform: translateX(-80px) scale(0.92);
+  }
+  .slide-num {
+    font-family: 'Baloo 2', cursive;
+    font-size: clamp(0.75rem, 3vw, 0.9rem);
+    font-weight: 700;
+    color: var(--pink);
+    background: #fff0f6;
+    padding: 4px 14px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .slide-emoji {
+    font-size: clamp(3.2rem, 14vw, 5.5rem);
+    line-height: 1;
+    animation: wiggle 2s ease-in-out infinite;
+  }
+  @keyframes wiggle {
+    0%,100% { transform: rotate(-5deg); }
+    50%      { transform: rotate(5deg); }
+  }
+  .slide-text {
+    font-family: 'Baloo 2', cursive;
+    font-size: clamp(1.15rem, 4.8vw, 1.5rem);
+    font-weight: 700;
+    color: var(--purple);
+    line-height: 1.35;
+  }
+  .slide-nav {
+    display: flex; gap: 14px; margin-top: 12px;
+    position: absolute; bottom: 22px; left: 0; right: 0;
+    justify-content: center;
+  }
+  .btn-slide {
+    background: #fff;
+    border: 2.5px solid var(--purple);
+    color: var(--purple);
+    font-family: 'Baloo 2', cursive;
+    font-size: clamp(0.9rem, 3.5vw, 1.1rem);
+    font-weight: 700;
+    padding: 10px 28px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .btn-slide.next-btn {
+    background: var(--purple); color: #fff;
+    border-color: var(--purple);
+  }
+
+  .btn-slide:disabled { opacity: 0.3; pointer-events: none; }
+
+  /* slide accent colors per card */
+  .slide-card[data-color="pink"]   { border-top: 5px solid var(--pink); }
+  .slide-card[data-color="yellow"] { border-top: 5px solid var(--yellow); }
+  .slide-card[data-color="teal"]   { border-top: 5px solid var(--teal); }
+  .slide-card[data-color="green"]  { border-top: 5px solid var(--green); }
+  .slide-card[data-color="lavender"]{ border-top: 5px solid var(--lavender); }
+
+  /* ══════════════ GAME SCREEN ══════════════ */
+  #screen-game {
+    gap: 14px;
+    overflow: hidden;
+  }
+  .game-title {
+    font-family: 'Baloo 2', cursive;
+    font-size: clamp(1.4rem, 6vw, 2rem);
+    font-weight: 800;
+    text-align: center;
+    color: var(--purple);
+    line-height: 1.2;
+  }
+  .game-subtitle {
+    font-size: clamp(0.82rem, 3.2vw, 1rem);
+    color: #7c6b9e;
+    text-align: center;
+    max-width: 320px;
+    line-height: 1.4;
+  }
+  .game-area {
+    width: 100%; max-width: 420px;
+    background: #fff;
+    border-radius: var(--card-radius);
+    box-shadow: var(--shadow);
+    padding: clamp(20px, 5vw, 34px);
+    display: flex; flex-direction: column; align-items: center;
+    gap: 18px;
+    position: relative;
+    overflow: hidden;
+  }
+  .game-question {
+    font-family: 'Baloo 2', cursive;
+    font-size: clamp(1rem, 4.2vw, 1.25rem);
+    font-weight: 700;
+    text-align: center;
+    color: var(--purple);
+    line-height: 1.3;
+  }
+  /* ── BALL POP GAME ── */
+  .balloon-field {
+    width: 100%;
+    height: clamp(180px, 42vw, 260px);
+    position: relative;
+    border-radius: 16px;
+    background: linear-gradient(160deg,#e0f4ff 0%,#fce4f5 100%);
+    overflow: hidden;
+  }
+  .balloon {
+    position: absolute;
+    top: 0; left: 0;
+    cursor: pointer;
+    font-size: clamp(2.2rem, 9vw, 3.2rem);
+    line-height: 1;
+    width: 56px; height: 56px;
+    display: flex; align-items: center; justify-content: center;
+    user-select: none;
+    will-change: transform;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+  }
+  .balloon.popping {
+    animation: popOut 0.28s ease-out forwards;
+    pointer-events: none;
+  }
+  @keyframes popOut {
+    0%   { transform: scale(1) rotate(0deg); opacity: 1; }
+    50%  { transform: scale(1.5) rotate(15deg); opacity: 0.8; }
+    100% { transform: scale(0) rotate(35deg); opacity: 0; }
+  }
+  .balloon-label {
+    position: absolute;
+    bottom: -20px; left: 50%; transform: translateX(-50%);
+    font-family: 'Baloo 2', cursive;
+    font-size: clamp(0.62rem, 2.6vw, 0.78rem);
+    font-weight: 800;
+    color: var(--purple);
+    white-space: nowrap;
+    pointer-events: none;
+  }
+
+  .game-score-row {
+    display: flex; gap: 16px; width: 100%;
+    justify-content: center;
+  }
+  .score-box {
+    flex: 1; max-width: 140px;
+    background: #f9f0ff;
+    border-radius: 14px;
+    padding: 10px 8px;
+    text-align: center;
+  }
+  .score-label {
+    font-size: clamp(0.7rem, 2.8vw, 0.82rem);
+    font-weight: 700;
+    color: #9e7ecb;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .score-val {
+    font-family: 'Baloo 2', cursive;
+    font-size: clamp(1.5rem, 6vw, 2rem);
+    font-weight: 800;
+    color: var(--purple);
+    line-height: 1.1;
+  }
+  .score-box.yes-box { background: #e8fdf0; }
+  .score-box.yes-box .score-val { color: #28a745; }
+  .score-box.no-box  { background: #fff0f0; }
+  .score-box.no-box  .score-val { color: #dc3545; }
+
+  .lives-row {
+    font-size: clamp(1.1rem, 4.5vw, 1.4rem);
+    letter-spacing: 2px;
+  }
+
+  /* NO can't win tooltip */
+  .sneaky-msg {
+    font-size: clamp(0.72rem, 2.8vw, 0.82rem);
+    color: #c084fc;
+    text-align: center;
+    font-style: italic;
+    min-height: 18px;
+  }
+
+  /* ══════════════ WIN SCREENS ══════════════ */
+  #screen-yes-win, #screen-no-win {
+    gap: 18px; text-align: center; overflow: hidden;
+  }
+  .win-emoji {
+    font-size: clamp(4rem, 18vw, 7rem);
+    animation: popIn 0.5s cubic-bezier(.34,1.56,.64,1) both;
+    display: block;
+  }
+  @keyframes popIn {
+    0%   { transform: scale(0) rotate(-20deg); opacity: 0; }
+    100% { transform: scale(1) rotate(0deg); opacity: 1; }
+  }
+  .win-title {
+    font-family: 'Baloo 2', cursive;
+    font-size: clamp(1.8rem, 7.5vw, 2.8rem);
+    font-weight: 800;
+    line-height: 1.2;
+  }
+  .win-title.yes { color: var(--pink); }
+  .win-title.no  { color: #aaa; }
+  .win-body {
+    font-size: clamp(0.9rem, 3.6vw, 1.1rem);
+    color: #6b5b95;
+    max-width: 300px; line-height: 1.55;
+  }
+  .win-body.no-body { color: #999; }
+  .btn-retry {
+    background: var(--teal); color: #fff;
+    font-family: 'Baloo 2', cursive;
+    font-size: clamp(0.9rem, 3.8vw, 1.1rem);
+    font-weight: 700;
+    border: none; cursor: pointer;
+    padding: 12px 30px; border-radius: 50px;
+    box-shadow: 0 5px 16px rgba(78,205,196,0.4);
+    transition: transform 0.15s;
+  }
+  .btn-retry:active { transform: scale(0.95); }
+
+  /* ══════════════ CONFETTI ══════════════ */
+  #confetti-canvas {
+    position: fixed; inset: 0;
+    pointer-events: none; z-index: 999;
+  }
+
+  /* ══════════════ MISC ══════════════ */
+  .heart-trail {
+    position: fixed; pointer-events: none; z-index: 998;
+    font-size: 1.2rem;
+    animation: floatHeart 1s ease-out forwards;
+  }
+  @keyframes floatHeart {
+    0%   { opacity: 1; transform: translateY(0) scale(1); }
+    100% { opacity: 0; transform: translateY(-60px) scale(0.5); }
+  }
+
+  /* touch ripple */
+  .ripple {
+    position: fixed; border-radius: 50%;
+    background: rgba(255,107,157,0.3);
+    pointer-events: none; z-index: 990;
+    animation: rippleOut 0.5s ease-out forwards;
+  }
+  @keyframes rippleOut {
+    0%   { width: 0; height: 0; opacity: 1; }
+    100% { width: 80px; height: 80px; opacity: 0; margin: -40px; }
+  }
+
+  /* Progress bar for slideshow */
+  .slide-progress {
+    width: 100%; max-width: 400px;
+    height: 5px; background: #eee; border-radius: 4px;
+    position: absolute; top: 54px; overflow: hidden;
+  }
+  .slide-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--pink), var(--lavender));
+    border-radius: 4px;
+    transition: width 0.4s ease;
+  }
+
+  /* star burst */
+  .star-burst {
+    position: fixed; pointer-events: none; z-index: 997;
+    font-size: 1.4rem;
+    animation: burstOut 0.7s ease-out forwards;
+  }
+  @keyframes burstOut {
+    0%   { opacity: 1; transform: scale(0.5); }
+    50%  { opacity: 1; transform: scale(1.3); }
+    100% { opacity: 0; transform: scale(0.8) translateY(-40px); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+  }
+</style>
+</head>
+<body>
+
+<canvas id="confetti-canvas"></canvas>
+<div class="doodle-bg" id="doodleBg"></div>
+
+<div id="app">
+
+  <!-- ── INTRO ── -->
+  <div class="screen active" id="screen-intro">
+    <span class="intro-emoji">💌</span>
+    <h1 class="intro-title">Hey, my Milkcake<span>You</span>!<br>here's my attempt at convincing you</h1>
+    <p class="intro-sub">Open this to find out 6 very convincing reasons why you should say yes to a date with me tomorrow. 🥺</p>
+    <button class="btn-primary" id="btn-start">Let's See! 👀</button>
+  </div>
+
+  <!-- ── SLIDESHOW ── -->
+  <div class="screen" id="screen-slides">
+    <div class="slide-counter-wrap" id="dotRow"></div>
+    <div class="slide-progress"><div class="slide-progress-fill" id="progressFill"></div></div>
+
+    <div class="slide-carousel" id="slideCarousel">
+      <!-- cards injected by JS -->
+    </div>
+
+    <div class="slide-nav">
+      <button class="btn-slide" id="btn-prev" disabled>← Back</button>
+      <button class="btn-slide next-btn" id="btn-next">Next →</button>
+    </div>
+  </div>
+
+  <!-- ── GAME ── -->
+  <div class="screen" id="screen-game">
+    <h2 class="game-title">🎾 Pop the Balls!</h2>
+    <p class="game-subtitle">Pop <strong>YES</strong> balls to earn points. Be careful — popping <strong>NO</strong> balls costs you a heart! First to <strong>5 points</strong> wins… but only YES can win 😏</p>
+
+    <div class="game-area" id="gameArea">
+      <div class="game-question">Will you go on a date with me? 🥺💕</div>
+      <div class="balloon-field" id="balloonField"></div>
+      <div class="game-score-row">
+        <div class="score-box yes-box">
+          <div class="score-label">YES 💚</div>
+          <div class="score-val" id="yesScore">0</div>
+        </div>
+        <div class="score-box no-box">
+          <div class="score-label">NO ❌</div>
+          <div class="score-val" id="noScore">0</div>
+        </div>
+      </div>
+      <div class="lives-row" id="livesRow">❤️❤️❤️</div>
+      <div class="sneaky-msg" id="sneakyMsg"></div>
+    </div>
+  </div>
+
+  <!-- ── GAME OVER ── -->
+  <div class="screen" id="screen-game-over">
+    <span class="win-emoji">😅</span>
+    <h2 class="win-title no">Game Over!</h2>
+    <p class="win-body no-body">Looks like you ran out of hearts… but don't worry, that just means you have to try again — because the only acceptable answer here is YES! 😏💕</p>
+    <button class="btn-retry" id="btn-retry-gameover">Try Again 🔄</button>
+  </div>
+
+
+  <!-- ── YES WIN ── -->
+  <div class="screen" id="screen-yes-win">
+    <span class="win-emoji">🥳</span>
+    <h2 class="win-title yes">SHE SAID YES!!!</h2>
+    <p class="win-body">Yaaaay!! 🎉 I knew it! Get ready for the best date ever — waffles, cuddles, massages, and The Boys await! I love you so much. 💕</p>
+    <button class="btn-primary" id="btn-replay-yes">Play Again 💌</button>
+  </div>
+
+  <!-- ── NO WIN (impossible, but just in case) ── -->
+  <div class="screen" id="screen-no-win">
+    <span class="win-emoji">😭</span>
+    <h2 class="win-title no">Wait… that can't be right.</h2>
+    <p class="win-body no-body">Hmm. The game is clearly broken. Try again — I'm sure YES is just hiding! 🙈</p>
+    <button class="btn-retry" id="btn-retry-no">Try Again 🔄</button>
+  </div>
+
+</div>
+
+<script>
+/* ══════════════════════════════════════════════
+   DATA
+══════════════════════════════════════════════ */
+const slides = [
+  { emoji: "🧇", text: "We'll get waffles!", color: "yellow", num: "Reason 1 of 6" },
+  { emoji: "💑", text: "We'll spend a day together, with all my love pouring for you.", color: "pink", num: "Reason 2 of 6" },
+  { emoji: "💆‍♀️", text: "I'll give you a foot and shoulder massage.", color: "teal", num: "Reason 3 of 6" },
+  { emoji: "🥺", text: "You'd be doing me a great charity, as it has been a long time since I got close to my girlfriend, and I am dying to.", color: "lavender", num: "Reason 4 of 6" },
+  { emoji: "📺", text: "We'll watch more episodes of The Boys and cuddle together.", color: "green", num: "Reason 5 of 6" },
+  { emoji: "🧇", text: "Did I mention… we'll get waffles? 🧇🧇🧇", color: "yellow", num: "Reason 6 of 6 ✨" },
+];
+
+/* ══════════════════════════════════════════════
+   FLOATING DOODLES
+══════════════════════════════════════════════ */
+const doodleEmojis = ["💕","🌸","⭐","🍭","🎀","✨","🌈","💫","🎈","🍩","🧁","🌺"];
+const bg = document.getElementById("doodleBg");
+for (let i = 0; i < 18; i++) {
+  const s = document.createElement("span");
+  s.textContent = doodleEmojis[i % doodleEmojis.length];
+  s.style.left = Math.random() * 100 + "vw";
+  s.style.animationDuration = (8 + Math.random() * 14) + "s";
+  s.style.animationDelay = (-Math.random() * 20) + "s";
+  s.style.fontSize = (1.2 + Math.random() * 1.2) + "rem";
+  bg.appendChild(s);
+}
+
+/* ══════════════════════════════════════════════
+   SCREEN TRANSITIONS
+══════════════════════════════════════════════ */
+function showScreen(id) {
+  document.querySelectorAll(".screen").forEach(s => s.classList.remove("active"));
+  document.getElementById(id).classList.add("active");
+}
+
+/* ══════════════════════════════════════════════
+   TOUCH RIPPLE
+══════════════════════════════════════════════ */
+document.addEventListener("click", e => {
+  const r = document.createElement("div");
+  r.className = "ripple";
+  r.style.left = e.clientX + "px";
+  r.style.top = e.clientY + "px";
+  document.body.appendChild(r);
+  setTimeout(() => r.remove(), 600);
+});
+
+/* ══════════════════════════════════════════════
+   INTRO
+══════════════════════════════════════════════ */
+document.getElementById("btn-start").addEventListener("click", () => {
+  buildSlides();
+  showScreen("screen-slides");
+  goToSlide(0);
+});
+
+/* ══════════════════════════════════════════════
+   SLIDESHOW
+══════════════════════════════════════════════ */
+let currentSlide = 0;
+const dotRow = document.getElementById("dotRow");
+const carousel = document.getElementById("slideCarousel");
+
+function buildSlides() {
+  carousel.innerHTML = "";
+  dotRow.innerHTML = "";
+
+  slides.forEach((s, i) => {
+    // dot
+    const dot = document.createElement("div");
+    dot.className = "dot";
+    dot.dataset.i = i;
+    dotRow.appendChild(dot);
+
+    // card
+    const card = document.createElement("div");
+    card.className = "slide-card";
+    card.dataset.color = s.color;
+    card.dataset.i = i;
+    card.innerHTML = `
+      <div class="slide-num">${s.num}</div>
+      <div class="slide-emoji">${s.emoji}</div>
+      <div class="slide-text">${s.text}</div>
+    `;
+    carousel.appendChild(card);
+  });
+}
+
+function goToSlide(idx) {
+  const cards = carousel.querySelectorAll(".slide-card");
+  const dots  = dotRow.querySelectorAll(".dot");
+
+  cards.forEach((c, i) => {
+    c.classList.remove("active", "exit-left");
+    if (i < idx) c.classList.add("exit-left");
+  });
+  if (cards[idx]) cards[idx].classList.add("active");
+
+  dots.forEach((d, i) => {
+    d.classList.remove("active", "done");
+    if (i < idx) d.classList.add("done");
+    if (i === idx) d.classList.add("active");
+  });
+
+  const fill = document.getElementById("progressFill");
+  fill.style.width = ((idx + 1) / slides.length * 100) + "%";
+
+  document.getElementById("btn-prev").disabled = idx === 0;
+  const nextBtn = document.getElementById("btn-next");
+  if (idx === slides.length - 1) {
+    nextBtn.textContent = "Play the Game! 🎮";
+    nextBtn.style.background = "linear-gradient(135deg,#FF6B9D,#C084FC)";
+  } else {
+    nextBtn.textContent = "Next →";
+    nextBtn.style.background = "";
+  }
+
+  currentSlide = idx;
+}
+
+/* ── FIX: mobile press animation for slide buttons ── */
+[document.getElementById("btn-next"), document.getElementById("btn-prev")].forEach(btn => {
+  const animate = () => {
+    btn.style.transform = "scale(0.93)";
+    setTimeout(() => { btn.style.transform = ""; }, 150);
+  };
+  btn.addEventListener("touchstart", animate, { passive: true });
+  btn.addEventListener("click", animate);
+});
+
+document.getElementById("btn-next").addEventListener("click", () => {
+  if (currentSlide < slides.length - 1) {
+    goToSlide(currentSlide + 1);
+  } else {
+    showScreen("screen-game");
+    startGame();
+  }
+});
+document.getElementById("btn-prev").addEventListener("click", () => {
+  if (currentSlide > 0) goToSlide(currentSlide - 1);
+});
+
+/* ══════════════════════════════════════════════
+   BOUNCING BALL POP GAME
+══════════════════════════════════════════════ */
+let yesScore = 0, noScore = 0, lives = 3;
+let gameRunning = false;
+let physicsRAF = null;
+let balls = []; // {el, type, x, y, vx, vy, r}
+const BALL_R = 28; // half of 56px ball box
+const sneakyMsgs = [
+  "Psst… NO balls are a trap 😈",
+  "Maybe just… ignore the NO ones? 🙃",
+  "Those NO balls look suspicious to me 👀",
+  "Warning: NO balls may cause heartbreak 💔",
+  "The YES balls just wanna be loved 🥺",
+];
+let sneakyIdx = 0;
+
+const balloonEmojis = {
+  yes: ["🎈","💚","💛","💖","🟢","🫧"],
+  no:  ["🔴","💢","😤","🚫","❌","😡"],
+};
+
+function startGame() {
+  yesScore = 0; noScore = 0; lives = 3;
+  gameRunning = true;
+  updateScoreUI();
+
+  const field = document.getElementById("balloonField");
+  field.innerHTML = "";
+  balls = [];
+
+  spawnBalls();
+  cycleSneak();
+  if (physicsRAF) cancelAnimationFrame(physicsRAF);
+  physicsLoop();
+}
+
+function updateScoreUI() {
+  document.getElementById("yesScore").textContent = yesScore;
+  document.getElementById("noScore").textContent = noScore;
+  const full = Math.max(0, lives);
+  document.getElementById("livesRow").textContent =
+    "❤️".repeat(full) + (lives < 3 ? "🖤".repeat(3 - full) : "");
+}
+
+function targetBallCount() {
+  return 5 + Math.floor(yesScore * 0.7);
+}
+
+function randomNonOverlappingPos(field, r) {
+  const w = field.clientWidth || 300;
+  const h = field.clientHeight || 200;
+  for (let attempt = 0; attempt < 30; attempt++) {
+    const x = r + Math.random() * (w - 2 * r);
+    const y = r + Math.random() * (h - 2 * r);
+    let ok = true;
+    for (const b of balls) {
+      const dx = b.x - x, dy = b.y - y;
+      if (Math.sqrt(dx * dx + dy * dy) < (b.r + r) * 1.05) { ok = false; break; }
+    }
+    if (ok) return { x, y };
+  }
+  // fallback if field too crowded
+  return { x: r + Math.random() * (w - 2 * r), y: r + Math.random() * (h - 2 * r) };
+}
+
+function spawnBalls() {
+  if (!gameRunning) return;
+  const field = document.getElementById("balloonField");
+
+  const total = targetBallCount();
+  const yesCount = Math.ceil(total * 0.6);
+  const noCount  = total - yesCount;
+
+  const types = [
+    ...Array(yesCount).fill("yes"),
+    ...Array(noCount).fill("no"),
+  ].sort(() => Math.random() - 0.5);
+
+  types.forEach(type => addBall(field, type));
+}
+
+function addBall(field, type) {
+  const r = BALL_R;
+  const pos = randomNonOverlappingPos(field, r);
+
+  const wrap = document.createElement("div");
+  wrap.style.position = "absolute";
+  wrap.style.left = "0px";
+  wrap.style.top = "0px";
+
+  const b = document.createElement("div");
+  b.className = "balloon";
+  b.dataset.type = type;
+  const emojis = balloonEmojis[type];
+  b.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+
+  const lbl = document.createElement("div");
+  lbl.className = "balloon-label";
+  lbl.textContent = type === "yes" ? "YES ✓" : "NO ✗";
+  lbl.style.color = type === "yes" ? "#28a745" : "#dc3545";
+
+  b.appendChild(lbl);
+  wrap.appendChild(b);
+  field.appendChild(wrap);
+
+  const speed = 0.6 + Math.random() * 0.9;
+  const angle = Math.random() * Math.PI * 2;
+
+  const ball = {
+    el: wrap, ballEl: b, type,
+    x: pos.x, y: pos.y,
+    vx: Math.cos(angle) * speed,
+    vy: Math.sin(angle) * speed,
+    r,
+  };
+  balls.push(ball);
+
+  b.addEventListener("click", () => onBalloonPop(ball));
+  b.addEventListener("touchend", e => { e.preventDefault(); onBalloonPop(ball); }, { passive: false });
+
+  applyTransform(ball);
+}
+
+function applyTransform(ball) {
+  ball.el.style.transform = `translate(${ball.x - ball.r}px, ${ball.y - ball.r}px)`;
+}
+
+function physicsLoop() {
+  if (!gameRunning) return;
+  const field = document.getElementById("balloonField");
+  const w = field.clientWidth || 300;
+  const h = field.clientHeight || 200;
+
+  // move + wall bounce
+  for (const b of balls) {
+    b.x += b.vx;
+    b.y += b.vy;
+    if (b.x - b.r < 0) { b.x = b.r; b.vx *= -1; }
+    if (b.x + b.r > w) { b.x = w - b.r; b.vx *= -1; }
+    if (b.y - b.r < 0) { b.y = b.r; b.vy *= -1; }
+    if (b.y + b.r > h) { b.y = h - b.r; b.vy *= -1; }
+  }
+
+  // ball-ball collision (simple elastic, equal mass)
+  for (let i = 0; i < balls.length; i++) {
+    for (let j = i + 1; j < balls.length; j++) {
+      const a = balls[i], b = balls[j];
+      const dx = b.x - a.x, dy = b.y - a.y;
+      const dist = Math.sqrt(dx * dx + dy * dy) || 0.001;
+      const minDist = a.r + b.r;
+      if (dist < minDist) {
+        // separate
+        const overlap = (minDist - dist) / 2;
+        const nx = dx / dist, ny = dy / dist;
+        a.x -= nx * overlap; a.y -= ny * overlap;
+        b.x += nx * overlap; b.y += ny * overlap;
+        // swap velocity components along normal
+        const avn = a.vx * nx + a.vy * ny;
+        const bvn = b.vx * nx + b.vy * ny;
+        a.vx += (bvn - avn) * nx; a.vy += (bvn - avn) * ny;
+        b.vx += (avn - bvn) * nx; b.vy += (avn - bvn) * ny;
+      }
+    }
+  }
+
+  for (const b of balls) applyTransform(b);
+
+  physicsRAF = requestAnimationFrame(physicsLoop);
+}
+
+function onBalloonPop(ball) {
+  if (!gameRunning || ball.popped) return;
+  ball.popped = true;
+
+  const bElem = ball.ballEl;
+  bElem.classList.add("popping");
+
+  spawnBurst(bElem);
+  showFloatingHeart(bElem, ball.type === "yes" ? "💚" : "💔", ball.type === "yes" ? "+1" : "Oops!");
+
+  // remove from physics list immediately so it stops colliding
+  balls = balls.filter(b => b !== ball);
+  setTimeout(() => ball.el.remove(), 280);
+
+  if (ball.type === "yes") {
+    yesScore++;
+    updateScoreUI();
+    if (yesScore >= 5) { endGame("yes"); return; }
+  } else {
+    lives--;
+    updateScoreUI();
+    if (lives <= 0) { endGame("over"); return; }
+  }
+
+  // replace popped ball to keep field lively
+  const field = document.getElementById("balloonField");
+  setTimeout(() => {
+    if (gameRunning) addBall(field, Math.random() < 0.6 ? "yes" : "no");
+  }, 300);
+}
+
+function showFloatingHeart(elem, emoji, label) {
+  const rect = elem.getBoundingClientRect();
+  const h = document.createElement("div");
+  h.className = "heart-trail";
+  h.textContent = emoji + " " + label;
+  h.style.left = rect.left + "px";
+  h.style.top  = rect.top + "px";
+  document.body.appendChild(h);
+  setTimeout(() => h.remove(), 1000);
+}
+
+function spawnBurst(elem) {
+  const rect = elem.getBoundingClientRect();
+  ["⭐","✨","💥","🌟"].forEach((e, i) => {
+    const s = document.createElement("div");
+    s.className = "star-burst";
+    s.textContent = e;
+    const angle = (i / 4) * Math.PI * 2;
+    const dist = 30 + Math.random() * 30;
+    s.style.left = (rect.left + Math.cos(angle) * dist) + "px";
+    s.style.top  = (rect.top + Math.sin(angle) * dist) + "px";
+    document.body.appendChild(s);
+    setTimeout(() => s.remove(), 700);
+  });
+}
+
+function cycleSneak() {
+  if (!gameRunning) return;
+  document.getElementById("sneakyMsg").textContent = sneakyMsgs[sneakyIdx % sneakyMsgs.length];
+  sneakyIdx++;
+  setTimeout(() => { if (gameRunning) cycleSneak(); }, 3500);
+}
+
+function endGame(result) {
+  gameRunning = false;
+  if (physicsRAF) cancelAnimationFrame(physicsRAF);
+  document.getElementById("balloonField").innerHTML = "";
+  balls = [];
+
+  if (result === "yes") {
+    showScreen("screen-yes-win");
+    launchConfetti();
+  } else if (result === "over") {
+    showScreen("screen-game-over");
+  } else {
+    showScreen("screen-no-win");
+  }
+}
+
+/* ══════════════════════════════════════════════
+   REPLAY BUTTONS
+══════════════════════════════════════════════ */
+document.getElementById("btn-replay-yes").addEventListener("click", () => {
+  showScreen("screen-intro");
+});
+document.getElementById("btn-retry-no").addEventListener("click", () => {
+  showScreen("screen-game");
+  startGame();
+});
+document.getElementById("btn-retry-gameover").addEventListener("click", () => {
+  showScreen("screen-game");
+  startGame();
+});
+
+/* ══════════════════════════════════════════════
+   CONFETTI
+══════════════════════════════════════════════ */
+function launchConfetti() {
+  const canvas = document.getElementById("confetti-canvas");
+  const ctx = canvas.getContext("2d");
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  const pieces = Array.from({length: 120}, () => ({
+    x: Math.random() * canvas.width,
+    y: -20 - Math.random() * 200,
+    r: 5 + Math.random() * 7,
+    color: ["#FF6B9D","#FFD93D","#4ECDC4","#C084FC","#6BCB77","#ff9f43"][Math.floor(Math.random()*6)],
+    vx: (Math.random() - 0.5) * 3,
+    vy: 2 + Math.random() * 3,
+    angle: Math.random() * 360,
+    spin: (Math.random() - 0.5) * 6,
+    shape: Math.random() > 0.5 ? "rect" : "circle",
+  }));
+
+  let frame = 0;
+  function draw() {
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    pieces.forEach(p => {
+      ctx.save();
+      ctx.translate(p.x, p.y);
+      ctx.rotate(p.angle * Math.PI / 180);
+      ctx.fillStyle = p.color;
+      ctx.globalAlpha = 0.9;
+      if (p.shape === "rect") ctx.fillRect(-p.r, -p.r/2, p.r*2, p.r);
+      else { ctx.beginPath(); ctx.arc(0,0,p.r,0,Math.PI*2); ctx.fill(); }
+      ctx.restore();
+      p.x += p.vx;
+      p.y += p.vy;
+      p.vy += 0.04;
+      p.angle += p.spin;
+    });
+    frame++;
+    if (frame < 220) requestAnimationFrame(draw);
+    else ctx.clearRect(0,0,canvas.width,canvas.height);
+  }
+  draw();
+}
+
+/* ══════════════════════════════════════════════
+   RESIZE
+══════════════════════════════════════════════ */
+window.addEventListener("resize", () => {
+  const c = document.getElementById("confetti-canvas");
+  c.width = window.innerWidth;
+  c.height = window.innerHeight;
+});
+</script>
+</body>
+</html>
