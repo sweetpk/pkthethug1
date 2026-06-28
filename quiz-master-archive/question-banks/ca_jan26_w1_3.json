@@ -1,0 +1,802 @@
+[
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Digital Banking",
+    "question": "Consider the following statements regarding the UPI-centric digital banking ecosystem introduced by Slice Small Finance Bank (Slice SFB):\n\n1. It offers a Digital Savings Account linked to 100% of the RBI's Repo rate.\n2. Its UPI Credit Card provides up to 5% cashback and no-cost EMI on purchases above Rs. 5,000.\n3. The digital Fixed Deposits (FDs) offer up to 7.25% per annum interest, insured up to Rs. 5 lakh by DICGC.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "C",
+    "rationale": "Statement 2 is incorrect because the UPI Credit Card provides up to 3% cashback (not 5%) and no-cost EMI on purchases above Rs. 2,000 (not Rs. 5,000). Statements 1 and 3 are correct. (Page 40)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "RBI Authorizations",
+    "question": "Match the following fintech/payment entities with the specific licenses or approvals they received in January 2026:\n\nColumn I:\n1. Skydo\n2. PayG\n3. Buyforex\n4. Paysharp\n\nColumn II:\nA. Payment Aggregator–Physical (PA-P) licence from RBI\nB. Final authorization as a Payment Aggregator-Cross Border (PA-CB) from RBI\nC. In-principle PSP approval at GIFT IFSC from IFSCA\nD. PA-P and PA-CB approvals from RBI\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-D, 3-C, 4-A",
+      "B": "1-A, 2-C, 3-D, 4-B",
+      "C": "1-D, 2-B, 3-A, 4-C",
+      "D": "1-B, 2-A, 3-C, 4-D",
+      "E": "1-C, 2-D, 3-A, 4-B"
+    },
+    "answer": "A",
+    "rationale": "Skydo received PA-CB (B); PayG received PA-P and PA-CB (D); Buyforex received in-principle PSP approval at GIFT IFSC (C); Paysharp received PA-P (A). (Pages 38-41)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Certifications",
+    "question": "Which entity became the first payments company in India, the Middle East, APAC, and South Africa to receive the ISO/IEC 42001 Certification for its responsible and trustworthy use of Artificial Intelligence (AI)?",
+    "options": {
+      "A": "Razorpay",
+      "B": "Pine Labs",
+      "C": "Financial Software and Systems (FSS)",
+      "D": "Innoviti Technologies",
+      "E": "TechFini"
+    },
+    "answer": "C",
+    "rationale": "Financial Software and Systems (FSS) became the first payments company across these regions to earn the ISO/IEC 42001 Certification for AI. (Page 37)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "New Product Launches",
+    "question": "Regarding the 'Zero-Forex Diamond Reserve Credit Card' launched by IDFC FIRST Bank, which of the following features is NOT correct?",
+    "options": {
+      "A": "It offers zero foreign exchange (Forex) markup.",
+      "B": "It provides domestic and international lounge access with Rs 20,000 monthly spend.",
+      "C": "It includes an airport meet-and-greet on USD 1,000 annual spend.",
+      "D": "It offers trip cancellation, lost baggage, and flight delay cover up to Rs 50,000.",
+      "E": "It provides Rs 1 crore air accident cover."
+    },
+    "answer": "D",
+    "rationale": "The travel insurance covers trip cancellation, lost baggage, and flight delay up to Rs 25,000, not Rs 50,000. All other features are correct. (Page 37)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Regional Rural Banks",
+    "question": "Which Regional Rural Bank (RRB) achieved a national milestone by becoming the first in India to introduce a fully solar-powered mobile ATM van named 'TGB on Wheels'?",
+    "options": {
+      "A": "Kerala Gramin Bank",
+      "B": "Tripura Gramin Bank",
+      "C": "Prathama UP Gramin Bank",
+      "D": "Baroda Rajasthan Kshetriya Gramin Bank",
+      "E": "Assam Gramin Vikash Bank"
+    },
+    "answer": "B",
+    "rationale": "Tripura Gramin Bank (TGB) became the 1st RRB in India to introduce a fully solar-powered mobile ATM van, 'TGB on Wheels', with the support of NABARD. (Page 38)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Committees",
+    "question": "The Insurance Regulatory and Development Authority of India (IRDAI) recently reconstituted its Reinsurance Advisory Committee (RAC) for a three-year tenure. Who has been appointed as the chairman of this committee?",
+    "options": {
+      "A": "Ajay Kumar Gupta",
+      "B": "M. S. Sahoo",
+      "C": "A.V. Girija Kumar",
+      "D": "K. Satyanarayana Raju",
+      "E": "Sandeep Bakshi"
+    },
+    "answer": "C",
+    "rationale": "A.V. Girija Kumar, former CMD of Oriental Insurance Company Limited, was appointed as the chairman of the reconstituted RAC by IRDAI. (Page 39)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "NBFC Operations",
+    "question": "Sagarmala Finance Corporation Limited (SMFCL), India’s first NBFC focused on maritime financing, commenced its operations and sanctioned loans totaling Rs 4,300 crore. Out of this, what amount has been allocated specifically for a Greenfield Port Project?",
+    "options": {
+      "A": "Rs 1,500 crore",
+      "B": "Rs 2,500 crore",
+      "C": "Rs 3,000 crore",
+      "D": "Rs 4,000 crore",
+      "E": "Rs 4,300 crore"
+    },
+    "answer": "D",
+    "rationale": "SMFCL has allocated Rs 4,000 crore for a Greenfield Port Project out of the total Rs 4,300 crore sanctioned. (Page 40)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Green Financing",
+    "question": "IREDA Global Green Energy Finance IFSC Limited (IGGEFIL) sanctioned its first international green energy loan of USD 22.5 million to Swarna Solar Limited. In which country is this 100 MW solar power project located?",
+    "options": {
+      "A": "Kenya",
+      "B": "Namibia",
+      "C": "Zambia",
+      "D": "Uganda",
+      "E": "Tanzania"
+    },
+    "answer": "C",
+    "rationale": "IGGEFIL sanctioned its first international loan to Swarna Solar Limited for developing a 100 MW solar project in Serenje District, Central Province of Zambia. (Page 40)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Infrastructure SPVs",
+    "question": "The Government of India and the Government of Tamil Nadu established a Special Purpose Vehicle (SPV) called National Shipbuilding & Heavy Industries Park (NSHIP). What is the stake-holding structure of this JV?",
+    "options": {
+      "A": "75% VOC Port and 25% SIPCOT",
+      "B": "60% VOC Port and 40% SIPCOT",
+      "C": "50% VOC Port and 50% SIPCOT",
+      "D": "40% VOC Port and 60% SIPCOT",
+      "E": "25% VOC Port and 75% SIPCOT"
+    },
+    "answer": "C",
+    "rationale": "The SPV is a Joint Venture (JV) between V.O. Chidambaranar Port Authority (VOC Port) and the State Industries Promotion Corporation of Tamil Nadu (SIPCOT), with each holding a 50% stake. (Page 26)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Critical Minerals",
+    "question": "To reduce India's heavy dependence on imports and strengthen the domestic steel supply chain, which carbon-rich resource was recently notified as a 'critical and strategic mineral' under the MMDR Act, 1957?",
+    "options": {
+      "A": "Lignite",
+      "B": "Coking Coal",
+      "C": "Anthracite",
+      "D": "Bitumen",
+      "E": "Petroleum Coke"
+    },
+    "answer": "B",
+    "rationale": "The Government of India notified 'Coking Coal' as a critical and strategic mineral under the MMDR Act, 1957. (Page 26)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Railways",
+    "question": "Indian Railways (IR) successfully completed a 100-metre-long 'Make in India' steel bridge for the bullet train project over an underground metro tunnel. In which district was this milestone achieved?",
+    "options": {
+      "A": "Surat",
+      "B": "Vadodara",
+      "C": "Ahmedabad",
+      "D": "Gandhinagar",
+      "E": "Rajkot"
+    },
+    "answer": "C",
+    "rationale": "The bridge was completed over the underground metro tunnel in Ahmedabad district (Gujarat) on the Kalupur-Shahpur stretch. (Page 26)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Swachh Bharat Mission",
+    "question": "Which city inaugurated its 3rd fresh waste processing facility to become the first city in its state to achieve 100% scientific processing of municipal solid waste under the Swachh Bharat Mission-Urban (SBM-U)?",
+    "options": {
+      "A": "Indore",
+      "B": "Lucknow",
+      "C": "Surat",
+      "D": "Pune",
+      "E": "Bhopal"
+    },
+    "answer": "B",
+    "rationale": "Lucknow, the capital of UP, inaugurated the facility at Shivari Solid Waste Management Plant, becoming UP's first 'Zero Fresh Waste Dump' city. (Page 24)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Republic Day",
+    "question": "During India's 77th Republic Day celebrations, the theme was \"150 Years of Vande Mataram\". Who composed a special musical piece for the parade to mark this anniversary?",
+    "options": {
+      "A": "A.R. Rahman",
+      "B": "Ilaiyaraaja",
+      "C": "M.M. Keeravani",
+      "D": "Amit Trivedi",
+      "E": "Shankar Mahadevan"
+    },
+    "answer": "C",
+    "rationale": "Oscar-winning composer M.M. Keeravani composed a special musical piece for the Republic Day Parade 2026, marking the 150th anniversary of Vande Mataram. (Page 25)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Fisheries & Ports",
+    "question": "Under the Pradhan Mantri Matsya Sampada Yojana (PMMSY), the Department of Fisheries approved the development of a Smart and Integrated Fishing Harbour with a total outlay of Rs 199.24 crore. Where will this be located?",
+    "options": {
+      "A": "Visakhapatnam, Andhra Pradesh",
+      "B": "Kochi, Kerala",
+      "C": "Thoothukudi, Tamil Nadu",
+      "D": "Mayabunder, Andaman & Nicobar Islands",
+      "E": "Porbandar, Gujarat"
+    },
+    "answer": "D",
+    "rationale": "The harbour will be developed at Mayabunder, A&N Island, with 100% Central Financial Assistance under the PMMSY. (Page 25)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Environment Rules",
+    "question": "Consider the following regarding the newly notified Solid Waste Management Rules, 2026:\n\n1. It supersedes the Solid Waste Management Rules, 2016.\n2. It mandates four-stream source segregation: wet, dry, sanitary, and special care.\n3. Mandatory Refuse Derived Fuel (RDF) use by cement and waste-to-energy plants will rise from 5% to 25% over six years.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statement 3 is incorrect because the mandatory RDF use will rise from 5% to 15% (not 25%) over six years. Statements 1 and 2 are correct. (Page 25)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Reports & Indices",
+    "sub_category": "Environment Reports",
+    "question": "Which organisation released the 4th edition of the report titled 'State of Finances for Nature: Nature in the Red - Powering the Trillion Dollar Nature Transition Economy'?",
+    "options": {
+      "A": "World Economic Forum (WEF)",
+      "B": "United Nations Environment Programme (UNEP)",
+      "C": "International Union for Conservation of Nature (IUCN)",
+      "D": "World Wildlife Fund (WWF)",
+      "E": "Global Environment Facility (GEF)"
+    },
+    "answer": "B",
+    "rationale": "The United Nations Environment Programme (UNEP) released the 4th edition of the report, introducing the Nature Transition X-Curve. (Page 74)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Agriculture Statistics",
+    "question": "According to data from the Ministry of Fisheries, Animal Husbandry and Dairying (MoFAHD), India’s fish production reached 197.75 lakh tonnes in FY 2024-25. India currently ranks as the _____ largest producer in capture fisheries globally.",
+    "options": {
+      "A": "First",
+      "B": "Second",
+      "C": "Third",
+      "D": "Fourth",
+      "E": "Fifth"
+    },
+    "answer": "B",
+    "rationale": "India is the world's second-largest fish producer, ranks second in aquaculture, leads in shrimp production, and is the second-largest producer in capture fisheries. (Page 74)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Agriculture Statistics",
+    "question": "Data released by the Ministry of Agriculture and Farmers Welfare in January 2026 shows that the total area sown under Rabi crops has increased by 2.8%. What is the new total area coverage recorded?",
+    "options": {
+      "A": "62.60 Million Hectares",
+      "B": "63.78 Million Hectares",
+      "C": "64.42 Million Hectares",
+      "D": "65.50 Million Hectares",
+      "E": "68.00 Million Hectares"
+    },
+    "answer": "C",
+    "rationale": "The total area sown under rabi crops increased by 2.8% to 64.42 Million hectares (Mn ha), compared to 62.6 Mn ha last year. (Page 74)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Indices & Reports",
+    "sub_category": "e-Governance",
+    "question": "The 32nd edition of the NeSDA Way Forward Monthly Report (December 2025) highlighted that out of 24,090 e-services across States and UTs, the largest share belonged to which sector?",
+    "options": {
+      "A": "Education & Learning",
+      "B": "Health & Wellness",
+      "C": "Finance & Revenue",
+      "D": "Local Governance & Utility Services",
+      "E": "Agriculture & Rural Development"
+    },
+    "answer": "D",
+    "rationale": "The largest share of 8,656 services belongs to the Local Governance & Utility Services sector. (Pages 74-75)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Acquisitions & Mergers",
+    "question": "In January 2026, the Competition Commission of India (CCI) approved the acquisition of up to 74% shareholding in RBL Bank Limited by which of the following banks?",
+    "options": {
+      "A": "Doha Bank",
+      "B": "Qatar National Bank",
+      "C": "Emirates NBD Bank",
+      "D": "First Abu Dhabi Bank",
+      "E": "Mashreq Bank"
+    },
+    "answer": "C",
+    "rationale": "The CCI approved the acquisition of up to 74% shareholding in RBL Bank Limited by Emirates NBD Bank (P.J.S.C.). (Page 75)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Defence",
+    "sub_category": "Exercises",
+    "question": "Consider the following statements about the exercise 'Sanjha Shakti':\n\n1. It was a joint Military–Civil Fusion (MCF) exercise.\n2. It was conducted by the Indian Army in Pune, Maharashtra.\n3. The exercise was held under the aegis of the Eastern Command.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statement 3 is incorrect because the exercise was held under the aegis of the Maharashtra, Gujarat, and Goa (MG & G) area of the Southern Command, not Eastern Command. Statements 1 and 2 are correct. (Page 75)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Defence",
+    "sub_category": "Exercises",
+    "question": "The 17th edition of the biennial trilateral Coast Guard exercise 'DOSTI 17' took place in Male, Maldives. Which three nations' coast guards participated in this exercise?",
+    "options": {
+      "A": "India, Seychelles, Maldives",
+      "B": "India, Sri Lanka, Maldives",
+      "C": "India, Mauritius, Sri Lanka",
+      "D": "India, Bangladesh, Maldives",
+      "E": "India, Indonesia, Maldives"
+    },
+    "answer": "B",
+    "rationale": "DOSTI 17 involved the Indian Coast Guard (ICG), Sri Lanka Coast Guard (SLCG), and the Maldives National Defence Force (MNDF) Coast Guard. (Page 75)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Defence Tech",
+    "question": "The Defence Laboratory Jodhpur (DLJ) developed a portable water purification system named 'SWaDeS' for soldiers in remote areas. What does SWaDeS stand for?",
+    "options": {
+      "A": "Soldier Water Delivery System",
+      "B": "Safe Water Desalination System",
+      "C": "SeaWater Desalination System",
+      "D": "Surface Water Decontamination System",
+      "E": "Sustainable Water Delivery Solution"
+    },
+    "answer": "C",
+    "rationale": "SWaDeS stands for SeaWater Desalination System. It features a CBRN purification module. (Page 80)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Research",
+    "question": "Scientists from which institute developed the first-ever supercomputer-powered simulation to model the Mpemba effect (where hot water freezes faster than cold water)?",
+    "options": {
+      "A": "Indian Institute of Science (IISc), Bengaluru",
+      "B": "Jawaharlal Nehru Centre for Advanced Scientific Research (JNCASR), Bengaluru",
+      "C": "Tata Institute of Fundamental Research (TIFR), Mumbai",
+      "D": "Indian Institute of Technology (IIT), Madras",
+      "E": "Council of Scientific and Industrial Research (CSIR), New Delhi"
+    },
+    "answer": "B",
+    "rationale": "Scientists from JNCASR in Bengaluru developed the first-ever supercomputer-powered simulation to model the Mpemba effect. (Pages 80-81)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space Missions",
+    "question": "Consider the following statements regarding the ISRO's PSLV-C62 mission:\n\n1. It experienced a critical anomaly during the end of its 3rd stage (PS3) of flight.\n2. The primary payload was 'Earth Observation Satellite – National 1 (EOS-N1)', known as Anvesha.\n3. The launch took place from the First Launch Pad at the Satish Dhawan Space Centre in Sriharikota.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 2"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. The PSLV-C62 faced an anomaly in its 3rd stage while carrying EOS-N1 (Anvesha) and 15 co-passenger satellites from Sriharikota. (Page 81)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Defence Test",
+    "question": "DRDO successfully conducted a long-duration ground test of a full-scale, actively cooled scramjet engine. For how long did the combustor operate during this test?",
+    "options": {
+      "A": "Over 5 minutes",
+      "B": "Over 8 minutes",
+      "C": "Over 10 minutes",
+      "D": "Over 12 minutes",
+      "E": "Over 15 minutes"
+    },
+    "answer": "D",
+    "rationale": "The combustor operated for over 12 minutes, validating sustained supersonic combustion. (Page 81)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space Partnerships",
+    "question": "Which space tech startup led the 'Allied Orbits' consortium to sign an agreement with IN-SPACe to build India’s first privately-led national Earth Observation (EO) satellite constellation?",
+    "options": {
+      "A": "Skyroot Aerospace",
+      "B": "Agnikul Cosmos",
+      "C": "Pixxel Space India",
+      "D": "Dhruva Space",
+      "E": "Bellatrix Aerospace"
+    },
+    "answer": "C",
+    "rationale": "The Allied Orbits consortium, led by Pixxel Space India, signed the agreement under the EO-PPP programme. (Page 81)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Chess",
+    "question": "Match the following chess grandmasters with the titles they won at the 2025 World Rapid and Blitz Chess Championships in Qatar:\n\nColumn I:\n1. Magnus Carlsen\n2. Aleksandra Goryachkina\n3. Bibisara Assaubayeva\n\nColumn II:\nA. FIDE Women’s World Rapid Championship\nB. FIDE Women’s World Blitz Championship\nC. Open World Rapid & Open World Blitz Championships\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Magnus Carlsen won both Open Rapid & Blitz (C); Aleksandra Goryachkina won Women's Rapid (A); Bibisara Assaubayeva won Women's Blitz (B). (Page 83)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Volleyball",
+    "question": "For the 72nd Senior National Volleyball Championship inaugurated by PM Modi in Varanasi, organizers unveiled two mascots representing strength and environmental awareness. What are their names?",
+    "options": {
+      "A": "Shera and Dharti",
+      "B": "Nandu and Neera",
+      "C": "Bholu and Ganga",
+      "D": "Veer and Jal",
+      "E": "Nandi and Dolphin"
+    },
+    "answer": "B",
+    "rationale": "The mascots are 'Nandu' (Nandi bull for strength) and 'Neera' (Ganga River Dolphin for environmental awareness). (Page 84)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "January Observances",
+    "question": "National Siddha Day is observed annually to commemorate the birth anniversary of Sage Agathiyar. The 2026 observance marked the 9th edition and was held under which theme?",
+    "options": {
+      "A": "Siddha for Immunity and Wellness",
+      "B": "Integrating Siddha with Modern Medicine",
+      "C": "Siddha for Global Health",
+      "D": "Traditional Healing and Siddha",
+      "E": "Siddha for Maternal and Child Care"
+    },
+    "answer": "C",
+    "rationale": "The 2026 Theme was “Siddha for Global Health”. It falls on January 6, 2026, coinciding with the Ayilyam star in Margazhi. (Page 89)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "January Observances",
+    "question": "Regarding Pravasi Bharatiya Divas (PBD) 2025, which of the following statements is NOT correct?",
+    "options": {
+      "A": "It is also known as Non-Resident Indian (NRI) Day.",
+      "B": "It is observed biennially across India on January 9.",
+      "C": "The 18th PBD Convention was held in Bhubaneswar, Odisha.",
+      "D": "The theme for the 18th convention was \"Diaspora's Contribution to a Viksit Bharat\".",
+      "E": "The 19th PBD Convention is scheduled to be held in 2026."
+    },
+    "answer": "E",
+    "rationale": "The 19th PBD Convention will be held in 2027, as it is a biennial event and the 18th was in 2025. (Page 90)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Awards & Honours",
+    "sub_category": "Engineering",
+    "question": "Who was awarded the 2026 IEEE Medal of Honor, the highest recognition from the Institute of Electrical and Electronics Engineers, receiving a USD 2 million cash prize?",
+    "options": {
+      "A": "Satya Nadella",
+      "B": "Sundar Pichai",
+      "C": "Jensen Huang",
+      "D": "Elon Musk",
+      "E": "Tim Cook"
+    },
+    "answer": "C",
+    "rationale": "Jensen Huang, CEO of NVIDIA, was awarded the 2026 IEEE Medal of Honor. (Page 58)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Awards & Honours",
+    "sub_category": "CPSE Ratings",
+    "question": "Which 'Navratna' Central Public Enterprise (CPSE) working under the Ministry of Railways was awarded an 'Excellent' rating by the Department of Public Enterprises for the 5th consecutive year?",
+    "options": {
+      "A": "Rail Vikas Nigam Limited (RVNL)",
+      "B": "Ircon International Limited (IRCON)",
+      "C": "Indian Railways Finance Corporation (IRFC)",
+      "D": "RailTel Corporation of India",
+      "E": "RITES Limited"
+    },
+    "answer": "C",
+    "rationale": "Indian Railways Finance Corporation (IRFC) was awarded the 'Excellent' rating for the 5th consecutive year since its listing in FY21. (Pages 57-58)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Awards & Honours",
+    "sub_category": "UN Awards",
+    "question": "Indian Army officer Major Swathi Shantha Kumar received the UN Secretary-General's Award 2025 in the Gender Category. What was the name of her project recognized for this award?",
+    "options": {
+      "A": "Women for Lasting Peace",
+      "B": "Equal Partners, Lasting Peace",
+      "C": "Gender Parity in Conflict Zones",
+      "D": "Empowerment through Engagement",
+      "E": "UNMISS Gender Initiative"
+    },
+    "answer": "B",
+    "rationale": "She received the award for her project 'Equal Partners, Lasting Peace' while serving with UNMISS in South Sudan. (Page 59)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Awards & Honours",
+    "sub_category": "Environment Awards",
+    "question": "The 2026 Tyler Prize for Environmental Achievement, often called the 'Nobel for the Environment', was awarded to Dr. Toby Kiers for her groundbreaking research on what subject?",
+    "options": {
+      "A": "Ocean acidification resilience",
+      "B": "Mycorrhizal fungal networks in carbon cycling",
+      "C": "Genetic modification of drought-resistant crops",
+      "D": "Methane reduction in livestock",
+      "E": "Glacial melt tracking in Antarctica"
+    },
+    "answer": "B",
+    "rationale": "Dr. Toby Kiers won the award for revealing the role of mycorrhizal fungal networks in carbon cycling and nutrient exchange. (Page 60)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Awards & Honours",
+    "sub_category": "Research Prizes",
+    "question": "Who became the first and only Indian to receive the Wiley Research Heroes Prize 2025 in the \"Impact Beyond Academia\" category?",
+    "options": {
+      "A": "Dr. Randeep Guleria",
+      "B": "Dr. Soumya Swaminathan",
+      "C": "Dr. Chandrakant Lahariya",
+      "D": "Dr. V.K. Paul",
+      "E": "Dr. Gagandeep Kang"
+    },
+    "answer": "C",
+    "rationale": "Dr. Chandrakant Lahariya, former WHO staff member, won the Wiley Research Heroes Prize 2025. (Page 60)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Summits & Conferences",
+    "sub_category": "Parliamentary Meetings",
+    "question": "Arrange the following conferences/summits in the chronological order they were held in January 2026:\n\n1. 28th Conference of Speakers and Presiding Officers of the Commonwealth (CSPOC)\n2. 86th All India Presiding Officers’ Conference (AIPOC)\n3. Vibrant Gujarat Regional Conference\n\nSelect the correct answer:",
+    "options": {
+      "A": "1, 3, 2",
+      "B": "3, 1, 2",
+      "C": "3, 2, 1",
+      "D": "2, 3, 1",
+      "E": "1, 2, 3"
+    },
+    "answer": "B",
+    "rationale": "Vibrant Gujarat: Jan 11-15 (3). CSPOC: Jan 14-16 (1). AIPOC: Jan 19-21 (2). Chronological order is 3, 1, 2. (Pages 65-66)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Summits & Conferences",
+    "sub_category": "Election Management",
+    "question": "During the inaugural India International Conference on Democracy and Election Management (IICDEM 2026) hosted by the Election Commission of India, an MoU on election management was signed with which country?",
+    "options": {
+      "A": "South Africa",
+      "B": "Brazil",
+      "C": "Namibia",
+      "D": "Kenya",
+      "E": "Nigeria"
+    },
+    "answer": "C",
+    "rationale": "India and Namibia signed an MoU on election management on the sidelines of IICDEM 2026. (Page 66)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "New Species",
+    "question": "A new species of subterranean amphibian named 'Gegeneophis valmiki' was discovered by scientists from the Zoological Survey of India (ZSI). In which mountain range was this discovery made?",
+    "options": {
+      "A": "Eastern Ghats",
+      "B": "Aravalli Range",
+      "C": "Vindhya Range",
+      "D": "Northern Western Ghats",
+      "E": "Satpura Range"
+    },
+    "answer": "D",
+    "rationale": "The rare Caecilian species Gegeneophis valmiki was discovered in the northern Western Ghats of Maharashtra. (Page 95)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Indices & Reports",
+    "sub_category": "Global Risk Report",
+    "question": "Consider the following regarding the 21st Edition of the Global Risks Report 2026 released by the WEF:\n\n1. The top global risks include geoeconomic confrontation and extreme weather.\n2. Extreme weather is ranked as the most severe long-term (10-year) risk.\n3. The report notes that extreme weather has risen to 1st place in the two-year outlook.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statement 3 is incorrect because extreme weather has actually dropped from 2nd place to 4th place in the two-year outlook. Statements 1 and 2 are correct. (Page 73)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "MoUs & Agreements",
+    "question": "Match the following entities with the Memorandums of Understanding (MoUs) they signed in January 2026:\n\nColumn I:\n1. Wikimedia Foundation\n2. Department of Posts\n3. BSNL\n4. Coromandel International Limited\n\nColumn II:\nA. Viasat, Inc. for SatCom upgrade\nB. IIT Madras for a Corporate Research Centre\nC. Amazon, Meta, Microsoft for AI training access\nD. Stock Holding Services Limited for capital market services\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-D, 3-A, 4-B",
+      "B": "1-B, 2-C, 3-D, 4-A",
+      "C": "1-C, 2-A, 3-D, 4-B",
+      "D": "1-D, 2-B, 3-A, 4-C",
+      "E": "1-A, 2-C, 3-B, 4-D"
+    },
+    "answer": "A",
+    "rationale": "Wikimedia signed with Amazon/Meta (C); DoP with Stock Holding Services (D); BSNL with Viasat (A); Coromandel with IIT Madras (B). (Pages 49-51)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Apps & Web Portals",
+    "sub_category": "Government Launches",
+    "question": "What is the primary purpose of the 'PANKHUDI' digital portal launched by the Ministry of Women and Child Development (MoWCD)?",
+    "options": {
+      "A": "To track real-time attendance in Anganwadis.",
+      "B": "To facilitate integrated CSR and partnerships with a unified digital workflow.",
+      "C": "To provide telemedicine services to rural pregnant women.",
+      "D": "To monitor the disbursement of PM Matru Vandana Yojana funds.",
+      "E": "To train Anganwadi workers in digital literacy."
+    },
+    "answer": "B",
+    "rationale": "PANKHUDI is an integrated CSR and partnership facilitation digital portal that provides a unified digital workflow to improve coordination and ensure transparency through non-cash contributions. (Pages 93-94)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Apps & Web Portals",
+    "sub_category": "Pension Management",
+    "question": "The Office of Controller General of Communication Accounts (CGCA) linked its pension management system to the UMANG platform to benefit DoT pensioners. What is the acronym of this pension management system?",
+    "options": {
+      "A": "SPARSH",
+      "B": "SAMPANN",
+      "C": "PENSION-NET",
+      "D": "SUVIDHA",
+      "E": "SAMADHAN"
+    },
+    "answer": "B",
+    "rationale": "The system is SAMPANN (System for Administering Multi-purpose Pension Accounts and New Norms). (Page 94)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space Exploration",
+    "question": "Which unique celestial object, described as a 'starless, gas-rich, dark-matter cloud', was recently discovered by NASA’s Hubble Telescope and is also referred to as a Reionization-Limited HI Cloud (RELHIC)?",
+    "options": {
+      "A": "Nebula-7",
+      "B": "Void-X",
+      "C": "Cloud-9",
+      "D": "Phantom-1",
+      "E": "Dark-Halo"
+    },
+    "answer": "C",
+    "rationale": "NASA's Hubble Telescope discovered 'Cloud-9', which is also called a RELHIC. (Pages 81-82)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Defence Collaborations",
+    "question": "Consider the following statements about the Indian Army's collaboration with Tata Advanced Systems Limited (TASL):\n\n1. The IA granted a supply order to TASL for the overhaul of Pinaka Multiple Launch Rocket Systems (MLRS).\n2. The pilot overhaul will be jointly carried out by TASL and the IA's 510 Advance Base Workshop (ABW) in Meerut.\n3. The project marks a public-private partnership in defence sustainment.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All statements accurately describe the collaboration where TASL and the 510 ABW will perform a pilot overhaul of Pinaka MLRS and BCPs. (Page 78)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Defence Logistics",
+    "question": "The Indian Army launched a new digital platform to modernize logistics management by delivering end-to-end real-time visibility. What is the name of this platform?",
+    "options": {
+      "A": "PRAGATI",
+      "B": "DIME",
+      "C": "SAMARTH",
+      "D": "LOGIS",
+      "E": "VAYU"
+    },
+    "answer": "B",
+    "rationale": "The Indian Army launched 'Depot Integration Management Edition (DIME)' to transform logistics management. (Page 79)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Trade Analytics",
+    "question": "The 'Trade Watch Quarterly' (TWQ) report released by NITI Aayog for Q1 FY26 highlighted that global trade in goods and services increased by what percentage on a quarterly basis, driven by developing economies?",
+    "options": {
+      "A": "1.5%",
+      "B": "2.5%",
+      "C": "3.5%",
+      "D": "4.2%",
+      "E": "5.0%"
+    },
+    "answer": "B",
+    "rationale": "The report noted that global trade in goods and services increased around 2.5% on a quarterly basis during Q1FY26. (Page 71)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "Indices & Reports",
+    "sub_category": "Circular Economy",
+    "question": "In a report on the Circular Economy of End of Life Vehicles (ELVs) in India, NITI Aayog projected that the number of ELVs will nearly double from 23 million in 2025 to about ___ million by 2030.",
+    "options": {
+      "A": "35",
+      "B": "40",
+      "C": "50",
+      "D": "60",
+      "E": "75"
+    },
+    "answer": "C",
+    "rationale": "The report projected ELVs to nearly double to about 50 million by 2030. (Page 73)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Defence UAVs",
+    "question": "The Indian Army placed an order for solar-powered Medium Altitude Persistent Surveillance System (MAPSS) UAVs. Which company received this Rs 168 crore order?",
+    "options": {
+      "A": "Bharat Electronics Limited",
+      "B": "NewSpace Research & Technologies (NRT)",
+      "C": "Adani Defence & Aerospace",
+      "D": "Tata Advanced Systems",
+      "E": "IdeaForge"
+    },
+    "answer": "B",
+    "rationale": "The IA placed a Rs 168 crore order with NewSpace Research & Technologies (NRT) for solar-powered MAPSS UAVs. (Page 79)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Indian Navy",
+    "question": "Which oceanographic research vessel was flagged off from the Southern Naval Command in Kochi for the fifth edition of the Sagar Maitri (SM-5) initiative?",
+    "options": {
+      "A": "INS Sandhayak",
+      "B": "INS Nirdeshak",
+      "C": "INS Sagardhwani",
+      "D": "INS Darshak",
+      "E": "INS Investigator"
+    },
+    "answer": "C",
+    "rationale": "INS Sagardhwani, operated by NPOL under DRDO, was flagged off for the SM-5 initiative. (Page 79)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF January - 2026"
+  }
+]

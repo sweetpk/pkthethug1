@@ -1767,11 +1767,10 @@ input[type="range"]::-webkit-slider-thumb {
 // STATE
 // ============================================================
 const STATE = {
-  allQuestions: [],       // merged questions currently relevant to the active selection (NOT all banks anymore)
+  allQuestions: [],       // all loaded questions
   availableMonths: [],    // detected months from file names
-  uploadedFiles: {},      // { filename: [questions] } — full content, used only for the Upload flow
-  bankFiles: {},          // { filename: { count, categories, sub_categories, tags } } — LIGHTWEIGHT metadata from manifest.json, no question content
-  bankContentCache: {},   // { filename: [questions] } — full content, fetched lazily on demand and cached here so repeat selections don't re-fetch
+  uploadedFiles: {},      // { filename: [questions] }
+  bankFiles: {},          // auto-loaded from question-banks/
   
   // Setup
   selectedMonths: new Set(),
@@ -1993,75 +1992,43 @@ function getTagType(tag = '') {
 // ============================================================
 // File list is now driven by question-banks/manifest.json — no hardcoded names needed.
 
-// ============================================================
-// AUTO-DETECT QUESTION BANKS (LAZY)
-// ============================================================
-// File list + metadata now comes entirely from question-banks/manifest.json.
-// manifest.json must contain an array of objects like:
-//   { "file": "ca_oct25_1.json", "count": 47, "categories": [...], "sub_categories": [...], "tags": [...] }
-// Generate/refresh it by running build-manifest.js (see that file for instructions)
-// any time you add, remove, or edit files in question-banks/.
-//
-// IMPORTANT: this function NO LONGER fetches the actual bank files. It only
-// reads the manifest. Actual question content for a given file is fetched
-// later, lazily, by loadBankFileContent() — only for files that are actually
-// needed (selected/filtered), and only once (cached in STATE.bankContentCache).
-
-async function autoDetectBanks() {
-  const results = {};
-  try {
-    const resp = await fetch('question-banks/manifest.json');
-    if (!resp.ok) return results;
-    const parsed = await resp.json();
-    if (!Array.isArray(parsed)) return results;
-
-    for (const entry of parsed) {
-      // Support both the new rich format and a plain filename-list fallback,
-      // in case someone hand-edits manifest.json back to the old style.
-      if (typeof entry === 'string') {
-        results[entry] = { count: null, categories: [], sub_categories: [], tags: [] };
-      } else if (entry && entry.file) {
-        results[entry.file] = {
-          count: typeof entry.count === 'number' ? entry.count : null,
-          categories: entry.categories || [],
-          sub_categories: entry.sub_categories || [],
-          tags: entry.tags || [],
-        };
-      }
-    }
-  } catch { /* no manifest found */ }
-  return results;
-}
-
-// Fetch the full question content of a single bank file, using the cache
-// if we've already fetched it this session. This is the ONLY place actual
-// bank question JSON gets downloaded for the auto-loaded (non-upload) flow.
-async function loadBankFileContent(filename) {
-  if (STATE.bankContentCache[filename]) return STATE.bankContentCache[filename];
+async function tryLoadBankFile(filename) {
   try {
     const resp = await fetch(`question-banks/${filename}`);
     if (!resp.ok) return null;
     const data = await resp.json();
     if (!Array.isArray(data) || data.length === 0) return null;
-    STATE.bankContentCache[filename] = data;
     return data;
-  } catch {
-    return null;
-  }
+  } catch { return null; }
 }
 
-// Fetch full content for a list of filenames in parallel, skipping any
-// already cached. Returns { filename: [questions] } for the requested files.
-async function loadBankFilesContent(filenames) {
-  const toFetch = filenames.filter(f => !STATE.bankContentCache[f]);
-  if (toFetch.length > 0) {
-    await Promise.allSettled(toFetch.map(loadBankFileContent));
+async function autoDetectBanks() {
+  const results = {};
+
+  // Fetch manifest.json for the list of files
+  let filelist = [];
+  try {
+    const resp = await fetch('question-banks/manifest.json');
+    if (resp.ok) {
+      const parsed = await resp.json();
+      if (Array.isArray(parsed)) filelist = parsed;
+    }
+  } catch { /* no manifest found */ }
+
+  if (filelist.length === 0) return results;
+
+  const attempts = await Promise.allSettled(
+    filelist.map(async f => {
+      const data = await tryLoadBankFile(f);
+      return { file: f, data };
+    })
+  );
+  for (const r of attempts) {
+    if (r.status === 'fulfilled' && r.value.data) {
+      results[r.value.file] = r.value.data;
+    }
   }
-  const out = {};
-  for (const f of filenames) {
-    if (STATE.bankContentCache[f]) out[f] = STATE.bankContentCache[f];
-  }
-  return out;
+  return results;
 }
 
 // ============================================================
@@ -2073,8 +2040,7 @@ async function init() {
   // Load history
   STATE.history = JSON.parse(localStorage.getItem('qm_history') || '[]');
 
-  // Reads manifest.json ONLY — no bank file content is fetched here.
-  // This is what keeps startup fast no matter how many banks/questions exist.
+  // Try auto-detect
   const bankFiles = await autoDetectBanks();
   STATE.bankFiles = bankFiles;
   
@@ -2088,26 +2054,19 @@ async function init() {
   buildCategoryChips();
   refreshHomeStats();
   renderHistory();
-  updateStartButton(); // does NOT trigger a fetch — see note in that function
+  updateStartButton();
   setupEventListeners();
 }
 
-// Merges currently-available FULL question content into STATE.allQuestions.
-// - Upload mode: uploaded files are already fully in memory (user explicitly
-//   chose them by uploading), so they're merged as before.
-// - Auto-loaded bank mode: only files already sitting in bankContentCache
-//   (i.e. already lazily fetched because they were needed) get merged.
-//   Files not yet fetched simply aren't included yet — that's intentional,
-//   filterable, and resolved by ensureQuestionsLoaded() before anything
-//   that actually needs real question counts/content (see below).
 function mergeAllQuestions() {
   const all = [];
   const seen = new Set();
 
+  // If uploads exist, only use uploaded files
   const hasUploads = Object.keys(STATE.uploadedFiles).length > 0;
   const filesToUse = hasUploads
     ? STATE.uploadedFiles
-    : STATE.bankContentCache;
+    : STATE.bankFiles;
 
   function addQuestions(questions, sourceName) {
     const month = extractMonthFromFilename(sourceName);
@@ -2133,91 +2092,6 @@ function mergeAllQuestions() {
   
   STATE.allQuestions = all;
   STATE.useUploadedOnly = hasUploads;
-}
-
-// Figures out which bank filenames are relevant to the CURRENT filter
-// selection (source/month/week/file-picker), using only manifest metadata
-// (no fetching). This mirrors the same narrowing logic used by
-// getFilteredQuestions(), just applied to filenames instead of questions.
-function getRelevantBankFilenames() {
-  const allFnames = Object.keys(STATE.bankFiles);
-
-  // File picker bypasses everything else
-  if (STATE.selectedFiles.size > 0) {
-    return allFnames.filter(f => STATE.selectedFiles.has(f));
-  }
-
-  let fnames = allFnames;
-
-  // Source filter
-  if (!STATE.selectedSources.has('ALL') && STATE.selectedSources.size > 0) {
-    fnames = fnames.filter(f => STATE.selectedSources.has(extractSourcePrefix(f)));
-  }
-
-  // Month / monthless filter
-  const hasMonthSel = STATE.selectedMonths.size > 0;
-  const hasMonthlessSel = STATE.selectedMonthlessFiles.size > 0;
-  if (hasMonthSel || hasMonthlessSel) {
-    fnames = fnames.filter(f => {
-      const month = extractMonthFromFilename(f);
-      if (month) return hasMonthSel ? STATE.selectedMonths.has(month) : true;
-      return hasMonthlessSel ? STATE.selectedMonthlessFiles.has(f) : true;
-    });
-  }
-
-  // Week filter
-  if (STATE.selectedWeek !== 'ALL') {
-    fnames = fnames.filter(f => {
-      const week = extractWeekFromFilename(f);
-      return week === null || week === STATE.selectedWeek;
-    });
-  }
-
-  return fnames;
-}
-
-// True once the user has narrowed down enough that loading the relevant
-// files is a small, scoped fetch — not "basically everything". Used to
-// avoid silently downloading every bank file just because the page loaded
-// with the default "All Sources" selection still in place.
-function hasNarrowedSelection() {
-  if (STATE.selectedFiles.size > 0) return true;
-  if (STATE.selectedMonths.size > 0) return true;
-  if (STATE.selectedMonthlessFiles.size > 0) return true;
-  if (!STATE.selectedSources.has('ALL')) return true;
-  if (STATE.selectedWeek !== 'ALL') return true;
-  return false;
-}
-
-// Ensures full question content is loaded (fetched + merged into
-// STATE.allQuestions) for every bank file relevant to the current filter
-// selection. This is the bridge between "lazy by default" and "the user
-// actually needs real questions now" — called right before building a
-// quiz, and before computing a live filtered count. Already-cached files
-// are free (no re-fetch); only newly-relevant files cause network calls.
-// No-op entirely when in upload mode, since uploads are already in memory.
-// Also a no-op while the selection is still the broad default (no source,
-// month, week, or file narrowed down) — with thousands of questions across
-// many banks, "All Sources" with nothing else picked should NOT silently
-// fetch every file; the user needs to narrow down first (the UI prompts
-// for this — see updateStartButton/updateFiltersAndUI).
-async function ensureRelevantBankFilesLoaded() {
-  if (STATE.useUploadedOnly) return;
-  if (!hasNarrowedSelection()) return;
-  const needed = getRelevantBankFilenames();
-  const notCached = needed.filter(f => !STATE.bankContentCache[f]);
-  if (notCached.length > 0) {
-    await loadBankFilesContent(notCached);
-  }
-  mergeAllQuestions();
-}
-
-// Returns the question count for a file regardless of mode:
-// - Upload mode: entry is a full array of questions → use .length
-// - Bank mode: entry is lightweight manifest metadata → use .count
-function fileEntryCount(entry) {
-  if (Array.isArray(entry)) return entry.length;
-  return (entry && typeof entry.count === 'number') ? entry.count : 0;
 }
 
 // ============================================================
@@ -2252,13 +2126,12 @@ function buildMonthGrid() {
 
   for (const [fname, qs] of sourceFiles) {
     const month = extractMonthFromFilename(fname);
-    const count = fileEntryCount(qs);
     if (month) {
       if (!monthMap[month]) monthMap[month] = 0;
-      monthMap[month] += count;
+      monthMap[month] += qs.length;
     } else {
       const identifier = extractMonthlessIdentifier(fname);
-      monthlessFiles.push({ fname, identifier, count });
+      monthlessFiles.push({ fname, identifier, count: qs.length });
     }
   }
 
@@ -2500,7 +2373,7 @@ function buildFilePickerDropdown() {
     const qs = allFiles[fname];
     const sel = STATE.selectedFiles.has(fname);
     const tags = [
-      fileEntryCount(qs) + 'Q',
+      qs.length + 'Q',
       month ? prettyMonth(month) : null,
       week ? 'W' + week.slice(1) : null,
     ].filter(Boolean);
@@ -2556,43 +2429,34 @@ function clearFilePicker() {
 // CATEGORY CHIPS
 // ============================================================
 function buildCategoryChips() {
-  const cats = new Set();
-  const subcats = new Set();
-
-  if (STATE.useUploadedOnly) {
-    // Upload mode: full question content is already in memory, scan it directly.
-    let base;
-    if (STATE.selectedFiles.size > 0) {
-      base = STATE.allQuestions.filter(q => STATE.selectedFiles.has(q._source));
-    } else {
-      base = getFilteredBySource();
-      const hasMonthSel = STATE.selectedMonths.size > 0;
-      const hasMonthlessSel = STATE.selectedMonthlessFiles.size > 0;
-      if (hasMonthSel || hasMonthlessSel) {
-        base = base.filter(q => {
-          if (q._month) return hasMonthSel ? STATE.selectedMonths.has(q._month) : true;
-          else return hasMonthlessSel ? STATE.selectedMonthlessFiles.has(q._source) : true;
-        });
-      }
-      if (STATE.selectedWeek !== 'ALL') {
-        base = base.filter(q => q._week === null || q._week === STATE.selectedWeek);
-      }
-    }
-    base.forEach(q => {
-      if (q.category) cats.add(q.category);
-      if (q.sub_category) subcats.add(q.sub_category);
-    });
+  // Use questions filtered by source + month + week (or file picker), before cat/subcat/tag filtering
+  let base;
+  if (STATE.selectedFiles.size > 0) {
+    base = STATE.allQuestions.filter(q => STATE.selectedFiles.has(q._source));
   } else {
-    // Bank mode: derive categories/sub_categories from manifest metadata
-    // for whichever files match the current filter selection — no fetch needed.
-    const relevantFiles = getRelevantBankFilenames();
-    for (const fname of relevantFiles) {
-      const meta = STATE.bankFiles[fname];
-      if (!meta) continue;
-      (meta.categories || []).forEach(c => cats.add(c));
-      (meta.sub_categories || []).forEach(c => subcats.add(c));
+    // Source first (primary)
+    base = getFilteredBySource();
+    // Then month + monthless (secondary)
+    const hasMonthSel = STATE.selectedMonths.size > 0;
+    const hasMonthlessSel = STATE.selectedMonthlessFiles.size > 0;
+    if (hasMonthSel || hasMonthlessSel) {
+      base = base.filter(q => {
+        if (q._month) return hasMonthSel ? STATE.selectedMonths.has(q._month) : true;
+        else return hasMonthlessSel ? STATE.selectedMonthlessFiles.has(q._source) : true;
+      });
+    }
+    // Then week
+    if (STATE.selectedWeek !== 'ALL') {
+      base = base.filter(q => q._week === null || q._week === STATE.selectedWeek);
     }
   }
+
+  const cats = new Set();
+  const subcats = new Set();
+  base.forEach(q => {
+    if (q.category) cats.add(q.category);
+    if (q.sub_category) subcats.add(q.sub_category);
+  });
 
   // Render cat chips
   const catChips = $('cat-chips');
@@ -2737,13 +2601,7 @@ function applyDifficultyMix(qs) {
   return qs;
 }
 
-async function updateFiltersAndUI() {
-  // Lazily fetch (or pull from cache) just the bank files relevant to the
-  // CURRENT filter selection — not every bank file that exists. This is the
-  // one place real question content gets pulled in as the user filters.
-  // (No-op while still on the broad default selection — see hasNarrowedSelection.)
-  await ensureRelevantBankFilesLoaded();
-
+function updateFiltersAndUI() {
   buildCategoryChips();
   const filtered = getFilteredQuestions();
   const count = filtered.length;
@@ -2752,10 +2610,9 @@ async function updateFiltersAndUI() {
   const cntDiv = $('filtered-count');
   
   const hasFiles = Object.keys(STATE.useUploadedOnly ? STATE.uploadedFiles : STATE.bankFiles).length > 0;
-  const needsNarrowing = !STATE.useUploadedOnly && !hasNarrowedSelection();
-  const hasSelection = hasFiles && !needsNarrowing;
+  const hasSelection = hasFiles; // source chips always hold a valid state once files are loaded
 
-  if (!hasFiles || needsNarrowing) {
+  if (!hasFiles) {
     warn.classList.remove('show');
     cntDiv.style.display = 'none';
   } else if (hasSelection && count === 0) {
@@ -2776,8 +2633,15 @@ async function updateFiltersAndUI() {
 }
 
 function updateStartButton() {
+  const filtered = getFilteredQuestions();
   const btn = $('start-btn');
+  
   const hasFiles = Object.keys(STATE.useUploadedOnly ? STATE.uploadedFiles : STATE.bankFiles).length > 0;
+  // In the new model, a selection is valid as long as we have files loaded
+  // (source chips default to "All Sources" which is a valid selection)
+  // The user must have files loaded to proceed
+  const hasSelection = hasFiles; // source chips always have a valid selection (ALL or specific)
+  const hasSpecificPick = STATE.selectedFiles.size > 0 || STATE.selectedMonths.size > 0 || !STATE.selectedSources.has('ALL');
 
   if (!hasFiles) {
     btn.disabled = true;
@@ -2785,22 +2649,9 @@ function updateStartButton() {
     return;
   }
 
-  // Bank mode, still on the broad default selection: don't fetch anything,
-  // just prompt the user to narrow down first (pick a source, month, week,
-  // or specific file). This is what keeps page-load fast with thousands of
-  // questions — nothing downloads until the user picks something specific.
-  if (!STATE.useUploadedOnly && !hasNarrowedSelection()) {
-    btn.disabled = true;
-    btn.textContent = 'Select a source or month above to continue';
-    return;
-  }
-
-  const filtered = getFilteredQuestions();
-
   if (filtered.length === 0) {
-    const stillLoading = !STATE.useUploadedOnly && getRelevantBankFilenames().some(f => !STATE.bankContentCache[f]);
     btn.disabled = true;
-    btn.textContent = stillLoading ? 'Loading questions…' : 'No questions match filters';
+    btn.textContent = 'No questions match filters';
     return;
   }
   
@@ -2849,27 +2700,11 @@ function updateSummaries() {
 // HOME STATS
 // ============================================================
 function refreshHomeStats() {
+  $('stat-total-q').textContent = STATE.allQuestions.length;
   const filePool = STATE.useUploadedOnly ? STATE.uploadedFiles : STATE.bankFiles;
   $('stat-files').textContent = Object.keys(filePool).length;
-
-  if (STATE.useUploadedOnly) {
-    $('stat-total-q').textContent = STATE.allQuestions.length;
-    const cats = new Set(STATE.allQuestions.map(q => q.category).filter(Boolean));
-    $('stat-cats').textContent = cats.size;
-  } else {
-    // Bank mode: total/categories come from manifest metadata across ALL
-    // banks, not just the ones fetched so far — keeps the home screen
-    // accurate without downloading anything.
-    let total = 0;
-    const cats = new Set();
-    for (const meta of Object.values(STATE.bankFiles)) {
-      total += (typeof meta.count === 'number' ? meta.count : 0);
-      (meta.categories || []).forEach(c => cats.add(c));
-    }
-    $('stat-total-q').textContent = total;
-    $('stat-cats').textContent = cats.size;
-  }
-
+  const cats = new Set(STATE.allQuestions.map(q => q.category).filter(Boolean));
+  $('stat-cats').textContent = cats.size;
   $('stat-quizzes').textContent = STATE.history.length;
 
   // Show/hide the uploaded-only notice
@@ -3043,27 +2878,7 @@ function removeUploadedFile(fname) {
 // ============================================================
 $('start-btn').addEventListener('click', startQuiz);
 
-async function startQuiz() {
-  // Guard: the Start button is disabled until the user narrows down (see
-  // updateStartButton), but defend here too in case this is ever called
-  // directly — never silently fetch every bank file.
-  if (!STATE.useUploadedOnly && !hasNarrowedSelection()) {
-    showToast('Pick a source or month first');
-    return;
-  }
-
-  // Safety net: in normal use, updateFiltersAndUI() already fetched the
-  // relevant bank files as the user filtered. This just guards against the
-  // rare case of clicking Start before that resolves.
-  if (!STATE.useUploadedOnly) {
-    const needed = getRelevantBankFilenames();
-    if (needed.some(f => !STATE.bankContentCache[f])) {
-      showLoading('Loading questions…');
-      await ensureRelevantBankFilesLoaded();
-      hideLoading();
-    }
-  }
-
+function startQuiz() {
   let qs = getFilteredQuestions();
   if (!qs.length) return;
 
