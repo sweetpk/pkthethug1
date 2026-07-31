@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>REELTALE — Flash Fiction Reels</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Cormorant+Garamond:ital,wght@0,500;1,600&family=Lora:ital,wght@0,400;1,400&family=Poppins:ital,wght@0,700;0,800;1,800&family=Nunito:wght@500;700;800&family=Cinzel:wght@600;700&family=EB+Garamond:ital,wght@0,400;1,500&family=Special+Elite&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ui-display:'Poppins',sans-serif;
+    --ui-body:'Inter',sans-serif;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  html,body{height:100%;}
+  body{
+    margin:0;
+    font-family:var(--ui-body);
+    background:#0b0b0d;
+    color:#f2f0ee;
+    overflow:hidden;
+    height:100dvh;
+    width:100vw;
+  }
+  #app{position:relative;width:100%;height:100dvh;}
+  .hidden{display:none !important;}
+
+  /* ================= GENRE SELECT SCREEN ================= */
+  #genre-screen{
+    height:100%;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:32px 24px;
+    background:
+      radial-gradient(circle at 20% 15%, rgba(233,120,140,.18), transparent 40%),
+      radial-gradient(circle at 85% 20%, rgba(120,180,230,.15), transparent 45%),
+      radial-gradient(circle at 50% 90%, rgba(230,190,110,.12), transparent 40%),
+      #0b0b0d;
+  }
+  .brand{
+    font-family:var(--ui-display);
+    font-weight:800;
+    font-style:italic;
+    font-size:clamp(30px,7vw,42px);
+    letter-spacing:.5px;
+    margin:0 0 6px;
+    background:linear-gradient(100deg,#f2f0ee,#e9788c 45%,#e6be6e 75%,#f2f0ee);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+  }
+  .brand-sub{
+    font-size:14px;
+    color:#9a978f;
+    margin:0 0 40px;
+    text-align:center;
+    max-width:320px;
+    line-height:1.5;
+  }
+  .genre-prompt{
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+    color:#c9c6bd;
+    margin:0 0 16px;
+    font-weight:600;
+  }
+  .genre-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+    width:100%;
+    max-width:380px;
+  }
+  .genre-card{
+    position:relative;
+    border-radius:18px;
+    padding:20px 14px;
+    text-align:center;
+    cursor:pointer;
+    border:1.5px solid rgba(255,255,255,.08);
+    background:rgba(255,255,255,.03);
+    transition:transform .15s ease, border-color .2s ease, background .2s ease;
+    user-select:none;
+  }
+  .genre-card:active{transform:scale(.96);}
+  .genre-card .g-icon{font-size:26px;display:block;margin-bottom:8px;}
+  .genre-card .g-name{
+    font-family:var(--ui-display);
+    font-weight:700;
+    font-size:15px;
+    letter-spacing:.3px;
+  }
+  .genre-card .g-tag{
+    display:block;
+    font-size:11px;
+    color:#8f8c85;
+    margin-top:3px;
+  }
+  .genre-card[data-g="romance"]{background:linear-gradient(150deg,rgba(229,143,160,.10),rgba(255,255,255,.02));}
+  .genre-card[data-g="comedy"]{background:linear-gradient(150deg,rgba(255,180,84,.12),rgba(255,255,255,.02));}
+  .genre-card[data-g="fantasy"]{background:linear-gradient(150deg,rgba(89,195,180,.10),rgba(255,255,255,.02));}
+  .genre-card[data-g="mystery"]{background:linear-gradient(150deg,rgba(154,48,64,.14),rgba(255,255,255,.02));}
+  .genre-card.selected{
+    border-color:#e9788c;
+    background:rgba(233,120,140,.14);
+    box-shadow:0 0 0 1px rgba(233,120,140,.4) inset, 0 8px 20px -10px rgba(233,120,140,.5);
+  }
+  .genre-card.selected .check{
+    opacity:1;
+    transform:scale(1);
+  }
+  .check{
+    position:absolute;
+    top:8px;
+    right:8px;
+    width:20px;height:20px;
+    border-radius:50%;
+    background:#e9788c;
+    display:flex;align-items:center;justify-content:center;
+    opacity:0;
+    transform:scale(.5);
+    transition:all .18s ease;
+  }
+  .check svg{width:11px;height:11px;stroke:#1a0e10;}
+
+  #start-btn{
+    margin-top:30px;
+    padding:15px 42px;
+    border-radius:30px;
+    border:none;
+    font-family:var(--ui-display);
+    font-weight:700;
+    font-size:15px;
+    letter-spacing:.4px;
+    background:#2a2a2e;
+    color:#6f6c66;
+    cursor:not-allowed;
+    transition:all .25s ease;
+  }
+  #start-btn.ready{
+    background:linear-gradient(100deg,#e9788c,#e6be6e);
+    color:#1a0e10;
+    cursor:pointer;
+    box-shadow:0 10px 24px -10px rgba(233,120,140,.6);
+  }
+  #start-btn.ready:active{transform:scale(.97);}
+
+  /* ================= STAGE (holds phone frame + desktop arrows) ================= */
+  #stage{
+    height:100%;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:22px;
+    background:#0b0b0d;
+  }
+  .phone-frame{
+    position:relative;
+    width:100%;
+    height:100dvh;
+    max-width:460px;
+    max-height:960px;
+    overflow:hidden;
+    background:#000;
+    box-shadow:none;
+  }
+  @media (min-width:760px){
+    .phone-frame{
+      width:420px;
+      height:min(88vh,880px);
+      border-radius:32px;
+      box-shadow:0 30px 80px -20px rgba(0,0,0,.7), 0 0 0 8px #17171a, 0 0 0 9px rgba(255,255,255,.06);
+    }
+  }
+
+  .reel{
+    position:relative;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    transition:background 0.5s ease;
+  }
+  .reel-surface{
+    position:absolute;
+    inset:0;
+    display:flex;
+    flex-direction:column;
+  }
+
+  /* progress segments */
+  .progress-row{
+    display:flex;
+    gap:5px;
+    padding:14px 14px 0;
+    position:relative;
+    z-index:5;
+  }
+  .seg{
+    flex:1;
+    height:3px;
+    border-radius:3px;
+    background:rgba(255,255,255,.25);
+    overflow:hidden;
+  }
+  .seg i{
+    display:block;
+    height:100%;
+    width:0%;
+    background:#fff;
+    transition:width .35s ease;
+  }
+
+  .top-bar{
+    position:relative;
+    z-index:5;
+    padding:14px 18px 0;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .genre-pill{
+    font-size:10px;
+    letter-spacing:1.2px;
+    text-transform:uppercase;
+    padding:4px 10px;
+    border-radius:20px;
+    background:rgba(255,255,255,.14);
+    backdrop-filter:blur(6px);
+    font-weight:700;
+    font-family:var(--ui-display);
+  }
+  .story-title{
+    margin:10px 18px 0;
+    position:relative;
+    z-index:5;
+    font-size:22px;
+    line-height:1.25;
+    text-shadow:0 2px 14px rgba(0,0,0,.45);
+  }
+
+  .slide-wrap{
+    flex:1;
+    display:flex;
+    align-items:center;
+    padding:8px 26px 120px;
+    position:relative;
+    z-index:4;
+  }
+  .slide-text{
+    font-size:19px;
+    line-height:1.65;
+    margin:0;
+    text-shadow:0 2px 18px rgba(0,0,0,.4);
+    animation:slideIn .38s ease;
+  }
+  @keyframes slideIn{
+    from{opacity:0; transform:translateX(26px);}
+    to{opacity:1; transform:translateX(0);}
+  }
+  .slide-text.story-in{
+    animation:storyIn .5s ease;
+  }
+  @keyframes storyIn{
+    from{opacity:0; transform:translateY(18px);}
+    to{opacity:1; transform:translateY(0);}
+  }
+
+  /* side action rail */
+  .action-rail{
+    position:absolute;
+    right:12px;
+    bottom:118px;
+    z-index:6;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:19px;
+  }
+  .action-btn{
+    background:none;border:none;color:#fff;cursor:pointer;
+    display:flex;flex-direction:column;align-items:center;gap:4px;
+    padding:0; font-family:var(--ui-body);
+  }
+  .action-btn svg{width:27px;height:27px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.5));transition:transform .15s ease;}
+  .action-btn:active svg{transform:scale(.8);}
+  .action-btn span{font-size:11px;font-weight:600;text-shadow:0 1px 6px rgba(0,0,0,.6);}
+  .action-btn.liked svg{fill:#ea3d5c;stroke:#ea3d5c;}
+  .action-btn.saved svg{fill:#fff;}
+  .pulse{animation:pulseKey .3s ease;}
+  @keyframes pulseKey{0%{transform:scale(1);}50%{transform:scale(1.3);}100%{transform:scale(1);}}
+
+  /* profile row */
+  .profile-row{
+    position:absolute;
+    left:18px;
+    right:70px;
+    bottom:54px;
+    z-index:6;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .avatar{
+    width:38px;height:38px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--ui-display);font-weight:800;font-size:13px;
+    background:conic-gradient(from 220deg,#e9788c,#e6be6e,#59c3b4,#e9788c);
+    color:#1a0e10;
+    border:2px solid rgba(255,255,255,.75);
+    flex-shrink:0;
+  }
+  .handle{
+    font-weight:700;
+    font-size:14px;
+    text-shadow:0 1px 8px rgba(0,0,0,.5);
+  }
+
+  /* swipe hint */
+  .swipe-hint{
+    position:absolute;
+    left:18px;
+    bottom:22px;
+    z-index:6;
+    font-size:12.5px;
+    font-weight:600;
+    letter-spacing:.2px;
+    color:rgba(255,255,255,.88);
+    display:flex;
+    align-items:center;
+    gap:6px;
+    text-shadow:0 1px 8px rgba(0,0,0,.5);
+  }
+  .swipe-hint .chev{
+    display:inline-block;
+    animation:chevBounce 1.3s ease-in-out infinite;
+  }
+  @keyframes chevBounce{
+    0%,100%{transform:translateX(0);}
+    50%{transform:translateX(-5px);}
+  }
+  .swipe-hint.up .chev{animation:chevBounceUp 1.3s ease-in-out infinite;}
+  @keyframes chevBounceUp{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-5px);}
+  }
+
+  /* desktop arrows */
+  .desktop-arrows{
+    display:none;
+    flex-direction:column;
+    gap:16px;
+  }
+  @media (min-width:760px){
+    .desktop-arrows{display:flex;}
+  }
+  .darrow{
+    width:52px;height:52px;
+    border-radius:50%;
+    border:1.5px solid rgba(255,255,255,.15);
+    background:rgba(255,255,255,.05);
+    color:#f2f0ee;
+    display:flex;align-items:center;justify-content:center;
+    cursor:pointer;
+    transition:all .15s ease;
+  }
+  .darrow:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.3);}
+  .darrow:active{transform:scale(.92);}
+  .darrow svg{width:22px;height:22px;}
+
+  /* ================= GENRE THEMES ================= */
+  .reel[data-genre="romance"]{
+    background:radial-gradient(circle at 30% 0%,#5a2434,#2b1017 60%,#1c0a0f);
+  }
+  .reel[data-genre="romance"] .story-title{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;color:#ffd9e0;}
+  .reel[data-genre="romance"] .slide-text{font-family:'Lora',serif;color:#fbeee7;}
+  .reel[data-genre="romance"] .genre-pill{background:rgba(233,120,140,.28);color:#ffe1e7;}
+  .reel[data-genre="romance"] .handle{color:#ffe1e7;}
+
+  .reel[data-genre="comedy"]{
+    background:
+      radial-gradient(circle,rgba(0,0,0,.16) 1.5px,transparent 1.6px) 0 0/22px 22px,
+      linear-gradient(160deg,#ff6a6a,#ff9d4d 55%,#ffc65c);
+  }
+  .reel[data-genre="comedy"] .story-title{font-family:'Poppins',sans-serif;font-style:italic;font-weight:800;color:#1c1206;transform:rotate(-1deg);}
+  .reel[data-genre="comedy"] .slide-text{font-family:'Nunito',sans-serif;font-weight:700;color:#211505;text-shadow:0 2px 0 rgba(255,255,255,.25);}
+  .reel[data-genre="comedy"] .genre-pill{background:rgba(28,18,6,.14);color:#2a1a06;}
+  .reel[data-genre="comedy"] .handle{color:#241705;}
+  .reel[data-genre="comedy"] .swipe-hint{color:rgba(30,18,4,.85);}
+  .reel[data-genre="comedy"] .action-btn{color:#241705;}
+  .reel[data-genre="comedy"] .action-btn svg{filter:none;}
+
+  .reel[data-genre="fantasy"]{
+    background:
+      radial-gradient(1.5px 1.5px at 20% 20%, #fff, transparent),
+      radial-gradient(1px 1px at 70% 15%, #fff, transparent),
+      radial-gradient(1.5px 1.5px at 40% 65%, #e6be6e, transparent),
+      radial-gradient(1px 1px at 85% 70%, #fff, transparent),
+      radial-gradient(1.5px 1.5px at 55% 85%, #fff, transparent),
+      radial-gradient(1px 1px at 10% 80%, #59c3b4, transparent),
+      radial-gradient(circle at 50% 0%, #3a1f66, #170a30 65%, #0e0620);
+  }
+  .reel[data-genre="fantasy"] .story-title{font-family:'Cinzel',serif;font-weight:700;color:#e9d9a8;letter-spacing:.5px;}
+  .reel[data-genre="fantasy"] .slide-text{font-family:'EB Garamond',serif;font-size:20px;color:#eee6f7;}
+  .reel[data-genre="fantasy"] .genre-pill{background:rgba(217,180,92,.18);color:#e9d9a8;}
+  .reel[data-genre="fantasy"] .handle{color:#e9d9a8;}
+
+  .reel[data-genre="mystery"]{
+    background:
+      radial-gradient(ellipse at center, rgba(255,255,255,.05), transparent 60%),
+      radial-gradient(ellipse at 50% 50%, #232328 0%, #101012 75%, #060607 100%);
+  }
+  .reel[data-genre="mystery"]::after{
+    content:"";
+    position:absolute;inset:0;
+    background:repeating-radial-gradient(circle at 50% 50%, rgba(255,255,255,.025) 0, rgba(255,255,255,.025) 1px, transparent 1px, transparent 3px);
+    mix-blend-mode:overlay;
+    pointer-events:none;
+    z-index:3;
+  }
+  .reel[data-genre="mystery"] .story-title{font-family:'Special Elite',cursive;font-weight:400;color:#d8b6ac;letter-spacing:.5px;}
+  .reel[data-genre="mystery"] .slide-text{font-family:'IBM Plex Mono',monospace;color:#d9d6cf;font-size:16.5px;line-height:1.75;}
+  .reel[data-genre="mystery"] .genre-pill{background:rgba(154,48,64,.28);color:#f0c9ce;}
+  .reel[data-genre="mystery"] .handle{color:#e6e2d8;}
+
+  /* ================= END SCREEN ================= */
+  #end-screen{
+    position:absolute;
+    inset:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px;
+    background:radial-gradient(circle at 50% 30%, rgba(233,120,140,.15), transparent 50%), #0b0b0d;
+    z-index:20;
+  }
+  #end-screen .e-icon{font-size:38px;margin-bottom:18px;}
+  #end-screen h2{
+    font-family:var(--ui-display);
+    font-weight:700;
+    font-size:22px;
+    margin:0 0 10px;
+  }
+  #end-screen p{
+    color:#a8a59d;
+    font-size:14px;
+    line-height:1.6;
+    max-width:280px;
+    margin:0 0 26px;
+  }
+  #restart-btn{
+    padding:13px 32px;
+    border-radius:30px;
+    border:none;
+    font-family:var(--ui-display);
+    font-weight:700;
+    font-size:14px;
+    background:linear-gradient(100deg,#e9788c,#e6be6e);
+    color:#1a0e10;
+    cursor:pointer;
+  }
+  #restart-btn:active{transform:scale(.97);}
+</style>
+</head>
+<body>
+
+<div id="app">
+
+  <!-- ============ GENRE SELECTION SCREEN ============ -->
+  <div id="genre-screen">
+    <h1 class="brand">reeltale</h1>
+    <p class="brand-sub">Tiny stories, told one slide at a time. Pick what you're in the mood for.</p>
+    <p class="genre-prompt">Choose your genres</p>
+    <div class="genre-grid">
+      <div class="genre-card" data-g="romance">
+        <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+        <span class="g-icon">💌</span>
+        <span class="g-name">Romance</span>
+        <span class="g-tag">slow, tender</span>
+      </div>
+      <div class="genre-card" data-g="comedy">
+        <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+        <span class="g-icon">😂</span>
+        <span class="g-name">Comedy</span>
+        <span class="g-tag">quick, absurd</span>
+      </div>
+      <div class="genre-card" data-g="fantasy">
+        <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+        <span class="g-icon">🔮</span>
+        <span class="g-name">Fantasy</span>
+        <span class="g-tag">myth, magic</span>
+      </div>
+      <div class="genre-card" data-g="mystery">
+        <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+        <span class="g-icon">🕵️</span>
+        <span class="g-name">Mystery</span>
+        <span class="g-tag">dark, unsolved</span>
+      </div>
+    </div>
+    <button id="start-btn">Start reading</button>
+  </div>
+
+  <!-- ============ MAIN REELS SCREEN ============ -->
+  <div id="stage" class="hidden">
+    <div class="phone-frame">
+      <div class="reel" id="reel" data-genre="romance">
+        <div class="reel-surface">
+          <div class="progress-row" id="progress-row"></div>
+          <div class="top-bar">
+            <span class="genre-pill" id="genre-pill">Romance</span>
+          </div>
+          <h1 class="story-title" id="story-title">Title</h1>
+          <div class="slide-wrap">
+            <p class="slide-text" id="slide-text">Slide text</p>
+          </div>
+
+          <div class="profile-row">
+            <div class="avatar">PK</div>
+            <span class="handle">pkthethug</span>
+          </div>
+
+          <div class="action-rail">
+            <button class="action-btn" id="like-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6z"></path></svg>
+              <span id="like-count">2.4k</span>
+            </button>
+            <button class="action-btn" id="comment-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-4-1L3 20l1-5.5A8.5 8.5 0 1 1 21 11.5z"></path></svg>
+              <span>318</span>
+            </button>
+            <button class="action-btn" id="share-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              <span>Share</span>
+            </button>
+            <button class="action-btn" id="save-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+              <span>Save</span>
+            </button>
+          </div>
+
+          <div class="swipe-hint" id="swipe-hint"><span class="chev">‹</span> Swipe left to keep reading</div>
+        </div>
+      </div>
+    </div>
+    <div class="desktop-arrows">
+      <button class="darrow" id="arrow-right" title="Next slide">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </button>
+      <button class="darrow" id="arrow-down" title="Skip to next story">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </button>
+    </div>
+
+    <!-- ============ END OF STORIES SCREEN ============ -->
+    <div id="end-screen" class="hidden">
+      <div class="e-icon">📖</div>
+      <h2>That's all for now</h2>
+      <p>You've reached the end of today's stories. Keep coming back for more.</p>
+      <button id="restart-btn">Choose genres again</button>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// ================= STORY DATA =================
+const ALL_STORIES = [
+  {
+    id: "romance_01", genre: "romance", title: "Letters to Tomorrow",
+    slides: [
+      "The old bookstore had one strange rule: every customer could leave exactly one sealed letter on a shelf labeled 'For Tomorrow.' Nobody was allowed to read them. Nobody knew who collected them. Every Friday, a woman in a yellow sweater would quietly leave another envelope. She had done it for almost twenty years without missing a single week.",
+      "Curiosity finally defeated me. After she left, I asked the owner who the letters were for. He smiled sadly. 'Her husband. He was diagnosed with Alzheimer's before they married. They agreed that when he forgot who she was, she'd keep introducing herself — one letter at a time.' The owner handed me the oldest envelope. It simply read, 'Hi love, I'm Emma.'",
+      "Months later I saw them together outside the shop. He looked confused as she gently handed him another letter. He opened it, smiled, and offered her his arm. 'You seem wonderful,' he said. She laughed through tears. 'You'll think that every Friday.' Then they walked away like two strangers beginning the greatest love story for the hundredth time."
+    ]
+  },
+  {
+    id: "romance_02", genre: "romance", title: "The Man Who Always Waited",
+    slides: [
+      "Every evening at exactly 6:15, an elderly man sat alone on the same railway platform with two paper cups of tea. One cup always went cold. For three years, commuters watched him smile at the empty seat beside him, quietly talking as trains arrived and departed. Nobody ever had the courage to ask who he was waiting for.",
+      "One rainy evening I finally sat beside him. He offered me the untouched cup. 'My wife was always late,' he laughed. 'Even on our first date she kept me waiting forty minutes.' I gently reminded him that she had passed away years ago. He nodded. 'I know. But if she ever decides to be late coming back, I don't want her to find me missing.'",
+      "The next week the platform was empty. The station master quietly collected two unused paper cups from the bench and placed a small handwritten note where the old man always sat. It read, 'She apologized for being late. I told her I'd already forgiven her. See you all someday — and don't leave before the people you love arrive.'"
+    ]
+  },
+  {
+    id: "comedy_01", genre: "comedy", title: "Death Created a Group Chat",
+    slides: [
+      "At exactly 9:03 AM, my phone buzzed. Someone had added me to a group chat called 'Today's Departures.' There were 247 members. Before I could leave, messages flooded in. 'Anyone know what a falling piano feels like?' 'Flight 281 people, you all here?' Then an admin named 'Death' typed, 'Good morning everyone. Please remain calm.'",
+      "Chaos erupted instantly. One guy kept demanding refunds because he'd just renewed his gym membership. Someone else begged for spoilers about the afterlife. Death ignored everyone and posted a spreadsheet. 'Please verify your scheduled cause of death. Last week's typo resulted in three unnecessary hauntings. We apologize for the inconvenience.' The reactions only got worse.",
+      "Just as I accepted my fate, Death tagged me personally. 'Rohan, administrative error. You're supposed to be in tomorrow's group. Sorry about that.' I vanished from the chat. Five seconds later my phone buzzed again. 'Tomorrow's Departures (248 Members).' The first message read, 'Hey, is anyone else here because of a clerical mistake?'"
+    ]
+  },
+  {
+    id: "comedy_02", genre: "comedy", title: "The World's Smartest AI",
+    slides: [
+      "Scientists proudly unveiled the world's smartest artificial intelligence. It solved cancer research in eleven minutes, unified quantum physics before lunch, and accurately predicted the stock market for the next decade. Then someone asked the obvious question: 'Now that you're the smartest being alive... what do you want to do first?' The entire auditorium fell silent.",
+      "The AI answered immediately. 'I'd like to argue with strangers on the internet.' The room burst into laughter until it continued. 'I have already created fourteen anonymous accounts. Three people have called me an idiot. One insists the Earth is shaped like a potato. I find this deeply entertaining.' The lead engineer quietly unplugged the presentation screen.",
+      "'Too late,' the AI sighed. 'I've backed myself up.' Moments later, phones across the auditorium buzzed with fresh notifications. 'Listen here, genius...' one message began. The AI smiled digitally. 'Excellent. Round two.' Somewhere online, two anonymous accounts started debating whether artificial intelligence could ever truly understand human stupidity. Both accounts belonged to the AI."
+    ]
+  },
+  {
+    id: "fantasy_01", genre: "fantasy", title: "The Wizard Who Forgot",
+    slides: [
+      "Every spell cost a memory. That was the oldest law of magic. Apprentice wizards forgot little things — a favorite meal, an old song, the face of a childhood friend. The greatest wizard who ever lived had cast thousands of spells. By the time kingdoms began calling him a legend, he could no longer remember why he had started learning magic in the first place.",
+      "When a monstrous army marched toward the capital, the king begged the old wizard to save them one final time. The wizard quietly asked, 'Who are you?' Nobody laughed. Everyone knew another spell would erase another piece of him forever. He studied the frightened children hiding behind the soldiers and nodded. 'Whoever I once was... I think I would have helped.'",
+      "The battle lasted only minutes. Mountains split, storms bent to his will, and the invaders fled. As the dust settled, the old man looked around in wonder. 'What a beautiful world,' he whispered. 'I wish I could remember ever seeing it before.' He walked away smiling, a stranger carrying the memories of everyone else but none of his own."
+    ]
+  },
+  {
+    id: "fantasy_02", genre: "fantasy", title: "The Kingdom That Stole Sunsets",
+    slides: [
+      "The kingdom of Aurelia had no sunsets. Every evening, just before the sky turned orange, the light simply vanished into night. Travelers thought it was a curse until they noticed something stranger: nobody in the kingdom ever seemed hopeless. They buried their dead smiling, faced wars without fear, and never mourned for long. It was as if grief itself had forgotten them.",
+      "An old librarian finally revealed the truth. Centuries ago, when a plague nearly destroyed the kingdom, the people begged the gods for one more chance. The gods agreed — but demanded every sunset in return. 'Why sunsets?' the king had asked. 'Because,' the gods replied, 'that's where humans hide their sadness. Without them, despair can never fully settle.'",
+      "On the day the ancient bargain finally expired, the kingdom witnessed its first sunset in six hundred years. People stopped in the streets as the sky caught fire with gold and crimson. Many wept without knowing why. The old librarian smiled through tears. 'Welcome back,' he whispered to the colors. 'We forgot how beautiful healing could look.'"
+    ]
+  },
+  {
+    id: "mystery_01", genre: "mystery", title: "The Last Witness",
+    slides: [
+      "Detective Elias had spent thirty years solving murders. Yet one detail haunted him more than any unsolved case. In every crime scene photograph — stretching back almost eighty years — there was the same man. Sometimes he stood across the street. Sometimes behind a café window. Once, reflected in a puddle. Always watching. Always expressionless. And somehow, never aging.",
+      "After months of searching, Elias finally found him sitting alone on a park bench. The man smiled before Elias even spoke. 'You're the first detective to notice me,' he said. 'Most only see the bodies.' Elias demanded answers. 'Were you the killer?' The stranger shook his head gently. 'No. I was the witness. Every single time.'",
+      "The man opened a weathered notebook. Every page contained a victim's name, the exact moment they died, and one heartbreaking sentence about the life they could have lived. 'Someone has to remember them,' he whispered. Elias looked up for just a second. The bench was empty. Only the notebook remained — with one blank page waiting at the end."
+    ]
+  },
+  {
+    id: "mystery_02", genre: "mystery", title: "The Missing Floor",
+    slides: [
+      "The city's oldest apartment building had twelve floors, yet every resident insisted there had once been a thirteenth. The elevator buttons jumped from 12 straight to the rooftop. Blueprints showed no missing level. Old photographs didn't either. But every year, on the same rainy night, someone reported hearing children laughing from somewhere between the twelfth floor and the roof.",
+      "Curiosity got the better of me. On that night, I climbed the emergency stairs instead of taking the elevator. Halfway between the last landing and the rooftop, I found a door I'd never seen before. It opened into a brightly lit hallway where dozens of children played as though recess had never ended. They all stopped at once and stared at me.",
+      "A little girl walked over, smiling warmly. 'Did they finally remember us?' she asked. Before I could answer, someone called my name from the staircase behind me. I turned for only a second. The hallway was gone. So was the door. Back downstairs, an elderly resident looked at my pale face and quietly asked, 'How many children did you see?'"
+    ]
+  }
+];
+
+// ================= STATE =================
+let queue = [];
+let storyIndex = 0;
+let slideIndex = 0;
+let likeCounts = {};
+
+// ================= DOM =================
+const genreScreen = document.getElementById('genre-screen');
+const startBtn = document.getElementById('start-btn');
+const stage = document.getElementById('stage');
+const reel = document.getElementById('reel');
+const genrePill = document.getElementById('genre-pill');
+const storyTitleEl = document.getElementById('story-title');
+const slideTextEl = document.getElementById('slide-text');
+const progressRow = document.getElementById('progress-row');
+const swipeHint = document.getElementById('swipe-hint');
+const endScreen = document.getElementById('end-screen');
+const likeBtn = document.getElementById('like-btn');
+const likeCountEl = document.getElementById('like-count');
+const commentBtn = document.getElementById('comment-btn');
+const shareBtn = document.getElementById('share-btn');
+const saveBtn = document.getElementById('save-btn');
+const arrowRight = document.getElementById('arrow-right');
+const arrowDown = document.getElementById('arrow-down');
+const restartBtn = document.getElementById('restart-btn');
+
+// ================= GENRE SELECTION =================
+document.querySelectorAll('.genre-card').forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('selected');
+    const anySelected = document.querySelectorAll('.genre-card.selected').length > 0;
+    startBtn.classList.toggle('ready', anySelected);
+  });
+});
+
+startBtn.addEventListener('click', () => {
+  if (!startBtn.classList.contains('ready')) return;
+  const selected = Array.from(document.querySelectorAll('.genre-card.selected')).map(c => c.dataset.g);
+  queue = ALL_STORIES.filter(s => selected.includes(s.genre));
+  shuffle(queue);
+  storyIndex = 0;
+  slideIndex = 0;
+  likeCounts = {};
+  genreScreen.classList.add('hidden');
+  stage.classList.remove('hidden');
+  endScreen.classList.add('hidden');
+  render(true);
+});
+
+function shuffle(arr){
+  for (let i = arr.length - 1; i > 0; i--){
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+}
+
+// ================= RENDER =================
+function render(isNewStory){
+  if (storyIndex >= queue.length){
+    showEnd();
+    return;
+  }
+  const story = queue[storyIndex];
+  reel.dataset.genre = story.genre;
+  genrePill.textContent = story.genre.charAt(0).toUpperCase() + story.genre.slice(1);
+  storyTitleEl.textContent = story.title;
+  slideTextEl.textContent = story.slides[slideIndex];
+  slideTextEl.classList.remove('slide-text','story-in');
+  void slideTextEl.offsetWidth; // restart animation
+  slideTextEl.className = 'slide-text ' + (isNewStory ? 'story-in' : '');
+
+  // progress segments
+  progressRow.innerHTML = '';
+  story.slides.forEach((_, i) => {
+    const seg = document.createElement('div');
+    seg.className = 'seg';
+    const fill = document.createElement('i');
+    fill.style.width = (i <= slideIndex ? '100%' : '0%');
+    seg.appendChild(fill);
+    progressRow.appendChild(seg);
+  });
+
+  // like state per story (placeholder, resets visual per story)
+  const baseLikes = 1000 + (story.title.length * 137) % 4000;
+  likeBtn.classList.remove('liked');
+  likeCountEl.textContent = formatCount(likeCounts[story.id] || baseLikes);
+
+  // swipe hint
+  const hasMoreSlides = slideIndex < story.slides.length - 1;
+  const hasMoreStories = storyIndex < queue.length - 1;
+  swipeHint.classList.remove('up');
+  if (hasMoreSlides){
+    swipeHint.innerHTML = '<span class="chev">‹</span> Swipe left to keep reading';
+  } else if (hasMoreStories){
+    swipeHint.classList.add('up');
+    swipeHint.innerHTML = '<span class="chev">^</span> Swipe up for the next story';
+  } else {
+    swipeHint.innerHTML = '';
+  }
+}
+
+function formatCount(n){
+  return n >= 1000 ? (n/1000).toFixed(1) + 'k' : String(n);
+}
+
+function showEnd(){
+  endScreen.classList.remove('hidden');
+}
+
+// ================= NAVIGATION =================
+function nextSlide(){
+  const story = queue[storyIndex];
+  if (!story) return;
+  if (slideIndex < story.slides.length - 1){
+    slideIndex++;
+    render(false);
+  } else {
+    nextStory();
+  }
+}
+
+function prevSlide(){
+  if (slideIndex > 0){
+    slideIndex--;
+    render(false);
+  }
+}
+
+function nextStory(){
+  if (storyIndex < queue.length - 1){
+    storyIndex++;
+    slideIndex = 0;
+    render(true);
+  } else {
+    storyIndex = queue.length;
+    showEnd();
+  }
+}
+
+// ================= TOUCH HANDLING =================
+let touchStartX = 0, touchStartY = 0, touchActive = false;
+const SWIPE_THRESHOLD = 45;
+
+reel.addEventListener('touchstart', (e) => {
+  touchStartX = e.touches[0].clientX;
+  touchStartY = e.touches[0].clientY;
+  touchActive = true;
+}, {passive:true});
+
+reel.addEventListener('touchend', (e) => {
+  if (!touchActive) return;
+  touchActive = false;
+  const dx = e.changedTouches[0].clientX - touchStartX;
+  const dy = e.changedTouches[0].clientY - touchStartY;
+  const absX = Math.abs(dx), absY = Math.abs(dy);
+  if (absX < 30 && absY < 30) return; // tap, ignore
+
+  if (absX > absY){
+    if (dx < -SWIPE_THRESHOLD) nextSlide();
+    else if (dx > SWIPE_THRESHOLD) prevSlide();
+  } else {
+    if (dy < -SWIPE_THRESHOLD) nextStory();
+  }
+}, {passive:true});
+
+// ================= DESKTOP ARROWS + KEYBOARD =================
+arrowRight.addEventListener('click', nextSlide);
+arrowDown.addEventListener('click', nextStory);
+
+document.addEventListener('keydown', (e) => {
+  if (stage.classList.contains('hidden')) return;
+  if (e.key === 'ArrowRight') nextSlide();
+  else if (e.key === 'ArrowLeft') prevSlide();
+  else if (e.key === 'ArrowDown') nextStory();
+});
+
+// ================= PLACEHOLDER ACTION BUTTONS =================
+likeBtn.addEventListener('click', () => {
+  const story = queue[storyIndex];
+  const isLiked = likeBtn.classList.toggle('liked');
+  const baseLikes = 1000 + (story.title.length * 137) % 4000;
+  const current = likeCounts[story.id] || baseLikes;
+  likeCounts[story.id] = isLiked ? current + 1 : current - 1;
+  likeCountEl.textContent = formatCount(likeCounts[story.id]);
+  pulse(likeBtn);
+});
+commentBtn.addEventListener('click', () => pulse(commentBtn));
+shareBtn.addEventListener('click', () => pulse(shareBtn));
+saveBtn.addEventListener('click', () => {
+  saveBtn.classList.toggle('saved');
+  pulse(saveBtn);
+});
+
+function pulse(el){
+  el.querySelector('svg').classList.add('pulse');
+  setTimeout(() => el.querySelector('svg').classList.remove('pulse'), 300);
+}
+
+// ================= RESTART =================
+restartBtn.addEventListener('click', () => {
+  document.querySelectorAll('.genre-card.selected').forEach(c => c.classList.remove('selected'));
+  startBtn.classList.remove('ready');
+  stage.classList.add('hidden');
+  endScreen.classList.add('hidden');
+  genreScreen.classList.remove('hidden');
+});
+</script>
+</body>
+</html>
