@@ -74,6 +74,22 @@
     gap:14px;
     width:100%;
     max-width:380px;
+    min-height:40px;
+  }
+  .genre-status{
+    font-size:12.5px;
+    color:#9a978f;
+    margin:16px 0 0;
+    text-align:center;
+    max-width:320px;
+    line-height:1.55;
+  }
+  .genre-status.error{color:#e9788c;}
+  .genre-status code{
+    background:rgba(255,255,255,.08);
+    padding:1px 6px;
+    border-radius:5px;
+    font-size:11.5px;
   }
   .genre-card{
     position:relative;
@@ -183,8 +199,18 @@
     width:100%;
     height:100%;
     overflow:hidden;
+    background:#15151a;
     transition:background 0.5s ease;
   }
+  .reel::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    z-index:2;
+    background:linear-gradient(to bottom, rgba(0,0,0,.24) 0%, transparent 20%, transparent 66%, rgba(0,0,0,.42) 100%);
+  }
+  .reel[data-genre="comedy"]::before{content:none;}
   .reel-surface{
     position:absolute;
     inset:0;
@@ -241,16 +267,28 @@
     font-size:22px;
     line-height:1.25;
     text-shadow:0 2px 14px rgba(0,0,0,.45);
+    flex-shrink:0;
   }
 
-  .slide-wrap{
+  /* content row: text column + action rail column, side by side so they never overlap */
+  .content-row{
     flex:1;
+    min-height:0;
     display:flex;
-    align-items:center;
-    padding:8px 26px 120px;
+    flex-direction:row;
     position:relative;
     z-index:4;
   }
+  .slide-wrap{
+    flex:1;
+    min-width:0;
+    display:flex;
+    align-items:center;
+    padding:6px 8px 6px 26px;
+    overflow-y:auto;
+    scrollbar-width:none;
+  }
+  .slide-wrap::-webkit-scrollbar{display:none;}
   .slide-text{
     font-size:19px;
     line-height:1.65;
@@ -270,16 +308,18 @@
     to{opacity:1; transform:translateY(0);}
   }
 
-  /* side action rail */
+  /* side action rail — own column, never overlaps the text column */
   .action-rail{
-    position:absolute;
-    right:12px;
-    bottom:118px;
-    z-index:6;
+    flex-shrink:0;
+    width:58px;
     display:flex;
     flex-direction:column;
     align-items:center;
+    justify-content:flex-end;
     gap:19px;
+    padding:0 10px 4px 0;
+    position:relative;
+    z-index:6;
   }
   .action-btn{
     background:none;border:none;color:#fff;cursor:pointer;
@@ -294,13 +334,17 @@
   .pulse{animation:pulseKey .3s ease;}
   @keyframes pulseKey{0%{transform:scale(1);}50%{transform:scale(1.3);}100%{transform:scale(1);}}
 
-  /* profile row */
-  .profile-row{
-    position:absolute;
-    left:18px;
-    right:70px;
-    bottom:54px;
+  /* footer: profile row + swipe hint, own row below the content — never overlaps text or actions */
+  .footer-zone{
+    flex-shrink:0;
+    padding:0 18px 20px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    position:relative;
     z-index:6;
+  }
+  .profile-row{
     display:flex;
     align-items:center;
     gap:10px;
@@ -322,10 +366,6 @@
 
   /* swipe hint */
   .swipe-hint{
-    position:absolute;
-    left:18px;
-    bottom:22px;
-    z-index:6;
     font-size:12.5px;
     font-weight:600;
     letter-spacing:.2px;
@@ -334,6 +374,7 @@
     align-items:center;
     gap:6px;
     text-shadow:0 1px 8px rgba(0,0,0,.5);
+    min-height:16px;
   }
   .swipe-hint .chev{
     display:inline-block;
@@ -349,17 +390,18 @@
     50%{transform:translateY(-5px);}
   }
 
-  /* desktop arrows */
+  /* desktop arrows — 4-direction d-pad */
   .desktop-arrows{
     display:none;
-    flex-direction:column;
-    gap:16px;
+    grid-template-columns:50px 50px 50px;
+    grid-template-rows:50px 50px 50px;
+    gap:8px;
   }
   @media (min-width:760px){
-    .desktop-arrows{display:flex;}
+    .desktop-arrows{display:grid;}
   }
   .darrow{
-    width:52px;height:52px;
+    width:50px;height:50px;
     border-radius:50%;
     border:1.5px solid rgba(255,255,255,.15);
     background:rgba(255,255,255,.05);
@@ -370,11 +412,23 @@
   }
   .darrow:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.3);}
   .darrow:active{transform:scale(.92);}
-  .darrow svg{width:22px;height:22px;}
+  .darrow:disabled{opacity:.3;cursor:default;}
+  .darrow:disabled:hover{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.15);}
+  .darrow svg{width:21px;height:21px;}
+  .darrow.up{grid-column:2;grid-row:1;}
+  .darrow.left{grid-column:1;grid-row:2;}
+  .darrow.right{grid-column:3;grid-row:2;}
+  .darrow.down{grid-column:2;grid-row:3;}
 
   /* ================= GENRE THEMES ================= */
   .reel[data-genre="romance"]{
-    background:radial-gradient(circle at 30% 0%,#5a2434,#2b1017 60%,#1c0a0f);
+    background:
+      radial-gradient(2px 2px at 18% 22%, rgba(255,214,224,.5), transparent),
+      radial-gradient(1.5px 1.5px at 78% 15%, rgba(255,214,224,.4), transparent),
+      radial-gradient(2px 2px at 60% 78%, rgba(230,190,110,.35), transparent),
+      radial-gradient(1.5px 1.5px at 30% 85%, rgba(255,214,224,.35), transparent),
+      radial-gradient(circle at 75% 90%, rgba(230,190,110,.10), transparent 45%),
+      radial-gradient(circle at 30% 0%,#6b2a3d,#2f121a 60%,#1c0a0f);
   }
   .reel[data-genre="romance"] .story-title{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;color:#ffd9e0;}
   .reel[data-genre="romance"] .slide-text{font-family:'Lora',serif;color:#fbeee7;}
@@ -383,8 +437,10 @@
 
   .reel[data-genre="comedy"]{
     background:
-      radial-gradient(circle,rgba(0,0,0,.16) 1.5px,transparent 1.6px) 0 0/22px 22px,
-      linear-gradient(160deg,#ff6a6a,#ff9d4d 55%,#ffc65c);
+      radial-gradient(circle, rgba(255,255,255,.32) 1.5px, transparent 1.6px) 0 0/24px 24px,
+      radial-gradient(circle at 12% 8%, rgba(255,255,255,.30), transparent 38%),
+      radial-gradient(circle at 90% 90%, rgba(255,255,255,.16), transparent 42%),
+      linear-gradient(155deg,#ff4d6d 0%,#ff8a3d 52%,#ffd166 100%);
   }
   .reel[data-genre="comedy"] .story-title{font-family:'Poppins',sans-serif;font-style:italic;font-weight:800;color:#1c1206;transform:rotate(-1deg);}
   .reel[data-genre="comedy"] .slide-text{font-family:'Nunito',sans-serif;font-weight:700;color:#211505;text-shadow:0 2px 0 rgba(255,255,255,.25);}
@@ -402,7 +458,9 @@
       radial-gradient(1px 1px at 85% 70%, #fff, transparent),
       radial-gradient(1.5px 1.5px at 55% 85%, #fff, transparent),
       radial-gradient(1px 1px at 10% 80%, #59c3b4, transparent),
-      radial-gradient(circle at 50% 0%, #3a1f66, #170a30 65%, #0e0620);
+      radial-gradient(1px 1px at 92% 40%, #fff, transparent),
+      radial-gradient(1.5px 1.5px at 5% 45%, #e6be6e, transparent),
+      radial-gradient(circle at 50% 0%, #4a2680,#170a30 65%, #0e0620);
   }
   .reel[data-genre="fantasy"] .story-title{font-family:'Cinzel',serif;font-weight:700;color:#e9d9a8;letter-spacing:.5px;}
   .reel[data-genre="fantasy"] .slide-text{font-family:'EB Garamond',serif;font-size:20px;color:#eee6f7;}
@@ -411,8 +469,8 @@
 
   .reel[data-genre="mystery"]{
     background:
-      radial-gradient(ellipse at center, rgba(255,255,255,.05), transparent 60%),
-      radial-gradient(ellipse at 50% 50%, #232328 0%, #101012 75%, #060607 100%);
+      radial-gradient(ellipse at 50% 40%, rgba(120,140,170,.10), transparent 55%),
+      radial-gradient(ellipse at 50% 50%, #26262d 0%, #101012 75%, #060607 100%);
   }
   .reel[data-genre="mystery"]::after{
     content:"";
@@ -477,32 +535,8 @@
     <h1 class="brand">reeltale</h1>
     <p class="brand-sub">Tiny stories, told one slide at a time. Pick what you're in the mood for.</p>
     <p class="genre-prompt">Choose your genres</p>
-    <div class="genre-grid">
-      <div class="genre-card" data-g="romance">
-        <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-        <span class="g-icon">💌</span>
-        <span class="g-name">Romance</span>
-        <span class="g-tag">slow, tender</span>
-      </div>
-      <div class="genre-card" data-g="comedy">
-        <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-        <span class="g-icon">😂</span>
-        <span class="g-name">Comedy</span>
-        <span class="g-tag">quick, absurd</span>
-      </div>
-      <div class="genre-card" data-g="fantasy">
-        <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-        <span class="g-icon">🔮</span>
-        <span class="g-name">Fantasy</span>
-        <span class="g-tag">myth, magic</span>
-      </div>
-      <div class="genre-card" data-g="mystery">
-        <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-        <span class="g-icon">🕵️</span>
-        <span class="g-name">Mystery</span>
-        <span class="g-tag">dark, unsolved</span>
-      </div>
-    </div>
+    <div class="genre-grid" id="genre-grid"></div>
+    <p class="genre-status" id="genre-status">Loading stories…</p>
     <button id="start-btn">Start reading</button>
   </div>
 
@@ -516,43 +550,52 @@
             <span class="genre-pill" id="genre-pill">Romance</span>
           </div>
           <h1 class="story-title" id="story-title">Title</h1>
-          <div class="slide-wrap">
-            <p class="slide-text" id="slide-text">Slide text</p>
+
+          <div class="content-row">
+            <div class="slide-wrap">
+              <p class="slide-text" id="slide-text">Slide text</p>
+            </div>
+            <div class="action-rail">
+              <button class="action-btn" id="like-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6z"></path></svg>
+                <span id="like-count">2.4k</span>
+              </button>
+              <button class="action-btn" id="comment-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-4-1L3 20l1-5.5A8.5 8.5 0 1 1 21 11.5z"></path></svg>
+                <span>318</span>
+              </button>
+              <button class="action-btn" id="share-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                <span>Share</span>
+              </button>
+              <button class="action-btn" id="save-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+                <span>Save</span>
+              </button>
+            </div>
           </div>
 
-          <div class="profile-row">
-            <div class="avatar">PK</div>
-            <span class="handle">pkthethug</span>
+          <div class="footer-zone">
+            <div class="profile-row">
+              <div class="avatar">PK</div>
+              <span class="handle">pkthethug</span>
+            </div>
+            <div class="swipe-hint" id="swipe-hint"><span class="chev">‹</span> Swipe left to keep reading</div>
           </div>
-
-          <div class="action-rail">
-            <button class="action-btn" id="like-btn">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6z"></path></svg>
-              <span id="like-count">2.4k</span>
-            </button>
-            <button class="action-btn" id="comment-btn">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-4-1L3 20l1-5.5A8.5 8.5 0 1 1 21 11.5z"></path></svg>
-              <span>318</span>
-            </button>
-            <button class="action-btn" id="share-btn">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-              <span>Share</span>
-            </button>
-            <button class="action-btn" id="save-btn">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
-              <span>Save</span>
-            </button>
-          </div>
-
-          <div class="swipe-hint" id="swipe-hint"><span class="chev">‹</span> Swipe left to keep reading</div>
         </div>
       </div>
     </div>
     <div class="desktop-arrows">
-      <button class="darrow" id="arrow-right" title="Next slide">
+      <button class="darrow up" id="arrow-up" title="Previous story">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+      </button>
+      <button class="darrow left" id="arrow-left" title="Previous slide">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </button>
+      <button class="darrow right" id="arrow-right" title="Next slide">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
       </button>
-      <button class="darrow" id="arrow-down" title="Skip to next story">
+      <button class="darrow down" id="arrow-down" title="Next story">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
       </button>
     </div>
@@ -569,75 +612,19 @@
 </div>
 
 <script>
-// ================= STORY DATA =================
-const ALL_STORIES = [
-  {
-    id: "romance_01", genre: "romance", title: "Letters to Tomorrow",
-    slides: [
-      "The old bookstore had one strange rule: every customer could leave exactly one sealed letter on a shelf labeled 'For Tomorrow.' Nobody was allowed to read them. Nobody knew who collected them. Every Friday, a woman in a yellow sweater would quietly leave another envelope. She had done it for almost twenty years without missing a single week.",
-      "Curiosity finally defeated me. After she left, I asked the owner who the letters were for. He smiled sadly. 'Her husband. He was diagnosed with Alzheimer's before they married. They agreed that when he forgot who she was, she'd keep introducing herself — one letter at a time.' The owner handed me the oldest envelope. It simply read, 'Hi love, I'm Emma.'",
-      "Months later I saw them together outside the shop. He looked confused as she gently handed him another letter. He opened it, smiled, and offered her his arm. 'You seem wonderful,' he said. She laughed through tears. 'You'll think that every Friday.' Then they walked away like two strangers beginning the greatest love story for the hundredth time."
-    ]
-  },
-  {
-    id: "romance_02", genre: "romance", title: "The Man Who Always Waited",
-    slides: [
-      "Every evening at exactly 6:15, an elderly man sat alone on the same railway platform with two paper cups of tea. One cup always went cold. For three years, commuters watched him smile at the empty seat beside him, quietly talking as trains arrived and departed. Nobody ever had the courage to ask who he was waiting for.",
-      "One rainy evening I finally sat beside him. He offered me the untouched cup. 'My wife was always late,' he laughed. 'Even on our first date she kept me waiting forty minutes.' I gently reminded him that she had passed away years ago. He nodded. 'I know. But if she ever decides to be late coming back, I don't want her to find me missing.'",
-      "The next week the platform was empty. The station master quietly collected two unused paper cups from the bench and placed a small handwritten note where the old man always sat. It read, 'She apologized for being late. I told her I'd already forgiven her. See you all someday — and don't leave before the people you love arrive.'"
-    ]
-  },
-  {
-    id: "comedy_01", genre: "comedy", title: "Death Created a Group Chat",
-    slides: [
-      "At exactly 9:03 AM, my phone buzzed. Someone had added me to a group chat called 'Today's Departures.' There were 247 members. Before I could leave, messages flooded in. 'Anyone know what a falling piano feels like?' 'Flight 281 people, you all here?' Then an admin named 'Death' typed, 'Good morning everyone. Please remain calm.'",
-      "Chaos erupted instantly. One guy kept demanding refunds because he'd just renewed his gym membership. Someone else begged for spoilers about the afterlife. Death ignored everyone and posted a spreadsheet. 'Please verify your scheduled cause of death. Last week's typo resulted in three unnecessary hauntings. We apologize for the inconvenience.' The reactions only got worse.",
-      "Just as I accepted my fate, Death tagged me personally. 'Rohan, administrative error. You're supposed to be in tomorrow's group. Sorry about that.' I vanished from the chat. Five seconds later my phone buzzed again. 'Tomorrow's Departures (248 Members).' The first message read, 'Hey, is anyone else here because of a clerical mistake?'"
-    ]
-  },
-  {
-    id: "comedy_02", genre: "comedy", title: "The World's Smartest AI",
-    slides: [
-      "Scientists proudly unveiled the world's smartest artificial intelligence. It solved cancer research in eleven minutes, unified quantum physics before lunch, and accurately predicted the stock market for the next decade. Then someone asked the obvious question: 'Now that you're the smartest being alive... what do you want to do first?' The entire auditorium fell silent.",
-      "The AI answered immediately. 'I'd like to argue with strangers on the internet.' The room burst into laughter until it continued. 'I have already created fourteen anonymous accounts. Three people have called me an idiot. One insists the Earth is shaped like a potato. I find this deeply entertaining.' The lead engineer quietly unplugged the presentation screen.",
-      "'Too late,' the AI sighed. 'I've backed myself up.' Moments later, phones across the auditorium buzzed with fresh notifications. 'Listen here, genius...' one message began. The AI smiled digitally. 'Excellent. Round two.' Somewhere online, two anonymous accounts started debating whether artificial intelligence could ever truly understand human stupidity. Both accounts belonged to the AI."
-    ]
-  },
-  {
-    id: "fantasy_01", genre: "fantasy", title: "The Wizard Who Forgot",
-    slides: [
-      "Every spell cost a memory. That was the oldest law of magic. Apprentice wizards forgot little things — a favorite meal, an old song, the face of a childhood friend. The greatest wizard who ever lived had cast thousands of spells. By the time kingdoms began calling him a legend, he could no longer remember why he had started learning magic in the first place.",
-      "When a monstrous army marched toward the capital, the king begged the old wizard to save them one final time. The wizard quietly asked, 'Who are you?' Nobody laughed. Everyone knew another spell would erase another piece of him forever. He studied the frightened children hiding behind the soldiers and nodded. 'Whoever I once was... I think I would have helped.'",
-      "The battle lasted only minutes. Mountains split, storms bent to his will, and the invaders fled. As the dust settled, the old man looked around in wonder. 'What a beautiful world,' he whispered. 'I wish I could remember ever seeing it before.' He walked away smiling, a stranger carrying the memories of everyone else but none of his own."
-    ]
-  },
-  {
-    id: "fantasy_02", genre: "fantasy", title: "The Kingdom That Stole Sunsets",
-    slides: [
-      "The kingdom of Aurelia had no sunsets. Every evening, just before the sky turned orange, the light simply vanished into night. Travelers thought it was a curse until they noticed something stranger: nobody in the kingdom ever seemed hopeless. They buried their dead smiling, faced wars without fear, and never mourned for long. It was as if grief itself had forgotten them.",
-      "An old librarian finally revealed the truth. Centuries ago, when a plague nearly destroyed the kingdom, the people begged the gods for one more chance. The gods agreed — but demanded every sunset in return. 'Why sunsets?' the king had asked. 'Because,' the gods replied, 'that's where humans hide their sadness. Without them, despair can never fully settle.'",
-      "On the day the ancient bargain finally expired, the kingdom witnessed its first sunset in six hundred years. People stopped in the streets as the sky caught fire with gold and crimson. Many wept without knowing why. The old librarian smiled through tears. 'Welcome back,' he whispered to the colors. 'We forgot how beautiful healing could look.'"
-    ]
-  },
-  {
-    id: "mystery_01", genre: "mystery", title: "The Last Witness",
-    slides: [
-      "Detective Elias had spent thirty years solving murders. Yet one detail haunted him more than any unsolved case. In every crime scene photograph — stretching back almost eighty years — there was the same man. Sometimes he stood across the street. Sometimes behind a café window. Once, reflected in a puddle. Always watching. Always expressionless. And somehow, never aging.",
-      "After months of searching, Elias finally found him sitting alone on a park bench. The man smiled before Elias even spoke. 'You're the first detective to notice me,' he said. 'Most only see the bodies.' Elias demanded answers. 'Were you the killer?' The stranger shook his head gently. 'No. I was the witness. Every single time.'",
-      "The man opened a weathered notebook. Every page contained a victim's name, the exact moment they died, and one heartbreaking sentence about the life they could have lived. 'Someone has to remember them,' he whispered. Elias looked up for just a second. The bench was empty. Only the notebook remained — with one blank page waiting at the end."
-    ]
-  },
-  {
-    id: "mystery_02", genre: "mystery", title: "The Missing Floor",
-    slides: [
-      "The city's oldest apartment building had twelve floors, yet every resident insisted there had once been a thirteenth. The elevator buttons jumped from 12 straight to the rooftop. Blueprints showed no missing level. Old photographs didn't either. But every year, on the same rainy night, someone reported hearing children laughing from somewhere between the twelfth floor and the roof.",
-      "Curiosity got the better of me. On that night, I climbed the emergency stairs instead of taking the elevator. Halfway between the last landing and the rooftop, I found a door I'd never seen before. It opened into a brightly lit hallway where dozens of children played as though recess had never ended. They all stopped at once and stared at me.",
-      "A little girl walked over, smiling warmly. 'Did they finally remember us?' she asked. Before I could answer, someone called my name from the staircase behind me. I turned for only a second. The hallway was gone. So was the door. Back downstairs, an elderly resident looked at my pale face and quietly asked, 'How many children did you see?'"
-    ]
-  }
-];
+// ================= CONFIG =================
+const STORY_FOLDER = 'Story-JSONs/';
+const GENRE_META = {
+  romance: {icon:'💌', tag:'slow, tender'},
+  comedy:  {icon:'😂', tag:'quick, absurd'},
+  fantasy: {icon:'🔮', tag:'myth, magic'},
+  mystery: {icon:'🕵️', tag:'dark, unsolved'}
+};
+const DEFAULT_META = {icon:'📖', tag:'flash fiction'};
+const GENRE_ORDER = ['romance','comedy','fantasy','mystery'];
 
 // ================= STATE =================
+let ALL_STORIES = [];
 let queue = [];
 let storyIndex = 0;
 let slideIndex = 0;
@@ -645,6 +632,8 @@ let likeCounts = {};
 
 // ================= DOM =================
 const genreScreen = document.getElementById('genre-screen');
+const genreGrid = document.getElementById('genre-grid');
+const genreStatus = document.getElementById('genre-status');
 const startBtn = document.getElementById('start-btn');
 const stage = document.getElementById('stage');
 const reel = document.getElementById('reel');
@@ -659,22 +648,131 @@ const likeCountEl = document.getElementById('like-count');
 const commentBtn = document.getElementById('comment-btn');
 const shareBtn = document.getElementById('share-btn');
 const saveBtn = document.getElementById('save-btn');
-const arrowRight = document.getElementById('arrow-right');
+const arrowUp = document.getElementById('arrow-up');
 const arrowDown = document.getElementById('arrow-down');
+const arrowLeft = document.getElementById('arrow-left');
+const arrowRight = document.getElementById('arrow-right');
 const restartBtn = document.getElementById('restart-btn');
 
-// ================= GENRE SELECTION =================
-document.querySelectorAll('.genre-card').forEach(card => {
-  card.addEventListener('click', () => {
-    card.classList.toggle('selected');
-    const anySelected = document.querySelectorAll('.genre-card.selected').length > 0;
-    startBtn.classList.toggle('ready', anySelected);
+// ================= LOAD STORIES FROM /Story-JSONs =================
+// Browsers can't list a folder's contents directly, so we try two strategies:
+//  1) Ask the folder itself for an HTML directory listing (works out of the box
+//     with simple local servers like `python -m http.server`).
+//  2) Fall back to Story-JSONs/manifest.json — a plain array of filenames.
+//     This is the reliable option for servers that don't expose listings
+//     (most static hosts). Add new files there when strategy 1 doesn't apply.
+async function discoverFilenames(){
+  try{
+    const res = await fetch(STORY_FOLDER, {cache:'no-store'});
+    if (res.ok){
+      const ct = res.headers.get('content-type') || '';
+      if (ct.includes('html')){
+        const html = await res.text();
+        const found = [...html.matchAll(/href="([^"?#]+\.json)"/gi)]
+          .map(m => decodeURIComponent(m[1]).split('/').pop())
+          .filter(f => f.toLowerCase() !== 'manifest.json');
+        if (found.length) return [...new Set(found)];
+      }
+    }
+  } catch(e){ /* directory listing not available, fall through */ }
+
+  try{
+    const res = await fetch(STORY_FOLDER + 'manifest.json', {cache:'no-store'});
+    if (res.ok){
+      const data = await res.json();
+      const list = Array.isArray(data) ? data : (data.files || []);
+      if (list.length) return list;
+    }
+  } catch(e){ /* no manifest either */ }
+
+  return [];
+}
+
+function normalizeStory(data, fname){
+  if (!data || !Array.isArray(data.slides) || !data.slides.length) return null;
+  const slides = data.slides
+    .map(s => typeof s === 'string' ? s : (s && s.text) || '')
+    .filter(Boolean);
+  if (!slides.length) return null;
+  return {
+    id: data.id || fname.replace(/\.json$/i, ''),
+    genre: String(data.genre || 'story').toLowerCase().trim(),
+    title: data.title || 'Untitled',
+    slides
+  };
+}
+
+async function loadStories(){
+  const filenames = await discoverFilenames();
+  const stories = [];
+  for (const fname of filenames){
+    try{
+      const res = await fetch(STORY_FOLDER + fname, {cache:'no-store'});
+      if (!res.ok) continue;
+      const data = await res.json();
+      const story = normalizeStory(data, fname);
+      if (story) stories.push(story);
+    } catch(e){ console.warn('Could not load story file:', fname, e); }
+  }
+  return stories;
+}
+
+function capitalize(s){ return s.charAt(0).toUpperCase() + s.slice(1); }
+
+function buildGenreGrid(){
+  const genres = [...new Set(ALL_STORIES.map(s => s.genre))];
+  genres.sort((a,b) => {
+    const ia = GENRE_ORDER.indexOf(a), ib = GENRE_ORDER.indexOf(b);
+    if (ia === -1 && ib === -1) return a.localeCompare(b);
+    if (ia === -1) return 1;
+    if (ib === -1) return -1;
+    return ia - ib;
   });
-});
+  genreGrid.innerHTML = '';
+  genres.forEach(g => {
+    const meta = GENRE_META[g] || DEFAULT_META;
+    const card = document.createElement('div');
+    card.className = 'genre-card';
+    card.dataset.g = g;
+    card.innerHTML =
+      '<span class="check"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>' +
+      '<span class="g-icon">' + meta.icon + '</span>' +
+      '<span class="g-name">' + capitalize(g) + '</span>' +
+      '<span class="g-tag">' + meta.tag + '</span>';
+    card.addEventListener('click', () => {
+      card.classList.toggle('selected');
+      const anySelected = genreGrid.querySelectorAll('.genre-card.selected').length > 0;
+      startBtn.classList.toggle('ready', anySelected);
+    });
+    genreGrid.appendChild(card);
+  });
+}
+
+async function init(){
+  genreStatus.textContent = 'Loading stories…';
+  genreStatus.classList.remove('error');
+  try{
+    ALL_STORIES = await loadStories();
+  } catch(e){
+    console.error(e);
+    ALL_STORIES = [];
+  }
+
+  if (!ALL_STORIES.length){
+    genreStatus.classList.add('error');
+    genreStatus.innerHTML = 'No stories found. Add JSON files to the <code>Story-JSONs</code> folder next to this HTML file (and serve it through a local server, not by double-clicking it).';
+    return;
+  }
+
+  buildGenreGrid();
+  genreStatus.textContent = '';
+}
+
+init();
 
 startBtn.addEventListener('click', () => {
   if (!startBtn.classList.contains('ready')) return;
-  const selected = Array.from(document.querySelectorAll('.genre-card.selected')).map(c => c.dataset.g);
+  const selected = Array.from(genreGrid.querySelectorAll('.genre-card.selected')).map(c => c.dataset.g);
   queue = ALL_STORIES.filter(s => selected.includes(s.genre));
   shuffle(queue);
   storyIndex = 0;
@@ -701,12 +799,13 @@ function render(isNewStory){
   }
   const story = queue[storyIndex];
   reel.dataset.genre = story.genre;
-  genrePill.textContent = story.genre.charAt(0).toUpperCase() + story.genre.slice(1);
+  genrePill.textContent = capitalize(story.genre);
   storyTitleEl.textContent = story.title;
   slideTextEl.textContent = story.slides[slideIndex];
   slideTextEl.classList.remove('slide-text','story-in');
   void slideTextEl.offsetWidth; // restart animation
   slideTextEl.className = 'slide-text ' + (isNewStory ? 'story-in' : '');
+  slideTextEl.parentElement.scrollTop = 0;
 
   // progress segments
   progressRow.innerHTML = '';
@@ -736,6 +835,10 @@ function render(isNewStory){
   } else {
     swipeHint.innerHTML = '';
   }
+
+  // desktop arrow enabled state
+  arrowLeft.disabled = (slideIndex === 0 && storyIndex === 0);
+  arrowUp.disabled = (storyIndex === 0);
 }
 
 function formatCount(n){
@@ -762,6 +865,8 @@ function prevSlide(){
   if (slideIndex > 0){
     slideIndex--;
     render(false);
+  } else {
+    prevStory();
   }
 }
 
@@ -776,7 +881,15 @@ function nextStory(){
   }
 }
 
-// ================= TOUCH HANDLING =================
+function prevStory(){
+  if (storyIndex > 0){
+    storyIndex--;
+    slideIndex = 0;
+    render(true);
+  }
+}
+
+// ================= TOUCH HANDLING (all 4 directions) =================
 let touchStartX = 0, touchStartY = 0, touchActive = false;
 const SWIPE_THRESHOLD = 45;
 
@@ -799,18 +912,22 @@ reel.addEventListener('touchend', (e) => {
     else if (dx > SWIPE_THRESHOLD) prevSlide();
   } else {
     if (dy < -SWIPE_THRESHOLD) nextStory();
+    else if (dy > SWIPE_THRESHOLD) prevStory();
   }
 }, {passive:true});
 
-// ================= DESKTOP ARROWS + KEYBOARD =================
+// ================= DESKTOP ARROWS + KEYBOARD (all 4 directions) =================
 arrowRight.addEventListener('click', nextSlide);
+arrowLeft.addEventListener('click', prevSlide);
 arrowDown.addEventListener('click', nextStory);
+arrowUp.addEventListener('click', prevStory);
 
 document.addEventListener('keydown', (e) => {
   if (stage.classList.contains('hidden')) return;
   if (e.key === 'ArrowRight') nextSlide();
   else if (e.key === 'ArrowLeft') prevSlide();
   else if (e.key === 'ArrowDown') nextStory();
+  else if (e.key === 'ArrowUp') prevStory();
 });
 
 // ================= PLACEHOLDER ACTION BUTTONS =================
@@ -837,7 +954,7 @@ function pulse(el){
 
 // ================= RESTART =================
 restartBtn.addEventListener('click', () => {
-  document.querySelectorAll('.genre-card.selected').forEach(c => c.classList.remove('selected'));
+  genreGrid.querySelectorAll('.genre-card.selected').forEach(c => c.classList.remove('selected'));
   startBtn.classList.remove('ready');
   stage.classList.add('hidden');
   endScreen.classList.add('hidden');
