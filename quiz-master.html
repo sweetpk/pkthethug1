@@ -1414,11 +1414,9 @@ input[type="range"]::-webkit-slider-thumb {
 
       <!-- LAYER 1: Source (Category) -->
       <div id="source-chips-section" style="margin-bottom:20px">
-        <p class="form-label" style="margin-bottom:8px">① Select Source <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--text3);font-size:0.75rem">(required — pick one or more sources)</span></p>
-        <p class="text-sm" style="color:var(--text2);margin-bottom:10px">Choose the source(s) to draw questions from. Month and week filters appear below when applicable.</p>
-        <div class="chip-group" id="source-chips">
-          <span class="chip all-chip selected" data-val="ALL" onclick="toggleSourceChip(this,'ALL')">All Sources</span>
-        </div>
+        <p class="form-label" style="margin-bottom:8px">① Select Source <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--text3);font-size:0.75rem">(required — pick exactly one source)</span></p>
+        <p class="text-sm" style="color:var(--text2);margin-bottom:10px">Choose the source to draw questions from. Month and week filters appear below when applicable.</p>
+        <div class="chip-group" id="source-chips"></div>
       </div>
 
       <!-- LAYER 2: Month / File Selection (always visible when files exist) -->
@@ -1437,13 +1435,13 @@ input[type="range"]::-webkit-slider-thumb {
         </div>
       </div>
 
-      <!-- LAYER 3: Week (only shown if files have weeks) -->
+      <!-- LAYER 3: Week (only shown if the selected source's files have weeks) -->
       <div id="week-filter-row" style="display:none;margin-bottom:20px;align-items:center;gap:12px;flex-wrap:wrap">
         <div style="flex:1;min-width:200px">
-          <p class="form-label" style="margin-bottom:8px">③ Week Filter <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--text3);font-size:0.75rem">(optional — files without a week tag are always included)</span></p>
-          <select class="form-control" id="week-select" onchange="STATE.selectedWeek=this.value; STATE.selectedFiles.clear(); buildFilePickerDropdown(); updateFiltersAndUI(); updateSummaries()">
-            <option value="ALL">All Weeks</option>
-          </select>
+          <p class="form-label" style="margin-bottom:8px">③ Week Filter <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--text3);font-size:0.75rem">(optional — pick one or more weeks; files without a week tag are always included)</span></p>
+          <div class="chip-group" id="week-chips">
+            <span class="chip all-chip selected" data-val="ALL" onclick="toggleWeekChip(this,'ALL')">All Weeks</span>
+          </div>
         </div>
       </div>
 
@@ -1791,8 +1789,8 @@ const STATE = {
   // Setup
   selectedMonths: new Set(),
   selectedMonthlessFiles: new Set(), // for monthless file selection (step 2b)
-  selectedSources: new Set(['ALL']),  // NEW: source prefix filter
-  selectedWeek: 'ALL',                // NEW: 'ALL' | 'w1' | 'w2' etc.
+  selectedSources: new Set(),         // single-select source prefix filter — empty means none chosen yet, at most 1 entry
+  selectedWeeks: new Set(['ALL']),    // multi-select week filter — 'ALL' means no week restriction, otherwise a set of 'w1'/'w2'/etc.
   selectedFiles: new Set(),           // NEW: direct file picker (bypasses other filters)
   useUploadedOnly: false,             // NEW: when uploads exist, use only those
   selectedCats: new Set(['ALL']),
@@ -1937,6 +1935,7 @@ const SOURCE_PREFIX_MAP = [
   { prefix: 'misc',           label: 'Random Miscellaneous' },
   { prefix: 'other',          label: 'Other Sources' },
   { prefix: 'ca',             label: 'Cloud Affairs' },
+  { prefix: 'capp',           label: 'Cloud Affairs - Pocket Pdf' },
 ];
 
 // Extract source prefix key from filename
@@ -2162,12 +2161,10 @@ function getRelevantBankFilenames() {
     return allFnames.filter(f => STATE.selectedFiles.has(f));
   }
 
-  let fnames = allFnames;
-
-  // Source filter
-  if (!STATE.selectedSources.has('ALL') && STATE.selectedSources.size > 0) {
-    fnames = fnames.filter(f => STATE.selectedSources.has(extractSourcePrefix(f)));
-  }
+  // Source filter — single-select now: no source chosen means nothing is
+  // relevant yet (previously 'ALL' meant "include everything").
+  if (STATE.selectedSources.size === 0) return [];
+  let fnames = allFnames.filter(f => STATE.selectedSources.has(extractSourcePrefix(f)));
 
   // Month / monthless filter
   const hasMonthSel = STATE.selectedMonths.size > 0;
@@ -2180,11 +2177,11 @@ function getRelevantBankFilenames() {
     });
   }
 
-  // Week filter
-  if (STATE.selectedWeek !== 'ALL') {
+  // Week filter — multi-select; 'ALL' (default) means no restriction
+  if (!STATE.selectedWeeks.has('ALL') && STATE.selectedWeeks.size > 0) {
     fnames = fnames.filter(f => {
       const week = extractWeekFromFilename(f);
-      return week === null || week === STATE.selectedWeek;
+      return week === null || STATE.selectedWeeks.has(week);
     });
   }
 
@@ -2192,16 +2189,12 @@ function getRelevantBankFilenames() {
 }
 
 // True once the user has narrowed down enough that loading the relevant
-// files is a small, scoped fetch — not "basically everything". Used to
-// avoid silently downloading every bank file just because the page loaded
-// with the default "All Sources" selection still in place.
+// files is a small, scoped fetch — not "basically everything". Since source
+// selection is now mandatory and single-select, picking a source IS the
+// narrowing step; month/week/file-picker are additional optional refinements.
 function hasNarrowedSelection() {
   if (STATE.selectedFiles.size > 0) return true;
-  if (STATE.selectedMonths.size > 0) return true;
-  if (STATE.selectedMonthlessFiles.size > 0) return true;
-  if (!STATE.selectedSources.has('ALL')) return true;
-  if (STATE.selectedWeek !== 'ALL') return true;
-  return false;
+  return STATE.selectedSources.size > 0;
 }
 
 // Ensures full question content is loaded (fetched + merged into
@@ -2247,14 +2240,11 @@ function buildMonthGrid() {
 
   const allFiles = STATE.useUploadedOnly ? STATE.uploadedFiles : STATE.bankFiles;
 
-  // Get files that match selected source
-  const sourceFiles = Object.entries(allFiles).filter(([fname]) => {
-    if (!STATE.selectedSources.has('ALL')) {
-      const p = extractSourcePrefix(fname);
-      if (!STATE.selectedSources.has(p)) return false;
-    }
-    return true;
-  });
+  // Get files that match the selected source (single-select — empty means
+  // no source chosen yet, so nothing to show).
+  const sourceFiles = STATE.selectedSources.size === 0
+    ? []
+    : Object.entries(allFiles).filter(([fname]) => STATE.selectedSources.has(extractSourcePrefix(fname)));
 
   if (sourceFiles.length === 0) {
     if (section) section.style.display = 'none';
@@ -2377,7 +2367,7 @@ function toggleMonth(btn, month) {
   }
   // Reset downstream filters when month changes
   STATE.selectedFiles.clear();
-  STATE.selectedWeek = 'ALL';
+  STATE.selectedWeeks = new Set(['ALL']);
   buildWeekDropdown();
   buildFilePickerDropdown();
   updateFiltersAndUI();
@@ -2395,11 +2385,12 @@ function buildSourceChips() {
   const allFiles = STATE.useUploadedOnly ? STATE.uploadedFiles : STATE.bankFiles;
   const presentPrefixes = new Set(Object.keys(allFiles).map(fname => extractSourcePrefix(fname)));
 
-  // Remove selected sources that no longer exist
+  // Remove the selected source if it no longer exists. Since this is now
+  // single-select, there's nothing else to fall back to — an empty set just
+  // means "no source chosen yet", which is a valid, expected state.
   for (const s of [...STATE.selectedSources]) {
-    if (s !== 'ALL' && !presentPrefixes.has(s)) STATE.selectedSources.delete(s);
+    if (!presentPrefixes.has(s)) STATE.selectedSources.delete(s);
   }
-  if (STATE.selectedSources.size === 0) STATE.selectedSources.add('ALL');
 
   const sorted = [...presentPrefixes].sort((a, b) => {
     const ai = SOURCE_PREFIX_MAP.findIndex(x => x.prefix === a);
@@ -2412,43 +2403,35 @@ function buildSourceChips() {
   // re-serializes and re-parses the ENTIRE existing chip list on every
   // iteration — O(n²) work that re-runs on every filter click. That was a
   // real, felt cause of the setup-screen lag.)
-  const allChip = `<span class="chip all-chip ${STATE.selectedSources.has('ALL') ? 'selected' : ''}" data-val="ALL" onclick="toggleSourceChip(this,'ALL')">All Sources</span>`;
-  const sourceChips = sorted.map(prefix => {
+  container.innerHTML = sorted.map(prefix => {
     const sel = STATE.selectedSources.has(prefix);
     return `<span class="chip ${sel ? 'selected' : ''}" data-val="${prefix}" onclick="toggleSourceChip(this,'${prefix}')">${getSourceLabel(prefix)}</span>`;
   }).join('');
-  container.innerHTML = allChip + sourceChips;
 
   // Always show source chips section (it's now the primary step)
   const section = $('source-chips-section');
   if (section) section.style.display = 'block';
 }
 
+// Single-select: picking a source replaces whatever was selected before.
+// Clicking the already-selected source deselects it, returning to the
+// "no source chosen — please pick one" state. Sources are kept single-select
+// on purpose: some sources have week-tagged files and some don't, and mixing
+// both under one filter made the week filter meaningless/confusing.
 function toggleSourceChip(chip, val) {
-  if (val === 'ALL') {
-    STATE.selectedSources.clear();
-    STATE.selectedSources.add('ALL');
-    $('source-chips').querySelectorAll('.chip').forEach(c => c.classList.toggle('selected', c.dataset.val === 'ALL'));
-  } else {
-    STATE.selectedSources.delete('ALL');
-    $('source-chips').querySelector('[data-val="ALL"]')?.classList.remove('selected');
-    if (STATE.selectedSources.has(val)) {
-      STATE.selectedSources.delete(val);
-      chip.classList.remove('selected');
-      if (STATE.selectedSources.size === 0) {
-        STATE.selectedSources.add('ALL');
-        $('source-chips').querySelector('[data-val="ALL"]')?.classList.add('selected');
-      }
-    } else {
-      STATE.selectedSources.add(val);
-      chip.classList.add('selected');
-    }
-  }
+  const wasSelected = STATE.selectedSources.has(val);
+  STATE.selectedSources.clear();
+  if (!wasSelected) STATE.selectedSources.add(val);
+
+  $('source-chips').querySelectorAll('.chip').forEach(c => {
+    c.classList.toggle('selected', c.dataset.val === val && !wasSelected);
+  });
+
   // Source changed — reset downstream filters
   STATE.selectedMonths.clear();
   STATE.selectedMonthlessFiles.clear();
   STATE.selectedFiles.clear();
-  STATE.selectedWeek = 'ALL';
+  STATE.selectedWeeks = new Set(['ALL']);
   buildMonthGrid();
   buildWeekDropdown();
   buildFilePickerDropdown();
@@ -2457,20 +2440,19 @@ function toggleSourceChip(chip, val) {
 }
 
 // ============================================================
-// WEEK DROPDOWN (3rd layer: shown only when week-tagged files exist in source+month selection)
+// WEEK CHIPS (3rd layer: shown only when week-tagged files exist for the selected source+month)
 // ============================================================
 function buildWeekDropdown() {
-  const sel = $('week-select');
-  if (!sel) return;
+  const container = $('week-chips');
+  if (!container) return;
 
   // Find which weeks exist in current source+month filtered files
   const allFiles = STATE.useUploadedOnly ? STATE.uploadedFiles : STATE.bankFiles;
   const relevantFiles = Object.keys(allFiles).filter(fname => {
-    // Source filter (primary)
-    if (!STATE.selectedSources.has('ALL')) {
-      const p = extractSourcePrefix(fname);
-      if (!STATE.selectedSources.has(p)) return false;
-    }
+    // Source filter (primary) — single-select
+    if (STATE.selectedSources.size === 0) return false;
+    const p = extractSourcePrefix(fname);
+    if (!STATE.selectedSources.has(p)) return false;
     // Month filter (secondary — only applied if months are selected)
     if (STATE.selectedMonths.size > 0) {
       const m = extractMonthFromFilename(fname);
@@ -2482,22 +2464,57 @@ function buildWeekDropdown() {
   const weeks = new Set(relevantFiles.map(f => extractWeekFromFilename(f)).filter(Boolean));
   const sortedWeeks = [...weeks].sort();
 
-  // If no weeks at all, hide the row
+  // If no weeks at all (e.g. Cloud Affairs - Pocket Pdf, which has none),
+  // hide the row entirely — that's the whole point of gating this behind a
+  // single selected source now.
   const weekRow = $('week-filter-row');
   if (weekRow) weekRow.style.display = weeks.size === 0 ? 'none' : 'flex';
 
-  // Build all <option> tags as one string, assign once (see buildSourceChips
-  // for why: += in a loop re-parses the whole growing list every iteration).
-  const weekOptions = sortedWeeks.map(w => {
-    const label = 'Week ' + w.slice(1); // w1 -> Week 1
-    return `<option value="${w}" ${STATE.selectedWeek === w ? 'selected' : ''}>${label}</option>`;
-  }).join('');
-  sel.innerHTML = '<option value="ALL">All Weeks</option>' + weekOptions;
-  // Ensure selected week still valid
-  if (STATE.selectedWeek !== 'ALL' && !weeks.has(STATE.selectedWeek)) {
-    STATE.selectedWeek = 'ALL';
-    sel.value = 'ALL';
+  // Drop any selected weeks that no longer exist for this source/month
+  if (!STATE.selectedWeeks.has('ALL')) {
+    for (const w of [...STATE.selectedWeeks]) {
+      if (!weeks.has(w)) STATE.selectedWeeks.delete(w);
+    }
+    if (STATE.selectedWeeks.size === 0) STATE.selectedWeeks.add('ALL');
   }
+
+  // Build all week chips as one string, assign once (see buildSourceChips
+  // for why: += in a loop re-parses the whole growing list every iteration).
+  const allChip = `<span class="chip all-chip ${STATE.selectedWeeks.has('ALL') ? 'selected' : ''}" data-val="ALL" onclick="toggleWeekChip(this,'ALL')">All Weeks</span>`;
+  const weekChips = sortedWeeks.map(w => {
+    const sel = STATE.selectedWeeks.has(w);
+    const label = 'Week ' + w.slice(1); // w1 -> Week 1
+    return `<span class="chip ${sel ? 'selected' : ''}" data-val="${w}" onclick="toggleWeekChip(this,'${w}')">${label}</span>`;
+  }).join('');
+  container.innerHTML = allChip + weekChips;
+}
+
+// Multi-select: toggling a specific week adds/removes it from the set.
+// Picking "All Weeks" clears everything back to the no-restriction default.
+function toggleWeekChip(chip, val) {
+  if (val === 'ALL') {
+    STATE.selectedWeeks.clear();
+    STATE.selectedWeeks.add('ALL');
+    $('week-chips').querySelectorAll('.chip').forEach(c => c.classList.toggle('selected', c.dataset.val === 'ALL'));
+  } else {
+    STATE.selectedWeeks.delete('ALL');
+    $('week-chips').querySelector('[data-val="ALL"]')?.classList.remove('selected');
+    if (STATE.selectedWeeks.has(val)) {
+      STATE.selectedWeeks.delete(val);
+      chip.classList.remove('selected');
+      if (STATE.selectedWeeks.size === 0) {
+        STATE.selectedWeeks.add('ALL');
+        $('week-chips').querySelector('[data-val="ALL"]')?.classList.add('selected');
+      }
+    } else {
+      STATE.selectedWeeks.add(val);
+      chip.classList.add('selected');
+    }
+  }
+  STATE.selectedFiles.clear();
+  buildFilePickerDropdown();
+  updateFiltersAndUI();
+  updateSummaries();
 }
 
 // ============================================================
@@ -2596,8 +2613,8 @@ function buildCategoryChips() {
           else return hasMonthlessSel ? STATE.selectedMonthlessFiles.has(q._source) : true;
         });
       }
-      if (STATE.selectedWeek !== 'ALL') {
-        base = base.filter(q => q._week === null || q._week === STATE.selectedWeek);
+      if (!STATE.selectedWeeks.has('ALL')) {
+        base = base.filter(q => q._week === null || STATE.selectedWeeks.has(q._week));
       }
     }
     base.forEach(q => {
@@ -2668,8 +2685,9 @@ function toggleChip(chip, type) {
 // FILTERING
 // ============================================================
 function getFilteredBySource() {
-  // Primary filter: source prefix
-  if (STATE.selectedSources.has('ALL') || STATE.selectedSources.size === 0) return STATE.allQuestions;
+  // Primary filter: source prefix — single-select now, so no source chosen
+  // means nothing is included yet (previously 'ALL' meant "everything").
+  if (STATE.selectedSources.size === 0) return [];
   return STATE.allQuestions.filter(q => STATE.selectedSources.has(q._fileCat));
 }
 
@@ -2706,9 +2724,9 @@ function getFilteredQuestions() {
   }
 
   // Week filter — step 3, smart: only restrict files that have a week label
-  if (STATE.selectedWeek !== 'ALL') {
+  if (!STATE.selectedWeeks.has('ALL')) {
     qs = qs.filter(q => {
-      return q._week === null || q._week === STATE.selectedWeek;
+      return q._week === null || STATE.selectedWeeks.has(q._week);
     });
   }
 
@@ -2810,13 +2828,12 @@ function updateStartButton() {
     return;
   }
 
-  // Bank mode, still on the broad default selection: don't fetch anything,
-  // just prompt the user to narrow down first (pick a source, month, week,
-  // or specific file). This is what keeps page-load fast with thousands of
-  // questions — nothing downloads until the user picks something specific.
+  // Bank mode, no source picked yet: don't fetch anything, just prompt the
+  // user to pick a source first. This is what keeps page-load fast with
+  // thousands of questions — nothing downloads until a source is chosen.
   if (!STATE.useUploadedOnly && !hasNarrowedSelection()) {
     btn.disabled = true;
-    btn.textContent = 'Select a source or month above to continue';
+    btn.textContent = 'Select a source above to continue';
     return;
   }
 
@@ -2850,13 +2867,15 @@ function updateSummaries() {
   if (STATE.selectedFiles.size > 0) {
     selectionStr = `${STATE.selectedFiles.size} file(s) picked`;
   } else {
-    const sourceStr = STATE.selectedSources.has('ALL') 
-      ? 'All Sources' 
-      : [...STATE.selectedSources].map(getSourceLabel).join(', ');
+    const sourceStr = STATE.selectedSources.size > 0
+      ? [...STATE.selectedSources].map(getSourceLabel).join(', ')
+      : 'No source selected';
     const months = [...STATE.selectedMonths];
     const monthStr = months.length > 0 ? ' · ' + months.map(prettyMonth).join(', ') : '';
     const monthlessStr = STATE.selectedMonthlessFiles.size > 0 ? ` · ${STATE.selectedMonthlessFiles.size} file(s)` : '';
-    const weekStr = STATE.selectedWeek !== 'ALL' ? ' · Week ' + STATE.selectedWeek.slice(1) : '';
+    const weekStr = !STATE.selectedWeeks.has('ALL')
+      ? ' · Week ' + [...STATE.selectedWeeks].map(w => w.slice(1)).join(', ')
+      : '';
     selectionStr = sourceStr + monthStr + monthlessStr + weekStr;
   }
   $('sum-months').textContent = selectionStr;
@@ -3014,8 +3033,8 @@ async function handleFileUpload(e) {
   // Reset all selection state when new uploads come in
   STATE.selectedMonths.clear();
   STATE.selectedMonthlessFiles.clear();
-  STATE.selectedSources = new Set(['ALL']);
-  STATE.selectedWeek = 'ALL';
+  STATE.selectedSources = new Set();
+  STATE.selectedWeeks = new Set(['ALL']);
   STATE.selectedFiles.clear();
 
   mergeAllQuestions();
@@ -3050,8 +3069,8 @@ function removeUploadedFile(fname) {
   STATE.selectedFiles.delete(fname);
   STATE.selectedMonths.clear();
   STATE.selectedMonthlessFiles.clear();
-  STATE.selectedSources = new Set(['ALL']);
-  STATE.selectedWeek = 'ALL';
+  STATE.selectedSources = new Set();
+  STATE.selectedWeeks = new Set(['ALL']);
   mergeAllQuestions();
   buildSourceChips();
   buildMonthGrid();
