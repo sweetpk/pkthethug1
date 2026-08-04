@@ -172,7 +172,6 @@ ul { list-style: none; }
   border: 1px solid var(--border);
   font-size: 1rem; transition: all var(--transition);
 }
-.icon-btn:hover { color: var(--text); background: var(--bg4); border-color: var(--border2); }
 
 /* ===== SCREEN BASE ===== */
 .screen {
@@ -279,7 +278,6 @@ ul { list-style: none; }
   color: var(--accent);
 }
 .month-btn.selected .month-label { color: var(--accent); }
-.month-btn:hover:not(.selected) { border-color: var(--border2); background: var(--bg4); color: var(--text); }
 
 /* ===== MONTHLESS FILE BUTTONS ===== */
 .monthless-btn {
@@ -302,7 +300,6 @@ ul { list-style: none; }
   color: var(--accent);
 }
 .monthless-btn.selected .ml-label { color: var(--accent); }
-.monthless-btn:hover:not(.selected) { border-color: var(--border2); background: var(--bg4); color: var(--text); }
 
 /* ===== FILE UPLOAD AREA ===== */
 .upload-area {
@@ -314,7 +311,7 @@ ul { list-style: none; }
   transition: all var(--transition);
   position: relative;
 }
-.upload-area:hover, .upload-area.dragging {
+.upload-area.dragging {
   border-color: var(--accent);
   background: var(--accent-glow);
 }
@@ -335,7 +332,6 @@ ul { list-style: none; }
 .uploaded-file .file-name { flex: 1; font-family: var(--font-mono); color: var(--text2); }
 .uploaded-file .file-count { color: var(--accent); font-weight: 600; font-family: var(--font-mono); }
 .remove-file { color: var(--text3); font-size: 0.75rem; padding: 2px 6px; border-radius: 4px; }
-.remove-file:hover { color: var(--red); background: var(--red-bg); }
 
 /* ===== MULTI SELECT CHIPS ===== */
 .chip-group {
@@ -351,7 +347,6 @@ ul { list-style: none; }
   transition: all var(--transition);
   user-select: none;
 }
-.chip:hover { border-color: var(--accent); color: var(--accent); }
 .chip.selected {
   border-color: var(--accent);
   background: var(--accent-glow);
@@ -402,7 +397,6 @@ ul { list-style: none; }
   text-align: center;
 }
 .toggle-btn:last-child { border-right: none; }
-.toggle-btn:hover { background: var(--bg4); color: var(--text); }
 .toggle-btn.active { background: var(--accent); color: white; font-weight: 600; }
 
 /* ===== SWITCH ===== */
@@ -469,8 +463,6 @@ input[type="range"]::-webkit-slider-thumb {
   background: linear-gradient(135deg, rgba(255,255,255,0.1), transparent);
   opacity: 0; transition: opacity var(--transition);
 }
-#start-btn:hover { transform: translateY(-1px); box-shadow: 0 6px 28px rgba(108, 99, 255, 0.5); }
-#start-btn:hover::after { opacity: 1; }
 #start-btn:active { transform: translateY(0); }
 #start-btn:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
 
@@ -506,7 +498,6 @@ input[type="range"]::-webkit-slider-thumb {
   display: grid; grid-template-columns: 1fr auto;
   gap: 8px; align-items: center;
 }
-.history-card:hover { border-color: var(--accent); background: var(--accent-glow); }
 .history-card-left { display: flex; flex-direction: column; gap: 4px; }
 .history-card-title { font-size: 0.88rem; font-weight: 600; }
 .history-card-meta { font-size: 0.75rem; color: var(--text2); font-family: var(--font-mono); }
@@ -618,7 +609,6 @@ input[type="range"]::-webkit-slider-thumb {
   overflow: hidden;
   background: var(--bg2);
 }
-.option-item:hover { border-color: var(--accent); transform: translateX(2px); }
 .option-key {
   width: 52px; min-width: 52px;
   display: flex; align-items: center; justify-content: center;
@@ -683,14 +673,11 @@ input[type="range"]::-webkit-slider-thumb {
   display: flex; align-items: center; gap: 6px;
   white-space: nowrap;
 }
-.ctrl-btn:hover { border-color: var(--border2); color: var(--text); background: var(--bg4); }
 .ctrl-btn.primary {
   background: var(--accent); border-color: var(--accent); color: white;
   box-shadow: 0 2px 12px rgba(108,99,255,0.3);
 }
-.ctrl-btn.primary:hover { background: var(--accent2); border-color: var(--accent2); }
 .ctrl-btn.danger { border-color: var(--red); color: var(--red); }
-.ctrl-btn.danger:hover { background: var(--red-bg); }
 .ctrl-btn.mark-btn.marked { border-color: var(--yellow); color: var(--yellow); background: var(--yellow-bg); }
 .ctrl-btn:disabled { opacity: 0.35; cursor: not-allowed; }
 .spacer { flex: 1; }
@@ -698,7 +685,6 @@ input[type="range"]::-webkit-slider-thumb {
   background: var(--green); border-color: var(--green); color: white;
   box-shadow: 0 2px 12px rgba(34,197,94,0.25);
 }
-#submit-btn:hover { background: #16a34a; border-color: #16a34a; }
 
 /* RIGHT SIDEBAR */
 #quiz-sidebar {
@@ -766,7 +752,6 @@ input[type="range"]::-webkit-slider-thumb {
   color: var(--text2);
   transition: all var(--transition);
 }
-.palette-num:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-glow); }
 .palette-num.answered { background: var(--green-bg); border-color: var(--green); color: var(--green); }
 .palette-num.marked { background: var(--yellow-bg); border-color: var(--yellow); color: var(--yellow); }
 .palette-num.current {
@@ -790,7 +775,6 @@ input[type="range"]::-webkit-slider-thumb {
   letter-spacing: 0.02em;
   box-shadow: 0 2px 10px rgba(34,197,94,0.2);
 }
-.sidebar-submit-btn:hover { background: #16a34a; transform: translateY(-1px); }
 
 /* ===== RESULT SCREEN ===== */
 #screen-result {
@@ -989,7 +973,6 @@ input[type="range"]::-webkit-slider-thumb {
   color: var(--text2);
   transition: all var(--transition);
 }
-.rev-palette-num:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-glow); }
 .rev-palette-num.rev-correct { background: var(--green-bg); border-color: var(--green); color: var(--green); }
 .rev-palette-num.rev-wrong { background: var(--red-bg); border-color: var(--red); color: var(--red); }
 .rev-palette-num.rev-skipped { background: var(--yellow-bg); border-color: var(--yellow); color: var(--yellow); }
@@ -1284,7 +1267,6 @@ input[type="range"]::-webkit-slider-thumb {
   user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
-.file-pick-card:hover { border-color: var(--border2); background: var(--bg4); }
 .file-pick-card.selected {
   border-color: var(--accent);
   background: var(--accent-glow);
@@ -1320,6 +1302,38 @@ input[type="range"]::-webkit-slider-thumb {
   background: var(--bg4); color: var(--text3);
   border: 1px solid var(--border);
   white-space: nowrap;
+}
+/* ===== HOVER EFFECTS (real pointer devices only) =====
+   All :hover styling lives here, gated behind (hover: hover) and
+   (pointer: fine). Touch devices report hover:none, so this whole block
+   simply doesn't apply on phones/tablets.
+   Why: on touch, tapping an element triggers :hover with no matching
+   "mouse leave" to clear it — the hover style just sticks until you tap
+   something else. For chips/cards that use the same accent color for both
+   :hover and .selected, that made a just-deselected chip still LOOK
+   selected until you tapped elsewhere. Scoping hover to real pointers
+   fixes this for every card/chip/button at once, with zero effect on
+   desktop (mouse users still get every hover effect exactly as before). */
+@media (hover: hover) and (pointer: fine) {
+  .icon-btn:hover { color: var(--text); background: var(--bg4); border-color: var(--border2); }
+  .month-btn:hover:not(.selected) { border-color: var(--border2); background: var(--bg4); color: var(--text); }
+  .monthless-btn:hover:not(.selected) { border-color: var(--border2); background: var(--bg4); color: var(--text); }
+  .upload-area:hover { border-color: var(--accent); background: var(--accent-glow); }
+  .remove-file:hover { color: var(--red); background: var(--red-bg); }
+  .chip:hover { border-color: var(--accent); color: var(--accent); }
+  .toggle-btn:hover { background: var(--bg4); color: var(--text); }
+  #start-btn:hover { transform: translateY(-1px); box-shadow: 0 6px 28px rgba(108, 99, 255, 0.5); }
+  #start-btn:hover::after { opacity: 1; }
+  .history-card:hover { border-color: var(--accent); background: var(--accent-glow); }
+  .option-item:hover { border-color: var(--accent); transform: translateX(2px); }
+  .ctrl-btn:hover { border-color: var(--border2); color: var(--text); background: var(--bg4); }
+  .ctrl-btn.primary:hover { background: var(--accent2); border-color: var(--accent2); }
+  .ctrl-btn.danger:hover { background: var(--red-bg); }
+  #submit-btn:hover { background: #16a34a; border-color: #16a34a; }
+  .palette-num:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-glow); }
+  .sidebar-submit-btn:hover { background: #16a34a; transform: translateY(-1px); }
+  .rev-palette-num:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-glow); }
+  .file-pick-card:hover { border-color: var(--border2); background: var(--bg4); }
 }
 </style>
 </head>
