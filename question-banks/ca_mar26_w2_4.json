@@ -1,0 +1,770 @@
+[
+  {
+    "category": "National Affairs",
+    "sub_category": "Agriculture Crop Estimates",
+    "question": "As per the 2nd Advance Estimates of Production of Major Agricultural Crops 2025-26, arrange the following categories in descending order based on their estimated production volume in Lakh Metric Tonnes (LMT):\n\n1. Wheat Production\n2. Kharif Foodgrain\n3. Rabi Foodgrain\n4. Kharif Rice\n\nSelect the correct answer:",
+    "options": {
+      "A": "3, 2, 4, 1",
+      "B": "2, 3, 1, 4",
+      "C": "3, 2, 1, 4",
+      "D": "2, 3, 4, 1",
+      "E": "4, 1, 2, 3"
+    },
+    "answer": "A",
+    "rationale": "According to the MoAFW data (Pages 14, 40): Rabi Foodgrain = 1,745.13 LMT; Kharif Foodgrain = 1,741.44 LMT; Kharif Rice = 1,239.28 LMT; Wheat Production = 1,202.10 LMT. The correct descending order is 3, 2, 4, 1.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "State Budgets FY27",
+    "question": "Consider the following statements regarding the fiscal indicators presented in the State Budgets for FY27:\n\n1. Karnataka's budget estimates a Revenue Deficit of Rs 22,957 crore and a fiscal deficit of 2.95% of GSDP.\n2. Punjab's budget projects an effective revenue deficit of 2.06% of GSDP and a fiscal deficit of 4.08% of GSDP.\n3. Maharashtra's budget outlines a fiscal deficit of 2.7% of GSDP while setting a long-term vision of a USD 5 trillion economy by 2047.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "3 only"
+    },
+    "answer": "D",
+    "rationale": "All three statements are correct as per the State News section. Karnataka's fiscal deficit is 2.95% (Page 53). Punjab's effective revenue deficit is 2.06% and fiscal deficit is 4.08% (Page 54). Maharashtra's fiscal deficit is 2.7% and targets USD 5T by 2047 (Page 54).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Australian Grand Prix 2026",
+    "question": "Match the following Formula 1 drivers who finished in the Top 5 at the 2026 Australian Grand Prix with their respective teams:\n\nColumn I:\n1. Charles Leclerc\n2. Kimi Antonelli\n3. Lando Norris\n\nColumn II:\nA. Mercedes\nB. Ferrari\nC. McLaren\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-B, 3-C",
+      "B": "1-B, 2-A, 3-C",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "B",
+    "rationale": "According to the Top 5 Finishers table (Pages 51-52): Charles Leclerc drives for Ferrari (B), Kimi Antonelli drives for Mercedes (A), and Lando Norris drives for McLaren (C).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "RBI Counterparty Credit Risk",
+    "question": "Based on the RBI's revised Counterparty Credit Risk rules, arrange the following asset classes in ascending order of their 'Add-on Factor (Per Cent)' for a residual maturity of 'Over 5 years':\n\n1. Exchange Rate Contracts and Gold\n2. Other Commodities\n3. Interest Rate Contracts\n4. Equities\n\nSelect the correct answer:",
+    "options": {
+      "A": "3, 1, 4, 2",
+      "B": "1, 3, 2, 4",
+      "C": "3, 4, 1, 2",
+      "D": "1, 4, 3, 2",
+      "E": "4, 1, 3, 2"
+    },
+    "answer": "A",
+    "rationale": "For 'Over 5 years' maturity (Page 45): Interest Rate Contracts = 1.50%; Exchange Rate Contracts and Gold = 7.50%; Equities = 10.00%; Other Commodities = 15.00%. Ascending order: 3, 1, 4, 2.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "GeM SWAYATT Initiative",
+    "question": "Assertion (A): The GeM's SWAYATT initiative addresses key barriers faced by emerging enterprises, including access to markets, finance, and value addition.\nReason (R): The initiative successfully increased the participation of women entrepreneurs, with cumulative order value rising to Rs 83,323 crore in FY2026.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both Assertion (A) and Reason (R) are factually correct statements based on the SWAYATT initiative (Page 34). However, R highlights the outcomes (metrics) of the initiative, which is a result of A, but R does not logically 'explain' why A is true. A explains R.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Electronics Manufacturing",
+    "question": "Fill in the blanks regarding the partnership for India's electronics manufacturing growth:\n\nThe ________ collaborated with ________ to drive electronics manufacturing, following the Union Budget 2026-27 which enhanced the outlay for the Electronics Components Manufacturing Scheme (ECMS) to ________.\n\nSelect the correct answer:",
+    "options": {
+      "A": "DPIIT; Voltas Limited; Rs 30,000 crore",
+      "B": "Ministry of Electronics & IT; Foxconn; Rs 40,000 crore",
+      "C": "NITI Aayog; Tata Electronics Private Limited (TEPL); Rs 40,000 crore",
+      "D": "NITI Aayog; SASMOS HET Technologies; Rs 50,000 crore",
+      "E": "C-DAC; TraceXero Technologies; Rs 25,000 crore"
+    },
+    "answer": "C",
+    "rationale": "NITI Aayog collaborated with Tata Electronics Private Limited (TEPL) to drive manufacturing, supported by the ECMS outlay which was enhanced to Rs 40,000 crore (Page 37).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "President of Chile",
+    "question": "Which of the following statements is INCORRECT regarding the inauguration of the 38th President of Chile?",
+    "options": {
+      "A": "Jose Antonio Kast Rist was sworn in following his victory in the 2025 Chilean presidential election.",
+      "B": "He is the founder and leader of the Republican Party of Chile.",
+      "C": "He formally assumed office in the Hall of Honor, receiving the Piocha de O'Higgins.",
+      "D": "The traditional symbol of the presidency was handed over by outgoing President Kirti Vardhan Singh.",
+      "E": "The ceremony was held at the National Congress in Valparaíso, Chile."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect because the symbol was handed over by outgoing President Gabriel Boric Font. Kirti Vardhan Singh is the Indian Union Minister of State who represented India at the ceremony (Pages 49-50).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "RBI Dividend Declaration",
+    "question": "Read the following statements regarding the revised RBI (Commercial Banks – Prudential Norms on Declaration of Dividend and Remittance of Profits) Directions, 2026:\n\nStatement I: The maximum dividend payout is strictly capped at 75% of the Profit After Tax (PAT) for the year.\nStatement II: Dividend declaration is now linked primarily to the Liquidity Coverage Ratio (LCR) instead of the CET-1 ratio.\n\nChoose the appropriate response:",
+    "options": {
+      "A": "Statement I is correct, but Statement II is incorrect",
+      "B": "Statement II is correct, but Statement I is incorrect",
+      "C": "Both Statement I and Statement II are correct",
+      "D": "Both Statement I and Statement II are incorrect",
+      "E": "Both statements describe norms applicable exclusively to Payment Banks."
+    },
+    "answer": "A",
+    "rationale": "Statement I is correct (Page 46). Statement II is incorrect because the dividend declaration is now linked primarily to the Common Equity Tier 1 (CET-1) ratio, not the LCR (Page 20/46).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "ICJS 2.0 Implementation",
+    "question": "Arrange the top 5 performing states in the implementation of the Inter-Operable Criminal Justice System (ICJS) 2.0 (as of January 2026) in descending order from Rank 1 to Rank 5:\n\n1. Assam\n2. Uttarakhand\n3. Madhya Pradesh\n4. Sikkim\n5. Haryana\n\nSelect the correct arrangement:",
+    "options": {
+      "A": "2, 5, 1, 4, 3",
+      "B": "2, 1, 5, 4, 3",
+      "C": "5, 2, 1, 3, 4",
+      "D": "2, 5, 4, 1, 3",
+      "E": "1, 2, 5, 4, 3"
+    },
+    "answer": "A",
+    "rationale": "As per the table (Page 36): Rank 1 is Uttarakhand (2), Rank 2 is Haryana (5), Rank 3 is Assam (1), Rank 4 is Sikkim (4), and Rank 5 is Madhya Pradesh (3). Thus, 2, 5, 1, 4, 3.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Dam Safety Platforms",
+    "question": "Which of the following digital platforms is NOT a part of the newly launched initiatives for Dam Safety at the NDSA Office in New Delhi?",
+    "options": {
+      "A": "A new NDSA Website developed in line with the Digital Brand Identity Manual (DBIM) 3.0.",
+      "B": "A GIS-based 'Specified Dams' section providing a map-based interface.",
+      "C": "NETRA, an AI-enabled platform developed with the Indian Navy.",
+      "D": "Sujalam Bharat, a national digital framework for mapping dam water outflows.",
+      "E": "Rashtriya Bandh Suraksha Darpan (RBSD) developed by C-DAC."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect. 'Sujalam Bharat' is a national digital framework to map the entire drinking water system from source to tap under the Jal Jeevan Mission, not a dam safety platform (Pages 38, 40).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space MoUs Hybrid",
+    "question": "Consider the following strategic MoUs signed by ISRO to advance space initiatives. Match the partner organization with the specific focus area of the MoU:\n\nColumn I:\n1. All India Institute of Medical Sciences (AIIMS)\n2. European Space Agency (ESA)\n\nColumn II:\nA. Calibration and Validation Activities for Earth Observation Missions\nB. Development of Novel Antidotes for Toxic Compounds\nC. Research related to human spaceflight and healthcare solutions for astronauts\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A",
+      "B": "1-B, 2-A",
+      "C": "1-A, 2-C",
+      "D": "1-C, 2-B",
+      "E": "1-B, 2-C"
+    },
+    "answer": "A",
+    "rationale": "ISRO partnered with AIIMS for human spaceflight research (C) (Page 37). ISRO partnered with ESA for Earth Observation Missions (A) (Page 50). Option B refers to a DRDO project.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Textile Waste Generation",
+    "question": "Based on the 'Mapping of Textile Waste Value Chain in India' report, which of the following is a correct hybrid pairing of the waste generation distribution and its future market projection?",
+    "options": {
+      "A": "42% from PoCTW sources; Market to reach USD 3.5 billion by 2030",
+      "B": "58% from PCTW sources; Market to reach USD 3.5 billion by 2030",
+      "C": "42% from PCTW sources; Market to reach USD 3.5 billion by 2030",
+      "D": "95% from PoCTW sources; Market to reach USD 5 billion by 2047",
+      "E": "55% from PCTW sources; Market to create 1 lakh green jobs by 2028"
+    },
+    "answer": "C",
+    "rationale": "The report states 42% comes from PCTW (pre-consumer) and 58% from PoCTW (post-consumer) sources. The recycling market is projected to reach USD 3.5 billion by 2030 (Pages 38-39). Option C correctly pairs the PCTW percentage with the market projection.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "BHEL Haridwar Infrastructure",
+    "question": "During Union Minister HD Kumaraswamy's visit to BHEL Haridwar, several defence and industrial projects were dedicated. Which of the following statements about these projects is correct?\n\n1. A 5 Megawatt (MW) Ground Mounted Solar Power Plant (GMSPP) was dedicated.\n2. A 30-ton Electric Arc Furnace (EAF) was inaugurated.\n3. An Upgraded Super Rapid Gun Mount (SRGM) was flagged off for the Indian Navy.\n\nSelect the correct combination:",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "D",
+    "rationale": "All three projects (5 MW GMSPP, 30-ton EAF, and Upgraded SRGM) were explicitly dedicated/flagged off during HD Kumaraswamy's visit to BHEL Haridwar (Page 41).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Jal Jeevan Mission Target",
+    "question": "Fill in the blanks regarding the extension of the Jal Jeevan Mission:\n\nThe Union Cabinet approved the extension of JJM until ________ with an enhanced total outlay of ________.\n\nSelect the correct option:",
+    "options": {
+      "A": "December 2030; Rs 10.5 lakh crore",
+      "B": "March 2028; Rs 5.5 lakh crore",
+      "C": "December 2028; Rs 8.69 lakh crore",
+      "D": "December 2027; Rs 7.69 lakh crore",
+      "E": "March 2030; Rs 8.69 lakh crore"
+    },
+    "answer": "C",
+    "rationale": "The mission was extended until December 2028, and the enhanced total outlay is Rs 8.69 lakh crore. JJM 2.0 aims to cover 19.36 crore rural households by this deadline (Page 38).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Cabinet Infra Upgrades",
+    "question": "Assertion (A): Madurai Airport in Tamil Nadu was recently granted official international airport status by the Union Cabinet.\nReason (R): It became the third airport in Tamil Nadu to receive this official status under the Pradhan Mantri Gati Shakti National Master Plan (PMGS-NMP).\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true. Reason (R) is false because Madurai Airport became the *fourth* (not third) airport in TN to receive this status (joining Chennai, Coimbatore, and Trichy) (Page 38).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "State Budgets FY27 Matching",
+    "question": "Identify the INCORRECT pairing of the State Budget presentation features from FY27:\n\n1. Goa: Projected revenue surplus of Rs 1,666 crore.\n2. Uttarakhand: Focused on the GYAN model.\n3. Karnataka: Introduced the 11G Model.\n4. Punjab: Projected GSDP of Rs 7,69,467 crore.",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4",
+      "E": "None of the pairs is incorrect"
+    },
+    "answer": "D",
+    "rationale": "Pairing 4 is incorrect because Rs 7,69,467 crore is the total budget outlay for Maharashtra, not Punjab. Punjab's projected GSDP for FY27 is Rs 9,80,635 crore (Pages 54).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "Health & Healthcare",
+    "sub_category": "WHO Foundation Partnership",
+    "question": "Consider the following statements regarding the WHO Foundation's recent partnership in India:\n\n1. The WHO Foundation partnered with Novo Nordisk, a Danish multinational pharmaceutical company.\n2. The partnership's primary objective is to address the growing challenge of childhood obesity in India.\n3. The initiative will be fully funded by the Ministry of Health and Family Welfare (MoHFW).\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct (Page 40). Statement 3 is incorrect because the text does not mention full funding by the MoHFW; it is an independent partnership to raise awareness.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "March 2026 Days",
+    "question": "Match the following Important Days with their exact observation dates in March 2026:\n\nColumn I:\n1. Jan Aushadhi Diwas\n2. International Women's Day\n3. International Day of Women Judges\n4. World Rotaract Day\n\nColumn II:\nA. 8 March\nB. 10 March\nC. 13 March\nD. 7 March\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-D, 2-A, 3-C, 4-B",
+      "B": "1-A, 2-D, 3-B, 4-C",
+      "C": "1-D, 2-A, 3-B, 4-C",
+      "D": "1-D, 2-B, 3-A, 4-C",
+      "E": "1-C, 2-A, 3-B, 4-D"
+    },
+    "answer": "C",
+    "rationale": "Jan Aushadhi Diwas is 7 March (D). International Women's Day is 8 March (A). International Day of Women Judges is 10 March (B). World Rotaract Day is 13 March (C) (Pages 52-53).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "GeM SWAYATT Values",
+    "question": "The SWAYATT initiative by GeM celebrated its 7th anniversary. Based on its achievements, what is the exact cumulative order value that women entrepreneurs generated by the Financial Year 2026 (FY2026)?",
+    "options": {
+      "A": "Rs 1,265.62 crore",
+      "B": "Rs 44,488 crore",
+      "C": "Rs 83,323 crore",
+      "D": "Rs 1,01,530 crore",
+      "E": "Rs 70,730 crore"
+    },
+    "answer": "C",
+    "rationale": "The cumulative order value rose from Rs 1,265.62 crore in FY2019 to Rs 83,323 crore in FY2026. The number of orders grew from 1,01,530 to 44,48,894 (Page 34).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Defence Forces Vision 2047",
+    "question": "Which of the following high-ranking officials was NOT explicitly mentioned as being present at the release of the 'Defence Forces Vision 2047' roadmap?",
+    "options": {
+      "A": "General Anil Chauhan, Chief of Defence Staff",
+      "B": "Admiral Dinesh K. Tripathi, Chief of the Naval Staff",
+      "C": "Lt Gen Dhiraj Seth, Vice Chief of Army Staff",
+      "D": "Lieutenant General Pushpendra Singh, Vice Chief of the Army Staff",
+      "E": "Rajesh Kumar Singh, Defence Secretary"
+    },
+    "answer": "C",
+    "rationale": "Lt Gen Dhiraj Seth was appointed as the *next* VCOAS (taking charge April 1, 2026) (Page 49). However, at the event, Lieutenant General Pushpendra Singh was present as the current VCOAS (Page 39). Therefore, Lt Gen Dhiraj Seth was not mentioned as present.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "India Post Special Cover",
+    "question": "Fill in the blanks regarding the special commemorative release by India Post:\n\nIndia Post, in collaboration with the ________ Foundation, released a special cover to mark the birth centenary of legendary Hindustani classical musician ________ at the Kolkata GPO.\n\nSelect the correct option:",
+    "options": {
+      "A": "Ravi Shankar; Pandit Ravi Shankar",
+      "B": "Sangeet Natak Akademi; Bismillah Khan",
+      "C": "Annapurna Devi; Annapurna Devi",
+      "D": "M.S. Subbulakshmi; M.S. Subbulakshmi",
+      "E": "GATI; Annapurna Devi"
+    },
+    "answer": "C",
+    "rationale": "India Post collaborated with the Annapurna Devi Foundation to release a special cover marking the birth centenary of musician Annapurna Devi (Page 41).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "FATF Country Status",
+    "question": "Assertion (A): The Financial Action Task Force (FATF) placed Kuwait and Papua New Guinea on its 'Grey List'.\nReason (R): Iran, Myanmar, and the Democratic People's Republic of Korea (DPRK) were removed from the 'Black List' due to successful compliance.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true (Kuwait and PNG were added to Increased Monitoring/Grey List). Reason (R) is false because Iran and DPRK continue to be subject to countermeasures, and Myanmar continues to be under enhanced due diligence on the Black List (Page 44).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Formula 1 Drivers Points",
+    "question": "Arrange the following Formula 1 drivers based on the points they earned at the 2026 Australian Grand Prix, in ascending order (lowest points to highest points):\n\n1. Lewis Hamilton\n2. Charles Leclerc\n3. Lando Norris\n4. George Russell\n\nSelect the correct arrangement:",
+    "options": {
+      "A": "3, 1, 2, 4",
+      "B": "1, 3, 2, 4",
+      "C": "4, 2, 1, 3",
+      "D": "3, 2, 1, 4",
+      "E": "2, 1, 3, 4"
+    },
+    "answer": "A",
+    "rationale": "Points earned: Lando Norris (10), Lewis Hamilton (12), Charles Leclerc (15), George Russell (25). Ascending order: 3, 1, 2, 4 (Pages 51-52).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Corporate Tie-ups",
+    "question": "Match the following corporate/governmental MoUs with their respective partners announced in March 2026:\n\nColumn I:\n1. T-Hub\n2. PayU\n3. Axis Max Life Insurance\n\nColumn II:\nA. Saarathi Finance\nB. JETRO\nC. GoKwik\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "T-Hub partnered with JETRO (B). PayU partnered with GoKwik (C). Axis Max Life partnered with Saarathi Finance (A) (Pages 47-48).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "RBI NBFC Regulatory Actions",
+    "question": "Which of the following statements regarding the RBI's regulatory actions against NBFCs in March 2026 is INCORRECT?",
+    "options": {
+      "A": "The Reserve Bank of India cancelled the Certificate of Registration (CoR) of multiple NBFCs.",
+      "B": "Exactly 36 NBFCs had their CoR cancelled as part of regulatory actions.",
+      "C": "9 NBFCs had their CoR cancelled explicitly due to money laundering violations.",
+      "D": "9 NBFCs voluntarily surrendered their licences.",
+      "E": "Licences were surrendered due to reasons such as business exits, structural changes, or mergers."
+    },
+    "answer": "C",
+    "rationale": "Option C is incorrect because the 9 NBFCs voluntarily surrendered their licences due to business exits, structural changes, or mergers, not because their CoR was cancelled due to money laundering violations (Page 47).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "Reports & Indices",
+    "sub_category": "NITI Aayog FHI Front-Runners",
+    "question": "Read the following statements regarding the 'Front-Runner' states in the NITI Aayog's Fiscal Health Index (FHI) 2026:\n\nStatement I: Gujarat achieved the highest score among the Front-Runners with an FHI score of 49.9.\nStatement II: Maharashtra and Chhattisgarh followed closely with scores of 45.0 and 44.3, respectively.\n\nChoose the appropriate response:",
+    "options": {
+      "A": "Statement I is correct, but Statement II is incorrect",
+      "B": "Statement II is correct, but Statement I is incorrect",
+      "C": "Both Statement I and Statement II are correct",
+      "D": "Both Statement I and Statement II are incorrect",
+      "E": "Both statements belong to the 'Achiever' category, not 'Front-Runner'"
+    },
+    "answer": "C",
+    "rationale": "Both statements accurately reflect the scores and categorization of the 'Front-Runner' states as listed in the FHI 2026 table: Gujarat (49.9), Maharashtra (45.0), and Chhattisgarh (44.3) (Page 43).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "DPAW and CRED",
+    "question": "Consider the following recent banking sector developments. Which of them specifically relates to the Payment and Settlement Systems Act (PSSA), 2007?",
+    "options": {
+      "A": "The RBI issuing new prudential norms on the declaration of dividends.",
+      "B": "The RBI cancelling the Certificate of Registration of 36 NBFCs.",
+      "C": "The launch of the multi-media campaign 'Thoda Dhyan Se'.",
+      "D": "The RBI granting authorisation to CRED to operate as a Payment Aggregator.",
+      "E": "The implementation of revised counterparty credit risk rules."
+    },
+    "answer": "D",
+    "rationale": "The RBI granted authorisation to CRED to operate as a Payment Aggregator (PA) under the provisions of the Payment and Settlement Systems Act (PSSA), 2007 (Page 47).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "T20 World Cup Financials",
+    "question": "Match the following financial figures associated with the ICC Men's T20 World Cup 2026 with their respective categories:\n\nColumn I:\n1. Total Prize Pool allocated by ICC\n2. Prize money for India (Winning Team)\n3. Prize money for 'Player of the Tournament'\n\nColumn II:\nA. USD 3 million\nB. USD 13.5 million\nC. USD 25,000\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-A, 3-C",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Total Prize Pool = USD 13.5 million (B). India's prize = USD 3 million (A). Player of the Tournament (Sanju Samson) = USD 25,000 (C) (Pages 26-27).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "CEOs in News",
+    "question": "Two major companies in India saw leadership changes in March 2026. Match the incoming executive with the executive they are replacing:\n\nColumn I (Incoming Executive):\n1. Ketan Merchant (Interim CEO)\n2. Parthanil Ghosh (MD & CEO)\n\nColumn II (Outgoing Executive):\nA. Rishi Gupta\nB. Anuj Tyagi\nC. V. Vaidyanathan\n\nSelect the correct matching:",
+    "options": {
+      "A": "1-A, 2-B",
+      "B": "1-B, 2-A",
+      "C": "1-C, 2-A",
+      "D": "1-A, 2-C",
+      "E": "1-B, 2-C"
+    },
+    "answer": "A",
+    "rationale": "Ketan Merchant succeeded Rishi Gupta at Fino Payments Bank (A). Parthanil Ghosh succeeded Anuj Tyagi at HDFC ERGO General Insurance (B) (Page 49).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Chile Presidential Inauguration",
+    "question": "Which of the following statements regarding the 38th President of Chile is correct?\n\n1. Jose Antonio Kast Rist is the founder of the Republican Party of Chile.\n2. He received the Piocha de O'Higgins, a traditional symbol of the presidency.\n3. The inauguration ceremony took place at the National Congress in Santiago, Chile.\n\nSelect the correct combination:",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the inauguration took place at the National Congress in Valparaíso, not Santiago (Page 50).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Iran Supreme Leader",
+    "question": "Fill in the blanks regarding the leadership transition in Iran:\n\nIn March 2026, ________ was appointed as the Supreme Leader of Iran by the Assembly of Experts, succeeding the interim leader ________.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Mojtaba Khamenei; Ali Khamenei",
+      "B": "Alireza Arafi; Mojtaba Khamenei",
+      "C": "Mojtaba Khamenei; Alireza Arafi",
+      "D": "Ebrahim Raisi; Ali Khamenei",
+      "E": "Mojtaba Khamenei; Ebrahim Raisi"
+    },
+    "answer": "C",
+    "rationale": "Mojtaba Khamenei was appointed as the Supreme Leader, succeeding the interim Supreme Leader, Iranian cleric Alireza Arafi, following the death of Ali Khamenei (Page 49).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "DRDO Navy Trial",
+    "question": "Assertion (A): The DRDO and the Indian Navy successfully conducted four in-flight release trials of the indigenous Air Droppable Container 'ADC-150'.\nReason (R): The trials were conducted from a Boeing P-8I Poseidon aircraft off the coast of Goa to validate the delivery of critical materials to naval vessels.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Both Assertion (A) and Reason (R) are true. R correctly explains that the trials of the ADC-150 (A) were done using the P-8I to deliver payloads (up to 150 kg) rapidly to naval vessels (Page 50).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "Reports & Indices",
+    "sub_category": "FHI 2026 Bottom Performers",
+    "question": "Arrange the states categorized as 'Aspirational (Bottom)' in NITI Aayog's Fiscal Health Index 2026 in ascending order based on their index scores (lowest score to highest score):\n\n1. West Bengal (WB)\n2. Punjab\n3. Andhra Pradesh (AP)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1, 3, 2",
+      "B": "2, 3, 1",
+      "C": "2, 1, 3",
+      "D": "3, 2, 1",
+      "E": "1, 2, 3"
+    },
+    "answer": "B",
+    "rationale": "The scores for the Aspirational states are: Punjab (12.4), Andhra Pradesh (23.1), and West Bengal (23.8). Ascending order is Punjab (2), AP (3), WB (1). Thus, 2, 3, 1 (Page 43).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "PM South India Visit",
+    "question": "Match the following locations visited by PM Narendra Modi on March 11, 2026, with the total financial outlay of the development projects inaugurated there:\n\nColumn I:\n1. Ernakulam (Kerala)\n2. Tiruchirappalli (Tamil Nadu)\n3. Overall combined worth of projects\n\nColumn II:\nA. Rs 16,450 crore\nB. Rs 10,800 crore\nC. Rs 5,650 crore\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-A, 2-C, 3-B",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "A",
+    "rationale": "Ernakulam projects = Rs 10,800 cr (B). Tiruchirappalli projects = Rs 5,650 cr (C). Overall combined = Rs 16,450 cr (A) (Page 39).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Bharat Tex 2026 Errors",
+    "question": "Which of the following statements about 'Bharat Tex 2026' contains an error?",
+    "options": {
+      "A": "It was launched by Union Textiles Minister Giriraj Singh on 11 March 2026.",
+      "B": "The event aims to position India as a reliable sourcing destination for the global textile industry.",
+      "C": "It is scheduled to be held from July 14 to 17, 2026, at Yashobhoomi, New Delhi.",
+      "D": "The event supports the Prime Minister's 5F Vision.",
+      "E": "It is organised by the Bharat Tex Trade Federation (BTTF)."
+    },
+    "answer": "C",
+    "rationale": "Option C is incorrect because Bharat Tex 2026 is scheduled to be held at 'Bharat Mandapam', New Delhi, not 'Yashobhoomi' (Page 40).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Pharma Corridor Details",
+    "question": "Consider the following statements regarding the Pharma-Nutraceutical Corridor:\n\n1. The corridor was launched between India and Uzbekistan to target the Commonwealth of Independent States (CIS) market.\n2. The targeted wider Eurasian healthcare market is estimated to be worth USD 7–10 billion.\n3. It will be commercially activated at the Global Healthcare Summit in Moscow, Russia in May 2026.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because it will be commercially activated at 'Pharma Eurasia 2026' in Tashkent, Uzbekistan, not Moscow (Page 37).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "MSDE MoUs Hybrid",
+    "question": "Which of the following correctly describes BOTH MoUs signed by the Ministry of Skill Development and Entrepreneurship (MSDE) in March 2026?",
+    "options": {
+      "A": "Both MoUs involve international organisations and focus purely on financial assistance for MSMEs.",
+      "B": "One MoU was signed with Bajaj Auto for advanced automotive manufacturing skilling, and the other with GATI Foundation to strengthen overseas employment mechanisms.",
+      "C": "One MoU was signed with JETRO for deep-tech startups, and the other with GATI Foundation for local manufacturing jobs.",
+      "D": "Both MoUs were signed under the Flexi-MoU Scheme (revised in June 2024) with private Indian automakers.",
+      "E": "One MoU focuses on Carbon Capture with TraceXero, while the other focuses on automotive training with Bajaj Auto."
+    },
+    "answer": "B",
+    "rationale": "The MSDE signed an MoU with Bajaj Auto (for automotive manufacturing) and another with the GATI Foundation (for global skill mobility/overseas employment) (Pages 35, 41).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "Biodiversity Reporting",
+    "question": "Read the following statement regarding India's 7th Biodiversity Report and identify the correct factual element within it:\n\nThe Government of India submitted its 7th National Report (NR7) to the Convention on Biological Diversity (CBD) to track progress toward the 2030 global biodiversity goals. This report was prepared by the MoEFCC, tracking performance across how many national targets?",
+    "options": {
+      "A": "17 national targets",
+      "B": "23 national targets",
+      "C": "30 national targets",
+      "D": "33 national targets",
+      "E": "50 national targets"
+    },
+    "answer": "B",
+    "rationale": "The 7th National Report (NR7) evaluates performance across 23 national biodiversity targets aligned with the Kunming–Montreal Global Biodiversity Framework (KMGBF) (Page 34).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Deep Ocean Mission",
+    "question": "Fill in the blanks regarding the Integrated Ocean Thermal Energy Conversion (OTEC) plant reviewed by Union MoS Jitendra Singh:\n\nThe plant is being developed in ________ by the ________ under the Deep Ocean Mission.",
+    "options": {
+      "A": "Kavaratti, Lakshadweep; National Institute of Ocean Technology (NIOT)",
+      "B": "Port Blair, Andaman; Centre for Marine Living Resources and Ecology",
+      "C": "Kochi, Kerala; Indian National Centre for Ocean Information Services",
+      "D": "Kavaratti, Lakshadweep; Indian Space Research Organisation (ISRO)",
+      "E": "Minicoy, Lakshadweep; National Institute of Oceanography (NIO)"
+    },
+    "answer": "A",
+    "rationale": "The plant is being developed in Kavaratti, Lakshadweep, by the National Institute of Ocean Technology (NIOT) (Pages 5, 34).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "Green Hydrogen Mission Standards",
+    "question": "Assertion (A): Under the newly notified standards, Green Methanol must have lifecycle emissions of not more than 0.44 kg CO2 eq per kg of methanol.\nReason (R): This threshold considers emissions from hydrogen production, methanol synthesis, purification, and on-site storage over a 12-month average period.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Both Assertion (A) and Reason (R) are true. R correctly explains what specific elements and timeframes (lifecycle emissions over 12 months) are included in the 0.44 kg CO2 calculation for Green Methanol (Page 35).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Budget Outlay Comparisons",
+    "question": "Arrange the following State Budgets for FY27 in descending order based on their total financial outlays:\n\n1. Maharashtra\n2. Karnataka\n3. Punjab\n4. Uttarakhand\n\nSelect the correct arrangement:",
+    "options": {
+      "A": "1, 2, 3, 4",
+      "B": "1, 3, 2, 4",
+      "C": "2, 1, 3, 4",
+      "D": "1, 2, 4, 3",
+      "E": "4, 3, 2, 1"
+    },
+    "answer": "A",
+    "rationale": "Outlays: Maharashtra = Rs 7,69,467 cr (1). Karnataka = Rs 4,48,004 cr (2). Punjab = Rs 2,60,437 cr (3). Uttarakhand = Rs 1,11,703.21 cr (4). Descending order is 1, 2, 3, 4 (Pages 53-54).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "CCU Tech Collaboration",
+    "question": "Match the following entities involved in the Carbon Capture and Utilisation (CCU) technology partnership with their respective roles or origins:\n\nColumn I:\n1. National Council for Cement and Building Materials (NCB)\n2. TraceXero Technologies Private Limited\n3. DPIIT\n\nColumn II:\nA. Parent department under the Ministry of Commerce and Industry overseeing the council\nB. Institution supporting CCU tech for the cement sector\nC. Indian technology startup co-founded by Reetam Chaudhary\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-A, 2-C, 3-B",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "A",
+    "rationale": "NCB supports CCU tech for the cement sector (B). TraceXero is the tech startup (C). DPIIT is the parent department overseeing NCB (A) (Page 42).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "SEZ Policy Framework",
+    "question": "The 17-member committee for larger reforms in SEZ policy includes representations from multiple bodies. Which of the following is NOT listed as part of the official composition of the committee?",
+    "options": {
+      "A": "Commerce & Customs Department",
+      "B": "NITI Aayog",
+      "C": "Securities and Exchange Board of India (SEBI)",
+      "D": "Directorate General of Export Promotion (DGEP)",
+      "E": "Export Promotion Council for SEZs"
+    },
+    "answer": "C",
+    "rationale": "SEBI is not part of the 17-member committee for SEZ policy. The list includes Commerce & Customs, NITI Aayog, DPIIT, CBIC, DGEP, Export Promotion Council for SEZs, 2 Dev Commissioners, and DoEA (Page 7).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "NABARD Initiatives",
+    "question": "Consider the following statements regarding the 'National Climate Stack Innovation Challenge':\n\n1. It was launched by NABARD in collaboration with the Gates Foundation and Dalberg Advisors.\n2. The challenge aims to build decision-ready climate intelligence exclusively for urban infrastructure planning.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 only",
+      "B": "2 only",
+      "C": "Both 1 and 2",
+      "D": "Neither 1 nor 2",
+      "E": "Statement 1 is partially correct; the partner was the WHO Foundation."
+    },
+    "answer": "A",
+    "rationale": "Statement 1 is correct. Statement 2 is incorrect because the challenge aims to provide decision-ready climate intelligence for *agriculture, rural finance, and public planning*, not urban infrastructure (Page 35).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Delhi Metro Network",
+    "question": "The newly inaugurated sections of the Delhi Metro expansion connect specific corridors. Which of the following accurately describes the terminal points of the ~12.3 km Pink Line corridor inaugurated by PM Modi?",
+    "options": {
+      "A": "Deepali Chowk to Majlis Park",
+      "B": "Majlis Park to Maujpur Babarpur",
+      "C": "Janakpuri West to RK Ashram",
+      "D": "Kirti Nagar to Bamnoli Village",
+      "E": "Lajpat Nagar to Saket G Block"
+    },
+    "answer": "B",
+    "rationale": "The ~12.3 km Pink Line corridor connects Majlis Park – Maujpur Babarpur. Deepali Chowk to Majlis Park is the Magenta Line (~9.9 km) (Page 6).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Exercise LAMITIYE Participants",
+    "question": "Read the following statements regarding the 11th edition of Joint Military Exercise 'LAMITIYE-2026':\n\nStatement I: The exercise involved the Indian Army's Assam Regiment and the Indian Navy's INS Trikand.\nStatement II: The exercise was held at the Seychelles Defence Academy (SDA) in Victoria.\n\nChoose the appropriate response:",
+    "options": {
+      "A": "Statement I is correct, but Statement II is incorrect",
+      "B": "Statement II is correct, but Statement I is incorrect",
+      "C": "Both Statement I and Statement II are correct",
+      "D": "Both Statement I and Statement II are incorrect",
+      "E": "Both statements are correct, but it also heavily involved the Indian Coast Guard."
+    },
+    "answer": "C",
+    "rationale": "Both statements accurately reflect the details of the Indian military's participation (Assam Regiment, INS Trikand, and C-130) and the location of the LAMITIYE 2026 exercise in Victoria, Seychelles (Pages 18, 44).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Asia Cup Archery details",
+    "question": "Fill in the blanks regarding the Asia Cup Archery 2027:\n\nThe decision for New Delhi to host the second leg of the Asia Cup Archery in 2027 was finalised after ________, President of World Archery Asia, met with the Secretary General of the Archery Association of India.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Virendra Sachdeva",
+      "B": "Kazi Rajib Uddin Ahmed Chapol",
+      "C": "Sanju Samson",
+      "D": "Parthanil Ghosh",
+      "E": "Ketan Merchant"
+    },
+    "answer": "B",
+    "rationale": "The decision was finalised after Kazi Rajib Uddin Ahmed Chapol, President of World Archery Asia, met Virendra Sachdeva (Page 52).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "NATO Cold Response 2026",
+    "question": "Assertion (A): NATO commenced its biennial Arctic military exercise 'Cold Response 2026' across Northern Norway and Finland.\nReason (R): Norway has officially declared 2026 as the year of 'Total Defence', reflecting the military exercise's focus on the role of civilians in supporting military operations.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Both Assertion (A) and Reason (R) are true. The exercise focuses on civilian support in military ops, which directly ties into Norway's declaration of 2026 as the year of 'Total Defence' (Pages 18, 44).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - March 2026 - 2nd Week"
+  }
+]

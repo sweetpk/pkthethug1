@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * build-manifest.js
+ * qm-build-manifest.js
  * ------------------
  * Scans the question-banks/ folder and regenerates manifest.json.
  *
@@ -19,7 +19,7 @@
  * needed (filtered into the quiz or the user picks it).
  *
  * USAGE:
- *   node build-manifest.js
+ *   node qm-build-manifest.js
  *
  * Run this any time you add, remove, or edit files in question-banks/.
  * It will overwrite question-banks/manifest.json.

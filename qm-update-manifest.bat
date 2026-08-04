@@ -2,13 +2,13 @@
 setlocal
 
 REM ============================================================
-REM update-manifest.bat
+REM qm-update-manifest.bat
 REM ------------------------------------------------------------
 REM Double-click this file any time you add, remove, or edit
 REM files in the question-banks folder. It regenerates
 REM manifest.json so the quiz app knows about your changes.
 REM
-REM This file must sit in the SAME folder as build-manifest.js
+REM This file must sit in the SAME folder as qm-build-manifest.js
 REM and the question-banks folder.
 REM ============================================================
 
@@ -34,21 +34,21 @@ if %errorlevel% neq 0 (
     exit /b 1
 )
 
-REM Check build-manifest.js actually exists here
-if not exist "build-manifest.js" (
-    echo ERROR: build-manifest.js was not found in this folder:
+REM Check qm-build-manifest.js actually exists here
+if not exist "qm-build-manifest.js" (
+    echo ERROR: qm-build-manifest.js was not found in this folder:
     echo   %cd%
     echo.
-    echo Make sure update-manifest.bat is sitting in the same folder
-    echo as build-manifest.js and your question-banks folder.
+    echo Make sure qm-update-manifest.bat is sitting in the same folder
+    echo as qm-build-manifest.js and your question-banks folder.
     echo.
     pause
     exit /b 1
 )
 
-echo Running build-manifest.js ...
+echo Running qm-build-manifest.js ...
 echo.
-node build-manifest.js
+node qm-build-manifest.js
 
 echo.
 echo ====================================

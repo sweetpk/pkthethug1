@@ -1,0 +1,802 @@
+[
+  {
+    "category": "National Affairs",
+    "sub_category": "Logistics & Trade",
+    "question": "The LEADS 2025 report categorizes States and UTs into four performance bands. Which of the following combinations of State/UT and its corresponding category is INCORRECTLY matched?",
+    "options": {
+      "A": "Mizoram - Exemplar",
+      "B": "Gujarat - High Performer",
+      "C": "Uttarakhand - Accelerator",
+      "D": "West Bengal - Growth Seeker",
+      "E": "Telangana - Accelerator"
+    },
+    "answer": "E",
+    "rationale": "According to the LEADS 2025 State/UT-wise Classification table on Page 42, Telangana is classified as a 'High Performer', not an 'Accelerator'. Mizoram is an Exemplar, Gujarat is a High Performer, Uttarakhand is an Accelerator, and West Bengal is a Growth Seeker.",
+    "tag": "Current-Static",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Crime Statistics",
+    "question": "Consider the following data points extracted from the NCRB 'Crime in India 2024' report:\n\n1. The overall crime rate in India declined from 448.3 in 2023 to 418.9 in 2024.\n2. Total cognisable crimes recorded in 2024 were 58.86 lakh, registering a 6% decline.\n3. The number of cases registered under Special and Local Laws (SLL) exceeded those registered under the Indian Penal Code (IPC)/Bharatiya Nyaya Sanhita (BNS).\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statement 3 is incorrect because the cases registered under IPC/BNS (35.44 lakh) were higher than those registered under SLL (23.41 lakh). Statements 1 and 2 are correct. (Page 43)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "National Accounts",
+    "question": "Fill in the blanks regarding the base year revision for Gross State Value Added (GSVA):\n\nThe National Statistics Office (NSO) notified uniform guidelines for compiling GSVA with ________ as the new base year. The transition to the new base year is guided by the Advisory Committee on National Account Statistics (ACNAS) Sub-committee chaired by ________.",
+    "options": {
+      "A": "2021-22, Suman K. Bery",
+      "B": "2022-23, Ravindra H. Dholakia",
+      "C": "2023-24, V. Anantha Nageswaran",
+      "D": "2022-23, Nidhi Chhibber",
+      "E": "2020-21, B.V.R. Subrahmanyam"
+    },
+    "answer": "B",
+    "rationale": "Page 6 (handwritten notes) and Page 43 indicate the new base year is 2022-23, and the sub-committee on Regional Accounts (under ACNAS) guiding the transition is chaired by Ravindra H. Dholakia.",
+    "tag": "Current-Static",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Education",
+    "question": "Assertion (A): The NITI Aayog policy report on the School Education System highlights that India has the world's largest school education system.\n\nReason (R): The system comprises 14.71 lakh schools serving over 24.69 crore students, and the report utilized data exclusively from UDISE+ 2024-25 to arrive at these figures.\n\nSelect the most appropriate option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true (Page 43). Reason (R) is false because, according to the handwritten notes on Page 7, the report used data from multiple sources including UDISE+ 2024-25, NAS 2017 & 2021, ASER 2024, and PARAKH 2024—not 'exclusively' UDISE+.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Social Security",
+    "question": "Arrange the following 'Jan Suraksha' schemes based on their total number of enrolments achieved by April 2026, in ascending order (lowest to highest):\n\n1. Pradhan Mantri Suraksha Bima Yojana (PMSBY)\n2. Atal Pension Yojana (APY)\n3. Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)\n\nSelect the correct arrangement:",
+    "options": {
+      "A": "3 → 2 → 1",
+      "B": "2 → 3 → 1",
+      "C": "1 → 2 → 3",
+      "D": "2 → 1 → 3",
+      "E": "3 → 1 → 2"
+    },
+    "answer": "B",
+    "rationale": "According to Page 44, the enrolments are: APY (9.04 crore), PMJJBY (27.43 crore), PMSBY (58.09 crore). Therefore, the ascending order is APY -> PMJJBY -> PMSBY, which maps to 2 -> 3 -> 1.",
+    "tag": "Current-Static",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Aviation",
+    "question": "Match the following entities with their corresponding roles or announcements made during the IALFS 2.0 at GIFT City:\n\nColumn I:\n1. MoCA, IFSCA, and FICCI\n2. AI Fleet Services IFSC Limited\n3. InterGlobe Aviation Financial Services IFSC\n4. Akasa Air Leasing IFSC Private Limited\n\nColumn II:\nA. Expanding portfolio to 150 aircraft by March 2027.\nB. Organisers of the India Aircraft Leasing and Financing Summit.\nC. Target of 60 aircraft over 5 years.\nD. Expanding portfolio to 76 aircraft by 2027.\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-D, 3-A, 4-C",
+      "B": "1-B, 2-A, 3-D, 4-C",
+      "C": "1-D, 2-B, 3-A, 4-C",
+      "D": "1-A, 2-D, 3-C, 4-B",
+      "E": "1-B, 2-C, 3-A, 4-D"
+    },
+    "answer": "A",
+    "rationale": "Organisers are MoCA, IFSCA, FICCI (1-B). AI Fleet Services plans 76 aircraft (2-D). InterGlobe (IndiGo) targets 150 aircraft (3-A). Akasa targets 60 aircraft (4-C). Refer to Page 10 (handwritten notes).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Health Tech",
+    "question": "Which of the following portals/systems is NOT directly linked or integrated with the newly launched 'JANANI' platform by MoHFW for authentication and health tracking?",
+    "options": {
+      "A": "U-WIN",
+      "B": "POSHAN",
+      "C": "ABHA-Aadhaar",
+      "D": "e-Sanjeevani",
+      "E": "RCH Portal"
+    },
+    "answer": "D",
+    "rationale": "According to the handwritten notes on Page 11, the JANANI platform is an upgraded version of the RCH portal, and it features integration linked with U-WIN, POSHAN, and ABHA-Aadhaar authentication systems. 'e-Sanjeevani' is not mentioned in this integration context.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Infrastructure & Innovation",
+    "question": "Consider the following statements regarding the 'Phoenix Geocell':\n\n1. It is India's first technical textile geocell made entirely from end-of-life mixed plastic waste.\n2. It was developed by the Indian Institute of Technology (IIT) Madras in collaboration with Hindustan Petroleum Corporation Limited (HPCL).\n3. Its applications include road construction, weak soil stabilisation, and slope protection.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 3",
+      "E": "Only 2 and 3"
+    },
+    "answer": "B",
+    "rationale": "Statement 2 is INCORRECT because it was developed by CSIR-CRRI in collaboration with Bharat Petroleum Corporation Limited (BPCL), not IIT Madras and HPCL (Page 45 and Page 11 notes). Statements 1 and 3 are correct.",
+    "tag": "Current-Static",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Judiciary Initiatives",
+    "question": "Hybrid: CJI Surya Kant launched the 'One Case One Data' initiative and an AI chatbot. Match the specific functionalities to their corresponding component of this launch:\n\nColumn I:\n1. Integration of high, district, and taluka court details\n2. Facilitation of easier access to justice for litigants\n3. Assigning a unique digital ID to documents\n\nColumn II:\nA. Unified System Feature\nB. 'Su Sahay' Chatbot Feature\nC. Digital Case File Feature\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-B, 3-C",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-A, 2-C, 3-B",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-B, 2-A, 3-C"
+    },
+    "answer": "A",
+    "rationale": "Integrating courts is the unified system feature (1-A). Facilitating access to justice is the 'Su Sahay' chatbot's role (2-B). Assigning a digital ID to consolidate documents relates to the digital case file feature (3-C). (Page 48)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Logistics Shield",
+    "question": "Fill in the blanks regarding the logistics awards and report released by Union Minister Piyush Goyal:\n\nThe 7th edition of the ________ 2025 report was released at the ________ Awards 2025 ceremony, organised by the Department for Promotion of Industry and Internal Trade (DPIIT).",
+    "options": {
+      "A": "LEAPS, LEADS",
+      "B": "LEADS, LEAPS",
+      "C": "PM GatiShakti, LEADS",
+      "D": "LEADS, NLEP",
+      "E": "NLEP, LEAPS"
+    },
+    "answer": "B",
+    "rationale": "Page 42 states: The 7th edition of Logistics Ease Across Different States (LEADS) 2025 report was released at the Logistics Excellence, Advancement and Performance Shield (LEAPS) Awards 2025 ceremony.",
+    "tag": "Current-Static",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Rural Infrastructure",
+    "question": "Assertion (A): The VB-G RAM G Act, 2025 repeals the Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA, 2005) with effect from July 1, 2026.\n\nReason (R): Under the new Act, the funding pattern establishes a 90:10 (Centre:States) ratio for general states and 60:40 for North Eastern & Himalayan states.\n\nSelect the most appropriate option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true (Page 49). Reason (R) is false because the funding pattern is the other way around: 60:40 for general states and 90:10 for North Eastern & Himalayan states (Page 17 handwritten notes).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Maritime Insurance",
+    "question": "Arrange the financial figures associated with the 'Bharat Maritime Insurance Pool (BMIP)' in descending order of their value (in USD):\n\n1. Overall Pool Size\n2. Sovereign Guarantee provided by GoI\n3. Individual Claim Coverage capacity of NIACL\n\nSelect the correct arrangement:",
+    "options": {
+      "A": "1 → 2 → 3",
+      "B": "2 → 1 → 3",
+      "C": "1 → 3 → 2",
+      "D": "3 → 2 → 1",
+      "E": "2 → 3 → 1"
+    },
+    "answer": "A",
+    "rationale": "Pool size is USD 1.5 Billion (1). Sovereign guarantee is USD 1.4 Billion (2). Claim coverage is up to USD 100 Million (0.1 Billion) (3). The descending order is 1.5 Bn -> 1.4 Bn -> 100 Mn, which is 1 -> 2 -> 3. (Page 49 and Page 18 notes)",
+    "tag": "Current-Static",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Carbon Capture",
+    "question": "Consider the following statements regarding the integrated CCUS field laboratory facility at IIT Bombay:\n\n1. It performs pilot-scale scientific drilling to assess CO2 storage potential in basalt formations.\n2. The facility evaluates the Deccan Traps for Geological Carbon Dioxide Sequestration (GCS).\n3. It was inaugurated by Union Minister Dharmendra Pradhan under the 'Bharat Innovates 2026' initiative.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "None of the above"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. The facility combines CCU with GCS, targets basalt formations in the Deccan Traps, and was inaugurated by Dharmendra Pradhan under 'Bharat Innovates 2026'. (Page 49)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Agriculture Strategy",
+    "question": "Which of the following is NOT one of the strategic priorities of the IFAD-India Country Strategic Opportunities Programme (COSOP) 2026-2033?",
+    "options": {
+      "A": "Aligning with the Viksit Bharat@2047 vision.",
+      "B": "Enhancing the social resilience of rural communities.",
+      "C": "Providing direct cash transfers to offset urban migration.",
+      "D": "Strengthening knowledge systems to expand successful development models.",
+      "E": "Enhancing the climate resilience of rural communities."
+    },
+    "answer": "C",
+    "rationale": "Option C is NOT mentioned. The core priorities are enhancing social, economic, and climate resilience of rural communities, and strengthening knowledge systems, aligned with Viksit Bharat@2047. (Page 50)",
+    "tag": "Current-Static",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Digital India",
+    "question": "Hybrid: National e-Governance Division (NeGD) felicitated 5 states for DigiLocker integration. Match the state to its specific achievement:\n\nColumn I:\n1. Rajasthan\n2. Kerala\n3. Nagaland\n4. Gujarat\n\nColumn II:\nA. Recognised as a Digital Rising State, integrated over 32 services within one month.\nB. Added over 117 services within seven days, serving >1.15 crore users.\nC. Integrated Jan Aadhaar with DigiLocker, benefiting >7.5 crore citizens.\nD. Introduced Digital Disability Certificates for free bus travel.\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-A, 4-D",
+      "B": "1-C, 2-B, 3-A, 4-D",
+      "C": "1-C, 2-A, 3-B, 4-D",
+      "D": "1-D, 2-B, 3-C, 4-A",
+      "E": "1-B, 2-D, 3-A, 4-C"
+    },
+    "answer": "B",
+    "rationale": "Based on Page 19 (handwritten notes): Rajasthan integrated Jan Aadhaar (1-C). Kerala (Keralam) added 117 services in seven days (2-B). Nagaland was recognized as a Digital Rising State with 32 services (3-A). Gujarat introduced Digital Disability Certificates (4-D).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Cybersecurity",
+    "question": "Assertion (A): I4C and RBIH signed an MoU to strengthen AI-based detection of cyber financial frauds in India.\n\nReason (R): Under this MoU, RBIH will exclusively operate and manage the I4C-MHA Suspect Registry, replacing the Ministry of Home Affairs.\n\nSelect the most appropriate option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true (Page 50). Reason (R) is false because RBIH will *share* intelligence and suspect data *from* the I4C-MHA Suspect Registry; it does not take over or replace the MHA in operating it.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Government Approvals",
+    "question": "Fill in the blanks regarding the Cabinet approvals in May 2026:\n\nThe Union Cabinet approved a scheme for the promotion of Surface Coal/Lignite Gasification Projects with a budget outlay of Rs ________ crore, and additionally, the CCEA approved MSP hikes for ________ Kharif crops for the marketing season 2026-27.",
+    "options": {
+      "A": "25,000, 12",
+      "B": "37,500, 14",
+      "C": "50,000, 14",
+      "D": "37,500, 22",
+      "E": "18,979, 10"
+    },
+    "answer": "B",
+    "rationale": "Page 50-51 states the budget outlay for coal gasification is Rs 37,500 crore. The CCEA approved MSP hikes for 14 Kharif crops.",
+    "tag": "Current-Static",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Maritime Expansion",
+    "question": "Arrange the following partners of the Tripartite MoU for the Mega Greenfield Shipyard in Thoothukudi based on their geographical headquarters/origin (International → National PSU → State specific PSU):\n\n1. National Shipbuilding & Heavy Industries Park Tamil Nadu Limited (NSHIP-TN)\n2. HD Korea Shipbuilding & Offshore Engineering Co. (HD KSOE)\n3. Sagarmala Finance Corporation Limited (SMFCL)\n\nSelect the correct arrangement:",
+    "options": {
+      "A": "2 → 3 → 1",
+      "B": "1 → 2 → 3",
+      "C": "3 → 2 → 1",
+      "D": "2 → 1 → 3",
+      "E": "3 → 1 → 2"
+    },
+    "answer": "A",
+    "rationale": "International origin is HD KSOE (Korea) (2). National central entity is SMFCL (under MoPSW) (3). State specific PSU is NSHIP-TN (Tamil Nadu) (1). Sequence: 2 -> 3 -> 1. (Page 51)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "MeitY Initiatives",
+    "question": "Consider the following statements regarding the IP Catalyst initiative launched by MeitY:\n\n1. It aims to transform patents into products to accelerate IP commercialization.\n2. The initiative is supported by the digital platform cipie.in.\n3. It was formally launched by the President of India at the India Habitat Centre.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the initiative was formally launched by 'S. Krishnan, Secretary, MeitY', not the President of India. (Page 51)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Electric Vehicles",
+    "question": "Which of the following Central Public Sector Enterprises (CPSEs) is NOT involved in the coverage of the Unified Bharat e-Charge (UBC) platform as per the May 2026 updates?",
+    "options": {
+      "A": "Hindustan Petroleum Corporation Limited (HPCL)",
+      "B": "Indian Oil Corporation Limited (IOCL)",
+      "C": "Bharat Petroleum Corporation Limited (BPCL)",
+      "D": "Oil and Natural Gas Corporation (ONGC)",
+      "E": "Bharat Heavy Electricals Limited (BHEL) (as developer)"
+    },
+    "answer": "D",
+    "rationale": "According to the handwritten notes on Page 23, the CPSEs covered under the UBC platform's network are HPCL, IOCL, and BPCL. ONGC is not mentioned. BHEL is the developer.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Telecom",
+    "question": "Assertion (A): Digital Bharat Nidhi (DBN) signed an agreement to implement the Amended BharatNet Programme (ABP) in Andhra Pradesh.\n\nReason (R): The implementation will be executed under a State-led model involving state entities like APBIL and APSFL.\n\nSelect the most appropriate option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Assertion (A) is true (Page 52). Reason (R) is true and describes the structural model of the implementation. While R gives the mechanism of *how* the agreement will work, it isn't the causative *explanation* for why DBN provided the Rs 2,432 crore financial aid (the reason is to expand BharatNet connectivity). However, in many contexts this can be a borderline 'A', but B is safer as R describes the *method* rather than the *reason*.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Corporate Partnerships",
+    "question": "Match the specific focus areas with their corresponding MoU partners:\n\nColumn I:\n1. IndiaAI Mission & Karya\n2. IEPFA & Prasar Bharati\n3. Dhash Defence & IIT Ropar\n\nColumn II:\nA. Enhancing investor education through broadcast media.\nB. Increasing accessibility of AI economy for marginalized groups.\nC. Developing indigenous defence mobility platforms.\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-B, 3-C",
+      "B": "1-B, 2-A, 3-C",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "B",
+    "rationale": "IndiaAI & Karya focus on AI economy accessibility (1-B). IEPFA & Prasar Bharati focus on investor education (2-A). Dhash Defence & IIT Ropar focus on defence mobility (3-C). (Pages 48, 52)",
+    "tag": "Current-Static",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Regulatory Framework",
+    "question": "Fill in the blanks regarding SEBI's new regulatory framework:\n\nSEBI proposed the ________ mechanism to speed up the launch of Alternative Investment Funds (AIFs), allowing Non-Accredited Investor schemes to be rolled out in ________ working days after filing placement memorandums.",
+    "options": {
+      "A": "GARUDA, 10",
+      "B": "VARUNA, 15",
+      "C": "SARTHI, 7",
+      "D": "GARUDA, 30",
+      "E": "PRAGATI, 10"
+    },
+    "answer": "A",
+    "rationale": "Page 53 states: SEBI proposed the 'GARUDA' mechanism, reducing the waiting period for Non-Accredited Investor schemes to '10' working days from the current 30 days.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Banking Approvals",
+    "question": "Consider the following statements regarding the RBI's recent regulatory changes for Outward Remittances:\n\n1. The RBI removed the prior approval requirement for fintechs to tie up with banks for outward remittances.\n2. This facilitation applies to tie-ups with Authorised Dealer (AD) Category-I banks only.\n3. The change was enacted under Sections 22(4) and 56 of the Banking Regulation Act, 1949.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct (Page 54). Statement 3 is incorrect because Sections 22(4) and 56 were cited for the 'cancellation of Sarvodaya Co-operative Bank's licence', not for the outward remittance framework. (Page 53-54)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "GDP Forecasts",
+    "question": "Arrange the following economic projections based on their forecasted growth percentage in ascending order (lowest to highest):\n\n1. Moody's revised India's CY26 GDP growth forecast.\n2. SBI's projected Q4FY26 real GDP growth.\n3. The previous advanced estimate for Q4FY26 growth mentioned in the SBI report.\n\nSelect the correct arrangement:",
+    "options": {
+      "A": "1 → 2 → 3",
+      "B": "2 → 1 → 3",
+      "C": "3 → 2 → 1",
+      "D": "1 → 3 → 2",
+      "E": "2 → 3 → 1"
+    },
+    "answer": "A",
+    "rationale": "Moody's CY26 forecast is 6% (1). SBI's projected Q4FY26 growth is 7.2% (2). The previous advanced estimate for Q4FY26 was 7.3% (3). Ascending order is 6% -> 7.2% -> 7.3%, which is 1 -> 2 -> 3. (Page 54)",
+    "tag": "Current-Static",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Panchayat Awards",
+    "question": "Assertion (A): Karnataka topped the National Panchayat Awards 2025 by winning 6 awards out of the 42 Panchayats recognized.\n\nReason (R): A total of 34 Gram Panchayats were selected under the Deen Dayal Upadhyay Panchayat Satat Vikas Puraskar (DDUPSVP), which includes joint winners.\n\nSelect the most appropriate option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both Assertion (A) and Reason (R) are factually true based on Page 55. However, R just states the number of winners under a specific category and does not mathematically or logically explain *why* Karnataka topped the overall tally.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Panchayat Awards",
+    "question": "Which of the following Panchayats is INCORRECTLY matched with its winning category under the Deen Dayal Upadhyay Panchayat Satat Vikas Puraskar?",
+    "options": {
+      "A": "Kanchanbari (Tripura) - Healthy Panchayat",
+      "B": "Khariwali (Maharashtra) - Water-Sufficient Panchayat",
+      "C": "Melukavu (Kerala) - Self-Sufficient Infrastructure in Panchayat",
+      "D": "Shansha (Himachal Pradesh) - Women-Friendly Panchayat",
+      "E": "Srungavaram (Andhra Pradesh) - Panchayat with Good Governance"
+    },
+    "answer": "D",
+    "rationale": "According to the handwritten notes on Page 28, Shansha (Himachal Pradesh) won the 'Socially Just & Socially Secured Panchayat', not Women-Friendly. Bokkasam Palem (Andhra Pradesh) won the Women-Friendly Panchayat award.",
+    "tag": "Current-Static",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Appointments",
+    "sub_category": "National Boards",
+    "question": "Fill in the blanks regarding the recent appointment at the Central Board of Film Certification (CBFC):\n\nThe Government of India appointed ________, former CEO of Prasar Bharati, as the Chairperson of CBFC for a term of ________ years, succeeding Prasoon Joshi.",
+    "options": {
+      "A": "Shashi Shekhar Vempati, 3",
+      "B": "Anurag Thakur, 5",
+      "C": "Shashi Shekhar Vempati, 5",
+      "D": "Sanjay Prasad, 3",
+      "E": "Aditya Sinha, 4"
+    },
+    "answer": "A",
+    "rationale": "Page 55 states: Shashi Shekhar Vempati was appointed as Chairperson of CBFC for three years, succeeding Prasoon Joshi.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Appointments",
+    "sub_category": "Defence Staff",
+    "question": "Hybrid: Match the military officials to their new roles/status as of May 2026, and identify the official who is retiring.\n\n1. Lt Gen NS Raja Subramani\n2. Vice Admiral Krishna Swaminathan\n3. Admiral Dinesh Kumar Tripathi\n\nA. Retiring CNS\nB. Appointed 27th CNS\nC. Appointed 3rd CDS & Secy DMA\n\nSelect the correct match:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "B",
+    "rationale": "Lt Gen NS Raja Subramani is the 3rd CDS (1-C). Vice Admiral Krishna Swaminathan is the 27th CNS (2-B). Admiral Dinesh Kumar Tripathi is retiring (3-A). (Page 55)",
+    "tag": "Current-Static",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Appointments",
+    "sub_category": "State Chief Ministers",
+    "question": "Consider the following statements regarding the Chief Ministers sworn in during May 2026:\n\n1. Suvendu Adhikari became the first BJP CM of West Bengal, succeeding Mamata Banerjee.\n2. C. Joseph Vijay, founder of TVK, became the 13th CM of Tamil Nadu, succeeding Muthuvel Karunanidhi Stalin.\n3. N. Rangasamy became the first leader to serve as CM of Puducherry for a sixth term.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 3",
+      "E": "None of the above"
+    },
+    "answer": "C",
+    "rationale": "Statement 3 is INCORRECT because N. Rangasamy was sworn in for his 'fifth' term, not sixth (Page 57). Statements 1 and 2 are correct (Page 56).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Appointments",
+    "sub_category": "International Leaders",
+    "question": "Arrange the following Presidents/Prime Ministers based on the chronological end year of their current mandated terms (assuming standard term lengths as mentioned):\n\n1. Laura Virginia Fernández Delgado (President of Costa Rica)\n2. R Mukundan (President of CII)\n\nSelect the correct End Year mapped arrangement:",
+    "options": {
+      "A": "1 (ends 2030), 2 (ends 2027)",
+      "B": "1 (ends 2028), 2 (ends 2027)",
+      "C": "1 (ends 2030), 2 (ends 2028)",
+      "D": "1 (ends 2027), 2 (ends 2030)",
+      "E": "Both end in 2030"
+    },
+    "answer": "A",
+    "rationale": "Laura Virginia's term as President of Costa Rica is a four-year term (2026-2030) (Page 56). R Mukundan's term as President of CII is for 2026-27 (Page 56). Therefore, 1 ends in 2030, and 2 ends in 2027.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Corporate Updates",
+    "sub_category": "Acquisitions & Management",
+    "question": "Assertion (A): Kotak Mahindra Bank Limited (KMBL) received RBI approval to acquire up to 9.99% stake each in AU Small Finance Bank and Federal Bank.\n\nReason (R): Akash Ambani was appointed as the Managing Director of Jio Platforms for a five-year term.\n\nSelect the most appropriate option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both Assertion (A) and Reason (R) are factually true statements extracted from Page 57. However, they are completely unrelated corporate events. R is not the explanation of A.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Defence Inductions",
+    "question": "Which of the following attributes does NOT belong to the TARA weapon system successfully flight-trialled by DRDO and IAF?",
+    "options": {
+      "A": "It stands for Tactical Advanced Range Augmentation.",
+      "B": "It is India's first indigenous glide weapon system.",
+      "C": "It is designed to convert unguided warheads into precision-guided weapons.",
+      "D": "The maiden flight-trial was conducted off the coast of Odisha.",
+      "E": "It features an actively cooled full-scale scramjet combustor with a run-time of 1,200 seconds."
+    },
+    "answer": "E",
+    "rationale": "Option E is incorrect because the 'actively cooled full-scale scramjet combustor' with a 1,200-second run-time belongs to a separate DRDO test conducted in Hyderabad (Page 58), not the TARA glide weapon (Page 57).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space Contracts",
+    "question": "Match the following details related to Pixxel's recent space technology contract:\n\nColumn I:\n1. NRO\n2. CSPO\n3. Firefly\n\nColumn II:\nA. The satellite constellation used for the project.\nB. The specific program office under which the contract was secured.\nC. The US national intelligence agency awarding the contract.\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-B, 2-A, 3-C"
+    },
+    "answer": "B",
+    "rationale": "NRO is the National Reconnaissance Office awarding the contract (1-C). CSPO is the Commercial Systems Program Office managing it (2-B). Firefly is the satellite constellation (3-A). (Page 57)",
+    "tag": "Current-Static",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Indian Coast Guard",
+    "question": "Fill in the blanks regarding the commissioning of the new Indian Coast Guard Ship:\n\nICGS ________, the ________ in the series of eight new-generation Adamya-class Fast Patrol Vessels (FPV), was commissioned at Goa Shipyard Limited (GSL).",
+    "options": {
+      "A": "Sarthak, fourth",
+      "B": "Achal, fifth",
+      "C": "Vigraha, seventh",
+      "D": "Achal, sixth",
+      "E": "Sujeet, fifth"
+    },
+    "answer": "B",
+    "rationale": "Page 58 states: ICGS 'Achal', the 'fifth' in the series of eight new-generation Adamya-class Fast Patrol Vessels (FPV), was commissioned.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Army Inductions",
+    "question": "Consider the following statements regarding the Indian Army's recent inductions:\n\n1. The Army inducted the ULPGM and AGNIKAA VTOL-1 drones.\n2. AGNIKAA VTOL-1 is a First-Person View (FPV) Kamikaze Drone.\n3. The procurement was executed under Emergency Procurement-6 (EP-6) from Adani Defence & Aerospace Limited.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "None of the above"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. The Indian Army inducted ULPGM and AGNIKAA VTOL-1 (which is an FPV Kamikaze Drone) under EP-6 from Adani Defence & Aerospace. (Page 58)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "Taxonomy Discoveries",
+    "question": "Arrange the following taxonomic milestones achieved by the Zoological Survey of India (ZSI) logically from the newly discovered species to the revised historical taxonomy:\n\n1. First comprehensive taxonomic revision of Indian whip scorpions 'Thelyphonids' in over 100 years.\n2. Discovery of Psechrus phenshunyu.\n3. Discovery of Psechrus ntu.\n\nWhich of the following sets correctly groups the newly discovered spider species in Nagaland?",
+    "options": {
+      "A": "1 and 2",
+      "B": "2 and 3",
+      "C": "1 and 3",
+      "D": "1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "B",
+    "rationale": "According to Page 58, the two newly discovered spider species in Nagaland are Psechrus ntu and Psechrus phenshunyu (items 2 and 3). Item 1 represents the historical taxonomic revision of whip scorpions.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Archery & Chess",
+    "question": "Assertion (A): Deepika Kumari, Ankita Bhakat, and Kumkum Mohod won the Gold medal in the Women's recurve team event at the Shanghai Hyundai Archery World Cup.\n\nReason (R): Faustino Oro became the youngest-ever Grandmaster in chess history at the Sardinia World Chess Festival 2026.\n\nSelect the most appropriate option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true (Page 59). Reason (R) is false because Faustino Oro became the 'second-youngest' Grandmaster, behind Abhimanyu Mishra who remains the youngest-ever GM.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Obituary",
+    "sub_category": "Books & Authors",
+    "question": "Hybrid: Match the individuals to their respective fields/achievements, and identify the publisher of the newly released books authored by Tushar Mehta.\n\n1. Mohan Singh\n2. Mal Anderson\n3. Tushar Mehta\n\nA. Australian Tennis Legend\nB. Solicitor General of India\nC. Former India Midfielder\n\nWho is the publisher of the books?",
+    "options": {
+      "A": "1-C, 2-A, 3-B ; Publisher: Penguin Random House",
+      "B": "1-A, 2-C, 3-B ; Publisher: Rupa Publications India",
+      "C": "1-C, 2-A, 3-B ; Publisher: Rupa Publications India",
+      "D": "1-B, 2-A, 3-C ; Publisher: HarperCollins",
+      "E": "1-C, 2-B, 3-A ; Publisher: Rupa Publications India"
+    },
+    "answer": "C",
+    "rationale": "Mohan Singh was a former India Midfielder (1-C). Mal Anderson was an Australian Tennis Legend (2-A). Tushar Mehta is the Solicitor General of India (3-B). The publisher of his books is Rupa Publications India. (Pages 59-60)",
+    "tag": "Current-Static",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Chronology",
+    "question": "Arrange the following historical dates associated with observances in chronological order (earliest to latest in the calendar year):\n\n1. Establishment of the Border Roads Organisation (BRO).\n2. Birth anniversary of Henry Dunant.\n3. End of the Second World War (as marked by the UN Time of Remembrance).\n4. India's successful Pokhran nuclear tests (commemorated as Tech Day).\n\nSelect the correct date-based arrangement:",
+    "options": {
+      "A": "1 (May 7) → 2 (May 8) → 3 (May 8-9) → 4 (May 11)",
+      "B": "2 (May 8) → 1 (May 7) → 3 (May 8-9) → 4 (May 11)",
+      "C": "1 (May 7) → 3 (May 8-9) → 2 (May 8) → 4 (May 11)",
+      "D": "4 (May 11) → 3 (May 8-9) → 2 (May 8) → 1 (May 7)",
+      "E": "1 (May 7) → 2 (May 8) → 4 (May 11) → 3 (May 8-9)"
+    },
+    "answer": "A",
+    "rationale": "BRO Raising Day is May 7 (1). Henry Dunant's birth/Red Cross Day is May 8 (2). WWII Remembrance is May 8-9 (3). Pokhran Tests/Tech Day is May 11 (4). Chronological calendar order is 1 -> 2 -> 3 -> 4. (Pages 60-61)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Logistics Ease",
+    "question": "Based on the LEADS 2025 report classification, which of the following groups of States/UTs are ALL correctly classified under the 'High Performers' category?",
+    "options": {
+      "A": "Haryana, Telangana, Gujarat, Kerala, Tripura",
+      "B": "Punjab, Jharkhand, Madhya Pradesh, Uttarakhand",
+      "C": "Tamil Nadu, Uttar Pradesh, Mizoram, Delhi",
+      "D": "Rajasthan, West Bengal, Sikkim, Andaman & Nicobar Islands",
+      "E": "Haryana, Punjab, Gujarat, Rajasthan"
+    },
+    "answer": "A",
+    "rationale": "According to the table on Page 42, Haryana, Telangana, Gujarat, Kerala, and Tripura are all listed under the 'High Performers' column (across Landlocked, Coastal, and NE rows). Group B are Accelerators. Group C are Exemplars. Group D are Growth Seekers.",
+    "tag": "Current-Static",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Economy & Labour",
+    "question": "Fill in the blanks regarding the PLFS Q4 FY26 data:\n\nThe overall Labour Force Participation Rate (LFPR) among persons aged 15 years and above in urban areas was estimated at ________, while the rural LFPR was ________.",
+    "options": {
+      "A": "55.5%, 58.2%",
+      "B": "50.2%, 58.2%",
+      "C": "46.9%, 55.7%",
+      "D": "58.2%, 50.2%",
+      "E": "52.8%, 55.5%"
+    },
+    "answer": "B",
+    "rationale": "According to the handwritten notes on Page 15: Urban LFPR is 50.2% and Rural LFPR is 58.2%. (Overall LFPR is 55.5%).",
+    "tag": "Current-Static",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Healthcare Initiatives",
+    "question": "Consider the following features mapped to MoHFW's 'JANANI' platform:\n\n1. It is an upgraded version of the Reproductive and Child Health (RCH) portal.\n2. It introduces a Longitudinal Digital Record System (LDRS) for women.\n3. It uses QR-enabled Mother and Child Health (MCH) cards for real-time monitoring.\n\nWhich of the features given above are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All features are correct. The JANANI platform upgrades RCH, introduces LDRS, and features QR-enabled MCH cards as per the handwritten notes (Page 11) and text (Page 45).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Rural Funding",
+    "question": "Assertion (A): Under the VB-G RAM G Act 2025, the FY27 Budget allocation is set at Rs. 95,692.31 crore.\n\nReason (R): This allocation represents the highest ever budget allocation for rural employment guarantee schemes, replacing the MGNREGA structure.\n\nSelect the most appropriate option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both statements are true (Page 17 handwritten notes). However, stating that it is the 'highest ever' (R) is a factual characteristic of the budget allocation, not the logical 'explanation' for WHY the specific amount of Rs 95,692.31 crore was allocated (which would be based on project scope, 125-day guarantee, etc.).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Card Networks",
+    "question": "Match the entity to its associated role in the recent digital payments launch for Delhi Metro:\n\nColumn I:\n1. Delhi Metro Rail Corporation (DMRC)\n2. Airtel Payments Bank\n3. RuPay 'On-The-Go'\n\nColumn II:\nA. The transit network implementing the payment solution.\nB. The specific NCMC card brand/variant utilized.\nC. The banking partner issuing the co-branded cards.\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-C, 3-B",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-A, 2-B, 3-C",
+      "E": "1-C, 2-A, 3-B"
+    },
+    "answer": "A",
+    "rationale": "DMRC is the transit network (1-A). Airtel Payments Bank is the banking partner (2-C). RuPay 'On-The-Go' is the NCMC card variant (3-B). (Page 53)",
+    "tag": "Current-Static",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Weather Innovations",
+    "question": "Which of the following is INCORRECT regarding the two AI-Powered Systems launched by MoES?",
+    "options": {
+      "A": "They were launched by Union MoS Dr. Jitendra Singh.",
+      "B": "One system forecasts the Monsoon Advance over different parts of the country.",
+      "C": "One system provides a High Spatial Resolution Rainfall Forecast for Uttar Pradesh.",
+      "D": "The pilot forecasting service relies entirely on Pixxel's hyperspectral imaging.",
+      "E": "The service aims at enhancing hyper-local weather prediction and rainfall accuracy."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect because the text does not link the MoES/IMD AI-powered weather forecasting systems to Pixxel's hyperspectral imaging. Pixxel is mentioned in a separate context regarding a USA NRO contract. (Pages 57, 58)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Scientific Honors",
+    "question": "Fill in the blanks regarding the Meteoritical Society Fellowship:\n\n________ became the first Indian woman elected as a Fellow of the Meteoritical Society for 2026, marking her as the ________ Indian scientist to achieve this after Devendra Lal and JN Goswami.",
+    "options": {
+      "A": "Kuljeet Kaur Marhas, 3rd",
+      "B": "Ritu Karidhal, 2nd",
+      "C": "Kuljeet Kaur Marhas, 4th",
+      "D": "Muthayya Vanitha, 3rd",
+      "E": "Tessy Thomas, 2nd"
+    },
+    "answer": "A",
+    "rationale": "Page 55: ISRO scientist Kuljeet Kaur Marhas became the first Indian woman and the 3rd Indian scientist overall (after Devendra Lal and JN Goswami) to be elected as a Fellow of the Meteoritical Society.",
+    "tag": "Current-Static",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Appointments",
+    "sub_category": "State Elections",
+    "question": "Arrange the following Chief Ministers based on the chronological tenure milestones achieved in their recent swearing-in (from 1st time to 5th time):\n\n1. Suvendu Adhikari (West Bengal)\n2. N. Rangasamy (Puducherry)\n3. Himanta Biswa Sarma (Assam)\n\nSelect the correct arrangement of their tenure counts (Lowest to Highest term count):",
+    "options": {
+      "A": "1 → 3 → 2",
+      "B": "1 → 2 → 3",
+      "C": "3 → 1 → 2",
+      "D": "2 → 3 → 1",
+      "E": "3 → 2 → 1"
+    },
+    "answer": "A",
+    "rationale": "Suvendu Adhikari is sworn in as a 1st time CM (1st BJP CM). Himanta Biswa Sarma is sworn in for a 2nd consecutive term. N. Rangasamy is sworn in for a 5th term. Ascending order is 1st term -> 2nd term -> 5th term, matching 1 -> 3 -> 2. (Pages 56-57)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Archery Medals",
+    "question": "Hybrid: Based on the 20th Shanghai Hyundai Archery World Cup Stage 2, match the medal type with the Indian winner(s), and identify the country that topped the overall medal tally.\n\n1. Deepika Kumari, Ankita Bhakat, Kumkum Mohod\n2. Sahil Jadhav\n\nA. Bronze (Men's Individual Compound)\nB. Gold (Women's recurve team)\n\nWho topped the tally?",
+    "options": {
+      "A": "1-B, 2-A; China",
+      "B": "1-A, 2-B; South Korea",
+      "C": "1-B, 2-A; Türkiye",
+      "D": "1-A, 2-B; USA",
+      "E": "1-B, 2-A; India"
+    },
+    "answer": "C",
+    "rationale": "Deepika, Ankita, and Kumkum won Gold in Women's recurve (1-B). Sahil Jadhav won Bronze in Men's individual compound (2-A). Türkiye topped the medal tally with 6 medals. (Page 59)",
+    "tag": "Current-Static",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Dates and Themes",
+    "question": "Which of the following pairings of Date, Day, and Theme is completely correct for May 2026?",
+    "options": {
+      "A": "May 8 - World Thalassaemia Day - 'Our Nurses. Our Future.'",
+      "B": "May 11 - National Technology Day - 'Responsible Innovation for Inclusive Growth'",
+      "C": "May 12 - International Day of Plant Health - 'United in Humanity'",
+      "D": "May 15 - International Day of Families - 'Plant Biosecurity for Food Security'",
+      "E": "May 9 - World Migratory Bird Day - 'Families, Inequalities and Child Wellbeing'"
+    },
+    "answer": "B",
+    "rationale": "Option B is fully correct (Page 61). Option A mixes Thalassaemia Day with the Nurses Day theme. Option C mixes Plant Health Day with the Red Cross Day theme. Option D mixes Families Day with the Plant Health theme. Option E mixes Migratory Bird Day with the Families Day theme.",
+    "tag": "Current-Static",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 2nd Week"
+  }
+]

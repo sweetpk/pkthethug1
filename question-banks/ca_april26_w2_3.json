@@ -1,0 +1,802 @@
+[
+  {
+    "category": "Economy",
+    "sub_category": "Textiles & Apparel",
+    "question": "Consider the following statements regarding the 'Market for Textiles & Clothing: National Household Survey 2024' released by the Ministry of Textiles:\n\n1. The domestic demand for textiles witnessed a Compound Annual Growth Rate (CAGR) of 8.3% from 2010 to 2024.\n2. Cotton dominated the household demand as the leading fiber, accounting for 52.2% of the total consumption.\n3. Globally, India ranks as the 2nd largest producer of Man-Made Fibre (MMF) such as polyester, viscose, nylon, and acrylic.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "C",
+    "rationale": "Statements 1 and 3 are correct. Statement 2 is incorrect because Man-Made Fibre (MMF) & Blends is the leading fiber (52.2%), whereas Cotton accounts for 41.2% of the household demand. India is the 2nd largest producer of Cotton and MMF, and the largest producer of Jute globally. Reference: Page 4.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "RBI Initiatives",
+    "question": "The Reserve Bank of India (RBI) unveiled its medium-term strategy 'Utkarsh 2029' featuring 49 deliverables across 6 pillars. Match the following 'Initiatives of Utkarsh 2029' with their designated functions:\n\nColumn I:\n1. Project Sa-Mudra\n2. DAKSH\n\nColumn II:\nA. Enhancement of Advanced Supervisory Monitoring System\nB. Modernise currency management systems\nC. Automated foreign exchange reporting tool\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A",
+      "B": "1-B, 2-A",
+      "C": "1-A, 2-B",
+      "D": "1-B, 2-C",
+      "E": "1-C, 2-B"
+    },
+    "answer": "B",
+    "rationale": "Under 'Utkarsh 2029', Project Sa-Mudra is aimed to 'Modernise currency management systems' (1-B), and DAKSH is a Supervisory Tool functioning as an 'Enhancement of Advanced Supervisory Monitoring System' (2-A). Reference: Page 19.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Renewable Energy",
+    "question": "According to the Ministry of New and Renewable Energy (MNRE), India added a record 6.05 GW of wind power capacity in FY26. Based on the International Renewable Energy Agency (IRENA) data cited in the report, arrange the following countries in descending order of their Global Rank in the Renewable Energy (RE) market:\n\n1. India\n2. China\n3. United States of America (USA)\n\nSelect the correct code:",
+    "options": {
+      "A": "2 - 3 - 1",
+      "B": "3 - 2 - 1",
+      "C": "2 - 1 - 3",
+      "D": "1 - 2 - 3",
+      "E": "3 - 1 - 2"
+    },
+    "answer": "A",
+    "rationale": "As per IRENA's Global Rank in the RE market: 1st is China, 2nd is USA, and 3rd is India. Therefore, the descending order (Rank 1 to Rank 3) is China (2) > USA (3) > India (1). Reference: Page 5.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "Credit Market",
+    "question": "The second edition of the NITI Aayog report titled 'From Borrowers to Builders: Women and India's Evolving Credit Market' highlights significant credit penetration. This report was published in collaboration with which of the following entities?",
+    "options": {
+      "A": "Equifax and McKinsey & Company",
+      "B": "TransUnion CIBIL and MicroSave Consulting (MSC)",
+      "C": "Experian and the World Bank",
+      "D": "CRISIL and NASSCOM Foundation",
+      "E": "CRIF High Mark and NITI Aayog R&D Cell"
+    },
+    "answer": "B",
+    "rationale": "The report was released in collaboration with TransUnion CIBIL and MicroSave Consulting (MSC), highlighting that women hold a credit portfolio of Rs 76 lakh crore. Reference: Page 9.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "Corporate Finance",
+    "question": "Assertion (A): Anand Milk Union Limited (AMUL) became the first FMCG company in India to achieve an annual turnover of over Rs 1 lakh crore (Rs 1 trillion) in FY26.\nReason (R): AMUL operates as the primary marketing arm of the Gujarat Cooperative Milk Marketing Federation (GCMMF).\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both statements are factually correct. AMUL achieved a turnover of over Rs 1 trillion in FY26, and it acts as the marketing arm of GCMMF. However, functioning as a marketing arm (R) is a structural fact, not the specific quantitative explanation for achieving the Rs 1 trillion mark (A). Reference: Page 6.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Infrastructure Approvals",
+    "question": "The Cabinet Committee on Economic Affairs (CCEA) approved the Kalai-II and Kamala Hydro Electric Projects (HEPs) in Arunachal Pradesh. Which of the following correctly pairs the project with its designated implementing agency?",
+    "options": {
+      "A": "Kalai-II HEP: NHPC Limited + Govt. of AR ; Kamala HEP: THDC India Limited + Govt. of AR",
+      "B": "Kalai-II HEP: THDC India Limited + Govt. of AR ; Kamala HEP: NHPC Limited + Govt. of AR",
+      "C": "Kalai-II HEP: NTPC Limited + Govt. of AR ; Kamala HEP: SJVN Limited + Govt. of AR",
+      "D": "Kalai-II HEP: NHPC Limited + Govt. of AR ; Kamala HEP: NTPC Limited + Govt. of AR",
+      "E": "Kalai-II HEP: THDC India Limited + Govt. of AR ; Kamala HEP: NEEPCO + Govt. of AR"
+    },
+    "answer": "B",
+    "rationale": "The Kalai-II HEP (1200 MW) is implemented by THDC India Limited + Govt. of AR. The Kamala HEP (1720 MW) is implemented by NHPC Limited + Govt. of AR. Reference: Page 7.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "RBI Policy",
+    "question": "Following the 1st Bi-monthly Monetary Policy Committee (MPC) meeting of FY27, the RBI released India's Growth & Inflation Projections. Based on these projections, identify the INCORRECT statement:",
+    "options": {
+      "A": "The real GDP Growth for FY27 is projected at 6.9%.",
+      "B": "The CPI Inflation for FY27 is projected at 4.6%.",
+      "C": "The projected GDP growth for Q1 FY27 is higher than the projected GDP growth for Q4 FY27.",
+      "D": "The projected CPI inflation for Q1 FY27 is 4.0%.",
+      "E": "The projected CPI inflation for Q2 FY27 is 4.4%."
+    },
+    "answer": "C",
+    "rationale": "Statement C is incorrect because the projected GDP growth for Q1 FY27 is 6.8%, which is lower than the projected GDP growth for Q4 FY27 (7.2%). All other projections (GDP at 6.9%, CPI at 4.6%, Q1 CPI at 4.0%, Q2 CPI at 4.4%) are correct. Reference: Page 17.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Market Regulations",
+    "question": "Consider the following statements regarding the new regulatory framework for NBFCs and Money Markets proposed by the RBI in April 2026:\n\n1. A new NBFC Classification framework consisting of 3 layers (Upper, Middle, Lower) is to be implemented by the end of April 2026.\n2. The RBI has proposed to introduce strict due diligence requirements for MSMEs on TReDS platforms to prevent financial fraud.\n3. Standalone Primary Dealers (SPDs) are newly allowed participants in the Term Money Market.\n\nWhich of the statements given above is/are NOT correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 2",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "B",
+    "rationale": "Statement 2 is incorrect because the RBI actually proposed to *remove* the due diligence requirement for MSMEs on TReDS platforms (Simplified Onboarding). Statement 3 is incorrect because SPDs are 'Existing participants' in the Term Money Market; the 'New participants' are AIFIs, NBFCs, HFCs, and Corporates. Statement 1 is correct. Reference: Page 18.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Historical Commemorations",
+    "question": "The National Safe Motherhood Day (NSMD) is observed annually on April 11 to promote maternal healthcare. This day significantly commemorates the birth anniversary of which prominent historical figure?",
+    "options": {
+      "A": "Sarojini Naidu",
+      "B": "Kasturba Gandhi",
+      "C": "Indira Gandhi",
+      "D": "Rani Lakshmibai",
+      "E": "Vijaya Lakshmi Pandit"
+    },
+    "answer": "B",
+    "rationale": "National Safe Motherhood Day (NSMD) on April 11 marks the birth anniversary of Kasturba Gandhi, a women's and children's welfare advocate. It was first observed in 2003. Reference: Page 28.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Obituary",
+    "sub_category": "Sports Personalities",
+    "question": "In April 2026, the sports world lost C.D. Gopinath and Jim Whittaker. Which of the following statements correctly identifies their respective achievements?",
+    "options": {
+      "A": "C.D. Gopinath was India's first Olympic flag bearer; Jim Whittaker was the first American to summit K2.",
+      "B": "C.D. Gopinath was India's oldest living Test cricketer; Jim Whittaker was the first American to summit Mount Everest.",
+      "C": "C.D. Gopinath was the world's oldest living Test cricketer overall; Jim Whittaker authored 'A Life on the Edge'.",
+      "D": "C.D. Gopinath was the BCCI President in 1983; Jim Whittaker was honored with the Hubbard Medal.",
+      "E": "C.D. Gopinath replaced Neil Harvey as the oldest cricketer; Jim Whittaker was the first person to summit Everest without oxygen."
+    },
+    "answer": "B",
+    "rationale": "C.D. Gopinath was India's oldest living Test cricketer (and the world's second-oldest after Australia's Neil Harvey). Jim Whittaker was the first American to summit Mount Everest on May 1, 1963. He authored 'A Life on the Edge' and received the Hubbard Medal, but option B is the most direct and accurate pairing of their primary defining achievements as listed. Reference: Pages 26 & 48.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "International Reports",
+    "question": "Various international organisations released their economic outlook reports in April 2026. Match the organization with the exact title of its respective report:\n\nColumn I:\n1. World Bank (WB)\n2. Asian Development Bank (ADB)\n3. International Monetary Fund (IMF)\n\nColumn II:\nA. Global Economy in the Shadow of War\nB. Working with Industrial Policy\nC. The Middle East Conflict Challenges Resilience in Asia and the Pacific\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-C, 2-B, 3-A"
+    },
+    "answer": "B",
+    "rationale": "World Bank released 'South Asia Economic (SAE) Economic Update April 2026: Working with Industrial Policy' (1-B). ADB released 'ADO April 2026: The Middle East Conflict Challenges Resilience in Asia and the Pacific' (2-C). IMF released 'WEO: Global Economy in the Shadow of War' (3-A). Reference: Pages 20-21 & 43-44.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Quantum Technology",
+    "question": "Assertion (A): The Amaravati Quantum Reference Facility (AQRF) represents India's first indigenous full-stack quantum system entirely developed with 100% domestically manufactured components.\nReason (R): It operates near absolute zero (minus 273°C) for qubit activation and comprises components located at SRM University and Medha Towers.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "D",
+    "rationale": "Assertion (A) is false because AQRF is developed with 'about 85% domestically manufactured components', not 100%. Reason (R) is true as it operates near minus 273°C and consists of Amaravati 1S (SRM Univ) and Amaravati 1Q (Medha Towers). Reference: Pages 13 & 37.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Infrastructure MoUs",
+    "question": "Which of the following organizations signed a Memorandum of Understanding (MoU) with Sri Lanka's Colombo Dockyard PLC (CDPLC) in April 2026 to establish a strategic alliance in shipbuilding and ship repair?",
+    "options": {
+      "A": "Mazagon Dock Shipbuilders Limited (MDL)",
+      "B": "Cochin Shipyard Limited (CSL)",
+      "C": "Garden Reach Shipbuilders & Engineers (GRSE)",
+      "D": "Dredging Corporation of India Limited (DCIL)",
+      "E": "Goa Shipyard Limited (GSL)"
+    },
+    "answer": "D",
+    "rationale": "Dredging Corporation of India Limited (DCIL) signed an MoU with Sri Lanka's Colombo Dockyard PLC (CDPLC) for an alliance in shipbuilding and repair. Captain S. Divakar (MD & CEO of DCIL) signed the agreement. Reference: Pages 7 & 33.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Cooperative Banking",
+    "question": "In April 2026, which cooperative bank achieved the milestone of becoming India's largest Urban Cooperative Bank (UCB) by crossing the Rs 1 lakh crore total business mark?",
+    "options": {
+      "A": "Cosmos Cooperative Bank",
+      "B": "Shamrao Vithal Cooperative Bank (SVC Bank)",
+      "C": "Saraswat Cooperative Bank",
+      "D": "Abhyudaya Cooperative Bank",
+      "E": "Kalupur Commercial Cooperative Bank"
+    },
+    "answer": "C",
+    "rationale": "Saraswat Cooperative Bank, headquartered in Mumbai, crossed the Rs 1 lakh crore total business mark, strengthening its position as India's largest Urban Cooperative Bank (UCB). Reference: Pages 6 & 33.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Themes",
+    "question": "Arrange the following globally observed days in April 2026 in chronological order of their dates, and identify the theme corresponding to the LAST day in the sorted sequence:\n\n1. World Parkinson's Day\n2. World Health Day\n3. International Romani Day\n4. International Day for Street Children\n\nOptions for the theme of the LAST day:",
+    "options": {
+      "A": "Together for Health. Stand with Science",
+      "B": "Homoeopathy for Sustainable Health",
+      "C": "Bridge the Care Gap",
+      "D": "Protect, not Punish",
+      "E": "Harmony through Homoeopathy"
+    },
+    "answer": "D",
+    "rationale": "The dates are: World Health Day (April 7), International Romani Day (April 8), World Parkinson's Day (April 11), International Day for Street Children (April 12). The last day is April 12. Its theme for 2026 is 'Protect, not Punish'. Reference: Pages 27-29 & 49-50.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "Fund Allocations",
+    "question": "The Ministry of Commerce & Industry (MoC&I) notified the Startup India Fund of Funds 2.0 (Startup India FoF 2.0). Which of the following details accurately describes this initiative?",
+    "options": {
+      "A": "Corpus of Rs 5,000 Crore ; Primary IA is NITI Aayog ; Focuses on Agrotech.",
+      "B": "Corpus of Rs 10,000 Crore ; Primary IA is SIDBI ; Focuses on Deep Tech & Manufacturing.",
+      "C": "Corpus of Rs 15,000 Crore ; Primary IA is NABARD ; Focuses on Fintech.",
+      "D": "Corpus of Rs 10,000 Crore ; Primary IA is SEBI ; Focuses on EdTech.",
+      "E": "Corpus of Rs 12,000 Crore ; Primary IA is SIDBI ; Focuses on Deep Tech & Manufacturing."
+    },
+    "answer": "B",
+    "rationale": "The Startup India FoF 2.0 has a corpus of Rs. 10,000 Crore, aims to strengthen deep tech and manufacturing startups, and has SIDBI as its primary Implementation Agency (IA). Reference: Pages 12 & 37.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Voter Initiatives",
+    "question": "In the context of recent State News, match the state/UT with the unique initiative introduced during April 2026:\n\nColumn I:\n1. Telangana\n2. Puducherry\n3. Maharashtra\n4. Gujarat\n\nColumn II:\nA. MoU with Vietnam's Vingroup\nB. Deployment of humanoid robot 'Nila' at polling booth\nC. Development of Indo-Taiwan Industrial Park\nD. Declaration of Cancer as a Notifiable Disease\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-D, 2-B, 3-A, 4-C",
+      "B": "1-D, 2-A, 3-B, 4-C",
+      "C": "1-B, 2-D, 3-C, 4-A",
+      "D": "1-C, 2-B, 3-D, 4-A",
+      "E": "1-A, 2-C, 3-B, 4-D"
+    },
+    "answer": "A",
+    "rationale": "Telangana declared Cancer a Notifiable Disease (1-D). Puducherry deployed the 'Nila' humanoid robot at a polling booth (2-B). Maharashtra signed a USD 6.5B pact with Vietnam's Vingroup (3-A). Gujarat signed an MoU for an Indo-Taiwan Industrial Park (4-C). Reference: Pages 29-30, 36 & 50-51.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Insurance Sector",
+    "question": "In April 2026, the Insurance Regulatory and Development Authority of India (IRDAI) constituted a sub-committee of the Insurance Advisory Committee (IAC). What is the primary purpose of this sub-committee?",
+    "options": {
+      "A": "To phase out paper-based insurance policies completely by 2027.",
+      "B": "To review the current scenario of private health insurance in India.",
+      "C": "To set the base premium rates for third-party motor insurance.",
+      "D": "To monitor and regulate the foreign direct investment in the insurance sector.",
+      "E": "To introduce mandatory cyber-insurance for all MSMEs."
+    },
+    "answer": "B",
+    "rationale": "The IRDAI constituted a sub-committee of the IAC to review the current scenario of private health insurance in India, focusing on increasing trust and overall consumer experience. Reference: Pages 16 & 40.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Asian Wrestling Championships",
+    "question": "At the 22nd Senior Asian Wrestling Championships 2026, India secured the 5th rank overall. Consider the following pairs of Indian wrestlers and the categories in which they won Gold Medals:\n\n1. Sujeet Kalkal - 65 kg Freestyle\n2. Abhimanyou Mandwal - 70 kg Greco-Roman\n3. Udit Kumar - 57 kg Freestyle\n\nWhich of the pairs given above is/are correctly matched based on the PDF?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 1 and 2",
+      "D": "Only 1 and 3",
+      "E": "None of the above"
+    },
+    "answer": "A",
+    "rationale": "Sujeet Kalkal won Gold in the 65 kg Freestyle category (Correct). Abhimanyou Mandwal won Gold in the 70 kg Freestyle category (not Greco-Roman). Udit Kumar is not mentioned as a Gold medalist in the provided text. Reference: Page 24.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Military Exercises",
+    "question": "The seventh edition of the India-Uzbekistan Joint Military Exercise 'DUSTLIK 2026' was held in Namangan, Uzbekistan. Which of the following components was the culmination point of the 13-day exercise?",
+    "options": {
+      "A": "A 24-hour joint cyber warfare simulation.",
+      "B": "A 48-hour validation phase to test joint operational readiness.",
+      "C": "A live-fire airborne drop drill over the Gurumsaray Field.",
+      "D": "A joint counter-terrorism tactical briefing to the UN.",
+      "E": "A 72-hour mountain warfare survival test."
+    },
+    "answer": "B",
+    "rationale": "The training culminated in an intensive 48-hour validation phase to test the joint operational readiness of both contingents at the Gurumsaray Field Training Area. Reference: Pages 15 & 39.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space Exploration",
+    "question": "Assertion (A): The crew members of NASA's Artemis II lunar mission splashed down in the Pacific Ocean off the coast of California after a 10-day journey around the moon.\nReason (R): The crew of four astronauts, including Christina Koch and Victor Glover, traveled aboard the SpaceX Dragon capsule named 'Integrity'.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true. Reason (R) is false because the capsule was NASA's Orion capsule named 'Integrity', not a SpaceX Dragon capsule. Reference: Pages 23 & 46.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Mountaineering",
+    "question": "In April 2026, Divya Singh created history by becoming the first Indian woman to cycle to the Mount Everest Base Camp (EBC) in 14 days. Arrange the following key locations in the correct sequential order of her route towards EBC as detailed in the report:\n\n1. Namche Bazaar\n2. Phakding\n3. Gorakshep\n4. Lobuche\n\nSelect the correct code:",
+    "options": {
+      "A": "1 - 2 - 3 - 4",
+      "B": "2 - 1 - 4 - 3",
+      "C": "2 - 1 - 3 - 4",
+      "D": "1 - 2 - 4 - 3",
+      "E": "4 - 3 - 2 - 1"
+    },
+    "answer": "B",
+    "rationale": "The expedition covered Kathmandu to EBC via Saleri, Surke, Phakding (2), Namche Bazaar (1), Lobuche (4), and Gorakshep (3). Thus, the order is 2 - 1 - 4 - 3. Reference: Page 44.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "Global Leaders",
+    "question": "Which of the following international political appointments or re-elections occurring in April 2026 is incorrectly matched?",
+    "options": {
+      "A": "Tô Lâm : Re-elected as the President of Vietnam for a new term running from 2026 to 2031.",
+      "B": "Ismaïl Omar Guelleh : Re-elected as President of Djibouti for a sixth consecutive term.",
+      "C": "Nizar Mohammed Saeed Amedi : Elected as the 9th President of Iraq.",
+      "D": "Abdul Latif Rashid : Succeeded Nizar Amedi to become the 6th Iraqi Head of State since 2003.",
+      "E": "Preeti Saran : Re-elected to the UN Committee on Economic, Social and Cultural Rights (CESCR)."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrectly matched because Nizar Mohammed Saeed Amedi succeeded Abdul Latif Rashid, not the other way around. Nizar Amedi became the 6th Iraqi Head of State since 2003. Reference: Pages 22-23, 39 & 44-45.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "Unicorns",
+    "question": "KreditBee recently raised USD 280 million in a Series E funding round, earning the 'unicorn' tag. With this achievement, KreditBee became the _____ unicorn of 2026, following the earlier inductions of _____ and _____ in January and February respectively.",
+    "options": {
+      "A": "3rd ; Juspay ; Neysa",
+      "B": "2nd ; Juspay ; Zepto",
+      "C": "4th ; Neysa ; Meesho",
+      "D": "3rd ; Neysa ; Juspay",
+      "E": "3rd ; Zepto ; Dunzo"
+    },
+    "answer": "A",
+    "rationale": "KreditBee became the 3rd unicorn of 2026, after Juspay (in January 2026) and Neysa (in February 2026). Reference: Pages 20 & 43.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Account Products",
+    "question": "Which of the following banks launched its first dedicated retail savings product named 'SMART SAVE ACCOUNT' in April 2026, offering variants for Savings, Current, and Non-Resident Ordinary (NRO) Accounts?",
+    "options": {
+      "A": "Catholic Syrian Bank (CSB Bank)",
+      "B": "City Union Bank",
+      "C": "Federal Bank",
+      "D": "South Indian Bank",
+      "E": "DCB Bank"
+    },
+    "answer": "A",
+    "rationale": "CSB Bank Limited launched its first dedicated retail savings product, the 'SMART SAVE ACCOUNT', targeting enhanced liquidity and automated customer-centric offerings. Reference: Pages 18 & 42.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Linguistic Inclusion",
+    "question": "The updated edition of the Constitution of India in the Sindhi language was released to promote linguistic inclusivity. The Sindhi language was officially incorporated into the Eighth Schedule of the Constitution through which Constitutional Amendment Act?",
+    "options": {
+      "A": "71st CAA, 1992",
+      "B": "21st CAA, 1967",
+      "C": "92nd CAA, 2003",
+      "D": "1st CAA, 1951",
+      "E": "42nd CAA, 1976"
+    },
+    "answer": "B",
+    "rationale": "Sindhi's inclusion in the Eighth Schedule was done through the 21st Constitutional Amendment Act, 1967. Reference: Pages 11 & 36.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Heritage & Culture",
+    "question": "Consider the following statements regarding the MoU signed to preserve India's democratic heritage:\n\n1. The Department of Posts (DoP) signed an MoU with the Pradhan Mantri Sangrahalaya (PMML).\n2. The MoU aims to promote awareness through co-branded philatelic products and set up a dedicated India Post counter at the museum.\n3. The agreement was specifically signed on the occasion of World Heritage Day.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the MoU was signed on the museum's Foundation Day, not World Heritage Day. Reference: Pages 13 & 38.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Telecommunications & Broadcasting",
+    "question": "Doordarshan (DD) and the Indian Council for Cultural Relations (ICCR) signed a 3-year MoU to promote Indian art and culture globally. Who signed this agreement on behalf of Doordarshan?",
+    "options": {
+      "A": "Gaurav Dwivedi",
+      "B": "K. Satish Nambudiripad",
+      "C": "K. Nandini Singla",
+      "D": "Sanjay Kulshrestha",
+      "E": "Rajesh Kumar"
+    },
+    "answer": "B",
+    "rationale": "The agreement was signed by K. Satish Nambudiripad, Director General (DG) of Doordarshan, and K. Nandini Singla, DG of ICCR. Reference: Pages 11 & 36.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Historical Backgrounds",
+    "question": "The CRPF Valour Day commemorates the bravery of personnel during the 1965 Battle of Sardar Post. Arrange the following events related to this day in chronological order:\n\n1. The Pakistani Army launched Operation Desert Hawk.\n2. A small unit of the 2nd Battalion CRPF bravely repulsed the assault.\n3. The CRPF Valour Day was officially named Shaurya Diwas.\n4. The CRPF was initially formed as Crown Representative Police.\n\nSelect the correct code:",
+    "options": {
+      "A": "4 - 1 - 2 - 3",
+      "B": "1 - 2 - 4 - 3",
+      "C": "4 - 2 - 1 - 3",
+      "D": "1 - 4 - 2 - 3",
+      "E": "4 - 1 - 3 - 2"
+    },
+    "answer": "A",
+    "rationale": "The force was formed in 1939 as Crown Representative Police (4). On April 9, 1965, Pakistan launched Operation Desert Hawk (1). The 2nd Battalion CRPF repulsed the assault (2). Later, the day began to be observed as Shaurya Diwas/Valour Day (3). Therefore, 4 - 1 - 2 - 3 is the correct chronological timeline. Reference: Page 28 & 49.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Artificial Intelligence",
+    "question": "Meta Platforms Inc. launched the 'Muse Spark' AI model. Under which specific series was this model released, representing the first from its superintelligence team?",
+    "options": {
+      "A": "Llama series",
+      "B": "Avocado series",
+      "C": "Gemini series",
+      "D": "Orion series",
+      "E": "Spark series"
+    },
+    "answer": "B",
+    "rationale": "Meta unveiled 'Muse Spark', the first AI model from its superintelligence team under the 'Avocado series'. Reference: Pages 23 & 45.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "International Partnerships",
+    "question": "In a significant move for semiconductor and electronics manufacturing, the Gujarat government signed an MoU with Taiwan-linked Allegiance International. Where is the proposed Indo-Taiwan Industrial Park scheduled to be developed?",
+    "options": {
+      "A": "GIFT City",
+      "B": "Dholera Special Investment Region (DSIR)",
+      "C": "Sanand-Dholera region",
+      "D": "Mandal-Becharaji",
+      "E": "Hazira"
+    },
+    "answer": "C",
+    "rationale": "The Science and Technology Department of the Gujarat government signed the MoU to develop an Indo-Taiwan Industrial Park in the Sanand-Dholera region. Reference: Pages 12 & 36.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Urban Development",
+    "question": "Which of the following Navratna CPSEs under the Ministry of Housing and Urban Affairs (MoHUA) partnered with HUDCO in April 2026 for urban redevelopment projects and asset monetisation initiatives in Delhi?",
+    "options": {
+      "A": "Engineering Projects (India) Limited (EPI)",
+      "B": "Rail Vikas Nigam Limited (RVNL)",
+      "C": "National Buildings Construction Corporation (NBCC) Limited",
+      "D": "Housing Development Finance Corporation (HDFC)",
+      "E": "RITES Limited"
+    },
+    "answer": "C",
+    "rationale": "HUDCO signed 2 strategic MoUs with NBCC (India) Limited, a Navratna CPSE under MoHUA, to collaborate on urban redevelopment and asset monetisation. Reference: Pages 12 & 37.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Strategic MoU",
+    "question": "Punjab National Bank (PNB) signed a Memorandum of Understanding (MoU) with the Government e-Marketplace (GeM). What is the main objective of this partnership?",
+    "options": {
+      "A": "To offer collateral-free loans up to Rs 20 lakh for MSME buyers on GeM.",
+      "B": "To strengthen financial access for sellers on the GeM platform.",
+      "C": "To establish a dedicated TReDS platform exclusively for GeM transactions.",
+      "D": "To digitize PNB's internal procurement entirely through GeM.",
+      "E": "To waive off transaction charges for all PNB account holders buying on GeM."
+    },
+    "answer": "B",
+    "rationale": "State-owned PNB signed an MoU with GeM specifically to strengthen financial access for sellers on the platform. Reference: Pages 17 & 41.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "Biodiversity Institutions",
+    "question": "Match the following biodiversity repositories notified under the Biological Diversity Act, 2002, with their corresponding parent ministries or governing bodies:\n\nColumn I:\n1. Referral Centre Bhavasagara at CMLRE\n2. MACS Collection of Microorganisms at ARI\n3. National Biodiversity Authority (NBA)\n\nColumn II:\nA. Ministry of Environment, Forest and Climate Change (MoEFCC)\nB. Ministry of Earth Sciences (MoES)\nC. Agharkar Research Institute (ARI)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-A, 2-C, 3-B",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "A",
+    "rationale": "CMLRE works under the Ministry of Earth Sciences (MoES) (1-B). MACS Collection is situated at ARI, Pune (2-C). The NBA operates under the Ministry of Environment, Forest and Climate Change (MoEFCC) (3-A). Reference: Pages 6 & 32.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Asian Wrestling Championships",
+    "question": "Assertion (A): The Indian wrestling team secured 5th rank at the Senior Asian Wrestling Championships 2026 by winning a total of 17 medals.\nReason (R): The 17 medals included 6 Gold, 2 Silver, and 9 Bronze.\n\nChoose the correct code:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true as India ranked 5th with 17 medals. Reason (R) is false because the medal breakdown was 2 Gold, 6 Silver, and 9 Bronze (not 6 Gold, 2 Silver). Reference: Pages 24 & 46.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "GDP Projections",
+    "question": "According to the IMF's April 2026 World Economic Outlook (WEO) report, India's Gross Domestic Product (GDP) growth forecast for FY27 was upgraded to 6.5%. Furthermore, what is the IMF's projection for India's GDP growth rate specifically for FY28?",
+    "options": {
+      "A": "It is projected to increase to 6.8%.",
+      "B": "It is projected to decrease to 6.2%.",
+      "C": "It is projected to remain stable at 6.5%.",
+      "D": "It is projected to spike to 7.0%.",
+      "E": "It is projected to drop sharply to 5.9%."
+    },
+    "answer": "C",
+    "rationale": "The IMF projected that the Indian economy will remain stable, maintaining a 6.5% GDP growth rate in FY28. Reference: Pages 21 & 44.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Obituary",
+    "sub_category": "Political Personalities",
+    "question": "Mohsina Kidwai, a veteran Indian National Congress (INC) leader, recently passed away at 94. She served three terms in the Lok Sabha representing the _______ constituency and also served two consecutive terms in the Rajya Sabha representing _______.",
+    "options": {
+      "A": "Amethi ; Uttar Pradesh",
+      "B": "Meerut ; Chhattisgarh",
+      "C": "Rae Bareli ; Madhya Pradesh",
+      "D": "Kanpur ; Chhattisgarh",
+      "E": "Meerut ; Uttar Pradesh"
+    },
+    "answer": "B",
+    "rationale": "She represented the Meerut constituency in the Lok Sabha for three terms (6th, 7th, 8th) and represented Chhattisgarh in the Rajya Sabha for two consecutive terms (2004-2016). Reference: Pages 26 & 48.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Aviation",
+    "question": "In April 2026, the Ministry of Civil Aviation (MoCA) approved the development of two new airports in the state of Telangana. What are the names of the locations where these airports will be developed?",
+    "options": {
+      "A": "Nizamabad and Khammam",
+      "B": "Warangal and Adilabad",
+      "C": "Karimnagar and Nalgonda",
+      "D": "Warangal and Nizamabad",
+      "E": "Adilabad and Khammam"
+    },
+    "answer": "B",
+    "rationale": "MoCA approved the development of two new airports namely, Warangal Airport and Adilabad Airport, in Telangana. The decision was announced in a meeting chaired by Union Minister Rajnath Singh. Reference: Pages 10 & 35.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Genocide Reflection",
+    "question": "The International Day of Reflection on the 1994 Genocide against the Tutsi in Rwanda is observed on April 7. Which of the following statements about this observance is incorrect?",
+    "options": {
+      "A": "It honors over 1 million victims of the 100-day genocide.",
+      "B": "It recognizes the suffering of Hutus and others who opposed the genocide.",
+      "C": "April 7, 2026, marked the 32nd anniversary of the genocide.",
+      "D": "The inaugural observance of this day was held on April 7, 1995, one year after the event.",
+      "E": "The observance aims to reflect on the events that took place in Rwanda in 1994."
+    },
+    "answer": "D",
+    "rationale": "The inaugural observance was held on April 7, 2004 (marking the 10th anniversary of the genocide), not in 1995. All other statements are correct. Reference: Pages 27 & 49.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "AI Models",
+    "question": "Meta Platforms Inc. recently launched the 'Muse Spark' AI model. Arrange the following steps or features typical to its development and launch logic as outlined in the text:\n\n1. It integrates AI into everyday user experiences.\n2. It features advanced reasoning capabilities.\n3. It was developed by the superintelligence team.\n4. It was released under the 'Avocado series'.\n\nWhich of the following represents the correct factual alignment of the model's attributes?",
+    "options": {
+      "A": "It is an Avocado series model built by the superintelligence team, possessing advanced reasoning to integrate AI into user experiences.",
+      "B": "It is a Spark series model built by the Llama team, possessing basic logic to integrate into internal databases.",
+      "C": "It is an Avocado series model built by the Metaverse team, possessing advanced reasoning for AR/VR applications.",
+      "D": "It is a Llama 4 series model built by the superintelligence team, integrating AI into user experiences.",
+      "E": "It is an Avocado series model built by external contractors, focusing on open-source coding."
+    },
+    "answer": "A",
+    "rationale": "The text specifically describes Muse Spark as the first from Meta's superintelligence team under the Avocado series, aimed at strengthening global AI race position by developing advanced reasoning capabilities and integrating AI into everyday user experiences. Option A perfectly aligns all these facts. Reference: Pages 23 & 45-46.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "ECOSOC Bodies",
+    "question": "India was elected by acclamation to three subsidiary bodies of the UN ECOSOC in April 2026. Which of the following bodies is NOT one of the three to which India was newly elected during this specific announcement?",
+    "options": {
+      "A": "Commission on Science and Technology for Development (CSTD)",
+      "B": "Committee on Non-Governmental Organizations (NGO Committee)",
+      "C": "Committee for Programme and Coordination (CPC)",
+      "D": "Commission on the Status of Women (CSW)",
+      "E": "All A, B, and C were the three bodies."
+    },
+    "answer": "D",
+    "rationale": "The three bodies India was elected to are CSTD, NGO Committee, and CPC. The Commission on the Status of Women (CSW) was not part of this specific election announcement. Reference: Pages 14 & 38-39.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Defence",
+    "sub_category": "Joint Exercises",
+    "question": "Regarding the India-Egypt Joint Special Forces Exercise 'Cyclone-IV', identify the correct statements:\n\nI. It is the fourth edition of the exercise.\nII. It was held at Gurumsaray Field Training Area.\nIII. It was a 9-day joint engagement scheduled from April 9 to 17, 2026.\n\nChoose the correct code:",
+    "options": {
+      "A": "Only I and II",
+      "B": "Only II and III",
+      "C": "Only I and III",
+      "D": "Only III",
+      "E": "All I, II, and III"
+    },
+    "answer": "C",
+    "rationale": "Statements I and III are correct. Statement II is incorrect because Cyclone-IV was held at Rangers Forces Headquarters, Anshas, Egypt. The Gurumsaray Field Training Area was the location for DUSTLIK 2026 in Uzbekistan. Reference: Pages 15 & 39.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "NPS Sponsorship",
+    "question": "The Pension Fund Regulatory and Development Authority (PFRDA) approved Parag Parikh Financial Advisory Services (PPFAS) Asset Management Company (AMC) to act as a sponsor for a pension fund under the National Pension System (NPS). Which ministry does PFRDA operate under?",
+    "options": {
+      "A": "Ministry of Corporate Affairs (MoCA)",
+      "B": "Ministry of Finance (MoF)",
+      "C": "Ministry of Personnel, Public Grievances and Pensions",
+      "D": "Ministry of Labour & Employment (MoL&E)",
+      "E": "Ministry of Commerce and Industry (MoC&I)"
+    },
+    "answer": "B",
+    "rationale": "PFRDA operates under the Ministry of Finance (MoF). Reference: Pages 11 & 35.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Payment Aggregators",
+    "question": "NPCI Bharat BillPay Limited (NBBL) recently expanded its 'Banking Connect' platform. Assertion (A): By onboarding Axis Bank, Banking Connect is now available across 8 major banks and 11 Payment Aggregators. Reason (R): NBBL is a wholly-owned subsidiary of the Reserve Bank of India (RBI).\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true; the inclusion of Axis Bank expanded the network to 8 banks and 11 PAs. Reason (R) is false because NBBL is a wholly-owned subsidiary of the National Payments Corporation of India (NPCI), not directly the RBI. Reference: Pages 18 & 41.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Mountaineering",
+    "question": "Divya Singh, a 28-year-old teacher, reached the Mount Everest Base Camp (EBC) on a bicycle. She is the first Indian woman to achieve this and the _____ woman globally, following _____.",
+    "options": {
+      "A": "Second ; Kami Rita Sherpa of Nepal",
+      "B": "Third ; Junko Tabei of Japan",
+      "C": "Second ; Tammat Bil Khoar of Bangladesh",
+      "D": "Third ; Tammat Bil Khoar of Bangladesh",
+      "E": "Second ; Preeti Saran of India"
+    },
+    "answer": "C",
+    "rationale": "She became the second woman globally to reach EBC on a bicycle, after Tammat Bil Khoar of Bangladesh. Reference: Pages 21 & 44.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "Cooperative Sector",
+    "question": "Saraswat Cooperative Bank crossed the Rs 1 lakh crore total business mark. Which of the following statements is true regarding this bank?",
+    "options": {
+      "A": "It is India's largest Rural Cooperative Bank.",
+      "B": "It is headquartered in Pune, Maharashtra.",
+      "C": "It is India's largest Urban Cooperative Bank (UCB).",
+      "D": "It operates solely under the Ministry of Cooperation without RBI oversight.",
+      "E": "It merged with Shirpur Merchants’ Co-operative Bank to achieve this milestone."
+    },
+    "answer": "C",
+    "rationale": "Saraswat Cooperative Bank is India's largest Urban Cooperative Bank (UCB) and is headquartered in Mumbai, Maharashtra. Reference: Pages 6 & 33.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Digital Payments",
+    "question": "According to the Worldline SA 'India Digital Payments Report- Year 2025 in Review', arrange the following parameters regarding UPI's performance in descending order based on their numerical values (ignoring units like billions/trillions for the sort, just the base number):\n\n1. Total UPI transaction value (in Rs trillions)\n2. UPI Transaction Volume (in billions)\n3. Person-to-Merchant (P2M) transaction volume (in billions)\n4. Point of Sale (PoS) terminals (in millions)\n\nSelect the correct code:",
+    "options": {
+      "A": "1 - 2 - 3 - 4",
+      "B": "2 - 1 - 3 - 4",
+      "C": "1 - 3 - 2 - 4",
+      "D": "3 - 2 - 1 - 4",
+      "E": "2 - 3 - 1 - 4"
+    },
+    "answer": "A",
+    "rationale": "The values are: 1. Value: 299.74; 2. Volume: 228.5; 3. P2M volume: 143.82; 4. PoS terminals: 11.48. Descending order of the base numbers is 299.74 > 228.5 > 143.82 > 11.48, which corresponds to 1 - 2 - 3 - 4. Reference: Pages 20 & 42.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "New Portals",
+    "question": "SEBI launched three new IT platforms. Match the platforms with their primary operational functions:\n\nColumn I:\n1. SUPCOMS 2.1\n2. e-Adjudication portal\n3. C-SAC\n\nColumn II:\nA. Transparent paperless platform for quasi-judicial proceedings\nB. Single universal digital platform replacing traditional email-based communication\nC. AI-based platform enabling automated analysis of cyber audit reports\n\nSelect the correct alignment:",
+    "options": {
+      "A": "1-A, 2-B, 3-C",
+      "B": "1-B, 2-A, 3-C",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "B",
+    "rationale": "SUPCOMS 2.1 handles unified communications (1-B). e-Adjudication handles quasi-judicial proceedings (2-A). C-SAC uses AI for cyber audit reports (3-C). Reference: Pages 19 & 42.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Health Themes",
+    "question": "The World Health Day 2026 was observed on April 7. Which country hosted the 'International One Health Summit' connected to this observance from April 5-7, 2026?",
+    "options": {
+      "A": "Switzerland (Geneva)",
+      "B": "United Kingdom (London)",
+      "C": "France (Lyon)",
+      "D": "India (New Delhi)",
+      "E": "United States (New York)"
+    },
+    "answer": "C",
+    "rationale": "The International One Health Summit (5–7 April 2026) was hosted by France in Lyon. Reference: Pages 27 & 49.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Textiles Survey",
+    "question": "The 'Market for Textiles & Clothing: National Household Survey 2024' indicates that the domestic demand for textiles reached Rs 14.95 lakh crore. What specific segment of this demand rose to Rs 8.77 lakh crore?",
+    "options": {
+      "A": "Industrial & Technical Textiles demand",
+      "B": "Export-oriented Apparels demand",
+      "C": "Household demand",
+      "D": "Government & Institutional procurement",
+      "E": "Luxury Fashion demand"
+    },
+    "answer": "C",
+    "rationale": "The Household Contribution specifically rose from Rs 4.18 lakh crore (2010) to Rs 8.77 lakh crore (2024). Reference: Pages 4 & 31.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - April 2026"
+  }
+]
