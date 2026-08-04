@@ -4,9 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>pkthethug's Quiz Master</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Moved off @import: an @import inside a <style> block is render-blocking —
+     the browser can't finish parsing the rest of the CSS until the imported
+     stylesheet is fetched. A <link> fetches it in parallel with everything
+     else, which is especially worth it on slower mobile connections. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap">
 <style>
 /* ===== IMPORTS ===== */
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap');
 
 /* ===== CSS VARIABLES ===== */
 :root {
@@ -130,6 +136,15 @@ ul { list-style: none; }
   transition: background var(--transition);
 }
 [data-theme="light"] #topbar { background: rgba(244,244,248,0.9); }
+/* A fixed, blurred bar forces the browser to recompute the blur behind it on
+   every scroll/repaint frame — mobile GPUs handle this far worse than
+   desktop ones, and it's a common source of felt scroll lag on phones.
+   Drop the blur below desktop widths and use a near-opaque background
+   instead, which looks almost identical without the per-frame cost. */
+@media (max-width: 768px) {
+  #topbar { backdrop-filter: none; background: rgba(10,10,15,0.97); }
+  [data-theme="light"] #topbar { background: rgba(244,244,248,0.97); }
+}
 .topbar-logo {
   font-family: var(--font-display);
   font-size: 1.05rem;
@@ -157,7 +172,6 @@ ul { list-style: none; }
   border: 1px solid var(--border);
   font-size: 1rem; transition: all var(--transition);
 }
-.icon-btn:hover { color: var(--text); background: var(--bg4); border-color: var(--border2); }
 
 /* ===== SCREEN BASE ===== */
 .screen {
@@ -264,7 +278,6 @@ ul { list-style: none; }
   color: var(--accent);
 }
 .month-btn.selected .month-label { color: var(--accent); }
-.month-btn:hover:not(.selected) { border-color: var(--border2); background: var(--bg4); color: var(--text); }
 
 /* ===== MONTHLESS FILE BUTTONS ===== */
 .monthless-btn {
@@ -287,7 +300,6 @@ ul { list-style: none; }
   color: var(--accent);
 }
 .monthless-btn.selected .ml-label { color: var(--accent); }
-.monthless-btn:hover:not(.selected) { border-color: var(--border2); background: var(--bg4); color: var(--text); }
 
 /* ===== FILE UPLOAD AREA ===== */
 .upload-area {
@@ -299,7 +311,7 @@ ul { list-style: none; }
   transition: all var(--transition);
   position: relative;
 }
-.upload-area:hover, .upload-area.dragging {
+.upload-area.dragging {
   border-color: var(--accent);
   background: var(--accent-glow);
 }
@@ -320,7 +332,6 @@ ul { list-style: none; }
 .uploaded-file .file-name { flex: 1; font-family: var(--font-mono); color: var(--text2); }
 .uploaded-file .file-count { color: var(--accent); font-weight: 600; font-family: var(--font-mono); }
 .remove-file { color: var(--text3); font-size: 0.75rem; padding: 2px 6px; border-radius: 4px; }
-.remove-file:hover { color: var(--red); background: var(--red-bg); }
 
 /* ===== MULTI SELECT CHIPS ===== */
 .chip-group {
@@ -336,7 +347,6 @@ ul { list-style: none; }
   transition: all var(--transition);
   user-select: none;
 }
-.chip:hover { border-color: var(--accent); color: var(--accent); }
 .chip.selected {
   border-color: var(--accent);
   background: var(--accent-glow);
@@ -387,7 +397,6 @@ ul { list-style: none; }
   text-align: center;
 }
 .toggle-btn:last-child { border-right: none; }
-.toggle-btn:hover { background: var(--bg4); color: var(--text); }
 .toggle-btn.active { background: var(--accent); color: white; font-weight: 600; }
 
 /* ===== SWITCH ===== */
@@ -454,8 +463,6 @@ input[type="range"]::-webkit-slider-thumb {
   background: linear-gradient(135deg, rgba(255,255,255,0.1), transparent);
   opacity: 0; transition: opacity var(--transition);
 }
-#start-btn:hover { transform: translateY(-1px); box-shadow: 0 6px 28px rgba(108, 99, 255, 0.5); }
-#start-btn:hover::after { opacity: 1; }
 #start-btn:active { transform: translateY(0); }
 #start-btn:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
 
@@ -491,7 +498,6 @@ input[type="range"]::-webkit-slider-thumb {
   display: grid; grid-template-columns: 1fr auto;
   gap: 8px; align-items: center;
 }
-.history-card:hover { border-color: var(--accent); background: var(--accent-glow); }
 .history-card-left { display: flex; flex-direction: column; gap: 4px; }
 .history-card-title { font-size: 0.88rem; font-weight: 600; }
 .history-card-meta { font-size: 0.75rem; color: var(--text2); font-family: var(--font-mono); }
@@ -603,7 +609,6 @@ input[type="range"]::-webkit-slider-thumb {
   overflow: hidden;
   background: var(--bg2);
 }
-.option-item:hover { border-color: var(--accent); transform: translateX(2px); }
 .option-key {
   width: 52px; min-width: 52px;
   display: flex; align-items: center; justify-content: center;
@@ -668,14 +673,11 @@ input[type="range"]::-webkit-slider-thumb {
   display: flex; align-items: center; gap: 6px;
   white-space: nowrap;
 }
-.ctrl-btn:hover { border-color: var(--border2); color: var(--text); background: var(--bg4); }
 .ctrl-btn.primary {
   background: var(--accent); border-color: var(--accent); color: white;
   box-shadow: 0 2px 12px rgba(108,99,255,0.3);
 }
-.ctrl-btn.primary:hover { background: var(--accent2); border-color: var(--accent2); }
 .ctrl-btn.danger { border-color: var(--red); color: var(--red); }
-.ctrl-btn.danger:hover { background: var(--red-bg); }
 .ctrl-btn.mark-btn.marked { border-color: var(--yellow); color: var(--yellow); background: var(--yellow-bg); }
 .ctrl-btn:disabled { opacity: 0.35; cursor: not-allowed; }
 .spacer { flex: 1; }
@@ -683,7 +685,6 @@ input[type="range"]::-webkit-slider-thumb {
   background: var(--green); border-color: var(--green); color: white;
   box-shadow: 0 2px 12px rgba(34,197,94,0.25);
 }
-#submit-btn:hover { background: #16a34a; border-color: #16a34a; }
 
 /* RIGHT SIDEBAR */
 #quiz-sidebar {
@@ -751,7 +752,6 @@ input[type="range"]::-webkit-slider-thumb {
   color: var(--text2);
   transition: all var(--transition);
 }
-.palette-num:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-glow); }
 .palette-num.answered { background: var(--green-bg); border-color: var(--green); color: var(--green); }
 .palette-num.marked { background: var(--yellow-bg); border-color: var(--yellow); color: var(--yellow); }
 .palette-num.current {
@@ -775,7 +775,6 @@ input[type="range"]::-webkit-slider-thumb {
   letter-spacing: 0.02em;
   box-shadow: 0 2px 10px rgba(34,197,94,0.2);
 }
-.sidebar-submit-btn:hover { background: #16a34a; transform: translateY(-1px); }
 
 /* ===== RESULT SCREEN ===== */
 #screen-result {
@@ -974,7 +973,6 @@ input[type="range"]::-webkit-slider-thumb {
   color: var(--text2);
   transition: all var(--transition);
 }
-.rev-palette-num:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-glow); }
 .rev-palette-num.rev-correct { background: var(--green-bg); border-color: var(--green); color: var(--green); }
 .rev-palette-num.rev-wrong { background: var(--red-bg); border-color: var(--red); color: var(--red); }
 .rev-palette-num.rev-skipped { background: var(--yellow-bg); border-color: var(--yellow); color: var(--yellow); }
@@ -1269,7 +1267,6 @@ input[type="range"]::-webkit-slider-thumb {
   user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
-.file-pick-card:hover { border-color: var(--border2); background: var(--bg4); }
 .file-pick-card.selected {
   border-color: var(--accent);
   background: var(--accent-glow);
@@ -1305,6 +1302,38 @@ input[type="range"]::-webkit-slider-thumb {
   background: var(--bg4); color: var(--text3);
   border: 1px solid var(--border);
   white-space: nowrap;
+}
+/* ===== HOVER EFFECTS (real pointer devices only) =====
+   All :hover styling lives here, gated behind (hover: hover) and
+   (pointer: fine). Touch devices report hover:none, so this whole block
+   simply doesn't apply on phones/tablets.
+   Why: on touch, tapping an element triggers :hover with no matching
+   "mouse leave" to clear it — the hover style just sticks until you tap
+   something else. For chips/cards that use the same accent color for both
+   :hover and .selected, that made a just-deselected chip still LOOK
+   selected until you tapped elsewhere. Scoping hover to real pointers
+   fixes this for every card/chip/button at once, with zero effect on
+   desktop (mouse users still get every hover effect exactly as before). */
+@media (hover: hover) and (pointer: fine) {
+  .icon-btn:hover { color: var(--text); background: var(--bg4); border-color: var(--border2); }
+  .month-btn:hover:not(.selected) { border-color: var(--border2); background: var(--bg4); color: var(--text); }
+  .monthless-btn:hover:not(.selected) { border-color: var(--border2); background: var(--bg4); color: var(--text); }
+  .upload-area:hover { border-color: var(--accent); background: var(--accent-glow); }
+  .remove-file:hover { color: var(--red); background: var(--red-bg); }
+  .chip:hover { border-color: var(--accent); color: var(--accent); }
+  .toggle-btn:hover { background: var(--bg4); color: var(--text); }
+  #start-btn:hover { transform: translateY(-1px); box-shadow: 0 6px 28px rgba(108, 99, 255, 0.5); }
+  #start-btn:hover::after { opacity: 1; }
+  .history-card:hover { border-color: var(--accent); background: var(--accent-glow); }
+  .option-item:hover { border-color: var(--accent); transform: translateX(2px); }
+  .ctrl-btn:hover { border-color: var(--border2); color: var(--text); background: var(--bg4); }
+  .ctrl-btn.primary:hover { background: var(--accent2); border-color: var(--accent2); }
+  .ctrl-btn.danger:hover { background: var(--red-bg); }
+  #submit-btn:hover { background: #16a34a; border-color: #16a34a; }
+  .palette-num:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-glow); }
+  .sidebar-submit-btn:hover { background: #16a34a; transform: translateY(-1px); }
+  .rev-palette-num:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-glow); }
+  .file-pick-card:hover { border-color: var(--border2); background: var(--bg4); }
 }
 </style>
 </head>
@@ -1399,11 +1428,9 @@ input[type="range"]::-webkit-slider-thumb {
 
       <!-- LAYER 1: Source (Category) -->
       <div id="source-chips-section" style="margin-bottom:20px">
-        <p class="form-label" style="margin-bottom:8px">① Select Source <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--text3);font-size:0.75rem">(required — pick one or more sources)</span></p>
-        <p class="text-sm" style="color:var(--text2);margin-bottom:10px">Choose the source(s) to draw questions from. Month and week filters appear below when applicable.</p>
-        <div class="chip-group" id="source-chips">
-          <span class="chip all-chip selected" data-val="ALL" onclick="toggleSourceChip(this,'ALL')">All Sources</span>
-        </div>
+        <p class="form-label" style="margin-bottom:8px">① Select Source <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--text3);font-size:0.75rem">(required — pick exactly one source)</span></p>
+        <p class="text-sm" style="color:var(--text2);margin-bottom:10px">Choose the source to draw questions from. Month and week filters appear below when applicable.</p>
+        <div class="chip-group" id="source-chips"></div>
       </div>
 
       <!-- LAYER 2: Month / File Selection (always visible when files exist) -->
@@ -1422,13 +1449,13 @@ input[type="range"]::-webkit-slider-thumb {
         </div>
       </div>
 
-      <!-- LAYER 3: Week (only shown if files have weeks) -->
+      <!-- LAYER 3: Week (only shown if the selected source's files have weeks) -->
       <div id="week-filter-row" style="display:none;margin-bottom:20px;align-items:center;gap:12px;flex-wrap:wrap">
         <div style="flex:1;min-width:200px">
-          <p class="form-label" style="margin-bottom:8px">③ Week Filter <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--text3);font-size:0.75rem">(optional — files without a week tag are always included)</span></p>
-          <select class="form-control" id="week-select" onchange="STATE.selectedWeek=this.value; STATE.selectedFiles.clear(); buildFilePickerDropdown(); updateFiltersAndUI(); updateSummaries()">
-            <option value="ALL">All Weeks</option>
-          </select>
+          <p class="form-label" style="margin-bottom:8px">③ Week Filter <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--text3);font-size:0.75rem">(optional — pick one or more weeks; files without a week tag are always included)</span></p>
+          <div class="chip-group" id="week-chips">
+            <span class="chip all-chip selected" data-val="ALL" onclick="toggleWeekChip(this,'ALL')">All Weeks</span>
+          </div>
         </div>
       </div>
 
@@ -1767,16 +1794,17 @@ input[type="range"]::-webkit-slider-thumb {
 // STATE
 // ============================================================
 const STATE = {
-  allQuestions: [],       // all loaded questions
+  allQuestions: [],       // merged questions currently relevant to the active selection (NOT all banks anymore)
   availableMonths: [],    // detected months from file names
-  uploadedFiles: {},      // { filename: [questions] }
-  bankFiles: {},          // auto-loaded from question-banks/
+  uploadedFiles: {},      // { filename: [questions] } — full content, used only for the Upload flow
+  bankFiles: {},          // { filename: { count, categories, sub_categories, tags } } — LIGHTWEIGHT metadata from manifest.json, no question content
+  bankContentCache: {},   // { filename: [questions] } — full content, fetched lazily on demand and cached here so repeat selections don't re-fetch
   
   // Setup
   selectedMonths: new Set(),
   selectedMonthlessFiles: new Set(), // for monthless file selection (step 2b)
-  selectedSources: new Set(['ALL']),  // NEW: source prefix filter
-  selectedWeek: 'ALL',                // NEW: 'ALL' | 'w1' | 'w2' etc.
+  selectedSources: new Set(),         // single-select source prefix filter — empty means none chosen yet, at most 1 entry
+  selectedWeeks: new Set(['ALL']),    // multi-select week filter — 'ALL' means no week restriction, otherwise a set of 'w1'/'w2'/etc.
   selectedFiles: new Set(),           // NEW: direct file picker (bypasses other filters)
   useUploadedOnly: false,             // NEW: when uploads exist, use only those
   selectedCats: new Set(['ALL']),
@@ -1921,6 +1949,7 @@ const SOURCE_PREFIX_MAP = [
   { prefix: 'misc',           label: 'Random Miscellaneous' },
   { prefix: 'other',          label: 'Other Sources' },
   { prefix: 'ca',             label: 'Cloud Affairs' },
+  { prefix: 'capp',           label: 'Cloud Affairs - Pocket Pdf' },
 ];
 
 // Extract source prefix key from filename
@@ -1992,43 +2021,75 @@ function getTagType(tag = '') {
 // ============================================================
 // File list is now driven by question-banks/manifest.json — no hardcoded names needed.
 
-async function tryLoadBankFile(filename) {
+// ============================================================
+// AUTO-DETECT QUESTION BANKS (LAZY)
+// ============================================================
+// File list + metadata now comes entirely from question-banks/manifest.json.
+// manifest.json must contain an array of objects like:
+//   { "file": "ca_oct25_1.json", "count": 47, "categories": [...], "sub_categories": [...], "tags": [...] }
+// Generate/refresh it by running build-manifest.js (see that file for instructions)
+// any time you add, remove, or edit files in question-banks/.
+//
+// IMPORTANT: this function NO LONGER fetches the actual bank files. It only
+// reads the manifest. Actual question content for a given file is fetched
+// later, lazily, by loadBankFileContent() — only for files that are actually
+// needed (selected/filtered), and only once (cached in STATE.bankContentCache).
+
+async function autoDetectBanks() {
+  const results = {};
+  try {
+    const resp = await fetch('question-banks/manifest.json');
+    if (!resp.ok) return results;
+    const parsed = await resp.json();
+    if (!Array.isArray(parsed)) return results;
+
+    for (const entry of parsed) {
+      // Support both the new rich format and a plain filename-list fallback,
+      // in case someone hand-edits manifest.json back to the old style.
+      if (typeof entry === 'string') {
+        results[entry] = { count: null, categories: [], sub_categories: [], tags: [] };
+      } else if (entry && entry.file) {
+        results[entry.file] = {
+          count: typeof entry.count === 'number' ? entry.count : null,
+          categories: entry.categories || [],
+          sub_categories: entry.sub_categories || [],
+          tags: entry.tags || [],
+        };
+      }
+    }
+  } catch { /* no manifest found */ }
+  return results;
+}
+
+// Fetch the full question content of a single bank file, using the cache
+// if we've already fetched it this session. This is the ONLY place actual
+// bank question JSON gets downloaded for the auto-loaded (non-upload) flow.
+async function loadBankFileContent(filename) {
+  if (STATE.bankContentCache[filename]) return STATE.bankContentCache[filename];
   try {
     const resp = await fetch(`question-banks/${filename}`);
     if (!resp.ok) return null;
     const data = await resp.json();
     if (!Array.isArray(data) || data.length === 0) return null;
+    STATE.bankContentCache[filename] = data;
     return data;
-  } catch { return null; }
+  } catch {
+    return null;
+  }
 }
 
-async function autoDetectBanks() {
-  const results = {};
-
-  // Fetch manifest.json for the list of files
-  let filelist = [];
-  try {
-    const resp = await fetch('question-banks/manifest.json');
-    if (resp.ok) {
-      const parsed = await resp.json();
-      if (Array.isArray(parsed)) filelist = parsed;
-    }
-  } catch { /* no manifest found */ }
-
-  if (filelist.length === 0) return results;
-
-  const attempts = await Promise.allSettled(
-    filelist.map(async f => {
-      const data = await tryLoadBankFile(f);
-      return { file: f, data };
-    })
-  );
-  for (const r of attempts) {
-    if (r.status === 'fulfilled' && r.value.data) {
-      results[r.value.file] = r.value.data;
-    }
+// Fetch full content for a list of filenames in parallel, skipping any
+// already cached. Returns { filename: [questions] } for the requested files.
+async function loadBankFilesContent(filenames) {
+  const toFetch = filenames.filter(f => !STATE.bankContentCache[f]);
+  if (toFetch.length > 0) {
+    await Promise.allSettled(toFetch.map(loadBankFileContent));
   }
-  return results;
+  const out = {};
+  for (const f of filenames) {
+    if (STATE.bankContentCache[f]) out[f] = STATE.bankContentCache[f];
+  }
+  return out;
 }
 
 // ============================================================
@@ -2040,7 +2101,8 @@ async function init() {
   // Load history
   STATE.history = JSON.parse(localStorage.getItem('qm_history') || '[]');
 
-  // Try auto-detect
+  // Reads manifest.json ONLY — no bank file content is fetched here.
+  // This is what keeps startup fast no matter how many banks/questions exist.
   const bankFiles = await autoDetectBanks();
   STATE.bankFiles = bankFiles;
   
@@ -2054,19 +2116,26 @@ async function init() {
   buildCategoryChips();
   refreshHomeStats();
   renderHistory();
-  updateStartButton();
+  updateStartButton(); // does NOT trigger a fetch — see note in that function
   setupEventListeners();
 }
 
+// Merges currently-available FULL question content into STATE.allQuestions.
+// - Upload mode: uploaded files are already fully in memory (user explicitly
+//   chose them by uploading), so they're merged as before.
+// - Auto-loaded bank mode: only files already sitting in bankContentCache
+//   (i.e. already lazily fetched because they were needed) get merged.
+//   Files not yet fetched simply aren't included yet — that's intentional,
+//   filterable, and resolved by ensureQuestionsLoaded() before anything
+//   that actually needs real question counts/content (see below).
 function mergeAllQuestions() {
   const all = [];
   const seen = new Set();
 
-  // If uploads exist, only use uploaded files
   const hasUploads = Object.keys(STATE.uploadedFiles).length > 0;
   const filesToUse = hasUploads
     ? STATE.uploadedFiles
-    : STATE.bankFiles;
+    : STATE.bankContentCache;
 
   function addQuestions(questions, sourceName) {
     const month = extractMonthFromFilename(sourceName);
@@ -2094,6 +2163,85 @@ function mergeAllQuestions() {
   STATE.useUploadedOnly = hasUploads;
 }
 
+// Figures out which bank filenames are relevant to the CURRENT filter
+// selection (source/month/week/file-picker), using only manifest metadata
+// (no fetching). This mirrors the same narrowing logic used by
+// getFilteredQuestions(), just applied to filenames instead of questions.
+function getRelevantBankFilenames() {
+  const allFnames = Object.keys(STATE.bankFiles);
+
+  // File picker bypasses everything else
+  if (STATE.selectedFiles.size > 0) {
+    return allFnames.filter(f => STATE.selectedFiles.has(f));
+  }
+
+  // Source filter — single-select now: no source chosen means nothing is
+  // relevant yet (previously 'ALL' meant "include everything").
+  if (STATE.selectedSources.size === 0) return [];
+  let fnames = allFnames.filter(f => STATE.selectedSources.has(extractSourcePrefix(f)));
+
+  // Month / monthless filter
+  const hasMonthSel = STATE.selectedMonths.size > 0;
+  const hasMonthlessSel = STATE.selectedMonthlessFiles.size > 0;
+  if (hasMonthSel || hasMonthlessSel) {
+    fnames = fnames.filter(f => {
+      const month = extractMonthFromFilename(f);
+      if (month) return hasMonthSel ? STATE.selectedMonths.has(month) : true;
+      return hasMonthlessSel ? STATE.selectedMonthlessFiles.has(f) : true;
+    });
+  }
+
+  // Week filter — multi-select; 'ALL' (default) means no restriction
+  if (!STATE.selectedWeeks.has('ALL') && STATE.selectedWeeks.size > 0) {
+    fnames = fnames.filter(f => {
+      const week = extractWeekFromFilename(f);
+      return week === null || STATE.selectedWeeks.has(week);
+    });
+  }
+
+  return fnames;
+}
+
+// True once the user has narrowed down enough that loading the relevant
+// files is a small, scoped fetch — not "basically everything". Since source
+// selection is now mandatory and single-select, picking a source IS the
+// narrowing step; month/week/file-picker are additional optional refinements.
+function hasNarrowedSelection() {
+  if (STATE.selectedFiles.size > 0) return true;
+  return STATE.selectedSources.size > 0;
+}
+
+// Ensures full question content is loaded (fetched + merged into
+// STATE.allQuestions) for every bank file relevant to the current filter
+// selection. This is the bridge between "lazy by default" and "the user
+// actually needs real questions now" — called right before building a
+// quiz, and before computing a live filtered count. Already-cached files
+// are free (no re-fetch); only newly-relevant files cause network calls.
+// No-op entirely when in upload mode, since uploads are already in memory.
+// Also a no-op while the selection is still the broad default (no source,
+// month, week, or file narrowed down) — with thousands of questions across
+// many banks, "All Sources" with nothing else picked should NOT silently
+// fetch every file; the user needs to narrow down first (the UI prompts
+// for this — see updateStartButton/updateFiltersAndUI).
+async function ensureRelevantBankFilesLoaded() {
+  if (STATE.useUploadedOnly) return;
+  if (!hasNarrowedSelection()) return;
+  const needed = getRelevantBankFilenames();
+  const notCached = needed.filter(f => !STATE.bankContentCache[f]);
+  if (notCached.length > 0) {
+    await loadBankFilesContent(notCached);
+  }
+  mergeAllQuestions();
+}
+
+// Returns the question count for a file regardless of mode:
+// - Upload mode: entry is a full array of questions → use .length
+// - Bank mode: entry is lightweight manifest metadata → use .count
+function fileEntryCount(entry) {
+  if (Array.isArray(entry)) return entry.length;
+  return (entry && typeof entry.count === 'number') ? entry.count : 0;
+}
+
 // ============================================================
 // MONTH / MONTHLESS GRID (2nd layer: always shown when files exist for selected source)
 // ============================================================
@@ -2106,14 +2254,11 @@ function buildMonthGrid() {
 
   const allFiles = STATE.useUploadedOnly ? STATE.uploadedFiles : STATE.bankFiles;
 
-  // Get files that match selected source
-  const sourceFiles = Object.entries(allFiles).filter(([fname]) => {
-    if (!STATE.selectedSources.has('ALL')) {
-      const p = extractSourcePrefix(fname);
-      if (!STATE.selectedSources.has(p)) return false;
-    }
-    return true;
-  });
+  // Get files that match the selected source (single-select — empty means
+  // no source chosen yet, so nothing to show).
+  const sourceFiles = STATE.selectedSources.size === 0
+    ? []
+    : Object.entries(allFiles).filter(([fname]) => STATE.selectedSources.has(extractSourcePrefix(fname)));
 
   if (sourceFiles.length === 0) {
     if (section) section.style.display = 'none';
@@ -2126,12 +2271,13 @@ function buildMonthGrid() {
 
   for (const [fname, qs] of sourceFiles) {
     const month = extractMonthFromFilename(fname);
+    const count = fileEntryCount(qs);
     if (month) {
       if (!monthMap[month]) monthMap[month] = 0;
-      monthMap[month] += qs.length;
+      monthMap[month] += count;
     } else {
       const identifier = extractMonthlessIdentifier(fname);
-      monthlessFiles.push({ fname, identifier, count: qs.length });
+      monthlessFiles.push({ fname, identifier, count });
     }
   }
 
@@ -2235,7 +2381,7 @@ function toggleMonth(btn, month) {
   }
   // Reset downstream filters when month changes
   STATE.selectedFiles.clear();
-  STATE.selectedWeek = 'ALL';
+  STATE.selectedWeeks = new Set(['ALL']);
   buildWeekDropdown();
   buildFilePickerDropdown();
   updateFiltersAndUI();
@@ -2253,11 +2399,12 @@ function buildSourceChips() {
   const allFiles = STATE.useUploadedOnly ? STATE.uploadedFiles : STATE.bankFiles;
   const presentPrefixes = new Set(Object.keys(allFiles).map(fname => extractSourcePrefix(fname)));
 
-  // Remove selected sources that no longer exist
+  // Remove the selected source if it no longer exists. Since this is now
+  // single-select, there's nothing else to fall back to — an empty set just
+  // means "no source chosen yet", which is a valid, expected state.
   for (const s of [...STATE.selectedSources]) {
-    if (s !== 'ALL' && !presentPrefixes.has(s)) STATE.selectedSources.delete(s);
+    if (!presentPrefixes.has(s)) STATE.selectedSources.delete(s);
   }
-  if (STATE.selectedSources.size === 0) STATE.selectedSources.add('ALL');
 
   const sorted = [...presentPrefixes].sort((a, b) => {
     const ai = SOURCE_PREFIX_MAP.findIndex(x => x.prefix === a);
@@ -2265,42 +2412,40 @@ function buildSourceChips() {
     return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi);
   });
 
-  container.innerHTML = `<span class="chip all-chip ${STATE.selectedSources.has('ALL') ? 'selected' : ''}" data-val="ALL" onclick="toggleSourceChip(this,'ALL')">All Sources</span>`;
-  sorted.forEach(prefix => {
+  // Build the full chip list as one string and assign innerHTML ONCE.
+  // (Previously this used container.innerHTML += ... inside the loop, which
+  // re-serializes and re-parses the ENTIRE existing chip list on every
+  // iteration — O(n²) work that re-runs on every filter click. That was a
+  // real, felt cause of the setup-screen lag.)
+  container.innerHTML = sorted.map(prefix => {
     const sel = STATE.selectedSources.has(prefix);
-    container.innerHTML += `<span class="chip ${sel ? 'selected' : ''}" data-val="${prefix}" onclick="toggleSourceChip(this,'${prefix}')">${getSourceLabel(prefix)}</span>`;
-  });
+    return `<span class="chip ${sel ? 'selected' : ''}" data-val="${prefix}" onclick="toggleSourceChip(this,'${prefix}')">${getSourceLabel(prefix)}</span>`;
+  }).join('');
 
   // Always show source chips section (it's now the primary step)
   const section = $('source-chips-section');
   if (section) section.style.display = 'block';
 }
 
+// Single-select: picking a source replaces whatever was selected before.
+// Clicking the already-selected source deselects it, returning to the
+// "no source chosen — please pick one" state. Sources are kept single-select
+// on purpose: some sources have week-tagged files and some don't, and mixing
+// both under one filter made the week filter meaningless/confusing.
 function toggleSourceChip(chip, val) {
-  if (val === 'ALL') {
-    STATE.selectedSources.clear();
-    STATE.selectedSources.add('ALL');
-    $('source-chips').querySelectorAll('.chip').forEach(c => c.classList.toggle('selected', c.dataset.val === 'ALL'));
-  } else {
-    STATE.selectedSources.delete('ALL');
-    $('source-chips').querySelector('[data-val="ALL"]')?.classList.remove('selected');
-    if (STATE.selectedSources.has(val)) {
-      STATE.selectedSources.delete(val);
-      chip.classList.remove('selected');
-      if (STATE.selectedSources.size === 0) {
-        STATE.selectedSources.add('ALL');
-        $('source-chips').querySelector('[data-val="ALL"]')?.classList.add('selected');
-      }
-    } else {
-      STATE.selectedSources.add(val);
-      chip.classList.add('selected');
-    }
-  }
+  const wasSelected = STATE.selectedSources.has(val);
+  STATE.selectedSources.clear();
+  if (!wasSelected) STATE.selectedSources.add(val);
+
+  $('source-chips').querySelectorAll('.chip').forEach(c => {
+    c.classList.toggle('selected', c.dataset.val === val && !wasSelected);
+  });
+
   // Source changed — reset downstream filters
   STATE.selectedMonths.clear();
   STATE.selectedMonthlessFiles.clear();
   STATE.selectedFiles.clear();
-  STATE.selectedWeek = 'ALL';
+  STATE.selectedWeeks = new Set(['ALL']);
   buildMonthGrid();
   buildWeekDropdown();
   buildFilePickerDropdown();
@@ -2309,20 +2454,19 @@ function toggleSourceChip(chip, val) {
 }
 
 // ============================================================
-// WEEK DROPDOWN (3rd layer: shown only when week-tagged files exist in source+month selection)
+// WEEK CHIPS (3rd layer: shown only when week-tagged files exist for the selected source+month)
 // ============================================================
 function buildWeekDropdown() {
-  const sel = $('week-select');
-  if (!sel) return;
+  const container = $('week-chips');
+  if (!container) return;
 
   // Find which weeks exist in current source+month filtered files
   const allFiles = STATE.useUploadedOnly ? STATE.uploadedFiles : STATE.bankFiles;
   const relevantFiles = Object.keys(allFiles).filter(fname => {
-    // Source filter (primary)
-    if (!STATE.selectedSources.has('ALL')) {
-      const p = extractSourcePrefix(fname);
-      if (!STATE.selectedSources.has(p)) return false;
-    }
+    // Source filter (primary) — single-select
+    if (STATE.selectedSources.size === 0) return false;
+    const p = extractSourcePrefix(fname);
+    if (!STATE.selectedSources.has(p)) return false;
     // Month filter (secondary — only applied if months are selected)
     if (STATE.selectedMonths.size > 0) {
       const m = extractMonthFromFilename(fname);
@@ -2334,21 +2478,57 @@ function buildWeekDropdown() {
   const weeks = new Set(relevantFiles.map(f => extractWeekFromFilename(f)).filter(Boolean));
   const sortedWeeks = [...weeks].sort();
 
-  // If no weeks at all, hide the row
+  // If no weeks at all (e.g. Cloud Affairs - Pocket Pdf, which has none),
+  // hide the row entirely — that's the whole point of gating this behind a
+  // single selected source now.
   const weekRow = $('week-filter-row');
   if (weekRow) weekRow.style.display = weeks.size === 0 ? 'none' : 'flex';
 
-  // Rebuild options
-  sel.innerHTML = '<option value="ALL">All Weeks</option>';
-  sortedWeeks.forEach(w => {
-    const label = 'Week ' + w.slice(1); // w1 -> Week 1
-    sel.innerHTML += `<option value="${w}" ${STATE.selectedWeek === w ? 'selected' : ''}>${label}</option>`;
-  });
-  // Ensure selected week still valid
-  if (STATE.selectedWeek !== 'ALL' && !weeks.has(STATE.selectedWeek)) {
-    STATE.selectedWeek = 'ALL';
-    sel.value = 'ALL';
+  // Drop any selected weeks that no longer exist for this source/month
+  if (!STATE.selectedWeeks.has('ALL')) {
+    for (const w of [...STATE.selectedWeeks]) {
+      if (!weeks.has(w)) STATE.selectedWeeks.delete(w);
+    }
+    if (STATE.selectedWeeks.size === 0) STATE.selectedWeeks.add('ALL');
   }
+
+  // Build all week chips as one string, assign once (see buildSourceChips
+  // for why: += in a loop re-parses the whole growing list every iteration).
+  const allChip = `<span class="chip all-chip ${STATE.selectedWeeks.has('ALL') ? 'selected' : ''}" data-val="ALL" onclick="toggleWeekChip(this,'ALL')">All Weeks</span>`;
+  const weekChips = sortedWeeks.map(w => {
+    const sel = STATE.selectedWeeks.has(w);
+    const label = 'Week ' + w.slice(1); // w1 -> Week 1
+    return `<span class="chip ${sel ? 'selected' : ''}" data-val="${w}" onclick="toggleWeekChip(this,'${w}')">${label}</span>`;
+  }).join('');
+  container.innerHTML = allChip + weekChips;
+}
+
+// Multi-select: toggling a specific week adds/removes it from the set.
+// Picking "All Weeks" clears everything back to the no-restriction default.
+function toggleWeekChip(chip, val) {
+  if (val === 'ALL') {
+    STATE.selectedWeeks.clear();
+    STATE.selectedWeeks.add('ALL');
+    $('week-chips').querySelectorAll('.chip').forEach(c => c.classList.toggle('selected', c.dataset.val === 'ALL'));
+  } else {
+    STATE.selectedWeeks.delete('ALL');
+    $('week-chips').querySelector('[data-val="ALL"]')?.classList.remove('selected');
+    if (STATE.selectedWeeks.has(val)) {
+      STATE.selectedWeeks.delete(val);
+      chip.classList.remove('selected');
+      if (STATE.selectedWeeks.size === 0) {
+        STATE.selectedWeeks.add('ALL');
+        $('week-chips').querySelector('[data-val="ALL"]')?.classList.add('selected');
+      }
+    } else {
+      STATE.selectedWeeks.add(val);
+      chip.classList.add('selected');
+    }
+  }
+  STATE.selectedFiles.clear();
+  buildFilePickerDropdown();
+  updateFiltersAndUI();
+  updateSummaries();
 }
 
 // ============================================================
@@ -2373,7 +2553,7 @@ function buildFilePickerDropdown() {
     const qs = allFiles[fname];
     const sel = STATE.selectedFiles.has(fname);
     const tags = [
-      qs.length + 'Q',
+      fileEntryCount(qs) + 'Q',
       month ? prettyMonth(month) : null,
       week ? 'W' + week.slice(1) : null,
     ].filter(Boolean);
@@ -2429,50 +2609,62 @@ function clearFilePicker() {
 // CATEGORY CHIPS
 // ============================================================
 function buildCategoryChips() {
-  // Use questions filtered by source + month + week (or file picker), before cat/subcat/tag filtering
-  let base;
-  if (STATE.selectedFiles.size > 0) {
-    base = STATE.allQuestions.filter(q => STATE.selectedFiles.has(q._source));
-  } else {
-    // Source first (primary)
-    base = getFilteredBySource();
-    // Then month + monthless (secondary)
-    const hasMonthSel = STATE.selectedMonths.size > 0;
-    const hasMonthlessSel = STATE.selectedMonthlessFiles.size > 0;
-    if (hasMonthSel || hasMonthlessSel) {
-      base = base.filter(q => {
-        if (q._month) return hasMonthSel ? STATE.selectedMonths.has(q._month) : true;
-        else return hasMonthlessSel ? STATE.selectedMonthlessFiles.has(q._source) : true;
-      });
+  const cats = new Set();
+  const subcats = new Set();
+
+  if (STATE.useUploadedOnly) {
+    // Upload mode: full question content is already in memory, scan it directly.
+    let base;
+    if (STATE.selectedFiles.size > 0) {
+      base = STATE.allQuestions.filter(q => STATE.selectedFiles.has(q._source));
+    } else {
+      base = getFilteredBySource();
+      const hasMonthSel = STATE.selectedMonths.size > 0;
+      const hasMonthlessSel = STATE.selectedMonthlessFiles.size > 0;
+      if (hasMonthSel || hasMonthlessSel) {
+        base = base.filter(q => {
+          if (q._month) return hasMonthSel ? STATE.selectedMonths.has(q._month) : true;
+          else return hasMonthlessSel ? STATE.selectedMonthlessFiles.has(q._source) : true;
+        });
+      }
+      if (!STATE.selectedWeeks.has('ALL')) {
+        base = base.filter(q => q._week === null || STATE.selectedWeeks.has(q._week));
+      }
     }
-    // Then week
-    if (STATE.selectedWeek !== 'ALL') {
-      base = base.filter(q => q._week === null || q._week === STATE.selectedWeek);
+    base.forEach(q => {
+      if (q.category) cats.add(q.category);
+      if (q.sub_category) subcats.add(q.sub_category);
+    });
+  } else {
+    // Bank mode: derive categories/sub_categories from manifest metadata
+    // for whichever files match the current filter selection — no fetch needed.
+    const relevantFiles = getRelevantBankFilenames();
+    for (const fname of relevantFiles) {
+      const meta = STATE.bankFiles[fname];
+      if (!meta) continue;
+      (meta.categories || []).forEach(c => cats.add(c));
+      (meta.sub_categories || []).forEach(c => subcats.add(c));
     }
   }
 
-  const cats = new Set();
-  const subcats = new Set();
-  base.forEach(q => {
-    if (q.category) cats.add(q.category);
-    if (q.sub_category) subcats.add(q.sub_category);
-  });
-
-  // Render cat chips
-  const catChips = $('cat-chips');
-  catChips.innerHTML = `<span class="chip all-chip ${STATE.selectedCats.has('ALL') ? 'selected' : ''}" data-val="ALL" onclick="toggleChip(this,'cat')">All</span>`;
-  [...cats].sort().forEach(c => {
+  // Build both chip lists as single strings and assign innerHTML ONCE each.
+  // This function runs on almost every filter click (category, subcat, tag,
+  // month, source...), so the old += loop — which re-parses the entire
+  // growing chip list on every category/subcat added — was doing real,
+  // repeated, felt damage on the setup screen specifically.
+  const catAllChip = `<span class="chip all-chip ${STATE.selectedCats.has('ALL') ? 'selected' : ''}" data-val="ALL" onclick="toggleChip(this,'cat')">All</span>`;
+  const catChipsHtml = [...cats].sort().map(c => {
     const sel = STATE.selectedCats.has(c);
-    catChips.innerHTML += `<span class="chip ${sel ? 'selected' : ''}" data-val="${c}" onclick="toggleChip(this,'cat')">${c}</span>`;
-  });
+    return `<span class="chip ${sel ? 'selected' : ''}" data-val="${c}" onclick="toggleChip(this,'cat')">${c}</span>`;
+  }).join('');
+  $('cat-chips').innerHTML = catAllChip + catChipsHtml;
 
-  // Render subcat chips
-  const subcatChips = $('subcat-chips');
-  subcatChips.innerHTML = `<span class="chip all-chip ${STATE.selectedSubcats.has('ALL') ? 'selected' : ''}" data-val="ALL" onclick="toggleChip(this,'subcat')">All</span>`;
-  [...subcats].sort().forEach(c => {
+  const subcatAllChip = `<span class="chip all-chip ${STATE.selectedSubcats.has('ALL') ? 'selected' : ''}" data-val="ALL" onclick="toggleChip(this,'subcat')">All</span>`;
+  const subcatChipsHtml = [...subcats].sort().map(c => {
     const sel = STATE.selectedSubcats.has(c);
-    subcatChips.innerHTML += `<span class="chip ${sel ? 'selected' : ''}" data-val="${c}" onclick="toggleChip(this,'subcat')">${c}</span>`;
-  });
+    return `<span class="chip ${sel ? 'selected' : ''}" data-val="${c}" onclick="toggleChip(this,'subcat')">${c}</span>`;
+  }).join('');
+  $('subcat-chips').innerHTML = subcatAllChip + subcatChipsHtml;
 }
 
 function toggleChip(chip, type) {
@@ -2507,8 +2699,9 @@ function toggleChip(chip, type) {
 // FILTERING
 // ============================================================
 function getFilteredBySource() {
-  // Primary filter: source prefix
-  if (STATE.selectedSources.has('ALL') || STATE.selectedSources.size === 0) return STATE.allQuestions;
+  // Primary filter: source prefix — single-select now, so no source chosen
+  // means nothing is included yet (previously 'ALL' meant "everything").
+  if (STATE.selectedSources.size === 0) return [];
   return STATE.allQuestions.filter(q => STATE.selectedSources.has(q._fileCat));
 }
 
@@ -2545,9 +2738,9 @@ function getFilteredQuestions() {
   }
 
   // Week filter — step 3, smart: only restrict files that have a week label
-  if (STATE.selectedWeek !== 'ALL') {
+  if (!STATE.selectedWeeks.has('ALL')) {
     qs = qs.filter(q => {
-      return q._week === null || q._week === STATE.selectedWeek;
+      return q._week === null || STATE.selectedWeeks.has(q._week);
     });
   }
 
@@ -2601,7 +2794,13 @@ function applyDifficultyMix(qs) {
   return qs;
 }
 
-function updateFiltersAndUI() {
+async function updateFiltersAndUI() {
+  // Lazily fetch (or pull from cache) just the bank files relevant to the
+  // CURRENT filter selection — not every bank file that exists. This is the
+  // one place real question content gets pulled in as the user filters.
+  // (No-op while still on the broad default selection — see hasNarrowedSelection.)
+  await ensureRelevantBankFilesLoaded();
+
   buildCategoryChips();
   const filtered = getFilteredQuestions();
   const count = filtered.length;
@@ -2610,9 +2809,10 @@ function updateFiltersAndUI() {
   const cntDiv = $('filtered-count');
   
   const hasFiles = Object.keys(STATE.useUploadedOnly ? STATE.uploadedFiles : STATE.bankFiles).length > 0;
-  const hasSelection = hasFiles; // source chips always hold a valid state once files are loaded
+  const needsNarrowing = !STATE.useUploadedOnly && !hasNarrowedSelection();
+  const hasSelection = hasFiles && !needsNarrowing;
 
-  if (!hasFiles) {
+  if (!hasFiles || needsNarrowing) {
     warn.classList.remove('show');
     cntDiv.style.display = 'none';
   } else if (hasSelection && count === 0) {
@@ -2633,15 +2833,8 @@ function updateFiltersAndUI() {
 }
 
 function updateStartButton() {
-  const filtered = getFilteredQuestions();
   const btn = $('start-btn');
-  
   const hasFiles = Object.keys(STATE.useUploadedOnly ? STATE.uploadedFiles : STATE.bankFiles).length > 0;
-  // In the new model, a selection is valid as long as we have files loaded
-  // (source chips default to "All Sources" which is a valid selection)
-  // The user must have files loaded to proceed
-  const hasSelection = hasFiles; // source chips always have a valid selection (ALL or specific)
-  const hasSpecificPick = STATE.selectedFiles.size > 0 || STATE.selectedMonths.size > 0 || !STATE.selectedSources.has('ALL');
 
   if (!hasFiles) {
     btn.disabled = true;
@@ -2649,9 +2842,21 @@ function updateStartButton() {
     return;
   }
 
-  if (filtered.length === 0) {
+  // Bank mode, no source picked yet: don't fetch anything, just prompt the
+  // user to pick a source first. This is what keeps page-load fast with
+  // thousands of questions — nothing downloads until a source is chosen.
+  if (!STATE.useUploadedOnly && !hasNarrowedSelection()) {
     btn.disabled = true;
-    btn.textContent = 'No questions match filters';
+    btn.textContent = 'Select a source above to continue';
+    return;
+  }
+
+  const filtered = getFilteredQuestions();
+
+  if (filtered.length === 0) {
+    const stillLoading = !STATE.useUploadedOnly && getRelevantBankFilenames().some(f => !STATE.bankContentCache[f]);
+    btn.disabled = true;
+    btn.textContent = stillLoading ? 'Loading questions…' : 'No questions match filters';
     return;
   }
   
@@ -2676,13 +2881,15 @@ function updateSummaries() {
   if (STATE.selectedFiles.size > 0) {
     selectionStr = `${STATE.selectedFiles.size} file(s) picked`;
   } else {
-    const sourceStr = STATE.selectedSources.has('ALL') 
-      ? 'All Sources' 
-      : [...STATE.selectedSources].map(getSourceLabel).join(', ');
+    const sourceStr = STATE.selectedSources.size > 0
+      ? [...STATE.selectedSources].map(getSourceLabel).join(', ')
+      : 'No source selected';
     const months = [...STATE.selectedMonths];
     const monthStr = months.length > 0 ? ' · ' + months.map(prettyMonth).join(', ') : '';
     const monthlessStr = STATE.selectedMonthlessFiles.size > 0 ? ` · ${STATE.selectedMonthlessFiles.size} file(s)` : '';
-    const weekStr = STATE.selectedWeek !== 'ALL' ? ' · Week ' + STATE.selectedWeek.slice(1) : '';
+    const weekStr = !STATE.selectedWeeks.has('ALL')
+      ? ' · Week ' + [...STATE.selectedWeeks].map(w => w.slice(1)).join(', ')
+      : '';
     selectionStr = sourceStr + monthStr + monthlessStr + weekStr;
   }
   $('sum-months').textContent = selectionStr;
@@ -2700,11 +2907,27 @@ function updateSummaries() {
 // HOME STATS
 // ============================================================
 function refreshHomeStats() {
-  $('stat-total-q').textContent = STATE.allQuestions.length;
   const filePool = STATE.useUploadedOnly ? STATE.uploadedFiles : STATE.bankFiles;
   $('stat-files').textContent = Object.keys(filePool).length;
-  const cats = new Set(STATE.allQuestions.map(q => q.category).filter(Boolean));
-  $('stat-cats').textContent = cats.size;
+
+  if (STATE.useUploadedOnly) {
+    $('stat-total-q').textContent = STATE.allQuestions.length;
+    const cats = new Set(STATE.allQuestions.map(q => q.category).filter(Boolean));
+    $('stat-cats').textContent = cats.size;
+  } else {
+    // Bank mode: total/categories come from manifest metadata across ALL
+    // banks, not just the ones fetched so far — keeps the home screen
+    // accurate without downloading anything.
+    let total = 0;
+    const cats = new Set();
+    for (const meta of Object.values(STATE.bankFiles)) {
+      total += (typeof meta.count === 'number' ? meta.count : 0);
+      (meta.categories || []).forEach(c => cats.add(c));
+    }
+    $('stat-total-q').textContent = total;
+    $('stat-cats').textContent = cats.size;
+  }
+
   $('stat-quizzes').textContent = STATE.history.length;
 
   // Show/hide the uploaded-only notice
@@ -2824,8 +3047,8 @@ async function handleFileUpload(e) {
   // Reset all selection state when new uploads come in
   STATE.selectedMonths.clear();
   STATE.selectedMonthlessFiles.clear();
-  STATE.selectedSources = new Set(['ALL']);
-  STATE.selectedWeek = 'ALL';
+  STATE.selectedSources = new Set();
+  STATE.selectedWeeks = new Set(['ALL']);
   STATE.selectedFiles.clear();
 
   mergeAllQuestions();
@@ -2860,8 +3083,8 @@ function removeUploadedFile(fname) {
   STATE.selectedFiles.delete(fname);
   STATE.selectedMonths.clear();
   STATE.selectedMonthlessFiles.clear();
-  STATE.selectedSources = new Set(['ALL']);
-  STATE.selectedWeek = 'ALL';
+  STATE.selectedSources = new Set();
+  STATE.selectedWeeks = new Set(['ALL']);
   mergeAllQuestions();
   buildSourceChips();
   buildMonthGrid();
@@ -2878,7 +3101,27 @@ function removeUploadedFile(fname) {
 // ============================================================
 $('start-btn').addEventListener('click', startQuiz);
 
-function startQuiz() {
+async function startQuiz() {
+  // Guard: the Start button is disabled until the user narrows down (see
+  // updateStartButton), but defend here too in case this is ever called
+  // directly — never silently fetch every bank file.
+  if (!STATE.useUploadedOnly && !hasNarrowedSelection()) {
+    showToast('Pick a source or month first');
+    return;
+  }
+
+  // Safety net: in normal use, updateFiltersAndUI() already fetched the
+  // relevant bank files as the user filtered. This just guards against the
+  // rare case of clicking Start before that resolves.
+  if (!STATE.useUploadedOnly) {
+    const needed = getRelevantBankFilenames();
+    if (needed.some(f => !STATE.bankContentCache[f])) {
+      showLoading('Loading questions…');
+      await ensureRelevantBankFilesLoaded();
+      hideLoading();
+    }
+  }
+
   let qs = getFilteredQuestions();
   if (!qs.length) return;
 
@@ -3065,19 +3308,50 @@ function buildPalette() {
     `<div class="palette-num" data-i="${i}" onclick="jumpTo(${i})">${i+1}</div>`
   ).join('');
   $('question-palette').innerHTML = html;
-  $('drawer-palette').innerHTML = html.replace(/onclick/g, 'onclick');
-  updatePalette();
+  $('drawer-palette').innerHTML = html;
+
+  // Cache a reference to every cell (by question index) ONE time, right after
+  // building. This is still O(n) but only runs once per quiz start — not on
+  // every navigation/answer like before. It lets updatePalette() below jump
+  // straight to the cells that changed instead of re-scanning the whole DOM.
+  STATE.paletteCells = new Map();
+  document.querySelectorAll('.palette-num').forEach(cell => {
+    const i = parseInt(cell.dataset.i);
+    if (!STATE.paletteCells.has(i)) STATE.paletteCells.set(i, []);
+    STATE.paletteCells.get(i).push(cell);
+  });
+  STATE.paletteLastCurrent = null;
+
+  STATE.paletteCells.forEach((_, i) => paintPaletteCell(i));
 }
 
+function paletteClassFor(i) {
+  if (i === STATE.current) return 'palette-num current';
+  if (STATE.marked.has(i)) return 'palette-num marked';
+  if (STATE.answers[i] !== undefined) return 'palette-num answered';
+  return 'palette-num';
+}
+
+function paintPaletteCell(i) {
+  const cells = STATE.paletteCells && STATE.paletteCells.get(i);
+  if (!cells) return;
+  const cls = paletteClassFor(i);
+  cells.forEach(cell => { cell.className = cls; });
+}
+
+// Called after every question render / mark / answer. Previously this did a
+// full querySelectorAll + loop over EVERY palette cell (both the sidebar and
+// drawer copies) on every single interaction — with hundreds/thousands of
+// questions loaded (e.g. "All Available"), that added up to real, felt lag,
+// especially on mobile. Only the current cell (and whichever cell was
+// current before it) can actually change class on a given call, so we only
+// touch those — O(1) regardless of how many questions are in the quiz.
 function updatePalette() {
-  const cells = document.querySelectorAll('.palette-num');
-  cells.forEach(cell => {
-    const i = parseInt(cell.dataset.i);
-    cell.className = 'palette-num';
-    if (i === STATE.current) cell.classList.add('current');
-    else if (STATE.marked.has(i)) cell.classList.add('marked');
-    else if (STATE.answers[i] !== undefined) cell.classList.add('answered');
-  });
+  paintPaletteCell(STATE.current);
+  if (STATE.paletteLastCurrent !== null && STATE.paletteLastCurrent !== STATE.current) {
+    paintPaletteCell(STATE.paletteLastCurrent);
+  }
+  STATE.paletteLastCurrent = STATE.current;
 }
 
 function updateSidebarStats() {
@@ -3097,12 +3371,12 @@ function jumpTo(i) {
 }
 
 function togglePaletteDrawer() {
+  // The drawer palette is built once alongside the sidebar palette in
+  // buildPalette() and kept current by updatePalette() on every render, so
+  // there's nothing left to resync here — just show/hide it. (The old
+  // version rebuilt the drawer's entire HTML and reattached every cell's
+  // click handler on every open, which was wasted work.)
   $('palette-drawer').classList.toggle('open');
-  // Sync drawer palette
-  $('drawer-palette').innerHTML = $('question-palette').innerHTML;
-  $('drawer-palette').querySelectorAll('.palette-num').forEach(c => {
-    c.onclick = () => jumpTo(parseInt(c.dataset.i));
-  });
 }
 
 // ============================================================
