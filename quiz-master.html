@@ -4,9 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>pkthethug's Quiz Master</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Moved off @import: an @import inside a <style> block is render-blocking —
+     the browser can't finish parsing the rest of the CSS until the imported
+     stylesheet is fetched. A <link> fetches it in parallel with everything
+     else, which is especially worth it on slower mobile connections. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap">
 <style>
 /* ===== IMPORTS ===== */
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap');
 
 /* ===== CSS VARIABLES ===== */
 :root {
@@ -130,6 +136,15 @@ ul { list-style: none; }
   transition: background var(--transition);
 }
 [data-theme="light"] #topbar { background: rgba(244,244,248,0.9); }
+/* A fixed, blurred bar forces the browser to recompute the blur behind it on
+   every scroll/repaint frame — mobile GPUs handle this far worse than
+   desktop ones, and it's a common source of felt scroll lag on phones.
+   Drop the blur below desktop widths and use a near-opaque background
+   instead, which looks almost identical without the per-frame cost. */
+@media (max-width: 768px) {
+  #topbar { backdrop-filter: none; background: rgba(10,10,15,0.97); }
+  [data-theme="light"] #topbar { background: rgba(244,244,248,0.97); }
+}
 .topbar-logo {
   font-family: var(--font-display);
   font-size: 1.05rem;
@@ -1999,7 +2014,7 @@ function getTagType(tag = '') {
 // File list + metadata now comes entirely from question-banks/manifest.json.
 // manifest.json must contain an array of objects like:
 //   { "file": "ca_oct25_1.json", "count": 47, "categories": [...], "sub_categories": [...], "tags": [...] }
-// Generate/refresh it by running qm-build-manifest.js (see that file for instructions)
+// Generate/refresh it by running build-manifest.js (see that file for instructions)
 // any time you add, remove, or edit files in question-banks/.
 //
 // IMPORTANT: this function NO LONGER fetches the actual bank files. It only
@@ -2392,11 +2407,17 @@ function buildSourceChips() {
     return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi);
   });
 
-  container.innerHTML = `<span class="chip all-chip ${STATE.selectedSources.has('ALL') ? 'selected' : ''}" data-val="ALL" onclick="toggleSourceChip(this,'ALL')">All Sources</span>`;
-  sorted.forEach(prefix => {
+  // Build the full chip list as one string and assign innerHTML ONCE.
+  // (Previously this used container.innerHTML += ... inside the loop, which
+  // re-serializes and re-parses the ENTIRE existing chip list on every
+  // iteration — O(n²) work that re-runs on every filter click. That was a
+  // real, felt cause of the setup-screen lag.)
+  const allChip = `<span class="chip all-chip ${STATE.selectedSources.has('ALL') ? 'selected' : ''}" data-val="ALL" onclick="toggleSourceChip(this,'ALL')">All Sources</span>`;
+  const sourceChips = sorted.map(prefix => {
     const sel = STATE.selectedSources.has(prefix);
-    container.innerHTML += `<span class="chip ${sel ? 'selected' : ''}" data-val="${prefix}" onclick="toggleSourceChip(this,'${prefix}')">${getSourceLabel(prefix)}</span>`;
-  });
+    return `<span class="chip ${sel ? 'selected' : ''}" data-val="${prefix}" onclick="toggleSourceChip(this,'${prefix}')">${getSourceLabel(prefix)}</span>`;
+  }).join('');
+  container.innerHTML = allChip + sourceChips;
 
   // Always show source chips section (it's now the primary step)
   const section = $('source-chips-section');
@@ -2465,12 +2486,13 @@ function buildWeekDropdown() {
   const weekRow = $('week-filter-row');
   if (weekRow) weekRow.style.display = weeks.size === 0 ? 'none' : 'flex';
 
-  // Rebuild options
-  sel.innerHTML = '<option value="ALL">All Weeks</option>';
-  sortedWeeks.forEach(w => {
+  // Build all <option> tags as one string, assign once (see buildSourceChips
+  // for why: += in a loop re-parses the whole growing list every iteration).
+  const weekOptions = sortedWeeks.map(w => {
     const label = 'Week ' + w.slice(1); // w1 -> Week 1
-    sel.innerHTML += `<option value="${w}" ${STATE.selectedWeek === w ? 'selected' : ''}>${label}</option>`;
-  });
+    return `<option value="${w}" ${STATE.selectedWeek === w ? 'selected' : ''}>${label}</option>`;
+  }).join('');
+  sel.innerHTML = '<option value="ALL">All Weeks</option>' + weekOptions;
   // Ensure selected week still valid
   if (STATE.selectedWeek !== 'ALL' && !weeks.has(STATE.selectedWeek)) {
     STATE.selectedWeek = 'ALL';
@@ -2594,21 +2616,24 @@ function buildCategoryChips() {
     }
   }
 
-  // Render cat chips
-  const catChips = $('cat-chips');
-  catChips.innerHTML = `<span class="chip all-chip ${STATE.selectedCats.has('ALL') ? 'selected' : ''}" data-val="ALL" onclick="toggleChip(this,'cat')">All</span>`;
-  [...cats].sort().forEach(c => {
+  // Build both chip lists as single strings and assign innerHTML ONCE each.
+  // This function runs on almost every filter click (category, subcat, tag,
+  // month, source...), so the old += loop — which re-parses the entire
+  // growing chip list on every category/subcat added — was doing real,
+  // repeated, felt damage on the setup screen specifically.
+  const catAllChip = `<span class="chip all-chip ${STATE.selectedCats.has('ALL') ? 'selected' : ''}" data-val="ALL" onclick="toggleChip(this,'cat')">All</span>`;
+  const catChipsHtml = [...cats].sort().map(c => {
     const sel = STATE.selectedCats.has(c);
-    catChips.innerHTML += `<span class="chip ${sel ? 'selected' : ''}" data-val="${c}" onclick="toggleChip(this,'cat')">${c}</span>`;
-  });
+    return `<span class="chip ${sel ? 'selected' : ''}" data-val="${c}" onclick="toggleChip(this,'cat')">${c}</span>`;
+  }).join('');
+  $('cat-chips').innerHTML = catAllChip + catChipsHtml;
 
-  // Render subcat chips
-  const subcatChips = $('subcat-chips');
-  subcatChips.innerHTML = `<span class="chip all-chip ${STATE.selectedSubcats.has('ALL') ? 'selected' : ''}" data-val="ALL" onclick="toggleChip(this,'subcat')">All</span>`;
-  [...subcats].sort().forEach(c => {
+  const subcatAllChip = `<span class="chip all-chip ${STATE.selectedSubcats.has('ALL') ? 'selected' : ''}" data-val="ALL" onclick="toggleChip(this,'subcat')">All</span>`;
+  const subcatChipsHtml = [...subcats].sort().map(c => {
     const sel = STATE.selectedSubcats.has(c);
-    subcatChips.innerHTML += `<span class="chip ${sel ? 'selected' : ''}" data-val="${c}" onclick="toggleChip(this,'subcat')">${c}</span>`;
-  });
+    return `<span class="chip ${sel ? 'selected' : ''}" data-val="${c}" onclick="toggleChip(this,'subcat')">${c}</span>`;
+  }).join('');
+  $('subcat-chips').innerHTML = subcatAllChip + subcatChipsHtml;
 }
 
 function toggleChip(chip, type) {
@@ -3250,19 +3275,50 @@ function buildPalette() {
     `<div class="palette-num" data-i="${i}" onclick="jumpTo(${i})">${i+1}</div>`
   ).join('');
   $('question-palette').innerHTML = html;
-  $('drawer-palette').innerHTML = html.replace(/onclick/g, 'onclick');
-  updatePalette();
+  $('drawer-palette').innerHTML = html;
+
+  // Cache a reference to every cell (by question index) ONE time, right after
+  // building. This is still O(n) but only runs once per quiz start — not on
+  // every navigation/answer like before. It lets updatePalette() below jump
+  // straight to the cells that changed instead of re-scanning the whole DOM.
+  STATE.paletteCells = new Map();
+  document.querySelectorAll('.palette-num').forEach(cell => {
+    const i = parseInt(cell.dataset.i);
+    if (!STATE.paletteCells.has(i)) STATE.paletteCells.set(i, []);
+    STATE.paletteCells.get(i).push(cell);
+  });
+  STATE.paletteLastCurrent = null;
+
+  STATE.paletteCells.forEach((_, i) => paintPaletteCell(i));
 }
 
+function paletteClassFor(i) {
+  if (i === STATE.current) return 'palette-num current';
+  if (STATE.marked.has(i)) return 'palette-num marked';
+  if (STATE.answers[i] !== undefined) return 'palette-num answered';
+  return 'palette-num';
+}
+
+function paintPaletteCell(i) {
+  const cells = STATE.paletteCells && STATE.paletteCells.get(i);
+  if (!cells) return;
+  const cls = paletteClassFor(i);
+  cells.forEach(cell => { cell.className = cls; });
+}
+
+// Called after every question render / mark / answer. Previously this did a
+// full querySelectorAll + loop over EVERY palette cell (both the sidebar and
+// drawer copies) on every single interaction — with hundreds/thousands of
+// questions loaded (e.g. "All Available"), that added up to real, felt lag,
+// especially on mobile. Only the current cell (and whichever cell was
+// current before it) can actually change class on a given call, so we only
+// touch those — O(1) regardless of how many questions are in the quiz.
 function updatePalette() {
-  const cells = document.querySelectorAll('.palette-num');
-  cells.forEach(cell => {
-    const i = parseInt(cell.dataset.i);
-    cell.className = 'palette-num';
-    if (i === STATE.current) cell.classList.add('current');
-    else if (STATE.marked.has(i)) cell.classList.add('marked');
-    else if (STATE.answers[i] !== undefined) cell.classList.add('answered');
-  });
+  paintPaletteCell(STATE.current);
+  if (STATE.paletteLastCurrent !== null && STATE.paletteLastCurrent !== STATE.current) {
+    paintPaletteCell(STATE.paletteLastCurrent);
+  }
+  STATE.paletteLastCurrent = STATE.current;
 }
 
 function updateSidebarStats() {
@@ -3282,12 +3338,12 @@ function jumpTo(i) {
 }
 
 function togglePaletteDrawer() {
+  // The drawer palette is built once alongside the sidebar palette in
+  // buildPalette() and kept current by updatePalette() on every render, so
+  // there's nothing left to resync here — just show/hide it. (The old
+  // version rebuilt the drawer's entire HTML and reattached every cell's
+  // click handler on every open, which was wasted work.)
   $('palette-drawer').classList.toggle('open');
-  // Sync drawer palette
-  $('drawer-palette').innerHTML = $('question-palette').innerHTML;
-  $('drawer-palette').querySelectorAll('.palette-num').forEach(c => {
-    c.onclick = () => jumpTo(parseInt(c.dataset.i));
-  });
 }
 
 // ============================================================
