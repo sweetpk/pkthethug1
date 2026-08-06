@@ -210,6 +210,7 @@
     z-index:2;
     background:linear-gradient(to bottom, rgba(0,0,0,.24) 0%, transparent 20%, transparent 66%, rgba(0,0,0,.42) 100%);
   }
+  .reel[data-genre="comedy"]::before{content:none;}
   .reel-surface{
     position:absolute;
     inset:0;
@@ -306,10 +307,6 @@
     from{opacity:0; transform:translateY(18px);}
     to{opacity:1; transform:translateY(0);}
   }
-  .slide-wrap.edge-bounce-left{animation:edgeBounceLeft .3s ease;}
-  .slide-wrap.edge-bounce-right{animation:edgeBounceRight .3s ease;}
-  @keyframes edgeBounceLeft{0%{transform:translateX(0);}45%{transform:translateX(16px);}100%{transform:translateX(0);}}
-  @keyframes edgeBounceRight{0%{transform:translateX(0);}45%{transform:translateX(-16px);}100%{transform:translateX(0);}}
 
   /* side action rail — own column, never overlaps the text column */
   .action-rail{
@@ -431,41 +428,26 @@
       radial-gradient(2px 2px at 60% 78%, rgba(230,190,110,.35), transparent),
       radial-gradient(1.5px 1.5px at 30% 85%, rgba(255,214,224,.35), transparent),
       radial-gradient(circle at 75% 90%, rgba(230,190,110,.10), transparent 45%),
-      radial-gradient(circle at 25% 35%, rgba(255,175,195,.14), transparent 50%),
       radial-gradient(circle at 30% 0%,#6b2a3d,#2f121a 60%,#1c0a0f);
   }
-  .reel[data-genre="romance"] .story-title{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;color:#ffd9e0;text-shadow:0 0 22px rgba(233,120,140,.5), 0 2px 14px rgba(0,0,0,.45);}
+  .reel[data-genre="romance"] .story-title{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;color:#ffd9e0;}
   .reel[data-genre="romance"] .slide-text{font-family:'Lora',serif;color:#fbeee7;}
   .reel[data-genre="romance"] .genre-pill{background:rgba(233,120,140,.28);color:#ffe1e7;}
   .reel[data-genre="romance"] .handle{color:#ffe1e7;}
 
   .reel[data-genre="comedy"]{
     background:
-      radial-gradient(circle, rgba(255,255,255,.22) 1.4px, transparent 1.6px) 0 0/34px 34px,
-      radial-gradient(circle at 90% 8%, rgba(255,255,255,.40), transparent 30%),
-      radial-gradient(circle at 6% 92%, rgba(255,255,255,.20), transparent 34%),
-      linear-gradient(155deg,#ffc93c 0%,#ff9a3c 48%,#f9564f 100%);
+      radial-gradient(circle, rgba(255,255,255,.32) 1.5px, transparent 1.6px) 0 0/24px 24px,
+      radial-gradient(circle at 12% 8%, rgba(255,255,255,.30), transparent 38%),
+      radial-gradient(circle at 90% 90%, rgba(255,255,255,.16), transparent 42%),
+      linear-gradient(155deg,#ff4d6d 0%,#ff8a3d 52%,#ffd166 100%);
   }
-  .reel[data-genre="comedy"]::before{
-    background:linear-gradient(to bottom, rgba(255,255,255,.20) 0%, transparent 24%, transparent 58%, rgba(60,16,8,.30) 100%);
-  }
-  .reel[data-genre="comedy"] .story-title{
-    font-family:'Poppins',sans-serif;
-    font-style:italic;
-    font-weight:800;
-    color:#2a1305;
-    text-shadow:0 2px 0 rgba(255,255,255,.55), 0 6px 16px rgba(60,16,8,.25);
-  }
-  .reel[data-genre="comedy"] .slide-text{
-    font-family:'Nunito',sans-serif;
-    font-weight:800;
-    color:#2a1305;
-    text-shadow:0 1.5px 0 rgba(255,255,255,.45);
-  }
-  .reel[data-genre="comedy"] .genre-pill{background:rgba(255,255,255,.55);color:#8a2e10;}
-  .reel[data-genre="comedy"] .handle{color:#2a1305;}
-  .reel[data-genre="comedy"] .swipe-hint{color:rgba(40,16,4,.88);}
-  .reel[data-genre="comedy"] .action-btn{color:#2a1305;}
+  .reel[data-genre="comedy"] .story-title{font-family:'Poppins',sans-serif;font-style:italic;font-weight:800;color:#1c1206;transform:rotate(-1deg);}
+  .reel[data-genre="comedy"] .slide-text{font-family:'Nunito',sans-serif;font-weight:700;color:#211505;text-shadow:0 2px 0 rgba(255,255,255,.25);}
+  .reel[data-genre="comedy"] .genre-pill{background:rgba(28,18,6,.14);color:#2a1a06;}
+  .reel[data-genre="comedy"] .handle{color:#241705;}
+  .reel[data-genre="comedy"] .swipe-hint{color:rgba(30,18,4,.85);}
+  .reel[data-genre="comedy"] .action-btn{color:#241705;}
   .reel[data-genre="comedy"] .action-btn svg{filter:none;}
 
   .reel[data-genre="fantasy"]{
@@ -480,26 +462,13 @@
       radial-gradient(1.5px 1.5px at 5% 45%, #e6be6e, transparent),
       radial-gradient(circle at 50% 0%, #4a2680,#170a30 65%, #0e0620);
   }
-  .reel[data-genre="fantasy"]::after{
-    content:"";
-    position:absolute;inset:0;
-    background:
-      radial-gradient(1.5px 1.5px at 25% 30%, #fff, transparent),
-      radial-gradient(1px 1px at 65% 55%, #fff, transparent),
-      radial-gradient(1.5px 1.5px at 80% 22%, #e6be6e, transparent);
-    animation:twinkle 3.4s ease-in-out infinite;
-    pointer-events:none;
-    z-index:1;
-  }
-  @keyframes twinkle{0%,100%{opacity:.25;}50%{opacity:.95;}}
-  .reel[data-genre="fantasy"] .story-title{font-family:'Cinzel',serif;font-weight:700;color:#e9d9a8;letter-spacing:.5px;text-shadow:0 0 18px rgba(233,190,110,.55), 0 2px 14px rgba(0,0,0,.5);}
+  .reel[data-genre="fantasy"] .story-title{font-family:'Cinzel',serif;font-weight:700;color:#e9d9a8;letter-spacing:.5px;}
   .reel[data-genre="fantasy"] .slide-text{font-family:'EB Garamond',serif;font-size:20px;color:#eee6f7;}
   .reel[data-genre="fantasy"] .genre-pill{background:rgba(217,180,92,.18);color:#e9d9a8;}
   .reel[data-genre="fantasy"] .handle{color:#e9d9a8;}
 
   .reel[data-genre="mystery"]{
     background:
-      radial-gradient(ellipse at 50% 30%, rgba(150,170,200,.12), transparent 45%),
       radial-gradient(ellipse at 50% 40%, rgba(120,140,170,.10), transparent 55%),
       radial-gradient(ellipse at 50% 50%, #26262d 0%, #101012 75%, #060607 100%);
   }
@@ -511,19 +480,10 @@
     pointer-events:none;
     z-index:3;
   }
-  .reel[data-genre="mystery"] .story-title{font-family:'Special Elite',cursive;font-weight:400;color:#d8b6ac;letter-spacing:.5px;text-shadow:0 0 20px rgba(140,160,190,.3), 0 2px 14px rgba(0,0,0,.6);}
+  .reel[data-genre="mystery"] .story-title{font-family:'Special Elite',cursive;font-weight:400;color:#d8b6ac;letter-spacing:.5px;}
   .reel[data-genre="mystery"] .slide-text{font-family:'IBM Plex Mono',monospace;color:#d9d6cf;font-size:16.5px;line-height:1.75;}
   .reel[data-genre="mystery"] .genre-pill{background:rgba(154,48,64,.28);color:#f0c9ce;}
   .reel[data-genre="mystery"] .handle{color:#e6e2d8;}
-
-  /* on desktop the phone frame is smaller but the viewport is huge — the mobile-tuned
-     font size left almost no breathing room, so trim it down and open up the padding */
-  @media (min-width:760px){
-    .slide-wrap{padding:6px 16px 6px 30px;}
-    .slide-text{font-size:16.5px;}
-    .reel[data-genre="fantasy"] .slide-text{font-size:17.5px;}
-    .reel[data-genre="mystery"] .slide-text{font-size:15px;}
-  }
 
   /* ================= END SCREEN ================= */
   #end-screen{
@@ -876,9 +836,8 @@ function render(isNewStory){
     swipeHint.innerHTML = '';
   }
 
-  // desktop arrow enabled state — left/right only move within the current story now
-  arrowLeft.disabled = (slideIndex === 0);
-  arrowRight.disabled = (slideIndex === story.slides.length - 1);
+  // desktop arrow enabled state
+  arrowLeft.disabled = (slideIndex === 0 && storyIndex === 0);
   arrowUp.disabled = (storyIndex === 0);
 }
 
@@ -898,7 +857,7 @@ function nextSlide(){
     slideIndex++;
     render(false);
   } else {
-    edgeBounce('right'); // last slide of the story — left/right no longer changes stories
+    nextStory();
   }
 }
 
@@ -907,15 +866,8 @@ function prevSlide(){
     slideIndex--;
     render(false);
   } else {
-    edgeBounce('left'); // first slide of the story — left/right no longer changes stories
+    prevStory();
   }
-}
-
-function edgeBounce(dir){
-  const wrap = slideTextEl.parentElement;
-  wrap.classList.remove('edge-bounce-left','edge-bounce-right');
-  void wrap.offsetWidth; // restart animation
-  wrap.classList.add(dir === 'left' ? 'edge-bounce-left' : 'edge-bounce-right');
 }
 
 function nextStory(){
