@@ -744,17 +744,20 @@ function normalizeStory(data, fname){
 
 async function loadStories(){
   const filenames = await discoverFilenames();
-  const stories = [];
-  for (const fname of filenames){
+  // Fire off all fetches at once instead of awaiting them one-by-one —
+  // this turns N sequential round-trips into 1 parallel batch.
+  const results = await Promise.all(filenames.map(async (fname) => {
     try{
-      const res = await fetch(STORY_FOLDER + fname, {cache:'no-store'});
-      if (!res.ok) continue;
+      const res = await fetch(STORY_FOLDER + fname);
+      if (!res.ok) return null;
       const data = await res.json();
-      const story = normalizeStory(data, fname);
-      if (story) stories.push(story);
-    } catch(e){ console.warn('Could not load story file:', fname, e); }
-  }
-  return stories;
+      return normalizeStory(data, fname);
+    } catch(e){
+      console.warn('Could not load story file:', fname, e);
+      return null;
+    }
+  }));
+  return results.filter(Boolean);
 }
 
 function capitalize(s){ return s.charAt(0).toUpperCase() + s.slice(1); }
