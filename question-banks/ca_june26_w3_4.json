@@ -1,0 +1,738 @@
+[
+  {
+    "category": "Banking & Finance",
+    "sub_category": "ETF Trading Framework",
+    "question": "Consider the following statements regarding the SEBI's revised trading framework for Exchange Traded Funds (ETFs) introduced in June 2026:\n\n1. The new framework will come into effect from September 01, 2026.\n2. The dynamic price band for equity and debt ETFs begins with an initial limit of 10%, which can be expanded up to 20%.\n3. Commodity ETFs tracking gold and silver are assigned a dynamic price band with an initial limit of ±6%, expandable in stages of 3%.\n4. Overnight and liquid ETFs are strictly governed by a fixed 5% price band under this new framework.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "Only 1, 2, and 3",
+      "B": "Only 2, 3, and 4",
+      "C": "Only 1, 3, and 4",
+      "D": "Only 1 and 2",
+      "E": "All 1, 2, 3, and 4"
+    },
+    "answer": "A",
+    "rationale": "Statements 1, 2, and 3 are correct. Statement 4 is incorrect because the revised dynamic price band framework explicitly *excludes* overnight and liquid ETFs; it does not assign them a fixed 5% price band. (Refer Page 21, 58)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Regulatory Authorisations",
+    "question": "Assertion (A): Under the RBI's Master Directions issued in June 2026, new Payment System Operators (PSO) authorisations will be perpetually valid.\n\nReason (R): The perpetual validity eliminates the need for regulatory compliance, thereby removing the 1-year cooling-off period for rejected or revoked applications.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true; new PSO authorisations are perpetually valid. Reason (R) is false because perpetual validity is still 'subject to regulatory compliance', and the framework strictly introduced a 1-year cooling-off period for revoked, non-renewed, surrendered, or rejected applications. (Refer Page 21, 58)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Financial Literacy Initiatives",
+    "question": "Match the following numerical data points to their corresponding facts regarding the 'RBI Reelathon 2026' campaign launched in Kerala:\n\nColumn I:\n1. Rs 75,000\n2. 150\n3. 3\n4. Rs 25,000\n\nColumn II:\nA. Number of stages in the programme\nB. Third prize amount\nC. First prize amount\nD. Approximate number of colleges covered\n\nSelect the correct matching code:",
+    "options": {
+      "A": "1-C, 2-D, 3-A, 4-B",
+      "B": "1-C, 2-D, 3-B, 4-A",
+      "C": "1-D, 2-C, 3-A, 4-B",
+      "D": "1-B, 2-A, 3-C, 4-D",
+      "E": "1-C, 2-A, 3-D, 4-B"
+    },
+    "answer": "A",
+    "rationale": "Rs 75,000 is the first prize (1-C). 150 is the approximate number of colleges covered (2-D). 3 is the number of stages in the programme (3-A). Rs 25,000 is the third prize amount (4-B). (Refer Page 22, 58)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Term Deposits",
+    "question": "Which of the following statements regarding the 'bob Golden Goal Deposit Scheme' launched by Bank of Baroda is INCORRECT?",
+    "options": {
+      "A": "It is a 555-day retail term deposit scheme.",
+      "B": "The scheme is applicable only for deposits below Rs 3 crore.",
+      "C": "It offers an interest rate up to 7.40% per annum for super seniors.",
+      "D": "Premature closure attracts a penalty for all deposits regardless of the holding period.",
+      "E": "The scheme can be opened by individuals, joint account holders, and clubs."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect. There is 'no penalty' on eligible deposits up to Rs 5 lakh if they are held for at least 12 months. Premature closures outside these conditions attract penalties. (Refer Page 22, 59)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Stock Market Indices",
+    "question": "In June 2026, NSE Indices Limited added 11 new sector-specific indices. \n\nArrange the total number of sectoral indices available before and after this addition:\n\n1. Total sectoral indices after addition\n2. New sector-specific indices added\n3. Total sectoral indices before addition\n\nSelect the correct numerical sequence (1, 2, 3):",
+    "options": {
+      "A": "34, 11, 23",
+      "B": "34, 11, 25",
+      "C": "45, 11, 34",
+      "D": "34, 12, 22",
+      "E": "33, 11, 22"
+    },
+    "answer": "A",
+    "rationale": "The total sectoral indices reached 34 (1). The new indices added were 11 (2). Therefore, the total before the addition was 34 - 11 = 23 (3). The sequence is 34, 11, 23. (Refer Page 22, 59)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Credit Guarantee Schemes",
+    "question": "Consider the following statements regarding the RBI's relaxation of capital norms under ECLGS 5.0:\n\n1. The RBI mandated a 0% risk-weight for 75% of the exposure on loans backed by ECLGS 5.0.\n2. The remaining 25% of the exposure continues to follow the existing risk-weight norms.\n3. The claim settlement window designated for the 0% risk-weight portion is 90 days.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "A",
+    "rationale": "Statement 3 is incorrect because the claim settlement window for the 0% risk-weight portion is 30 days, not 90 days. Statements 1 and 2 correctly reflect the relaxed norms. (Refer Page 23, 59)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "AML/CFT Platforms",
+    "question": "Fill in the blanks: The national industry platform 'ARIFAC' was launched to strengthen India's AML/CFT ecosystem. ARIFAC stands for ________ of Reporting Entities in AML/CFT. It is managed by the Payments Council of India (PCI) and the Fintech Convergence Council (FCC), while the ________ participates as an observer.",
+    "options": {
+      "A": "Association ; Reserve Bank of India (RBI)",
+      "B": "Alliance ; Financial Intelligence Unit-India (FIU-IND)",
+      "C": "Assembly ; Securities and Exchange Board of India (SEBI)",
+      "D": "Alliance ; Ministry of Finance (MoF)",
+      "E": "Agency ; Financial Intelligence Unit-India (FIU-IND)"
+    },
+    "answer": "B",
+    "rationale": "ARIFAC stands for 'Alliance' of Reporting Entities in AML/CFT. The Financial Intelligence Unit-India (FIU-IND) participates as an observer. (Refer Page 23, 59)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Multilateral Financing",
+    "question": "The Asian Development Bank (ADB) signed a USD 10 million financing package with Schoolnet India Limited (SIL). \n\nWhich of the following metrics is NOT associated with the stated objective of this initiative?",
+    "options": {
+      "A": "Benefiting 45 million students directly.",
+      "B": "Scaling up digital learning infrastructure in 30,000 government schools.",
+      "C": "Installing computer laboratories in at least 1,000 government schools.",
+      "D": "Utilizing a USD 5 million loan from LEAP 2 (Leading Asia’s Private Infrastructure Fund).",
+      "E": "Providing tablets and smartboards to 5,000 rural teachers."
+    },
+    "answer": "E",
+    "rationale": "Option E is incorrect. The initiative mentions students (45 Mn), government schools (30,000), computer labs (1,000 schools), and LEAP 2 funding (USD 5 Mn), but does not mention providing tablets to 5,000 rural teachers. (Refer Page 23, 59)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Ethical Investing",
+    "question": "Assertion (A): BSE Index Services Private Limited launched India’s 1st Saatvik Index, 'BSE Saatvik 100'.\n\nReason (R): The index is derived from the constituents of the Nifty 50 Index to provide domestic investors with ethical and value-based investment avenues.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true as BSE launched the Saatvik 100 index. Reason (R) is false because the index is derived from the constituents of the 'BSE 500 Index', not the Nifty 50 Index. (Refer Page 24, 60)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Insurance Sector AI",
+    "question": "Match the following individuals to their roles in the IRDAI's newly constituted Working Group on Artificial Intelligence (WG-AI):\n\nColumn I:\n1. Prof. Sandeep K. Shukla\n2. Deepak Gaikwad\n3. Total number of members in the group\n\nColumn II:\nA. Member-Convener\nB. 7\nC. Chairperson\n\nSelect the correct matching code:",
+    "options": {
+      "A": "1-A, 2-C, 3-B",
+      "B": "1-C, 2-A, 3-B",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "B",
+    "rationale": "Prof. Sandeep K. Shukla is the Chairperson (1-C). Deepak Gaikwad is the Member-Convener (2-A). The total number of members in the working group is 7 (3-B). (Refer Page 24, 60)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "NRI Deposits",
+    "question": "Consider the following statements regarding the FCNR Max Deposit Scheme launched in June 2026:\n\n1. It was launched by the Bank of Baroda.\n2. It offers a 6.25% annual interest rate exclusively on USD-denominated deposits.\n3. The scheme requires a minimum deposit of USD 500.\n4. The deposits are held for tenures ranging from 3 to 5 years.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "Only 1, 2, and 4",
+      "B": "Only 2, 3, and 4",
+      "C": "Only 1, 3, and 4",
+      "D": "Only 2 and 4",
+      "E": "All 1, 2, 3, and 4"
+    },
+    "answer": "B",
+    "rationale": "Statement 1 is incorrect because the FCNR Max Deposit Scheme was launched by the 'Federal Bank', not Bank of Baroda (BoB launched the 'bob Legend FCNR(B)' scheme). Statements 2, 3, and 4 correctly describe the Federal Bank scheme. (Refer Page 24, 60)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Kisan Credit Card (KCC)",
+    "question": "Under the revised Kisan Credit Card (KCC) scheme framework issued by the RBI, arrange the following time-related parameters in ascending order of duration:\n\n1. Effective year from which the new KCC directions apply\n2. Standardized crop season for short duration crops\n3. Term-loan component repayment limit\n4. Standardized crop season for long duration crops\n\nSelect the correct arrangement (in months/years):",
+    "options": {
+      "A": "2 < 4 < 3 < 1",
+      "B": "2 < 4 < 1 < 3",
+      "C": "4 < 2 < 1 < 3",
+      "D": "2 < 3 < 4 < 1",
+      "E": "1 < 2 < 4 < 3"
+    },
+    "answer": "B",
+    "rationale": "The durations/dates are: 1. Effective year is 2027 (which is effectively 1 year from June 2026, but the value is '2027' or conceptually 1 year). 2. Short duration crops = 12 months (1 year). 3. Repayment limit = 6 years. 4. Long duration crops = 18 months (1.5 years). Thus, 12 months (2) < 18 months (4) < 6 years (3). *Correction based on text*: The effective date is Jan 1, 2027 (which is 6 months away, conceptually 0.5 years). So 0.5 years (1) < 1 year (2) < 1.5 years (4) < 6 years (3). But if we look at the absolute numbers: 2027 is a year, 12 months, 6 years, 18 months. Let's arrange by the physical duration length: Short crop (12 months) < Long crop (18 months) < Term loan (6 years/72 months). So 2 < 4 < 3. (Refer Page 25, 60)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Lead Bank Scheme",
+    "question": "Fill in the blanks: Under the revamped Lead Bank Scheme (LBS), the RBI designates a commercial bank as the Lead Bank in each ________. The District Development Manager (DDM) is appointed by ________.",
+    "options": {
+      "A": "State ; RBI",
+      "B": "District ; NABARD",
+      "C": "Block ; State Government",
+      "D": "District ; RBI",
+      "E": "District ; Lead Bank"
+    },
+    "answer": "B",
+    "rationale": "The Lead Bank is designated in each district. The District Development Manager (DDM) is appointed by NABARD. (Refer Page 26)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Lifecycle Mutual Funds",
+    "question": "Assertion (A): Zerodha Fund House launched India's first lifecycle (target-date) mutual funds with automated goal-based investing.\n\nReason (R): These funds are actively managed by a team of elite fund managers to maximize short-term capital gains before the target dates of 2036 and 2041.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true. Reason (R) is false because Zerodha Fund House is India's first 'passive-only, direct-only' AMC. Therefore, the funds are not actively managed for short-term gains, but are passive and designed for long-term goal-based investing with automated portfolio management. (Refer Page 26, 61)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Card Networks",
+    "question": "Match the following entities with their roles in the launch of the eco-friendly twin credit cards:\n\nColumn I:\n1. Punjab National Bank (PNB)\n2. Zaggle Prepaid Ocean Services Limited\n3. Visa and RuPay\n\nColumn II:\nA. The twin-card proposition networks\nB. The partner company offering the co-branded service\nC. The public sector lender issuing the cards\n\nSelect the correct matching code:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-B, 2-A, 3-C"
+    },
+    "answer": "A",
+    "rationale": "PNB is the public sector lender (1-C). Zaggle is the partner company (2-B). Visa and RuPay are the networks offered in the twin-card proposition (3-A). (Refer Page 26, 61)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Energy Trading",
+    "question": "Consider the following statements regarding the crude oil sourcing agreement signed in June 2026:\n\n1. It was signed between Essar Group and Abu Dhabi-based International Resources Holding (IRH).\n2. The agreement establishes a USD 500 million structured sourcing facility.\n3. The facility is exclusively for the procurement of natural gas and green hydrogen.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 3",
+      "E": "Only 2 and 3"
+    },
+    "answer": "C",
+    "rationale": "Statement 3 is incorrect because the facility is for the procurement of 'crude oil and petroleum products', not natural gas and green hydrogen. Statements 1 and 2 are correct. (Refer Page 27, 61)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Military Awards",
+    "question": "Fill in the blanks regarding the IMA Passing Out Parade 2026: \nLieutenant (Lt) Vishal Kumar from ________ secured the 1st rank and received both the Sword of Honour and the President’s Gold Medal. The Silver Medal was secured by Academy Under Officer ________.",
+    "options": {
+      "A": "Patna, Bihar ; Tejas Bhatt",
+      "B": "Patna, Bihar ; Prince Raj",
+      "C": "Dehradun, Uttarakhand ; Prince Raj",
+      "D": "Pune, Maharashtra ; Tejas Bhatt",
+      "E": "Patna, Bihar ; Vishal Singh"
+    },
+    "answer": "B",
+    "rationale": "Lt Vishal Kumar hails from Patna, Bihar. He secured the 1st rank. The Silver Medal for second position was secured by Academy Under Officer Prince Raj. (Refer Page 27, 61, 62)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Startups",
+    "question": "Assertion (A): Sarvam AI became India's 130th unicorn after its valuation reached USD 1.5 billion.\n\nReason (R): The startup recently raised USD 234 million as part of its USD 300 million Series B funding round.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Both statements are true, and the Reason (R) accurately explains the financial event (Series B funding) that drove Sarvam AI's valuation to USD 1.5 billion, achieving unicorn status (A). (Refer Page 27, 62)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Sports Influencers",
+    "question": "According to the \"TIME 100 Most Influential People in Sports 2026\" list, arrange the following categories chronologically as they were matched with these specific individuals (Smriti Mandhana, LeBron James, Gianni Infantino, Sebastian Sawe):\n\n1. Leaders\n2. Innovators\n3. Icons\n4. Titans\n\nSelect the exact sequence mapping to the individuals listed above:",
+    "options": {
+      "A": "4, 3, 1, 2",
+      "B": "4, 1, 3, 2",
+      "C": "3, 4, 1, 2",
+      "D": "4, 3, 2, 1",
+      "E": "1, 2, 3, 4"
+    },
+    "answer": "A",
+    "rationale": "Smriti Mandhana (Titans - 4). LeBron James (Icons - 3). Gianni Infantino (Leaders - 1). Sebastian Sawe (Innovators - 2). The sequence is 4, 3, 1, 2. (Refer Page 28, 62)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "GI Tags",
+    "question": "Which of the following items is NOT among the 4 GI-tagged products from Tripura as of June 2026?",
+    "options": {
+      "A": "Tripura Queen Pineapple",
+      "B": "Risha/Pachra (Rignai)",
+      "C": "Sarinda (Sarinda Uakhrap)",
+      "D": "Matabari Peda",
+      "E": "Kaji Nemu"
+    },
+    "answer": "E",
+    "rationale": "Kaji Nemu is a GI-tagged lemon from Assam, not Tripura. The 4 GI-tagged products from Tripura are Queen Pineapple, Risha/Pachra, Matabari Peda, and the newly added Sarinda. (Refer Page 28, 62)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Wolf Prize in Physics",
+    "question": "Consider the following statements regarding the 2025 Wolf Prize in Physics:\n\n1. It was awarded to Jainendra K. Jain, James P. Eisenstein, and Mordehai Heiblum.\n2. The prize was presented by Emmanuel Macron in Paris.\n3. The Wolf Prize was established in 1978 and carries a prize amount of USD 100,000.\n4. Jainendra K. Jain is the first person of Indian origin to receive the Wolf Prize in any category.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "Only 1 and 3",
+      "B": "Only 1, 3, and 4",
+      "C": "Only 2 and 4",
+      "D": "Only 1, 2, and 3",
+      "E": "All 1, 2, 3, and 4"
+    },
+    "answer": "A",
+    "rationale": "Statement 2 is incorrect because the prize was presented by Isaac Herzog, President of Israel, in Jerusalem. Statement 4 is incorrect because he is the first person of Indian origin to receive the Wolf Prize in *Physics*, but not in *any* category (e.g., Zubin Mehta and Gurdev Singh Khush received it earlier in other categories). Statements 1 and 3 are correct. (Refer Page 29, 62)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Navratna CPSEs",
+    "question": "Match the CPSE with its recent Navratna status upgrade date/month based on the provided notes:\n\nColumn I:\n1. Chennai Petroleum Corporation Limited (CPCL)\n2. Numaligarh Refinery\n3. IRFC\n4. IRCTC\n\nColumn II:\nA. December 2025\nB. March 2025\nC. June 2026\n\nSelect the correct matching code:",
+    "options": {
+      "A": "1-C, 2-A, 3-B, 4-B",
+      "B": "1-C, 2-B, 3-A, 4-A",
+      "C": "1-A, 2-C, 3-B, 4-B",
+      "D": "1-C, 2-A, 3-C, 4-B",
+      "E": "1-B, 2-A, 3-C, 4-C"
+    },
+    "answer": "A",
+    "rationale": "CPCL became a Navratna in June 2026 (1-C). Numaligarh Refinery was upgraded in Dec 2025 (2-A). IRFC and IRCTC were upgraded in Mar 2025 (3-B, 4-B). (Refer Page 29, 63)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "Insurance Sector",
+    "question": "Assertion (A): Hitesh Rameshchandra Joshi was appointed as the Chairman-cum-Managing Director (CMD) of GIC Re.\n\nReason (R): He succeeded Narayanan Ramaswamy, whose two-year tenure ended prematurely due to a regulatory reshuffle by the DFS.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true as Joshi was appointed CMD of GIC Re. Reason (R) is false because Narayanan Ramaswamy's tenure ended on 30 September 2025 (meaning he completed his tenure, it did not end 'prematurely due to a regulatory reshuffle'). (Refer Page 30, 63)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "Banking Leadership",
+    "question": "Fill in the blanks: In June 2026, the RBI approved the extension of ________'s tenure as Interim Part-Time Chairman of ________ for a period of three months, allowing him to continue until 18 September 2026.",
+    "options": {
+      "A": "Atanu Chakraborty ; HDFC Bank",
+      "B": "Keki Mistry ; ICICI Bank",
+      "C": "Keki Mistry ; HDFC Bank",
+      "D": "Shashidhar Jagdishan ; HDFC Bank",
+      "E": "Rajendra Kumar Saboo ; UCO Bank"
+    },
+    "answer": "C",
+    "rationale": "The RBI approved the extension of Keki Mistry's tenure as Interim Part-Time Chairman of HDFC Bank for three months. (Refer Page 31, 63)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "Government Commissions",
+    "question": "Consider the following statements regarding the appointments to the National Statistical Commission (NSC):\n\n1. Saibal Chattopadhyay, former director of IIM Calcutta, was appointed as the Chairperson.\n2. Three part-time members were appointed to restore the full operational strength of the NSC.\n3. The NSC operates under the Ministry of Finance (MoF).\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 3",
+      "E": "None of the above"
+    },
+    "answer": "C",
+    "rationale": "Statement 3 is incorrect because the NSC operates under the 'Ministry of Statistics and Programme Implementation (MoSPI)', not the Ministry of Finance (MoF). Statements 1 and 2 are correct. (Refer Page 31, 63)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "International Tribunals",
+    "question": "Arrange the chronological progression of Indian judges at the UN's International Tribunal for the Law of the Sea (ITLOS) based on the text:\n\n1. Neeru Chadha's 9-year term expires\n2. Bimal N. Patel officially takes over the office\n3. Bimal N. Patel's term concludes\n\nSelect the correct month/year arrangement corresponding to the events above:",
+    "options": {
+      "A": "September 2026 -> October 1, 2026 -> 2035",
+      "B": "October 2026 -> November 1, 2026 -> 2035",
+      "C": "August 2026 -> September 1, 2026 -> 2030",
+      "D": "September 2025 -> October 1, 2025 -> 2034",
+      "E": "December 2026 -> January 1, 2027 -> 2036"
+    },
+    "answer": "A",
+    "rationale": "Neeru Chadha's term expires in September 2026 (1). Bimal N. Patel takes over on October 1, 2026 (2). His term concludes in 2035 (3). Therefore, the correct arrangement is Sep 2026 -> Oct 2026 -> 2035. (Refer Page 32, 63, 64)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "UCO Bank",
+    "question": "Match the following executives to their respective roles at UCO Bank as per the June 2026 DFS approvals:\n\nColumn I:\n1. Rajendra Kumar Saboo\n2. Ashwani Kumar\n\nColumn II:\nA. Former MD & CEO whose tenure ended on May 31, 2026\nB. Executive Director holding additional charge as MD & CEO\n\nSelect the correct matching code:",
+    "options": {
+      "A": "1-A, 2-B",
+      "B": "1-B, 2-A",
+      "C": "Both 1 and 2 match A",
+      "D": "Both 1 and 2 match B",
+      "E": "None of the above"
+    },
+    "answer": "B",
+    "rationale": "Rajendra Kumar Saboo is the ED who took additional charge as MD & CEO (1-B). Ashwani Kumar is the former MD & CEO whose tenure ended in May (2-A). (Refer Page 32, 64)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Acquisitions & Mergers",
+    "sub_category": "CCI Approvals",
+    "question": "Which of the following corporate investments was NOT approved by the Competition Commission of India (CCI) in June 2026?",
+    "options": {
+      "A": "TVS Emerald Limited's acquisition of PGIM India Asset Management.",
+      "B": "Temasek Holdings' investment in Romsons Group Private Limited.",
+      "C": "Kedaara Capital's equity subscription in Axis Finance Limited.",
+      "D": "TVS Venu Management's acquisition of PGIM India Trustees.",
+      "E": "HDFC Bank's acquisition of Axis Finance Limited."
+    },
+    "answer": "E",
+    "rationale": "Option E is incorrect. The CCI approved Kedaara Capital's investment in Axis Finance, not HDFC Bank's. The other options are factually accurate regarding the CCI approvals in June 2026. (Refer Page 33, 64)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Missile Testing",
+    "question": "Assertion (A): The DRDO successfully flight-tested the Long Range Land Attack Cruise Missile (LRLACM) from Dr APJ Abdul Kalam Island.\n\nReason (R): The missile was tested using a mobile articulated launcher and met all mission objectives including warhead delivery.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both statements are true. The DRDO did test the LRLACM (A), and it was indeed tested using a mobile articulated launcher meeting all objectives (R). However, R is just additional detail of the test methodology, not the *reason* why DRDO conducted the test. (Refer Page 33, 64, 65)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Naval Aviation",
+    "question": "Fill in the blanks: The Sea King Mk42B helicopters, operated by ________ known as 'Harpoons', concluded their service with a final ceremonial flight from ________ in Mumbai.",
+    "options": {
+      "A": "INAS 330 ; INS Shikra",
+      "B": "INAS 310 ; INS Hansa",
+      "C": "INAS 330 ; INS Vikrant",
+      "D": "INAS 320 ; INS Shikra",
+      "E": "INAS 330 ; INS Kunjali"
+    },
+    "answer": "A",
+    "rationale": "The helicopters were operated by INAS 330 (Harpoons) and concluded service from INS Shikra, the Western Naval Command base in Colaba, Mumbai. (Refer Page 33, 65)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Drone Procurements",
+    "question": "Consider the following statements regarding Drogo Aerospace's delivery to the Indian Army:\n\n1. Drogo Aerospace delivered a total of 217 'JK 250e' drones in June 2026.\n2. The delivery was made to the Indian Army's Southern Command in Nashik.\n3. The total contract value for these drones is Rs 72 crore.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 3",
+      "E": "None of the above"
+    },
+    "answer": "A",
+    "rationale": "Statement 1 is incorrect because Drogo Aerospace delivered the 'first batch of 41' JK 250e drones in June 2026, out of a total contract of 217 drones. The remaining 176 are scheduled for August 2026. Statements 2 and 3 are correct. (Refer Page 33, 65)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Defence Vehicles",
+    "question": "Match the following characteristics to the Simha 4x4 LAMPV unveiled at Eurosatory 2026:\n\nColumn I:\n1. Developer (Indian side)\n2. Partner (International)\n3. Exhibition location\n\nColumn II:\nA. Paramount Group (South Africa)\nB. Paris, France\nC. Kalyani Strategic Systems Limited (KSSL)\n\nSelect the correct matching code:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-A, 2-C, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "A",
+    "rationale": "KSSL developed it from the Indian side (1-C). Paramount Group is the South African partner (2-A). Eurosatory was held in Paris, France (3-B). (Refer Page 34, 65)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Naval Ship Commissioning",
+    "question": "Arrange the following indigenously built naval platforms commissioned in June 2026 in the order of their stated categories (Frigate, Survey Vessel, ASW Craft):\n\n1. INS Agray\n2. INS Dunagiri\n3. INS Sanshodhak\n\nSelect the correct arrangement corresponding to the sequence (Frigate -> Survey Vessel -> ASW Craft):",
+    "options": {
+      "A": "2, 3, 1",
+      "B": "1, 2, 3",
+      "C": "3, 1, 2",
+      "D": "2, 1, 3",
+      "E": "3, 2, 1"
+    },
+    "answer": "A",
+    "rationale": "INS Dunagiri is the Frigate (2). INS Sanshodhak is the Survey Vessel (3). INS Agray is the ASW-SWC (1). Thus, the sequence is 2, 3, 1. (Refer Page 35, 65)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Weapon Systems",
+    "question": "Assertion (A): India successfully tested the 'Garudastra', a 120mm vehicle-mounted mortar system.\n\nReason (R): The system is entirely manually operated, prioritizing cost reduction (NC-NC framework) over rapid deployment capabilities.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true. Reason (R) is false because the Garudastra is a highly advanced system featuring rapid deployment (deploys in <30 sec), GPS/Laser guidance, and MRSI (Multiple Rounds Simultaneous Impact) capability; it is not 'entirely manually operated prioritizing cost reduction over rapid deployment'. (Refer Page 35, 66)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "New Species Discovery",
+    "question": "Fill in the blanks: The newly discovered species *Hamataliwa mawlyngot* belongs to the ________ family and was found in ________ village, Meghalaya.",
+    "options": {
+      "A": "Oxyopidae ; Mawlyngot",
+      "B": "Salticidae ; Mawsynram",
+      "C": "Oxyopidae ; Cherrapunji",
+      "D": "Lycosidae ; Mawlyngot",
+      "E": "Theridiidae ; Shillong"
+    },
+    "answer": "A",
+    "rationale": "The species *Hamataliwa mawlyngot* belongs to the Oxyopidae (Lynx spider) family and was discovered in Mawlyngot village, Meghalaya. (Refer Page 36, 66)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Javelin Throw Rankings",
+    "question": "Match the following athletes with their respective countries as per the results of the 2026 Doha Diamond League Men's Javelin Throw:\n\nColumn I:\n1. Rumesh Tharanga Pathirage\n2. Anderson Peters\n3. Curtis Thompson\n4. Artur Felfner\n\nColumn II:\nA. USA\nB. Ukraine\nC. Grenada\nD. Sri Lanka\n\nSelect the correct matching code:",
+    "options": {
+      "A": "1-D, 2-C, 3-A, 4-B",
+      "B": "1-C, 2-D, 3-B, 4-A",
+      "C": "1-D, 2-A, 3-C, 4-B",
+      "D": "1-B, 2-C, 3-A, 4-D",
+      "E": "1-D, 2-C, 3-B, 4-A"
+    },
+    "answer": "A",
+    "rationale": "Rumesh Pathirage represents Sri Lanka (1-D). Anderson Peters represents Grenada (2-C). Curtis Thompson represents USA (3-A). Artur Felfner represents Ukraine (4-B). (Refer Page 37, 66, 67)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Hockey Tournaments",
+    "question": "Consider the following statements regarding the FIH Women's Nations Cup 2025-26:\n\n1. It was held in Auckland, New Zealand.\n2. India secured the gold medal, New Zealand won silver, and the USA took bronze.\n3. Lalremsiami was awarded the Player of the Tournament.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 2",
+      "E": "None of the above"
+    },
+    "answer": "C",
+    "rationale": "Statement 3 is incorrect because Lalremsiami was awarded 'Player of the Match (Final)', not Player of the Tournament (which was won by Ashley Sessa, USA). Statements 1 and 2 are correct. (Refer Page 37)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Obituary",
+    "sub_category": "Buddhist Scholars",
+    "question": "Assertion (A): Robert A.F. Thurman, an American scholar of Tibetan Buddhism, was awarded the Padma Shri in 2020.\n\nReason (R): He was the first American ordained in the Tibetan Buddhist tradition under the 14th Dalai Lama and translated the Vimalakirti Sutra.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both Assertion and Reason contain true facts about Robert A.F. Thurman. However, he received the Padma Shri specifically for \"his contributions to literature, education, and the promotion of Buddhist thought\" globally, not solely/directly because he was the first ordained American or translated one specific Sutra (though these form part of his overall legacy). Therefore, R is a true statement but not the precise, complete explanation for A. (Refer Page 39, 67)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "June Observances",
+    "question": "Match the following International Days with their correct date of observance in June 2026:\n\nColumn I:\n1. World Day to Combat Desertification and Drought\n2. Sustainable Gastronomy Day\n3. World Sickle Cell Day\n4. World Refugee Day\n\nColumn II:\nA. June 19\nB. June 17\nC. June 20\nD. June 18\n\nSelect the correct matching code:",
+    "options": {
+      "A": "1-B, 2-D, 3-A, 4-C",
+      "B": "1-D, 2-B, 3-C, 4-A",
+      "C": "1-B, 2-A, 3-D, 4-C",
+      "D": "1-C, 2-D, 3-A, 4-B",
+      "E": "1-B, 2-D, 3-C, 4-A"
+    },
+    "answer": "A",
+    "rationale": "Desertification Day is June 17 (1-B). Gastronomy Day is June 18 (2-D). Sickle Cell Day is June 19 (3-A). Refugee Day is June 20 (4-C). (Refer Page 41-45, 68-69)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Thematic Focus",
+    "question": "Which of the following International Days is INCORRECTLY matched with its 2026 Theme?",
+    "options": {
+      "A": "International Day for Countering Hate Speech - \"Hate Speech and Artificial Intelligence\"",
+      "B": "World Autistic Pride Day - \"Acceptance, inclusion, and autistic identity\"",
+      "C": "International Day for the Elimination of Sexual Violence in Conflict - \"Yoga for Healthy Ageing\"",
+      "D": "World Hydrography Day - \"Transforming how ocean data is shared\"",
+      "E": "World Refugee Day - \"Until Everyone Is Safe\""
+    },
+    "answer": "C",
+    "rationale": "Option C is incorrect. The theme for the International Day for the Elimination of Sexual Violence in Conflict was \"Conflict-Related Sexual Violence Against Children: Safeguarding Futures and Empowering Caregivers\". \"Yoga for Healthy Ageing\" is the theme for the International Day of Yoga. (Refer Page 43, 46, 69)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Infrastructure and Welfare",
+    "question": "Consider the following statements regarding state-level initiatives in June 2026:\n\n1. Kerala launched the 'Priyadarshini' scheme to offer free bus travel for women and transgender persons.\n2. Gujarat signed a Rs 1 lakh crore funding pact with HUDCO for smart city and infrastructure projects.\n3. Maharashtra partnered with Google to train 4 lakh teachers in AI and digital technology.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. Kerala launched Priyadarshini for free bus travel. Gujarat signed a Rs 1 lakh crore pact with HUDCO. Maharashtra signed an LoI with Google to train 4 lakh teachers. (Refer Page 47, 48, 70)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Indices and Reports",
+    "question": "Fill in the blanks: Under the revised DPIIT series, the WPI and PPI will have the base year ________. After a transition period of ________ years, the WPI will be completely discontinued.",
+    "options": {
+      "A": "2021-22 ; 3",
+      "B": "2022-23 ; 5",
+      "C": "2020-21 ; 5",
+      "D": "2022-23 ; 3",
+      "E": "2024-25 ; 10"
+    },
+    "answer": "B",
+    "rationale": "The new base year is 2022-23. The transition period where both are published alongside each other is 5 years, after which WPI will be discontinued. (Refer Page 4, 49)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Urban Development",
+    "question": "Assertion (A): The NCRPB approved plans to develop 4 greenfield 'Namo Cities' in Delhi-NCR.\n\nReason (R): The development is budgeted at Rs 5,000 crore over the next 5 years to promote balanced regional growth under the Regional Plan 2041.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Both Assertion and Reason are true. The Reason provides the exact financial and policy framework (Rs 5,000 cr, Regional Plan 2041) that explains the operational implementation of the NCRPB's approval to build the 4 'Namo Cities'. (Refer Page 10, 52)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Energy Transition Index",
+    "question": "Match the bottom 4 countries in the WEF Energy Transition Index (ETI) 2026 with their respective ranks:\n\nColumn I:\n1. Democratic Republic of Congo (DRC)\n2. Botswana\n3. Jamaica\n4. Yemen\n\nColumn II:\nA. 119\nB. 117\nC. 120\nD. 118\n\nSelect the correct matching code:",
+    "options": {
+      "A": "1-C, 2-A, 3-D, 4-B",
+      "B": "1-C, 2-A, 3-B, 4-D",
+      "C": "1-A, 2-C, 3-D, 4-B",
+      "D": "1-D, 2-B, 3-A, 4-C",
+      "E": "1-C, 2-D, 3-A, 4-B"
+    },
+    "answer": "A",
+    "rationale": "DRC is ranked 120th (1-C). Botswana is 119th (2-A). Jamaica is 118th (3-D). Yemen is 117th (4-B). (Refer Page 20, 57)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Hybrid Tech & Defence",
+    "question": "Hybrid Test: Which of the following technological or defence achievements recorded in June 2026 is mathematically or factually INCORRECT based on the provided data?",
+    "options": {
+      "A": "ISRO's artificial heating system aims to extend lunar lander life up to 200 Earth days.",
+      "B": "The Simha 4x4 LAMPV was unveiled by KSSL and Paramount Group at Eurosatory 2026.",
+      "C": "The MoD granted a Rs 500 crore approval for a Drone Tech Hub at IIT-Kanpur.",
+      "D": "The Garudastra mortar system deploys in under 30 seconds and features a 155mm barrel.",
+      "E": "Drogo Aerospace's total contract is worth Rs 72 crore for 217 electric drones."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect because the Garudastra is a '120mm' vehicle-mounted mortar system, not a 155mm system (the 155mm system is the mounted artillery gun being developed by KSSL and AM General). All other statements are factually correct. (Refer Page 14, 35, 51, 65, 66)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Hybrid Corporate Updates",
+    "question": "Hybrid Test: Assess the following corporate and financial statements:\n\nI. YES Bank partnered with Northern Arc Capital to expand digital lending to MSMEs.\nII. Federal Bank's FCNR Max Scheme offers 6.25% interest on USD deposits.\nIII. Keki Mistry was appointed as the full-time MD & CEO of HDFC Bank for a three-year term.\n\nWhich of the statements given above is/are CORRECT?",
+    "options": {
+      "A": "Only I and II",
+      "B": "Only II and III",
+      "C": "Only I and III",
+      "D": "All I, II, and III",
+      "E": "Only II"
+    },
+    "answer": "A",
+    "rationale": "Statements I and II are correct. Statement III is incorrect because Keki Mistry's tenure was extended as the 'Interim Part-Time Chairman' of HDFC Bank for a period of 'three months', not as a full-time MD & CEO for three years. (Refer Page 22, 24, 31, 59, 60, 63)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF – June 2026 – 3rd Week"
+  }
+]
