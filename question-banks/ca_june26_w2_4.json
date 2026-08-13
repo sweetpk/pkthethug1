@@ -1,0 +1,642 @@
+[
+  {
+    "category": "International Affairs",
+    "sub_category": "Global Peace Index 2026",
+    "question": "Arrange the following South Asian countries in descending order based on their rankings in the 2026 Global Peace Index (from most peaceful to least peaceful):\n\n1. Nepal\n2. Bhutan\n3. India\n4. Sri Lanka\n5. Bangladesh\n\nSelect the correct sequence:",
+    "options": {
+      "A": "2 > 4 > 1 > 5 > 3",
+      "B": "2 > 1 > 4 > 5 > 3",
+      "C": "4 > 2 > 1 > 5 > 3",
+      "D": "2 > 4 > 5 > 1 > 3",
+      "E": "1 > 2 > 4 > 5 > 3"
+    },
+    "answer": "A",
+    "rationale": "According to the 2026 GPI South Asia Region Ranking: Bhutan (16), Sri Lanka (67), Nepal (111), Bangladesh (117), India (127). Therefore, the correct order from most peaceful to least is Bhutan > Sri Lanka > Nepal > Bangladesh > India. (Reference: Page 25)",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "French Open 2026",
+    "question": "Match the following runner-ups of the French Open 2026 with their respective categories:\n\nColumn I:\n1. Men's Singles (Musketeers' Cup)\n2. Women's Singles (Suzanne-Lenglen Cup)\n3. Men's Doubles (Jacques-Brugnon Cup)\n\nColumn II:\nA. Harri Heliovaara & Henry Patten\nB. Flavio Cobolli\nC. Maja Chwalińska\n\nSelect the correct mapping:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-C, 2-B, 3-A"
+    },
+    "answer": "B",
+    "rationale": "The runner-up for Men's Singles was Flavio Cobolli (Italy) (1-B); Women's Singles runner-up was Maja Chwalińska (Poland) (2-C); Men's Doubles runner-ups were Harri Heliovaara (Finland) & Henry Patten (UK) (3-A). (Reference: Page 39, 67)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Health & Demographics",
+    "question": "Consider the following statements regarding the child health and nutrition data from the National Family Health Survey-6 (NFHS-6):\n\n1. Child stunting declined from 35.5% to 29.3%.\n2. Severe wasting reduced from 7.7% to 5.2%.\n3. Full immunization among children aged 12-23 months increased from 83.8% to 87.1%.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All three statements accurately reflect the exact data points released in the NFHS-6 factsheets regarding child health improvements. (Reference: Page 9)",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "PLI Scheme",
+    "question": "Assertion (A): The Government of India approved 96 companies under Round-3 of the Production Linked Incentive (PLI) Scheme for Textiles.\nReason (R): The approved applicants are expected to generate a projected turnover of Rs. 58,294.18 crore and create 36,217 new jobs specifically from the 22 newly added applicants.\n\nSelect the most appropriate option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both statements are factually correct based on the text. Round-3 selected a total of 96 companies (active pool), and the 22 *new* applicants are expected to create 36,217 jobs. However, the job creation of the 22 new applicants (Reason R) is an outcome, not the overarching explanation for why 96 companies were approved in total (Assertion A). (Reference: Page 14, 55)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Road Safety",
+    "question": "Rapido partnered with the Ministry of Road Transport & Highways (MoRTH) to promote the RahVeer Scheme. Which of the following data points correctly represents the reward amount and the Guinness World Record set during the awareness campaign?",
+    "options": {
+      "A": "Rs. 15,000 reward; 2+ lakh captains took the pledge",
+      "B": "Rs. 25,000 reward; 4+ lakh captains took the pledge",
+      "C": "Rs. 50,000 reward; 5+ lakh captains took the pledge",
+      "D": "Rs. 25,000 reward; 2.5+ lakh captains took the pledge",
+      "E": "Rs. 10,000 reward; 4+ lakh captains took the pledge"
+    },
+    "answer": "B",
+    "rationale": "The RahVeer Scheme provides Rs. 25,000 and a certificate to eligible Good Samaritans. During the campaign, 4+ lakh Rapido captains took the pledge simultaneously, setting a Guinness World Record. (Reference: Page 8, 53)",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Border Infrastructure",
+    "question": "Which of the following features is NOT explicitly integrated or mentioned as part of the Land Port Management System (LPMS) 'VINIMAY' launched by Union Minister Amit Shah?",
+    "options": {
+      "A": "Single Electronic Window (SEW)",
+      "B": "Automatic Number Plate Recognition (ANPR) gates",
+      "C": "Integration with the Directorate General of Foreign Trade (DGFT)",
+      "D": "Direct API linkage with INTERPOL for international criminal tracking",
+      "E": "Integration with the Unified Logistics Interface Platform (ULIP)"
+    },
+    "answer": "D",
+    "rationale": "The LPMS 'VINIMAY' features SEW, ANPR gates, and integration with Customs, BSF, DGFT, UIDAI, and ULIP. There is no mention of direct API linkage with INTERPOL in the document. (Reference: Page 10, 54)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Rural Employment",
+    "question": "Consider the following statements regarding the Viksit Bharat – Guarantee for Rozgar and Ajeevika Mission (Gramin) (VB-GRAM G):\n\n1. It replaces the Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA), 2005.\n2. It increases the employment guarantee from 100 to 125 days per rural household.\n3. The scheme will become officially effective from 1 April 2026.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "1, 2, and 3"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the scheme becomes effective from 1 July 2026, not 1 April. (Reference: Page 11, 54)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Bilateral Trade",
+    "question": "During the 5-day working visit of Venezuela's Acting President Delcy Eloína Rodríguez Gómez, it was noted that bilateral trade between India and Venezuela reached USD _______ million in FY 2025-26, and Venezuela became India's _______ largest crude oil supplier in May 2026.",
+    "options": {
+      "A": "500.50; 4th",
+      "B": "678.94; 3rd",
+      "C": "850.20; 2nd",
+      "D": "678.94; 5th",
+      "E": "925.10; 3rd"
+    },
+    "answer": "B",
+    "rationale": "India-Venezuela bilateral trade reached USD 678.94 million in FY 2025-26, and Venezuela became India's 3rd largest crude oil supplier in May 2026 (after Russia and UAE). (Reference: Page 12, 54)",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Healthcare Initiatives",
+    "question": "To commemorate '10 Years of PMSMA - A Decade of Care', Union Minister J.P. Nadda released special items. Consider the following components of this celebration:\n\n1. Release of a special Rs 75 Commemorative Coin.\n2. Release of a Rs 5 Postal Stamp featuring the Ashoka Pillar and a mother-child motif.\n3. A reported increase in High Risk Pregnancy (HRP) identification to 22.20% in 2026.\n\nWhich of the components given above are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 3",
+      "E": "1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All statements are correct. A Rs 75 commemorative coin and a Rs 5 postal stamp (with Ashoka Pillar/mother-child motif) were released. HRP identification also increased to 22.20%. (Reference: Page 13, 55)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "PLI Scheme",
+    "question": "Match the Rounds of the PLI Scheme for Textiles with their respective historical investment benchmarks as highlighted in the scheme's progress overview:\n\nColumn I:\n1. Round-I\n2. Round-II\n3. Round-III (New applicants' expected investment)\n\nColumn II:\nA. Rs. 2,339.14 crore\nB. Rs. 300 crore\nC. Rs. 100 crore\n\nSelect the correct mapping:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Round-I saw Rs. 300 crore investment; Round-II saw Rs. 100 crore investment; and Round-III (22 new applicants) expects an investment of Rs. 2,339.14 crore. (Reference: Page 14, 55)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Cabinet Approvals",
+    "question": "Arrange the following infrastructure projects approved by the Cabinet/CCEA in descending order of their estimated financial outlay (Highest cost to Lowest cost):\n\n1. General Pool Residential Accommodation (GPRA) campus at Amaravati\n2. Central Government General Pool Office Accommodation (CGGPOA) at Amaravati\n3. Ahmedabad Metro Rail Project Phase 2(A)\n4. Advanced ECGNSS Jammers for Indian Navy (ASSPL deal)\n\nSelect the correct sequence:",
+    "options": {
+      "A": "3 > 2 > 1 > 4",
+      "B": "2 > 1 > 3 > 4",
+      "C": "3 > 1 > 2 > 4",
+      "D": "2 > 3 > 1 > 4",
+      "E": "4 > 3 > 2 > 1"
+    },
+    "answer": "A",
+    "rationale": "Ahmedabad Metro Phase 2A (Rs 2,169.04 crore) > CGGPOA (Rs 1,299 crore) > GPRA (Rs 1,235 crore) > ECGNSS Jammers (Rs 449 crore). Order: 3 > 2 > 1 > 4. (Reference: Pages 15, 17, 56)",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Skill Development",
+    "question": "Consider the following statistical achievements marking the 12 years of the Skill India journey:\n\n1. Industrial Training Institutes (ITIs) increased to over 13,888.\n2. More than 56.08 lakh apprentices have been engaged since 2016.\n3. India's ranking in WorldSkills competitions improved to 13th in 2024.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All three statements accurately reflect the official statistics released on the 12th anniversary of the Skill India journey. (Reference: Page 18, 56)",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Agriculture Estimates",
+    "question": "Based on the Second Advance Estimates of Horticulture Crops 2025-26, which of the following crop segments witnessed the highest percentage increase in production compared to 2024-25?",
+    "options": {
+      "A": "Overall Horticulture Production",
+      "B": "Fruits",
+      "C": "Vegetables",
+      "D": "Potato",
+      "E": "Tomato"
+    },
+    "answer": "E",
+    "rationale": "Percentage increases: Overall (1.90%), Fruits (3.25%), Vegetables (1.47%), Potato (2.25%), Tomato (4.19%). Thus, Tomato witnessed the highest percentage increase. (Reference: Page 18, 56)",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space Startups",
+    "question": "Match the Indian space startups selected by IN-SPACe under the Technology Adoption Fund (TAF) scheme with their respective developmental tasks:\n\nColumn I:\n1. Astrobase Space Technologies\n2. SataSure Analytics India\n3. TM2SPACE Technologies\n\nColumn II:\nA. AI-supported star tracker system\nB. Large Earth Observation Model (LOM) named 'Dhaarini'\nC. High-thrust, reusable closed-cycle liquid rocket engine\n\nSelect the correct mapping:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-B, 2-A, 3-C"
+    },
+    "answer": "B",
+    "rationale": "Astrobase is developing the high-thrust rocket engine (1-C); SataSure is building 'Dhaarini' LOM (2-B); TM2SPACE is developing the AI star tracker (3-A). (Reference: Page 19, 57)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Energy & Minerals",
+    "question": "Assertion (A): NLC India Limited (NLCIL) signed an MoU with CSIR-CECRI to develop technologies for extracting Rare Earth Elements (REEs) and critical minerals.\nReason (R): The extraction technologies will specifically target the processing of deep-sea polymetallic nodules from the Indian Ocean.\n\nSelect the most appropriate option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true. Reason (R) is false because the MoU focuses on extracting REEs and critical minerals from *mining waste*, not deep-sea polymetallic nodules. (Reference: Page 20, 57)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "BRICS Summits",
+    "question": "During India's BRICS Chairship 2026, several key meetings were held. Which of the following correctly pairs the specific BRICS meeting with its respective location/format?",
+    "options": {
+      "A": "BRICS Justice Ministers meeting - Varanasi",
+      "B": "2nd BRICS ICT Working Group Meeting - New Delhi",
+      "C": "BRICS Culture Working Group Meeting - Gujarat",
+      "D": "13th BRICS Urbanisation Forum - Sushma Swaraj Bhavan, New Delhi",
+      "E": "11th BRICS Counter Terrorism Working Group - Virtually"
+    },
+    "answer": "D",
+    "rationale": "The 13th BRICS Urbanisation Forum was held at Sushma Swaraj Bhavan in New Delhi. (Justice Ministers met in Gujarat, ICT WG met virtually, Culture WG met in Varanasi). (Reference: Page 20, 57)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Artificial Intelligence",
+    "question": "Consider the following statements regarding the indigenous AI video model 'Varya':\n\n1. It was launched by Avataar.ai with support from the IndiaAI Mission.\n2. It reduces video generation from 50 steps to 4 steps.\n3. It generates videos at a highly cost-efficient rate of around Rs 1.50 per second.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "1, 2, and 3"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the cost efficiency is cited at around Rs 0.48 per second, not Rs 1.50. (Reference: Page 21, 58)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Defence",
+    "question": "In a historic step for gender inclusion, the first batch of 17 women cadets trained at the NDA were commissioned as officers. Which of the following reflects the exact numerical distribution of these officers across the Indian Army (IA), Indian Air Force (IAF), and Indian Navy (IN) respectively?",
+    "options": {
+      "A": "7 IA, 6 IAF, 4 IN",
+      "B": "8 IA, 5 IAF, 4 IN",
+      "C": "9 IA, 5 IAF, 3 IN",
+      "D": "10 IA, 4 IAF, 3 IN",
+      "E": "9 IA, 4 IAF, 4 IN"
+    },
+    "answer": "C",
+    "rationale": "The 17 women cadets were commissioned as 9 in the Indian Army, 5 in the Indian Air Force, and 3 in the Indian Navy. (Reference: Page 22, 58)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "WEF Technology Pioneers",
+    "question": "Arrange the following countries in descending order of the number of early-stage startups they have in the WEF's 2026 Technology Pioneers cohort:\n\n1. China\n2. United Kingdom\n3. United States of America\n4. India\n\nSelect the correct sequence:",
+    "options": {
+      "A": "3 > 1 > 4 > 2",
+      "B": "3 > 4 > 1 > 2",
+      "C": "3 > 1 > 2 > 4",
+      "D": "1 > 3 > 4 > 2",
+      "E": "3 > 2 > 4 > 1"
+    },
+    "answer": "A",
+    "rationale": "Number of startups: USA (43), China (10), India (9), UK (8). Therefore, the descending order is USA(3) > China(1) > India(4) > UK(2). (Reference: Page 24, 60)",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Global Peace Index",
+    "question": "Which of the following statements regarding the Global Peace Index (GPI) 2026 is NOT true?",
+    "options": {
+      "A": "Iceland retained its position as the world's most peaceful country for the 19th consecutive year.",
+      "B": "India's ranking dropped from 115th in 2025 to 127th in 2026.",
+      "C": "The index scores range from 1 (least peaceful) to 5 (most peaceful).",
+      "D": "Russia is ranked as the least peaceful country (Rank 163) with a score of 3.367.",
+      "E": "New Zealand is ranked as the 2nd most peaceful country globally."
+    },
+    "answer": "C",
+    "rationale": "Statement C is false because the GPI scoring system ranges from 1 (most peaceful) to 5 (least peaceful), not the other way around. (Reference: Page 24, 60)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "RBI Forex Facilities",
+    "question": "Match the parameters of the RBI's Twin USD-INR Forex Swap Facility introduced in June 2026:\n\nColumn I:\n1. Limit for Net Open Position in Rupee (NOP-INR)\n2. Fixed swap rate per annum\n3. Eligible minimum maturity for OFCBs\n\nColumn II:\nA. 1.5%\nB. 3 years\nC. USD 100 Million\n\nSelect the correct mapping:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-B, 2-A, 3-C"
+    },
+    "answer": "A",
+    "rationale": "NOP-INR limit is USD 100 Million (1-C); Swap rate is fixed at 1.5% per annum (2-A); Eligible minimum maturity for OFCBs is 3 years (3-B). (Reference: Page 26)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "REITs & InvITs Guidelines",
+    "question": "Consider the following statements regarding the RBI's Third Amendment Directions 2026 on lending to REITs and InvITs:\n\n1. Bank lending is allowed only for SEBI-regulated and listed REITs/InvITs.\n2. Total bank exposure is capped at 49% of the REIT/InvIT asset value.\n3. The capital charge framework for these entities will apply strictly from 1 April 2027.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "1, 2, and 3",
+      "E": "None of the above"
+    },
+    "answer": "D",
+    "rationale": "All three statements are factually correct as per the guidelines laid down in the RBI's Third Amendment Directions 2026. (Reference: Page 27, 61)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Macroeconomic Forecasts",
+    "question": "Multiple economic agencies released their GDP forecasts for India in June 2026. Which of the following projections is incorrectly paired with the respective agency?",
+    "options": {
+      "A": "SBI Research: FY26 Q4 GDP growth at 7.8%",
+      "B": "Fitch Ratings: FY27 GDP growth forecast lowered to 6.4%",
+      "C": "World Bank: FY27 GDP growth forecast raised to 6.6%",
+      "D": "World Bank: FY28 GDP growth expected to accelerate to 7.2%",
+      "E": "Fitch Ratings: India's inflation projected to hit 7.2% by the end of CY26"
+    },
+    "answer": "E",
+    "rationale": "Statement E is incorrect because Fitch Ratings projected India's inflation at 5.3% by the end of CY26, not 7.2%. (Reference: Page 28, 29, 61, 62)",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Corporate Partnerships",
+    "question": "Meta and Reliance Industries Limited (RIL) partnered to develop a massive data centre. Consider the specific features of this project:\n\n1. It will have a 168 MW capacity and be located in Jamnagar, Gujarat.\n2. It will utilize 100% renewable energy (925 MW) and desalinated seawater cooling.\n3. The data centre will be linked to Project Waterworth, Meta's global subsea cable network.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All three statements accurately describe the details of the Meta-RIL data centre partnership in Jamnagar, Gujarat. (Reference: Page 29, 62)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Gallantry Awards",
+    "question": "During the Defence Investiture Ceremony 2026, President Droupadi Murmu conferred 51 gallantry awards. Which of the following individuals was awarded the Kirti Chakra for their service in the 4 Para (Special Forces)?",
+    "options": {
+      "A": "Major Arshdeep Singh",
+      "B": "Lance Naik Meenatchi Sundaram A",
+      "C": "Naib Subedar Doleshwar Subba",
+      "D": "Captain Lalrinawma Sailo",
+      "E": "Lieutenant Shashank Tiwari"
+    },
+    "answer": "D",
+    "rationale": "Captain Lalrinawma Sailo from the 4 Para (Special Forces) was awarded the Kirti Chakra. (Reference: Page 30, 63)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Cultural Awards",
+    "question": "Match the following eminent personalities elected as Sangeet Natak Akademi Fellows with their respective fields:\n\nColumn I:\n1. Ramlal Bareth\n2. Sudharani Raghupathy\n3. Chittaranjan Jyotishi\n\nColumn II:\nA. Bharatanatyam Dancer\nB. Vocalist\nC. Kathak Dancer\n\nSelect the correct mapping:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-A, 2-C, 3-B",
+      "E": "1-B, 2-A, 3-C"
+    },
+    "answer": "A",
+    "rationale": "Ramlal Bareth is a Kathak Dancer (1-C); Sudharani Raghupathy is a Bharatanatyam Dancer (2-A); Chittaranjan Jyotishi is a Vocalist (3-B). (Reference: Page 33, 64)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "GI Tags",
+    "question": "Which of the following products from Jharkhand is INCORRECTLY categorized based on the recent GI tags granted by the Geographical Indications Registry (GIR)?",
+    "options": {
+      "A": "Kuchai Silk Saree - Handloom & Textiles",
+      "B": "Dokra Craft - Handicrafts",
+      "C": "Jadopatia Painting - Handicrafts",
+      "D": "Kesariya Kalakand - Handloom & Textiles",
+      "E": "Munda Jewellery - Handicrafts"
+    },
+    "answer": "D",
+    "rationale": "Kesariya Kalakand is a food item and falls under the 'Food Stuffs' category, not 'Handloom & Textiles'. (Reference: Page 34)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Global Markets",
+    "question": "Assertion (A): Elon Musk became the world's first trillionaire on paper in June 2026.\nReason (R): SpaceX raised a record USD 75 billion through its Initial Public Offering (IPO) listed on the Nasdaq Stock Exchange, surpassing the 2019 Saudi Aramco IPO.\n\nSelect the most appropriate option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Both statements are correct and the massive success of the SpaceX IPO (raising $75 billion) directly boosted Musk's paper net worth beyond the $1 trillion mark, making R the correct explanation of A. (Reference: Page 33, 64)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Art & Sculpture",
+    "question": "Padma Shri awardee Sudarsan Pattnaik became the first Indian to win the Russia Grand Sand Master Cup 2026. What was the exact height of his winning sand sculpture that depicted two contrasting faces of Earth?",
+    "options": {
+      "A": "2 metres",
+      "B": "3 metres",
+      "C": "4.5 metres",
+      "D": "5 metres",
+      "E": "7 metres"
+    },
+    "answer": "B",
+    "rationale": "His winning sand sculpture was three-metres (3m) high. (Reference: Page 65)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Acquisitions & Mergers",
+    "sub_category": "Corporate Transactions",
+    "question": "Arrange the following corporate stake acquisitions/sales by the exact percentage of stake involved, from highest to lowest:\n\n1. Ancat Holding GmbH in PUMA SE\n2. Oman India Joint Investment Fund II in Capital Small Finance Bank\n3. Sanlam Emerging Markets in Shriram Life Insurance\n4. Platinum Jasmine A 2018 Trust in Lenskart\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1 > 2 > 3 > 4",
+      "B": "1 > 3 > 2 > 4",
+      "C": "2 > 1 > 3 > 4",
+      "D": "1 > 2 > 4 > 3",
+      "E": "1 > 4 > 2 > 3"
+    },
+    "answer": "A",
+    "rationale": "The stakes involved are: Ancat in PUMA (29.06%), OIJIF II in Capital SFB (3.65%), Sanlam in Shriram Life (2.80%), Platinum Jasmine in Lenskart (2.3%). The correct order is 1 > 2 > 3 > 4. (Reference: Pages 35, 36, 65, 66)",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space Exploration",
+    "question": "Consider the following statements regarding NASA's Artemis missions:\n\n1. Artemis I (2022) completed an uncrewed test flight of SLS and Orion around the Moon.\n2. Artemis II (2026) became the first crewed lunar flyby since Apollo 17.\n3. The Artemis III mission is slated for late-2027 to test dockings in Low-Earth Orbit.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 3",
+      "E": "1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All statements accurately reflect the chronological facts and objectives of the Artemis missions as provided in the document. (Reference: Page 37, 66)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Defence Aviation",
+    "question": "Regarding the maiden 'Made in India' Airbus C295 military transport aircraft, which of the following performance specifications is INCORRECT?",
+    "options": {
+      "A": "It has a top speed of 482 kmph.",
+      "B": "It possesses a range of 5,000 km.",
+      "C": "It is equipped with STOL (Short Take-Off and Landing) capability.",
+      "D": "It can carry up to 91 troops simultaneously.",
+      "E": "It has a payload capacity of 9,250 kg."
+    },
+    "answer": "D",
+    "rationale": "Statement D is incorrect because the aircraft's carrying capacity is 71 troops, not 91 troops. (Reference: Page 38)",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "French Open 2026",
+    "question": "Match the winners of the French Open 2026 with their respective categories:\n\nColumn I:\n1. Men's Singles\n2. Women's Singles\n3. Mixed Doubles\n\nColumn II:\nA. Sara Errani & Andrea Vavassori\nB. Alexander Zverev\nC. Mirra Andreeva\n\nSelect the correct mapping:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-A, 2-C, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "A",
+    "rationale": "Alexander Zverev won Men's Singles (1-B); Mirra Andreeva won Women's Singles (2-C); Sara Errani & Andrea Vavassori won Mixed Doubles (3-A). (Reference: Page 39, 67)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Yogasana Championship",
+    "question": "Consider the following statistics regarding the inaugural World Yogasana Championship 2026:\n\n1. India topped the medal tally with 114 medals, including 102 Gold.\n2. Japan ranked 2nd overall, securing 3 gold, 3 silver, and 5 bronze medals.\n3. Nepal secured the 3rd rank in the overall medal tally with 52 total medals.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "1, 2, and 3",
+      "E": "None of the above"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because Argentina ranked 3rd based on gold medals (2 gold, 3 silver). Nepal had more total medals (52) but only 1 gold, placing them 5th in the rank list. (Reference: Page 40, 68)",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Formula One",
+    "question": "Arrange the top four drivers in the F1 Championship standings after the 2026 Barcelona-Catalunya Grand Prix in descending order of points:\n\n1. George Russell\n2. Kimi Antonelli\n3. Charles Leclerc\n4. Lewis Hamilton\n\nSelect the correct sequence:",
+    "options": {
+      "A": "2 > 4 > 1 > 3",
+      "B": "2 > 1 > 4 > 3",
+      "C": "4 > 2 > 1 > 3",
+      "D": "2 > 4 > 3 > 1",
+      "E": "4 > 1 > 2 > 3"
+    },
+    "answer": "A",
+    "rationale": "Points standings: Kimi Antonelli (156) > Lewis Hamilton (115) > George Russell (106) > Charles Leclerc (75). Therefore, the sequence is 2 > 4 > 1 > 3. (Reference: Page 68)",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Football & Chess",
+    "question": "Hybrid Match: Pair the following Indian sports personalities with their specific achievements from June 2026:\n\nColumn I:\n1. Aveka Singh\n2. Sanfida Nongrum\n3. Savitha Shri Baskar\n\nColumn II:\nA. Won Gold at Women's Asian Individual Chess Championship\nB. Top Scorer (4 goals) at SAFF Women's Championship\nC. MVP at SAFF Women's Championship\n\nSelect the correct code:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-A, 2-C, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-C, 2-A, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Aveka Singh was the Top Scorer (1-B); Sanfida Nongrum was MVP (2-C); Savitha Shri Baskar won Gold in Chess (3-A). (Reference: Page 39, 69)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Obituaries",
+    "sub_category": "Art & Cinema",
+    "question": "Match the following recently deceased personalities with the prestigious awards/titles they received:\n\nColumn I:\n1. Salim Kumar\n2. Bharathiraja\n3. Gavri Devi\n4. Jaspal Rana\n\nColumn II:\nA. Sangeet Natak Akademi Award (1986)\nB. Dronacharya Award (2020)\nC. National Film Award for Best Actor (2010)\nD. Padma Shri (2004)\n\nSelect the correct mapping:",
+    "options": {
+      "A": "1-C, 2-D, 3-A, 4-B",
+      "B": "1-D, 2-C, 3-A, 4-B",
+      "C": "1-C, 2-D, 3-B, 4-A",
+      "D": "1-B, 2-A, 3-D, 4-C",
+      "E": "1-A, 2-B, 3-C, 4-D"
+    },
+    "answer": "A",
+    "rationale": "Salim Kumar (1-C); Bharathiraja (2-D); Gavri Devi (3-A); Jaspal Rana (4-B). (Reference: Pages 42-44, 69-70)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Themes 2026",
+    "question": "Consider the themes designated for various UN observances in June 2026:\n\n1. World Food Safety Day: \"From Burden to Solutions: Safe Food Everywhere\"\n2. World Oceans Day: \"Innovation, Trust and Sustainability\"\n3. World Day Against Child Labour: \"Red card to child labour: Fair play for children, decent work for adults\"\n\nWhich of the themes given above is/are correctly matched?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 1 and 3",
+      "C": "Only 2 and 3",
+      "D": "Only 1",
+      "E": "1, 2, and 3"
+    },
+    "answer": "B",
+    "rationale": "Theme 2 is incorrect because \"Innovation, Trust and Sustainability\" is the theme for World Accreditation Day, while World Oceans Day is \"Reimagine: Beyond the world we know, a new relationship with our ocean\". Themes 1 and 3 are correct. (Reference: Pages 45, 47, 70, 71)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Logistics & Delivery",
+    "question": "In June 2026, the Department of Posts launched a drone-based mail service in Himachal Pradesh. Which two post offices were connected through this service, reducing transit time drastically to 7 minutes?",
+    "options": {
+      "A": "Shimla Head Post Office and Kasol Branch Post Office",
+      "B": "Mandi Head Post Office and Rehardhar Branch Post Office",
+      "C": "Dharamshala Head Post Office and Palampur Branch Post Office",
+      "D": "Kullu Head Post Office and Manali Branch Post Office",
+      "E": "Solan Head Post Office and Kasauli Branch Post Office"
+    },
+    "answer": "B",
+    "rationale": "The service connects the Mandi Head Post Office and Rehardhar Branch Post Office in Himachal Pradesh. (Reference: Page 23, 58)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Economic Clusters",
+    "question": "Which of the following sectors is NOT a focal area of the newly launched 'Blue Valley Cluster' in Guwahati, Assam?",
+    "options": {
+      "A": "Tea",
+      "B": "Agarwood",
+      "C": "Handicrafts and Handlooms",
+      "D": "Natural fragrances",
+      "E": "AYUSH products"
+    },
+    "answer": "C",
+    "rationale": "The Blue Valley Cluster focuses specifically on Tea, Agarwood, natural fragrances, and AYUSH products. Handicrafts and Handlooms are not explicitly part of its focus. (Reference: Page 50, 72)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  }
+]
