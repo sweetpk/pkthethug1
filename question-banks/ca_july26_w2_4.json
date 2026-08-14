@@ -1,0 +1,1074 @@
+[
+  {
+    "category": "National",
+    "sub_category": "Government Schemes & Initiatives",
+    "question": "Match the following Anchor Industry Partners with their respective state ITI clusters under the PM-SETU nationwide expansion:\n\nColumn I:\n1. Odisha\n2. Gujarat\n3. Telangana (Cluster-1)\n4. Telangana (Cluster-2)\n\nColumn II:\nA. Apollo MedSkills Ltd.\nB. Sri Siddharth Infratech & Services\nC. Jindal Naveen Avasar Ltd.\nD. ArcelorMittal Nippon Steel India\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-D, 3-A, 4-B",
+      "B": "1-D, 2-C, 3-B, 4-A",
+      "C": "1-C, 2-A, 3-D, 4-B",
+      "D": "1-B, 2-D, 3-A, 4-C",
+      "E": "1-A, 2-C, 3-B, 4-D"
+    },
+    "answer": "A",
+    "rationale": "As per the PM-SETU expansion data: Odisha aligns with Jindal Naveen (1-C), Gujarat with ArcelorMittal (2-D), Telangana Cluster-1 with Apollo MedSkills (3-A), and Telangana Cluster-2 with Sri Siddharth Infratech (4-B). (Page 4)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Education Data",
+    "question": "According to the UDISE+ 2025-26 report, arrange the following school education levels in ascending order based on their Dropout Rates:\n\n1. Preparatory\n2. Secondary\n3. Middle\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1, 2, 3",
+      "B": "3, 1, 2",
+      "C": "1, 3, 2",
+      "D": "2, 3, 1",
+      "E": "3, 2, 1"
+    },
+    "answer": "C",
+    "rationale": "Dropout rates as per UDISE+ 2025-26: Preparatory = 1.8% (1), Middle = 3.6% (3), Secondary = 7.0% (2). Ascending order (lowest to highest): 1.8% -> 3.6% -> 7.0%, giving the sequence 1, 3, 2. (Page 5, 65)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Agriculture",
+    "question": "Fill in the blanks regarding the PRAGATI Initiative targets:\n\nThe PRAGATI initiative aims to increase farmers' income by at least ____%, improve yields of major crops by ____%, and enable financial inclusion for ____% of associated farmers.",
+    "options": {
+      "A": "20 ; 10-15 ; 100",
+      "B": "30 ; 15-20 ; 50",
+      "C": "25 ; 15-20 ; 75",
+      "D": "30 ; 20-25 ; 50",
+      "E": "50 ; 15-20 ; 100"
+    },
+    "answer": "B",
+    "rationale": "The PRAGATI initiative aims to increase farmers' income by 30%, improve crop yields by 15-20%, promote regenerative agriculture among 20% of farmers, and enable financial inclusion for 50% of associated farmers. (Page 6, 65)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Biodiversity",
+    "question": "Assertion (A): The Natural History Museum (NHM) at Mizoram University was notified as India's 21st Designated Repository by the MoEFCC.\nReason (R): It acts as a custodian of biological specimens and was notified under Section 39 of the Biological Diversity Act, 2002, to safeguard against bio-piracy.\n\nSelect the correct code:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Assertion (A) is true as NHM Mizoram was designated the 21st Repository. Reason (R) correctly explains this status, referencing Section 39 of the Biological Diversity Act and its role as a custodian to protect genetic resources and safeguard against bio-piracy. (Page 7, 65-66)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Tribal Affairs",
+    "question": "Consider the following statements regarding the 'TribeX' platform:\n\n1. It is a digital learning platform dedicated to tribal arts, culture, and skill development.\n2. It was launched by Union Minister Jual Oram during a National Workshop in Bhopal, Madhya Pradesh.\n3. The Ministry of Tribal Affairs (MoTA) partnered with Sampurnanand Sanskrit University to develop its PG diploma programmes.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 1 and 3",
+      "C": "Only 2 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "B",
+    "rationale": "Statement 1 is correct. Statement 2 is incorrect because it was launched during a workshop in Bhubaneshwar, Odisha, not Bhopal. Statement 3 is correct regarding the partnership with Sampurnanand Sanskrit University, UP. (Page 8, 66)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Education Data",
+    "question": "Which of the following statements is INCORRECT regarding the Performance Grading Index (PGI 2.0-S and PGI-D) for 2025-26?",
+    "options": {
+      "A": "No State or Union Territory achieved the highest grade 'Utkarsh'.",
+      "B": "Chandigarh became the first State/UT to enter the 'Uttam' range.",
+      "C": "Meghalaya recorded the lowest score among States/UTs.",
+      "D": "In the district-level PGI-D, 19 districts secured the 'Utkarsh' grade, up from 16 in the previous year.",
+      "E": "Chandigarh (UT) scored the highest at the district level with 437 marks."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect. In the district-level PGI-D, no district attained 'Utkarsh' or 'Uttam-1'. The 19 districts secured the 'Uttam-2' grade, not Utkarsh. (Page 9, 66)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Environment",
+    "question": "The 'SALT' technology developed by CSIR-CIMFR stands for Smart Algal Liquid Tree. Which of the following best describes its core function and mechanism?",
+    "options": {
+      "A": "It uses macroalgae to purify contaminated groundwater in rural areas.",
+      "B": "It uses a photobioreactor with microalgae to absorb CO2 and release O2, operating via solar/electric power.",
+      "C": "It is an industrial scrubber designed to eliminate HFCs from manufacturing plants.",
+      "D": "It is a genetically modified physical tree planted in dense urban areas for carbon sequestration.",
+      "E": "It is a liquid coolant developed as an alternative to HFO-1234yf."
+    },
+    "answer": "B",
+    "rationale": "SALT (Smart Algal Liquid Tree) is a mobile 'Liquid Tree' that uses a photobioreactor with microalgae for air purification, absorbing CO2 and releasing O2, and operates 24x7 using solar/electric power. (Pages 10-11, 67)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Defence",
+    "sub_category": "Manufacturing",
+    "question": "Consider the following statements regarding the Adani Defence missile manufacturing complex:\n\n1. It is South Asia's largest private-sector missile ecosystem.\n2. It represents an investment of Rs 2,500 crore.\n3. The facility is located in Shivpuri, Madhya Pradesh.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 3"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. Adani Defence invested Rs 2,500 crore to establish South Asia's largest private-sector missile ecosystem in Shivpuri, MP. (Page 11, 67)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Infrastructure",
+    "question": "Fill in the blanks regarding the Quality Council of India (QCI) MoU:\n\nQCI signed a 5-year MoU with _____ to integrate ZED, Global Mart, ONDC, TEAM & SPRS. Under this, _____ will accredit testing labs and _____ will accredit training centres.",
+    "options": {
+      "A": "SIDBI ; NABH ; NABET",
+      "B": "NSIC ; NABL ; NABET",
+      "C": "MSME Ministry ; NABL ; NAAC",
+      "D": "NSIC ; NABET ; NABL",
+      "E": "SIDBI ; NABL ; NABET"
+    },
+    "answer": "B",
+    "rationale": "QCI signed a 5-year MoU with National Small Industries Corporation (NSIC). Under the implementation framework, NABL accredits testing labs, and NABET accredits training centres. (Page 12-13, 67)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "MSME Payments",
+    "question": "Assertion (A): The Ministry of MSME has mandated that all operating CPSEs must settle invoices for goods procured from MSMEs via TReDS platforms.\nReason (R): This mandate is currently applicable only to CPSEs and companies with a turnover above Rs 500 crore, completely excluding those with Rs 250 crore turnover.\n\nSelect the correct code:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true: MSME Ministry mandated CPSEs to settle MSME invoices via TReDS. Reason (R) is false: The mandate applies to CPSEs and companies above Rs. 500 crore (since 2018) AND companies above Rs. 250 crore (since 2024). (Page 13, 67)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Urban Development",
+    "question": "Under the PM SVANidhi initiative to develop Street Food Hubs (SFHs), what is the specific target number of SFHs that the initiative aims to establish across India?",
+    "options": {
+      "A": "25",
+      "B": "50",
+      "C": "75",
+      "D": "100",
+      "E": "200"
+    },
+    "answer": "B",
+    "rationale": "The initiative targets establishing up to 50 Street Food Hubs nationwide, with Lakhanpur (J&K) selected among the first towns. (Page 14, 68)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Telecom & Connectivity",
+    "question": "Match the entities involved in the Rs 5,629 crore BharatNet Rural Broadband Rollout in Gujarat:\n\nColumn I:\n1. Digital Bharat Nidhi (DBN)\n2. GFGNL\n3. BSNL\n\nColumn II:\nA. Operating under the Department of Telecommunications (DoT)\nB. Entity responsible for strengthening last-mile broadband alongside GFGNL\nC. Entity connecting 14,287 Gram Panchayats\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-C, 3-B",
+      "B": "1-B, 2-A, 3-C",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-B, 2-C, 3-A"
+    },
+    "answer": "A",
+    "rationale": "DBN operates under DoT (1-A). GFGNL is tasked to connect 14,287 GPs and 3,895 villages (2-C). BSNL is a partner in strengthening last-mile broadband (3-B). (Page 16, 68)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Infrastructure",
+    "question": "During the 172nd Annual Day of CPWD, the 'SANKALP' framework was unveiled. Arrange the following constituent terms of SANKALP in the order they appear in the acronym:\n\n1. Kartavyanishtha\n2. Pardarshita\n3. Accessibility\n4. Lokhit\n\nSelect the correct sequence:",
+    "options": {
+      "A": "3, 1, 4, 2",
+      "B": "1, 3, 2, 4",
+      "C": "3, 4, 1, 2",
+      "D": "3, 1, 2, 4",
+      "E": "1, 4, 3, 2"
+    },
+    "answer": "A",
+    "rationale": "SANKALP stands for Speed, Accessibility (A), Nekneeyat, Kartavyanishtha (K), Adoption of Technology, Lokhit (L), and Pardarshita (P). The order of the given terms in the acronym is Accessibility (3), Kartavyanishtha (1), Lokhit (4), and Pardarshita (2). Sequence: 3, 1, 4, 2. (Page 17, 69)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Cybersecurity",
+    "question": "Which of the following bodies collaborated with MeitY, CERT-In, and CSIRT-Fin to jointly release the 2nd Digital Threat Report 2025-26?",
+    "options": {
+      "A": "Data Security Council of India (DSCI)",
+      "B": "SISA Information Security",
+      "C": "National Critical Information Infrastructure Protection Centre (NCIIPC)",
+      "D": "Indian Cyber Crime Coordination Centre (I4C)",
+      "E": "Cyber Peace Foundation"
+    },
+    "answer": "B",
+    "rationale": "The 2nd Digital Threat Report 2025-26 for India's BFSI and Payments ecosystem was jointly released by MeitY, CERT-In, CSIRT-Fin, and SISA Information Security. (Page 18, 69)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "Trade Data",
+    "question": "Based on the Q1 FY27 Trade Data released by MoC&I, consider the following statements:\n\n1. Total exports in Q1 FY27 stood at USD 232.73 billion.\n2. Total imports in Q1 FY27 stood at USD 270.15 billion.\n3. The merchandise trade deficit narrowed compared to Q1 FY26.\n4. Services exports reached USD 103.41 billion.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2, and 4 only",
+      "B": "1, 2, and 3 only",
+      "C": "2, 3, and 4 only",
+      "D": "1, 3, and 4 only",
+      "E": "All 1, 2, 3, and 4"
+    },
+    "answer": "A",
+    "rationale": "Statements 1, 2, and 4 are correct. Statement 3 is incorrect because the merchandise trade deficit widened to USD 86.86 billion (imports USD 216.18 Bn vs exports USD 129.32 Bn). (Page 19, 69)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Maritime Affairs",
+    "question": "Assertion (A): The 'Seafarer-First' Initiative was launched to safeguard Indian seafarers through a whole-of-government response.\nReason (R): The initiative provides a 24x7 grievance support system, medical evacuation, and repatriation amid escalating maritime security threats in West Asia.\n\nSelect the correct code:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Assertion (A) is true as the initiative aims for a whole-of-government response. Reason (R) is true and acts as a detailed explanation of the support mechanisms (evacuation, 24x7 support) implemented due to threats in West Asia (Persian Gulf, Gulf of Oman). (Page 20, 70)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Drones & Innovation",
+    "question": "Match the following features related to the NIDAR 2.0 Challenge launched by MeitY and DFI:\n\nColumn I:\n1. NIDAR 2.0 Track 1\n2. NIDAR 2.0 Track 2\n3. VEGA\n\nColumn II:\nA. C-DAC-developed, RISC-V-based Indian processor\nB. Drone Innovation\nC. Component Innovation\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "NIDAR 2.0 has two tracks: Track 1 is Drone Innovation (1-B), and Track 2 is Component Innovation (2-C). VEGA is the indigenous C-DAC-developed, RISC-V-based Indian processor (3-A). (Page 21, 70)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "FDI Rankings",
+    "question": "According to the UNCTAD World Investment Report 2026, arrange the following top 4 Host Economies in ascending order of their FDI Inflows (from lowest to highest among the group):\n\n1. Singapore\n2. USA\n3. China\n4. Hong Kong, SAR of China\n\nSelect the correct sequence:",
+    "options": {
+      "A": "3, 4, 1, 2",
+      "B": "4, 3, 1, 2",
+      "C": "3, 1, 4, 2",
+      "D": "4, 1, 3, 2",
+      "E": "2, 1, 4, 3"
+    },
+    "answer": "A",
+    "rationale": "The FDI inflows are: USA (1st, 277B), Singapore (2nd, 151B), Hong Kong (3rd, 116B), China (4th, 105B). Ascending order (lowest to highest): China (105B) -> Hong Kong (116B) -> Singapore (151B) -> USA (277B). Thus, sequence is 3, 4, 1, 2. (Page 22, 70)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Governance",
+    "question": "Fill in the blanks regarding the UN Global Dialogue on AI Governance:\n\nThe dialogue was co-chaired by Paul Kagame, President of _____, and Marc Benioff, CEO of _____, while Doreen Bogdan-Martin served as the Vice-Chair.",
+    "options": {
+      "A": "Kenya ; Microsoft",
+      "B": "Rwanda ; Salesforce",
+      "C": "Rwanda ; Google",
+      "D": "South Africa ; Salesforce",
+      "E": "Uganda ; IBM"
+    },
+    "answer": "B",
+    "rationale": "The UN Global Dialogue on AI Governance was co-chaired by Paul Kagame, President of Rwanda, and Marc Benioff, CEO of Salesforce. Doreen Bogdan-Martin, Secretary-General of ITU, was Vice-Chair. (Page 23)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Bilateral Relations",
+    "question": "Consider the following statements regarding PM Modi's visit to Indonesia:\n\n1. It was PM Modi's first bilateral visit to Indonesia since the Comprehensive Strategic Partnership (CSP) was formed in 2018.\n2. Both countries agreed on 20 outcomes, including 14 MoUs.\n3. The MoUs covered Critical Minerals Cooperation and NFTDC-PERMINAS focused on Rare Earth Magnets.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 3"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. It was the 1st bilateral visit since the 2018 CSP. There were 20 outcomes (14 MoUs + 6 announcements). The MoUs included Critical Minerals Cooperation with NFTDC-PERMINAS focusing on Rare Earth Magnets. (Page 24, 71)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Bilateral Relations",
+    "question": "Which of the following statements is INCORRECT regarding CSIR's collaboration in Kyrgyzstan?",
+    "options": {
+      "A": "CSIR stands for Centre for Studies of International Relations in this context.",
+      "B": "The International Centre established is named 'Manas and Mahabharata'.",
+      "C": "The Centre was established in Bishkek, Kyrgyzstan.",
+      "D": "The initiative included signing a bilateral agreement exclusively with a single Kyrgyz university.",
+      "E": "It aims to strengthen cooperation through comparative civilizational and epic studies."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect because the initiative involved signing a trilateral agreement with 7 Kyrgyz universities, not a bilateral agreement with a single university. (Page 25, 71)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Bilateral Relations",
+    "question": "Assertion (A): During PM Modi's visit to Australia, the 'PACTS' framework was launched to replace the 2020 Cyber Framework.\nReason (R): PACTS focuses on Supply Chains, Critical Technologies, Cybersecurity, Digital Resilience, and Defence Collaboration.\n\nSelect the correct code:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Assertion (A) is true: PACTS replaced the 2020 Cyber Framework. Reason (R) is true: It outlines the focus areas. While R lists the components of PACTS, it does not explicitly explain *why* the 2020 framework was replaced, but rather what the new one does. However, in standard A-R format, if R merely details the components, it is an independent truth. Option B is most appropriate. (Page 26, 71)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Reports & Indices",
+    "question": "Match the following cities with their rankings in the EIU Global Liveability Index 2026:\n\nColumn I:\n1. Copenhagen\n2. Damascus\n3. Tehran\n\nColumn II:\nA. 173rd (Least liveable)\nB. 1st (Most liveable)\nC. 164th (Entered bottom 10)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-A, 3-B",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-A, 2-B, 3-C",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "C",
+    "rationale": "Copenhagen retained the 1st position (1-B). Damascus, Syria remained the world's least liveable city at 173rd (2-A). Tehran, Iran entered the bottom 10 at 164th place (3-C). (Page 27, 72)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "Investment Reports",
+    "question": "According to the WIPO 'World Intangible Investment Report 2026', arrange the following Top 5 economies in descending order of their Intangible Investment Growth Rate (%):\n\n1. India\n2. Japan\n3. USA\n4. Philippines\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1, 2, 4, 3",
+      "B": "1, 2, 3, 4",
+      "C": "2, 1, 4, 3",
+      "D": "1, 4, 2, 3",
+      "E": "4, 1, 2, 3"
+    },
+    "answer": "A",
+    "rationale": "Growth rates: India (7.9%), Japan (4.8%), Philippines (4.6%), USA (4.4%). Descending order: India (1), Japan (2), Philippines (4), USA (3). Sequence is 1, 2, 4, 3. (Page 29-30)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Bilateral Relations",
+    "question": "Consider the following statements regarding PM Modi's visit to New Zealand:\n\n1. It marked the first-ever visit by an Indian PM to New Zealand in 40 years.\n2. A target of reaching NZD 7 Billion in bilateral trade by 2030 was set, supported by an FTA.\n3. New Zealand officially joined the Global Biofuels Alliance (GBA) during this visit.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. It was the 1st visit in 40 years. Trade target is NZD 7 Billion by 2030. New Zealand joined the GBA. (Page 31, 73)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Defence",
+    "sub_category": "Global Rankings",
+    "question": "Fill in the blanks regarding the WDMMA Global Air Power Rankings 2026:\n\nWhile the Indian Air Force (IAF) ranked 3rd among national air forces, when combining air arms of the Army, Navy, and Air Force, the IAF ranked _____ overall with a True Value Rating (TVR) of _____.",
+    "options": {
+      "A": "5th ; 72.5",
+      "B": "6th ; 69.4",
+      "C": "4th ; 85.3",
+      "D": "7th ; 63.8",
+      "E": "6th ; 112.6"
+    },
+    "answer": "B",
+    "rationale": "When considering all air arms (Army, Navy, AF), the IAF ranked 6th overall with a TVR of 69.4. China ranked 7th overall with 63.8 TVR. (Page 32, 73)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Health & Standards",
+    "question": "Assertion (A): The 49th Session of the Codex Alimentarius Commission (CAC49) approved a GoI proposal to develop a codex standard for cashew kernels.\nReason (R): This proposal falls under the mandate of the Codex Committee on Processed Fruits and Vegetables (CCPFV) and aims to facilitate global trade.\n\nSelect the correct code:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Assertion (A) is true: CAC49 approved the proposal for a cashew kernels codex standard. Reason (R) is true and correctly explains that it falls under CCPFV and helps global trade. (Page 33, 73)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Defence Alliances",
+    "question": "Which of the following nations did NOT join the 'Anti-ballistic Missile Coalition' announced on the sidelines of the CoW Summit in Paris?",
+    "options": {
+      "A": "Ukraine",
+      "B": "Germany",
+      "C": "Spain",
+      "D": "Turkey",
+      "E": "Norway"
+    },
+    "answer": "D",
+    "rationale": "The 10 nations that joined the coalition are Ukraine, Denmark, France, Germany, Italy, the Netherlands, Norway, Spain, Sweden, and the UK. Turkey is not mentioned. (Page 34, 73)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "International Agreements",
+    "question": "Consider the following statements regarding the MoU signed by GIFT City in July 2026:\n\n1. It was signed with the Vietnam International Financial Center–Da Nang (VIFC-DN).\n2. The MoU aims to promote cross-border investments and strengthen financial linkages between India and Vietnam.\n3. GIFT City also signed MoUs with Tata Communications and CEPT University for GCCs and capacity building.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. GIFT City signed an MoU with VIFC-DN to boost cross-border investments. It also signed MoUs with Tata Communications (for GCCs) and CEPT University (for capacity building). (Page 34, 74)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "RBI Initiatives",
+    "question": "Match the following RBI surveys launched in July 2026 with their respective acronyms and coverage areas:\n\nColumn I:\n1. IESH\n2. RCCS\n3. UCCS\n\nColumn II:\nA. Focuses on rural and semi-urban households across 31 States/UTs.\nB. Evaluates economy and prices across 19 cities.\nC. Measures price movement expectations in 19 cities.\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "IESH (Inflation Expectations Survey of Households) measures price movements in 19 cities (1-C). RCCS (Rural Consumer Confidence Survey) focuses on rural/semi-urban households in 31 States/UTs (2-A). UCCS (Urban Consumer Confidence Survey) evaluates the economy in 19 cities (3-B). (Page 35, 74)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Loans & Funding",
+    "question": "Assertion (A): The World Bank Group's USD 890 million financing for PM Surya Ghar: Muft Bijli Yojana helps increase India's rooftop solar capacity to 27+ GW.\nReason (R): It aligns with India's vision to achieve Net Zero by 2070 and generate 60% non-fossil electricity by 2035.\n\nSelect the correct code:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Assertion (A) is true: The WB support has helped increase capacity from 500 MW to 27+ GW over the decade. Reason (R) is true: It aligns with Net Zero 2070 and 60% non-fossil electricity by 2035. While R provides the broader climate goals justifying the funding, it is not the direct mechanical explanation of the capacity jump mentioned in A, making them related but independent true statements. However, in exam settings, either A or B could be argued. B is safer as R outlines the 'vision/significance' rather than the 'cause' of the 27GW capacity. (Page 35, 74)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Products & Services",
+    "question": "Which of the following statements is INCORRECT regarding the AU Zaggle Co-Branded Retail Credit Card?",
+    "options": {
+      "A": "It was launched by AU Small Finance Bank in partnership with Zaggle Prepaid Ocean Services Ltd.",
+      "B": "The card offers 'Zagg Coins-to-cashback' rewards.",
+      "C": "It is issued exclusively on the RuPay network to promote indigenous payment systems.",
+      "D": "It offers Unified Payments Interface (UPI) and contactless payment benefits.",
+      "E": "It combines AU SFB's banking expertise with Zaggle's fintech ecosystem."
+    },
+    "answer": "C",
+    "rationale": "Option C is incorrect because the card is issued on both the 'Visa and RuPay' networks, not exclusively on RuPay. (Page 36, 74)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Competitions",
+    "question": "Fill in the blanks regarding the national-level hackathon launched by Bank of Maharashtra:\n\nThe hackathon named _____ focuses on banking security, AI-driven cybersecurity, and insider threats. The Grand Finale will be hosted at _____.",
+    "options": {
+      "A": "CyberBank'26 ; IIT Bombay",
+      "B": "FinSpark'26 ; COEP (College of Engineering Pune)",
+      "C": "MahaSec'26 ; Global FinTech Fest 2026",
+      "D": "FinSpark'26 ; NIBM Pune",
+      "E": "CyberShield'26 ; COEP"
+    },
+    "answer": "B",
+    "rationale": "Bank of Maharashtra launched 'FinSpark'26', with the Grand Finale scheduled to be held at COEP (College of Engineering Pune). It will also be showcased at the Global FinTech Fest 2026. (Page 36, 74)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Products & Services",
+    "question": "Consider the following statements regarding the Axis Max Life 'Smart RISE' Retirement Plan:\n\n1. It offers fixed guaranteed income along with potential equity-linked returns.\n2. The plan is available as Immediate Life Annuity and Deferred Life Annuity.\n3. The ROPP (Return of Purchase Price) variant is only available for Single Life, not Joint Life.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statement 1 is correct. Statement 2 is correct. Statement 3 is incorrect because the ROPP feature is available for both Single Life and Joint Life. (Page 37, 74-75)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "Commodity Trading",
+    "question": "Assertion (A): Kutch Copper Limited (KCL) secured London Metal Exchange (LME) certification for its 'Adani Copper' Grade A cathodes.\nReason (R): The LME certification guarantees that the copper cathodes can be delivered with warrants eligible for issuance against LME Copper futures contracts.\n\nSelect the correct code:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Assertion (A) is true. Reason (R) is true and correctly explains the primary benefit/outcome of securing LME certification, enabling trade against LME futures. (Page 37, 75)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "Forecasts",
+    "question": "According to the IMF World Economic Outlook (WEO) Update for July 2026, arrange the following global/Indian growth projections in descending order (highest % to lowest %):\n\n1. India's projected GDP growth for FY28\n2. India's projected GDP growth for FY27\n3. World trade volume growth projection for 2027\n4. Global economic growth projection for 2027\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1, 2, 3, 4",
+      "B": "2, 1, 3, 4",
+      "C": "1, 2, 4, 3",
+      "D": "2, 1, 4, 3",
+      "E": "1, 3, 2, 4"
+    },
+    "answer": "A",
+    "rationale": "Projections: India FY28 = 6.7% (1). India FY27 = 6.4% (2). World trade volume 2027 = 4.3% (3). Global economic growth 2027 = 3.4% (4). Descending order: 6.7% > 6.4% > 4.3% > 3.4%. Sequence is 1, 2, 3, 4. (Page 38, 75)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "Forecasts",
+    "question": "Match the Regional growth and inflation projections by ADB (July 2026):\n\nColumn I:\n1. South Asia Growth (2026)\n2. Developing Asia Growth (2026)\n3. India Inflation (FY27)\n\nColumn II:\nA. 5.2%\nB. 6.0%\nC. 4.9%\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-C, 2-A, 3-B"
+    },
+    "answer": "B",
+    "rationale": "According to ADB: South Asia Growth 2026 = 6.0% (1-B). Developing Asia Growth 2026 = 4.9% (2-C). India Inflation FY27 = 5.2% (3-A). (Page 38, 75)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "Corporate Tie-ups",
+    "question": "Consider the following statements regarding the Dixon-Vivo Joint Venture (JV):\n\n1. The JV will manufacture electronic devices, specifically smartphones, in India.\n2. Dixon Technologies holds a 49% stake while Vivo Mobile India holds a 51% stake in the JV.\n3. The JV acts as an Original Equipment Manufacturer (OEM).\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "3 only"
+    },
+    "answer": "C",
+    "rationale": "Statement 1 is correct. Statement 2 is incorrect: Dixon holds 51% and Vivo Mobile India (VMI) holds 49%. Statement 3 is correct. (Page 39, 75)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Awards & Recognitions",
+    "question": "Arrange the following states in descending order based on the number of new Geographical Indication (GI) registrations obtained between April 2025 and March 2026:\n\n1. Madhya Pradesh\n2. West Bengal\n3. Himachal Pradesh\n4. Jharkhand\n\nSelect the correct sequence:",
+    "options": {
+      "A": "2, 1, 3, 4",
+      "B": "1, 2, 3, 4",
+      "C": "1, 3, 2, 4",
+      "D": "2, 1, 4, 3",
+      "E": "1, 2, 4, 3"
+    },
+    "answer": "B",
+    "rationale": "According to the GI Tag status (April 2025 - March 2026): Madhya Pradesh (26), West Bengal (24), Himachal Pradesh (13), Jharkhand (11). Sequence: 1, 2, 3, 4. (Page 39, 76)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Awards & Recognitions",
+    "question": "Fill in the blanks regarding the WSIS Prize 2026:\n\nThe Department of Telecommunications (DoT) won the WSIS Prize 2026 under Action Line _____ for its initiative 'Samriddh Gram', which offers health ATMs and AR/VR learning supported by _____ connectivity.",
+    "options": {
+      "A": "C4 ; BharatNet",
+      "B": "C6 ; PM-WANI",
+      "C": "C5 ; NDAP",
+      "D": "C6 ; SWAN",
+      "E": "C2 ; PM-WANI"
+    },
+    "answer": "B",
+    "rationale": "DoT won under Action Line C6 - Enabling Environment. The 'Samriddh Gram' initiative uses technology like Health ATMs, AR/VR, FTTH, and PM-WANI connectivity. (Page 40, 76)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Awards & Recognitions",
+    "question": "Assertion (A): FIU-IND was named Runner-up at the Best Egmont Case Award (BECA) 2026.\nReason (R): FIU-IND uncovered an Rs 868 crore money laundering network involving mule accounts and USDT cryptocurrency, leading to ED seizures and PMLA complaints.\n\nSelect the correct code:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Assertion (A) is true: FIU-IND was runner-up at BECA 2026 (Taiwan's AMLD was the winner). Reason (R) is true and correctly explains why they were recognized—for uncovering this large-scale cyber fraud and money laundering network. (Page 41, 76)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Awards & Recognitions",
+    "question": "Which of the following statements is INCORRECT regarding Gujarat's GI-tagged products as of July 2026?",
+    "options": {
+      "A": "Unjha Cumin and Fennel both received GI tags originating from North Gujarat.",
+      "B": "Unjha is India's largest fennel-producing hub.",
+      "C": "Gujarat now has exactly 6 GI-tagged agricultural products.",
+      "D": "Bhalia Wheat and Gir Kesar Mango are among Gujarat's existing GI-tagged agricultural products.",
+      "E": "NABARD facilitated the GI registration for Unjha Cumin and Fennel without external support."
+    },
+    "answer": "E",
+    "rationale": "Option E is incorrect. The GI tags were facilitated by APMC Unjha, Gujarat Horticulture Department, SDAU, EDII Gujarat, and GoI, not exclusively by NABARD (though NABARD facilitates many others globally). (Page 42, 76-77)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Appointments",
+    "question": "Match the following individuals with their respective appointments or roles:\n\nColumn I:\n1. Mahesh Muralidhar Pai\n2. N. S. Vishwanathan\n3. Sourav Ganguly\n4. Leander Paes\n\nColumn II:\nA. Brand Ambassador of InsuranceDekho\nB. Player Ambassador of Asian Tennis Federation (ATF)\nC. MD & CEO of South Indian Bank\nD. Non-Executive Chairman of Axis Bank\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-D, 3-A, 4-B",
+      "B": "1-D, 2-C, 3-B, 4-A",
+      "C": "1-C, 2-A, 3-D, 4-B",
+      "D": "1-B, 2-C, 3-A, 4-D",
+      "E": "1-A, 2-D, 3-C, 4-B"
+    },
+    "answer": "A",
+    "rationale": "Mahesh Muralidhar Pai: MD & CEO of SIB (1-C). N.S. Vishwanathan: Re-appointed Non-Executive Chairman of Axis Bank (2-D). Sourav Ganguly: Brand Ambassador of InsuranceDekho (3-A). Leander Paes: Player Ambassador of ATF (4-B). (Pages 43-44, 77)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space Exploration",
+    "question": "Assertion (A): ISRO successfully conducted the flight acceptance hot test of the CE20 cryogenic engine at the IPRC in Mahendragiri.\nReason (R): This specific engine test was for the seventh operational mission of the Launch Vehicle Mark-3 (LVM3-M7).\n\nSelect the correct code:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Assertion (A) is true: The hot test was conducted at IPRC, Mahendragiri. Reason (R) is true and correctly explains the purpose of the test—to verify performance for the LVM3-M7 mission. (Page 46, 78)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Defence",
+    "sub_category": "Missile Systems",
+    "question": "Which of the following statements is INCORRECT regarding the Pinaka Long Range Guided Rocket (LRGR) test?",
+    "options": {
+      "A": "It was tested by DRDO at the Integrated Test Range (ITR), Chandipur.",
+      "B": "The test validated a minimum range of 60 km.",
+      "C": "It was tested from an operational Pinaka Multi-Barrel Rocket Launcher (MBRL).",
+      "D": "The rocket features a maximum range of 250 km.",
+      "E": "It uses an Inertial Navigation System combined with a Global Positioning System."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect. The Pinaka Long Range Guided Rocket has a maximum range of 120 km, not 250 km. (Page 46, 78)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space Exploration",
+    "question": "Match the following space-related terms/missions with their core attributes:\n\nColumn I:\n1. IMAT-05\n2. Long March-10B\n3. RV-X\n4. Soyuz MS-29\n\nColumn II:\nA. Reusable Rocket Prototype by JAXA\nB. Crewed mission to ISS operated by Roscosmos\nC. Integrated Main Parachute Airdrop Test for Gaganyaan\nD. China's reusable orbital-class rocket booster\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-D, 3-A, 4-B",
+      "B": "1-D, 2-C, 3-B, 4-A",
+      "C": "1-C, 2-A, 3-D, 4-B",
+      "D": "1-B, 2-C, 3-A, 4-D",
+      "E": "1-A, 2-D, 3-C, 4-B"
+    },
+    "answer": "A",
+    "rationale": "IMAT-05 is ISRO's parachute test (1-C). Long March-10B is China's rocket (2-D). RV-X is JAXA's prototype (3-A). Soyuz MS-29 is Russia's crewed mission (4-B). (Pages 47-49, 78-79)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Defence",
+    "sub_category": "Naval Systems",
+    "question": "Fill in the blanks regarding the INS Mahendragiri:\n\nINS Mahendragiri, the _____ Nilgiri-class stealth frigate under Project-_____, was commissioned into the Eastern Fleet to strengthen maritime warfare under the _____ vision.",
+    "options": {
+      "A": "fifth ; 15B ; SAGAR",
+      "B": "sixth ; 17A ; MAHASAGAR",
+      "C": "seventh ; 75I ; SAGARMALA",
+      "D": "sixth ; 15A ; MAHASAGAR",
+      "E": "fourth ; 17A ; SAGAR"
+    },
+    "answer": "B",
+    "rationale": "INS Mahendragiri is the sixth Nilgiri-class frigate under Project-17A, commissioned under the MAHASAGAR vision. (Page 48, 79)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Cricket",
+    "question": "Consider the following statements regarding the ICC Hall of Fame inductees in July 2026:\n\n1. Sourav Ganguly was inducted, becoming the 10th Indian male cricketer to receive the honour.\n2. Anjum Chopra became the 3rd Indian woman to be inducted into the Hall of Fame.\n3. The inductions took place during the ICC Annual Conference in London, England.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statement 1 is correct. Statement 2 is correct. Statement 3 is incorrect because the ICC Annual Conference took place in Edinburgh, Scotland, not London. (Pages 52, 54, 80-81)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Tennis",
+    "question": "Arrange the following Wimbledon 2026 events/achievements based on the text:\n\n1. Harri Heliövaara and Henry Patten won the Men's Doubles title.\n2. Jannik Sinner won his 5th Grand Slam title by defeating Alexander Zverev.\n3. Linda Nosková won the Women's Singles title.\n\nSince all these occurred in the same tournament, identify the correct nationality of the respective winners (Sinner, Nosková, Heliövaara):\n\nSelect the option that correctly matches their nationalities in order (1, 2, 3):",
+    "options": {
+      "A": "Finland, Italy, Czechia",
+      "B": "Italy, Czechia, Finland",
+      "C": "Italy, Germany, Finland",
+      "D": "Czechia, Italy, UK",
+      "E": "Finland, Czechia, Italy"
+    },
+    "answer": "B",
+    "rationale": "Jannik Sinner is from Italy. Linda Nosková is from Czechia. Harri Heliövaara is from Finland. Therefore, the order (Sinner, Nosková, Heliövaara) corresponds to Italy, Czechia, Finland. (Page 52, 80-81)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Cricket",
+    "question": "Assertion (A): The Indian Women's Cricket Team achieved its second-largest win by runs in Women's Tests by defeating England at Lord's.\nReason (R): Smriti Mandhana scored 113, becoming the first woman to score a Test century at Lord's.\n\nSelect the correct code:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true: India won by 270 runs. Reason (R) is false: It was Yastika Bhatia (not Smriti Mandhana) who scored the century (113) and entered the Lord's Honours Board. Mandhana scored 70. (Page 53, 81)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Obituary",
+    "sub_category": "Prominent Personalities",
+    "question": "Match the deceased personalities with their specific achievements/facts:\n\nColumn I:\n1. Shapoor Zadran\n2. S. Janaki\n3. Sheikh Hamad bin Khalifa Al Thani\n4. H. Hanumanthappa\n\nColumn II:\nA. Three-time Rajya Sabha MP and former Chairman of CSB\nB. Declined the Padma Bhushan in 2013\nC. Star of Afghanistan's first World Cup win in 2015\nD. Launched Al Jazeera and established QIA\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-B, 3-D, 4-A",
+      "B": "1-A, 2-B, 3-C, 4-D",
+      "C": "1-C, 2-D, 3-B, 4-A",
+      "D": "1-B, 2-A, 3-D, 4-C",
+      "E": "1-D, 2-C, 3-B, 4-A"
+    },
+    "answer": "A",
+    "rationale": "Shapoor Zadran (1-C), S. Janaki (2-B), Sheikh Hamad bin Khalifa (3-D), H. Hanumanthappa (4-A). (Pages 56-58, 82-83)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Important Days",
+    "question": "Which of the following statements is INCORRECT regarding the observance of Important Days in July 2026?",
+    "options": {
+      "A": "National Fish Farmers' Day (NFFD) marked its 26th observance on 10 July.",
+      "B": "World Population Day 2026 theme focused on 'Realizing the hopes and aspirations of young people'.",
+      "C": "World Horse Day marked its 2nd observance on 11 July.",
+      "D": "International Day of Combating Sand and Dust Storms is observed on 12 July to honor victims of the Srebrenica genocide.",
+      "E": "International Day of Hope marked its 2nd observance on 12 July."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect. The International Day of Combating Sand and Dust Storms raises awareness about environmental impacts. The day honoring victims of the Srebrenica genocide is the 'International Day of Reflection and Commemoration of the 1995 Genocide in Srebrenica', observed on 11 July. (Pages 59-63, 83-84)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Books & Authors",
+    "question": "Assertion (A): 'The Second Orbit: Belief of a Man... Dreams of 1.4 Billion Hearts' is a book detailing the journey of becoming an astronaut for the Gaganyaan mission.\nReason (R): It was authored by IAF Group Captain Shubhanshu Shukla, whose title honors Rakesh Sharma and his 1984 space mission.\n\nSelect the correct code:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Assertion (A) is true: The book covers his journey for the Axiom-4 mission and Gaganyaan. Reason (R) is true and explains the title 'The Second Orbit', which pays homage to Rakesh Sharma's first orbit. (Page 59, 83)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Budget Data",
+    "question": "Fill in the blanks regarding the Assam State Budget for FY27:\n\nFinance Minister Jayanta Malla Baruah presented the budget with a total outlay of Rs _____ crore. The total receipts in the Consolidated Fund are estimated at Rs _____ crore.",
+    "options": {
+      "A": "2,85,084 ; 1,51,843.23",
+      "B": "3,00,000 ; 1,50,000",
+      "C": "2,51,843 ; 1,85,084",
+      "D": "2,85,084 ; 2,00,000",
+      "E": "1,51,843.23 ; 2,85,084"
+    },
+    "answer": "A",
+    "rationale": "The Assam Budget for FY27 has an outlay of Rs 2,85,084 crore, and total receipts in the Consolidated Fund are estimated at Rs 1,51,843.23 crore. (Page 63, 84)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Skill Development",
+    "question": "Consider the following components of the PM-SETU scheme:\n\n1. Component I involves upgrading 1,000 Government ITIs (200 Hub + 800 Spoke) with smart classrooms and modern labs.\n2. Component II involves upgrading 5 NSTIs with National Centres of Excellence (NCoEs).\n3. The scheme has a total outlay of Rs 60,000 Cr over 5 years, jointly co-financed equally by the ADB and World Bank.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "A",
+    "rationale": "Statement 1 is correct. Statement 2 is correct. Statement 3 is incorrect: The total outlay is Rs 60,000 Cr, but ADB and World Bank co-finance 50% of the *Central share* equally (Central share is Rs 30,000 Cr, so they co-finance Rs 15,000 Cr), not the entire Rs 60,000 Cr. (Page 4)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Education Indicators",
+    "question": "According to the UDISE+ 2025-26 report, arrange the Pupil-Teacher Ratios (PTR) for the following levels in descending order (highest ratio to lowest):\n\n1. Secondary\n2. Middle\n3. Preparatory\n4. Foundational\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1, 2, 3, 4",
+      "B": "4, 3, 2, 1",
+      "C": "1, 3, 2, 4",
+      "D": "2, 1, 3, 4",
+      "E": "1, 2, 4, 3"
+    },
+    "answer": "A",
+    "rationale": "Based on UDISE+ 2025-26: Secondary PTR = 21 (1). Middle PTR = 17 (2). Preparatory PTR = 12 (3). Foundational PTR = 10 (4). Descending order: 21 > 17 > 12 > 10. Sequence: 1, 2, 3, 4. (Page 5)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Agriculture",
+    "question": "Match the following organizations with their roles or inclusion in the PRAGATI initiative:\n\nColumn I:\n1. MoA&FW & MoRD\n2. PepsiCo Foundation, Gates Foundation\n3. SBIF\n\nColumn II:\nA. Partners of the PRAGATI Initiative\nB. Launching Ministries\nC. State Bank of India Foundation (Partner)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-A, 3-C",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "MoA&FW & MoRD launched the initiative (1-B). PepsiCo, Gates Foundation, etc., are partners (2-A). SBIF stands for State Bank of India Foundation, which is also a partner (3-C). (Page 6)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Environment",
+    "question": "Which of the following is NOT part of the three-tier governance system under the Biological Diversity Act, 2002, as mentioned in the NHM Mizoram context?",
+    "options": {
+      "A": "National Biodiversity Authority (NBA) at the National level",
+      "B": "State Biodiversity Boards (SBBs) at the State level",
+      "C": "Biodiversity Management Committees (BMCs) at the Local level",
+      "D": "Zoological Survey of India (ZSI) at the Regional level",
+      "E": "All A, B, and C are parts of the system"
+    },
+    "answer": "D",
+    "rationale": "The three-tier governance system consists of National - NBA, State - SBBs, and Local - BMCs. ZSI is not part of this specific three-tier governance structure mentioned. (Page 7)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Education Data",
+    "question": "Assertion (A): In the PGI 2.0-S 2025-26 report, Chandigarh became the first State/UT to enter the Uttam range.\nReason (R): Chandigarh secured a score of 766/1000, which falls within the Uttam range, while Meghalaya recorded the lowest score of 525.7.\n\nSelect the correct code:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Assertion (A) is true. Reason (R) is true and correctly explains how Chandigarh entered the Uttam range (by scoring 766/1000) while also providing context on the lowest score. (Page 9)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Environment",
+    "question": "Consider the following statements regarding CSIR-IICT's HFO-1234yf and CSIR-CIMFR's SALT:\n\n1. HFO-1234yf acts as a green refrigerant with an 11-day atmospheric lifetime.\n2. SALT uses microalgae within a photobioreactor for air purification and CO2 absorption.\n3. Both technologies were developed specifically to replace Hydrofluorocarbons (HFCs) in industrial chillers.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "A",
+    "rationale": "Statement 1 is correct. Statement 2 is correct. Statement 3 is incorrect because while HFO-1234yf replaces HFCs, SALT is an 'Algal Liquid Tree' for urban air purification (CO2 absorption), not a refrigerant replacement. (Page 10)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "MSME Platforms",
+    "question": "Fill in the blanks regarding the TReDS platforms authorized by RBI:\n\nThere are currently five operational TReDS platforms: RXIL, M1xchange, Invoicemart, C2treds, and _____.",
+    "options": {
+      "A": "TradeX",
+      "B": "BillDesk TReDS",
+      "C": "DTX",
+      "D": "MSME-Treds",
+      "E": "PayMate TReDS"
+    },
+    "answer": "C",
+    "rationale": "The five operational TReDS platforms are RXIL, M1xchange, Invoicemart, C2treds, and DTX (Domestic Trade Exchange). (Page 13)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "Trade Data",
+    "question": "Match the following trade components with their respective values for Q1 FY27 as per MoC&I data:\n\nColumn I:\n1. Merchandise Exports\n2. Services Exports\n3. Merchandise Imports\n\nColumn II:\nA. USD 216.18 Bn\nB. USD 129.32 Bn\nC. USD 103.41 Bn\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Merchandise Exports = USD 129.32 Bn (1-B). Services Exports = USD 103.41 Bn (2-C). Merchandise Imports = USD 216.18 Bn (3-A). (Page 19)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Drones",
+    "question": "Assertion (A): The NIDAR 2.0 challenge offers the top 100 teams two VEGA processor kits each.\nReason (R): VEGA is an indigenous RISC-V-based Indian processor developed by C-DAC.\n\nSelect the correct code:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Assertion (A) is true: Top 100 teams get two VEGA kits. Reason (R) is true and correctly explains what VEGA is, making it central to the hardware-support aspect of the challenge. (Page 21)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "AI Governance",
+    "question": "Which of the following bodies released its first annual AI report during the inaugural UN Global Dialogue on AI Governance in Geneva?",
+    "options": {
+      "A": "International Telecommunication Union (ITU)",
+      "B": "Independent International Scientific Panel on AI (IISPA)",
+      "C": "Global Education First Initiative (GEFI)",
+      "D": "World Intellectual Property Organization (WIPO)",
+      "E": "United Nations Population Fund (UNFPA)"
+    },
+    "answer": "B",
+    "rationale": "The dialogue received the IISPA's (Independent International Scientific Panel on AI) first annual AI report. (Page 23)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Liveability Index",
+    "question": "Based on the EIU Global Liveability Index 2026, arrange the top 3 liveable cities globally in descending order of their rank (1st to 3rd):\n\n1. Vienna, Austria\n2. Copenhagen, Denmark\n3. Melbourne, Australia\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1, 2, 3",
+      "B": "2, 1, 3",
+      "C": "2, 3, 1",
+      "D": "1, 3, 2",
+      "E": "3, 2, 1"
+    },
+    "answer": "B",
+    "rationale": "Copenhagen is 1st (2), Vienna is 2nd (1), Melbourne is 3rd (3). Sequence: 2, 1, 3. (Page 27)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Liveability Index",
+    "question": "Consider the following statements regarding the EIU Global Liveability Index 2026:\n\n1. Western Europe continued to be the strongest region in the index.\n2. Sydney, Australia ranked 4th globally.\n3. Tripoli, Libya was ranked as the absolute least liveable city in the world.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "3 only",
+      "D": "1 and 3 only",
+      "E": "None of the above"
+    },
+    "answer": "C",
+    "rationale": "Statement 1 is correct. Statement 2 is correct (Sydney is 4th). Statement 3 is incorrect because Damascus, Syria (173rd) is the absolute least liveable city, followed by Tripoli (172nd). (Page 27)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Bilateral Agreements",
+    "question": "Match the following MoUs signed during PM Modi's visit to Australia with their respective sectors:\n\nColumn I:\n1. MSDE-TAFE MoU\n2. ACITI Tripartite MoU\n3. GSI-Geoscience Australia MoU\n4. SRFTI–Griffith Film School MoU\n\nColumn II:\nA. Critical & Emerging Technologies\nB. Critical Minerals Exploration\nC. Film Education & Academic Exchanges\nD. Vocational Education, Standards & Capacity Building\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-D, 2-A, 3-B, 4-C",
+      "B": "1-A, 2-D, 3-C, 4-B",
+      "C": "1-B, 2-C, 3-A, 4-D",
+      "D": "1-D, 2-B, 3-A, 4-C",
+      "E": "1-C, 2-A, 3-D, 4-B"
+    },
+    "answer": "A",
+    "rationale": "MSDE-TAFE is for Skills/Vocational (1-D). ACITI is for Technology (2-A). GSI-Geoscience is for Minerals (3-B). SRFTI-Griffith is for Creative/Film (4-C). (Page 28)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  }
+]

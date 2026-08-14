@@ -1,0 +1,802 @@
+[
+  {
+    "category": "National",
+    "sub_category": "Skill Development",
+    "question": "Consider the following statements regarding the components of the PM-SETU scheme:\n\n1. Component I aims to upgrade 1,000 Government ITIs functioning under a Hub and Spoke model (200 Hubs and 800 Spokes).\n2. Component II focuses on upgrading 5 National Skill Training Institutes (NSTIs) with National Centres of Excellence (NCoEs).\n3. The scheme incorporates co-financing where the Asian Development Bank (ADB) and the World Bank will equally share 100% of the total Rs 60,000 Crore outlay.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statement 1 is correct: Upgrading 1000 ITIs (200 Hub + 800 Spoke). Statement 2 is correct: Upgrading 5 NSTIs. Statement 3 is incorrect: ADB and World Bank co-finance 50% of the Central share (which is Rs 30,000 Cr), not the entire Rs 60,000 Cr outlay. (Page 4)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Telecom & Infrastructure",
+    "question": "Which of the following telecom service providers is NOT included in the village-level telecom network performance survey to be conducted by the Department of Posts (DoP) and TRAI?",
+    "options": {
+      "A": "Bharti Airtel",
+      "B": "Reliance Jio",
+      "C": "Vodafone Idea (Vi)",
+      "D": "Bharat Sanchar Nigam Limited (BSNL)",
+      "E": "Mahanagar Telephone Nigam Limited (MTNL)"
+    },
+    "answer": "E",
+    "rationale": "The one-year initiative assesses the mobile network performance of Bharti Airtel, Reliance Jio, Vodafone Idea (Vi), and Bharat Sanchar Nigam Limited (BSNL). MTNL is not included in this survey. (Page 15, 68)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Innovation & Startups",
+    "question": "Match the following initiatives launched by Chitkara University with their corresponding features or collaborating bodies:\n\nColumn I:\n1. Total Investment for Deep-Tech Startups\n2. ATL Sarthi Punjab\n3. Supported Focus Areas\n\nColumn II:\nA. Drone Technologies, Agritech & Renewable Energy\nB. Mentorship of Atal Tinkering Labs across Punjab\nC. Rs 20 Crore over 5 years\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-B, 2-A, 3-C",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-A, 2-B, 3-C",
+      "E": "1-B, 2-C, 3-A"
+    },
+    "answer": "A",
+    "rationale": "Chitkara University launched AIC-CIF and AIC-PRIDE Labs with a combined investment of Rs 20 Crore over 5 years (1-C). ATL Sarthi Punjab aims to mentor ATLs across Punjab (2-B). Focus areas are Drone Technologies, Agritech, and Renewable Energy (3-A). (Page 15, 68)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Urban Development",
+    "question": "Assertion (A): Under the PM SVANidhi Street Food Hub Initiative, each approved project will receive Rs 4 crore in three installments of 30%-50%-20%.\nReason (R): The initiative provides an additional Rs 25 Lakh incentive specifically for Urban Local Bodies (ULBs) that possess a notified Street Vending Plan.\n\nSelect the correct code:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Assertion (A) is true regarding the Rs 4 crore funding structure (30-50-20%). Reason (R) is also true regarding the Rs 25 lakh incentive for ULBs. While both are true elements of the funding framework, R does not logically explain 'why' the installments are 30-50-20%, making them related but independent facts. (Page 14, 68)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "Trade Data",
+    "question": "Fill in the blanks regarding India's Trade Data for Q1 FY27 released by MoC&I:\n\nDuring Q1 FY27, India's merchandise trade deficit widened to USD _____ billion, while the services trade surplus improved to USD _____ billion.",
+    "options": {
+      "A": "86.86 ; 49.43",
+      "B": "103.41 ; 53.97",
+      "C": "129.32 ; 86.86",
+      "D": "216.18 ; 49.43",
+      "E": "86.86 ; 53.97"
+    },
+    "answer": "A",
+    "rationale": "The merchandise trade deficit widened to USD 86.86 Bn. The services trade surplus improved to USD 49.43 Bn. (Page 19)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Surveys",
+    "question": "Which of the following statements correctly differentiates the coverage of the surveys launched by RBI in July 2026?",
+    "options": {
+      "A": "IESH covers 31 States/UTs while RCCS covers only 19 cities.",
+      "B": "UCCS focuses on rural households while RCCS focuses on urban households.",
+      "C": "IESH is conducted in 19 cities, whereas RCCS covers 31 States/UTs.",
+      "D": "All three surveys (IESH, RCCS, UCCS) strictly cover 19 major metropolitan cities only.",
+      "E": "UCCS and IESH cover 31 States/UTs, while RCCS covers 19 rural districts."
+    },
+    "answer": "C",
+    "rationale": "According to the RBI survey details: The Inflation Expectations Survey of Households (IESH) and Urban Consumer Confidence Survey (UCCS) are conducted in 19 cities. The Rural Consumer Confidence Survey (RCCS) covers 31 States/UTs. (Page 35)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "International Funding",
+    "question": "Consider the following statements regarding the World Bank Group's financing for PM Surya Ghar: Muft Bijli Yojana (PMSGMBY):\n\n1. It includes a USD 10M IBRD Livable Planet Fund Grant.\n2. The project aims to mobilise USD 4.2B in private investment for household rooftop solar.\n3. The scheme was originally launched in February 2024 by the Ministry of New and Renewable Energy (MNRE).\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. The funding includes a USD 10M Livable Planet Fund Grant. It mobilises USD 4.2B in private investment. The PMSGMBY scheme was launched in Feb 2024 by MNRE. (Page 35)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "Intangible Investment",
+    "question": "Based on the WIPO World Intangible Investment Report 2026, arrange the following economies in descending order based on their Intangible Investment Value for the year 2024 (excluding USA 2025 data):\n\n1. Germany\n2. Japan\n3. France\n4. UK\n\nSelect the correct sequence:",
+    "options": {
+      "A": "2, 1, 3, 4",
+      "B": "2, 1, 4, 3",
+      "C": "1, 2, 3, 4",
+      "D": "4, 3, 1, 2",
+      "E": "2, 3, 1, 4"
+    },
+    "answer": "A",
+    "rationale": "Based on 2024 data values: Japan = 810 billion (2). Germany = 695 billion (1). France = 664 billion (3). UK = 610 billion (4). Descending order: 810 > 695 > 664 > 610, which corresponds to Japan, Germany, France, UK. Sequence: 2, 1, 3, 4. (Page 29)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Bilateral Agreements",
+    "question": "Match the following MoUs and Agreements finalized during the 3rd India-Australia Annual Leaders' Summit with their respective acronyms/titles:\n\nColumn I:\n1. Replaced the 2009 defence declaration\n2. Roadmap to enhance maritime security and information sharing\n3. Civil Nuclear Agreement supporting the 2025 Act\n\nColumn II:\nA. MSCR\nB. JDDSC\nC. SHANTI\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-A, 3-C",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "JDDSC replaced the 2009 Joint Declaration on Defence and Security Cooperation (1-B). MSCR is the Maritime Security Collaboration Roadmap (2-A). SHANTI Act 2025 is supported by the Administrative Arrangement under the 2014 Civil Nuclear Agreement (3-C). (Page 28-29)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Liveability Index",
+    "question": "Assertion (A): In the EIU Global Liveability Index 2026, Damascus, Syria remained the world's least liveable city.\nReason (R): Tripoli, Libya ranked slightly better than Damascus, taking the 172nd position out of the 173 cities assessed.\n\nSelect the correct code:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Assertion (A) is true: Damascus is 173rd (least liveable). Reason (R) is true: Tripoli is 172nd. Both are independent facts from the bottom rankings. R does not 'explain' why Damascus is the worst (which would be due to conflict/infrastructure), it just provides the ranking of the next worst city. (Page 27)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Bilateral Relations",
+    "question": "Consider the following announcements made during PM Modi's visit to New Zealand:\n\n1. India and New Zealand established a Joint Working Group (JWG) on Counter-Terrorism.\n2. New Zealand agreed to join the Indo-Pacific Oceans Initiative (IPOI) against IUU Fishing.\n3. The nations plan to establish 2 Centres of Excellence (CoEs) located in Nagaland and Uttarakhand.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 2"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. MoUs included Counter-Terrorism (JWG). Announcements included IPOI Cooperation against IUU Fishing and the establishment of 2 CoEs in Nagaland & Uttarakhand. (Page 31)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Defence",
+    "sub_category": "Global Rankings",
+    "question": "Match the following Air Forces with their respective lowest rankings according to the WDMMA Global Air Power Rankings 2026:\n\nColumn I:\n1. Afghan Air Force\n2. Syrian Air Force\n3. Albanian Air Force\n4. Yemen Air Force\n\nColumn II:\nA. 104th\nB. 105th\nC. 106th\nD. 107th\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-D, 2-C, 3-B, 4-A",
+      "B": "1-C, 2-D, 3-A, 4-B",
+      "C": "1-D, 2-B, 3-C, 4-A",
+      "D": "1-A, 2-B, 3-C, 4-D",
+      "E": "1-D, 2-C, 3-A, 4-B"
+    },
+    "answer": "A",
+    "rationale": "Lowest Ranked Air Forces: Afghan Air Force (107th, 1-D), Syrian Air Force (106th, 2-C), Albanian Air Force (105th, 3-B), Yemen Air Force (104th, 4-A). (Page 32)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Defence",
+    "sub_category": "Air Force Data",
+    "question": "Which of the following statistics regarding the Indian Air Force (IAF) fleet components is INCORRECT based on the WDMMA 2026 evaluation?",
+    "options": {
+      "A": "The IAF fleet includes 498 helicopters.",
+      "B": "Combat aircraft form 31.6% of the IAF fleet.",
+      "C": "The IAF fleet includes exactly 282 transport aircraft.",
+      "D": "The IAF fleet comprises 374 trainer aircraft.",
+      "E": "The IAF plans to induct 114 Rafale and 282 Tejas Mk-1A by 2027."
+    },
+    "answer": "E",
+    "rationale": "Option E is incorrect. The planned acquisition includes 114 Rafale, 180 (not 282) Tejas Mk-1A, and AMCA (post-2029). All other fleet numbers are correct. (Page 32)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Global Standards",
+    "question": "Fill in the blanks regarding the Codex Alimentarius Commission (CAC49):\n\nDuring the 49th Session of CAC in _____, the commission adopted _____ codex standards and guidelines developed under India's leadership.",
+    "options": {
+      "A": "Rome, Italy ; 5",
+      "B": "Geneva, Switzerland ; 7",
+      "C": "Paris, France ; 9",
+      "D": "Geneva, Switzerland ; 5",
+      "E": "London, UK ; 7"
+    },
+    "answer": "B",
+    "rationale": "The 49th Session of CAC was held in Geneva, Switzerland, and it adopted 7 codex standards/guidelines developed under India's leadership. (Page 33, 73)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Defence Alliances",
+    "question": "Consider the following statements regarding defense alliances discussed in Paris in July 2026:\n\n1. Ukraine and 9 other countries formed an 'Anti-ballistic Missile Coalition'.\n2. The 'Coalition of the Willing' (CoW) expanded to 37 countries.\n3. Moldova and North Macedonia joined the Anti-ballistic Missile Coalition as newcomers.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statement 1 is correct. Statement 2 is correct (CoW expanded to 37 countries). Statement 3 is incorrect because Moldova and North Macedonia joined the 'Coalition of the Willing' (CoW), not the newly formed 10-nation Anti-ballistic Missile Coalition. (Page 34, 73)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Products & Services",
+    "question": "Match the features of the AU Zaggle Co-Branded Retail Credit Card:\n\nColumn I:\n1. Reward Mechanism\n2. Transaction Support\n3. Co-Brand Partner\n\nColumn II:\nA. Zagg Coins-to-cashback\nB. Zaggle Prepaid Ocean Services Ltd\nC. UPI & contactless payments\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-C, 3-B",
+      "B": "1-B, 2-A, 3-C",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-A, 2-B, 3-C",
+      "E": "1-C, 2-A, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Reward Mechanism: Zagg Coins-to-cashback (1-A). Transaction Support: UPI & contactless (2-C). Co-Brand Partner: Zaggle Prepaid Ocean Services Ltd (3-B). (Page 36, 74)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Insurance Products",
+    "question": "Which of the following features is NOT a part of the Axis Max Life 'Smart RISE' Retirement Plan?",
+    "options": {
+      "A": "It provides a fixed guaranteed income component.",
+      "B": "It offers potential equity-linked returns through a Variable Annuity.",
+      "C": "The Variable Annuity is specifically linked to the NIFTY 50 Index.",
+      "D": "It offers a deferment period before the annuity payout starts.",
+      "E": "It mandates the withdrawal of the entire ROPP (Return of Purchase Price) immediately upon policy maturity, overriding survivor benefits."
+    },
+    "answer": "E",
+    "rationale": "Option E is incorrect. The ROPP (Return of Purchase Price) is a legacy planning feature payable to the nominee upon the annuitant's death, not a mandatory withdrawal at maturity overriding survivor benefits. Options A, B, C, and D are explicit features of the Smart RISE plan. (Pages 37, 74-75)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "Forecasts",
+    "question": "Arrange the following ADB growth/inflation forecasts for India and surrounding regions (July 2026) in ascending order (lowest % to highest %):\n\n1. Developing Asia Growth (2026)\n2. India Inflation (FY27)\n3. South Asia Growth (2026)\n4. India GDP Growth (FY27)\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1, 2, 3, 4",
+      "B": "1, 2, 4, 3",
+      "C": "2, 1, 3, 4",
+      "D": "1, 3, 2, 4",
+      "E": "2, 1, 4, 3"
+    },
+    "answer": "A",
+    "rationale": "Developing Asia Growth 2026 = 4.9% (1). India Inflation FY27 = 5.2% (2). South Asia Growth 2026 = 6.0% (3). India GDP Growth FY27 = 6.6% (4). Ascending order: 4.9% < 5.2% < 6.0% < 6.6%. Sequence is 1, 2, 3, 4. (Page 38, 75)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "Joint Ventures",
+    "question": "Match the entities involved in the newly approved smartphone manufacturing Joint Venture in India:\n\nColumn I:\n1. 51% Shareholder\n2. 49% Shareholder\n3. Initial paid-up capital\n\nColumn II:\nA. Rs. 5 crore\nB. Vivo Mobile India (VMI)\nC. Dixon Technologies (India) Limited\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-A, 2-B, 3-C",
+      "E": "1-B, 2-A, 3-C"
+    },
+    "answer": "A",
+    "rationale": "Dixon holds 51% (1-C). Vivo Mobile India holds 49% (2-B). Initial paid-up capital is Rs. 5 crore (3-A). (Page 39)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Awards & Recognitions",
+    "question": "Assertion (A): Sirsa Kinnow became Haryana's 1st fruit to receive a Geographical Indication (GI) tag.\nReason (R): It is known for its sweet-sour taste and originated in California, USA, developed by Howard B. Frost as a hybrid of King Mandarin and Willow Leaf Mandarin.\n\nSelect the correct code:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Assertion (A) is true: It is Haryana's 1st GI fruit. Reason (R) is true: It details the fruit's origin and characteristics. However, R does not *explain* why it received a GI tag (GI is based on specific geographical origin and localized quality, not its Californian origin, though it's historically accurate). They are independent true statements. (Page 39, 76)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Awards & Recognitions",
+    "question": "Consider the following statements regarding the WSIS Prize 2026 awarded to the DoT:\n\n1. It was awarded under Action Line C6 - Enabling Environment.\n2. The flagship initiative recognized is 'Samriddh Gram: Integrated Phygital Service Delivery Model'.\n3. The initiative utilizes technologies such as Health ATMs, AR/VR learning, IoT & drone farming, FTTH, and PM-WANI connectivity.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "3 only"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. DoT won under Action Line C6 for 'Samriddh Gram', which integrates Health ATMs, AR/VR, IoT & drone farming, FTTH, and PM-WANI. (Page 40, 76)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Awards & Recognitions",
+    "question": "Match the women leaders with their ranks in the Fortune India Most Powerful Women (MPW) 2026 list:\n\nColumn I:\n1. Nita Ambani\n2. Roshni Nadar\n3. Savitri Jindal\n4. Dr. Priti Adani\n\nColumn II:\nA. 2nd\nB. 5th\nC. 1st\nD. 4th\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-D, 4-B",
+      "B": "1-C, 2-D, 3-A, 4-B",
+      "C": "1-A, 2-C, 3-B, 4-D",
+      "D": "1-C, 2-A, 3-B, 4-D",
+      "E": "1-D, 2-A, 3-C, 4-B"
+    },
+    "answer": "A",
+    "rationale": "Nita Ambani is 1st (1-C). Roshni Nadar is 2nd (2-A). Savitri Jindal is 4th (3-D). Dr. Priti Adani is 5th (4-B). (The 3rd rank went to the Reddy Sisters). (Page 41, 76)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Cybersecurity & Enforcement",
+    "question": "Fill in the blanks regarding the FIU-IND's recognition at the Best Egmont Case Award (BECA) 2026:\n\nFIU-IND was named Runner-up after uncovering a money laundering network worth Rs _____ crore, which involved over _____ mule accounts and transactions in the cryptocurrency _____.",
+    "options": {
+      "A": "500 ; 3000+ ; Bitcoin",
+      "B": "868 ; 5000+ ; USDT",
+      "C": "1000 ; 4000+ ; Ethereum",
+      "D": "868 ; 5000+ ; Ripple",
+      "E": "750 ; 5000+ ; USDT"
+    },
+    "answer": "B",
+    "rationale": "FIU-IND uncovered an Rs 868 crore money laundering network involving 5,000+ mule accounts and USDT (Tether) cryptocurrency transactions. (Page 41, 76)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Science & Awards",
+    "question": "Which of the following statements regarding the 56th International Physics Olympiad (IPhO) 2026 is INCORRECT?",
+    "options": {
+      "A": "It was held in Bucaramanga, Colombia.",
+      "B": "India achieved its best-ever performance by securing 5 Gold Medals.",
+      "C": "India secured joint first place in the overall medal tally alongside Russia, China, Kazakhstan, South Korea, and Taiwan.",
+      "D": "The Indian team was trained by HBCSE, a National Centre of TIFR under DAE.",
+      "E": "This was the first time in the last decade that every Indian participant failed to win a Gold or Silver."
+    },
+    "answer": "E",
+    "rationale": "Option E is incorrect. The text specifically states: 'every Indian participant in the last decade has won Gold or Silver', highlighting a consistent decade of success, not failure. All 5 participants in 2026 won Gold. (Page 43, 77)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Appointments",
+    "sub_category": "Banking",
+    "question": "Assertion (A): The RBI approved the re-appointment of N. S. Vishwanathan as the Non-Executive Chairman of Axis Bank Limited.\nReason (R): He was appointed for a three-year tenure effective from October 27, 2026, to October 26, 2029.\n\nSelect the correct code:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Assertion (A) is true: N.S. Vishwanathan was re-appointed. Reason (R) is true: His tenure is from 2026 to 2029. While both are true facts about his appointment, the tenure duration (R) does not 'explain' why he was re-appointed. (Page 43, 77)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Appointments",
+    "sub_category": "International Economy",
+    "question": "Match the Indian-origin experts with their respective Task Forces appointed by the US Federal Reserve:\n\nColumn I:\n1. Raghuram Rajan\n2. Raj Chetty\n3. Asha Sharma\n\nColumn II:\nA. Data Task Force\nB. Productivity & Jobs Task Force\nC. Balance Sheet Policy Task Force\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-C, 3-B",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "A",
+    "rationale": "Raghuram Rajan leads the Balance Sheet Policy Task Force (1-C). Raj Chetty leads the Data Task Force (2-A). Asha Sharma leads the Productivity & Jobs Task Force (3-B). (Page 44-45, 77)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Mergers & Acquisitions",
+    "question": "Consider the following statements regarding Aviva Plc's acquisition in India:\n\n1. Aviva Plc acquired the remaining 26% stake in Aviva India from Dabur Invest Corp.\n2. Aviva Plc became the first foreign insurer to fully own its Indian life insurance business.\n3. Aviva Plc originally entered India through a Joint Venture with Dabur Invest Corp in 2001.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "2 only"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. Aviva acquired the remaining 26% stake, became the 1st fully foreign-owned life insurer, and its initial JV entry was in 2001. (Page 45, 78)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Mergers & Acquisitions",
+    "question": "Match the entities and financial figures related to the SBI Funds Management (SBIFM) stake sale:\n\nColumn I:\n1. Total stake sold by SBI\n2. Sale price per share\n3. Total amount raised by SBI\n4. Projected IPO size\n\nColumn II:\nA. Rs 11,700 crore\nB. 1.42%\nC. Rs 1,655 crore\nD. Rs 574\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-D, 3-C, 4-A",
+      "B": "1-C, 2-A, 3-D, 4-B",
+      "C": "1-B, 2-A, 3-C, 4-D",
+      "D": "1-D, 2-B, 3-A, 4-C",
+      "E": "1-B, 2-C, 3-A, 4-D"
+    },
+    "answer": "A",
+    "rationale": "SBI sold a 1.42% stake (1-B) at Rs 574 per share (2-D), raising Rs 1,655 crore (3-C) ahead of a projected Rs 11,700 crore IPO (4-A). (Page 45, 78)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space Exploration",
+    "question": "Which of the following statements is INCORRECT regarding ISRO's Integrated Main Parachute Airdrop Test (IMAT-05)?",
+    "options": {
+      "A": "It was conducted for the uncrewed Gaganyaan G1 mission.",
+      "B": "The test was performed at the ADRDE drop zone in Sheopur, Madhya Pradesh.",
+      "C": "The test utilized a simulated payload dropped from 2.5 km by an IAF IL-76 aircraft.",
+      "D": "The parachute system involves exactly 10 parachutes categorized into 4 types.",
+      "E": "The test was primarily aimed at verifying the supersonic combustion capabilities of the parachute material."
+    },
+    "answer": "E",
+    "rationale": "Option E is incorrect. The test was conducted to 'validate the Main Parachute System under maximum expected load conditions for the first uncrewed Gaganyaan G1 mission', not supersonic combustion capabilities. All other details (Sheopur MP, IL-76, 2.5km drop, 10 parachutes) are correct. (Page 47, 78)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space Exploration",
+    "question": "Arrange the following three Gaganyaan Crew Module (CM) tests conducted by ISRO based on their primary function (from structural integrity during fall -> separation of service module -> floatation in water):\n\n1. CMUS (Crew Module Up-Righting System)\n2. CS-CDS (Connect-Disconnect System)\n3. Apex Cover Separation\n\nSelect the logical sequence aligning with the given functional flow:",
+    "options": {
+      "A": "3, 2, 1",
+      "B": "2, 3, 1",
+      "C": "3, 1, 2",
+      "D": "1, 2, 3",
+      "E": "2, 1, 3"
+    },
+    "answer": "A",
+    "rationale": "The functional flow requested is: Structural integrity during fall/parachute deployment (Apex Cover Separation, 3) -> Separation of Service Module during re-entry (CS-CDS, 2) -> Floatation in water after splashdown (CMUS, 1). Thus, the sequence is 3, 2, 1. (Page 48, 79)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space Exploration",
+    "question": "Match the following space agencies/entities with their respective reusable or crewed missions tested/launched in July 2026:\n\nColumn I:\n1. JAXA\n2. MHI (Mitsubishi Heavy Industries)\n3. Roscosmos\n\nColumn II:\nA. Jointly developed the RV-X reusable launch vehicle technology.\nB. Operated the Soyuz MS-29 crewed mission to the ISS.\nC. Conducted the first lift-off and landing test of the RV-X prototype.\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-C, 3-B",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "A",
+    "rationale": "JAXA conducted the test (1-C). MHI jointly developed the RV-X with JAXA (2-A). Roscosmos operated the Soyuz MS-29 mission (3-B). (Page 49, 79)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space Exploration",
+    "question": "Assertion (A): The Soyuz MS-29 mission carried NASA astronaut Anil Menon along with Roscosmos cosmonauts Pyotr Dubrov and Anna Kikina.\nReason (R): This reflects the ongoing NASA-Roscosmos cross-flight partnership that allows astronauts and cosmonauts to fly on each other's commercial spacecraft.\n\nSelect the correct code:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Assertion (A) is true: The mission carried those three crew members. Reason (R) is true and correctly explains why a NASA astronaut was aboard a Russian Soyuz spacecraft—due to the specific cross-flight partnership agreement. (Page 49, 79)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Events",
+    "question": "Consider the following statements regarding the 8th Khelo India Youth Games (KIYG) 2026:\n\n1. It will be hosted by the state of Telangana.\n2. The event is scheduled for November 2026 with approximately 8,000 participants.\n3. The previous 7th edition was hosted by Haryana.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "A",
+    "rationale": "Statement 1 is correct (hosted by Telangana). Statement 2 is correct (Nov 2026, ~8,000 participants). Statement 3 is incorrect because the 7th edition was hosted by Bihar (though Maharashtra was the champion, followed by Haryana). (Page 51, 80)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Cricket",
+    "question": "Match the following cricketers inducted into the ICC Hall of Fame in 2026 with their respective notable milestones:\n\nColumn I:\n1. Sourav Ganguly\n2. Anjum Chopra\n3. Kevin Pietersen\n\nColumn II:\nA. 3rd Indian woman inducted.\nB. England's highest international run-scorer across all formats.\nC. 12th Indian overall and 10th Indian male cricketer inducted.\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-B, 2-C, 3-A",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Sourav Ganguly is the 12th Indian overall (1-C). Anjum Chopra is the 3rd Indian woman (2-A). Kevin Pietersen is England's highest international run-scorer across all formats (3-B). (Pages 52, 54, 80-81)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Tennis",
+    "question": "Which of the following pairings correctly matches the 2026 Wimbledon Mixed Doubles winners?",
+    "options": {
+      "A": "Marcelo Arévalo (El Salvador) / Jeļena Ostapenko (Latvia)",
+      "B": "Marc Polmans (Australia) / Storm Hunter (Australia)",
+      "C": "Harri Heliövaara (Finland) / Henry Patten (UK)",
+      "D": "Guo Hanyu (China) / Kristina Mladenovic (France)",
+      "E": "Alexander Zverev (Germany) / Karolína Muchová (Czechia)"
+    },
+    "answer": "A",
+    "rationale": "The Mixed Doubles title was won by Marcelo Arévalo (El Salvador) and Jeļena Ostapenko (Latvia), who defeated Marc Polmans and Storm Hunter. (Page 52, 81)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Athletics",
+    "question": "Match the following countries with their total medal counts at the Inaugural Asian U23 Athletics Championships 2026:\n\nColumn I:\n1. China\n2. Japan\n3. Uzbekistan\n4. India\n\nColumn II:\nA. 52 total medals\nB. 22 total medals\nC. 16 total medals\nD. 10 total medals\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-B, 3-D, 4-C",
+      "B": "1-A, 2-C, 3-D, 4-B",
+      "C": "1-B, 2-A, 3-C, 4-D",
+      "D": "1-A, 2-B, 3-C, 4-D",
+      "E": "1-C, 2-B, 3-A, 4-D"
+    },
+    "answer": "A",
+    "rationale": "China won 52 total medals (1-A). Japan won 22 total medals (2-B). Uzbekistan won 10 total medals (3-D). India won 16 total medals (4-C). (Page 54, 81)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Cricket",
+    "question": "Consider the following statements regarding the Indian Deaf Women's Cricket Team's series against Sri Lanka:\n\n1. It was the first-ever Women's T20I Deaf Cricket Series.\n2. India won the series 5-0.\n3. The tour was heavily supported financially by the Board of Control for Cricket in India (BCCI).\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statement 1 is correct. Statement 2 is correct (5-0 series sweep). Statement 3 is incorrect because the tour was supported by SIIPL (Serum Institute), Cyrus Poonawalla Group, and VPCF, not BCCI. (Page 55, 82)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Table Tennis",
+    "question": "Fill in the blanks regarding the upcoming Commonwealth Table Tennis Championship:\n\nDelhi CM Rekha Gupta unveiled _____ as the official mascot for the _____ Commonwealth Table Tennis Championship 2026 held at the Thyagaraj Stadium.",
+    "options": {
+      "A": "Shera ; 21st",
+      "B": "Mayur ; 22nd",
+      "C": "Mayur ; 20th",
+      "D": "Tiger ; 22nd",
+      "E": "Pari ; 24th"
+    },
+    "answer": "B",
+    "rationale": "The official mascot is 'Mayur' (peacock) for the 22nd Commonwealth Table Tennis Championship 2026 held in New Delhi. (Page 56, 82)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Obituary",
+    "sub_category": "Arts & Literature",
+    "question": "Assertion (A): Legendary playback singer S. Janaki was selected for the Padma Bhushan in 2013 but she declined the honour.\nReason (R): She won exactly 4 National Film Awards for Best Female Playback Singer during her career spanning six decades.\n\nSelect the correct code:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Assertion (A) is true (she declined the Padma Bhushan in 2013). Reason (R) is true (she won 4 National Awards). However, her winning 4 National Awards is a separate career fact and does not logically 'explain' why she declined the Padma Bhushan (the text says she declined it, but the reason was not her previous awards). (Page 57, 82)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Obituary",
+    "sub_category": "International Leaders",
+    "question": "Which of the following achievements is NOT attributed to the former Qatar Emir Sheikh Hamad bin Khalifa Al Thani, who passed away in July 2026?",
+    "options": {
+      "A": "He transformed Qatar into a global LNG investment hub.",
+      "B": "He launched the Al Jazeera media network.",
+      "C": "He established the Qatar Investment Authority (QIA).",
+      "D": "He peacefully abdicated in favour of his son, Sheikh Tamim bin Hamad Al Thani.",
+      "E": "He successfully hosted the 2022 FIFA World Cup during his active reign as Emir."
+    },
+    "answer": "E",
+    "rationale": "Option E is incorrect. While he oversaw preparations for the 2022 FIFA World Cup, he abdicated in 2013, so he did not actively reign during the 2022 World Cup itself. The text says he 'oversaw preparations for the 2022 FIFA World Cup and peacefully abdicated in 2013'. (Page 57, 82-83)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "Obituary",
+    "sub_category": "Literature",
+    "question": "Match the following works with their corresponding facts regarding the late Tamil writer Poomani:\n\nColumn I:\n1. Agnaadi\n2. Vekkai\n3. Karuvelam Pookkal\n\nColumn II:\nA. Won the Sahitya Akademi Award in 2014.\nB. Adapted into the film 'Asuran' directed by Vetrimaaran.\nC. Film directed by Poomani for NFDC in 1996.\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-B, 3-C",
+      "B": "1-B, 2-A, 3-C",
+      "C": "1-A, 2-C, 3-B",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-B, 2-C, 3-A"
+    },
+    "answer": "A",
+    "rationale": "'Agnaadi' won the Sahitya Akademi Award (1-A). 'Vekkai' was adapted into the film 'Asuran' (2-B). Poomani directed the film 'Karuvelam Pookkal' (3-C). (Page 58, 83)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Important Days",
+    "question": "Consider the following statements regarding the National Fish Farmers' Day (NFFD) 2026:\n\n1. It was observed on 10 July 2026, marking the 26th observance.\n2. The day marks the 1st induced breeding of Indian major carps in 1957 by Hiralal Chaudhury using the Hypophysation technique.\n3. India is the world's 1st largest fish producer, contributing ~15% of global fish production.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "2 only"
+    },
+    "answer": "A",
+    "rationale": "Statement 1 is correct. Statement 2 is correct. Statement 3 is incorrect because India is the 2nd largest fish producer, contributing ~8% (not 1st/15%) of global fish production. (Page 59, 83)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Population Data",
+    "question": "According to the World Population Review 2026, arrange the following global cities in descending order of their population (most populated to least among the group):\n\n1. Delhi (India)\n2. Kinshasa (DR Congo)\n3. Shanghai (China)\n4. Mumbai (India)\n5. Beijing (China)\n\nSelect the correct sequence:",
+    "options": {
+      "A": "3, 1, 2, 4, 5",
+      "B": "1, 3, 4, 2, 5",
+      "C": "3, 1, 4, 2, 5",
+      "D": "1, 3, 2, 4, 5",
+      "E": "3, 2, 1, 5, 4"
+    },
+    "answer": "A",
+    "rationale": "According to the top 5 most populated cities: 1. Shanghai (24M), 2. Delhi (23.3M), 3. Kinshasa (21.85M), 4. Mumbai (21.78M), 5. Beijing (21.57M). Sequence matches 3, 1, 2, 4, 5. (Page 60)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Important Days",
+    "question": "Which of the following statements regarding the International Day of Reflection and Commemoration of the 1995 Genocide in Srebrenica is INCORRECT?",
+    "options": {
+      "A": "It is observed annually on 11 July.",
+      "B": "The year 2026 marked its 2nd observance and the 31st anniversary of the genocide.",
+      "C": "The day was declared by UNGA Resolution A/RES/78/282 in May 2024.",
+      "D": "The 1995 genocide involved the killing of 8,000+ Bosnian Muslim men and boys.",
+      "E": "It was first observed globally in the year 1996 immediately following the genocide."
+    },
+    "answer": "E",
+    "rationale": "Option E is incorrect. The day was declared by UNGA in May 2024 and was first observed globally in 2024, not 1996. (Page 61, 83-84)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Important Days",
+    "question": "Assertion (A): World Horse Day is observed annually on 11 July to recognize the contribution of horses to human society.\nReason (R): The horse belongs to the Equus caballus species, a hoofed herbivorous mammal of the Equidae family.\n\nSelect the correct code:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Assertion (A) is true (World Horse Day is on 11 July). Reason (R) is true (gives the scientific name and family). However, its taxonomic classification is not the reason why a day is observed for it (the contribution to society is the reason). Thus, both are true but independent facts. (Page 61, 84)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Important Days",
+    "question": "Match the following historical milestones related to Malala Yousafzai with their respective years:\n\nColumn I:\n1. Started writing as BBC Urdu blogger 'Gul Makai'\n2. Survived a Taliban attack\n3. Awarded the Nobel Peace Prize\n\nColumn II:\nA. 2012\nB. 2014\nC. 2009\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-C, 3-B",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "A",
+    "rationale": "Blogger 'Gul Makai' in 2009 (1-C). Survived Taliban attack in 2012 (2-A). Nobel Peace Prize in 2014 (3-B). (Page 62, 84)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Important Days",
+    "question": "Consider the following statements regarding the International Day of Hope:\n\n1. It is observed annually on 12 July to promote hope as a fundamental force.\n2. The day's framework is based on the Adult Hope Scale (AHS) developed by C.R. Snyder.\n3. The initiative strongly supports SDG 3 (Health), SDG 4 (Quality Education), and SDG 8 (Decent Work & Economic Growth).\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. The day is observed on 12 July, relies on Snyder's Adult Hope Scale, and supports SDGs 3, 4, and 8. (Page 63, 84)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Budget",
+    "question": "Fill in the blanks regarding the Assam Budget FY27:\n\nAssam Finance Minister _____ presented the State Budget for FY27 with a total outlay of Rs _____, with the estimated receipts in the Consolidated Fund at Rs 1,51,843.23 crore.",
+    "options": {
+      "A": "Himanta Biswa Sarma ; 3,00,000 crore",
+      "B": "Jayanta Malla Baruah ; 2,85,084 crore",
+      "C": "N. Chandrababu Naidu ; 2,50,000 crore",
+      "D": "Jayanta Malla Baruah ; 1,85,084 crore",
+      "E": "Himanta Biswa Sarma ; 2,85,084 crore"
+    },
+    "answer": "B",
+    "rationale": "Jayanta Malla Baruah, Finance Minister of Assam, presented the budget with an outlay of Rs 2,85,084 crore. (Page 63, 84)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Initiatives",
+    "question": "Consider the following statements regarding Google India's MoU with the Government of Tripura:\n\n1. The MoU aims to cultivate an annual pipeline of 5,000 technical graduates.\n2. The initiative includes establishing the Tripura IT & Data Ecosystem Zone (TIDEZ).\n3. It will feature a 10-acre IT Park and an AI Centre of Excellence (CoE).\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. The MoU focuses on 5000 graduates, establishing TIDEZ, a 10-acre IT Park, and an AI CoE. (Page 64, 85)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Bilateral Agreements",
+    "question": "Hybrid Question: During PM Modi's visit to Australia, multiple sector-specific collaborations were announced. Among these, the 'Rooftop Solar Training Academy' was operationalised at which of the following institutions in India?",
+    "options": {
+      "A": "Satyajit Ray Film and Television Institute (SRFTI)",
+      "B": "Pandit Deendayal Energy University (PDEU), Gujarat",
+      "C": "National Skill Training Institute (NSTI), Bhubaneswar",
+      "D": "IIT Madras",
+      "E": "Indian Institute of Management Bangalore (IIM-B)"
+    },
+    "answer": "B",
+    "rationale": "Under the 'Renewables' outcome of the Australia visit, the Rooftop Solar Training Academy was operationalised at PDEU (Pandit Deendayal Energy University), Gujarat. (Page 28)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 2nd Week"
+  }
+]
