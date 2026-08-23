@@ -94,7 +94,7 @@
   .genre-card{
     position:relative;
     border-radius:18px;
-    padding:20px 14px;
+    padding:24px 14px;
     text-align:center;
     cursor:pointer;
     border:1.5px solid rgba(255,255,255,.08);
@@ -103,18 +103,11 @@
     user-select:none;
   }
   .genre-card:active{transform:scale(.96);}
-  .genre-card .g-icon{font-size:26px;display:block;margin-bottom:8px;}
   .genre-card .g-name{
     font-family:var(--ui-display);
     font-weight:700;
     font-size:15px;
     letter-spacing:.3px;
-  }
-  .genre-card .g-tag{
-    display:block;
-    font-size:11px;
-    color:#8f8c85;
-    margin-top:3px;
   }
   .genre-card[data-g="romance"]{background:linear-gradient(150deg,rgba(229,143,160,.10),rgba(255,255,255,.02));}
   .genre-card[data-g="comedy"]{background:linear-gradient(150deg,rgba(255,180,84,.12),rgba(255,255,255,.02));}
@@ -654,13 +647,6 @@
 <script>
 // ================= CONFIG =================
 const STORY_FOLDER = 'Story-JSONs/';
-const GENRE_META = {
-  romance: {icon:'💌', tag:'slow, tender'},
-  comedy:  {icon:'😂', tag:'quick, absurd'},
-  fantasy: {icon:'🔮', tag:'myth, magic'},
-  mystery: {icon:'🕵️', tag:'dark, unsolved'}
-};
-const DEFAULT_META = {icon:'📖', tag:'flash fiction'};
 const GENRE_ORDER = ['romance','comedy','fantasy','mystery'];
 
 // ================= STATE =================
@@ -773,15 +759,12 @@ function buildGenreGrid(){
   });
   genreGrid.innerHTML = '';
   genres.forEach(g => {
-    const meta = GENRE_META[g] || DEFAULT_META;
     const card = document.createElement('div');
     card.className = 'genre-card';
     card.dataset.g = g;
     card.innerHTML =
       '<span class="check"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>' +
-      '<span class="g-icon">' + meta.icon + '</span>' +
-      '<span class="g-name">' + capitalize(g) + '</span>' +
-      '<span class="g-tag">' + meta.tag + '</span>';
+      '<span class="g-name">' + capitalize(g) + '</span>';
     card.addEventListener('click', () => {
       card.classList.toggle('selected');
       const anySelected = genreGrid.querySelectorAll('.genre-card.selected').length > 0;
