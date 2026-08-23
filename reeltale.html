@@ -557,6 +557,17 @@
     cursor:pointer;
   }
   #restart-btn:active{transform:scale(.97);}
+  #reset-history-btn{
+    margin-top:18px;
+    background:none;
+    border:none;
+    color:#6f6c66;
+    font-size:12px;
+    text-decoration:underline;
+    cursor:pointer;
+    font-family:var(--ui-body);
+  }
+  #reset-history-btn:active{color:#9a978f;}
 </style>
 </head>
 <body>
@@ -639,6 +650,7 @@
       <h2>That's all for now</h2>
       <p>You've reached the end of today's stories. Keep coming back for more.</p>
       <button id="restart-btn">Choose genres again</button>
+      <button id="reset-history-btn">Reset read history</button>
     </div>
   </div>
 
@@ -655,6 +667,32 @@ let queue = [];
 let storyIndex = 0;
 let slideIndex = 0;
 let likeCounts = {};
+let pendingRereadGenres = null; // set when "no unread stories" prompt is showing
+
+// ================= READ HISTORY (localStorage, per-browser) =================
+const READ_KEY = 'reeltale_read_ids';
+function loadReadSet(){
+  try{
+    const raw = localStorage.getItem(READ_KEY);
+    return new Set(raw ? JSON.parse(raw) : []);
+  } catch(e){ return new Set(); }
+}
+function saveReadSet(){
+  try{ localStorage.setItem(READ_KEY, JSON.stringify([...readSet])); }
+  catch(e){ /* storage unavailable (private mode, quota, etc.) — fail silently */ }
+}
+let readSet = loadReadSet();
+function isRead(id){ return readSet.has(id); }
+function markRead(id){
+  if (!id || readSet.has(id)) return;
+  readSet.add(id);
+  saveReadSet();
+}
+function sameGenreSet(a, b){
+  if (a.length !== b.length) return false;
+  const sa = [...a].sort(), sb = [...b].sort();
+  return sa.every((g, i) => g === sb[i]);
+}
 
 // ================= DOM =================
 const genreScreen = document.getElementById('genre-screen');
@@ -679,6 +717,7 @@ const arrowDown = document.getElementById('arrow-down');
 const arrowLeft = document.getElementById('arrow-left');
 const arrowRight = document.getElementById('arrow-right');
 const restartBtn = document.getElementById('restart-btn');
+const resetHistoryBtn = document.getElementById('reset-history-btn');
 
 // ================= LOAD STORIES FROM /Story-JSONs =================
 // Browsers can't list a folder's contents directly, so we try two strategies:
@@ -769,6 +808,11 @@ function buildGenreGrid(){
       card.classList.toggle('selected');
       const anySelected = genreGrid.querySelectorAll('.genre-card.selected').length > 0;
       startBtn.classList.toggle('ready', anySelected);
+      // selection changed — any pending "re-read?" prompt no longer applies
+      pendingRereadGenres = null;
+      startBtn.textContent = 'Start reading';
+      genreStatus.classList.remove('error');
+      genreStatus.textContent = '';
     });
     genreGrid.appendChild(card);
   });
@@ -799,7 +843,28 @@ init();
 startBtn.addEventListener('click', () => {
   if (!startBtn.classList.contains('ready')) return;
   const selected = Array.from(genreGrid.querySelectorAll('.genre-card.selected')).map(c => c.dataset.g);
-  queue = ALL_STORIES.filter(s => selected.includes(s.genre));
+  const matching = ALL_STORIES.filter(s => selected.includes(s.genre));
+  const unread = matching.filter(s => !isRead(s.id));
+
+  let storiesToQueue;
+  if (unread.length > 0){
+    storiesToQueue = unread;
+  } else if (pendingRereadGenres && sameGenreSet(pendingRereadGenres, selected)){
+    // user already saw the "no new stories" prompt and hit Start again — re-read everything
+    storiesToQueue = matching;
+  } else {
+    // nothing unread yet in this genre set — ask before re-showing read stories
+    pendingRereadGenres = selected;
+    genreStatus.classList.remove('error');
+    genreStatus.textContent = "You've read all the stories in these genres. Tap Start again to re-read them.";
+    startBtn.textContent = 'Re-read stories';
+    return;
+  }
+
+  pendingRereadGenres = null;
+  startBtn.textContent = 'Start reading';
+  genreStatus.textContent = '';
+  queue = storiesToQueue;
   shuffle(queue);
   storyIndex = 0;
   slideIndex = 0;
@@ -905,6 +970,8 @@ function edgeBounce(dir){
 }
 
 function nextStory(){
+  const current = queue[storyIndex];
+  if (current) markRead(current.id);
   if (storyIndex < queue.length - 1){
     storyIndex++;
     slideIndex = 0;
@@ -990,9 +1057,20 @@ function pulse(el){
 restartBtn.addEventListener('click', () => {
   genreGrid.querySelectorAll('.genre-card.selected').forEach(c => c.classList.remove('selected'));
   startBtn.classList.remove('ready');
+  startBtn.textContent = 'Start reading';
+  pendingRereadGenres = null;
+  genreStatus.classList.remove('error');
+  genreStatus.textContent = '';
   stage.classList.add('hidden');
   endScreen.classList.add('hidden');
   genreScreen.classList.remove('hidden');
+});
+
+resetHistoryBtn.addEventListener('click', () => {
+  readSet = new Set();
+  saveReadSet();
+  resetHistoryBtn.textContent = 'History cleared';
+  setTimeout(() => { resetHistoryBtn.textContent = 'Reset read history'; }, 1500);
 });
 </script>
 </body>
