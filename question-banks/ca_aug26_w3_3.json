@@ -1,0 +1,805 @@
+[
+  {
+    "category": "National Affairs",
+    "sub_category": "NITI Aayog Reports",
+    "question": "Which of the following is NOT one of the specific components of the 'four-pronged strategy' suggested by NITI Aayog in its 3rd thematic report on Professional Services?",
+    "options": {
+      "A": "Harnessing emerging trends to transform professional services",
+      "B": "Elevating professional services within the wider services value chain",
+      "C": "Restricting Foreign Direct Investment (FDI) in legacy professional services like legal and accounting",
+      "D": "Adopting global best practices",
+      "E": "Promoting continuous professional development"
+    },
+    "answer": "C",
+    "rationale": "The four-pronged strategy includes harnessing emerging trends, elevating professional services within the value chain, adopting global best practices, and promoting continuous professional development. Restricting FDI is not mentioned as part of this strategy; rather, the report highlights overcoming business restrictions as a barrier. (Page 50)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Cybersecurity",
+    "question": "Consider the following statements regarding the 'Cyber Kushti 2026' hackathon:\n\n1. It tests human cybersecurity judgment using Artificial Intelligence (AI) scenarios.\n2. Participants are required to analyze AI findings, logs, and scans to detect vulnerabilities.\n3. The hackathon is jointly organized by NIELIT and the ISAC Foundation, with CERT-In acting as a partner.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All statements are correct. Cyber Kushti 2026 focuses on testing human judgment using AI scenarios by analyzing logs and scans. It is organized by NIELIT + ISAC Foundation with CERT-In as a partner. (Pages 8, 50)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Defence Innovations",
+    "question": "Fill in the blanks regarding MIDHANI's recent certification:\n\nMishra Dhatu Nigam Limited (MIDHANI) became the first Indian company to secure the GE Aerospace _______ approval, which audits Certified Material Test Laboratories (CMTLs) for testing _______, titanium alloys, and high-performance metals.",
+    "options": {
+      "A": "S300 ; advanced polymers",
+      "B": "S400 ; superalloys",
+      "C": "S500 ; composite carbon",
+      "D": "S400 ; enriched uranium",
+      "E": "S200 ; superalloys"
+    },
+    "answer": "B",
+    "rationale": "MIDHANI secured the GE Aerospace S400 lab approval, which audits CMTLs for testing superalloys, titanium alloys, and high-performance metallic materials. (Pages 9, 50)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Health & Heritage",
+    "question": "Match the entity involved in the recent MoU for the Digitization of Medical Manuscripts with its respective jurisdiction or location:\n\nColumn I:\n1. NIIMH\n2. SEMIRI\n3. Central Council for Research in Ayurvedic Sciences (CCRAS)\n\nColumn II:\nA. Under Ministry of AYUSH\nB. Under CCRAS\nC. Kumaranalloor, Kottayam, Kerala\n\nSelect the correct code:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-A, 2-C, 3-B",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "A",
+    "rationale": "NIIMH works under CCRAS (1-B); SEMIRI is located in Kumaranalloor, Kottayam, Kerala (2-C); and CCRAS functions under the Ministry of AYUSH (3-A). (Pages 10, 51)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Internal Security",
+    "question": "Assertion (A): The Indrajaal Ranger Mobile ADPV is designed for border patrolling, VVIP protection, and critical infrastructure security.\nReason (R): It is India’s only Anti-Rogue Drone Technology Committee (ARDTC)-approved ADPV and uses an AI-based system via SkyOS.\n\nSelect the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both Assertion (A) and Reason (R) are factually correct statements according to the text. However, being ARDTC-approved and using SkyOS (Reason) are technological qualifications, not the direct explanatory reason *why* it is deployed for VVIP and border security, which is based on operational requirements by the MHA. (Pages 10, 51)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Defence Procurements",
+    "question": "Arrange the following numeric values associated with the MoD and General Atomics (GA-ASI) RPAS contract in ascending order:\n\n1. Duration of the lease in months\n2. Number of MQ-9B Sea Guardian RPAS leased\n3. Contract value in Rs Crores\n\nSelect the correct arrangement:",
+    "options": {
+      "A": "1 < 2 < 3",
+      "B": "2 < 1 < 3",
+      "C": "3 < 1 < 2",
+      "D": "2 < 3 < 1",
+      "E": "1 < 3 < 2"
+    },
+    "answer": "B",
+    "rationale": "The values are: Number of RPAS = 2; Duration = 30 months; Contract value = Rs 1,943 crore. Ascending order is 2 < 30 < 1943, which corresponds to 2 < 1 < 3. (Pages 10, 51)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Energy & Infrastructure",
+    "question": "Tata Power and IIT Bombay signed a Master Research Agreement (MRA) to accelerate clean energy technologies. Which of the following is NOT listed as a core focus area of this partnership?",
+    "options": {
+      "A": "Smart grids",
+      "B": "Carbon capture",
+      "C": "Electric mobility",
+      "D": "Offshore wind turbine aerodynamics",
+      "E": "AI in power systems"
+    },
+    "answer": "D",
+    "rationale": "The core focus areas listed are smart grids, energy storage, electric mobility, AI in power systems, cybersecurity, carbon capture, and circular economy. Offshore wind turbine aerodynamics is not mentioned. (Pages 11, 51-52)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Energy & Infrastructure",
+    "question": "Consider the following statements regarding the GoI's Incentive Scheme for the Promotion of Domestic PNG Connections:\n\n1. It targets a current baseline of approximately 1.74 crore domestic PNG connections in India.\n2. The implementation of the scheme will be carried out in two tranches over a period of six months.\n3. It offers 200 Standard Cubic Metre (SCM) of NAPM (Non-Administered Price Mechanism) gas per incremental billed connection.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 2",
+      "E": "Only 2 and 3"
+    },
+    "answer": "C",
+    "rationale": "Statement 3 is incorrect because the incentive is 200 SCM of APM (Administered Pricing Mechanism) gas, not NAPM gas. Statements 1 and 2 are correct. (Pages 11, 52)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Electronic Manufacturing",
+    "question": "Data Interpretation: MeitY approved 31 more projects under the ECMS, covering 20 target segment products. Arrange the following product categories in descending order based on their numerical quantity in the target segment:\n\n1. Bare components\n2. Supply chain products\n3. Sub-assemblies\n4. Capital goods\n\nSelect the correct order:",
+    "options": {
+      "A": "1 > 2 > 3 > 4",
+      "B": "1 > 3 > 2 > 4",
+      "C": "2 > 1 > 4 > 3",
+      "D": "4 > 3 > 2 > 1",
+      "E": "1 > 2 > 4 > 3"
+    },
+    "answer": "A",
+    "rationale": "Based on the text, the target segment products are: bare components (10), supply chain products (6), sub-assemblies (3), and capital goods (1). Descending order: 10 > 6 > 3 > 1, mapping to 1 > 2 > 3 > 4. (Pages 12, 52)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Trade Data",
+    "question": "Arrange the following categories of India's external trade for July 2026 in descending order of their financial value (in USD billion):\n\n1. Merchandise Imports\n2. Merchandise Exports\n3. Services Exports\n4. Services Imports\n\nSelect the correct arrangement:",
+    "options": {
+      "A": "1 > 2 > 3 > 4",
+      "B": "1 > 3 > 2 > 4",
+      "C": "2 > 1 > 3 > 4",
+      "D": "1 > 2 > 4 > 3",
+      "E": "2 > 3 > 1 > 4"
+    },
+    "answer": "A",
+    "rationale": "The values for July 2026 are: Merchandise Imports (USD 76.22 bn), Merchandise Exports (USD 44.24 bn), Services Exports (USD 35.89 bn), Services Imports (USD 18.94 bn). Therefore, the descending order is 1 > 2 > 3 > 4. (Pages 12, 74)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Employment Data",
+    "question": "Assertion (A): The NSO released its 16th bulletin of the Periodic Labour Force Survey (PLFS) for July 2026, showing an overall Unemployment Rate (UR) drop to 5.1%.\nReason (R): The survey results strictly measure employment metrics using the Current Weekly Status (CWS) approach for persons of age 15 years and above.\n\nSelect the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both Assertion and Reason are factually correct statements based on the PLFS methodology mentioned in the text. However, the use of the CWS approach (methodology) is not the causal reason for the economic *drop* in the unemployment rate. (Pages 13, 52)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Defence Indigenisation",
+    "question": "Match the defense items listed under the 6th Positive Indigenisation List (PIL) with their respective category on the SRIJAN portal:\n\nColumn I:\n1. Konkurs-M\n2. Su-30MKI\n3. BMP-II\n4. MRSAM\n\nColumn II:\nA. Platform\nB. System (Missile)\n\nSelect the correct matching code:",
+    "options": {
+      "A": "1-A, 2-A, 3-B, 4-B",
+      "B": "1-B, 2-A, 3-A, 4-B",
+      "C": "1-B, 2-B, 3-A, 4-A",
+      "D": "1-A, 2-B, 3-A, 4-B",
+      "E": "1-B, 2-A, 3-B, 4-A"
+    },
+    "answer": "B",
+    "rationale": "According to the notes, Platforms include ALH, LUH, Su-30MKI, LCA, T-72, T-90, BMP-II. Systems (missiles) include Konkurs-M, Invar, MRSAM. Therefore: Konkurs-M (System), Su-30MKI (Platform), BMP-II (Platform), MRSAM (System). (Page 13)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Defence Events",
+    "question": "Hybrid Question: Evaluate the following numeric and geographical parameters related to the NCC All India Girls High Altitude Long Trek ‘Aparajita – Parang La 2026’:\n\n1. It involves 28 NCC girl cadets led by 3 women officers.\n2. The expedition spans a duration of 30 days.\n3. The trek covers around 250 km from Spiti in Himachal Pradesh to Ladakh via Parang La at an altitude of 5,578 m.\n\nWhich of the above statements is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 3"
+    },
+    "answer": "D",
+    "rationale": "All statements precisely match the numerical and geographic details provided for the 'Aparajita - Parang La 2026' expedition flagged off by Defence Minister Rajnath Singh. (Pages 14, 53)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Digital Infrastructure",
+    "question": "The Digital Bharat Nidhi (DBN) signed an agreement to digitise Gram Panchayats in Chhattisgarh. Which of the following entities is NOT a signatory or partner to this specific MoU as per the state-led model?",
+    "options": {
+      "A": "Department of Telecommunications (DoT)"
+    },
+    "answer": "B",
+    "rationale": "The agreement was signed between DBN (under DoT), Chhattisgarh State BharatNet Infrastructure Limited (CSBIL), Bharat Sanchar Nigam Limited (BSNL), and Chhattisgarh Infotech Promotion Society (CHiPS). RailTel is not mentioned. (Pages 14, 53)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week",
+    "options": {
+      "A": "Digital Bharat Nidhi (DBN)",
+      "B": "RailTel Corporation of India",
+      "C": "Bharat Sanchar Nigam Limited (BSNL)",
+      "D": "Chhattisgarh Infotech Promotion Society (CHiPS)",
+      "E": "Chhattisgarh State BharatNet Infrastructure Limited (CSBIL)"
+    }
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Infrastructure Projects",
+    "question": "Fill in the blanks regarding the Cabinet approvals for infrastructure projects:\n\nThe CCEA approved the 4-laning of the _______ km long Muzaffarpur-Sitamarhi-Sonbarsa section of NH-22 in Bihar, which features 7 major bridges including a 340-meter bridge over the _______ river.",
+    "options": {
+      "A": "82.578 ; Bagmati",
+      "B": "85.250 ; Kosi",
+      "C": "75.500 ; Ganga",
+      "D": "82.578 ; Gandak",
+      "E": "90.125 ; Bagmati"
+    },
+    "answer": "A",
+    "rationale": "The project covers an 82.578 km section of NH-22 in Bihar and includes 7 major bridges, notably the 340 m Bagmati bridge. (Pages 15, 53)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Taxation & Legislative Amendments",
+    "question": "Assertion (A): The Taxation and Other Laws (Amendment) Act, 2026 seeks to attract foreign capital by easing offshore norms and simplifying tax exemptions for foreign firms using Indian data centres.\nReason (R): The Act imposes a high 35% tax on Special Purpose Vehicle (SPV) Trusts to balance the revenue loss from these exemptions.\n\nSelect the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true as the Act simplifies tax exemptions and eases offshore norms. Reason (R) is false because the SPV tax is set at 25%, not 35%. (Pages 15, 53, 75)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Women Empowerment & Refugee Rights",
+    "question": "Consider the following entities involved in the MoU to advance refugee education and inclusion in Tamil Nadu:\n\n1. United Nations High Commissioner for Refugees (UNHCR)\n2. Southern India Chamber of Commerce and Industry (SICCI)\n3. Department of Social Work, Ethiraj College for Women\n\nWhich of these acts specifically as the 'nodal agency' for the implementation of this agreement?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Both 1 and 2",
+      "E": "All 1, 2, and 3 equally act as nodal agencies"
+    },
+    "answer": "C",
+    "rationale": "According to the handwritten notes, the Department of Social Work, Ethiraj College acts as the nodal agency for implementation. (Pages 16, 75)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Women Empowerment",
+    "question": "Assertion (A): The 'Yashoda AI' programme organized by the NCW in August 2026 at Lovely Professional University aims to promote women's AI literacy and digital empowerment.\nReason (R): Yashoda AI was a newly conceived initiative launched for the very first time in Jalandhar, Punjab in August 2026.\n\nSelect the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true. Reason (R) is false because Yashoda AI was originally launched on 22 May 2025 at Mahatma Jyotiba Phule Rohilkhand University, Bareilly, UP, not for the first time in August 2026. (Page 54)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Environment & Marine Resources",
+    "question": "Hybrid Question: Evaluate the biological and technical specifics from the CMLRE report on Deep-Sea Fishery Resources:\n\n1. The report highlights the Mesopelagic zone (200-1000m) as rich in lanternfishes, shrimps, and cephalopods.\n2. The vessel FORV Sagar Sampada conducted 400+ cruises over ~40 years to build the research base.\n3. The Angria Bank and Kollam Bank are identified as ecologically significant hotspots.\n\nWhich of the above statements is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All three statements are correct and accurately reflect the technical data extracted from the CMLRE report and the handwritten notes. (Pages 17, 54, 76)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Bilateral Defence",
+    "question": "Arrange the outcomes/events of the Japan-India Defence Ministers' Meeting (DMM) in New Delhi as detailed in the exam hints:\n\n1. Convening a Defence Industry Forum.\n2. Setting up a Working Group (WG) headed at the Director-General (DG)/Joint Secretary level.\n3. Signing of a MoA on Maritime Security Cooperation.\n\nSelect the valid sequence of these key outcomes as listed:",
+    "options": {
+      "A": "3 -> 2 -> 1",
+      "B": "1 -> 2 -> 3",
+      "C": "2 -> 1 -> 3",
+      "D": "3 -> 1 -> 2",
+      "E": "1 -> 3 -> 2"
+    },
+    "answer": "A",
+    "rationale": "Based on the Exam Hints section, the Key Outcomes are listed as: Signing of MoA on Maritime Security Cooperation; setting up a WG headed at the DG/Joint Secretary level; convene a Defence Industry Forum. (Page 76)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Digital Infrastructure",
+    "question": "Match the core platform/tool involved in the MeitY-PhonePe MoU with its intended operational purpose:\n\nColumn I:\n1. PhonePe PulsePro\n2. PM GatiShakti National Master Plan\n3. Indus AppStore\n\nColumn II:\nA. Platform managed by BISAG-N for data-driven infrastructure planning\nB. Startup ecosystem support via DPIIT recognition\nC. Transaction-based data intelligence tool for planners\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-B, 2-C, 3-A"
+    },
+    "answer": "A",
+    "rationale": "PhonePe PulsePro provides transaction-based insights (1-C). The PM GatiShakti portal is managed by BISAG-N (2-A). The Indus AppStore access supports DPIIT-recognized startups (3-B). (Pages 18, 55, 76)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Judiciary",
+    "question": "With the Union Cabinet's approval of a permanent bench in Ladakh, which of the following represents the complete set of judicial seats for the common High Court of Jammu & Kashmir and Ladakh?",
+    "options": {
+      "A": "Jammu, Srinagar, and Leh",
+      "B": "Jammu, Srinagar, and Kargil",
+      "C": "Srinagar, Leh, and Kargil",
+      "D": "Jammu, Srinagar, and Ladakh",
+      "E": "Jammu, Anantnag, and Ladakh"
+    },
+    "answer": "D",
+    "rationale": "The common HC currently has two seats in Srinagar and Jammu, with the new bench approved specifically for 'Ladakh', making it the third judicial location. (Pages 18, 55, 76-77)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Industry & Academia",
+    "question": "Consider the following statements regarding the Jindal Steel and IIT Hyderabad MoU:\n\n1. It aims to establish a Centre of Excellence (CoE) for Advanced Steel Solutions.\n2. The CoE will focus heavily on High-Strength, Value-Added and Value-Engineered Steel Products.\n3. The CoE is to be set up at the IIT Hyderabad campus located in the Ranga Reddy district of Telangana.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 3",
+      "E": "None of the above"
+    },
+    "answer": "C",
+    "rationale": "Statement 3 is incorrect because the IIT Hyderabad campus is located in Kandi, *Sangareddy* district, Telangana, not Ranga Reddy district. Statements 1 and 2 are correct. (Pages 19, 55, 77)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Infrastructure Projects",
+    "question": "Data Interpretation: Paradip Port signed concession agreements for three mechanisation projects worth Rs 1,580.36 crore. Match the capacity in Million Tonnes Per Annum (MTPA) with the respective project:\n\nColumn I:\n1. 5 MTPA\n2. 8 MTPA\n3. 10 MTPA\n\nColumn II:\nA. Captive CQ-III mechanisation project\nB. South Quay mechanisation project\nC. Multipurpose Berth mechanisation project\n\nSelect the correct code:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-A, 2-C, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "A",
+    "rationale": "According to the Exam Hints: 5 MTPA is the South Quay mechanisation project (1-B); 8 MTPA is the Multipurpose Berth mechanisation project (2-C); 10 MTPA is the captive CQ-III mechanisation project (3-A). (Page 77)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Foreign Trade Policy",
+    "question": "Assertion (A): Under the revised FTP 2023 guidelines, eligible rupee payments for exports to Nepal and Bhutan qualify for FTP benefits and count towards the fulfilment of export obligations.\nReason (R): Nepal and Bhutan are explicitly exempted from the Asian Clearing Union (ACU) rules and follow a separate mechanism denominated solely in INR as per RBI guidelines.\n\nSelect the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "D",
+    "rationale": "Assertion (A) is false. The DGFT clarified that eligible rupee payments for exports to any other country *except* Nepal and Bhutan qualify for FTP benefits (they are exceptions). Reason (R) is true; exports to Nepal/Bhutan must be denominated and settled in INR as per specific RBI guidelines, separating them from standard FTP export benefits in this context. (Pages 20, 56, 77)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Cultural & Sports Governance",
+    "question": "Fill in the blanks regarding the MALHAR 2026 event:\n\nMALHAR 2026, a youth-centric _______-themed celebration of Indian classical music, was inaugurated by Vice President C. P. Radhakrishnan and organized by _______ in New Delhi.",
+    "options": {
+      "A": "Monsoon ; Antar Hriday Connect",
+      "B": "Spring ; SPIC MACAY",
+      "C": "Monsoon ; Sangeet Natak Akademi",
+      "D": "Winter ; Antar Hriday Connect",
+      "E": "Monsoon ; IGNCA"
+    },
+    "answer": "A",
+    "rationale": "MALHAR 2026 is a monsoon-themed celebration of Indian classical music organized by Antar Hriday Connect in New Delhi. (Pages 20, 56, 77)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Sports Administration",
+    "question": "Consider the following statements regarding the proposed National Coach Accreditation Board (NCAB):\n\n1. It aims to standardise coaching quality and enhance India’s sports ecosystem.\n2. The recommendation came from a task force led by Pullela Gopichand.\n3. The announcement was made during the 63rd Governing Body Meeting of the Indian Olympic Association (IOA).\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 2"
+    },
+    "answer": "A",
+    "rationale": "Statement 3 is incorrect because the announcement was made during the 63rd Governing Body Meeting of the Sports Authority of India (SAI), not the IOA. Statements 1 and 2 are correct. (Pages 21, 56, 77-78)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Rural Development",
+    "question": "Arrange the numerical targets for the DAY-NRLM 'National Campaign on Entrepreneurship-II' in descending order:\n\n1. Number of SHG women to be trained\n2. Number of producer group members to be added\n3. Number of enterprises to be formalised\n4. Number of SHG members onboarded on e-commerce platforms\n\nSelect the correct arrangement:",
+    "options": {
+      "A": "1 > 2 > 3 > 4",
+      "B": "2 > 1 > 4 > 3",
+      "C": "1 > 3 > 2 > 4",
+      "D": "1 > 2 > 4 > 3",
+      "E": "3 > 1 > 2 > 4"
+    },
+    "answer": "A",
+    "rationale": "Targets: SHG women trained (5 Lakh) > Producer group members (2 Lakh) > Enterprises formalised (50,000) > SHG members on e-commerce (25,000). Thus, 1 > 2 > 3 > 4. (Pages 21, 56, 78)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Environmental Conservation",
+    "question": "Match the specific focus themes and organisms targeted for conservation in the 'Guide to Grasslands and ONEs' with their functional ecology:\n\nColumn I:\n1. Pastoralism\n2. Carbon sequestration\n3. Fire ecology\n\nColumn II:\nA. Management of scrublands and savannas\nB. Enhancing soil organic matter in open ecosystems\nC. Supporting grazing-based community livelihoods\n\nSelect the most logical alignment as inferred from the MoEFCC themes:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-B, 2-A, 3-C",
+      "C": "1-A, 2-C, 3-B",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-B, 2-C, 3-A"
+    },
+    "answer": "A",
+    "rationale": "Based on standard ecological principles aligned with the MoEFCC themes mentioned: Pastoralism links to grazing/livelihoods (C); Carbon sequestration links to soil organic matter (B); Fire ecology is a key management tool for savannas/scrublands (A). (Page 78)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Bilateral Defence",
+    "question": "Hybrid Question: The India-Armenia MoU on defence partnership was signed during Defence Secretary Rajesh Kumar Singh's visit to Yerevan. Who among the following Armenian officials was NOT directly cited in the document as part of these bilateral discussions?",
+    "options": {
+      "A": "Suren Papikyan",
+      "B": "Davit Tadevosyan",
+      "C": "Armenian Defence Minister",
+      "D": "Minister of High Tech Industry",
+      "E": "Armenian Foreign Minister"
+    },
+    "answer": "E",
+    "rationale": "The discussions involved Defence Minister Suren Papikyan and Minister of High Tech Industry Davit Tadevosyan. The Armenian Foreign Minister is not mentioned. (Pages 22, 57, 78)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Bilateral Military Exercises",
+    "question": "Trace the chronological evolution of the India-Thailand Joint Military Exercise from its inception:\n\n1. Renamed as MAITREE.\n2. Conducted at Foreign Training Node, Umroi, Meghalaya (14th edition).\n3. Initiated under the name TICAFE.\n4. Conducted at Vibhavadi Rangsit Camp, Surat Thani (15th edition).\n\nSelect the correct historical timeline:",
+    "options": {
+      "A": "3 -> 1 -> 2 -> 4",
+      "B": "1 -> 3 -> 2 -> 4",
+      "C": "3 -> 2 -> 1 -> 4",
+      "D": "1 -> 2 -> 3 -> 4",
+      "E": "3 -> 1 -> 4 -> 2"
+    },
+    "answer": "A",
+    "rationale": "The exercise started as TICAFE in 2006 (3), was renamed MAITREE in 2013 (1), held its 14th edition in Umroi, Meghalaya in 2025 (2), and its 15th edition in Thailand in 2026 (4). Order: 3 -> 1 -> 2 -> 4. (Pages 23, 57, 78)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Diplomatic Engagements",
+    "question": "Consider the official itinerary of COAS General Dhiraj Seth in Nepal. Which of the following locations is correctly paired with the ceremonial event that took place there?",
+    "options": {
+      "A": "Tundikhel : Received a Guard of Honour",
+      "B": "Nepali Army Headquarters : Laid a wreath at the Army Pavilion",
+      "C": "Rashtrapati Bhawan (Sheetal Niwas) : Conferred honorary rank of General",
+      "D": "Tundikhel : DGMO briefing",
+      "E": "Sheetal Niwas : Bilateral talks with Ashok Raj Sigdel"
+    },
+    "answer": "C",
+    "rationale": "He laid a wreath at Tundikhel, received a Guard of Honour at the Nepali Army HQ, and was conferred the honorary rank at Rashtrapati Bhawan (Sheetal Niwas) by President Ramchandra Paudel. (Pages 23, 57, 78-79)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Diplomatic Engagements",
+    "question": "The 4th India-Singapore Ministerial Roundtable (ISMR) formalized several strategic agreements. Which of the following MoUs/LoIs is INCORRECTLY paired?",
+    "options": {
+      "A": "Food Safety: FSSAI (India) and SFA (Singapore)",
+      "B": "Culture & Youth: MoPSW (India) and Ministry of Culture, Community and Youth (Singapore)",
+      "C": "Telecom/Media: TRAI (India) and IMDA (Singapore)",
+      "D": "Skills Development: MSDE (India) and Ministry of Manpower (Singapore)",
+      "E": "All A, B, and C are correctly paired as per the document."
+    },
+    "answer": "D",
+    "rationale": "Option D (MSDE and Ministry of Manpower) is not listed among the specific MoUs/LoIs signed in the document. The others (FSSAI-SFA, MoPSW-Culture, TRAI-IMDA) are explicitly mentioned. (Pages 24, 79)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Energy Cooperation",
+    "question": "Assertion (A): The 5-year petroleum supply pact signed between India and Mauritius will see Indian Oil Corporation (IOC) directly supply petroleum products to Mauritius's State Trading Corporation (STC).\nReason (R): Mauritius is a founding member of the Global Biofuels Alliance (GBA), aligning with India's goal to expand its refining capacity target to 309 MT by 2032 to support global energy security.\n\nSelect the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both statements are true. However, Mauritius being a part of the GBA (Reason) is a parallel fact of energy cooperation; it is not the direct legal or economic *reason* why the specific IOC-STC petroleum supply pact (which covers Petrol, Diesel, ATF, not just biofuels) was signed. (Pages 25, 58, 79)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Market Infrastructure",
+    "question": "Match the newly launched SEBI technological initiatives with their specific functions or affiliations:\n\nColumn I:\n1. SEBI Incident Reporting Portal\n2. Cyber Suraksha Portal\n3. NISM RegTech Lab\n\nColumn II:\nA. Simulation-based learning using synthetic data\nB. Aligned with the FSB-FIRE framework\nC. Central hub for sharing vulnerabilities and policies\n\nSelect the correct code:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-A, 2-C, 3-B",
+      "E": "1-C, 2-A, 3-B"
+    },
+    "answer": "A",
+    "rationale": "SEBI Incident Reporting is aligned with FSB-FIRE (1-B); Cyber Suraksha is a central hub for sharing policies (2-C); NISM RegTech Lab uses synthetic data for simulation learning (3-A). (Pages 26, 58, 79)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Cross-Border Payments & Credit",
+    "question": "Hybrid Data Check: Which of the following statements correctly combines the eligibility and transaction limits of two distinct banking products launched in August 2026?\n\n1. The 'YES Essence' Credit Card requires a minimum net salary of Rs 30,000/month for women aged 21-60.\n2. The Qatar-India Postal Remittance service allows a maximum of QAR 4,000 per transaction, capped at an equivalent of Rs 1 lakh.\n3. The Paul Merchants Silver Loan product ranges strictly from Rs 5,000 to Rs 20 lakh.\n\nSelect the correct combination:",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statement 3 is incorrect because the Paul Merchants Silver Loan ranges from Rs 2,000 to Rs 15 lakh, not 5,000 to 20 lakh. Statements 1 and 2 are correct. (Pages 26, 28, 59-60)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Market Infrastructure",
+    "question": "The MoU signed between BSE Limited and PHDCCI to expand capital-market access for MSMEs was officiated by which two key signatories representing their respective organizations?",
+    "options": {
+      "A": "Ashishkumar Chauhan and Sanjiv Bajaj",
+      "B": "Sundararaman Ramamurthy and Dr. Ranjeet Mehta",
+      "C": "Madhabi Puri Buch and Subhrakant Panda",
+      "D": "Sundararaman Ramamurthy and Uday Kotak",
+      "E": "Tuhin Kanta Pandey and Dr. Ranjeet Mehta"
+    },
+    "answer": "B",
+    "rationale": "The MoU was signed by Sundararaman Ramamurthy (MD & CEO, BSE) and Dr. Ranjeet Mehta (CEO and Secretary General, PHDCCI). (Pages 27, 59, 80)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Fintech Solutions",
+    "question": "Fill in the blanks regarding the technological partnerships and metrics of Razorpay Vulcan:\n\nDeveloped using _______ and Amazon Web Services (AWS), the AI model claims to detect _______ times more international card fraud and identify 5-times more fraudulent or disputed transactions.",
+    "options": {
+      "A": "Microsoft Azure ; 5",
+      "B": "NVIDIA ; 8",
+      "C": "IBM Watson ; 10",
+      "D": "NVIDIA ; 10",
+      "E": "Google Cloud ; 8"
+    },
+    "answer": "B",
+    "rationale": "Razorpay Vulcan was developed using NVIDIA and AWS. It detects 8-times more international card fraud and 5-times more disputes. (Pages 27, 59, 80)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "NBFCs & Special Loans",
+    "question": "Assertion (A): Paul Merchants Finance Private Limited (PMFPL) launched exclusive Silver Loan branches in UT Chandigarh to provide credit ranging from Rs 2,000 to Rs 15 lakh.\nReason (R): The initiative was launched in response to the RBI's Lending Against Gold and Silver Collateral Directions, 2025, which formalised lending against eligible silver collateral.\n\nSelect the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Both statements are true. The RBI's 2025 directions formalising silver collateral lending directly paved the way (Reason) for PMFPL to launch its exclusive Silver Loan branches (Assertion). (Pages 28, 59-60, 80)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Co-Branded Products",
+    "question": "Paramotor Digital Technology Limited partnered with NSDL Payments Bank to issue co-branded prepaid cards. Which of the following digital platforms is NOT supported by this partnership?",
+    "options": {
+      "A": "SpendPro",
+      "B": "Yayyy.shop",
+      "C": "RewardOn",
+      "D": "Wizz Voyager",
+      "E": "All the above are supported by this partnership"
+    },
+    "answer": "D",
+    "rationale": "Wizz Voyager is a separate product launched by Wizzmoni in partnership with Oman Air, not Paramotor and NSDL. SpendPro, Yayyy.shop, and RewardOn are supported by the Paramotor partnership. (Pages 28, 60, 81)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Forex & Travel Cards",
+    "question": "Consider the following statements regarding the 'Wizz Voyager Multi-Currency Card':\n\n1. It is an AI-powered travel card that supports over 35 global currencies.\n2. Wizzmoni Financial Services operates as an RBI-authorised Category II Dealer.\n3. The card is issued in exclusive association with the RuPay network to promote indigenous payment systems.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 3",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "C",
+    "rationale": "Statement 3 is incorrect because the Wizz Voyager card is issued in association with Visa Inc., not the RuPay network. Statements 1 and 2 are correct. (Pages 28, 60, 81)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Debt Capital Markets",
+    "question": "Data Extraction: Which of the following combinations correctly reflects the financial terms of IDFC FIRST Bank's maiden international bond issuance?",
+    "options": {
+      "A": "USD 500 million ; 5-year tenure ; 6.125% fixed coupon",
+      "B": "USD 300 million ; 3-year tenure ; 5.625% variable coupon",
+      "C": "USD 500 million ; 3-year tenure ; 5.625% fixed coupon",
+      "D": "USD 500 million ; 3-year tenure ; 6.125% fixed coupon",
+      "E": "USD 750 million ; 5-year tenure ; 5.625% fixed coupon"
+    },
+    "answer": "C",
+    "rationale": "IDFC FIRST Bank's issuance size is USD 500 million, the tenure is 3 years (due 2029), and it features a fixed coupon rate of 5.625%. (Pages 28, 60, 81)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Multilateral Funding",
+    "question": "Match the specific infrastructural development components with their respective ADB-funded state projects:\n\nColumn I:\n1. 170+ km pipelines and 38 sewer pumping stations\n2. Upgrading 500 schools with bilingual education facilities\n3. Implementation of a ring-main water supply system\n\nColumn II:\nA. Chennai Water Upgrade (Tamil Nadu)\nB. Government Schools Upgradation (Karnataka)\n\nSelect the correct mapping:",
+    "options": {
+      "A": "1-A, 2-B, 3-B",
+      "B": "1-B, 2-A, 3-A",
+      "C": "1-A, 2-A, 3-B",
+      "D": "1-A, 2-B, 3-A",
+      "E": "1-B, 2-B, 3-A"
+    },
+    "answer": "D",
+    "rationale": "The Chennai project involves 170+ km pipelines, 38 sewer stations (1-A), and the implementation of a ring-main water system (3-A). The Karnataka project involves upgrading 500 schools (2-B). (Pages 29, 60-61, 81)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "GDP Forecasts",
+    "question": "Arrange the quarterly GDP growth estimates for India in FY27 as projected by India Ratings and Research (Ind-Ra) in the exact chronological order of the financial quarters (Q1 to Q4):\n\n1. 6.6%\n2. 6.7%\n3. 6.9%\n4. 6.9%\n\nSelect the correct sequence mapping to Q1 -> Q2 -> Q3 -> Q4:",
+    "options": {
+      "A": "3 -> 1 -> 2 -> 4",
+      "B": "1 -> 2 -> 3 -> 4",
+      "C": "4 -> 3 -> 2 -> 1",
+      "D": "3 -> 2 -> 1 -> 4",
+      "E": "4 -> 1 -> 2 -> 3"
+    },
+    "answer": "A",
+    "rationale": "The quarterly estimates are Q1: 6.9% (3); Q2: 6.6% (1); Q3: 6.7% (2); Q4: 6.9% (4). The chronological sequence is 3 -> 1 -> 2 -> 4. (Page 82)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Corporate Partnerships",
+    "question": "Consider the RIL and Rolls-Royce partnership for the AMCA programme. The MoU specifically proposes the establishment of which dedicated facility in India to serve as a Centre of Excellence (CoE)?",
+    "options": {
+      "A": "Advanced Stealth Combat Hub",
+      "B": "Aerospace Gas Turbine Complex",
+      "C": "Sovereign Jet Propulsion Laboratory",
+      "D": "Titanium Alloy Forging Centre",
+      "E": "Military Avionics & Radar Complex"
+    },
+    "answer": "B",
+    "rationale": "Both companies will explore setting up a dedicated 'Aerospace Gas Turbine Complex' in India that will serve as a Centre of Excellence (CoE) for power and propulsion technology. (Pages 31, 61, 82)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "National Anubhav Awards",
+    "question": "At the 9th National Anubhav Awards 2026, alongside the felicitation of 15 awardees, the 60th Pre-Retirement Counselling (PRC) Workshop was held. Which of the following two resources were officially released during this side event?",
+    "options": {
+      "A": "Bhavishya Portal 2.0 and Anubhav Citation Booklet",
+      "B": "Handbook on Pension Mitra and Guidelines for DLC Campaign-5",
+      "C": "Manual on Pension Arrears and Digital Life Certificate App",
+      "D": "Guidelines for DLC Campaign-6 and Pension Grievance Redressal Manual",
+      "E": "Sankalp Patra and Pension Mitra Directory"
+    },
+    "answer": "B",
+    "rationale": "The releases included the 'Pension Mitra Handbook', the 'Anubhav Citation Booklet', and the 'Guidelines for the nationwide DLC Campaign-5'. Option B perfectly matches two of these key releases. (Pages 31, 62, 82)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "National Sports Awards",
+    "question": "Match the Arjuna Awardees 2025 with their respective sporting disciplines:\n\nColumn I:\n1. Tejaswin Shankar\n2. Rudransh Khandelwal\n3. Divya Jitendra Deshmukh\n4. Akhil Sheoran\n\nColumn II:\nA. Chess\nB. Athletics\nC. Shooting\nD. Para Shooting\n\nSelect the correct code:",
+    "options": {
+      "A": "1-B, 2-D, 3-A, 4-C",
+      "B": "1-B, 2-C, 3-A, 4-D",
+      "C": "1-A, 2-D, 3-B, 4-C",
+      "D": "1-B, 2-D, 3-C, 4-A",
+      "E": "1-C, 2-D, 3-A, 4-B"
+    },
+    "answer": "A",
+    "rationale": "Tejaswin Shankar (Athletics, 1-B); Rudransh Khandelwal (Para Shooting, 2-D); Divya Jitendra Deshmukh (Chess, 3-A); Akhil Sheoran (Shooting, 4-C). (Pages 33, 62, 82)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Guinness World Records",
+    "question": "Fill in the blanks regarding the Guinness World Record achieved by an Indian-origin professional:\n\nLakshmanan Meyyappan became the World's Youngest Male Chartered Accountant (CA) at the age of 16 years and 141 days. Prior to this, he had completed his ACCA qualification at the age of _______, and further achieved the _______ Charterholder designation in 2025.",
+    "options": {
+      "A": "14 ; CPA",
+      "B": "15 ; CFA",
+      "C": "16 ; FRM",
+      "D": "15 ; CMA",
+      "E": "14 ; CFA"
+    },
+    "answer": "B",
+    "rationale": "He completed his ACCA qualification at the age of 15 (started at 15; ~1 year duration) and further achieved the CFA (Chartered Financial Analyst) Charterholder designation in 2025. (Pages 34, 63, 83)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "International Accolades",
+    "question": "Assertion (A): Dr Jal Ratanji Patel and Dr Jal Dhaybho-Koo were nominated for Pakistan’s Nishan-e-Imtiaz award in August 2026.\nReason (R): They were recognized for establishing the first cross-border medical camps between India and Pakistan immediately following the Partition in 1947.\n\nSelect the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is NOT the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true. Reason (R) is false because they were nominated for maintaining the confidentiality of Muhammad Ali Jinnah’s terminal illness (Tuberculosis) in 1946 before the Partition, not for setting up medical camps. (Pages 35, 63, 83)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  },
+  {
+    "category": "Aspirant Queries",
+    "sub_category": "Document Metadata",
+    "question": "According to the 'Aspirant Queries' section provided in the exam material, candidates appearing for competitive exams are requested to share General Awareness questions asked in their respective exams at which specific email address?",
+    "options": {
+      "A": "support@careerscloud.in",
+      "B": "gaanalysis.ac@gmail.com",
+      "C": "affairscloud@careerscloud.in",
+      "D": "feedback.ac@gmail.com",
+      "E": "currentaffairs.ac@gmail.com"
+    },
+    "answer": "B",
+    "rationale": "The 'Aspirant Queries' section explicitly requests candidates to share GA questions to \"gaanalysis.ac@gmail.com\". (Page 90)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – August 2026 – 3rd Week"
+  }
+]

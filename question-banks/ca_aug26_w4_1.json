@@ -1,0 +1,802 @@
+[
+  {
+    "category": "National Affairs",
+    "sub_category": "Government Schemes & Policies",
+    "question": "Consider the following statements regarding the newly notified Mobile Phone Manufacturing Scheme (MPMS) by the Ministry of Electronics and Information Technology (MeitY):\n\n1. The scheme is allocated a budgetary outlay of Rs 62,500 crore over a 5-year period starting from Financial Year 2026-27 (FY27).\n2. Under Target Segment 1 (TS1), participating firms must demonstrate a minimum turnover of Rs 10,000 crore for eligibility.\n3. Target Segment 2 (TS2) provides a flat 5% incentive to global brands, with no additional incentives allocated for Indian-owned entities.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. The MPMS scheme has a budgetary outlay of Rs 62,500 crore for a 5-year period (FY27-FY31). TS1 firms require a Rs 10,000 Cr turnover. Statement 3 is incorrect because TS2 is specifically for Indian brands (requiring Rs 1,000 Cr turnover) and they receive a 5% incentive, plus an additional 3% for India design and R&D. (Refer Page 5 & 48)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Defence Indigenisation",
+    "question": "Arrange the following indigenously developed micro and small gas turbine engines unveiled by CSIR-NAL in ascending order of their respective thrust capacities:\n\n1. NJ-50\n2. NJ-05\n3. NJ-100\n\nSelect the correct order from the options given below:",
+    "options": {
+      "A": "1 - 2 - 3",
+      "B": "2 - 1 - 3",
+      "C": "3 - 2 - 1",
+      "D": "2 - 3 - 1",
+      "E": "1 - 3 - 2"
+    },
+    "answer": "B",
+    "rationale": "The CSIR-NAL unveiled three gas turbine engines with the following thrust capacities: NJ-05 (5 kg), NJ-50 (50 kg), and NJ-100 (100 kg). Therefore, the ascending order is NJ-05, NJ-50, NJ-100 (2 - 1 - 3). (Refer Page 34 & 64)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "International MoUs",
+    "question": "Match the following Indian states with their respective international collaborations signed recently:\n\nColumn I (State):\n1. Maharashtra\n2. Uttar Pradesh\n3. Andhra Pradesh\n\nColumn II (Foreign Partner/Entity):\nA. Yamanashi Prefecture (Japan)\nB. Government of the United Kingdom\nC. State of Hesse (Germany)\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-C, 3-B",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "A",
+    "rationale": "Maharashtra signed an MoU with the State of Hesse (Germany) for investment and innovation. Uttar Pradesh signed 5 MoUs with Yamanashi Prefecture (Japan). Andhra Pradesh signed a G2G MoU with the UK to develop Amaravati as a smart, sustainable capital. (Refer Page 43, 44, 46 & 70-71)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Important Reports & Indices",
+    "question": "Based on the recent NITI Aayog report titled 'Reimagining Skilling for Viksit Bharat@2047', consider the following assertions:\n\nAssertion (A): The report highlights a severe employability gap in India, noting that only 8.25% of graduates are employed in roles aligned with their qualifications.\nReason (R): Data from the 78th round of the National Sample Survey (NSS) indicates that approximately 87 million Indian youth aged 15 to 29 years are 'Not in Education, Employment, or Training (NEET)'.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is NOT the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "B",
+    "rationale": "Both statements are factually correct as per the NITI Aayog report. Only 8.25% of graduates find roles aligned with their qualifications, and 87 million youth are in the NEET category based on the 78th round of the NSS (2021). However, the number of NEET youth (Reason) is not the direct causal explanation for the specific job-role mismatch among graduates (Assertion). They are two separate findings indicating systemic issues. (Refer Page 8 & 49)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Digital Payments",
+    "question": "With reference to the completion of 10 years of the Unified Payments Interface (UPI) in August 2026, identify the INCORRECT statement among the following:",
+    "options": {
+      "A": "UPI accounted for 84% of India's digital payments in Financial Year 2025-26.",
+      "B": "The annual transaction volume expanded from 1.78 crore in FY17 to over 24,162 crore in FY26.",
+      "C": "UPI's global footprint has expanded to account for 49% of global real-time payments as per the IMF.",
+      "D": "The UPI system was launched on 25 August 2016 by the Reserve Bank of India (RBI) independently of the NPCI.",
+      "E": "The value of UPI transactions surged from Rs 0.07 lakh crore in FY17 to Rs 314 lakh crore in FY26."
+    },
+    "answer": "D",
+    "rationale": "Statement D is incorrect because UPI was launched by the National Payments Corporation of India (NPCI) (under the RBI), not independently by the RBI. All other statistical points regarding volume (24,162 Cr), value (Rs 314 lakh Cr), domestic share (84%), and global share (49%) are accurately mentioned in the report. (Refer Page 25, 26 & 59)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Defence & Security",
+    "question": "Match the following defence technologies approved for transfer by DRDO's Naval Science & Technological Laboratory (NSTL) with their respective receiving industry partners:\n\nColumn I (Technology):\n1. Submarine Fired Decoy (SFD) 'Mohini'\n2. Fabrication and commissioning of LM2500 Gas Turbine\n\nColumn II (Receiving Partner):\nA. Vertex Engineering Systems Private Limited\nB. Bharat Dynamics Limited (BDL)\nC. Samtel Avionics\n\nSelect the correct combination:",
+    "options": {
+      "A": "1-A, 2-B",
+      "B": "1-B, 2-C",
+      "C": "1-B, 2-A",
+      "D": "1-C, 2-A",
+      "E": "1-A, 2-C"
+    },
+    "answer": "C",
+    "rationale": "According to the Licensing Agreements for Transfer of Technology (LAToT) signed by DRDO's NSTL, the Submarine Fired Decoy (SFD) 'Mohini' was transferred to Bharat Dynamics Limited (BDL), and the LM2500 Gas Turbine technology was transferred to Vertex Engineering Systems Private Limited. (Refer Page 6 & 48)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Regulatory Frameworks",
+    "question": "The Securities and Exchange Board of India (SEBI) has introduced the IT Resilience Index (ITRI) Framework for Market Infrastructure Institutions (MIIs). In this context, consider the following statements:\n\n1. The ITRI evaluates the operational resilience of stock exchanges, depositories, and clearing corporations using nine specific parameters.\n2. The parameters 'Availability' and 'Security' hold the highest maximum weightage of 20% each in the index computation.\n3. The framework must be fully operationalized by MIIs by 28 February 2027, with the first computation covering the half-year ending 31 March 2027.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1 and 2",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All statements are correct. SEBI's ITRI applies to stock exchanges, depositories, and clearing corporations using 9 parameters. Availability and Security have a maximum weightage of 20%. The framework must be operationalized by Feb 28, 2027, and first computed for the half-year ending March 31, 2027. (Refer Page 26 & 59-60)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Chess Tournaments",
+    "question": "Arrange the following chess Grandmasters in descending order based on their final standings at the Grand Chess Tour (GCT) 2026 Finals held in St. Louis, USA:\n\n1. Fabiano Caruana\n2. Vincent Keymer\n3. R Praggnanandhaa\n4. Wesley So\n\nSelect the correct code:",
+    "options": {
+      "A": "3 - 1 - 4 - 2",
+      "B": "3 - 4 - 1 - 2",
+      "C": "1 - 3 - 4 - 2",
+      "D": "3 - 1 - 2 - 4",
+      "E": "1 - 4 - 3 - 2"
+    },
+    "answer": "A",
+    "rationale": "At the GCT 2026 Finals, Indian GM R Praggnanandhaa secured the 1st position (15-13), followed by Fabiano Caruana (USA) at 2nd (13-15), Wesley So (USA) at 3rd (18-12), and Vincent Keymer (Germany) at 4th (12-18). Therefore, the descending order is 3, 1, 4, 2. (Refer Page 39-40 & 68)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Forex & Monetary Policy",
+    "question": "The Reserve Bank of India (RBI) recently relaxed the access norms for its dollar-rupee swap facility under Foreign Currency Non-Resident (Bank), FCNR(B) deposits. What is the newly established threshold limit above which banks are permitted to undertake swaps outside the weekly windows?",
+    "options": {
+      "A": "USD 50 million",
+      "B": "USD 75 million",
+      "C": "USD 100 million",
+      "D": "USD 150 million",
+      "E": "USD 200 million"
+    },
+    "answer": "C",
+    "rationale": "The RBI relaxed access norms allowing banks to undertake swaps above USD 100 million outside the previously designated weekly windows to manage large inflows and stabilize the forex market. (Refer Page 27 & 60)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "Biodiversity Discoveries",
+    "question": "Which of the following pairs of newly discovered species and their respective regions in India is/are correctly matched?\n\n1. Doronicum sanctum (New Sunflower Species) - Tawang district, Arunachal Pradesh\n2. Gangaichthys indonepalicus (Subterranean Fish) - Pashchim Champaran district, Bihar\n3. Safhal (Helicopter engine variant) - Western Ghats, Maharashtra\n\nSelect the correct answer using the codes given below:",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 1 and 2",
+      "D": "Only 2 and 3",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "C",
+    "rationale": "Pair 1 is correct: Doronicum sanctum was discovered in Tawang, Arunachal Pradesh. Pair 2 is correct: Gangaichthys indonepalicus was discovered in Pashchim Champaran, Bihar. Pair 3 is incorrect: 'SAFHAL' is a Joint Venture for helicopter engines, and its engine is named 'Aravalli', not an environmental discovery in the Western Ghats. (Refer Page 37 & 65-66)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Federation of Indian Publishers (FIP) Awards",
+    "question": "Match the following publications by the Publications Division (MIB) with their respective award categories won at the 46th FIP Awards 2026:\n\nColumn I (Publication):\n1. Bharat 2026 (Hindi)\n2. Wings to Our Hopes – Volume 2 (English)\n3. Yojana – July 2026 (Hindi)\n\nColumn II (Award Category):\nA. Second Prize in General and Trade Books (English)\nB. Second Prize in Journals & House Magazines (Hindi)\nC. Second Prize in Reference Books (Hindi)\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Bharat 2026 (Hindi) won Second Prize in Reference Books - Hindi category (1-C). Wings to Our Hopes – Volume 2 (English) won Second Prize in General and Trade Books - English category (2-A). Yojana – July 2026 (Hindi) won Second Prize in Journals & House Magazines - Hindi category (3-B). (Refer Page 30 & 62)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Startup Ecosystem",
+    "question": "Consider the following statements regarding the 'GENESIS EIR Cohort 3.0' launched by MeitY:\n\n1. The program aims to support entrepreneurs exclusively based in Tier-I metropolitan cities of India.\n2. Selected innovators will receive maximum financial assistance of up to Rs 10 lakh through participating GENESIS incubators.\n3. The initiative covers deep-tech domains including AI, ML, IoT, and Quantum Technologies.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 1 and 3",
+      "D": "Only 2 and 3",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "A",
+    "rationale": "Statement 1 is incorrect because the GENESIS programme specifically focuses on startups located in Tier-II and Tier-III cities, not exclusively Tier-I cities. Statements 2 and 3 are correct as the scheme provides up to Rs 10 lakh in financial assistance and focuses on DeepTech domains like AI, ML, IoT, and Quantum Tech. (Refer Page 9 & 49-50)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Naval Vessels",
+    "question": "In a combined assessment of maritime vessels, identify the CORRECT statement among the following:",
+    "options": {
+      "A": "The Indian Coast Guard Ship (ICGS) Ajit, handed over by Goa Shipyard Limited (GSL), is the first vessel in the series of 8 Fast Patrol Vessels.",
+      "B": "L&T recently delivered INS Utkarsh, the first indigenous Multi-Purpose Vessel (MPV) under the Samarthak-class project to the Indian Navy.",
+      "C": "The Fast Patrol Vessel (FPV) ICGS Meera Behn was decommissioned after 20 years of service at Okha, Gujarat.",
+      "D": "The Samarthak-class MPV project is executed under a Rs 8,622 crore contract with Goa Shipyard Limited.",
+      "E": "ICGS Subhadra Kumari Chauhan was a Samarthak-class Multi-Purpose Vessel decommissioned in Mumbai."
+    },
+    "answer": "C",
+    "rationale": "Statement C is correct: ICGS Meera Behn (FPV) was decommissioned at Okha, Gujarat, after nearly 20 years of service. A is incorrect: ICGS Ajit is the 7th vessel in the 8-ship series, not the first. B is incorrect: L&T delivered 'Samarthak' as the first MPV, while 'INS Utkarsh' is the second vessel. D is incorrect: The Samarthak-class contract is worth Rs 887 crore, signed with L&T. E is incorrect: Subhadra Kumari Chauhan was an FPV, not a Samarthak-class MPV. (Refer Page 34-36 & 64-65)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Energy Infrastructure",
+    "question": "Assertion (A): The Petroleum and Natural Gas Regulatory Board (PNGRB) authorized the development of a 1,800 km new LPG pipeline network across 6 states involving a Rs 7,000 crore investment.\nReason (R): This expansion by GAIL (India) Limited will increase the PNGRB-approved common-carrier LPG pipeline network by approximately 23.5%, expanding it from 7,700 km to nearly 9,500 km.\n\nSelect the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is NOT the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "A",
+    "rationale": "Both Assertion and Reason are factually true. The PNGRB authorized the 1,800 km pipeline development (Rs 7,000 crore) across 6 states, which is executed by GAIL. This specifically serves to expand the total common-carrier LPG network from ~7,700 km to ~9,500 km (a 23.5% increase), thereby strengthening India's energy infrastructure and supply-chain resilience. (Refer Page 10 & 50)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Government Schemes",
+    "question": "The Uttar Pradesh government has approved the 'Lokmata Ahilyabai Matrushakti Yojana'. Which of the following is NOT a feature of this scheme?",
+    "options": {
+      "A": "It provides lifelong free bus travel for eligible women.",
+      "B": "The scheme is applicable to women aged 60 years and above.",
+      "C": "Beneficiaries can travel free on all private and state-operated buses within the state.",
+      "D": "A valid government ID proof like Voter ID or Aadhaar card is required.",
+      "E": "The UPSRTC will issue special smart cards for systematic implementation."
+    },
+    "answer": "C",
+    "rationale": "Option C is incorrect because the scheme provides free travel exclusively on Uttar Pradesh State Road Transport Corporation (UPSRTC) buses, not on all private buses. All other options accurately describe the scheme. (Refer Page 46 & 72)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "August Observances",
+    "question": "Arrange the following important days observed in August 2026 in chronological order (earliest to latest in the month):\n\n1. World Sanskrit Day\n2. National Space Day\n3. International Day Against Nuclear Tests\n\nSelect the correct answer:",
+    "options": {
+      "A": "1 - 2 - 3",
+      "B": "2 - 1 - 3",
+      "C": "2 - 3 - 1",
+      "D": "3 - 2 - 1",
+      "E": "1 - 3 - 2"
+    },
+    "answer": "B",
+    "rationale": "National Space Day is observed on August 23. World Sanskrit Day 2026 was observed on August 28 (Shravana Purnima). International Day Against Nuclear Tests is observed on August 29. Therefore, the chronological order is 2, 1, 3. (Refer Page 42-43 & 69-70)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Startups & Incubation",
+    "question": "IDFC First Bank in partnership with the Indian Institute of Management Calcutta Innovation Park (IIMCIP) launched the 'IGNITE' incubation programme. Fill in the blanks appropriately:\nThe Pan-India programme will provide a total financial support of ________, including a direct startup grant corpus of ________ to 16 startups.",
+    "options": {
+      "A": "Rs 10 Crore; Rs 2 Crore",
+      "B": "Rs 5 Crore; Rs 1.50 Crore",
+      "C": "Rs 2 Crore; Rs 1.36 Crore",
+      "D": "Rs 730 Crore; Rs 10 Lakh",
+      "E": "Rs 3.17 Lakh Crore; Rs 2 Crore"
+    },
+    "answer": "C",
+    "rationale": "The 'IGNITE' programme by IDFC First Bank and IIMCIP provides a total financial and operational support of Rs 2 Crore, which includes a direct startup grant corpus of Rs 1.36 Crore distributed among 16 startups. (Refer Page 27 & 60)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "Acquisitions & Mergers",
+    "sub_category": "Corporate Tie-ups",
+    "question": "Consider the following statements regarding Tata Consultancy Services (TCS) acquiring a stake in MHP:\n\n1. TCS acquired a 100% stake in MHP Management- und IT-Beratung GmbH.\n2. MHP is the management and IT consulting subsidiary of Suzuki Motor Corporation.\n3. The enterprise value of the acquisition is EUR 320 million.\n4. This acquisition is part of a broader 5-year strategic partnership to develop an AI Mobility Centre of Excellence.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2, and 3",
+      "B": "1, 3, and 4",
+      "C": "2, 3, and 4",
+      "D": "1 and 3 only",
+      "E": "All 1, 2, 3, and 4"
+    },
+    "answer": "B",
+    "rationale": "Statements 1, 3, and 4 are correct. Statement 2 is incorrect because MHP is a subsidiary of Porsche AG, not Suzuki Motor Corporation. (Refer Page 32 & 63)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Rural Development",
+    "question": "The Ministry of Rural Development (MoRD) launched 'Mission Samriddh Gaon'. Which of the following statements accurately describes the pilot implementation of this mission?",
+    "options": {
+      "A": "It will be initially implemented in the Tawang district of Arunachal Pradesh to leverage rural topography.",
+      "B": "The pilot phase covers Budni block in Sehore district and Khategaon block in Dewas district of Madhya Pradesh.",
+      "C": "It focuses exclusively on 50 urban local bodies (ULBs) for plastic circularity models.",
+      "D": "The pilot phase is completely funded by the United Nations Development Programme (UNDP).",
+      "E": "The implementation targets the establishment of 14 revamped post offices across 10 rural states."
+    },
+    "answer": "B",
+    "rationale": "Mission Samriddh Gaon aims to develop poverty-free, employment-rich villages. Its pilot implementation is designated for Budni block (Sehore district) and Khategaon block (Dewas district) in Madhya Pradesh. (Refer Page 11 & 51)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Aviation Partnerships",
+    "question": "Air India recently entered into an interline partnership with Drukair to strengthen connectivity. What is the primary operational benefit of this interline partnership?",
+    "options": {
+      "A": "It allows Air India to acquire a 51% stake in Drukair operations.",
+      "B": "It mandates the exclusive use of sustainable aviation fuel (SAF) on all flights between India and Bhutan.",
+      "C": "It enables passengers to travel on single-ticket itineraries with through-transfer of baggage across networks.",
+      "D": "It establishes a public-private joint venture to manufacture avionics components for both airlines.",
+      "E": "It restricts Drukair flights to operate solely from the newly privatized 11 airport bundles in India."
+    },
+    "answer": "C",
+    "rationale": "An interline partnership allows passengers to book single-ticket itineraries with through-transfer of baggage and convenient connections across the networks of both participating airlines (Air India and Drukair). It does not involve equity acquisition or manufacturing JVs. (Refer Page 29 & 61)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Financial Inclusion Schemes",
+    "question": "The Pradhan Mantri Jan Dhan Yojana (PMJDY) completed 12 years in August 2026. Which of the following statistics regarding the scheme is CORRECT as of August 2026?",
+    "options": {
+      "A": "The total number of PMJDY accounts opened is exactly 32.92 crore.",
+      "B": "Women hold approximately 35% of all PMJDY accounts.",
+      "C": "The total deposits across all PMJDY accounts amount to Rs 3.17 lakh crore.",
+      "D": "The scheme provides a Rs 10 lakh accident insurance cover linked directly to PMJJBY.",
+      "E": "Rural coverage accounts for exactly 49% of total PMJDY accounts."
+    },
+    "answer": "C",
+    "rationale": "Option C is correct (Total deposits: Rs 3.17 lakh Cr). Option A is incorrect as total accounts are 59.09 Cr. Option B is incorrect as women hold 55.7% (32.92 Cr) of the accounts. Option D is incorrect as the core accident insurance is Rs 2 lakh (not Rs 10 lakh). Option E is incorrect as rural/semi-urban branches cover 77.8% (45.95 Cr) of accounts. (Refer Page 18-19 & 55)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space Exploration",
+    "question": "Match the following space-related personalities/entities with their recent milestones:\n\nColumn I:\n1. Sophie Adenot\n2. SpaceX\n3. Pragyan\n\nColumn II:\nA. Successful deployment commemorated on National Space Day.\nB. First French woman to walk in space.\nC. Constructing a USD 100 billion rocket launch complex named 'Starbase Louisiana'.\n\nSelect the correct code:",
+    "options": {
+      "A": "1-A, 2-C, 3-B",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "B",
+    "rationale": "Sophie Adenot (1) became the first French woman to walk in space (B). SpaceX (2) announced a $100Bn investment for 'Starbase Louisiana' (C). Pragyan (3) is the rover whose deployment is commemorated on National Space Day (A). (Refer Page 33-35, 42, 63-64 & 69)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Infrastructure Privatisation",
+    "question": "The Public Private Partnership Appraisal Committee (PPPAC) granted in-principle approval for the private operation of 11 airports. Consider the following statements:\n\n1. The total estimated investment for the private concessionaires is Rs 8,622 crore.\n2. The airports are grouped into 5 bundles, with the Bhubaneswar-Hubballi bundle receiving the highest investment.\n3. Concessionaires are required to retain 100% of Airport Authority of India (AAI) employees for the entire 50-year concession period.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 3",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "C",
+    "rationale": "Statement 3 is incorrect because the mandate requires concessionaires to retain 60% of AAI employees for a maximum period of 3 years, not 100% for 50 years. Statements 1 and 2 are correct based on the PPPAC approval details. (Refer Page 12 & 51)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Budget & Finance",
+    "question": "Fill in the blanks regarding the FY 2026-27 budget of the Union Territory of Puducherry:\nChief Minister N. Rangasamy presented a Rs ________ tax-free budget for FY27, estimating the fiscal deficit at ________ of the Gross State Domestic Product (GSDP).",
+    "options": {
+      "A": "14,300 crore; 4.2%",
+      "B": "13,600 crore; 5.1%",
+      "C": "11,965 crore; 4.2%",
+      "D": "14,300 crore; 5.1%",
+      "E": "12,115 crore; 3.8%"
+    },
+    "answer": "A",
+    "rationale": "Puducherry CM presented a Rs 14,300 crore tax-free budget for FY27 (a 5.1% increase from FY26). The fiscal deficit was estimated at 4.2% of GSDP (Rs 2,334.93 crore). (Refer Page 45 & 71)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Healthcare Regulations",
+    "question": "The Indian Pharmacopoeia Commission (IPC) recently launched 7 Nitrosamine Impurities Reference Standards. Why are nitrosamines considered a significant concern in pharmaceutical products requiring such strict regulatory standards?",
+    "options": {
+      "A": "They act as powerful antibiotics that cause severe gut microbiome depletion.",
+      "B": "They are genotoxic and carcinogenic impurities that need control in drugs for hypertension, diabetes, etc.",
+      "C": "They rapidly degrade the efficacy of Vitamin-based supplements when exposed to light.",
+      "D": "They induce immediate anaphylactic shocks in pediatric patients.",
+      "E": "They alter the crystalline structure of excipients leading to patent infringement issues."
+    },
+    "answer": "B",
+    "rationale": "Nitrosamines are genotoxic/carcinogenic impurities whose presence needs to be tightly controlled in various drugs, including those for hypertension, diabetes, TB, and gastric issues. This is why the IPC introduced reference standards for accurate detection and quantification. (Refer Page 16 & 53)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Government Welfare Schemes",
+    "question": "Consider the following statements regarding the 'PM SVANidhi' scheme's restructured phase completing one year in August 2026:\n\n1. The scheme provides an interest subsidy of 7% per annum on timely repayment.\n2. The credit tranches are strictly limited to a single initial payout of Rs 15,000 for 12 months.\n3. The scheme has been extended until 31 March 2030 to broaden financial inclusion for street vendors.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 3",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "C",
+    "rationale": "Statement 1 is correct (7% interest subsidy). Statement 3 is correct (extended till 31 March 2030). Statement 2 is incorrect because the scheme offers 3 credit tranches: Rs 15,000 (12 months), Rs 25,000 (18 months), and Rs 50,000 (36 months). (Refer Page 19 & 55)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "International Organizations",
+    "question": "Match the following newly appointed individuals with their respective roles/organizations:\n\nColumn I:\n1. Yuko Keicho\n2. Peyman Kargar\n3. King Haakon VIII\n\nColumn II:\nA. Monarch of Norway\nB. Vice President & Auditor General of World Bank Group\nC. CEO and Director of TVS Motor Company\n\nSelect the correct code:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-A, 3-B",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-A, 2-B, 3-C",
+      "E": "1-C, 2-B, 3-A"
+    },
+    "answer": "A",
+    "rationale": "Yuko Keicho was appointed VP & Auditor General of the World Bank Group (1-B). Peyman Kargar was appointed CEO of TVS Motor Company (2-C). Crown Prince Haakon became King Haakon VIII of Norway (3-A). (Refer Page 31-32 & 62-63)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Military Aviation",
+    "question": "India formally secured a 'Dialogue Partner' status in the Global Combat Air Program (GCAP). Which of the following statements accurately represents India's role and the nature of the GCAP?",
+    "options": {
+      "A": "India is a primary co-developer alongside the UK, Italy, and Japan to manufacture the 'Tempest' 6th generation fighter.",
+      "B": "The GCAP is a trilateral initiative between the USA, France, and India to build 5th generation stealth bombers.",
+      "C": "India acts solely as a dialogue partner, allowing it to discuss progress and technology, but not as a buyer, builder, or co-developer.",
+      "D": "The GCAP project aims to indigenously develop the 'Aravalli' helicopter engine for the Indian Navy.",
+      "E": "India joined GCAP primarily to export its domestically built AK-203 'Sher' assault rifles to European nations."
+    },
+    "answer": "C",
+    "rationale": "As a 'Dialogue Partner' in the GCAP (a UK-Italy-Japan initiative for the 6th-gen 'Tempest' fighter), India can discuss the program's progress, technology, and capabilities, but it is currently not participating as a buyer, builder, or co-developer. (Refer Page 24 & 58)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Artificial Intelligence",
+    "question": "Assertion (A): Vice President C. P. Radhakrishnan launched 'Gnani Artha', a sovereign AI stack comprising Evon 3.3 and Plexus.\nReason (R): Evon 3.3 is an agentic AI platform designed specifically to retrieve PAN details via a single prompt for enterprise customers.\n\nSelect the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is NOT the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true: The VP launched 'Gnani Artha' which includes Evon 3.3 and Plexus. Reason (R) is false: Evon 3.3 is a 30 billion-parameter MoE model supporting 11+ Indian languages. It is 'Plexus' that is the agentic AI platform designed for enterprise customers (like retrieving PAN details via one prompt). (Refer Page 23 & 57-58)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Badminton World Championships",
+    "question": "At the 30th BWF World Championships 2026 in New Delhi, Treesa Jolly and Gayatri Gopichand won a historic bronze medal. In which category did they achieve this feat?",
+    "options": {
+      "A": "Women's Singles",
+      "B": "Women's Doubles",
+      "C": "Mixed Doubles",
+      "D": "Men's Doubles",
+      "E": "Team Championship"
+    },
+    "answer": "B",
+    "rationale": "Treesa Jolly and Gayatri Gopichand won the bronze medal in the Women's Doubles category at the 2026 BWF World Championships, securing India's first medal in this category since 2011. (Refer Page 38 & 66)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Insurance Products",
+    "question": "Bajaj General Insurance launched 'My Family Complete', India's first health insurance policy covering pets. Which of the following is NOT an eligible insured member under this specific plan?",
+    "options": {
+      "A": "An adult aged 45 years.",
+      "B": "A child aged 6 months.",
+      "C": "A pet dog aged 2 months.",
+      "D": "A pet cat aged 5 years.",
+      "E": "A young adult aged 28 years."
+    },
+    "answer": "C",
+    "rationale": "The eligibility for pets under the 'My Family Complete' policy is from 3 months onwards (with no upper age limit). A pet dog aged 2 months does not meet the minimum 3-month eligibility criterion. Adults (18+) and children (3m-30y) are covered. (Refer Page 28 & 60)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "Books & Authors",
+    "sub_category": "Recent Publications",
+    "question": "Match the following books with their respective central themes as highlighted upon their release:\n\nColumn I (Book):\n1. Africa Before America\n2. Kaho Kalidasa!\n3. Sankalp Se Siddhi Ka Modi Yug\n\nColumn II (Theme):\nA. Portrays the Prime Minister as a 'Setu Purush' bridging national thinkers' visions with modern implementation.\nB. Explores historical perspectives on a continent's civilizational importance and proposes a 1.25:1 egalitarian concept.\nC. A biographical novel exploring love, separation, responsibility, and nature focusing on a famous Sanskrit poet.\n\nSelect the correct combination:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "'Africa Before America' by Arindam Chaudhuri focuses on African history and the 1.25:1 egalitarian concept (1-B). 'Kaho Kalidasa!' by Yugul Joshi is a biographical novel of the Sanskrit poet Kalidasa (2-C). 'Sankalp Se Siddhi Ka Modi Yug' portrays PM Modi as a 'Setu Purush' (3-A). (Refer Page 41 & 69)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Conferences & Summits",
+    "question": "Consider the following statements regarding the 10th Taiwan-India Industrial Collaboration Summit:\n\n1. It was co-hosted by FICCI and the Chinese National Federation of Industries (CNFI).\n2. The summit resulted in the signing of 6 MoUs covering areas like security surveillance, e-waste recycling, and digital audio-video.\n3. The summit took place in New Delhi under the chairmanship of the Union Minister of Commerce and Industry.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 1 and 2",
+      "C": "Only 2 and 3",
+      "D": "Only 3",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "B",
+    "rationale": "Statements 1 and 2 are correct. The summit was co-hosted by FICCI and CNFI, and 6 MoUs were signed in specific tech/recycling areas. Statement 3 is incorrect because the summit was held in Bengaluru, Karnataka, and was led by Amardeep Singh Bhatia (Secretary, DPIIT) and Cynthia Kiang (Deputy Minister, Taiwan), not chaired directly by the Union Minister in New Delhi. (Refer Page 21 & 56)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Educational Initiatives",
+    "question": "Fill in the blanks regarding the educational initiative launched in Meghalaya:\nThe Government of Meghalaya launched the ________ Read & Rise Programme, aimed at improving foundational reading skills among schoolchildren by age ________.",
+    "options": {
+      "A": "CM-IMPACT; 10",
+      "B": "MMCPY; 7",
+      "C": "CM-IMPACT; 7",
+      "D": "E2EE; 12",
+      "E": "Bidesh Sikhyabruti; 14"
+    },
+    "answer": "C",
+    "rationale": "Meghalaya launched the CM-IMPACT (Chief Minister’s Initiative for Maximising Pass Achievement and Classroom Triumph) Read & Rise Programme to ensure foundational reading ability for all children by age 7. (Refer Page 46 & 72)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Telecom & Optical Tech",
+    "question": "The Department of Telecommunications (DoT) signed a 5-year agreement with C-DOT to establish an End-to-End Optical Network Testbed. Arrange the phased implementation of this project chronologically:\n\n1. Technical support and outreach programmes.\n2. Infrastructure setup and rollout.\n3. Operations and maintenance.\n\nSelect the correct sequence based on the agreement's phases:",
+    "options": {
+      "A": "1 - 2 - 3",
+      "B": "2 - 3 - 1",
+      "C": "3 - 2 - 1",
+      "D": "2 - 1 - 3",
+      "E": "1 - 3 - 2"
+    },
+    "answer": "B",
+    "rationale": "The 5-year agreement is structured in two phases: the first 2 years are dedicated to infrastructure setup and rollout (2), followed by 3 years of operations, maintenance (3), technical support, and outreach programmes (1). Thus, the logical chronological sequence described is 2 followed by 3 and 1 simultaneously in the second phase. (Refer Page 22 & 57)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Corporate Tie-ups",
+    "question": "Which two entities signed a Memorandum of Understanding (MoU) to provide customized inventory financing solutions specifically aimed at supporting an Authorised Dealer (AD) network for electric vehicles?",
+    "options": {
+      "A": "TVS Motor Company and HDFC Bank",
+      "B": "VinFast India and Federal Bank Limited",
+      "C": "Tata Motors and Punjab National Bank",
+      "D": "Suzuki Motor Corporation and Axis Bank",
+      "E": "Porsche AG and IDFC First Bank"
+    },
+    "answer": "B",
+    "rationale": "VinFast India (subsidiary of Vingroup JSC) signed an MoU with Federal Bank Limited to provide customized inventory financing solutions for its Authorised Dealer (AD) network to strengthen the EV retail ecosystem. (Refer Page 25 & 58-59)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Defence Testing",
+    "question": "Consider the following statements about the test firing of the AK-203 'Sher' Assault Rifle:\n\n1. It is the first 100% indigenously produced rifle manufactured by Indo-Russian Rifles Private Limited (IRRPL).\n2. The manufacturing facility is located in Korwa, Amethi district, Uttar Pradesh.\n3. The AK-203 is intended to replace the Indian Small Arms System (INSAS) rifle in the Indian Army.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 3",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All statements are correct. The AK-203 'Sher' is the first 100% indigenised assault rifle produced by IRRPL at Korwa, Amethi (UP). It is designed to replace the existing INSAS rifles used by the Indian Armed Forces. (Refer Page 33 & 63)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Bilateral Visits",
+    "question": "During the official visit of Union MoS Dr. Jitin Prasada to Morocco, several key outcomes were achieved. Which of the following is NOT one of the outcomes of this visit?",
+    "options": {
+      "A": "Co-chairing the 7th India-Morocco Joint Commission meeting in Casablanca.",
+      "B": "Setting a strategic target to double bilateral trade to USD 4 billion in 5 years (by 2025).",
+      "C": "Signing of an MoU between FSSAI (India) and ONSSA (Morocco) for food safety cooperation.",
+      "D": "Signing a Cultural Exchange Programme for the years 2026-2030.",
+      "E": "Establishing a Joint Working Group (JWG) to exclusively develop offshore wind energy farms."
+    },
+    "answer": "E",
+    "rationale": "Option E is incorrect because the Joint Working Group (JWG) established was to explore a Preferential Trade Agreement (PTA) to address trade barriers, not for offshore wind energy farms. All other options are explicitly stated as outcomes of the 7th India-Morocco Joint Commission. (Refer Page 24 & 58)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Rural Infrastructure",
+    "question": "Assertion (A): NABARD and NaBFID signed an MoU to enhance financing support specifically for urban metro projects and aviation infrastructure.\nReason (R): The collaboration involves project identification, debt syndication, and capacity building for commercially viable PPP projects.\n\nSelect the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is NOT the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "D",
+    "rationale": "Assertion (A) is false because the MoU between NABARD and NaBFID is designed to strengthen financing for *rural infrastructure* projects (like irrigation, cold-chain, warehousing, agri-value chains), not urban metro/aviation. Reason (R) is true as their framework does include debt syndication and capacity building for PPP projects in these relevant sectors. (Refer Page 28 & 61)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Legal Frameworks",
+    "question": "Match the following aspects regarding the newly established Mediation Council of India (MCI):\n\nColumn I (Attribute):\n1. Notifying Ministry\n2. Age limit for Chairperson\n3. Term length for Non-ex-officio Members\n\nColumn II (Detail):\nA. 70 years\nB. 4 years\nC. Ministry of Law & Justice (MoLJ)\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-B, 2-C, 3-A"
+    },
+    "answer": "A",
+    "rationale": "The MCI was notified by the Department of Legal Affairs under the Ministry of Law & Justice (1-C). The age limit for the Chairperson is 70 years (2-A). The tenure for Non-ex-officio Members is 4 years (3-B). (Refer Page 23 & 57)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Literature & Arts",
+    "question": "Consider the following statements regarding recent awards in literature and arts:\n\n1. Ashutosh Parida won the 47th Sarala Puraskar for his Odia poetry collection 'Bishwas De Pruthwi (2024)'.\n2. The Sarala Puraskar carries a cash prize of Rs 7 lakh.\n3. The 2026 Ila-Bansidhar Panda Kala Samman was awarded to Odissi maestro Guru Durga Charan Ranbir and sculptor Damodar Behera.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All statements are correct. Ashutosh Parida won the 47th Sarala Puraskar (Rs 7 lakh prize) for 'Bishwas De Pruthwi'. The Ila-Bansidhar Panda Kala Samman (Rs 2.5 lakh prize) was awarded to Guru Durga Charan Ranbir and Damodar Behera. These are awarded by IMPaCT. (Refer Page 29 & 61)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Academic Initiatives",
+    "question": "Which of the following states approved the establishment of India's first dedicated Quantum and Artificial Intelligence (AI) University Campus, supported by a Rs 730.70 crore grant-in-aid from MeitY?",
+    "options": {
+      "A": "Karnataka (Bengaluru)",
+      "B": "Telangana (Hyderabad)",
+      "C": "Andhra Pradesh (Amaravati)",
+      "D": "Maharashtra (Pune)",
+      "E": "Uttar Pradesh (Lucknow)"
+    },
+    "answer": "C",
+    "rationale": "Chief Minister N. Chandrababu Naidu approved the establishment of India’s first dedicated Quantum and AI University Campus in Amaravati, Andhra Pradesh, with a Rs 730.70 crore investment funded by MeitY through NIELIT. (Refer Page 47 & 72)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Credit Cards for Defense",
+    "question": "Fill in the blanks regarding the MoU signed between Punjab National Bank (PNB) and the Indian Army:\nPNB launched the ________ credit card specifically designed for Indian Army officers, and the ________ credit card for Junior Commissioned Officers (JCOs) and other ranks.",
+    "options": {
+      "A": "PNB Shaurya; PNB Rakshak",
+      "B": "PNB LUXURA Metal; PNB Parakram",
+      "C": "PNB Parakram; PNB LUXURA Metal",
+      "D": "PNB Yodha; PNB Veer",
+      "E": "PNB Rakshak Plus; PNB Samman"
+    },
+    "answer": "B",
+    "rationale": "PNB launched the 'PNB LUXURA Metal Credit Card' for IA officers and the 'PNB Parakram Credit Card' for Junior Commissioned Officers (JCOs) and other ranks. (Refer Page 25 & 59)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Naval Weapons",
+    "question": "China reportedly tested a new stealth-coated variant of an anti-ship cruise missile designed to reduce radar reflections. Identify the missile from the options below:",
+    "options": {
+      "A": "DF-21D",
+      "B": "YJ-12",
+      "C": "YJ-18A",
+      "D": "CJ-10",
+      "E": "HQ-9"
+    },
+    "answer": "C",
+    "rationale": "China tested a new variant of the YJ-18A (Yingji or 'Eagle Strike') anti-ship cruise missile, which features a black radar-absorbing stealth coating for enhanced radar evasion. (Refer Page 36 & 65)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Rural Innovation",
+    "question": "Consider the following statements regarding the 'Critical Minerals Innovation Hackathon 2026' (CMiH 2026):\n\n1. It was launched by Union Minister G. Kishan Reddy to develop technology-based solutions for India's critical minerals ecosystem.\n2. The hackathon is organised by the Jawaharlal Nehru Aluminium Research Development and Design Centre (JNARDDC), Nagpur.\n3. Winners will receive a First Prize of Rs 1.50 lakh and a Second Prize of Rs 1 lakh for each problem statement.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 3",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All statements are correct. CMiH 2026 was launched by G. Kishan Reddy (MoM), organized by JNARDDC Nagpur, and offers Rs 1.50 lakh (1st prize) and Rs 1 lakh (2nd prize) for problem statements focused on critical minerals (Lithium & REE mapping, patent tracking). (Refer Page 17 & 54)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Global Observances",
+    "question": "Match the following important international days observed in August with their corresponding dates:\n\nColumn I:\n1. National Space Day\n2. World Water Week (start date)\n3. International Day Against Nuclear Tests\n\nColumn II:\nA. August 29\nB. August 23\nC. August 28\n\nSelect the correct code:",
+    "options": {
+      "A": "1-B, 2-B, 3-A",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-A, 2-B, 3-C",
+      "E": "1-C, 2-B, 3-A"
+    },
+    "answer": "A",
+    "rationale": "National Space Day is on August 23 (1-B). World Water Week is observed from August 23-27, so it starts on August 23 (2-B). International Day Against Nuclear Tests is on August 29 (3-A). (Refer Page 42-43 & 69-70)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "International Tie-ups",
+    "question": "Assertion (A): Tata Capital Limited (TCL) signed an MoU with Japan's Resona Bank to facilitate Japanese companies' entry and expansion into the Indian market.\nReason (R): This agreement followed Resona Bank's commitment of USD 100 million as a Limited Partner in the Tata Capital Growth Fund III.\n\nSelect the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is NOT the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true: TCL and Resona Bank signed an MoU to help Japanese companies explore business in India. Reason (R) is false because Resona Bank's investment commitment was USD 20 million, not USD 100 million, into the Tata Capital Growth Fund III. (Refer Page 27 & 60)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Agriculture & Crops",
+    "question": "Vice President C.P. Radhakrishnan launched India's first indigenous non-GMO high-expansion Popcorn Maize hybrid seed. Which two organizations collaborated to develop this hybrid?",
+    "options": {
+      "A": "ICAR-IIMR and Gourmet Popcornica",
+      "B": "NBSS&LUP and ITC Agri",
+      "C": "DRDO and Bayer CropScience",
+      "D": "CSIR-IHBT and Gourmet Popcornica",
+      "E": "ICAR-IARI and Mahyco"
+    },
+    "answer": "A",
+    "rationale": "The non-GMO Popcorn Maize hybrid was jointly developed through a scientific and commercial collaboration between the Indian Council of Agricultural Research-Indian Institute of Maize Research (ICAR-IIMR) and Gourmet Popcornica. (Refer Page 14 & 52)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Welfare Schemes",
+    "question": "Under the 'Vetri Payanam' and 'Annapurnam Super Six' schemes announced in Tamil Nadu, which of the following benefits are provided?",
+    "options": {
+      "A": "Free laptops for class X students and 6 free LPG cylinders annually.",
+      "B": "Expansion of free bus travel for women/transgenders and 3 free LPG cylinders.",
+      "C": "Lifelong free bus travel for women over 60 and 6 free LPG cylinders.",
+      "D": "Rs 25,000 marriage assistance and 3 free LPG cylinders.",
+      "E": "Rs 1,500/ha farmer aid and free bus travel for students."
+    },
+    "answer": "B",
+    "rationale": "TN CM Vijay announced the 'Annapurnam Super Six' scheme (providing 3 free LPG cylinders at a cost of Rs 4,000 crore) and 'Vetri Payanam' (expansion of free bus travel for women and transgenders). Options C, D, and E mix features from UP and Puducherry budgets. (Refer Page 45 & 71)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Health",
+    "question": "The WHO Regional Office for Africa recently confirmed the closure of poliovirus type 2 outbreaks in five African countries. Which of the following countries is NOT among those five?",
+    "options": {
+      "A": "Burundi",
+      "B": "Ghana",
+      "C": "Guinea-Bissau",
+      "D": "Kenya",
+      "E": "Uganda"
+    },
+    "answer": "D",
+    "rationale": "The five countries where the poliovirus type 2 outbreak ended are Burundi, Ghana, Guinea-Bissau, Republic of the Congo, and Uganda. Kenya is not on this list. (Refer Page 23 & 58)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content - August 2026 - 4th Week"
+  }
+]
