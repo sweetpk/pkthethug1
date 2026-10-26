@@ -1,0 +1,811 @@
+[
+  {
+    "category": "Economy & Business",
+    "sub_category": "Trade Data / TWQ & MoC&I",
+    "question": "Consider the following data points regarding India's trade performance as released in September 2026:\n\n1. According to the MoC&I, India's combined Merchandise and Services exports grew by 15.5% to reach USD 399.27 billion in April-August 2026.\n2. NITI Aayog's 9th TWQ report highlighted that India's merchandise trade deficit stood at USD 147.09 billion for the April-August 2026 period.\n3. NITI Aayog reported that global goods trade grew by 12.5% Year-on-Year in H1CY26.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 1 and 3",
+      "C": "Only 2 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "B",
+    "rationale": "Statements 1 and 3 are correct. Statement 2 is incorrect because the merchandise trade deficit of USD 147.09 billion was reported by the MoC&I for April-August 2026, whereas NITI Aayog's TWQ report stated a merchandise trade deficit of USD 86.6 billion for Q1 FY27. (Refer Page 15, 21, 85, 87)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "International Summits / BRICS",
+    "question": "During the 18th BRICS Summit in New Delhi, various specific agreements and Centers of Excellence (CoEs) were established. Which of the following is NOT a correct match regarding the key initiatives?",
+    "options": {
+      "A": "Health: Establishment of a Network of CoEs for mental health wellness with NIMHANS as the coordinating centre.",
+      "B": "Space: Amendment to the BRICS Remote Sensing Satellite Constellation (RSSC) agreement.",
+      "C": "Agriculture: Establishment of BRICS-AGRIN and digital farming initiatives.",
+      "D": "Finance: Creation of a BRICS Cryptocurrency Reserve managed by the New Development Bank (NDB).",
+      "E": "Technology: Adoption of China's 5-point plan on AI, trade, and tech."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect as there was no mention of a BRICS Cryptocurrency Reserve. The financial outcomes included the Task Force on Growth and Development (TF-GD), BRICS Insurance Resilience Centre, and Risk Lab support. (Refer Page 9, 83)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "High-Level Appointments",
+    "question": "Match the following recently appointed or re-elected officials with their respective organizations:\n\nColumn I:\n1. Kamlesh Chandra Varshney\n2. Luke J. Lindberg\n3. Jayanti Prasad\n4. Dr. Ariel Guarco\n\nColumn II:\nA. World Food Programme (WFP)\nB. International Cooperative Alliance (ICA)\nC. Insolvency and Bankruptcy Board of India (IBBI)\nD. Securities and Exchange Board of India (SEBI)\n\nSelect the correct matching:",
+    "options": {
+      "A": "1-D, 2-A, 3-C, 4-B",
+      "B": "1-D, 2-B, 3-C, 4-A",
+      "C": "1-C, 2-A, 3-D, 4-B",
+      "D": "1-A, 2-C, 3-B, 4-D",
+      "E": "1-D, 2-A, 3-B, 4-C"
+    },
+    "answer": "A",
+    "rationale": "Kamlesh Chandra Varshney was reappointed as SEBI WTM (1-D). Luke J. Lindberg was appointed as ED of WFP (2-A). Jayanti Prasad took additional charge as IBBI Chairperson (3-C). Dr. Ariel Guarco was re-elected as ICA President (4-B). (Refer Page 41, 42, 95)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Chronology of Observances",
+    "question": "Arrange the following Important Days observed in September 2026 in chronological order:\n\n1. World Patient Safety Day\n2. International Day of Democracy\n3. World Bamboo Day\n4. International Day for the Preservation of the Ozone Layer\n\nSelect the correct sequence:",
+    "options": {
+      "A": "2 - 4 - 1 - 3",
+      "B": "4 - 2 - 1 - 3",
+      "C": "2 - 1 - 4 - 3",
+      "D": "1 - 2 - 4 - 3",
+      "E": "4 - 1 - 2 - 3"
+    },
+    "answer": "A",
+    "rationale": "International Day of Democracy is Sept 15 (2). International Day for the Preservation of the Ozone Layer is Sept 16 (4). World Patient Safety Day is Sept 17 (1). World Bamboo Day is Sept 18 (3). Order: 2-4-1-3. (Refer Pages 52-54, 79-80)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Energy / GOBARdhan Scheme",
+    "question": "Under the new component-wise operational guidelines for the GOBARdhan scheme, which of the following financial parameters is correctly stated?",
+    "options": {
+      "A": "Administered CBG Price (ACP) is fixed at Rs 2,500/MMBTU till 2030.",
+      "B": "Financial assistance for new CBG plants is Rs 2.50 crore per TPD with a maximum threshold of Rs 50 crore per project.",
+      "C": "Administered CBG Price (ACP) is fixed at Rs 2,110/MMBTU (~Rs 98/kg) till March 31, 2036.",
+      "D": "Plants upgraded to CBG receive financial assistance of Rs 1.25 crore per TPD.",
+      "E": "CGD companies must fulfill a 5% mandatory CBG purchase obligation by FY27."
+    },
+    "answer": "C",
+    "rationale": "The ACP is fixed at Rs 2,110/MMBTU (~Rs 98/kg) till March 31, 2036. Financial assistance is Rs 1.25 crore per TPD (max Rs 30 crore) for new plants, and Rs 0.60 crore per TPD (max Rs 5 crore) for upgraded plants. CBG obligation is 3% in FY27. (Refer Page 19, 87)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Digital Payments / Revised MDR",
+    "question": "Assertion (A): Under the revised MDR framework issued by NPCI, small merchants with monthly collections below Rs 1 lakh via UPI QR codes are exempt from the 0.4% MDR charge.\nReason (R): The 0.4% charge is strictly applicable to all P2P (Person-to-Person) transactions exceeding Rs 2,000 to discourage high-value unauthorized transfers.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true as small merchants (< Rs 1 lakh/month via UPI QR) enjoy zero MDR. Reason (R) is false because P2P transactions remain completely free (Zero MDR) for all amounts; the 0.4% charge applies only to P2M transactions above Rs 2,000. (Refer Page 35, 92)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Energy / Subsidised LPG",
+    "question": "Regarding the MoPNG mandate for Biometric Aadhaar Authentication (BAA) for LPG refills effective October 1, 2026, consider the following statements:\n\n1. Consumers who refuse to complete BAA will still receive 14.2 kg LPG cylinders but without the subsidy.\n2. Non-BAA consumers are restricted to receiving only 5 kg or 10 kg cylinders at market price.\n3. The implicit subsidy highlighted for a 14.2 kg cylinder in September 2026 was Rs 210.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 2"
+    },
+    "answer": "B",
+    "rationale": "Statement 1 is incorrect because non-BAA consumers will not receive the standard 14.2 kg cylinders; they are restricted to 5 kg or 10 kg cylinders at market price without subsidy (Statement 2 is correct). Statement 3 is correct (Implicit subsidy was Rs 210 vs Rs 721 in June 2026). (Refer Page 29, 68)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Railways / Joint Ventures",
+    "question": "Fill in the blanks regarding the comprehensive maintenance of Vande Bharat Sleeper trainsets: \nBharat Heavy Electricals Limited (BHEL) and ________ established a Joint Venture Company with a paid-up capital of ________ to integrate their technical capabilities and maintain operational readiness of ________ Vande Bharat trainsets.",
+    "options": {
+      "A": "Alstom India ; Rs 100 lakh ; 120",
+      "B": "Titagarh Rail Systems Limited (TRSL) ; Rs 50 lakh ; 80",
+      "C": "Larsen & Toubro (L&T) ; Rs 50 lakh ; 100",
+      "D": "Titagarh Rail Systems Limited (TRSL) ; Rs 1 crore ; 120",
+      "E": "BEML Limited ; Rs 75 lakh ; 80"
+    },
+    "answer": "B",
+    "rationale": "BHEL and TRSL formed a 50:50 JVC with Rs 50 lakh paid-up capital to maintain 80 Vande Bharat Sleeper trainsets for 35 years. (Refer Page 17, 63, 86)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Defence / OWA Drone",
+    "question": "Assertion (A): The 'KAL' drone, successfully tested at Pokhran, is equipped with a dual navigation system combining GNSS and INS for autonomous precision strikes.\nReason (R): It was exclusively designed to carry a massive payload of up to 500 kg for short-range tactical strikes of under 100 km.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true (KAL uses GNSS + INS). Reason (R) is false because KAL is a long-range drone (up to 1,000 km) and carries a payload of up to 50 kg, not 500 kg. (Refer Page 44, 76, 96)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Tennis / US Open 2026",
+    "question": "Which of the following statements regarding the doubles winners at the US Open 2026 is INCORRECT?",
+    "options": {
+      "A": "The Men's Doubles title was won by Christian Harrison (USA) and Neal Skupski (UK).",
+      "B": "The Women's Doubles title was claimed by Kateřina Siniaková (Czech Republic) and Taylor Townsend (USA).",
+      "C": "The Mixed Doubles title was secured by Karolína Muchová and Jakub Menšík.",
+      "D": "The runners-up for the Mixed Doubles were Kevin Krawietz and Tim Pütz.",
+      "E": "Belinda Bencic (Switzerland) and Flavio Cobolli (Italy) were the runners-up in the Mixed Doubles category."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect because Kevin Krawietz and Tim Pütz were the runners-up in the Men's Doubles, not Mixed Doubles. The runners-up for Mixed Doubles were Belinda Bencic and Flavio Cobolli. (Refer Page 46, 77)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "New Species",
+    "question": "Match the following newly discovered species with their respective locations:\n\nColumn I:\n1. Gegeneophis chandgadi\n2. Ingerana aizawl\n3. Leopardus tilcayo\n\nColumn II:\nA. Yungas cloud forest, Bolivia\nB. Chandgad, Kolhapur district, Maharashtra\nC. Hratdawng Stream, Mizoram University\n\nSelect the correct matching:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-A, 2-C, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-C, 2-A, 3-B"
+    },
+    "answer": "B",
+    "rationale": "Gegeneophis chandgadi was found in Maharashtra (1-B). Ingerana aizawl was found in Mizoram (2-C). Leopardus tilcayo was found in Bolivia (3-A). (Refer Page 45, 76)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Economy / Trade Data",
+    "question": "Arrange the following top export destinations for India based on the April-August 2026 data in ascending order (Rank 5 to Rank 1):\n\n1. Singapore\n2. China\n3. Malaysia\n4. Tanzania Rep\n5. USA\n\nSelect the correct sequence:",
+    "options": {
+      "A": "3 - 4 - 2 - 1 - 5",
+      "B": "5 - 2 - 1 - 4 - 3",
+      "C": "3 - 4 - 1 - 2 - 5",
+      "D": "1 - 2 - 5 - 4 - 3",
+      "E": "4 - 3 - 2 - 1 - 5"
+    },
+    "answer": "C",
+    "rationale": "The top 5 export destinations are: 1. Singapore, 2. China, 3. USA, 4. Tanzania Rep, 5. Malaysia. Arranging in ascending order (Rank 5 to 1): Malaysia (3), Tanzania Rep (4), USA (5... wait, the list is: 1. Singapore, 2. China, 3. USA, 4. Tanzania, 5. Malaysia. Let's re-read Page 85: 'Top 5 Exports destination: Singapore, China, USA, Tanzania Rep, Malaysia'. This implies Rank 1=Singapore, Rank 2=China, Rank 3=USA, Rank 4=Tanzania Rep, Rank 5=Malaysia. Therefore, Rank 5 to Rank 1 is: Malaysia (3), Tanzania (4), USA (5), China (2), Singapore (1). None of the options match 3-4-5-2-1. Let's re-verify the text. Text: 'Top 5 Exports destination: Singapore, China, USA, Tanzania Rep, Malaysia'. Okay, so 5th is Malaysia (3), 4th is Tanzania (4), 3rd is USA (5), 2nd is China (2), 1st is Singapore (1). Wait, option A has 5 at the end. If USA is Rank 1, the text might mean USA, Singapore, China... but text explicitly lists 'Singapore, China, USA, Tanzania Rep, Malaysia'. Assuming that is 1 to 5. Ascending order means Rank 5 (Malaysia), Rank 4 (Tanzania), Rank 3 (USA), Rank 2 (China), Rank 1 (Singapore). So 3-4-5-2-1. Let's assume the question meant descending order (Rank 1 to 5): 1-2-5-4-3. Wait, I will rewrite the options to make it clean.",
+    "options": {
+      "A": "3 - 4 - 5 - 2 - 1",
+      "B": "1 - 2 - 5 - 4 - 3",
+      "C": "3 - 4 - 1 - 2 - 5",
+      "D": "5 - 1 - 2 - 4 - 3",
+      "E": "4 - 3 - 5 - 2 - 1"
+    },
+    "answer": "A",
+    "rationale": "According to the MoC&I data, the top 5 export destinations are: 1st - Singapore, 2nd - China, 3rd - USA, 4th - Tanzania Rep, 5th - Malaysia. Arranged in ascending order (Rank 5 to 1): Malaysia (3), Tanzania (4), USA (5), China (2), Singapore (1). Sequence: 3-4-5-2-1. (Refer Page 85)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Government Schemes / PM Vishwakarma",
+    "question": "Consider the following statements regarding the financial support mechanisms under the PM Vishwakarma Scheme:\n\n1. It provides a toolkit incentive of Rs 15,000 as an e-voucher.\n2. Beneficiaries receive a daily training stipend of Rs 500.\n3. The scheme offers a digital transaction incentive of Rs 5 per transaction for up to 100 transactions monthly.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the digital transaction incentive is Re 1 per transaction, not Rs 5. (Refer Page 14, 85)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Upcoming Global Events",
+    "question": "A series of major international sports events were recently allocated to various host cities. Which of the following combinations correctly pairs the event with its designated host year and location?",
+    "options": {
+      "A": "F1 Grand Prix Revival (Target) - 2027 in Greater Noida, India",
+      "B": "11th Asian Senior Wushu Championships - 2028 in India",
+      "C": "World Athletics Championships - 2029 in Munich, Germany",
+      "D": "UEFA Champions League Final - 2028 in Camp Nou, Barcelona",
+      "E": "World Athletics Championships - 2027 in Nairobi, Kenya"
+    },
+    "answer": "B",
+    "rationale": "India will host the 11th Asian Senior Wushu Championships for the first time in 2028 (Option B is correct). F1 revival target is 2028. World Athletics 2029 is in Nairobi, Kenya. UEFA 2028 final is in Munich (2029 is in Barcelona). (Refer Pages 11, 48, 78, 84, 98)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Employment Statistics / PLFS",
+    "question": "Consider the following statements derived from the 17th Periodic Labour Force Survey (PLFS) Monthly Bulletin for August 2026:\n\n1. The survey collected information from 3,70,160 persons, with a larger sample taken from urban areas compared to rural areas.\n2. The overall Labour Force Participation Rate (LFPR) for persons aged 15 and above stood at 55.6%.\n3. The rural Unemployment Rate (UR) was recorded at 4.1%, which was lower than the urban UR.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 3"
+    },
+    "answer": "B",
+    "rationale": "Statements 2 and 3 are correct. Statement 1 is incorrect because the rural sample (2,11,353) was larger than the urban sample (1,58,807). (Refer Page 10, 60, 83)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Digital Innovations / GFF 2026",
+    "question": "Which of the following accurately describes a digital innovation or collaboration announced during the Global Fintech Fest (GFF) 2026?",
+    "options": {
+      "A": "NPCI partnered with SBI to launch FiMI Banking, a sovereign AI model for wholesale banking.",
+      "B": "Zeta and Pluxee introduced passkey-authentication on RuPay prepaid cards to replace SMS-based OTPs.",
+      "C": "Mastercard collaborated with HDFC Bank to pilot the 'Mastercard One Credential'.",
+      "D": "PhonePe partnered with Mastercard to launch 'Tap-to-Pay' and 'Smart Accept'.",
+      "E": "Amazon Pay and ICICI Bank launched a co-branded 'Business Credit Card'."
+    },
+    "answer": "B",
+    "rationale": "Option B is correct. Option A is incorrect (FiMI is for retail banking by NPCI + HDFC). Option C is incorrect (Mastercard + CUB). Option D is incorrect (PhonePe + Visa). Option E is incorrect (Amazon Pay + Kotak Mahindra Bank). (Refer Page 33, 91, 92)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Defence / DRDO Testing Range",
+    "question": "Fill in the blanks regarding DRDO's newly approved weapon and missile testing range:\nThe new range will be established at ________ in the ________ district of West Bengal, located approximately ________ northeast of the existing Chandipur facility.",
+    "options": {
+      "A": "Junput ; Purba Medinipur ; 70 km",
+      "B": "Digha ; Paschim Medinipur ; 100 km",
+      "C": "Haldia ; Purba Medinipur ; 50 km",
+      "D": "Junput ; South 24 Parganas ; 120 km",
+      "E": "Sagar Island ; Purba Medinipur ; 70 km"
+    },
+    "answer": "A",
+    "rationale": "The new facility will be established at Junput in Purba Medinipur district, WB, located 70 km northeast of Chandipur. (Refer Page 8, 59)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Government Schemes / PMKKKY",
+    "question": "Which of the following statements regarding the financial allocation and progress of the PMKKKY scheme (as of 2026) is INCORRECT?",
+    "options": {
+      "A": "Over 4.70 lakh projects have been sanctioned under the scheme.",
+      "B": "The total value of sanctioned projects exceeds Rs 1 lakh crore.",
+      "C": "More than 2.92 lakh projects have been successfully completed.",
+      "D": "The committed funds for ongoing projects stand at Rs 56,696 crore.",
+      "E": "The scheme mandates utilizing 70% of funds for high-priority sectors."
+    },
+    "answer": "D",
+    "rationale": "Statement D is incorrect because the committed funds for ongoing projects stand at Rs 30,512 crore, not Rs 56,696 crore (which is the 5-year revised expenditure for EPFO). All other statements reflect accurate PMKKKY progress metrics. (Refer Page 26, 89)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Science / Arthur M. Bueche Award",
+    "question": "Assertion (A): Sethuraman Panchanathan was awarded the Arthur M. Bueche Award 2026 for his contributions linking engineering, policy, and innovation ecosystems.\nReason (R): The award is conferred annually by the National Academy of Engineering (NAE) and presented in Washington, D.C.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both Assertion (A) and Reason (R) are factually true based on the document. However, R describes the awarding body and location, which is not the *reason* why Panchanathan specifically received the award (which was for his policy/innovation work). (Refer Page 40, 74, 94)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Obituary",
+    "sub_category": "Prominent Personalities",
+    "question": "Match the following personalities who passed away in September 2026 with their respective political affiliations or roles:\n\nColumn I:\n1. Alla Kali Krishna Srinivas\n2. E.M. Sudarsana Natchiappan\n3. Princess Astrid\n\nColumn II:\nA. Indian National Congress (INC)\nB. House of Glücksburg\nC. Yuvajana Sramika Rythu Congress Party (YSRCP)\n\nSelect the correct matching:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-C, 3-B",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "A",
+    "rationale": "Alla Nani (Alla Kali Krishna Srinivas) was associated with YSRCP (1-C). E.M. Sudarsana Natchiappan was a senior INC leader (2-A). Princess Astrid belonged to the House of Glücksburg (3-B). (Refer Pages 49, 78, 98)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Financial Indices / GFCI 40",
+    "question": "Arrange the following Indian cities in ascending order based on their global ranking in the 40th Global Financial Centres Index (GFCI 40) (from lowest numerical rank to highest numerical rank):\n\n1. Mumbai\n2. New Delhi\n3. GIFT City\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1 - 2 - 3",
+      "B": "3 - 1 - 2",
+      "C": "2 - 1 - 3",
+      "D": "3 - 2 - 1",
+      "E": "1 - 3 - 2"
+    },
+    "answer": "B",
+    "rationale": "The ranks are: GIFT City (37th), Mumbai (49th), New Delhi (56th). Arranging from lowest numerical rank (highest performance) to highest numerical rank: 37 (GIFT City) -> 49 (Mumbai) -> 56 (New Delhi). Sequence is 3 - 1 - 2. (Refer Page 34, 71, 92)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Multilateral Forums / G20",
+    "question": "Consider the following statements about the G20 Energy Abundance Ministerial Meeting 2026:\n\n1. It was held in Houston under the United States of America (USA) G20 Presidency.\n2. The Indian delegation was led by Union Minister Manohar Lal.\n3. India adopted four consensus outcomes which included clean cooking access and critical minerals.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 1 and 3",
+      "C": "Only 2 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 2"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. The meeting was in Houston (USA Presidency), India was led by Manohar Lal, and adopted 4 consensus outcomes focusing on clean cooking, water reuse, regulatory efficiency, and critical minerals. (Refer Page 32, 70, 91)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space & International Co-operation",
+    "question": "Which of the following hybrid statements correctly links a recent NASA discovery with an outcome of the 18th BRICS Summit?",
+    "options": {
+      "A": "NASA discovered the McGetchin crater, while BRICS established the BRICS-NASA Lunar Gateway initiative.",
+      "B": "NASA discovered a 141-foot deep crater named McGetchin, and concurrently, BRICS amended its Remote Sensing Satellite Constellation (RSSC) agreement.",
+      "C": "NASA deployed the LRO to monitor the McGetchin crater, fulfilling a direct mandate from the BRICS Space Council.",
+      "D": "The McGetchin crater impact triggered global weather changes, leading BRICS to establish BRICS-AGRIN.",
+      "E": "NASA discovered the McGetchin crater on Mars, and BRICS amended the RSSC agreement to track Martian weather."
+    },
+    "answer": "B",
+    "rationale": "Option B correctly states two independent but factual events from the September 2026 PDF: NASA discovered the McGetchin crater (141 feet deep), and BRICS amended its RSSC agreement during the 18th summit. There is no direct operational link between NASA and BRICS mentioned. (Refer Pages 43, 75, 83, 96)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Technology / AI Centres",
+    "question": "Fill in the blanks regarding the new AI Centre of Excellence (AI CoE) in Odisha:\nThe Ministry of Electronics and Information Technology (MeitY) granted approval for the AI CoE to be established in ________. It will be implemented by the ________ and will utilize ________ sq. ft. of built-up space.",
+    "options": {
+      "A": "Cuttack ; NIELIT ; 5,000",
+      "B": "Bhubaneswar ; Software Technology Parks of India (STPI) ; 10,000",
+      "C": "Rourkela ; C-DAC ; 15,000",
+      "D": "Bhubaneswar ; IIT Kharagpur ; 10,000",
+      "E": "Puri ; Software Technology Parks of India (STPI) ; 8,000"
+    },
+    "answer": "B",
+    "rationale": "The AI CoE will be established in Bhubaneswar, Odisha, implemented by STPI, and will utilize 10,000 sq. ft. of built-up space. (Refer Page 17, 63, 86)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Infrastructure / Kishau Multipurpose Project",
+    "question": "Which of the following numerical data points regarding the Kishau Multipurpose Project is INCORRECT?",
+    "options": {
+      "A": "The dam's height is 232.6 metres.",
+      "B": "The storage capacity is 1,562 Million Cubic Metres (MCM).",
+      "C": "The irrigation potential is 97,000 hectares.",
+      "D": "The hydropower generation capacity is 1,020 MU.",
+      "E": "The funding ratio is 90% from the Centre and 10% from the States."
+    },
+    "answer": "D",
+    "rationale": "The hydropower generation capacity for the Kishau project is 1,476 MU (Million Units), not 1,020 MU (which was the capacity of the Punatsangchhu-II project in Bhutan). (Refer Page 15, 62, 85)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "State-level Initiatives",
+    "question": "Match the following state governments with their respective initiatives launched or approved in September 2026:\n\nColumn I:\n1. Madhya Pradesh\n2. Ladakh\n3. Uttar Pradesh\n4. Maharashtra\n\nColumn II:\nA. Toy Manufacturing Promotion Policy 2025\nB. Rs 27,000 crore Greenfield Shipbuilding Cluster\nC. Swamitva Adhikar Abhilekh Nispadan Evam Panjiyan Yojana\nD. Declaration of 'Kumik' as the first Heritage Village\n\nSelect the correct matching:",
+    "options": {
+      "A": "1-C, 2-D, 3-B, 4-A",
+      "B": "1-C, 2-D, 3-A, 4-B",
+      "C": "1-D, 2-C, 3-A, 4-B",
+      "D": "1-A, 2-B, 3-C, 4-D",
+      "E": "1-C, 2-A, 3-D, 4-B"
+    },
+    "answer": "B",
+    "rationale": "MP launched the Swamitva scheme (1-C). Ladakh declared Kumik as a Heritage Village (2-D). UP approved the Toy Manufacturing Policy (3-A). Maharashtra signed an MoU for the Dighi Shipbuilding Cluster (4-B). (Refer Pages 56, 57, 81, 101)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Defence / Maritime Exercises",
+    "question": "Assertion (A): The Colombo Security Conclave (CSC) Table Top Exercise focused heavily on anti-submarine warfare and carrier strike group operations in the Indian Ocean Region.\nReason (R): The exercise aims to strengthen regional maritime coordination and collective response mechanisms against illegal maritime activities like terrorism, trafficking, and IUU fishing.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "D",
+    "rationale": "Assertion (A) is false because the CSC Table Top Exercise focused on illegal maritime activities (terrorism, trafficking, IUU fishing), not anti-submarine warfare or carrier strike groups. Reason (R) is factually true and correctly states the actual focus. (Refer Page 8, 59, 83)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Cricket / Women's T20 Asia Cup",
+    "question": "Arrange the following statistical milestones achieved during the 2026 Women's T20 Asia Cup Final in descending order of their numerical values:\n\n1. Strike rate of Shafali Verma during her innings.\n2. Total runs posted by the Indian Women's team.\n3. The record opening partnership between Verma and Mandhana.\n4. Runs scored by the Sri Lankan team before being bowled out.\n\nSelect the correct sequence:",
+    "options": {
+      "A": "2 - 1 - 3 - 4",
+      "B": "1 - 2 - 3 - 4",
+      "C": "2 - 3 - 1 - 4",
+      "D": "1 - 3 - 2 - 4",
+      "E": "3 - 2 - 1 - 4"
+    },
+    "answer": "A",
+    "rationale": "Values are: Total runs by India = 183 (2). Strike rate of Shafali Verma = 174.35 (1). Opening partnership = 129 (3). Runs by Sri Lanka = 111 (4). Descending order: 183 > 174.35 > 129 > 111, which matches 2 - 1 - 3 - 4. (Refer Page 47, 77, 78)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Labour & Employment / EPFO",
+    "question": "Consider the following statements regarding the Union Cabinet's approval to enhance the EPFO wage ceiling:\n\n1. The mandatory EPFO wage ceiling has been raised from Rs 15,000 to Rs 25,000 per month.\n2. The revised ceiling came into effect on 1 October 2026.\n3. The government has committed a revised expenditure of Rs 56,696 Crore over a 5-year period for this enhancement.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "C",
+    "rationale": "Statements 1 and 3 are correct. Statement 2 is incorrect because the revised ceiling came into effect on 17 September 2026 (Sewa Diwas), not 1 October. (Refer Page 19, 64, 87)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Agriculture & Science / SPROUT & Dryland Congress",
+    "question": "Which of the following statements combines factual outcomes from both the SPROUT facility inauguration and the Dryland Congress 2026?",
+    "options": {
+      "A": "SPROUT uses SpeedSeed technology to reduce crop cycles, while the Dryland Congress adopted the 'Delhi Declaration on Drylands (3D)' to transform dryland agriculture.",
+      "B": "SPROUT focuses on eradicating weeds in chickpea crops, and the Dryland Congress awarded the ISSCA Global Award to NIFTEM.",
+      "C": "SPROUT was inaugurated in Odisha, whereas the Dryland Congress was held in Lebanon by ICARDA.",
+      "D": "SPROUT is a DRDO initiative for drone farming, and the Dryland Congress focused on AI integration in the global south.",
+      "E": "Both SPROUT and the Dryland Congress are exclusively funded by the Global Crop Diversity Trust."
+    },
+    "answer": "A",
+    "rationale": "Option A correctly reflects facts from both events: SPROUT (at BRIC-NIPGR) uses SpeedSeed to cut crop cycles, and the Dryland Congress 2026 concluded with the adoption of the 'Delhi Declaration on Drylands (3D)'. (Refer Pages 11, 21, 60, 65, 83, 87)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "Cooperative Alliances / IFFCO",
+    "question": "Fill in the blanks regarding the International Cooperative Alliance (ICA) elections: \nDileep Sanghani was elected as one of the ________ At-Large Directors out of ________ candidates during the ICA General Assembly 2026 held in ________.",
+    "options": {
+      "A": "10 ; 20 ; New Delhi",
+      "B": "15 ; 24 ; Panama City",
+      "C": "12 ; 24 ; Geneva",
+      "D": "15 ; 30 ; Panama City",
+      "E": "18 ; 24 ; Houston"
+    },
+    "answer": "B",
+    "rationale": "He was among the 15 At-Large Directors elected from 24 candidates at the assembly held in Panama City. (Refer Page 41, 74, 95)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Social Justice / Nasha Mukt Bharat",
+    "question": "Which of the following statements incorrectly attributes a 'Nasha Mukt' (drug-free) initiative to its implementing ministry/department?",
+    "options": {
+      "A": "Department of Social Justice and Empowerment (DoSJE) extended its MoU with 'The Art of Living'.",
+      "B": "Ministry of Youth Affairs & Sports (MYAS) launched the 100 Weeks Nasha Mukt Yuva Abhiyan.",
+      "C": "The Rashtriya Sankalp Samaroh was utilized by the Department of Youth Affairs (DoYA) to mobilize youth.",
+      "D": "The Nasha Mukt Bharat Abhiyaan (NMBA) incorporates the National Service Scheme (NSS) for mass outreach.",
+      "E": "The 'Art of Living' MoU was primarily signed by the Ministry of Home Affairs (MHA) to curb narcotics trafficking."
+    },
+    "answer": "E",
+    "rationale": "Option E is incorrect because the MoU with 'The Art of Living' was signed by the Department of Social Justice and Empowerment (DoSJE), not the Ministry of Home Affairs. All other statements are correct attributes. (Refer Pages 22, 27, 65, 67, 87, 89)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Digital Innovations / MoUs",
+    "question": "Match the following Memorandums of Understanding (MoUs) or partnerships announced at the Global Fintech Fest (GFF) 2026 with their respective objectives:\n\nColumn I:\n1. IAMAI and Saudi MISA\n2. MCX and IAMAI\n3. novio and IOB\n\nColumn II:\nA. Establish a Commodity Markets Innovation Council\nB. Launch a co-branded RuPay Credit Card\nC. 3-year agreement on fintech and investment cooperation\n\nSelect the correct matching:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-B, 2-C, 3-A",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "IAMAI-MISA signed a 3-year MoU for fintech cooperation (1-C). MCX-IAMAI partnered to establish the Commodity Markets Innovation Council (2-A). Novio and IOB launched a co-branded RuPay Credit Card (3-B). (Refer Page 33, 71, 92)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Environment / Bamboo Day",
+    "question": "Arrange the following regarding bamboo coverage based on the data released on World Bamboo Day 2026 in descending order (Largest to Smallest):\n\n1. India's total bamboo-bearing area\n2. The area targeted for restoration under the MISHTI mangrove scheme\n3. Madhya Pradesh's total bamboo-bearing area\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1 - 3 - 2",
+      "B": "1 - 2 - 3",
+      "C": "3 - 1 - 2",
+      "D": "2 - 3 - 1",
+      "E": "3 - 2 - 1"
+    },
+    "answer": "A",
+    "rationale": "India's bamboo area: 15.47 million hectares (1). MP's bamboo area: 20,421 sq. km or ~2 million hectares (3). MISHTI restoration area: 27,652 hectares (2). Descending order: 15.47M ha > 2M ha > 27k ha, which is 1 - 3 - 2. (Refer Page 7, 54, 59, 100)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Bilateral Relations / India-Bhutan",
+    "question": "Consider the following statements regarding the hydropower projects reviewed during Dr. S. Jaishankar's visit to Bhutan:\n\n1. Punatsangchhu-I Hydroelectric Project has a capacity of 1,200 MW.\n2. Punatsangchhu-II Hydroelectric Project has a capacity of 1,020 MW.\n3. Both projects are funded under a newly established Rs 10,000 crore Line of Credit (LoC).\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because India extended a concessional Line of Credit (LoC) worth Rs 4,000 crore to Bhutan for energy sector projects, not Rs 10,000 crore. (Refer Page 30, 69)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Athletics / Global Event Hosting",
+    "question": "Which of the following correctly pairs the upcoming major international sports events with their respective hosts and years as announced in September 2026?",
+    "options": {
+      "A": "World Athletics Championships 2029 - Beijing, China ; UEFA Champions League Final 2028 - Barcelona, Spain",
+      "B": "World Athletics Championships 2027 - Nairobi, Kenya ; UEFA Champions League Final 2029 - Munich, Germany",
+      "C": "World Athletics Championships 2029 - Nairobi, Kenya ; UEFA Champions League Final 2028 - Munich, Germany",
+      "D": "World Athletics Championships 2031 - Nairobi, Kenya ; UEFA Champions League Final 2028 - London, UK",
+      "E": "World Athletics Championships 2027 - Munich, Germany ; UEFA Champions League Final 2029 - Rome, Italy"
+    },
+    "answer": "C",
+    "rationale": "World Athletics 2029 will be in Nairobi, Kenya. UEFA Champions League 2028 final will be in Munich, Germany (2029 will be in Barcelona, and World Athletics 2027 in Beijing). (Refer Page 48, 78, 98)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Regulatory Norms / RBI Market Risk",
+    "question": "Assertion (A): Under the RBI's new minimum capital requirement for market risk under Basel III, the Foreign Exchange Risk component requires a 9% Net Open Position (NOP).\nReason (R): The directions strictly enforce that all commercial banks, Small Finance Banks (SFBs), and Payment Banks (PBs) must adhere to these norms by 1 April 2027.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true (9% NOP for Forex Risk). Reason (R) is false because the new directions apply to Commercial Banks, but explicitly *exclude* Small Finance Banks (SFBs), Payment Banks (PBs), and Local Area Banks (LABs). (Refer Page 36, 93)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Defence / Military Exercises",
+    "question": "Fill in the blanks regarding the Indo-Mongolia Joint Military Exercise:\nThe ________ edition of the exercise 'NOMADIC ELEPHANT' commenced at the Foreign Training Node in ________, featuring 45 personnel from the Indian Army, predominantly from the ________.",
+    "options": {
+      "A": "17th ; Ulaanbaatar ; Gorkha Rifles",
+      "B": "18th ; Pithoragarh ; ARUNACHAL SCOUTS",
+      "C": "18th ; Bakloh ; KUMAON REGIMENT",
+      "D": "19th ; Pune ; MARATHA LIGHT INFANTRY",
+      "E": "18th ; Visakhapatnam ; ARUNACHAL SCOUTS"
+    },
+    "answer": "B",
+    "rationale": "It was the 18th edition, held in Pithoragarh, Uttarakhand, with the Indian Army represented predominantly by a battalion of the ARUNACHAL SCOUTS. (Refer Page 27, 67, 89)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Regulatory Actions / NBFCs",
+    "question": "The RBI cancelled the Certificates of Registration (CoR) of five NBFCs in September 2026 under Section 45-IA (6) of the RBI Act, 1934. Which of the following is NOT one of the NBFCs whose CoR was cancelled?",
+    "options": {
+      "A": "Dar's Financial Services",
+      "B": "Rolta Holding and Finance Corporation",
+      "C": "Vasudeo Securities",
+      "D": "Anupam Mercantile Ltd",
+      "E": "A C Choksi Financial Services"
+    },
+    "answer": "D",
+    "rationale": "Anupam Mercantile Ltd is listed among the NBFCs that *surrendered* their licences due to exit, merger, or compliance changes, not among the five whose licences were forcibly *cancelled*. (Refer Page 37, 72, 93)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Health & Environment Themes",
+    "question": "Match the following observance days with their respective 2026 themes:\n\nColumn I:\n1. International Day of Democracy\n2. International Day for the Preservation of the Ozone Layer\n3. World Cleanup Day\n\nColumn II:\nA. Global action for a cooler planet\nB. From Clean Plates to Clean Cities\nC. Bring human rights into focus\n\nSelect the correct matching:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-B, 2-C, 3-A",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Democracy theme is 'Bring human rights into focus' (1-C). Ozone theme is 'Global action for a cooler planet' (2-A). Cleanup Day theme is 'From Clean Plates to Clean Cities' (3-B). (Refer Pages 52, 55, 79, 80, 99, 101)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Government Schemes / PM-KMY",
+    "question": "Arrange the following Indian states in descending order based on their farmer enrolment numbers under the Pradhan Mantri Kisan Maandhan Yojana (PM-KMY) as of early 2026:\n\n1. Bihar\n2. Haryana\n3. Uttar Pradesh\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1 - 2 - 3",
+      "B": "2 - 1 - 3",
+      "C": "2 - 3 - 1",
+      "D": "3 - 1 - 2",
+      "E": "1 - 3 - 2"
+    },
+    "answer": "B",
+    "rationale": "Haryana leads with 5.75 lakh enrolments (2), followed by Bihar with 3.46 lakh (1), and UP/Jharkhand with 2.5 lakh+ (3). Thus, descending order is 2 - 1 - 3. (Refer Page 5, 82)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Technology / Anti-Drone Systems",
+    "question": "Consider the following statements regarding the MoUs signed between CISF and IIT Kanpur:\n\n1. The first MoU involves a 6-week residential Cybersecurity Training Programme for 40 CISF personnel per batch conducted by IHUB NTIHAC Foundation (C3iHub).\n2. The second MoU aims to establish a Drone & Anti-Drone Centre of Excellence (CoE).\n3. The Drone CoE will be located at the IIT Kanpur main campus in Uttar Pradesh.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the Drone & Anti-Drone CoE will be established at MPRTC Behror, Rajasthan, not the main IIT Kanpur campus. (Refer Page 16, 17, 63, 86)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Energy / Schemes Interlink",
+    "question": "Which of the following statements correctly represents recent mandates by the Ministry of Petroleum and Natural Gas (MoPNG) across different sectors?",
+    "options": {
+      "A": "MoPNG mandated a 3% CBG purchase obligation for CGD companies in FY27 and simultaneously mandated Biometric Aadhaar Authentication for subsidised LPG effective October 1, 2026.",
+      "B": "MoPNG mandated a 5% CBG purchase obligation for FY27 and launched a Rs 27,000 crore shipbuilding cluster in Maharashtra.",
+      "C": "MoPNG fixed the Administered CBG Price at Rs 3,000/MMBTU and mandated that non-BAA consumers will no longer receive any LPG cylinders.",
+      "D": "MoPNG launched the Swachh Seva Aankalan framework and enforced a 4% CBG obligation for FY27.",
+      "E": "MoPNG established a new Centre of Excellence (CoE) for Drone forensics and mandated LPG distributors to offer 5kg cylinders for free."
+    },
+    "answer": "A",
+    "rationale": "Option A correctly captures two independent mandates by MoPNG: the 3% CBG obligation under GOBARdhan guidelines for FY27, and the Biometric Aadhaar Authentication (BAA) for subsidised LPG from October 1, 2026. (Refer Pages 19, 29, 64, 68)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Hockey / AHF Junior Asia Cup",
+    "question": "Fill in the blanks regarding the finals of the AHF Junior Asia Cup 2026:\nThe Indian Junior Men's team secured a record-extending sixth title by defeating ________ with a score of 4-1, while the Indian Junior Women's team completed a hat-trick of titles by edging past ________ 1-0.",
+    "options": {
+      "A": "Pakistan ; Japan",
+      "B": "South Korea ; China",
+      "C": "China ; South Korea",
+      "D": "South Korea ; Japan",
+      "E": "Pakistan ; China"
+    },
+    "answer": "B",
+    "rationale": "The Indian Junior Men defeated South Korea 4-1, and the Junior Women defeated China 1-0 to win their respective titles. (Refer Page 46, 77)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Cinema / Dadasaheb Phalke Award",
+    "question": "Which of the following facts regarding the Dadasaheb Phalke Award conferred in September 2026 is INCORRECT?",
+    "options": {
+      "A": "It was conferred upon veteran actor Anant Nag.",
+      "B": "He is the 56th recipient of the award.",
+      "C": "The award was presented during the 75th National Film Awards ceremony.",
+      "D": "The presentation took place at Kevadia, Gujarat.",
+      "E": "Anant Nag is the second Kannada cinema artist to receive the award."
+    },
+    "answer": "C",
+    "rationale": "The award was presented during the 72nd National Film Awards ceremony, not the 75th. All other statements are correct. (Refer Page 39, 73, 94)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Books & Authors",
+    "sub_category": "Digital / Web Launches",
+    "question": "Match the following launches (books/portals/apps) in September 2026 with their respective themes or releasing authorities:\n\nColumn I:\n1. 'A Century of Service – The RSS in 100 Acts of Seva'\n2. Jan Soochna Seva portal\n3. Mangrove Geographic Information System (MGIS)\n\nColumn II:\nA. Launched by Supreme Court of India in Hindi\nB. Released by VP C.P. Radhakrishnan\nC. Launched by Union Minister Bhupender Yadav\n\nSelect the correct matching:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-A, 2-C, 3-B",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-C, 2-A, 3-B"
+    },
+    "answer": "C",
+    "rationale": "The RSS book was released by VP C.P. Radhakrishnan (1-B). Jan Soochna Seva was launched by the Supreme Court of India in Hindi during Hindi Diwas (2-A). MGIS portal was launched by Bhupender Yadav, MoEFCC (3-C). (Refer Pages 7, 50, 51, 79, 99)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Bilateral Relations / India-Vietnam",
+    "question": "Assertion (A): During the 19th India-Vietnam Joint Commission Meeting (JCM), both nations agreed to observe 2027 as the 'Year of India-Vietnam Friendship'.\nReason (R): The year 2027 will mark 55 years of diplomatic relations between the two countries, and they have set a bilateral trade target of USD 25 billion by 2030.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Assertion (A) is true. Reason (R) is also true and directly explains the rationale for observing 2027 as the friendship year (marking 55 years of diplomatic relations). The trade target detail is also factually correct for this meeting. (Refer Page 7, 59, 82)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Indices / Global Gender Gap Report",
+    "question": "Arrange the following countries in descending order of their overall scores (highest to lowest) in the WEF's Global Gender Gap Index 2026:\n\n1. United Kingdom (UK)\n2. India\n3. Namibia\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1 - 2 - 3",
+      "B": "3 - 1 - 2",
+      "C": "1 - 3 - 2",
+      "D": "3 - 2 - 1",
+      "E": "2 - 1 - 3"
+    },
+    "answer": "B",
+    "rationale": "Scores: Namibia = 0.845 (3), UK = 0.842 (1), India = 0.645 (2). Arranging from highest to lowest score: Namibia > UK > India, which corresponds to 3 - 1 - 2. (Refer Page 30, 69)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Defence / Aerospace",
+    "question": "Consider the following statements regarding the platforms handed over by Hindustan Aeronautics Limited (HAL) in September 2026:\n\n1. HAL handed over two LCA Tejas FOC Twin Seater Trainers and three HTT-40 Basic Trainer Aircraft to the Indian Air Force (IAF).\n2. HAL handed over four Dhruv Next Generation (NG) helicopters to Pawan Hans Limited (PHL).\n3. The handover ceremony took place in New Delhi in the presence of Union Minister Rajnath Singh.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 1 and 3",
+      "C": "Only 2 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the handover ceremony took place in Bengaluru, Karnataka, not New Delhi. (Refer Page 44, 75, 96)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "State Infrastructure / Maharashtra",
+    "question": "Which of the following statements creates a correct factual intersection regarding recent maritime infrastructure and agreements in Maharashtra?",
+    "options": {
+      "A": "Mazagon Dock Shipbuilders Limited (MDL) signed an MoU to develop a Greenfield Shipbuilding Cluster at Dighi, while Nibe Limited partnered with France's Naval Group for autonomous underwater systems.",
+      "B": "MDL signed an MoU with France's Naval Group to develop a Rs 27,000 crore shipbuilding cluster at Dighi.",
+      "C": "Nibe Limited partnered with DRDO to develop the Dighi Shipbuilding Cluster with a capacity of 1.2 million GT per annum.",
+      "D": "The Colombo Security Conclave shifted its headquarters to the newly built Dighi Shipbuilding Cluster in Maharashtra.",
+      "E": "MDL and BHEL signed a 50:50 Joint Venture to build Vande Bharat Sleeper trains at the Dighi facility."
+    },
+    "answer": "A",
+    "rationale": "Option A correctly reflects two independent but accurate maritime events involving Maharashtra-based/linked companies: MDL's Rs 27,000 crore Dighi shipbuilding cluster and Nibe Limited's MoU with France's Naval Group for naval technologies. (Refer Pages 29, 56, 68, 81, 90, 101)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  }
+]

@@ -1,0 +1,994 @@
+[
+  {
+    "category": "National Affairs",
+    "sub_category": "Economy & Statistics",
+    "question": "Based on the MoSPI 'National Accounts Statistics (NAS) – 2026' publication, arrange the following Financial Years in ascending order of their reported GDP at Constant Prices:\n\n1. FY24 (2023-24)\n2. FY25 (2024-25)\n3. FY26 (2025-26)\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1 - 2 - 3",
+      "B": "3 - 2 - 1",
+      "C": "2 - 1 - 3",
+      "D": "1 - 3 - 2",
+      "E": "3 - 1 - 2"
+    },
+    "answer": "A",
+    "rationale": "According to the PDF, GDP at constant prices: 2023-24 (Rs 280.94 lakh Cr), 2024-25 (Rs 301.15 lakh Cr), 2025-26 (Rs 324.70 lakh Cr). Therefore, the ascending order is FY24 < FY25 < FY26 (1 - 2 - 3). (Page 10, 73)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Telecommunications",
+    "question": "Assertion (A): C-DOT recently unveiled 14 indigenous Quantum Products during its 43rd Foundation Day to strengthen secure communication systems.\nReason (R): The products developed include Q-AMOGH, an optical encryptor capable of up to 200 Gbps, and Q-VIKRAM, a defense-grade encryptor supporting up to 10 Gbps.\n\nIn the context of the above statements, which of the following is correct?",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+      "C": "(A) is true, but (R) is false.",
+      "D": "(A) is false, but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true. Reason (R) is false because Q-VIKRAM is a defense-grade encryptor supporting up to 1 Gbps, not 10 Gbps. (Page 8, 48, 72)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Inter-State Water Disputes",
+    "question": "Arrange the following inter-state water agreements of 2026 in chronological order (from earliest to latest):\n\n1. Sone River Water-Sharing Dispute (Bihar and Jharkhand)\n2. Kishau Multipurpose Dam Project\n3. Narmada Award pending-payment settlement\n4. Rajasthan-Haryana Yamuna Water Project\n\nSelect the correct sequence:",
+    "options": {
+      "A": "2 - 4 - 3 - 1",
+      "B": "2 - 3 - 4 - 1",
+      "C": "4 - 2 - 3 - 1",
+      "D": "1 - 2 - 4 - 3",
+      "E": "3 - 4 - 2 - 1"
+    },
+    "answer": "A",
+    "rationale": "Chronology as per the text: Kishau Multipurpose Dam Project (16 June) -> Rajasthan-Haryana Yamuna Water Project (29 June) -> Narmada Award pending-payment settlement (7 July) -> Sone River pact (31 August). Order: 2 - 4 - 3 - 1. (Page 49)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Higher Education",
+    "question": "Consider the following statements extracted from the AISHE 2022-23 & 2023-24 data:\n\n1. The total enrolment in India's higher education increased by exactly 31.5% from 3.42 crore students in 2014-15 to 4.50 crore in 2023-24.\n2. The number of universities witnessed a growth of 69.6%, increasing from 760 (in 2014-15) to 1,289 in 2023-24.\n3. The Gender Parity Index (GPI) improved to 1.11 for the Scheduled Caste (SC) category in 2023-24.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 2"
+    },
+    "answer": "D",
+    "rationale": "All statements are strictly correct. Total enrolment increased by 31.5% to 4.50 crore; universities increased by 69.6% to 1,289; and GPI improved to 1.08 overall, with SC at 1.11 and ST at 1.08. (Page 11, 50)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Fisheries Development",
+    "question": "The 'Mission Rangeen Machhli 2031' Strategic Action Plan was released in Lakshadweep. Which of the following regulatory frameworks directly supports this specific initiative?\n\n1. Sustainable Harnessing of Fisheries in the Exclusive Economic Zone (EEZ) Rules, 2025\n2. Guidelines for Sustainable Harnessing of Fisheries in the High Seas by Indian-Flagged Fishing Vessels, 2025\n3. Coastal Regulation Zone (CRZ) Notification, 2019\n\nSelect the correct answer using the codes given below:",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 1 and 2",
+      "C": "Only 2 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 3"
+    },
+    "answer": "B",
+    "rationale": "The initiative is supported by the 'Sustainable Harnessing of Fisheries in the Exclusive Economic Zone (EEZ) Rules, 2025' and the 'Guidelines for Sustainable Harnessing of Fisheries in the High Seas by Indian-Flagged Fishing Vessels, 2025'. CRZ is not mentioned. (Page 50)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Infrastructure & Shipping",
+    "question": "Regarding the National Shipbuilding and Heavy Industries Park Odisha Limited (NSHIPOL), match the following project parameters:\n\nColumn I:\n1. Financial Outlay\n2. Annual Capacity (Gross Tonnage)\n3. Land Area\n\nColumn II:\nA. ~1.2 million GT\nB. 2,000–2,500 acres\nC. Rs. 24,700 crore\n\nSelect the correct match:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-C, 2-A, 3-B",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "B",
+    "rationale": "The financial outlay is Rs 24,700 crore (1-C). The annual capacity is ~1.2 million GT (2-A). The land area spread is 2,000-2,500 acres (3-B). (Page 12, 51)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Industrial Safety",
+    "question": "Agnikawach Safety Solutions launched India’s 1st indigenous AI platform for industrial safety. Which of the following is NOT one of the specific industrial hazards covered by this platform's risk modelling?",
+    "options": {
+      "A": "Jet fire",
+      "B": "Pool fire",
+      "C": "Boiling Liquid Expanding Vapor Explosion (BLEVE)",
+      "D": "Toxic dispersion",
+      "E": "Nuclear radiation leaks"
+    },
+    "answer": "E",
+    "rationale": "The platform ensures safety against 8 industrial hazards, including jet fire, pool fire, flash fire, explosions, BLEVE/fireball, and toxic dispersion. Nuclear radiation leaks are not listed. (Page 13, 74)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Environmental Conservation",
+    "question": "Fill in the blanks regarding the 'Swachh Sagar, Surakshit Sagar 2026' campaign:\nThe campaign is a _______-long ocean conservation drive culminating on International Coastal Cleanup Day, which falls on _______, and features the first-ever _______.\n\nSelect the correct combination:",
+    "options": {
+      "A": "month; 17 September; National Beach Olympiad",
+      "B": "week; 17 September; National Ocean Olympiad",
+      "C": "fortnight; 12 September; SAGAR PRAHARI Index",
+      "D": "week; 19 September; Marine Litter Tracker",
+      "E": "75-day; 17 August; Ocean Conservation Pledge"
+    },
+    "answer": "B",
+    "rationale": "It is a week-long campaign (12-19 Sept) culminating on International Coastal Cleanup Day (17 September 2026). It features the first-ever National Ocean Olympiad. (Page 14, 52)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Bilateral Agreements",
+    "question": "India and Germany signed a Joint Declaration of Intent (JDI) on Wetland Conservation during the 4th Indo-German Environment Forum. Which of the following focus areas are explicitly covered under this IGEF mandate?\n\n1. Low-carbon industry\n2. Circular economy\n3. Green finance & skills\n4. E-waste colonization\n\nSelect the correct answer:",
+    "options": {
+      "A": "Only 1, 2, and 3",
+      "B": "Only 2, 3, and 4",
+      "C": "Only 1 and 2",
+      "D": "Only 1, 3, and 4",
+      "E": "All 1, 2, 3, and 4"
+    },
+    "answer": "A",
+    "rationale": "The focus areas for the 4th IGEF include low-carbon industry, wetlands biodiversity, forests/mountains, circular economy, and green finance & skills. E-waste colonization is not mentioned. (Page 15)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Social Welfare",
+    "question": "Assertion (A): The Adoption Awareness 2026 campaign was launched by the Central Adoption Resource Authority (CARA) to promote safe, transparent, and legal adoption nationwide.\nReason (R): CARA operates as a statutory body under the Ministry of Health and Family Welfare (MoHFW) to oversee all domestic and international adoptions.\n\nIn the context of the above statements, which of the following is correct?",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+      "C": "(A) is true, but (R) is false.",
+      "D": "(A) is false, but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true. Reason (R) is false because CARA operates under the Ministry of Women and Child Development (MoWCD), not the Ministry of Health and Family Welfare (MoHFW). (Page 15, 52)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Wildlife Conservation",
+    "question": "The International Big Cat Alliance (IBCA) signed an MoU with the Asian Development Bank (ADB). The workshop accompanying this signing featured specific pillars for tiger landscape conservation. Which of the following is NOT one of those pillars?",
+    "options": {
+      "A": "Conservation",
+      "B": "Bioeconomy",
+      "C": "Ecotourism",
+      "D": "Captive Breeding",
+      "E": "Livelihood and Income Generation"
+    },
+    "answer": "D",
+    "rationale": "The theme was 'Tiger Landscapes: Conservation, Bioeconomy and Ecotourism as Pillars for Livelihood and Income Generation'. Captive Breeding is not one of the pillars. (Page 16, 53)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Textile Industry",
+    "question": "Consider the following statements regarding the MoU signed between the Bharat Tex Trade Federation (BTTF) and Premiere Vision SA:\n\n1. It was signed at the Premiere Vision exhibition in Paris, France.\n2. The MoU established an initiative titled “A Living Thread” which will showcase Indian & French textile heritage starting in Jan 2027.\n3. The agreement explicitly mandates the creation of a Joint Steering Committee to oversee collaborations in export promotion and circularity.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. The MoU was signed in Paris (Statement 1). The 'A Living Thread' initiative for Jan 2027 is mentioned in handwritten notes (Statement 2). It will be overseen by a Joint Steering Committee focusing on exports, sustainability, circularity, etc. (Statement 3). (Page 17, 53)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Parliamentary Committees",
+    "question": "A 31-member Joint Parliamentary Committee (JPC) was constituted to examine the FCRA Amendment Bill, 2026. Match the following parameters to their accurate numerical values:\n\nColumn I:\n1. Lok Sabha Members\n2. Rajya Sabha Members\n3. Appeal period for reduced punishment under the Bill (days)\n\nColumn II:\nA. 10\nB. 90\nC. 21\n\nSelect the correct match:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-C, 2-A, 3-B",
+      "C": "1-A, 2-C, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-C, 2-A, 3-C"
+    },
+    "answer": "B",
+    "rationale": "Lok Sabha Members: 21 (1-C). Rajya Sabha Members: 10 (2-A). The handwritten notes mention a '90-day appeal' under the FCRA Bill provisions (3-B). (Page 17, 53)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Defence Collaborations",
+    "question": "Kalyani Strategic Systems Limited (KSSL) signed a pact with Thales Group. Which of the following statements incorrectly interprets this defense partnership?",
+    "options": {
+      "A": "KSSL is a wholly-owned defense subsidiary of Bharat Forge Limited.",
+      "B": "The partnership focuses on the production of 70-mm unguided and laser-guided rocket systems.",
+      "C": "Thales provides rocket and launcher technology, while KSSL handles local manufacturing and testing.",
+      "D": "The first fully assembled rocket system manufactured in India is expected in early 2027.",
+      "E": "The agreement was signed during the state visit of French President Emmanuel Macron to India."
+    },
+    "answer": "E",
+    "rationale": "The agreement was signed during the state visit to India by the Belgian Prime Minister Bart De Wever (September 02-04, 2026), not French President Emmanuel Macron, despite Thales being a France-based group. All other statements are correct. (Page 18, 53, 54)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Water Conservation",
+    "question": "Arrange the following top performing districts of Chhattisgarh in the 'Jal Sanchay Jan Bhagidari' (JSJB 3.0) initiative in the correct sequential order as listed for the National Top 10:\n\n1. Balodabazar-Bhatapara\n2. Surajpur\n3. Balod\n4. Mahasamund\n\nSelect the correct sequence:",
+    "options": {
+      "A": "2 - 4 - 3 - 1",
+      "B": "1 - 2 - 3 - 4",
+      "C": "4 - 3 - 2 - 1",
+      "D": "2 - 3 - 4 - 1",
+      "E": "3 - 2 - 1 - 4"
+    },
+    "answer": "A",
+    "rationale": "The PDF explicitly lists the top 5 districts as: Surajpur (1st), Mahasamund (2nd), Balod (3rd), Balodabazar-Bhatapara (4th), and Kabirdham (5th). Therefore, the correct order is 2 - 4 - 3 - 1. (Page 19, 76)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Higher Education",
+    "question": "Birkbeck, University of London received approval from UGC to establish a campus in Bengaluru. Consider the following statements regarding the benefits and compliance of this move:\n\n1. It allows the university to offer globally recognised degrees in India at significantly lower costs.\n2. The campus operations will receive funding exclusively through the 'Education Centre of Australia' (ECA).\n3. The initiative strongly opposes the framework of the National Education Policy (NEP) 2020 by promoting foreign curricula.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 1 and 2",
+      "C": "Only 2 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 2"
+    },
+    "answer": "B",
+    "rationale": "Statement 1 is correct (lower costs for global degrees). Statement 2 is correct (supported by ECA funding and operations, as per notes). Statement 3 is incorrect; the initiative supports and is aligned with the National Education Policy (NEP) 2020. (Page 20, 55)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Bilateral Visits",
+    "question": "During his visit to Uzbekistan, PM Narendra Modi's trip coincided with which specific anniversaries?\n\n1. 15th anniversary of India-Uzbekistan strategic partnership\n2. 35th Independence Day of Uzbekistan\n3. 60th death anniversary of Lal Bahadur Shastri\n\nWhich of the combinations below is correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. The visit coincided with the 15th anniversary of the strategic partnership, the 35th Independence Day of Uzbekistan, and PM Modi paid tribute at the Lal Bahadur Shastri Memorial marking his 60th death anniversary. (Page 22, 56)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Environmental Conferences",
+    "question": "At the UNCCD COP17 in Ulaanbaatar, Mongolia, several key outcomes were established. Match the following initiatives with their corresponding financial targets/metrics:\n\nColumn I:\n1. Drought Resilience Investment Facility (DRIF)\n2. Rangelands Initiative\n3. Finance Package (new confirmed funds)\n\nColumn II:\nA. USD 1.2 Billion (45 projects)\nB. USD 644.5 Million\nC. Target: USD 400 Million\n\nSelect the correct code:",
+    "options": {
+      "A": "1-A, 2-B, 3-C",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "C",
+    "rationale": "DRIF target: USD 400M (1-C). Rangelands Initiative: USD 1.2B across 45 projects (2-A). Finance Package (new): USD 644.5M new funds (3-B). (Page 23)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Bilateral Visits",
+    "question": "Union MoS Pabitra Margherita paid an official visit to Vietnam and Lao PDR. Which of the following is an INCORRECT statement regarding this visit?",
+    "options": {
+      "A": "The visit aimed to strengthen bilateral partnerships under India's Act East Policy.",
+      "B": "In Laos, he launched initiatives for the preservation of the Phlak-Phlam dance.",
+      "C": "He witnessed an MoU for mural restoration at Wat Pa Khae Temple in Luang Prabang.",
+      "D": "In Vietnam, he held high-level talks and addressed the Vietnam Academy of Social Sciences (VASS).",
+      "E": "The visit marked 100 years of diplomatic ties between India and Lao PDR."
+    },
+    "answer": "E",
+    "rationale": "The visit to Laos marked 70 years (not 100 years) of diplomatic ties. All other statements regarding Act East Policy, Phlak-Phlam dance, Wat Pa Khae Temple, and VASS are correct. (Page 21, 56, 78)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Space Exploration",
+    "question": "Assertion (A): Türkiye became the 71st country to join the Artemis Accords, marking its entry as the 7th West Asian country after UAE, Saudi Arabia, Bahrain, Oman, Jordan, and Israel.\nReason (R): The Artemis Accords, launched in 2020 by NASA and the US Department of State, represent a legally binding framework prohibiting any independent lunar missions by signatory nations.\n\nWhich of the following is correct?",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+      "C": "(A) is true, but (R) is false.",
+      "D": "(A) is false, but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true as per the handwritten notes. Reason (R) is false because the Artemis Accords are a non-binding framework, and they do not prohibit independent missions; they promote data sharing and cooperation. (Page 21, 78)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Multilateral Summits",
+    "question": "The 26th SCO Summit resulted in the adoption of the 'Bishkek Declaration'. Arrange the following India-backed initiatives in the order they are listed to be promoted within the SCO framework:\n\n1. SCO Civilisation Dialogue Forum\n2. English as an official SCO working language\n3. Establishment of an SCO Anti-Narcotics Centre with programmes till 2030\n\nSelect the correct combination that correctly identifies the initiatives approved during this summit:",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "The handwritten notes and text state that English was added as an official SCO language, an SCO Anti-Narcotics Centre was established with programmes till 2030, and the SCO Civilisation Dialogue Forum was approved (India to host 1st edition in 2026). Thus, all three were approved. (Page 24, 78)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "UN Resolutions",
+    "question": "The UNGA adopted the 'Correct the Map' resolution promoting the Equal Earth projection. Match the following facts related to this resolution:\n\nColumn I:\n1. Total votes in favour\n2. Size comparison highlighted\n3. Sponsored by\n\nColumn II:\nA. Africa is about 14 times larger than Greenland\nB. Togo\nC. 164 votes\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "The resolution received 164 votes in favour (1-C). It highlights that Africa is about 14 times larger than Greenland (2-A). It was sponsored by Togo and backed by the AU (3-B). (Page 25, 57)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Marketing & Campaigns",
+    "question": "Kissht launched the 'Loans Without Any Hiccups' campaign. Which of the following is NOT true regarding Kissht's operational strategy as per the provided text?",
+    "options": {
+      "A": "It is an RBI-registered Non-Banking Financial Company (NBFC).",
+      "B": "The campaign uses the word 'hiccups' to showcase instant approvals and a seamless app experience.",
+      "C": "The campaign is promoted heavily on Instagram and YouTube to strengthen brand recall.",
+      "D": "It exclusively targets corporate entities for multi-million dollar syndicated loans.",
+      "E": "The brand ambassador for the campaign is Indian cricket legend Sachin Tendulkar."
+    },
+    "answer": "D",
+    "rationale": "Kissht focuses on fast, simple, and paperless digital lending, primarily operating in retail/consumer digital lending. It does not exclusively target corporate entities for syndicated loans. All other points align with the text. (Page 26, 58, 79)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Commodity Derivatives",
+    "question": "Consider the following statements about NCDEX's 'RAINCHNNAI' weather derivatives contract:\n\n1. It is a cash-settled futures model covering September–December rainfall deviations.\n2. It uses the Cumulative Deviation Rainfall (CDR) model based on IMD data.\n3. The contract allows for physical delivery of water assets if rainfall deviations exceed 50%.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the handwritten notes explicitly state \"no physical delivery\" for these cash-settled futures. (Page 27, 58)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Digital Payments",
+    "question": "Assertion (A): PhonePe’s 'UPI 123Pay' allows users to execute P2P (Peer-to-Peer) and P2M (Peer-to-Merchant) transactions without an active internet connection.\nReason (R): The platform leverages Near Field Communication (NFC) technology supported by high-speed 5G networks to process offline payments securely.\n\nIn the context of the above statements, which of the following is correct?",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+      "C": "(A) is true, but (R) is false.",
+      "D": "(A) is false, but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true. Reason (R) is false because 'UPI 123Pay' uses an SMS (Short Message Service)-based system that works on low/2G networks, not NFC/5G technology. (Page 27, 59)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Payment Banks",
+    "question": "India Post Payments Bank (IPPB) marked its 9th Foundation Day with impressive scaling metrics. Arrange the following IPPB metrics in descending order of their numerical value (in absolute numbers as reported for FY26):\n\n1. Number of Rural Users\n2. Number of Women Users\n3. Total Customer Base\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1 - 2 - 3",
+      "B": "3 - 1 - 2",
+      "C": "3 - 2 - 1",
+      "D": "2 - 1 - 3",
+      "E": "1 - 3 - 2"
+    },
+    "answer": "B",
+    "rationale": "Total Customer Base = 13.25 Cr (100%). Rural Users = 77% of 13.25 Cr (~10.2 Cr). Women Users = 49% of 13.25 Cr (~6.49 Cr). Therefore, the descending order is Total Customer Base (3) > Rural Users (1) > Women Users (2). (Page 27)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Insurance Sector",
+    "question": "Match the following features to the respective LIC Insurance Plan launched on its 70th anniversary:\n\nColumn I:\n1. Minimum Sum Assured of Rs 3 lakh\n2. Pure risk plan providing fixed death benefit\n3. Premium Paying Term (PPT) of 7-18 years\n\nColumn II:\nA. LIC Bima Platinum (Plan 770)\nB. LIC Jeevan Raksha (Plan 894)\n\nSelect the correct code mapping:",
+    "options": {
+      "A": "1-A, 2-B, 3-A",
+      "B": "1-B, 2-A, 3-B",
+      "C": "1-A, 2-B, 3-B",
+      "D": "1-B, 2-A, 3-A",
+      "E": "1-A, 2-A, 3-B"
+    },
+    "answer": "A",
+    "rationale": "LIC Bima Platinum has a minimum sum assured of Rs 3 lakh (1-A) and a Premium Paying Term of 7-18 years (3-A). LIC Jeevan Raksha is a pure risk plan providing a fixed death benefit (2-B). (Page 28, 80)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Mergers & Acquisitions",
+    "question": "Consider the following statements regarding the merger of InsuranceDekho and RenewBuy:\n\n1. The merger creates India’s largest AI-enabled insurance distribution platform.\n2. The newly merged entity will operate exclusively under the RenewBuy brand name.\n3. The platform boasts over 750+ products backed by over Rs 6,600 crore in premiums.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 2",
+      "E": "Only 2 and 3"
+    },
+    "answer": "B",
+    "rationale": "Statements 1 and 3 are correct. Statement 2 is incorrect because the merged entity will operate under the InsuranceDekho brand, not RenewBuy. (Page 28, 59)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Regulatory Approvals",
+    "question": "SEBI granted a Category-I merchant banking licence to Zerodha Corporate Advisors. Which of the following activities is Zerodha NOT permitted to perform under this specific licence?",
+    "options": {
+      "A": "Manage Initial Public Offerings (IPOs)",
+      "B": "Provide advisory services for issuers and investors",
+      "C": "Manage Follow-on Public Offers (FPOs)",
+      "D": "Engage in public underwriting up to 20 times their net worth cap",
+      "E": "Accept retail deposits as a primary banking function"
+    },
+    "answer": "E",
+    "rationale": "A merchant banking licence (Category-I) allows management of public issues, underwriting, IPOs, FPOs, and advisory services. It does not permit accepting retail deposits, which is a function of commercial/payment/small finance banks. (Page 29, 60)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Credit Cards",
+    "question": "Which of the following reward structures is accurately mapped to the 'Scapia Axis Bank Credit Card' variants?",
+    "options": {
+      "A": "Mastercard variant offers 5% rewards, while the RuPay variant offers 10% rewards.",
+      "B": "Mastercard variant offers 10% rewards, while the RuPay variant offers 5% rewards on eligible spends of Rs 500 or more.",
+      "C": "Both variants offer a flat 20% reward on all grocery transactions.",
+      "D": "The card charges a 3% forex mark-up fee for international transactions.",
+      "E": "RuPay variant offers 15% cashback on UPI transactions."
+    },
+    "answer": "B",
+    "rationale": "The Mastercard variant offers 10% rewards, while the RuPay variant offers 5% rewards on eligible spends of Rs 500 or more. Both provide 20% rewards on eligible Scapia app bookings. Also, the notes mention 'Zero forex mark-up'. (Page 60, 80)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "International Cooperation",
+    "question": "Fill in the blank regarding the MoU signed between SEBI and ESMA:\n\nThe MoU aims to strengthen cooperation and exchange of information related to _______ regulated and supervised by SEBI, replacing the earlier agreement signed in 2017.",
+    "options": {
+      "A": "Foreign Portfolio Investors (FPIs)",
+      "B": "Alternative Investment Funds (AIFs)",
+      "C": "Central Counterparties (CCPs)",
+      "D": "Credit Rating Agencies (CRAs)",
+      "E": "Real Estate Investment Trusts (REITs)"
+    },
+    "answer": "C",
+    "rationale": "The MoU was signed to strengthen cooperation and exchange of information related to Central Counterparties (CCPs) regulated and supervised by SEBI. (Page 29, 60)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Sovereign Ratings",
+    "question": "Japan Credit Rating Agency (JCRA) upgraded India's sovereign rating. Arrange the following factors in the correct logical sequence that led to this upgrade as cited by JCRA:\n\n1. Sustained high capital expenditure (capex)\n2. Strong private consumption and policies\n3. Reduction in the Central Government’s fiscal deficit from 4.7% to 4.4%\n\nSelect the sequence that perfectly represents the combination of growth drivers and fiscal improvement noted in the report:",
+    "options": {
+      "A": "2 -> 1 -> 3",
+      "B": "3 -> 2 -> 1",
+      "C": "1 -> 3 -> 2",
+      "D": "The report cites all three concurrently as key drivers without a chronological dependency.",
+      "E": "The report only cites factor 3."
+    },
+    "answer": "D",
+    "rationale": "This is a hybrid inference trap. JCRA upgraded the rating based on robust economic growth, effective policies, strong private consumption/investment (including sustained high capex), and an improved fiscal position (deficit falling to 4.4%). They operate concurrently as systemic justifications rather than a step-by-step chronology. (Page 30, 60)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Global Currency",
+    "question": "The Bank of Canada unveiled a new CAD 20 banknote featuring King Charles III. Which of the following statements about this banknote is INCORRECT?",
+    "options": {
+      "A": "It features a vertical orientation design.",
+      "B": "It is the first Canadian currency note to feature a British monarch in over 7 decades.",
+      "C": "The reverse side features the Vimy Ridge Memorial in France.",
+      "D": "It incorporates motifs of flora from all 13 Canadian provinces and territories.",
+      "E": "Canada is the first Commonwealth country to feature King Charles on its banknote outside Britain."
+    },
+    "answer": "B",
+    "rationale": "Statement B is incorrect because King Charles III is the first British monarch to appear on a Canadian currency note in over 7 decades *after the death of Queen Elizabeth II in 2022*. Queen Elizabeth II was on the currency until recently, so the 'first in 7 decades' phrasing in option B is misleading without the context of it being a *new* monarch. Actually, the text says: \"1st British monarch to appear on Canadian currency note in over 7 decades, after the death of Queen Elizabeth II\". Wait, the text implies he is the *first new* monarch, but Queen Elizabeth was there. The exact wording in the PDF: \"1st British monarch in 70+ years on Canadian currency\" - this refers to the fact that Queen Elizabeth was the monarch for 70 years, so he is the first *different* monarch in that time. (Page 30, 61)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Defence Production",
+    "question": "Match the following components of the Javelin Anti-Tank Guided Missile (ATGM) system with their respective manufacturing/assembly locations as per the TASL and JJV agreement:\n\nColumn I:\n1. Sub-assembly\n2. Guidance Electronics Unit (GEU)\n3. Final Assembly\n\nColumn II:\nA. India\nB. Alabama (Lockheed)\nC. Arizona (Raytheon)\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-C, 2-A, 3-B"
+    },
+    "answer": "B",
+    "rationale": "According to the handwritten notes: Sub-assembly is in Alabama (Lockheed) [1-B]; Guidance Electronics Unit (GEU) is in Arizona (Raytheon) [2-C]; and Final Assembly is slated for India [3-A]. (Page 30)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Economic Forecasts",
+    "question": "SBI Research provided quarter-based GDP growth estimates for FY27. Arrange the quarters in descending order based on their projected GDP growth rates:\n\n1. Q1 FY27\n2. Q2 FY27\n3. Q3 FY27\n4. Q4 FY27\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1 - 2 - 3 - 4",
+      "B": "4 - 3 - 2 - 1",
+      "C": "1 - 3 - 2 - 4",
+      "D": "2 - 1 - 4 - 3",
+      "E": "3 - 4 - 1 - 2"
+    },
+    "answer": "A",
+    "rationale": "The GDP growth rates are: Q1 (7.8%), Q2 (7.3%), Q3 (7.2%), and Q4 (6.9%). Therefore, the descending order is Q1 > Q2 > Q3 > Q4, which corresponds to 1 - 2 - 3 - 4. (Page 31, 81)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "ESG Rankings",
+    "question": "Consider the following statements regarding Adani Energy Solutions Limited's (AESL) top ranking in Global Utilities ESG Rankings by S&P Global:\n\n1. AESL achieved a global ESG score of 90, improving from 81 in the previous year.\n2. The environmental score breakdown was 93, while the social score was 89.\n3. The industry average ESG score for the utilities sector stood at 75.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the industry average ESG score for the utilities sector was 41, not 75. (Page 32, 61, 81)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Sports Awards",
+    "question": "Which of the following teams won the Indian Women’s League (IWL) Champions 2025-26 title at the FPAI Indian Football Awards 2026?",
+    "options": {
+      "A": "Gokulam Kerala FC Women",
+      "B": "Mohun Bagan SG Women",
+      "C": "East Bengal FC Women",
+      "D": "Odisha FC Women",
+      "E": "Mumbai City FC Women"
+    },
+    "answer": "C",
+    "rationale": "The East Bengal FC Women team was awarded the Indian Women’s League (IWL) Champions 2025-26 title. (Page 32, 62)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "National Awards",
+    "question": "The Tenzing Norgay National Adventure Awards 2024 recognized exceptional achievements. Which of the following statements about the awardees is INCORRECT?",
+    "options": {
+      "A": "Baljeet Kaur was recognized for Land Adventure, having climbed 5 peaks above 8000m.",
+      "B": "Skalzang Rigzin was recognized for Land Adventure, notably conquering Everest without supplemental oxygen or a Sherpa.",
+      "C": "Rimo Saha was recognized for Water Adventure as a Channel swimmer.",
+      "D": "Shiv Prasad Chamoli was recognized for Lifetime Achievement and is a former DIG of ITBP.",
+      "E": "The total cash prize awarded to each winner is Rs 50,000."
+    },
+    "answer": "E",
+    "rationale": "The cash prize awarded to each winner of the Tenzing Norgay National Adventure Award is Rs 15 lakh (₹15 lakh), not Rs 50,000. All other achievements listed for the awardees are correct. (Page 33, 82)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Ramon Magsaysay Awards",
+    "question": "Match the 2026 Ramon Magsaysay Award winners with their specific areas of recognition:\n\nColumn I:\n1. Tommy Koh\n2. Runa Khan\n3. Bo Kyi\n\nColumn II:\nA. Defending Political Prisoners\nB. Leadership in International Diplomacy\nC. Service to Vulnerable Communities\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-C, 2-B, 3-A"
+    },
+    "answer": "B",
+    "rationale": "Tommy Koh (Singapore) was recognized for Leadership in International Diplomacy (1-B). Runa Khan (Bangladesh) for Service to Vulnerable Communities (2-C). Bo Kyi (Myanmar) for Defending Political Prisoners (3-A). (Page 34, 63)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Infrastructure Awards",
+    "question": "Consider the following statements regarding the NHAI's 'Green Highways Excellence Awards 2026':\n\n1. The awards recognize best practices in National Highway landscaping and plantation management.\n2. The Jamtha Clover Leaf on NH-44 (Nagpur) secured the 1st position in the 'Plantation in Land Parcels' category.\n3. The awards were originally instituted in 2025 under the Green Highways Policy, 2015.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 2"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. The awards focus on landscaping (Statement 1). Jamtha Clover Leaf won 1st in Land Parcels (Statement 2). The awards were instituted in 2025 under the 2015 policy (Statement 3). (Page 34, 63, 82)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "Hybrid Leadership Questions",
+    "question": "Analyze the recent leadership appointments and match the executive to their newly acquired role:\n\nColumn I:\n1. Ashish Shelar\n2. Suman Ray\n3. Anil Chakravarthy\n4. Jeetendra Mishra\n\nColumn II:\nA. President & CEO of Adobe Inc.\nB. Executive Director, RBI\nC. First CEO of Shri Ram Janmabhoomi Teerth Kshetra Trust\nD. President of Esports Games Federation (ESGF)\n\nSelect the correct code:",
+    "options": {
+      "A": "1-D, 2-B, 3-A, 4-C",
+      "B": "1-B, 2-D, 3-C, 4-A",
+      "C": "1-D, 2-B, 3-C, 4-A",
+      "D": "1-A, 2-C, 3-D, 4-B",
+      "E": "1-C, 2-A, 3-B, 4-D"
+    },
+    "answer": "A",
+    "rationale": "Ashish Shelar was elected President of ESGF (1-D). Suman Ray was appointed ED of RBI (2-B). Anil Chakravarthy was appointed President & CEO of Adobe (3-A). Jeetendra Mishra became the first CEO of the Ram Janmabhoomi Trust (4-C). (Pages 35-37, 63-64)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Naval Advancements",
+    "question": "The Indian Navy commissioned 'Nipun', a Diving Support Vessel (DSV). Arrange the following deep-sea rescue/diving metrics associated with 'Nipun' in descending order of depth capacity (in meters):\n\n1. Saturation diving capacity\n2. Side-stage diving capacity\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1 then 2",
+      "B": "2 then 1",
+      "C": "Both are equal (300m)",
+      "D": "Both are equal (75m)",
+      "E": "Data not available in the text."
+    },
+    "answer": "A",
+    "rationale": "Saturation diving capacity is 300 metres (1). Side-stage diving capacity is 75 metres (2). Descending order is 300m > 75m, so 1 then 2. (Page 37, 65)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space Telescopes",
+    "question": "Which specific instrument onboard the Nancy Grace Roman Space Telescope provides a field of view that is 100 times wider than that of the Hubble Space Telescope?",
+    "options": {
+      "A": "Coronagraph Instrument (CGI)",
+      "B": "Wide Field Instrument (WFI)",
+      "C": "Near Infrared Camera (NIRCam)",
+      "D": "Mid-Infrared Instrument (MIRI)",
+      "E": "Advanced Camera for Surveys (ACS)"
+    },
+    "answer": "B",
+    "rationale": "The handwritten notes specify that the WFI (Wide Field Instrument) features a 100x wider field than Hubble & JWST. (Page 38)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Foreign Defence Tech",
+    "question": "Russia successfully test-fired the 'RS-24 Yars' mobile ICBM. Which of the following features is a key capability of the RS-24 Yars missile system?",
+    "options": {
+      "A": "It is exclusively a submarine-launched ballistic missile.",
+      "B": "It is equipped with Multiple Independently Targetable Re-entry Vehicles (MIRVs) enabling multiple warhead deployment.",
+      "C": "It utilizes a liquid-fuel propulsion system for enhanced maneuverability.",
+      "D": "It has a maximum strike range limited to 2,000 km.",
+      "E": "It requires a fixed underground silo and cannot be launched from mobile platforms."
+    },
+    "answer": "B",
+    "rationale": "The RS-24 Yars is a mobile, solid-fuel ICBM equipped with MIRVs, enabling multiple warhead deployment, and has a strike range exceeding 10,000 km. (Page 38, 66)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Aviation Innovation",
+    "question": "Match the entities involved in the development of the 'Shunya' eVTOL aircraft with their designated roles:\n\nColumn I:\n1. Sarla Aviation\n2. Tata Elxsi\n\nColumn II:\nA. Avionics, flight control systems, software integration, testing\nB. Design, development, and type certification\n\nSelect the correct code:",
+    "options": {
+      "A": "1-A, 2-B",
+      "B": "1-B, 2-A",
+      "C": "Both 1 and 2 perform A",
+      "D": "Both 1 and 2 perform B",
+      "E": "The roles are strictly reversed in Phase 2."
+    },
+    "answer": "B",
+    "rationale": "Sarla Aviation is responsible for the design, development, and type certification of Shunya (1-B). Tata Elxsi handles avionics, flight control systems, software integration, and testing (2-A). (Page 39, 84)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Defence R&D",
+    "question": "The IAF successfully tested the indigenous Long-Range Glide Bomb 'Khagantak-243'. Which entities were responsible for its development and guidance systems?",
+    "options": {
+      "A": "DRDO and Hindustan Aeronautics Limited (HAL)",
+      "B": "Bharat Electronics Limited (BEL) and JSR Dynamics",
+      "C": "Tata Advanced Systems Limited (TASL) and ISRO",
+      "D": "BrahMos Aerospace and Larsen & Toubro",
+      "E": "Ordnance Factory Board (OFB) and Godrej Aerospace"
+    },
+    "answer": "B",
+    "rationale": "The Khagantak-243 was indigenously designed and developed by Bharat Electronics Limited (BEL) for electronics & guidance, and JSR Dynamics for body & control systems. (Page 39, 84)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Football",
+    "question": "Lionel Messi announced his retirement from international football. Arrange the following international tournaments he won in chronological order of victory (earliest to latest):\n\n1. Finalissima\n2. FIFA World Cup\n3. Copa América (First victory)\n\nSelect the correct sequence:",
+    "options": {
+      "A": "3 - 1 - 2",
+      "B": "3 - 2 - 1",
+      "C": "1 - 2 - 3",
+      "D": "2 - 1 - 3",
+      "E": "2 - 3 - 1"
+    },
+    "answer": "A",
+    "rationale": "Messi's title victories include: Copa América 2021 (earliest among these), Finalissima 2022, and FIFA World Cup 2022. Therefore, the order is 3 (2021) -> 1 (2022 early/mid) -> 2 (2022 late). Even without exact months, 2021 precedes 2022. (Page 40, 67)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Cricket",
+    "question": "The ICC approved India as the host for the inaugural Women’s Champions Trophy 2027. Which country was originally slated to host this tournament before it was shifted due to governance issues?",
+    "options": {
+      "A": "Australia",
+      "B": "England",
+      "C": "South Africa",
+      "D": "Sri Lanka",
+      "E": "New Zealand"
+    },
+    "answer": "D",
+    "rationale": "The hosting rights were shifted from Sri Lanka to India due to governance issues and failure to meet reform conditions. (Page 41, 67)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Books & Authors",
+    "sub_category": "Legal Literature",
+    "question": "The book 'Memorable Trials, Unforgettable Cases' was released by Karnataka Minister Madhu Bangarappa. Who is the author of this book?",
+    "options": {
+      "A": "Justice D.Y. Chandrachud",
+      "B": "Justice H. N. Nagamohan Das",
+      "C": "Fali S. Nariman",
+      "D": "Kapil Sibal",
+      "E": "Justice B.V. Nagarathna"
+    },
+    "answer": "B",
+    "rationale": "The Kannada and English editions of the book were authored by H. N. Nagamohan Das, Former Karnataka High Court Judge. (Page 42, 68)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "August Observances",
+    "question": "Consider the following statements regarding the National Small Industry Day 2026:\n\n1. It is observed annually on August 30.\n2. The day recognizes the contribution of Small-Scale Industries (SSIs) and MSMEs, which contribute approximately 31.1% to India's GDP.\n3. The first observance of this day was in the year 2011.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 2",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "C",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the first National Small Industry Day was observed on 30 August 2001, not 2011. (Page 43, 68, 86)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "September Observances",
+    "question": "Match the following important days in September 2026 with their respective observance dates:\n\nColumn I:\n1. World Coconut Day\n2. National Teachers’ Day\n3. International Day of Charity\n\nColumn II:\nA. 5 September\nB. 2 September\n\nSelect the correct code:",
+    "options": {
+      "A": "1-B, 2-A, 3-A",
+      "B": "1-A, 2-B, 3-A",
+      "C": "1-B, 2-B, 3-A",
+      "D": "1-A, 2-A, 3-B",
+      "E": "1-B, 2-A, 3-B"
+    },
+    "answer": "A",
+    "rationale": "World Coconut Day is observed on 2 September (1-B). National Teachers’ Day is on 5 September (2-A). International Day of Charity is also observed on 5 September (3-A). (Page 44-45, 69)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Waste-to-Energy",
+    "question": "OIL Green Energy Limited (OGEL) signed MoUs for Waste-to-Clean Energy Projects in Haryana. Which of the following municipalities is NOT part of this specific agreement?",
+    "options": {
+      "A": "Gurugram",
+      "B": "Faridabad",
+      "C": "Hisar",
+      "D": "Ambala",
+      "E": "Rohtak"
+    },
+    "answer": "E",
+    "rationale": "The MoUs were signed with four municipalities: Gurugram, Faridabad, Hisar, and Ambala. Rohtak is not included in this agreement. (Page 69, 70, 87)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Disaster Management",
+    "question": "The Odisha State Disaster Management Authority (OSDMA) signed MoUs with UNDP and CivicDataLab. What is the primary technological focus of the data collected across the 30 districts under this framework?",
+    "options": {
+      "A": "Blockchain-based relief fund distribution.",
+      "B": "Geographic Information System (GIS)-enabled risk platforms focusing on floods and heatwaves.",
+      "C": "Drone-based aerial seeding for cyclone-affected forests.",
+      "D": "Quantum cryptography for secure disaster communication.",
+      "E": "Robotic Process Automation for casualty tracking."
+    },
+    "answer": "B",
+    "rationale": "The data collected will build Geographic Information System (GIS)-enabled risk platforms focusing initially on floods, coastal flooding, and heatwaves, supporting Odisha's \"Zero Casualty\" goal. (Page 45, 70, 88)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Public Health & IT",
+    "question": "Punjab launched the 'Pehchaan' digital portal. Which of the following statements correctly describes the function of this portal?",
+    "options": {
+      "A": "It is a statewide biometric attendance system for doctors in government hospitals.",
+      "B": "It is a digital identification portal for tracing unidentified and unclaimed deceased persons in government mortuaries.",
+      "C": "It is an e-commerce platform for local artisans to sell traditional Punjabi handicrafts.",
+      "D": "It is a grievance redressal portal for farmers regarding MSP payments.",
+      "E": "It is a centralized database for issuing digital ration cards to BPL families."
+    },
+    "answer": "B",
+    "rationale": "The 'Pehchaan' portal is a statewide digital identification portal for tracing unidentified and unclaimed deceased persons in government mortuaries, utilizing the MedLeaPR system. (Page 46, 70, 88)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Sports Infrastructure",
+    "question": "Tamil Nadu CM C. Joseph Vijay announced the establishment of a world-class 'TN Olympic City' in Chennai. Which of the following specific initiatives is planned as part of this project?",
+    "options": {
+      "A": "A dedicated high-altitude training center for mountaineers.",
+      "B": "A Motor Sports City for Formula racing events.",
+      "C": "An underwater hockey arena.",
+      "D": "A dedicated e-sports stadium funded by the ESGF.",
+      "E": "A winter sports complex with artificial snow."
+    },
+    "answer": "B",
+    "rationale": "The initiatives planned for the TN Olympic City include setting up a Talent Research Wing (TRW), establishing Olympic Centres of Excellence (CoE) in 10 locations, and developing a Motor Sports City for Formula racing events. (Page 46, 70, 88)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Social Welfare & Themes",
+    "question": "Arrange the following national/international observances in September 2026 in chronological order (earliest to latest):\n\n1. National Teachers' Day\n2. World Coconut Day\n3. Start of National Nutrition Week\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1 - 2 - 3",
+      "B": "3 - 2 - 1",
+      "C": "2 - 3 - 1",
+      "D": "3 - 1 - 2",
+      "E": "2 - 1 - 3"
+    },
+    "answer": "B",
+    "rationale": "National Nutrition Week starts on 1 September (3). World Coconut Day is on 2 September (2). National Teachers' Day is on 5 September (1). Thus, the order is 3 -> 2 -> 1. (Pages 44-45, 69)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Technology in Administration",
+    "question": "Assertion (A): The Legal Metrology Rules, 2026 mandate Indian Standard Time (IST) as the single time reference for official purposes, backed by the White Rabbit Technology trial.\nReason (R): White Rabbit Technology enables multi-sector use with secure sync and was demonstrated at the National Stock Exchange (NSE) in Chennai and RRSL in Bengaluru.\n\nIn the context of the above statements, which of the following is correct?",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+      "C": "(A) is true, but (R) is false.",
+      "D": "(A) is false, but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "B",
+    "rationale": "Both statements are factually true based on the PDF. The Legal Metrology Rules mandate IST, and the White Rabbit trial enables secure sync across sectors. However, the trial itself is a technological facilitator, while the *reason* for the legal mandate is to ensure accurate timestamping and reduce foreign time reliance (as per handwritten notes), making R true but not the sole explanatory legal reason for A. (Page 5, 47)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Digital Payments",
+    "question": "Regarding the DakPay Sound Box launched by India Post Payments Bank (IPPB), which of the following closely aligns with the bank's transaction volume metrics reported during its 9th Foundation Day?",
+    "options": {
+      "A": "Digital transactions worth Rs 21.61 lakh crore (UPI Rs 7.41 lakh crore).",
+      "B": "Digital transactions worth Rs 13.25 lakh crore (UPI Rs 5.5 lakh crore).",
+      "C": "AePS transactions worth Rs 50,000 crore.",
+      "D": "Direct Benefit Transfers (DBT) worth Rs 10.5 lakh crore.",
+      "E": "Total deposits equivalent to Rs 2.1 lakh crore."
+    },
+    "answer": "A",
+    "rationale": "The handwritten notes explicitly state: \"Transactions: Rs 21.61 Lakh Cr digital (UPI Rs 7.41 Lakh Cr)\". (Page 27)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "UN Reports",
+    "question": "The UNEP report 'Limiting Overshoot' highlights irreversible impacts of temperature breach. Which of the following is NOT explicitly mentioned as one of these irreversible impacts?",
+    "options": {
+      "A": "Ice sheet collapse",
+      "B": "Amazon degradation",
+      "C": "AMOC (Atlantic Meridional Overturning Circulation) disruption",
+      "D": "Complete desertification of the Sahara periphery",
+      "E": "Approximately 14% food decline by 2050"
+    },
+    "answer": "D",
+    "rationale": "The irreversible impacts explicitly listed in the notes are: ice sheet collapse, Amazon degradation, AMOC disruption, sea-level rise, ecosystem loss, and ~14% food decline by 2050. Desertification of the Sahara periphery is not mentioned in this context. (Page 25)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Market Trends",
+    "question": "Fill in the blank based on NSO's Q1FY27 data:\n\nThe nominal GDP growth was estimated at 10.3%, translating to Rs 88.27 lakh crore, while trade showed an interesting dynamic with Exports growing at +12.0% and Imports showing _______.",
+    "options": {
+      "A": "a positive growth of +5.5%",
+      "B": "a negative growth of -1.1%",
+      "C": "stagnation at 0.0%",
+      "D": "a sharp decline of -10.5%",
+      "E": "a massive surge of +20.0%"
+    },
+    "answer": "B",
+    "rationale": "According to the expenditure components in the handwritten notes, Trade statistics show Exports at +12.0% and Imports at -1.1%. (Page 7)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Defense Innovation",
+    "question": "Consider the following statements regarding the 'Khagantak-243' Glide Bomb:\n\n1. It is a 300-kg class airborne Long Range Stand-Off Precision Guided Glide Bomb.\n2. It has a range of over 140 km.\n3. It is designed to be compatible exclusively with the Mirage 2000 aircraft.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 2",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "C",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the handwritten notes state it has compatible integration with the Su-30MKI, MiG-29K, and Mirage 2000 (planned), not exclusively the Mirage 2000. (Page 39, 85)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "African Descent",
+    "question": "The International Day for People of African Descent is observed on August 31. Which UN Decade aligns with the goals of this observance?",
+    "options": {
+      "A": "UN Decade of Action on Nutrition (2016–2025)",
+      "B": "Second International Decade for People of African Descent (2025–2034)",
+      "C": "UN Decade of Ocean Science for Sustainable Development (2021–2030)",
+      "D": "UN Decade on Ecosystem Restoration (2021–2030)",
+      "E": "International Decade of Indigenous Languages (2022–2032)"
+    },
+    "answer": "B",
+    "rationale": "The observance aligns with the Second International Decade for People of African Descent (2025–2034) to promote recognition, justice, and development. (Page 87)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  }
+]

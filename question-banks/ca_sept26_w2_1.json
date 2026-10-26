@@ -1,0 +1,1008 @@
+[
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "Overview of Belgium PM Bart De Wever’s Visit to India",
+    "question": "Consider the following statements regarding the visit of Belgium Prime Minister Bart De Wever to India in September 2026:\n\n1. The visit aimed to double bilateral trade to approximately USD 26 billion within the next 10 years.\n2. An Indo-Belgian investment corridor was announced involving the National Investment and Infrastructure Fund (NIIF) and the Federal Holding and Investment Company (SFPIM).\n3. Both nations endorsed the India-EU Comprehensive Strategic Agenda (CSA) 2030.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 2"
+    },
+    "answer": "B",
+    "rationale": "Statement 1 is incorrect because the target is to double bilateral trade in the next 5 years (from ~USD 13 billion), not 10 years. Statements 2 and 3 are correct regarding the NIIF-SFPIM corridor and the endorsement of the CSA 2030. (Page 5, 78)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "Dinamalar 75 Years Postage Stamp",
+    "question": "During the release of the commemorative postage stamp marking the 75th year of the Tamil daily 'Dinamalar', Vice President C.P. Radhakrishnan specifically appreciated one of its publications designed for school students. Identify the publication from the given options:",
+    "options": {
+      "A": "Siruvar Malar",
+      "B": "Pattam",
+      "C": "Manjari",
+      "D": "Vara Malar",
+      "E": "Gokulam"
+    },
+    "answer": "B",
+    "rationale": "VP C.P. Radhakrishnan appreciated Dinamalar’s ‘Pattam’ publication for providing school students with information on general awareness, language skills, and scientific innovations. (Page 53)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "Munitions India-Drogo Aerospace Sign MoU",
+    "question": "Munitions India Limited (MIL) signed an MoU with Drogo Aerospace to develop an indigenous Delta Wing Kamikaze UAV. Which of the following correctly represents the proposed range and warhead capacity of this UAV?",
+    "options": {
+      "A": "Range: ~500 km | Warhead: 10–15 kg",
+      "B": "Range: ~800 km | Warhead: 15–20 kg",
+      "C": "Range: ~1,000 km | Warhead: 20–30 kg",
+      "D": "Range: ~1,200 km | Warhead: 30–40 kg",
+      "E": "Range: ~1,500 km | Warhead: 40–50 kg"
+    },
+    "answer": "C",
+    "rationale": "The Delta Wing Kamikaze UAV/loitering munition is designed for one-way precision strikes with a proposed range of around 1,000 km and a 20–30 kg warhead capacity. (Page 6, 53)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "Bodhan AI Launches Multilingual AI Models",
+    "question": "Match the following AI entities/frameworks with their specific roles in the Bodhan AI launch for India's Education Stack:\n\nColumn I:\n1. Nemotron 3.5\n2. NeMo framework\n3. AI4Bharat\n\nColumn II:\nA. Partner entity for building sovereign digital infrastructure\nB. Neural Module framework by NVIDIA used for model building\nC. Automated Speech Recognition (ASR) post-training model\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-B, 2-C, 3-A"
+    },
+    "answer": "A",
+    "rationale": "Bodhan AI launched 4 foundational models in partnership with AI4Bharat (3-A). It was built using the NVIDIA NeMo framework (2-B), which included Nemotron 3.5 for Automatic Speech Recognition (ASR) post-training (1-C). (Page 7, 54)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "BRICS Engagements 2026",
+    "question": "Arrange the following BRICS 2026 events in accordance with their respective host cities in India, matching sequentially from top to bottom (I to IV):\n\nEvents:\nI. BRICS Chief Justices' Forum\nII. 18th BRICS Academic Forum\nIII. 14th BRICS Science Meet\nIV. 8th BRICS Working Group on OPST\n\nCities:\n1. Chennai\n2. New Delhi\n3. Goa\n4. Lucknow\n\nSelect the correct sequence of cities corresponding to I, II, III, IV:",
+    "options": {
+      "A": "2, 4, 1, 3",
+      "B": "2, 1, 4, 3",
+      "C": "4, 2, 1, 3",
+      "D": "2, 4, 3, 1",
+      "E": "1, 2, 4, 3"
+    },
+    "answer": "A",
+    "rationale": "I. BRICS Chief Justices' Forum -> New Delhi (2)\nII. 18th BRICS Academic Forum -> Lucknow (4)\nIII. 14th BRICS Science Meet -> Chennai (1)\nIV. 8th BRICS Working Group on OPST -> Goa (3). Hence, the sequence is 2, 4, 1, 3. (Page 7)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "DAC Approves Defence Procurement",
+    "question": "The Defence Acquisition Council (DAC) approved capital acquisition proposals worth ~Rs 1.10 lakh crore. Which of the following pairings of the proposed defence equipment and its recipient armed force is incorrect?",
+    "options": {
+      "A": "Sarvatra Bridge System - Indian Army",
+      "B": "Arudhra Radars - Indian Navy",
+      "C": "Ground-Based Multi-Purpose Jammer (GBMPJ) - Indian Air Force",
+      "D": "Marine Gas Turbines (MGTs) - Indian Coast Guard",
+      "E": "Self-Propelled Mechanical Mine Layers (MMLs) - Indian Army"
+    },
+    "answer": "D",
+    "rationale": "Marine Gas Turbines (MGTs) for indigenous warship propulsion were approved for procurement by the Indian Navy, not the Indian Coast Guard. (Page 8, 54)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "NITI Aayog e-FAST Summit",
+    "question": "During the 5th e-FAST India Summit, NITI Aayog launched the PACT and ZET platforms. What is the primary purpose of the PACT platform?",
+    "options": {
+      "A": "To provide financial subsidies for Zero-Emission Trucks.",
+      "B": "To aggregate freight demand from shippers and logistics providers to convert it into deployment opportunities.",
+      "C": "To establish a national charging network for commercial heavy-duty electric vehicles.",
+      "D": "To monitor and regulate the carbon emission levels of interstate logistics companies.",
+      "E": "To act as an interactive business-engagement platform for financiers and technology companies."
+    },
+    "answer": "B",
+    "rationale": "PACT (Platform for Aggregating Clean Transport) aims to aggregate freight demand from shippers, LSPs, and convert this demand into deployment opportunities across identified corridors. ZET is the business-engagement platform. (Page 8, 54)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "PM-SETU ITI Clusters Approval",
+    "question": "The 5th National Steering Committee under PM-SETU approved strategic investments of Rs 735.70 crore across three states. Match the following hubs with their respective approved financial outlay:\n\nColumn I (State Cluster):\n1. Rajasthan (Bhiwadi Hub)\n2. Telangana (Medchal Hub)\n3. Uttar Pradesh (Meerut Hub)\n\nColumn II (Approved Amount):\nA. Rs 240.40 Cr\nB. Rs 241.00 Cr\nC. Rs 254.30 Cr\n\nSelect the correct matching:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-C, 2-B, 3-A"
+    },
+    "answer": "A",
+    "rationale": "Rajasthan (Bhiwadi) received Rs 241 Cr. Telangana (Medchal) received Rs 254.30 Cr. Uttar Pradesh (Meerut) received Rs 240.40 Cr. (Page 9, 55)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "DFPD and FCI Sign MoU",
+    "question": "The Department of Food & Public Distribution (DFPD) and FCI signed an MoU for Financial Year 2026-27 to advance modernization in food grain management. Which of the following technological interventions was specifically highlighted as a key tool for improving depot efficiency?",
+    "options": {
+      "A": "Annadarpan System",
+      "B": "Depot Darpan Portal",
+      "C": "Kisan e-Mitra",
+      "D": "FCI e-Logistics Stack",
+      "E": "GrainTrace AI"
+    },
+    "answer": "B",
+    "rationale": "The key tool highlighted for improving depot efficiency and technology adoption under this MoU is the 'Depot Darpan' portal. (Page 9, 79)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "IA Sets up ‘AASHVAST’ Lab",
+    "question": "Consider the following statements about the 'AASHVAST' Lab established by the Indian Army:\n\n1. It is located at the Army Cyber Group headquarters in Pune.\n2. It was developed by QuickPay Technology Services Private Limited.\n3. Its primary function is to detect Chinese components and assess vulnerabilities in unmanned systems (drones).\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 3"
+    },
+    "answer": "B",
+    "rationale": "Statement 1 is incorrect because the AASHVAST lab is established at the Directorate General of Electronics and Mechanical Engineering (DG EME) headquarters in New Delhi, not Pune. Statements 2 and 3 are correct. (Page 10, 55)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "Veer Guardian-2026",
+    "question": "The 2nd edition of the bilateral air exercise 'Veer Guardian-2026' was conducted between the Indian Air Force and Japan Air Self-Defence Force. Which of the following combinations of aircraft participated from the IAF and JASDF respectively?",
+    "options": {
+      "A": "IAF: Mirage 2000, MiG-29; JASDF: F-15J",
+      "B": "IAF: LCA Tejas, Su-30 MKI, Rafale; JASDF: F-2A",
+      "C": "IAF: Jaguar, LCA Tejas; JASDF: F-35A",
+      "D": "IAF: Su-30 MKI, C-17; JASDF: F-2A, C-130",
+      "E": "IAF: Rafale, MiG-21; JASDF: F-15J, F-35B"
+    },
+    "answer": "B",
+    "rationale": "The participating aircraft for Veer Guardian-2026 were LCA Tejas, Su-30 MKI, and Rafale from the IAF, and 3 F-2A aircraft from the JASDF. (Page 10, 79)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "PM Visit to Gujarat and Maharashtra",
+    "question": "During his visit to Gujarat, PM Narendra Modi virtually inaugurated the final 3 sections of the Western Dedicated Freight Corridor (WDFC). Arrange the following sections in geographical order from North (Gujarat) to South (Maharashtra):\n\n1. New Sanand (N) to New Makarpura\n2. New Saphale to New JNPT\n3. New Umbergaon to New Saphale\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1, 2, 3",
+      "B": "1, 3, 2",
+      "C": "3, 1, 2",
+      "D": "2, 3, 1",
+      "E": "3, 2, 1"
+    },
+    "answer": "B",
+    "rationale": "The geographical progression of the WDFC sections from North to South is: New Sanand to New Makarpura (Gujarat), then New Umbergaon to New Saphale, and finally New Saphale to New JNPT (Maharashtra). Sequence is 1, 3, 2. (Page 80)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "Global Fintech Fest (GFF) 2026",
+    "question": "The 7th edition of the Global Fintech Fest (GFF) 2026 was inaugurated by PM Narendra Modi in Mumbai. The theme \"Potential to Impact: Agentic AI, Tokenisation, Quantum – Trusted, Connected, Global Systems for Inclusive Finance\" focuses on three foundational technologies. Which of the following is NOT one of those three foundational technologies explicitly mentioned in the theme?",
+    "options": {
+      "A": "Agentic AI",
+      "B": "Tokenisation",
+      "C": "Quantum Computing",
+      "D": "Blockchain Interoperability",
+      "E": "All of the above are mentioned"
+    },
+    "answer": "D",
+    "rationale": "The theme explicitly mentions Agentic AI, Tokenisation, and Quantum as the three foundational technologies. Blockchain Interoperability is not part of the explicit theme title. (Page 30, 56)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "9th Rashtriya Poshan Maah",
+    "question": "The 9th Rashtriya Poshan Maah campaign focuses on five key themes. Which of the following is NOT one of the proposed five themes for the 2026 campaign?",
+    "options": {
+      "A": "Dietary diversity and adequate protein",
+      "B": "Fresh hot cooked meals",
+      "C": "Mandatory fortification of staple foods",
+      "D": "Community ownership and accountability",
+      "E": "Nutrition with early childhood development"
+    },
+    "answer": "C",
+    "rationale": "The five key themes are: 1) Dietary diversity and protein, 2) Fresh hot cooked meals (HCMs), 3) Community ownership & accountability, 4) Nutrition, 5) Early childhood stimulation. Mandatory fortification is not one of the five specific themes. (Page 12, 56)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "CCEA Railway Projects",
+    "question": "The CCEA approved 8 railway multitracking projects worth Rs 20,804 crore. These projects are divided into a batch of 5 projects and a batch of 3 projects. Which combination of states is covered under the batch of 5 multitracking projects costing Rs 10,021 Cr?",
+    "options": {
+      "A": "West Bengal, Madhya Pradesh, Jharkhand, Odisha, Chhattisgarh",
+      "B": "Tamil Nadu, Andhra Pradesh, Karnataka, Telangana",
+      "C": "Maharashtra, Gujarat, Rajasthan, Haryana",
+      "D": "Uttar Pradesh, Bihar, Jharkhand, West Bengal",
+      "E": "Kerala, Karnataka, Goa, Maharashtra"
+    },
+    "answer": "B",
+    "rationale": "The 5 multitracking projects (costing Rs 10,021 Cr) cover 17 districts across Tamil Nadu, Andhra Pradesh, Karnataka, and Telangana. The 3 projects cover West Bengal, MP, Jharkhand, Odisha, and Chhattisgarh. (Page 12, 80)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "ChipIN Centre Tape-Outs",
+    "question": "According to the MeitY dataset on the ChipIN Centre initiative, arrange the following top 4 states in descending order based on the number of chip tape-outs registered:\n\n1. Telangana\n2. Karnataka\n3. Tamil Nadu\n4. Maharashtra\n\nSelect the correct order:",
+    "options": {
+      "A": "2, 3, 1, 4",
+      "B": "2, 1, 3, 4",
+      "C": "3, 2, 1, 4",
+      "D": "2, 3, 4, 1",
+      "E": "1, 2, 3, 4"
+    },
+    "answer": "A",
+    "rationale": "The order by tape-outs is: Karnataka (73), Tamil Nadu (33), Telangana (28), and Maharashtra (24). Thus, the order is 2, 3, 1, 4. (Page 12, 56)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "Ministry of Coal CSR Framework",
+    "question": "The Ministry of Coal launched the first sector-specific CSR Framework for Indian Coal Companies. Consider the following statements:\n\n1. It was developed by the Indian Institute of Corporate Affairs (IICA) under the Ministry of Corporate Affairs.\n2. The framework comprises a total of 141 indicators (91 output-based and 50 outcome-based).\n3. The event celebrated milestones of the Thalassemia Bal Sewa Yojana (TBSY) and Nanha Sa Dil initiatives.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 3"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. The framework was developed by IICA, comprises 141 indicators (91 output, 50 outcome), and celebrated the TBSY and Nanha Sa Dil milestones. (Page 13, 57)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "MoSPI QPR Portal",
+    "question": "The Ministry of Statistics and Programme Implementation (MoSPI) launched the Quarterly Progress Report (QPR) portal to strengthen India's National Data System (NDS). The portal's focus on standardization incorporates a specific framework to ensure identifier consistency. What is the abbreviation for this framework?",
+    "options": {
+      "A": "NDSF (National Data Standardization Framework)",
+      "B": "SQAF (Statistical Quality Assurance Framework)",
+      "C": "DQAF (Data Quality Assessment Framework)",
+      "D": "NMDS (National Metadata Structures)",
+      "E": "MDOF (Ministries Data Optimization Framework)"
+    },
+    "answer": "B",
+    "rationale": "The standardization focus ensures standards and identifiers through the Statistical Quality Assurance Framework (SQAF) along with National Metadata Structures (NMDS). (Page 13, 14)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "US-India TRUST Fellowship",
+    "question": "Three Indian institutions were selected as host institutions for the US-India TRUST Fellowship 2026-27. Which of the following is NOT one of the selected institutions?",
+    "options": {
+      "A": "Manipal Academy of Higher Education (MAHE)",
+      "B": "Indian Institute of Technology Madras (IIT-M)",
+      "C": "Indian Institute of Science (IISc) Bengaluru",
+      "D": "Tata Institute of Fundamental Research (TIFR) Mumbai",
+      "E": "None of the above (All were selected)"
+    },
+    "answer": "D",
+    "rationale": "The three Indian host institutions selected are MAHE, IIT-M, and IISc Bengaluru. TIFR Mumbai is not among them. (Page 14, 57)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "Project CHAYANKAN",
+    "question": "A tripartite MoU was signed for 'Project CHAYANKAN', an AI-based geospatial data analytics initiative. Which three entities signed this agreement?",
+    "options": {
+      "A": "IIT Kharagpur, NRSC (ISRO), Coffee Board of India",
+      "B": "NIT Rourkela, NRSC (ISRO), Tea Board of India",
+      "C": "IIT Madras, DRDO, Spices Board of India",
+      "D": "NIT Surathkal, SAC (ISRO), Rubber Board of India",
+      "E": "IIM Ahmedabad, NRSC (ISRO), NITI Aayog"
+    },
+    "answer": "B",
+    "rationale": "The tripartite MoU for Project CHAYANKAN was signed by NIT Rourkela, National Remote Sensing Centre (NRSC) of ISRO, and the Tea Board of India (TBI) for AI-based tea plantation monitoring. (Page 14, 57)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "E-Commerce Rules Amendment 2026",
+    "question": "Consider the following statements regarding the Consumer Protection (E-Commerce) (Amendment) Rules, 2026:\n\n1. The amended rules will come into force from 1 January 2027.\n2. E-commerce platforms must display the prior price, defined as the average price offered during the preceding 60 days.\n3. The rules mandate an annual audit and compliance certificate against dark patterns as per the 2023 guidelines.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 1 and 3",
+      "C": "Only 2 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 3"
+    },
+    "answer": "B",
+    "rationale": "Statement 1 is correct (effective Jan 1, 2027). Statement 2 is incorrect because the prior price is defined as the *lowest* price offered during the preceding *30* days, not the average of 60 days. Statement 3 is correct regarding the annual audit for dark patterns. (Page 15, 58)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "DILRMP 3.0 Launch",
+    "question": "Under the newly launched DILRMP 3.0 guidelines, high-footfall Sub-Registrar Offices will be upgraded into modern Registration Seva Kendras (RSKs). These RSKs are modelled on which of the following existing service delivery models?",
+    "options": {
+      "A": "Aadhaar Seva Kendras",
+      "B": "Passport Seva Kendras",
+      "C": "Common Service Centres (CSCs)",
+      "D": "Kisan Suvidha Kendras",
+      "E": "Post Office Passport Seva Kendras"
+    },
+    "answer": "B",
+    "rationale": "The 75 upgraded Registration Seva Kendras (RSKs) are modelled on Passport Seva Kendras, featuring improved citizen amenities and digital queue management. (Page 15, 58)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "NSO ASUSE 2025 Report",
+    "question": "According to the NSO's first-ever district-level estimates of the unincorporated non-agricultural sector (ASUSE 2025), what fraction of the total establishments, workers, and Gross Value Added (GVA) do the top 50 districts collectively account for?",
+    "options": {
+      "A": "One-tenth",
+      "B": "One-fourth",
+      "C": "One-third",
+      "D": "Half",
+      "E": "Two-thirds"
+    },
+    "answer": "C",
+    "rationale": "The top 10 districts account for about one-tenth, while the top 50 districts account for about one-third (approx. 1/3) of total establishments, workers, and GVA. (Page 16, 58)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "Digital Bharat Nidhi (DBN) in Jharkhand",
+    "question": "The Digital Bharat Nidhi (DBN) signed an agreement with the Jharkhand government to implement the Amended BharatNet Program (ABP) using a State-led model. What is the total financial support approved by the Government of India for this program?",
+    "options": {
+      "A": "Rs 1,250 crore",
+      "B": "Rs 1,435 crore",
+      "C": "Rs 1,684 crore",
+      "D": "Rs 2,100 crore",
+      "E": "Rs 2,500 crore"
+    },
+    "answer": "C",
+    "rationale": "The Government of India approved financial support of Rs 1,684 crore for the implementation of ABP in Jharkhand. (Page 17, 59)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "India Photonics Association (IPA) Launch",
+    "question": "The India Photonics Association (IPA) was launched to strengthen the photonics ecosystem. Based on market projections for India's photonics sector, match the metrics in Column I with their corresponding values in Column II:\n\nColumn I:\n1. Estimated market size in 2025\n2. Projected market size by 2034\n3. Projected CAGR for silicon photonics\n\nColumn II:\nA. USD 155 billion\nB. ~29%\nC. USD 78.4 billion\n\nSelect the correct matching:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-C, 3-B",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "A",
+    "rationale": "India's photonics market is estimated at USD 78.4 billion in 2025 (1-C), projected to reach USD 155 billion by 2034 (2-A), with silicon photonics growing at nearly 29% CAGR (3-B). (Page 17, 59)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "PMMSY 6 Years Completion",
+    "question": "Consider the following statements regarding the Pradhan Mantri Matsya Sampada Yojana (PMMSY) upon its completion of six years in September 2026:\n\n1. It was launched in 2020 with an initial outlay of Rs 20,050 crore.\n2. It allocated a record Rs 2,500 crore in the Budgeted Estimates (BE) for 2026-27.\n3. The scheme strictly aligns with Sustainable Development Goal (SDG) 13 - Climate Action.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because PMMSY primarily aligns with SDG 14 - Life Below Water, not SDG 13. (Page 18, 59)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "BANKING & FINANCE",
+    "sub_category": "Bankers’ Books Evidence Act, 2026",
+    "question": "The Ministry of Finance notified the implementation of the Bankers' Books Evidence Act, 2026, which received Presidential assent in August 2026. This new Act formally repeals and replaces the Bankers’ Books Evidence Act of which year?",
+    "options": {
+      "A": "1881",
+      "B": "1891",
+      "C": "1934",
+      "D": "1949",
+      "E": "1872"
+    },
+    "answer": "B",
+    "rationale": "The Bankers' Books Evidence Act, 2026 replaces the Bankers' Books Evidence Act of 1891. (Page 19, 60)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "BANKING & FINANCE",
+    "sub_category": "CSL and Drydocks World JV",
+    "question": "Cochin Shipyard Limited (CSL) and UAE-based Drydocks World (DDW) signed a 50:50 joint venture to expand the International Ship Repair Facility (ISRF). Where is this ISRF specifically located?",
+    "options": {
+      "A": "Visakhapatnam, Andhra Pradesh",
+      "B": "Chennai, Tamil Nadu",
+      "C": "Kochi, Kerala",
+      "D": "Kandla, Gujarat",
+      "E": "Mormugao, Goa"
+    },
+    "answer": "C",
+    "rationale": "The joint venture agreement is to operate and expand the International Ship Repair Facility (ISRF) in Kochi, Kerala, with an investment of Rs 900 crore from each partner. (Page 19, 60)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "BANKING & FINANCE",
+    "sub_category": "NIXI and APNIC MoU",
+    "question": "During the 62nd APNIC Conference in Mumbai, NIXI and APNIC signed an MoU focusing on internet infrastructure. A key deployment focus under this MoU is RPKI to prevent cyber threats. What does RPKI stand for?",
+    "options": {
+      "A": "Routing Protocol Key Interface",
+      "B": "Resource Public Key Infrastructure",
+      "C": "Regional Public Key Integration",
+      "D": "Routing Protection Key Infrastructure",
+      "E": "Resource Protection Key Interface"
+    },
+    "answer": "B",
+    "rationale": "RPKI stands for Resource Public Key Infrastructure, a security framework that authenticates Internet routing information to prevent cyber threats. (Page 20, 60)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "INTERNATIONAL AFFAIRS",
+    "sub_category": "UNGA Resolution on Child Marriage",
+    "question": "The United Nations General Assembly (UNGA) adopted a resolution, co-sponsored by India, to observe a specific day every year as the International Day for the Elimination of Child, Early and Forced Marriage. Which country led this resolution (A/RES/80/309)?",
+    "options": {
+      "A": "India",
+      "B": "South Africa",
+      "C": "Sierra Leone",
+      "D": "Nigeria",
+      "E": "Bangladesh"
+    },
+    "answer": "C",
+    "rationale": "The resolution (A/RES/80/309) to observe November 27 as the International Day was led by Sierra Leone and co-sponsored by 70 countries, including India. (Page 20, 61)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "INTERNATIONAL AFFAIRS",
+    "sub_category": "UNESCO Tentative List additions",
+    "question": "Four new Indian cultural heritage sites were added to the UNESCO Tentative List, taking India's total to 73. Match the newly added properties with their respective locations:\n\nColumn I (Property):\n1. Rangpur-Sivasagar Historic Ensemble\n2. Colonial Penal Settlement\n3. Painted Haveli Towns of Shekhawati\n\nColumn II (Location):\nA. Rajasthan\nB. Andaman & Nicobar Islands\nC. Assam\n\nSelect the correct matching:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-B, 2-C, 3-A"
+    },
+    "answer": "A",
+    "rationale": "Rangpur-Sivasagar is in Assam (1-C). Colonial Penal Settlement is in Andaman & Nicobar (2-B). Painted Haveli Towns of Shekhawati are in Rajasthan (3-A). (Page 21, 61)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "INTERNATIONAL AFFAIRS",
+    "sub_category": "Global 6G Initiative",
+    "question": "India recently joined the 'Call to Action for 6G Leadership and Security' initiative along with the USA and 24 other nations. Under the Bharat 6G Mission, by which year does India aim to establish itself as a global hub for 6G intellectual property and telecom products?",
+    "options": {
+      "A": "2028",
+      "B": "2030",
+      "C": "2032",
+      "D": "2035",
+      "E": "2040"
+    },
+    "answer": "B",
+    "rationale": "India is advancing its domestic ambitions through the Bharat 6G Mission, aiming to establish itself as a global hub for 6G intellectual property, telecom products, and affordable solutions by 2030. (Page 22, 61)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "INTERNATIONAL AFFAIRS",
+    "sub_category": "79th WHO Regional Committee Session",
+    "question": "At the 79th session of the WHO Regional Committee for South-East Asia held in Dili, Timor-Leste, India received special recognition for sustaining the elimination of which of the following conditions for a decade?",
+    "options": {
+      "A": "Trachoma",
+      "B": "Malaria",
+      "C": "Polio",
+      "D": "Maternal and Neonatal Tetanus (MNTE)",
+      "E": "Rubella"
+    },
+    "answer": "D",
+    "rationale": "India was recognized for sustained Maternal and Neonatal Tetanus Elimination (MNTE) and NCD control leadership. Timor-Leste was recognized for trachoma, Bhutan for rabies, and Thailand for rubella. (Page 22, 84)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "INTERNATIONAL AFFAIRS",
+    "sub_category": "Yudh Abhyas 2026",
+    "question": "Consider the following statements about the India-USA joint military exercise 'Yudh Abhyas 2026':\n\n1. It is the 22nd edition of this annual bilateral exercise.\n2. It was conducted simultaneously in Bikaner, Rajasthan, and Auli, Uttarakhand.\n3. The previous edition (21st) was conducted in Fort Wainwright, Alaska, USA.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. It is the 22nd edition, held in Bikaner and Auli, and the 21st edition was held in Alaska, USA. (Page 23, 62)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "INTERNATIONAL AFFAIRS",
+    "sub_category": "Rajnath Singh’s Visit to Sri Lanka",
+    "question": "During Defence Minister Rajnath Singh's visit to Sri Lanka, a key proposal was discussed regarding an integrated system for real-time data sharing. What is the name of this proposed system?",
+    "options": {
+      "A": "Coastal Radar Network (CRN)",
+      "B": "Maritime Domain Awareness (MDA) System",
+      "C": "Indian Ocean Intelligence Grid (IOIG)",
+      "D": "Shared Naval Telemetry Architecture (SNTA)",
+      "E": "Bilateral Ocean Surveillance System (BOSS)"
+    },
+    "answer": "B",
+    "rationale": "A key proposal discussed was the integrated Maritime Domain Awareness (MDA) System for real-time maritime data sharing. (Page 23, 85)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "INTERNATIONAL AFFAIRS",
+    "sub_category": "International Space Summit 2026",
+    "question": "At the inaugural International Space Summit 2026 held in Paris, India and France signed multiple agreements. Which of the following constellations is planned to be deployed between 2027 and 2030 as a result of these discussions?",
+    "options": {
+      "A": "Space-Based Surveillance–Phase III (SBS-III)",
+      "B": "Infrastructure for Resilience, Interconnectivity and Security by Satellite (IRIS²)",
+      "C": "Indo-French Orbital Defence (IFOD)",
+      "D": "Gaganyaan Surveillance Network (GSN)",
+      "E": "European-Indian Tactical Constellation (EITC)"
+    },
+    "answer": "A",
+    "rationale": "India and France signed agreements with plans to deploy the Space-Based Surveillance–Phase III (SBS-III) constellation between 2027 and 2030. (Page 24, 62)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "INTERNATIONAL AFFAIRS",
+    "sub_category": "Exercise Samudra Laksamana",
+    "question": "The 4th edition of the bilateral maritime exercise 'Samudra Laksamana' was conducted between the Indian Navy and the Royal Malaysian Navy. Which Indian Naval Ship (INS) participated in this exercise?",
+    "options": {
+      "A": "INS Sahyadri",
+      "B": "INS Mysore",
+      "C": "INS Kolkata",
+      "D": "INS Kiltan",
+      "E": "INS Kamorta"
+    },
+    "answer": "B",
+    "rationale": "INS Mysore, a guided-missile destroyer, participated in the exercise alongside Malaysian ships KD Lekir and KD Gagah Samudera. (Page 24, 85)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "BANKING & FINANCE",
+    "sub_category": "RBI Financial Stability Report 2026",
+    "question": "According to the RBI's Financial Stability Report (FSR) - June 2026, arrange the following banking indicators for Scheduled Commercial Banks (SCBs) in descending order based on their reported percentage values:\n\n1. Capital to Risk Weighted Assets Ratio (CRAR)\n2. Provisioning Coverage Ratio (PCR)\n3. Gross Non-Performing Assets (GNPA)\n4. Common Equity Tier 1 (CET1)\n\nSelect the correct sequence:",
+    "options": {
+      "A": "2, 1, 4, 3",
+      "B": "2, 4, 1, 3",
+      "C": "1, 2, 4, 3",
+      "D": "2, 1, 3, 4",
+      "E": "1, 4, 2, 3"
+    },
+    "answer": "A",
+    "rationale": "Based on the FSR: PCR is 75.6%, CRAR is 17.7%, CET1 is 15.3%, and GNPA is 1.8%. Thus, descending order is 2 (75.6%), 1 (17.7%), 4 (15.3%), 3 (1.8%). Sequence is 2, 1, 4, 3. (Page 25, 85-86)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "BANKING & FINANCE",
+    "sub_category": "WhatsApp Native Bill Payments",
+    "question": "Meta-owned WhatsApp introduced a native Bill Payments feature in India. This feature is powered by which of the following networks operated by NPCI?",
+    "options": {
+      "A": "Unified Payments Interface (UPI) Core",
+      "B": "Bharat Connect Network",
+      "C": "National Automated Clearing House (NACH)",
+      "D": "RuPay Payment Gateway",
+      "E": "Aadhaar Enabled Payment System (AePS)"
+    },
+    "answer": "B",
+    "rationale": "The native Bill Payments feature on WhatsApp is powered by the Bharat Connect network (formerly Bharat Bill Payment System, BBPS), operated by NPCI Bharat BillPay Limited (NBBL). (Page 26, 63)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "BANKING & FINANCE",
+    "sub_category": "Bisleri and SBI Partnership",
+    "question": "Bisleri International partnered with the State Bank of India (SBI) to promote responsible plastic waste management. Consider the following statements regarding this partnership:\n\n1. The initiative falls under Bisleri's 'Bottles for Change' program.\n2. The partnership strictly mandates that SBI branches will only use glass bottles for internal operations.\n3. The initiative aligns with SBI's target to achieve Net Zero (Scope 1, 2 & 3) emissions by 2055.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "C",
+    "rationale": "Statement 1 is correct (Bottles for Change initiative). Statement 2 is incorrect as the partnership focuses on segregation, collection, and training/awareness for SBI staff, not a mandate on glass bottles. Statement 3 is correct (aligns with SBI’s Net Zero target by 2055). (Page 26, 63)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "BANKING & FINANCE",
+    "sub_category": "Coastal Local Area Bank Scheduled Status",
+    "question": "The Reserve Bank of India (RBI) granted 'Scheduled Bank' status to Coastal Local Area Bank Limited, making it India's first Local Area Bank (LAB) in the Second Schedule. What is the minimum aggregate paid-up capital and reserves required for a bank to be included in the Second Schedule under the RBI Act, 1934?",
+    "options": {
+      "A": "Rs 1 lakh",
+      "B": "Rs 5 lakh",
+      "C": "Rs 25 lakh",
+      "D": "Rs 1 crore",
+      "E": "Rs 5 crore"
+    },
+    "answer": "B",
+    "rationale": "To be included in the Second Schedule, a bank must have an aggregate paid-up capital and reserves of at least Rs 5 lakh. (Page 26, 63)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "BANKING & FINANCE",
+    "sub_category": "ADB and MP PPP Agreement",
+    "question": "The Asian Development Bank (ADB) signed its first Transaction Advisory Services (TAS) mandate in India with the Government of Madhya Pradesh. What is the primary objective of this mandate?",
+    "options": {
+      "A": "To develop a high-speed rail network connecting Bhopal and Indore.",
+      "B": "To facilitate renewable energy Public-Private Partnership (PPP) projects and attract private investment up to USD 1 billion.",
+      "C": "To establish a microfinance framework for rural women entrepreneurs.",
+      "D": "To upgrade the water sanitation facilities across 50 urban local bodies.",
+      "E": "To construct a new international airport in Ujjain."
+    },
+    "answer": "B",
+    "rationale": "The mandate aims to facilitate the development of renewable energy Public-Private Partnership (PPP) projects and attract private investment of up to USD 1 billion in Madhya Pradesh. (Page 27, 64)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "BANKING & FINANCE",
+    "sub_category": "Bandhan Bank & Mastercard Credit Cards",
+    "question": "Bandhan Bank, in partnership with Mastercard, launched a credit card portfolio featuring four variants. Match the card variants in Column I with their primary target focus in Column II:\n\nColumn I:\n1. Sparks\n2. Ignite\n3. Flare\n4. Lumina\n\nColumn II:\nA. Travel and rewards\nB. Everyday spending\nC. Premium benefits including concierge\nD. Travel and lifestyle perks\n\nSelect the correct matching:",
+    "options": {
+      "A": "1-B, 2-A, 3-D, 4-C",
+      "B": "1-A, 2-B, 3-C, 4-D",
+      "C": "1-B, 2-D, 3-A, 4-C",
+      "D": "1-D, 2-C, 3-A, 4-B",
+      "E": "1-C, 2-A, 3-B, 4-D"
+    },
+    "answer": "A",
+    "rationale": "Sparks targets everyday spending (1-B); Ignite focuses on travel and rewards (2-A); Flare offers travel and lifestyle perks (3-D); Lumina provides premium benefits (4-C). (Page 27, 64)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "BANKING & FINANCE",
+    "sub_category": "MoF and IFC Funding for MSME",
+    "question": "The Ministry of Finance secured USD 1 billion in funding from the International Finance Corporation (IFC) to boost long-term MSME credit. Under this arrangement, what is the maximum moratorium-inclusive period for which SIDBI can on-lend these funds to MSMEs?",
+    "options": {
+      "A": "3 years",
+      "B": "5 years",
+      "C": "7 years",
+      "D": "10 years",
+      "E": "12 years"
+    },
+    "answer": "C",
+    "rationale": "A major portion of the funding (USD 500 million) will be directly on-lent by SIDBI to MSMEs for a maximum period of 7 years, with a suitable moratorium. (Page 27, 64)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "BANKING & FINANCE",
+    "sub_category": "RBI Approvals (RNFI, PB Pay, ICICI Pru)",
+    "question": "Consider the following statements regarding recent regulatory approvals by the Reserve Bank of India (RBI):\n\n1. RNFI Services Ltd. secured in-principle authorization to operate as a Payment Aggregator-Online (PA-O).\n2. PB Pay Private Limited, a subsidiary of PB Fintech, officially commenced commercial operations as a Payment Aggregator.\n3. ICICI Prudential AMC received approval to acquire an aggregate holding of up to 9.95% of CSB Bank Ltd.’s paid-up share capital.\n\nWhich of the statements given above is/are incorrect?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 2",
+      "E": "None of the above"
+    },
+    "answer": "A",
+    "rationale": "Statement 1 is incorrect because RNFI Services Ltd. secured in-principle authorization to operate as a Payment Aggregator-Physical (PA-P), not Online (PA-O). Statements 2 and 3 are correct. (Page 28, 64)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "BANKING & FINANCE",
+    "sub_category": "Niyo gets GIFT City Licence",
+    "question": "Fintech platform Niyo secured a specific licence from the International Financial Services Centres Authority (IFSCA) to operate from GIFT City, Gujarat, in order to expand its cross-border financial services. Which licence was granted to Niyo?",
+    "options": {
+      "A": "Authorised Dealer Category-II (AD-II) Licence",
+      "B": "Payment Aggregator - Cross Border (PA-CB) Licence",
+      "C": "Payment Service Provider (PSP) Licence",
+      "D": "Non-Banking Financial Company - Factor (NBFC-Factor) Licence",
+      "E": "Prepaid Payment Instrument (PPI) Licence"
+    },
+    "answer": "C",
+    "rationale": "Niyo secured a Payment Service Provider (PSP) licence from the IFSCA to operate from GIFT City and expand its cross-border financial services. (Page 28, 64)"
+  },
+  {
+    "category": "BANKING & FINANCE",
+    "sub_category": "NIPL and FOMO Pay Partnership",
+    "question": "NPCI International Payments Limited (NIPL) announced a strategic partnership with FOMO Pay to enable UPI QR code acceptance for Indian tourists. In which country will this partnership facilitate seamless cross-border digital payments where merchants settle in their local currency while tourists pay in INR?",
+    "options": {
+      "A": "United Arab Emirates",
+      "B": "France",
+      "C": "Singapore",
+      "D": "Malaysia",
+      "E": "Nepal"
+    },
+    "answer": "C",
+    "rationale": "The partnership is with FOMO Pay, a Singapore-headquartered payment institution, enabling UPI QR acceptance for merchants in Singapore (with settlements in Singapore Dollars, SGD). (Page 29, 65)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "ECONOMY & BUSINESS",
+    "sub_category": "Adani Defence Ammunition Pact",
+    "question": "Adani Defence & Aerospace signed a five-year agreement with Indo-Russian Rifles Private Limited (IRRPL) for supplying indigenously manufactured ammunition. This ammunition is specifically for which of the following assault rifle programs?",
+    "options": {
+      "A": "SIG Sauer 716",
+      "B": "AK-203",
+      "C": "INSAS 1B1",
+      "D": "Tavor TAR-21",
+      "E": "CAR 816"
+    },
+    "answer": "B",
+    "rationale": "The agreement is for the supply of indigenously manufactured 7.62×39 mm small-calibre ammunition for India’s AK-203 assault rifle programme. (Page 31, 66)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "ECONOMY & BUSINESS",
+    "sub_category": "Jindal Stainless and JFE Steel TAA",
+    "question": "Jindal Stainless Limited (JSL) signed a Technical Assistance Agreement (TAA) with Japan's JFE Steel Corporation to enhance manufacturing capabilities. Which specific type of steel grade is the primary focus of this agreement?",
+    "options": {
+      "A": "Austenitic Stainless Steel",
+      "B": "Martensitic Stainless Steel",
+      "C": "Ferritic Stainless Steel",
+      "D": "Duplex Stainless Steel",
+      "E": "High-Carbon Steel"
+    },
+    "answer": "C",
+    "rationale": "The agreement focuses on enhancing manufacturing capabilities for selected 'ferritic stainless steel' grades, known for their corrosion resistance and cost efficiency. (Page 31, 66)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "ECONOMY & BUSINESS",
+    "sub_category": "GalaxEye US Patent",
+    "question": "Indian startup GalaxEye secured a United States (US) patent for its OptoSAR technology. What does the acronym 'SAR' stand for in the context of this imaging technology?",
+    "options": {
+      "A": "Satellite Aperture Radar",
+      "B": "Synthetic Aperture Radar",
+      "C": "Synchronised Active Radar",
+      "D": "Spatial Analytical Radar",
+      "E": "Systematic Aperture Resolution"
+    },
+    "answer": "B",
+    "rationale": "OptoSAR stands for Optical Synthetic Aperture Radar. It synchronises optical and SAR (Synthetic Aperture Radar) data. (Page 31, 66)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "ECONOMY & BUSINESS",
+    "sub_category": "Deeptech Energy Startups MoU",
+    "question": "A tripartite MoU was signed to support deep-tech energy-sector startups, backed by ONGC. Which of the following combinations correctly identifies the three primary signatories of this MoU?",
+    "options": {
+      "A": "MC²⁺ Foundation, IIT Madras, and SINE",
+      "B": "MC²⁺ Foundation, IIT Bombay, and SINE",
+      "C": "NITI Aayog, IIT Bombay, and SINE",
+      "D": "MC²⁺ Foundation, IISc Bengaluru, and C-CAMP",
+      "E": "Atal Innovation Mission, IIT Delhi, and SINE"
+    },
+    "answer": "B",
+    "rationale": "The tripartite MoU was signed by MC²⁺ Foundation, IIT Bombay, and the Society for Innovation & Entrepreneurship (SINE). (Page 32, 66)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "AWARDS & RECOGNITIONS",
+    "sub_category": "Miss World 2026",
+    "question": "Joheirry Mola was crowned Miss World 2026 at the 73rd edition held in Nha Trang, Vietnam. Consider the following statements regarding her victory:\n\n1. She represents the Dominican Republic.\n2. She is the first woman from her country to win the Miss World title.\n3. She was crowned by Miss World 2025 Opal Suchata Chuangsri of Thailand.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "C",
+    "rationale": "Statement 1 is correct (Dominican Republic). Statement 2 is incorrect because she is the *second* Dominican woman to win (after Mariasela Álvarez in 1982). Statement 3 is correct (crowned by Opal Suchata Chuangsri). (Page 33, 67)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "AWARDS & RECOGNITIONS",
+    "sub_category": "Sansad Ratna Awards 2026",
+    "question": "At the 16th Sansad Ratna Awards 2026, P.P. Chaudhary was honoured for his outstanding parliamentary performance. How many times (including the 2026 award) has he received the Sansad Ratna Award?",
+    "options": {
+      "A": "Two times",
+      "B": "Three times",
+      "C": "Four times",
+      "D": "Five times",
+      "E": "Six times"
+    },
+    "answer": "C",
+    "rationale": "P.P. Chaudhary, Lok Sabha MP from Pali, received the award for the fourth time. (Page 35, 68)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "APPOINTMENTS & RESIGNATIONS",
+    "sub_category": "High Court Chief Justices",
+    "question": "The Ministry of Law and Justice (MoL&J) notified the appointments of 8 Judges as Chief Justices of various High Courts across India. Match the newly appointed Chief Justices in Column I with their respective High Courts in Column II:\n\nColumn I:\n1. V. Kameswar Rao\n2. Sanjay Kumar Agrawal\n3. Mahesh Chandra Tripathi\n4. Krushna Ram Mohapatra\n\nColumn II:\nA. Rajasthan HC\nB. Chhattisgarh HC\nC. Bombay HC\nD. Patna HC\n\nSelect the correct matching:",
+    "options": {
+      "A": "1-D, 2-A, 3-C, 4-B",
+      "B": "1-A, 2-D, 3-B, 4-C",
+      "C": "1-D, 2-C, 3-A, 4-B",
+      "D": "1-B, 2-A, 3-C, 4-D",
+      "E": "1-C, 2-A, 3-D, 4-B"
+    },
+    "answer": "A",
+    "rationale": "V. Kameswar Rao -> Patna HC (1-D); Sanjay Kumar Agrawal -> Rajasthan HC (2-A); Mahesh Chandra Tripathi -> Bombay HC (3-C); Krushna Ram Mohapatra -> Chhattisgarh HC (4-B). (Page 37, 69)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "SCIENCE & TECHNOLOGY",
+    "sub_category": "Isar Aerospace Launch",
+    "question": "German startup Isar Aerospace successfully launched its 'Spectrum' rocket from Andøya Spaceport. In which European country is the Andøya Spaceport located?",
+    "options": {
+      "A": "Sweden",
+      "B": "Germany",
+      "C": "Norway",
+      "D": "Finland",
+      "E": "Denmark"
+    },
+    "answer": "C",
+    "rationale": "The Spectrum rocket was launched from Andøya Spaceport located in Norway. (Page 39, 70)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "SCIENCE & TECHNOLOGY",
+    "sub_category": "DRDO SHIELD Programme",
+    "question": "DRDO launched the 'SHIELD' programme for testing the vulnerability of electronic systems. The SHIELD platform utilizes SSPA technology to generate a peak far-field strength of at least 3 kilovolts per metre (kV/m). What core semiconductor material is this SSPA technology based on?",
+    "options": {
+      "A": "Silicon Carbide (SiC)",
+      "B": "Gallium Arsenide (GaAs)",
+      "C": "Gallium Nitride (GaN)",
+      "D": "Indium Phosphide (InP)",
+      "E": "Silicon Germanium (SiGe)"
+    },
+    "answer": "C",
+    "rationale": "The SHIELD platform generates high-power microwaves using Gallium Nitride (GaN)-based Solid-State Power Amplifier (SSPA) technology. (Page 40, 70)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "SCIENCE & TECHNOLOGY",
+    "sub_category": "Akasa Air SAF Flight",
+    "question": "Akasa Air successfully operated its first commercial flight using Aviation Turbine Fuel (ATF) blended with 1% Sustainable Aviation Fuel (SAF) supplied by BPCL. What is the target percentage for SAF blending that India aims to achieve by the year 2030?",
+    "options": {
+      "A": "2%",
+      "B": "5%",
+      "C": "10%",
+      "D": "15%",
+      "E": "20%"
+    },
+    "answer": "B",
+    "rationale": "The initiative supports India's aim to achieve 5% SAF blending by 2030. (Page 40, 71)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "ENVIRONMENT",
+    "sub_category": "New Plant Species Discovered",
+    "question": "Scientists from the Botanical Survey of India (BSI) discovered a new plant species named 'Osbeckia ulotricha'. Consider the following statements about this discovery:\n\n1. It belongs to the Melastomataceae family.\n2. It was discovered in the shola grasslands of the Nilgiri Biosphere Reserve.\n3. It is a woolly-haired plant with blossoms appearing between February and May.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "C",
+    "rationale": "Statement 1 is correct. Statement 2 is incorrect because it was discovered in the Agasthyamala Biosphere Reserve, not the Nilgiri BR. Statement 3 is correct. (Page 41, 71)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "SPORTS",
+    "sub_category": "Pickleball World Cup 2026",
+    "question": "At the Pickleball World Cup 2026 held in Vietnam, the Indian contingent secured the fourth position overall. Arrange the top 4 countries in descending order of their total gold medals won:\n\n1. India\n2. South Korea\n3. Vietnam\n4. United States of America (USA)\n\nSelect the correct sequence:",
+    "options": {
+      "A": "3, 4, 2, 1",
+      "B": "3, 2, 4, 1",
+      "C": "3, 2, 1, 4",
+      "D": "2, 3, 4, 1",
+      "E": "3, 4, 1, 2"
+    },
+    "answer": "B",
+    "rationale": "Based on Gold medals: Vietnam (116 Gold) > South Korea (11 Gold) > USA (9 Gold) > India (7 Gold). The correct sequence is 3, 2, 4, 1. (Page 43, 72)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "OBITUARY",
+    "sub_category": "Solomon Pappaiah",
+    "question": "Veteran scholar Solomon Pappaiah, who recently passed away at the age of 90, was widely known as the first moderator to receive national honors for which specific cultural format of debate?",
+    "options": {
+      "A": "Kavi Sammelan",
+      "B": "Pattimandram",
+      "C": "Villu Paatu",
+      "D": "Therukoothu",
+      "E": "Mushaira"
+    },
+    "answer": "B",
+    "rationale": "Solomon Pappaiah was a renowned orator and the first 'Pattimandram' (Tamil debate) moderator to receive the Padma Shri. (Page 45, 74)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "IMPORTANT DAYS",
+    "sub_category": "International Day of Police Cooperation",
+    "question": "The United Nations observes 7 September as the International Day of Police Cooperation. The inaugural observance of this day in 2023 coincided with the 100th anniversary of which international organization?",
+    "options": {
+      "A": "United Nations Office on Drugs and Crime (UNODC)",
+      "B": "International Criminal Court (ICC)",
+      "C": "International Criminal Police Organization (INTERPOL)",
+      "D": "Financial Action Task Force (FATF)",
+      "E": "Amnesty International"
+    },
+    "answer": "C",
+    "rationale": "The inaugural observance in 2023 coincided with the 100th anniversary of INTERPOL. (Page 47, 75)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "STATE NEWS",
+    "sub_category": "Odisha Investment MoUs",
+    "question": "During the 'Odisha Investors’ Meet – UAE 2026' in Abu Dhabi, the Government of Odisha signed agreements to explore 14 projects involving an indicative investment of Rs 2,10,500 crore. Which two major corporate entities were the signatories with the Odisha government?",
+    "options": {
+      "A": "Reliance Industries and DP World",
+      "B": "International Holding Company (IHC) and the Adani Group",
+      "C": "Mubadala Investment Company and Tata Sons",
+      "D": "Emirates Global Aluminium (EGA) and JSW Group",
+      "E": "Larsen & Toubro and Emaar Properties"
+    },
+    "answer": "B",
+    "rationale": "The Government of Odisha signed agreements with UAE-based International Holding Company (IHC) and the Adani Group. (Page 51, 77)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "Tata Steel COG Injection",
+    "question": "Tata Steel Limited commissioned India's first Coke Oven Gas (COG) Injection Project at its Meramandali plant in Odisha. What is the primary chemical composition (by percentage) that makes COG highly combustible and suitable for reducing carbon emissions in this process?",
+    "options": {
+      "A": "More than 60% Methane",
+      "B": "More than 55% Hydrogen",
+      "C": "More than 70% Carbon Monoxide",
+      "D": "More than 45% Nitrogen",
+      "E": "More than 80% Ethane"
+    },
+    "answer": "B",
+    "rationale": "Coke Oven Gas (COG) is a hydrogen-rich by-product containing more than 55% hydrogen. (Page 20, 60)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "September 2026 - 2nd Week"
+  }
+]
