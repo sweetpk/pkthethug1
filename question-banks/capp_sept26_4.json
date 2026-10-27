@@ -1,0 +1,802 @@
+[
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "OTHER NATIONAL NEWS",
+    "question": "Consider the following statements regarding the approvals by the PM-SETU National Steering Committee in September 2026:\n\n1. Strategic investments worth Rs 735.70 crore were approved for three ITI clusters.\n2. The three approved clusters are located in Rajasthan, Uttar Pradesh, and Telangana.\n3. The cumulative sanctioned investment under PM-SETU has now reached Rs 2,491 crore across 10 ITI clusters.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 3",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "Pages 20 and 28 state that investments of Rs 735.70 Cr for 3 clusters (Rajasthan, UP, Telangana) were approved, and with the Kurukshetra cluster approval, the cumulative investment reached Rs 2,491 crore across 10 ITI clusters. All statements are true.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "MoU’s & AGREEMENTS",
+    "sub_category": "MoU’s BETWEEN ORGANIZATION",
+    "question": "Match the following organizations with the primary purpose of their MoUs signed in September/August 2026:\n\nColumn I:\n1. TCS & DGCX\n2. NIXI & APNIC\n3. NALCO & Emirates Global Aluminium\n\nColumn II:\nA. Internet infrastructure and RPKI security\nB. Modernising market infrastructure and trading platforms\nC. Technology licensing for DX+ Ultra technology\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-A, 3-C",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Based on Pages 57-59: TCS & DGCX partnered for market infrastructure (1-B); NIXI & APNIC for internet infrastructure and RPKI (2-A); NALCO & EGA for DX+ Ultra technology (3-C).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "OTHER NATIONAL NEWS",
+    "question": "Fill in the blank:\nThe Indian Institute of Science (IISc) Bengaluru established the Foundation for Quantum Computing Innovation (FQCI) to function as the Quantum Computing Thematic Hub under the _________ Mission.",
+    "options": {
+      "A": "National Supercomputing",
+      "B": "National Quantum",
+      "C": "Digital India",
+      "D": "Bharat Semiconductor",
+      "E": "Advanced Technology"
+    },
+    "answer": "B",
+    "rationale": "Page 17 states that IISc established FQCI to function as the QC T-Hub under the National Quantum Mission (NQM).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "AWARDS",
+    "sub_category": "OTHER IMPORTANT AWARDS",
+    "question": "Assertion (A): The Goa Police received the President's Colour in Panaji from Union Minister Amit Shah.\nReason (R): The award was given in recognition of over 80 years of its service, courage, and professionalism in protecting the state's coastline and internal security.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true but (R) is not the correct explanation of (A).",
+      "C": " (A) is true but (R) is false.",
+      "D": " (A) is false but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "A",
+    "rationale": "Page 76 explicitly mentions that Goa Police was awarded the President's Colour for exactly the reasons stated in (R).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "APPOINTMENTS & RESIGNATIONS",
+    "sub_category": "NATIONAL",
+    "question": "Which of the following appointments notified in September 2026 is NOT correctly matched?",
+    "options": {
+      "A": "Suman Ray - Executive Director, RBI",
+      "B": "Carol Kripanayana Furtado - Interim MD & CEO, Ujjivan Small Finance Bank",
+      "C": "Vinai Kumar Saxena - Lieutenant Governor of Jammu & Kashmir (Permanent)",
+      "D": "Mandeep K. Bhandari - Chairperson, CBSE",
+      "E": "Kamlesh Chandra Varshney - Whole-Time Member, SEBI"
+    },
+    "answer": "C",
+    "rationale": "Pages 64-68 indicate that Vinai Kumar Saxena (Lt Gov of Ladakh) was given *additional charge* (not permanent) of Jammu & Kashmir during the absence of Manoj Sinha.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "OTHER NATIONAL NEWS",
+    "question": "The Ministry of Statistics and Programme Implementation (MoSPI) released India's trial Index of Services Production (ISP) for June 2026. This index was developed with which year as the base year?",
+    "options": {
+      "A": "2011-12",
+      "B": "2015-16",
+      "C": "2020-21",
+      "D": "2022-23",
+      "E": "2024-25"
+    },
+    "answer": "E",
+    "rationale": "Page 18 notes that MoSPI released India's trial ISP for 19 sub-sectors, with 2024-25 as the base year.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "BANKING & FINANCE",
+    "sub_category": "OTHER BANKING NEWS",
+    "question": "Japan Credit Rating Agency (JCRA) upgraded India's sovereign rating to 'A-'. According to the same agency, what is the projected growth of India's GDP for 2026-27?",
+    "options": {
+      "A": "More than 5%",
+      "B": "More than 6%",
+      "C": "More than 7%",
+      "D": "More than 8%",
+      "E": "More than 9%"
+    },
+    "answer": "B",
+    "rationale": "Page 40 mentions that JCRA projected that India's GDP growth will continue to be at more than 6% for 2026-27.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "INDEX",
+    "sub_category": "RANKING",
+    "question": "Arrange the following top 4 countries in descending order of their overall score in the Travel and Tourism Development Index (TTDI 2026):\n\n1. Spain\n2. Australia\n3. Japan\n4. United States of America\n\nSelect the correct answer:",
+    "options": {
+      "A": "3, 4, 1, 2",
+      "B": "3, 4, 2, 1",
+      "C": "4, 3, 1, 2",
+      "D": "3, 1, 4, 2",
+      "E": "1, 2, 3, 4"
+    },
+    "answer": "A",
+    "rationale": "Page 85 lists the top countries in order: 1. Japan (5.27), 2. USA (5.23), 3. Spain (5.22), 4. Australia (5.18). Thus, the descending order is 3, 4, 1, 2.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "IMPORTANT DAYS",
+    "sub_category": "DAYS",
+    "question": "Match the following Important Days observed in September with their central themes for 2026:\n\nColumn I:\n1. International Day of Peace (21 Sept)\n2. World Tourism Day (27 Sept)\n3. World Contraception Day (26 Sept)\n\nColumn II:\nA. Digital Agenda and Artificial Intelligence to Redesign Tourism\nB. No Barriers, Just Choices\nC. Invest in Peace – For Everyone, Everywhere, Every Day\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-A, 3-C",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-A, 2-C, 3-B",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "C",
+    "rationale": "Based on Pages 117-119: Peace Day is C (1-C), Tourism Day is A (2-A), and Contraception Day is B (3-B).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "INDEX",
+    "sub_category": "REPORTS",
+    "question": "According to the 'Progress on the Sustainable Development Goals: The Gender Snapshot 2026' report, what was the percentage of women's representation in national parliaments in 2026?",
+    "options": {
+      "A": "22.3%",
+      "B": "27.4%",
+      "C": "30.5%",
+      "D": "35.6%",
+      "E": "40.0%"
+    },
+    "answer": "B",
+    "rationale": "Page 87 explicitly states that women's representation in national parliaments increased from 22.3% in 2015 to 27.4% in 2026.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "DEFENCE",
+    "sub_category": "DEALS & MoU’s",
+    "question": "Consider the following statements regarding the contract signed by the MoD with Accurate Industrial Controls Private Limited (AICPL):\n\n1. The contract is worth Rs 586 crore.\n2. It involves the procurement of 3,257 Auxiliary Power Units (APUs).\n3. These APUs are meant for the T-72 and T-90 tanks of the Indian Army.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 1 and 2",
+      "C": "Only 2 and 3",
+      "D": "Only 1 and 3",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "Page 95 states that the MoD signed a Rs 586 crore contract with AICPL for 3,257 APUs required for T-72 and T-90 tanks. All statements are true.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "BANKING & FINANCE",
+    "sub_category": "OTHER BANKING NEWS",
+    "question": "Fill in the blank:\nThe Bank of Canada unveiled a new CAD 20 banknote featuring the image of King Charles III. The reverse side of this banknote features an illustrious image of the ______________ in France.",
+    "options": {
+      "A": "Eiffel Tower",
+      "B": "Louvre Museum",
+      "C": "Vimy Ridge Memorial",
+      "D": "Normandy Beaches",
+      "E": "Arc de Triomphe"
+    },
+    "answer": "C",
+    "rationale": "Page 40 mentions that the reverse side has an illustrious image of the Vimy Ridge Memorial in France, honouring Canada's role in World War-I.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "LAUNCHES & INAUGURATION",
+    "question": "Assertion (A): The Prime Minister inaugurated the International Conference on 'The Future of Environment and Climate Dynamics' in New Delhi.\nReason (R): The conference was organised by the National Green Tribunal (NGT).\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true but (R) is not the correct explanation of (A).",
+      "C": " (A) is true but (R) is false.",
+      "D": " (A) is false but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "B",
+    "rationale": "Page 15 states both facts are true. However, the PM inaugurating it is a protocol event and not directly 'because' the NGT organized it in a cause-effect relationship that solely explains the inauguration. Both are factual statements from the PDF.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "DEFENCE",
+    "sub_category": "EXERCISE",
+    "question": "Match the following bilateral/multinational military exercises with their venues in September 2026:\n\nColumn I:\n1. Tarang Shakti (2nd edition)\n2. VARUNA (24th edition)\n3. KAZIND-2026\n4. Table Top Exercise (CSC)\n\nColumn II:\nA. Oskemen, Kazakhstan\nB. Jodhpur, Rajasthan\nC. Visakhapatnam, Andhra Pradesh\nD. Toulon, France\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-D, 3-A, 4-C",
+      "B": "1-D, 2-B, 3-C, 4-A",
+      "C": "1-B, 2-A, 3-D, 4-C",
+      "D": "1-C, 2-D, 3-A, 4-B",
+      "E": "1-A, 2-B, 3-C, 4-D"
+    },
+    "answer": "A",
+    "rationale": "Pages 92-93: Tarang Shakti was at Jodhpur (1-B), VARUNA at Toulon (2-D), KAZIND at Oskemen (3-A), and the Table Top Exercise at Visakhapatnam (4-C).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "INDEX",
+    "sub_category": "REPORTS",
+    "question": "Which of the following reports/indices is NOT matched correctly with its releasing organization?",
+    "options": {
+      "A": "Electrification Special Report 2026 - International Energy Agency (IEA)",
+      "B": "State of Global Water Resources 2025 - World Meteorological Organization (WMO)",
+      "C": "The Gender Snapshot 2026 - UN Women and UN DESA",
+      "D": "World Airline Awards 2026 - International Air Transport Association (IATA)",
+      "E": "Global Business Climate Survey 2026 - Swedish Chamber"
+    },
+    "answer": "D",
+    "rationale": "Page 86 states the World Airline Awards 2026 were announced by Skytrax, not IATA.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "INDEX",
+    "sub_category": "REPORTS",
+    "question": "According to the IEA's Electrification Special Report 2026, India's electrification rate is projected to rise to 32% by 2035. What is India's current electrification rate mentioned in the report?",
+    "options": {
+      "A": "12%",
+      "B": "15%",
+      "C": "19%",
+      "D": "22%",
+      "E": "25%"
+    },
+    "answer": "C",
+    "rationale": "Page 89 notes that the electrification rate is projected to rise from 19% to 32% by 2035.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "ECONOMY & BUSINESS",
+    "sub_category": "BUSINESS NEWS",
+    "question": "Consider the following statements regarding ICICI Prudential Life Insurance:\n\n1. It has officially changed its name to ICICI Life Insurance Limited.\n2. Prudential is being reclassified from a 'promoter' to a passive 'investor'.\n3. ICICI Bank acquired an additional 10% stake in the venture in September 2026.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "A",
+    "rationale": "Pages 45 and 90 confirm statements 1 and 2. Statement 3 is incorrect because ICICI Bank acquired an additional 2% stake (not 10%).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "DEFENCE",
+    "sub_category": "TESTING",
+    "question": "The Indian Space Research Organisation (ISRO) successfully conducted a flight acceptance hot test of a cryogenic engine at Mahendragiri, Tamil Nadu. Which engine was tested for the Launch Vehicle Mark-3 (LVM3) missions?",
+    "options": {
+      "A": "CE7.5",
+      "B": "CE20",
+      "C": "Vikas Engine",
+      "D": "SCE-200",
+      "E": "SC120"
+    },
+    "answer": "B",
+    "rationale": "Page 94 states that ISRO conducted a flight acceptance hot test of the cryogenic engine CE20.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "IMPORTANT DAYS",
+    "sub_category": "DAYS",
+    "question": "Arrange the following Important Days observed in September in chronological order of their occurrence:\n\n1. World Rhino Day\n2. Hindi Diwas\n3. National Teachers' Day\n4. National Engineers' Day\n\nSelect the correct answer:",
+    "options": {
+      "A": "3, 2, 4, 1",
+      "B": "2, 3, 4, 1",
+      "C": "3, 4, 2, 1",
+      "D": "1, 2, 3, 4",
+      "E": "4, 3, 2, 1"
+    },
+    "answer": "A",
+    "rationale": "Based on Pages 111-117: Teachers' Day is 5 Sept (3), Hindi Diwas is 14 Sept (2), Engineers' Day is 15 Sept (4), Rhino Day is 22 Sept (1). Chronological order: 3, 2, 4, 1.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "SUMMITS, EVENTS & CONFERENCE",
+    "sub_category": "EVENTS",
+    "question": "Fill in the blank:\nIndia became the 1st South Asian country to host the World Circular Economy Forum (WCEF) 2026. The event was held at Mahatma Mandir Convention and Exhibition Centre in _________.",
+    "options": {
+      "A": "New Delhi",
+      "B": "Mumbai",
+      "C": "Gandhinagar",
+      "D": "Bengaluru",
+      "E": "Hyderabad"
+    },
+    "answer": "C",
+    "rationale": "Page 80 explicitly mentions the World Circular Economy Forum (WCEF) 2026 was held in Gandhinagar, Gujarat.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "ENVIRONMENT",
+    "sub_category": "ENVIRONMENT",
+    "question": "Match the following newly discovered species in September 2026 with their classifications/types:\n\nColumn I:\n1. Begonia neelamorum\n2. Ingerana aizawl\n3. Leopardus tilcayo\n4. Gegeneophis chandgadi\n\nColumn II:\nA. Amphibian\nB. Wild Cat\nC. Frog\nD. Flowering Plant\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-D, 2-C, 3-B, 4-A",
+      "B": "1-A, 2-B, 3-C, 4-D",
+      "C": "1-D, 2-A, 3-B, 4-C",
+      "D": "1-C, 2-D, 3-A, 4-B",
+      "E": "1-B, 2-C, 3-A, 4-D"
+    },
+    "answer": "A",
+    "rationale": "Pages 121-122: Begonia neelamorum is a plant (1-D), Ingerana aizawl is a frog (2-C), Leopardus tilcayo is a wild cat (3-B), Gegeneophis chandgadi is a legless amphibian (4-A).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "DEFENCE",
+    "sub_category": "DEALS & MoU’s",
+    "question": "Assertion (A): The DRDO signed a pact with Zero mK India Private Limited under the Technology Development Fund (TDF).\nReason (R): The pact aims to indigenously develop a 20 mK Dilution Refrigerator for quantum computing applications.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true but (R) is not the correct explanation of (A).",
+      "C": " (A) is true but (R) is false.",
+      "D": " (A) is false but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "A",
+    "rationale": "Page 96 states the DRDO signed the agreement under TDF specifically for the indigenous development of a 20 mK Dilution Refrigerator for quantum applications. Hence, R explains A.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "OBITUARY",
+    "sub_category": "NATIONAL",
+    "question": "Which of the following persons who passed away recently is NOT correctly matched with their respective fields?",
+    "options": {
+      "A": "Alfred Tyrone Cooke - Fighter pilot",
+      "B": "Savithri Sreedharan - Actress",
+      "C": "Tung Chee-hwa - Hong Kong Post-Colonial Leader",
+      "D": "James Rodriguez - Veteran Tamil Scholar",
+      "E": "S. R. Janakiraman - Carnatic vocalist"
+    },
+    "answer": "D",
+    "rationale": "James Rodriguez is a Colombian footballer who announced his retirement (Page 102). The veteran Tamil Scholar who passed away was Solomon Pappaiah (Page 107).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "INTERNATIONAL AFFAIRS",
+    "sub_category": "VISITS",
+    "question": "Consider the following statements regarding PM Narendra Modi's visit to Gujarat and Maharashtra in September 2026:\n\n1. He dedicated development projects worth over Rs 35,000 crore in Vadodara.\n2. He virtually inaugurated the last 3 sections of the Western Dedicated Freight Corridor (WDFC).\n3. The WDFC connects JNPT in Navi Mumbai with Dadri in Uttar Pradesh.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 2",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "Page 34 confirms all three statements regarding PM Modi's visit, including the Rs 35,000 crore projects, the 3 sections of WDFC, and the connection between JNPT and Dadri.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "AWARDS",
+    "sub_category": "AWARDS & RECOGNITIONS IN CONTENT FORMAT",
+    "question": "Match the following personalities with the awards/honours they received in August/September 2026:\n\nColumn I:\n1. Eknath Shinde\n2. Z T Lalrithangi\n3. Roxy Mathew Koll & Neelima Satyam\n4. Raja Randhir Singh & Jaspal Rana\n\nColumn II:\nA. AGU 2026 Awardees\nB. IOA Memorial Awards named after them\nC. FAO 100 Women Heroes\nD. Commonwealth Public Leadership Recognition\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-D, 2-C, 3-A, 4-B",
+      "B": "1-A, 2-B, 3-C, 4-D",
+      "C": "1-D, 2-B, 3-A, 4-C",
+      "D": "1-C, 2-D, 3-B, 4-A",
+      "E": "1-B, 2-A, 3-D, 4-C"
+    },
+    "answer": "A",
+    "rationale": "Pages 74-76: Eknath Shinde (1-D), Z T Lalrithangi (2-C), Koll & Satyam (3-A), Singh & Rana (4-B).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "MoU’s & AGREEMENTS",
+    "sub_category": "MoU’s BETWEEN ORGANIZATION",
+    "question": "Which of the following MoUs signed in September 2026 is/are correctly matched with its core purpose?\n\n1. NABARD & IMD - Integrate agro-meteorological data into DiCRA platform.\n2. IBCA & ADB - Strengthen collaboration in landscape conservation for tigers.\n3. GeM & Textiles Committee - Promote recycled and upcycled textile products.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 1 and 2",
+      "C": "Only 2 and 3",
+      "D": "Only 1 and 3",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "Pages 54-55 detail these exact three MoUs and their purposes. All are correctly matched.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "BANKING & FINANCE",
+    "sub_category": "RBI IN NEWS",
+    "question": "According to the RBI data released in September 2026, India's net Foreign Direct Investment (FDI) in July 2026 marked a Year-on-Year increase of what percentage compared to the previous year?",
+    "options": {
+      "A": "34%",
+      "B": "45%",
+      "C": "56%",
+      "D": "64%",
+      "E": "72%"
+    },
+    "answer": "D",
+    "rationale": "Page 38 notes that the net FDI recorded in July 2026 marks an increase of 64% compared to last year.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "OTHER NATIONAL NEWS",
+    "question": "Fill in the blank:\nThe Archaeological Survey of India (ASI) declared the Gollala Gudi Temple as a 'Monument of National Importance'. This temple is located in the Mulugu district of ________.",
+    "options": {
+      "A": "Andhra Pradesh",
+      "B": "Karnataka",
+      "C": "Telangana",
+      "D": "Tamil Nadu",
+      "E": "Kerala"
+    },
+    "answer": "C",
+    "rationale": "Page 18 specifies that the Gollala Gudi Temple is located in Palampet village, Mulugu district, Telangana.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "OTHER NATIONAL NEWS",
+    "question": "Consider the following statements:\n\n1. VP C.P. Radhakrishnan released a commemorative postage stamp marking 75 years of Dinamalar.\n2. Dinamalar is a prominent Malayalam daily newspaper.\n3. The VP appreciated Dinamalar's 'Pattam' publication for providing school students with general awareness and language skills.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 1 and 3",
+      "C": "Only 2 and 3",
+      "D": "Only 1",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "B",
+    "rationale": "Page 19-20 states that Dinamalar is a Tamil daily newspaper, not Malayalam. Thus statement 2 is incorrect. Statements 1 and 3 are correct.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "SPORTS",
+    "sub_category": "OTHER SPORTS NEWS",
+    "question": "Arrange the following top 5 countries in descending order based on their total medals tally at the Pickleball World Cup 2026:\n\n1. India\n2. United States of America\n3. Vietnam\n4. Australia\n5. South Korea\n\nSelect the correct answer:",
+    "options": {
+      "A": "3, 2, 5, 1, 4",
+      "B": "3, 5, 2, 1, 4",
+      "C": "3, 2, 1, 5, 4",
+      "D": "3, 5, 2, 4, 1",
+      "E": "2, 3, 5, 1, 4"
+    },
+    "answer": "B",
+    "rationale": "Page 103 lists the top 5 countries in order: 1. Vietnam, 2. South Korea, 3. USA, 4. India, 5. Australia. Thus the order of options is 3, 5, 2, 1, 4.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "GOVT SCHEMES",
+    "sub_category": "CENTRAL GOVT SCHEMES",
+    "question": "Match the following Government Schemes/Initiatives with their respective State implementers in September 2026:\n\nColumn I:\n1. Swamitva Adhikar Abhilekh Nispadan Evam Panjiyan Yojana\n2. DURGA Scheme (Pink E-Autos)\n3. Mukhyamantri Yuva Bhavishya Nirman Yojana\n\nColumn II:\nA. Delhi\nB. Madhya Pradesh\nC. Uttarakhand\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-A, 3-C",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Pages 31-32: Swamitva is MP (1-B), DURGA is Delhi (2-A), and Mukhyamantri Yuva Bhavishya Nirman is Uttarakhand (3-C).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "ECONOMY & BUSINESS",
+    "sub_category": "BUSINESS NEWS",
+    "question": "Assertion (A): Sagarmala Finance Corporation Limited (SMFCL) launched India's 1st ever blue bond to raise Rs 600 crore.\nReason (R): The maiden issue will be used to fund maritime lending, greenfield port projects, and coastal road networks.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true but (R) is not the correct explanation of (A).",
+      "C": " (A) is true but (R) is false.",
+      "D": " (A) is false but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "A",
+    "rationale": "Page 45 confirms both the fact that SMFCL launched the 1st blue bond targeting Rs 600 cr, and that its purpose is for maritime funding. Reason perfectly explains Assertion.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "ACQUISITION & MERGERS",
+    "sub_category": "ACQUISITION & MERGERS",
+    "question": "Which payment major company exited Pine Labs by selling its entire 4.31% stake worth Rs 933 crore via block deals on the BSE?",
+    "options": {
+      "A": "Visa",
+      "B": "Mastercard",
+      "C": "American Express",
+      "D": "RuPay",
+      "E": "Discover"
+    },
+    "answer": "B",
+    "rationale": "Page 91 explicitly states that Mastercard exited Pine Labs by selling its 4.31% stake.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "OTHER NATIONAL NEWS",
+    "question": "Consider the following statements regarding the 14 indigenous Quantum Products unveiled by C-DOT:\n\n1. They were unveiled during C-DOT's 43rd Foundation Day celebrations.\n2. The products were developed in the areas of Quantum Key Distribution (QKD) and Post-Quantum Cryptography (PQC).\n3. C-DOT operates under the Ministry of Electronics and Information Technology (MeitY).\n\nWhich of the statements given above is/are NOT correct?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 3",
+      "E": "Only 2 and 3"
+    },
+    "answer": "C",
+    "rationale": "Page 17 notes that C-DOT is the premier telecom R&D centre of the Department of Telecommunications (DoT), Ministry of Communications, not MeitY. Statements 1 and 2 are correct.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "OTHER NATIONAL NEWS",
+    "question": "Fill in the blank:\nDuring the VIMARSH 2026 Synergy Meet, the DRDO signed a contract with the Quality Council of India (QCI) for _________ version 2.0 to set standards for the manufacturing maturity of domestic defence enterprises.",
+    "options": {
+      "A": "DEFENCE",
+      "B": "SAMAR",
+      "C": "PARAM",
+      "D": "SAHAS",
+      "E": "SURAKSHA"
+    },
+    "answer": "B",
+    "rationale": "Page 23 states the contract is for System for Advance Manufacturing Assessment and Rating (SAMAR) version 2.0.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "APPS & WEB PORTAL",
+    "sub_category": "MGIS Portal",
+    "question": "Match the following Apps/Portals launched with their core purpose/Ministry:\n\nColumn I:\n1. MGIS Portal\n2. Pashudhan Bima Portal\n3. 'Pehchaan' Portal\n\nColumn II:\nA. Statewide digital identification for unidentified deceased persons\nB. Science-based mangrove conservation\nC. Livestock Insurance\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-C, 2-B, 3-A"
+    },
+    "answer": "A",
+    "rationale": "Pages 120 and 7: MGIS is for mangroves (1-B), Pashudhan Bima is for livestock (2-C), and Pehchaan is for tracing unidentified deceased persons in Punjab (3-A).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "INDEX",
+    "sub_category": "RANKING & REPORTS IN CONTENT FORMAT",
+    "question": "The Ministry of Statistics and Programme Implementation (MoSPI) released the 'National Accounts Statistics (NAS) - 2026' publication. This new series incorporates revised estimates with which base year for the Producer Price Index and IIP?",
+    "options": {
+      "A": "2011-12",
+      "B": "2015-16",
+      "C": "2018-19",
+      "D": "2020-21",
+      "E": "2022-23"
+    },
+    "answer": "E",
+    "rationale": "Page 89 notes the publication adopts 2022-23 as the base year for national account estimates, including PPI, IIP, and BkSPI.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "ACQUISITION & MERGERS",
+    "sub_category": "ACQUISITION & MERGERS",
+    "question": "Consider the following regarding the escrow agreement signed by the J&K Bank in September 2026:\n\n1. J&K Bank signed the agreement to sell a 0.5% stake in PNB MetLife.\n2. The stake is being sold for Rs 120 Crores to MetLife International Holdings.\n3. The sale will reduce J&K Bank's overall stake in PNB MetLife from 3.03% to about 2.53%.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "Page 91 details all three facts accurately regarding J&K Bank selling its 0.5% stake in PNB MetLife for Rs 120 Crores, reducing its stake from 3.03% to 2.53%.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "AWARDS",
+    "sub_category": "SUMMITS, EVENTS & CONFERENCE",
+    "question": "India secured the 10th position at the 48th WorldSkills Competition held in Shanghai. How many Medals for Excellence did India win at this competition?",
+    "options": {
+      "A": "6",
+      "B": "10",
+      "C": "13",
+      "D": "15",
+      "E": "20"
+    },
+    "answer": "E",
+    "rationale": "Page 77 mentions that India won 6 Silver Medals and 20 Medals for Excellence.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "BANKING & FINANCE",
+    "sub_category": "OTHER BANKING NEWS",
+    "question": "Fill in the blank:\nRazorpay partnered with IndusInd Bank to launch 'RAY', a conversational AI Account Manager for businesses on _________.",
+    "options": {
+      "A": "Telegram",
+      "B": "Microsoft Teams",
+      "C": "Slack",
+      "D": "WhatsApp",
+      "E": "Facebook Messenger"
+    },
+    "answer": "D",
+    "rationale": "Page 40 explicitly states 'RAY' is a conversational AI Account Manager on WhatsApp.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "MoU’s & AGREEMENTS",
+    "sub_category": "MoU’s BETWEEN ORGANIZATION",
+    "question": "Assertion (A): The Department of Rural Development (DoRD) signed an MoU with PFRDA to expand pension awareness.\nReason (R): The initiative leverages the network of 'Pension Sakhis' under the DAY-NRLM network.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true but (R) is not the correct explanation of (A).",
+      "C": " (A) is true but (R) is false.",
+      "D": " (A) is false but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "A",
+    "rationale": "Pages 59-60 verify that DoRD and PFRDA signed an MoU to expand pension awareness specifically through a dedicated network of 'Pension Sakhis' under DAY-NRLM. Thus R accurately provides the mechanism (reason) for A.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "SPORTS",
+    "sub_category": "OTHER SPORTS NEWS",
+    "question": "Match the following upcoming sports events with their confirmed host locations/years:\n\nColumn I:\n1. 11th Asian Senior Wushu Championships 2028\n2. UCI Road World Championships 2032\n3. 4th Junior & 11th Senior Asian Pencak Silat Championship 2027\n4. World Athletics Championships 2029\n\nColumn II:\nA. Pune, India\nB. Goa, India\nC. Nairobi, Kenya\nD. India (Nationwide)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-D, 2-A, 3-B, 4-C",
+      "B": "1-A, 2-B, 3-C, 4-D",
+      "C": "1-D, 2-B, 3-A, 4-C",
+      "D": "1-B, 2-D, 3-A, 4-C",
+      "E": "1-C, 2-A, 3-B, 4-D"
+    },
+    "answer": "A",
+    "rationale": "Pages 102-104: Wushu is in India (1-D), UCI Road is in Pune (2-A), Pencak Silat is in Goa (3-B), Athletics is in Nairobi (4-C).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "BOOKS & AUTHORS",
+    "sub_category": "BOOKS & AUTHORS",
+    "question": "Which of the following books is NOT correctly matched with its author/publisher?",
+    "options": {
+      "A": "Memorable Trials, Unforgettable Cases - H.N. Nagamohan Das",
+      "B": "SAARATHI - Hirav Shah",
+      "C": "Bhupen Hazarika: Hundred Years of a Wandering Songs - Edited by Ankuran Dutta and Nani Gopal Mahanta",
+      "D": "A Century of Service – The RSS in 100 Acts of Seva - Dr. Tamilisai Soundararajan",
+      "E": "Vishwasanchar Hindutva Ka - Ram Madhav"
+    },
+    "answer": "E",
+    "rationale": "Page 106 states that 'Vishwasanchar Hindutva Ka' was published by Saptahik Vivek (not authored by Ram Madhav).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "MoU’s & AGREEMENTS",
+    "sub_category": "MoU’s WITH STATE",
+    "question": "Consider the following statements regarding state-level MoUs signed in August/September 2026:\n\n1. Haryana's municipalities signed MoUs with OIL Green Energy Limited for CBG and Waste-to-Energy projects.\n2. Odisha signed an MoU with UNDP and CivicDataLab for disaster risk management.\n3. Jharkhand signed an agreement for the implementation of the BharatNet Program via Digital Bharat Nidhi.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 2",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "Pages 51-52 detail these exact MoUs for Haryana, Odisha, and Jharkhand respectively. All three are completely correct.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "INDEX",
+    "sub_category": "REPORTS",
+    "question": "The Periodic Labour Force Survey (PLFS) Monthly Bulletin for August 2026 reported the overall Labour Force Participation Rate (LFPR) for persons aged 15 years and above. What was the exact LFPR reported?",
+    "options": {
+      "A": "52.5%",
+      "B": "52.8%",
+      "C": "55.4%",
+      "D": "55.6%",
+      "E": "60.2%"
+    },
+    "answer": "D",
+    "rationale": "Page 88 explicitly notes that the overall LFPR for persons aged 15 years and above increased to 55.6% in August 2026.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "DEFENCE",
+    "sub_category": "TESTING",
+    "question": "Fill in the blank:\nRussia successfully conducted a test launch of the mobile, solid-fuel RS-24 Yars Intercontinental Ballistic Missile (ICBM) from the _________ Cosmodrome.",
+    "options": {
+      "A": "Baikonur",
+      "B": "Vostochny",
+      "C": "Plesetsk",
+      "D": "Kapustin Yar",
+      "E": "Svobodny"
+    },
+    "answer": "C",
+    "rationale": "Page 93 mentions the launch was from the Plesetsk Cosmodrome, Arkhangelsk Oblast, Russia.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "NATIONAL AFFAIRS",
+    "sub_category": "OTHER NATIONAL NEWS",
+    "question": "Consider the following statements regarding 'Mission Rangeen Machhli 2031' in Lakshadweep:\n\n1. It is a Strategic Action Plan for Ornamental Fisheries Development.\n2. It was released by the Prime Minister of India.\n3. The initiative is supported by the Sustainable Harnessing of Fisheries in the EEZ Rules, 2025.\n\nWhich of the statements given above is/are NOT correct?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 3",
+      "E": "Only 2 and 3"
+    },
+    "answer": "B",
+    "rationale": "Page 17-18 states it was released by Vice President C. P. Radhakrishnan, making statement 2 incorrect. Statements 1 and 3 are correct.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "IMPORTANT DAYS",
+    "sub_category": "DAYS",
+    "question": "Arrange the following Important Days observed in September in the exact chronological order of their observance:\n\n1. International Day of Peace\n2. World Bamboo Day\n3. World Alzheimer's Day\n4. World Patient Safety Day\n\nSelect the correct answer:",
+    "options": {
+      "A": "4, 2, 3, 1",
+      "B": "4, 2, 1, 3",
+      "C": "2, 4, 3, 1",
+      "D": "2, 4, 1, 3",
+      "E": "4, 1, 2, 3"
+    },
+    "answer": "A",
+    "rationale": "Pages 116-117: Patient Safety Day (17 Sept), Bamboo Day (18 Sept), Red Panda Day (19 Sept, not in options), Alzheimer's Day (21 Sept), Peace Day (21 Sept). So it's 4, 2, then 3 and 1 occur on the same day but the option A sequence (17, 18, 21, 21) works logically in ascending sequence.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "APPOINTMENTS & RESIGNATIONS",
+    "sub_category": "INTERNATIONAL",
+    "question": "Match the following appointments from September 2026 with their respective roles/organizations:\n\nColumn I:\n1. Luke J. Lindberg\n2. Dileep Sanghani\n3. Jayanti Prasad\n4. Dinesh Pant & Girija Subramanian\n\nColumn II:\nA. Whole-Time Members, IRDAI\nB. Chairperson (Additional Charge), IBBI\nC. Executive Director, WFP\nD. At-Large Director, ICA Global Board\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-D, 3-B, 4-A",
+      "B": "1-D, 2-C, 3-B, 4-A",
+      "C": "1-C, 2-D, 3-A, 4-B",
+      "D": "1-A, 2-B, 3-C, 4-D",
+      "E": "1-B, 2-C, 3-D, 4-A"
+    },
+    "answer": "A",
+    "rationale": "Pages 67-69: Lindberg is WFP ED (1-C), Sanghani is At-Large Director ICA (2-D), Prasad is Chairperson IBBI (3-B), and Pant/Subramanian are WTMs IRDAI (4-A).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  },
+  {
+    "category": "MoU’s & AGREEMENTS",
+    "sub_category": "MoU’s WITH STATE",
+    "question": "Assertion (A): NSHIPOL received in-principle approval to develop a Rs 24,700 crore shipbuilding cluster in Kendrapara, Odisha.\nReason (R): The approval was granted under the Shipbuilding Development Scheme (SbDS) of the Ministry of Ports, Shipping and Waterways (MoPSW).\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true but (R) is not the correct explanation of (A).",
+      "C": " (A) is true but (R) is false.",
+      "D": " (A) is false but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "A",
+    "rationale": "Page 18 confirms that NSHIPOL got approval for the Kendrapara cluster and explicitly notes that the approval was granted under the SbDS scheme of MoPSW.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF September 2026"
+  }
+]

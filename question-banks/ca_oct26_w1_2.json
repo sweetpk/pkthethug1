@@ -1,0 +1,802 @@
+[
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Apple Pay Launch",
+    "question": "Consider the following statements regarding the launch of Apple Pay in India:\n\n1. Apple Inc. launched Apple Pay in India exclusively for credit cards issued by Axis Bank.\n2. The payment system supports Visa, Mastercard, and RuPay credit cards.\n3. Payments can be authenticated using Face ID, Touch ID, or a device passcode near a contactless terminal.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "3 only"
+    },
+    "answer": "B",
+    "rationale": "Statement 1 is correct: Apple Pay was launched with Axis Bank-issued credit cards. Statement 2 is incorrect: It supports Visa and Mastercard, but explicitly states 'No UPI & RuPay support'. Statement 3 is correct: Payments use tokenisation and are authenticated via Face ID/Touch ID/passcode (Page 32, 69).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Bank of India CBDC",
+    "question": "Bank of India (BOI) launched a User-Level Programmable Central Bank Digital Currency (CBDC) with Auto-Issuance. Which technology firm developed this functionality?",
+    "options": {
+      "A": "Infosys Finacle",
+      "B": "TCS BaNCS",
+      "C": "Montran India",
+      "D": "FIS Global",
+      "E": "Wipro Core"
+    },
+    "answer": "C",
+    "rationale": "The functionality for BOI's User-Level Programmable CBDC was developed by Montran India and unveiled at the Global FinTech Fest 2026 (Page 32, 69).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "ICICI Lombard VIBE",
+    "question": "ICICI Lombard General Insurance launched a new health insurance product called 'VIBE' designed for GenZ. Which of the following is NOT one of the six variants offered under this plan?",
+    "options": {
+      "A": "Rookie",
+      "B": "GOAT",
+      "C": "BasicFit",
+      "D": "Value",
+      "E": "ProMax"
+    },
+    "answer": "E",
+    "rationale": "The six variants offered under VIBE are Rookie, BasicFit, Upgrade, Flex, GOAT, and Value. 'ProMax' is not a variant (Page 33, 69).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Pramerica Life Poorna Rakshak",
+    "question": "Fill in the blanks regarding the new life insurance plan launched by Pramerica Life Insurance:\nPramerica Life launched 'Poorna Rakshak', which is a _______, _______ individual savings life insurance plan offering _______ different variants.",
+    "options": {
+      "A": "unit-linked ; participating ; 4",
+      "B": "non-linked ; non-participating ; 5",
+      "C": "non-linked ; participating ; 6",
+      "D": "unit-linked ; non-participating ; 5",
+      "E": "non-linked ; non-participating ; 3"
+    },
+    "answer": "B",
+    "rationale": "Poorna Rakshak is a non-linked, non-participating individual savings life insurance plan that offers 5 different variants (Page 33, 69-70).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Jio Allianz General Insurance",
+    "question": "Jio Financial Services and Allianz Europe B.V. infused capital into their 50:50 joint venture, Jio Allianz General Insurance. What was the exact number of equity shares allotted to each partner, and what was the total investment combined?",
+    "options": {
+      "A": "32,00,50,000 shares each ; Rs 320.05 crore total",
+      "B": "16,00,25,000 shares each ; Rs 640.10 crore total",
+      "C": "32,00,50,000 shares each ; Rs 640.10 crore total",
+      "D": "64,01,00,000 shares each ; Rs 640.10 crore total",
+      "E": "32,00,50,000 shares each ; Rs 1,280.20 crore total"
+    },
+    "answer": "C",
+    "rationale": "Each partner was allotted 32,00,50,000 equity shares (Rs 10 each), equating to Rs 320.05 crore per partner, aggregating to a total investment of Rs 640.10 crore (Page 33, 69-70).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "BoB Pension Fund",
+    "question": "Assertion (A): Bank of Baroda (BoB) became the second Public Sector Bank (PSB) to act as a Sponsor of a Pension Fund under PFRDA.\nReason (R): BoB established a 100% wholly owned subsidiary, BoB Pension Fund Management Company Limited, to receive the Certificate of Appointment.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "B": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
+      "C": " (A) is true but (R) is false",
+      "D": " (A) is false but (R) is true",
+      "E": " Both (A) and (R) are false"
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true; BoB is the 2nd PSB (after SBI) to become a Sponsor. Reason (R) is false because the shareholding of the subsidiary is not 100% BoB; BoB holds 80.10% and Baroda BNP AMC holds 19.90% (Page 33, 70, 91).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "NABKISAN Social Bond",
+    "question": "Consider the following statements regarding the WASH-Focused Social Bond issued by NABKISAN Finance Limited:\n\n1. It is India's first Social Bond dedicated exclusively to the Water, Sanitation and Hygiene (WASH) sector.\n2. The bond was listed on the Bombay Stock Exchange (BSE) and raised Rs 180 Cr.\n3. It carries a 5-year maturity (September 2031) with a coupon rate of 8.10%.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "C",
+    "rationale": "Statement 1 is correct. Statement 2 is incorrect because the bond was listed on the National Stock Exchange (NSE), not BSE. Statement 3 is correct (coupon 8.10%, 5-year maturity) (Page 34, 70).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "RBI CIC Registration",
+    "question": "The RBI granted a Certificate of Registration to Indiabulls Limited as a Core Investment Company (CIC). According to the RBI framework, a CIC must hold at least _____ of its net assets in group-company investments, including at least _____ in equity investments of group companies.",
+    "options": {
+      "A": "75% ; 50%",
+      "B": "90% ; 60%",
+      "C": "80% ; 51%",
+      "D": "90% ; 75%",
+      "E": "85% ; 60%"
+    },
+    "answer": "B",
+    "rationale": "A CIC is an NBFC with assets of Rs 100 crore or more, holding at least 90% of its net assets in group-company investments/loans, including at least 60% in equity investments of group companies (Page 34, 70).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "SEBI Project Jagrook",
+    "question": "Match the following campaigns/initiatives launched by SEBI during World Investor Week 2026 with their core purpose:\n\nColumn I:\n1. Samajh Se Investing Simple\n2. MUST\n3. Project Jagrook\n\nColumn II:\nA. Mentoring of University/College Students by Trainers\nB. Nationwide financial literacy programme\nC. Campaign encouraging investors to verify platform authenticity\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-C, 2-A, 3-B",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-A, 2-C, 3-B",
+      "E": "1-B, 2-C, 3-A"
+    },
+    "answer": "B",
+    "rationale": "'Samajh Se Investing Simple' (1-C) is a campaign under Project Jagrook (3-B), which is a nationwide literacy programme. MUST (2-A) stands for Mentoring of University/College Students by Trainers (Page 34-35, 70).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Tata Projects & MDS Aero",
+    "question": "Tata Projects Limited signed an MoU with MDS Aero Support Corporation. What is the primary objective of this partnership?",
+    "options": {
+      "A": "To manufacture indigenous Unmanned Aerial Vehicles (UAVs) for the Indian Navy.",
+      "B": "To develop advanced aero-engine testing infrastructure in India.",
+      "C": "To supply mission-critical aerospace engine components to global markets.",
+      "D": "To establish a joint venture for satellite launch vehicles.",
+      "E": "To develop AI Vision System-on-Chip (SoC) for autonomous flight."
+    },
+    "answer": "B",
+    "rationale": "Tata Projects and Canada's MDS Aero signed an MoU to develop advanced aero-engine testing infrastructure in India, combining Tata's EPC expertise with MDS's gas turbine engine testing capabilities (Page 35, 71).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "GDP Projections",
+    "question": "Arrange the following GDP growth rates/forecasts for India in ascending order as per the latest reports from the Ministry of Finance and the World Bank in October 2026:\n\n1. World Bank forecast for FY29\n2. World Bank forecast for FY27\n3. MoF actual growth in Q1 FY27\n4. MoF projected growth in Q2 FY27\n\nSelect the correct answer:",
+    "options": {
+      "A": "1, 2, 4, 3",
+      "B": "1, 2, 3, 4",
+      "C": "2, 1, 4, 3",
+      "D": "1, 4, 2, 3",
+      "E": "4, 1, 2, 3"
+    },
+    "answer": "A",
+    "rationale": "The rates are: WB FY29 = 7.0%; WB FY27 = 7.1%; MoF Q2 FY27 = 7.3%; MoF Q1 FY27 = 7.8%. Ascending order: 7.0 < 7.1 < 7.3 < 7.8, which corresponds to 1, 2, 4, 3 (Page 35-36, 71).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Adani Power in Bhutan",
+    "question": "Adani Power Limited signed a Shareholders Agreement (SHA) to develop a 770 MW Hydroelectric Project in Bhutan. Which of the following details about this project is correct?",
+    "options": {
+      "A": "It is a 50:50 joint venture with Druk Green Power Corporation (DGPC).",
+      "B": "The project is located on the Chamkharchhu River under a Build, Own, Operate and Transfer (BOOT) model.",
+      "C": "Adani Power holds a 51% majority stake in the project.",
+      "D": "The concession period for the project is 50 years.",
+      "E": "Construction is expected to begin in H1 2028."
+    },
+    "answer": "B",
+    "rationale": "The 770 MW Chamkharchhu-I Hydroelectric Project operates under the BOOT model. It is a 49:51 equity partnership (Adani holds 49%, DGPC 51%), with a 30-year concession. Construction starts in H1 2027 (Page 35, 71).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "World Bank India GDP",
+    "question": "Assertion (A): The World Bank upgraded India's GDP growth forecast to 7.1% for FY27 from an earlier projection of 6.6%.\nReason (R): The upgrade was driven solely by the massive increase in foreign direct investments and the conclusion of the general elections.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "B": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
+      "C": " (A) is true but (R) is false",
+      "D": " (A) is false but (R) is true",
+      "E": " Both (A) and (R) are false"
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true; WB raised the forecast to 7.1%. Reason (R) is false because the upgrade cited resilient domestic demand, private consumption, exports, industry, and services, not 'solely massive increase in FDI' (Page 36, 71).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "BFL & Pratt & Whitney",
+    "question": "Bharat Forge Limited (BFL) signed a long-term contract with Pratt & Whitney Canada. Under this agreement, what will BFL supply, and where will it be manufactured?",
+    "options": {
+      "A": "Helicopter landing gears ; manufactured in Canada",
+      "B": "Autonomous UAV interceptors ; manufactured in Portugal",
+      "C": "Mission-critical aerospace engine components ; manufactured at BFL's facility in India",
+      "D": "Bulletproof glass for aircraft ; manufactured at DRDO facilities",
+      "E": "Kaal Bhairava engine frames ; manufactured at BFL's facility in India"
+    },
+    "answer": "C",
+    "rationale": "BFL signed a contract to supply mission-critical aerospace engine components, which will be manufactured at BFL's advanced aerospace facility in India (Page 36, 71-72).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Lalit Kala Akademi",
+    "question": "The Lalit Kala Akademi announced 20 awards at the 65th National Exhibition of Art (NEA). Which of the following pairs of awardees and their artistic category is INCORRECTLY matched based on the provided text?",
+    "options": {
+      "A": "Chandra Shekhar Sain – Sculpture",
+      "B": "Gopal Chandra Naskar – Painting",
+      "C": "Pankaj Kumar Sharma – Drawing",
+      "D": "Pritam Madhukar Deuskar – Printmaking",
+      "E": "Ram Gopal Khadilkar – Abstract Digital Art"
+    },
+    "answer": "E",
+    "rationale": "Ram Gopal Khadilkar is mentioned as the editor of the monograph on eminent painter Abdul Aziz Raiba, not as an awardee for Abstract Digital Art. Options A, B, C, and D are correctly matched as key winners (Page 36, 72).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Jharkhand Mandar GI Tag",
+    "question": "The traditional folk musical instrument 'Mandar' of Jharkhand received a Geographical Indication (GI) tag. Consider the following statements regarding GI tags in India:\n\n1. The GI tag application for Mandar was filed by Raidih Mandar Producer Co. Ltd.\n2. In India, GI tags are governed by the Trade-Related Aspects of Intellectual Property Rights (TRIPS) agreement under the WTO, enacted via the GI Act, 1999.\n3. The validity of a GI tag in India is 20 years, after which it cannot be renewed.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the validity of a GI tag in India is 10 years, and it is renewable (Page 37, 72).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Nobel Prize in Medicine 2026",
+    "question": "Match the 2026 Nobel Laureates in Physiology or Medicine with their respective professional descriptions:\n\nColumn I:\n1. Karl Deisseroth\n2. Peter Hegemann\n3. Georg Nagel\n\nColumn II:\nA. German molecular plant physiologist\nB. American neuroscientist and psychiatrist\nC. German biophysicist\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-B, 3-C",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "B",
+    "rationale": "Karl Deisseroth is an American neuroscientist/psychiatrist (1-B); Peter Hegemann is a German biophysicist (2-C); Georg Nagel is a German molecular plant physiologist (3-A) (Page 37, 72, 93).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Nobel Prize in Physics 2026",
+    "question": "The 2026 Nobel Prize in Physics was awarded to Francis Louis Halzen. What was his decisive contribution that earned him the award?",
+    "options": {
+      "A": "Development of the Kaveri Dry Engine for high-altitude UAVs.",
+      "B": "Discovery of light-gated ion channels for optogenetics.",
+      "C": "Contributions to the IceCube Neutrino Observatory and discovery of high-energy astrophysical neutrinos.",
+      "D": "Development of Artificial Intelligence Vision System-on-Chip (SoC).",
+      "E": "Theoretical frameworks for quantum key distribution."
+    },
+    "answer": "C",
+    "rationale": "Francis Louis Halzen won the Nobel in Physics for decisive contributions to the IceCube Neutrino Observatory and the discovery of high-energy astrophysical neutrinos (Page 38, 72).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "Tooro Kingdom Uganda",
+    "question": "Assertion (A): Edward Rukidi Kijanangoma was crowned as the 13th King (Omukama) of the Tooro Kingdom in Uganda, ending a succession dispute.\nReason (R): He was selected through a general democratic election held across Uganda following the death of King Oyo Nyimba Kabamba Iguru Rukidi IV.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "B": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
+      "C": " (A) is true but (R) is false",
+      "D": " (A) is false but (R) is true",
+      "E": " Both (A) and (R) are false"
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true. Reason (R) is false because he was not chosen via a general democratic election; he was chosen by a 21-member committee of the Babiito clan, reflecting traditional lineage-based selection (Page 38, 73).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "Morocco Prime Minister",
+    "question": "Fill in the blanks regarding the recent political appointment in Morocco:\nKing Mohammed VI appointed Fatima Ezzahra El Mansouri of the _____ party as Prime Minister. She succeeds Aziz Akhannouch of the _____ party.",
+    "options": {
+      "A": "Authenticity and Modernity Party (PAM) ; National Rally of Independents (RNI)",
+      "B": "National Rally of Independents (RNI) ; Authenticity and Modernity Party (PAM)",
+      "C": "Justice and Development Party (PJD) ; Authenticity and Modernity Party (PAM)",
+      "D": "Authenticity and Modernity Party (PAM) ; Socialist Union of Popular Forces (USFP)",
+      "E": "Socialist Union of Popular Forces (USFP) ; National Rally of Independents (RNI)"
+    },
+    "answer": "A",
+    "rationale": "Fatima Ezzahra El Mansouri belongs to the Authenticity and Modernity Party (PAM) and succeeds Aziz Akhannouch from the National Rally of Independents (RNI) (Page 38, 73).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "Bank MD & CEO Appointments",
+    "question": "Match the newly appointed banking executives with their respective banks and the predecessors they succeed:\n\nColumn I:\n1. Anup Kumar Saha\n2. Anup Bagchi\n3. Mahesh Muralidhar Pai\n\nColumn II:\nA. MD & CEO, South Indian Bank (succeeds P R Seshadri)\nB. MD & CEO, HDFC Bank (succeeds Sashidhar Jagdishan)\nC. MD & CEO, Kotak Mahindra Bank (succeeds Ashok Vaswani)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-B, 2-A, 3-C"
+    },
+    "answer": "B",
+    "rationale": "Anup Kumar Saha replaces Ashok Vaswani at Kotak Mahindra Bank (1-C). Anup Bagchi replaces Sashidhar Jagdishan at HDFC Bank (2-B). Mahesh Muralidhar Pai replaces P R Seshadri at South Indian Bank (3-A) (Page 39-40, 73).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "High Court to Supreme Court Elevations",
+    "question": "The President of India recently appointed three Chief Justices of High Courts as Supreme Court Judges under Article 124(2). Match the Judge to their former High Court Chief Justice position:\n\nColumn I:\n1. Justice Sunita Agarwal\n2. Justice Devendra Kumar Upadhyaya\n3. Justice Aparesh Kumar Singh\n\nColumn II:\nA. Telangana High Court\nB. Gujarat High Court\nC. Delhi High Court\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-B, 3-C",
+      "B": "1-C, 2-A, 3-B",
+      "C": "1-B, 2-C, 3-A",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-C, 2-B, 3-A"
+    },
+    "answer": "C",
+    "rationale": "Justice Sunita Agarwal was CJ of Gujarat HC (1-B); Justice Devendra Kumar Upadhyaya was CJ of Delhi HC (2-C); Justice Aparesh Kumar Singh was CJ of Telangana HC (3-A) (Page 40, 73-74).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "Chief of Air Staff",
+    "question": "Which of the following statements is INCORRECT regarding the new Chief of the Air Staff (CAS)?",
+    "options": {
+      "A": "Air Marshal Ashutosh Dixit was appointed as the 29th Chief of the Air Staff.",
+      "B": "His tenure extends until December 2028.",
+      "C": "He succeeds Air Chief Marshal Amar Preet Singh.",
+      "D": "Prior to this role, he was serving as the Vice Chief of the Air Staff (VCAS) since 1 July 2026.",
+      "E": "He took over the position on 31 October 2026, the same day his predecessor voluntarily retired 3 years early."
+    },
+    "answer": "E",
+    "rationale": "Option E is incorrect because his predecessor, Air Chief Marshal Amar Preet Singh, superannuates (retires on reaching mandatory age) on 31 October 2026, not 'voluntarily retired 3 years early' (Page 41, 74).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "OCA Athletes Commission",
+    "question": "Assertion (A): Former Indian trap shooter Rajeshwari Kumari was elected to the OCA Athletes Commission for the 2026-2030 term.\nReason (R): She became the very first Indian ever to serve on the Olympic Council of Asia (OCA) Athletes Commission.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "B": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
+      "C": " (A) is true but (R) is false",
+      "D": " (A) is false but (R) is true",
+      "E": " Both (A) and (R) are false"
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true. Reason (R) is false because she is the 2nd Indian member after Shiva Keshavan, an Indian luger, to serve on the commission (Page 41, 74).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Acquisitions & Mergers",
+    "sub_category": "IndiaFirst Life Insurance",
+    "question": "The CCI approved BNP Paribas Cardif's proposal to acquire a 26% stake in IndiaFirst Life Insurance. Which private equity firm is exiting IndiaFirst by selling this stake?",
+    "options": {
+      "A": "Blackstone",
+      "B": "KKR & Co.",
+      "C": "Warburg Pincus",
+      "D": "Sequoia Capital",
+      "E": "Carlyle Group"
+    },
+    "answer": "C",
+    "rationale": "BNP Paribas Cardif will buy a 26% stake in IndiaFirst Life Insurance Company Limited from private equity giant Warburg Pincus (Page 41, 74).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Acquisitions & Mergers",
+    "sub_category": "HAL HATSOFF",
+    "question": "Fill in the blanks regarding HAL's recent acquisition:\nHindustan Aeronautics Limited (HAL) signed an agreement to acquire the remaining ____ stake in HATSOFF from CAE, Canada at ____ consideration, making it a 100% subsidiary of HAL.",
+    "options": {
+      "A": "26% ; Rs 3,84,000",
+      "B": "50% ; NIL",
+      "C": "49% ; Rs 100 crore",
+      "D": "74% ; NIL",
+      "E": "50% ; Rs 38.4 crore"
+    },
+    "answer": "B",
+    "rationale": "HAL acquired a 50% stake (3,84,04,205 equity shares) in HATSOFF from CAE, Canada, at NIL consideration, making it a 100% subsidiary (Page 42, 74-75).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "FWDA & Keydef UAVs",
+    "question": "Consider the following statements regarding the partnership between Flying Wedge Defence & Aerospace (FWDA) and Portugal's Keydef:\n\n1. The partnership is backed by an initial investment of EUR 6 million.\n2. FWDA will manufacture the Kaal Bhairava autonomous UAV and YAMA swarm interceptor drone in Portugal.\n3. The Kaal Bhairava is an AI-powered MALE UAV with a 3,000 km range and 30+ hours endurance.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "3 only"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. The partnership involves EUR 6 million investment, aims to manufacture Kaal Bhairava and YAMA drones in Portugal, and Kaal Bhairava is a MALE UAV with 3000km range/30+ hrs endurance (Page 42, 75).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "SpaceX Suncatcher",
+    "question": "Assertion (A): Google's Project Suncatcher was successfully deployed into Low Earth Orbit (LEO) aboard SpaceX's Falcon 9 rocket.\nReason (R): Project Suncatcher aims to test the feasibility of space-based AI computing via its in-orbit experiment 'MVP'.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "B": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
+      "C": " (A) is true but (R) is false",
+      "D": " (A) is false but (R) is true",
+      "E": " Both (A) and (R) are false"
+    },
+    "answer": "B",
+    "rationale": "Both statements are true. SpaceX launched 130 payloads including Google's Suncatcher into LEO. The project tests space-based AI computing. However, the reason for SpaceX launching it (Transporter-18 rideshare mission) is independent of Google's objective for the project itself, so R is not a direct causal explanation of A (Page 42-43, 75).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "DRDO Kaveri Dry Engine",
+    "question": "Which of the following specifications correctly describes the Kaveri Dry Engine (KDE) evaluated by DRDO during its recent high-altitude and flight trials in Russia?",
+    "options": {
+      "A": "It is an afterburning jet engine that achieved a peak thrust of 50 kN.",
+      "B": "It is a non-afterburning jet engine that achieved a peak dry thrust of 48.5 kN, exceeding the 46 kN target.",
+      "C": "It is a ramjet engine designed exclusively for the BrahMos missile system.",
+      "D": "It is a hybrid electric-gas turbine that achieved 46 kN of peak dry thrust.",
+      "E": "It is a non-afterburning engine that failed to meet its 50 kN target, peaking at 48.5 kN."
+    },
+    "answer": "B",
+    "rationale": "The Kaveri Dry Engine (KDE) is a non-afterburning engine adapted from the original Kaveri. It successfully achieved a performance of 48.5 kN thrust, which exceeds the 46 kN target (Page 43, 75).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "QNu Labs QKD Demo",
+    "question": "Match the specific technologies/platforms used in India's first 5.56 km Free-Space Quantum Key Distribution (QKD) link to their respective functions:\n\nColumn I:\n1. Armos\n2. Vedic Kavach\n3. PAT System\n\nColumn II:\nA. End-to-end encryption platform\nB. Hardware QKD device\nC. Pointing, Acquisition and Tracking\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-A, 3-B",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-A, 2-B, 3-C",
+      "E": "1-C, 2-B, 3-A"
+    },
+    "answer": "C",
+    "rationale": "Armos is the QKD hardware device (1-B), Vedic Kavach is the software platform for end-to-end encryption (2-A), and PAT stands for Pointing, Acquisition and Tracking system (3-C) (Page 43, 75).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "FSS-1 Surya",
+    "question": "Fill in the blanks regarding the launch of Fleet Support Ship-1:\nUnion Minister Rajnath Singh launched Fleet Support Ship-1 named 'Surya' at ______, Andhra Pradesh. It has a capacity of ______ tonnes.",
+    "options": {
+      "A": "Kakinada ; 35,000",
+      "B": "Visakhapatnam ; 43,500",
+      "C": "Visakhapatnam ; 50,000",
+      "D": "Gangavaram ; 43,500",
+      "E": "Krishnapatnam ; 30,000"
+    },
+    "answer": "B",
+    "rationale": "FSS-1 'Surya' was launched at Hindustan Shipyard Limited (HSL), Visakhapatnam, Andhra Pradesh, and has a capacity of 43,500 tonnes (Page 44, 75).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "DRDO HAPS & AHAP",
+    "question": "Consider the following data points related to DRDO's recent trials:\n\n1. The HAPS flight trial reached 21 km AMSL and maintained 20 km AMSL for over 30 minutes.\n2. The maiden live jump trial of the Advanced High-Altitude Parachute (AHAP) occurred at Nyoma, Ladakh.\n3. The AHAP jump was executed from an altitude of 25,000 feet AMSL.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the AHAP jump was from 16,000 feet AMSL (deploying at 15,500 ft and landing at 13,700 ft), not 25,000 feet (Page 44, 76).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "New Lizard Species",
+    "question": "Scientists from the National University of San Marcos discovered a new cryptic lizard species. Which of the following details about this discovery is INCORRECT?",
+    "options": {
+      "A": "The species is named 'Liolaemus arequipensis'.",
+      "B": "It belongs to the Liolaemus genus, commonly found in the Andes Mountain.",
+      "C": "The discovery occurred at an elevation of 4,818 metres above sea level.",
+      "D": "The species was found in the Arequipa region of southern Peru.",
+      "E": "The discovery was published in the American journal 'Reptilia'."
+    },
+    "answer": "E",
+    "rationale": "The discovery was reported in the Swiss journal 'Diversity', not the American journal 'Reptilia'. All other details are correct (Page 45, 76).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Asian Games 2026 Tally",
+    "question": "Arrange the following countries in descending order of their total medal count at the 20th Asian Games (Aichi-Nagoya 2026):\n\n1. Japan\n2. India\n3. China\n4. South Korea\n5. Uzbekistan\n\nSelect the correct answer:",
+    "options": {
+      "A": "3, 1, 4, 2, 5",
+      "B": "3, 4, 1, 2, 5",
+      "C": "3, 1, 2, 4, 5",
+      "D": "1, 3, 4, 2, 5",
+      "E": "3, 1, 4, 5, 2"
+    },
+    "answer": "A",
+    "rationale": "The total medal count order is: China (341), Japan (269), South Korea (150), India (85), Uzbekistan (70). So the order is 3, 1, 4, 2, 5 (Page 45, 76).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Asian Games 2026 India Medals",
+    "question": "India finished 4th at the 2026 Asian Games. Which of the following accurately represents India's exact medal breakdown?",
+    "options": {
+      "A": "39 Gold, 43 Silver, 68 Bronze (Total 150)",
+      "B": "21 Gold, 27 Silver, 37 Bronze (Total 85)",
+      "C": "21 Gold, 25 Silver, 24 Bronze (Total 70)",
+      "D": "27 Gold, 21 Silver, 37 Bronze (Total 85)",
+      "E": "24 Gold, 27 Silver, 34 Bronze (Total 85)"
+    },
+    "answer": "B",
+    "rationale": "India secured 85 medals in total: 21 gold, 27 silver, and 37 bronze (Page 45, 76).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Bahrain Grand Prix",
+    "question": "Fill in the blanks regarding the 2026 Formula One Gulf Air Bahrain Grand Prix:\nThe race was held at the _____ in Malaysia. It was won by Max Verstappen, marking his _____ Grand Prix victory.",
+    "options": {
+      "A": "Sepang International Circuit ; 72nd",
+      "B": "Kuala Lumpur Street Circuit ; 70th",
+      "C": "Sepang International Circuit ; 75th",
+      "D": "Johor Racing Circuit ; 72nd",
+      "E": "Sepang International Circuit ; 1st"
+    },
+    "answer": "A",
+    "rationale": "The race was held at the Sepang International Circuit, Kuala Lumpur, Malaysia. It marked Max Verstappen's 72nd Grand Prix victory (Page 46, 77).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "IOA & KSOC MoU",
+    "question": "Which of the following statements regarding the MoU signed between the Indian Olympic Association (IOA) and the Korean Sport and Olympic Committee (KSOC) is INCORRECT?",
+    "options": {
+      "A": "The MoU was signed to strengthen cooperation in the field of sports and create new opportunities for athletes.",
+      "B": "It was signed during the 20th Asian Games (Aichi-Nagoya 2026).",
+      "C": "The signing venue was Korea House, Japan.",
+      "D": "The MoU was signed by P. T. Usha (IOA President) and Ryu Seung-min (KSOC President).",
+      "E": "The MoU restricts Indian athletes from utilizing Korean high-altitude training centers."
+    },
+    "answer": "E",
+    "rationale": "Option E is incorrect because the MoU's focus is on athlete development, coaching, and sports science cooperation. There is no mention of restricting Indian athletes from using Korean facilities; rather, it aims to create new opportunities (Page 46, 77).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Obituary",
+    "sub_category": "Eminent Personalities",
+    "question": "Match the eminent personalities who recently passed away with their respective professions/recognitions:\n\nColumn I:\n1. Singeetham Srinivasa Rao\n2. Palle Rama Rao\n3. Eva Marie Saint\n\nColumn II:\nA. Oscar-winning actress (On the Waterfront)\nB. Padma Vibhushan awardee and Metallurgist\nC. Veteran filmmaker with 2 National Film Awards\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-B, 2-A, 3-C",
+      "C": "1-A, 2-C, 3-B",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-B, 2-C, 3-A"
+    },
+    "answer": "A",
+    "rationale": "Singeetham Srinivasa Rao was a veteran filmmaker (1-C). Palle Rama Rao was an eminent scientist/metallurgist (2-B). Eva Marie Saint was an Oscar-winning actress (3-A) (Page 46-47, 77).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "September Observances (Deaf, Info, Food Waste)",
+    "question": "Match the following International Days observed in late September 2026 with their respective dates:\n\nColumn I:\n1. International Day of the Deaf\n2. International Day for Universal Access to Information (IDUAI)\n3. International Day of Awareness of Food Loss and Waste\n\nColumn II:\nA. 29 September\nB. 28 September\nC. 27 September\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-B, 2-A, 3-C",
+      "C": "1-A, 2-C, 3-B",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-B, 2-C, 3-A"
+    },
+    "answer": "A",
+    "rationale": "International Day of the Deaf was on 27 Sept (last Sunday). IDUAI was on 28 Sept. Food Loss and Waste Day was on 29 Sept. So, 1-C, 2-B, 3-A (Page 47-48, 78).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Chronology of September Days",
+    "question": "Arrange the following observances in chronological order based on their designated dates in September 2026:\n\n1. World Heart Day\n2. International Translation Day\n3. World Rivers Day\n4. World Rabies Day\n\nSelect the correct answer:",
+    "options": {
+      "A": "3, 4, 1, 2",
+      "B": "4, 3, 2, 1",
+      "C": "3, 1, 4, 2",
+      "D": "4, 1, 3, 2",
+      "E": "3, 4, 2, 1"
+    },
+    "answer": "A",
+    "rationale": "World Rivers Day (27 Sept), World Rabies Day (28 Sept), World Heart Day (29 Sept), International Translation Day (30 Sept). Order: 3, 4, 1, 2 (Page 48-49, 78).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "World Heart & Translation Day Themes",
+    "question": "Consider the following statements regarding World Heart Day and International Translation Day 2026:\n\n1. World Heart Day (29 Sept) had the theme 'Don't Miss a Beat'.\n2. International Translation Day (30 Sept) celebrates the feast of St. Jerome.\n3. The UN uses 6 official languages: Arabic, Chinese, English, French, Russian, and Spanish.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "3 only"
+    },
+    "answer": "D",
+    "rationale": "All three statements are correct as per the document (Page 49, 78).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "October 1 Observances",
+    "question": "Multiple significant days are observed globally on October 1. Match the Day to its 2026 Theme or key fact:\n\nColumn I:\n1. International Day of Older Persons\n2. World Vegetarian Day\n3. International Coffee Day\n\nColumn II:\nA. Initiates a month-long awareness concluding with World Vegan Day\nB. Theme: 'The Age of Longevity: Rethinking Systems for Longer Lives'\nC. Theme: 'Celebrating Coffee, Honouring the People Behind Every Cup'\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-A, 3-C",
+      "B": "1-A, 2-C, 3-B",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "A",
+    "rationale": "Older Persons Day theme is 'The Age of Longevity...' (1-B). World Vegetarian Day starts the awareness month ending on World Vegan Day (2-A). Coffee Day theme is 'Celebrating Coffee...' (3-C) (Page 50, 79).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Non-Violence & Animal Day",
+    "question": "Assertion (A): The UN International Day of Non-Violence (Oct 2) and World Animal Day (Oct 4) both honor the legacies of historical figures.\nReason (R): Non-Violence Day honors Mahatma Gandhi, while Animal Day honors St. Francis of Assisi, the patron saint of animals.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "B": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)",
+      "C": " (A) is true but (R) is false",
+      "D": " (A) is false but (R) is true",
+      "E": " Both (A) and (R) are false"
+    },
+    "answer": "A",
+    "rationale": "Both statements are true, and (R) perfectly explains (A) by identifying the respective historical figures (Mahatma Gandhi and St. Francis of Assisi) honored on these days (Page 51, 79).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "National Wildlife Week",
+    "question": "The 72nd National Wildlife Week was observed from 2-8 October 2026. Which of the following key events occurred during this week?",
+    "options": {
+      "A": "Launch of Project Suncatcher by the Ministry of Environment.",
+      "B": "Release of 101 Ramsar sites mapping by MoEFCC.",
+      "C": "Tiger Reintroduction at Buxa Tiger Reserve and Great Indian Bustard (GIB) release at Desert National Park.",
+      "D": "Signing of the Hobart Declaration on cetacean conservation.",
+      "E": "Launch of the Aravalli Green Wall Phase 2."
+    },
+    "answer": "C",
+    "rationale": "During National Wildlife Week 2026, key events included the Tiger Reintroduction at Buxa Tiger Reserve (West Bengal) and the GIB release initiative at Desert National Park (Rajasthan) (Page 51, 79).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Habitat & Teachers Day",
+    "question": "Consider the following statements:\n\n1. World Habitat Day is observed annually on the first Monday of October, which fell on October 5 in 2026.\n2. World Teachers' Day is observed annually on October 5.\n3. The 2026 Global Observance for World Habitat Day was held in Muscat, Oman.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "3 only"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. WHD is the first Monday of October (Oct 5, 2026). WTD is always Oct 5. The WHD global event was in Muscat, Oman (Page 52-53, 79-80).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Cerebral Palsy & Cotton Day",
+    "question": "Match the observance to its 2026 theme:\n\nColumn I:\n1. World Cerebral Palsy Day (Oct 6)\n2. World Cotton Day (Oct 7)\n\nColumn II:\nA. Cotton for Good: Building Prosperity Through Trade, Transformation and Partnership\nB. Unique and united\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-A",
+      "B": "1-A, 2-B",
+      "C": "1-B, 2-B",
+      "D": "1-A, 2-A",
+      "E": "None of the above"
+    },
+    "answer": "A",
+    "rationale": "World Cerebral Palsy Day theme: 'Unique and united' (1-B). World Cotton Day theme: 'Cotton for Good...' (2-A) (Page 53-54, 80).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Space Week & Breast Cancer Month",
+    "question": "Fill in the blanks regarding October observances:\nWorld Space Week is observed from _____ and the 2026 theme is _____. Breast Cancer Awareness Month is observed throughout October, symbolized by a _____.",
+    "options": {
+      "A": "Oct 1-7 ; Space for Everyone ; Blue Ribbon",
+      "B": "Oct 4-10 ; Rocket Revolution ; Pink Ribbon",
+      "C": "Oct 4-10 ; AI in Space ; Pink Ribbon",
+      "D": "Oct 1-15 ; Rocket Revolution ; Red Ribbon",
+      "E": "Oct 5-11 ; Orbital Economy ; Pink Ribbon"
+    },
+    "answer": "B",
+    "rationale": "World Space Week is Oct 4-10 with the theme 'Rocket Revolution'. Breast Cancer Awareness Month is all of October, symbolized by a Pink Ribbon (Page 54-55, 80).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Bhadohi Renaming",
+    "question": "In October 2026, Chief Minister Yogi Adityanath announced the renaming of Bhadohi district in Uttar Pradesh. What is the new name of the district?",
+    "options": {
+      "A": "Varanasi North",
+      "B": "Sant Kabir Nagar",
+      "C": "Sant Ravidas Nagar Bhadohi",
+      "D": "Deen Dayal Upadhyaya Nagar",
+      "E": "Gyanvapi Nagar"
+    },
+    "answer": "C",
+    "rationale": "The district of Bhadohi was renamed as Sant Ravidas Nagar Bhadohi to honor the revered saint and social reformer (Page 55, 80).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Multi-Concept",
+    "question": "Consider the following statements from Banking & Finance:\n\n1. Bank of Baroda (BoB) holds an 80.10% stake in BoB Pension Fund Management Company Ltd.\n2. The WASH-Focused Social Bond by NABKISAN raised Rs 180 Cr and was listed on the NSE.\n3. The 770 MW Chamkharchhu-I Hydroelectric Project in Bhutan involves a 49:51 equity partnership between Adani Power and DGPC.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "3 only"
+    },
+    "answer": "D",
+    "rationale": "All statements are factual. BoB holds 80.10% (Page 33). NABKISAN raised Rs 180 Cr on NSE (Page 34). Adani Power holds 49% and DGPC 51% in the Bhutan hydro project (Page 35).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Multi-Concept",
+    "question": "Consider the following international reports and rankings released in late 2026:\n\n1. In the THE World University Rankings 2027, IISc Bengaluru secured the 254th spot globally.\n2. The WHO-UNICEF JMP report stated India has 50 million children without school sanitation.\n3. The HSBC Global Entrepreneurial Wealth Report indicated that 74% of Indian entrepreneurs plan overseas relocation.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. IISc is 254th (Page 29). India has 50m children without school sanitation (Page 27). 74% of Indian entrepreneurs plan relocation (Page 28).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly Content 2026 October 1-8"
+  }
+]
