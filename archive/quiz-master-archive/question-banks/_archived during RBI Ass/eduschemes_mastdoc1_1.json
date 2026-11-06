@@ -1,0 +1,802 @@
+[
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Consider the following statements regarding the Atal Pension Yojana (APY):\n\n1. Taxpayers who joined the scheme after October 1, 2022, are ineligible, and their accounts will be closed with contributions refunded.\n2. In the event of the premature death of the subscriber before 60 years of age, the spouse has the option to continue the scheme for the remaining vesting period.\n3. The first set of pension benefits under APY is expected to commence from the year 2030 onwards.\n4. As of early 2026, women account for approximately 58% of the total APY enrolments.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1, 2 and 3 only",
+      "C": "2 and 4 only",
+      "D": "1 and 4 only",
+      "E": "1, 2, 3 and 4"
+    },
+    "answer": "A",
+    "rationale": "Statement 1 is correct: Taxpayers joining after 1 Oct 2022 are ineligible. Statement 2 is correct: The spouse can continue the scheme. Statement 3 is incorrect: The first set of pension benefits is expected to start from 2035 onwards (when the first batch of 40-year-old joiners from 2015 reaches age 60). Statement 4 is incorrect: Women account for approximately 48% of the total enrolments (roughly 4.04 crore), not 58%. (Page 14-15)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Match the following aspects of the Atal Pension Yojana (APY) with their correct descriptions:\n\nColumn I:\n1. Gross Enrolment Milestone (April 2026)\n2. Maximum Pension Tier\n3. Minimum age of entry\n4. Voluntary Exit (Government Co-contribution scenario)\n\nColumn II:\nA. Only the beneficiary's contributions and accrued income are refunded.\nB. 9 Crore subscribers\nC. ₹5,000 per month\nD. 18 years\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-D, 3-B, 4-A",
+      "B": "1-B, 2-C, 3-D, 4-A",
+      "C": "1-B, 2-C, 3-A, 4-D",
+      "D": "1-D, 2-A, 3-B, 4-C",
+      "E": "1-A, 2-B, 3-C, 4-D"
+    },
+    "answer": "B",
+    "rationale": "1 matches B: APY surpassed 9 crore subscribers on 21st April 2026. 2 matches C: The maximum guaranteed monthly pension is ₹5,000. 3 matches D: The entry age is 18-40 years, so minimum is 18. 4 matches A: In voluntary exit with Govt co-contribution, only the beneficiary's contributions and net actual accrued income are refunded. (Page 14-15)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Under the Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY), pro-rata premiums are applicable for delayed enrolments. Which of the following combinations of Enrolment Period and Pro-rata Premium is INCORRECT?",
+    "options": {
+      "A": "September to November : Rs. 342/-",
+      "B": "December to February : Rs. 228/-",
+      "C": "March to May : Rs. 114/-",
+      "D": "June to August : Rs. 436/-",
+      "E": "September to November : Rs. 228/-"
+    },
+    "answer": "E",
+    "rationale": "Option E is incorrect. The correct pro-rata premium for the enrolment period of September to November is Rs. 342/-, not Rs. 228/-. December to February is Rs. 228/-, and March to May is Rs. 114/-. The full annual premium (usually deducted in June) is Rs. 436/-. (Page 17)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Assertion (A): Under PMJJBY, a newly enrolled subscriber who dies of a heart attack 20 days after the auto-debit of the premium will not receive the death benefit.\nReason (R): PMJJBY enforces a lien period where no coverage is provided for any death (including accidental) occurring within the first 30 days from enrollment.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true because a heart attack (non-accidental death) within 20 days falls under the 30-day lien period. Reason (R) is false because the lien period of 30 days applies to death 'other than accidental'. Accidental death IS covered even during this 30-day period. (Page 17)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Regarding the Pradhan Mantri Suraksha Bima Yojana (PMSBY), fill in the blanks with the correct numerical values:\n\nThe scheme provides an annual premium of ₹______ and offers a cover of ₹______ for total disability (loss of two limbs or sight in both eyes) and ₹______ for partial disability (loss of one limb or sight in one eye).",
+    "options": {
+      "A": "20; 2 Lakh; 1 Lakh",
+      "B": "12; 2 Lakh; 1 Lakh",
+      "C": "20; 2 Lakh; 2 Lakh",
+      "D": "436; 2 Lakh; 1 Lakh",
+      "E": "20; 1 Lakh; 50,000"
+    },
+    "answer": "A",
+    "rationale": "The PMSBY has an annual premium of ₹20. The benefit is ₹2 Lakh for death and total disability (loss of two limbs or sight in both), and ₹1 Lakh for partial disability (loss of un-re-man-maher/loss of one limb or sight in one eye). (Page 19)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "A 60-year-old unbanked individual recently opened a bank account and wishes to subscribe to government insurance schemes. Which of the following statements correctly evaluates their eligibility across PMJJBY and PMSBY?",
+    "options": {
+      "A": "They can subscribe to both PMJJBY and PMSBY without any restrictions.",
+      "B": "They are eligible for PMJJBY but ineligible for PMSBY.",
+      "C": "They are eligible for PMSBY but ineligible for PMJJBY.",
+      "D": "They are ineligible for both schemes as the maximum entry age for both is 50 years.",
+      "E": "They can subscribe to PMJJBY only if they undergo a mandatory medical check-up."
+    },
+    "answer": "C",
+    "rationale": "The age limit for PMJJBY is 18 to 50 years, so a 60-year-old cannot enrol. The age limit for PMSBY is 18 to 70 years, meaning they are eligible for PMSBY. Thus, they are eligible for PMSBY but ineligible for PMJJBY. (Pages 18, 19)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Arrange the following loan features of the Stand-Up India Scheme in chronological order of a borrower's lifecycle (from minimum requirement to maximum duration):\n\n1. Margin money requirement\n2. Maximum moratorium period\n3. Maximum repayment period\n\nSelect the correct numerical sequence:",
+    "options": {
+      "A": "15%, 18 months, 7 years",
+      "B": "10%, 18 months, 7 years",
+      "C": "10%, 12 months, 5 years",
+      "D": "15%, 12 months, 7 years",
+      "E": "10%, 18 months, 5 years"
+    },
+    "answer": "A",
+    "rationale": "Under Stand-Up India: Minimum margin money requirement is 15% (reduced from 25%, but the borrower must contribute at least 10% from their own funds, while the scheme specifies a 15% requirement that can converge with state schemes). The maximum moratorium period is 18 months. The loan must be repaid within 7 years. Option A aligns perfectly with these parameters. (Page 21)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Consider the following statements regarding the Stand-Up India Scheme:\n\n1. The Government of India provides a direct budgetary allocation of ₹10,000 crore annually to fund loans under this scheme.\n2. The scheme aims to facilitate bank loans to at least one Scheduled Caste (SC) or Scheduled Tribe (ST) borrower and at least one woman borrower per bank branch.\n3. The scheme only supports greenfield enterprises in the manufacturing, services, or trading sectors.\n4. RuPay Debit Cards are issued to borrowers for operational convenience.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2 and 3 only",
+      "B": "2, 3 and 4 only",
+      "C": "1 and 4 only",
+      "D": "2 and 3 only",
+      "E": "1, 2, 3 and 4"
+    },
+    "answer": "B",
+    "rationale": "Statement 1 is incorrect: The Government does NOT provide direct budgetary allocation for loans under this scheme. A ₹10,000 crore refinance window is provided through SIDBI. Statements 2, 3, and 4 are correct as the scheme targets SC/ST and women for greenfield projects and issues RuPay debit cards for convenience. (Pages 21-22)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Under the NPS Vatsalya scheme launched in September 2024, different investment choices are available based on risk appetite. Fill in the blanks:\n\nThe Default Choice restricts equity allocation to _____, whereas the Active Choice allows up to _____ in equity.\n\nSelect the correct answer:",
+    "options": {
+      "A": "25%; 50%",
+      "B": "50%; 75%",
+      "C": "50%; 100%",
+      "D": "75%; 100%",
+      "E": "25%; 75%"
+    },
+    "answer": "B",
+    "rationale": "Under NPS Vatsalya, the Default Choice (Moderate Life Cycle Fund LC-50) has a 50% equity allocation. The Active Choice allows custom allocation across asset classes, with up to 75% in equity. (Page 24)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Consider the following scenarios regarding partial withdrawals and contingencies under the NPS Vatsalya scheme:\n\n1. A guardian can withdraw up to 25% of their contribution after a 3-year lock-in period for the child's education.\n2. A maximum of 4 partial withdrawals are permitted before the subscriber turns 18.\n3. If both parents die, the legal guardian may continue the account with or without contributions until the minor reaches 18.\n\nWhich of the above scenarios is/are legally permissible under the scheme guidelines?",
+    "options": {
+      "A": "1 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only",
+      "D": "1 and 2 only",
+      "E": "1, 2 and 3"
+    },
+    "answer": "B",
+    "rationale": "Statement 1 is correct (up to 25% of guardian's contribution after 3-year lock-in). Statement 2 is incorrect because only 'twice before 18 years and twice between 18-21 years' is permitted, meaning a max of 2 withdrawals before 18, not 4. Statement 3 is correct regarding the death of both parents. (Page 25)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Regarding the Sukanya Samriddhi Yojana (SSY), consider the following statements:\n\n1. The interest earned under SSY is entirely tax-free and falls under the EEE (Exempt-Exempt-Exempt) tax benefit category.\n2. Up to 50% withdrawal is allowed for education purposes after the girl turns 18 years or passes the 12th standard, whichever is earlier.\n3. The account matures 21 years from the date of opening or at the time of the marriage of the girl child (after attaining 18 years).\n4. The scheme mandates a minimum initial deposit of ₹250.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2 and 3 only",
+      "B": "1, 3 and 4 only",
+      "C": "2, 3 and 4 only",
+      "D": "1 and 3 only",
+      "E": "1, 2, 3 and 4"
+    },
+    "answer": "B",
+    "rationale": "Statement 2 is incorrect: Up to 50% withdrawal is allowed after the girl turns 18 years OR passes the 10th standard (not 12th standard), whichever is earlier. Statements 1, 3, and 4 are correct based on the scheme features. (Page 26)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Which of the following is INCORRECT regarding the premature closure rules of the Sukanya Samriddhi Yojana (SSY)?",
+    "options": {
+      "A": "Premature closure is allowed in the case of the death of the account holder.",
+      "B": "Premature closure can be permitted on extreme compassionate grounds such as a life-threatening disease of the account holder.",
+      "C": "Premature closure for any valid reason is permitted immediately after the completion of 3 years from the date of opening.",
+      "D": "The scheme allows account closure within 1 month before or 3 months after the marriage of the girl child.",
+      "E": "Villages where 100% of eligible girl children have SSY accounts are declared 'Sampoorna Sukanya Gram'."
+    },
+    "answer": "C",
+    "rationale": "Option C is incorrect because premature closure (even on extreme compassionate grounds) is NOT permitted before the completion of 5 years from the date of account opening. (Pages 26-27)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Match the following features of the Bima Sakhi Yojana (launched in 2024) with their corresponding data points:\n\nColumn I:\n1. Total target for women insurance agents\n2. Corpus allocated towards stipends by LIC\n3. Estimated average annual commission income per Bima Sakhi\n4. Projected new business generation in the first year\n\nColumn II:\nA. ₹4,000 crore\nB. ₹1.75 lakh\nC. ₹840 crore\nD. 2 lakh\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-D, 2-C, 3-B, 4-A",
+      "B": "1-B, 2-D, 3-C, 4-A",
+      "C": "1-D, 2-A, 3-B, 4-C",
+      "D": "1-C, 2-A, 3-D, 4-B",
+      "E": "1-D, 2-C, 3-A, 4-B"
+    },
+    "answer": "A",
+    "rationale": "1 matches D (2 lakh women agents). 2 matches C (LIC allocated ₹840 crore for stipends). 3 matches B (Estimated average annual income is ₹1.75 lakh). 4 matches A (Scheme expected to generate ₹4,000 crore in new business). (Page 28)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Consider the following statements regarding the Bima Sakhi Yojana:\n\n1. It is a joint initiative implemented exclusively by the Ministry of Women and Child Development.\n2. The selected women receive a stipend for three years during their training and engagement period.\n3. After 5 years of service, eligible graduate Bima Sakhis can apply for LIC Apprentice Development Officer (ADO) posts.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "3 only",
+      "E": "1, 2 and 3"
+    },
+    "answer": "B",
+    "rationale": "Statement 1 is incorrect: The nodal agency is the Life Insurance Corporation of India (LIC) under the Ministry of Finance, not the Ministry of Women and Child Development. Statements 2 and 3 are correct as per the training, support, and career progression framework of the scheme. (Page 28)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Arrange the following developments related to the Pradhan Mantri Jan Dhan Yojana (PMJDY) in their logical or chronological sequence of implementation as per the scheme's evolution:\n\n1. Strategic shift from 'Every Household' to 'Every Unbanked Adult'.\n2. Free accidental insurance cover on RuPay cards increased from ₹1 lakh to ₹2 lakh.\n3. Launch of the National Mission on Financial Inclusion.\n4. Conclusion of the Nationwide Financial Inclusion Saturation Campaign resulting in 1.11 crore new accounts.\n\nSelect the correct answer:",
+    "options": {
+      "A": "3, 2, 1, 4",
+      "B": "3, 1, 2, 4",
+      "C": "1, 3, 2, 4",
+      "D": "3, 1, 4, 2",
+      "E": "1, 2, 3, 4"
+    },
+    "answer": "B",
+    "rationale": "The scheme was launched (3) in 2014. It later underwent an extension phase focusing on 'Every Unbanked Adult' (1), alongside enhancing the RuPay insurance cover for accounts opened after 28.08.2018 (2). Recently, in October 2025, the 4-month Nationwide Financial Inclusion Saturation Campaign concluded (4). Hence, 3, 1, 2, 4 is the logical chronological flow of these specific milestones. (Pages 29-30)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Based on the March 2026 statistics for the Pradhan Mantri Jan Dhan Yojana (PMJDY), which of the following data points is incorrectly stated?",
+    "options": {
+      "A": "The total number of PMJDY accounts reached 57.71 crore.",
+      "B": "Total deposits in PMJDY accounts reached ₹2.94 lakh crore.",
+      "C": "39.98 crore RuPay debit cards were issued to beneficiaries.",
+      "D": "Women own approximately 67% of all PMJDY accounts.",
+      "E": "67% of all accounts are opened in rural or semi-urban areas."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect. According to the March 2026 statistics, women own approximately 56% of these accounts, not 67%. It is 67% of all accounts that are opened in rural or semi-urban areas. (Page 30)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Match the following components of the Pradhan Mantri Mudra Scheme with their corresponding coverage limits:\n\nColumn I:\n1. Shishu\n2. Kishore\n3. Tarun\n4. Tarun Plus\n\nColumn II:\nA. Above ₹50,000 and up to ₹5 lakh\nB. ₹10,00,001 to ₹20 Lakh\nC. Up to ₹50,000\nD. Above ₹5 lakh and up to ₹10 lakh\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-D, 4-B",
+      "B": "1-C, 2-D, 3-A, 4-B",
+      "C": "1-A, 2-C, 3-D, 4-B",
+      "D": "1-C, 2-A, 3-B, 4-D",
+      "E": "1-B, 2-A, 3-D, 4-C"
+    },
+    "answer": "A",
+    "rationale": "1 matches C (Shishu: up to ₹50,000). 2 matches A (Kishore: above ₹50k to ₹5 lakh). 3 matches D (Tarun: above ₹5 lakh to ₹10 lakh). 4 matches B (Tarun Plus: ₹10,00,001 to ₹20 Lakh for successful Tarun borrowers). (Page 31, infographic)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Assertion (A): MUDRA (Micro Units Development and Refinance Agency Ltd) directly lends working capital and term loans to the Non-Corporate Small Business Segment (NCSB).\nReason (R): MUDRA is structured as a refinance agency that partners with state/regional financial intermediaries to channel funds to micro-enterprises rather than lending directly.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "D",
+    "rationale": "Assertion (A) is false because MUDRA is NOT a direct lending institution; it does not lend directly to the borrowers. Reason (R) is true as MUDRA acts as a refinance agency providing support to Last Mile Financiers like NBFCs, MFIs, and banks. (Page 31)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Consider the following statements regarding the Unified Pension Scheme (UPS) approved by the Government of India for implementation from 1st April 2025:\n\n1. It offers a guaranteed Monthly Top-Up Pension calculated as UPS Pension plus Dearness Relief minus the NPS annuity amount.\n2. The employee contributes 10% of Basic + DA, while the Central Government matches it with an 18.5% contribution.\n3. A complete withdrawal of up to 60% of the corpus is allowed at retirement, which consequently reduces the monthly pension.\n4. If an employee does not actively exercise the UPS option, they will by default continue under the NPS framework.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2 and 3 only",
+      "B": "1, 3 and 4 only",
+      "C": "2, 3 and 4 only",
+      "D": "1 and 4 only",
+      "E": "1, 2, 3 and 4"
+    },
+    "answer": "B",
+    "rationale": "Statement 2 is incorrect: The employee contributes 10%, the Government matches with 10% (Individual Corpus), and the Central Government provides an ADDITIONAL 8.5% to a Pooled Corpus, not a direct 18.5% matching contribution to the individual's account. Statements 1, 3, and 4 are correct as per the UPS operational rules and benefit structure. (Pages 34-35)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Under the Unified Pension Scheme (UPS), the government has extended investment options like LC75 and BLC to Central Government employees. Fill in the blanks regarding these choices:\n\nThe LC75 option allows equity allocation up to _____, tapering from age 35–55, while the BLC (Balanced Life Cycle) option is a modified LC50 where equity tapering begins at age _____, allowing longer equity exposure.",
+    "options": {
+      "A": "75%; 50",
+      "B": "50%; 45",
+      "C": "75%; 45",
+      "D": "100%; 55",
+      "E": "25%; 40"
+    },
+    "answer": "C",
+    "rationale": "LC75 allows equity allocation up to 75%, tapering from age 35-55. BLC is a modified LC50 where the equity tapering begins at age 45 (instead of 35), allowing longer equity exposure. (Page 35)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Regarding the National Pension System (NPS), under the new Multiple Scheme Framework (MSF) governed by Section 20 of the PFRDA Act, 2013, which of the following statements is/are correct?\n\n1. Investors can now hold multiple pension schemes under a single PAN across different record-keeping agencies (CRAs).\n2. Pension funds can offer a high-risk scheme allowing up to 100% equity exposure.\n3. The vesting period has been reduced, allowing investors to exit after 10 years instead of waiting till 60 years.\n\nSelect the correct answer using the codes given below:",
+    "options": {
+      "A": "1 only",
+      "B": "1 and 2 only",
+      "C": "2 and 3 only",
+      "D": "1 and 3 only",
+      "E": "1, 2 and 3"
+    },
+    "answer": "B",
+    "rationale": "Statement 1 is correct: MSF allows multiple schemes under one PAN across CRAs. Statement 2 is correct: A high-risk option up to 100% equity is now available. Statement 3 is incorrect: The shorter vesting period allows investors to exit after 15 years, not 10 years. (Page 38)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Which of the following is NO LONGER considered a valid permitted reason for partial withdrawal under the National Pension System (NPS)?",
+    "options": {
+      "A": "Higher education of children",
+      "B": "Marriage of children",
+      "C": "Skill development",
+      "D": "Settlement of financial obligations/loans (lien marked)",
+      "E": "Medical treatment (hospitalization)"
+    },
+    "answer": "C",
+    "rationale": "Under the partial withdrawal rules for NPS, \"Skill development\" and \"Start-up/own venture\" have been removed as valid reasons for withdrawal. Education, marriage, lien marked loans, and medical treatment remain valid. (Page 38)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "According to the Union Budget 2026-27 updates to the Sovereign Gold Bonds (SGBs) Scheme, which of the following statements regarding taxation is INCORRECT?",
+    "options": {
+      "A": "Capital Gains Exemption is restricted strictly to individual, primary subscribers who hold the bond continuously until the 8-year maturity.",
+      "B": "Secondary market buyers from stock exchanges no longer get the capital gains exemption.",
+      "C": "Long-Term Capital Gains for secondary market buyers are taxed at 12.5%.",
+      "D": "Exiting the scheme after 5 years via premature redemption is tax-exempt for both primary and secondary buyers.",
+      "E": "The 2.5% annual interest remains fully taxable at the investor's slab rate, with no TDS applied."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect. According to the Union Budget 2026-27, exiting after 5 years is now taxable for secondary buyers; the exemption strictly requires holding to the full 8-year maturity for primary subscribers. (Page 42)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Consider the following statements regarding the Sovereign Gold Bonds (SGBs) Scheme issuance and limits:\n\n1. The maximum investment limit for a Hindu Undivided Family (HUF) is 4 kg per fiscal year.\n2. In the case of joint holding, the investment limit of 4 kg applies to every applicant in the joint holding equally.\n3. SGBs acquired by banks are counted towards their Statutory Liquidity Ratio (SLR).\n4. The redemption price is based on the simple average of the closing price of gold of 999 purity published by IBJA Ltd for the previous 3 working days.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2 and 3 only",
+      "B": "1, 3 and 4 only",
+      "C": "2, 3 and 4 only",
+      "D": "1 and 4 only",
+      "E": "1, 2, 3 and 4"
+    },
+    "answer": "B",
+    "rationale": "Statement 2 is incorrect: In case of joint holding, the 4 kg limit applies ONLY to the FIRST applicant, not equally to all. Statements 1, 3, and 4 are correct as per SGB guidelines. (Pages 41-42)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Read the following provisions carefully regarding the Mahila Samman Savings Certificate (MSSC):\n\nI. An individual can hold multiple accounts provided the total deposits stay within the maximum limit of ₹2 lakh.\nII. A mandatory 3-month gap is required between opening an existing account and opening another account.\nIII. Premature closure without penalty is allowed anytime after 6 months from the date of account opening.\nIV. The scheme was officially discontinued after March 31, 2025, with no new accounts accepted.\n\nWhich of the above provisions is/are correctly stated?",
+    "options": {
+      "A": "I, II and IV only",
+      "B": "I and II only",
+      "C": "III and IV only",
+      "D": "I, III and IV only",
+      "E": "I, II, III and IV"
+    },
+    "answer": "A",
+    "rationale": "Statements I, II, and IV are correct. Statement III is incorrect because premature closure (not for extreme compassionate grounds) allowed after 6 months incurs a 2% interest penalty (the interest rate is reduced by 2%). (Page 44)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Assertion (A): The interest earned on the Mahila Samman Savings Certificate (MSSC) is not subjected to Tax Deducted at Source (TDS) by the banks or post offices.\nReason (R): The interest earned on MSSC is completely tax-free and does not fall under the applicable tax bracket of the account holder.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true; TDS is not deducted. However, Reason (R) is false because the interest earned is NOT tax-free; it is taxed as per the applicable tax bracket of the account holder. (Page 44)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Consider the following statements regarding the Paripoorna Mediclaim Ayush Bima launched in 2026:\n\n1. It is exclusively available for Central Government Health Scheme (CGHS) beneficiaries.\n2. One policy can cover up to a maximum of 4 family members.\n3. The scheme offers a cumulative No Claim Bonus (NCB) of 10% for every claim-free year, up to a maximum of 100% of Sum Insured.\n4. Modern treatments are covered up to 25% of the Sum Insured, which can be enhanced to 100% with an optional rider.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2 and 3 only",
+      "B": "1, 3 and 4 only",
+      "C": "2, 3 and 4 only",
+      "D": "1 and 4 only",
+      "E": "1, 2, 3 and 4"
+    },
+    "answer": "B",
+    "rationale": "Statement 2 is incorrect: One policy can cover up to 6 family members, not 4. Statements 1, 3, and 4 correctly describe the scheme's features as launched in 2026. (Page 46)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Fill in the blanks regarding the Paripoorna Mediclaim Ayush Bima scheme:\n\nThe scheme provides comprehensive pre-hospitalization coverage for _____ days and post-hospitalization coverage for _____ days.",
+    "options": {
+      "A": "15; 30",
+      "B": "30; 60",
+      "C": "60; 90",
+      "D": "30; 90",
+      "E": "45; 60"
+    },
+    "answer": "B",
+    "rationale": "Under the Paripoorna Mediclaim Ayush Bima, pre-hospitalization is covered for 30 days and post-hospitalization is covered for 60 days. (Page 46)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "The NPS Swasthya Pension Scheme (NSPS) was launched in 2026 under the Regulatory Sandbox. Which of the following correctly describes a unique feature of its withdrawal mechanism?",
+    "options": {
+      "A": "Subscribers can withdraw up to 50% of the employer's contribution for outpatient medical expenses at any time.",
+      "B": "There is a 3-year waiting period before any medical withdrawal can be made.",
+      "C": "In case of inpatient medical treatment exceeding the partial withdrawal limit, a 100% lump sum premature exit is permitted irrespective of corpus size.",
+      "D": "Medical withdrawals are pooled like traditional health insurance, sharing risk among all subscribers.",
+      "E": "Withdrawn amounts for medical expenses are paid directly to the subscriber's registered bank account only."
+    },
+    "answer": "C",
+    "rationale": "Option C is correct. Under the NPS Swasthya PoC 2, if inpatient medical expenses exceed the eligible limit for partial withdrawal, the subscriber is permitted a premature exit of a 100% lump sum solely for meeting those expenses. A and B are wrong (no waiting period provided a 50k corpus is met, withdrawal is up to 25% of own contribution). D is wrong (risk is borne by the individual, not pooled). E is wrong (amounts are paid directly to HBA/TPA or Hospital). (Pages 47-48)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Assertion (A): The NPS Swasthya Pension Scheme (NSPS) operates similarly to traditional health insurance where subscriber funds are pooled to cover individual medical risks.\nReason (R): The primary focus of NSPS is medical expense financing through a dedicated healthcare corpus separate from retirement savings.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "D",
+    "rationale": "Assertion (A) is false: The scheme explicitly states that 'Healthcare expense risk is borne by the individual, not pooled like insurance.' Reason (R) is true: The scheme focuses on medical expense financing by creating a dedicated healthcare corpus separate from retirement savings. (Page 48)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Match the following parameters of the Credit Guarantee Scheme for Exporters (CGSE) with their respective details:\n\nColumn I:\n1. Quantum of existing working capital limits\n2. Pricing & Fees rate cap for Banks\n3. Invocation Lock-in period\n4. Claim payout within 30 days of NPA\n\nColumn II:\nA. 75%\nB. Up to 20% (max ₹50 crore)\nC. 6 months\nD. 10%\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-D, 3-C, 4-A",
+      "B": "1-B, 2-A, 3-C, 4-D",
+      "C": "1-D, 2-B, 3-C, 4-A",
+      "D": "1-C, 2-D, 3-B, 4-A",
+      "E": "1-A, 2-B, 3-C, 4-D"
+    },
+    "answer": "A",
+    "rationale": "1 matches B (Quantum is up to 20% of existing working capital limits). 2 matches D (Rate capped at 10% for banks). 3 matches C (6-month lock-in period for invocation). 4 matches A (75% claim paid within 30 days of becoming NPA). (Page 49)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Regarding the Credit Guarantee Scheme for Exporters (CGSE), fill in the blanks:\n\nThe scheme provides a financial allocation of guarantees up to ₹______ crore and aims to help achieve the USD ______ trillion export target under Aatmanirbhar Bharat.",
+    "options": {
+      "A": "10,000; 2",
+      "B": "20,000; 1",
+      "C": "50,000; 5",
+      "D": "20,000; 2",
+      "E": "30,000; 1"
+    },
+    "answer": "B",
+    "rationale": "The financial allocation is guarantees up to ₹20,000 crore. The scheme aims to help achieve the USD 1 trillion export target under Aatmanirbhar Bharat. (Page 49)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Consider the following statements regarding the Credit Guarantee Scheme for Microfinance Institutions-2.0 (CGSMFI-2.0):\n\n1. It provides a total financial allocation of ₹50,000 crore.\n2. Medium NBFC-MFIs/MFIs receive a 75% guarantee coverage.\n3. The interest rate cap for Member Lending Institutions (MLIs) lending to MFIs is EBLR/MCLR + 2% p.a.\n4. Women borrowers constitute approximately 95% of the microfinance sector, making this scheme highly impactful for women empowerment.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2 and 3 only",
+      "B": "2, 3 and 4 only",
+      "C": "1, 3 and 4 only",
+      "D": "2 and 4 only",
+      "E": "1, 2, 3 and 4"
+    },
+    "answer": "B",
+    "rationale": "Statement 1 is incorrect: The financial allocation is ₹20,000 crore, not ₹50,000 crore. Statements 2, 3, and 4 are correct as per the CGSMFI-2.0 parameters (Medium MFIs get 75% coverage; lending cap to MFIs is EBLR/MCLR + 2%; women constitute 95% of the sector). (Pages 51-52)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Which of the following data points is INCORRECTly stated regarding the estimated impact of the newly launched CGSMFI-2.0 scheme?",
+    "options": {
+      "A": "The scheme acts as a ₹20,000 crore credit lifeline.",
+      "B": "It provides a 0.50% annual guarantee fee charged on the sanctioned amount in year one.",
+      "C": "It is estimated to facilitate on-lending to approximately 36 lakh small borrowers nationwide.",
+      "D": "Rates for MFI to Borrower lending are capped at 5% below the MFI's average lending rate from the past 6 months.",
+      "E": "Small NBFC-MFIs receive an 80% guarantee coverage."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect. Under CGSMFI-2.0, rates for MFI to Borrower Lending are capped at 1% (not 5%) below the MFI's average lending rate from the past 6 months. (Pages 51-52)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Arrange the following Small Savings Schemes in descending order of their interest rates as retained for Q1 FY 2026-27:\n\n1. Public Provident Fund (PPF)\n2. Sukanya Samriddhi Yojana (SSY)\n3. Kisan Vikas Patra (KVP)\n4. Monthly Income Scheme (MIS)\n\nSelect the correct sequence:",
+    "options": {
+      "A": "2, 3, 4, 1",
+      "B": "2, 4, 3, 1",
+      "C": "1, 4, 3, 2",
+      "D": "3, 2, 4, 1",
+      "E": "2, 3, 1, 4"
+    },
+    "answer": "A",
+    "rationale": "The interest rates for Q1 FY 2026-27 are: SSY = 8.2%, KVP = 7.5%, MIS = 7.4%, PPF = 7.1%. Descending order: SSY (2) > KVP (3) > MIS (4) > PPF (1). Sequence: 2, 3, 4, 1. (Page 53)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Finance Schemes",
+    "question": "Consider the following statements regarding the investment limits in various Small Savings Schemes:\n\n1. The maximum investment limit for the Public Provident Fund (PPF) is ₹1.5 lakh per financial year.\n2. The Senior Citizen Savings Scheme (SCSS) has a maximum deposit limit of ₹15 lakh.\n3. The Monthly Income Scheme (MIS) allows a maximum investment of ₹9 lakh for a single account and ₹15 lakh for a joint account.\n4. Kisan Vikas Patra (KVP) does not have a maximum investment limit.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2 and 3 only",
+      "B": "1, 3 and 4 only",
+      "C": "2, 3 and 4 only",
+      "D": "1 and 4 only",
+      "E": "1, 2, 3 and 4"
+    },
+    "answer": "B",
+    "rationale": "Statement 2 is incorrect: The maximum deposit limit for SCSS has been upgraded from ₹15 lakh to ₹30 lakh. Statements 1, 3, and 4 are correct. (Page 53)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Labour & Employment Schemes",
+    "question": "Under the Pradhan Mantri Shram Yogi Maan-Dhan (PM-SYM) Yojana, what happens to the subscriber's account if they secure a formal sector job and transition from the unorganized to the organized sector?",
+    "options": {
+      "A": "The account is immediately closed and the entire corpus is forfeited to the government.",
+      "B": "The subscriber must withdraw their own contribution with interest and exit the scheme.",
+      "C": "The subscriber can either continue the scheme without government contribution or withdraw their own contribution with interest.",
+      "D": "The government continues its matching contribution until the subscriber turns 60.",
+      "E": "The subscriber's corpus is mandatorily transferred to the Employees' Provident Fund (EPF)."
+    },
+    "answer": "C",
+    "rationale": "Under the Subscriber Mobility rules of PM-SYM, if a beneficiary moves to the organized sector, they may either continue the scheme (but the Government contribution stops) OR withdraw their own contribution with interest. (Pages 55-56)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Labour & Employment Schemes",
+    "question": "Which of the following scenarios represents an INCORRECT exit or withdrawal provision under the PM-SYM Yojana?",
+    "options": {
+      "A": "If a subscriber dies while contributing, the spouse may continue by paying regular contributions.",
+      "B": "If a subscriber dies while contributing, the spouse can exit and receive the subscriber's contribution with interest.",
+      "C": "After the death of both the subscriber and spouse, the corpus is credited back to the fund.",
+      "D": "In case of permanent disability before 60, the subscriber can exit and receive only 50% of their contribution.",
+      "E": "In case of permanent disability before 60, the spouse may continue the scheme."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect. In case of permanent disability before 60, the subscriber can exit and receive their contribution PLUS interest (actual or savings bank rate, whichever is higher), not just 50% of their contribution. (Page 56)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Labour & Employment Schemes",
+    "question": "Consider the following statements regarding the Pradhan Mantri Viksit Bharat Rozgar Yojana (PMVBRY):\n\n1. It aims to create over 3.5 crore new jobs between August 2025 and July 2027.\n2. To be eligible under Part A (Employee incentives), the employee must have previously been a contributing EPF member.\n3. The scheme provides a one-time incentive of up to ₹15,000 paid in two installments for first-time employees.\n4. Employers receive the incentive credited directly to their Aadhaar-linked bank account.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 3 only",
+      "B": "2 and 4 only",
+      "C": "1, 3 and 4 only",
+      "D": "1 and 2 only",
+      "E": "1, 2, 3 and 4"
+    },
+    "answer": "A",
+    "rationale": "Statement 2 is incorrect: The employee must NOT have previously been a contributing EPF member (it is for first-time employees). Statement 4 is incorrect: Employer incentives are credited to a PAN-linked bank account, while employee incentives go to an Aadhaar-linked bank account. Statements 1 and 3 are correct. (Pages 58-59)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Labour & Employment Schemes",
+    "question": "Fill in the blanks regarding the payment mechanism under the PMVBRY scheme:\n\nFor first-time employees, the incentive is paid in two installments: the first installment after the completion of _____ months and the second installment after _____ months of service, provided the employee completes a Financial Literacy Course.",
+    "options": {
+      "A": "3; 6",
+      "B": "6; 12",
+      "C": "12; 24",
+      "D": "3; 12",
+      "E": "6; 18"
+    },
+    "answer": "B",
+    "rationale": "Under PMVBRY Part-A, the incentive is paid in two installments: after completion of 6 months and 12 months of service. The second installment requires the completion of a Financial Literacy Course. (Pages 58-59)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Labour & Employment Schemes",
+    "question": "Match the following penalty rates with their corresponding contexts under the Vishwas Scheme (2025), aimed at rationalizing EPF penal damages:\n\nColumn I:\n1. Pre-2008 penalty rate\n2. New Flat rate under Vishwas Scheme\n3. New Graded rate for default up to 2 months\n4. New Graded rate for default up to 4 months\n\nColumn II:\nA. 1% per month\nB. 17%-37% per annum\nC. 0.50% per month\nD. 0.25% per month\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-A, 3-D, 4-C",
+      "B": "1-B, 2-C, 3-A, 4-D",
+      "C": "1-A, 2-B, 3-C, 4-D",
+      "D": "1-B, 2-D, 3-A, 4-C",
+      "E": "1-C, 2-A, 3-D, 4-B"
+    },
+    "answer": "A",
+    "rationale": "1 matches B (Pre-2008 rates were 17%-37% p.a.). 2 matches A (Flat rate is 1% per month). 3 matches D (Graded rate for default up to 2 months is 0.25% per month). 4 matches C (Graded rate for default up to 4 months is 0.50% per month). (Page 60)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Labour & Employment Schemes",
+    "question": "Assertion (A): The Vishwas Scheme (2025) provides significant relief to employers by abating all covered cases once compliance is completed under the scheme.\nReason (R): The scheme covers all disputes, including cases where employers voluntarily registered using Form-01 on the ESIC portal.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true; covered cases stand abated upon compliance. Reason (R) is false because cases where employers voluntarily registered using Form-01 on the ESIC portal are explicitly excluded from the Amnesty/Vishwas dispute coverage framework. (Pages 60, 67)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Labour & Employment Schemes",
+    "question": "Consider the following features of the National Pension Scheme for Traders and Self Employed (NPS-Traders):\n\n1. It is a mandatory pension scheme for all shopkeepers with an annual turnover exceeding ₹1.5 crore.\n2. The entry age for the scheme is between 18 and 40 years.\n3. The Central Government provides an equal matching contribution to the beneficiary's contribution.\n4. Subscribers are eligible for a minimum assured pension of ₹3,000 per month after attaining 60 years of age.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2 and 3 only",
+      "B": "2, 3 and 4 only",
+      "C": "1, 3 and 4 only",
+      "D": "2 and 4 only",
+      "E": "1, 2, 3 and 4"
+    },
+    "answer": "B",
+    "rationale": "Statement 1 is incorrect: The scheme is voluntary, and the annual turnover should NOT exceed ₹1.5 crore. Statements 2, 3, and 4 are correct features of NPS-Traders. (Page 61)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Labour & Employment Schemes",
+    "question": "Arrange the following steps in the correct sequence for an employer availing the compliance relaxation under the Employees’ Enrolment Scheme (EES) 2025:\n\n1. Link employee details with ECR (Electronic Challan-cum-Return) or TRRN.\n2. File declarations online via the EPFO portal.\n3. Pay a one-time lump-sum penalty of ₹100 per employee.\n4. Avail benefits of PM-VBRY (if eligible).\n\nSelect the correct sequence:",
+    "options": {
+      "A": "2, 3, 1, 4",
+      "B": "1, 2, 3, 4",
+      "C": "2, 1, 3, 4",
+      "D": "3, 2, 1, 4",
+      "E": "2, 4, 3, 1"
+    },
+    "answer": "A",
+    "rationale": "Under EES 2025, the employer first files declarations online via the EPFO portal (2). Then, while paying the ₹100 penalty (3), they must link the employee details with ECR or TRRN (1). Finally, after registering/declaring, they can avail PM-VBRY benefits subject to eligibility (4). (Page 63)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Labour & Employment Schemes",
+    "question": "Regarding the Employees’ Enrolment Scheme (EES) 2025, which of the following statements is INCORRECT?",
+    "options": {
+      "A": "The scheme aims to bring unregistered employees under the EPF framework and regularize past records.",
+      "B": "The employee's share of PF contributions for the period July 1, 2017 to October 31, 2025, shall be waived, provided it was not deducted from wages.",
+      "C": "Employers are required to pay the full employer's share of contributions for the declared period.",
+      "D": "EPFO will proactively initiate suo motu compliance action against employers who avail of this scheme to ensure strict enforcement.",
+      "E": "The scheme has a limited tenure from November 1, 2025, to April 30, 2026."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect. Under the compliance relaxation of EES 2025, EPFO will NOT initiate suo motu compliance action against employers availing this scheme. It is designed to encourage voluntary compliance. (Page 63)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Labour & Employment Schemes",
+    "question": "Consider the following statements regarding the Employees’ Deposit Linked Insurance Scheme (EDLI):\n\n1. It provides a maximum death benefit of ₹7 lakh to the nominee of a deceased EPF member.\n2. To avail of the minimum assurance benefit of ₹2.5 lakh, the deceased must have been a member for a continuous 12 months in one or more establishments preceding death.\n3. The employer is required to contribute 0.5% of the employee's monthly wages (up to a ceiling of ₹15,000) towards the scheme.\n4. The scheme mandates a minimum service period of 5 years for the payment of Gratuity in the event of the employee's death.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2 and 3 only",
+      "B": "2, 3 and 4 only",
+      "C": "1, 3 and 4 only",
+      "D": "1 and 2 only",
+      "E": "1, 2, 3 and 4"
+    },
+    "answer": "A",
+    "rationale": "Statement 4 is incorrect: Under EDLI related provisions, there is NO minimum service requirement for the payment of Gratuity in the event of the employee's death. Statements 1, 2, and 3 are correct. (Page 65)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Labour & Employment Schemes",
+    "question": "Fill in the blanks regarding the sickness benefit linked to the EDLI / EPF framework:\n\nA worker is entitled to a sickness benefit of _____% of wages for _____ days in a year if they fall sick and cannot attend the office.",
+    "options": {
+      "A": "50; 60",
+      "B": "70; 91",
+      "C": "60; 90",
+      "D": "75; 100",
+      "E": "70; 120"
+    },
+    "answer": "B",
+    "rationale": "Under the other death/sickness related benefits associated with the framework, the sickness benefit is 70% of wages for 91 days in a year if the worker falls sick and cannot attend the office. (Page 65)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Labour & Employment Schemes",
+    "question": "Assertion (A): Under the ESIC Amnesty Scheme (2025), an employer with missing records can still settle a contribution dispute even if they do not have alternative documents like Income Tax records.\nReason (R): The scheme allows settlement in such cases provided the employer pays at least 30% of the assessed contribution along with applicable interest.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A",
+      "B": "Both A and R are true but R is not the correct explanation of A",
+      "C": "A is true but R is false",
+      "D": "A is false but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "A",
+    "rationale": "Both A and R are true, and R is the correct explanation of A. The scheme specifies that if records are completely unavailable, the employer can still settle the dispute by paying at least 30% of the assessed contribution plus interest. (Page 67)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Labour & Employment Schemes",
+    "question": "Match the following dispute resolution provisions under the ESIC Amnesty Scheme (2025) with their respective conditions:\n\nColumn I:\n1. Standard Settlement for Damages\n2. Legacy Cases (Pending > 15 years, Running Units)\n3. Closed Units (Closed > 5 years, no assessment)\n4. Criminal Cases against Insured Persons (Sec 84)\n\nColumn II:\nA. Cases withdrawn immediately without requiring record production.\nB. Withdrawn by paying just 10% of determined damages.\nC. Withdrawn if excess amounts are refunded without interest.\nD. Settled by updating compliance and paying at least 30% of dues plus interest.\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-D, 3-A, 4-C",
+      "B": "1-B, 2-A, 3-D, 4-C",
+      "C": "1-D, 2-B, 3-A, 4-C",
+      "D": "1-A, 2-C, 3-B, 4-D",
+      "E": "1-C, 2-D, 3-A, 4-B"
+    },
+    "answer": "A",
+    "rationale": "1 matches B (Standard settlement allows withdrawal by paying 10% of damages). 2 matches D (Legacy running units can settle by paying 30% dues + interest). 3 matches A (Units closed >5 years with no assessment have cases withdrawn). 4 matches C (Section 84 cases withdrawn if excess amounts refunded with no interest). (Page 67)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  },
+  {
+    "category": "ESI / FM",
+    "sub_category": "Ministry of Commerce & Industry Schemes",
+    "question": "Consider the following statements regarding the Startup India Initiative and its achievements by the 2025-2026 financial year:\n\n1. The initiative targets spreading the startup movement from tier 1 cities to tier 2 and tier 3 cities.\n2. The Indian startup landscape reached a milestone of over 55,200 new startups recognized in FY 2025-26 alone.\n3. Recognized startups can apply for an income tax exemption for 5 consecutive years out of 10 years since incorporation.\n4. Approximately 48% of all recognized firms have at least one woman director or partner.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2 and 4 only",
+      "B": "1, 3 and 4 only",
+      "C": "2, 3 and 4 only",
+      "D": "1 and 2 only",
+      "E": "1, 2, 3 and 4"
+    },
+    "answer": "A",
+    "rationale": "Statement 3 is incorrect: The income tax exemption is available for 3 consecutive years (not 5) out of 10 years since incorporation. Statements 1, 2, and 4 are correct as per the scheme's action plan and recent 2025-26 data milestones. (Pages 70-71)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "SchemesTap Master Document Part-1 2026"
+  }
+]

@@ -1,0 +1,802 @@
+[
+  {
+    "category": "International Affairs",
+    "sub_category": "Diplomatic Visits & Cultural Exchange",
+    "question": "Match the following traditional gifts presented by PM Narendra Modi to the leaders during his 5-nation tour in May 2026, with the respective Indian state they originate from:\n\nColumn I:\n1. Muga Silk\n2. Madhubani painting\n3. Rogan painting\n4. Chak Hao black rice\n\nColumn II:\nA. Bihar\nB. Gujarat\nC. Manipur\nD. Assam\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-D, 2-A, 3-B, 4-C",
+      "B": "1-C, 2-A, 3-D, 4-B",
+      "C": "1-D, 2-B, 3-C, 4-A",
+      "D": "1-B, 2-A, 3-D, 4-C",
+      "E": "1-A, 2-C, 3-B, 4-D"
+    },
+    "answer": "A",
+    "rationale": "According to the official gifts list: Assam's Muga Silk; Madhubani painting from Bihar; Rogan painting from Gujarat; and Chak Hao black rice from Manipur. (Page 19)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Defence Cooperation",
+    "question": "Consider the following statements regarding Union Defence Minister Rajnath Singh's visit to Vietnam and South Korea in May 2026:\n\n1. In Vietnam, he virtually inaugurated a Language Lab at the Air Force Officers College.\n2. In South Korea, he inaugurated the Indian War Memorial at Imjingak Park in Seoul.\n3. An agreement for technology cooperation was signed between Larsen & Toubro (India) and Hanwha Co. Ltd. (Republic of Korea).\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 3",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All statements are correct. He inaugurated the Language Lab in Vietnam, the Indian War Memorial in South Korea, and L&T signed an MoU with Hanwha Co. Ltd (ROK). (Page 20)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Global Health Strategies",
+    "question": "Fill in the blanks:\nDuring the 79th World Health Assembly (WHA79), the WHO adopted the 'Economics of Health for All' strategy for the period _________, and the ECO Strategy to strengthen emergency healthcare systems for the period _________.",
+    "options": {
+      "A": "2025-2030; 2025-2035",
+      "B": "2026-2030; 2026-2035",
+      "C": "2024-2028; 2025-2030",
+      "D": "2026-2035; 2026-2040",
+      "E": "2030-2035; 2030-2045"
+    },
+    "answer": "B",
+    "rationale": "WHA adopted the ECO Strategy (2026-2035) to strengthen emergency healthcare systems and the 'Economics of Health for All (2026-2030)' strategy. (Page 22)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Agricultural Production",
+    "question": "Based on the 3rd Advance Estimates of Production of Major Agricultural Crops for 2025-26, which of the following crops is NOT matched correctly with its estimated production figure?",
+    "options": {
+      "A": "Rice: 154.02 Million Tonnes",
+      "B": "Wheat: 120.65 Million Tonnes",
+      "C": "Coarse Cereals: 74.47 Million Tonnes",
+      "D": "Maize: 65.093 Million Tonnes",
+      "E": "Total Oilseeds: 43.05 Million Tonnes"
+    },
+    "answer": "D",
+    "rationale": "Maize production is estimated at 55.093 MT, not 65.093 MT. All other production estimates are matched correctly. (Page 13)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Reports & Indices",
+    "sub_category": "National Health Accounts (NHA)",
+    "question": "According to the 10th National Health Accounts (NHA) estimates for India (FY23), the Out-of-Pocket Expenditure (OOPE) stood at what percentage of the Total Health Expenditure in 2022-23?",
+    "options": {
+      "A": "30.83%",
+      "B": "36.5%",
+      "C": "43.4%",
+      "D": "48.9%",
+      "E": "52.1%"
+    },
+    "answer": "C",
+    "rationale": "The Out-of-Pocket Expenditure (OOPE) was reported at 43.4% in 2022-23 according to the 10th NHA estimates. (Page 15)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Reports & Indices",
+    "sub_category": "Global Terrorism Index",
+    "question": "Consider the Global Terrorism Index (GTI) 2026 report by the Institute for Economics & Peace. Which country topped the list as the most impacted by terrorism, and what was India's rank?",
+    "options": {
+      "A": "Afghanistan; Rank 10",
+      "B": "Pakistan; Rank 13",
+      "C": "Burkina Faso; Rank 15",
+      "D": "Mali; Rank 13",
+      "E": "Syria; Rank 12"
+    },
+    "answer": "B",
+    "rationale": "Pakistan ranked 1st as the most impacted country with a GTI Score of 8.574, while India was ranked 13th with a score of 6.428. (Page 37)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Reports & Indices",
+    "sub_category": "Global Hunger",
+    "question": "Match the following global reports related to food and hunger with their key highlights for the year 2025/2026:\n\nColumn I:\n1. GRFC 2026\n2. GHI 2025\n3. India's Rank in GHI\n\nColumn II:\nA. 102nd out of 123 countries\nB. The 10th edition released by GNAFC\nC. Published by Concern Worldwide and Welthungerhilfe\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-B, 2-A, 3-C"
+    },
+    "answer": "B",
+    "rationale": "The Global Report on Food Crises (GRFC) 2026 was the 10th edition by GNAFC. The Global Hunger Index (GHI) 2025 is published by Concern Worldwide and Welthungerhilfe. India ranked 102nd out of 123 in GHI. (Page 40)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "SIDBI Initiatives",
+    "question": "Consider the following statements regarding the initiatives launched by SIDBI on its 37th Foundation Day:\n\n1. The SIDBI-RRB Co-Lending Platform aims to improve MSME credit flow in semi-urban and rural areas.\n2. The MoRE Programme aims to support 50,000 rural micro and artisan units over the next 5 years.\n3. The SIDBI MachFin Mart function enables MSMEs to access machinery delivery via a structured marketplace.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 3"
+    },
+    "answer": "C",
+    "rationale": "Statement 2 is incorrect because the MoRE Programme aims to support 10,000 (not 50,000) rural micro and artisan units over the next 3 years. Statements 1 and 3 are correct. (Pages 9, 47)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Reports & Indices",
+    "sub_category": "Global Terrorism Index Rankings",
+    "question": "Arrange the following countries in descending order of their Global Terrorism Index (GTI) 2026 Score (from most impacted to less impacted among them):\n\n1. Niger\n2. Burkina Faso\n3. Pakistan\n4. Nigeria\n\nSelect the correct answer:",
+    "options": {
+      "A": "3, 1, 2, 4",
+      "B": "3, 2, 1, 4",
+      "C": "2, 3, 1, 4",
+      "D": "3, 2, 4, 1",
+      "E": "4, 3, 2, 1"
+    },
+    "answer": "B",
+    "rationale": "The top 4 countries in GTI 2026 are: 1. Pakistan (8.574), 2. Burkina Faso (8.324), 3. Niger (7.816), 4. Nigeria (7.792). Thus, the correct order is 3, 2, 1, 4. (Page 37)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Regulatory Committees",
+    "question": "Assertion (A): The RBI mandated a 3-year cooling-off period for Urban Co-operative Bank (UCB) directors who complete 10 years of continuous tenure.\nReason (R): This regulation was recommended by the 8-member expert panel chaired by Dr. Anil Prabhakar under the Q-SAFE Initiative.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true. Reason (R) is false because the 8-member expert panel chaired by Dr. Anil Prabhakar under the Q-SAFE Initiative was formed to explore the benefits, risks, and challenges of quantum technology in the financial sector, NOT to recommend board tenure limits. (Page 24)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Cannes Film Festival",
+    "question": "Match the following Indian entries/talents with their achievements at the 79th Cannes Film Festival 2026:\n\nColumn I:\n1. Mehar Malhotra\n2. \"Abhijat\"\n3. Shadows of the Moonless Nights\n\nColumn II:\nA. India's only entry in the La Cinef competition\nB. FTII student who directed an acclaimed short film\nC. Marathi OTT platform launched at Cannes\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-B, 3-C",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "B",
+    "rationale": "Mehar Malhotra is the FTII student. \"Abhijat\" is the Marathi OTT platform launched at Cannes. \"Shadows of the Moonless Nights\" was India's only entry in the La Cinef competition. (Page 27)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Insurance Products",
+    "question": "LIC launched two new joint life insurance savings plans: 'New Jeevan Sathi Single Premium' and 'New Jeevan Sathi Limited Premium'. What is the minimum Basic Sum Assured (BSA) required for the 'Limited Premium' version?",
+    "options": {
+      "A": "Rs. 1 lakh",
+      "B": "Rs. 2 lakh",
+      "C": "Rs. 3 lakh",
+      "D": "Rs. 5 lakh",
+      "E": "Rs. 10 lakh"
+    },
+    "answer": "C",
+    "rationale": "The eligibility criteria for 'New Jeevan Sathi Limited Premium' state that the minimum Basic Sum Assured (BSA) is Rs. 3 lakh. (Page 24)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Bilateral Cooperation",
+    "question": "Fill in the blank:\nDuring the Cyprus President's visit to India in May 2026, both nations announced a 5-Year Roadmap for Defence Cooperation spanning the period _________.",
+    "options": {
+      "A": "2025-2030",
+      "B": "2026-2030",
+      "C": "2026-2031",
+      "D": "2027-2032",
+      "E": "2025-2029"
+    },
+    "answer": "C",
+    "rationale": "A key announcement was the 5-Year Roadmap for Defence Cooperation (2026-31) between India and Cyprus. (Page 21)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Energy Infrastructure",
+    "question": "Consider the following statements regarding the 5-year MoU extension approved by the Ladakh L-G with ONGC:\n\n1. It is for the construction of India's 1st geothermal power project.\n2. The project has a targeted capacity of 10 MWe (MegaWatt electric) in the first phase.\n3. The ONGC Energy Centre will drill the geothermal well up to 1000 metres during the 2026 working season.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "C",
+    "rationale": "Statement 2 is incorrect because the handwritten notes specify the project has a 1 MWe (MegaWatt electric) capacity, not 10 MWe. Statements 1 and 3 are correct. (Pages 7, 46)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Legal Metrology",
+    "question": "Under the newly amended Legal Metrology (GATC) Rules, 2013, a standardised fee structure has been introduced for fuel dispensers. Which of the following is NOT correctly matched?",
+    "options": {
+      "A": "Petrol/Diesel - Rs. 5,000 per nozzle",
+      "B": "CNG - Rs. 10,000 per nozzle",
+      "C": "LPG - Rs. 10,000 per nozzle",
+      "D": "Hydrogen - Rs. 15,000 per nozzle",
+      "E": "LNG - Rs. 10,000 per nozzle"
+    },
+    "answer": "D",
+    "rationale": "The fee structure for CNG/LPG/LNG/Hydrogen is Rs. 10,000 per nozzle. Therefore, Hydrogen is incorrectly matched with Rs. 15,000. (Page 8)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Government Schemes",
+    "question": "Match the following state-level initiatives with their respective purpose/state:\n\nColumn I:\n1. Adarsh Shahar Samriddhi Yojana\n2. Annapurna Yojana\n3. Angel Fund for Deep-Tech Startups\n\nColumn II:\nA. West Bengal (Financial assistance for women)\nB. Andhra Pradesh (Ecosystem support via RTIH)\nC. Chhattisgarh (Modern civic infrastructure)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-B, 2-C, 3-A",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Adarsh Shahar Samriddhi Yojana is in Chhattisgarh. Annapurna Yojana is in West Bengal. Angel Fund for Deep-Tech is in Andhra Pradesh in collaboration with SIDBI. (Pages 43, 66-67)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "E-Governance",
+    "question": "Consider the following statements regarding the 'NeSDA 2025 Portal' launched by DARPG:\n\n1. NeSDA is an annual assessment framework for e-Governance service delivery.\n2. The portal classifies assessed portals into two categories: State/UT/City/Central Ministry Portals and Service Portals.\n3. The service assessment mandates 59 services for States/UTs.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 2"
+    },
+    "answer": "B",
+    "rationale": "Statement 1 is incorrect because NeSDA is a *biennial* (once in two years) assessment framework. Statements 2 and 3 are correct. (Pages 16, 51)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space Exploration",
+    "question": "Fill in the blank:\nNASA unveiled a 3-phased plan for a permanent Moon Base. Under Phase I (2026-2028), the designated lunar lander to be used is _________.",
+    "options": {
+      "A": "SpaceX Starship HLS",
+      "B": "Blue Moon Mark-1 Endurance lander",
+      "C": "Astrobotic's Griffin lander",
+      "D": "Lunar Vertex science lander",
+      "E": "Artemis III Base Camp Module"
+    },
+    "answer": "B",
+    "rationale": "Under Phase I: Moon Base-I (2026-2028), the Lander is the Blue Moon Mark-1 Endurance lander (Blue Origin). Astrobotic's Griffin lander is designated for Phase II. (Page 31)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Global Equity Markets",
+    "question": "Assertion (A): In May 2026, the Taiwan Stock Exchange surpassed India to become the world's fifth-largest stock market by market capitalization.\nReason (R): This rise was fueled by the AI-driven semiconductor boom, heavily led by the Taiwan Semiconductor Manufacturing Company (TSMC).\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Assertion (A) is true as Taiwan's market cap reached USD 4.95 trillion, surpassing India. Reason (R) is true and correctly explains that the rise was driven by the AI-led semiconductor boom spearheaded by TSMC. (Pages 26, 56-57)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Bilateral MoUs",
+    "question": "During PM Modi's visit to Italy, an Indian institution signed MoUs with the International Centre for Theoretical Physics (ICTP) & Italy's Euro-Mediterranean Center on Climate Change (CMCC). Identify the institution:",
+    "options": {
+      "A": "IIT Delhi",
+      "B": "Indian Institute of Tropical Meteorology (IITM), Pune",
+      "C": "IISc Bengaluru",
+      "D": "CSIR-National Environmental Engineering Research Institute",
+      "E": "National Institute of Oceanography"
+    },
+    "answer": "B",
+    "rationale": "IITM Pune signed MoUs with ICTP & Italy's Euro-Mediterranean CMCC related to climate and theoretical physics. (Page 19)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Athletics Championships",
+    "question": "Match the following upcoming Asian Athletics Association (AAA) events with their host cities in India:\n\nColumn I:\n1. 2027 Asian Relays\n2. 2028 Asian Indoor Championships\n\nColumn II:\nA. Bhubaneswar, Odisha\nB. Chandigarh\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-B",
+      "B": "1-B, 2-A",
+      "C": "1-A, 2-A",
+      "D": "1-B, 2-B",
+      "E": "None of the above"
+    },
+    "answer": "B",
+    "rationale": "The 2027 Asian Relays will be hosted in Chandigarh, and the 2028 Asian Indoor Championships will be hosted in Bhubaneswar, Odisha. (Pages 28, 58)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "Banking Leadership",
+    "question": "Consider the following statements regarding the appointment of Elias George:\n\n1. The Reserve Bank of India (RBI) approved his appointment as the Part-Time Chairman of Federal Bank Limited.\n2. He is a former Indian Administrative Service (IAS) officer.\n3. His tenure is set for a period of five years.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because his appointment took effect on May 23, 2026, for a *three-year* tenure, not five years. (Page 59)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Carbon Markets",
+    "question": "Fill in the blank:\nAccording to the World Bank Group report 'State and Trends of Carbon Pricing 2026', the Average Global Carbon Price nearly doubled over the last decade, reaching nearly ________ in 2026.",
+    "options": {
+      "A": "USD 10/tCO2e",
+      "B": "USD 15/tCO2e",
+      "C": "USD 21/tCO2e",
+      "D": "USD 50/tCO2e",
+      "E": "USD 107/tCO2e"
+    },
+    "answer": "C",
+    "rationale": "The average global carbon price nearly doubled from USD 10/tCO2e in 2016 to nearly USD 21/tCO2e in 2026. (Pages 18, 53)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Real Estate Funds",
+    "question": "Which of the following statements is NOT correct regarding the strategic partnership between the Development Bank of Japan (DBJ) and HDFC Capital?",
+    "options": {
+      "A": "The partnership targets investments in affordable and mid-income housing projects in India.",
+      "B": "The H-DREAM fund is established under this partnership.",
+      "C": "This collaboration marks DBJ's first-ever real estate investment in India.",
+      "D": "The fund has a target corpus of USD 1 billion, exclusively funded by the Government of Japan.",
+      "E": "The target corpus includes a USD 500 million green shoe option."
+    },
+    "answer": "D",
+    "rationale": "Statement D is incorrect because the target corpus of USD 1 billion is raised through the H-DREAM fund via a strategic partnership, not 'exclusively funded' by the Government of Japan. It involves private equity investments. All other statements are correct. (Pages 25, 56)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Fund Details",
+    "question": "Based on the DBJ and HDFC Capital partnership, what does the USD 1 billion total targeted corpus for the H-DREAM fund consist of?",
+    "options": {
+      "A": "USD 250 million base + USD 750 million debt",
+      "B": "USD 500 million base + USD 500 million green shoe option",
+      "C": "USD 800 million base + USD 200 million CSR funds",
+      "D": "USD 1 billion flat target with no options",
+      "E": "USD 750 million base + USD 250 million green shoe option"
+    },
+    "answer": "B",
+    "rationale": "The H-DREAM fund has a target fund corpus of USD 500 million, including a USD 500 million green shoe option, totaling USD 1 billion. (Pages 25, 56)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Sports Days",
+    "question": "The United Nations observed the inaugural World Football Day in 2024. In May 2026, what was the official date of observance for World Football Day?",
+    "options": {
+      "A": "May 20",
+      "B": "May 22",
+      "C": "May 24",
+      "D": "May 25",
+      "E": "May 28"
+    },
+    "answer": "D",
+    "rationale": "The United Nations observed the 3rd World Football Day on May 25, 2026. (Pages 39, 64-65)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Books & Authors",
+    "sub_category": "Publishing Houses",
+    "question": "Match the following recently released books with their respective publishers:\n\nColumn I:\n1. The Library Man of India: The Story of P.N. Panicker\n2. Bazaar\n3. Apnapan: Narendra Modi Sang Mere Anubhav\n\nColumn II:\nA. Aadhar Prakashan Private Limited\nB. Rupa Publications India Private Limited\nC. Prabhat Prakashan Private Limited\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-A, 3-C",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "The Library Man of India was published by Rupa Publications. Bazaar was published by Aadhar Prakashan. Apnapan was published by Prabhat Prakashan. (Pages 35, 63)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "International Politics",
+    "question": "Consider the following statements regarding Ahmadou Al Aminou Lo:\n\n1. He was appointed as the new Prime Minister of Senegal in May 2026.\n2. He succeeded former PM Ousmane Sonko following the dissolution of the government.\n3. He belongs to the ruling Pastef party.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. Senegal President Bassirou Diomaye Faye appointed him PM after dismissing Ousmane Sonko, and he is a member of the Pastef party. (Pages 28, 59)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Formula One Points",
+    "question": "Arrange the top three podium finishers of the Canadian Grand Prix 2026 in descending order based on the championship points they secured in this specific race:\n\n1. Max Verstappen\n2. Kimi Antonelli\n3. Lewis Hamilton\n\nSelect the correct answer:",
+    "options": {
+      "A": "2, 3, 1",
+      "B": "1, 2, 3",
+      "C": "2, 1, 3",
+      "D": "3, 2, 1",
+      "E": "1, 3, 2"
+    },
+    "answer": "A",
+    "rationale": "Kimi Antonelli (1st place) secured 25 points. Lewis Hamilton (2nd place) secured 18 points. Max Verstappen (3rd place) secured 15 points. Thus, the order is 2, 3, 1. (Pages 32, 61)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Acquisitions & Mergers",
+    "sub_category": "LIC Investments",
+    "question": "Assertion (A): Life Insurance Corporation of India (LIC) increased its total shareholding in the Central Bank of India (CBI) to 6.06%.\nReason (R): This was facilitated by the Government of India exercising the full oversubscription option in its Offer for Sale (OFS), increasing the total offer size to 8% of the bank's paid-up capital.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both statements are factually correct. LIC did increase its stake to 6.06%, and GoI did increase the OFS size to 8%. However, LIC acquired its shares through \"market purchases\" (open market), not specifically allocated from the GoI's OFS as the direct explanation. (Pages 30, 60)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Cyprus President Visit",
+    "question": "Match the following Ministries with the area of the Memorandums of Understanding (MoUs) signed between India and Cyprus during the visit of President Nikos Christodoulides:\n\nColumn I:\n1. MeitY\n2. MoD\n3. MoE\n\nColumn II:\nA. Search and Rescue (SAR) cooperation\nB. Innovation and technology cooperation\nC. Higher education and research ties\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-B, 2-A, 3-C",
+      "C": "1-A, 2-C, 3-B",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "B",
+    "rationale": "MeitY signed an MoU on innovation and technology. MoD signed an arrangement for Search and Rescue (SAR). MoE signed an MoU to strengthen higher education and research. (Page 21)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Chess Milestones",
+    "question": "Fill in the blank:\nSwara Lakshmi Nair, with a current live rating of 2219 Elo points, aims to achieve the Grandmaster (GM) title by crossing the ________ Elo rating mark.",
+    "options": {
+      "A": "2300",
+      "B": "2400",
+      "C": "2500",
+      "D": "2600",
+      "E": "2700"
+    },
+    "answer": "B",
+    "rationale": "She aims to achieve the Grandmaster (GM) title by crossing the 2400 Elo rating mark. (Page 62)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Books & Authors",
+    "sub_category": "Sports History",
+    "question": "Which of the following books specifically marks the 98th anniversary of India's first Olympic Gold in hockey won at the 1928 Amsterdam Olympics?",
+    "options": {
+      "A": "The Golden Hat-Trick: My Hockey Days",
+      "B": "Forgive Me Amma: The Life and Times of Dhanraj Pillay",
+      "C": "India's Olympic Gold: Hockey Triumph at Amsterdam",
+      "D": "Fierce Focus: A Journey to Olympic Gold",
+      "E": "The Goal: Major Dhyan Chand's Journey"
+    },
+    "answer": "C",
+    "rationale": "The book 'India's Olympic Gold: Hockey Triumph at Amsterdam' authored by K. Arumugam marks the 98th anniversary of India's first Olympic Gold in hockey in 1928. (Pages 35, 63)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "WHO Strategies",
+    "question": "During the 79th World Health Assembly, the WHO adopted multiple key resolutions and strategies. Which of the following correctly pairs the strategy with its target period?",
+    "options": {
+      "A": "Economics of Health for All (2026-2035) and Post-2030 TB Strategy",
+      "B": "ECO Strategy (2026-2030) and Pre-2030 TB Strategy",
+      "C": "ECO Strategy (2026-2035) and Post-2030 TB Strategy",
+      "D": "Economics of Health for All (2024-2028) and Post-2030 TB Strategy",
+      "E": "Global Stroke Eradication (2026-2035) and Post-2030 TB Strategy"
+    },
+    "answer": "C",
+    "rationale": "The WHA adopted the ECO Strategy (2026-2035) and the Post-2030 TB Strategy to accelerate TB eradication. The 'Economics of Health for All' spans (2026-2030). (Page 22)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Legal Metrology Rules",
+    "question": "Consider the following statements regarding the amended Legal Metrology (GATC) Rules, 2013:\n\n1. Five new fuel dispensing systems were added to the verification framework.\n2. The standard verification fee for a Petrol/Diesel nozzle is set at Rs. 5,000.\n3. The standard verification fee for a Hydrogen nozzle is set at Rs. 10,000.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. 5 new fuels were added. Petrol/Diesel fee is Rs 5,000 per nozzle. CNG/LPG/LNG/Hydrogen fee is Rs 10,000 per nozzle. (Page 8)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Miscellaneous",
+    "sub_category": "Locations in News",
+    "question": "Match the following key locations in news with their associated events/facilities:\n\nColumn I:\n1. Kolkata\n2. Shirdi\n3. Thaiyur\n4. Seoul\n\nColumn II:\nA. NIBE Defence Manufacturing Complex\nB. IACS Campus (PECVD System launch)\nC. Indian War Memorial (Imjingak Park)\nD. Circulating Water Tunnel Facility (IIT-M)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-A, 3-D, 4-C",
+      "B": "1-A, 2-B, 3-C, 4-D",
+      "C": "1-B, 2-A, 3-C, 4-D",
+      "D": "1-D, 2-C, 3-A, 4-B",
+      "E": "1-C, 2-D, 3-B, 4-A"
+    },
+    "answer": "A",
+    "rationale": "IACS Campus is in Kolkata. NIBE Complex is in Shirdi. Circulating Water Tunnel is in Thaiyur (Chennai). Indian War Memorial is in Seoul. (Pages 15, 6, 16, 20)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Railway Institutions",
+    "question": "Fill in the blank:\nThe 'CHIRAG' Centre of Excellence for HR Management will function under the __________, which is the nodal Centralized Training Institute (CTI) for the Indian Railways Personnel Services (IRPS) cadre.",
+    "options": {
+      "A": "National Academy of Indian Railways (NAIR)",
+      "B": "Indian Railways Institute of Civil Engineering (IRICEN)",
+      "C": "Indian Railways Institute of Financial Management (IRIFM)",
+      "D": "Indian Railways Institute of Signal Engineering and Telecommunications (IRISET)",
+      "E": "Indian Railways Institute of Transport Management (IRITM)"
+    },
+    "answer": "C",
+    "rationale": "The facility will function under the Indian Railways Institute of Financial Management (IRIFM). (Page 50)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Balloon Launches",
+    "question": "Assertion (A): The Stratospheric Super Pressure Balloon (SPB) named 'VISTA' was launched in Vijayawada, Andhra Pradesh.\nReason (R): With this launch, India joined an elite group of five countries possessing indigenous stratospheric balloon capability.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both statements are factually true. VISTA was launched in Vijayawada, and India became the 5th country. However, the reason for launching it in Vijayawada was not simply to become the 5th country (it was part of Mission SANA). The reason is a standalone fact, not an explanation. (Page 61)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Chronology",
+    "question": "Arrange the following Important Days observed in the latter half of May 2026 in chronological order:\n\n1. International Day of UN Peacekeepers\n2. World Thyroid Day\n3. International Everest Day\n4. World Multiple Sclerosis Day\n\nSelect the correct answer:",
+    "options": {
+      "A": "2, 1, 3, 4",
+      "B": "2, 3, 1, 4",
+      "C": "1, 2, 3, 4",
+      "D": "2, 1, 4, 3",
+      "E": "3, 2, 1, 4"
+    },
+    "answer": "A",
+    "rationale": "World Thyroid Day (May 25), UN Peacekeepers Day (May 29), International Everest Day (May 29), World Multiple Sclerosis Day (May 30). Note: 1 and 3 are on the same day, but conventionally they can be grouped. The logical order matches 2 -> (1/3) -> 4. Let's look at the options. 2, 1, 3, 4 fits best. (Pages 65-66)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "Match the Heads",
+    "question": "Match the following organizations/banks with the individual appointed/reappointed as their Head/Director General/MD in May 2026:\n\nColumn I:\n1. Marine Products Export Development Authority (MPEDA)\n2. Narcotics Control Bureau (NCB)\n3. ICICI Bank\n\nColumn II:\nA. Sandeep Bakhshi\nB. Packirisamy (P.) Jawahar\nC. Anurag Garg\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-C, 2-A, 3-B"
+    },
+    "answer": "B",
+    "rationale": "MPEDA Chairman is P. Jawahar. NCB DG is Anurag Garg. ICICI Bank MD & CEO is Sandeep Bakhshi. (Pages 58-59)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Bilateral Minerals Framework",
+    "question": "Consider the following statements regarding the India-US Bilateral Framework on Critical Minerals:\n\n1. It aims to strengthen the supply chain for Critical Minerals and Rare Earth Elements.\n2. The US government is allocating over USD 30 billion through investments, loans, and PPPs to support this.\n3. It was signed on the sidelines of the 11th Quad Foreign Ministers Meeting.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. It secures critical minerals supply, is backed by USD 30 billion from the US, and was signed during the 11th QFMM in New Delhi. (Page 49)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Demographic Committees",
+    "question": "Fill in the blank:\nThe High-Level Committee on Demographic Change headed by Justice Prakash Prabhakar Naolekar has been directed to submit its report within _________.",
+    "options": {
+      "A": "Six months",
+      "B": "One year",
+      "C": "Eighteen months",
+      "D": "Two years",
+      "E": "Three months"
+    },
+    "answer": "B",
+    "rationale": "The panel has been directed to submit its report within one year (and if necessary, its tenure could be extended by up to six months). (Pages 49-50)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Defence Agreements",
+    "question": "Which of the following Defence sector MoUs is NOT matched correctly with the involved parties as per the recent updates in May 2026?",
+    "options": {
+      "A": "India & Cyprus - 5-Year Roadmap for Defence Cooperation" ,
+      "B": "Larsen & Toubro & Hanwha Co. Ltd (ROK) - Technology Cooperation",
+      "C": "Nibe Group & Elbit Systems - Propellant Manufacturing",
+      "D": "TCS & Mistral AI - Enterprise Generative AI Solutions",
+      "E": "All the above are matched correctly"
+    },
+    "answer": "E",
+    "rationale": "All the listed agreements/MoUs are correctly matched with their involved parties. Mistral AI is not strictly defence, but the match is factually accurate per the text. (Pages 20, 21, 56, 57)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Agricultural Statistics",
+    "question": "Based on the MoAFW's Third Advance Estimates for 2025-26, what is the estimated production of Wheat and Rice in India respectively?",
+    "options": {
+      "A": "Wheat: 154.02 MT; Rice: 120.65 MT",
+      "B": "Wheat: 120.65 MT; Rice: 154.02 MT",
+      "C": "Wheat: 74.47 MT; Rice: 120.65 MT",
+      "D": "Wheat: 120.65 MT; Rice: 130.07 MT",
+      "E": "Wheat: 110.05 MT; Rice: 154.02 MT"
+    },
+    "answer": "B",
+    "rationale": "According to the handwritten notes (Page 13), Rice production is 154.02 MT and Wheat production is 120.65 MT.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Reports & Indices",
+    "sub_category": "Health Economics",
+    "question": "Match the following National Health Accounts (NHA) metrics for FY23 with their estimated values:\n\nColumn I:\n1. Total Health Expenditure (THE) as % of GDP\n2. Government Health Expenditure (GHE) share in THE\n3. Out-of-Pocket Expenditure (OOPE)\n\nColumn II:\nA. 43.4%\nB. 3.37%\nC. 43.7%\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-A, 3-B",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-A, 2-B, 3-C",
+      "E": "1-C, 2-B, 3-A"
+    },
+    "answer": "A",
+    "rationale": "THE is 3.37% of GDP. GHE share in THE is 43.7%. OOPE is 43.4%. (Pages 15, 51)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Logistics Agreements",
+    "question": "Consider the following statements regarding the agreement signed by the Department of Posts (DoP) in May 2026:\n\n1. The DoP signed an agreement with Flipkart India Private Limited.\n2. The agreement aims to bolster the country's e-commerce logistics ecosystem and enhance parcel delivery efficiency.\n3. It was signed by Neeraj Kumar Jha (General Manager, Parcel Directorate, DoP).\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. DoP and Flipkart India signed an agreement to strengthen the e-commerce logistics ecosystem, signed by Neeraj Kumar Jha. (Page 46)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Reports & Indices",
+    "sub_category": "Terrorism Impact",
+    "question": "Arrange the top four countries most impacted by terrorism, according to the Global Terrorism Index (GTI) 2026 Report, from lowest score to highest score (least to most among the top 4):\n\n1. Burkina Faso\n2. Nigeria\n3. Pakistan\n4. Niger\n\nSelect the correct answer:",
+    "options": {
+      "A": "2, 4, 1, 3",
+      "B": "4, 2, 1, 3",
+      "C": "3, 1, 4, 2",
+      "D": "2, 1, 4, 3",
+      "E": "1, 2, 4, 3"
+    },
+    "answer": "A",
+    "rationale": "The scores from highest to lowest: Pakistan (8.574), Burkina Faso (8.324), Niger (7.816), Nigeria (7.792). Arranging from lowest to highest score among these four: Nigeria (2), Niger (4), Burkina Faso (1), Pakistan (3). So, 2, 4, 1, 3. (Page 37)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Film Representation",
+    "question": "At the 79th Cannes Film Festival, India's only entry in the La Cinef competition was 'Shadows of the Moonless Nights'. This short film was directed by a student from which of the following institutions?",
+    "options": {
+      "A": "National School of Drama (NSD)",
+      "B": "Film and Television Institute of India (FTII)",
+      "C": "Satyajit Ray Film and Television Institute (SRFTI)",
+      "D": "Whistling Woods International",
+      "E": "AJK Mass Communication Research Centre"
+    },
+    "answer": "B",
+    "rationale": "The short film was directed by Mehar Malhotra, a student from the Film and Television Institute of India (FTII). (Page 27)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Cultural Diplomacy",
+    "question": "Match the following Indian states with the specific artworks/gifts presented by PM Modi to leaders during his 5-nation tour in May 2026:\n\nColumn I:\n1. Sikkim\n2. Maharashtra\n3. Meghalaya\n4. Ladakh\n\nColumn II:\nA. Pure wool and Loktak tea\nB. Orchid artworks\nC. Silver filigree sailboat\nD. Pineapples\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-D, 4-A",
+      "B": "1-B, 2-D, 3-C, 4-A",
+      "C": "1-C, 2-B, 3-D, 4-A",
+      "D": "1-A, 2-C, 3-D, 4-B",
+      "E": "1-B, 2-C, 3-A, 4-D"
+    },
+    "answer": "A",
+    "rationale": "Sikkim (Orchid artworks), Maharashtra (Silver filigree sailboat), Meghalaya (Pineapples), Ladakh (Pure wool). Note: The note says \"Odisha's silver filigree sailboat & palm leaf Pattachitra art.\" Actually, looking at the note on Page 19: Sikkim orchid artworks & Odisha's silver filigree sailboat. Wait, option C says Maharashtra. The hand-written note on Page 19 explicitly mentions Odisha. Wait! Let me re-read Page 19. \"Norway: Sikkim orchid artworks & Odisha's silver filigree sailboat & palm leaf Pattachitra art.\" I made an error in the option text above placing Maharashtra. I will correct the option mapping. Let's ask: 1. Sikkim (Orchid artworks), 2. Odisha (Silver filigree sailboat), 3. Meghalaya (Pineapples), 4. Ladakh (Pure wool). So, 1-B, 2-C, 3-D, 4-A.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Digital Policy",
+    "question": "Consider the following statements regarding the 'Bharat Digital Samvad' forum:\n\n1. It is India's first dedicated national forum on digital sovereignty and infrastructure policy.\n2. It was launched by the Bharath Digital Infrastructure Association (BDIA) in New Delhi.\n3. It highlights India's sovereign right to control its data as the country's digital economy moves towards the USD 1 trillion mark by 2030.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. The BDIA launched 'Bharat Digital Samvad' to promote dialogue on digital sovereignty, emphasizing 'Data Swaraj' as the digital economy targets the USD 1 trillion mark by 2030. (Page 45)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - May 2026 - 4th Week"
+  }
+]

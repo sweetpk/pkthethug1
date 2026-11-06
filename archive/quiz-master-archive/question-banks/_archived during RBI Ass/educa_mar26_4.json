@@ -1,0 +1,578 @@
+[
+  {
+    "category": "FM / Insurance",
+    "sub_category": "Accounting Standards",
+    "question": "Consider the following statements regarding the transition to the Ind AS 117 accounting framework in the insurance sector:\n\n1. It replaces the incurred-loss model with the Expected Credit Loss (ECL) methodology under Ind AS 109, requiring companies to record possible future losses on investments in advance.\n2. Under the 'Annual Cohort Principle', insurance policies issued in the same year must be grouped together and accounted for separately from policies issued in other years.\n3. The Expected Profit from a policy is recognized immediately as a lump sum upon the sale of the contract, rather than being deferred as a Contractual Service Margin (CSM).\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "2 only"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because under Ind AS 117, expected profit is NOT recognized immediately. It is recorded as the Contractual Service Margin (CSM) and is released gradually as the insurer provides insurance coverage over the policy period. (Reference: Page 123-125)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "FM / Banking System",
+    "sub_category": "EPFO Regulations",
+    "question": "Consider the following Assertion (A) and Reason (R) concerning the new Standard Operating Procedure (SOP) for exempted establishments under EPFO:\n\nAssertion (A): Under the new SOP, if an exempted establishment has inoperative or non-KYC provident fund accounts, the funds in such accounts cannot remain with the employer-managed PF trust indefinitely and must be transferred to the EPFO.\nReason (R): The Central Board of Trustees implemented this change to ensure that the entire balance, along with accumulated interest, is centrally managed to mitigate the risks associated with long-term unverified accounts in private trusts.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A",
+      "B": "Both A and R are true, but R is not the correct explanation of A",
+      "C": "A is true, but R is false",
+      "D": "A is false, but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "A",
+    "rationale": "Both statements are true. The new SOP explicitly prohibits employer-managed trusts from indefinitely holding funds of inoperative or non-KYC accounts. The underlying reasoning is to transfer the balance and accumulated interest to EPFO for centralized, secure management, mitigating the risk of unverified accounts. (Reference: Page 127)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "FM / Taxation",
+    "sub_category": "Income Tax Rules 2026",
+    "question": "Match the following financial transactions with their respective revised mandatory PAN reporting limits under the Income Tax Rules, 2026:\n\nColumn I (Transaction Type):\n1. Cash Deposits/Withdrawals\n2. Purchase of Motor Vehicles\n3. Immovable Property Transactions\n\nColumn II (New Limit Rule):\nA. Mandatory if transaction value exceeds Rs 20 lakh\nB. Mandatory for aggregate transactions \u2265 Rs 10 lakh in a financial year\nC. Mandatory if price exceeds Rs 5 lakh\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-C, 3-B",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "B",
+    "rationale": "Under the 2026 rules: Cash Deposits/Withdrawals require PAN if aggregate \u2265 Rs 10 lakh in a FY (1-B). Purchase of Motor Vehicles requires PAN if the price exceeds Rs 5 lakh (2-C). Immovable Property Transactions require PAN if value exceeds Rs 20 lakh (3-A). (Reference: Page 132)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "FM / International Taxation",
+    "sub_category": "OECD Pillar Two",
+    "question": "Consider the following statements regarding the alignment of India's accounting standards with the OECD Pillar Two Model Rules:\n\n1. The MCA amended Accounting Standard (AS) 22 to exempt companies from recognizing deferred tax assets/liabilities related to Pillar Two income taxes.\n2. The rules establish a global minimum corporate tax rate of 15% to prevent Base Erosion and Profit Shifting (BEPS).\n3. Small and medium-sized companies are strictly mandated to disclose their qualitative and quantitative exposure to Pillar Two taxes.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because small and medium-sized companies are explicitly *exempted* from these disclosure requirements regarding exposure to Pillar Two taxes. (Reference: Page 133)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "FM / Financial Markets",
+    "sub_category": "Unclaimed Assets",
+    "question": "Match the following digital platforms/portals with the regulatory body that introduced them to help citizens reclaim unclaimed financial assets:\n\nColumn I (Platform):\n1. UDGAM (Unclaimed Deposits - Gateway to Access Information)\n2. Bima Bharosa\n3. MITRA platform\n\nColumn II (Regulatory Body):\nA. SEBI\nB. RBI\nC. IRDAI\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-A, 2-C, 3-B",
+      "E": "1-C, 2-A, 3-B"
+    },
+    "answer": "A",
+    "rationale": "UDGAM is developed by the RBI for unclaimed bank deposits. Bima Bharosa is a digital platform introduced by IRDAI to trace unclaimed insurance proceeds. MITRA platform was developed by SEBI for tracing mutual fund amounts. (Reference: Page 136)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "FM / Taxation",
+    "sub_category": "Finance Bill 2026",
+    "question": "Which of the following is NOT a key amendment introduced in the Finance Bill 2026 regarding corporate taxation and recovery?",
+    "options": {
+      "A": "Introduction of a 12% surcharge on additional income tax on buyback gains, significantly impacting promoters.",
+      "B": "Shifting the taxation of buyback proceeds to capital gains in the hands of shareholders, instead of dividend income.",
+      "C": "Increasing the turnover threshold for startup tax holiday eligibility from \u20b9100 crore to \u20b9300 crore.",
+      "D": "Expanding the scope of the additional tax on share buybacks to include both domestic and foreign companies operating in India.",
+      "E": "Removing coercive recovery measures such as arrest and detention for tax arrears."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect. A key amendment in the Finance Bill 2026 explicitly clarifies that the additional tax on share buybacks will apply *only* to buybacks undertaken under Section 68 of the Companies Act, 2013, effectively limiting its scope to *domestic companies* only, exempting foreign buybacks. All other options are valid amendments. (Reference: Page 137)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "FM / Corporate Governance",
+    "sub_category": "Corporate Laws Amendment 2026",
+    "question": "Arrange the following financial thresholds revised under the Corporate Laws (Amendment) Bill 2026 in descending order of their monetary value:\n\n1. The revised maximum paid-up capital limit to be classified as a \"Small Company\".\n2. The revised maximum turnover limit to be classified as a \"Small Company\".\n3. The revised net profit threshold triggering mandatory Corporate Social Responsibility (CSR) compliance.\n\nSelect the correct answer:",
+    "options": {
+      "A": "2, 1, 3",
+      "B": "2, 3, 1",
+      "C": "1, 2, 3",
+      "D": "3, 2, 1",
+      "E": "3, 1, 2"
+    },
+    "answer": "A",
+    "rationale": "The revised thresholds are:\nTurnover limit for Small Company = \u20b9200 crore (2)\nPaid-up capital limit for Small Company = \u20b920 crore (1)\nNet profit threshold for CSR = \u20b910 crore (3)\nDescending order: 200 > 20 > 10. Thus, 2, 1, 3 is correct. (Reference: Page 138)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / Environment",
+    "sub_category": "Carbon Credit",
+    "question": "Consider the following statements regarding the Carbon Credit Trading Scheme (CCTS):\n\n1. The scheme is regulated by the Central Electricity Regulatory Commission (CERC).\n2. Under the compliance mechanism, entities performing better than their GHG emission-intensity targets receive Carbon Credit Certificates (CCCs).\n3. The scheme is administered solely by the Ministry of Environment, Forest and Climate Change without the involvement of the Ministry of Power.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "2 only"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the Carbon Credit Trading Scheme (CCTS) is an initiative of the Ministry of Power, and its implementing agency is the Bureau of Energy Efficiency (BEE). (Reference: Page 88)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / Demographics",
+    "sub_category": "Biodiversity Targets",
+    "question": "India recently submitted its Seventh National Report to the Convention on Biological Diversity (CBD) ahead of the deadline. This report is based on ______ national indicators mapped against ______ National Biodiversity Targets (NBTs), which are aligned with the Kunming-Montreal Global Biodiversity Framework.",
+    "options": {
+      "A": "130; 21",
+      "B": "142; 23",
+      "C": "120; 20",
+      "D": "142; 15",
+      "E": "150; 25"
+    },
+    "answer": "B",
+    "rationale": "The Seventh National Report is based on 142 national indicators mapped against 23 National Biodiversity Targets (NBTs). All 23 targets are \"on track to achieve\" for India. (Reference: Page 57-58)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "FM / Taxation",
+    "sub_category": "GST Rationalisation",
+    "question": "The government has undertaken GST rationalisation to accelerate India's transition towards a sustainable economy. Match the green products/services with their revised GST rates:\n\nColumn I:\n1. Biodegradable Products (e.g., bags)\n2. Green Mobility (Buses and Commercial goods vehicles)\n3. Waste Management (CETPs services)\n\nColumn II:\nA. Reduced from 28% to 18%\nB. Reduced from 12% to 5%\nC. Reduced from 18% to 5%\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-A, 2-B, 3-C",
+      "E": "1-B, 2-A, 3-C"
+    },
+    "answer": "A",
+    "rationale": "GST on Biodegradable Products was reduced from 18% to 5% (1-C). GST on Green Mobility (Buses/CVs) was reduced from 28% to 18% (2-A). GST on Waste Management (Common Effluent Treatment Plants) was reduced from 12% to 5% (3-B). (Reference: Page 58-59)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / Employment",
+    "sub_category": "Skilling Initiatives",
+    "question": "Consider the following statements regarding the SOAR (Skilling for AI Readiness) Programme:\n\n1. It is a national initiative designed as an NSQF-aligned learning pathway delivered via the Skill India Digital Hub (SIDH) platform.\n2. The Union Budget 2025-26 allocated \u20b9500 crore to establish a Centre of Excellence in Artificial Intelligence for education alongside this program.\n3. The programme focuses exclusively on training IT professionals and excludes foundational AI awareness for general learners and educators.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the aim of the SOAR programme is to build \"foundational AI awareness and skills\" among learners, educators, and citizens, making it an inclusive initiative for all, not just IT professionals. (Reference: Page 59-60)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / Insurance",
+    "sub_category": "Digital Insurance",
+    "question": "Consider the following Assertion (A) and Reason (R):\n\nAssertion (A): The newly launched Bima Sugam platform operates on a zero-commission model to reduce costs and improve transparency in the insurance sector.\nReason (R): Bima Sugam acts as a decentralized physical distribution network that relies heavily on Bima Vahaak agents to collect cash premiums without leveraging digital identities.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A",
+      "B": "Both A and R are true, but R is not the correct explanation of A",
+      "C": "A is true, but R is false",
+      "D": "A is false, but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true as Bima Sugam utilizes a zero-commission model to lower costs. Reason (R) is false because Bima Sugam is a unified *digital* platform (often called the \"UPI of insurance\") that provides end-to-end digital services and a unique digital identity (Bima Sugam ID), not a physical cash-based decentralized network. Bima Vahaak is a separate component of the Bima Trinity. (Reference: Page 134-135)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / Governance",
+    "sub_category": "FCRA Amendments",
+    "question": "The Foreign Contribution (Regulation) Amendment Bill, 2026 introduces several strict provisions for foreign-funded organizations. Which of the following statements regarding the Bill is NOT correct?",
+    "options": {
+      "A": "It proposes the creation of a 'designated authority' to manage and dispose of assets of NGOs whose FCRA registration is cancelled or surrendered.",
+      "B": "It introduces a provision for automatic expiry of FCRA registration if the organization fails to apply for renewal on time.",
+      "C": "It increases the penalty for illegally accepting or assisting in the acceptance of foreign contributions from one year to five years of imprisonment.",
+      "D": "It provides for provisional and permanent vesting of assets with the authority after cancellation or cessation of a licence.",
+      "E": "It applies to situations where a renewal application is rejected by the government, leading to automatic expiry."
+    },
+    "answer": "C",
+    "rationale": "Option C is incorrect because the Bill proposes *reducing* the penalty for illegally accepting or assisting in the acceptance of foreign contributions from five years to one year of imprisonment, not increasing it. All other options are correct features of the Bill. (Reference: Page 136-137)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / International Economics",
+    "sub_category": "FATF",
+    "question": "The Financial Action Task Force (FATF) recently updated its monitoring lists. Match the following countries with their current status under FATF classifications:\n\nColumn I:\n1. Kuwait\n2. Iran\n3. Democratic Republic of the Congo\n4. Myanmar\n\nColumn II:\nA. Grey List (Increased Monitoring)\nB. Black List (High-Risk Jurisdictions)\n\nSelect the correct combination:",
+    "options": {
+      "A": "1-A, 2-B, 3-A, 4-B",
+      "B": "1-B, 2-A, 3-B, 4-A",
+      "C": "1-A, 2-A, 3-B, 4-B",
+      "D": "1-B, 2-B, 3-A, 4-A",
+      "E": "1-A, 2-B, 3-B, 4-A"
+    },
+    "answer": "A",
+    "rationale": "Kuwait was recently added to the Grey List (A). Iran is on the Black List (B). Democratic Republic of the Congo is on the Grey List (A). Myanmar is on the Black List (B). Thus, the matching is 1-A, 2-B, 3-A, 4-B. (Reference: Page 81-82)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / Infrastructure",
+    "sub_category": "Special Economic Zones",
+    "question": "Consider the following statements regarding the mandate of the 17-member committee constituted for Special Economic Zones (SEZ) policy reforms:\n\n1. It aims to create a modernised SEZ 2.0 policy framework aligned with current global trade and investment dynamics.\n2. It will examine issues related to Domestic Tariff Area (DTA) sales, incentives, and compliance requirements.\n3. Under the current SEZ framework, SEZs are treated as domestic territory for the purpose of trade operations and are subject to standard customs and taxation rules.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because a Special Economic Zone (SEZ) is a duty-free enclave treated as *foreign territory* (not domestic) for trade operations, tariffs, and duties, functioning outside normal customs rules. (Reference: Page 84)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "FM / Infrastructure",
+    "sub_category": "InvITs",
+    "question": "The Raajmarg Infra Investment Trust (InvIT) was recently granted in-principle approval by SEBI. It has secured rights to ______ operational highway assets across Jharkhand, Tamil Nadu, Andhra Pradesh, and Karnataka, with a total concession value of around \u20b9______ crore.",
+    "options": {
+      "A": "three; 6,000",
+      "B": "five; 9,500",
+      "C": "seven; 12,000",
+      "D": "five; 6,000",
+      "E": "three; 9,500"
+    },
+    "answer": "B",
+    "rationale": "The Raajmarg Infra InvIT has secured rights to five operational highway assets across the mentioned states, with a total concession value of around \u20b99,500 crore. The acquisition is funded through a mix of equity (\u20b96,000 crore) and debt. (Reference: Page 86)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "FM / Public Finance",
+    "sub_category": "Supplementary Demands",
+    "question": "In the Supplementary Demands for Grants for FY26, the Finance Ministry proposed the creation of a new fund to provide fiscal flexibility against global economic headwinds. What is the proposed total corpus of this fund, and which department will act as its implementing agency?",
+    "options": {
+      "A": "\u20b950,000 crore; Department of Revenue (DoR)",
+      "B": "\u20b91 lakh crore; Department of Economic Affairs (DEA)",
+      "C": "\u20b92.81 trillion; Department of Expenditure (DoE)",
+      "D": "\u20b91 lakh crore; Department of Financial Services (DFS)",
+      "E": "\u20b957,381 crore; Department of Economic Affairs (DEA)"
+    },
+    "answer": "B",
+    "rationale": "The proposed fund is the 'Economic Stabilization Fund'. Its implementing agency is the Department of Economic Affairs (DEA), and the total proposed corpus is \u20b91 lakh crore (with an immediate allocation of \u20b957,381.84 crore under the supplementary budget). (Reference: Page 135)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / Social Issues",
+    "sub_category": "Transgender Rights",
+    "question": "Consider the following statements regarding the Transgender Persons (Protection of Rights) Amendment Bill, 2026:\n\n1. The definition of \"transgender person\" has been broadened to explicitly include gender-fluid persons based solely on self-perceived identity.\n2. The Bill introduces mandatory medical verification through a Medical Board for gender identity certification.\n3. Hospitals are now required to report gender-affirming surgeries to authorities to ensure compliance and track demographic changes.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "2 only"
+    },
+    "answer": "B",
+    "rationale": "Statements 2 and 3 are correct. Statement 1 is incorrect because the amendment *narrowed* the definition, specifically excluding categories such as gender-fluid persons and those based solely on self-perceived identity, limiting recognition primarily to certain socio-cultural identities and intersex persons. (Reference: Page 90-91)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / Social Issues",
+    "sub_category": "Gender Equality",
+    "question": "Consider the following Assertion (A) and Reason (R):\n\nAssertion (A): The Supreme Court recently struck down the age-based maternity leave restriction for adoptive mothers under the Social Security Code, 2020.\nReason (R): The Court ruled that adoption is a facet of reproductive autonomy under Article 21, allowing all adoptive mothers to qualify for 12 weeks of leave regardless of the adopted child's age.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A",
+      "B": "Both A and R are true, but R is not the correct explanation of A",
+      "C": "A is true, but R is false",
+      "D": "A is false, but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "A",
+    "rationale": "Both Assertion and Reason are true, and R is the correct explanation for A. The Court struck down the previous limit (which restricted benefits to adoptions of children under three months old) by recognizing adoption as a part of reproductive autonomy under Article 21, ensuring 12 weeks of leave irrespective of age. (Reference: Page 91)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / International Economics",
+    "sub_category": "Raisina Dialogue",
+    "question": "The 11th edition of the Raisina Dialogue was held in New Delhi with the theme \"Sa\u1e41sk\u0101ra \u2013 Assertion, Accommodation, Advancement.\" Which of the following organizations jointly hosts this flagship conference with the Ministry of External Affairs (MEA)?",
+    "options": {
+      "A": "NITI Aayog",
+      "B": "Vivekananda International Foundation (VIF)",
+      "C": "Observer Research Foundation (ORF)",
+      "D": "Institute for Defence Studies and Analyses (IDSA)",
+      "E": "Indian Council of World Affairs (ICWA)"
+    },
+    "answer": "C",
+    "rationale": "The Raisina Dialogue is India's flagship conference on geopolitics and geo-economics, organized annually by the Observer Research Foundation (ORF) in partnership with the Ministry of External Affairs (MEA). (Reference: Page 95-96)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / Measurement of Growth",
+    "sub_category": "IIP",
+    "question": "Arrange the following sectors in descending order of their growth rate recorded in the Index of Industrial Production (IIP) data for January 2026:\n\n1. Manufacturing\n2. Electricity\n3. Mining\n\nSelect the correct answer:",
+    "options": {
+      "A": "1, 2, 3",
+      "B": "2, 1, 3",
+      "C": "3, 2, 1",
+      "D": "2, 3, 1",
+      "E": "1, 3, 2"
+    },
+    "answer": "B",
+    "rationale": "According to the January 2026 IIP data, the sector-wise growth rates are: Electricity (5.1%), Manufacturing (4.8%), and Mining (4.3%). Therefore, the descending order is 2, 1, 3. (Reference: Page 101)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "FM / International Finance",
+    "sub_category": "Bilateral Swap Arrangement",
+    "question": "Consider the following statements regarding the Bilateral Swap Arrangement (BSA) between India and Japan:\n\n1. India and Japan renewed their US$ 75 billion BSA, which serves as a financial backstop during periods of external stress.\n2. The arrangement is a one-way framework where only India can swap the Indian Rupee for the US dollar to stabilize its foreign exchange reserves.\n3. The third Amendment and Restatement Agreement of the BSA was signed by the Reserve Bank of India and the Bank of Japan, acting as an agent for Japan's Ministry of Finance.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "C",
+    "rationale": "Statements 1 and 3 are correct. Statement 2 is incorrect because the BSA is a *two-way* currency swap framework, meaning *both* authorities can swap their local currencies for the US dollar. (Reference: Page 103)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / Industry",
+    "sub_category": "Textile Exports",
+    "question": "According to data from the NIRYAT portal, which state became India's top textile exporter, contributing 21.84% to the total textile exports?",
+    "options": {
+      "A": "Gujarat",
+      "B": "Maharashtra",
+      "C": "Tamil Nadu",
+      "D": "Karnataka",
+      "E": "Uttar Pradesh"
+    },
+    "answer": "C",
+    "rationale": "Tamil Nadu became India's top textile exporter, contributing 21.84% of total exports. It is followed by Gujarat (2nd) and Maharashtra (3rd). Major hubs in TN include Tiruppur, Coimbatore, Erode, and Karur. (Reference: Page 103)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "FM / Financial Markets",
+    "sub_category": "SEBI Regulations",
+    "question": "Consider the following Assertion (A) and Reason (R) regarding the recent SEBI framework for Custodians:\n\nAssertion (A): SEBI has issued a new framework allowing all custodians, including those backed by banks, to offer unregulated financial services outside SEBI's regulatory oversight through a separate Strategic Business Unit (SBU).\nReason (R): The Custodians and DDPs Standards Setting Forum (CDSSF) is responsible for publishing a list of specific financial services that custodians are permitted to undertake outside SEBI's purview.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A",
+      "B": "Both A and R are true, but R is not the correct explanation of A",
+      "C": "A is true, but R is false",
+      "D": "A is false, but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "D",
+    "rationale": "Assertion (A) is false because SEBI explicitly *excluded bank-backed custodians* from the permission to offer unregulated financial services. Reason (R) is factually true, as the CDSSF is the body responsible for publishing the permitted list. (Reference: Page 111-112)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "FM / Secondary Market",
+    "sub_category": "Investor Protection",
+    "question": "Which of the following statements is INCORRECT regarding the 'Debit Freeze' facility for Mutual Fund folios introduced by SEBI?",
+    "options": {
+      "A": "It is a voluntary security feature that blocks any debit transactions, including redemptions and transfers of units, from a mutual fund folio.",
+      "B": "Once activated, the freeze automatically expires after 30 days to ensure liquidity for the investor.",
+      "C": "The facility is available for both Demat mutual fund holdings and Statement of Account (SoA) folios.",
+      "D": "It aims to strengthen the digital security of mutual fund investments and reduce the risk of cyber fraud.",
+      "E": "It was initially implemented through the MF Central platform, developed jointly by CAMS and KFin Technologies."
+    },
+    "answer": "B",
+    "rationale": "Option B is incorrect. Once activated, no redemption, transfer, or debit of units will be allowed *until the investor explicitly unlocks the folio*. There is no automatic 30-day expiration mentioned. All other statements are correct. (Reference: Page 113)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "FM / Financial Markets",
+    "sub_category": "Global Access Platform",
+    "question": "Consider the following statements regarding the 'Global Access' platform launched by NSE IX:\n\n1. It allows Indian retail investors to directly trade in international shares and ETFs through a secure digital KYC process.\n2. The platform permits investors to buy fractional shares of high-priced international stocks.\n3. It allows trading in cryptocurrencies and derivatives to diversify the portfolio of domestic investors in foreign markets.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the Global Access platform explicitly does *not* permit trading in cryptocurrencies, Bitcoin, or derivatives. (Reference: Page 110-111)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / Governance",
+    "sub_category": "Tax Awareness",
+    "question": "The Finance Minister recently launched 'PRARAMBH 2026', a nationwide campaign to familiarise citizens with the Income Tax Act, 2025. The campaign is guided by the M.A.N.A.V. principle. In this context, what does the letter 'N' stand for in M.A.N.A.V.?",
+    "options": {
+      "A": "National Security",
+      "B": "New Digital Era",
+      "C": "National Sovereignty",
+      "D": "Nurturing Compliance",
+      "E": "Non-adversarial Administration"
+    },
+    "answer": "C",
+    "rationale": "M.A.N.A.V. stands for: Moral and Ethical Systems, Accountable Governance, National Sovereignty, Accessible and Inclusive AI, Valid and Legitimate Systems. Thus, 'N' stands for National Sovereignty. (Reference: Page 108)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "FM / Secondary Market",
+    "sub_category": "Market Reforms",
+    "question": "Match the following SEBI Multi-Sector Market Reforms with their respective impact areas:\n\nColumn I (Sector/Entity):\n1. Alternative Investment Funds (AIFs)\n2. Foreign Portfolio Investors (FPIs)\n3. Social Impact Funds\n\nColumn II (Reform/Impact):\nA. Minimum investment threshold reduced from \u20b92 lakh to \u20b91,000 to encourage retail participation\nB. Introduction of an \"inoperative fund\" status with reduced compliance requirements\nC. Permitted net settlement of trades in the cash market to reduce transaction costs\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-C, 2-B, 3-A"
+    },
+    "answer": "B",
+    "rationale": "For AIFs, the \"inoperative fund\" status was introduced (1-B). For FPIs, net settlement in the cash market was permitted (2-C). For Social Impact Funds, the minimum threshold was slashed from \u20b92 lakh to \u20b91,000 (3-A). (Reference: Page 118)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "FM / Fintech",
+    "sub_category": "Payment Aggregators",
+    "question": "Consider the following statements regarding the Payment Aggregator (PA) framework under RBI:\n\n1. A Payment Aggregator acts as an intermediary that enables merchants to accept digital payments without creating their own separate payment integration system.\n2. CRED recently received final approval from the RBI to operate as a Payment Aggregator.\n3. PAs are exempt from data localisation norms as they only process transactions and do not directly hold customer funds post-settlement.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because Payment Aggregators strictly require RBI authorization and compliance with security, governance, and *data localisation norms*. (Reference: Page 119-120)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "FM / Banking",
+    "sub_category": "Digital Payments",
+    "question": "The Parliamentary Standing Committee recently highlighted concerns over the absence of MDR in the UPI ecosystem. Which of the following statements is true regarding MDR?",
+    "options": {
+      "A": "MDR stands for Maximum Discount Rate and is charged to the customer for executing high-value UPI transactions.",
+      "B": "Since 2020, MDR is currently set at zero on all UPI transactions to promote digital payments, placing financial pressure on banks and fintechs.",
+      "C": "The government subsidizes 100% of the operational costs for UPI transactions, ensuring banks face no financial burden from zero MDR.",
+      "D": "The committee recommended replacing MDR entirely with a flat membership fee for all retail users.",
+      "E": "Zero MDR applies exclusively to credit card transactions on the UPI network."
+    },
+    "answer": "B",
+    "rationale": "MDR (Merchant Discount Rate) has been zero on UPI transactions since 2020. The committee highlighted that zero MDR puts financial pressure on the ecosystem because government incentives cover only about 11% of actual operational costs, not 100%. (Reference: Page 120)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / Demographics",
+    "sub_category": "Digital Initiatives",
+    "question": "Match the following digital platforms with their specific functions as utilized in India's digital ecosystem:\n\nColumn I:\n1. NIRYAT Portal\n2. SATHEE App\n3. Gruh Sugam Portal\n\nColumn II:\nA. Simplifies access to home loans for Defence, paramilitary, and government personnel\nB. Provides free digital support for students preparing for competitive exams like JEE and NEET\nC. Serves as a one-stop platform for yearly analysis and information related to India's foreign trade\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-B, 3-C",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-B, 2-C, 3-A",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "B",
+    "rationale": "NIRYAT Portal provides foreign trade analysis (1-C). SATHEE App provides free competitive exam prep (2-B). Gruh Sugam Portal, launched by NHB, simplifies home loans for defence/government personnel (3-A). (Reference: Page 87, 104, 119)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "FM / Financial Markets",
+    "sub_category": "Compliance & Audits",
+    "question": "Consider the following statements regarding the annual compliance audit framework for Investment Advisers and Research Analysts:\n\n1. SEBI has expanded the eligible auditor pool to include cost accountants, joining company secretaries and chartered accountants.\n2. Audits under this framework must be finalized within six months of the closing of each financial year.\n3. Entities are strictly prohibited from publishing their audit status on their website to maintain market confidentiality.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because SEBI explicitly *requires* entities to publish the audit status and any necessary actions on their website and share the final report with clients, promoting transparency rather than confidentiality. (Reference: Page 117)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / Measurement of Growth",
+    "sub_category": "Inflation Indices",
+    "question": "Arrange the following three major groups of the Wholesale Price Index (WPI) in ascending order of their designated weightage:\n\n1. Manufactured Products\n2. Primary Articles\n3. Fuel & Power\n\nSelect the correct answer:",
+    "options": {
+      "A": "3, 2, 1",
+      "B": "2, 3, 1",
+      "C": "1, 2, 3",
+      "D": "3, 1, 2",
+      "E": "2, 1, 3"
+    },
+    "answer": "A",
+    "rationale": "The weightages in the WPI index are: Fuel & Power (13.15%), Primary Articles (22.62%), and Manufactured Products (64.23%). Therefore, the ascending order is 3, 2, 1. (Reference: Page 81)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "ESI / Health",
+    "sub_category": "Disease Elimination",
+    "question": "The TB Mukt Bharat App was recently launched to strengthen TB elimination efforts. Which of the following is NOT a feature of this newly launched app?",
+    "options": {
+      "A": "It integrates an AI-based chatbot named 'Khushi' to provide information on symptoms and nutrition.",
+      "B": "It supports tracking and verification of nutrition kit distribution with geo-tagged evidence.",
+      "C": "It is implemented by the National Tuberculosis Elimination Programme (NTEP).",
+      "D": "It offers multilingual support in 12 languages via text and voice-enabled chat.",
+      "E": "It mandates the linking of Aadhaar for every TB patient to receive direct cash transfers for private treatment."
+    },
+    "answer": "E",
+    "rationale": "Option E is incorrect. While the app features the 'Khushi' chatbot, geo-tagged nutrition kit tracking, and 12-language support under NTEP, there is no mention of mandating Aadhaar for direct cash transfers for private treatment in this specific context. (Reference: Page 50)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "National / Defense",
+    "sub_category": "Naval Operations",
+    "question": "Consider the following statements regarding the Indian Ocean Naval Symposium (IONS):\n\n1. It is a voluntary, multilateral initiative launched by the Indian Navy in 2008.\n2. The forum consists of 35 members, including 25 member nations and 10 observer nations.\n3. India has assumed the IONS Chairmanship for the 2026\u20132028 cycle after a gap of sixteen years.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. IONS was launched in 2008, has 35 total members (25 members + 10 observers), and India assumed the chairmanship for 2026-2028 after 16 years, hosting the IMEX TTX 2026. (Reference: Page 19)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "CurrentTap March 2026"
+  },
+  {
+    "category": "National / Books & Authors",
+    "sub_category": "Prizes",
+    "question": "Match the following prominent figures with their respective awards/recognitions recently in news:\n\nColumn I:\n1. Nita Ambani\n2. William Dalrymple\n3. Amol Palekar\n\nColumn II:\nA. 2026 Mark Lynton History Prize\nB. KISS Humanitarian Award 2025\nC. 2026 META Lifetime Achievement Award\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-B, 2-A, 3-C",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-C, 2-B, 3-A"
+    },
+    "answer": "B",
+    "rationale": "Nita Ambani received the KISS Humanitarian Award 2025 (1-B). William Dalrymple was awarded the 2026 Mark Lynton History Prize for his book 'The Golden Road' (2-A). Amol Palekar received the 2026 META Lifetime Achievement Award (3-C). (Reference: Page 39-40)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "CurrentTap March 2026"
+  }
+]

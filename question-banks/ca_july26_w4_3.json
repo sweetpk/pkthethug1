@@ -1,0 +1,754 @@
+[
+  {
+    "category": "Science & Technology",
+    "sub_category": "Technology Transfer",
+    "question": "In July 2026, CSIR-CSIO transferred four indigenous technologies to Pump Academy Private Limited and BEL. Match the following acronyms of these technologies with their correct expanded forms:\n\nColumn I:\n1. MSCOPE\n2. PU-MPPM\n3. IPQA\n4. HUD\n\nColumn II:\nA. i-Power Quality Analyser\nB. Head-Up Display\nC. Induction Motor Stethoscope\nD. Portable & Universal Motor-cum-Pump Performance Monitor\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-D, 3-A, 4-B",
+      "B": "1-D, 2-C, 3-B, 4-A",
+      "C": "1-C, 2-A, 3-D, 4-B",
+      "D": "1-A, 2-D, 3-B, 4-C",
+      "E": "1-B, 2-C, 3-A, 4-D"
+    },
+    "answer": "A",
+    "rationale": "As per the CSIR transfer details (Page 15), MSCOPE stands for Induction Motor Stethoscope (1-C), PU-MPPM stands for Portable & Universal Motor-cum-Pump Performance Monitor (2-D), IPQA is i-Power Quality Analyser (3-A), and HUD is Head-Up Display (4-B).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Industry Directives",
+    "question": "Consider the following statements regarding the Task Force announced by Union Minister Piyush Goyal to support India's Toy Sector:\n\n1. The task force aims to achieve a 10% share in the global toy market by 2030.\n2. The announcement was made during the stakeholder meet titled 'Team Up for Toys' organized by DPIIT.\n3. The current Indian toy ecosystem comprises over 21,000 MSMEs, 770 startups, and 50 toy clusters.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 3",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "B",
+    "rationale": "Statement 1 is incorrect because the target is to achieve a 5% global toy market share by 2032, not 10% by 2030. Statements 2 and 3 are correct (Page 22 & 81-82).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Cyber Security",
+    "question": "Arrange the following States/UTs in ascending order based on the number of e-Zero FIRs registered against cyber financial fraud since their system rollout in 2025/2026, according to the MHA data:\n\n1. Goa\n2. Maharashtra\n3. Uttarakhand\n4. Assam\n\nSelect the correct answer:",
+    "options": {
+      "A": "2 - 4 - 1 - 3",
+      "B": "4 - 2 - 1 - 3",
+      "C": "2 - 1 - 4 - 3",
+      "D": "3 - 1 - 4 - 2",
+      "E": "4 - 1 - 2 - 3"
+    },
+    "answer": "A",
+    "rationale": "Based on the MHA data (Page 25 & 82), the figures are: Maharashtra (131), Assam (223), Goa (446), Uttarakhand (552). Ascending order: Maharashtra (2) -> Assam (4) -> Goa (1) -> Uttarakhand (3).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Mathematical Honors",
+    "question": "Match the winners of the 2026 Fields Medal with their respective groundbreaking contributions recognized by the International Mathematical Union (IMU):\n\nColumn I:\n1. John Pardon\n2. Yu Deng\n3. Jacob Tsimerman\n4. Hong Wang\n\nColumn II:\nA. Proving the André-Oort conjecture for Siegel modular varieties\nB. Solving the century-old Kakeya conjecture\nC. Major contributions to symplectic geometry and topology\nD. Groundbreaking work on partial differential equations\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-D, 3-A, 4-B",
+      "B": "1-D, 2-C, 3-B, 4-A",
+      "C": "1-C, 2-A, 3-D, 4-B",
+      "D": "1-B, 2-D, 3-C, 4-A",
+      "E": "1-A, 2-B, 3-C, 4-D"
+    },
+    "answer": "A",
+    "rationale": "John Pardon: Symplectic geometry (1-C). Yu Deng: Partial differential equations (2-D). Jacob Tsimerman: André-Oort conjecture (3-A). Hong Wang: Kakeya conjecture (4-B). (Page 49).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "BRICS Engagements",
+    "question": "Assertion (A): The 2nd BRICS Science Academies Forum 2026 hosted by INSA focused entirely on finalizing a common framework for traditional and indigenous knowledge systems.\nReason (R): The delegates discussed the '3Cs' (Collective, Collaborative, and Context-sensitive) approaches to Artificial Intelligence (AI) addressing 5 priority areas.\n\nSelect the most appropriate option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A",
+      "B": "Both A and R are true, but R is not the explanation of A",
+      "C": "A is true, but R is false",
+      "D": "A is false, but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "D",
+    "rationale": "Assertion (A) is false because the 2nd BRICS Science Academies Forum focused on 'Harnessing Artificial Intelligence for Sustainable Development' and identified 5 AI priority areas, not traditional knowledge systems (which was the focus of the BRICS Network University meet). Reason (R) is true (Page 17 & 80).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Awards & Themes",
+    "question": "The India Mobile Congress (IMC) 2026 is built around four central themes. Which of the following is NOT one of the 'Pillars' unveiled for IMC 2026?",
+    "options": {
+      "A": "Srishti",
+      "B": "Suraksha",
+      "C": "Sashakt",
+      "D": "Samriddhi",
+      "E": "Samvardhan"
+    },
+    "answer": "D",
+    "rationale": "The four themes (pillars) of IMC 2026 are Srishti (Building the Future), Suraksha (Strengthening secure ecosystems), Sashakt (Expanding digital access), and Samvardhan (Driving investment). 'Samriddhi' is not one of them (Page 48).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Fields Medal History",
+    "question": "The Fields Medal, often termed the 'Nobel Prize of Mathematics', was established in ________. Each recipient receives a gold medal featuring ________ and a cash prize of ________.",
+    "options": {
+      "A": "1936 ; Archimedes ; Canadian Dollar 15,000",
+      "B": "1924 ; Pythagoras ; US Dollar 15,000",
+      "C": "1982 ; Euclid ; Canadian Dollar 10,000",
+      "D": "1936 ; Archimedes ; US Dollar 15,000",
+      "E": "1954 ; Carl Friedrich Gauss ; Euro 15,000"
+    },
+    "answer": "A",
+    "rationale": "The Fields Medal was established in 1936. Each recipient receives Canadian Dollar 15,000 (about USD 10,600) and a gold medal featuring Archimedes (Page 49).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Report Publications",
+    "question": "The UN SOFI Report 2026 ('The State of Food Security and Nutrition in the World') is jointly prepared by 5 specialized agencies of the UN. Which of the following is NOT one of those agencies?",
+    "options": {
+      "A": "Food and Agriculture Organization (FAO)",
+      "B": "International Fund for Agricultural Development (IFAD)",
+      "C": "United Nations Children's Fund (UNICEF)",
+      "D": "United Nations Development Programme (UNDP)",
+      "E": "World Health Organization (WHO)"
+    },
+    "answer": "D",
+    "rationale": "The SOFI report is prepared by FAO, IFAD, UNICEF, WFP (World Food Programme), and WHO. UNDP is not one of the 5 agencies (Page 30 & 84).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Presidential Visits",
+    "question": "Consider the following statements regarding President Droupadi Murmu's state visit to North Macedonia in July 2026:\n\n1. It marked the first-ever visit by an Indian President to North Macedonia.\n2. She held bilateral talks with President Gordana Siljanovska-Davkova and Prime Minister Hristijan Mickoski.\n3. She unveiled a bust of Mahatma Gandhi at the Museum of the City of Skopje.\n4. She paid homage at the Memorial of Mother Teresa and visited the UNESCO World Heritage Site, Lake Ohrid.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2, and 3",
+      "B": "2, 3, and 4",
+      "C": "1, 3, and 4",
+      "D": "1 and 2 only",
+      "E": "All of the above"
+    },
+    "answer": "E",
+    "rationale": "All statements accurately reflect the events of President Murmu's state visit to North Macedonia as detailed in the document (Page 33 & 85).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Maritime Workforce",
+    "question": "Based on the BIMCO-ICS Seafarer Workforce Report 2026, which of the following combinations correctly represents India's contribution to the global merchant shipping workforce?",
+    "options": {
+      "A": "171,218 officers (11.29%) and 140,718 ratings (13.41%)",
+      "B": "140,718 officers (13.41%) and 171,218 ratings (11.29%)",
+      "C": "140,718 officers (11.29%) and 171,218 ratings (13.41%)",
+      "D": "311,936 officers (12.16%) and 171,218 ratings (5.2%)",
+      "E": "134,718 officers (13.41%) and 171,218 ratings (12.16%)"
+    },
+    "answer": "B",
+    "rationale": "India's workforce includes 140,718 officers (13.41% of global officers) and 171,218 ratings (11.29% of global ratings), totaling 311,936 seafarers (Page 34 & 86).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Mutual Funds",
+    "question": "Assertion (A): Edelweiss Mutual Fund launched India's first REIT-oriented open-ended passive index fund in July 2026.\nReason (R): SEBI reclassified REITs as equity instruments making them eligible for equity indices, which allowed the fund to allocate 100% of its exposure purely to listed REITs without needing any other asset class.\n\nSelect the most appropriate option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A",
+      "B": "Both A and R are true, but R is not the explanation of A",
+      "C": "A is true, but R is false",
+      "D": "A is false, but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true (Page 46 & 90). Reason (R) is false because the fund does not have 100% exposure to REITs; it has about a 60% allocation to REITs and a 40% allocation to listed real estate companies by tracking the Nifty REITs & Realty TRI.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Sponsorship & Associations",
+    "question": "Match the following upcoming Para sports events with their respective host locations as mentioned in the SBI Life & PCI partnership announcement:\n\nColumn I:\n1. Commonwealth Para Games 2026\n2. Asian Para Games 2026\n3. Paralympic Games 2024\n\nColumn II:\nA. Paris, France\nB. Glasgow, Scotland\nC. Aichi-Nagoya, Japan\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-B, 3-C",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-C, 2-A, 3-B"
+    },
+    "answer": "B",
+    "rationale": "Commonwealth Para Games 2026 is in Glasgow, Scotland (1-B). Asian Para Games 2026 is in Aichi-Nagoya, Japan (2-C). The 2024 Paralympic Games were in Paris (3-A). (Page 37).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "National Broadcasting Day",
+    "question": "Consider the following statements regarding the history of radio broadcasting in India:\n\n1. National Broadcasting Day commemorates the first radio broadcast by the Indian Broadcasting Company (IBC) from Bombay in 1927.\n2. All India Radio (AIR) officially adopted the Sanskrit name 'Akashvani', meaning 'Celestial Voice', in 1956.\n3. AIR broadcasts in 23 languages and 146 dialects across India.\n4. The official motto of AIR is 'Bahujana Hitaya, Bahujana Sukhaya'.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2, and 3",
+      "B": "2, 3, and 4",
+      "C": "1, 3, and 4",
+      "D": "1 and 4 only",
+      "E": "All of the above"
+    },
+    "answer": "E",
+    "rationale": "All statements are historically and factually correct as detailed under the National Broadcasting Day (July 23) overview in the document (Page 63 & 96).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Direct Taxation",
+    "question": "Under the new FY27 tax regime highlighted on Income Tax Day 2026, which of the following correctly pairs the income bracket with its corresponding tax rate?\n\n1. Rs 4-8 lakh : 5%\n2. Rs 8-12 lakh : 15%\n3. Rs 12-16 lakh : 20%\n4. Rs 16-20 lakh : 20%\n5. Above Rs 24 lakh : 30%\n\nSelect the correct combination:",
+    "options": {
+      "A": "1, 3, and 5",
+      "B": "1, 4, and 5",
+      "C": "2, 3, and 4",
+      "D": "1 and 5 only",
+      "E": "1, 2, 4, and 5"
+    },
+    "answer": "B",
+    "rationale": "The FY27 tax rates are: up to 4L (nil), 4-8L (5%), 8-12L (10%), 12-16L (15%), 16-20L (20%), 20-24L (25%), and above 24L (30%). Therefore, 8-12L is 10% (not 15%) and 12-16L is 15% (not 20%). Pairs 1, 4, and 5 are correct (Page 64).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Global Health Guidelines",
+    "question": "The WHO PROTECT framework is heavily emphasized during World Drowning Prevention Day. Which of the following correctly identifies the components of the 'PROTECT' acronym?",
+    "options": {
+      "A": "P-Physical Infrastructure, R-Risk Assessment, O-Operational Safety, C-Childcare",
+      "B": "P-Physical Infrastructure, R-Rescue & Resuscitation, O-Occupational Safety, C-Childcare",
+      "C": "P-Policy Implementation, R-Rescue & Resuscitation, O-Ocean Safety, C-Community Outreach",
+      "D": "P-Personal Flotation, R-Rescue & Resuscitation, O-Occupational Safety, C-Childcare",
+      "E": "P-Physical Infrastructure, R-Rescue & Resuscitation, O-Occupational Safety, C-Communication"
+    },
+    "answer": "B",
+    "rationale": "The WHO PROTECT framework stands for: P-Physical Infrastructure, R-Rescue & Resuscitation, O-Occupational Safety, T-Transport Safety, E-Education, C-Childcare, T-Threat Preparedness (Page 64).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Science & Medicine",
+    "question": "Assertion (A): World In Vitro Fertilization (IVF) Day is celebrated on 25 July to commemorate the birth of Louise Brown, the world's first IVF baby, in 1978.\nReason (R): In India, ART services and Surrogacy are currently governed by the ART (Regulation) Act, 2021, and the Surrogacy (Regulation) Act, 2021.\n\nSelect the most appropriate option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A",
+      "B": "Both A and R are true, but R is not the explanation of A",
+      "C": "A is true, but R is false",
+      "D": "A is false, but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "B",
+    "rationale": "Both Assertion and Reason are true facts (Page 65 & 96). However, the specific Indian legislation passed in 2021 (Reason) is not the historical explanation for why the global day is celebrated on 25 July (which is solely based on Louise Brown's birthday).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "National Security",
+    "question": "Which of the following statements regarding the Central Reserve Police Force (CRPF) is NOT correct?",
+    "options": {
+      "A": "CRPF Foundation Day is observed annually on 27 July to commemorate its establishment in 1939.",
+      "B": "It was originally established as the Crown Representative's Police (CRP) at Neemuch, Madhya Pradesh.",
+      "C": "It was renamed CRPF under the CRPF Act, 1949 after India's independence.",
+      "D": "It is the only CAPF with 6 all-women Mahila Battalions whose personnel have received the Ashok Chakra.",
+      "E": "CRPF Valour Day is observed on 21 October every year."
+    },
+    "answer": "E",
+    "rationale": "Statement E is incorrect because CRPF Valour Day is observed on 9 April, whereas Police Commemoration Day is observed on 21 October (Page 68). All other statements are correct.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Conservation Targets",
+    "question": "Consider the following environmental and biodiversity initiatives highlighted in July 2026 observances:\n\n1. The Global Mangrove Alliance (GMA) aims to halt mangrove loss by 2030 and protect 15 million hectares.\n2. The Nagpur Tiger Declaration 2026 outlines a future roadmap for tiger conservation.\n3. The 6th All India Tiger Estimation (AITE) began in January 2026, dropping Gujarat and Sikkim from the census for the first time.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "A",
+    "rationale": "Statement 3 is incorrect because the 6th AITE *included* Gujarat and Sikkim for the first time, it did not drop them (Page 71). Statements 1 and 2 are correct.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Ministry of Earth Sciences",
+    "question": "Match the following initiatives launched by the Ministry of Earth Sciences (MoES) with the specific research organization/institute handling them:\n\nColumn I:\n1. WAADRU (Weather Driven Animal Disease Risk Forecasting)\n2. Radar Mosaic (National Doppler Weather Radar Reflectivity)\n3. Taxonomic Manuals for marine species\n4. Ballast Water Treatment Test Facility\n\nColumn II:\nA. NIOT (National Institute of Ocean Technology)\nB. CMLRE (Centre for Marine Living Resources and Ecology)\nC. NCMRWF (National Centre for Medium Range Weather Forecasting)\nD. IMD (India Meteorological Department)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-D, 2-C, 3-B, 4-A",
+      "B": "1-C, 2-D, 3-A, 4-B",
+      "C": "1-D, 2-C, 3-A, 4-B",
+      "D": "1-C, 2-B, 3-D, 4-A",
+      "E": "1-B, 2-A, 3-D, 4-C"
+    },
+    "answer": "A",
+    "rationale": "WAADRU is under IMD in partnership with ICAR-NIVEDI (1-D). Radar Mosaic is under NCMRWF (2-C). Taxonomic Manuals are under CMLRE (3-B). Ballast Water facility is under NIOT in AP (4-A). (Page 19).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Financial Frauds",
+    "question": "Arrange the procedural sequence for processing a cyber financial fraud complaint via the e-Zero FIR system launched by the GoI:\n\n1. Complaint is logged through the NCRP or 1930 helpline.\n2. The complaint is automatically forwarded to the concerned police station.\n3. Victim visits the police station within 3 days to convert it into a regular FIR.\n4. Faster investigation is enabled without jurisdictional delays.\n\nSelect the correct logical flow:",
+    "options": {
+      "A": "1 - 3 - 2 - 4",
+      "B": "1 - 2 - 3 - 4",
+      "C": "2 - 1 - 3 - 4",
+      "D": "1 - 2 - 4 - 3",
+      "E": "3 - 1 - 2 - 4"
+    },
+    "answer": "B",
+    "rationale": "The process explicitly states: Complaints are logged via NCRP/1930 (1) -> Automatically forwarded to concerned police station (2) -> Victim visits within 3 days to convert to regular FIR (3) -> Enables faster investigation without jurisdictional delay (4). (Page 25).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Rural Infrastructure",
+    "question": "Assertion (A): NABARD signed an MoU with MAHAPREIT to promote green infrastructure, aiming to directly fund urban commercial real estate projects across India.\nReason (R): MAHAPREIT is a Government of Maharashtra enterprise focused on renewable energy and infrastructure technology.\n\nSelect the most appropriate option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A",
+      "B": "Both A and R are true, but R is not the explanation of A",
+      "C": "A is true, but R is false",
+      "D": "A is false, but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "D",
+    "rationale": "Assertion (A) is false because the MoU focuses on *rural* India (GP infrastructure, rural public institutions, water pumping), not urban commercial real estate. Reason (R) is true (Page 8 & 76).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Skill Development",
+    "question": "Consider the MoUs signed by the Government of Tripura in July 2026. Which of the following institutions partnered with the National Stock Exchange (NSE) to strengthen financial literacy and investment awareness in the state?\n\n1. Directorate of Industries & Commerce\n2. Directorate of Skill Development\n3. State Institute of Public Administration and Rural Development (SIPARD)\n4. Visvesvaraya Technological University (VTU)\n\nSelect the correct combination:",
+    "options": {
+      "A": "1, 2, and 3",
+      "B": "2, 3, and 4",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 4",
+      "E": "All of the above"
+    },
+    "answer": "A",
+    "rationale": "The 3 MoUs were signed between NSE and SIPARD, the Directorate of Industries and Commerce, and the Directorate of Skill Development in Tripura. VTU is in Karnataka and partnered with Google, not NSE (Pages 25, 82-83).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Legislation",
+    "question": "Which of the following statements regarding the draft Bill to amend the Public Examinations (Prevention of Unfair Means) Act, 2024 is NOT correct?",
+    "options": {
+      "A": "It proposes increasing the minimum imprisonment for individual paper leak offences from 3 years to 5 years.",
+      "B": "The maximum punishment for individual offenders is retained at 10 years.",
+      "C": "Organised paper leak offences will carry a minimum fine of Rs 1 crore.",
+      "D": "The Act applies exclusively to exams conducted by the NTA, excluding UPSC, SSC, and railway recruitment bodies.",
+      "E": "It includes provisions for dedicated fast-track courts to complete trials within three months."
+    },
+    "answer": "D",
+    "rationale": "Statement D is incorrect because the Act covers exams conducted by UPSC, SSC, NTA, railway recruitment agencies, banking recruitment agencies, and other Central Government bodies, not just the NTA (Page 14 & 78-79).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Skill Development Institutes",
+    "question": "Assertion (A): The Government of Bihar and MSDE announced a permanent National Skill Training Institute for Women (NSTI-W) campus in Patna.\nReason (R): This initiative, along with the Skill India International Centre (SIIC), aims to exclusively train women for overseas domestic work employment.\n\nSelect the most appropriate option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A",
+      "B": "Both A and R are true, but R is not the explanation of A",
+      "C": "A is true, but R is false",
+      "D": "A is false, but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true (Page 15 & 79). Reason (R) is false because the initiative aims to boost women's skilling, strengthen Bihar's skill ecosystem, and promote global employment opportunities through CITS and CTS courses, not exclusively 'overseas domestic work'.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Data & Research",
+    "question": "In July 2026, ICAR-CMFRI launched the DeepDATA app. Which of the following accurately describes its development and core function?\n\n1. It was developed under the Deep Ocean Mission of the Ministry of Earth Sciences.\n2. It provides scientifically verified information on deep-sea fish species.\n3. It uses a citizen science model where user submissions are directly added to the national database without expert verification.\n\nSelect the correct combination:",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "A",
+    "rationale": "Statement 3 is incorrect because user submissions are explicitly *verified by ICAR-CMFRI experts before being added* to the national database. Statements 1 and 2 are correct (Page 16 & 79).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Committees & Task Forces",
+    "question": "Identify the incorrect pair regarding the members of the Exam Reform Task Force constituted by PM Narendra Modi and their respective backgrounds:\n\n1. S. Somanath - Former Chairman, ISRO\n2. Tapan Deka - Former Director, Intelligence Bureau\n3. V. Kamakoti - Director, IIT Delhi\n4. Anita Karwal - Former Education Secretary, MoE\n\nSelect the incorrect pair(s):",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "3 and 4",
+      "E": "None of the above"
+    },
+    "answer": "C",
+    "rationale": "Pair 3 is incorrect. V. Kamakoti is the Director of IIT Madras, not IIT Delhi (Page 16 & 80).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Agriculture Funding",
+    "question": "Assertion (A): Maharashtra became the first state in India to qualify for the release of the second instalment under the RKVY scheme in July 2026.\nReason (R): Maharashtra had introduced a state-level hybrid 'PM-RKVY' model in 2024 which merged agricultural CSS into Krishonnati Yojana.\n\nSelect the most appropriate option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A",
+      "B": "Both A and R are true, but R is not the explanation of A",
+      "C": "A is true, but R is false",
+      "D": "A is false, but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "B",
+    "rationale": "Both Assertion and Reason are factually true statements (Page 18 & 80). However, Reason (R) is not the correct explanation for Assertion (A). Maharashtra qualified for the 2nd instalment because it achieved the *prescribed fund utilisation benchmark* (utilizing nearly Rs 260 crore of the Rs 335 crore 1st instalment), not merely because the scheme was restructured in 2024.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Core Industries",
+    "question": "The Index of Core Industries (ICI) saw major changes in its revised series (Base Year 2022-23) released by DPIIT in July 2026. Which of the following correctly pairs an existing core industry with its revised measurement metric?\n\n1. Steel index: Now uses gross production instead of net production.\n2. Coal index: Now includes raw coal only, removing double counting.\n3. Linking factor: Between ICI (2011-12) and ICI (2022-23) is 1.47.\n\nSelect the correct combination:",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All statements are correct. The Steel index now uses gross production, the Coal index focuses on raw coal to remove double counting, and the linking factor is indeed 1.47 (Page 10).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "Acquisitions & Mergers",
+    "sub_category": "Insolvency Resolution",
+    "question": "Consider the following statements regarding the acquisition of Aviom India Housing Finance:\n\n1. The RBI approved Areion Group's acquisition of Aviom for Rs 936 crore.\n2. The resolution marks a ~65% lender recovery.\n3. The resolution plan was chosen over Unity Small Finance Bank's Rs 977.5 crore bid.\n4. Manish Lalwani, promoter of Areion Group, failed to receive RBI's 'fit-and-proper' approval, stalling the NCLT process.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2, and 3",
+      "B": "2, 3, and 4",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 4",
+      "E": "All of the above"
+    },
+    "answer": "A",
+    "rationale": "Statement 4 is incorrect because Manish Lalwani *did* receive the RBI's 'fit-and-proper' approval, which is mandatory for the change in control. Statements 1, 2, and 3 are correct (Page 53 & 92-93).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Aerospace Manufacturing",
+    "question": "Arrange the following entities based on their roles in the development of India's first indigenous 350 kg thrust class Expendable Turbojet Engine:\n\n1. GTRE (Laboratory that designed and developed the engine)\n2. DRDO (Parent organization of the designing laboratory)\n3. Azad Engineering (Industry partner for manufacturing and assembly)\n\nWhich of the following represents the correct hierarchical/collaborative structure?",
+    "options": {
+      "A": "DRDO -> GTRE -> Azad Engineering",
+      "B": "GTRE -> DRDO -> Azad Engineering",
+      "C": "Azad Engineering -> GTRE -> DRDO",
+      "D": "DRDO -> Azad Engineering -> GTRE",
+      "E": "None of the above"
+    },
+    "answer": "A",
+    "rationale": "The structure is DRDO (parent) -> GTRE (laboratory that designed it) -> Azad Engineering (industry partner that manufactured it). Therefore, A represents the correct flow from apex agency to lab to industry partner (Page 55 & 93).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Naval Projects",
+    "question": "In July 2026, Union Minister Rajnath Singh flagged off the 'Samudra Pradakshina' expedition. Which of the following is NOT a feature of this expedition?",
+    "options": {
+      "A": "It was completed by nine women officers from the IA, IN, and IAF.",
+      "B": "The voyage lasted 314 days across four oceans on the IASV Triveni.",
+      "C": "The crew crossed the Equator twice and all longitudes.",
+      "D": "It aimed to replace the Abhay-class ASW corvettes.",
+      "E": "The crew earned 'Cape Horner' status by crossing the Three Great Capes."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect. Replacing the Abhay-class ASW corvettes is the objective of the ASW-SWC programme (like the Machilipatnam vessel launched by CSL), not the Samudra Pradakshina sailing expedition (Pages 58 & 78).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Chemical Parks",
+    "question": "Assertion (A): The BHAVYA - Rasayan Scheme was approved to set up three dedicated large chemical parks in India.\nReason (R): The Central Government will provide 100% of the funding (up to Rs 3,030 crore per park) without requiring any financial contribution from the respective State Governments.\n\nSelect the most appropriate option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A",
+      "B": "Both A and R are true, but R is not the explanation of A",
+      "C": "A is true, but R is false",
+      "D": "A is false, but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true (Page 12 & 79). Reason (R) is false because the Central Government provides up to Rs 1,000 crore per park, subject to a *minimum State Government contribution of Rs 500 crore*, not 100% funding.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Missiles",
+    "question": "Consider the following statements regarding the maiden flight test of the 'Kusha' missile:\n\n1. It is a Long-Range Surface-to-Air Missile (LR-SAM).\n2. It was tested from APJ Abdul Kalam Island, Odisha.\n3. It is designed to match the capabilities of Russia's S-400 Triumf and the US MIM-104 Patriot.\n4. The system relies entirely on imported radar and communication systems from Israel.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2, and 3",
+      "B": "2, 3, and 4",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 4",
+      "E": "All of the above"
+    },
+    "answer": "A",
+    "rationale": "Statement 4 is incorrect because it is indigenously developed by DRDO with Indian industry partners (like BEL for radar systems), not entirely imported from Israel (Page 54 & 93). Statements 1, 2, and 3 are correct.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space Research",
+    "question": "Match the following technical details regarding space missions highlighted in July 2026:\n\nColumn I:\n1. Gravity-1 payload capacity\n2. PRAXIS target location\n3. Starship V3 payload\n\nColumn II:\nA. Saturn's rings\nB. 6.5 t (LEO) and 4.2 t (SSO)\nC. 20 Starlink satellites\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-B, 2-A, 3-C",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-C, 2-A, 3-B"
+    },
+    "answer": "B",
+    "rationale": "Gravity-1 payload capacity is 6.5t to LEO and 4.2t to SSO (1-B). PRAXIS targets Saturn's rings (2-A). Starship V3 deployed 20 Starlink satellites (3-C). (Pages 56-57).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "Taxonomy",
+    "question": "Which of the following is NOT an accurate distinguishing feature of the newly discovered polypore fungus 'Microporellus kolhapurensis'?",
+    "options": {
+      "A": "Yellowish-orange to grayish-brown colour.",
+      "B": "Umbrella-shaped structure with a lateral stalk.",
+      "C": "Ground-growing habit.",
+      "D": "Teardrop-shaped spores and thick-walled cystidia.",
+      "E": "Parasitic growth on live, healthy teak trees."
+    },
+    "answer": "E",
+    "rationale": "Option E is incorrect because the species was found growing on *rotting wood* (saprophytic), not as a parasite on live, healthy trees (Page 59 & 94). Options A, B, C, and D are its distinguishing features.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "International Bids",
+    "question": "Assertion (A): The Paralympic Committee of India (PCI) and the Cerebral Palsy Sports Federation of India (CPSFI) signed an MoU to jointly bid for the 2029 World Abilitysport Games.\nReason (R): India successfully hosted the previous edition of the World Abilitysport Games in Bengaluru in 2023.\n\nSelect the most appropriate option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A",
+      "B": "Both A and R are true, but R is not the explanation of A",
+      "C": "A is true, but R is false",
+      "D": "A is false, but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true (Page 60 & 94). Reason (R) is false because India previously hosted the IWAS World Games (which is the precursor event) in Bengaluru in *2009*, not 2023.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Shooting",
+    "question": "At the 2026 ISSF World Cup Rifle/Pistol in Hangzhou, various world records were matched or extended. Identify the incorrect statement regarding these records:\n\n1. USA's Kimberly Rhode claimed a record-extending 27th ISSF World Cup gold in women's skeet.\n2. Qatar's Rashid Saleh Al-Athba equalled the world record (35 hits) in men's skeet.\n3. Manu Bhaker broke the world record in the Women's 25m Pistol with 40 hits.\n\nSelect the incorrect statement(s):",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "1 and 2",
+      "E": "None of the above"
+    },
+    "answer": "C",
+    "rationale": "Statement 3 is incorrect because it was Esha Singh who won Gold with 40 hits. Manu Bhaker won Bronze with 28 hits, and no world record by her is mentioned here. Statements 1 and 2 are correct records (Page 61 & 95).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Themes & Slogans",
+    "question": "Match the following historical figures/events with the specific theme, motto, or design they are associated with in the July 2026 Important Days:\n\nColumn I:\n1. Pingali Venkayya\n2. 'Bahujana Hitaya, Bahujana Sukhaya'\n3. Sir James Wilson\n4. Dr. Baruch S. Blumberg\n\nColumn II:\nA. All India Radio (AIR) Motto\nB. Introduced Income Tax in 1860\nC. Swaraj Flag design (1921)\nD. Discoverer of HBV (Hepatitis B Virus)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-B, 4-D",
+      "B": "1-C, 2-D, 3-B, 4-A",
+      "C": "1-B, 2-A, 3-C, 4-D",
+      "D": "1-A, 2-B, 3-D, 4-C",
+      "E": "1-D, 2-C, 3-A, 4-B"
+    },
+    "answer": "A",
+    "rationale": "Pingali Venkayya designed the Swaraj flag (1-C). AIR's motto is Bahujana Hitaya... (2-A). Sir James Wilson introduced Income Tax (3-B). Dr. Blumberg discovered HBV (4-D). (Pages 62-64, 69).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "National Symbols",
+    "question": "Consider the evolution of the Indian National Flag. Which of the following chronological sequences of flag milestones is correct according to the July 2026 PDF?",
+    "options": {
+      "A": "Sister Nivedita (1904) -> First Tricolour (1906) -> Bhikaji Cama (1907) -> Home Rule Flag (1917) -> Swaraj Flag (1921) -> INC adopts Tricolour (1931)",
+      "B": "First Tricolour (1904) -> Sister Nivedita (1906) -> Swaraj Flag (1917) -> Home Rule Flag (1921) -> Bhikaji Cama (1931)",
+      "C": "Swaraj Flag (1904) -> Home Rule Flag (1906) -> Sister Nivedita (1917) -> First Tricolour (1921) -> INC adopts Tricolour (1931)",
+      "D": "Sister Nivedita (1904) -> Bhikaji Cama (1906) -> First Tricolour (1907) -> Swaraj Flag (1917) -> Home Rule Flag (1921)",
+      "E": "Home Rule Flag (1904) -> Sister Nivedita (1906) -> Bhikaji Cama (1917) -> Swaraj Flag (1921) -> INC adopts Tricolour (1931)"
+    },
+    "answer": "A",
+    "rationale": "According to the key milestones (Page 62): 1904 (Sister Nivedita), 1906 (First Tricolour), 1907 (Bhikaji Cama), 1917 (Home Rule Flag), 1921 (Pingali Venkayya/Swaraj Flag), 1931 (INC adopted Tricolour). Option A is perfectly accurate.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Academic Collaborations",
+    "question": "Assertion (A): Visvesvaraya Technological University (VTU) signed an academic collaboration agreement with Google LLC to provide AI and industry-relevant skill modules.\nReason (R): This collaboration is part of the 'Skilling, Employability, and Entrepreneurship Learning (SEEL)' programme, where students can access Google learning resources for Rs 350.\n\nSelect the most appropriate option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A",
+      "B": "Both A and R are true, but R is not the explanation of A",
+      "C": "A is true, but R is false",
+      "D": "A is false, but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "A",
+    "rationale": "Both Assertion and Reason are true, and the SEEL programme framework (Reason) is the direct operational mechanism/explanation for how the academic collaboration (Assertion) is being implemented for the students (Page 72 & 98).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Fisheries Schemes",
+    "question": "Identify the incorrect statement regarding the 'Mukhyamantri Machhuara Samman Nidhi Yojana':\n\n1. It was launched by Sukhvinder Singh Sukhu, Chief Minister of Himachal Pradesh.\n2. It provides financial assistance to fishermen engaged in marine and coastal fisheries during the monsoon ban.\n3. The scheme offers a lump-sum grant of Rs 3,500 to each eligible fisherman.\n4. The Directorate of Fisheries will maintain records and conduct random verifications for transparency.\n\nSelect the incorrect statement(s):",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 4",
+      "E": "None of the above"
+    },
+    "answer": "B",
+    "rationale": "Statement 2 is incorrect because the scheme is specifically designed to support fishermen engaged in *reservoir fisheries* in the landlocked state of Himachal Pradesh, not marine and coastal fisheries (Page 72-73 & 98).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Urban Welfare",
+    "question": "Arrange the following administrative checks/conditions to determine a woman's eligibility for the 'Delhi Lakshmi Yojana' (assuming she is a permanent resident of Delhi):\n\n1. Verify age is between 21 and 60 years.\n2. Ensure the annual family income does not exceed Rs 2.5 lakh.\n3. Confirm she has lived in the national capital for at least 10 years.\n4. Ensure her household consumes less than 2,400 electricity units annually.\n\nWhich of the above conditions is explicitly listed as an EXCLUSION criteria (making her ineligible) rather than a general eligibility requirement?",
+    "options": {
+      "A": "Condition 1",
+      "B": "Condition 2",
+      "C": "Condition 3",
+      "D": "Condition 4",
+      "E": "None of the above"
+    },
+    "answer": "D",
+    "rationale": "Conditions 1, 2, and 3 are standard eligibility requirements. Condition 4 (households consuming over 2,400 electricity units annually) is explicitly listed under 'Exclusions' alongside government employees, income taxpayers, and women with more than 3 children (Page 73).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Renewable Energy",
+    "question": "Consider the following statements regarding the 'DWEEPTI Yojana' launched in Chhattisgarh:\n\n1. DWEEPTI stands for Decentralised Women Empowerment on Energy and Policy for Transformative Inclusion.\n2. It targets the creation of 5,000 enterprises and 50,000 green jobs.\n3. It is implemented by CSPDCL under PMSGMBY, with Kabirdham as the first implementation district.\n4. Under this scheme, Lakhpati Didi provides flexible loans for solar adoption, and SHG women are trained as 'Solar Didis'.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2, and 3",
+      "B": "2, 3, and 4",
+      "C": "1, 3, and 4",
+      "D": "1, 2, 3, and 4",
+      "E": "1 and 4 only"
+    },
+    "answer": "D",
+    "rationale": "All four statements perfectly capture the intricate details of the DWEEPTI Yojana as described in the text (Page 74).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Aviation Agreements",
+    "question": "Match the following airline executives with their respective roles as mentioned during the Air India & Saudia MoU signing:\n\nColumn I:\n1. Campbell Wilson\n2. Ibrahim Al-Omar\n\nColumn II:\nA. Director General (DG) of Saudia Group\nB. Chief Executive Officer (CEO) & Managing Director (MD) of Air India\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-B",
+      "B": "1-B, 2-A",
+      "C": "1-A, 2-A",
+      "D": "1-B, 2-B",
+      "E": "None of the above"
+    },
+    "answer": "B",
+    "rationale": "Campbell Wilson is the CEO & MD of Air India (1-B). Ibrahim Al-Omar is the DG of Saudia Group (2-A). (Page 89).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Forex & Remittances",
+    "question": "Assertion (A): EbixCash World Money Limited received RBI authorization to upgrade from a Full Fledged Money Changer (FFMC) to an Authorised Dealer Category-II (AD-II).\nReason (R): This upgrade enables EbixCash to process trade remittances up to Rs 50 lakh per transaction and directly serve large multinational corporations for export activities.\n\nSelect the most appropriate option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A",
+      "B": "Both A and R are true, but R is not the explanation of A",
+      "C": "A is true, but R is false",
+      "D": "A is false, but R is true",
+      "E": "Both A and R are false"
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true (established as FFMC in 1999, upgraded to AD-II). Reason (R) is false because the limit is Rs 25 lakh per transaction, and it is specifically to serve MSMEs involved in import/export, not large multinational corporations (Page 35 & 86).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Corporate Solutions",
+    "question": "In July 2026, EnKash launched India's first UPI-based payments on a meal card. Which of the following is highlighted as a primary benefit for employees using this platform?",
+    "options": {
+      "A": "Employees receive a flat 10% cashback on all food and grocery purchases.",
+      "B": "Employees can enjoy tax-free benefits up to Rs 200/meal and annual tax savings up to Rs 1,05,600.",
+      "C": "The card can be used internationally for travel and entertainment expenses.",
+      "D": "The platform offers overdraft facilities up to Rs 50,000 for emergency grocery purchases.",
+      "E": "Employees can withdraw the meal balance as cash at any ATM without charges."
+    },
+    "answer": "B",
+    "rationale": "The explicit benefit highlighted is that employees can enjoy tax-free benefits up to Rs 200/meal and annual tax savings up to Rs 1,05,600 (Page 35).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Fintech Innovations",
+    "question": "Match the following Fintech platforms/products with the specific regulatory framework or architecture they rely on:\n\nColumn I:\n1. Axis Finance 'Drishti'\n2. OmniCard Flexi Benefits\n3. NCDEX 'Nidhi'\n4. VIYONA Fintech\n\nColumn II:\nA. Bharat Connect (BBPS) Customer Operating Unit (COU)\nB. API-first architecture\nC. RBI-licensed PPI platform\nD. In-house Business Rules Engine (BRE)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-D, 2-C, 3-B, 4-A",
+      "B": "1-C, 2-D, 3-A, 4-B",
+      "C": "1-D, 2-B, 3-C, 4-A",
+      "D": "1-B, 2-C, 3-A, 4-D",
+      "E": "1-A, 2-B, 3-C, 4-D"
+    },
+    "answer": "A",
+    "rationale": "Drishti uses an in-house BRE (1-D). OmniCard uses a PPI platform (2-C). NCDEX Nidhi uses an API-first architecture (3-B). VIYONA is a COU under BBPS (4-A). (Pages 38, 40, 43, 87-89).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 4th Week"
+  }
+]

@@ -1,0 +1,722 @@
+[
+  {
+    "category": "National",
+    "sub_category": "Digital Health Initiatives",
+    "question": "Consider the following statements regarding the digital health initiatives launched by the MoHFW in July 2026:\n\nI. Aarogya Setu 2.0 has been launched as a comprehensive Personal Health Record (PHR) app for citizens.\nII. Ayushman Sarathi is a 24x7 WhatsApp chatbot designed exclusively for doctor consultation and ambulance booking.\nIII. The National Drug Registry, developed with CDSCO and NRC, is the fourth ABDM registry aimed at Electronic Health Records (EHR) standards.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only I and II",
+      "B": "Only I and III",
+      "C": "Only II and III",
+      "D": "Only III",
+      "E": "All I, II, and III"
+    },
+    "answer": "B",
+    "rationale": "Statement II is incorrect because Ayushman Sarathi is a 24x7 WhatsApp chatbot for PM-JAY eligibility, Ayushman Card, KYC, and AVV services. Doctor consultation and ambulance booking fall under the UHI (Unified Health Interface). Statements I and III are correct. (Refer Page 8)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Small Savings Schemes",
+    "question": "Match the following Post Office Time Deposit (POTD) tenures with their respective interest rates maintained for Q2FY27 (July-September 2026):\n\nColumn I (Tenure):\n1. 1-Year POTD\n2. 2-Year POTD\n3. 3-Year POTD\n4. 5-Year POTD\n\nColumn II (Interest Rate):\nA. 7.1%\nB. 6.9%\nC. 7.5%\nD. 7.0%\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-D, 3-A, 4-C",
+      "B": "1-A, 2-C, 3-B, 4-D",
+      "C": "1-B, 2-A, 3-D, 4-C",
+      "D": "1-C, 2-D, 3-A, 4-B",
+      "E": "1-D, 2-B, 3-C, 4-A"
+    },
+    "answer": "A",
+    "rationale": "As per the MoF announcement for Q2FY27: 1-Year POTD is 6.9% (B); 2-Year POTD is 7.0% (D); 3-Year POTD is 7.1% (A); and 5-Year POTD is 7.5% (C). (Refer Page 10 & 76)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "MoSPI SDG Progress Report 2026",
+    "question": "Based on the 'Data Snapshot on SDGs – NIF Progress Report, 2026' released by MoSPI, arrange the following indicators in DESCENDING order based on their updated 2026 percentage/numerical values:\n\n1. Social protection coverage (%)\n2. Female professionals (%)\n3. Unemployment Rate (%)\n4. Maternal Mortality Ratio (per lakh live births)\n\nSelect the correct code:",
+    "options": {
+      "A": "4 > 1 > 2 > 3",
+      "B": "1 > 4 > 2 > 3",
+      "C": "4 > 2 > 1 > 3",
+      "D": "1 > 2 > 4 > 3",
+      "E": "4 > 1 > 3 > 2"
+    },
+    "answer": "A",
+    "rationale": "Values for 2026 are: MMR = 87; Social protection coverage = 65.3%; Female professionals = 51.3%; Unemployment Rate (UR) = 3.1%. Descending order: 87 > 65.3 > 51.3 > 3.1, which corresponds to 4 > 1 > 2 > 3. (Refer Page 5)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Film Industry Regulations",
+    "question": "Fill in the blanks regarding the recent initiatives to boost the Indian Film Industry:\nUnder the Ministry of Information and Broadcasting (MIB), a High-level Study Group headed by ________ (i) ________ was constituted, and ________ (ii) ________ were proposed to address state-level regulatory delays hindering infrastructure, especially in ________ (iii) ________.",
+    "options": {
+      "A": "(i) Anurag Thakur; (ii) Cinematograph Rules; (iii) metropolitan cities",
+      "B": "(i) Prasoon Joshi; (ii) Model State Cinema Regulations; (iii) small towns & rural areas",
+      "C": "(i) Ashwini Vaishnaw; (ii) Single Window Clearance; (iii) coastal states",
+      "D": "(i) Prasoon Joshi; (ii) Cinematograph Certification Rules; (iii) tier-1 cities",
+      "E": "(i) Shyam Benegal; (ii) Model State Cinema Regulations; (iii) special economic zones"
+    },
+    "answer": "B",
+    "rationale": "MIB constituted a High-level Study Group chaired by Prasoon Joshi and introduced Model State Cinema Regulations to expand cinema halls in small towns & rural areas by addressing regulatory delays. (Refer Page 9 & 75)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "Wildlife Management",
+    "question": "Which of the following Tiger Reserves (TRs) is NOT identified among the 'potential recipient sites' requiring priority recovery due to low or zero tiger populations according to the recent MoEFCC roadmap?",
+    "options": {
+      "A": "Guru Ghasidas-Tamor Pingla",
+      "B": "Kalakad-Mundanthurai",
+      "C": "Mukundra Hills",
+      "D": "Jim Corbett",
+      "E": "Dampa"
+    },
+    "answer": "D",
+    "rationale": "Jim Corbett is identified as a 'healthy source landscape' supporting about 260 tigers (among the highest in India). The other options (Guru Ghasidas, Kalakad-Mundanthurai, Mukundra Hills, Dampa) are listed as potential recipient sites needing priority intervention. (Refer Page 11)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Digital India Programme",
+    "question": "Consider the following statements regarding the 'IndiaAI Mission (2024)' under the Digital India Programme:\n\nI. It has been allocated an outlay of Rs. 10,372 crore.\nII. It aims to establish a 45,000+ GPU computing facility.\nIII. It includes the YUVA AI Course which targets 8.4 million learners.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "I and II only",
+      "B": "II and III only",
+      "C": "I and III only",
+      "D": "III only",
+      "E": "All I, II, and III"
+    },
+    "answer": "E",
+    "rationale": "All statements are correct. The IndiaAI Mission (2024) has an Rs 10,372 Cr outlay, plans a 45,000+ GPU facility, and includes the YUVA AI Course aiming at 8.4 Mn learners. (Refer Page 13)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Employment Schemes",
+    "question": "The newly launched 'VB-GRAM G' scheme in Andhra Pradesh entails specific allocations for rural employment. What is the funding ratio between the Centre and the State for non-Himalayan, non-NE regular states under this scheme?",
+    "options": {
+      "A": "75:25",
+      "B": "50:50",
+      "C": "60:40",
+      "D": "90:10",
+      "E": "100:0"
+    },
+    "answer": "C",
+    "rationale": "Under the VB-GRAM G scheme, the funding ratio is 60:40 for regular Centre-State sharing, 90:10 for NE & Himalayan states, and 100% for UTs without legislatures. (Refer Page 14)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Finance",
+    "sub_category": "NIIF Investments",
+    "question": "The Union Cabinet recently approved an additional Rs 30,000 crore commitment to the National Investment and Infrastructure Fund (NIIF). Which of the following statements about NIIF's performance and ownership is INCORRECT?",
+    "options": {
+      "A": "NIIF was established in 2015 as India's Sovereign Anchored Fund.",
+      "B": "The Government of India holds a 49% stake in NIIF.",
+      "C": "NIIF currently manages around Rs. 40,000 crore in assets.",
+      "D": "The new funds will exclusively launch 'Infrastructure Fund III', replacing the previous flagship fund.",
+      "E": "NIIF has already returned approximately Rs. 12,000 crore to its investors."
+    },
+    "answer": "D",
+    "rationale": "The new funds will be used to set up NIIF's second infrastructure-focussed fund ('Infrastructure Fund II'), not 'Infrastructure Fund III'. All other statements regarding its establishment (2015), GoI stake (49%), AUM (~Rs 40,000 Cr), and returns (~Rs 12,000 Cr) are correct. (Refer Page 6 & 75)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Formula One",
+    "question": "Arrange the following Formula One drivers in DESCENDING order of their Championship Standings points after the 2026 Austrian Grand Prix:\n\n1. Lando Norris\n2. Oscar Piastri\n3. Kimi Antonelli\n4. Lewis Hamilton\n5. George Russell\n\nSelect the correct code:",
+    "options": {
+      "A": "3 > 5 > 4 > 2 > 1",
+      "B": "3 > 4 > 5 > 1 > 2",
+      "C": "5 > 3 > 4 > 2 > 1",
+      "D": "4 > 3 > 5 > 2 > 1",
+      "E": "3 > 5 > 4 > 1 > 2"
+    },
+    "answer": "A",
+    "rationale": "Championship Standings: Kimi Antonelli (171), George Russell (131), Lewis Hamilton (125), Oscar Piastri (80), Lando Norris (79). Descending order: 3 > 5 > 4 > 2 > 1. (Refer Page 58)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Payment Systems",
+    "question": "PayGlocal recently launched Google Pay Card Payments on its International Payment Gateway. Which of the following statements best describes PayGlocal's regulatory status?",
+    "options": {
+      "A": "It is an un-regulated fintech operating under the UPI sandbox.",
+      "B": "It is an RBI-authorized Payment Aggregator for domestic & cross-border payments.",
+      "C": "It is a subsidiary of NPCI focused purely on cross-border CBDC.",
+      "D": "It operates as a Non-Banking Financial Company (NBFC) specializing in micro-loans.",
+      "E": "It is a foreign payment institution holding a PI licence from Luxembourg's CSSF."
+    },
+    "answer": "B",
+    "rationale": "PayGlocal (founded 2021) is an RBI-authorized Payment Aggregator for domestic and cross-border payments. (Refer Page 32)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Maritime Exercises",
+    "question": "Consider the following statements regarding the 30th edition of the RIMPAC 2026 exercise:\n\nI. It is hosted by the United States Navy under the U.S. Pacific Fleet in Hawaii.\nII. The theme for 2026 is 'Partners: Integrated and Prepared'.\nIII. The Indian Navy participated in this exercise for the first time in 2026.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "I and II only",
+      "B": "II and III only",
+      "C": "I and III only",
+      "D": "I only",
+      "E": "All I, II, and III"
+    },
+    "answer": "A",
+    "rationale": "Statement III is incorrect because the Indian Navy integrated permanently into RIMPAC in 2014, making 2026 not its first participation. Statements I and II are correct. (Refer Page 26 & 81-82)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "FM",
+    "sub_category": "SEBI Working Groups",
+    "question": "SEBI recently constituted an Expert Working Group (EWG) to review the Debenture Trusteeship Framework. Who among the following is NOT a member of this EWG?",
+    "options": {
+      "A": "Ananta Barua",
+      "B": "Rajnish Kumar",
+      "C": "Debashis Bandyopadhyay",
+      "D": "Mehul Pandya",
+      "E": "Ashwani Bhatia"
+    },
+    "answer": "E",
+    "rationale": "Ashwani Bhatia (SEBI WTM) is not mentioned as a member of this specific EWG. The EWG is chaired by Ananta Barua, co-chaired by Rajnish Kumar, and includes Debashis Bandyopadhyay, Mehul Pandya, among others. (Refer Page 34)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "State Packages",
+    "question": "Fill in the blanks regarding the special package announced for West Bengal's tea garden workers:\nThe state government announced a Rs ________ (i) ________ crore special package under the ________ (ii) ________ scheme, allocating the highest component of Rs 177 crore for ________ (iii) ________.",
+    "options": {
+      "A": "(i) 500; (ii) PM-Kisan; (iii) Health (CSSSY)",
+      "B": "(i) 313; (ii) Pradhan Mantri Cha Shramik Protsahan Yojana (PMCSPY); (iii) Education (CSSY)",
+      "C": "(i) 313; (ii) MGNREGA; (iii) Housing (CSAY)",
+      "D": "(i) 250; (ii) Pradhan Mantri Cha Shramik Protsahan Yojana (PMCSPY); (iii) Education (CSSY)",
+      "E": "(i) 177; (ii) Stand-Up India; (iii) Health (CSSSY)"
+    },
+    "answer": "B",
+    "rationale": "WB announced a Rs 313 crore special package under the PMCSPY, with the highest allocation of Rs 177 crore dedicated to Education (Cha Shramik Shiksha Yojana - CSSY). (Refer Page 72 & 99)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Science & Tech",
+    "sub_category": "Space Sector Partnerships",
+    "question": "Which of the following statements correctly describes the recent partnership between AgniKul Cosmos and ICEYE?",
+    "options": {
+      "A": "They signed an MoU to develop a lunar rover for ISRO's Chandrayaan-4 mission.",
+      "B": "They partnered to launch India’s first crewed spaceflight simulator.",
+      "C": "They signed an MoU to co-develop, launch, and operate an end-to-end Synthetic Aperture Radar (SAR) Earth-observation ecosystem from India.",
+      "D": "They collaborated to build a GAGAN-based satellite landing system for commercial jets.",
+      "E": "They agreed to manufacture indigenous solid motors for the SOLVE test vehicle."
+    },
+    "answer": "C",
+    "rationale": "Agnikul Cosmos (India) and ICEYE (Finland) signed an MoU during the Bharat Innovates Summit to develop and operate an end-to-end SAR Earth-observation ecosystem from India. (Refer Page 54 & 91)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Geographical Indications",
+    "question": "Arrange the following states in DESCENDING order of their total number of Geographical Indication (GI) registrations as of July 2026:\n\n1. Uttar Pradesh\n2. West Bengal\n3. Tamil Nadu\n4. Himachal Pradesh\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1 > 3 > 2 > 4",
+      "B": "3 > 1 > 2 > 4",
+      "C": "1 > 2 > 3 > 4",
+      "D": "3 > 2 > 1 > 4",
+      "E": "2 > 1 > 3 > 4"
+    },
+    "answer": "A",
+    "rationale": "According to the PDF, UP is 1st (83), TN is 2nd (76), WB is 3rd (59), and HP recently reached 17. Descending order: UP (83) > TN (76) > WB (59) > HP (17). Thus, 1 > 3 > 2 > 4. (Refer Page 42, 86 & 87)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Appointments",
+    "question": "Match the following newly appointed officials with their respective positions/charges taken in July 2026:\n\nColumn I:\n1. Air Marshal Ashutosh Dixit\n2. Bijay Kumar Mohanty\n3. Rear Admiral C. Raghuram\n4. Rajiv Kumar\n\nColumn II:\nA. CMD of Hindustan Shipyard Limited (HSL)\nB. Part-time Chairman of HDFC Bank\nC. 51st Vice Chief of Air Staff (VCAS)\nD. Additional Charge as CMD of IREDA\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-D, 3-A, 4-B",
+      "B": "1-C, 2-A, 3-D, 4-B",
+      "C": "1-D, 2-C, 3-A, 4-B",
+      "D": "1-A, 2-D, 3-C, 4-B",
+      "E": "1-C, 2-D, 3-B, 4-A"
+    },
+    "answer": "A",
+    "rationale": "Ashutosh Dixit: 51st VCAS (C). Bijay Kumar Mohanty: CMD IREDA (D). C. Raghuram: CMD HSL (A). Rajiv Kumar: Chairman HDFC Bank (B). (Refer Pages 46-48 & 88-89)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Science & Tech",
+    "sub_category": "Space Testing",
+    "question": "Consider the following statements regarding ISRO's recent SOLVE test:\n\nI. The test was conducted at the Satish Dhawan Space Centre (SDSC) in Sriharikota, Andhra Pradesh.\nII. It validated the liquid propulsion motor for the Gaganyaan Crew Module.\nIII. The test simulated deceleration at altitudes between 10 km and 17 km.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "I and II only",
+      "B": "II and III only",
+      "C": "I and III only",
+      "D": "III only",
+      "E": "All I, II, and III"
+    },
+    "answer": "C",
+    "rationale": "Statement II is incorrect because SOLVE is a 'solid motor-based' test vehicle, not liquid propulsion. Statements I and III are correct regarding the location and the 10-17 km deceleration simulation. (Refer Page 54 & 91)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "General Awareness",
+    "sub_category": "Important Days",
+    "question": "Identify the INCORRECT pair of Important Days and their respective 2026 Themes:",
+    "options": {
+      "A": "National Statistics Day (June 29) - 'Unlocking the Potential of Administrative Data'",
+      "B": "International Day of Parliamentarism (June 30) - 'The Future of Human Rights is Written in Parliaments'",
+      "C": "National Doctor’s Day (July 1) - 'Behind the Mask: Who Heals the Healers?'",
+      "D": "International Day of Cooperatives (July 4) - 'Financing the First Mile of Food Systems'",
+      "E": "World Kiswahili Language Day (July 7) - 'Kiswahili for Peace, Solidarity and Global Economic Diplomacy'"
+    },
+    "answer": "D",
+    "rationale": "The theme for International Day of Cooperatives (July 4, 2026) is 'Cooperatives for a Peaceful World'. The theme 'Financing the First Mile of Food Systems' belongs to World Rural Development Day (July 6). (Refer Pages 68-70 & 96-98)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Diplomatic Visits",
+    "question": "During the official visit of Japanese PM Sanae Takaichi to India in July 2026, a first-ever defense co-development project between India and Japan was announced. Which specific system is being developed under this project for the Indian Navy?",
+    "options": {
+      "A": "Advanced Towed Array Sonar (ATAS)",
+      "B": "Synthetic Aperture Radar (SAR) Earth-observation ecosystem",
+      "C": "Unified Complex Radio Antenna (UNICORN) system",
+      "D": "Multi Influence Ground Mines (MIGM)",
+      "E": "Shipborne Unmanned Aerial Systems (NSUAS)"
+    },
+    "answer": "C",
+    "rationale": "The first-ever defense co-development project involves the Unified Complex Radio Antenna (UNICORN) system for the Indian Navy. (Refer Page 28 & 82)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Digital Innovations",
+    "question": "Fill in the blanks regarding the new digital initiatives launched by Punjab & Sind Bank (PSB) on its 119th Foundation Day:\nPSB launched an in-house HR app named ________ (i) ________, a specialised savings account for government employees called ________ (ii) ________, and enabled secure transactions using the ________ (iii) ________.",
+    "options": {
+      "A": "(i) PNB One; (ii) PSB Elite; (iii) UPI Lite",
+      "B": "(i) Navjyoti; (ii) PSB Bharat Connect; (iii) Digital Rupee (CBDC)",
+      "C": "(i) HR-Mitra; (ii) PSB Salary Plus; (iii) Aadhaar Pay",
+      "D": "(i) Navjyoti; (ii) PSB Secure; (iii) e-RUPI",
+      "E": "(i) Samriddhi; (ii) PSB Bharat Connect; (iii) SWIFT Network"
+    },
+    "answer": "B",
+    "rationale": "PSB launched the 'Navjyoti' HR app, 'PSB Bharat Connect' account for Govt employees, and a 'CBDC (Digital Rupee)' feature for secure transactions. (Refer Page 33 & 84)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "State",
+    "sub_category": "Geographical Indications",
+    "question": "Match the following newly GI-tagged products with their respective states:\n\nColumn I (Product):\n1. Jolbhora Sandesh\n2. Chamba Metal Art\n3. Santiniketan Batik\n4. Kinnauri Topi\n\nColumn II (State):\nA. Himachal Pradesh\nB. West Bengal\n\nSelect the correct code:",
+    "options": {
+      "A": "1-A, 2-A, 3-B, 4-B",
+      "B": "1-B, 2-A, 3-B, 4-A",
+      "C": "1-B, 2-B, 3-A, 4-A",
+      "D": "1-A, 2-B, 3-A, 4-B",
+      "E": "All belong to West Bengal"
+    },
+    "answer": "B",
+    "rationale": "Jolbhora Sandesh and Santiniketan Batik are from West Bengal (B). Chamba Metal Art and Kinnauri Topi are from Himachal Pradesh (A). (Refer Pages 40, 42 & 87)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Defence",
+    "sub_category": "R&D Financial Powers",
+    "question": "Consider the following statements regarding the Delegation of Financial Powers to DRDO (DFP-2026) released by Union Minister Rajnath Singh:\n\nI. It aims to accelerate the development, production, and induction of DRDO-developed systems.\nII. It provides separate financial powers exclusively for Extra-Mural Research projects like DIA-CoEs and TDF initiatives.\nIII. The powers are heavily centralized, requiring all pre-project R&D initiatives to seek direct approval from the MoD.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "Only I",
+      "B": "Only II",
+      "C": "Only III",
+      "D": "Only II and III",
+      "E": "None of the above"
+    },
+    "answer": "C",
+    "rationale": "Statement III is incorrect because DFP-2026 'authorises pre-project R&D initiatives' at the DRDO level, aiming to speed up execution rather than centralizing it to the MoD. Statements I and II are correct. (Refer Page 12)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "CPSE Categorization",
+    "question": "MECON Limited recently attained Miniratna Category-I status. Based on the financial profile of MECON given in the report, which of the following accurately represents its Profit Before Tax (PBT) for FY26?",
+    "options": {
+      "A": "Rs 32.08 crore",
+      "B": "Rs 77.62 crore",
+      "C": "Rs 104.53 crore",
+      "D": "Rs 535.42 crore",
+      "E": "Rs 250 crore"
+    },
+    "answer": "C",
+    "rationale": "MECON's PBT figures are: FY24 (Rs 77.62 cr), FY25 (Rs 32.08 cr), and FY26 (Rs 104.53 cr). Its Net Worth is Rs 535.42 crore. (Refer Page 41)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Penalties & Strategic Acquisitions",
+    "question": "Consider the following events in the Banking & Finance sector in July 2026:\n\nI. RBI imposed a penalty on Bank of Baroda and GIC Housing Finance for violating Basel-III liquidity coverage norms.\nII. Kotak Mahindra Bank acquired Deutsche Bank’s India retail and wealth management business for Rs 281.7 crore.\nIII. State Bank of India acquired a 100% stake in Aseem Infrastructure Finance Limited (AIFL) from NIIF.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only I and II",
+      "B": "Only II",
+      "C": "Only I and III",
+      "D": "Only II and III",
+      "E": "All I, II, and III"
+    },
+    "answer": "B",
+    "rationale": "Statement I is incorrect as the penalty was for violating 'KYC norms and Fair Practices Code', not Basel-III norms. Statement III is incorrect because 'TPG, GIC & ICICI Bank' acquired the 100% stake in AIFL, whereas SBI acquired a 10% stake in NHB's RDCL. Statement II is correct. (Refer Pages 38, 51, 52 & 86, 90, 91)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Science & Tech",
+    "sub_category": "International Satellite Launches",
+    "question": "China recently launched the 'HY-2E' marine satellite. Which of the following statements regarding this launch is INCORRECT?",
+    "options": {
+      "A": "It was launched aboard a Long March 4B rocket.",
+      "B": "It is designed to replace the HY-2B satellite launched in 2018.",
+      "C": "The satellite was developed by the China Academy of Space Technology (CAST).",
+      "D": "It marks China's 47th space mission in 2026.",
+      "E": "Its primary payload includes a Synthetic Aperture Radar (SAR) for terrestrial border surveillance."
+    },
+    "answer": "E",
+    "rationale": "Statement E is incorrect because HY-2E is an 'oceanographic satellite' designed for global marine monitoring (sea height, sea temperature, wind speed), not terrestrial border surveillance using SAR. All other options are factual statements from the PDF. (Refer Page 55 & 92)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "ZSI Discoveries 2025",
+    "question": "Match the following biodiversity discovery statistics (2025) released by ZSI/BSI at the 4th Animal Taxonomy Summit:\n\nColumn I:\n1. Total faunal records\n2. New animal species to science\n3. New plant taxa\n4. New plant taxa to science\n\nColumn II:\nA. 353\nB. 709\nC. 221\nD. 483\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-D, 3-A, 4-C",
+      "B": "1-D, 2-B, 3-C, 4-A",
+      "C": "1-B, 2-C, 3-A, 4-D",
+      "D": "1-A, 2-D, 3-B, 4-C",
+      "E": "1-B, 2-A, 3-D, 4-C"
+    },
+    "answer": "A",
+    "rationale": "Total faunal records = 709 (B). New animal species = 483 (D). New plant taxa = 353 (A). New plant taxa to science = 221 (C). (Refer Page 56)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Awards & Recognition",
+    "question": "Consider the following statements regarding the 2025 UNESCO Asia-Pacific Heritage Award:\n\nI. The Award of Merit was presented to the Jestha Varna Mahavihar, a 17th-century Buddhist monastery.\nII. The monastery is located in Lalitpur, Nepal, and was restored following the 2015 Gorkha earthquake.\nIII. The restoration was solely funded by the United Nations Development Programme (UNDP).\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "I and II only",
+      "B": "II and III only",
+      "C": "I and III only",
+      "D": "I only",
+      "E": "All I, II, and III"
+    },
+    "answer": "A",
+    "rationale": "Statement III is incorrect because the restoration was funded under the Government of India's (GoI) post-earthquake heritage grant worth NPR 13.78 crore, not UNDP. Statements I and II are correct. (Refer Page 45 & 88)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Science & Tech",
+    "sub_category": "AI Governance",
+    "question": "Fill in the blanks regarding the AI for Good Global Commission launched in Geneva, Switzerland:\nThe ________ (i) ________-backed commission has 44 founding members, and is co-chaired by Paul Kagame, President of ________ (ii) ________, and Marc Benioff, CEO of ________ (iii) ________.",
+    "options": {
+      "A": "(i) World Bank; (ii) Kenya; (iii) Microsoft",
+      "B": "(i) ITU (UN); (ii) Rwanda; (iii) Salesforce",
+      "C": "(i) WEF; (ii) South Africa; (iii) Google",
+      "D": "(i) ITU (UN); (ii) Nigeria; (iii) Meta",
+      "E": "(i) UNESCO; (ii) Rwanda; (iii) Salesforce"
+    },
+    "answer": "B",
+    "rationale": "The commission is backed by the International Telecommunication Union (ITU/UN), co-chaired by Paul Kagame (President of Rwanda) and Marc Benioff (CEO of Salesforce). (Refer Page 30 & 83)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Wrestling Championships 2026",
+    "question": "Match the following Indian women gold medallists from the U20 Asian Wrestling Championships 2026 with their respective weight classes:\n\nColumn I:\n1. Parveen\n2. Muskan\n3. Kajal\n\nColumn II:\nA. 76 kg\nB. 53 kg\nC. 50 kg\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-B, 2-A, 3-C"
+    },
+    "answer": "A",
+    "rationale": "Parveen won gold in the 50 kg class; Muskan in the 53 kg class; Kajal in the 76 kg class. (Refer Page 60 & 93)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Ayurveda Research",
+    "question": "Consider the following initiatives launched by the Central Council for Research in Ayurvedic Sciences (CCRAS) during its 5th Executive Committee Meeting:\n\nI. Research Methodology Textbook\nII. CCRAS PRAYATNA 2026-27\nIII. CCRAS Digital Ecosystem Dashboard\n\nWhich of the following accurately describes the objective of 'CCRAS PRAYATNA 2026-27'?",
+    "options": {
+      "A": "It is a textbook developed by 50 experts to promote evidence-based Ayurveda research.",
+      "B": "It is a scientific writing initiative to enhance publication skills and research culture among PG & Ph.D. scholars.",
+      "C": "It is an integrated digital platform to improve accessibility and research dissemination.",
+      "D": "It is a scheme providing financial insurance to Ayurveda researchers.",
+      "E": "It is a collaborative project with the World Health Organization for global manufacturing practices."
+    },
+    "answer": "B",
+    "rationale": "CCRAS PRAYATNA 2026-27 is a scientific writing initiative for PG & Ph.D. scholars. The textbook (option A) is the Research Methodology Textbook, and the digital platform (option C) is the CCRAS Digital Ecosystem Dashboard. (Refer Page 22 & 80)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Aviation",
+    "sub_category": "MRO Ecosystem",
+    "question": "Air India recently signed a Memorandum of Understanding (MoU) with SIA Engineering Company (SIAEC). What is the primary objective of this collaboration?",
+    "options": {
+      "A": "To co-develop a new fleet of sustainable aviation fuel (SAF) aircraft.",
+      "B": "To establish a joint venture for domestic low-cost carrier operations.",
+      "C": "To develop a Maintenance, Repair, and Overhaul (MRO) ecosystem in India.",
+      "D": "To lease 100 Airbus A350 aircraft over the next decade.",
+      "E": "To deploy the GAGAN satellite-based landing system across Air India's fleet."
+    },
+    "answer": "C",
+    "rationale": "Air India and SIAEC signed an MoU to explore collaboration in the MRO (Maintenance, Repair, and Overhaul) sector to strengthen India's position as a global aviation MRO hub. (Refer Page 20 & 80)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Badminton",
+    "question": "Which of the following facts regarding the Yonex US Open 2026 Badminton tournament is INCORRECT?",
+    "options": {
+      "A": "It is a BWF World Tour 2026 Super 300 event.",
+      "B": "India's Kidambi Srikanth won the Men's Singles title by defeating Su Li-yang.",
+      "C": "The Women's Singles title was won by Denmark's Line Christophersen.",
+      "D": "The tournament was held in Fullerton, California, USA.",
+      "E": "The Men's Doubles title was won by Hiroki Okamura and Kyohei Yamashita of Japan."
+    },
+    "answer": "B",
+    "rationale": "Statement B is incorrect because Kidambi Srikanth finished as the RUNNER-UP; he was defeated by Chinese Taipei’s Su Li-yang, who won the title. (Refer Page 57 & 93)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Finance",
+    "sub_category": "Multilateral Funding",
+    "question": "The Asian Development Bank (ADB) approved a USD 230 million loan for modernising water supply and sanitation infrastructure in Chennai. This project aligns with which of the following flagship urban initiatives of the Government of India?",
+    "options": {
+      "A": "Smart Cities Mission",
+      "B": "Swachh Bharat Mission (Urban) 2.0",
+      "C": "Atal Mission for Rejuvenation and Urban Transformation (AMRUT) 2.0",
+      "D": "HRIDAY (Heritage City Development and Augmentation Yojana)",
+      "E": "Pradhan Mantri Awas Yojana (Urban)"
+    },
+    "answer": "C",
+    "rationale": "The USD 230 million loan for Chennai aligns with AMRUT 2.0 and the Urban Challenge Fund. (Refer Page 37 & 86)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "General Awareness",
+    "sub_category": "Important Days",
+    "question": "Arrange the following observances in the exact chronological order of their occurrence in the month of July:\n\n1. International Plastic Bag Free Day\n2. National Chartered Accountants Day\n3. World Zoonoses Day\n4. World Sports Journalists Day\n\nSelect the correct code:",
+    "options": {
+      "A": "2, 4, 1, 3",
+      "B": "1, 2, 4, 3",
+      "C": "2, 1, 4, 3",
+      "D": "4, 2, 1, 3",
+      "E": "2, 4, 3, 1"
+    },
+    "answer": "A",
+    "rationale": "National Chartered Accountants Day is July 1. World Sports Journalists Day is July 2. International Plastic Bag Free Day is July 3. World Zoonoses Day is July 6. The chronological sequence is 2, 4, 1, 3. (Refer Pages 66-69 & 97)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Elections",
+    "question": "Consider the following statements regarding the 2026 Presidential Elections in Peru:\n\nI. Keiko Fujimori won the election representing the Popular Force party.\nII. She succeeded Pedro Castillo, becoming Peru's first female president.\nIII. She had previously served as the First Lady of Peru from 1994 to 2000.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "I and II only",
+      "B": "II and III only",
+      "C": "I and III only",
+      "D": "I only",
+      "E": "All I, II, and III"
+    },
+    "answer": "C",
+    "rationale": "Statement II is incorrect because she is succeeding interim President 'José María Balcázar', not Pedro Castillo (who was a previous president), and she is the 10th President in a decade. Statements I and III are correct. (Refer Page 48 & 89)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "General Awareness",
+    "sub_category": "Obituaries",
+    "question": "Match the eminent personalities who recently passed away with their notable literary or artistic works:\n\nColumn I:\n1. Vijaya Mehta\n2. Puviyarasu\n3. Teejan Bai\n\nColumn II:\nA. Promotion of Vaanampaadi movement (Tamil free verse)\nB. Pandavani folk singing\nC. Autobiography 'Zimma: A Memoir'\n\nSelect the correct match:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-B, 2-C, 3-A",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Vijaya Mehta wrote 'Zimma: A Memoir' (C). Puviyarasu founded the Vaanampaadi movement (A). Teejan Bai was a legendary Pandavani singer (B). (Refer Pages 61-63 & 95)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "State",
+    "sub_category": "Air Pollution Project",
+    "question": "The Delhi Government recently announced an Rs 8,300 Crore Air Pollution Project. Which international financial institution is supporting this project, and what is the funding split?",
+    "options": {
+      "A": "Asian Development Bank (ADB); ADB 70% | Delhi Govt 30%",
+      "B": "World Bank (WB); WB 65% | Delhi Govt 35%",
+      "C": "New Development Bank (NDB); NDB 60% | Delhi Govt 40%",
+      "D": "International Monetary Fund (IMF); IMF 50% | Delhi Govt 50%",
+      "E": "World Bank (WB); WB 80% | Delhi Govt 20%"
+    },
+    "answer": "B",
+    "rationale": "The 'Clean Air, Healthy Delhi' project is supported by the World Bank, with a funding split of WB - 65% and Delhi Govt - 35%. (Refer Page 73 & 99)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Science & Tech",
+    "sub_category": "Marine Discoveries",
+    "question": "Fill in the blanks regarding the recent marine discovery by Indian researchers:\nResearchers from ________ (i) ________ discovered a new deep-sea fish species named Cyttopsis indica in the ________ (ii) ________ off the Kerala Coast, and the findings were published in the ________ (iii) ________.",
+    "options": {
+      "A": "(i) ZSI; (ii) Bay of Bengal; (iii) Indian Journal of Marine Sciences",
+      "B": "(i) ICAR-CMFRI; (ii) Arabian Sea; (iii) Indian Journal of Fisheries",
+      "C": "(i) NIO; (ii) Indian Ocean; (iii) Journal of Deep-Sea Research",
+      "D": "(i) ICAR-CMFRI; (ii) Lakshadweep Sea; (iii) Asian Fisheries Science",
+      "E": "(i) CMLRE; (ii) Arabian Sea; (iii) Indian Journal of Fisheries"
+    },
+    "answer": "B",
+    "rationale": "ICAR-CMFRI researchers discovered Cyttopsis indica in the Arabian Sea, and published the findings in the Indian Journal of Fisheries. (Refer Page 57 & 92)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "Corporate Acquisitions",
+    "question": "Consider the following statements regarding the recent acquisitions by Bharat Petroleum Corporation Limited (BPCL):\n\nI. BPCL signed a pact to acquire a 40% equity stake in the Tiki Tar–Shell India JV for Rs 85 crore to strengthen its bitumen segment.\nII. BPCL, through BPRL Ventures BV, acquired the remaining 34.6% stake in IBV Brazil Petroleo from Videocon Energy Brazil Limited (VEBL).\nIII. The acquisition of the VEBL stake was completed under the Corporate Insolvency Resolution Process (CIRP) for Rs 2,312 crore.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "I and II only",
+      "B": "II and III only",
+      "C": "I and III only",
+      "D": "I, II, and III",
+      "E": "None of the above"
+    },
+    "answer": "D",
+    "rationale": "All three statements are factually correct. BPCL acquired 40% of Tiki Tar-Shell for Rs 85cr, and acquired the remaining 34.6% in IBV Brazil Petroleo from Videocon under CIRP for Rs 2,312 crore, taking its stake to 100%. (Refer Page 51 & 90)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Government Initiatives",
+    "question": "Match the following Union Ministries with their recently launched initiatives/schemes:\n\nColumn I:\n1. Ministry of Information and Broadcasting (MIB)\n2. Ministry of Tourism (MoT)\n3. Ministry of Corporate Affairs (MCA)\n\nColumn II:\nA. Signed MoU with Google India for AI-driven digital promotion\nB. Constituted a High-level Study Group headed by Prasoon Joshi\nC. Signed MoU with IIT Madras for the Corporate Mitra Scheme\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-A, 2-B, 3-C",
+      "E": "1-C, 2-B, 3-A"
+    },
+    "answer": "C",
+    "rationale": "MIB constituted the Study Group (B). MoT signed the MoU with Google (A). MCA signed the MoU for the Corporate Mitra Scheme (C). (Refer Pages 7, 9, 14 & 75, 78)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "Global Biofuel Alliance",
+    "question": "Which of the following individuals was NOT among the 15 early-career researchers selected for the Global Biofuel Champion Fellowship (GBCF) programme?",
+    "options": {
+      "A": "Ruchi Agrawal",
+      "B": "Abhishek Sahoo",
+      "C": "A researcher from the University of Michigan (USA)",
+      "D": "A researcher from Monash University (Australia)",
+      "E": "Ramesh Menon"
+    },
+    "answer": "E",
+    "rationale": "Ruchi Agrawal (TERI) and Abhishek Sahoo (IIT Delhi) are the two named Indian fellows. Researchers from Univ of Michigan and Monash Univ are also mentioned. Ramesh Menon is entirely fabricated and not mentioned in the text. (Refer Page 44)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Digital Payment Collaborations",
+    "question": "Consider the following digital payment collaborations:\n\nI. NPCI collaborated with HSBC India and JP Morgan Payments to enable real-time FX settlement for cross-border UPI transactions.\nII. Razorpay partnered with NBBL to launch 'Banking Connect', a mobile-first NetBanking solution.\nIII. PayGlocal launched Google Pay Card Payments primarily to facilitate domestic peer-to-peer (P2P) transfers.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "I and II only",
+      "B": "II and III only",
+      "C": "I and III only",
+      "D": "III only",
+      "E": "All I, II, and III"
+    },
+    "answer": "A",
+    "rationale": "Statement III is incorrect because PayGlocal launched Google Pay Card Payments to facilitate 'global merchant transactions' and enhance 'cross-border e-commerce', not domestic P2P transfers. Statements I and II are correct. (Refer Pages 32, 37 & 84, 85)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Sustainable Development Report",
+    "question": "Arrange the following lowest-performing countries in the Sustainable Development Report (SDR) 2026 in ASCENDING order of their composite scores (from lowest score to highest score among the bottom 5):\n\n1. Somalia\n2. Chad\n3. Yemen, Republic\n4. South Sudan\n5. Central African Republic\n\nSelect the correct sequence:",
+    "options": {
+      "A": "4 < 5 < 2 < 1 < 3",
+      "B": "4 < 5 < 1 < 2 < 3",
+      "C": "3 < 1 < 2 < 5 < 4",
+      "D": "5 < 4 < 2 < 1 < 3",
+      "E": "4 < 2 < 5 < 1 < 3"
+    },
+    "answer": "A",
+    "rationale": "The scores are: South Sudan (41.6), Central African Republic (45.2), Chad (46.0), Somalia (46.1), Yemen (47.7). Ascending order: 4 < 5 < 2 < 1 < 3. (Refer Page 29 & 83)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "E-Governance Awards",
+    "question": "The 29th National Conference on e-Governance (NCeG) held in Jaipur presented several awards. Which of the following accurately represents the breakdown of the 17 National Awards for e-Governance 2026 presented at the event?",
+    "options": {
+      "A": "8 Gold, 8 Silver, 1 Jury Award",
+      "B": "10 Gold, 6 Silver, 1 Jury Award",
+      "C": "9 Gold, 7 Silver, 1 Jury Award",
+      "D": "12 Gold, 5 Silver, 0 Jury Award",
+      "E": "10 Gold, 5 Silver, 2 Jury Awards"
+    },
+    "answer": "B",
+    "rationale": "The NCeG presented 17 awards comprising 10 Gold awards, 6 Silver awards, and 1 Jury Award across seven categories. (Refer Page 22 & 80)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Defence",
+    "sub_category": "International Naval Exercises",
+    "question": "Consider the following statements regarding India's participation in RIMPAC 2026:\n\nI. The exercise is the 30th edition of the Rim of the Pacific, held in Hawaii, USA.\nII. The exercise involves 30 nations, 30+ warships, and 5 submarines.\nIII. The Indian Navy participated under the leadership of Rear Admiral In-Ho Kim.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "Only I",
+      "B": "Only II",
+      "C": "Only III",
+      "D": "Only II and III",
+      "E": "None. All are correct."
+    },
+    "answer": "C",
+    "rationale": "Statement III is incorrect because Rear Admiral In-Ho Kim represents the Republic of Korea (ROK) Navy, not the Indian Navy. Statements I and II are correct. (Refer Page 26)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  }
+]

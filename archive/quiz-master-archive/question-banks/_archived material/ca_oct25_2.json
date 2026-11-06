@@ -1,0 +1,752 @@
+[
+  {
+    "category": "National",
+    "sub_category": "Environment",
+    "question": "The Ministry of New and Renewable Energy (MNRE) officially recognized three major ports as 'Green Hydrogen Hubs' under the National Green Hydrogen Mission (NGHM) in October 2025. Which of the following ports is NOT among them?",
+    "options": {
+      "A": "Deendayal Port Authority, Gujarat",
+      "B": "V.O. Chidambaranar Port Authority, Tamil Nadu",
+      "C": "Paradip Port Authority, Odisha",
+      "D": "Jawaharlal Nehru Port Authority, Maharashtra",
+      "E": "All the above were recognized"
+    },
+    "answer": "D",
+    "rationale": "According to page 55, the three recognized ports are Deendayal Port (Gujarat), V.O. Chidambaranar Port (TN), and Paradip Port (Odisha).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Health",
+    "question": "Regarding the 4th edition of the 'SPARK' initiative announced by CCRAS in October 2025, what is the specific amount of studentship provided to the selected Bachelor of Ayurvedic Medicine and Surgery (BAMS) students?",
+    "options": {
+      "A": "Rs. 25,000",
+      "B": "Rs. 50,000",
+      "C": "Rs. 1,00,000",
+      "D": "Rs. 75,000",
+      "E": "Rs. 15,000"
+    },
+    "answer": "B",
+    "rationale": "Page 56 states that under SPARK 4.0, 300 BAMS students will receive a studentship of Rs. 50,000 (Rs. 25,000 per month for two months).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Social Issues",
+    "question": "According to the NITI Aayog roadmap 'Job Creation in the AI Economy', how many new AI-driven jobs are forecasted to be generated in India in the next five years?",
+    "options": {
+      "A": "2 million",
+      "B": "5 million",
+      "C": "4 million",
+      "D": "10 million",
+      "E": "1.5 million"
+    },
+    "answer": "C",
+    "rationale": "Page 57 mentions the roadmap forecasts up to 4 million new AI-driven jobs in the next five years, despite potential job losses by 2031.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Committees",
+    "question": "The tenure of the 16th Finance Commission has been extended to November 30, 2025. This Commission's recommendations will address the fiscal period covering:",
+    "options": {
+      "A": "April 1, 2025, to March 31, 2030",
+      "B": "April 1, 2026, to March 31, 2031",
+      "C": "April 1, 2024, to March 31, 2029",
+      "D": "January 1, 2026, to December 31, 2030",
+      "E": "April 1, 2027, to March 31, 2032"
+    },
+    "answer": "B",
+    "rationale": "As per page 58, the 16th Finance Commission's recommendations will address the fiscal period from April 1, 2026, to March 31, 2031.",
+    "tag": "Static-Conceptual"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Economy",
+    "question": "In the inaugural State Mining Readiness Index (SMRI) 2025 released by the Ministry of Mines, which states ranked first in Category-A (mineral-rich) and Category-B (medium mineral resources) respectively?",
+    "options": {
+      "A": "Rajasthan and Uttar Pradesh",
+      "B": "Madhya Pradesh and Goa",
+      "C": "Gujarat and Assam",
+      "D": "Madhya Pradesh and Uttar Pradesh",
+      "E": "Odisha and Chhattisgarh"
+    },
+    "answer": "B",
+    "rationale": "Page 61 shows Rank 1 for Category A is Madhya Pradesh (MP) and for Category B is Goa.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Governance",
+    "question": "The Department of Legal Affairs notified the Notaries (Amendment) Rules, 2025. What is the newly revised maximum limit of Notaries that may be appointed by the State Government of Gujarat?",
+    "options": {
+      "A": "2,900",
+      "B": "3,500",
+      "C": "6,000",
+      "D": "4,500",
+      "E": "5,000"
+    },
+    "answer": "C",
+    "rationale": "The table on page 62 indicates that the previous limit for Gujarat was 2,900 and the revised limit (2025) is 6,000.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Infrastructure",
+    "question": "The 9th anniversary of the UDAN (Ude Desh Ka Aam Nagrik) scheme was celebrated in October 2025. What is the total number of routes that have been operationalized under the scheme as of the report date?",
+    "options": {
+      "A": "500",
+      "B": "601",
+      "C": "649",
+      "D": "720",
+      "E": "550"
+    },
+    "answer": "C",
+    "rationale": "Page 63 states that under the scheme, 649 routes have been operationalized connecting 93 unserved and underserved airports.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Health",
+    "question": "India's first indigenously discovered antibiotic 'Nafithromycin' was developed by the Department of Biotechnology (DoB) in collaboration with which pharmaceutical company?",
+    "options": {
+      "A": "Sun Pharma",
+      "B": "Cipla",
+      "C": "Wockhardt",
+      "D": "Dr. Reddy's",
+      "E": "Lupin"
+    },
+    "answer": "C",
+    "rationale": "Page 64 and 65 confirm that Nafithromycin was developed by DoB in collaboration with Wockhardt.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Poverty Alleviation",
+    "question": "As of June 2025, the Deendayal Antyodaya Yojana – National Rural Livelihood Mission (DAY-NRLM) has mobilized how many rural women households into Self Help Groups (SHGs)?",
+    "options": {
+      "A": "10.05 crore",
+      "B": "90.90 lakh",
+      "C": "8.50 crore",
+      "D": "12.00 crore",
+      "E": "7.75 crore"
+    },
+    "answer": "A",
+    "rationale": "Page 66 states that DAY-NRLM has mobilized 10.05 crore (cr) rural women households into more than 90.90 lakh SHGs.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Defence",
+    "question": "The Defence Procurement Manual (DPM) 2025, which replaces DPM 2009, introduced a relaxed penalty rate for projects under indigenisation. What is the new penalty rate per week?",
+    "options": {
+      "A": "0.5%",
+      "B": "0.25%",
+      "C": "0.1%",
+      "D": "1.0%",
+      "E": "0.75%"
+    },
+    "answer": "C",
+    "rationale": "Page 69 specifies that the penalty rate for projects under indigenisation has been reduced from 0.5% per week to 0.1% per week.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Defence",
+    "question": "In October 2025, the Defence Acquisition Council (DAC) accorded Acceptance of Necessity (AoN) for procurement worth approximately Rs 79,000 crore. Which of the following is an IA (Indian Army) acquisition mentioned in the report?",
+    "options": {
+      "A": "Landing Platform Docks (LPD)",
+      "B": "Advanced Light Weight Torpedoes (ALWT)",
+      "C": "Nag System (Tracked) Mk-II (NAMIS)",
+      "D": "30 mm Naval Surface Gun (NSG)",
+      "E": "Collaborative Long Range Target Saturation System"
+    },
+    "answer": "C",
+    "rationale": "Page 69 lists NAMIS, GBMES, and HMVs as key acquisitions for the Indian Army.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Govt Schemes",
+    "question": "The 'PM Dhan-Dhaanya Krishi Yojana (PM-DDKY)', launched in October 2025, involves the integration of how many existing central government agricultural schemes?",
+    "options": {
+      "A": "11",
+      "B": "100",
+      "C": "36",
+      "D": "25",
+      "E": "50"
+    },
+    "answer": "C",
+    "rationale": "Page 71 states that PMDDKY is designed to accelerate growth through the integration of 36 existing agricultural schemes across 11 ministries.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Agriculture",
+    "question": "Under the PM-DDKY scheme, a select number of farmers will be sent to fully-funded international trips to learn advanced techniques. How many farmers are targeted for this initiative?",
+    "options": {
+      "A": "100",
+      "B": "500",
+      "C": "1,000",
+      "D": "250",
+      "E": "750"
+    },
+    "answer": "B",
+    "rationale": "Page 71 mentions that under the scheme, 500 farmers will be sent to fully-funded international trips to countries like Israel, Japan, or the Netherlands.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Industry",
+    "question": "The Electronics Components Manufacturing Scheme (ECMS) has a total approved outlay for a period of 6 years (FY26 to FY32). What is this total amount?",
+    "options": {
+      "A": "Rs 5,532 crore",
+      "B": "Rs 22,919 crore",
+      "C": "Rs 15,000 crore",
+      "D": "Rs 10,683 crore",
+      "E": "Rs 28,711 crore"
+    },
+    "answer": "B",
+    "rationale": "Page 72 states that the Union Cabinet approved ECMS with a total outlay of Rs 22,919 crore for a period of 6 years.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Agriculture",
+    "question": "The Government approved a plan worth Rs 15,095.83 crore to procure pulses and oilseeds for the Kharif 2025-26 season. This plan was primarily approved under which umbrella scheme?",
+    "options": {
+      "A": "PM-KISAN",
+      "B": "PM-AASHA",
+      "C": "PM-DDKY",
+      "D": "RKVY",
+      "E": "NFSM"
+    },
+    "answer": "B",
+    "rationale": "Page 73 mentions the plan was approved under the Pradhan Mantri Annadata Aay SanraksHan Abhiyan (PM-AASHA) scheme.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Technology",
+    "question": "The National Blockchain Framework (NBF), launched in September 2024, features a specific component called 'NBFLite'. What is its primary function?",
+    "options": {
+      "A": "Verification of mobile applications",
+      "B": "Shared service for government entities",
+      "C": "Prototyping applications in a controlled environment",
+      "D": "End-to-end tracking of SMS communications",
+      "E": "Securing judicial data and documents"
+    },
+    "answer": "C",
+    "rationale": "Page 75 defines NBFLite as allowing startups, research institutions, and students to prototype blockchain-based applications in a controlled environment.",
+    "tag": "Static-Conceptual"
+  },
+  {
+    "category": "National",
+    "sub_category": "Committees",
+    "question": "The Government constituted a committee to review and rationalize export rebate rates under the RoDTEP and RoSCTL schemes. Who is the chairperson of this committee?",
+    "options": {
+      "A": "S.R. Baruah",
+      "B": "Vivek Ranjan",
+      "C": "Neeraj Kumar Gupta",
+      "D": "Piyush Goyal",
+      "E": "Arvind Panagariya"
+    },
+    "answer": "C",
+    "rationale": "Page 77 states the committee is chaired by former secretary Neeraj Kumar Gupta.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "FM",
+    "sub_category": "Finance News",
+    "question": "The Government of India upgraded NTPC Green Energy Limited (NGEL) to a specific CPSE schedule effective October 28, 2025. Which schedule was it upgraded to?",
+    "options": {
+      "A": "Schedule B",
+      "B": "Schedule C",
+      "C": "Schedule A",
+      "D": "Schedule D",
+      "E": "Maharatna status"
+    },
+    "answer": "C",
+    "rationale": "Page 78 confirms NGEL has been officially upgraded from Schedule 'B' to Schedule 'A' CPSE.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "State News",
+    "question": "Maharashtra became the _____ state in India to adopt the digital Electronic Bond (E-Bond) system for high-value import and export transactions.",
+    "options": {
+      "A": "10th",
+      "B": "12th",
+      "C": "16th",
+      "D": "20th",
+      "E": "15th"
+    },
+    "answer": "C",
+    "rationale": "Page 80 identifies Maharashtra as the 16th state in India to adopt the digital E-Bond system.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Infrastructure",
+    "question": "The Gujarat government declared 2025 as the 'Year of Urban Development'. What is the total sanctioned amount for urban development under this initiative?",
+    "options": {
+      "A": "Rs 19,650 crore",
+      "B": "Rs 8,220 crore",
+      "C": "Rs 13,430 crore",
+      "D": "Rs 5,862 crore",
+      "E": "Rs 11,440 crore"
+    },
+    "answer": "B",
+    "rationale": "Page 81 states that Gujarat has sanctioned Rs 8,220 crores for urban development as part of this project.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "State News",
+    "question": "Chennai recently became the first Indian city to fully operationalize which of the following disaster management systems?",
+    "options": {
+      "A": "Tsunami Warning System",
+      "B": "Cyclone Path Tracking System",
+      "C": "Real-Time Flood Forecasting and Spatial Decision Support System",
+      "D": "Earthquake Early Warning System",
+      "E": "Landslide Monitoring System"
+    },
+    "answer": "C",
+    "rationale": "Page 82 states Chennai became the first city to operationalize a Real-Time Flood Forecasting and Spatial Decision Support System (RTFF & SDSS).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Infrastructure",
+    "question": "The Odisha Government approved the 'B-MAAN' scheme for aviation sector development with an investment of Rs 14,182 crore. What is the duration of this scheme?",
+    "options": {
+      "A": "3 years",
+      "B": "5 years",
+      "C": "10 years",
+      "D": "6 years",
+      "E": "7 years"
+    },
+    "answer": "B",
+    "rationale": "Page 83 mentions the B-MAAN scheme has an investment of Rs 14,182 crore over five years (2025-2030).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "FM",
+    "sub_category": "Finance News",
+    "question": "For the 3rd Quarter of FY26 (October 1 to December 31, 2025), the interest rate for the Sukanya Samriddhi Yojana (SSY) is maintained at:",
+    "options": {
+      "A": "7.1%",
+      "B": "7.7%",
+      "C": "8.2%",
+      "D": "7.5%",
+      "E": "8.0%"
+    },
+    "answer": "C",
+    "rationale": "The table on page 85 shows the interest rate for Sukanya Samriddhi Yojana (SSY) is 8.2%.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Agriculture",
+    "question": "Under the revised guidelines for the 'Per Drop More Crop (PDMC)' scheme in October 2025, which of the following is the key change for States/UTs?",
+    "options": {
+      "A": "Mandatory 50% funding from States",
+      "B": "Unlimited funding for micro-level water storage projects",
+      "C": "Capping of funds at 20% for all states",
+      "D": "Elimination of drip irrigation components",
+      "E": "Reduction in subsidy for individual farmers"
+    },
+    "answer": "B",
+    "rationale": "Page 86 states that under the revised guidelines, States and UTs now have 'full flexibility' (Unlimited Funding) to take up micro-level water storage and conservation projects, removing the previous caps of 20% and 40%.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Social Security",
+    "question": "The Government of India approved the 'Life Cycle 75 (LC75)' investment option for central government employees under NPS. This option allows a maximum of 75% investment in equities, which tapers as the employee reaches what age range?",
+    "options": {
+      "A": "33 to 35 years",
+      "B": "45 to 55 years",
+      "C": "35 to 55 years",
+      "D": "40 to 60 years",
+      "E": "50 to 60 years"
+    },
+    "answer": "C",
+    "rationale": "Page 87 mentions LC75 has a max 75% in equities, tapering from age 35–55.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "International",
+    "sub_category": "Health",
+    "question": "Which country recently became the first country globally to achieve 'triple elimination' of mother-to-child transmission of HIV, Syphilis, and Hepatitis B?",
+    "options": {
+      "A": "India",
+      "B": "Sri Lanka",
+      "C": "Maldives",
+      "D": "Singapore",
+      "E": "Thailand"
+    },
+    "answer": "C",
+    "rationale": "Page 90 states that Maldives became the first country globally to achieve 'triple elimination' of HIV, syphilis, and hepatitis B.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "International",
+    "sub_category": "Reports",
+    "question": "India was recently elected to the United Nations Human Rights Council (UNHRC) for the 2026-28 term. How many times has India been elected to the Council including this term?",
+    "options": {
+      "A": "5th",
+      "B": "6th",
+      "C": "7th",
+      "D": "8th",
+      "E": "4th"
+    },
+    "answer": "C",
+    "rationale": "Page 91 headline: 'India Elected For 7th time to UNHRC for 2026-28 Term'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "International",
+    "sub_category": "Environment",
+    "question": "The IUCN adopted 'Motion 007 on Security Law' in October 2025. Which 'existential issue' rank was assigned to soil globally in this framework?",
+    "options": {
+      "A": "1st",
+      "B": "3rd",
+      "C": "5th",
+      "D": "8th",
+      "E": "10th"
+    },
+    "answer": "D",
+    "rationale": "Page 95 states that globally, soil is recognized as the '8th' existential issue.",
+    "tag": "Static-Conceptual"
+  },
+  {
+    "category": "International",
+    "sub_category": "Visits",
+    "question": "During the visit of Bhutan's Foreign Secretary to India, the Government of India pledged developmental assistance to Bhutan for its 13th Five-Year Planning (2024-29). What is the total amount pledged?",
+    "options": {
+      "A": "Rs 5,000 crore",
+      "B": "Rs 7,500 crore",
+      "C": "Rs 10,000 crore",
+      "D": "Rs 12,500 crore",
+      "E": "Rs 15,000 crore"
+    },
+    "answer": "C",
+    "rationale": "Page 96 states the Government of India has pledged over Rs 10,000 crore in developmental assistance to Bhutan for its 13th FYP.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "International",
+    "sub_category": "Energy",
+    "question": "The 600 MW Khorlochhu Hydropower Project in Bhutan is being developed as a 60:40 Joint Venture (JV) between which two entities?",
+    "options": {
+      "A": "DGPC and Adani Power",
+      "B": "DGPC and TATA Power",
+      "C": "NEA and POWERGRID",
+      "D": "NEA and TATA Power",
+      "E": "DGPC and Reliance Power"
+    },
+    "answer": "B",
+    "rationale": "Page 97 mentions the project is a 60:40 JV between Bhutan's Druk Green Power Corporation (DGPC) and India’s TATA POWER.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "International",
+    "sub_category": "Defence",
+    "question": "India signed a 350 million Euro defence agreement with the UK for the supply of 'Martlet' missiles. What is the designated speed of these missiles?",
+    "options": {
+      "A": "Exceeding Mach 1.0",
+      "B": "Exceeding Mach 2.0",
+      "C": "Exceeding Mach 1.5",
+      "D": "Mach 1.2",
+      "E": "Subsonic"
+    },
+    "answer": "C",
+    "rationale": "Page 100 states that Martlet missiles can travel at speeds exceeding Mach 1.5.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "International",
+    "sub_category": "Energy",
+    "question": "The Government of India is providing a USD 1.7 billion Line of Credit (LoC) to Mongolia for constructing its first oil refinery. When is this refinery expected to commence operations?",
+    "options": {
+      "A": "2026",
+      "B": "2027",
+      "C": "2028",
+      "D": "2030",
+      "E": "2029"
+    },
+    "answer": "C",
+    "rationale": "Page 104 states the refinery is expected to commence operations by 2028.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "International",
+    "sub_category": "Trade",
+    "question": "During the Brazil VP's visit to India, both countries aimed to increase bilateral trade from USD 12 billion in 2024 to USD _____ by 2030.",
+    "options": {
+      "A": "15 billion",
+      "B": "25 billion",
+      "C": "20 billion",
+      "D": "30 billion",
+      "E": "18 billion"
+    },
+    "answer": "C",
+    "rationale": "Page 105 mentions the aim to increase bilateral trade to USD 20 billion by 2030.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "RBI MPC",
+    "question": "In the 4th Bi-monthly Monetary Policy Statement for FY2025-26, the RBI decided to keep the policy repo rate unchanged at 5.5%. What is the corresponding Standing Deposit Facility (SDF) rate?",
+    "options": {
+      "A": "3.35%",
+      "B": "5.75%",
+      "C": "5.25%",
+      "D": "5.50%",
+      "E": "6.00%"
+    },
+    "answer": "C",
+    "rationale": "The policy rates table on page 110 shows the SDF rate is 5.25%.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "RBI MPC",
+    "question": "The RBI revised India’s real GDP growth forecast for FY 2025-26 (FY26) upwards. What is the new projected growth rate?",
+    "options": {
+      "A": "6.5%",
+      "B": "7.0%",
+      "C": "6.8%",
+      "D": "7.2%",
+      "E": "6.6%"
+    },
+    "answer": "C",
+    "rationale": "Page 110 mentions that RBI revised the GDP growth forecast for FY26 upwards to 6.8% from the earlier 6.5%.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "RBI Circulars",
+    "question": "According to the new 'Risk Based Premium (RBP)' model proposed by DICGC, what is the existing flat rate premium charged to banks per Rs. 100 of assessable deposits?",
+    "options": {
+      "A": "10 paise",
+      "B": "15 paise",
+      "C": "12 paise",
+      "D": "8 paise",
+      "E": "5 paise"
+    },
+    "answer": "C",
+    "rationale": "Page 111 states that at present, banks are charged a premium of 12 paise per Rs. 100 of assessable deposits.",
+    "tag": "Static-Conceptual"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "RBI MPC",
+    "question": "RBI has proposed to increase the limit for bank lending against shares for Initial Public Offer (IPO) financing. What is the new proposed limit per person?",
+    "options": {
+      "A": "Rs 10 lakhs",
+      "B": "Rs 50 lakhs",
+      "C": "Rs 25 lakhs",
+      "D": "Rs 1 crore",
+      "E": "Rs 20 lakhs"
+    },
+    "answer": "C",
+    "rationale": "Page 111 states it is proposed to enhance limits for IPO financing from Rs 10 lakhs to Rs 25 lakhs per person.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "RBI Circulars",
+    "question": "The RBI has raised the limit for 'Perpetual Debt Instruments (PDIs)' issued overseas for inclusion in Additional Tier 1 (AT1) capital. What is the new limit as a percentage of Risk Weighted Assets (RWAs)?",
+    "options": {
+      "A": "1.0%",
+      "B": "2.0%",
+      "C": "1.5%",
+      "D": "0.75%",
+      "E": "2.5%"
+    },
+    "answer": "C",
+    "rationale": "Page 113 specifies that PDIs issued overseas shall be eligible for inclusion in AT1 capital up to a maximum amount of 1.5% of RWAs.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "RBI Circulars",
+    "question": "Under the RBI's new scheme to speed up settlement of inoperative accounts, what is the maximum payout a bank can receive for reactivating an account that has been inoperative for '10 years and above'?",
+    "options": {
+      "A": "Rs 5,000",
+      "B": "Rs 10,000",
+      "C": "Rs 15,000",
+      "D": "Rs 25,000",
+      "E": "Rs 20,000"
+    },
+    "answer": "D",
+    "rationale": "The table on page 114 shows the payout for accounts inoperative for '10 years and above' is '7.5% of amount or Rs. 25,000, whichever is less'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "NBFC",
+    "question": "Which organization was granted Self-Regulatory Organisation (SRO) status for the NBFC sector by the RBI in October 2025?",
+    "options": {
+      "A": "Sa-Dhan",
+      "B": "Microfinance Network (MFIN)",
+      "C": "Finance Industry Development Council (FIDC)",
+      "D": "Fintech Association for Consumer Empowerment (FACE)",
+      "E": "NBFC-A"
+    },
+    "answer": "C",
+    "rationale": "Page 115 headline: 'RBI Granted SRO Status to Finance Industry Development Council'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "RBI Reports",
+    "question": "According to the RBI Payment System Report for June 2025, which payment mode recorded the largest share of 69% in terms of 'value' but the lowest share of 0.1% in terms of 'volume'?",
+    "options": {
+      "A": "UPI",
+      "B": "NEFT",
+      "C": "RTGS",
+      "D": "IMPS",
+      "E": "Cards"
+    },
+    "answer": "C",
+    "rationale": "Page 120 states the Real Time Gross Settlement (RTGS) system recorded the largest share of 69% in terms of value but the lowest share of 0.1% in terms of volume.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Foreign Investment",
+    "question": "As per the RBI 2024-25 round of the annual census on foreign liabilities and Assets (FLA), which two countries accounted for over one-third of the FDI in India during 2024-25?",
+    "options": {
+      "A": "USA and Mauritius",
+      "B": "USA and Singapore",
+      "C": "Singapore and Netherlands",
+      "D": "USA and UK",
+      "E": "Mauritius and Singapore"
+    },
+    "answer": "B",
+    "rationale": "Page 121 states the USA and Singapore accounted for over one-third of the FDI in India during 2024-25.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "SEBI",
+    "question": "SEBI extended the deadline for the complete roll-out of algorithm trading rules for retail investors. What is the new deadline?",
+    "options": {
+      "A": "October 1, 2025",
+      "B": "January 1, 2026",
+      "C": "April 1, 2026",
+      "D": "March 31, 2026",
+      "E": "July 1, 2026"
+    },
+    "answer": "C",
+    "rationale": "Page 122 states SEBI extended the deadline to April 01, 2026.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "SEBI",
+    "question": "The SEBI-constituted working group led by R.S. Gandhi proposed a revision of transaction charges for clearing corporations. What is the proposed increase in the share of fees collected from members?",
+    "options": {
+      "A": "From 10% to 20%",
+      "B": "From 5-6% to ~25%",
+      "C": "From 2% to 15%",
+      "D": "From 15% to 40%",
+      "E": "From 8% to 30%"
+    },
+    "answer": "B",
+    "rationale": "Page 125 mentions that a revision is expected to increase the share from the current 5% to 6% to 25% or even a little higher.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Loans",
+    "question": "The Asian Development Bank (ADB) approved a USD 190 million loan for the development of which metro rail project?",
+    "options": {
+      "A": "Mumbai Metro",
+      "B": "Indore Metro",
+      "C": "Bhopal Metro",
+      "D": "Chennai Metro",
+      "E": "Bengaluru Metro"
+    },
+    "answer": "B",
+    "rationale": "Page 125 headline: 'ADB Approved USD 190 Million Loan for Indore Metro Rail Project'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Loans",
+    "question": "The World Bank approved a USD 280 million loan to Kerala under KHSIP. What is the maturity and grace period of this loan?",
+    "options": {
+      "A": "20 years maturity, 5 years grace",
+      "B": "25 years maturity, 10 years grace",
+      "C": "25 years maturity, 5 years grace",
+      "D": "30 years maturity, 7 years grace",
+      "E": "15 years maturity, 3 years grace"
+    },
+    "answer": "C",
+    "rationale": "Page 126 states the loan has a maturity period of 25 years and a 5-year grace period.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Finance News",
+    "question": "In October 2025, Axis Bank launched a first-of-its-kind credit facility on UPI in partnership with Freecharge. What is the primary collateral for this credit line?",
+    "options": {
+      "A": "Fixed Deposits",
+      "B": "Shares",
+      "C": "Gold holdings",
+      "D": "Property",
+      "E": "Mutual Funds"
+    },
+    "answer": "C",
+    "rationale": "Page 129 states Axis Bank launched India’s first Gold-backed Credit line on UPI.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Technology",
+    "question": "Which bank collaborated with Razorpay to launch India's first RBI-compliant biometric card authentication system using facial recognition?",
+    "options": {
+      "A": "Axis Bank",
+      "B": "HDFC Bank",
+      "C": "YES Bank",
+      "D": "ICICI Bank",
+      "E": "SBI"
+    },
+    "answer": "C",
+    "rationale": "Page 130 states Razorpay in collaboration with YES bank launched India’s first biometric card authentication system.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Insurance",
+    "question": "The Life Insurance Corporation of India (LIC) launched two new plans in October 2025. Which plan is specifically designed for lower-income group people?",
+    "options": {
+      "A": "LIC Bima Lakshmi Plan (881)",
+      "B": "LIC Jeevan Raksha Plan",
+      "C": "LIC Jan Suraksha Plan (880)",
+      "D": "LIC Micro Bachat Plan",
+      "E": "LIC Aam Aadmi Bima"
+    },
+    "answer": "C",
+    "rationale": "Page 139 states 'LIC Jan Suraksha Plan (880)' is a life micro insurance plan designed to cater to lower income group people.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Reports",
+    "question": "According to the Asian Development Outlook (ADO) September 2025, what is the inflation forecast for India for the year FY26?",
+    "options": {
+      "A": "4.2%",
+      "B": "3.5%",
+      "C": "3.1%",
+      "D": "2.8%",
+      "E": "3.9%"
+    },
+    "answer": "C",
+    "rationale": "Page 147 mentions that for India, inflation is forecast to fall to 3.1% in FY26.",
+    "tag": "Current-Transient"
+  }
+]

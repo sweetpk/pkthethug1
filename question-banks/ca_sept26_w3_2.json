@@ -1,0 +1,754 @@
+[
+  {
+    "category": "National Affairs",
+    "sub_category": "Government Schemes / PM-KMY",
+    "question": "Consider the following statements regarding the progress and contributions under the Pradhan Mantri Kisan Maandhan Yojana (PM-KMY) as of 2026:\n\n1. The scheme is funded entirely by the Central Government with no matching contribution required from the enrolled farmers.\n2. The monthly contribution ranges from Rs 55 to Rs 200, depending on the age of entry.\n3. Haryana is the leading state in terms of enrolment, with over 5.75 lakh farmers registered under the scheme.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 3"
+    },
+    "answer": "B",
+    "rationale": "Statement 1 is incorrect because the PM-KMY is a voluntary contributory scheme where the farmer and the Central Government make matching contributions (50:50). Statements 2 and 3 are correct. (Refer Page 5, 82)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "International Trade / India-MERCOSUR",
+    "question": "Regarding the First Additional Protocol to the India-MERCOSUR Preferential Trade Agreement (PTA), which of the following details about the Preferential Tariff Concessions is correct?",
+    "options": {
+      "A": "India offers concessions on 452 tariff lines, while MERCOSUR offers concessions on 450 tariff lines.",
+      "B": "India offers concessions on 450 tariff lines, while MERCOSUR offers concessions on 452 tariff lines.",
+      "C": "Both India and MERCOSUR offer uniform concessions on 500 tariff lines.",
+      "D": "India offers concessions on 350 tariff lines, while MERCOSUR offers concessions on 352 tariff lines.",
+      "E": "The protocol abolishes tariff lines and institutes a zero-tariff regime for all agricultural products."
+    },
+    "answer": "B",
+    "rationale": "Under the preferential tariff concessions of the India-MERCOSUR PTA, India offers concessions on 450 tariff lines, whereas MERCOSUR offers concessions on 452 tariff lines. (Refer Page 82)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Economy / Trade Data",
+    "question": "Arrange the following countries in descending order based on their position as India's top import sources during April-August 2026:\n\n1. Oman\n2. USA\n3. China\n4. Russia\n5. Brazil\n\nSelect the correct sequence:",
+    "options": {
+      "A": "3 - 4 - 2 - 1 - 5",
+      "B": "4 - 3 - 2 - 1 - 5",
+      "C": "4 - 2 - 3 - 5 - 1",
+      "D": "3 - 2 - 4 - 1 - 5",
+      "E": "2 - 3 - 4 - 5 - 1"
+    },
+    "answer": "B",
+    "rationale": "According to the MoC&I report, the top 5 import sources for India (April-August 2026) in descending order are: Russia (4), China (3), USA (2), Oman (1), and Brazil (5). (Refer Page 15, 85)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Infrastructure / Kishau Multipurpose Project",
+    "question": "Consider the following technical specifications of the Kishau Multipurpose Project on the Tons River:\n\n1. It will feature a 232.6-metre-high concrete gravity dam.\n2. The project guarantees a hydropower generation capacity of exactly 1,020 million units (MU).\n3. It will create a storage capacity of 1,562 Million Cubic Metres (MCM).\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 2",
+      "E": "Only 2 and 3"
+    },
+    "answer": "B",
+    "rationale": "Statement 2 is incorrect because the project will have a hydropower generation capacity of 1,476 million units (MU), not 1,020 MU. Statements 1 and 3 are correct. (Refer Page 15, 85)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Employment Statistics / PLFS",
+    "question": "Assertion (A): The overall Worker Population Ratio (WPR) for persons aged 15 years and above increased from 52.5% in July 2026 to 52.8% in August 2026.\nReason (R): This overall increase in WPR was primarily driven by a surge in workforce participation in urban areas, which recorded a WPR of 55.8%.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true. Reason (R) is false because the increase was driven by increased workforce participation in *rural* areas, which recorded a WPR of 55.8%, whereas the urban WPR was much lower at 47.0%. (Refer Page 10, 60, 83)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Agriculture / Dryland Congress",
+    "question": "Match the following entities with the Memorandums of Understanding (MoUs) signed by ICRISAT at the Dryland Congress 2026:\n\nColumn I:\n1. Global Crop Diversity Trust\n2. National Institute of Food Technology Entrepreneurship and Management (NIFTEM)\n3. District administrations of Angul and Rayagada\n\nColumn II:\nA. Odisha\nB. MoUs for global crop resilience\nC. Food processing and entrepreneurship\n\nSelect the correct matching code:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-C, 2-A, 3-B"
+    },
+    "answer": "B",
+    "rationale": "ICRISAT signed MoUs with Global Crop Diversity Trust for crop resilience (1-B), NIFTEM for food processing/entrepreneurship (2-C), and the district administrations of Angul and Rayagada located in Odisha (3-A). (Refer Page 11, 84)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "International Summits / BRICS",
+    "question": "Which of the following was NOT an outcome or initiative launched during the 18th BRICS Summit in New Delhi in September 2026?",
+    "options": {
+      "A": "Amendment to the BRICS Remote Sensing Satellite Constellation (RSSC) agreement.",
+      "B": "Establishment of the Network of CoEs for mental health wellness, with NIMHANS as the coordinating centre.",
+      "C": "Unanimous adoption of the 'New Delhi Declaration' covering global issues like AI and institutional reform.",
+      "D": "The formal induction of six new permanent member states into the BRICS alliance, expanding the core group to eleven.",
+      "E": "Establishment of BRICS-AGRIN for digital agriculture and climate resilience."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect because the induction of six new members happened previously (Johannesburg Summit 2023). The 2026 summit outcomes included the New Delhi Declaration, RSSC amendment, NIMHANS coordination for mental health, and BRICS-AGRIN. (Refer Page 9, 60, 83)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Defence / VIMARSH 2026",
+    "question": "Consider the following initiatives unveiled by Union Minister Rajnath Singh at 'VIMARSH 2026':\n\n1. 09 Licensing Agreements for Transfer of Technology (LAToTs) were handed over to 13 manufacturing partners.\n2. The indigenous Gallium Nitride (GaN) Monolithic Microwave Integrated Circuit (MMIC) technology was showcased, recording over 2,300 ToTs to industries.\n3. Strategic MoUs were signed between the Society of Indian Defence Manufacturers (SIDM) and Laghu Udyog Bharati (LUB).\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 1 and 3",
+      "C": "Only 2 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 3"
+    },
+    "answer": "D",
+    "rationale": "All three statements are correct. 9 LAToTs went to 13 partners, GaN MMIC saw 2300+ ToTs to 1100+ industries, and SIDM-LUB signed MoUs. (Refer Page 12, 61, 84)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Sports Infrastructure / F1 Revival",
+    "question": "Fill in the blanks regarding the newly formed Task Force to assess the revival of Formula 1 in India:\nThe 10-member Task Force, headed by ________ from NITI Aayog, will explore the feasibility of hosting an F1 Grand Prix in the year ________. India last hosted an F1 race at the Buddh International Circuit in ________.",
+    "options": {
+      "A": "Amitabh Kant ; 2028 ; 2015",
+      "B": "Yugal Kishore Joshi ; 2028 ; 2013",
+      "C": "Sujata Chaturvedi ; 2030 ; 2013",
+      "D": "Yugal Kishore Joshi ; 2027 ; 2011",
+      "E": "Kunal ; 2028 ; 2013"
+    },
+    "answer": "B",
+    "rationale": "The Task Force is headed by Yugal Kishore Joshi, targeting an F1 Grand Prix in 2028. India last hosted an F1 race at the BIC in 2013. (Refer Page 11, 60, 84)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Government Schemes / PM Vishwakarma",
+    "question": "Which of the following is NOT a correct feature or progress metric of the PM Vishwakarma Scheme as it completed its third year?",
+    "options": {
+      "A": "It provides a stipend of Rs 500 per day during training.",
+      "B": "It offers a digital transaction incentive of Re 1 per transaction for up to 100 transactions per month.",
+      "C": "A Toolkit incentive of Rs 15,000 is provided as an e-voucher.",
+      "D": "The total outlay for the scheme from FY24 to FY28 is Rs 23,000 Crore.",
+      "E": "Over 12,000 artisans have been trained in Artificial Intelligence (AI) tools."
+    },
+    "answer": "D",
+    "rationale": "The total outlay for the scheme from FY24 to FY28 is Rs 13,000 Crore, not Rs 23,000 Crore. All other options accurately describe the scheme's features and progress. (Refer Page 14, 84, 85)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Economy / Trade Data",
+    "question": "According to the MoC&I data for August 2026, India's total exports (Merchandise and Services combined) were estimated at USD 82.68 Bn. Which specific sector acted as the Top Growth Driver, registering a massive +89.82% growth?",
+    "options": {
+      "A": "Pharmaceuticals",
+      "B": "Petroleum Products",
+      "C": "Electronic Goods",
+      "D": "Gems and Jewellery",
+      "E": "Automotive Components"
+    },
+    "answer": "C",
+    "rationale": "As per the Exam Hints section detailing the August 2026 trade data, the Top Growth Driver was 'Electronic Goods', registering a growth of +89.82%. (Refer Page 85)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Technology / AI Centres",
+    "question": "Match the following details associated with the newly approved AI Centre of Excellence (AI CoE) in Bhubaneswar, Odisha:\n\nColumn I:\n1. Implementing Agency\n2. Industry Partner\n3. Financial Contribution by Industry Partner\n\nColumn II:\nA. Rs. 4 crore\nB. Blue Cloud Softech Solutions\nC. Software Technology Parks of India (STPI)\n\nSelect the correct matching:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-A, 2-B, 3-C",
+      "E": "1-B, 2-A, 3-C"
+    },
+    "answer": "A",
+    "rationale": "The implementing agency is STPI (1-C). The industry partner is Blue Cloud Softech Solutions (2-B). The financial contribution by the industry partner is Rs 4 crore (3-A). (Refer Page 17, 63, 86)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Railways / Joint Ventures",
+    "question": "Consider the following statements about the Joint Venture (JV) formed between BHEL and Titagarh Rail Systems Limited (TRSL):\n\n1. It is a 50:50 Joint Venture Company (JVC) with a paid-up capital of Rs 50 lakh.\n2. The JV's headquarters will be established in Kolkata, West Bengal.\n3. The board will consist of two directors each from BHEL and TRSL.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 1 and 3",
+      "C": "Only 2 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "B",
+    "rationale": "Statements 1 and 3 are correct. Statement 2 is incorrect because the JV's headquarters will be located in New Delhi, not Kolkata. (Refer Page 17, 86)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Indexes / IEMI 2025",
+    "question": "Arrange the following key themes of the NITI Aayog 'India Electric Mobility Index (IEMI) 2025' in descending order of their assigned weightage percentages:\n\n1. Charging Infrastructure Readiness\n2. Transport Electrification Progress\n3. EV Research and Innovation Status\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1 - 2 - 3",
+      "B": "2 - 1 - 3",
+      "C": "3 - 2 - 1",
+      "D": "2 - 3 - 1",
+      "E": "1 - 3 - 2"
+    },
+    "answer": "B",
+    "rationale": "The weightages are: Transport Electrification Progress (50%), Charging Infrastructure Readiness (30%), and EV Research and Innovation Status (20%). Descending order: 2 - 1 - 3. (Refer Page 86)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Legislation / RBD Amendment Act",
+    "question": "Under the Registration of Births and Deaths (Amendment) Act, 2026, which authority is explicitly designated to approve registrations delayed by '1 to 2 years'?",
+    "options": {
+      "A": "Registrar General of India (RGI)",
+      "B": "Judicial Magistrate First Class (JMFC)",
+      "C": "District Magistrate (DM) / Sub-Divisional Magistrate (SDM) / Executive Magistrate",
+      "D": "High Court Bench",
+      "E": "Chief Medical Officer (CMO)"
+    },
+    "answer": "C",
+    "rationale": "For delays of 1-2 years, approval from a DM, SDM, or authorized Executive Magistrate is required. Delays beyond 2 years require a JMFC order. (Refer Page 18, 86)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Energy / GOBARdhan Scheme",
+    "question": "Assertion (A): Under the new GOBARdhan guidelines, City Gas Distribution (CGD) companies face mandatory Compressed Biogas (CBG) purchase obligations starting at 3% in FY27.\nReason (R): From the second year onwards, the guidelines impose a 'take-or-pay' obligation up to 90% on CGDs, alongside a 'supply-or-pay' obligation up to 50% on producers.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both A and R are true factual statements regarding the new GOBARdhan scheme guidelines. However, R describes the structural penalty mechanisms for supply/demand mismatch, which does not directly explain *why* the initial 3% mandate was established (which is for general sector boosting and energy transition). (Refer Page 19, 87)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Trade / NITI Aayog TWQ",
+    "question": "Which of the following data points highlighted in NITI Aayog's 9th Trade Watch Quarterly (TWQ) is INCORRECT?",
+    "options": {
+      "A": "Global goods trade stood at USD 13.7 trillion in H1CY26.",
+      "B": "India's merchandise trade deficit was recorded at USD 86.6 billion.",
+      "C": "India's total metal and ore imports in 2025 amounted to USD 60.5 billion.",
+      "D": "India's metals exports witnessed a negative Year-on-Year growth, dropping below USD 30 billion.",
+      "E": "Global services trade expanded by 10.5% during H1CY26."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect because India's metal exports reached USD 34.8 billion in 2025, not dropping below USD 30 billion. The report notes resilient global trade despite geopolitical tensions. (Refer Page 21, 65, 87)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Agriculture & Science / SPROUT Facility",
+    "question": "Fill in the blanks regarding the newly inaugurated SPROUT agricultural research facility:\nThe SPROUT facility utilizes a specialized system called ________, which significantly cuts the crop cycle to approximately ________ days, initially focusing on the rapid breeding of ________ crops.",
+    "options": {
+      "A": "GeneEdit ; 90 ; Wheat",
+      "B": "SpeedSeed ; 40 ; Chickpea",
+      "C": "RapidGrow ; 30 ; Maize",
+      "D": "SpeedSeed ; 60 ; Soybean",
+      "E": "TraitTracker ; 45 ; Rice"
+    },
+    "answer": "B",
+    "rationale": "The SPROUT facility uses the 'SpeedSeed' system, which cuts the crop cycle to ~40 days, initially focusing on climate-resilient chickpea crops. (Refer Page 21, 87)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Social Justice / Nasha Mukt Bharat",
+    "question": "Consider the following statements about the '100 Weeks Nasha Mukt Yuva Abhiyan':\n\n1. It was launched by the Department of Youth Affairs (DoYA) through MY Bharat and the National Service Scheme (NSS).\n2. The initial phase is a 12-week activity phase spanning from September to December 2026.\n3. The campaign aims to distribute free rehabilitation medicines to over 10 lakh youths across 500 locations.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect; the campaign mobilized over 4 lakh participants across 1,000+ locations focusing on pledges, awareness, marathons, and yoga, not distributing free rehabilitation medicines. (Refer Page 27, 67, 89)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Defence / APU Contract",
+    "question": "Match the following details concerning the Ministry of Defence's Rs 586 crore contract with AICPL for Auxiliary Power Units (APUs):\n\nColumn I:\n1. Total number of APUs ordered\n2. Number of APUs specifically for T-90 tanks\n3. Number of APUs specifically for T-72 tanks\n\nColumn II:\nA. 1,600\nB. 3,257\nC. 1,657\n\nSelect the correct matching:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-B, 2-A, 3-C",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-A, 2-C, 3-B",
+      "E": "1-B, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "The total number of APUs ordered is 3,257 (1-B). Out of these, 1,657 are for T-90 tanks (2-C) and 1,600 are for T-72 tanks (3-A). (Refer Page 28, 67, 89)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Rural Sanitation / Swachh Seva Aankalan",
+    "question": "Assertion (A): The 'Swachh Seva Aankalan' is a digital framework designed exclusively for urban local bodies to monitor daily waste segregation.\nReason (R): It was developed by the Department of Drinking Water and Sanitation (DDWS) to assess ODF sustainability, visual cleanliness, and SLWM in rural areas under SBM(G) 2.0.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "D",
+    "rationale": "Assertion (A) is false because Swachh Seva Aankalan is designed for *rural* sanitation service delivery, not urban local bodies. Reason (R) is true as it accurately describes the developers and parameters. (Refer Page 28, 68, 90)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Technology / SEMICON India 2026",
+    "question": "Consider the following statements regarding the 5th SEMICON India 2026:\n\n1. It was inaugurated by PM Narendra Modi at the Yashobhoomi IICC in New Delhi.\n2. The theme of the convention was 'Silicon to Systems: Building the Ecosystem'.\n3. Global players like Applied Materials, Lam Research, ASML, and Tokyo Electron announced major investments during the event.\n4. India's first QFN (Quad Flat No-Lead) chip was launched at the event.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2, and 3",
+      "B": "1, 3, and 4",
+      "C": "2, 3, and 4",
+      "D": "1, 2, and 4",
+      "E": "All 1, 2, 3, and 4"
+    },
+    "answer": "E",
+    "rationale": "All four statements are correct. The event took place at Yashobhoomi, its theme was 'Silicon to Systems', saw participation from major global chip firms, and witnessed the launch of India's first QFN chip with SenseSoC integration. (Refer Page 25, 67, 89)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Government Schemes / PMKKKY",
+    "question": "Arrange the following PMKKKY metrics in descending order of their numerical values as of 2026:\n\n1. Number of ongoing projects\n2. Total number of projects sanctioned\n3. Number of completed projects\n\nSelect the correct sequence:",
+    "options": {
+      "A": "2 - 3 - 1",
+      "B": "2 - 1 - 3",
+      "C": "3 - 2 - 1",
+      "D": "1 - 2 - 3",
+      "E": "3 - 1 - 2"
+    },
+    "answer": "A",
+    "rationale": "Sanctioned projects: 4.70 lakh (2). Completed projects: 2.92 lakh (3). Ongoing projects: 78,809 (1). Descending order: 4.70 lakh > 2.92 lakh > 78,809, which corresponds to 2 - 3 - 1. (Refer Page 26, 89)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Indices / Global Gender Gap Report",
+    "question": "Match the following countries with their respective ranks at the bottom of the WEF's Global Gender Gap Index 2026:\n\nColumn I:\n1. Pakistan\n2. Iran\n3. Chad\n\nColumn II:\nA. Rank 145th\nB. Rank 144th\nC. Rank 143rd\n\nSelect the correct matching:",
+    "options": {
+      "A": "1-A, 2-B, 3-C",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-B, 2-C, 3-A",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "B",
+    "rationale": "According to the report, the bottom 3 countries are Chad at 145th (3-A), Iran at 144th (2-B), and Pakistan at 143rd (1-C). (Refer Page 30, 91)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Bilateral Relations / India-Bhutan",
+    "question": "Which of the following outcomes was NOT a part of the agreements or announcements made during Union Minister Dr. S. Jaishankar's visit to Bhutan in September 2026?",
+    "options": {
+      "A": "Review of the 1200 MW Punatsangchhu-I Hydroelectric Project.",
+      "B": "Review of the 1020 MW Punatsangchhu-II Hydroelectric Project.",
+      "C": "Bhutan's pledge to support India's United Nations Security Council (UNSC) bid for 2028-29.",
+      "D": "Bhutan's ratification of the International Solar Alliance (ISA) as the newest member state.",
+      "E": "Integration of UPI Phase-II to enable Bhutanese users to make payments in India."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect because the documentation highlights Bhutan ratifying the International Big Cat Alliance (IBCA), not the ISA, as a strategic outcome of this specific visit. (Refer Page 30, 91)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Reports / UN Gender Snapshot 2026",
+    "question": "Consider the following statements from 'The Gender Snapshot 2026':\n\n1. It tracks progress for women and girls across all 17 Sustainable Development Goals (SDGs).\n2. Approximately 1.1 billion women and girls are projected to remain food insecure.\n3. The report notes that 1 in 3 institutions set up to accelerate gender equality eroded in the last two years.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 1 and 3",
+      "C": "Only 2 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All three statements accurately reflect the findings of the UN Gender Snapshot 2026 report. (Refer Page 31, 91)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Multilateral Forums / G20",
+    "question": "Assertion (A): At the G20 Energy Abundance Ministerial Meeting 2026 in Houston, India adopted all four consensus outcomes proposed.\nReason (R): The meeting was held under the G20 Presidency of Brazil, focusing on critical minerals and resilient supply chains.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true as India did adopt the four consensus outcomes. Reason (R) is false because the meeting was held in Houston under the United States of America (USA) G20 Presidency, not Brazil. (Refer Page 32, 70, 91)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Digital Innovations / GFF 2026",
+    "question": "Match the following digital innovations launched at the Global Fintech Fest (GFF) 2026 with their respective features:\n\nColumn I:\n1. AI-Tara\n2. Zeta-Pluxee\n3. Bharat Connect for Business\n\nColumn II:\nA. Passkey-authentication replacing SMS-based OTP on RuPay prepaid cards\nB. Voice-based conversational banking assistant tool by Indian Bank\nC. A B2B solution launched by Central Bank of India (CBoI) and NBBL\n\nSelect the correct matching:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-B, 2-A, 3-C",
+      "C": "1-A, 2-C, 3-B",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-C, 2-A, 3-B"
+    },
+    "answer": "B",
+    "rationale": "AI-Tara is Indian Bank's voice-based assistant (1-B). Zeta-Pluxee introduced passkey-authentication (2-A). CBoI launched Bharat Connect for Business with NBBL (3-C). (Refer Page 33, 91, 92)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Regulatory Norms / UPI MDR",
+    "question": "Under the new UPI MDR framework released by NPCI, what is the specific MDR charge for Capital Market transactions (e.g., Mutual Funds, Securities), and what is its maximum capping?",
+    "options": {
+      "A": "0.4% with a maximum cap of Rs 500",
+      "B": "0.02% with a maximum cap of Rs 300",
+      "C": "0.2% with a maximum cap of Rs 100",
+      "D": "Flat Rs 5 per transaction",
+      "E": "Exempted entirely for amounts above Rs 2,000"
+    },
+    "answer": "B",
+    "rationale": "For Capital Market transactions, the MDR is set at a nominal 0.02% of the transaction value with a maximum capping of Rs 300. (Refer Page 35, 71, 92)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Capital Markets / Tokenised Bonds",
+    "question": "Consider the following statements about India's first tokenised corporate bond issuances:\n\n1. It was enabled by the National Stock Exchange (NSE) on its Electronic Bidding Platform (NSE EBP).\n2. The total value of the issuance was Rs 1,000 crore.\n3. The funds were raised exclusively by the Rural Electrification Corporation (REC).\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 3",
+      "E": "None of the above"
+    },
+    "answer": "C",
+    "rationale": "Statement 3 is incorrect because the funds (Rs 1,000 crore total) were raised from both REC Ltd (Rs 500 crore) and L&T (Rs 500 crore), not exclusively by REC. Statements 1 and 2 are correct. (Refer Page 35, 71, 92)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Regulatory Norms / RBI Market Risk",
+    "question": "Fill in the blanks regarding the RBI's Final Directions on Capital Requirement for Market Risk:\nThe new market-risk framework under Basel III for commercial banks will come into effect from ________. Under the coverage norms, the Foreign Exchange Risk component mandates a ________ Net Open Position (NOP) requirement.",
+    "options": {
+      "A": "1 January 2027 ; 15%",
+      "B": "1 April 2027 ; 9%",
+      "C": "1 October 2026 ; 5%",
+      "D": "1 April 2028 ; 12%",
+      "E": "18 September 2026 ; 9%"
+    },
+    "answer": "B",
+    "rationale": "The framework comes into effect from 1 April 2027, and the Foreign Exchange Risk (incl. gold) requires a 9% Net Open Position (NOP). (Refer Page 36, 72, 93)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Regulatory Actions / NBFCs",
+    "question": "Which of the following NBFCs was NOT among those whose Certificates of Registration (CoR) were actively 'cancelled' by the RBI in September 2026, but rather surrendered its licence due to exit or merger?",
+    "options": {
+      "A": "Dar's Financial Services",
+      "B": "Rolta Holding & Finance Corp.",
+      "C": "Vasudeo Securities",
+      "D": "Anupam Mercantile Ltd",
+      "E": "Parsoli Corp."
+    },
+    "answer": "D",
+    "rationale": "Anupam Mercantile Ltd is listed among the 8 NBFCs that surrendered their licences due to exit, merger, or compliance changes. The other four listed (A, B, C, E) had their CoRs officially cancelled by the RBI. (Refer Page 37, 72, 93)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Market Infrastructure / DGCX & TCS",
+    "question": "Assertion (A): TCS partnered with the Dubai Gold and Commodities Exchange (DGCX) to deploy its TCS BaNCS and Quartz platforms.\nReason (R): The primary objective of deploying the Quartz platform is to handle the core securities trading and clearing processes.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true. Reason (R) is false because the Quartz platform is deployed for Surveillance (and Quartz Gateway for integration), whereas TCS BaNCS handles the core Securities Trading Platform. (Refer Page 38, 72, 93)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Economic Forecasts / Moody's",
+    "question": "Arrange the following Indian macroeconomic indicators forecasted/reported by Moody's in September 2026 in descending order of their percentage values:\n\n1. H1 CY 2026 GDP Growth\n2. Q1 FY 2027 GDP Growth\n3. FY 2027 Annual GDP Growth Forecast\n4. FY 2027 Projected Inflation\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1 - 2 - 3 - 4",
+      "B": "2 - 1 - 3 - 4",
+      "C": "1 - 3 - 2 - 4",
+      "D": "2 - 3 - 4 - 1",
+      "E": "1 - 4 - 2 - 3"
+    },
+    "answer": "A",
+    "rationale": "The percentages are: H1 CY2026 (8.2%), Q1 FY2027 (7.8%), FY2027 Forecast (7.0%), Projected Inflation (4.8%). Arranged in descending order: 8.2% (1) > 7.8% (2) > 7.0% (3) > 4.8% (4). (Refer Page 38, 73, 94)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Cinema / Dadasaheb Phalke Award",
+    "question": "Consider the following statements regarding veteran actor Anant Nag:\n\n1. He was conferred with the 56th Dadasaheb Phalke Award 2024 at the 72nd National Film Awards ceremony.\n2. He is the first Kannada cinema artist to receive this award.\n3. He previously received the Padma Bhushan in 2025 in the field of Art.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 2",
+      "E": "Only 2 and 3"
+    },
+    "answer": "B",
+    "rationale": "Statement 2 is incorrect because Anant Nag is the *second* Kannada cinema artist to receive the honour, after Rajkumar (1995). Statements 1 and 3 are correct. (Refer Page 39, 73, 94)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Science / Arthur M. Bueche Award",
+    "question": "Fill in the blanks: Sethuraman Panchanathan, the recipient of the Arthur M. Bueche Award 2026, became the first person from ________ to win the award and served as the Director of the ________ from 2020-2025.",
+    "options": {
+      "A": "California ; National Academy of Engineering (NAE)",
+      "B": "Arizona ; National Science Foundation (NSF)",
+      "C": "Texas ; National Science Board (NSB)",
+      "D": "Arizona ; Defense Advanced Research Projects Agency (DARPA)",
+      "E": "New York ; National Science Foundation (NSF)"
+    },
+    "answer": "B",
+    "rationale": "He is the first person from Arizona to win the award and served as the Director of the National Science Foundation (NSF) from 2020 to 2025. (Refer Page 40, 74, 94)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "Cooperative Alliances / IFFCO",
+    "question": "Consider the following statements about the ICA Global Board elections 2026:\n\n1. Dileep Sanghani was elected as an At-Large Director for the 2026-2030 term.\n2. A total of 15 At-Large Directors were elected from 24 candidates.\n3. The ICA General Assembly 2026 was held in Panama City, Panama.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 1 and 3",
+      "C": "Only 2 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. Dileep Sanghani was elected as one of the 15 At-Large Directors out of 24 candidates at the assembly held in Panama City. (Refer Page 41, 74, 95)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "Defence / CRPF",
+    "question": "Sanjukta Parashar recently became the first woman officer to lead a CRPF CoBRA unit. From which IPS cadre does she belong, and whom did she succeed?",
+    "options": {
+      "A": "AGMUT Cadre ; Ranjit Sinha",
+      "B": "Assam-Meghalaya Cadre ; Danesh Rana",
+      "C": "Uttar Pradesh Cadre ; Nina Singh",
+      "D": "Assam-Meghalaya Cadre ; K. Vijay Kumar",
+      "E": "AGMUT Cadre ; Danesh Rana"
+    },
+    "answer": "B",
+    "rationale": "Sanjukta Parashar is a 2006-batch IPS officer of the Assam-Meghalaya cadre. She succeeded Danesh Rana, a 1996-batch officer of the AGMUT cadre. (Refer Page 41, 74, 95)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Acquisitions & Mergers",
+    "sub_category": "Sports Franchises",
+    "question": "In the CCI-approved acquisition of three global cricket franchises, match the key investors with their approximate post-acquisition stakes:\n\nColumn I:\n1. Mittal Family (through Westview Cricket)\n2. Adar Cyrus Poonawalla\n3. Manoj Badale (existing investor)\n\nColumn II:\nA. ~18%\nB. ~7%\nC. ~75%\n\nSelect the correct matching:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "The Mittal family will hold about 75% (1-C), Adar Cyrus Poonawalla around 18% (2-A), and Manoj Badale about 7% (3-B). (Refer Page 43, 75, 95)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Defence / Aerospace",
+    "question": "Assertion (A): Hindustan Aeronautics Limited (HAL) recently handed over two LCA Tejas FOC Twin Seater Trainers and three HTT-40 Basic Trainer Aircraft to Pawan Hans Limited (PHL).\nReason (R): Pawan Hans Limited (PHL) also received four Dhruv Next Generation (NG) helicopters from HAL for VIP transport, HEMS, and offshore operations.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "D",
+    "rationale": "Assertion (A) is false because the LCA Tejas FOC Trainers and HTT-40 Trainers were handed over to the Indian Air Force (IAF), not Pawan Hans. Reason (R) is true because Pawan Hans did receive the 4 Dhruv NG helicopters. (Refer Page 44, 75, 96)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "New Species Discoveries",
+    "question": "Match the following newly discovered species with their taxonomic classification/description:\n\nColumn I:\n1. Gegeneophis chandgadi\n2. Ingerana aizawl\n3. Leopardus tilcayo\n\nColumn II:\nA. Wild cat from Bolivia's Yungas cloud forest\nB. Subterranean legless amphibian (caecilian)\nC. Stream-dwelling frog\n\nSelect the correct matching:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-B, 2-A, 3-C",
+      "C": "1-B, 2-C, 3-A",
+      "D": "1-A, 2-C, 3-B",
+      "E": "1-C, 2-A, 3-B"
+    },
+    "answer": "C",
+    "rationale": "Gegeneophis chandgadi is a legless amphibian (1-B). Ingerana aizawl is a stream-dwelling frog (2-C). Leopardus tilcayo is a wild cat species (3-A). (Refer Page 45, 76, 96, 97)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Tennis / US Open 2026",
+    "question": "Consider the finals of the 2026 US Open. Which of the following pairs correctly matches the runner-up with their respective category?",
+    "options": {
+      "A": "Ben Shelton - Women's Singles",
+      "B": "Aryna Sabalenka - Men's Singles",
+      "C": "Kevin Krawietz / Tim Pütz - Men's Doubles",
+      "D": "Ashlyn Krueger / Robin Montgomery - Mixed Doubles",
+      "E": "Belinda Bencic / Flavio Cobolli - Women's Doubles"
+    },
+    "answer": "C",
+    "rationale": "Kevin Krawietz and Tim Pütz were the runners-up in Men's Doubles. Ben Shelton was Men's Singles runner-up. Aryna Sabalenka was Women's Singles runner-up. Krueger/Montgomery were Women's Doubles runners-up. Bencic/Cobolli were Mixed Doubles runners-up. (Refer Page 46, 77)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Football / Retirements",
+    "question": "Fill in the blanks: Colombian footballer James Rodríguez announced his retirement from international football after a 15-year career. He concluded his international stint with ________ caps and ________ goals, notably winning the Golden Boot in the ________ FIFA World Cup.",
+    "options": {
+      "A": "110 ; 25 ; 2018",
+      "B": "131 ; 31 ; 2014",
+      "C": "140 ; 43 ; 2014",
+      "D": "131 ; 31 ; 2018",
+      "E": "120 ; 30 ; 2026"
+    },
+    "answer": "B",
+    "rationale": "James Rodríguez retired with 131 caps, 31 goals (and 43 assists), and he won the Golden Boot in the 2014 FIFA World Cup. (Refer Page 47, 78, 97)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Science & Environment",
+    "question": "Consider the following statements regarding international observances in September 2026:\n\n1. The International Day of Science, Technology and Innovation for the South (September 16) was observed for the 3rd time in 2026.\n2. The International Day for the Preservation of the Ozone Layer (September 16) celebrated 10 years of the Kigali Amendment to the Montreal Protocol.\n3. World Bamboo Day (September 18) noted that India has a bamboo area of 15.47 million hectares, with Maharashtra leading the acreage.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 3",
+      "C": "Only 1 and 2",
+      "D": "Only 2 and 3",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "B",
+    "rationale": "Statement 3 is incorrect because Madhya Pradesh (20,421 sq. km) leads the bamboo acreage in India, not Maharashtra. Statements 1 and 2 are correct. (Refer Pages 52, 53, 54, 80, 100)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Pharmacovigilance",
+    "question": "Assertion (A): During the 6th National Pharmacovigilance Week (NPW 2026), the 7th National Formulary of India (NFI 2026) was launched, including 653 drugs.\nReason (R): The theme for NPW 2026 was 'Safe care for Noncommunicable Diseases (NCDs)'.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true as the 7th NFI containing 653 drugs was launched. Reason (R) is false because the theme for NPW 2026 was 'Promoting Rational Use of Medicines through Pharmacovigilance – A Step Towards Safer Healthcare'. 'Safe care for NCDs' was the theme for World Patient Safety Day. (Refer Page 53, 55, 80, 101)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Maharashtra Infrastructure",
+    "question": "In a major infrastructure push, Mazagon Dock Shipbuilders Limited (MDL) signed an MoU to establish a Rs 27,000 crore Greenfield Shipbuilding Cluster. Where will this cluster be located, and what is its target capacity?",
+    "options": {
+      "A": "Junput, West Bengal ; 1.5 million GT per annum",
+      "B": "Dighi, Raigad district, Maharashtra ; At least 2 million GT per annum",
+      "C": "Visakhapatnam, Andhra Pradesh ; At least 1.2 million GT per annum",
+      "D": "Dighi, Raigad district, Maharashtra ; At least 1.2 million GT per annum",
+      "E": "Kachchh, Gujarat ; 2 million GT per annum"
+    },
+    "answer": "D",
+    "rationale": "MDL signed an MoU to establish the Greenfield Shipbuilding Cluster at Dighi in Raigad district, Maharashtra. MDL will develop a capacity of at least 1.2 million Gross Tonnage (GT) per annum as the anchor shipyard. Note: The exact target capacity in the PDF for MDL is 1.2 million GT/year, though the overall cluster might expand. (Refer Page 56, 81, 101)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Madhya Pradesh Schemes",
+    "question": "Arrange the following steps/phases of the 'Swamitva Adhikar Abhilekh Nispadan Evam Panjiyan Yojana 2026' implementation in Madhya Pradesh in chronological order:\n\n1. Door-to-door surveys\n2. First phase camps\n3. Final phase camps (Oct 1-3)\n\nSelect the correct sequence based on the timeline provided:",
+    "options": {
+      "A": "1 - 2 - 3",
+      "B": "2 - 1 - 3",
+      "C": "1 - 3 - 2",
+      "D": "2 - 3 - 1",
+      "E": "3 - 1 - 2"
+    },
+    "answer": "A",
+    "rationale": "The implementation involves door-to-door surveys (Sep 17-Oct 17, 2026) running concurrently with 3-phase camps (Sep 17-19, Sep 24-26, Oct 1-3). Chronologically, door surveys and early camps precede the final camps. The standard procedural sequence is Survey initiation (1) -> Early camps (2) -> Final camps (3). (Refer Page 57, 81, 101)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - September 2026 - 3rd Week"
+  }
+]

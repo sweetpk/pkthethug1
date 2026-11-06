@@ -1,0 +1,802 @@
+[
+  {
+    "category": "Banking",
+    "sub_category": "Partnerships & Digital Initiatives",
+    "question": "Match the following banking/financial entities with their recent partnerships/initiatives announced in July 2026:\n\nColumn I:\n1. Razorpay\n2. Bank of Baroda (BoB)\n3. NPCI\n4. Punjab & Sind Bank (PSB)\n\nColumn II:\nA. 'Banking Connect' mobile-first NetBanking solution with NBBL\nB. Real-time FX settlement for cross-border UPI with HSBC & JP Morgan\nC. 'Navjyoti' in-house HR app & 'PSB Bharat Connect'\nD. Strategic partnership with Mizuho Bank for M&A Financing\n\nSelect the correct code:",
+    "options": {
+      "A": "1-A, 2-D, 3-B, 4-C",
+      "B": "1-B, 2-C, 3-A, 4-D",
+      "C": "1-A, 2-B, 3-C, 4-D",
+      "D": "1-D, 2-A, 3-B, 4-C",
+      "E": "1-C, 2-D, 3-A, 4-B"
+    },
+    "answer": "A",
+    "rationale": "Razorpay partnered with NBBL for 'Banking Connect' (A). BoB partnered with Mizuho Bank for M&A financing (D). NPCI partnered with HSBC & JP Morgan for FX settlement (B). PSB launched Navjyoti and PSB Bharat Connect on its 119th Foundation Day (C). (Refer Pages 33, 37, 84, 85)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Digital India Programme",
+    "question": "The Digital India Programme completed 11 years in July 2026. Which of the following data points accurately reflects the progress stated in the official report?",
+    "options": {
+      "A": "Broadband users reached 206.58 crore.",
+      "B": "The cost of mobile data fell from Rs 569 per GB to Rs 20-30.",
+      "C": "India accounts for 49% of global real-time digital transactions.",
+      "D": "Electronics became India's 1st largest export category.",
+      "E": "The National Data Centre was successfully established in Shillong, Meghalaya."
+    },
+    "answer": "C",
+    "rationale": "India holds a 49% share in global real-time transactions. Broadband users reached 106.58 crore (not 206). Mobile data fell from Rs 269 to Rs 8-10 (not 569 to 20-30). Electronics is the 3rd largest export category. The National Data Centre mentioned is in Guwahati, Assam. (Refer Page 13)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Wrestling Championships 2026",
+    "question": "Arrange the following Indian U15 Men's Freestyle Gold medalists in ASCENDING order of their respective weight classes:\n\n1. Vivek Chauhan\n2. Prathamesh S. Patil\n3. Keshav Harshad Chemte\n4. Naitik\n\nSelect the correct sequence:",
+    "options": {
+      "A": "2, 4, 3, 1",
+      "B": "4, 2, 3, 1",
+      "C": "2, 3, 4, 1",
+      "D": "1, 3, 4, 2",
+      "E": "2, 4, 1, 3"
+    },
+    "answer": "A",
+    "rationale": "The weight classes are: Prathamesh S. Patil (52 kg), Naitik (62 kg), Keshav Harshad Chemte (75 kg), and Vivek Chauhan (85 kg). Ascending order is 52 < 62 < 75 < 85, which corresponds to 2, 4, 3, 1. (Refer Page 60 & 93)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "Biodiversity Heritage Sites",
+    "question": "Consider the following locations in Assam that have been officially notified as Biodiversity Heritage Sites (BHS). Which of the following represents the correct comprehensive list of Assam's official BHS as of July 2026?",
+    "options": {
+      "A": "Majuli BHS, Nallur Tamarind Grove BHS, Borjuli Wild Rice BHS",
+      "B": "Majuli BHS, Borjuli Wild Rice BHS, Hajong Tortoise Lake BHS",
+      "C": "Kaziranga BHS, Majuli BHS, Hajong Tortoise Lake BHS",
+      "D": "Manas BHS, Borjuli Wild Rice BHS, Hajong Tortoise Lake BHS",
+      "E": "Dibru-Saikhowa BHS, Nameri BHS, Borjuli Wild Rice BHS"
+    },
+    "answer": "B",
+    "rationale": "As of July 2026, Assam has three officially notified BHS: Majuli BHS, Borjuli Wild Rice BHS, and Hajong Tortoise Lake BHS. (Nallur Tamarind Grove is in Karnataka). (Refer Page 16 & 78)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "Mergers & Acquisitions",
+    "question": "Assertion (A): Bharat Petroleum Corporation Limited (BPCL) recently acquired a 100% stake in IBV Brazil Petroleo for Rs 2,312 crore.\nReason (R): This transaction was completed entirely through open market block deals bypassing the Corporate Insolvency Resolution Process (CIRP).\n\nSelect the most appropriate option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true as BPCL (via BPRL) acquired the remaining 34.6% stake from VEBL to reach 100% for Rs 2,312 crore. Reason (R) is false because the process was explicitly completed 'under CIRP with GoI approval and NCLT order', not bypassing it via open market deals. (Refer Page 51 & 90)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Science & Tech",
+    "sub_category": "Marine Biology",
+    "question": "Consider the following statements regarding the new deep-sea fish species 'Cyttopsis indica' discovered by ICAR-CMFRI:\n\nI. It was discovered in the Arabian Sea off the Kerala Coast.\nII. Its habitat depth is recorded between 350-500 meters.\nIII. DNA analysis confirmed it is identical to the previously known Cyttopsis rosea.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "Only I",
+      "B": "Only II",
+      "C": "Only III",
+      "D": "Only I and II",
+      "E": "All I, II, and III"
+    },
+    "answer": "C",
+    "rationale": "Statement III is incorrect because DNA analysis confirmed that it is 'distinct' from Cyttopsis rosea, which led to it being identified as a new species. Statements I and II are correct. (Refer Page 57 & 92)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "General Awareness",
+    "sub_category": "Important Days & Themes",
+    "question": "Match the following global observances in 2026 with their respective designated themes:\n\nColumn I:\n1. World Rural Development Day\n2. World Kiswahili Language Day\n3. International Day of Parliamentarism\n4. National Doctor's Day\n\nColumn II:\nA. The Future of Human Rights is Written in Parliaments\nB. Financing the First Mile of Food Systems\nC. Behind the Mask: Who Heals the Healers?\nD. Kiswahili for Peace, Solidarity and Global Economic Diplomacy\n\nSelect the correct answer code:",
+    "options": {
+      "A": "1-B, 2-D, 3-A, 4-C",
+      "B": "1-D, 2-A, 3-B, 4-C",
+      "C": "1-B, 2-A, 3-D, 4-C",
+      "D": "1-C, 2-D, 3-A, 4-B",
+      "E": "1-A, 2-B, 3-C, 4-D"
+    },
+    "answer": "A",
+    "rationale": "World Rural Development Day: Financing the First Mile of Food Systems (B). World Kiswahili Language Day: Kiswahili for Peace... (D). Parliamentarism: The Future of Human Rights... (A). Doctor's Day: Behind the Mask... (C). (Refer Pages 65-70 & 96-98)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Defence",
+    "sub_category": "Regulations and Exercises",
+    "question": "Which of the following combinations of Defence initiatives and their primary characteristics is accurately matched?",
+    "options": {
+      "A": "DFP-2026: Restricts financial powers to MoD headquarters exclusively.",
+      "B": "UNICORN: India-USA co-development project for advanced stealth submarines.",
+      "C": "RIMPAC 2026: Hosted by the Indian Navy in the Andaman Sea.",
+      "D": "FW-HAPS: High-Altitude Pseudo Satellites approved for ISR and communication.",
+      "E": "MIGM: Medium-range air defence missile system for the Indian Army."
+    },
+    "answer": "D",
+    "rationale": "FW-HAPS stands for Fixed-Wing High-Altitude Pseudo Satellites for ISR (D is correct). DFP-2026 delegates financial powers to DRDO, not MoD HQ. UNICORN is an India-Japan project. RIMPAC is hosted by the US Navy in Hawaii. MIGM are Multi Influence Ground Mines, not air defence missiles. (Refer Pages 12, 24, 26, 28)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "Taxation",
+    "question": "Consider the following statements regarding Goods and Services Tax (GST) Day 2026:\n\n1. It commemorates the rollout of the GST regime which came into effect on 1 July 2017.\n2. The GST Council is constituted under Article 279A of the Constitution.\n3. The simplified tax slabs targeted for 2025 reduced the previous structure to three slabs: 5%, 18%, and 40% demerit rate.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "3 only",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All statements are correct. GST rolled out on July 1, 2017. The Council is under Article 279A. The simplified slabs are 5%, 18%, and 40% (demerit rate), replacing the earlier 0%, 5%, 12%, 18%, 28% structure. (Refer Page 67 & 97)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Cricket",
+    "question": "Which of the following statements is true regarding the 2026 ICC Women's T20 World Cup?",
+    "options": {
+      "A": "The Indian Women's team reached the semi-finals but lost to England.",
+      "B": "Ellyse Perry made her record-breaking ninth appearance in a T20 World Cup final.",
+      "C": "Shabnim Ismail finished with 51 wickets, setting an all-time highest record.",
+      "D": "Australia defeated England by 10 wickets in the final.",
+      "E": "The total prize pool for the tournament was USD 2.34 million."
+    },
+    "answer": "C",
+    "rationale": "Shabnim Ismail became the first to 50 wickets and finished with 51 (all-time highest) (C is correct). India missed the semi-finals (finished 3rd in Group A). Perry equalled seven final appearances. Australia defeated England by 7 wickets (not 10). Total prize pool was USD 8.76 million (USD 2.34m was for the winners). (Refer Page 59 & 94)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Global Indices",
+    "question": "Arrange the top five countries in the Global Passport Index (GPI) 2026 released by Global Citizen Solutions in the correct order from Rank 1 to Rank 5:\n\n1. Germany\n2. Sweden\n3. Finland\n4. Switzerland\n5. The Netherlands\n\nSelect the correct sequence:",
+    "options": {
+      "A": "2, 4, 3, 1, 5",
+      "B": "2, 3, 4, 1, 5",
+      "C": "4, 2, 3, 1, 5",
+      "D": "2, 4, 1, 3, 5",
+      "E": "3, 2, 4, 5, 1"
+    },
+    "answer": "A",
+    "rationale": "The top 5 countries in GPI 2026 are: 1. Sweden, 2. Switzerland, 3. Finland, 4. Germany, 5. The Netherlands. Sequence: 2, 4, 3, 1, 5. (Refer Page 32 & 84)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "MoSPI SDG Publications",
+    "question": "Based on the MoSPI SDG Progress Report 2026, match the following parameters with their corresponding data values for 2026:\n\nColumn I:\n1. Internet subscriptions\n2. Sex Ratio at Birth\n3. Unemployment Rate\n4. Ramsar wetland area\n\nColumn II:\nA. 3.1%\nB. 969.10M\nC. 8.66%\nD. 918\n\nSelect the correct code:",
+    "options": {
+      "A": "1-B, 2-D, 3-A, 4-C",
+      "B": "1-D, 2-B, 3-C, 4-A",
+      "C": "1-B, 2-A, 3-D, 4-C",
+      "D": "1-C, 2-D, 3-A, 4-B",
+      "E": "1-B, 2-C, 3-A, 4-D"
+    },
+    "answer": "A",
+    "rationale": "Internet subscriptions = 969.10M (B). Sex Ratio at Birth = 918 (D). Unemployment Rate = 3.1% (A). Ramsar area = 8.66% (C). (Refer Page 5)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Appointments",
+    "question": "Which of the following newly appointed officers will serve the longest tenure based on their superannuation dates as cleared by the Appointments Committee of the Cabinet (ACC) in July 2026?",
+    "options": {
+      "A": "Ravi Agrawal (CBDT Chairman)",
+      "B": "Amit Garg (NCRB Director)",
+      "C": "Sujeet Pandey (SVPNPA Director)",
+      "D": "Alok Kumar Mittal (BPR&D Director General)",
+      "E": "Rajiv Kumar (HDFC Chairman)"
+    },
+    "answer": "D",
+    "rationale": "Alok Kumar Mittal will serve until June 30, 2029. Sujeet Pandey until July 31, 2028. Amit Garg until Oct 31, 2027. Ravi Agrawal until Dec 31, 2026. Rajiv Kumar has a 3-year term (mid-2029, but Mittal's exact date is specified as the longest official superannuation in the police lists). (Refer Pages 45-49 & 88-89)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Science & Tech",
+    "sub_category": "Space & Aviation",
+    "question": "Match the following aerospace initiatives with their core functionalities or payloads:\n\nColumn I:\n1. GAGAN\n2. SAR (Agnikul+ICEYE)\n3. SOLVE\n4. HY-2E\n\nColumn II:\nA. Sub-Orbital Launch Vehicle for Gaganyaan parachute trials\nB. Oceanographic satellite for marine monitoring\nC. Satellite-Based Augmentation System for civil aviation LPV approaches\nD. Earth-observation ecosystem for defence and climate monitoring\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-D, 3-A, 4-B",
+      "B": "1-D, 2-C, 3-A, 4-B",
+      "C": "1-C, 2-B, 3-A, 4-D",
+      "D": "1-A, 2-D, 3-C, 4-B",
+      "E": "1-C, 2-D, 3-B, 4-A"
+    },
+    "answer": "A",
+    "rationale": "GAGAN is used for LPV approaches (C). SAR ecosystem by Agnikul+ICEYE (D). SOLVE is the test vehicle for parachute trials (A). HY-2E is China's oceanographic satellite (B). (Refer Pages 53-55 & 91-92)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Awards & Honors",
+    "question": "Assertion (A): Nita Ambani was conferred the AAPI Humanitarian Award and the 'Key to City of Tampa' at the 44th Annual Convention.\nReason (R): The award recognized her achievements in scaling Mount Elbrus and promoting mountaineering among Indian women.\n\nSelect the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true. Reason (R) is false because the award was in recognition of her 'philanthropic contributions to healthcare, education, sports, culture, and community development', not mountaineering. Tshering Choden scaled Mount Elbrus. (Refer Page 43 & 87)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Agriculture",
+    "sub_category": "PMKSY",
+    "question": "Consider the following statements regarding the Pradhan Mantri Krishi Sinchayee Yojana (PMKSY) which recently completed 10 years:\n\n1. It was launched on July 1, 2015, with an initial outlay of Rs 50,000 crore for 5 years.\n2. Under its Per Drop More Crop (PDMC) component, micro-irrigation provides a 55% subsidy for small farmers.\n3. The scheme has completely merged with the MGNREGA framework for its operational budget.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "1 only",
+      "B": "2 only",
+      "C": "3 only",
+      "D": "1 and 2 only",
+      "E": "2 and 3 only"
+    },
+    "answer": "C",
+    "rationale": "Statement 3 is incorrect because PMKSY is a distinct scheme, although elements like PDMC merged with PM-RKVY (not MGNREGA). Statements 1 and 2 are correct. (Refer Page 15)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "State Projects",
+    "question": "Which of the following facts regarding the USD 11.5 Billion Integrated Aluminium Project in Odisha is INCORRECT?",
+    "options": {
+      "A": "It is a joint venture between Adani Enterprises Limited (AEL) and International Resources Holding (IRH).",
+      "B": "The project will be developed as a 50:50 joint venture.",
+      "C": "IRH is an Abu Dhabi-based natural resources investment platform.",
+      "D": "The project components include a 4 MMTPA refinery and a 2 MMTPA smelter.",
+      "E": "The project will be fully funded by a green loan from the Japan Bank for International Cooperation (JBIC)."
+    },
+    "answer": "E",
+    "rationale": "Statement E is incorrect because the JBIC green loan (JPY 80 billion) was secured by POWERGRID for an RE transmission project, not for the Odisha Aluminium project. All other statements regarding the AEL-IRH MoU are correct. (Refer Pages 39 & 72, 98)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Small Savings Schemes",
+    "question": "Arrange the following Small Savings Scheme instruments in ASCENDING order of their interest rates for Q2FY27:\n\n1. Post Office Savings Deposit (POSD)\n2. 5-Year Post Office Recurring Deposit (PORD)\n3. 1-Year Post Office Time Deposit (POTD)\n4. Public Provident Fund (PPF)\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1, 2, 3, 4",
+      "B": "1, 3, 2, 4",
+      "C": "2, 1, 3, 4",
+      "D": "1, 2, 4, 3",
+      "E": "4, 3, 2, 1"
+    },
+    "answer": "A",
+    "rationale": "POSD is 4.0%; 5-Year PORD is 6.7%; 1-Year POTD is 6.9%; PPF is 7.1%. Ascending order is 4.0 < 6.7 < 6.9 < 7.1, which corresponds to 1, 2, 3, 4. (Refer Page 10 & 76)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Regulatory Penalties",
+    "question": "Fill in the blanks regarding the recent RBI penalty:\nRBI imposed a combined monetary penalty of Rs 66.7 lakh on ________ (i) ________ and ________ (ii) ________ for violating KYC norms and the ________ (iii) ________.",
+    "options": {
+      "A": "(i) State Bank of India; (ii) LIC Housing Finance; (iii) Capital Adequacy Framework",
+      "B": "(i) Bank of Baroda; (ii) GIC Housing Finance; (iii) Fair Practices Code for Lenders",
+      "C": "(i) Canara Bank; (ii) PNB Housing Finance; (iii) Priority Sector Lending targets",
+      "D": "(i) Bank of Baroda; (ii) HDFC Credila; (iii) NPA classification norms",
+      "E": "(i) ICICI Bank; (ii) GIC Housing Finance; (iii) Foreign Exchange Management Act"
+    },
+    "answer": "B",
+    "rationale": "RBI penalized Bank of Baroda (Rs 63.6 lakh) and GIC Housing Finance (Rs 3.1 lakh) for violating KYC norms and the Fair Practices Code for Lenders. (Refer Page 38 & 86)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "General Awareness",
+    "sub_category": "Obituaries",
+    "question": "Match the following locations to the birthplaces of the eminent personalities who recently passed away:\n\nColumn I:\n1. Vadodara, Gujarat\n2. Coimbatore, Tamil Nadu\n3. Raipur/Durg, Chhattisgarh\n4. Sullia, Karnataka\n\nColumn II:\nA. Girish Bharadwaj\nB. Teejan Bai\nC. Puviyarasu\nD. Vijaya Mehta\n\nSelect the correct mapping:",
+    "options": {
+      "A": "1-D, 2-C, 3-B, 4-A",
+      "B": "1-C, 2-D, 3-A, 4-B",
+      "C": "1-D, 2-B, 3-C, 4-A",
+      "D": "1-B, 2-A, 3-D, 4-C",
+      "E": "1-A, 2-C, 3-B, 4-D"
+    },
+    "answer": "A",
+    "rationale": "Vijaya Mehta was born in Vadodara (1-D). Puviyarasu in Coimbatore (2-C). Teejan Bai in Ganiyari village, Durg/Raipur (3-B). Girish Bharadwaj in Sullia (4-A). (Refer Pages 61-63 & 95-96)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Cooperative Sector",
+    "question": "Consider the following statements regarding the initiatives launched at the 5th Foundation Day Ceremony of the Ministry of Cooperation:\n\nI. The event was held under the overarching theme 'Sahakar Se Samriddhi'.\nII. The government announced the establishment of a Cooperative Life Insurance Company.\nIII. The 'e-PACS' initiative targets the digital transformation of 1 lakh Primary Agricultural Credit Societies.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "Only I",
+      "B": "Only II",
+      "C": "Only III",
+      "D": "Only I and II",
+      "E": "None of the above"
+    },
+    "answer": "C",
+    "rationale": "Statement III is incorrect because the e-PACS initiative targets the digital transformation of 50,000 PACS, not 1 lakh. Statements I and II are correct. (Refer Page 24 & 81)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "Mergers & Acquisitions",
+    "question": "Which of the following entities acquired a 100% stake in Aseem Infrastructure Finance Limited (AIFL) from the National Investment and Infrastructure Fund (NIIF)?",
+    "options": {
+      "A": "A consortium led by Aditya Birla Group",
+      "B": "DWS Group GmbH & Co. KGaA",
+      "C": "A consortium of TPG, GIC, and ICICI Bank",
+      "D": "State Bank of India and BNP Paribas Cardif",
+      "E": "International Resources Holding (IRH)"
+    },
+    "answer": "C",
+    "rationale": "Global alternative asset management firm TPG Inc., in partnership with GIC and ICICI Bank, acquired a 100% stake in AIFL from NIIF. (Refer Page 52 & 91)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Agriculture",
+    "sub_category": "Micro-Irrigation Subsidies",
+    "question": "Under the Per Drop More Crop (PDMC) component of PMKSY, what is the specified subsidy rate provided to small farmers for micro-irrigation systems?",
+    "options": {
+      "A": "30%",
+      "B": "45%",
+      "C": "55%",
+      "D": "75%",
+      "E": "90%"
+    },
+    "answer": "C",
+    "rationale": "Under the PDMC component, small farmers receive a 55% subsidy for micro-irrigation (drip/sprinkler), while other farmers receive a 45% subsidy. (Refer Page 15)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Science & Tech",
+    "sub_category": "AI Governance",
+    "question": "Assertion (A): The International Telecommunication Union (ITU) launched the AI for Good Global Commission to strengthen global AI governance and inclusion.\nReason (R): The Commission includes 44 founding members, notably featuring Indian business leaders like Mukesh Ambani and Sunil Bharti Mittal.\n\nSelect the most appropriate option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both statements are factually correct. However, the presence of Indian business leaders (Reason) is an attribute of the commission, not the 'explanation' for why ITU launched the commission (which was to strengthen AI governance). (Refer Page 30 & 83)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Aviation",
+    "sub_category": "Helicopter Operations",
+    "question": "Consider the following statements regarding India's first Private Point-in-Space (PinS) Instrument Approach Procedure:\n\n1. It was approved for commercial jet aircraft at Jodhpur Airport.\n2. It enables precise helicopter landing without ground-based ILS/radar.\n3. The procedure was developed by the Airports Authority of India (AAI) and approved by DGCA.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "3 only",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "B",
+    "rationale": "Statement 1 is incorrect because it was approved for 'helicopter operations at Undavalli Heliport', not commercial jets at Jodhpur. Statements 2 and 3 are correct. (Refer Page 17 & 78)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "Acquisition Valuations",
+    "question": "Match the following corporate acquisitions approved or announced in July 2026 with their respective deal valuations:\n\nColumn I:\n1. Aditya Birla-led RCB Buyout\n2. DWS Group’s Nippon Life AIF Deal\n3. Kotak Bank acquires Deutsche retail\n4. BPCL acquires IBV Brazil Petroleo\n\nColumn II:\nA. Rs 2,312 crore\nB. Rs 281.7 crore\nC. Rs 733 crore\nD. Rs 16,660 crore\n\nSelect the correct code:",
+    "options": {
+      "A": "1-D, 2-C, 3-B, 4-A",
+      "B": "1-C, 2-D, 3-A, 4-B",
+      "C": "1-D, 2-B, 3-C, 4-A",
+      "D": "1-A, 2-C, 3-B, 4-D",
+      "E": "1-D, 2-C, 3-A, 4-B"
+    },
+    "answer": "A",
+    "rationale": "RCB buyout is Rs 16,660 cr (D). DWS/Nippon deal is ~Rs 733 cr (C). Kotak/Deutsche deal is Rs 281.7 cr (B). BPCL/IBV deal is Rs 2,312 cr (A). (Refer Pages 50-51 & 90-91)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "SDG Index",
+    "question": "Arrange the following lowest-performing countries from the Sustainable Development Report (SDR) 2026 in DESCENDING order of their composite scores (from highest score among them to lowest score):\n\n1. Yemen, Republic\n2. Somalia\n3. Chad\n4. Central African Republic\n5. South Sudan\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1 > 2 > 3 > 4 > 5",
+      "B": "5 > 4 > 3 > 2 > 1",
+      "C": "1 > 3 > 2 > 5 > 4",
+      "D": "2 > 1 > 3 > 4 > 5",
+      "E": "3 > 2 > 1 > 4 > 5"
+    },
+    "answer": "A",
+    "rationale": "The scores are: Yemen (47.7), Somalia (46.1), Chad (46.0), CAR (45.2), South Sudan (41.6). Descending order is 1 > 2 > 3 > 4 > 5. (Refer Page 29 & 83)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "General Awareness",
+    "sub_category": "Important Days",
+    "question": "Which of the following statements regarding World Zoonoses Day is INCORRECT?",
+    "options": {
+      "A": "It is observed annually on July 6.",
+      "B": "It commemorates the first human rabies vaccine administration in 1885.",
+      "C": "The first human rabies vaccine was administered by Louis Pasteur.",
+      "D": "The vaccine was successfully administered to a 9-year-old boy named Joseph Meister.",
+      "E": "The 2026 observance marked the launch of a joint WHO-FAO animal genetics tracking portal."
+    },
+    "answer": "E",
+    "rationale": "Statement E is incorrect. The 2026 event marked the MoHFW holding a National Consultation on the 'National Action Plan for Prevention and Control of Zoonoses', not a joint WHO-FAO tracking portal. (Refer Page 69 & 97)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Infrastructure",
+    "sub_category": "Funding",
+    "question": "The Union Cabinet recently cleared significant investments for national infrastructure. Fill in the blanks:\nThe Government of India committed an additional Rs ________ (i) ________ crore to the NIIF, and the CCEA approved a combined investment of Rs ________ (ii) ________ crore for two major highway projects in Delhi and UP.",
+    "options": {
+      "A": "(i) 60,000; (ii) 34,102",
+      "B": "(i) 30,000; (ii) 14,115",
+      "C": "(i) 40,000; (ii) 16,660",
+      "D": "(i) 30,000; (ii) 8,300",
+      "E": "(i) 50,000; (ii) 14,115"
+    },
+    "answer": "B",
+    "rationale": "GoI approved an additional Rs 30,000 crore for NIIF. CCEA approved Rs 14,114.81 (approx 14,115) crore for two highway projects. (Refer Pages 6, 18 & 74, 79)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Cricket Milestones",
+    "question": "Consider the following statements regarding Indian cricketer Vaibhav Sooryavanshi:\n\n1. He became India's youngest international cricket debutant at 15 years and 99 days.\n2. He made his senior T20I debut against South Africa in 2026.\n3. He broke Sachin Tendulkar's 36-year-old record for the youngest male debutant.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "3 only",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "C",
+    "rationale": "Statement 2 is incorrect because he made his debut against England (at Old Trafford), not South Africa. (Shafali Verma debuted against SA in 2019). Statements 1 and 3 are correct. (Refer Page 60 & 95)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "MoUs and Agreements",
+    "question": "Match the following Ministries/Offices with the entities they signed MoUs with in July 2026:\n\nColumn I:\n1. Ministry of Tourism (MoT)\n2. Air India\n3. Ministry of Corporate Affairs (MCA)\n4. Office of the Principal Scientific Adviser (OPSA)\n\nColumn II:\nA. Data Security Council of India (DSCI)\nB. SIA Engineering Company (SIAEC)\nC. IIT Madras\nD. Google India\n\nSelect the correct code:",
+    "options": {
+      "A": "1-D, 2-B, 3-C, 4-A",
+      "B": "1-D, 2-C, 3-B, 4-A",
+      "C": "1-A, 2-B, 3-C, 4-D",
+      "D": "1-B, 2-D, 3-A, 4-C",
+      "E": "1-C, 2-A, 3-D, 4-B"
+    },
+    "answer": "A",
+    "rationale": "MoT + Google India (D). Air India + SIAEC (B). MCA + IIT Madras (C). OPSA + DSCI (A). (Refer Pages 7, 14, 20 & 75, 78, 80)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Science & Tech",
+    "sub_category": "Aviation",
+    "question": "Assertion (A): The DGCA successfully completed India’s 1st satellite-based landing system (SLS) approach on an Airbus A320 at Udaipur.\nReason (R): The demonstration utilized the indigenous GAGAN system to execute a Localiser Performance with Vertical Guidance (LPV) approach, bypassing ground-based ILS.\n\nSelect the most appropriate option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Both statements are true. The successful SLS approach (Assertion) was made possible specifically because of the utilization of the GAGAN-enabled LPV approach (Reason), which eliminates dependence on costly ground-based landing infrastructure. (Refer Page 53 & 91)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Defence",
+    "sub_category": "Acquisitions",
+    "question": "The Defence Acquisition Council (DAC) cleared a Rs 52,000 crore modernisation plan. Which of the following descriptions incorrectly matches the proposed acquisition?",
+    "options": {
+      "A": "MPATGM - Man-Portable anti-tank guided missile with active protection capabilities.",
+      "B": "MRSAM - Medium Range Surface-to-Air Missile against aerial threats.",
+      "C": "MIGM - Multi Influence Ground Mines for sea-denial against submarines and ships.",
+      "D": "FW-HAPS - Fixed-Wing High-Altitude Pseudo Satellites for ISR and communication.",
+      "E": "NSUAS - Naval Shipborne Unmanned Aerial Systems for real-time surveillance."
+    },
+    "answer": "A",
+    "rationale": "MPATGM is an anti-tank guided missile, but the 'Active Protection System' is a separate acquisition proposal listed specifically to 'neutralise incoming anti-tank missiles; protects tanks'. They are two distinct items in the DAC list. (Refer Page 23-24)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Health Infrastructure",
+    "question": "During the launch of digital health initiatives, Union Minister JP Nadda highlighted the progress of the Ayushman Bharat Digital Mission (ABDM). What are the approximate current figures for ABHA accounts and health records created under ABDM?",
+    "options": {
+      "A": "50 crore ABHA accounts and 75 crore health records",
+      "B": "90 crore ABHA accounts and 100+ crore health records",
+      "C": "100 crore ABHA accounts and 150+ crore health records",
+      "D": "75 crore ABHA accounts and 90 crore health records",
+      "E": "120 crore ABHA accounts and 200 crore health records"
+    },
+    "answer": "B",
+    "rationale": "Over 90 crore ABHA accounts and 100 crore+ health records have been created under the ABDM. (Refer Page 8 & 75)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "Taxonomy Discoveries",
+    "question": "Consider the following statements about the 'Animal Discoveries–2025' report released during the 111th Foundation Day of the Zoological Survey of India (ZSI):\n\n1. A total of 709 new faunal records were documented.\n2. Out of the total, 483 are species completely new to science.\n3. The summit was held at the Dhano Dhanyo Auditorium in Kolkata.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1 only",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All statements are correct. ZSI's 111th Foundation Day saw the release of 'Animal Discoveries 2025' with 709 total records (483 new to science) during ATS 4.0 in Kolkata. (Refer Page 56 & 92)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "State",
+    "sub_category": "State News Overview",
+    "question": "Match the following state-level developments with their respective locations or states:\n\nColumn I:\n1. Rs 8300 Cr Air Pollution Project\n2. Rs 313 Cr special package for Tea Garden Workers\n3. Launch of 'Namo Swachhta Abhiyan'\n4. Appointment of Mylswamy Annadurai as CDC Chairman\n\nColumn II:\nA. West Bengal\nB. Tamil Nadu\nC. Delhi\nD. Gujarat\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-A, 3-D, 4-B",
+      "B": "1-A, 2-C, 3-B, 4-D",
+      "C": "1-C, 2-B, 3-D, 4-A",
+      "D": "1-D, 2-A, 3-C, 4-B",
+      "E": "1-B, 2-A, 3-D, 4-C"
+    },
+    "answer": "A",
+    "rationale": "Delhi Air Pollution Project (C). West Bengal Tea Garden package (A). Gujarat Namo Swachhta Abhiyan (D). Tamil Nadu appointed Annadurai (B). (Refer Pages 71-73 & 98-99)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Formula One Standings",
+    "question": "Arrange the following Formula One drivers in ASCENDING order of their points in the Championship Standings after the 2026 Austrian Grand Prix:\n\n1. George Russell\n2. Lando Norris\n3. Lewis Hamilton\n4. Kimi Antonelli\n5. Oscar Piastri\n\nSelect the correct sequence:",
+    "options": {
+      "A": "2, 5, 3, 1, 4",
+      "B": "4, 1, 3, 5, 2",
+      "C": "5, 2, 3, 1, 4",
+      "D": "2, 3, 5, 1, 4",
+      "E": "2, 5, 1, 3, 4"
+    },
+    "answer": "A",
+    "rationale": "Points: Lando Norris (79), Oscar Piastri (80), Lewis Hamilton (125), George Russell (131), Kimi Antonelli (171). Ascending order is 79 < 80 < 125 < 131 < 171, which corresponds to 2, 5, 3, 1, 4. (Refer Page 58)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Diplomatic Awards",
+    "question": "Which of the following statements about Union Minister Piyush Goyal's official visit to the UK is INCORRECT?",
+    "options": {
+      "A": "The visit aimed to discuss the implementation of the India-UK CETA and DCC.",
+      "B": "He received the Special award for Exceptional Leadership at the 10th anniversary of the India Global Forum (IGF).",
+      "C": "The CETA and DCC were set to come into force on July 15, 2026.",
+      "D": "He launched the UK-India CETA Business Utilisation Manual developed by UKIBC and HSBC India.",
+      "E": "He inaugurated the first joint India-UK UNICORN submarine defence project in London."
+    },
+    "answer": "E",
+    "rationale": "Statement E is incorrect because the UNICORN system is a defence co-development project between India and Japan, not the UK. All other statements regarding CETA, DCC, and the IGF award are correct. (Refer Pages 25, 28 & 81, 82)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "FM",
+    "sub_category": "Regulatory Appointments",
+    "question": "Consider the following statements regarding regulatory appointments in India's financial sector:\n\n1. SEBI constituted an Expert Working Group chaired by Ananta Barua to review the Debenture Trusteeship Framework.\n2. RBI appointed Ravi Shankar as an Executive Director (ED) to oversee the Department of Statistics and Information Management (DSIM).\n3. Dilip Asbe, MD & CEO of NPCI, was appointed to the Management Board of SWIFT.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "A",
+    "rationale": "Statement 3 is incorrect because Dilip Asbe was appointed to the 'Supervisory Board' of SWIFT, not the Management Board. Statements 1 and 2 are correct. (Refer Pages 34, 46, 49 & 84, 89, 90)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "Biodiversity Heritage Sites",
+    "question": "Which of the following statements about Biodiversity Heritage Sites (BHS) in India is correct?",
+    "options": {
+      "A": "Assam currently has 5 officially notified BHS.",
+      "B": "India's first BHS, Nallur Tamarind Grove, was declared in 2007 in Kerala.",
+      "C": "As of July 2026, India has a total of 54 notified Biodiversity Heritage Sites.",
+      "D": "The Borjuli BHS in Assam focuses exclusively on the conservation of the Hajong Tortoise.",
+      "E": "BHS are declared under Section 37 of the Environment Protection Act, 1986."
+    },
+    "answer": "C",
+    "rationale": "India has 54 BHS as of July 2026 (C is correct). Assam has 3 BHS (Majuli, Borjuli, Hajong). Nallur Tamarind is in Karnataka. Borjuli focuses on wild rice. BHS are declared under Section 37 of the Biological Diversity Act, 2002. (Refer Page 16 & 78)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Wrestling Categories",
+    "question": "Match the following Indian male wrestlers who won gold at the U15 Asian Wrestling Championships 2026 with their respective weight classes:\n\nColumn I:\n1. Prathamesh S. Patil\n2. Naitik\n3. Keshav Harshad Chemte\n4. Vivek Chauhan\n\nColumn II:\nA. 85 kg\nB. 75 kg\nC. 62 kg\nD. 52 kg\n\nSelect the correct code:",
+    "options": {
+      "A": "1-D, 2-C, 3-B, 4-A",
+      "B": "1-C, 2-D, 3-A, 4-B",
+      "C": "1-D, 2-B, 3-C, 4-A",
+      "D": "1-A, 2-B, 3-C, 4-D",
+      "E": "1-B, 2-A, 3-D, 4-C"
+    },
+    "answer": "A",
+    "rationale": "Prathamesh S. Patil (52 kg), Naitik (62 kg), Keshav Harshad Chemte (75 kg), Vivek Chauhan (85 kg). (Refer Page 60 & 93)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Mergers & Acquisitions",
+    "question": "Assertion (A): The State Bank of India (SBI) acquired a 10% stake in RMBS Development Company Limited (RDCL).\nReason (R): RDCL was established in 2024 as a middle-layer NBFC focused on developing India's Residential Mortgage-Backed Securities (RMBS) market.\n\nSelect the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Both statements are true, and the Reason correctly explains the strategic context of why SBI acquired a stake in RDCL (to support the RMBS market development as an NBFC). (Refer Page 52 & 91)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "General Awareness",
+    "sub_category": "Books and Obituaries",
+    "question": "Consider the literary and artistic contributions of the eminent personalities who passed away in July 2026. Which of the following pairs is correctly matched?",
+    "options": {
+      "A": "Vijaya Mehta - Founded the Vaanampaadi movement.",
+      "B": "Puviyarasu - Authored the acclaimed autobiography 'Zimma: A Memoir'.",
+      "C": "Teejan Bai - Popularised the Pandavani folk singing tradition globally.",
+      "D": "Girish Bharadwaj - Translated the works of Khalil Gibran into Tamil.",
+      "E": "Lt Gen M.M. Lakhera - Authored 120+ books on Indian military history."
+    },
+    "answer": "C",
+    "rationale": "Teejan Bai popularised Pandavani globally. Vijaya Mehta authored 'Zimma: A Memoir'. Puviyarasu founded the Vaanampaadi movement and translated Khalil Gibran into Tamil. (Refer Pages 61-63 & 95-96)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Digital India Growth",
+    "question": "The 11-year progress report of the Digital India Programme highlighted several metrics. Which of the following is an INCORRECT metric provided in the report?",
+    "options": {
+      "A": "Internet connections have grown around four times since inception.",
+      "B": "Broadband users have reached 106.58 crore.",
+      "C": "2.18 lakh Gram Panchayats have been connected via BharatNet.",
+      "D": "5G technology covers 99.9% of the districts in India.",
+      "E": "The National Data Centre was established in Hyderabad, Meghalaya."
+    },
+    "answer": "E",
+    "rationale": "Statement E is incorrect because the National Data Centre was established in Guwahati, Assam, not Hyderabad or Meghalaya. All other metrics (106.58 cr broadband, 2.18 L panchayats, 99.9% 5G) are correct. (Refer Page 13)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "Power Sector Financing",
+    "question": "Consider the following statements regarding POWERGRID's JPY 80 Billion green loan:\n\n1. It supports India's goal of expanding the transmission network to 191,000 ckm by 2032.\n2. JBIC provided 48 billion JPY, while the balance was co-financed by SMBC, Kansai Mirai Bank, Kiraboshi Bank, and The Joyo Bank.\n3. The loan exclusively funds the Khavda-Nagpur HVDC renewable energy transmission project.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "3 only"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. The loan is for the Khavda-Nagpur line, targets 191,000 ckm by 2032, and is co-financed by the mentioned Japanese banks with JBIC providing 48 billion. (Refer Page 39 & 86)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Bilateral Agreements",
+    "question": "Match the following international bilateral agreements/projects with the respective partner country of India:\n\nColumn I:\n1. UNICORN submarine/naval defence project\n2. CETA & DCC implementation\n3. Duty-Free Tariff Preference (DFTP) export forum\n4. Water resources cooperation MoU\n\nColumn II:\nA. Mali\nB. Saudi Arabia\nC. United Kingdom\nD. Japan\n\nSelect the correct code:",
+    "options": {
+      "A": "1-D, 2-C, 3-A, 4-B",
+      "B": "1-C, 2-D, 3-B, 4-A",
+      "C": "1-D, 2-B, 3-A, 4-C",
+      "D": "1-B, 2-C, 3-A, 4-D",
+      "E": "1-A, 2-B, 3-C, 4-D"
+    },
+    "answer": "A",
+    "rationale": "UNICORN is with Japan (D). CETA & DCC are with the UK (C). DFTP export forum is with Mali (A). Water resources MoU is with Saudi Arabia (B). (Refer Pages 25-30 & 81-83)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "Taxation",
+    "question": "Arrange the GST tax slabs in their correct order from the lowest to the highest, according to the simplified 2025 structure mentioned in the report:\n\n1. 18%\n2. 40% (demerit rate)\n3. 5%\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1, 3, 2",
+      "B": "3, 1, 2",
+      "C": "2, 1, 3",
+      "D": "3, 2, 1",
+      "E": "1, 2, 3"
+    },
+    "answer": "B",
+    "rationale": "The simplified GST slabs are 5%, 18%, and 40%. Thus the order is 3, 1, 2. (Refer Page 67)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "General Awareness",
+    "sub_category": "Important Days",
+    "question": "Which of the following statements about the International Plastic Bag Free Day is INCORRECT?",
+    "options": {
+      "A": "It is observed globally on 3 July.",
+      "B": "The observance was initiated by Rezero in Catalonia, Spain, in 2008.",
+      "C": "It became part of the Break Free From Plastic (BFFP) movement in 2016.",
+      "D": "The BFFP movement is a global coalition of over 1,500 organisations.",
+      "E": "Plastic bags take 10-20 years to decompose entirely."
+    },
+    "answer": "E",
+    "rationale": "Statement E is incorrect because the report notes that 'Plastic takes 400-1,000 years to decompose', forming microplastics. All other statements are correct. (Refer Page 68 & 97)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Health Frameworks",
+    "question": "Consider the following healthcare targets under various MoHFW frameworks:\n\n1. Reduce Maternal Mortality Ratio (MMR) below 70 per one lakh live births by 2030 (SUMAN).\n2. Integrate Home-Based Newborn Care (HBNC) and Home-Based Care for Young Child (HBYC) into a single program (SSBSK).\n3. Upgrade the Anaemia Mukt Bharat (AMB) strategy to an 8x8x8 framework (AMBA).\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1 only",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "A",
+    "rationale": "Statement 3 is incorrect because the AMBA strategy was upgraded from a 6x6x6 framework to a '7x7x7' framework, not 8x8x8. Statements 1 and 2 are correct. (Refer Page 4 & 74)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Appointments",
+    "question": "Identify the INCORRECT pairing of the individual and their newly assumed role in July 2026:",
+    "options": {
+      "A": "Rear Admiral C. Raghuram - CMD of Hindustan Shipyard Limited (HSL)",
+      "B": "Bijay Kumar Mohanty - Additional Charge as CMD of IREDA",
+      "C": "Rajiv Kumar - Part-time Chairman of HDFC Bank",
+      "D": "Ravi Shankar - Chairman of the Central Board of Direct Taxes (CBDT)",
+      "E": "Ashutosh Dixit - 51st Vice Chief of Air Staff (VCAS)"
+    },
+    "answer": "D",
+    "rationale": "Ravi Shankar was appointed as Executive Director (ED) of RBI. Ravi Agrawal was re-appointed as Chairman of CBDT. All other pairings are correct. (Refer Pages 45-48 & 88-89)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  }
+]

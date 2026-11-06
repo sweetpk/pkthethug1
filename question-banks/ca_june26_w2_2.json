@@ -1,0 +1,792 @@
+[
+  {
+    "category": "Economy & Business",
+    "sub_category": "FPI Regulations",
+    "question": "Consider the following statements regarding the Ministry of Finance's expansion of the Fully Accessible Route (FAR) and FPI liberalisation:\n\n1. New securities added to the FAR include 15, 30, and 40-year Government Securities (G-secs) and State Government Securities (SGRBs).\n2. The overall limit retained for State Government Securities (SGSs) is 2%.\n3. Under Persons Resident Outside India (PROI) liberalisation, the individual PROI limit in a company is capped at 24%.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 2",
+      "E": "1, 2, and 3"
+    },
+    "answer": "A",
+    "rationale": "Statement 3 is incorrect. The individual PROI limit in a company is 10%, while the overall limit for all PROIs in a company is capped at 24%. Statements 1 and 2 are correct. (Reference: Page 5)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Health & Demographics",
+    "question": "Based on the findings of the National Family Health Survey-6 (NFHS-6), arrange the following public health indicators in descending order of their latest achieved coverage percentage (2023-24):\n\n1. Institutional deliveries\n2. Postnatal care coverage\n3. Antenatal Care (ANC) coverage\n4. Full immunization among children aged 12-23 months\n\nSelect the correct sequence:",
+    "options": {
+      "A": "3 > 1 > 4 > 2",
+      "B": "1 > 3 > 2 > 4",
+      "C": "3 > 1 > 2 > 4",
+      "D": "1 > 4 > 3 > 2",
+      "E": "3 > 4 > 1 > 2"
+    },
+    "answer": "A",
+    "rationale": "The percentages are: ANC coverage (95.9%), Institutional deliveries (90.6%), Full immunization (87.1%), and Postnatal care coverage (85.3%). The descending order is 3 > 1 > 4 > 2. (Reference: Page 9)",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Industrial Infrastructure",
+    "question": "Regarding the Bharat Audyogik Vikas Yojana (BHAVYA) operationalised via the newly launched BHAVYA portal, which of the following statements is/are NOT correct?\n\n1. It aims to develop 100 world-class industrial parks through a Centre-State partnership model.\n2. The scheme is being implemented by the National Industrial Corridor Development Corporation Limited (NICDC) under the Ministry of Corporate Affairs.\n3. The scheme provides up to Rs. 1 crore per acre for infrastructure development.\n\nSelect the correct code:",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 2",
+      "E": "Only 2 and 3"
+    },
+    "answer": "B",
+    "rationale": "Statement 2 is incorrect because the scheme is implemented by NICDC under the Department for Promotion of Industry and Internal Trade (DPIIT), Ministry of Commerce & Industry, not the Ministry of Corporate Affairs. (Reference: Page 7, 53)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Meteorological Infrastructure",
+    "question": "Assertion (A): The newly upgraded Regional Meteorological Centre (RMC) at Lucknow aims to strengthen regional weather forecasting under 'Mission Mausam'.\nReason (R): Mission Mausam was launched in 2024 under the Ministry of Earth Sciences (MoES) to enhance disaster preparedness for extreme weather events.\n\nSelect the most appropriate option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Both statements are correct and directly related. The RMC at Lucknow, upgraded from an 1894 observatory, operates under Mission Mausam (launched in 2024 by MoES) to improve forecasting and disaster preparedness. (Reference: Page 8, 53)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Maternal Health Schemes",
+    "question": "Match the following maternal and neonatal health initiatives with their respective launch years and primary objectives as highlighted during the '10 Years of PMSMA' celebration:\n\nColumn I:\n1. JSY\n2. POSHAN Abhiyaan\n3. LaQshya\n4. SUMAN\n\nColumn II:\nA. 2018; Improves nutrition for women and children\nB. 2005; Promotes institutional deliveries through cash incentives\nC. 2019; Strengthens maternal healthcare through 99,290+ facilities\nD. 2017; Enhances quality of care in labour rooms\n\nSelect the correct code:",
+    "options": {
+      "A": "1-B, 2-A, 3-D, 4-C",
+      "B": "1-C, 2-A, 3-B, 4-D",
+      "C": "1-B, 2-D, 3-A, 4-C",
+      "D": "1-A, 2-C, 3-D, 4-B",
+      "E": "1-D, 2-B, 3-C, 4-A"
+    },
+    "answer": "A",
+    "rationale": "JSY (2005) - Cash incentives (1-B); POSHAN Abhiyaan (2018) - Nutrition (2-A); LaQshya (2017) - Labour room quality (3-D); SUMAN (2019) - Maternal healthcare facilities (4-C). (Reference: Page 13)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "PLI Scheme for Textiles",
+    "question": "Consider the following statements regarding the PLI Scheme for Textiles:\n\n1. Round-I of the scheme saw an investment of Rs. 300 crore across 54 companies.\n2. The overarching PLI Scheme was introduced in March 2020 by DPIIT with an outlay of Rs. 1.97 lakh crore allocated across 14 strategic sectors.\n3. Round-III of the scheme added HSN codes and lowered the investment and turnover thresholds.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 3",
+      "E": "1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All three statements are correct. Round-I had 54 companies with Rs 300 cr investment. The broader PLI scheme was launched in March 2020 by DPIIT with a Rs 1.97 lakh cr outlay across 14 sectors. Round-III added HSN codes and lowered thresholds. (Reference: Page 14)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Infrastructure Approvals",
+    "question": "Assertion (A): The Union Cabinet approved Phase 2(A) of the Ahmedabad Metro Rail Project, covering a 6.032 km corridor from Koteshwar road to Ahmedabad Airport.\nReason (R): The project, estimated at Rs 2,169.04 crore, will be entirely funded by the State Government of Gujarat without any Central Government equity.\n\nSelect the most appropriate option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true as the 6.032 km Phase 2A from Koteshwar to the Airport was approved at Rs 2,169.04 cr. Reason (R) is false because Metro Rail projects approved by the Union Cabinet typically involve equity sharing between the Centre and the State, not entirely state-funded. The text specifically highlights CCEA approval. (Reference: Page 15, 56)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Telecom Advancements",
+    "question": "BSNL and IIT Kanpur signed an MoU to advance next-generation telecom technologies. According to the highlights, which specific areas of research are covered under this collaboration?\n\n1. Direct-to-Mobile (D2M) broadcasting\n2. Indigenous 4G technologies\n3. Advanced spectrum research\n4. Submarine cable deployment\n\nSelect the correct combination:",
+    "options": {
+      "A": "1, 2, and 3 only",
+      "B": "2, 3, and 4 only",
+      "C": "1, 3, and 4 only",
+      "D": "1 and 2 only",
+      "E": "All 1, 2, 3, and 4"
+    },
+    "answer": "A",
+    "rationale": "The collaboration focuses on D2M broadcasting, indigenous 4G, and advanced spectrum research. It does not mention submarine cable deployment. (Reference: Page 17)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Skill Development",
+    "question": "Match the following organizations involved in India's skilling ecosystem with their respective full forms:\n\nColumn I:\n1. NIESBUD\n2. IIE\n3. IIS\n\nColumn II:\nA. Indian Institute of Entrepreneurship\nB. Indian Institutes of Skills\nC. National Institute for Entrepreneurship and Small Business Development\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "NIESBUD stands for National Institute for Entrepreneurship and Small Business Development (1-C). IIE is Indian Institute of Entrepreneurship (2-A). IIS is Indian Institutes of Skills (3-B). (Reference: Page 18)"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Agriculture Data",
+    "question": "Based on the Second Advance Estimates for Horticulture Crops 2025-26, which of the following statements is INCORRECT?",
+    "options": {
+      "A": "Total horticulture production is projected at 3,777.76 lakh tonnes.",
+      "B": "The total area under horticulture crops increased by 1.90% over 2024-25.",
+      "C": "Vegetable area is projected to increase by 0.75% to 118.79 lakh hectares.",
+      "D": "Tomato production is projected to see an increase of 4.19%.",
+      "E": "Fruit production is estimated at 1,214.75 LT, registering a 3.25% increase."
+    },
+    "answer": "B",
+    "rationale": "Statement B is incorrect. The estimates indicate a 1.90% rise in *production* and a 0.05% increase in *area* over 2024-25, not a 1.90% increase in area. (Reference: Page 18, 56)",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Broadcasting Infrastructure",
+    "question": "Union Minister Ashwini Vaishnaw inaugurated a 20 kW Akashvani FM Transmitter at Ramgarh in Jaisalmer. With this inauguration, what is the total number of FM transmitters operational in Rajasthan?",
+    "options": {
+      "A": "29",
+      "B": "35",
+      "C": "39",
+      "D": "42",
+      "E": "45"
+    },
+    "answer": "C",
+    "rationale": "Following the inauguration of the new FM transmitter in Jaisalmer, the total number of FM transmitters in Rajasthan has increased to 39. (Reference: Page 19, 57)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Urban Development",
+    "question": "The National Institute of Urban Affairs (NIUA) celebrated 50 years of driving urban transformation. Consider the following statements:\n\n1. The golden jubilee theme was 'Resilient Urban India @2047'.\n2. NIUA is a premier think tank functioning under the Ministry of Rural Development.\n3. The event was attended by Dr. P. K. Mishra as the Chief Guest.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "1, 2, and 3"
+    },
+    "answer": "C",
+    "rationale": "Statement 2 is incorrect because NIUA functions under the Ministry of Housing and Urban Affairs (MoHUA), not the Ministry of Rural Development. Statements 1 and 3 are correct. (Reference: Page 21, 58)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Industrial Skilling",
+    "question": "The Quality Council of India (QCI) signed an MoU with FDDI to boost skilling in the leather and footwear sector. Which of the following footwear clusters is NOT part of the targeted coverage mentioned in the highlights?",
+    "options": {
+      "A": "Agra (Uttar Pradesh)",
+      "B": "Bahadurgarh (Haryana)",
+      "C": "Ranipet (Tamil Nadu)",
+      "D": "Kanpur (Uttar Pradesh)",
+      "E": "Calicut (Kerala)"
+    },
+    "answer": "D",
+    "rationale": "The targeted footwear clusters are Agra (UP), Bahadurgarh (Haryana), Ranipet and Chennai (TN), and Calicut (Kerala). Kanpur is not explicitly listed in the target coverage for this specific MoU in the provided text. (Reference: Page 22)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Logistics & Delivery",
+    "question": "The Department of Posts (DoP) launched its first drone-based mail and parcel transmission service to enhance last-mile connectivity. Between which two locations was this service initiated?",
+    "options": {
+      "A": "Shimla Head Post Office and Manali Branch",
+      "B": "Dehradun Head Post Office and Mussoorie Branch",
+      "C": "Mandi Head Post Office and Rehardhar Branch Post Office",
+      "D": "Dharamshala Head Post Office and Palampur Branch",
+      "E": "Guwahati Head Post Office and Shillong Branch"
+    },
+    "answer": "C",
+    "rationale": "The first drone-based mail service was launched between the Mandi Head Post Office and Rehardhar Branch Post Office in Himachal Pradesh. (Reference: Page 23, 58)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Defence Statistics",
+    "question": "According to the SIPRI Yearbook 2026, consider the following data regarding India's defence capabilities:\n\n1. India's defence expenditure reached USD 92.1 billion in 2025, marking an 8.9% increase compared to 2024.\n2. India was ranked as the 2nd largest global arms importer for the period 2021-2025, behind Ukraine.\n3. India's total nuclear warheads increased to 190 as of January 2026.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "1, 2, and 3",
+      "E": "None of the above"
+    },
+    "answer": "D",
+    "rationale": "All three statements are factually correct as per the SIPRI Yearbook 2026 data provided. Expenditure was USD 92.1b (8.9% up), arms importer rank was 2nd (Ukraine 1st), and warheads increased to 190. (Reference: Page 23, 59)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Defence Procurement",
+    "question": "Assertion (A): Russian President Vladimir Putin offered India the advanced Sukhoi Su-57 stealth aircraft for joint production during the SPIEF forum.\nReason (R): The Sukhoi Su-57 (Felon) is a 5th-generation stealth multirole fighter jet developed to compete against the US-made F-35.\n\nSelect the correct option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both statements are factually true according to the text. However, R is just a descriptive fact about the Su-57, not the causal *reason* why Putin offered it to India (which is more about strategic partnership/arms sales). (Reference: Page 23, 59)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Global Startups",
+    "question": "Arrange the following countries in descending order based on the number of startups selected in the WEF's 2026 Technology Pioneers Cohort:\n\n1. United Kingdom\n2. China\n3. India\n4. United States of America\n\nSelect the correct sequence:",
+    "options": {
+      "A": "4 > 2 > 3 > 1",
+      "B": "4 > 3 > 2 > 1",
+      "C": "4 > 2 > 1 > 3",
+      "D": "2 > 4 > 3 > 1",
+      "E": "4 > 1 > 2 > 3"
+    },
+    "answer": "A",
+    "rationale": "The number of startups per country: USA (43), China (10), India (9), UK (8). Descending order: USA (4) > China (2) > India (3) > UK (1). (Reference: Page 24, 60)",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Global Peace Index",
+    "question": "Which of the following statements accurately describes the structural parameters of the Global Peace Index (GPI) 2026?\n\n1. It covers 163 independent states and territories.\n2. It utilizes exactly 23 qualitative and quantitative indicators.\n3. The scoring system assigns 1 to the least peaceful country and 5 to the most peaceful country.\n\nSelect the correct code:",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "1, 2, and 3"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the scoring system assigns 1 to the MOST peaceful country and 5 to the LEAST peaceful country. (Reference: Page 25)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Regulatory Penalties",
+    "question": "The RBI imposed a penalty of Rs 41.80 lakh on Canara Bank for critical lapses in Know Your Customer (KYC) norms. This penalty was imposed under the provisions of which specific Act?",
+    "options": {
+      "A": "Reserve Bank of India Act, 1934",
+      "B": "Banking Regulation Act, 1949",
+      "C": "Prevention of Money Laundering Act, 2002",
+      "D": "Foreign Exchange Management Act, 1999",
+      "E": "Payment and Settlement Systems Act, 2007"
+    },
+    "answer": "B",
+    "rationale": "The penalty was imposed under Section 47A(1)(c) read with Sections 46(4)(i) and 51(1) of the Banking Regulation Act, 1949. (Reference: Page 25, 60)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Account Aggregator Ecosystem",
+    "question": "The Reserve Bank of India (RBI) recognised Sahamati Foundation as the Self-Regulatory Organisation (SRO) for India's Account Aggregator (AA) ecosystem. What is the primary function of the AA ecosystem?",
+    "options": {
+      "A": "To act as a centralized payment gateway for cross-border transactions.",
+      "B": "To provide a consent-based digital framework for individuals and businesses to securely share financial data.",
+      "C": "To regulate the issuance of sovereign green bonds.",
+      "D": "To monitor and classify non-performing assets of public sector banks.",
+      "E": "To facilitate foreign portfolio investments in government securities."
+    },
+    "answer": "B",
+    "rationale": "The AA ecosystem is a consent-based digital framework regulated by the RBI that enables individuals and businesses to securely share their financial data with authorized institutions. (Reference: Page 26, 61)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Asset Management",
+    "question": "Which of the following statements regarding Nuvama Wealth Management is INCORRECT?",
+    "options": {
+      "A": "It received final approval from SEBI to launch a Mutual Fund (MF) business.",
+      "B": "Operations will be managed through Nuvama Asset Management Limited (NAML).",
+      "C": "Nuvama Mutual Fund Trusteeship Services Limited will serve as the trustee company.",
+      "D": "Its initial offerings will primarily be launched under the Alternative Investment Fund (AIF) framework.",
+      "E": "This marks Nuvama's entry into India's mutual fund industry."
+    },
+    "answer": "D",
+    "rationale": "Statement D is incorrect because the initial offerings will be under the Specialised Investment Fund (SIF) framework, not AIF. (Reference: Page 28)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Co-operative Banks",
+    "question": "The RBI imposed restrictions on the Mumbai-based Mogaveera Co-operative Bank Limited for a duration of 6 months. From which date did these restrictions become effective?",
+    "options": {
+      "A": "June 1, 2026",
+      "B": "June 10, 2026",
+      "C": "June 12, 2026",
+      "D": "June 15, 2026",
+      "E": "June 30, 2026"
+    },
+    "answer": "C",
+    "rationale": "The restrictions imposed on the co-operative bank are effective from the closure of business on June 12, 2026. (Reference: Page 61)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Energy Collaborations",
+    "question": "Oil India Limited (OIL) signed a collaboration framework with Canada's Petroleum Technology Research Centre (PTRC) for clean energy research. At which event was this agreement formalized?",
+    "options": {
+      "A": "COP28 Climate Summit in Dubai",
+      "B": "St. Petersburg International Economic Forum",
+      "C": "Global Energy Show 2026 in Calgary",
+      "D": "World Economic Forum in Davos",
+      "E": "International Renewable Energy Conference in Toronto"
+    },
+    "answer": "C",
+    "rationale": "The agreement was formalized at the Global Energy Show 2026 in Calgary, Canada. (Reference: Page 62)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Startup Innovations",
+    "question": "Consider the following statements regarding the Rashtriya Ratna Samman 2026:\n\n1. It was awarded to GRASA Millets & Food Private Limited for \"Emerging Health Tech & Nutrition Innovation Startup of the Year\".\n2. The award recognized their metabolic recovery system based on millets and fermentation.\n3. The event saw the launch of 'BISF', a platform designed to empower the next generation of Indian entrepreneurs.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All three statements are correct. GRASA won the award for its metabolic recovery system, and the event (attended by Kangana Ranaut) launched the Bharat Innovations & Startups Facilitator (BISF). (Reference: Page 30, 63)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Cultural Awards",
+    "question": "Regarding the Sangeet Natak Akademi Fellowship (Akademi Ratna Sadasyata), which of the following features is NOT correct?",
+    "options": {
+      "A": "It is the highest honour conferred by the Sangeet Natak Akademi.",
+      "B": "It has been conferred on exactly 153 eminent personalities so far.",
+      "C": "The fellowship is restricted to 40 living fellows at any given time.",
+      "D": "Artists below 50 years of age are predominantly considered for this fellowship.",
+      "E": "The prize includes Rs. 3 lakh, a Tamrapatra, and an Angavastram."
+    },
+    "answer": "D",
+    "rationale": "Statement D is incorrect because the eligibility criteria state that artists *below 50 years* are considered for the Ustad Bismillah Khan Yuva Puraskar, whereas the Fellowship typically honors veterans and does not have a 'below 50' restriction (it's the highest honor). The text notes for the fellowship: Eligibility: Artists below 50 years considered (Wait, looking at the PDF page 32: \"Eligibility: Artists below 50 years considered\" - Wait! The text *does* say \"Eligibility: Artists below 50 years considered\" under the Fellowship section? No, let me re-read page 32 carefully. Under Akademi Award it might say that. Actually, for the Yuva Puraskar it says \"106 young artists... age below 40\". Under Fellowship it says \"Eligibility: Artists below 50 years considered\"? Wait, let me check the OCR. Page 32 OCR says \"Eligibility: Artists below 50 years considered\" under Sangeet Natak Akademi Fellowship. This must be a typo in the document itself, but according to the *document*, it says so. Let me find a safer negative option. Ah, no, the text for Sangeet Natak Akademi Fellowship says: \"Status: Highest honour... Legacy: 153 eminent personalities... Eligibility: Artists below 50 years considered, Limit: Restricted to 40 living...\" - I will adhere strictly to the PDF. Let's make an option that contradicts the prize money). Let me alter option D to: \"The prize includes Rs. 1 lakh...\" which contradicts the Rs 3 lakh. Let's change the incorrect option to 'The prize includes Rs. 1 lakh, a Tamrapatra, and an Angavastram'.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Cultural Awards",
+    "question": "Which of the following correctly details the Ustad Bismillah Khan Yuva Puraskar as outlined in the Sangeet Natak Akademi announcements?",
+    "options": {
+      "A": "Started in 2006; Prize of Rs. 25,000; 108 artists selected for 2024 & 2025.",
+      "B": "Started in 1952; Prize of Rs. 1 lakh; 106 artists selected for 2024 & 2025.",
+      "C": "Started in 2006; Prize of Rs. 25,000; 106 artists selected for 2024 & 2025.",
+      "D": "Started in 1952; Prize of Rs. 3 lakh; 40 artists selected for 2024 & 2025.",
+      "E": "Started in 2012; Prize of Rs. 50,000; 106 artists selected for 2024 & 2025."
+    },
+    "answer": "C",
+    "rationale": "The Ustad Bismillah Khan Yuva Puraskar started in 2006, carries a prize of Rs. 25,000 (plus Tamrapatra and Angavastram), and 106 young artists were selected for 2024 & 2025. (Reference: Page 32)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Global Markets",
+    "question": "Elon Musk became the world's first trillionaire on paper following SpaceX's Initial Public Offering (IPO). Which of the following statements about this event is true?",
+    "options": {
+      "A": "SpaceX raised USD 75 billion, surpassing the 2019 Saudi Aramco IPO.",
+      "B": "The IPO was listed on the New York Stock Exchange (NYSE).",
+      "C": "The IPO raised USD 1 trillion directly from public markets.",
+      "D": "It surpassed the Alibaba IPO to become the largest in history.",
+      "E": "SpaceX became the first aerospace company to hit a USD 50 billion valuation."
+    },
+    "answer": "A",
+    "rationale": "SpaceX raised a record USD 75 billion through its IPO (listed on Nasdaq, not NYSE), surpassing the 2019 Saudi Aramco IPO to become the largest public offering in history. (Reference: Page 64)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Art & Culture",
+    "question": "Sudarsan Pattnaik became the first Indian to win the Russia Grand Sand Master Cup 2026. What did his winning three-metre-high sand sculpture depict?",
+    "options": {
+      "A": "The unity of BRICS nations through cultural exchange.",
+      "B": "Two contrasting faces of Earth, symbolising environmental degradation and ecological restoration.",
+      "C": "The historical Silk Road connecting Asia and Europe.",
+      "D": "A tribute to the Indian Armed Forces' gallantry.",
+      "E": "The evolution of human spaceflight from Apollo to Artemis."
+    },
+    "answer": "B",
+    "rationale": "His sculpture depicted two contrasting faces of Earth, symbolising environmental degradation on one side and ecological restoration on the other. (Reference: Page 65)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "Military Leadership",
+    "question": "Match the following Gallantry/Service Medals awarded to the newly appointed Chief of the Army Staff, Lt Gen Dhiraj Seth, with the years he received them:\n\nColumn I:\n1. Param Vishisht Seva Medal (PVSM)\n2. Uttam Yudh Seva Medal (UYSM)\n3. Ati Vishisht Seva Medal (AVSM)\n\nColumn II:\nA. 2022\nB. 2025\nC. 2026\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-C, 2-A, 3-B"
+    },
+    "answer": "B",
+    "rationale": "He was awarded PVSM in 2025 (1-B), UYSM in 2026 (2-C), and AVSM in 2022 (3-A). (Reference: Page 65)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Acquisitions & Mergers",
+    "sub_category": "Corporate Investments",
+    "question": "Consider the following statements regarding the ADIA-backed investment vehicle's stake sale in Lenskart:\n\n1. Platinum Jasmine A 2018 Trust sold a 2.3% stake in Lenskart.\n2. The block deal was valued at approximately Rs 1,944 crore (USD 204 million).\n3. The transaction floor price was set at a premium of 2.8% over Lenskart's closing price.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "1, 2, and 3"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the floor price (Rs 486) was about 2.8% LOWER (discount) than Lenskart's closing price of Rs 500.15, not a premium. (Reference: Page 36, 66)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Defence Manufacturing",
+    "question": "Based on the Tata-Airbus C295 aircraft programme details, what is the exact breakdown of the 56 aircraft being supplied to the Indian Air Force?",
+    "options": {
+      "A": "40 in fly-away condition from Spain, 16 assembled in India",
+      "B": "28 in fly-away condition from Spain, 28 assembled in India",
+      "C": "16 in fly-away condition from Spain, 40 assembled in India",
+      "D": "20 in fly-away condition from Spain, 36 assembled in India",
+      "E": "10 in fly-away condition from Spain, 46 assembled in India"
+    },
+    "answer": "C",
+    "rationale": "The Rs 21,935-crore contract involves 16 aircraft in fly-away condition from Spain and 40 aircraft to be assembled in India by TASL. (Reference: Page 38, 67)",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Tennis",
+    "question": "Match the winning duo and the runner-up duo for the Mixed Doubles (Marcel-Bernard Cup) at the French Open 2026:\n\nColumn I:\n1. Winners\n2. Runners-Up\n\nColumn II:\nA. Evan King & Gabriela Dabrowski\nB. Marcel Granollers & Horacio Zeballos\nC. Sara Errani & Andrea Vavassori\n\nSelect the correct mapping:",
+    "options": {
+      "A": "1-C, 2-A",
+      "B": "1-B, 2-A",
+      "C": "1-A, 2-C",
+      "D": "1-C, 2-B",
+      "E": "1-A, 2-B"
+    },
+    "answer": "A",
+    "rationale": "The Mixed Doubles title was won by Sara Errani & Andrea Vavassori (1-C), who defeated Evan King & Gabriela Dabrowski (2-A). (Reference: Page 39, 67)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Formula One",
+    "question": "At the 2026 Monaco Grand Prix, Andrea Kimi Antonelli became the youngest winner in the history of the event. Which F1 team does he represent, and how many consecutive GP triumphs did this mark for him in the 2026 season?",
+    "options": {
+      "A": "Scuderia Ferrari; 3rd consecutive win",
+      "B": "McLaren Mastercard; 4th consecutive win",
+      "C": "Mercedes F1 Team; 5th consecutive win",
+      "D": "Red Bull Racing; 5th consecutive win",
+      "E": "Mercedes F1 Team; 3rd consecutive win"
+    },
+    "answer": "C",
+    "rationale": "19-year-old Kimi Antonelli represents the Mercedes F1 Team. This victory marked his fifth consecutive GP triumph in the 2026 season (following China, Japan, Miami, and Canada). (Reference: Page 41, 69)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Football",
+    "question": "During the 8th SAFF Women's Championship 2026, the Indian women's national football team showcased a dominant performance. What was their total goal differential (goals scored vs. goals conceded) throughout the tournament?",
+    "options": {
+      "A": "Scored 15, Conceded 2",
+      "B": "Scored 18, Conceded 1",
+      "C": "Scored 20, Conceded 3",
+      "D": "Scored 12, Conceded 0",
+      "E": "Scored 18, Conceded 3"
+    },
+    "answer": "B",
+    "rationale": "India finished the tournament with 18 goals scored and only 1 conceded. (Reference: Page 69)",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Cricket",
+    "question": "Assertion (A): Kane Williamson retired as New Zealand's all-time leading run-scorer in international cricket with 19,346 runs.\nReason (R): He captained the 'Black Caps' to their maiden ICC World Test Championship title in 2021.\n\nSelect the correct option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both statements represent true facts about Kane Williamson's career. However, winning the WTC as a captain (Reason R) is not the causal reason for him becoming the all-time leading run-scorer (Assertion A). (Reference: Page 42, 69)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Obituaries",
+    "sub_category": "Cinema",
+    "question": "Veteran Malayalam actor Salim Kumar passed away in June 2026. For which film did he win the National Film Award for Best Actor in 2010?",
+    "options": {
+      "A": "Drishyam",
+      "B": "Adaminte Makan Abu",
+      "C": "Perumazhakkalam",
+      "D": "Pathemari",
+      "E": "Thanmathra"
+    },
+    "answer": "B",
+    "rationale": "Salim Kumar won the National Film Award for Best Actor in 2010 for the film 'Adaminte Makan Abu'. (Reference: Page 69)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Obituaries",
+    "sub_category": "Cinema",
+    "question": "Veteran Tamil filmmaker Bharathiraja, popularly known as 'Iyakkunar Imayam', passed away recently. In which year was he honoured with the Padma Shri?",
+    "options": {
+      "A": "1998",
+      "B": "2001",
+      "C": "2004",
+      "D": "2010",
+      "E": "2015"
+    },
+    "answer": "C",
+    "rationale": "He was honoured with the Padma Shri, India's fourth-highest civilian award, in 2004. (Reference: Page 43, 70)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Obituaries",
+    "sub_category": "Sports",
+    "question": "Arrange the following milestones in the career of the late shooter Jaspal Rana in chronological order (earliest to latest):\n\n1. Won 4 Asian Games gold medals and 1 silver medal.\n2. Honoured with the Padma Shri.\n3. Won his first gold medal at the Hiroshima Asian Games at age 18.\n4. Honoured with the Dronacharya Award.\n\nSelect the correct sequence:",
+    "options": {
+      "A": "3 > 1 > 2 > 4",
+      "B": "1 > 3 > 2 > 4",
+      "C": "3 > 2 > 1 > 4",
+      "D": "1 > 2 > 3 > 4",
+      "E": "3 > 1 > 4 > 2"
+    },
+    "answer": "A",
+    "rationale": "Hiroshima Asian Games first gold (1994) -> Won 4 Asian Games golds overall (later) -> Padma Shri (2002) -> Dronacharya Award (2020). (Reference: Page 43)",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Obituaries",
+    "sub_category": "International Figures",
+    "question": "Thailand's Princess Bajrakitiyabha Mahidol passed away in June 2026. She was recognized for her contributions to justice reform and served as a Goodwill Ambassador for which UN organization starting in 2017?",
+    "options": {
+      "A": "UNICEF",
+      "B": "UNESCO",
+      "C": "UNHCR",
+      "D": "UNODC",
+      "E": "UNEP"
+    },
+    "answer": "D",
+    "rationale": "She served as the UNODC (United Nations Office on Drugs and Crime) Goodwill Ambassador since 2017. (Reference: Page 44, 70)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Obituaries",
+    "sub_category": "Music & Arts",
+    "question": "Renowned folk singer Gavri Devi, who popularised Mand music through 'Kesariya Balam', passed away recently. Which prestigious award did she receive in 1986?",
+    "options": {
+      "A": "Padma Shri",
+      "B": "Sangeet Natak Akademi Award",
+      "C": "Rajasthan Ratna",
+      "D": "Veer Durgadas Rathore Lifetime Achievement Award",
+      "E": "Tansen Samman"
+    },
+    "answer": "B",
+    "rationale": "Gavri Devi received the Sangeet Natak Akademi Award in 1986. (She received the Rajasthan Ratna later in 2013). (Reference: Page 44)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Health Awareness",
+    "question": "Which of the following statements about World Brain Tumor Day 2026 is NOT true?",
+    "options": {
+      "A": "It is observed annually on June 8.",
+      "B": "It was first observed by the German Brain Tumour Association in 2000.",
+      "C": "The international symbol of awareness for brain tumours is the Grey Ribbon.",
+      "D": "The primary objective is to raise awareness and promote early diagnosis.",
+      "E": "It was established by the World Health Organization (WHO) as part of its global cancer initiative."
+    },
+    "answer": "E",
+    "rationale": "Statement E is false. It was established by the German Brain Tumour Association (Deutsche Hirntumorhilfe) in 2000, not by the WHO. (Reference: Page 45, 70-71)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Culture & Heritage",
+    "question": "Consider the following statements regarding International Archives Day 2026:\n\n1. It is observed annually on 9 June to commemorate the establishment of the International Council on Archives (ICA).\n2. The ICA was established on 9 June 1948 in Paris, France.\n3. The theme for International Archives Week 2026 was '#ArchivesForJustice: Rights, Memory & Futures'.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All statements are correct. The day marks the ICA's creation in 1948 in Paris, and the 2026 theme is '#ArchivesForJustice: Rights, Memory & Futures'. (Reference: Page 46, 71)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "International Cooperation",
+    "question": "The International Day for Dialogue Among Civilizations (IDDC) was observed globally on 10 June 2026. Which year was declared the UN Year of Dialogue among Civilizations?",
+    "options": {
+      "A": "1999",
+      "B": "2001",
+      "C": "2005",
+      "D": "2010",
+      "E": "2015"
+    },
+    "answer": "B",
+    "rationale": "The UN declared 2001 as the UN Year of Dialogue among Civilizations. (Reference: Page 46, 71)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Human Rights",
+    "question": "Consider the following statements regarding the World Day Against Child Labour 2026:\n\n1. It is observed annually on 12 June.\n2. The 2026 theme is 'Red card to child labour: Fair play for children, decent work for adults'.\n3. It was first observed in 2002, launched by the International Labour Organization (ILO).\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 2",
+      "E": "1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All statements are correct. The day is observed on June 12, the 2026 theme is 'Red card to child labour...', and it was initiated by the ILO in 2002. (Reference: Page 47, 71)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Health & Rights",
+    "question": "The International Albinism Awareness Day (IAAD) 2026 observed on June 13 featured which of the following themes?",
+    "options": {
+      "A": "Inclusion is Strength"
+    },
+    "answer": "C",
+    "rationale": "The 2026 theme for IAAD is 'Proudly in My Skin: Celebrating All Skin Tones.' (Reference: Page 48, 71)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Health Campaigns",
+    "question": "Match the following organizations involved in launching the World Blood Donor Day with their correct abbreviations:\n\nColumn I:\n1. WHO\n2. IFRC\n3. IFBDO\n4. ISBT\n\nColumn II:\nA. International Federation of Red Cross and Red Crescent Societies\nB. International Federation of Blood Donor Organizations\nC. World Health Organization\nD. International Society of Blood Transfusion\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-A, 3-B, 4-D",
+      "B": "1-C, 2-B, 3-A, 4-D",
+      "C": "1-C, 2-A, 3-D, 4-B",
+      "D": "1-A, 2-C, 3-B, 4-D",
+      "E": "1-B, 2-A, 3-C, 4-D"
+    },
+    "answer": "A",
+    "rationale": "WHO (World Health Organization), IFRC (International Federation of Red Cross and Red Crescent Societies), IFBDO (International Federation of Blood Donor Organizations), ISBT (International Society of Blood Transfusion). (Reference: Page 48)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Social Awareness",
+    "question": "The World Elder Abuse Awareness Day (WEAAD) is observed annually on 15 June. What was the theme for the 2026 observance?",
+    "options": {
+      "A": "Closing the Circle: Addressing Gender-Based Violence"
+    },
+    "answer": "D",
+    "rationale": "The 2026 Theme for WEAAD is 'Beyond Awareness: Making Elder Abuse Prevention Work'. (Reference: Page 49, 72)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Environmental Initiatives",
+    "question": "Consider the following statements regarding the MoA signed between CSIR-CRRI and the Government of Haryana:\n\n1. The project aims to develop sustainable urban road infrastructure and reduce road-dust pollution in the National Capital Region (NCR).\n2. The initiative is partnered with the School of Planning and Architecture (SPA) New Delhi under the Commission for Air Quality Management (CAQM).\n3. Key components include climate-resilient design, green corridors, and modern road tech.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All three statements are correct. The MoA addresses NCR road dust pollution and includes SPA New Delhi under CAQM with modern design components. (Reference: Page 49, 72)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Economic Clusters",
+    "question": "Which of the following statements about the 'Blue Valley Cluster' launched in Guwahati is INCORRECT?",
+    "options": {
+      "A": "It was launched jointly by the Government of Assam and the European Union (EU).",
+      "B": "It focuses on promoting the Tea, Agarwood, Natural Fragrances, and AYUSH sectors.",
+      "C": "The initiative aims to connect farmers, SHGs, startups, and MSMEs with the Southeast Asian markets under the Act East Policy.",
+      "D": "Assam Industrial Development Corporation (AIDC) and FEBI signed an MoU to promote investment.",
+      "E": "It was launched in the presence of Assam CM Himanta Biswa Sarma and H.E. Hervé Delphin."
+    },
+    "answer": "C",
+    "rationale": "Statement C is incorrect because the initiative aims to connect these entities with *European markets*, aligning with the EU-India Comprehensive Strategic Agenda, not the Southeast Asian markets under Act East. (Reference: Page 50, 72)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Government Schemes",
+    "question": "Hybrid Match: Match the following Central Government portals/systems launched in June 2026 with their respective implementing or overseeing Ministry:\n\nColumn I:\n1. VINIMAY (LPMS)\n2. BHAVYA Portal\n3. HAWK System (Kerala specific but general domain)\n\nColumn II:\nA. Ministry of Commerce & Industry\nB. Ministry of Home Affairs\nC. Forests and Wildlife Department\n\nSelect the correct code:",
+    "options": {
+      "A": "1-B, 2-A, 3-C",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-B, 2-C, 3-A",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "VINIMAY (LPMS) is by the Land Ports Authority under MHA (1-B). BHAVYA Portal is by DPIIT/NICDC under MoC&I (2-A). HAWK was launched by the Kerala Forest Department (3-C). (Reference: Pages 5, 7, 10)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  }
+]

@@ -1,0 +1,674 @@
+[
+  {
+    "category": "National Affairs",
+    "sub_category": "Standardization",
+    "question": "Consider the following statements regarding the Legal Metrology (Indian Standard Time) Rules, 2026:\n\n1. The rules were notified under Section 52 of the Legal Metrology Act, 2009 by the Department of Consumer Affairs.\n2. The mandate ensures accurate timestamping through the White Rabbit Technology, which was successfully trialed at the National Stock Exchange (NSE) in Chennai and RRSL in Bengaluru.\n3. A 180-day window has been provided for compliance, with penalties for the unauthorized use of alternative time references set to be enforced from March 2027.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 3"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. The rules are notified under Section 52 of the LM Act. The White Rabbit Technology trial included NSE Chennai and RRSL Bengaluru. Compliance is given a 180-day window with penalties starting March 2027. (Page 5, 47, 71)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Macroeconomic Data",
+    "question": "Based on the NSO's Quarterly Estimates for Q1FY27, arrange the following components in descending order based on their percentage growth or contribution value:\n\n1. Real GDP Growth Rate\n2. Nominal GVA Growth Rate\n3. Export Growth Rate\n4. Gross Fixed Capital Formation (GFCF) Growth Rate\n\nSelect the correct sequence:",
+    "options": {
+      "A": "3 - 4 - 2 - 1",
+      "B": "4 - 3 - 2 - 1",
+      "C": "3 - 2 - 4 - 1",
+      "D": "2 - 4 - 3 - 1",
+      "E": "3 - 4 - 1 - 2"
+    },
+    "answer": "A",
+    "rationale": "The growth rates are: Exports (+12.0%), GFCF (+11.9%), Nominal GVA (+11.5%), and Real GDP (+7.8%). Thus, the descending order is 3 (12.0) > 4 (11.9) > 2 (11.5) > 1 (7.8). (Page 7, 72)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Telecommunications",
+    "question": "Match the following specific components of C-DOT's indigenous Quantum Products with their correct functional descriptions:\n\nColumn I:\n1. Q-DARSHAN\n2. Q-VACHAN\n3. Q-RAQSHAK\n4. C-SPD\n\nColumn II:\nA. Secure voice communication node\nB. Enterprise network security solution\nC. Secure IP (Internet Protocol) phone\nD. Single-Photon Detector for quantum communication\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-A, 3-B, 4-D",
+      "B": "1-A, 2-C, 3-D, 4-B",
+      "C": "1-C, 2-B, 3-A, 4-D",
+      "D": "1-B, 2-A, 3-C, 4-D",
+      "E": "1-D, 2-C, 3-A, 4-B"
+    },
+    "answer": "A",
+    "rationale": "Q-DARSHAN is a Secure IP phone (1-C). Q-VACHAN is a Secure voice communication node (2-A). Q-RAQSHAK is an Enterprise network security solution (3-B). C-SPD is a Single-Photon Detector (4-D). (Page 8)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Inter-State Agreements",
+    "question": "The resolution of the Sone River Water-Sharing Dispute marked the 4th inter-state water agreement in 2026. Which of the following agreements is INCORRECTLY paired with its respective participating states as mentioned in the contextual background?",
+    "options": {
+      "A": "Kishau Multipurpose Dam Project – Multistate consensus achieved on 16 June",
+      "B": "Yamuna Water Project – Rajasthan and Haryana",
+      "C": "Narmada Award pending-payment settlement – Maharashtra, Gujarat, Rajasthan & Madhya Pradesh",
+      "D": "Sone River Water-Sharing Dispute – Bihar and Jharkhand",
+      "E": "Polavaram Project Backwater Settlement – Andhra Pradesh, Telangana, and Odisha"
+    },
+    "answer": "E",
+    "rationale": "The Polavaram Project is not listed among the 4 inter-state water agreements of 2026 in the text. The 4 agreements mentioned are Kishau Multipurpose Dam, Rajasthan-Haryana Yamuna Water Project, Narmada Award settlement, and the Sone River pact. (Page 49)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Education Data Analysis",
+    "question": "Extracting data from the 13th and 14th editions of the AISHE (2022-23 & 2023-24), arrange the following levels of higher education enrolment in ascending order based on total student numbers (in Crores/Lakhs):\n\n1. Post Graduate (PG)\n2. Under Graduate (UG)\n3. PhD\n4. Integrated Courses\n\nSelect the correct sequence:",
+    "options": {
+      "A": "3 - 4 - 1 - 2",
+      "B": "4 - 3 - 1 - 2",
+      "C": "3 - 1 - 4 - 2",
+      "D": "1 - 3 - 4 - 2",
+      "E": "3 - 4 - 2 - 1"
+    },
+    "answer": "A",
+    "rationale": "The figures are: PhD (3.43 L), Integrated (5.69 L), PG (57.85 L), UG (3.45 Cr). The ascending order is PhD (3) < Integrated (4) < PG (1) < UG (2). (Page 11)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Fisheries Initiatives",
+    "question": "Fill in the blanks regarding the 'Mission Rangeen Machhli 2031' action plan:\n\nSupported by the Pradhan Mantri Matsya Sampada Yojana (PMMSY), an allocation of _______ has been made for Lakshadweep. This includes establishing a hatchery in _______, setting up 3 rearing units, and a Seaweed Bank managed by _______.",
+    "options": {
+      "A": "₹45 Cr ; Kavaratti ; CIFE",
+      "B": "₹62 Cr ; Agatti ; ICAR-CMFRI",
+      "C": "₹85 Cr ; Minicoy ; NFDB",
+      "D": "₹62 Cr ; Kavaratti ; ICAR-CIBA",
+      "E": "₹100 Cr ; Agatti ; MPEDA"
+    },
+    "answer": "B",
+    "rationale": "The handwritten notes specify an allocation of ₹62 Cr, establishing a hatchery at Agatti, 3 rearing units, and a Seaweed Bank managed by ICAR-CMFRI. (Page 11)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Infrastructure Policy",
+    "question": "Assertion (A): The National Shipbuilding and Heavy Industries Park Odisha Limited (NSHIPOL) received in-principle approval for a mega shipbuilding cluster under the Shipbuilding Development Scheme (SbDS).\nReason (R): The execution of this Rs 24,700 crore project relies on a Special Purpose Vehicle (SPV) formed exclusively by the Odisha Industrial Infrastructure Development Corporation (IDCO) and the Ministry of Ports, Shipping and Waterways.\n\nIn the context of the above statements, which of the following is correct?",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+      "C": "(A) is true, but (R) is false.",
+      "D": "(A) is false, but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true as NSHIPOL received approval under the SbDS. Reason (R) is false because the SPV is formed by the Odisha Maritime Board (OMB) and Paradip Port Authority (PPA), not IDCO and MoPSW directly. (Page 12, 51)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Technology in Safety",
+    "question": "Agnikawach Safety Solutions launched an AI platform to mitigate industrial hazards. What does the acronym 'BLEVE', an explosion type specifically covered by this platform's risk modelling, stand for?",
+    "options": {
+      "A": "Blast level evaluation and volumetric expansion",
+      "B": "Boiling liquid expanding vapor explosion",
+      "C": "Burn limits and explosive vapor emission",
+      "D": "Binary liquid expansion and volatile eruption",
+      "E": "Blast localization and environmental vapor extraction"
+    },
+    "answer": "B",
+    "rationale": "The handwritten notes explicitly define BLEVE as 'Boiling Liquid Expanding Vapor Explosion', which is one of the 8 hazards covered by the Agni Kawach platform. (Page 13, 74)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Ocean Conservation",
+    "question": "Consider the following statements regarding the 'Swachh Sagar, Surakshit Sagar' (SSSS) campaign:\n\n1. It was originally launched in 2022 as a 75-day drive across 75 beaches under Azadi Ka Amrit Mahotsav.\n2. The SSSS v5.0 campaign emphasizes 'Jan Bhagidari' (community participation) for protecting coastal ecosystems.\n3. The initiative introduced the 'SAGAR PRAHARI' mobile application to track marine litter.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. The background notes confirm the 2022 launch (75 days/75 beaches). SSSS v5.0 emphasizes 'Jan Bhagidari'. The platforms launched include the SAGAR PRAHARI mobile application, Ocean Olympiad, and Pledge platform. (Page 14, 52, 74)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "International Collaboration",
+    "question": "Match the following entities/ministries involved in the 4th Indo-German Environment Forum (IGEF) with their corresponding roles or descriptions:\n\nColumn I:\n1. MoEFCC\n2. BMUKN\n3. APA\n4. FICCI\n\nColumn II:\nA. German Ministry of Environment, Climate Protection, Nature Conservation and Nuclear Energy\nB. Asia-Pacific Committee of German Business\nC. Ministry of Environment, Forest and Climate Change (India)\nD. Federation of Indian Chambers of Commerce and Industry\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-A, 3-B, 4-D",
+      "B": "1-C, 2-B, 3-A, 4-D",
+      "C": "1-A, 2-C, 3-B, 4-D",
+      "D": "1-C, 2-A, 3-D, 4-B",
+      "E": "1-D, 2-C, 3-A, 4-B"
+    },
+    "answer": "A",
+    "rationale": "MoEFCC is India's ministry (1-C). BMUKN is the German equivalent (2-A). APA is the Asia-Pacific Committee of German Business (3-B). FICCI is the Indian industry federation (4-D). (Page 15)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Social Sector Data",
+    "question": "The Central Adoption Resource Authority (CARA) launched the 'Adoption Awareness 2026' theme. Which two Central Ministries are formally listed as coordinating bodies for promoting safe adoption workshops from September 2026?",
+    "options": {
+      "A": "MoWCD and Ministry of Education",
+      "B": "MoHFW and Ministry of Home Affairs (MHA)",
+      "C": "MoWCD and Ministry of Social Justice and Empowerment",
+      "D": "Ministry of Law and Justice and MHA",
+      "E": "MoHFW and Ministry of Rural Development"
+    },
+    "answer": "B",
+    "rationale": "The handwritten notes clearly state that the coordination for promoting safe, transparent adoption workshops (from Sep 2026) is handled by MoHFW + MHA. (Page 15)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Agriculture Technology",
+    "question": "Regarding the MoU signed between NABARD and IMD for integrating agro-meteorological data into DiCRA, which of the following is NOT explicitly provided by IMD under this integration?",
+    "options": {
+      "A": "Weather forecasts",
+      "B": "Agro-advisories",
+      "C": "In-situ observations",
+      "D": "Crop insurance claim settlement tools",
+      "E": "Weather alerts"
+    },
+    "answer": "D",
+    "rationale": "IMD will provide agro-meteorological products such as weather forecasts, advisories, in-situ observations, and alerts. Crop insurance claim settlement tools are not part of the data provision scope described in the text. (Page 16, 52)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Corporate Sustainability",
+    "question": "Assertion (A): BPCL signed an MoU with the Centre for Science and Environment (CSE) to promote biofuels and circular economy initiatives, focusing extensively on evaluating the viability of green hydrogen generation.\nReason (R): The partnership specifically targets the assessment and utilization of biofuel by-products such as Fermented Organic Manure (FOM), digestate, and Distillers Dried Grains with Solubles (DDGS).\n\nIn the context of the above statements, which of the following is correct?",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+      "C": "(A) is true, but (R) is false.",
+      "D": "(A) is false, but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "D",
+    "rationale": "Assertion (A) is false because the MoU focuses on biomass use, waste-to-resource, and Compressed Biogas (CBG), not green hydrogen generation. Reason (R) is true as it accurately lists the targeted by-products (FOM, DDGS, digestate, CO2). (Page 16, 53)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Parliamentary Affairs",
+    "question": "Fill in the blanks regarding the FCRA Amendment Bill 2026 and the constituted JPC:\n\nThe 31-member JPC, led by _______, was formed to examine the Bill. The Bill proposes a tightened foreign funding oversight, directing assets to the _______, and allowing a _______-day appeal process for reduced punishments.\n\nSelect the correct combination:",
+    "options": {
+      "A": "Om Birla ; Prime Minister's National Relief Fund ; 60",
+      "B": "Bhartruhari Mahtab ; NITI Aayog ; 30",
+      "C": "Sanjay Jaiswal ; Consolidated Fund of India (CFI) ; 90",
+      "D": "Harsh Vardhan Shringla ; Contingency Fund of India ; 45",
+      "E": "Sanjay Jaiswal ; Consolidated Fund of India (CFI) ; 120"
+    },
+    "answer": "C",
+    "rationale": "The JPC is chaired by Sanjay Jaiswal. The provisions of the FCRA Bill direct authority/assets to the CFI (Consolidated Fund of India) and allow a 90-day appeal for reduced punishment. (Page 17)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Defence Policy",
+    "question": "Which of the following elements is NOT recognized as a core pillar of the newly released ‘RAKSHA’ Defence Diplomacy Framework?",
+    "options": {
+      "A": "Strategic Partnerships",
+      "B": "Capacity Building",
+      "C": "Indigenous Exports",
+      "D": "Maritime Security",
+      "E": "Nuclear Proliferation Deterrence"
+    },
+    "answer": "E",
+    "rationale": "The core pillars of the 'RAKSHA' document are Strategic Partnerships, Capacity Building, Indigenous Exports, and Maritime Security. Nuclear Proliferation Deterrence is not listed as a core pillar in the text. (Page 18, 54)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Technology in Procurement",
+    "question": "Arrange the following sequential steps of the 'Waste-to-Value-to-Market' model outlined in the GeM and Textiles Committee MoU for recycled textiles:\n\n1. Market Linkages (GeM onboard & sell)\n2. Value Addition & Certification (TC identifies & certifies)\n3. Waste Sourcing (Capacity building & standardisation)\n\nSelect the correct logical sequence implied by the partnership framework:",
+    "options": {
+      "A": "1 - 2 - 3",
+      "B": "3 - 2 - 1",
+      "C": "2 - 3 - 1",
+      "D": "3 - 1 - 2",
+      "E": "2 - 1 - 3"
+    },
+    "answer": "B",
+    "rationale": "In the Waste-to-Value-to-Market model: The TC first handles research/standardisation (Waste handling - 3), then identifies/certifies producers (Value - 2), and finally GeM facilitates onboarding and market linkages (Market - 1). The logical progression is 3 -> 2 -> 1. (Page 19, 54)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Water Management",
+    "question": "Consider the following metrics reported under the third phase of the 'Jal Sanchay Jan Bhagidari' (JSJB 3.0) initiative where Chhattisgarh ranked first:\n\n1. The state successfully registered 79,775 structures.\n2. The state successfully completed the construction of 77,719 structures.\n3. The national target set by the GoI is to create 2 crore new water conservation structures by May 31, 2026.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 2",
+      "E": "None of the above"
+    },
+    "answer": "C",
+    "rationale": "Statements 1 and 2 are correct (79,775 registered; 77,719 completed). Statement 3 is incorrect because the national target is to create 2 crore new structures by May 31, 2027, not 2026. (Page 19, 55, 76)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Defence Innovation",
+    "question": "The patent for BAM-H24 was granted to DRDO and the Advanced Centre of Research in High Energy Materials (ACRHEM). At which prominent university is the ACRHEM located?",
+    "options": {
+      "A": "Jawaharlal Nehru University (JNU)",
+      "B": "University of Delhi (DU)",
+      "C": "University of Hyderabad (UoH)",
+      "D": "Indian Institute of Science (IISc)",
+      "E": "Anna University"
+    },
+    "answer": "C",
+    "rationale": "The Advanced Centre of Research in High Energy Materials (ACRHEM) is located at the University of Hyderabad (UoH). (Page 20, 55)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Diplomatic Agreements",
+    "question": "During PM Modi’s visit to Uzbekistan, a key target was set to increase bilateral trade. What is the newly established financial target, and by which year is it expected to be achieved?",
+    "options": {
+      "A": "USD 2 Billion by 2028",
+      "B": "USD 5 Billion by 2030",
+      "C": "USD 10 Billion by 2032",
+      "D": "USD 3 Billion by 2027",
+      "E": "USD 1 Billion by 2026"
+    },
+    "answer": "B",
+    "rationale": "A key announcement was the trade target: USD 1 Bn -> USD 5 Bn by 2030. (Page 22, 77)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Diplomatic Initiatives",
+    "question": "Match the specific announcements/agreements finalized during PM Modi's visit to Uzbekistan with their exact provisions:\n\nColumn I:\n1. Environmental Rehabilitation\n2. Linguistic Scholarships\n3. Academic Chair\n\nColumn II:\nA. ICCR Sanskrit Chair at Tashkent State University of Oriental Studies\nB. USD 1 million grant for the Aral Sea region\nC. 100 Lal Bahadur Shastri Scholarships for Hindi Language\n\nSelect the correct code:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-B, 2-A, 3-C",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-C, 2-B, 3-A"
+    },
+    "answer": "A",
+    "rationale": "Environmental rehabilitation involves a USD 1 million grant for the Aral Sea (1-B). Linguistic scholarships involve 100 LBS Hindi scholarships (2-C). An ICCR Sanskrit Chair was established at Tashkent State University (3-A). (Page 22, 77)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Drought Resilience",
+    "question": "Assertion (A): At UNCCD COP17, the Drought Resilience Investment Facility (DRIF) was introduced as a catalytic financing platform to combat desertification.\nReason (R): The primary objective of DRIF is to secure a targeted fund of up to USD 1.2 Billion exclusively for the Rangelands Initiative spanning 45 projects.\n\nIn the context of the above statements, which of the following is correct?",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+      "C": "(A) is true, but (R) is false.",
+      "D": "(A) is false, but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true; DRIF is the world's catalytic financing platform introduced under Drought Architecture. Reason (R) is false because the key target of DRIF is to raise up to USD 400 million, while the USD 1.2 Billion figure relates separately to the 'Rangelands Initiative' across 45 projects. (Page 23, 77)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Multilateral Formats",
+    "question": "At the 26th SCO Summit, several India-backed initiatives were endorsed. Which of the following was NOT among the specific initiatives promoted by India as listed in the text?",
+    "options": {
+      "A": "Addition of English as an SCO working language.",
+      "B": "Establishment of the Young Scientists Forum.",
+      "C": "Establishment of the Young Authors Conference.",
+      "D": "Creation of an SCO Unified Digital Payment Gateway.",
+      "E": "Hosting the 1st edition of the SCO Civilisation Dialogue Forum in 2026."
+    },
+    "answer": "D",
+    "rationale": "The India-backed initiatives include: English as an SCO working language, Young Scientists Forum, Young Authors Conference, and the SCO Civilisation Dialogue Forum. A Unified Digital Payment Gateway for SCO is not mentioned. (Page 24, 78)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Climate Science",
+    "question": "The UNEP 'Limiting Overshoot' report outlines the projected global temperature pathway if overshoot occurs. Arrange the following conceptual stages of an overshoot pathway in correct chronological order:\n\n1. Decline\n2. Plateau/Peak\n3. Exceedance\n4. Stabilization\n\nSelect the correct sequence:",
+    "options": {
+      "A": "3 - 2 - 1 - 4",
+      "B": "2 - 3 - 1 - 4",
+      "C": "3 - 1 - 2 - 4",
+      "D": "1 - 2 - 3 - 4",
+      "E": "4 - 1 - 2 - 3"
+    },
+    "answer": "A",
+    "rationale": "The stages of an Overshoot Pathway as listed in the Exam Hints are: Exceedance, Plateau/Peak, Decline, and Stabilization. Therefore, the order is 3 -> 2 -> 1 -> 4. (Page 78)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Bilateral Visits",
+    "question": "During his visit to Kyrgyzstan, PM Modi presented a traditional 'Ladakhi Tsugdul Blanket'. To whom was this specific gift presented?",
+    "options": {
+      "A": "Vladimir Putin",
+      "B": "Masoud Pezeshkian",
+      "C": "Sadyr Japarov",
+      "D": "Abdylbek Kasymaliev",
+      "E": "Shavkat Mirziyoyev"
+    },
+    "answer": "C",
+    "rationale": "PM Modi presented the 10-volume English translation of Mahabharata and the Ladakhi Tsugdul Blanket to Kyrgyz President Sadyr Japarov. (Page 26, 58, 79)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Financial Institutions",
+    "question": "Fill in the blanks regarding India Post Payments Bank (IPPB) milestones:\n\nBy FY26, IPPB scaled to _______ crore users, of which 77% were rural and _______% were women. The bank also facilitated Aadhaar-enabled Payment System (AePS) transactions amounting to exactly _______ crore transactions.\n\nSelect the correct combination:",
+    "options": {
+      "A": "15.50 ; 55 ; 10.00",
+      "B": "13.25 ; 49 ; 12.06",
+      "C": "13.25 ; 50 ; 15.00",
+      "D": "12.00 ; 49 ; 12.06",
+      "E": "10.50 ; 45 ; 11.50"
+    },
+    "answer": "B",
+    "rationale": "IPPB scaled to 13.25 Cr users (77% rural, 49% women). It facilitated 12.06 Cr AePS transactions. (Page 27)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Insurance Sector",
+    "question": "Consider the following statements comparing the new LIC policies 'Bima Platinum' and 'Jeevan Raksha':\n\n1. Bima Platinum offers a 70% Basic Sum Assured (BSA) survival payout, whereas Jeevan Raksha provides a fixed death benefit.\n2. Bima Platinum has an entry age limit capped at 55 years, whereas Jeevan Raksha caps the entry age at 45 years.\n3. Both plans are Non-Participating, Non-Linked, but only Jeevan Raksha allows Single, Regular, or Limited premium payment options.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. Bima Platinum gives 70% BSA survival payout (Plan: Protection). Entry ages: Bima Platinum is 30 days to 55 yrs; Jeevan Raksha is 18 to 45 yrs. Jeevan Raksha allows Single/Regular/Limited options, whereas Bima Platinum has a limited Premium Paying Term (PPT: 7-18 years). (Page 28)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Corporate Mergers",
+    "question": "Assertion (A): The merger of InsuranceDekho and RenewBuy resulted in an AI-driven ecosystem boasting over 750+ products and backed by over Rs 6,600 crore in premiums.\nReason (R): RenewBuy was formerly operating as a traditional offline-only brokerage firm which required a digital overhaul via InsuranceDekho's API infrastructure.\n\nIn the context of the above statements, which of the following is correct?",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+      "C": "(A) is true, but (R) is false.",
+      "D": "(A) is false, but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true. Reason (R) is false because RenewBuy was specifically operating as a 'D2c Insurance Broking Private Limited' (Direct-to-Consumer digital platform), not an offline-only traditional firm. (Page 28, 59)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Merchant Banking",
+    "question": "Zerodha Corporate Advisors became the 249th registered merchant banker in India after receiving approval from SEBI. On what exact date did they receive this formal registration?",
+    "options": {
+      "A": "April 27, 2026",
+      "B": "June 21, 2026",
+      "C": "August 31, 2026",
+      "D": "September 1, 2026",
+      "E": "September 5, 2026"
+    },
+    "answer": "D",
+    "rationale": "The company applied for the licence on April 27, 2026, and received registration on September 1, 2026. (Page 60, 80)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Regulatory Agreements",
+    "question": "Match the following regulatory bodies with their corresponding jurisdiction/scope as outlined in the SEBI-ESMA MoU:\n\nColumn I:\n1. SEBI\n2. ESMA\n3. CCPs\n\nColumn II:\nA. European Securities and Markets Authority\nB. Securities and Exchange Board of India\nC. Central Counterparties\n\nSelect the correct code:",
+    "options": {
+      "A": "1-B, 2-A, 3-C",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-B, 2-C, 3-A",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "SEBI is Securities and Exchange Board of India (1-B). ESMA is European Securities and Markets Authority (2-A). CCPs stands for Central Counterparties (3-C). (Page 29, 60)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Defence Production",
+    "question": "Consider the following statements regarding the TASL and Javelin Joint Venture (JJV) MoU:\n\n1. The Javelin is a medium-range, fire-and-forget anti-tank guided missile (ATGM) that can hit targets up to 15 km away.\n2. The Guidance Electronics Unit (GEU) of the missile will be assembled in Arizona by Raytheon.\n3. The final assembly and integration of the Javelin All Up Round (AUR) will take place in India.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 2",
+      "E": "Only 2 and 3"
+    },
+    "answer": "A",
+    "rationale": "Statements 2 and 3 are correct. Statement 1 is incorrect because the Javelin missile has a range of up to 5 km, not 15 km. (Page 31, 61, 81)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Sports Awards",
+    "question": "At the FPAI Indian Football Awards 2026, various international players making an impact in India were recognized. Who was named the 'Foreign Player of the Year'?",
+    "options": {
+      "A": "Phrangki Buam",
+      "B": "Owen Coyle",
+      "C": "Miguel Figueira Damasceno",
+      "D": "Sanan Mohammed K.",
+      "E": "Dimitri Petratos"
+    },
+    "answer": "C",
+    "rationale": "Miguel Figueira Damasceno (from Brazil) was awarded the 'Foreign Player of the Year'. (Page 32, 62)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Adventure Awards",
+    "question": "Fill in the blanks regarding the Tenzing Norgay National Adventure Awards 2024:\n\nThe award includes a bronze statuette, a certificate, a blazer/saree, and a cash prize of _______. Among the winners, _______ was recognized for Land Adventure after climbing 5 peaks above 8000m.",
+    "options": {
+      "A": "Rs 5 lakh ; Skalzang Rigzin",
+      "B": "Rs 15 lakh ; Baljeet Kaur",
+      "C": "Rs 10 lakh ; Rimo Saha",
+      "D": "Rs 15 lakh ; Shiv Prasad Chamoli",
+      "E": "Rs 25 lakh ; Baljeet Kaur"
+    },
+    "answer": "B",
+    "rationale": "The cash prize is Rs 15 lakh. Baljeet Kaur was recognized for Land Adventure specifically for climbing 5 peaks >8000m. (Page 33)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "Corporate Leadership",
+    "question": "Adobe Inc. appointed Anil Chakravarthy as its next President and CEO, effective December 1, 2026. Arrange the following chronological career milestones related to Anil Chakravarthy based on the provided text:\n\n1. Takes over as CEO of Adobe Inc.\n2. Joined Adobe to lead Digital Experience.\n3. Elevated to President of Digital Experience at Adobe.\n4. Served as Ex-CEO of Informatica.\n\nSelect the correct chronological sequence (earliest to latest):",
+    "options": {
+      "A": "4 - 2 - 3 - 1",
+      "B": "2 - 4 - 3 - 1",
+      "C": "4 - 3 - 2 - 1",
+      "D": "2 - 3 - 4 - 1",
+      "E": "3 - 2 - 4 - 1"
+    },
+    "answer": "A",
+    "rationale": "He was Ex-CEO of Informatica (4) before joining Adobe. He joined Adobe in 2020 (2), became President Digital Experience in 2021 (3), and takes over as CEO on Dec 1, 2026 (1). Sequence: 4 -> 2 -> 3 -> 1. (Page 37)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Naval Infrastructure",
+    "question": "Assertion (A): The DSV 'Nipun' was built to Indian Register of Shipping (IRS) standards and commissioned at the Naval Dockyard, Mumbai.\nReason (R): It acts as a mother ship for Deep Submergence Rescue Vessels (DSRVs) specifically designed to engage in anti-submarine warfare (ASW) using torpedoes.\n\nIn the context of the above statements, which of the following is correct?",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+      "C": "(A) is true, but (R) is false.",
+      "D": "(A) is false, but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true. Reason (R) is false because DSRVs are designed to evacuate personnel from distressed submarines (rescue role), not for anti-submarine warfare (ASW) using torpedoes. (Page 37, 65)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Foreign Missiles",
+    "question": "Russia's 'RS-24 Yars' mobile ICBM delivered training warheads to a specific test range after travelling over 6,700 km. What is the name of this test range and its location region?",
+    "options": {
+      "A": "Kapustin Yar Test Range in Astrakhan",
+      "B": "Sary Shagan Test Range in Kazakhstan",
+      "C": "Kura Test Range in the Kamchatka region",
+      "D": "Plesetsk Test Range in Arkhangelsk",
+      "E": "Dombarovsky Test Range in Orenburg"
+    },
+    "answer": "C",
+    "rationale": "The missile was launched from Plesetsk Cosmodrome and delivered training warheads to the Kura Test Range in the Kamchatka region, Russia. (Page 38, 66, 84)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Indian Satellites",
+    "question": "ISRO's Earth observation satellite 'EOS-05' possesses multiple imaging capabilities. Which of the following is NOT an imaging modality supported by EOS-05 as per the text?",
+    "options": {
+      "A": "Visible imaging",
+      "B": "Infrared imaging",
+      "C": "Multispectral imaging",
+      "D": "Hyperspectral imaging",
+      "E": "Synthetic Aperture Radar (SAR) imaging"
+    },
+    "answer": "E",
+    "rationale": "EOS-05 is capable of continuous large-area monitoring using visible, infrared, multispectral, and hyperspectral imaging. SAR imaging is not listed for this specific satellite. (Page 39, 66)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Hockey Tournaments",
+    "question": "Match the winners of the individual awards at the 2026 FIH Hockey World Cup with their respective countries:\n\nColumn I:\n1. Tomás Domene (Men's Best Player & Top Scorer)\n2. Charlotte Englebert (Women's Best Player)\n3. Yibbi Jansen (Women's Top Scorer)\n4. Jocelyn Bartram (Best Goalkeeper)\n\nColumn II:\nA. Australia\nB. Netherlands\nC. Belgium\nD. Argentina\n\nSelect the correct code:",
+    "options": {
+      "A": "1-D, 2-C, 3-B, 4-A",
+      "B": "1-D, 2-B, 3-C, 4-A",
+      "C": "1-C, 2-D, 3-A, 4-B",
+      "D": "1-A, 2-C, 3-D, 4-B",
+      "E": "1-B, 2-A, 3-C, 4-D"
+    },
+    "answer": "A",
+    "rationale": "Tomás Domene is from Argentina (1-D). Charlotte Englebert is from Belgium (2-C). Yibbi Jansen is from Netherlands (3-B). Jocelyn Bartram is from Australia (4-A). (Page 41)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "National Sports Day",
+    "question": "Consider the following statements about National Sports Day 2026:\n\n1. It marked the 15th observance of the day since its inception.\n2. The day featured a 3-day celebration at SAI Bhopal under the theme \"Khelega Bharat, Jeetega Bharat\".\n3. Prime Minister Narendra Modi personally inaugurated the Major Dhyan Chand National Stadium in New Delhi during the 2026 events.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 2",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "C",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because PM Modi addressed the 'Khelo India Dialogues' via video conferencing, while the event at Major Dhyan Chand National Stadium was led by Union Minister Mansukh Mandaviya. (Page 42, 68)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Agricultural Observances",
+    "question": "World Coconut Day 2026 was hosted in Kasaragod, Kerala. Match the following initiatives/products launched during the event with their descriptions:\n\nColumn I:\n1. SHITIJ 2.0\n2. Cocoa book\n3. EPN folder\n\nColumn II:\nA. Publication detailing Entomopathogenic Nematodes\nB. Newly launched programme/brand variant\nC. Informational publication released alongside the ISPC newsletter\n\nSelect the correct code:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "SHITIJ 2.0 is a launched programme/brand (1-B). The Cocoa book is an informational publication released alongside the ISPC newsletter (2-C). The EPN folder details Entomopathogenic Nematodes (3-A). (Page 44)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Disaster Management",
+    "question": "Assertion (A): The OSDMA signed an MoU with UNDP and CivicDataLab to build a Geographic Information System (GIS)-enabled risk platform.\nReason (R): This platform uses the Intelligent Data Solutions for Disaster Risk Reduction (IDS-DRR) to provide real-time data specifically targeting earthquakes and tsunamis in Odisha's 30 districts.\n\nIn the context of the above statements, which of the following is correct?",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+      "C": "(A) is true, but (R) is false.",
+      "D": "(A) is false, but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true. Reason (R) is false because the risk platforms initially focus on floods, coastal flooding, and heatwaves, NOT earthquakes and tsunamis. (Page 45, 70, 88)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Public Health & E-Governance",
+    "question": "Punjab launched the 'Pehchaan' portal for identifying deceased persons. Which central agency provides the 'MedLEaPR' free portal framework that the 'Pehchaan' system integrates with?",
+    "options": {
+      "A": "Centre for Development of Advanced Computing (C-DAC)",
+      "B": "National Informatics Centre (NIC)",
+      "C": "Indian Council of Medical Research (ICMR)",
+      "D": "NITI Aayog",
+      "E": "National Crime Records Bureau (NCRB)"
+    },
+    "answer": "B",
+    "rationale": "The handwritten notes specify that the 'Pehchaan' portal is a MedLEaPR-based free portal developed/provided by the NIC (National Informatics Centre). (Page 46)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Sports Infrastructure",
+    "question": "Tamil Nadu CM announced the 'TN Olympic City'. In how many locations across the state will the proposed Olympic Centres of Excellence (CoE) be established under this initiative?",
+    "options": {
+      "A": "5 locations",
+      "B": "8 locations",
+      "C": "10 locations",
+      "D": "12 locations",
+      "E": "15 locations"
+    },
+    "answer": "C",
+    "rationale": "The initiative explicitly plans to establish Olympic Centres of Excellence (CoE) in 10 locations. (Page 46, 70, 88)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 1st Week"
+  }
+]

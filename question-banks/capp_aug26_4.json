@@ -1,0 +1,882 @@
+[
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Finance News",
+    "question": "Bajaj General Insurance Limited signed an MoU with the commercial insurance arm of a Zurich-based group to explore a partnership in India’s commercial insurance segment. What is the name of this partner company?",
+    "options": {
+      "A": "Zurich Insurance Group",
+      "B": "Swiss Re Corporate Solutions",
+      "C": "Munich Re",
+      "D": "Allianz Commercial",
+      "E": "Chubb Limited"
+    },
+    "answer": "B",
+    "rationale": "Page 41 states that Bajaj General Insurance Limited signed an MoU with Swiss Re Corporate Solutions, the commercial insurance arm of Zurich-based Swiss Re Group.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Finance News",
+    "question": "The Multi Commodity Exchange of India Limited (MCX) signed an MoU with the National Institute of Securities Markets (NISM) to establish a dedicated Commodity Markets Research Centre. Where will this center be based?",
+    "options": {
+      "A": "At the MCX Headquarters in Mumbai",
+      "B": "At the SEBI Headquarters in Mumbai",
+      "C": "At NISM",
+      "D": "At GIFT City, Gandhinagar",
+      "E": "At the Ministry of Finance, New Delhi"
+    },
+    "answer": "C",
+    "rationale": "Page 42 specifies that the centre will be based at NISM and will focus on research, training, and market awareness.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Finance News",
+    "question": "Which entity recently granted an Investment Banking license to Nexent Capital IFSC Private Limited to operate from GIFT City?",
+    "options": {
+      "A": "Securities and Exchange Board of India (SEBI)",
+      "B": "Reserve Bank of India (RBI)",
+      "C": "International Financial Services Centres Authority (IFSCA)",
+      "D": "Ministry of Finance",
+      "E": "Gujarat Maritime Board"
+    },
+    "answer": "C",
+    "rationale": "Page 42 mentions that the International Financial Services Centres Authority (IFSCA) granted an Investment Banking license to Nexent Capital.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Finance News",
+    "question": "BSE Limited and PHDCCI signed an MoU to enhance MSMEs' access to equity financing. The initiative focuses on creating awareness about which specific listing procedure?",
+    "options": {
+      "A": "Large Cap Mainboard Listing",
+      "B": "Foreign Currency Convertible Bonds (FCCBs)",
+      "C": "SME (Small and Medium-Sized Enterprises) listing procedures",
+      "D": "Real Estate Investment Trusts (REITs)",
+      "E": "Infrastructure Investment Trusts (InvITs)"
+    },
+    "answer": "C",
+    "rationale": "Page 42 states the MoU aims to create awareness about Initial Public Offerings (IPOs), SME listing procedures, and the benefits of becoming publicly listed companies.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Finance News",
+    "question": "Razorpay launched India’s 1st AI-powered payments foundation model designed to make digital transactions more reliable. What is the name of this model?",
+    "options": {
+      "A": "Razorpay Titan",
+      "B": "Razorpay Vulcan",
+      "C": "Razorpay Nexus",
+      "D": "Razorpay Aegis",
+      "E": "Razorpay Zenith"
+    },
+    "answer": "B",
+    "rationale": "Page 42 details that Razorpay launched 'Razorpay Vulcan', India’s 1st AI-powered payments foundation model.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Finance News",
+    "question": "Paul Merchants Finance Private Limited (PMFPL) became the first NBFC in India to set up exclusive branches dedicated to silver loans. Under their new offering, what is the maximum loan amount a customer can avail against eligible silver collateral?",
+    "options": {
+      "A": "Rs 5 lakh",
+      "B": "Rs 10 lakh",
+      "C": "Rs 15 lakh",
+      "D": "Rs 20 lakh",
+      "E": "Rs 25 lakh"
+    },
+    "answer": "C",
+    "rationale": "Page 42 specifies that interested customers can avail loans ranging from Rs 2,000 to Rs 15 lakh under this new offering.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Finance News",
+    "question": "Match the following fintech/financial service companies with their recent partnerships/initiatives:\n\nColumn I:\n1. Paramotor Digital Technology\n2. Wizzmoni Financial Services Ltd.\n3. Razorpay\n\nColumn II:\nA. Introduced a Multi-Currency EEFC Settlement Facility\nB. Partnered with NSDL Payments Bank to issue co-branded prepaid cards\nC. Partnered with Oman Air for the 'Wizz Voyager' Multi-Currency Travel Card\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-B, 2-A, 3-C"
+    },
+    "answer": "B",
+    "rationale": "Page 43 details: Paramotor Digital partnered with NSDL Payments Bank (1-B); Wizzmoni partnered with Oman Air (2-C); Razorpay introduced the Multi-Currency EEFC Settlement Facility (3-A).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Finance News",
+    "question": "Bajaj General Insurance launched 'My Family Complete', India’s first health insurance policy that includes pet dogs and cats as insured family members. What is the maximum sum insured available under this policy?",
+    "options": {
+      "A": "Rs 50 lakh",
+      "B": "Rs 1 crore",
+      "C": "Rs 2 crore",
+      "D": "Rs 5 crore",
+      "E": "Rs 10 crore"
+    },
+    "answer": "D",
+    "rationale": "Page 43 states that the policy provides flexibility with sum insured ranging from Rs 5 lakh to Rs 5 crore and tenure up to 5 years.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Business News",
+    "question": "Consider the following statements regarding the recent codeshare partnership signed between Air India and Azerbaijan Airlines (AZAL):\n\n1. It aims to enhance connectivity between India and Azerbaijan.\n2. Air India will place its ‘AI’ designator code on Azerbaijan Airlines’ daily flights between Delhi–Baku and Mumbai–Baku.\n3. The partnership restricts passengers to book travel solely through Azerbaijan Airlines' booking platform.\n\nWhich of the statements given above is/are NOT correct?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 2",
+      "E": "Only 2 and 3"
+    },
+    "answer": "C",
+    "rationale": "Page 45 states that the codeshare services enable passengers to book travel through Air India, not solely through AZAL, making statement 3 incorrect. Statements 1 and 2 are accurate.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Business News",
+    "question": "ASSOCHAM recently signed MoUs with Business France and another entity to strengthen trade and investment collaboration between India, France, and Arab countries. What is the name of this other entity?",
+    "options": {
+      "A": "Arab League Economic Council",
+      "B": "Gulf Cooperation Council Chamber of Commerce",
+      "C": "India & Arab Countries Chamber of Commerce, Industry and Agriculture (IACCIA)",
+      "D": "Middle East Trade and Investment Board",
+      "E": "Indo-Arab Economic Forum"
+    },
+    "answer": "C",
+    "rationale": "Page 46 notes that ASSOCHAM signed MoUs with Business France and the India & Arab Countries Chamber of Commerce, Industry and Agriculture (IACCIA).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Business News",
+    "question": "Airtel Business entered into a strategic collaboration to accelerate enterprise digital transformation in India with which of the following public sector undertakings?",
+    "options": {
+      "A": "Bharat Sanchar Nigam Limited (BSNL)",
+      "B": "Mahanagar Telephone Nigam Limited (MTNL)",
+      "C": "RailTel Corporation of India",
+      "D": "ITI Limited",
+      "E": "Telecommunications Consultants India Limited (TCIL)"
+    },
+    "answer": "D",
+    "rationale": "Page 46 mentions that Airtel Business and ITI Limited entered into a strategic collaboration for enterprise digital transformation solutions in India.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Business News",
+    "question": "JSW Neo Energy Limited signed a pact to jointly develop the 920 MW Punatsangchhu-III Hydroelectric Project. This project is located in which country?",
+    "options": {
+      "A": "Nepal",
+      "B": "Bhutan",
+      "C": "Bangladesh",
+      "D": "Sri Lanka",
+      "E": "Myanmar"
+    },
+    "answer": "B",
+    "rationale": "Page 46 states the project is located on the Punatsangchhu River in Wangdue Phodrang District, Bhutan, and is a joint venture with Bhutan’s Druk Green Power Corporation Limited (DGPC).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "MoU’s & Agreements",
+    "sub_category": "MoU’s With Country",
+    "question": "The Government of India signed an MoU with Armenia to strengthen bilateral defence industrial partnership. The agreement was signed in Yerevan during the official visit of which Indian official?",
+    "options": {
+      "A": "Defence Minister Rajnath Singh",
+      "B": "External Affairs Minister S. Jaishankar",
+      "C": "National Security Advisor Ajit Doval",
+      "D": "Defence Secretary Rajesh Kumar Singh",
+      "E": "Chief of Defence Staff General Anil Chauhan"
+    },
+    "answer": "D",
+    "rationale": "Page 47 states the agreement was signed in Yerevan during Secretary Rajesh Kumar Singh’s (MoD) two-day official visit.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "MoU’s & Agreements",
+    "sub_category": "MoU’s With Country",
+    "question": "India and Singapore reinforced their Comprehensive Strategic Partnership (CSP) during the 4th India–Singapore Ministerial Roundtable (ISMR). Which of the following is NOT among the key initiatives highlighted during this roundtable?",
+    "options": {
+      "A": "Green Lane Initiative for Semiconductors",
+      "B": "Green hydrogen supply chain development",
+      "C": "Joint development of a fifth-generation fighter aircraft",
+      "D": "The 4th Singapore-India Hackathon (Nov 2026)",
+      "E": "Singapore Business Federation office in Bengaluru"
+    },
+    "answer": "C",
+    "rationale": "Page 48 lists the key initiatives: Green Lane Initiative for Semiconductors, green hydrogen supply chain, Singapore-India Hackathon, and SBF office in Bengaluru. Fighter aircraft development is not mentioned.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "MoU’s & Agreements",
+    "sub_category": "MoU’s With State",
+    "question": "The Government of Andhra Pradesh and the United Kingdom (UK) signed a G2G MoU to strengthen cooperation in urban development. The partnership aims to develop which city as a world-class smart, sustainable, and liveable capital?",
+    "options": {
+      "A": "Visakhapatnam",
+      "B": "Vijayawada",
+      "C": "Amaravati",
+      "D": "Tirupati",
+      "E": "Guntur"
+    },
+    "answer": "C",
+    "rationale": "Page 51 states the partnership aims to develop Amaravati as a world-class smart, sustainable, and liveable capital.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "MoU’s & Agreements",
+    "sub_category": "MoU’s Between Organization",
+    "question": "Match the following organizations with their MoU partners:\n\nColumn I:\n1. Ministry of AYUSH\n2. Pawan Hans Limited\n3. Lohia Aerospace Systems Private Limited\n\nColumn II:\nA. Massivit (Israel)\nB. IndiaAI\nC. Noemi Aerospace (Norway)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-A, 3-B",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-A, 2-B, 3-C",
+      "E": "1-C, 2-B, 3-A"
+    },
+    "answer": "A",
+    "rationale": "Pages 52-53 show: Ministry of AYUSH partnered with IndiaAI (1-B), Pawan Hans with Noemi Aerospace (2-C), and Lohia Aerospace with Massivit (3-A).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "MoU’s & Agreements",
+    "sub_category": "MoU’s Between Organization",
+    "question": "The Department for Promotion of Industry and Internal Trade (DPIIT) signed five strategic MoUs with industry leaders to improve startups' access to infrastructure and global markets. Which of the following is NOT one of those five partners?",
+    "options": {
+      "A": "Cashfree Payments",
+      "B": "Darwin Dynamics",
+      "C": "Vultr India",
+      "D": "Cars24",
+      "E": "Razorpay"
+    },
+    "answer": "E",
+    "rationale": "Page 53 lists the five partners: Cashfree Payments, Darwin Dynamics, Vultr India, Cars24, and the Council for Startup India (CSI). Razorpay is not among them.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "MoU’s & Agreements",
+    "sub_category": "MoU’s Between Organization",
+    "question": "Consider the following statements regarding recent MoUs signed by government ministries:\n\n1. The National e-Governance Division (NeGD) launched 'AAERI Verify' integrated with DigiLocker for document verification.\n2. The Ministry of MSME and DPIIT signed an MoU to accelerate the commercialisation of India's Geographical Indication (GI) products.\n3. The Central Council for Research in Ayurvedic Sciences (CCRAS) signed its 100th MoU with the Bureau of Indian Standards (BIS).\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 2",
+      "E": "1, 2, and 3"
+    },
+    "answer": "A",
+    "rationale": "Page 54 states that NeGD launched 'AAERI Verify' (Statement 1) and MSME & DPIIT signed an MoU for GI products (Statement 2). While CCRAS did sign an MoU with BIS, the text says this marks the 100th MoU signed *by the BIS*, not by CCRAS, making Statement 3 technically incorrect based on the specific wording.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "MoU’s & Agreements",
+    "sub_category": "MoU’s Between Organization",
+    "question": "IBM Corporation forged a collaboration to set up Artificial Intelligence (AI)-focused centres in India. Which of the following institutions are part of this collaboration?",
+    "options": {
+      "A": "IIT Delhi and BITS Pilani",
+      "B": "Manipal Institute of Technology (MIT) Bengaluru and CHRIST University",
+      "C": "IISc Bengaluru and IIT Bombay",
+      "D": "VIT Vellore and SRM Institute of Science and Technology",
+      "E": "Amrita Vishwa Vidyapeetham and Symbiosis International"
+    },
+    "answer": "B",
+    "rationale": "Page 54 states that IBM forged collaboration with Manipal Institute of Technology (MIT) Bengaluru and CHRIST (Deemed to be University).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "MoU’s & Agreements",
+    "sub_category": "MoU’s Between Organization",
+    "question": "The Digital India BHASHINI Division (DIBD) signed a Statement of Intent (SoI) with which organization to advance multilingual, voice-first AI solutions for inclusive governance?",
+    "options": {
+      "A": "NITI Aayog",
+      "B": "C-DAC",
+      "C": "NIC (National Informatics Centre)",
+      "D": "ISRO",
+      "E": "TRAI"
+    },
+    "answer": "A",
+    "rationale": "Page 55 mentions that DIBD signed an SoI with the National Institution for Transforming India (NITI Aayog).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "MoU’s & Agreements",
+    "sub_category": "MoU’s Between Organization",
+    "question": "The Government of India signed the Terms of Reference (ToR) for negotiations towards a Preferential Trade Agreement (PTA) with SACU. What does SACU stand for?",
+    "options": {
+      "A": "South American Customs Union",
+      "B": "Southern African Customs Union",
+      "C": "Southeast Asian Customs Union",
+      "D": "Sahara-Africa Commercial Union",
+      "E": "Sub-Saharan African Cooperative Union"
+    },
+    "answer": "B",
+    "rationale": "Page 55 states that GoI signed ToR with the Southern African Customs Union (SACU).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "MoU’s & Agreements",
+    "sub_category": "MoU’s Between Organization",
+    "question": "Match the following organizations with the purpose of their MoUs:\n\nColumn I:\n1. Tata Power & IIT Bombay\n2. Jindal Steel & IIT Hyderabad\n3. Central Bureau of Narcotics & PHARMEXCIL\n\nColumn II:\nA. To set up a Centre of Excellence focused on High-Strength steel solutions.\nB. To promote legitimate pharmaceutical exports and develop a Voluntary Code of Conduct.\nC. To accelerate development of next-generation energy technologies and clean energy solutions.\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-B, 2-C, 3-A",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Pages 56-57 show: Tata Power & IIT Bombay focus on clean energy (1-C). Jindal Steel & IIT Hyderabad focus on steel solutions (2-A). CBN & PHARMEXCIL focus on pharmaceutical exports (3-B).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "MoU’s & Agreements",
+    "sub_category": "MoU’s Between Organization",
+    "question": "The Ministry of Electronics and Information Technology (MeitY) signed an MoU with PhonePe to integrate insights into the PM GatiShakti National Master Plan portal. What is the name of the PhonePe feature providing these insights?",
+    "options": {
+      "A": "PhonePe DataGrid",
+      "B": "PhonePe PulsePro",
+      "C": "PhonePe Analytics",
+      "D": "PhonePe Gati",
+      "E": "PhonePe InfraTrack"
+    },
+    "answer": "B",
+    "rationale": "Page 56 explicitly mentions the integration of 'PhonePe PulsePro' insights into the PM GatiShakti portal.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "MoU’s & Agreements",
+    "sub_category": "MoU’s Between Organization",
+    "question": "UNDP India and Hindustan Unilever Limited (HUL) announced the next phase of their partnership to strengthen a circular economy for plastics. By 2028, this initiative aims to support how many Safai Mitras (waste workers)?",
+    "options": {
+      "A": "10,000",
+      "B": "25,000",
+      "C": "50,000",
+      "D": "75,000",
+      "E": "1,00,000"
+    },
+    "answer": "C",
+    "rationale": "Page 57 states the initiative aims to support 50,000 Safai Mitras and enhance waste management systems across 50 cities.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "MoU’s & Agreements",
+    "sub_category": "MoU’s Between Organization",
+    "question": "Banaras Hindu University (BHU) signed MoUs with the Confederation of Indian Industry (CII) to organize an event and launch a career lounge. What is the name of the month-long cultural event scheduled under this partnership?",
+    "options": {
+      "A": "Kashi Utsav 2026",
+      "B": "Banaras Biennale 2026",
+      "C": "Varanasi Kala Mahotsav",
+      "D": "Ganga Mahotsav 2026",
+      "E": "Sanskritik Kashi 2026"
+    },
+    "answer": "B",
+    "rationale": "Page 58 mentions that BHU signed MoUs with CII to organise the ‘Banaras Biennale 2026’.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "MoU’s & Agreements",
+    "sub_category": "MoU’s Between Organization",
+    "question": "The Central Industrial Security Force (CISF) signed an MoU with the Drone Federation of India (DFI) to strengthen the security of critical infrastructure. As part of this, a Centre of Excellence (CoE) for drone and counter-drone systems will be developed at the Recruit Training Centre located in:",
+    "options": {
+      "A": "Arakkonam, Tamil Nadu",
+      "B": "Deoli, Rajasthan",
+      "C": "Behror, Rajasthan",
+      "D": "Suraksha Campus, New Delhi",
+      "E": "NISA, Hyderabad"
+    },
+    "answer": "C",
+    "rationale": "Page 59 states that the CoE will be developed at the Recruit Training Centre (RTC), Behror, Rajasthan.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "National",
+    "question": "Who was appointed as the Chairperson of the International Financial Services Centres Authority (IFSCA) with an extended tenure until October 2028?",
+    "options": {
+      "A": "A S Rajeev",
+      "B": "Injeti Srinivas",
+      "C": "K. Rajaraman",
+      "D": "Prasanta Mahapatra",
+      "E": "Peyman Kargar"
+    },
+    "answer": "C",
+    "rationale": "Page 60 notes that the GoI extended K. Rajaraman’s tenure as Chairperson of the IFSCA until 24 October 2028.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "National",
+    "question": "Match the following individuals with their recent appointments:\n\nColumn I:\n1. Vice Admiral AN Pramod\n2. A S Rajeev\n3. Prasanta Mahapatra\n\nColumn II:\nA. Executive Director, SEBI\nB. Acting Central Vigilance Commissioner\nC. Deputy Chief of Naval Staff (DCNS)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Pages 60-61 list these appointments: Vice Admiral AN Pramod as DCNS (1-C), A S Rajeev as Acting CVC (2-B), and Prasanta Mahapatra as ED, SEBI (3-A).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "National",
+    "question": "Air India appointed Tewolde Gebremariam as its new Chief Executive Officer and Managing Director. Prior to this appointment, he served as the CEO of which airline group?",
+    "options": {
+      "A": "Qatar Airways",
+      "B": "Emirates Group",
+      "C": "Singapore Airlines",
+      "D": "Ethiopian Airlines Group",
+      "E": "Kenya Airways"
+    },
+    "answer": "D",
+    "rationale": "Page 62 states that Tewolde Gebremariam is the former Chief Executive Officer (CEO) of Ethiopian Airlines Group.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "National",
+    "question": "Consider the following statements regarding recent appointments to the Central Board of the Reserve Bank of India (RBI):\n\n1. Somanath Sreedhara Panicker, former ISRO Chairman, was appointed as a Part-time, Non-official Director.\n2. Anand Gopal Mahindra was re-appointed as a Part-time, Non-official Director.\n3. The tenure for these nominated directors is 5 years, subject to a maximum of two terms.\n\nWhich of the statements given above is/are NOT correct?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 2",
+      "E": "Only 2 and 3"
+    },
+    "answer": "C",
+    "rationale": "Page 64 states that under the RBI Act, 1934, nominated directors hold office for *4 years*, not 5 years. Therefore, statement 3 is incorrect. Statements 1 and 2 are accurate as per page 63.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "National",
+    "question": "Who was appointed as the Chairperson of Airtel Payments Bank Limited for a three-year term effective from 1 October 2026, succeeding Sunil Bharti Mittal?",
+    "options": {
+      "A": "Annie George Mathew",
+      "B": "Monisha Chakraborty",
+      "C": "Shabnam Sinha",
+      "D": "Janmejaya Kumar Sinha",
+      "E": "Syed Akbaruddin"
+    },
+    "answer": "C",
+    "rationale": "Page 63 states that Shabnam Sinha was appointed as the Chairperson of Airtel Payments Bank Limited, succeeding Sunil Bharti Mittal.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "International",
+    "question": "Andras Baka was elected as the new President of Hungary in August 2026. Before becoming President, what prominent position did he hold in the country?",
+    "options": {
+      "A": "Prime Minister of Hungary",
+      "B": "Head of the Supreme Court of Hungary",
+      "C": "Minister of Foreign Affairs",
+      "D": "Governor of the Hungarian National Bank",
+      "E": "Mayor of Budapest"
+    },
+    "answer": "B",
+    "rationale": "Page 64 mentions that the Hungarian Parliament elected Andras Baka, former head of the Supreme Court of Hungary, as the country’s new President.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "International",
+    "question": "Hakainde Hichilema was re-elected as the President of which country for a second consecutive five-year term (2026–2031)?",
+    "options": {
+      "A": "Zimbabwe",
+      "B": "Kenya",
+      "C": "Republic of Zambia",
+      "D": "Tanzania",
+      "E": "Uganda"
+    },
+    "answer": "C",
+    "rationale": "Page 65 states that Hakainde Hichilema was re-elected as the President of the Republic of Zambia.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Awards",
+    "sub_category": "Other Important Awards",
+    "question": "Match the following award categories from the 'PMIS Industry Awards 2026' with their respective winners:\n\nColumn I:\n1. Overall Industry Champion\n2. Pre-Internship Excellence Award\n3. Innovation in Exit Pathways Award\n\nColumn II:\nA. HDFC Bank Limited\nB. Power Grid Corporation of India Limited (POWERGRID)\nC. Mahindra & Mahindra Limited\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-C, 3-B",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "A",
+    "rationale": "Page 68-69 lists the winners: Overall Industry Champion is M&M (1-C), Pre-Internship Excellence Award is HDFC Bank (2-A), and Innovation in Exit Pathways Award is POWERGRID (3-B).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Awards",
+    "sub_category": "Other Important Awards",
+    "question": "Two Mumbai-based Parsi doctors, Dr Jal Ratanji Patel and Dr Jal Dhaybho-Koo, were nominated for the Nishan-e-Imtiaz, Pakistan’s highest civilian award. What was the specific reason cited for this nomination?",
+    "options": {
+      "A": "For providing medical aid during the 1947 partition riots.",
+      "B": "For maintaining the confidentiality of Muhammad Ali Jinnah’s terminal illness before Partition.",
+      "C": "For discovering a cure for a major disease outbreak in Karachi in 1946.",
+      "D": "For establishing the first modern hospital in Lahore.",
+      "E": "For their contributions to medical literature published in pre-partition India."
+    },
+    "answer": "B",
+    "rationale": "Page 69 states they were nominated for maintaining the confidentiality of Muhammad Ali Jinnah’s terminal illness before the Partition of India in 1947.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Awards",
+    "sub_category": "Awards & Recognitions In Content Format",
+    "question": "Which of the following agricultural products from the Unjha region of Gujarat recently received the Geographical Indication (GI) tag along with Pithora Painting?",
+    "options": {
+      "A": "Groundnut and Sesame",
+      "B": "Cumin and Fennel",
+      "C": "Cotton and Castor",
+      "D": "Mango and Papaya",
+      "E": "Wheat and Mustard"
+    },
+    "answer": "B",
+    "rationale": "Page 70 mentions that two agricultural products of Gujarat i.e., Unjha Cumin and Fennel, received the GI tag earlier in July 2026.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Awards",
+    "sub_category": "Awards & Recognitions In Content Format",
+    "question": "The V.O. Chidambaranar (V.O.C.) Port Authority became the first port in India to receive the ISO 50001:2018 certification. This specific certification relates to which management system?",
+    "options": {
+      "A": "Quality Management System",
+      "B": "Environmental Management System",
+      "C": "Energy Management System",
+      "D": "Information Security Management System",
+      "E": "Occupational Health and Safety Management System"
+    },
+    "answer": "C",
+    "rationale": "Page 71 explicitly states that the ISO 50001:2018 certification is for the Energy Management System (EnMS).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Awards",
+    "sub_category": "Awards & Recognitions In Content Format",
+    "question": "Consider the following statements regarding the 140-year-old Parichha Weir:\n\n1. It is located in Jhansi, Uttar Pradesh.\n2. It was designated as a World Heritage Irrigation Structure (WHIS) by the International Commission on Irrigation and Drainage (ICID).\n3. It serves as the headworks of the Betwa Canal System across the Betwa River.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "Page 71 confirms all three statements: It is in Jhansi, UP (1), recognized as a WHIS by ICID (2), and is the headworks for the Betwa Canal System (3).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Summits, Events & Conference",
+    "sub_category": "Events",
+    "question": "The Department of Telecommunications (DoT) organized the BRICS ICT Track in Pune, Maharashtra. What was the theme of this five-day event?",
+    "options": {
+      "A": "Quality Statistics as a Driver of Change",
+      "B": "Advancing AI in Healthcare",
+      "C": "Innovate, Cooperate and Transform (ICT) for a Resilient Future",
+      "D": "Strengthening Cooperation to Promote Fair Competition",
+      "E": "Partnership on New Industrial Revolution"
+    },
+    "answer": "C",
+    "rationale": "Pages 73-74 state that the BRICS ICT Track was held under the theme “Innovate, Cooperate and Transform (ICT) for a Resilient Future”.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Index",
+    "sub_category": "Reports",
+    "question": "A report titled 'India’s Next Growth Frontier: Reducing Anti-Competitive Market Distortions (ACMDs)' was released. Which independent policy group submitted this report?",
+    "options": {
+      "A": "NITI Aayog",
+      "B": "Competition Commission of India (CCI)",
+      "C": "Competere Foundation for Trade and Competition Policy",
+      "D": "Indian Institute of Foreign Trade (IIFT)",
+      "E": "World Economic Forum (WEF)"
+    },
+    "answer": "C",
+    "rationale": "Page 76 notes that the report was released by the Competere Foundation for Trade and Competition Policy.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Index",
+    "sub_category": "Ranking & Reports In Content Format",
+    "question": "According to the 'Candere Hurun India Women Leaders List 2026', who topped the Wealth Multipliers category with her company's net valuation of Rs 2,84,120 crore?",
+    "options": {
+      "A": "Priya Nair",
+      "B": "Sudha Murty",
+      "C": "Roshni Nadar Malhotra",
+      "D": "Avani Lekhara",
+      "E": "Rajni Bector"
+    },
+    "answer": "C",
+    "rationale": "Page 79 mentions that Roshni Nadar Malhotra, chairperson of HCL Technologies Limited, topped the Wealth Multipliers category.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Index",
+    "sub_category": "Ranking & Reports In Content Format",
+    "question": "Arrange the following top three Indian business families in descending order of their total valuation according to the '2026 Hurun India Most Valuable Family Businesses List':\n\n1. Jindal Family\n2. Ambani Family\n3. Kumara Mangalam Birla Family\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1, 2, 3",
+      "B": "2, 3, 1",
+      "C": "2, 1, 3",
+      "D": "3, 2, 1",
+      "E": "3, 1, 2"
+    },
+    "answer": "B",
+    "rationale": "The table on page 81 shows the rankings: Ambani Family is 1st, Kumara Mangalam Birla Family is 2nd, and Jindal Family is 3rd. The descending order is 2, 3, 1.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Acquisition & Mergers",
+    "sub_category": "Acquisition & Mergers",
+    "question": "Consider the following statements regarding recent acquisitions:\n\n1. LIC received RBI approval to increase its stake up to 9.99% in HDFC Bank.\n2. Google won a bankruptcy auction to acquire a portion of Spirit Airlines’ internal enterprise data for AI development.\n3. TCS announced the acquisition of Porsche’s IT arm MHP for EUR 320 million.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 3",
+      "E": "1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "Pages 81-82 detail these acquisitions. LIC increasing stake in HDFC (1), Google acquiring Spirit Airlines data (2), and TCS acquiring Porsche's IT arm MHP (3) are all accurately stated.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Defence",
+    "sub_category": "Deals & MoU’s",
+    "question": "The Ministry of Defence signed contracts worth Rs.1,577 crore for the procurement of Loiter Munition Systems for the Indian Army. Which two companies received these contracts?",
+    "options": {
+      "A": "L&T and Bharat Forge",
+      "B": "TASL and NIBE Private Limited",
+      "C": "Adani Defence and Mahindra Aerospace",
+      "D": "HAL and BEL",
+      "E": "Godrej Aerospace and Astra Microwave"
+    },
+    "answer": "B",
+    "rationale": "Page 85 states the contracts were signed with Tata Advanced Systems Limited (TASL) and NIBE Private Limited.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Defence",
+    "sub_category": "Deals & MoU’s",
+    "question": "The Indian Army signed a USD 93 million deal with the USA for the procurement of nearly 100 anti-tank guided missile systems. What is the name of this missile system?",
+    "options": {
+      "A": "Spike ATGM",
+      "B": "Helina ATGM",
+      "C": "FGM-148 Javelin",
+      "D": "BGM-71 TOW",
+      "E": "AGM-114 Hellfire"
+    },
+    "answer": "C",
+    "rationale": "Page 86 mentions the deal is for the procurement of nearly 100 FGM-148 Javelin Anti-Tank Guided Missile (ATGM) systems.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Defence",
+    "sub_category": "Army, Navy & Air Force News",
+    "question": "Match the following recently launched/delivered naval vessels with their respective builders:\n\nColumn I:\n1. 'DSC A24' (Diving Support Craft)\n2. 'Shruti' (Next-Generation Offshore Patrol Vessel)\n3. 'INS Mangrol' (ASW-SWC)\n\nColumn II:\nA. Cochin Shipyard Limited (CSL)\nB. Garden Reach Shipbuilders & Engineers (GRSE)\nC. Titagarh Rail Systems Limited (TRSL)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-B, 2-A, 3-C"
+    },
+    "answer": "B",
+    "rationale": "Pages 86-87 provide the details: DSC A24 was built by TRSL (1-C), Shruti by GRSE (2-B), and INS Mangrol by CSL (3-A).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "National",
+    "question": "CSIR-NAL unveiled three indigenous micro and small gas turbine engines developed for defence UAVs and missile systems. Which of the following is NOT one of the engine models unveiled?",
+    "options": {
+      "A": "NJ-05",
+      "B": "NJ-25",
+      "C": "NJ-50",
+      "D": "NJ-100",
+      "E": "None of the above"
+    },
+    "answer": "B",
+    "rationale": "Page 90 lists the three engines unveiled as NJ-05, NJ-50, and NJ-100. NJ-25 is not mentioned.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "International",
+    "question": "Astronomers recently discovered a 170-million-year-old giant exoplanet informally dubbed as a 'mega-Earth'. What is the scientific name of this newly discovered exoplanet?",
+    "options": {
+      "A": "Kepler-452b",
+      "B": "Proxima Centauri b",
+      "C": "GJ 523b",
+      "D": "TRAPPIST-1e",
+      "E": "HD 209458 b"
+    },
+    "answer": "C",
+    "rationale": "Page 90 states that astronomers discovered a giant exoplanet named ‘GJ 523b’, informally dubbed as 'mega-Earth'.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Athletic & Football",
+    "question": "Which football club clinched the 135th Durand Cup 2026 title by defeating Mohun Bagan Super Giant in the final?",
+    "options": {
+      "A": "Mumbai City FC",
+      "B": "Bengaluru FC",
+      "C": "Kerala Blasters FC",
+      "D": "East Bengal FC",
+      "E": "FC Goa"
+    },
+    "answer": "D",
+    "rationale": "Page 93 notes that East Bengal Football Club (FC) won the 135th Durand Cup 2026 football tournament by defeating arch-rivals Mohun Bagan Super Giant.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Other Sports News",
+    "question": "Consider the following statements regarding the Esports World Cup Chess Title 2026:\n\n1. Magnus Carlsen won the title for the second consecutive year.\n2. He represented Team Liquid in the tournament.\n3. The prize money for the first place was USD 500,000.\n\nWhich of the statements given above is/are NOT correct?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 2",
+      "E": "Only 2 and 3"
+    },
+    "answer": "C",
+    "rationale": "Page 94 indicates the prize money for the first place (Magnus Carlsen) was USD 250,000, not 500,000. Statements 1 and 2 are correct.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Other Sports News",
+    "question": "British racing driver Lando Norris won the 36th edition of the Dutch Grand Prix 2026. Which Formula 1 team does he represent?",
+    "options": {
+      "A": "Red Bull Racing",
+      "B": "Mercedes",
+      "C": "Ferrari",
+      "D": "McLaren",
+      "E": "Aston Martin"
+    },
+    "answer": "D",
+    "rationale": "Page 95 states that Lando Norris of McLaren won the Dutch Grand Prix.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Obituary",
+    "sub_category": "National",
+    "question": "Match the following recently deceased personalities with their respective fields/professions:\n\nColumn I:\n1. Kailash Chandra Pant\n2. M.P. Parameswaran\n3. Raja Sen\n\nColumn II:\nA. Scientist and Marxist theorist\nB. Bengali filmmaker\nC. Hindi writer\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-B, 2-C, 3-A",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Pages 98-100 list these obituaries: Kailash Chandra Pant was a Hindi writer (1-C), M.P. Parameswaran was a scientist/theorist (2-A), and Raja Sen was a filmmaker (3-B).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Obituary",
+    "sub_category": "International",
+    "question": "Donald Arvid Nelson, who recently passed away at the age of 86 in the USA, was a legendary figure associated with which sport?",
+    "options": {
+      "A": "Baseball",
+      "B": "American Football",
+      "C": "Basketball",
+      "D": "Ice Hockey",
+      "E": "Tennis"
+    },
+    "answer": "C",
+    "rationale": "Page 102 identifies Donald Arvid Nelson (Don Nelson) as a legendary American basketball coach and former player.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Important Days",
+    "question": "World Biofuel Day is observed annually on 10 August. According to the document, what is India's global rank in terms of oil consumption?",
+    "options": {
+      "A": "First",
+      "B": "Second",
+      "C": "Third",
+      "D": "Fourth",
+      "E": "Fifth"
+    },
+    "answer": "C",
+    "rationale": "Page 107 notes that India is the third-largest oil consumer globally after the USA and China.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "Environment",
+    "question": "Researchers from the Institute of Himalayan Bioresource Technology (IHBT) discovered a new plant species named 'Doronicum sanctum' in Arunachal Pradesh. To which plant family does this species belong?",
+    "options": {
+      "A": "Orchid family",
+      "B": "Rose family",
+      "C": "Sunflower family",
+      "D": "Lily family",
+      "E": "Mint family"
+    },
+    "answer": "C",
+    "rationale": "Page 113 states that researchers discovered a new sunflower family species ‘Doronicum sanctum’ in Tawang district, Arunachal Pradesh.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Pocket PDF August 2026"
+  }
+]

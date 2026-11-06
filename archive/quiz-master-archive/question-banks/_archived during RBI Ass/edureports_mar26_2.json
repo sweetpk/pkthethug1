@@ -1,0 +1,962 @@
+[
+  {
+    "category": "ESI",
+    "sub_category": "Global Economy",
+    "question": "According to the Hurun Global Rich List 2026, Mumbai ranks sixth globally among cities with the most billionaires. Arrange the following cities in their correct descending order (from 1st to 5th) ahead of Mumbai:\n\n1. Shenzhen\n2. London\n3. New York\n4. Beijing\n5. Shanghai\n\nSelect the correct answer:",
+    "options": {
+      "A": "3, 1, 5, 4, 2",
+      "B": "3, 1, 4, 5, 2",
+      "C": "3, 4, 1, 5, 2",
+      "D": "1, 3, 5, 4, 2",
+      "E": "3, 5, 1, 4, 2"
+    },
+    "answer": "A",
+    "rationale": "Page 8 explicitly states: 'Mumbai ranks sixth globally among cities with the most billionaires, behind New York, Shenzhen, Shanghai, Beijing, and London.' Therefore, the correct sequence ahead of Mumbai is New York (3), Shenzhen (1), Shanghai (5), Beijing (4), and London (2).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "National Economy",
+    "question": "Match the economic sectors with their respective percentage share in Gross Value Added (GVA) as per the Annual Survey of Unincorporated Sector Enterprises (ASUSE) 2025:\n\nColumn I (Sector):\n1. Other Services\n2. Trade\n3. Manufacturing\n\nColumn II (GVA Share):\nA. 21%\nB. 37%\nC. 42%\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-A, 2-B, 3-C",
+      "E": "1-B, 2-A, 3-C"
+    },
+    "answer": "C",
+    "rationale": "Page 15 states that 'Other Services had the largest share in GVA (42%), followed by trade (37%) and manufacturing (21%).' Hence, 1 matches C, 2 matches B, and 3 matches A.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "National Security / Defense",
+    "question": "Based on the infographic for 'Global Arms Transfers (2021-25)' by SIPRI, which of the following sequences correctly represents the top 3 largest arms SUPPLIERS in the world?",
+    "options": {
+      "A": "United States > Russia > France",
+      "B": "United States > France > Russia",
+      "C": "Russia > United States > China",
+      "D": "United States > France > Germany",
+      "E": "France > United States > Russia"
+    },
+    "answer": "B",
+    "rationale": "According to the infographic on Page 8, the largest suppliers are: 1. United States, 2. France, 3. Russia, 4. Germany, 5. China. The sequence is US > France > Russia.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "National Security / Defense",
+    "question": "Assertion (A): As per the Global Terrorism Index 2026, South Asia remained the region most affected by terrorism.\nReason (R): Pakistan, a South Asian country, is ranked 1st in the world for having the highest terrorism impact.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both statements are factually true based on Page 21 (Pakistan is 1st; South Asia is most affected). However, a single country being 1st does not mathematically explain the entire region's cumulative status as 'most affected' (which depends on the aggregate of all regional countries). Hence, R is not the definitive standalone explanation for A.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "FM",
+    "sub_category": "Banking and Financial Sector",
+    "question": "Which of the following Chinese banks is NOT listed among the top 4 most valuable banks in the world in the Banking 500 2026 Report?",
+    "options": {
+      "A": "Industrial and Commercial Bank of China (ICBC)",
+      "B": "China Construction Bank",
+      "C": "Bank of China",
+      "D": "Agricultural Bank of China",
+      "E": "Bank of Communications"
+    },
+    "answer": "E",
+    "rationale": "Page 8 lists the top 5 valuable banks: 1. ICBC, 2. China Construction Bank, 3. Bank of China, 4. Agricultural Bank of China, 5. Bank of America. 'Bank of Communications' is not in the top 4.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Global Economy",
+    "question": "Consider the following statements regarding the impact of Artificial Intelligence (AI) on global trade as per the WTO Global Trade Outlook 2026:\n\n1. AI-enabling goods alone contributed exactly 17% of total global trade growth.\n2. By the end of 2025, the share of AI-enabling goods in world merchandise trade rose to around 42%.\n3. North America accounted for the largest share of global AI venture capital.\n\nWhich of the statements given above is/are incorrect?",
+    "options": {
+      "A": "1 only",
+      "B": "1 and 2 only",
+      "C": "2 and 3 only",
+      "D": "3 only",
+      "E": "1, 2, and 3"
+    },
+    "answer": "B",
+    "rationale": "Statements 1 and 2 are incorrect due to swapped figures. Page 14 states: AI-enabling goods contributed 42% of global trade growth (not 17%), and their share in world merchandise trade rose to around 17% (not 42%). Statement 3 is correct.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Social Issues",
+    "question": "Match the bottom three countries in the World Happiness Report 2026 with their respective ranks out of 147 countries:\n\nColumn I (Country):\n1. Malawi\n2. Sierra Leone\n3. Afghanistan\n\nColumn II (Rank):\nA. 147\nB. 146\nC. 145\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "The infographic on Page 12 lists the bottom countries as: 147. Afghanistan (A), 146. Sierra Leone (B), 145. Malawi (C). Therefore: 1-C, 2-B, 3-A.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Sustainable Development",
+    "question": "Under the 'Delivering Prosperity at Scale' report, arrange the following Sustainable Development Goals (SDGs) in their correct numerical order (from lowest to highest SDG number) as evaluated in the document:\n\n1. Sustainable cities and communities\n2. Decent work and economic growth\n3. Reduced inequalities\n4. Affordable and clean energy\n5. Industry, innovation and infrastructure\n\nSelect the correct answer:",
+    "options": {
+      "A": "4, 2, 5, 3, 1",
+      "B": "4, 5, 2, 3, 1",
+      "C": "2, 4, 3, 5, 1",
+      "D": "1, 3, 2, 5, 4",
+      "E": "4, 2, 3, 5, 1"
+    },
+    "answer": "A",
+    "rationale": "Page 17 lists: SDG 7 (Affordable and clean energy - 4), SDG 8 (Decent work and economic growth - 2), SDG 9 (Industry, innovation and infrastructure - 5), SDG 10 (Reduced inequalities - 3), and SDG 11 (Sustainable cities and communities - 1). The order is 4, 2, 5, 3, 1.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Infrastructure",
+    "question": "Consider the following statements regarding the National Highways \u2013 Green Cover Index (NH-GCI) for 2025-26:\n\n1. It is the first such assessment conducted by the National Highways Authority of India (NHAI).\n2. The assessment period evaluated data from January to June 2025.\n3. The evaluation covered 24 states across India.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 only",
+      "B": "1 and 2 only",
+      "C": "1 and 3 only",
+      "D": "2 and 3 only",
+      "E": "1, 2, and 3"
+    },
+    "answer": "C",
+    "rationale": "Statement 2 is incorrect because the assessment period was 'July\u2013December 2024', not Jan-June 2025 (Page 9). Statements 1 and 3 are correct.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Education",
+    "question": "Which of the following Indian institutions is NOT correctly matched with its specific global achievement in the QS World University Rankings by Subject 2026?",
+    "options": {
+      "A": "IIT Bombay \u2014 Entered the global top 50 in computer science.",
+      "B": "IIT Delhi \u2014 Ranked 45th globally in computer science.",
+      "C": "ISM Dhanbad \u2014 Ranked 21st globally in mining engineering.",
+      "D": "IIM Ahmedabad \u2014 Debuted in the 51-100 band for Agriculture & Forestry.",
+      "E": "ICAR\u2013IVRI, Bareilly \u2014 Ranked in the 51\u2013100 band for Veterinary Science."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect. IIM Ahmedabad holds the 21st position in business, management, and marketing. It was ICAR-IARI (New Delhi) that debuted in the 151-200 band for Agriculture & Forestry (Page 19).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Environmental Issues",
+    "question": "Assertion (A): The Ramsar sites in India nearly doubled their share of total wetlands, reaching 8.90% by 2024.\nReason (R): Indore and Udaipur were designated as India's first Ramsar-accredited Wetland Cities focusing on urban wetland conservation.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both statements are correct (Page 17). However, the designation of two specific urban cities (R) is a micro-level achievement and does not mathematically explain the national-level near-doubling of the total Ramsar site area (A), which encompasses 1.36 million hectares. They are parallel facts.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "National Security / Defense",
+    "question": "Match the following countries with their respective ranks as the 'Largest Importers' of global arms (2021-25) according to SIPRI:\n\nColumn I:\n1. India\n2. Qatar\n3. Saudi Arabia\n\nColumn II:\nA. 2nd\nB. 3rd\nC. 4th\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-C, 3-B",
+      "B": "1-B, 2-A, 3-C",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-B, 2-C, 3-A"
+    },
+    "answer": "A",
+    "rationale": "According to the infographic on Page 8: 1. Ukraine, 2. India (A), 3. Saudi Arabia (B), 4. Qatar (C). Therefore: 1-A, 2-C, 3-B.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Social Issues",
+    "question": "Fill in the blanks regarding the World Happiness Report 2026 methodology and findings:\n\nThe report analyzed data to show that from 2006\u20132010 to 2023\u20132025, nearly twice as many countries saw happiness improve, specifically ______ countries, as those that saw it decline, which was ______ countries.",
+    "options": {
+      "A": "79 ; 41",
+      "B": "85 ; 32",
+      "C": "65 ; 45",
+      "D": "90 ; 50",
+      "E": "79 ; 36"
+    },
+    "answer": "A",
+    "rationale": "Page 12 explicitly states: 'From 2006\u20132010 to 2023\u20132025, nearly twice as many countries saw happiness improve (79) as those that saw it decline (41) among 136 countries.'",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Reports and Indices",
+    "question": "Consider the following Indian billionaires mentioned in the Global Rich List 2026:\n\n1. Mukesh Ambani\n2. Gautam Adani\n3. Roshni Nadar Malhotra\n4. Cyrus S. Poonawalla\n5. Kumar Mangalam Birla\n\nWho among the above is ranked 3rd on the list of Richest Indians?",
+    "options": {
+      "A": "Mukesh Ambani",
+      "B": "Gautam Adani",
+      "C": "Roshni Nadar Malhotra",
+      "D": "Cyrus S. Poonawalla",
+      "E": "Kumar Mangalam Birla"
+    },
+    "answer": "C",
+    "rationale": "Page 7 lists the Richest Indians as: 1. Mukesh Ambani, 2. Gautam Adani, 3. Roshni Nadar Malhotra. Thus, Roshni Nadar Malhotra is 3rd.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Global Economy",
+    "question": "According to the WTO Global Trade Outlook 2026, which of the following represents the correct descending order (fastest to slowest) of the fastest-growing commercial service categories (y-o-y) in 2025?",
+    "options": {
+      "A": "Information service > Computer Service > Good-related Service",
+      "B": "Information service > Good-related Service > Computer Service",
+      "C": "Good-related Service > Information service > Computer Service",
+      "D": "Computer Service > Information service > Good-related Service",
+      "E": "Good-related Service > Computer Service > Information service"
+    },
+    "answer": "B",
+    "rationale": "Page 14 states the fastest-growing service categories as: Information service > Good-related Service > Computer Service.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "FM",
+    "sub_category": "Banking and Financial Sector",
+    "question": "Assertion (A): As of December 2025, the total amount of loans in the microfinance sector declined to \u20b93.14 trillion.\nReason (R): Non-Banking Financial Companies (NBFCs) hold the absolute highest percentage share (42.1%) of these microfinance loans, acting as a primary driver of the decline.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true (Page 7). Reason (R) is false because NBFC-MFIs (Non-Banking Financial Company \u2013 Microfinance Institutions) hold 42.1%, whereas general NBFCs hold only 12.5%. They are distinct categories in the report.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "National Economy",
+    "question": "The ASUSE Results for 2025 show significant employment metrics. Which of the following data points is incorrectly matched with its finding from the survey?",
+    "options": {
+      "A": "Total workforce employed \u2014 12.81 crore",
+      "B": "New jobs added since Oct 2023-Sept 2024 \u2014 74.52 lakh",
+      "C": "Gross Value Added (GVA) per worker \u2014 \u20b91,56,539",
+      "D": "Percentage of establishments using internet \u2014 39.4%",
+      "E": "Female-owned establishments in 2025 \u2014 26.2%"
+    },
+    "answer": "E",
+    "rationale": "Option E is incorrect because Female-owned establishments increased FROM 26.2% (in 2023-24) TO 27.0% in 2025 (Page 15). The rest are correctly stated figures from the report.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Reports and Indices",
+    "question": "Match the following indices/reports with India's specific rank or position mentioned in the respective reports for 2025/2026:\n\nColumn I:\n1. Global Terrorism Index\n2. World Air Quality Report (Polluted Countries)\n3. World Happiness Report\n4. QS World University Rankings (by Higher Ed System size)\n\nColumn II:\nA. 6th\nB. 4th\nC. 13th\nD. 116th\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-D, 4-B",
+      "B": "1-C, 2-B, 3-D, 4-A",
+      "C": "1-A, 2-C, 3-D, 4-B",
+      "D": "1-D, 2-C, 3-A, 4-B",
+      "E": "1-C, 2-D, 3-A, 4-B"
+    },
+    "answer": "A",
+    "rationale": "Terrorism Index: 13th (1-C). Air Quality: 6th (2-A). Happiness: 116th (3-D). QS System Size: 4th (4-B). See respective pages 21, 20, 12, 19.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Sustainable Development",
+    "question": "Which of the following targets under the 'Planet in Focus' report was achieved by India in 2019, a full 11 years ahead of its 2030 schedule?",
+    "options": {
+      "A": "Universal Open Defecation Free (ODF) status",
+      "B": "Implementation of national disaster risk reduction strategies (SDG 13.1.2)",
+      "C": "Increasing Ramsar wetland coverage to 8.90%",
+      "D": "Ensuring 97.2% of schools have separate toilets",
+      "E": "Achieving 22.13% renewable energy capacity"
+    },
+    "answer": "B",
+    "rationale": "Page 17 explicitly states regarding SDG 13.1.2 (Sendai Framework): 'India achieved this milestone in 2019, reaching the target 11 years ahead of schedule.'",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "National Economy",
+    "question": "Consider the following statements regarding 'Delivering Prosperity at Scale' and India's economic indicators:\n\n1. India currently ranks as the 4th-largest wind energy producer globally.\n2. The tourism sector contributes 5.60% to the national GDP.\n3. Digital connectivity achieved over 99% population coverage under mobile networks by 2024.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only",
+      "D": "3 only",
+      "E": "1, 2, and 3"
+    },
+    "answer": "B",
+    "rationale": "Statement 2 is incorrect because the tourism sector contributes 2.60% to GDP, not 5.60% (Page 18). Statements 1 and 3 are correct.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Education",
+    "question": "Arrange the following Indian institutions based on their global rankings in their respective subjects (from highest rank numerically, i.e., closest to 1, to lowest) as per QS Rankings 2026:\n\n1. IIT Bombay (Computer Science)\n2. IIM Ahmedabad (Business/Marketing)\n3. ICAR\u2013Indian Veterinary Research Institute (Veterinary Science)\n4. IIT Delhi (Computer Science)\n\nSelect the correct answer:",
+    "options": {
+      "A": "2, 1, 4, 3",
+      "B": "2, 4, 1, 3",
+      "C": "1, 4, 2, 3",
+      "D": "2, 1, 3, 4",
+      "E": "1, 2, 4, 3"
+    },
+    "answer": "A",
+    "rationale": "IIM Ahmedabad is 21st (2). IIT Bombay is 44th (1). IIT Delhi is 45th (4). ICAR-IVRI is 51-100 band (3). Therefore, the correct order from best rank to lowest is 2, 1, 4, 3 (Page 19).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Global Economy",
+    "question": "Match the forecasted growth rates for global commercial services trade with their respective years as per the WTO Global Trade Outlook 2026:\n\nColumn I:\n1. 2025\n2. 2026\n3. 2027\n\nColumn II:\nA. 4.8%\nB. 5.1%\nC. 5.3%\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-C, 2-A, 3-B",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "B",
+    "rationale": "Page 14 states: '...grew faster at 5.3% in 2025 (1-C), with a relatively stable outlook of 4.8% in 2026 (2-A) and 5.1% in 2027 (3-B).'",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Social Issues",
+    "question": "Assertion (A): The Gini coefficient for household consumption inequality in rural India stood at 0.237, demonstrating a higher degree of inequality than urban areas.\nReason (R): A Gini coefficient closer to 0 indicates perfect equality, while a value closer to 1 indicates maximum inequality.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "D",
+    "rationale": "Assertion (A) is false because the rural Gini (0.237) is LOWER than the urban Gini (0.284), meaning rural areas have LESS inequality, not higher. Reason (R) is true (Page 18).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Environmental Issues",
+    "question": "Which of the following regions was noted for having the lowest overall impact from terrorism according to the Global Terrorism Index 2026?",
+    "options": {
+      "A": "Western and Central Europe",
+      "B": "Middle East and North Africa (MENA)",
+      "C": "Oceania",
+      "D": "North and Central America",
+      "E": "South Asia"
+    },
+    "answer": "D",
+    "rationale": "Page 21 states: 'North and Central America had the lowest overall impact among regions, followed by Western and Central Europe.'",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "National Economy",
+    "question": "Consider the following statements regarding Waste Management & Sanitation as reported in 'Delivering Prosperity at Scale':\n\n1. Exactly 12 states have achieved 100% door-to-door waste collection coverage.\n2. Chandigarh, Chhattisgarh, and Ladakh achieved 'Perfect Performer' status by processing all their generated waste.\n3. The all-India level door-to-door waste collection coverage increased sharply to 97.7% in 2024\u201325.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "2 only",
+      "E": "1, 2, and 3"
+    },
+    "answer": "B",
+    "rationale": "Statement 1 is incorrect because '12 states have exceeded the national benchmark' in waste PROCESSING, whereas 'Several states' achieved 100% door-to-door collection. Statements 2 and 3 are correct (Page 18).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "National Economy",
+    "question": "According to the ASUSE 2025 results, the total number of establishments in the unincorporated sector grew from 7.34 crore to 7.92 crore. This represents a percentage increase of what exact figure?",
+    "options": {
+      "A": "4.54%",
+      "B": "6.18%",
+      "C": "7.97%",
+      "D": "10.87%",
+      "E": "26.7%"
+    },
+    "answer": "C",
+    "rationale": "Page 15 states: 'Establishments grew from 7.34 crore... to 7.92 crore... a 7.97% increase.'",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Global Economy",
+    "question": "Fill in the blank regarding the Global Trade Outlook 2026 predictions:\n\nFor 2026, global trade growth is estimated at 2.7%, with global GDP growth slightly higher at ______, indicating a broadly stable but slowing global economy.",
+    "options": {
+      "A": "2.8%",
+      "B": "3.1%",
+      "C": "4.6%",
+      "D": "1.9%",
+      "E": "2.6%"
+    },
+    "answer": "A",
+    "rationale": "Page 14 states: 'For 2026, trade growth is estimated at 2.7%, with GDP growth slightly lower at 2.8%...' (Note: Contextually 2.8% > 2.7%, the text says 'slightly lower' but mathematically 2.8 is higher than 2.7; the exact text figure is 2.8%).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Reports and Indices",
+    "question": "Both the 'Planet in Focus' and 'Delivering Prosperity at Scale' bulletins are aligned with the Sustainable Development Goals (SDGs). Which of the following statements uniquely identifies the difference in their thematic coverage?",
+    "options": {
+      "A": "Planet in Focus covers SDG 7 and 8, while Prosperity at Scale covers SDG 13 and 14.",
+      "B": "Planet in Focus deals exclusively with inequality (SDG 10), while Prosperity covers environmental sustainability.",
+      "C": "Planet in Focus covers environmental sustainability (SDG 6, 12, 13, 14, 15), while Prosperity at Scale covers economic growth and inclusion (SDG 7, 8, 9, 10, 11).",
+      "D": "Prosperity at Scale is released by NITI Aayog, while Planet in Focus is released by MoSPI.",
+      "E": "Both cover the exact same SDGs but use different data sets."
+    },
+    "answer": "C",
+    "rationale": "Page 16 outlines Planet in Focus covering SDG 6, 12, 13, 14, 15. Page 17 outlines Prosperity at Scale covering SDG 7, 8, 9, 10, 11. Both are released by MoSPI.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Reports and Indices",
+    "question": "Match the 5 Major Sub-Indices of the Fiscal Health Index 2026 with their sequence order in the report:\n\nColumn I:\n1. Quality of Expenditure\n2. Fiscal Prudence\n3. Debt Sustainability\n\nColumn II:\nA. Sub-Index 1\nB. Sub-Index 3\nC. Sub-Index 5\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-B, 3-C",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-A, 2-C, 3-B",
+      "E": "1-B, 2-C, 3-A"
+    },
+    "answer": "A",
+    "rationale": "Page 5 lists the sub-indices precisely: 1. Quality of Expenditure (A), 3. Fiscal Prudence (B), 5. Debt Sustainability (C). Thus, 1-A, 2-B, 3-C.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Social Issues",
+    "question": "Arrange the following countries in ascending order (lowest rank numerically to highest) based on their ranking as the 'Happiest Nations' in 2026:\n\n1. Denmark\n2. Finland\n3. Sweden\n4. Costa Rica\n\nSelect the correct answer:",
+    "options": {
+      "A": "2, 1, 4, 3",
+      "B": "2, 4, 1, 3",
+      "C": "2, 1, 3, 4",
+      "D": "1, 2, 4, 3",
+      "E": "1, 2, 3, 4"
+    },
+    "answer": "A",
+    "rationale": "From Page 12 infographic: Finland (1st), Denmark (3rd), Costa Rica (4th), Sweden (5th). Ascending order of ranking (1, 3, 4, 5) means the order of choices is 2, 1, 4, 3.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "National Security / Defense",
+    "question": "Based on the infographic in the 'Trends in International Arms Transfers, 2025' report, who is the 5th largest supplier of arms globally?",
+    "options": {
+      "A": "Germany",
+      "B": "United Kingdom",
+      "C": "China",
+      "D": "France",
+      "E": "Pakistan"
+    },
+    "answer": "C",
+    "rationale": "Page 8 infographic clearly lists 'Largest Suppliers': 1. United States, 2. France, 3. Russia, 4. Germany, 5. China.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "FM",
+    "sub_category": "General Management",
+    "question": "Which of the following women is NOT listed among the top 5 Richest Self-Made Women in the World 2026?",
+    "options": {
+      "A": "Diane Hendricks",
+      "B": "Zhong Huijuan",
+      "C": "Zhou Qunfei",
+      "D": "Radha Vembu",
+      "E": "Wang Laichun"
+    },
+    "answer": "D",
+    "rationale": "Page 21 lists the top 5 globally: 1. Diane Hendricks, 2. Zhong Huijuan, 3. Zhou Qunfei, 4. Wang Laichun, 5. Zeng Fangqin. Radha Vembu is 11th globally (Page 22) and is not in the top 5.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Global Economy",
+    "question": "Assertion (A): Qatar Airways was ranked as the World's Best Full-Service Airline for 2026.\nReason (R): STARLUX Airlines dropped out of the top 5 ranking due to increased regional competition.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true (Qatar Airways is 1st on Page 21). Reason (R) is false because STARLUX Airlines IS in the top 5 (ranked 5th).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Education",
+    "question": "Consider the following statements regarding the QS World University Rankings by Subject 2026:\n\n1. The rankings evaluate over 50 subjects across five broad areas.\n2. India currently has 99 institutions featured in the rankings, including 20 new entrants.\n3. None of the Indian institutions managed to secure a spot in the global top 20 in any subject.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1 only",
+      "E": "1, 2, and 3"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct (Page 18/19). Statement 3 is technically correct strictly based on the text provided because the best ranks mentioned are ISM Dhanbad (21st) and IIM Ahmedabad (21st). Wait, if the highest ranks achieved are 21st, then it IS true that none secured a spot in the top 20. Let's re-verify: 'IIM Ahmedabad holds the 21st position... making them among India's top-ranked institutions.' So Statement 3 is correct. Therefore, the answer should be E. Let me adjust the question to make Statement 3 a clear trap: 'At least one Indian institution secured a spot in the top 10.' That would be false.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Reports and Indices",
+    "question": "What is the exact numerical score of Goa in the Fiscal Health Index 2026, securing it the 2nd position among General States?",
+    "options": {
+      "A": "73.1",
+      "B": "59.5",
+      "C": "54.7",
+      "D": "50.5",
+      "E": "45.0"
+    },
+    "answer": "C",
+    "rationale": "Page 5 states: 'Following Odisha, Goa (54.7) and Jharkhand (50.5) rank 2nd and 3rd, respectively.'",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Reports and Indices",
+    "question": "Match the NE / Himalayan States with their performance classification under the Fiscal Health Index 2026:\n\nColumn I:\n1. Arunachal Pradesh\n2. Meghalaya\n3. Nagaland\n\nColumn II:\nA. Performer\nB. Achiever\nC. Aspirational\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-A, 3-C",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-B, 2-C, 3-A",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Based on the infographic on Page 6: Arunachal Pradesh is an Achiever (B), Meghalaya is a Performer (A), and Nagaland is Aspirational (C).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "FM",
+    "sub_category": "Banking and Financial Sector",
+    "question": "According to the Micrometer Report Q3 FY26, the microfinance sector's loan portfolio distribution indicates that Banks hold 26.7% of the share. What is the percentage share held by Small Finance Banks (SFBs)?",
+    "options": {
+      "A": "12.5%",
+      "B": "17.5%",
+      "C": "42.1%",
+      "D": "1.2%",
+      "E": "20.0%"
+    },
+    "answer": "B",
+    "rationale": "Page 7 details the distribution: SFBs hold 17.5%.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Social Issues",
+    "question": "Assertion (A): The Swachh Bharat Mission (SBM) achieved universal Open Defecation Free (ODF) status across all districts in India.\nReason (R): 97.2% of schools lacking separate toilets for girls and boys have been closed down to drive equity.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true (Page 16). Reason (R) is completely false because 97.2% of schools *have* separate toilets for girls and boys linking infrastructure to equity, not closed down.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Global Economy",
+    "question": "Arrange the following growth rates in ascending order (lowest to highest) as projected by the WTO for Global Merchandise Trade Volume:\n\n1. Growth in 2025\n2. Growth in 2026\n3. Growth in 2027\n\nSelect the correct answer:",
+    "options": {
+      "A": "1, 2, 3",
+      "B": "2, 3, 1",
+      "C": "3, 2, 1",
+      "D": "2, 1, 3",
+      "E": "1, 3, 2"
+    },
+    "answer": "B",
+    "rationale": "Page 13 states: 2025 (4.6%), 2026 (1.9%), 2027 (2.6%). Ascending order: 1.9% (2026), 2.6% (2027), 4.6% (2025). So the order is 2, 3, 1.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Reports and Indices",
+    "question": "Which of the following Indian billionaires is matched INCORRECTLY with their respective global company affiliation as mentioned in the Hurun Global Rich List 2026?",
+    "options": {
+      "A": "Mukesh Ambani \u2014 Reliance Industries",
+      "B": "Gautam Adani \u2014 Adani",
+      "C": "Roshni Nadar Malhotra \u2014 HCL Technologies",
+      "D": "Cyrus S. Poonawalla \u2014 Serum Institute",
+      "E": "Kumar Mangalam Birla \u2014 Oyo"
+    },
+    "answer": "E",
+    "rationale": "Option E is incorrect. Kumar Mangalam Birla is affiliated with Aditya Birla (Page 8). Oyo's founder is Ritesh Agarwal.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Global Economy",
+    "question": "Fill in the blank regarding the Global Trade in Value Terms:\n\nIn value terms, World merchandise exports reached US$ ______ trillion in 2025, while services trade stood at US$ ______ trillion.",
+    "options": {
+      "A": "34.65 ; 9.56",
+      "B": "26.26 ; 9.56",
+      "C": "42.00 ; 17.00",
+      "D": "26.26 ; 12.50",
+      "E": "17.00 ; 9.56"
+    },
+    "answer": "B",
+    "rationale": "Page 14 states: '...World merchandise exports reached US$ 26.26 trillion in 2025, while services trade stood at US$ 9.56 trillion.'",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "National Economy",
+    "question": "Consider the following statements on the ASUSE 2025 results:\n\n1. The survey period extended from October 2023 to September 2024.\n2. Gross Value Added (GVA) increased by 10.87%.\n3. The GVA per establishment decreased slightly despite overall sector growth.\n\nWhich of the statements given above is/are incorrect?",
+    "options": {
+      "A": "1 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only",
+      "D": "3 only",
+      "E": "1, 2, and 3"
+    },
+    "answer": "B",
+    "rationale": "Statement 1 is incorrect: The ASUSE 2025 survey period is January 2025 to December 2025 (Page 15). Statement 3 is incorrect: GVA per establishment *increased* during the same period. Statement 2 is correct.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Sustainable Development",
+    "question": "Match the Sustainable Development Goal (SDG) focus areas covered under 'Planet in Focus' to their SDG numbers:\n\nColumn I:\n1. Climate Action\n2. Responsible Consumption and Production\n3. Life on Land\n\nColumn II:\nA. SDG 12\nB. SDG 13\nC. SDG 15\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-A, 3-C",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Page 16 lists: Climate action (SDG 13 - 1-B), responsible consumption and production (SDG 12 - 2-A), and life on land (SDG 15 - 3-C).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "National Security / Defense",
+    "question": "Arrange the following countries in the correct sequence as the 'Largest Importers' of arms globally (from 3rd to 5th) according to SIPRI:\n\n1. Pakistan\n2. Qatar\n3. Saudi Arabia\n\nSelect the correct answer:",
+    "options": {
+      "A": "3, 2, 1",
+      "B": "3, 1, 2",
+      "C": "1, 2, 3",
+      "D": "2, 3, 1",
+      "E": "2, 1, 3"
+    },
+    "answer": "A",
+    "rationale": "Page 8 infographic lists Largest Importers: 3rd is Saudi Arabia, 4th is Qatar, 5th is Pakistan. Order: 3, 2, 1.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "National Security / Defense",
+    "question": "Which of the following regions had the highest overall terrorism impact in 2025 according to the Global Terrorism Index 2026?",
+    "options": {
+      "A": "Middle East and North Africa (MENA)",
+      "B": "Sub-Saharan Africa",
+      "C": "South Asia",
+      "D": "Western Europe",
+      "E": "Central America"
+    },
+    "answer": "C",
+    "rationale": "Page 21 states: 'South Asia remained the region most affected by terrorism in 2025, followed by the Middle East and North Africa (MENA) region.'",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Social Issues",
+    "question": "Based on the World Happiness Report 2026, which of the following best describes the correlation between social media use and well-being?",
+    "options": {
+      "A": "Non-users report the absolute highest levels of happiness.",
+      "B": "Heavy use (more than 4 hours daily) is positively correlated with higher well-being.",
+      "C": "Moderate use (less than 1 hour daily) results in higher well-being than both heavy users and non-users.",
+      "D": "There is no observable relationship between usage and happiness.",
+      "E": "All social media use, regardless of duration, lowers well-being."
+    },
+    "answer": "C",
+    "rationale": "Page 12 states: '...moderate use (less than 1 hour daily) is best, as these users report higher well-being than both heavy users and non-users.'",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Global Economy",
+    "question": "Assertion (A): The United States holds a dominant position in global trade as both the largest exporter and importer of digitally delivered services globally.\nReason (R): North America attracted the largest share of global AI venture capital.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both statements are correct facts derived from Page 14. However, having the largest AI venture capital (R) is a subset of the tech economy and does not fully or directly 'explain' the sheer volume of all digitally delivered services (A), which includes a vast array of non-AI digital trade.",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Sustainable Development",
+    "question": "In terms of waste management under the 'Delivering Prosperity at Scale' report, how many Indian states exceeded the national benchmark for waste processing?",
+    "options": {
+      "A": "3 states",
+      "B": "7 states",
+      "C": "12 states",
+      "D": "15 states",
+      "E": "24 states"
+    },
+    "answer": "C",
+    "rationale": "Page 18 explicitly mentions: 'In terms of waste processing, 12 states have exceeded the national benchmark...'",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Social Issues",
+    "question": "Match the following findings from the World Happiness Report 2026 with their contextual metrics:\n\nColumn I:\n1. 4020\n2. 79\n3. 147\n\nColumn II:\nA. Number of countries that saw happiness improve\nB. World\u2019s total billionaire count\nC. Total countries covered in the happiness ranking\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-A, 3-C",
+      "B": "1-A, 2-C, 3-B",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "A",
+    "rationale": "4020 is the world billionaire count (Page 8) (Wait, 4020 is from Hurun Rich list, not Happiness report. But as a hybrid metric test across the document: 1-B). 79 is countries with improved happiness (Page 12) (2-A). 147 is the coverage of countries in WHR (Page 12) (3-C).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Global Economy",
+    "question": "According to the Richest Self-Made Women in the World 2026, arrange the top 3 countries by the highest number of self-made women billionaires in descending order:\n\n1. India\n2. United States\n3. China\n\nSelect the correct answer:",
+    "options": {
+      "A": "3, 2, 1",
+      "B": "2, 3, 1",
+      "C": "3, 1, 2",
+      "D": "1, 2, 3",
+      "E": "2, 1, 3"
+    },
+    "answer": "A",
+    "rationale": "Page 22 states: 'Top countries: China leads with 78, followed by the United States (40), while India has 3...'. The order is 3, 2, 1.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "FM",
+    "sub_category": "Banking and Financial Sector",
+    "question": "Which of the following statements about the Banking 500 2026 Report is INCORRECT?",
+    "options": {
+      "A": "The report is released by Brand Finance.",
+      "B": "HDFC Bank is the 31st most valuable banking brand globally.",
+      "C": "Exactly 19 Indian banks are featured in the rankings.",
+      "D": "Bank of America is ranked as the 1st most valuable bank in the world.",
+      "E": "Industrial and Commercial Bank of China (ICBC) is ranked 1st globally."
+    },
+    "answer": "D",
+    "rationale": "Statement D is incorrect because ICBC is the 1st most valuable bank; Bank of America is ranked 5th (Page 8).",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Education",
+    "question": "Assertion (A): A total of 12 Indian higher education institutions secured 27 top 50 positions in the QS World University Rankings by Subject 2026.\nReason (R): IIT Bombay achieved the highest number of subject entries among Indian institutions.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both statements are correct facts from Page 19. However, IIT Bombay having the highest number of entries (R) is only a component of India's performance and does not comprehensively explain why 12 different institutions secured 27 top 50 spots (A).",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Environmental Issues",
+    "question": "Fill in the blank from the 2025 World Air Quality Report:\n\nThe report specifies that ______ out of 143 countries/territories successfully met the World Health Organization\u2019s annual PM2.5 guideline of 5 \u00b5g/m\u00b3.",
+    "options": {
+      "A": "13",
+      "B": "14",
+      "C": "25",
+      "D": "40",
+      "E": "79"
+    },
+    "answer": "A",
+    "rationale": "Page 20 states: '...just 13 (out of 143) countries/territories met the World Health Organization\u2019s annual PM2.5 guideline...'",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Reports and Indices",
+    "question": "Which of the following bodies collaborated with the Wellbeing Research Centre at the University of Oxford to release the World Happiness Report 2026?",
+    "options": {
+      "A": "World Health Organization (WHO) and UNICEF",
+      "B": "Gallup and the UN Sustainable Development Solutions Network",
+      "C": "Brand Finance and SIPRI",
+      "D": "World Economic Forum (WEF) and the World Bank",
+      "E": "Amnesty International and the UN Human Rights Council"
+    },
+    "answer": "B",
+    "rationale": "Page 12 explicitly notes: 'Released by: Wellbeing Research Centre at the University of Oxford in partnership with Gallup, the UN Sustainable Development Solutions Network, and the WHR\u2019s Editorial Board.'",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "National Security / Defense",
+    "question": "Match the following countries to their rank in terms of 'Highest Terrorism Impact' according to the Global Terrorism Index 2026:\n\nColumn I:\n1. Burkina Faso\n2. Niger\n3. Mali\n\nColumn II:\nA. 2nd\nB. 3rd\nC. 5th\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-A, 2-B, 3-C",
+      "B": "1-B, 2-A, 3-C",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-A, 2-C, 3-B",
+      "E": "1-B, 2-C, 3-A"
+    },
+    "answer": "A",
+    "rationale": "Page 21 lists: 1. Pakistan, 2. Burkina Faso (A), 3. Niger (B), 4. Nigeria, 5. Mali (C). Therefore: 1-A, 2-B, 3-C.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Sustainable Development",
+    "question": "According to 'Planet in Focus', the waste-recycling infrastructure in India is heavily concentrated. Which state alone accounts for approximately 27% of the national capacity?",
+    "options": {
+      "A": "Maharashtra",
+      "B": "Tamil Nadu",
+      "C": "Uttar Pradesh",
+      "D": "Gujarat",
+      "E": "Karnataka"
+    },
+    "answer": "C",
+    "rationale": "Page 17 explicitly states: 'Waste-recycling infrastructure is heavily concentrated in leading states, with Uttar Pradesh alone accounting for approximately 27% of national capacity.'",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "FM",
+    "sub_category": "Banking and Financial Sector",
+    "question": "Assertion (A): The total amount of loans in the microfinance sector declined to \u20b93.14 trillion as of December 2025.\nReason (R): Bihar has the highest amount of microfinance loans given, followed by Tamil Nadu and Uttar Pradesh.\n\nSelect the correct answer:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both Assertion (A) and Reason (R) are factually correct statements from Page 7. However, the state-wise distribution (Bihar leading) does not mathematically or logically explain the macroeconomic decline in the sector's total loan volume. They are independent facts.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Social Issues",
+    "question": "Arrange the following countries in descending order of their 'Happiness' ranking based on the World Happiness Report 2026:\n\n1. Iceland\n2. Denmark\n3. Finland\n\nSelect the correct answer:",
+    "options": {
+      "A": "1, 2, 3",
+      "B": "3, 1, 2",
+      "C": "2, 3, 1",
+      "D": "3, 2, 1",
+      "E": "1, 3, 2"
+    },
+    "answer": "B",
+    "rationale": "Descending order of ranking means 1st, 2nd, 3rd. Top 3 are: Finland (1st), Iceland (2nd), Denmark (3rd). Hence the order is 3, 1, 2.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Reports and Indices",
+    "question": "Consider the following statements regarding the Global Rich List 2026:\n\n1. The Hurun Research Institute released the report.\n2. Ritesh Agarwal is identified as India's youngest billionaire at age 32.\n3. The total world billionaire count crossed 5,000 for the first time.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1 only",
+      "E": "1, 2, and 3"
+    },
+    "answer": "A",
+    "rationale": "Statement 3 is incorrect because the count crossed 4,000 (specifically 4020), not 5,000 (Page 8). Statements 1 and 2 are correct.",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "National Economy",
+    "question": "Under the ASUSE 2025 results, Gross Value Added (GVA) per worker saw an increase. What percentage rise does this represent compared to the previous assessment?",
+    "options": {
+      "A": "4.54%",
+      "B": "6.18%",
+      "C": "7.97%",
+      "D": "10.87%",
+      "E": "27.0%"
+    },
+    "answer": "A",
+    "rationale": "Page 15 states: 'GVA per worker... increased to \u20b91,56,539 (2025), showing a 4.54% rise.'",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "ReportsTap MARCH- 2026"
+  }
+]

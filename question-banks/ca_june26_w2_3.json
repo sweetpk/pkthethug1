@@ -1,0 +1,802 @@
+[
+  {
+    "category": "International Affairs",
+    "sub_category": "BRICS Summits",
+    "question": "Match the following BRICS 2026 events hosted under India's Chairship with their respective locations or formats:\n\nColumn I:\n1. BRICS Justice Ministers meeting\n2. 2nd BRICS ICT Working Group Meeting\n3. BRICS Culture Working Group Meeting\n4. 13th BRICS Urbanisation Forum\n\nColumn II:\nA. New Delhi\nB. Varanasi\nC. Gujarat\nD. Virtually\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-D, 3-B, 4-A",
+      "B": "1-A, 2-B, 3-C, 4-D",
+      "C": "1-C, 2-B, 3-D, 4-A",
+      "D": "1-B, 2-C, 3-A, 4-D",
+      "E": "1-D, 2-A, 3-C, 4-B"
+    },
+    "answer": "A",
+    "rationale": "As per India's BRICS 2026 Chairship events: Justice Ministers met in Gujarat (1-C); 2nd ICT WG met virtually (2-D); Culture WG met in Varanasi (3-B); 13th Urbanisation Forum was held in New Delhi (4-A). (Reference: Page 20)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Startups & WEF",
+    "question": "The World Economic Forum (WEF) selected 9 Indian startups in its 2026 Technology Pioneers cohort. Match the following Indian start-ups with their respective operating sectors:\n\nColumn I:\n1. Varaha ClimateAg\n2. Fermbox Bio Solutions\n3. Sarla Aviation\n\nColumn II:\nA. Biotechnology\nB. Aerospace and Urban Air Mobility\nC. Climate\n\nSelect the correct mapping:",
+    "options": {
+      "A": "1-A, 2-C, 3-B",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "C",
+    "rationale": "Varaha ClimateAg operates in the Climate sector (1-C); Fermbox Bio Solutions is in Biotechnology (2-A); Sarla Aviation is in Aerospace and Urban Air Mobility (3-B). (Reference: Page 24)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Health & Demographics",
+    "question": "Consider the following statements regarding women's empowerment indicators as highlighted in the National Family Health Survey-6 (NFHS-6):\n\n1. Women's internet usage nearly doubled from 33.3% to 64.3%.\n2. Women's bank account ownership increased from 78.6% to 89.0%.\n3. Menstrual hygiene product usage improved from 77.6% to 79.2%.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 2",
+      "E": "1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All three statements represent exact statistical improvements recorded in the NFHS-6 factsheets for women's empowerment indicators. (Reference: Page 9)",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "RBI Swap Facilities",
+    "question": "Which of the following is NOT a feature of the FCNR (B) Deposit Swap Facility introduced by the RBI in June 2026?",
+    "options": {
+      "A": "The swap facility is available only in USD currency.",
+      "B": "The swap tenor must match the underlying deposit tenor of 3 to 5 years.",
+      "C": "The facility imposes additional CRR and SLR requirements on the FCNR (B) deposits.",
+      "D": "It is open for Authorised Dealer (AD) Category-I banks.",
+      "E": "The nodal department managing this is the Financial Markets Operations Department (FMOD), RBI."
+    },
+    "answer": "C",
+    "rationale": "Statement C is incorrect because the RBI has explicitly provided *exemptions* for FCNR(B) deposits from Statutory Liquidity Ratio (SLR) and Cash Reserve Ratio (CRR) under this swap facility, rather than imposing them. (Reference: Page 26)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Rural Development",
+    "question": "Under the newly unveiled Viksit Bharat – Guarantee for Rozgar and Ajeevika Mission (Gramin) (VB-GRAMG), several states have received the highest budget allocations. Which of the following states is NOT listed among those receiving the highest allocations?",
+    "options": {
+      "A": "Uttar Pradesh",
+      "B": "West Bengal",
+      "C": "Andhra Pradesh",
+      "D": "Maharashtra",
+      "E": "Tamil Nadu"
+    },
+    "answer": "D",
+    "rationale": "The states with the highest allocations under VB-GRAMG are UP, WB, AP, TN, Rajasthan, Bihar, and MP. Maharashtra is not listed among the highest allocations. (Reference: Page 11)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Defence Aviation",
+    "question": "Consider the following technical specifications and indigenisation metrics of the Airbus C295 military transport aircraft as reported after its maiden 'Made in India' test flight:\n\n1. It features a top speed of 482 kmph and a range of 5,000 km.\n2. It has a carrying capacity of 71 troops or a 9,250 kg payload.\n3. The indigenisation plan targets over 85% assembly in India, supported by 13,000+ indigenous parts.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All three statements accurately reflect the C295 aircraft's specifications (482 kmph speed, 5000 km range, 71 troops / 9,250 kg payload capacity) and indigenisation metrics (85%+ assembly in India, 13,000+ indigenous parts). (Reference: Page 38)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Yogasana Championship",
+    "question": "Regarding the inaugural World Yogasana Championship 2026 held in Ahmedabad, which of the following statements is INCORRECT?",
+    "options": {
+      "A": "The event featured 12 Yogasana competition categories, including Traditional, Artistic, and Rhythmic.",
+      "B": "The championship supports the ultimate goal of inclusion in the Commonwealth Games 2030 and Olympics 2036.",
+      "C": "The official mascot of the championship was 'Veer the Lion'.",
+      "D": "The event was organized exclusively by the Indian Olympic Association (IOA) without state support.",
+      "E": "The championship awarded a global-themed logo and a gold trophy to the winners."
+    },
+    "answer": "D",
+    "rationale": "Statement D is incorrect because the event was organized by World Yogasana, Yogasana Bharat, and the IOA, and was heavily supported by MYAS, Ministry of Ayush, SAI, and Gujarat state agencies. (Reference: Page 40)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Global Peace Index",
+    "question": "Arrange the following countries in descending order based on their 2026 Global Peace Index (GPI) scores, from the highest score (least peaceful) to the lowest score among the group:\n\n1. Ukraine\n2. Democratic Republic of the Congo (DRC)\n3. Russia\n4. Sudan\n5. Israel\n\nSelect the correct sequence:",
+    "options": {
+      "A": "3 > 4 > 2 > 1 > 5",
+      "B": "3 > 2 > 4 > 1 > 5",
+      "C": "4 > 3 > 2 > 1 > 5",
+      "D": "3 > 4 > 1 > 2 > 5",
+      "E": "5 > 1 > 2 > 4 > 3"
+    },
+    "answer": "A",
+    "rationale": "The scores from highest (least peaceful) to lowest are: Russia (3.367), Sudan (3.195), DRC (3.189), Ukraine (3.184), Israel (3.124). Sequence: 3 > 4 > 2 > 1 > 5. (Reference: Page 24, 60)",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Sangeet Natak Akademi",
+    "question": "Match the category with the number of artists selected per year for the Sangeet Natak Akademi Awards (2024 & 2025), which totaled 108 artists:\n\nColumn I:\n1. Music\n2. Theatre\n3. Folk/Tribal/Puppetry\n4. Scholarship\n\nColumn II:\nA. 5 awardees\nB. 10 awardees\nC. 12 awardees\nD. 13 awardees\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-B, 3-D, 4-A",
+      "B": "1-C, 2-D, 3-B, 4-A",
+      "C": "1-D, 2-B, 3-C, 4-A",
+      "D": "1-B, 2-C, 3-A, 4-D",
+      "E": "1-A, 2-D, 3-C, 4-B"
+    },
+    "answer": "A",
+    "rationale": "Music has 12 awardees (1-C), Theatre has 10 (2-B), Folk/Tribal/Puppetry has 13 (3-D), and Scholarship has 5 (4-A). (Reference: Page 32)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Education Policy",
+    "question": "Under the Ministry of Education's initiative for internationalisation of education (NEP 2020), the University of New South Wales (UNSW) received a Letter of Approval (LoA) to open a campus in India. Where will this campus be located, and when is it slated to open?",
+    "options": {
+      "A": "GIFT City, Gujarat; August 2026",
+      "B": "Manyata Business Park, Bengaluru; August 2026",
+      "C": "BKC, Mumbai; September 2026",
+      "D": "Manyata Business Park, Bengaluru; March 2027",
+      "E": "Cyber City, Gurugram; August 2026"
+    },
+    "answer": "B",
+    "rationale": "UNSW will establish its campus at Manyata Business Park, Bengaluru (Karnataka), opening in August 2026. (Reference: Page 10)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Microfinance Institutions",
+    "question": "According to the CGSMFI-2.0 Microfinance Institution (MFI) Classification and Guarantee Structure, what is the mandatory bank allocation requirement for a 'Small Size' MFI?",
+    "options": {
+      "A": "Minimum 5% of the bank's scheme pool",
+      "B": "Minimum 10% of the bank's scheme pool",
+      "C": "Remaining available pool after Small and Medium allocations",
+      "D": "Maximum 20% of their Assets Under Management (AUM)",
+      "E": "Fixed cap of Rs. 100 crore per bank"
+    },
+    "answer": "A",
+    "rationale": "For Small Size MFIs (AUM < Rs 500 cr), the mandatory bank allocation is a minimum of 5% of the bank's scheme pool. (Medium is 10%, Large is remaining pool). (Reference: Page 16, 51)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Land Port Management",
+    "question": "Consider the following statements regarding the 'VINIMAY' Land Port Management System (LPMS):\n\n1. It integrates data across Customs, Border Security Force (BSF), DGFT, UIDAI, and ULIP.\n2. It features automated capabilities such as Single Electronic Window (SEW) and Automatic Number Plate Recognition (ANPR) gates.\n3. The platform addresses trade growth at land ports which rose from Rs 5,000 crore in 2014 to Rs 83,000 crore in 2026.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 3",
+      "E": "1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All three statements are correct. VINIMAY integrates Customs, BSF, DGFT, UIDAI, ULIP; features SEW and ANPR; and caters to land port trade that grew from Rs 5,000 crore to Rs 83,000 crore. (Reference: Page 10)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Formula One",
+    "question": "Arrange the following Formula One drivers in descending order of their championship points after the 2026 Barcelona-Catalunya Grand Prix:\n\n1. Charles Leclerc\n2. George Russell\n3. Lewis Hamilton\n4. Kimi Antonelli\n\nSelect the correct sequence:",
+    "options": {
+      "A": "4 > 3 > 2 > 1",
+      "B": "3 > 4 > 2 > 1",
+      "C": "4 > 2 > 3 > 1",
+      "D": "3 > 2 > 4 > 1",
+      "E": "4 > 1 > 3 > 2"
+    },
+    "answer": "A",
+    "rationale": "Points standings: Kimi Antonelli (156 points), Lewis Hamilton (115 points), George Russell (106 points), Charles Leclerc (75 points). Sequence: 4 > 3 > 2 > 1. (Reference: Page 68)",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Football",
+    "question": "At the 8th SAFF Women's Championship 2026, which of the following players was awarded the Most Valuable Player (MVP) title?",
+    "options": {
+      "A": "Aveka Singh",
+      "B": "Sanfida Nongrum",
+      "C": "Panthoi Chanu Elangbam",
+      "D": "Aditi Chauhan",
+      "E": "Bala Devi"
+    },
+    "answer": "B",
+    "rationale": "Sanfida Nongrum of India won the MVP award at the 2026 SAFF Women's Championship. Aveka Singh was the Top Scorer, and Panthoi Chanu Elangbam was the Best Goalkeeper. (Reference: Page 39)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Child Labour",
+    "question": "Assertion (A): The World Day Against Child Labour (WDACL) marked its 25th observance on 12 June 2026.\nReason (R): The WDACL was launched and first observed by the International Labour Organization (ILO) in 2002.\n\nSelect the correct option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Both statements are true and directly correlated. 2002 was the 1st observance. Hence, 2026 marks the 25th observance (inclusive of 2002). Therefore, R explains A. (Reference: Page 47)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Agriculture Estimates",
+    "question": "Based on the Second Advance Estimates of Horticulture Crops 2025-26, arrange the following horticulture categories in descending order of their total projected production volume (in Lakh Tonnes):\n\n1. Spices\n2. Onion\n3. Flowers\n4. Potato\n\nSelect the correct sequence:",
+    "options": {
+      "A": "4 > 2 > 1 > 3",
+      "B": "4 > 2 > 3 > 1",
+      "C": "2 > 4 > 1 > 3",
+      "D": "4 > 1 > 2 > 3",
+      "E": "1 > 4 > 2 > 3"
+    },
+    "answer": "A",
+    "rationale": "Production volumes: Potato (598.89 LT), Onion (307.37 LT), Spices (126.55 LT), Flowers (45.84 LT). The correct sequence is 4 > 2 > 1 > 3. (Reference: Page 18)",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Logistics",
+    "question": "The Department of Posts (DoP) launched a drone-based mail service in Himachal Pradesh. The service reduced the mail transit time between Mandi and Rehardhar from over 2 hours to how many minutes?",
+    "options": {
+      "A": "5 minutes",
+      "B": "7 minutes",
+      "C": "12 minutes",
+      "D": "15 minutes",
+      "E": "20 minutes"
+    },
+    "answer": "B",
+    "rationale": "The drone service reduced the Mandi-Rehardhar mail transit time from 2+ hours to 7 minutes. (Reference: Page 23)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space Tech",
+    "question": "Under the IN-SPACe Technology Adoption Fund (TAF) scheme, the Indian startup SataSure Analytics is tasked with building a Large Earth Observation Model (LOM). What is the name of this foundational AI platform for remote sensing?",
+    "options": {
+      "A": "Bhashini",
+      "B": "Varya",
+      "C": "Dhaarini",
+      "D": "Bhoomi",
+      "E": "Vyom"
+    },
+    "answer": "C",
+    "rationale": "SataSure Analytics India is building the Large Earth Observation Model (LOM) named 'Dhaarini' – India's foundational AI platform for remote sensing. (Reference: Page 19)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Data Centres",
+    "question": "Consider the following statements regarding the Meta-Reliance partnership for an AI-Enabled Data Centre in Jamnagar, Gujarat:\n\n1. It will be powered by 100% renewable energy utilizing 925 MW of capacity.\n2. It features advanced desalinated seawater cooling systems.\n3. The partnership builds upon Meta's USD 5.7 billion investment in Jio Platforms made in 2020.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 2",
+      "E": "1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All statements are correct. The 168 MW AI-enabled Data Centre will use 100% renewable energy (925 MW total project footprint/capacity pool mentioned), desalinated seawater cooling, and builds on Meta's 2020 investment in Jio. (Reference: Page 29)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "RBI Deputy Governors",
+    "question": "The GoI re-appointed Swaminathan Janakiraman as Deputy Governor of RBI for another two years. According to the document, which of the following combinations correctly lists his current colleagues (other 3 Deputy Governors) at the RBI?",
+    "options": {
+      "A": "M. Rajeshwar Rao, T. Rabi Sankar, Michael Patra",
+      "B": "Poonam Gupta, Shirish Chandra Murmu, Rohit Jain",
+      "C": "Sanjay Lohiya, M. Nagaraju, Shaktikanta Das",
+      "D": "M. Rajeshwar Rao, Poonam Gupta, T. Rabi Sankar",
+      "E": "Shirish Chandra Murmu, Rohit Jain, Michael Patra"
+    },
+    "answer": "B",
+    "rationale": "As per the specific text in the PDF detailing his reappointment, his colleagues (other 3 Deputy Governors) are listed as Poonam Gupta, Shirish Chandra Murmu, and Rohit Jain. (Reference: Page 34)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Gallantry Awards",
+    "question": "Match the following Kirti Chakra awardees with their respective Armed Forces/Regiment affiliations:\n\nColumn I:\n1. Major Arshdeep Singh\n2. Air Commodore Prasanth Balakrishnan Nair\n3. Captain Lalrinawma Sailo\n\nColumn II:\nA. 4 Para (Special Forces)\nB. ARMD, 1 Assam RIF\nC. Flying (Pilot), IAF\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-C, 2-B, 3-A"
+    },
+    "answer": "B",
+    "rationale": "Major Arshdeep Singh is from ARMD, 1 Assam RIF (1-B). Air Commodore Nair is a Flying (Pilot) in IAF (2-C). Captain Sailo is from 4 Para (Special Forces) (3-A). (Reference: Page 31, 63)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Obituaries",
+    "sub_category": "Sports",
+    "question": "Consider the following statements regarding the late Jaspal Rana:\n\n1. He was an Indian shooting coach and former Asian Games gold medallist.\n2. He equalled the 25m Centre Fire Pistol world record by scoring 590 points.\n3. He mentored Olympic shooters like Manu Bhaker and Saurabh Chaudhary.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 2",
+      "E": "1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All three statements accurately reflect the highlights of Jaspal Rana's career and legacy in Indian shooting. (Reference: Page 43)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Environment",
+    "question": "The World Oceans Day (WOD) 2026 was observed under the theme 'Reimagine: Beyond the world we know, a new relationship with our ocean'. The 2026 event was jointly organised by Oceanic Global and which other UN division?",
+    "options": {
+      "A": "United Nations Environment Programme (UNEP)",
+      "B": "Intergovernmental Oceanographic Commission (IOC)",
+      "C": "Division for Ocean Affairs and the Law of the Sea (DOALOS)",
+      "D": "World Meteorological Organization (WMO)",
+      "E": "Food and Agriculture Organization (FAO)"
+    },
+    "answer": "C",
+    "rationale": "The 2026 World Oceans Day event was jointly organised by the UN's Division for Ocean Affairs and the Law of the Sea (DOALOS) and Oceanic Global. (Reference: Page 45)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Fitch Projections",
+    "question": "According to the June 2026 Global Economic Outlook (GEO) by Fitch Ratings, what are the projected rates for India's inflation by the end of CY26 and the Global Growth Rate for CY26, respectively?",
+    "options": {
+      "A": "5.3% and 2.4%",
+      "B": "4.5% and 2.9%",
+      "C": "5.3% and 2.5%",
+      "D": "6.4% and 2.4%",
+      "E": "6.7% and 2.5%"
+    },
+    "answer": "A",
+    "rationale": "Fitch Ratings projected India's inflation to be 5.3% by the end of CY26 and the Global Growth Rate to be 2.4% for CY26. (Reference: Page 29)",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "World Bank GEP",
+    "question": "Match the following financial years with India's GDP growth projections as released by the World Bank in its Global Economic Prospects (GEP), June 2026:\n\nColumn I:\n1. FY26\n2. FY27\n3. FY28\n\nColumn II:\nA. 7.2%\nB. 7.7%\nC. 6.6%\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-C, 2-A, 3-B"
+    },
+    "answer": "B",
+    "rationale": "The World Bank's GEP (June 2026) projected India's GDP at 7.7% for FY26 (1-B), raised FY27 to 6.6% (2-C), and projected 7.2% for FY28 (3-A). (Reference: Page 29)",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Digital Portals",
+    "question": "Regarding the newly launched BHAVYA Portal, what does 'DPR' stand for in the context of its unified digital platform capabilities?",
+    "options": {
+      "A": "Digital Public Records",
+      "B": "Detailed Project Reports",
+      "C": "Direct Payment Receipts",
+      "D": "Dedicated Public Resources",
+      "E": "Domestic Procurement Returns"
+    },
+    "answer": "B",
+    "rationale": "The BHAVYA Portal enables submission of Detailed Project Reports (DPRs), project appraisal, evaluation, and real-time monitoring. (Reference: Page 7, 53)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Health Statistics",
+    "question": "Assertion (A): Under the PMSMA initiative, India's Maternal Mortality Ratio (MMR) has witnessed a decline to 87 per lakh live births for the 2022-24 period.\nReason (R): The proportion of women receiving four or more Antenatal Care (ANC) check-ups increased to 65.20% in 2026, leading to safer pregnancies.\n\nSelect the correct option:",
+    "options": {
+      "A": "Both A and R are true, and R is a correct explanation for A.",
+      "B": "Both A and R are true, but R is NOT a correct explanation for A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Both facts are true based on the '10 Years of PMSMA' statistics. Increased ANC check-ups (65.20%) contribute directly to the reduction in MMR (87 per lakh), making R a valid contributing explanation for A. (Reference: Page 13)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "GI Tags",
+    "question": "Match the following products from Assam that recently received Geographical Indication (GI) tags with their respective categories:\n\nColumn I:\n1. Assam Bihu Pepa\n2. Karbi Anglong Handloom Products\n3. Assam Bamboo Crafts\n\nColumn II:\nA. Handicrafts\nB. Musical Instrument\nC. Handloom & Textiles\n\nSelect the correct mapping:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-A, 3-B",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-C, 2-B, 3-A"
+    },
+    "answer": "A",
+    "rationale": "Assam Bihu Pepa is a Musical Instrument (1-B); Karbi Anglong Handloom Products fall under Handloom & Textiles (2-C); Assam Bamboo Crafts fall under Handicrafts (3-A). (Reference: Page 34)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "GI Tags",
+    "question": "Which of the following newly GI-tagged products from Jharkhand falls under the 'Food Stuffs' category?",
+    "options": {
+      "A": "Jadopatia Painting",
+      "B": "Tumka Chadar",
+      "C": "Kesariya Kalakand",
+      "D": "Dokra Craft",
+      "E": "Bhoya Saree"
+    },
+    "answer": "C",
+    "rationale": "Kesariya Kalakand is the only product listed under the 'Food Stuffs' category for Jharkhand's new GI tags. (Reference: Page 34)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space Missions",
+    "question": "Consider the chronological timeline of NASA's Artemis program as provided. Match the mission with its designated year and objective:\n\nColumn I:\n1. Artemis I\n2. Artemis II\n3. Artemis III\n4. Artemis IV\n\nColumn II:\nA. 2028 - Moon landing\nB. 2026 - Crewed flyby\nC. 2022 - Uncrewed test flight\nD. 2027 - Docking tests\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-B, 3-D, 4-A",
+      "B": "1-B, 2-C, 3-A, 4-D",
+      "C": "1-C, 2-D, 3-B, 4-A",
+      "D": "1-A, 2-B, 3-C, 4-D",
+      "E": "1-C, 2-A, 3-D, 4-B"
+    },
+    "answer": "A",
+    "rationale": "Artemis I (2022) was uncrewed (1-C); Artemis II (2026) is crewed flyby (2-B); Artemis III (2027) is docking tests (3-D); Artemis IV (2028) is Moon landing (4-A). (Reference: Page 37)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "RBI Guidelines",
+    "question": "Under the RBI's Third Amendment Directions 2026 regarding lending norms for REITs and InvITs, what is the assigned risk weight for bank lending to InvITs compared to corporate lending?",
+    "options": {
+      "A": "75% (lower than corporate lending risk weights)",
+      "B": "100% (same as capital market exposure)",
+      "C": "125% (same as capital market exposure)",
+      "D": "Identical to corporate lending risk weights",
+      "E": "0% risk weight for infrastructure"
+    },
+    "answer": "D",
+    "rationale": "The RBI specifies that the risk weights for InvITs are equated to \"corporate lending risk weights.\" (REITs are at 100%, and 125% for capital market exposure). (Reference: Page 27)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Penalty Details",
+    "question": "The RBI imposed a penalty of Rs 41.80 lakh on Canara Bank. Which specific violations were cited as the reason for this penalty following the supervisory review?",
+    "options": {
+      "A": "Breach of priority sector lending targets and CRR defaults",
+      "B": "Know Your Customer (KYC) norms and account classification lapses",
+      "C": "Non-compliance with Swift messaging and foreign exchange norms",
+      "D": "Cybersecurity framework failures and data localization issues",
+      "E": "Unauthorised exposure to capital markets via InvITs"
+    },
+    "answer": "B",
+    "rationale": "The penalty was imposed on Canara Bank due to critical lapses in Know Your Customer (KYC) norms and account classification. (Reference: Page 25, 60)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Business Clusters",
+    "question": "Which two organizations signed a Memorandum of Understanding (MoU) to promote investment and knowledge exchange as part of the 'Blue Valley Cluster' initiative in Guwahati?",
+    "options": {
+      "A": "NABARD and EU Business Council",
+      "B": "Assam Industrial Development Corporation (AIDC) and Federation of European Businesses in India (FEBI)",
+      "C": "Ministry of DoNER and EuroCham India",
+      "D": "Assam Chamber of Commerce and European Union Trade Commission",
+      "E": "Invest India and AIDC"
+    },
+    "answer": "B",
+    "rationale": "The AIDC and FEBI signed an MoU to promote investment and knowledge exchange for the Blue Valley Cluster. (Reference: Page 50)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Infrastructure Research",
+    "question": "Under the MoA signed between CSIR-CRRI and Haryana, what does 'RAMS' stand for in the context of urban road components?",
+    "options": {
+      "A": "Road Asset Management System",
+      "B": "Regional Air Monitoring Sensors",
+      "C": "Rural and Arterial Modification Scheme",
+      "D": "Rapid Asphalt Maintenance Solution",
+      "E": "Resilient Area Mapping Strategy"
+    },
+    "answer": "A",
+    "rationale": "RAMS stands for Road Asset Management System, one of the components for climate-resilient design in the CRRI-Haryana project. (Reference: Page 49)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Wildlife Technology",
+    "question": "Assertion (A): The 'HAWK' system launched by the Kerala Forest Department is India's first fully digitised and judiciary-integrated wildlife offence management system.\nReason (R): It integrates with Customs, Border Security Force (BSF), and UIDAI to automatically flag cross-border smuggling of wildlife contraband.\n\nSelect the correct option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true. Reason (R) is false because HAWK focuses on linking wildlife crime records with the judicial system for prosecution/monitoring. Integration with Customs, BSF, and UIDAI is actually a feature of the LPMS 'VINIMAY' system, not HAWK. (Reference: Pages 5, 10)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Football Tournaments",
+    "question": "Consider the following statements regarding the 8th SAFF Women's Championship 2026:\n\n1. It was held at Jawaharlal Nehru Stadium in Margao, Goa.\n2. The tournament was contested by exactly 5 South Asian nations.\n3. The Indian team ranked FIFA World No. 69 prior to the tournament.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "Only 1",
+      "E": "1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All statements are correct. It was held in Goa (1), contested by 5 nations (India, Bangladesh, Nepal, Bhutan, Maldives) (2), and India ranked FIFA World No. 69 (3). (Reference: Page 39, 68)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Chess Tournaments",
+    "question": "At the Asian Individual Chess Championship 2026, which of the following characteristics accurately described the tournament?",
+    "options": {
+      "A": "It was a round-robin tournament hosted by the World Chess Federation (FIDE).",
+      "B": "It was the 21st Women's edition and 27th Open edition.",
+      "C": "It was a Continental Swiss-system tournament organized by the Asian Chess Federation (ACF).",
+      "D": "The total prize fund was USD 15,000.",
+      "E": "It featured only classical time control with no implications for FIDE ratings."
+    },
+    "answer": "C",
+    "rationale": "It was a Continental Swiss-system chess tournament organized by the ACF. (It was the 21st Open and 27th Women's edition, with a total prize fund of USD 100,000). (Reference: Page 41)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "G-Secs Taxation",
+    "question": "The Ministry of Finance introduced tax changes for FPIs/FIIs in G-Secs. Under the 'Old' regime, what was the tax rate applied to FIIs and FPIs for Short-Term Capital (STC) gains and Long-Term Capital (LTC) gains, respectively?",
+    "options": {
+      "A": "20% for STC and 10% for LTC",
+      "B": "30% for STC and 12.5% for LTC",
+      "C": "15% for STC and 10% for LTC",
+      "D": "30% for STC and 15% for LTC",
+      "E": "12.5% for STC and 30% for LTC"
+    },
+    "answer": "B",
+    "rationale": "Under the old regime, FII and FPI were taxed at 30% for STC and 12.5% for LTC. (This is now reduced to nil). (Reference: Page 5)",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Acquisitions & Mergers",
+    "sub_category": "Global Equity Deals",
+    "question": "Which of the following correctly pairs the acquiring entity with its target and the stake acquired, as approved by the CCI in June 2026?",
+    "options": {
+      "A": "Sanlam Emerging Markets acquired 29.06% in PUMA SE.",
+      "B": "Ancat Holding GmbH acquired 2.80% in Shriram Life Insurance Company.",
+      "C": "Sanlam Emerging Markets acquired 2.80% in Shriram Life Insurance Company.",
+      "D": "ANTA Sports acquired 2.80% in PUMA SE directly.",
+      "E": "Platinum Jasmine A 2018 Trust acquired 2.3% in Lenskart."
+    },
+    "answer": "C",
+    "rationale": "Sanlam Emerging Markets acquired a 2.80% stake in Shriram Life Insurance (SLIC). Ancat Holding acquired 29.06% in PUMA. Platinum Jasmine *sold* its 2.3% stake in Lenskart. (Reference: Page 36, 66)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Defence Technologies",
+    "question": "The MoD signed a Rs 449 crore contract with ASSPL for ECGNSS Jammers. What does ECGNSS stand for?",
+    "options": {
+      "A": "Electronic Combat Global Navigation Satellite System",
+      "B": "Enhanced Capability Global Navigation Satellite System",
+      "C": "Extra Coverage Geostationary Navigation Satellite System",
+      "D": "Electromagnetic Countermeasure Global Navigation Satellite System",
+      "E": "Extended Capacity Geo-Navigational Satellite System"
+    },
+    "answer": "B",
+    "rationale": "ECGNSS stands for Enhanced Capability Global Navigation Satellite System. (Reference: Page 17, 56)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Health Donations",
+    "question": "On the occasion of World Blood Donor Day 2026, which two departments/offices collaborated to organise a blood donation camp at AIIMS, New Delhi?",
+    "options": {
+      "A": "Ministry of Health and Family Welfare (MoHFW) and Ministry of Ayush",
+      "B": "Department of Telecommunications (DoT) and Office of the Pr. CCA, Delhi",
+      "C": "Indian Red Cross Society and Ministry of Defence",
+      "D": "Department of Financial Services (DFS) and NITI Aayog",
+      "E": "National Health Authority (NHA) and Medical Council of India"
+    },
+    "answer": "B",
+    "rationale": "The Department of Telecommunications (DoT) and the Office of the Pr. CCA, Delhi organised a blood donation camp with AIIMS, New Delhi. (Reference: Page 48)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "RBI Forex Swap Facility",
+    "question": "Consider the following parameters set by the RBI for the ECB & OFCB Forex Swap Facility:\n\n1. Eligible ECBs must have an average maturity of >= 3 years.\n2. OFCBs raised by AD Category-I banks must have a minimum maturity of 3 years.\n3. The net open position in rupee (NOP-INR) limit is USD 500 Million.\n4. The swap rate is fixed at 1.5% per annum.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2, and 3",
+      "B": "2, 3, and 4",
+      "C": "1, 2, and 4",
+      "D": "1, 3, and 4",
+      "E": "All 1, 2, 3, and 4"
+    },
+    "answer": "C",
+    "rationale": "Statements 1, 2, and 4 are correct. Statement 3 is incorrect because the Net Open Position in Rupee (NOP-INR) limit is set at USD 100 Million, not 500 Million. (Reference: Page 26)",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Microfinance Standards",
+    "question": "Based on the MFI Classification given under CGSMFI-2.0, arrange the following MFI categories in ascending order of their maximum loan capacity (amount) limit:\n\n1. Large Size\n2. Small Size\n3. Medium Size\n\nSelect the correct sequence:",
+    "options": {
+      "A": "2 > 3 > 1",
+      "B": "2 < 3 < 1",
+      "C": "3 < 2 < 1",
+      "D": "1 > 3 > 2",
+      "E": "1 < 2 < 3"
+    },
+    "answer": "B",
+    "rationale": "Small Size capacity is up to Rs 100 crore. Medium Size is up to Rs 200 crore. Large Size is up to Rs 1,000 crore. The ascending order (lowest to highest) is Small(2) < Medium(3) < Large(1). (Reference: Page 16, 51)",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Hockey Tournaments",
+    "question": "Match the following teams with their final medal status at the Men's Hockey U18 Asia Cup 2026 in Japan:\n\nColumn I:\n1. India\n2. Japan\n3. Pakistan\n\nColumn II:\nA. Silver\nB. Bronze\nC. Gold\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "India clinched the championship title (Gold) by defeating host nation Japan (Silver). Pakistan won the Bronze medal. (Reference: Page 69)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "RBI and SBI Boards",
+    "question": "Sanjay Lohiya was nominated as a Non-Executive Director on the Central Board of RBI and SBI. Which department of the Ministry of Finance does he currently head as Secretary?",
+    "options": {
+      "A": "Department of Economic Affairs (DEA)",
+      "B": "Department of Revenue (DoR)",
+      "C": "Department of Financial Services (DFS)",
+      "D": "Department of Investment and Public Asset Management (DIPAM)",
+      "E": "Department of Public Enterprises (DPE)"
+    },
+    "answer": "C",
+    "rationale": "Sanjay Lohiya serves as the Secretary of the Department of Financial Services (DFS). (Reference: Page 35, 65)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Stock Market Deals",
+    "question": "Consider the block deal executed by OIJIF II selling its stake in Capital Small Finance Bank. At what discount percentage to the closing price was the deal executed on the National Stock Exchange (NSE)?",
+    "options": {
+      "A": "0.50%",
+      "B": "1.11%",
+      "C": "2.30%",
+      "D": "2.80%",
+      "E": "3.65%"
+    },
+    "answer": "B",
+    "rationale": "The deal was executed on the NSE at a 1.11% discount to the closing price (selling 1.36 million shares at Rs 270 per share). (Reference: Page 35)",
+    "tag": "Data Interpretation",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Sangeet Natak Akademi",
+    "question": "Match the following Sangeet Natak Akademi Fellowship awardees with their respective fields:\n\nColumn I:\n1. A V Anand\n2. Rita Ganguly\n3. Chittaranjan Jyotishi\n\nColumn II:\nA. Vocalist-Dancer\nB. Carnatic Musician\nC. Vocalist\n\nSelect the correct mapping:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-B, 2-A, 3-C",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-C, 2-B, 3-A"
+    },
+    "answer": "B",
+    "rationale": "A V Anand is a Carnatic Musician (1-B); Rita Ganguly is a Vocalist-Dancer (2-A); Chittaranjan Jyotishi is a Vocalist (3-C). (Reference: Page 33, 64)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "F1 Drivers and Teams",
+    "question": "Match the following Formula One drivers with their respective teams and nationality as mentioned in the points standings for 2026:\n\nColumn I:\n1. Kimi Antonelli\n2. Lando Norris\n3. Charles Leclerc\n\nColumn II:\nA. Scuderia Ferrari HP (Monaco/not listed explicitly but driver of Ferrari)\nB. Mercedes AMG Petronas F1 (Italy)\nC. McLaren Mastercard F1 (Great Britain)\n\nSelect the correct code:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Kimi Antonelli represents Mercedes (1-B); Lando Norris represents McLaren (2-C); Charles Leclerc represents Ferrari (3-A). (Reference: Pages 41, 42, 68)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Skill Development",
+    "question": "Assertion (A): The Ministry of Skill Development and Entrepreneurship (MoSDE) completed 12 years of its Skill India journey in June 2026.\nReason (R): Under its training ecosystem, NIESBUD and the Indian Institute of Entrepreneurship (IIE) collectively trained 25 lakh beneficiaries.\n\nSelect the correct option:",
+    "options": {
+      "A": "Both A and R are true, and R is the correct explanation of A.",
+      "B": "Both A and R are true, but R is not the correct explanation of A.",
+      "C": "A is true, but R is false.",
+      "D": "A is false, but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both facts are true based on the document. However, the number of beneficiaries trained by NIESBUD and IIE is just one of many statistical achievements (Reason R) and is not the *cause* of the MoSDE completing 12 years of existence (Assertion A). (Reference: Page 18, 56)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Defence & Security",
+    "question": "Which two countries occupied the top 2 spots for Global Arms Importer Rank during the period 2021-2025, according to the SIPRI Yearbook 2026?",
+    "options": {
+      "A": "India (1st) and Saudi Arabia (2nd)",
+      "B": "Ukraine (1st) and India (2nd)",
+      "C": "Saudi Arabia (1st) and Ukraine (2nd)",
+      "D": "India (1st) and China (2nd)",
+      "E": "China (1st) and Pakistan (2nd)"
+    },
+    "answer": "B",
+    "rationale": "According to the SIPRI Yearbook 2026, the Global arms importer rank (2021-25) was 1st - Ukraine, 2nd - India. (Reference: Page 23)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - June 2026"
+  }
+]

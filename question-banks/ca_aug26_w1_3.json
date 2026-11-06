@@ -1,0 +1,802 @@
+[
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Regulatory Timelines",
+    "question": "Match the following regulatory frameworks/guidelines with their respective revised deadlines or implementation timelines as mentioned in the document:\n\nColumn I:\n1. Basel III Pillar III Disclosure Rules implementation\n2. Digital Accessibility Audit Remediation for SEBI Regulated Entities\n3. Launch of new schemes by existing AIFs under GARUDA\n\nColumn II:\nA. October 31, 2026\nB. Within 10 working days of filing PPM\nC. April 1, 2027\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-C, 3-B",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "A",
+    "rationale": "Basel III Pillar III implementation is delayed to April 1, 2027 (1-C). SEBI extended the Digital Accessibility Audit Remediation deadline to October 31, 2026 (2-A). Under GARUDA, existing AIFs can launch new schemes within 10 working days of filing the PPM (3-B). (Pages 26, 28, 63, 64)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "Global Bodies",
+    "question": "Consider the following pairs of Senior Bureaucrats and their newly approved foreign postings:\n\n1. Satyajit Mohanty - Representative of India, ICAO Council\n2. Jivisha Joshi Gangopadhyay - First Secretary, PMI to the WTO\n3. Aditya Rajendra Bhojgadhiya - Senior Adviser to the Executive Director, World Bank\n4. Kapil Patidar - Adviser to the Executive Director (India), IMF\n\nHow many of the pairs given above are correctly matched?",
+    "options": {
+      "A": "Only one pair",
+      "B": "Only two pairs",
+      "C": "Only three pairs",
+      "D": "All four pairs",
+      "E": "None of the pairs"
+    },
+    "answer": "C",
+    "rationale": "Pairs 1, 2, and 4 are correctly matched. Pair 3 is incorrectly matched because Aditya Rajendra Bhojgadhiya was appointed as First Secretary, PMI to the WTO. Hemang Jani's tenure as Senior Adviser to the ED, World Bank was extended. Jivisha Joshi is First Secretary (Legal), PMI to WTO. (Pages 36, 84)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "State Budgets",
+    "question": "In the maiden budget for FY26-27 presented by the TVK-led Tamil Nadu government, arrange the following sectors in ascending order of their allocated budget amounts (lowest to highest):\n\n1. Health\n2. Education\n3. Energy\n4. Social Welfare\n\nSelect the correct sequence:",
+    "options": {
+      "A": "4 -> 3 -> 1 -> 2",
+      "B": "4 -> 1 -> 3 -> 2",
+      "C": "3 -> 4 -> 1 -> 2",
+      "D": "1 -> 4 -> 3 -> 2",
+      "E": "4 -> 3 -> 2 -> 1"
+    },
+    "answer": "A",
+    "rationale": "The allocations are: Social Welfare (Rs 9,818 Cr), Energy (Rs 15,828 Cr), Health (Rs 23,357 Cr), and Education (Rs 52,920 Cr). Ascending order is Social Welfare -> Energy -> Health -> Education (4 -> 3 -> 1 -> 2). (Page 53, 89)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Heritage Conservation",
+    "question": "The Administration of the UT of Ladakh notified 23 heritage sites as Protected Monuments. Which of the following sites is NOT included in this newly notified list?",
+    "options": {
+      "A": "Petroglyph Site at Sharnos",
+      "B": "Maitreya Buddha Rock Carving at Shey",
+      "C": "Zong Chamba Rock Carving",
+      "D": "Hemis National Park Petroglyphs",
+      "E": "Folong Singey (Boulder-like Lion Face) at Diggar"
+    },
+    "answer": "D",
+    "rationale": "The 'Hemis National Park Petroglyphs' is not listed among the 23 heritage sites notified. The list includes the Petroglyph Site at Sharnos, Maitreya Buddha Rock Carving at Shey, Zong Chamba, and Folong Singey, among others. (Page 4, 55)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Commonwealth Games 2026",
+    "question": "Match the following Indian athletes with the events in which they won Gold Medals at the 2026 Commonwealth Games in Glasgow:\n\nColumn I:\n1. Mirabai Chanu\n2. Sharmila Dhankar\n3. Dilip Gavit\n4. Asmita Dey\n\nColumn II:\nA. Judo - Women's 48 kg\nB. Para-Athletics - Women's Shot Put F57\nC. Weightlifting - Women's 48 kg\nD. Para-Athletics - Men's 100 m T47\n\nSelect the correct matching code:",
+    "options": {
+      "A": "1-C, 2-B, 3-D, 4-A",
+      "B": "1-C, 2-D, 3-B, 4-A",
+      "C": "1-A, 2-B, 3-D, 4-C",
+      "D": "1-C, 2-B, 3-A, 4-D",
+      "E": "1-B, 2-C, 3-D, 4-A"
+    },
+    "answer": "A",
+    "rationale": "Mirabai Chanu won Gold in Weightlifting Women's 48 kg (1-C). Sharmila Dhankar won in Women's Shot Put F57 (2-B). Dilip Gavit won in Men's 100 m T47 (3-D). Asmita Dey won in Judo Women's 48 kg (4-A). (Page 40)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "Biodiversity Cataloguing",
+    "question": "Consider the following statements regarding the ZSI's 1st Catalogue of Lepidoptera:\n\n1. It provides a taxonomic inventory of 13,703 Lepidoptera species, comprising exactly 1,417 butterflies and 12,286 moths.\n2. The Geometroidea family represents exactly 8.25% of the world's known diversity in the catalogue.\n3. Ennominae is identified as the most species-rich subfamily with 895 species.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 2",
+      "E": "Only 2 and 3"
+    },
+    "answer": "B",
+    "rationale": "Statement 2 is incorrect. The Geometroidea family (2,205 species) represents about 8.80% (not 8.25%) of the global diversity. The 8.25% figure refers to the total 13,703 Lepidoptera species accounting for global diversity. Statements 1 and 3 are correct. (Page 39)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Energy Initiatives",
+    "question": "Fill in the blanks regarding the Pradhan Mantri Surya Sarovar Yojana (PM-SSY):\n\nThe scheme aims to develop ________ MW of Floating Solar Photovoltaic (FSPV) projects with an outlay of Rs ________ crore, generating approximately ________ jobs.",
+    "options": {
+      "A": "10,000; 5,070; 25,000",
+      "B": "5,000; 5,070; 16,000-17,000",
+      "C": "5,000; 10,000; 16,000-17,000",
+      "D": "10,000; 3,150; 20,000",
+      "E": "5,000; 5,070; 10,000-12,000"
+    },
+    "answer": "B",
+    "rationale": "The PM-SSY scheme aims to develop 5,000 MW of FSPV projects with an outlay of Rs 5,070 crore. It is projected to generate 16,000-17,000 jobs. (Page 8, 57)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Defence",
+    "sub_category": "Naval Acquisitions",
+    "question": "Assertion (A): The 'Nipun' is an Indigenous Diving Support Vessel (DSV) designed specifically to enhance India's deep-sea diving, submarine rescue, and underwater salvage capabilities.\n\nReason (R): The name 'Nipun' is derived from Sanskrit, meaning \"adept, capable and well-versed in a particular discipline,\" reflecting its specialised role.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true but (R) is not the correct explanation of (A).",
+      "C": " (A) is true but (R) is false.",
+      "D": " (A) is false but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "B",
+    "rationale": "Both Assertion (A) and Reason (R) are factually true according to the text. However, the linguistic origin of the name (R) is not the functional *explanation* for why the vessel was designed with those specific naval capabilities (A). (Page 37, 68)",
+    "tag": "Hybrid",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Bilateral State MoUs",
+    "question": "Match the focus areas of the respective MoUs signed recently by State Governments:\n\nColumn I (State & Partner):\n1. Andhra Pradesh & Australia\n2. Tamil Nadu & Motivelink Co Limited\n3. Visakhapatnam & Moscow\n\nColumn II (Key Focus/Outcome):\nA. Establishment of an auto-component manufacturing facility\nB. Clean energy, advanced manufacturing, and inclusive education\nC. Intelligent Transport Systems (ITS) and smart mobility\n\nSelect the correct matching code:",
+    "options": {
+      "A": "1-B, 2-A, 3-C",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-B, 2-C, 3-A",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "AP & Australia signed MoUs for clean energy, advanced manufacturing, etc. (1-B). TN & Motivelink signed an MoU for an auto-component manufacturing facility (2-A). Visakhapatnam & Moscow signed an MoC for ITS and smart mobility (3-C). (Pages 51-53, 73)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "RBI Draft Norms",
+    "question": "The RBI released draft on-tap licensing norms for Urban Cooperative Banks (UCBs). Consider the following statements:\n\n1. UCBs must have a minimum capital of Rs 300 Crore.\n2. UCBs must maintain a Capital Adequacy Ratio (CAR) of at least 9%.\n3. They must have a minimum deposit size of Rs 10,000 Crore.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "C",
+    "rationale": "Statements 1 and 3 are correct. Statement 2 is incorrect because the draft norms require a Capital Adequacy Ratio (CAR) of ≥ 12%, not 9%. (Page 30, 81)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Environmental Performance Index",
+    "question": "Arrange the following countries in ascending order (lowest to highest) of their overall rank in the Environmental Performance Index (EPI) 2026:\n\n1. India\n2. Laos\n3. The Netherlands\n4. Finland\n5. United Kingdom (UK)\n\nSelect the correct sequence:",
+    "options": {
+      "A": "3 -> 4 -> 5 -> 1 -> 2",
+      "B": "5 -> 4 -> 3 -> 1 -> 2",
+      "C": "2 -> 1 -> 3 -> 4 -> 5",
+      "D": "1 -> 2 -> 3 -> 4 -> 5",
+      "E": "5 -> 4 -> 3 -> 2 -> 1"
+    },
+    "answer": "C",
+    "rationale": "Ranks from the index (1st is best, 177th is worst): UK (3rd), Finland (4th), Netherlands (5th), India (176th), Laos (177th). Ascending order of *ranks* (lowest number to highest number, meaning best to worst): UK(3) -> Finland(4) -> Netherlands(5) -> India(176) -> Laos(177). Wait, the options provided are: 5(UK) -> 4(Finland) -> 3(Netherlands) -> 1(India) -> 2(Laos). So, 5 -> 4 -> 3 -> 1 -> 2. Let's re-read the options. Option B matches 5 -> 4 -> 3 -> 1 -> 2. (Page 25, 63)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Retail Banking Products",
+    "question": "HDFC Bank recently launched two specific savings accounts: 'Max for Seniors' and 'Max for Her'. Which of the following statements correctly differentiates the features of these two accounts?",
+    "options": {
+      "A": "'Max for Seniors' provides Rs 10 lakh cyber insurance, while 'Max for Her' provides Rs 25,000 accident cover.",
+      "B": "'Max for Seniors' offers an Auto Sweep facility with 0.5% extra interest on FDs, whereas 'Max for Her' offers standard Auto Sweep for FD-like returns.",
+      "C": "'Max for Her' provides a Rs 3.19 crore accidental death cover, but this is unavailable in 'Max for Seniors'.",
+      "D": "Only 'Max for Seniors' provides a debit card-linked accidental death cover, while 'Max for Her' provides no death cover.",
+      "E": "'Max for Seniors' offers Rs 25,000 accident cover, while 'Max for Her' offers up to Rs 25,000 cyber insurance."
+    },
+    "answer": "B",
+    "rationale": "Option B is correct. 'Max for Seniors' offers Auto Sweep with 0.5% extra interest on FDs. 'Max for Her' offers Auto Sweep for FD-like returns. Option A/E is wrong because Seniors get Rs 25,000 cyber insurance and Her gets Rs 10 lakh accident cover. Option C/D are wrong because both offer up to Rs 3.19 crore accidental death cover. (Page 29, 64)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "Wildlife Conservation Action Plans",
+    "question": "Consider the following statements regarding the Clouded Leopard Conservation Action Plan (CAP):\n\n1. It was launched during the 91st SCNBWL meeting chaired by Bhupender Yadav, MoEFCC.\n2. The framework identifies exactly 10 priority conservation landscapes across North-East India.\n3. It was prepared under the GoI–GEF–UNDP initiative.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "Only 1",
+      "B": "Only 2",
+      "C": "Only 3",
+      "D": "Only 1 and 2",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "B",
+    "rationale": "Statement 2 is incorrect because the CAP framework identifies 14 priority conservation landscapes across North-East India, not 10. Statements 1 and 3 are correct. (Page 50, 88)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Books & Authors",
+    "sub_category": "Recent Publications",
+    "question": "Match the following books/literary works with their respective authors/editors as mentioned in the recent current affairs:\n\nColumn I:\n1. Bringing the Cheetah Back to India\n2. Shiksha Pradeep (Journal)\n3. Beyond Possible\n\nColumn II:\nA. Kailash Chandra Pant\nB. Nirmal Purja\nC. Prashant Agrawal\n\nSelect the correct matching code:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-B, 2-C, 3-A",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Prashant Agrawal wrote \"Bringing the Cheetah Back to India\" (1-C). Kailash Chandra Pant edited the journal \"Shiksha Pradeep\" (2-A). Nirmal Purja authored the book \"Beyond Possible\" (3-B). (Pages 43, 44, 70, 71)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Nuclear Training",
+    "question": "IIT Hyderabad in collaboration with Crimson Energy Experts launched 'ANUGYAN'. Which of the following is NOT an objective or feature of this programme?",
+    "options": {
+      "A": "It is India's first industry–academia programme in nuclear technology.",
+      "B": "It is a three-month residential programme.",
+      "C": "It aims to support India’s goal of expanding nuclear power capacity to 100 GW by 2047.",
+      "D": "It provides hands-on operational control of the Kudankulam Nuclear Power Plant to students.",
+      "E": "It targets bridging the talent gap by developing skilled nuclear professionals."
+    },
+    "answer": "D",
+    "rationale": "Option D is not a feature. 'ANUGYAN' (Nuclear Technology Orientation Programme) is a training programme focusing on nuclear technology, reactor systems, safety, regulations, and project management to bridge the talent gap for the 100 GW by 2047 target. Hands-on operational control of an active nuclear plant is not mentioned and is practically impossible for a 3-month course. (Page 19, 60)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Forex and Multilateral Loans",
+    "question": "Assertion (A): GlobalPay, holding a perpetual AD II licence, is permitted to conduct trade remittances up to Rs 25 lakh.\n\nReason (R): The Asian Development Bank (ADB) approved a USD 1 Billion loan specifically to subsidize forex remittance fees for such AD II license holders in India.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true but (R) is not the correct explanation of (A).",
+      "C": " (A) is true but (R) is false.",
+      "D": " (A) is false but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true; GlobalPay (WSFx Global Pay Limited) under its expanded AD II licence can undertake trade remittances up to Rs 25 lakh. Reason (R) is false because the ADB's USD 1 Billion loan is to support India's urban transformation agenda (Urban Challenge Fund), not to subsidize forex remittance fees. (Pages 27, 29, 64)",
+    "tag": "Hybrid",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "National Organizations",
+    "question": "Consider the following statements regarding newly appointed officials:\n\n1. Varsha Ashok Aglawe became the first woman DG of the Geological Survey of India (GSI), succeeding Asit Saha.\n2. A S Rajeev assumed charge as the Acting Central Vigilance Commissioner after serving as a Vigilance Commissioner since February 2024.\n3. Both officials were appointed directly by the Appointments Committee of the Cabinet (ACC) for a fixed 5-year tenure.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the document does not state they were appointed for a fixed 5-year tenure by the ACC; in fact, A S Rajeev was authorized by the President of India under Section 10(1) of the CVC Act, 2003 via a DoPT notification. (Pages 33, 35, 66, 67)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "August Observances",
+    "question": "Arrange the following Important Days observed in August 2026 in chronological order (earliest to latest in the month):\n\n1. National Javelin Day\n2. Hiroshima Day\n3. World Wide Web Day\n4. National Bone and Joint Day\n5. Indian Organ Donation Day\n\nSelect the correct sequence:",
+    "options": {
+      "A": "3 -> 5 -> 4 -> 2 -> 1",
+      "B": "3 -> 4 -> 5 -> 2 -> 1",
+      "C": "5 -> 3 -> 4 -> 2 -> 1",
+      "D": "3 -> 5 -> 2 -> 4 -> 1",
+      "E": "4 -> 3 -> 5 -> 1 -> 2"
+    },
+    "answer": "A",
+    "rationale": "The dates are: World Wide Web Day (Aug 1), Indian Organ Donation Day (Aug 3), National Bone and Joint Day (Aug 4), Hiroshima Day (Aug 6), and National Javelin Day (Aug 7). Chronological sequence: 3 -> 5 -> 4 -> 2 -> 1. (Pages 46-50, 72)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Squash Championships",
+    "question": "Fill in the blanks regarding Anahat Singh's historic victory:\n\n18-year-old Anahat Singh became the first Indian to win the World Junior Squash Championships 2026 women’s singles title by defeating ________ of ________, effectively ending the country's 15-year dominance in the tournament since 2011.",
+    "options": {
+      "A": "Joshna Chinappa; India",
+      "B": "Nour El Sherbini; Egypt",
+      "C": "Ruqayya Salem; Egypt",
+      "D": "Amanda Sobhy; USA",
+      "E": "Ruqayya Salem; Pakistan"
+    },
+    "answer": "C",
+    "rationale": "Anahat Singh defeated Egypt’s Ruqayya Salem 3-0 in the final, ending Egypt’s 15-year dominance since 2011. (Page 41, 70)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Technology MoUs",
+    "question": "Assertion (A): C-DAC and GSI signed an Umbrella MoU to leverage advanced technologies like AI, HPC, LLM, and SAR for mineral exploration and disaster management.\n\nReason (R): Synthetic Aperture Radar (SAR) is specifically utilized in this collaboration to support landslide monitoring, early warning systems, and Glacier Lake Outburst Floods (GLOF) studies.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true but (R) is not the correct explanation of (A).",
+      "C": " (A) is true but (R) is false.",
+      "D": " (A) is false but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "A",
+    "rationale": "Both A and R are true. R correctly explains A by detailing exactly how one of the advanced technologies (SAR) mentioned in A is specifically applied (landslide monitoring, GLOF studies) under the MoU. (Page 18, 60)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "Naval and SEBI Roles",
+    "question": "Match the following individuals with their respective former or current positions as updated in August 2026:\n\nColumn I:\n1. Vice Admiral AN Pramod\n2. Vice Admiral Tarun Sobti\n3. Prasanta Mahapatra\n\nColumn II:\nA. Superannuated as Deputy Chief of Naval Staff on 31 July 2026\nB. Previously served as Chief General Manager (CGM) in SEBI\nC. Assumed charge as the Deputy Chief of Naval Staff\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Vice Admiral AN Pramod assumed charge as DCNS (1-C). Vice Admiral Tarun Sobti superannuated as DCNS (2-A). Prasanta Mahapatra (new SEBI ED) previously served as CGM in SEBI (3-B). (Pages 34, 35, 67)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Cricket Career Stats",
+    "question": "Consider the following statements regarding the career statistics of former Indian Test vice-captain Ajinkya Rahane:\n\n1. He led India in 6 Test matches, securing 4 wins and 2 draws.\n2. Under his captaincy, India won the Border-Gavaskar Trophy in Australia (2020–21).\n3. He scored a total of 15 centuries and 51 half-centuries in his international career.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 2"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. He captained 6 Tests (4 wins, 2 draws), won the 2020-21 Border-Gavaskar Trophy, and scored 15 centuries and 51 half-centuries over 195 matches. (Page 39, 69, 85)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "World Heritage Inscriptions",
+    "question": "Which of the following newly inscribed UNESCO World Heritage Sites is INCORRECTLY matched with its country?",
+    "options": {
+      "A": "Gdynia Modernist City Centre - Poland",
+      "B": "Aalto Works - Finland",
+      "C": "The Medinas of the Historic Sultanates - Comoros",
+      "D": "Boma-Badingilo Migratory Landscape - South Sudan",
+      "E": "Ancient Buddhist site of Sarnath - Nepal"
+    },
+    "answer": "E",
+    "rationale": "The Ancient Buddhist site of Sarnath is located in Varanasi, Uttar Pradesh, India, not Nepal. The other options are correctly matched based on the 48th UNESCO WHC session. (Page 24, 63)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Scheme Beneficiaries",
+    "question": "Consider the following statistical data related to government schemes:\n\nI. Under PM-KISAN, the total budget outlay for the 5-year extension is Rs 3.15 lakh crore.\nII. NITI Aayog found that exactly 85% of PM-KISAN beneficiaries invested the amount in agriculture.\nIII. Under the PM-VBRY scheme, over 72 lakh first-time employees joined the formal workforce in its first year.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only I and II",
+      "B": "Only I and III",
+      "C": "Only II and III",
+      "D": "All I, II, and III",
+      "E": "Only I"
+    },
+    "answer": "B",
+    "rationale": "Statements I and III are correct. Statement II is incorrect because NITI Aayog's DMEO found that *92%* (not 85%) of beneficiaries invested in agriculture, while 85% reported higher farm income. (Pages 9, 14, 57, 58)",
+    "tag": "Hybrid",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Wetlands",
+    "question": "Arrange the following geographical/administrative descriptors from the broadest to the most specific regarding the location of India's 101st Ramsar Site, Glaw Lake:\n\n1. Arunachal Pradesh\n2. Kamlang Tiger Reserve and Wildlife Sanctuary\n3. Eastern Himalayas\n4. Tawang district\n\nSelect the correct sequence:",
+    "options": {
+      "A": "3 -> 1 -> 4 -> 2",
+      "B": "1 -> 3 -> 4 -> 2",
+      "C": "3 -> 1 -> 2 -> 4",
+      "D": "1 -> 4 -> 2 -> 3",
+      "E": "4 -> 2 -> 1 -> 3"
+    },
+    "answer": "A",
+    "rationale": "Broadest to most specific: Eastern Himalayas (broadest ecological region) -> Arunachal Pradesh (State) -> Tawang district (District) -> Kamlang Tiger Reserve and Wildlife Sanctuary (specific location inside the district). Sequence: 3 -> 1 -> 4 -> 2. (Page 15, 59)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "Cultural Heritage",
+    "question": "Fill in the blanks regarding the Pithora Painting which recently received a GI Tag:\n\nPithora Painting is a centuries-old tribal wall art traditionally painted by ________ on inner walls and verandahs, and is primarily associated with the Rathwa, Bhil, Bhilala, and ________ communities in Chhota Udepur, Gujarat.",
+    "options": {
+      "A": "Lakharas; Nayaka",
+      "B": "Warlis; Gond",
+      "C": "Chitrakars; Santhal",
+      "D": "Lakharas; Siddi",
+      "E": "Bhopas; Nayaka"
+    },
+    "answer": "A",
+    "rationale": "The text states that Pithora Painting is traditionally painted by 'Lakharas' on inner walls and is associated with the Rathwa, Bhil, Bhilala, and 'Nayaka' communities. (Page 32)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "International Law",
+    "question": "Assertion (A): Venezuela's formal notification of withdrawal from the Rome Statute will not halt the ICC's ongoing investigation into alleged crimes against humanity linked to the 2017 anti-government protest crackdown.\n\nReason (R): Under Article 127 of the Rome Statute, a withdrawal does not affect any investigations or proceedings initiated before the withdrawal takes effect, which occurs one year after notification.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true but (R) is not the correct explanation of (A).",
+      "C": " (A) is true but (R) is false.",
+      "D": " (A) is false but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "A",
+    "rationale": "Both A and R are true, and R provides the legal explanation (Article 127) for why the ongoing ICC investigation (A) remains unaffected despite the withdrawal notification. (Page 23, 62)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Urban Development",
+    "question": "Match the following specific focus areas of the Memorandum of Cooperation (MoC) signed between Visakhapatnam (GVMC) and Moscow:\n\nColumn I:\n1. ITS\n2. AI\n3. Digital\n\nColumn II:\nA. Enabled transport management\nB. Ticketing\nC. Intelligent Transport Systems\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-B, 3-A",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "The MoC focuses on Intelligent Transport Systems (1-C), AI-enabled transport management (2-A), and digital ticketing (3-B). (Page 53, 73)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "Marine Biology",
+    "question": "Consider the following statements regarding the new seahorse species discovered by KUFOS researchers:\n\n1. The new species is named 'Hippocampus amandavincentae' in honor of marine biologist Amanda Vincent.\n2. The discovery resolves a 150-year-old taxonomic confusion surrounding the thorny seahorse (Hippocampus histrix).\n3. The specimens were exclusively collected from the Anchuthengu coast in Kerala.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the specimens were collected from Tuticorin Fisheries Harbour, Tamil Nadu, *and* surveys off Anchuthengu, Kerala, not exclusively from Kerala. (Page 39, 69)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Defence",
+    "sub_category": "Military Exercises",
+    "question": "Which of the following combinations regarding Exercise ROTOR CLAP-III is INCORRECT?",
+    "options": {
+      "A": "Edition: 3rd edition",
+      "B": "Focus: Counter-Unmanned Aerial Systems (Counter-UAS) operations",
+      "C": "Location: Pokhran Field Firing Range, Jaisalmer, Rajasthan",
+      "D": "Dates: 1-2 August 2026",
+      "E": "Organiser: Indian Army Aviation Corps"
+    },
+    "answer": "E",
+    "rationale": "Option E is incorrect. The exercise was organised by the Indian Air Force (IAF), not the Indian Army Aviation Corps. All other details (3rd edition, Counter-UAS, Pokhran, 1-2 Aug) are correct. (Page 17, 59)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Macroeconomic Data",
+    "question": "Arrange the projected Debt-to-GSDP ratio of Tamil Nadu for the upcoming financial years as presented in the FY26-27 budget in chronological order (FY26, FY28, FY29):",
+    "options": {
+      "A": "28%, 26.57%, 26.10%",
+      "B": "26.10%, 26.57%, 28%",
+      "C": "28%, 27.01%, 26.10%",
+      "D": "26.57%, 28%, 26.10%",
+      "E": "27.01%, 26.57%, 26.10%"
+    },
+    "answer": "A",
+    "rationale": "The Debt-to-GSDP ratios are: 28% (in FY26); 26.57% in (FY28); and 26.10% (in FY29). So in chronological order, it is 28%, 26.57%, 26.10%. (27.01% is the Overall Liability-to-GSDP Ratio). (Page 53, 89)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Women Leadership",
+    "question": "According to the 'Candere Hurun India Women Leaders List 2026', what percentage of the total 117 women featured are self-made, and what is the age of the oldest honouree?",
+    "options": {
+      "A": "84%; 86 years",
+      "B": "19%; 86 years",
+      "C": "84%; 51 years",
+      "D": "51%; 86 years",
+      "E": "84%; 48 years"
+    },
+    "answer": "A",
+    "rationale": "98 women out of 117 are self-made, accounting for 84% of the list. The oldest honouree is Rajni Bector at 86 years old. (Page 22, 62)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Corporate Mergers & Partnerships",
+    "question": "Consider the following statements regarding the railwheel manufacturing platform established by Jupiter Wagons:\n\n1. The platform is a joint venture involving Jupiter Wagons Limited (JWL), Lucchini RS Holding S.p.A., and SIMEST.\n2. SIMEST holds a 15% stake, while Lucchini RS holds a 10% stake in the venture.\n3. The total foreign investment in this project is EUR 28 million.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "C",
+    "rationale": "Statements 1 and 3 are correct. Statement 2 is incorrect because the stakes are reversed: Lucchini RS holds 15%, while SIMEST holds 10%, combining for a 25% stake worth EUR 28 million. (Page 20, 61)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "Bureaucratic Tenures",
+    "question": "Match the following senior bureaucrats with their original appointment/assumption dates or expected end of extended tenures:\n\nColumn I:\n1. T.V. Somanathan\n2. K. Rajaraman\n3. Govind Mohan\n\nColumn II:\nA. Expected end of extended tenure: October 24, 2028\nB. Assumed charge as 33rd Cabinet Secretary: August 30, 2024\nC. Expected end of extended tenure: August 22, 2027\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-A, 3-C",
+      "B": "1-A, 2-C, 3-B",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-A, 2-B, 3-C"
+    },
+    "answer": "A",
+    "rationale": "T.V. Somanathan assumed charge as Cabinet Secretary on 30 August 2024 (1-B). K. Rajaraman's extended tenure ends on 24 October 2028 (2-A). Govind Mohan's extended tenure ends on 22 August 2027 (3-C). (Pages 34, 37, 67, 68)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Agriculture Genetics",
+    "question": "Fill in the blanks regarding the genome development by ICAR:\n\nICAR developed India's first fully annotated ________ reference genome of the pigeonpea variety 'Asha', which has been designated as ________ and deposited in the ________ database.",
+    "options": {
+      "A": "CRISPR-Cas9; Asha-T2T_1; NCBI",
+      "B": "Telomere-to-Telomere (T2T); NIPB_CcT2T_4; NCBI",
+      "C": "Next-Gen Sequencing (NGS); Pusa_Cc_4; ENA",
+      "D": "Telomere-to-Telomere (T2T); CcT2T_Asha; DDBJ",
+      "E": "Whole Genome Sequencing (WGS); NIPB_CcT2T_4; ICAR-Data"
+    },
+    "answer": "B",
+    "rationale": "The genome is a Telomere-to-Telomere (T2T) reference genome, designated as NIPB_CcT2T_4, and deposited in the NCBI database. (Page 19, 78)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Digital Cross-Border Payments",
+    "question": "Assertion (A): The integration of the Maldives’ 'Favara' system with India’s UPI enables real-time cross-border transfers and allows customers to conduct MVR-to-INR remittances.\n\nReason (R): This integration makes Maldives the 11th country globally to accept UPI, joining nations like Cambodia, Singapore, and France.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true but (R) is not the correct explanation of (A).",
+      "C": " (A) is true but (R) is false.",
+      "D": " (A) is false but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true; Favara-UPI enables real-time MVR-to-INR remittances. Reason (R) is false because the text explicitly states UPI is accepted in 10 countries (including Sri Lanka, France, UAE, etc.), implying Maldives is part of those or expanding, but it does not specify it as the \"11th country\". The list provided has exactly 10 countries. (Page 27, 64)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Competitiveness Reports",
+    "question": "Consider the following statistical claims from the Competere Foundation's report on India:\n\n1. India's global competitiveness ranking jumped 25 places, from 82nd to 57th.\n2. The remaining market distortions impose an economic cost of USD 127.2 billion over five years.\n3. The estimated economic cost is equivalent to 4.2% of GDP.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "C",
+    "rationale": "Statements 1 and 3 are correct. Statement 2 is incorrect because the total remaining market distortions are estimated to cost USD 173.6 billion over five years (Foreign investment restrictions account for USD 127.2 billion of that total). (Page 4, 55)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Aviation Partnerships",
+    "question": "Match the airlines involved in the recent codeshare agreement with their designated representatives who signed the pact:\n\nColumn I:\n1. Air India\n2. Azerbaijan Airlines\n\nColumn II:\nA. Jamil Manizade\nB. Nipun Aggarwal\nC. Tewolde Gebremariam\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-A",
+      "B": "1-C, 2-A",
+      "C": "1-A, 2-B",
+      "D": "1-B, 2-C",
+      "E": "1-C, 2-B"
+    },
+    "answer": "A",
+    "rationale": "The codeshare partnership was represented by Nipun Aggarwal (CCO, Air India) and Jamil Manizade (CCO, Azerbaijan Airlines). Tewolde Gebremariam is the newly appointed CEO & MD of Air India. (Page 32, 66)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "SEBI Governance",
+    "question": "Prasanta Mahapatra assumed charge as an Executive Director (ED) of SEBI. Which of the following departments was he NOT assigned to oversee?",
+    "options": {
+      "A": "Corporation Finance Investigation Department (CFID)",
+      "B": "Recovery and Refund Department (RRD)",
+      "C": "Market Regulation Department (MRD)",
+      "D": "Both A and B",
+      "E": "None of the above"
+    },
+    "answer": "C",
+    "rationale": "Prasanta Mahapatra was assigned to oversee the CFID and RRD. He was not assigned the Market Regulation Department (MRD). (Page 35, 67)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Defence",
+    "sub_category": "Strategic MoUs",
+    "question": "Consider the following statements regarding the MoU between BEL and Esri India:\n\n1. It aims to develop advanced GIS, Location Intelligence, and GeoAI solutions for India’s defence sector.\n2. The collaboration focuses heavily on deploying the 'Indo ArcGIS' platform.\n3. The MoU was signed by Rajnish Sharma of BEL and Agendra Kumar of Esri India.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. The MoU aims to develop GIS/GeoAI solutions using the Indo ArcGIS platform, and it was signed by Rajnish Sharma and Agendra Kumar. (Page 17, 60, 77)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Multi-Sport Events",
+    "question": "Arrange the following countries in descending order of the number of Gold Medals they won at the 2026 Commonwealth Games:\n\n1. Canada\n2. Australia\n3. India\n4. England\n\nSelect the correct sequence:",
+    "options": {
+      "A": "2 -> 4 -> 1 -> 3",
+      "B": "2 -> 1 -> 4 -> 3",
+      "C": "2 -> 4 -> 3 -> 1",
+      "D": "4 -> 2 -> 1 -> 3",
+      "E": "2 -> 3 -> 1 -> 4"
+    },
+    "answer": "A",
+    "rationale": "Gold Medals won: Australia (70), England (29), Canada (19), India (13). Descending order: 2 (Australia) -> 4 (England) -> 1 (Canada) -> 3 (India). (Page 40, 69)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Health Statistics",
+    "question": "According to data presented during World Breastfeeding Week 2026, which of the following statements correctly compares the exclusive breastfeeding rates in India based on National Family Health Surveys (NFHS)?",
+    "options": {
+      "A": "It increased from 41.8% in NFHS-5 to 50.1% in NFHS-6.",
+      "B": "It declined from 63.7% in NFHS-5 to 55.8% in NFHS-6.",
+      "C": "It increased from 55.8% in NFHS-5 to 63.7% in NFHS-6.",
+      "D": "It remained stagnant at 63.7% across both surveys.",
+      "E": "It declined from 50.1% in NFHS-5 to 41.8% in NFHS-6."
+    },
+    "answer": "B",
+    "rationale": "According to the PDF, exclusive breastfeeding in India declined from 63.7% (NFHS-5) to 55.8% (NFHS-6), while early initiation improved from 41.8% to 50.1%. (Page 48)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Philately",
+    "question": "Consider the following statements regarding the commemorative postage stamp released for Satish Gujral:\n\n1. It marks his 100th birth centenary.\n2. The stamp features his 2010 acrylic self-portrait.\n3. It was designed by Raseel Gujral Ansal.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the stamp was designed by Anuj Kumar (though it was based on a proposal by Raseel Gujral Ansal). (Page 16, 59)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Resource Allocation",
+    "question": "Match the following specific financial allocations under the 'Samudra Manthan' Scheme with their designated purpose:\n\nColumn I:\n1. Deepwater drilling\n2. Offshore data acquisition\n3. Infrastructure\n4. Manufacturing and service hubs\n\nColumn II:\nA. Rs 2,000 crore\nB. Rs 10,000 crore\nC. Rs 28,534 crore\nD. Rs 43,200 crore\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-D, 2-C, 3-B, 4-A",
+      "B": "1-C, 2-D, 3-A, 4-B",
+      "C": "1-D, 2-B, 3-C, 4-A",
+      "D": "1-B, 2-A, 3-D, 4-C",
+      "E": "1-D, 2-A, 3-B, 4-C"
+    },
+    "answer": "A",
+    "rationale": "Deepwater drilling: Rs 43,200 cr (1-D). Offshore data acquisition: Rs 28,534 cr (2-C). Infrastructure: Rs 10,000 cr (3-B). Manufacturing hubs: Rs 2,000 cr (4-A). (Page 7)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Naval Vessels",
+    "question": "Which of the following is NOT a feature or fact associated with the Indigenous Diving Support Vessel 'Nipun'?",
+    "options": {
+      "A": "It was built by Hindustan Shipyard Limited (HSL).",
+      "B": "It is equipped for deep-sea saturation diving and maritime rescue missions.",
+      "C": "The name 'Nipun' means \"adept, capable and well-versed\".",
+      "D": "It features a twin-hull (catamaran) design with a 300-400 tonne displacement.",
+      "E": "It will serve as the Mother Ship for the Deep Submergence Rescue Vessel (DSRV)."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect. The twin-hull (catamaran) design with a 300-400 tonne displacement describes 'DSC A24' (Diving Support Craft), not 'Nipun'. (Pages 37, 38)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Aviation Technology MoUs",
+    "question": "Assertion (A): Pawan Hans Limited signed a non-binding MoU with Norway’s Noemi Aerospace to manufacture Electric Vertical Takeoff and Landing (eVTOL) air taxis in India.\n\nReason (R): This collaboration aligns with the Ministry of Civil Aviation's newly introduced Seaplane Guidelines and proposed Viability Gap Funding (VGF) Scheme (Budget 2026).\n\nChoose the correct option:",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true but (R) is not the correct explanation of (A).",
+      "C": " (A) is true but (R) is false.",
+      "D": " (A) is false but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "D",
+    "rationale": "Assertion (A) is false because the MoU with Noemi Aerospace is specifically to explore 'electric seaplane technology', not eVTOL air taxis, and it is non-binding with no manufacturing/financial commitments. Reason (R) is true; MoCA did introduce Seaplane Guidelines and a VGF scheme. (Page 21, 61)",
+    "tag": "Hybrid",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Historical Observances",
+    "question": "Arrange the following Important Days in ascending order based on the year they were FIRST observed (earliest to most recent):\n\n1. World Ranger Day\n2. Indian Organ Donation Day\n3. International Clouded Leopard Day\n4. National Javelin Day\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1 -> 2 -> 3 -> 4",
+      "B": "2 -> 1 -> 3 -> 4",
+      "C": "1 -> 3 -> 2 -> 4",
+      "D": "3 -> 1 -> 2 -> 4",
+      "E": "1 -> 2 -> 4 -> 3"
+    },
+    "answer": "A",
+    "rationale": "First observances: World Ranger Day (2007), Indian Organ Donation Day (2010), International Clouded Leopard Day (2018), National Javelin Day (2022). Thus, the order is 1 -> 2 -> 3 -> 4. (Pages 45, 47, 50, 72)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "UNESCO WHC",
+    "question": "Fill in the blanks regarding the 48th session of the UNESCO World Heritage Committee (WHC):\n\nThe session was held in ________ under the chairmanship of ________, and inscribed ________ new sites, including India's Ancient Buddhist site of Sarnath.",
+    "options": {
+      "A": "Istanbul, Türkiye; Mustafa Yurdakul; 25",
+      "B": "Busan, South Korea; Lee Byong Hyun; 25",
+      "C": "New Delhi, India; Vishal V. Sharma; 19",
+      "D": "Busan, South Korea; Mustafa Yurdakul; 25",
+      "E": "Istanbul, Türkiye; Lee Byong Hyun; 19"
+    },
+    "answer": "B",
+    "rationale": "The 48th session was held in Busan, South Korea, chaired by Lee Byong Hyun, and inscribed 25 new sites. (Istanbul, Türkiye and Mustafa Yurdakul refer to the upcoming 49th session). (Page 24, 63)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "Species Taxonomy",
+    "question": "Assertion (A): The new freshwater catfish species discovered in Odisha was named 'Pseudolaguvia khairii'.\n\nReason (R): It was named in honour of Khairi, the iconic Royal Bengal tigress of the Similipal Tiger Reserve, located near the Budhabalanga River.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true but (R) is not the correct explanation of (A).",
+      "C": " (A) is true but (R) is false.",
+      "D": " (A) is false but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "A",
+    "rationale": "Both A and R are true, and R correctly explains A. The species 'khairii' derives its name directly from Khairi, the tigress of Similipal Tiger Reserve in Odisha. (Page 38, 69)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "Broadband Schemes",
+    "question": "Match the entities involved in the tripartite agreement signed for the amended BharatNet Programme in Odisha with their roles/descriptions:\n\nColumn I:\n1. IT department of Odisha Government\n2. Digital Bharat Nidhi (DBN)\n3. Bharat Sanchar Nigam Limited (BSNL)\n\nColumn II:\nA. Implementing Agency under MoC\nB. Fund working under the Department of Telecommunications (DoT)\nC. State executing partner\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Odisha Govt's IT department is the state partner (1-C). DBN works under DoT (2-B). BSNL is the central implementing body under MoC for the Rs 3,384.82 crore project (3-A). (Page 51, 73)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - August 2026 - 1st Week"
+  }
+]

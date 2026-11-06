@@ -1,0 +1,802 @@
+[
+  {
+    "category": "National",
+    "sub_category": "Ayurveda Sector",
+    "question": "Consider the following statements regarding the 'Strategic Roadmap for Making Ayurveda Global' released by NITI Aayog:\n\n1. The roadmap outlines a phased plan with the first phase targeting WHO-GMP compliance by 2029.\n2. The second phase targets Global Expansion by 2035.\n3. The final phase aims to integrate Ayurveda into 20 Global Health Systems by 2047.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "3 only",
+      "E": "1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All statements are correct. The NITI Aayog roadmap, prepared with PwC, outlines three phases: 2029 for WHO-GMP, 2035 for Global Expansion, and 2047 to integrate into 20 Health Systems globally. (Refer Page 19)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Bilateral Relations",
+    "question": "During PM Narendra Modi's visit to Seychelles in June 2026, India handed over various assets and materials to bolster bilateral ties. Which of the following was NOT among the items or assets provided to Seychelles?",
+    "options": {
+      "A": "A Make-in-India Fast Patrol Vessel named PS LESPWAR.",
+      "B": "500 MT of rice and 8,500 MT of cement.",
+      "C": "6 ambulances, 10 utility vehicles, and 5 Laser Radical Boats.",
+      "D": "An upgraded Dornier aircraft with a glass cockpit.",
+      "E": "A USD 100 million Line of Credit for a solar power facility in Victoria."
+    },
+    "answer": "E",
+    "rationale": "While India provided a Line of Credit (LoC), it was a Rs 1,250 crore LoC signed by EXIM Bank, not a USD 100 million LoC for a solar facility. All other options (PS LESPWAR, Rice/Cement, Ambulances/Boats, and the Dornier aircraft) were explicitly mentioned as being handed over or gifted during the visit. (Refer Page 27)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "MoSPI SDG Progress Report 2026",
+    "question": "Match the following Environmental/Biodiversity parameters with their progress tracking from the MoSPI SDG NIF Progress Report 2026:\n\nColumn I:\n1. Animal genetics\n2. Fish genetics\n3. Renewable Energy capacity\n4. Recycling plants\n\nColumn II:\nA. Increased from 829 to 3,236\nB. Increased from 64.04 to 193.36 watts per capita\nC. Increased from 1.40 Lakh to 3.62 Lakh\nD. Increased from 47 to 105\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-D, 3-B, 4-A",
+      "B": "1-D, 2-C, 3-B, 4-A",
+      "C": "1-C, 2-D, 3-A, 4-B",
+      "D": "1-B, 2-A, 3-C, 4-D",
+      "E": "1-A, 2-B, 3-D, 4-C"
+    },
+    "answer": "A",
+    "rationale": "Based on the NIF Progress Report 2026: Animal genetics (1.40L to 3.62L); Fish genetics (47 to 105); RE capacity (64.04 to 193.36 watts/capita); Recycling plants (829 to 3236). (Refer Page 5)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Cooperative Sector",
+    "question": "Union Minister Amit Shah recently launched several initiatives at the 5th Foundation Day Ceremony of the Ministry of Cooperation. Which of the following portals/databases was launched to facilitate a digital transformation of 50,000 credit societies?",
+    "options": {
+      "A": "National Cooperative Database (NCD 3.0)",
+      "B": "Milk Supply Review Dashboard Portal (MSRDP)",
+      "C": "Electronic Primary Agricultural Credit Societies (e-PACS)",
+      "D": "Sahakar Core Banking Solution (SCBS)",
+      "E": "Sahakar Sahyogi (AI)"
+    },
+    "answer": "C",
+    "rationale": "The e-PACS initiative was launched specifically for the digital transformation of 50,000 Primary Agricultural Credit Societies (PACS). Other portals like NCD 3.0 and Milk Supply Review Dashboard were also launched, but e-PACS maps to the 50,000 societies target. (Refer Page 24)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Digital India Programme",
+    "question": "Regarding the IndiaAI Mission (2024) under the Digital India Programme, which of the following numerical data points is INCORRECT?",
+    "options": {
+      "A": "The IndiaAI Kosh platform includes 12,519 datasets.",
+      "B": "The mission supports 307 AI models and 20 toolkits.",
+      "C": "It aims to establish 27 AI & Data Labs in Tier II & III cities.",
+      "D": "The YUVA AI Course offers 684 fellowships.",
+      "E": "The initiative supports 200 AI startups."
+    },
+    "answer": "E",
+    "rationale": "The initiative supports 20 AI startups (under 18 CoEs), not 200. All other numerical data points (12,519 datasets, 307 models, 27 labs, 684 fellowships) are correct. (Refer Page 13)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "FM",
+    "sub_category": "Small Savings Schemes",
+    "question": "Arrange the following Small Savings Scheme instruments in ASCENDING order of their respective maturity tenures as retained for Q2FY27:\n\n1. Kisan Vikas Patra (KVP)\n2. 5-Year Post Office Time Deposit\n3. 3-Year Post Office Time Deposit\n4. 1-Year Post Office Time Deposit\n\nSelect the correct sequence:",
+    "options": {
+      "A": "4, 3, 2, 1",
+      "B": "1, 4, 3, 2",
+      "C": "4, 3, 1, 2",
+      "D": "4, 1, 3, 2",
+      "E": "3, 4, 2, 1"
+    },
+    "answer": "A",
+    "rationale": "1-Year POTD (12 months), 3-Year POTD (36 months), 5-Year POTD (60 months), and KVP (matures in 115 months). Ascending order is 4, 3, 2, 1. (Refer Page 10 & 76)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Science & Tech",
+    "sub_category": "Bilateral Collaborations",
+    "question": "Match the following Sectoral MoUs signed between India and Japan during PM Sanae Takaichi’s visit in July 2026 with their respective partner organizations:\n\nColumn I:\n1. Life Sciences\n2. Neuroscience\n3. Large Language Models (LLMs)\n4. Foundation Models\n\nColumn II:\nA. NCBS-TIFR & RIKEN\nB. Sarvam AI-Preferred Networks Inc.\nC. IIT Bombay, BharatGen, Japan’s NII\nD. C-CAMP & RIKEN\n\nSelect the correct code:",
+    "options": {
+      "A": "1-D, 2-A, 3-C, 4-B",
+      "B": "1-A, 2-D, 3-B, 4-C",
+      "C": "1-C, 2-B, 3-A, 4-D",
+      "D": "1-D, 2-C, 3-A, 4-B",
+      "E": "1-B, 2-A, 3-D, 4-C"
+    },
+    "answer": "A",
+    "rationale": "Life Sciences (C-CAMP & RIKEN); Neuroscience (NCBS-TIFR & RIKEN); LLMs (IIT Bombay, BharatGen, Japan's NII); Foundation Models (Sarvam AI & Preferred Networks). (Refer Page 28)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Official Visits",
+    "question": "Assertion (A): During her visit to France, Union Finance Minister Nirmala Sitharaman co-chaired the France Economic and Financial Dialogue (EFD) and visited the ITER project.\nReason (R): The ITER project in Cadarache focuses on reinforcing scientific and technological cooperation in the field of nuclear fission between India and France.\n\nSelect the most appropriate option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true as she co-chaired the EFD and visited ITER. Reason (R) is false because ITER (International Thermonuclear Experimental Reactor) focuses on 'nuclear fusion', not nuclear fission. (Refer Page 31 & 83)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Bilateral Trade",
+    "question": "Which of the following statements correctly describes the Duty-Free Tariff Preference (DFTP) Scheme mentioned in the context of the inaugural India-Mali export forum?",
+    "options": {
+      "A": "It is a scheme launched by Mali to allow duty-free import of Indian pharmaceuticals.",
+      "B": "It is an Indian scheme that provides duty-free market access to Least Developed Countries (LDCs) like Mali.",
+      "C": "It is a joint WTO initiative to remove all tariffs on agricultural trade between India and African nations.",
+      "D": "It is a World Bank-funded mechanism to subsidize the export of critical minerals from Mali to India.",
+      "E": "It is a bilateral agreement replacing the Double Contribution Convention (DCC)."
+    },
+    "answer": "B",
+    "rationale": "The DFTP Scheme is an initiative by the Government of India that grants duty-free market access on the vast majority of tariff lines to exports from Least Developed Countries (LDCs), highlighting a USD 3.96 billion untapped export potential for Mali. (Refer Page 30 & 83)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Geographical Indications",
+    "question": "Arrange the following Indian states in ASCENDING order based on their total number of registered Geographical Indication (GI) tags as of July 2026:\n\n1. West Bengal\n2. Tamil Nadu\n3. Himachal Pradesh\n4. Uttar Pradesh\n\nSelect the correct sequence:",
+    "options": {
+      "A": "3 < 1 < 2 < 4",
+      "B": "1 < 3 < 2 < 4",
+      "C": "3 < 1 < 4 < 2",
+      "D": "4 < 2 < 1 < 3",
+      "E": "3 < 2 < 1 < 4"
+    },
+    "answer": "A",
+    "rationale": "GI registrations: Himachal Pradesh (17), West Bengal (59, ranked 3rd), Tamil Nadu (76, ranked 2nd), Uttar Pradesh (83, ranked 1st). Ascending order is HP < WB < TN < UP (3 < 1 < 2 < 4). (Refer Pages 40, 42 & 87)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Defence",
+    "sub_category": "R&D Operations",
+    "question": "Match the following Defence Research acronyms with their correct full forms as featured in the DFP-2026 released by the Ministry of Defence:\n\nColumn I:\n1. DIA-CoEs\n2. TDF\n3. DFP\n4. DRDO\n\nColumn II:\nA. Technology Development Fund\nB. Delegation of Financial Powers\nC. Defence Innovation Accelerator-Centres of Excellence\nD. Defence Research and Development Organisation\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-A, 3-B, 4-D",
+      "B": "1-A, 2-C, 3-B, 4-D",
+      "C": "1-C, 2-B, 3-A, 4-D",
+      "D": "1-B, 2-A, 3-C, 4-D",
+      "E": "1-D, 2-C, 3-B, 4-A"
+    },
+    "answer": "A",
+    "rationale": "DIA-CoEs = Defence Innovation Accelerator-Centres of Excellence. TDF = Technology Development Fund. DFP = Delegation of Financial Powers. DRDO = Defence Research and Development Organisation. (Refer Page 12 & 77)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Aviation Infrastructure",
+    "question": "Fill in the blanks regarding the MoU signed by Air India for MRO operations:\nAir India signed a Memorandum of Understanding with ________ (i) ________, an engineering company based out of ________ (ii) ________, to develop a Maintenance, Repair, and Overhaul (MRO) ecosystem in India. The MoU was signed by Air India CEO ________ (iii) ________.",
+    "options": {
+      "A": "(i) Boeing Global Services; (ii) Washington, USA; (iii) Ratan Tata",
+      "B": "(i) SIA Engineering Company (SIAEC); (ii) Singapore; (iii) Campbell Wilson",
+      "C": "(i) Airbus Defence and Space; (ii) Toulouse, France; (iii) Ilker Ayci",
+      "D": "(i) Lufthansa Technik; (ii) Frankfurt, Germany; (iii) Campbell Wilson",
+      "E": "(i) Rolls-Royce; (ii) London, UK; (iii) Natarajan Chandrasekaran"
+    },
+    "answer": "B",
+    "rationale": "Air India signed an MoU with SIA Engineering Company (SIAEC). Air India's CEO is Campbell Wilson. (SIAEC is inherently linked to Singapore Airlines, though the MoU was signed in Mumbai). (Refer Page 20 & 80)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Infrastructure Projects",
+    "question": "Consider the following statements regarding PM Narendra Modi's July 2026 visit to Rajasthan and Gujarat:\n\n1. He inaugurated a newly developed Rs 480 crore terminal building at Jodhpur Airport, designed to handle up to 2 million passengers annually.\n2. He launched the Modified Ude Desh ka Aam Nagrik (UDAN) scheme aiming for the development of 100 aerodromes and 200 helipads.\n3. He inaugurated the CG Semi Outsourced Semiconductor Assembly and Test (OSAT) facility, which is expected to produce 15 billion semiconductor chips annually.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "1 only",
+      "B": "2 only",
+      "C": "3 only",
+      "D": "1 and 3 only",
+      "E": "2 and 3 only"
+    },
+    "answer": "C",
+    "rationale": "Statement 3 is incorrect because the CG Semi OSAT facility is expected to produce 5 billion semiconductor chips annually, not 15 billion. Statements 1 and 2 are correct. (Refer Page 21 & 80)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Ayurveda Research",
+    "question": "Consider the following statements about the Central Council for Research in Ayurvedic Sciences (CCRAS):\n\nI. CCRAS secured 21 NABH & NABL accreditations to enhance healthcare and research quality.\nII. CCRAS established the Ayush Diksha platform to facilitate offline Ayurveda manufacturing training.\nIII. Vaidya Rajesh Kotecha, who chaired the 5th EC meeting, serves as the Secretary of the Ministry of AYUSH.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "I and II only",
+      "B": "II and III only",
+      "C": "I and III only",
+      "D": "III only",
+      "E": "All I, II, and III"
+    },
+    "answer": "C",
+    "rationale": "Statement II is incorrect because the Ayush Diksha platform was established for 'online' AYUSH education and training, not offline manufacturing training. Statements I and III are correct. (Refer Page 23 & 80)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "FM",
+    "sub_category": "Regulatory Frameworks",
+    "question": "Assertion (A): SEBI constituted an Expert Working Group (EWG) under Ananta Barua to review the regulatory framework for debenture trustees.\nReason (R): The primary objective of the group is to completely deregulate debenture trustees to promote rapid corporate bond issuances without net-worth compliance.\n\nSelect the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "C",
+    "rationale": "Assertion (A) is true. Reason (R) is false because the objective is to 'simplify, rationalise, and strengthen' the regulatory framework by examining net-worth norms and enhancing investor protection, not to 'completely deregulate' them. (Refer Page 34 & 84)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Partnerships & Collaborations",
+    "question": "Match the following Indian banks/insurance entities with their respective partners and the core objective of their collaboration announced in July 2026:\n\nColumn I:\n1. SBI Life Insurance\n2. Bank of Baroda (BoB)\n3. NPCI\n\nColumn II:\nA. HSBC India & JP Morgan Payments (Cross-border UPI FX settlement)\nB. Mizuho Bank (M&A Financing)\nC. IIT Bombay (AI-Powered Cyber Defence Hub)\n\nSelect the correct match:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-B, 2-A, 3-C"
+    },
+    "answer": "A",
+    "rationale": "SBI Life partnered with IIT Bombay for an AI Cyber Defence Hub (C). BoB partnered with Mizuho Bank for M&A Financing (B). NPCI partnered with HSBC & JP Morgan for cross-border UPI FX settlement (A). (Refer Page 85)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Finance",
+    "sub_category": "Multilateral Loans",
+    "question": "Which of the following statements regarding the recent loans approved by the Asian Development Bank (ADB) for India is INCORRECT?",
+    "options": {
+      "A": "ADB approved a USD 182.89 million loan to establish 500 integrated public school clusters in Karnataka.",
+      "B": "The Karnataka loan includes a USD 25 million guarantee from the International Finance Facility for Education (IFFEd).",
+      "C": "ADB approved a USD 230 million loan for water supply and sanitation modernisation in Chennai.",
+      "D": "The Chennai project aligns with AMRUT 2.0 and the Urban Challenge Fund.",
+      "E": "The Chennai project will establish 170 km of pipelines and solely relies on open-loop water distribution."
+    },
+    "answer": "E",
+    "rationale": "Statement E is incorrect because the Chennai project will introduce a 'closed-loop water distribution' (Ring-Main System) for uniform pressure, not an open-loop system. All other statements are correct. (Refer Page 36, 37 & 85, 86)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Appointments",
+    "question": "Arrange the following leadership appointments/re-appointments in chronologically ascending order based on the date they assume/continue their specific terms (starting from the earliest date):\n\n1. Ravi Shankar assumes charge as Executive Director of RBI.\n2. Ravi Agrawal starts his extended 6-month term as CBDT Chairman.\n3. Keiko Fujimori assumes office as the 10th President of Peru.\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1, 2, 3",
+      "B": "1 and 2 (same date), then 3",
+      "C": "2, 1, 3",
+      "D": "3, 1, 2",
+      "E": "1, 3, 2"
+    },
+    "answer": "B",
+    "rationale": "Ravi Shankar assumes charge as ED of RBI on July 1, 2026. Ravi Agrawal's extended term starts on July 1, 2026. Keiko Fujimori assumes office on July 28, 2026. Thus, 1 and 2 occur on the same date, followed by 3. (Refer Pages 45, 46, 48 & 88-89)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "Acquisitions",
+    "question": "Consider the following statements regarding the acquisition of Aseem Infrastructure Finance Limited (AIFL):\n\n1. Global alternative asset management firm TPG Inc. acquired a 100% stake in AIFL.\n2. The acquisition was made through TPG's 'TPG Rise Climate' platform.\n3. ICICI Bank completely exited AIFL by selling its 5% equity stake during this deal.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "2 only",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "A",
+    "rationale": "Statement 3 is incorrect because ICICI Bank 'will retain up to a 5% equity stake' in AIFL; they did not exit completely. Statements 1 and 2 are correct. (Refer Page 52 & 91)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Science & Tech",
+    "sub_category": "Space Testing",
+    "question": "Fill in the blanks regarding the recent ISRO test for the Gaganyaan mission:\nISRO conducted the first ground test of the ________ (i) ________ launch vehicle to validate the ________ (ii) ________ motor for the Gaganyaan Crew Module parachute trials, which simulates deceleration at altitudes between ________ (iii) ________ km.",
+    "options": {
+      "A": "(i) PSLV; (ii) liquid propulsion; (iii) 5 and 10",
+      "B": "(i) SOLVE; (ii) solid; (iii) 10 and 17",
+      "C": "(i) GSLV; (ii) cryogenic; (iii) 15 and 20",
+      "D": "(i) RLV-TD; (ii) semi-cryogenic; (iii) 10 and 17",
+      "E": "(i) SOLVE; (ii) solid; (iii) 20 and 30"
+    },
+    "answer": "B",
+    "rationale": "ISRO tested the SOLVE (Sub-Orbital Launch Vehicle for Experiments), validating the solid motor for parachute trials, simulating deceleration between 10 km and 17 km. (Refer Page 54 & 91)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "Animal Taxonomy Summit",
+    "question": "Match the following states with their corresponding rank in the 'Animal Discoveries–2025' report released during the 4th Animal Taxonomy Summit (ATS 4.0):\n\nColumn I:\n1. Kerala\n2. West Bengal\n3. Karnataka\n4. Arunachal Pradesh\n\nColumn II:\nA. Rank 4 (65 discoveries)\nB. Rank 1 (98 discoveries)\nC. Rank 3 (67 discoveries)\nD. Rank 2 (76 discoveries)\n\nSelect the correct answer code:",
+    "options": {
+      "A": "1-B, 2-D, 3-C, 4-A",
+      "B": "1-D, 2-B, 3-A, 4-C",
+      "C": "1-B, 2-C, 3-D, 4-A",
+      "D": "1-A, 2-C, 3-B, 4-D",
+      "E": "1-B, 2-D, 3-A, 4-C"
+    },
+    "answer": "A",
+    "rationale": "Rankings: Kerala (1st, 98), West Bengal (2nd, 76), Karnataka (3rd, 67), Arunachal Pradesh (4th, 65). (Refer Page 56 & 92)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Cricket",
+    "question": "Which of the following statements about the Women's T20 World Cup 2026 is INCORRECT?",
+    "options": {
+      "A": "Australia won their 7th T20 World Cup title.",
+      "B": "Shree Charani became the leading wicket-taker with 14 wickets.",
+      "C": "Mooney was named Player of the Final and Player of the Tournament.",
+      "D": "Shabnim Ismail became the first bowler to take 50 wickets in Women's T20 World Cup history.",
+      "E": "Ellyse Perry made her record-breaking eighth appearance in a T20 World Cup final."
+    },
+    "answer": "E",
+    "rationale": "Statement E is incorrect because Ellyse Perry 'equalled seven' T20 World Cup final appearances, not an eighth. All other statements are correct. (Refer Page 59 & 94)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Wrestling",
+    "question": "Consider the following medal winners from the U15 and U20 Asian Wrestling Championships 2026. Which of the following male wrestlers won Gold in the U20 Men’s Freestyle 70 kg category?",
+    "options": {
+      "A": "Prathamesh S. Patil",
+      "B": "Naitik",
+      "C": "Sumit Kumar Laxman Bharaskar",
+      "D": "Keshav Harshad Chemte",
+      "E": "Vivek Chauhan"
+    },
+    "answer": "C",
+    "rationale": "Sumit Kumar Laxman Bharaskar won the Gold in the U20 Men’s Freestyle 70 kg category. The others won in the U15 category. (Refer Page 60 & 93)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "General Awareness",
+    "sub_category": "Obituaries",
+    "question": "Match the following late eminent personalities with the national honours conferred upon them by the Government of India:\n\nColumn I:\n1. Vijaya Mehta\n2. Teejan Bai\n3. Girish Bharadwaj\n\nColumn II:\nA. Padma Shri (1988), Padma Bhushan (2003), Padma Vibhushan (2019)\nB. Padma Shri (2017)\nC. Padma Shri (1987)\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-B, 2-C, 3-A",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Vijaya Mehta received the Padma Shri in 1987 (C). Teejan Bai received Padma Shri (1988), Padma Bhushan (2003), Padma Vibhushan (2019) (A). Girish Bharadwaj received the Padma Shri in 2017 (B). (Refer Pages 61-63 & 95-96)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "General Awareness",
+    "sub_category": "Important Days",
+    "question": "Assertion (A): International Plastic Bag Free Day is observed globally on July 3, a movement initiated by Rezero in 2008.\nReason (R): The observance became a part of the 'Break Free From Plastic' (BFFP) movement in 2016, integrating over 1,500 organisations globally.\n\nSelect the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "B",
+    "rationale": "Both Assertion (A) and Reason (R) are factually true statements. However, R is not the *explanation* for A (the origin date of 2008 is independent of the 2016 coalition integration). (Refer Page 68 & 97)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "General Awareness",
+    "sub_category": "Important Days",
+    "question": "Which of the following statements about World Zoonoses Day 2026 is INCORRECT?",
+    "options": {
+      "A": "It is observed annually on 6 July.",
+      "B": "It commemorates Louis Pasteur administering the first human rabies vaccine in 1885.",
+      "C": "The day is heavily supported by WHO, FAO, and WOAH.",
+      "D": "MoHFW organised a National Multistakeholder Consultation on the ‘National Action Plan for Prevention and Control of Zoonoses’.",
+      "E": "The first human rabies vaccine was administered to an adult farmer named Joseph Meister."
+    },
+    "answer": "E",
+    "rationale": "Statement E is incorrect because the first human rabies vaccine was administered to Joseph Meister, who was a '9-year-old boy', not an adult farmer. (Refer Page 69 & 97)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "General Awareness",
+    "sub_category": "Important Days",
+    "question": "Consider the following statements regarding World Kiswahili Language Day:\n\n1. It is observed annually on 7 July by UNESCO.\n2. The day marks the date in 1954 when the Tanganyika African National Union (TANU) adopted Kiswahili as a unifying language.\n3. Kiswahili is the first African language to have a dedicated UN Directorate of Global Communications (UN DGC) language unit.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "3 only",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All statements are correct. Observed on July 7 marking the 1954 TANU adoption, and it is indeed the first African language with a UN DGC language unit. (Refer Page 70 & 98)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "General Awareness",
+    "sub_category": "Important Days",
+    "question": "World Bioproduct Day is observed on July 7 to raise awareness about the circular bioeconomy. The 2026 event showcased innovative bio-based products under which joint undertaking?",
+    "options": {
+      "A": "Global Biofuel Alliance (GBA)",
+      "B": "Circular Bio-based Europe Joint Undertaking (CBE JU)",
+      "C": "World BioEconomy Forum (WBEF)",
+      "D": "World Bioeconomy Association (WBA)",
+      "E": "International Renewable Energy Agency (IRENA)"
+    },
+    "answer": "B",
+    "rationale": "The 2026 event showcase was conducted by the Circular Bio-based Europe Joint Undertaking (CBE JU), which showcased innovative bio-based products. (Refer Page 70-71)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "State",
+    "sub_category": "Appointments & Administration",
+    "question": "Consider the following state-level appointments and developments:\n\n1. Biswanath Sinha assumed charge as the Chief Secretary of Kerala, succeeding Dr. A. Jayathilak.\n2. Ex-ISRO Scientist Mylswamy Annadurai was appointed as Chairman of the Curriculum Design Committee (CDC) for School Education in Tamil Nadu.\n\nWhich of the following is correct regarding their respective tenures?",
+    "options": {
+      "A": "Both are appointed for a 5-year tenure.",
+      "B": "Sinha’s tenure is until September 2028, and Annadurai is appointed for a 3-year tenure.",
+      "C": "Sinha’s tenure is until June 2027, and Annadurai is appointed for a 2-year tenure.",
+      "D": "Both are ad-hoc appointments without a fixed tenure.",
+      "E": "Sinha is appointed for 3 years, and Annadurai’s tenure extends until September 2028."
+    },
+    "answer": "B",
+    "rationale": "Biswanath Sinha's tenure as CS of Kerala extends until September 2028 (2 years). Mylswamy Annadurai was appointed for a 3-year tenure as CDC Chairman in TN. (Refer Page 71 & 98)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Agriculture",
+    "sub_category": "Schemes",
+    "question": "Arrange the following components of the Pradhan Mantri Krishi Sinchayee Yojana (PMKSY) alphabetically, and then identify which component is implemented by the Department of Land Resources (DoLR) under the Ministry of Rural Development (MoRD):",
+    "options": {
+      "A": "AIBP",
+      "B": "HKKP",
+      "C": "OFWM",
+      "D": "PDMC",
+      "E": "WDC"
+    },
+    "answer": "E",
+    "rationale": "The Watershed Development Component (WDC) is implemented by DoLR (MoRD) to focus on rainfed and degraded land development. (Refer Page 15)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Health Infrastructure",
+    "question": "Match the following digital health initiatives launched by MoHFW with their specific functions:\n\nColumn I:\n1. Insurance Plan FHIR Object Creator\n2. UHI (Unified Health Interface)\n3. NHCX (National Health Claims Exchange)\n\nColumn II:\nA. Standardisation of health insurance claims and healthcare data\nB. Tool to standardise health insurance plan data using FHIR standards\nC. Open digital network for doctor consultation and ambulance booking\n\nSelect the correct code:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Insurance Plan FHIR Object Creator is a tool for standardising insurance plan data (B). UHI is an open digital network for doctor consults/ambulances (C). NHCX is for standardising health claims (A). (Refer Page 8)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "Infrastructure Investment",
+    "question": "Consider the following statements regarding the NIIF's Infrastructure Fund II:\n\n1. The Union Cabinet approved an additional Rs 30,000 crore commitment to NIIF to set up this fund.\n2. The total GoI commitment to NIIF has now reached Rs 90,000 crore.\n3. NIIF currently manages around Rs 40,000 crore in assets and has returned approximately Rs 12,000 crore to investors.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "1 and 3 only",
+      "C": "2 and 3 only",
+      "D": "1 only",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "B",
+    "rationale": "Statement 2 is incorrect because the fresh infusion of Rs 30,000 crore doubles the GoI's total commitment to Rs 60,000 crore, not Rs 90,000 crore. Statements 1 and 3 are correct. (Refer Page 6 & 74-75)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Corporate Schemes",
+    "question": "Which of the following statements about the 'Corporate Mitra Scheme' launched by the Ministry of Corporate Affairs (MCA) is INCORRECT?",
+    "options": {
+      "A": "It was launched in collaboration with IIT Madras, ICAI, ICSI, and ICMAI.",
+      "B": "The scheme aims to support MSMEs with compliance and governance.",
+      "C": "It is open to all Indian nationals above the age of 30 with a master's degree.",
+      "D": "The training programme includes 150 hours of online learning through SWAYAM Plus.",
+      "E": "The online learning is followed by a 6-month practical internship."
+    },
+    "answer": "C",
+    "rationale": "Statement C is incorrect because the scheme is open to Indian nationals 'below 30 years' who are graduates or final-year graduation students. (Refer Page 7 & 75)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Film Industry",
+    "question": "Assertion (A): The Ministry of Information and Broadcasting (MIB) proposed the Model State Cinema Regulations.\nReason (R): The objective is to address state-level regulatory delays that hinder cinema infrastructure, especially in small towns and rural areas.\n\nSelect the correct option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Both statements are true. The Model State Cinema Regulations were proposed precisely to expand cinema halls in small towns and rural areas by addressing regulatory delays. (Refer Page 9 & 75)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Health Tracker",
+    "question": "Fill in the blanks regarding the PM Family Care Tracker:\nUnder the PM Family Care Tracker Pilot Project, every child will receive a unique ID linked to the ________ (i) ________ or ________ (ii) ________ ID. The platform integrates databases for beneficiary identification, Digital Health Passport & ________ (iii) ________.",
+    "options": {
+      "A": "(i) Aadhaar; (ii) PAN; (iii) e-Rupi",
+      "B": "(i) Birth Registration Number (BRN); (ii) Ayushman Bharat Health Account (ABHA); (iii) Direct Benefit Transfer (DBT)",
+      "C": "(i) U-WIN; (ii) COWIN; (iii) National Health Claims",
+      "D": "(i) Birth Registration Number (BRN); (ii) Aadhaar; (iii) DBT",
+      "E": "(i) Voter ID; (ii) ABHA; (iii) E-Sanjivani"
+    },
+    "answer": "B",
+    "rationale": "The unique ID is linked to the Birth Registration Number (BRN) or Ayushman Bharat Health Account (ABHA). The platform integrates databases for beneficiary identification, Digital Health Passport & DBT. (Refer Page 6 & 74)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Immigration & Visas",
+    "question": "Match the specific features with the correct digital platform launched by the Ministry of Home Affairs:\n\nColumn I:\n1. FCRA 2.0 Portal\n2. e-OCI Card system\n\nColumn II:\nA. Allows existing cardholders to receive cards without a fresh application in most cases.\nB. Integrates with PAN, Aadhaar, OCI, NGO Darpan, banks, and UDIN.\nC. Excludes citizens of Pakistan and Bangladesh.\n\nSelect the correct code mapping:",
+    "options": {
+      "A": "1-B, 2-A, 2-C",
+      "B": "1-A, 1-B, 2-C",
+      "C": "1-C, 2-B, 2-A",
+      "D": "1-B, 1-C, 2-A",
+      "E": "1-A, 2-B, 2-C"
+    },
+    "answer": "A",
+    "rationale": "FCRA 2.0 Portal integrates with PAN, Aadhaar, OCI, NGO Darpan, banks, and UDIN (1-B). The e-OCI Card system allows digital downloads without fresh applications (2-A) and the overarching OCI scheme excludes Pakistan/Bangladesh citizens (2-C). (Refer Page 10)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "River Projects",
+    "question": "The recently signed Yamuna Water Project Agreement between Haryana and Rajasthan allocates water to resolve a long-standing dispute. What is the total volume of water to be supplied to Rajasthan and Haryana under this Rs 34,102 crore project?",
+    "options": {
+      "A": "350 Million Cubic Metres (MCM)",
+      "B": "480 Million Cubic Metres (MCM)",
+      "C": "580 Million Cubic Metres (MCM)",
+      "D": "720 Million Cubic Metres (MCM)",
+      "E": "1,020 Million Cubic Metres (MCM)"
+    },
+    "answer": "C",
+    "rationale": "The Rs 34,102 crore project aims to supply 580 Million Cubic Metres (MCM) of water to Rajasthan and Haryana, resolving the 1994 UYRB Agreement dispute. (Refer Page 12)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "F1 Rankings",
+    "question": "Arrange the top three drivers of the 2026 Austrian Grand Prix in the correct order of their finish (1st, 2nd, 3rd):\n\n1. Max Verstappen\n2. Andrea Kimi Antonelli\n3. George Russell\n\nSelect the correct sequence:",
+    "options": {
+      "A": "3, 1, 2",
+      "B": "1, 3, 2",
+      "C": "3, 2, 1",
+      "D": "2, 1, 3",
+      "E": "1, 2, 3"
+    },
+    "answer": "A",
+    "rationale": "George Russell finished 1st (3), Max Verstappen finished 2nd (1), and Andrea Kimi Antonelli finished 3rd (2). The sequence is 3, 1, 2. (Refer Page 58 & 94)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Naval and Diplomatic Events",
+    "question": "A series of defense and diplomatic events occurred involving India, Japan, and the USA. Which of the following correctly pairs the event with the technological or strategic system involved?\n\n1. PM Sanae Takaichi's Visit to India -> UNICORN system for Indian Navy\n2. RIMPAC 2026 -> Participation of 30+ warships at Pearl Harbor, Hawaii\n3. PM Modi's Visit to Seychelles -> Upgraded Dornier aircraft with glass cockpit\n\nSelect the correct option:",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "1 only"
+    },
+    "answer": "D",
+    "rationale": "All three pairs are correct. Japan's visit announced the UNICORN system for IN. RIMPAC 2026 in Hawaii involves 30+ warships. Seychelles visit involved handing over an upgraded Dornier aircraft. (Refer Pages 26, 27, 28 & 81, 82)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Global Passport Index",
+    "question": "In the Global Passport Index (GPI) 2026, India secured the 125th position. Which of the following statements about India's performance across the three sub-indices is correct?",
+    "options": {
+      "A": "Ranked 136th in Mobility, 118th in Quality of Life, and 94th in Investment.",
+      "B": "Ranked 118th in Mobility, 94th in Quality of Life, and 136th in Investment.",
+      "C": "Ranked 94th in Mobility, 136th in Quality of Life, and 118th in Investment.",
+      "D": "Ranked 125th in all three indices matching the overall score.",
+      "E": "Ranked 99th in Mobility, 124th in Quality of Life, and 127th in Investment."
+    },
+    "answer": "A",
+    "rationale": "India's sub-index ranks are: 136th in Enhanced Mobility, 118th in Quality of Life, and 94th in Investment index. (Refer Page 32 & 84)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Payment Aggregators",
+    "question": "Which of the following statements regarding the PayGlocal launch of Google Pay Card Payments is INCORRECT?",
+    "options": {
+      "A": "It was launched on PayGlocal's International Payment Gateway.",
+      "B": "It enables Indian merchants to access over one billion customers across 90+ countries.",
+      "C": "It aims to increase merchant activations by 40%.",
+      "D": "PayGlocal is a state-owned enterprise operating exclusively within the SAARC region.",
+      "E": "PayGlocal is an RBI-authorized Payment Aggregator for domestic & cross-border payments."
+    },
+    "answer": "D",
+    "rationale": "Statement D is incorrect because PayGlocal (founded 2021) is a private cross-border payments platform and an RBI-authorized Payment Aggregator, not a state-owned enterprise exclusive to SAARC. (Refer Page 32 & 84)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "PSB Initiatives",
+    "question": "Match the following digital initiatives launched by Punjab & Sind Bank (PSB) with their descriptions:\n\nColumn I:\n1. Navjyoti\n2. PSB Bharat Connect\n3. Digital Rupee (CBDC)\n4. Paperless digital Gold Loan\n\nColumn II:\nA. Secure digital transactions\nB. Specialised savings account for Government employees\nC. In-house HR app\nD. Streamlined loan facility launched on 119th Foundation Day\n\nSelect the correct code:",
+    "options": {
+      "A": "1-C, 2-B, 3-A, 4-D",
+      "B": "1-B, 2-C, 3-D, 4-A",
+      "C": "1-C, 2-A, 3-B, 4-D",
+      "D": "1-D, 2-B, 3-A, 4-C",
+      "E": "1-A, 2-D, 3-C, 4-B"
+    },
+    "answer": "A",
+    "rationale": "Navjyoti (HR app, C); PSB Bharat Connect (Govt employees account, B); CBDC (Secure transactions, A); Paperless digital Gold Loan was also launched during the 119th Foundation Day (D). (Refer Page 33 & 84)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "Green Financing",
+    "question": "Consider the following statements regarding the JPY 80 Billion green loan secured by POWERGRID:\n\n1. The loan aims to support the Khavda-Nagpur HVDC renewable energy transmission project.\n2. POWERGRID aims for Net Zero by 2047 and Net Water Positive & Zero Waste to Landfill by 2030.\n3. The project supports India's goal of achieving 500 GW of RE capacity by 2030.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "1 only",
+      "E": "All 1, 2, and 3"
+    },
+    "answer": "E",
+    "rationale": "All statements are correct. The loan is for the Khavda-Nagpur project. POWERGRID's sustainability goals include Net Zero by 2047 and Net Water Positive/Zero Waste by 2030. The overarching goal is 500 GW RE by 2030. (Refer Page 39 & 86)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "CPSE Status",
+    "question": "Assertion (A): MECON Limited was granted Miniratna Category-I status by the Ministry of Steel.\nReason (R): It fulfilled the eligibility criteria by having 3 consecutive years of profit, a positive net worth, and a Profit Before Tax (PBT) of Rs 104.53 crore in FY26, which is above the Rs 30 crore threshold.\n\nSelect the most appropriate option:",
+    "options": {
+      "A": "Both A and R are true and R is the correct explanation of A.",
+      "B": "Both A and R are true but R is not the correct explanation of A.",
+      "C": "A is true but R is false.",
+      "D": "A is false but R is true.",
+      "E": "Both A and R are false."
+    },
+    "answer": "A",
+    "rationale": "Assertion (A) is true. Reason (R) is true and correctly explains A, as the Miniratna Category-I criteria require 3 consecutive years of profit, positive net worth, and ≥Rs 30 crore PBT in at least 1 of 3 years (which MECON met with Rs 104.53 cr in FY26). (Refer Page 41 & 87)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "National",
+    "sub_category": "Awards & Honors",
+    "question": "Fill in the blanks regarding the USISPF 2026 Leadership Awards:\nThe USISPF presented the 2026 Leadership Award to ________ (i) ________, founder and chairman of Bharti Enterprises Limited. Other awardees included ________ (ii) ________, Chairman & CEO of Fairfax Financial Holdings, and ________ (iii) ________, Chairman & CEO of RTX Corporation.",
+    "options": {
+      "A": "(i) Mukesh Ambani; (ii) V. Prem Watsa; (iii) Christopher T. Calio",
+      "B": "(i) Sunil Bharti Mittal; (ii) N. Chandrasekaran; (iii) Marc Benioff",
+      "C": "(i) Sunil Bharti Mittal; (ii) V. Prem Watsa; (iii) Christopher T. Calio",
+      "D": "(i) Lakshmi N. Mittal; (ii) V. Prem Watsa; (iii) Paul Kagame",
+      "E": "(i) Gautam Adani; (ii) Uday Kotak; (iii) Christopher T. Calio"
+    },
+    "answer": "C",
+    "rationale": "Sunil Bharti Mittal received the primary Leadership Award. Other awardees were V. Prem Watsa (Fairfax) and Christopher T. Calio (RTX Corp). (Refer Page 43 & 87)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Science & Tech",
+    "sub_category": "Mountaineering",
+    "question": "Consider the following statements about Sikkim mountaineer Tshering Choden:\n\n1. She successfully scaled Mount Elbrus, Europe's highest peak, in July 2026.\n2. This marked her 2nd successful ascent in the Seven Summits challenge.\n3. Her first successful ascent was Mount Vinson in Antarctica.\n\nWhich of the statements given above is/are INCORRECT?",
+    "options": {
+      "A": "1 only",
+      "B": "2 only",
+      "C": "3 only",
+      "D": "1 and 2 only",
+      "E": "2 and 3 only"
+    },
+    "answer": "C",
+    "rationale": "Statement 3 is incorrect because her first successful ascent was Mount Kilimanjaro (Africa's highest peak) in August 2025, not Mount Vinson. Statements 1 and 2 are correct. (Refer Page 44 & 88)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Environment",
+    "sub_category": "Global Biofuel Alliance",
+    "question": "The Global Biofuel Alliance (GBA) selected 15 early-career researchers for the Global Biofuel Champion Fellowship (GBCF). What is the specific grant amount provided to each fellow under this programme?",
+    "options": {
+      "A": "USD 5,000",
+      "B": "USD 10,000",
+      "C": "USD 15,000",
+      "D": "USD 20,000",
+      "E": "USD 25,000"
+    },
+    "answer": "C",
+    "rationale": "The grant provided under the GBCF programme is USD 15,000 per fellow. (Refer Page 44)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "International",
+    "sub_category": "Heritage Restoration",
+    "question": "Match the organizations with their respective roles in the restoration of the Jestha Varna Mahavihar in Nepal:\n\nColumn I:\n1. INTACH (Indian National Trust for Art and Cultural Heritage)\n2. Government of India (GoI)\n3. UNESCO\n\nColumn II:\nA. Provided the post-earthquake heritage grant worth NPR 13.78 crore\nB. Acted as the Project Management Consultant (PMC)\nC. Honoured the site with the Asia-Pacific Heritage Award\n\nSelect the correct code:",
+    "options": {
+      "A": "1-A, 2-B, 3-C",
+      "B": "1-B, 2-A, 3-C",
+      "C": "1-C, 2-A, 3-B",
+      "D": "1-B, 2-C, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "B",
+    "rationale": "INTACH was the Project Management Consultant (PMC) (B). The GoI provided the NPR 13.78 crore grant (A). UNESCO awarded the Asia-Pacific Heritage Award (C). (Refer Page 45 & 88)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Banking",
+    "sub_category": "Appointments",
+    "question": "Consider the following statements regarding Rajiv Kumar's appointment at HDFC Bank:\n\n1. He was appointed as the part-time Chairman of HDFC Bank for a period of 3 years.\n2. He previously served as the Chief Election Commissioner (CEC) of India.\n3. He succeeds Atanu Chakraborty, who stepped down in March 2026 citing ethical concerns.\n4. He will take over from interim Chairman Keki Mistry.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1, 2, and 4 only",
+      "B": "2, 3, and 4 only",
+      "C": "1, 3, and 4 only",
+      "D": "1, 2, and 3 only",
+      "E": "All 1, 2, 3, and 4"
+    },
+    "answer": "E",
+    "rationale": "All statements are correct. Rajiv Kumar (former CEC) was appointed part-time Chairman for 3 years, taking over from interim Chairman Keki Mistry, who had assumed the role after Atanu Chakraborty stepped down. (Refer Pages 46 & 88-89)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  },
+  {
+    "category": "Economy",
+    "sub_category": "Mergers & Acquisitions",
+    "question": "The Competition Commission of India (CCI) cleared DWS Group's acquisition of a 40% stake in Nippon Life India AIF Management Limited (NIAIF). What is the approximate valuation of this deal as mentioned in the report?",
+    "options": {
+      "A": "Rs 281.7 crore",
+      "B": "Rs 733 crore",
+      "C": "Rs 2,312 crore",
+      "D": "Rs 16,660 crore",
+      "E": "Rs 34,102 crore"
+    },
+    "answer": "B",
+    "rationale": "The DWS Group acquisition of a 40% stake in NIAIF was valued at around Rs 733 crore. (Rs 281.7 cr is the Kotak/Deutsche deal; Rs 2,312 cr is BPCL/IBV Brazil; Rs 16,660 cr is Aditya Birla/RCB). (Refer Page 50 & 90)",
+    "tag": "Static-Data",
+    "pdf/question-bank": "Current Affairs Weekly PDF - July 2026 - 1st Week"
+  }
+]

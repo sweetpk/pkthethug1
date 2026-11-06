@@ -1,0 +1,738 @@
+[
+  {
+    "category": "National Affairs",
+    "sub_category": "Health / AB PM-JAY",
+    "question": "Consider the following statements regarding the funding and budget pattern of the Ayushman Bharat PM-JAY scheme as it completes 8 years:\n\n1. The funding is shared in a 60:40 ratio between the Centre and general States/UTs with legislatures.\n2. The ratio is 90:10 for North-Eastern States, Himachal Pradesh, Uttarakhand, and Jammu & Kashmir.\n3. The scheme is 100% centrally funded for Union Territories without a legislature.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "Only 3"
+    },
+    "answer": "D",
+    "rationale": "All statements are correct. The funding for AB PM-JAY is structured as 60:40 for Centre:States/UTs with legislatures, 90:10 for NE States and Himalayan states (HP, Uttarakhand, J&K), and 100% for UTs without a legislature. (Reference: Page 10 & 83, National Affairs)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Skill Development / DDU-GKY",
+    "question": "Match the following statistical data points with their corresponding metrics under the Deen Dayal Upadhyaya Grameen Kaushalya Yojana (DDU-GKY) implementation coverage:\n\nColumn I:\n1. Total Projects\n2. Total Centres\n3. Project Implementing Agencies (PIAs)\n\nColumn II:\nA. 455+\nB. 749\nC. 760\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-C, 2-A, 3-B"
+    },
+    "answer": "B",
+    "rationale": "Under the DDU-GKY coverage across 31 States/UTs, there are 749 Projects (1-B), 760 Centres (2-C), and 455+ PIAs (3-A). (Reference: Page 20, National Affairs)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Global Observances",
+    "question": "Arrange the following Important Days in chronological order based on the year they were FIRST observed internationally:\n\n1. World Rhino Day\n2. International Day of Peace\n3. World Car-Free Day\n4. Antyodaya Diwas\n\nSelect the correct chronological sequence (earliest to most recent):",
+    "options": {
+      "A": "2, 3, 1, 4",
+      "B": "3, 2, 1, 4",
+      "C": "2, 1, 3, 4",
+      "D": "3, 1, 4, 2",
+      "E": "1, 2, 3, 4"
+    },
+    "answer": "A",
+    "rationale": "International Day of Peace was first observed in 1982 (2). World Car-Free Day was first observed internationally in 1999 (3). World Rhino Day was first observed internationally in 2011 (1). Antyodaya Diwas was first observed in 2014 (4). Thus, the sequence is 2, 3, 1, 4. (Reference: Page 49, 50, 52, 78, 79, Important Days)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Martial Arts",
+    "question": "The 4th Junior & 11th Senior Asian Pencak Silat Championship 2027 is scheduled to be held in India. Which of the following details correctly describes the event's location and endorsing body?",
+    "options": {
+      "A": "Pune, Maharashtra; Endorsed by Union Cycliste Internationale (UCI)",
+      "B": "Goa; Endorsed by International Pencak Silat Federation (PERSILAT)",
+      "C": "New Delhi; Endorsed by Indian Pencak Silat Federation (IPSF)",
+      "D": "Oskemen, Kazakhstan; Endorsed by Asian Martial Arts Council",
+      "E": "Goa; Endorsed by World Karate Federation (WKF)"
+    },
+    "answer": "B",
+    "rationale": "The 4th Junior & 11th Senior Asian Pencak Silat Championship 2027 will be hosted at Manohar Parrikar Stadium, Goa. It is officially endorsed by the International Pencak Silat Federation (PERSILAT). (Reference: Page 46 & 76, Sports)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "SEBI Reforms",
+    "question": "Assertion (A): SEBI expanded Vault Manager rules to cover bullion-linked Exchange Traded Funds (ETFs) and derivatives.\nReason (R): Under this regulatory overhaul, SEBI raised the minimum net worth requirement for Vault Managers to Rs 75 crore to ensure better financial stability.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both (A) and (R) are true, and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+      "C": "(A) is true, but (R) is false.",
+      "D": "(A) is false, but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "B",
+    "rationale": "Both statements are true. SEBI did expand the rules to cover bullion-linked ETFs (A) and raised the minimum net worth for Vault Managers to Rs 75 crore (R). However, raising the net worth requirement (R) is a parallel compliance reform and not the logical *reason* for expanding product coverage to ETFs and derivatives (A). (Reference: Page 34 & 71, Banking & Finance)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Micro-GPU",
+    "question": "Fill in the blanks regarding the indigenous micro-GPU developed by IIT Delhi:\nThe project was developed under the guidance of Professor ________ and Professor Kaushik Saha, utilizing ________ (RTL) to implement a custom floating-point GPU engine.",
+    "options": {
+      "A": "V. Ramgopal Rao; Register Transfer Level",
+      "B": "Jayadeva; Register Transfer Language",
+      "C": "Rangan Banerjee; Runtime Translation Logic",
+      "D": "Jayadeva; Reduced Translation Logic",
+      "E": "Abhay Karandikar; Register Transfer Language"
+    },
+    "answer": "B",
+    "rationale": "The micro-GPU was developed under the guidance of Professor Jayadeva and Professor Kaushik Saha, using Register Transfer Language (RTL) to deploy it on a Spartan-7 FPGA. (Reference: Page 43 & 75, Science & Technology)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "Acquisitions & Mergers",
+    "sub_category": "Insurance Sector",
+    "question": "Regarding the J&K Bank's escrow agreement for selling its stake in PNB MetLife, arrange the following percentages in ascending numerical order:\n\n1. The stake percentage being sold by J&K Bank in PNB MetLife.\n2. The final overall stake J&K Bank will hold post-transaction.\n3. The original overall stake J&K Bank held prior to the transaction.\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1, 2, 3",
+      "B": "2, 1, 3",
+      "C": "3, 2, 1",
+      "D": "1, 3, 2",
+      "E": "2, 3, 1"
+    },
+    "answer": "A",
+    "rationale": "The stake being sold is 0.5% (1). The final stake post-transaction is 2.53% (2). The original stake prior to the transaction was 3.03% (3). Ascending order (0.5 < 2.53 < 3.03) gives the sequence 1, 2, 3. (Reference: Page 42, 75 & 95, Acquisitions & Mergers)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Chess",
+    "question": "Indian-origin British chess prodigy Bodhana Sivanandan became the youngest Woman Grandmaster (WGM) in history. Which of the following benchmarks did she surpass to achieve this record?",
+    "options": {
+      "A": "She surpassed Koneru Humpy's record of 15 years and 1 month.",
+      "B": "She broke the previous records held by Carissa Yip and Judit Polgar.",
+      "C": "She surpassed Divya Deshmukh's benchmark of 14 years.",
+      "D": "She broke Nona Gaprindashvili's 1978 record.",
+      "E": "She surpassed Zhu Jiner's record of 13 years and 4 months."
+    },
+    "answer": "B",
+    "rationale": "At age 11, Bodhana Sivanandan became the youngest female to defeat a GM, breaking records previously held by Carissa Yip and Judit Polgar benchmarks. She also surpassed Kateryna Lagno’s 2002 record (12y 4m) for the youngest WGM. (Reference: Page 46 & 77, Sports)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "FDI & GCCs",
+    "question": "Which specific state agency signed the Memorandum of Understanding (MoU) with Starbucks Coffee Company to facilitate the establishment of its first India Global Capability Centre (GCC)?",
+    "options": {
+      "A": "Invest India",
+      "B": "Guidance Tamil Nadu",
+      "C": "TIDCO",
+      "D": "Maharashtra Industrial Development Corporation (MIDC)",
+      "E": "Delhi State Industrial and Infrastructure Development Corporation (DSIIDC)"
+    },
+    "answer": "B",
+    "rationale": "The MoU was exchanged between Starbucks and 'Guidance Tamil Nadu', the state’s investment promotion agency, in the presence of TN Chief Minister C. Joseph Vijay. (Reference: Page 55 & 80, State News)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Economy / Make in India Stats",
+    "question": "Match the following advanced/strategic industry metrics achieved under the 12 years of the Make in India initiative:\n\nColumn I:\n1. Solar Cells capacity\n2. Solar Modules capacity\n3. Rail Components (wheels)\n\nColumn II:\nA. 2,10,026\nB. 192 GW\nC. 30 GW\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-B, 2-A, 3-C"
+    },
+    "answer": "B",
+    "rationale": "Solar Cells capacity reached 30 GW (1-C). Solar Modules capacity reached 192 GW (2-B). Rail Components manufactured included 2,10,026 wheels (3-A). (Reference: Page 15, National Affairs)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Environment / Water",
+    "question": "Consider the following statements regarding the WMO's State of Global Water Resources 2025 report:\n\n1. It marked 2025 as the fourth consecutive year where every major glaciated region recorded a net loss in ice mass.\n2. Over 36% of global river basins recorded below-normal flow conditions.\n3. The global glacier mass loss in 2025 was equivalent to a sea-level rise of 5.1 ± 0.4 mm.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because the global glacier mass loss in 2025 was equivalent to a sea-level rise of *1.1 ± 0.4 mm*, not 5.1 mm. (Reference: Page 27 & 68, International Affairs)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "GCC Banking",
+    "question": "Assertion (A): IndusInd Bank launched a dedicated 'GCC Banking Vertical' with a suite of 5 core capabilities.\nReason (R): This vertical includes a dedicated provision for foreign-currency accounts facilitated exclusively through the Bank's International Banking Unit (IBU) at GIFT City.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both (A) and (R) are true, and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+      "C": "(A) is true, but (R) is false.",
+      "D": "(A) is false, but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "B",
+    "rationale": "Both statements are true. IndusInd launched the GCC Banking Vertical (A), and it includes foreign-currency accounts via its IBU at GIFT City (R). However, (R) is merely one of the five features (alongside digital banking, employee banking, commercial cards, and FEMA solutions), and does not logically *explain* the overall launch of the entire vertical (A). (Reference: Page 36 & 72, Banking & Finance)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Skill Development",
+    "question": "Under the DDU-GKY framework, a comprehensive training module is mandated. Arrange the following components in descending numerical order based on the prescribed number of hours:\n\n1. Total training hours\n2. Domain-specific training hours\n3. Non-domain training hours\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1, 2, 3",
+      "B": "3, 2, 1",
+      "C": "1, 3, 2",
+      "D": "2, 1, 3",
+      "E": "2, 3, 1"
+    },
+    "answer": "A",
+    "rationale": "The total training hours are 576 (1). The domain-specific hours are 396 (2). The non-domain hours are 180 (3). Descending order (576 > 396 > 180) maps perfectly to 1, 2, 3. (Reference: Page 20, National Affairs)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "AGU Awards",
+    "question": "Which of the following Indian-origin scientists won the 'Ambassador Award' from the American Geophysical Union (AGU) in 2026?",
+    "options": {
+      "A": "Abdul Qadir",
+      "B": "Roxy Mathew Koll",
+      "C": "Faisal Hossain",
+      "D": "Neelima Satyam",
+      "E": "Meena Mishra"
+    },
+    "answer": "C",
+    "rationale": "Faisal Hossain, an alumnus of Banaras Hindu University (BHU) and a professor at Washington Seattle, won the Ambassador Award. Abdul Qadir won the Science for Solutions award. (Reference: Page 41 & 74, Awards & Recognitions)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "Obituary",
+    "sub_category": "Defence Personnel",
+    "question": "Match the following details related to the late Flight Lieutenant Alfred Tyrone Cooke (Retd.):\n\nColumn I:\n1. Year of Birth\n2. Squadron served\n3. Enemy aircraft shot down in 1965\n\nColumn II:\nA. No. 14 Squadron\nB. 1939\nC. Pakistani F-86 Sabre\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-A, 3-C",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-B, 2-C, 3-A",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "He was born in 1939 (1-B). He served in No. 14 Squadron (2-A). He shot down a Pakistani F-86 Sabre in 1965 (3-C). (Reference: Page 46 & 77, Obituary)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "Books & Authors",
+    "sub_category": "Economy / Finance",
+    "question": "The book 'Cashless Nation: How UPI Changed Everything' was recently released. Who among the following is the co-author of this book alongside Santanu Paul?",
+    "options": {
+      "A": "Nirmala Sitharaman",
+      "B": "Hirav Shah",
+      "C": "B. Sambamurthy",
+      "D": "Gautam Adani",
+      "E": "Nandan Nilekani"
+    },
+    "answer": "C",
+    "rationale": "The book 'Cashless Nation: How UPI Changed Everything' is authored by Santanu Paul and B. Sambamurthy. It was released by Union Minister Nirmala Sitharaman. (Reference: Page 65, Books & Authors / National Affairs)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Pharmacists Day",
+    "question": "Assertion (A): World Pharmacists Day is observed globally on 25 September.\nReason (R): It commemorates the establishment of the International Pharmaceutical Federation (FIP) in 1912 in The Hague, Netherlands.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both (A) and (R) are true, and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+      "C": "(A) is true, but (R) is false.",
+      "D": "(A) is false, but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "A",
+    "rationale": "Both statements are true. World Pharmacists Day is observed on Sept 25 (A) specifically because it marks the anniversary of the founding of the International Pharmaceutical Federation (FIP) on 25 September 1912 (R). Thus, R is the historical explanation for A. (Reference: Page 52 & 79, Important Days)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Tourism Day Initiatives",
+    "question": "Consider the following targets and features launched by the Ministry of Tourism during World Tourism Day 2026:\n\n1. The National Digital Tourism Stack (NDTS) aims to onboard 23,000 tourism services by 2028.\n2. The 'Dekho Apna Desh 2.0' focuses on alternative tourism sites across India.\n3. The 'Swachhta Campaign 2026' is a social awareness TV campaign for cleanliness at tourism sites.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All three statements accurately reflect the initiatives launched by the MoT led by Gajendra Singh Shekhawat in New Delhi on World Tourism Day. (Reference: Page 53 & 100, Important Days)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Health / Arogya Manthan",
+    "question": "Which of the following apps/platforms was NOT launched during the Arogya Manthan 2026 event?",
+    "options": {
+      "A": "NHPR Mobile App",
+      "B": "SDE app (Secure Data Environment)",
+      "C": "Delhi Udyog Mitra App",
+      "D": "NHCX Implementation Guide for Payers",
+      "E": "Auto-adjudication system"
+    },
+    "answer": "C",
+    "rationale": "The Delhi Udyog Mitra Portal/App was launched by Delhi CM Rekha Gupta for business approvals. It was not launched during the Arogya Manthan 2026 event. NHPR, SDE, NHCX Guide, and Auto-adjudication are the correct launches. (Reference: Page 21, 57 & 87, National Affairs / State News)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Diplomacy / ASEAN",
+    "question": "Fill in the blanks regarding the economic meetings held in Manila, Philippines:\nIndia participated in the ________ East Asia Summit Economic Ministers' Meeting (EAS-EMM) and the ________ ASEAN-India Economic Ministers Consultation.",
+    "options": {
+      "A": "12th; 20th",
+      "B": "14th; 23rd",
+      "C": "15th; 21st",
+      "D": "13th; 22nd",
+      "E": "14th; 25th"
+    },
+    "answer": "B",
+    "rationale": "India participated in the 14th EAS-EMM and the 23rd ASEAN-India Economic Ministers Consultation in Manila. (Reference: Page 32 & 70, International Affairs)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "Science & Technology",
+    "sub_category": "Space Collaborations",
+    "question": "Match the following space-related events/agreements with their corresponding timelines:\n\nColumn I:\n1. ISRO-ESA Cooperative Agreement extended until\n2. TakeMe2Space orbital data centre launch target\n3. IARRF cloud-research radar operational target\n\nColumn II:\nA. February 2027\nB. Late 2028\nC. January 8, 2032\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-B, 2-C, 3-A",
+      "B": "1-C, 2-B, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-B, 2-A, 3-C"
+    },
+    "answer": "B",
+    "rationale": "ISRO-ESA agreement is extended to Jan 8, 2032 (1-C). TakeMe2Space targets late 2028 on Falcon 9 (2-B). The IARRF radar in Assam is expected to be commissioned by Feb 2027 (3-A). (Reference: Page 7, 43 & 75, Science & Technology / National Affairs)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "Awards & Recognitions",
+    "sub_category": "FIDE Excellence Awards",
+    "question": "Assertion (A): Levon Aronian was awarded the Social Award at the inaugural FIDE Excellence Awards 2026.\nReason (R): The awards were launched as an annual programme in Abu Dhabi, UAE, to honour achievements across global chess competitions.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both (A) and (R) are true, and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+      "C": "(A) is true, but (R) is false.",
+      "D": "(A) is false, but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "C",
+    "rationale": "Statement (A) is true; Levon Aronian won the Social Award. Statement (R) is false because the awards are a *biennial* (not annual) successor programme, and they were launched in *Samarkand, Uzbekistan* (not Abu Dhabi). Abu Dhabi is the host for the next Olympiad in 2028. (Reference: Page 45 & 76, Awards & Recognitions)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Telecom / TRAI",
+    "question": "Consider the following statements about the Digital Connectivity Rating (DCR) Platform:\n\n1. It was launched by the Telecom Regulatory Authority of India (TRAI).\n2. It operates under the Rating of Properties for Digital Connectivity Regulations, 2024 (amended in May 2026).\n3. It uses a mobile app solely for generating QR codes, with no capability for testing digital connectivity.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "A",
+    "rationale": "Statements 1 and 2 are correct. Statement 3 is incorrect because TRAI *also introduced a mobile application (app) for testing digital connectivity* at properties, not solely for generating QR codes. (Reference: Page 24, 66 & 88, National Affairs)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Steel Industry Safety",
+    "question": "Arrange the following structural hierarchies/bodies connected to the newly established Steel Industry Safety Council (SISC) in terms of their overarching policy role to direct implementation:\n\n1. Directorate General of Mines Safety (DGMS) / PESO / NDMA (Member bodies)\n2. Ministry of Steel (Apex administrative authority)\n3. Steel Industry Safety Directorate (SISD) (Implementation body for audits and investigations)\n\nSelect the logical top-down administrative flow:",
+    "options": {
+      "A": "1, 2, 3",
+      "B": "2, 1, 3",
+      "C": "3, 2, 1",
+      "D": "2, 3, 1",
+      "E": "1, 3, 2"
+    },
+    "answer": "B",
+    "rationale": "The Ministry of Steel (MoS) is the apex administrative body forming the council (2). The council comprises representatives from DGMS, PESO, NDMA as policy members (1). The actual implementation (audits, investigations, data management) is done by the Steel Industry Safety Directorate (SISD) (3). Flow: 2 -> 1 -> 3. (Reference: Page 26 & 88, National Affairs)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Education / Innovation",
+    "question": "Which of the following institutes served as the Nodal Institute for the 'Seva First Innovation Challenge' (SFIC) inaugurated for the South Zone?",
+    "options": {
+      "A": "IIT Madras",
+      "B": "Indian Institute of Science (IISc), Bengaluru",
+      "C": "NIT Srinagar",
+      "D": "IIT-BHU, Varanasi",
+      "E": "IIM Bangalore"
+    },
+    "answer": "B",
+    "rationale": "The 'Seva First Innovation Challenge' for the South Zone was inaugurated at the Indian Institute of Science (IISc), Bengaluru, which acts as the nodal institute for the zone. (Reference: Page 26, 67 & 89, National Affairs)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Cybersecurity",
+    "question": "Match the following entities involved in establishing a state-of-the-art Centre of Excellence (CoE) in Cybersecurity and Digital Forensics:\n\nColumn I:\n1. Investment Partner\n2. Host Institution / Venue\n3. Investment Amount\n\nColumn II:\nA. Rs 3.5 crore\nB. Tata Communications Limited (TCL)\nC. SASTRA Deemed University (Thanjavur)\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-A, 2-C, 3-B",
+      "D": "1-B, 2-A, 3-C",
+      "E": "1-C, 2-A, 3-B"
+    },
+    "answer": "B",
+    "rationale": "The investment partner is TCL (1-B). The host is SASTRA Deemed University in Thanjavur (2-C). The investment amount is Rs 3.5 crore (3-A). (Reference: Page 27, 67 & 89, National Affairs)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Agriculture",
+    "question": "Assertion (A): The Interest-Free Working Capital Assistance Scheme approved by GoI provides Rs 50,000 per barn directly to the bank accounts of FCV tobacco growers in Andhra Pradesh.\nReason (R): Direct Benefit Transfer (DBT) is utilized to ensure immediate liquidity support to farmers to meet household needs and purchase inputs for the upcoming crop season.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both (A) and (R) are true, and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+      "C": "(A) is true, but (R) is false.",
+      "D": "(A) is false, but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "A",
+    "rationale": "Both statements are true. The GoI uses DBT to transfer Rs 50,000 per barn (A) precisely to eliminate intermediaries and ensure rapid, immediate liquidity support for farmers facing geopolitical trade challenges (R). Thus, (R) explains the disbursement mode and purpose of (A). (Reference: Page 16, 63 & 85, National Affairs)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Corporate Ventures",
+    "question": "Consider the following statements regarding the Joint Venture (JV) between NTPC and EDF:\n\n1. It is a 50:50 Joint Venture.\n2. The JV's primary focus is on expanding thermal coal power capacity in neighboring countries.\n3. The JV aligns with India's target of reaching 100 GW Pumped Storage Project (PSP) capacity by 2036.\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "C",
+    "rationale": "Statements 1 and 3 are correct. Statement 2 is incorrect because the JV focuses exclusively on *low-carbon energy projects* (PSP, hydropower, RE), not thermal coal power. (Reference: Page 38, 73 & 94, Economy & Business)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "Economy & Business",
+    "sub_category": "Helicopter Programme",
+    "question": "Fill in the blanks regarding the MoU signed between HAL and SkyPulse Solutions:\nHAL and SkyPulse Solutions ________ Pvt Ltd signed an MoU to establish a strategic framework for a 30-helicopter programme. The first phase involves acquiring 10 helicopters between ________.\n",
+    "options": {
+      "A": "IBU; 2026-2028",
+      "B": "IFSC; 2027-2029",
+      "C": "GIFT; 2028-2030",
+      "D": "FDI; 2027-2030",
+      "E": "IFSC; 2030 onwards"
+    },
+    "answer": "B",
+    "rationale": "The entity is SkyPulse Solutions IFSC Private Limited. The first phase of the acquisition involves 10 helicopters between 2027 and 2029. (Reference: Page 39, 73 & 94, Economy & Business)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Cricket Retirements",
+    "question": "Match the following details regarding the recent retirement of Mark Wood:\n\nColumn I:\n1. Age at retirement\n2. Career length\n3. Honorary Doctorate received from\n\nColumn II:\nA. 11 years\nB. Northumbria University\nC. 36 years\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Mark Wood retired at age 36 (1-C), after an 11-year international career (2-A). He received an Honorary Doctorate of Science from Northumbria University in July 2026 (3-B). (Reference: Page 44, 76 & 96, Sports)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "Sports",
+    "sub_category": "Cycling",
+    "question": "Assertion (A): The Union Cycliste Internationale (UCI) announced that India will host the UCI Road World Championships for the first time in 2032.\nReason (R): The bid was led exclusively by the Government of India without the involvement of any state government or sporting federation.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both (A) and (R) are true, and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+      "C": "(A) is true, but (R) is false.",
+      "D": "(A) is false, but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "C",
+    "rationale": "Statement (A) is true; India will host the 2032 event in Pune. Statement (R) is false because the historic bid was jointly led by the *Government of Maharashtra* and the *Cycling Federation of India (CFI)*, with support from the GoI. (Reference: Page 44 & 76, Sports)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Sign Languages",
+    "question": "Arrange the following events associated with the deaf community and sign language rights in chronological order of their inception/founding:\n\n1. First observance of the International Day of Sign Languages.\n2. Founding of the World Federation of the Deaf (WFD).\n3. Adoption of the UN Convention on the Rights of Persons with Disabilities (CRPD).\n\nSelect the correct sequence (earliest to most recent):",
+    "options": {
+      "A": "2, 3, 1",
+      "B": "2, 1, 3",
+      "C": "3, 2, 1",
+      "D": "1, 2, 3",
+      "E": "3, 1, 2"
+    },
+    "answer": "A",
+    "rationale": "WFD was founded in 1951 (2). The CRPD is marking its 20th year in 2026, meaning it was adopted around 2006 (3). The first observance of the International Day of Sign Languages was on 23 September 2018 (1). Thus, 1951 -> 2006 -> 2018 is 2, 3, 1. (Reference: Page 51, 79 & 99, Important Days)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Peace Day",
+    "question": "Consider the following statements regarding the International Day of Peace 2026:\n\n1. It is observed annually on 21 September.\n2. 21 September 2026 marked 27 years since the UNGA adopted the Declaration and Programme of Action on a Culture of Peace in 1999.\n3. The 2026 theme was \"Invest in Peace – For Everyone, Everywhere, Every Day.\"\n\nWhich of the statements given above is/are correct?",
+    "options": {
+      "A": "Only 1 and 2",
+      "B": "Only 2 and 3",
+      "C": "Only 1 and 3",
+      "D": "All 1, 2, and 3",
+      "E": "Only 1"
+    },
+    "answer": "D",
+    "rationale": "All three statements are correct. The day is observed on Sept 21. 2026 marks 27 years since the 1999 declaration. The theme is 'Invest in Peace – For Everyone, Everywhere, Every Day.' (Reference: Page 48, 78 & 98, Important Days)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Environment / JICA",
+    "question": "Which of the following is NOT an objective or operational aspect of the Forest Management Capacity Enhancement Project launched with JICA support?",
+    "options": {
+      "A": "Implementation spanning from 2025-26 to 2031-32.",
+      "B": "Strengthening the capacity of frontline forest personnel.",
+      "C": "Addressing changing forest and wildlife management requirements.",
+      "D": "Funding completely sourced from the World Bank and ADB.",
+      "E": "Prioritising new participating States and supporting those covered earlier."
+    },
+    "answer": "D",
+    "rationale": "Option D is incorrect because the funding is sourced from JICA (Japan International Cooperation Agency - Rs 440.42 cr) and the Government of India (Rs 96.68 cr), not the World Bank and ADB (which fund the PM-SETU scheme). (Reference: Page 18, 64 & 86, National Affairs)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Science / TDB",
+    "question": "Match the following components of the TDB agreements with space-tech startups:\n\nColumn I:\n1. Agnikul Cosmos Technology Goal\n2. GalaxEye Space Project Focus\n3. Funding Mechanism for Agnikul\n\nColumn II:\nA. Multisensor satellite with OptoSAR imaging\nB. Optionally Convertible Debentures (OCD)\nC. Upgrade from TRL-4 to TRL-8\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-A, 2-B, 3-C",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-C, 2-B, 3-A",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "A",
+    "rationale": "Agnikul aims to upgrade the Agnibaan RLV from TRL-4 to TRL-8 (1-C). GalaxEye focuses on a multisensor satellite with OptoSAR imaging (2-A). The funding for Agnikul is routed via Optionally Convertible Debentures (OCD) under the RDI Fund (3-B). (Reference: Page 19, 64 & 86, National Affairs)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "Green Finance / Blue Bond",
+    "question": "Assertion (A): Sagarmala Finance Corporation Limited (SMFCL) launched India's 1st ever blue bond with a base target of Rs 600 crore.\nReason (R): The raised funds will be utilized exclusively for financing the construction of inland aviation hubs and aerospace manufacturing facilities.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both (A) and (R) are true, and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+      "C": "(A) is true, but (R) is false.",
+      "D": "(A) is false, but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "C",
+    "rationale": "Statement (A) is true; SMFCL launched the blue bond with a Rs 600 crore base target. Statement (R) is false because blue bonds are dedicated to the *maritime sector*. The funds will be used for maritime lending, greenfield port projects, and coastal road networks, not aviation hubs. (Reference: Page 35, 71 & 93, Banking & Finance)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "FDI Analysis",
+    "question": "According to the RBI Monthly Bulletin of Sept 2026, arrange the following source countries of India's FDI in alphabetical order as listed in the report's top sources:\n\n1. USA\n2. Mauritius\n3. UAE\n\nSelect the correct alphabetical sequence:",
+    "options": {
+      "A": "1, 2, 3",
+      "B": "2, 3, 1",
+      "C": "3, 2, 1",
+      "D": "2, 1, 3",
+      "E": "1, 3, 2"
+    },
+    "answer": "B",
+    "rationale": "Alphabetically sorting the top source countries mentioned: Mauritius (M) -> UAE (U, A) -> USA (U, S). The sequence is 2 (Mauritius), 3 (UAE), 1 (USA). (Reference: Page 92, Banking & Finance)",
+    "tag": "Current-Transient",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "SBI Card / YONO",
+    "question": "Which of the following card variants is NOT available under the 'Advantage SBI Card' FD-backed secured credit facility launched on YONO?",
+    "options": {
+      "A": "SBI Card ELITE",
+      "B": "SBI Card PRIME",
+      "C": "SimplyCLICK SBI Card",
+      "D": "SimplySAVE SBI Card",
+      "E": "SBI Card AURUM"
+    },
+    "answer": "E",
+    "rationale": "The facility covers exactly 4 variants: SBI Card ELITE, SBI Card PRIME, SimplyCLICK SBI Card, and SimplySAVE SBI Card. AURUM is a super-premium card not listed under this specific FD-backed rollout. (Reference: Page 34 & 71, Banking & Finance)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "Banking & Finance",
+    "sub_category": "TBX Platforms",
+    "question": "Fill in the blanks regarding the TBX B2B bill payment integration:\nTBX operates as a ________ within the Bharat Connect for Business ecosystem, relying on ________ as the Sponsor Operating Unit.\n",
+    "options": {
+      "A": "Payment Service Provider (PSP); ICICI Bank",
+      "B": "Participating Agent Institution (P-AI); IDFC FIRST Bank",
+      "C": "Payment Aggregator (PA); HDFC Bank",
+      "D": "Participating Agent Institution (P-AI); State Bank of India",
+      "E": "National Central Agency (NCA); IDFC FIRST Bank"
+    },
+    "answer": "B",
+    "rationale": "TBX operates as a Participating Agent Institution (P-AI) within the ecosystem, with IDFC FIRST Bank acting as the Sponsor Operating Unit. (Reference: Page 32 & 70, Banking & Finance)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "Energy Forecasts",
+    "question": "Assertion (A): According to the IEA Electrification Special Report 2026, accelerated electrification could reduce global energy import bills by over USD 400 billion by 2035.\nReason (R): For India specifically, this shift could save nearly 30% of its 2025 energy import expenditure due to the adoption of EVs and transport electrification.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both (A) and (R) are true, and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+      "C": "(A) is true, but (R) is false.",
+      "D": "(A) is false, but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "B",
+    "rationale": "Both statements are true. Global savings are projected over USD 400 billion (A), and India's local savings are ~30% of its 2025 import bill (R). However, (R) describes a country-specific localized effect which is a component of, but not the overarching *explanation* for, the massive *global* savings figure stated in (A). (Reference: Page 29 & 68, International Affairs)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "International Affairs",
+    "sub_category": "OAG Megahubs",
+    "question": "Match the following airports with their corresponding rankings in the OAG Megahubs 2026 report:\n\nColumn I:\n1. Istanbul Airport (IST)\n2. Delhi Airport (IGIA)\n3. Kuala Lumpur Airport (KUL)\n\nColumn II:\nA. Ranked 1st in Low-Cost Megahubs\nB. Ranked 28th globally\nC. Ranked 1st globally\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-B, 3-A",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-A, 2-B, 3-C",
+      "D": "1-C, 2-A, 3-B",
+      "E": "1-B, 2-A, 3-C"
+    },
+    "answer": "A",
+    "rationale": "Istanbul is 1st globally (1-C). Delhi is 28th globally (2-B). Kuala Lumpur is 1st in Low-Cost Megahubs (3-A). (Reference: Page 28, 68 & 90, International Affairs)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "National Affairs",
+    "sub_category": "Health / AB PM-JAY",
+    "question": "Arrange the following quantitative milestones of the Ayushman Bharat PM-JAY scheme in descending numerical order (from highest figure to lowest figure, using the literal digits from the report):\n\n1. Number of AAM (Ayushman Arogya Mandir) centres established\n2. Number of empanelled public and private hospitals\n3. Number of critical-care blocks established under PM-ABHIM\n\nSelect the correct sequence:",
+    "options": {
+      "A": "1 (1,87,112), 2 (38,000), 3 (631)",
+      "B": "1 (1,87,112), 3 (631), 2 (38,000)",
+      "C": "2 (38,000), 1 (1,87,112), 3 (631)",
+      "D": "3 (631), 2 (38,000), 1 (1,87,112)",
+      "E": "2 (38,000), 3 (631), 1 (1,87,112)"
+    },
+    "answer": "A",
+    "rationale": "AAM centres: 1,87,112. Empanelled hospitals: 38,000. Critical-care blocks: 631. Descending order is 1,87,112 > 38,000 > 631. So, 1, 2, 3. (Reference: Page 10 & 83, National Affairs)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "Obituary",
+    "sub_category": "International Sports",
+    "question": "Consider the following statements regarding Sandro Mazzola:\n\n1. He was an Italian football legend and former AC Milan captain.\n2. He won the 1968 UEFA European Championship with the Italian national team.\n3. He was the Ballon d'Or runner-up in 1971.\n\nWhich of the statements given above are correct?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 and 3 only",
+      "C": "1 and 3 only",
+      "D": "All 1, 2, and 3",
+      "E": "Only 3"
+    },
+    "answer": "B",
+    "rationale": "Statements 2 and 3 are correct. Statement 1 is incorrect because he was a legend and former captain of *Inter Milan*, not AC Milan. (Reference: Page 47 & 77, Obituary)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "Appointments & Resignations",
+    "sub_category": "CBSE Chairperson",
+    "question": "Fill in the blanks regarding the recent appointment at CBSE:\n________, an IAS officer, was appointed as the new Chairperson of the Central Board of Secondary Education (CBSE), replacing ________ who was holding additional charge.\n",
+    "options": {
+      "A": "Dinesh Pant; Rahul Singh",
+      "B": "Mandeep K. Bhandari; Lokhande Prashant Sitaram",
+      "C": "Rahul Singh; Mandeep K. Bhandari",
+      "D": "Lokhande Prashant Sitaram; Girija Subramanian",
+      "E": "Mandeep K. Bhandari; Sandeep Poundrik"
+    },
+    "answer": "B",
+    "rationale": "Mandeep K. Bhandari was appointed as the new CBSE Chairperson, replacing Lokhande Prashant Sitaram who held additional charge after Rahul Singh's transfer in June 2026. (Reference: Page 41, 74 & 95, Appointments & Resignations)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "Important Days",
+    "sub_category": "Nuclear Weapons",
+    "question": "Assertion (A): The International Day for the Total Elimination of Nuclear Weapons was first observed on 26 September 2014.\nReason (R): It was established by a UNGA Resolution passed in 2013 to address the global risk posed by nuclear arsenals.\n\nChoose the correct option:",
+    "options": {
+      "A": "Both (A) and (R) are true, and (R) is the correct explanation of (A).",
+      "B": "Both (A) and (R) are true, but (R) is not the correct explanation of (A).",
+      "C": "(A) is true, but (R) is false.",
+      "D": "(A) is false, but (R) is true.",
+      "E": "Both (A) and (R) are false."
+    },
+    "answer": "A",
+    "rationale": "Both statements are true. The UNGA Resolution A/RES/68/32 was passed in 2013 (R), which established the framework for the observance, directly leading to the first observance taking place on September 26, 2014 (A). (Reference: Page 54 & 100, Important Days)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  },
+  {
+    "category": "State News",
+    "sub_category": "UP Agriculture",
+    "question": "Match the following details associated with the 'Mukhyamantri Krishak Samriddhi Yojana' in Uttar Pradesh:\n\nColumn I:\n1. Target beneficiaries\n2. Previous loan interest rate\n3. New reduced loan interest rate\n\nColumn II:\nA. 11%\nB. 5 lakh small/marginal farmers\nC. 6%\n\nSelect the correct answer:",
+    "options": {
+      "A": "1-C, 2-A, 3-B",
+      "B": "1-B, 2-C, 3-A",
+      "C": "1-B, 2-A, 3-C",
+      "D": "1-A, 2-B, 3-C",
+      "E": "1-A, 2-C, 3-B"
+    },
+    "answer": "C",
+    "rationale": "Target beneficiaries: 5 lakh farmers (1-B). Previous rate: 11% (2-A). New rate: 6% (3-C). (Reference: Page 56 & 101, State News)",
+    "tag": "Static-Conceptual",
+    "pdf/question-bank": "Weekly Content – September 2026 – 4th Week"
+  }
+]

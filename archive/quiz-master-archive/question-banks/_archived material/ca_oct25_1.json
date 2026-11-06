@@ -1,0 +1,752 @@
+[
+  {
+    "category": "ESI",
+    "sub_category": "Agriculture",
+    "question": "Regarding the Minimum Support Price (MSP) for Rabi crops for the 2026-27 marketing season, which of the following crops is expected to yield the highest margin of 109% over the All India weighted average cost of production?",
+    "options": {
+      "A": "Rapeseed and Mustard",
+      "B": "Wheat",
+      "C": "Lentil (Masur)",
+      "D": "Gram",
+      "E": "Safflower"
+    },
+    "answer": "B",
+    "rationale": "According to page 6, the expected margin over the All India weighted average cost of production is highest for Wheat at 109%, followed by Rapeseed and Mustard at 93%.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Govt Schemes",
+    "question": "The Union Cabinet approved the 'Mission for Aatmanirbharta in Pulses' in October 2025. What is the total financial outlay and the implementation period for this mission?",
+    "options": {
+      "A": "Rs 11,440 crore; 5 years (2025-26 to 2029-30)",
+      "B": "Rs 10,500 crore; 6 years (2025-26 to 2030-31)",
+      "C": "Rs 11,440 crore; 6 years (2025-26 to 2030-31)",
+      "D": "Rs 12,000 crore; 7 years (2025-26 to 2031-32)",
+      "E": "Rs 11,250 crore; 6 years (2024-25 to 2029-30)"
+    },
+    "answer": "C",
+    "rationale": "Page 6 and 7 state that the Mission for Aatmanirbharta in Pulses has a total budget of Rs 11,440 crore for a period of 6 years, from 2025-26 to 2030-31.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Agriculture",
+    "question": "In the hike approved for 6 Rabi crops for the 2026-27 season, which crop saw the absolute highest increase in its Minimum Support Price per quintal?",
+    "options": {
+      "A": "Lentil (Masur)",
+      "B": "Wheat",
+      "C": "Gram",
+      "D": "Safflower",
+      "E": "Barley"
+    },
+    "answer": "D",
+    "rationale": "Page 7 mentions that the absolute highest increase was for Safflower at Rs 600 per quintal, bringing it to Rs 6,540/quintal.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Health/Science",
+    "question": "The 3rd phase (Phase-III) of the Biomedical Research Career Programme (BRCP) was approved with a total investment of Rs 1,500 crore. Which of the following sets of organizations are implementing this through the Special Purpose Vehicle (SPV) 'India Alliance'?",
+    "options": {
+      "A": "DBT and World Health Organization (WHO)",
+      "B": "ICMR and Wellcome Trust (WT)",
+      "C": "DBT and Wellcome Trust (WT)",
+      "D": "Ministry of AYUSH and Gates Foundation",
+      "E": "CSIR and Wellcome Trust (WT)"
+    },
+    "answer": "C",
+    "rationale": "As per Page 9, the Phase-III of BRCP will be approved by the Department of Biotechnology (DBT) and the Wellcome Trust (WT), UK, through the dedicated SPV 'India Alliance'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Infrastructure/Transport",
+    "question": "The Cabinet Committee on Economic Affairs (CCEA) approved the widening of the Kalibor-Numaligarh section of NH-715 in Assam. What is the total budget outlay and the length of this project?",
+    "options": {
+      "A": "Rs 5,862 crore; 85.675 km",
+      "B": "Rs 6,957 crore; 80.500 km",
+      "C": "Rs 6,957 crore; 85.675 km",
+      "D": "Rs 7,100 crore; 90.125 km",
+      "E": "Rs 6,500 crore; 85.675 km"
+    },
+    "answer": "C",
+    "rationale": "Page 8 and 9 confirm the total budget outlay is Rs 6,957 crore and the length is 85.675 km.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Education",
+    "question": "Under the new approval for 57 Kendriya Vidyalayas (KVs) in October 2025, how many KVs are proposed to be established specifically in 'Aspirational districts'?",
+    "options": {
+      "A": "20",
+      "B": "14",
+      "C": "04",
+      "D": "05",
+      "E": "17"
+    },
+    "answer": "B",
+    "rationale": "Page 10 states that among the 57 new KVs, 20 will be in districts with no KV, 14 in Aspirational districts, 4 in LWE districts, and 5 in North Eastern Region/Hilly areas.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "FM",
+    "sub_category": "Finance News",
+    "question": "Effective from July 01, 2025, the Union Cabinet announced a 3% hike in Dearness Allowance (DA). What is the total estimated annual impact on the exchequer because of this hike?",
+    "options": {
+      "A": "Rs 10,083.96 crore",
+      "B": "Rs 12,328 crore",
+      "C": "Rs 9,540.25 crore",
+      "D": "Rs 11,440.00 crore",
+      "E": "Rs 10,500.00 crore"
+    },
+    "answer": "A",
+    "rationale": "Page 11 clearly states the cumulative impact on the exchequer on account of an increase in DA & DR will be Rs 10,083.96 crore annually.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Committees",
+    "question": "Which individual has been appointed as the Chairperson of the 8th Central Pay Commission (CPC) as approved by the Union Cabinet in January 2025?",
+    "options": {
+      "A": "Pankaj Jain",
+      "B": "Professor Pulak Ghosh",
+      "C": "Justice Ranjana Prakash Desai",
+      "D": "T.V. Somanathan",
+      "E": "Arvind Panagariya"
+    },
+    "answer": "C",
+    "rationale": "Page 12 states that the Union Cabinet approved the appointment of former Supreme Court Justice Ranjana Prakash Desai as the chairperson of the 8th CPC.",
+    "tag": "Static-Conceptual"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Agriculture",
+    "question": "Under the Nutrient-Based Subsidy (NBS) rates for the Rabi season 2025-26, what is the fixed per kilogram (kg) subsidy for Phosphorus (P)?",
+    "options": {
+      "A": "Rs 43.02",
+      "B": "Rs 47.96",
+      "C": "Rs 2.38",
+      "D": "Rs 2.87",
+      "E": "Rs 50.12"
+    },
+    "answer": "B",
+    "rationale": "According to page 13, the per kg subsidy for nutrients has been fixed as: Nitrogen (N) - Rs 43.02, Phosphorus (P) - Rs 47.96, Potash (K) - Rs 2.38, and Sulphur (S) - Rs 2.87.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Launches & Inaugurations",
+    "question": "The NIELIT Digital University (NDU), launched in October 2025, aims to train how many students by the year 2030?",
+    "options": {
+      "A": "10 lakh",
+      "B": "25 lakh",
+      "C": "40 lakh",
+      "D": "50 lakh",
+      "E": "30 lakh"
+    },
+    "answer": "C",
+    "rationale": "Page 14 and 15 state that the NDU platform aims to train 40 lakh students by 2030.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Human Development",
+    "question": "Regarding the PM-SETU (Pradhan Mantri Skilling and Employability Transformation through Upgraded ITIs) scheme, which of the following statements is INCORRECT?",
+    "options": {
+      "A": "It is a Centrally Sponsored Scheme (CSS).",
+      "B": "The total investment for the scheme is Rs 60,000 crore.",
+      "C": "The scheme proposes the upgradation of 1,000 Government ITIs.",
+      "D": "It follows a hub-and-spoke model comprising 300 hub ITIs and 700 spoke ITIs.",
+      "E": "Phase 1 will have a special focus on ITIs in Patna and Darbhanga, Bihar."
+    },
+    "answer": "D",
+    "rationale": "According to page 16, the hub-and-spoke model comprises 200 hub ITIs and 800 spoke ITIs, not 300 and 700.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "State Initiatives",
+    "question": "Under the revamped Student Credit Card (SCC) Scheme launched in Bihar in October 2025, what is the maximum limit for interest-free education loans?",
+    "options": {
+      "A": "Rs 2 lakh",
+      "B": "Rs 3 lakh",
+      "C": "Rs 4 lakh",
+      "D": "Rs 5 lakh",
+      "E": "Rs 1.5 lakh"
+    },
+    "answer": "C",
+    "rationale": "Page 17 mentions that the redesigned SCC scheme provides completely interest-free education loans of up to Rs 4 lakh.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Environment",
+    "question": "During the 71st National Wildlife Week (WLW 2025), how many national projects aimed at strengthening species conservation and conflict management were launched?",
+    "options": {
+      "A": "4",
+      "B": "5",
+      "C": "6",
+      "D": "3",
+      "E": "7"
+    },
+    "answer": "B",
+    "rationale": "Page 18 states that the Union Minister launched 5 national projects during the event.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Environment",
+    "question": "Which organization is leading the 'Project Sloth Bear' initiative, which will be implemented by 16 state forest departments from 2025 to 2030?",
+    "options": {
+      "A": "National Tiger Conservation Authority (NTCA)",
+      "B": "Wildlife Institute of India (WII)",
+      "C": "Salim Ali Centre for Ornithology and Natural History (SACON)",
+      "D": "Indian Council of Forestry Research and Education (ICFRE)",
+      "E": "Zoological Survey of India (ZSI)"
+    },
+    "answer": "B",
+    "rationale": "Page 19 mentions that Project Sloth Bear, running from October 2025 to October 2030, is being led by WII and implemented by 16 state forest departments.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Govt Schemes",
+    "question": "The People’s Plan Campaign (PPC) 2025-26, titled 'Sabki Yojana, Sabka Vikas', aims to prepare Panchayat Development Plans (PDPs) for which financial year?",
+    "options": {
+      "A": "FY 2025-26",
+      "B": "FY 2026-27",
+      "C": "FY 2027-28",
+      "D": "FY 2024-25",
+      "E": "FY 2028-29"
+    },
+    "answer": "B",
+    "rationale": "Page 20 states that the PPC 2025-26 was launched to prepare PDPs for the Financial Year (FY) 2026-27.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Social Issues",
+    "question": "As per the 'Tobacco-Free Youth Campaign 3.0' launched in October 2025, what is the distance of the 'tobacco-free zone' mandated to be maintained around educational institutions?",
+    "options": {
+      "A": "50-yard",
+      "B": "100-yard",
+      "C": "200-yard",
+      "D": "150-yard",
+      "E": "100-metre"
+    },
+    "answer": "B",
+    "rationale": "Page 22 highlights that the campaign ensures educational institutions maintain 100-yard tobacco-free zones.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Agriculture",
+    "question": "The 'PM Dhan Dhaanya Krishi Yojana (PMDDKY)' is modeled on which existing program's success for its saturation-based approach in 100 agri-districts?",
+    "options": {
+      "A": "PM-KISAN",
+      "B": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+      "C": "Aspirational Districts Programme (ADP)",
+      "D": "Mission for Aatmanirbharta in Pulses",
+      "E": "Rashtriya Krishi Vikas Yojana (RKVY)"
+    },
+    "answer": "C",
+    "rationale": "Page 23 clarifies that PM DDKY is designed to catalyze growth in 100 agri-districts and is modeled on the Aspirational Districts Programme (ADP).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Infrastructure",
+    "question": "The Pradhan Mantri GatiShakti - National Master Plan (PMGS-NMP) integrates how many engines of economic growth as per its conceptual framework?",
+    "options": {
+      "A": "Five",
+      "B": "Six",
+      "C": "Seven",
+      "D": "Eight",
+      "E": "Nine"
+    },
+    "answer": "C",
+    "rationale": "Page 25 states that the initiative integrates seven major engines of economic growth: Roads, Railways, Ports, Waterways, Airports, Mass Transport, and Logistics Infrastructure.",
+    "tag": "Static-Conceptual"
+  },
+  {
+    "category": "National",
+    "sub_category": "Technology/AI",
+    "question": "In October 2025, India’s first Artificial Intelligence (AI) Centre of Excellence (CoE) for 'Public Good' was launched in which city?",
+    "options": {
+      "A": "Bengaluru",
+      "B": "Hyderabad",
+      "C": "Visakhapatnam",
+      "D": "New Delhi",
+      "E": "Chennai"
+    },
+    "answer": "C",
+    "rationale": "Page 28 mentions that TechBharat Research Foundation in collaboration with Google Cloud India launched India's first AI CoE for Public Good in Visakhapatnam, Andhra Pradesh.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Governance",
+    "question": "The LIMBS (Legal Information Management and Briefing System) Live Cases Dashboard, launched in October 2025, currently tracks approximately how many live cases?",
+    "options": {
+      "A": "5,00,000",
+      "B": "7,23,123",
+      "C": "10,00,000",
+      "D": "6,50,000",
+      "E": "7,50,000"
+    },
+    "answer": "B",
+    "rationale": "Page 28 specifies that the dashboard tracks 723,123 live cases across 53 ministries/departments.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Infrastructure",
+    "question": "The cargo handling capacity of New Mangalore Port reached 46.01 million tonnes in FY25. What is the total annual capacity of this port?",
+    "options": {
+      "A": "100 million tonnes",
+      "B": "104 million tonnes",
+      "C": "110 million tonnes",
+      "D": "90 million tonnes",
+      "E": "120 million tonnes"
+    },
+    "answer": "B",
+    "rationale": "Page 29 notes that the total annual capacity of New Mangalore Port is 104 million tonnes.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Digital Identity",
+    "question": "UIDAI launched 'SITAA' in October 2025 to foster innovation in digital identity. What does the acronym 'SITAA' stand for?",
+    "options": {
+      "A": "Scheme for Integration and Technology Advancement for Aadhaar",
+      "B": "System for Innovation and Technical Association with Aadhaar",
+      "C": "Scheme for Innovation and Technology Association with Aadhaar",
+      "D": "Support for Innovative Technology and Aadhaar Authentication",
+      "E": "Scheme for Intellectual and Technical Advancement of Aadhaar"
+    },
+    "answer": "C",
+    "rationale": "Page 30 defines SITAA as 'Scheme for Innovation and Technology Association with Aadhaar'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Agriculture",
+    "question": "The 'Kapas Kranti Mission' was launched in October 2025 with an outlay of Rs 600 crore. This mission specifically aims to promote which type of cotton cultivation?",
+    "options": {
+      "A": "Short-staple cotton",
+      "B": "Medium-staple cotton",
+      "C": "Long-staple cotton",
+      "D": "High-yield BT cotton",
+      "E": "Organic short-staple cotton"
+    },
+    "answer": "C",
+    "rationale": "Page 31 states the mission aims to promote 'high-yield, long-staple cotton cultivation'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Social Issues",
+    "question": "Under the 'We Rise' initiative launched by NITI Aayog and DP World, how many women entrepreneurs will be selected to receive global logistics support?",
+    "options": {
+      "A": "50",
+      "B": "100",
+      "C": "200",
+      "D": "500",
+      "E": "75"
+    },
+    "answer": "B",
+    "rationale": "Page 32 mentions that DP World will leverage its global logistics network to enhance the export readiness of 100 selected women entrepreneurs.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Health",
+    "question": "Which organization collaborated with the National Centre for Disease Control (NCDC) and WHO India to develop training modules on the Public Health Management of Chemical Emergencies?",
+    "options": {
+      "A": "ISRO",
+      "B": "CSIR",
+      "C": "NDMA",
+      "D": "ICMR",
+      "E": "AIIMS"
+    },
+    "answer": "C",
+    "rationale": "Page 33 states the modules were developed by NCDC in collaboration with the National Disaster Management Authority (NDMA) and technical support from WHO India.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Education/Science",
+    "question": "The 'Ramanujan Junior Researchers Programme' is a joint fellowship between India and the UK. Under Phase 1, up to six PhD students from which Indian institution will join the programme at LIMS, London?",
+    "options": {
+      "A": "IIT Madras",
+      "B": "IISc Bengaluru",
+      "C": "JNCASR Bengaluru",
+      "D": "TIFR Mumbai",
+      "E": "IIT Delhi"
+    },
+    "answer": "C",
+    "rationale": "Page 33 specifies that Phase 1 involves students from the Jawaharlal Nehru Centre for Advanced Scientific Research (JNCASR), Bengaluru.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Health/Technology",
+    "question": "The 'MAHA MedTech Mission' has a total outlay of Rs 750 crore over five years. What is the maximum extendable funding amount provided for exceptional individual projects under this mission?",
+    "options": {
+      "A": "Rs 25 crore",
+      "B": "Rs 50 crore",
+      "C": "Rs 10 crore",
+      "D": "Rs 40 crore",
+      "E": "Rs 15 crore"
+    },
+    "answer": "B",
+    "rationale": "Page 34 states the Mission offers funding between Rs 5 crore and Rs 25 crore, extendable up to Rs 50 crore for exceptional projects.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Energy/Mining",
+    "question": "The 'KOYLA SHAKTI' dashboard, launched in October 2025, is powered by which of the following technological frameworks?",
+    "options": {
+      "A": "PM GatiShakti Portal",
+      "B": "Unified Logistics Interface Platform (ULIP)",
+      "C": "National Data and Analytics Platform (NDAP)",
+      "D": "E-khanij Platform",
+      "E": "Meghraj Cloud Platform"
+    },
+    "answer": "B",
+    "rationale": "Page 35 mentions that KOYLA SHAKTI is powered by the Unified Logistics Interface Platform (ULIP) as part of the National Logistics Policy (2022).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Science/Technology",
+    "question": "The Union Minister launched the Anusandhan National Research Fund (Anusandhan Fund) worth Rs 1 lakh crore. This amount is approximately equivalent to how many US dollars?",
+    "options": {
+      "A": "USD 10 billion",
+      "B": "USD 12 billion",
+      "C": "USD 15 billion",
+      "D": "USD 8 billion",
+      "E": "USD 11 billion"
+    },
+    "answer": "B",
+    "rationale": "Page 36 specifies that the fund is worth Rs 1 lakh crore, which is approximately USD 12 billion.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Agriculture",
+    "question": "The 'SMART-CROP' project, launched by SBI Foundation and ICRISAT, focuses on real-time crop stress monitoring for which primary crops?",
+    "options": {
+      "A": "Wheat and Barley",
+      "B": "Rice and Maize",
+      "C": "Chickpea and Pigeonpea",
+      "D": "Tur and Urad",
+      "E": "Mustard and Safflower"
+    },
+    "answer": "C",
+    "rationale": "Page 37 identifies the focus crops as 'Pulse crops, specifically chickpea and pigeonpea'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Energy",
+    "question": "India's first cooperative multi-feed Compressed Biogas (CBG) plant was inaugurated in Maharashtra in October 2025. What is the daily production capacity for CBG and potash granules respectively?",
+    "options": {
+      "A": "10 tonnes and 70 tonnes",
+      "B": "12 tonnes and 75 tonnes",
+      "C": "15 tonnes and 80 tonnes",
+      "D": "12 tonnes and 60 tonnes",
+      "E": "10 tonnes and 75 tonnes"
+    },
+    "answer": "B",
+    "rationale": "Page 38 states the plant has a capacity of '12 tonnes (CBG) and 75 tonnes (potash granules) per day'.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Infrastructure",
+    "question": "The Navi Mumbai International Airport (NMIA) features a sustainable initiative involving solar power generation. What is the installed solar power capacity mentioned for this project?",
+    "options": {
+      "A": "50-Megawatt (MW)",
+      "B": "47-Megawatt (MW)",
+      "C": "40-Megawatt (MW)",
+      "D": "45-Megawatt (MW)",
+      "E": "55-Megawatt (MW)"
+    },
+    "answer": "B",
+    "rationale": "Page 39 mentions that NMIA incorporates a 47-Megawatt (MW) solar power generation capacity.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Infrastructure/Transport",
+    "question": "The Mumbai Metro Line-3 (Aqua Line) project, with the completion of Phase 2B, reached a total project cost of:",
+    "options": {
+      "A": "Rs 12,200 crores",
+      "B": "Rs 19,650 crores",
+      "C": "Rs 37,720 crores",
+      "D": "Rs 33,500 crores",
+      "E": "Rs 40,000 crores"
+    },
+    "answer": "C",
+    "rationale": "Page 40 states the total cost of the Aqua Line project reached Rs 37,720 crores including all phases.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Infrastructure",
+    "question": "Under the Setu Bandhan Scheme, what amount was announced by Union Minister Nitin Gadkari for small bridge construction in Puducherry in October 2025?",
+    "options": {
+      "A": "Rs 50 crore",
+      "B": "Rs 100 crore",
+      "C": "Rs 150 crore",
+      "D": "Rs 200 crore",
+      "E": "Rs 75 crore"
+    },
+    "answer": "B",
+    "rationale": "Page 41 specifies that Rs 100 crore was announced under the Setu Bandhan Scheme for small bridge construction.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Agriculture",
+    "question": "The National Seeds Corporation (NSC) inaugurated a new state-of-the-art vegetable and flower seed processing and packaging unit at Pusa Complex, New Delhi. What is its per-hour seed processing capacity?",
+    "options": {
+      "A": "4 tonnes",
+      "B": "1 tonne",
+      "C": "2 tonnes",
+      "D": "5 tonnes",
+      "E": "3 tonnes"
+    },
+    "answer": "B",
+    "rationale": "Page 42 mentions that the vegetable processing plant in New Delhi has a capacity of 1 tonne of seeds per hour.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Govt Schemes",
+    "question": "The 'Swachh Shehar Jodi (SSJ)' initiative rolled out in September 2025 involves a structured mentorship framework. How many mentee cities are covered under this initiative?",
+    "options": {
+      "A": "72",
+      "B": "100",
+      "C": "200",
+      "D": "150",
+      "E": "163"
+    },
+    "answer": "C",
+    "rationale": "Page 43 and 44 state the initiative involves 72 mentor cities and around 200 mentee cities.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Transport",
+    "question": "In September 2025, Central Railway became the first Zonal Railway to complete KAVACH loco trials in all five of its divisions. What is the total route network length targeted for rolling out this system in CR?",
+    "options": {
+      "A": "730 km",
+      "B": "4,000 km",
+      "C": "5,000 km",
+      "D": "3,000 km",
+      "E": "2,500 km"
+    },
+    "answer": "B",
+    "rationale": "Page 45 states the major step toward rolling out the system across its 4,000-kilometre (km) route network.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Current History",
+    "question": "A commemorative coin of Rs 100 was released in October 2025 to mark the 100th year of Rashtriya Swayamsevak Sangh (RSS). What unique feature does this coin possess?",
+    "options": {
+      "A": "It features the 1963 Republic Day Parade.",
+      "B": "It is made of 100% pure silver.",
+      "C": "It features an image of 'Bharat Mata' for the first time on Indian currency.",
+      "D": "It features the image of Dr. K.B. Hedgewar.",
+      "E": "It has 100 serrations on its edge."
+    },
+    "answer": "C",
+    "rationale": "Page 45 notes the coin features an image of 'Bharat Mata' on an Indian currency for the first time.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Governance",
+    "question": "Regarding the history of the Union Public Service Commission (UPSC), which commission's recommendations in 1924 led to its establishment?",
+    "options": {
+      "A": "Santhanam Committee",
+      "B": "Lee Commission",
+      "C": "Kothari Commission",
+      "D": "Radhakrishnan Commission",
+      "E": "Simon Commission"
+    },
+    "answer": "B",
+    "rationale": "Page 47 states that the Public Service Commission was established in 1926 following the recommendations of the Lee Commission (1924).",
+    "tag": "Static-Conceptual"
+  },
+  {
+    "category": "National",
+    "sub_category": "Industry",
+    "question": "Where is India's first private-sector Final Assembly Line (FAL) to manufacture the Airbus H125 helicopter being established?",
+    "options": {
+      "A": "Vadodara, Gujarat",
+      "B": "Vemagal, Karnataka",
+      "C": "Tumakuru, Karnataka",
+      "D": "Chennai, Tamil Nadu",
+      "E": "Hyderabad, Telangana"
+    },
+    "answer": "B",
+    "rationale": "Page 47 mentions the FAL is being established in Vemagal (Karnataka).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "State News",
+    "question": "The Government of Tamil Nadu partnered with which German football club to establish India’s first dedicated sports-technology incubation centre?",
+    "options": {
+      "A": "Bayern Munich",
+      "B": "RB Leipzig",
+      "C": "Borussia Dortmund",
+      "D": "Bayer Leverkusen",
+      "E": "VfB Stuttgart"
+    },
+    "answer": "C",
+    "rationale": "Page 48 states the partnership is with Borussia Dortmund.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Social Issues",
+    "question": "Which district in Chhattisgarh was declared India’s first Child Marriage-Free district in October 2025?",
+    "options": {
+      "A": "Surajpur",
+      "B": "Raipur",
+      "C": "Balod",
+      "D": "Bastar",
+      "E": "Durg"
+    },
+    "answer": "C",
+    "rationale": "Page 48 identifies Balod district in Chhattisgarh as India's first Child Marriage-Free district.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Disaster Management",
+    "question": "A High-Level Committee approved a plan for the restoration and rejuvenation of 24 wetlands in Assam. What is the central government's financial share for this project out of the total outlay of Rs 692.05 crore?",
+    "options": {
+      "A": "Rs 173.01 crore",
+      "B": "Rs 519.04 crore",
+      "C": "Rs 346.02 crore",
+      "D": "Rs 200.00 crore",
+      "E": "Rs 622.84 crore"
+    },
+    "answer": "B",
+    "rationale": "Page 49 states that the GoI will contribute Rs 519.04 crore (75% of the total budget) for the project.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Disaster Management",
+    "question": "Union Minister Amit Shah approved the advance release of Rs 24.40 crore as the 2nd installment of the State Disaster Response Fund (SDRF) for which state for the year 2025-26?",
+    "options": {
+      "A": "Assam",
+      "B": "Kerala",
+      "C": "Sikkim",
+      "D": "Uttarakhand",
+      "E": "Himachal Pradesh"
+    },
+    "answer": "C",
+    "rationale": "Page 50 mentions the release of Rs 24.40 crore to the state government of Sikkim.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Infrastructure",
+    "question": "The world’s highest motorable road was constructed at Mig La Pass at an altitude of 19,400 feet. Which previous record holder at 19,024 feet did it surpass?",
+    "options": {
+      "A": "Khardung La Pass",
+      "B": "Umling La Pass",
+      "C": "Chang La Pass",
+      "D": "Rohtang Pass",
+      "E": "Zoji La Pass"
+    },
+    "answer": "B",
+    "rationale": "Page 50 states that the road at Mig La Pass surpassed the previous record set at Umling La Pass (19,024 feet).",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Govt Schemes",
+    "question": "Under the 'Critical Mineral Recycling Incentive Scheme' (Rs 1,500 crore), which of the following is the largest earmarked outlay for a specific recycling stream?",
+    "options": {
+      "A": "e-waste",
+      "B": "Other waste streams",
+      "C": "Industrial scrap",
+      "D": "Lithium-ion Battery (LiB) recycling",
+      "E": "Spent catalyst recycling"
+    },
+    "answer": "D",
+    "rationale": "Page 51 specifies the allocation: LiB recycling - Rs 700 crore; e-waste - Rs 650 crore; other waste streams - Rs 135 crore.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "National",
+    "sub_category": "Science/Technology",
+    "question": "The 'NaMo Semiconductor Laboratory' approved at IIT Bhubaneswar is primarily funded under which of the following schemes?",
+    "options": {
+      "A": "PM-SETU",
+      "B": "National Quantum Mission",
+      "C": "Members of Parliament Local Area Development (MPLAD) Scheme",
+      "D": "Anusandhan National Research Fund (ANRF)",
+      "E": "Digital India Mission"
+    },
+    "answer": "C",
+    "rationale": "Page 52 states the project is funded under the MPLAD Scheme with an allocation of around Rs 4.95 crore.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Agriculture",
+    "question": "The Ministry of Agriculture (MoAFW) expanded the e-NAM platform in October 2025. What is the new total number of tradable agricultural commodities on the platform after adding 9 new ones?",
+    "options": {
+      "A": "238",
+      "B": "247",
+      "C": "250",
+      "D": "240",
+      "E": "256"
+    },
+    "answer": "B",
+    "rationale": "Page 53 states that adding nine new commodities totaled tradable agricultural commodities to 247.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Social Issues",
+    "question": "NITI Aayog has proposed a 20-year national initiative titled 'Mission Digital ShramSetu'. What is the primary focus of this initiative?",
+    "options": {
+      "A": "Digitalization of the textile sector",
+      "B": "Increasing export efficiency",
+      "C": "Making AI accessible and beneficial for informal workers",
+      "D": "Skill development for semiconductor manufacturing",
+      "E": "Promoting financial inclusion in rural areas"
+    },
+    "answer": "C",
+    "rationale": "Page 53 and 54 state that the initiative focuses on enhancing livelihoods & inclusion for India's 490 million informal workers using AI.",
+    "tag": "Current-Transient"
+  },
+  {
+    "category": "ESI",
+    "sub_category": "Industry",
+    "question": "Under the revised PLI Scheme for Textiles notified in October 2025, what is the new minimum investment requirement for applicants in the 'Part-I category'?",
+    "options": {
+      "A": "Rs 300 crore",
+      "B": "Rs 100 crore",
+      "C": "Rs 150 crore",
+      "D": "Rs 50 crore",
+      "E": "Rs 200 crore"
+    },
+    "answer": "C",
+    "rationale": "Page 54 states that the minimum investment requirement for Part-I category has been reduced from Rs 300 crore to Rs 150 crore.",
+    "tag": "Current-Transient"
+  }
+]
