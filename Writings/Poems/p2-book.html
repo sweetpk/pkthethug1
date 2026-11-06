@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- 1. EDIT PAGE TAB TITLE HERE -->
+    <title>The Book My Father Shouldn’t Have Bought — Pratik's Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Fredoka:wght@500;600;700&family=Lora:ital,wght@0,400..600;1,400..600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="reader-page poem-reader">
+    <div class="reader-shell">
+        <!-- CALM EDITORIAL TOP NAVIGATION -->
+        <nav class="reader-topbar" id="home-nav" aria-label="Reader Navigation">
+            <a href="../../index.html" class="reader-brand">
+                <span class="reader-brand-bolt" aria-hidden="true">⚡</span>
+                <span>pkthethug.in</span>
+            </a>
+            <ul class="reader-nav-links">
+                <li><a href="../poems-list.html" class="reader-nav-btn">← All Poems</a></li>
+                <li><a href="../writings-content-master.html" class="reader-nav-btn">Written Content</a></li>
+                <li><a href="../../index.html" class="reader-nav-btn">Home</a></li>
+            </ul>
+        </nav>
+
+        <!-- EDITORIAL READING SHEET -->
+        <article class="reader-sheet">
+            <header class="reader-header">
+                <span class="reader-kicker kicker-poem">Poetry</span>
+                <!-- 2. EDIT POEM HEADING HERE (Wrap any emphasized word in <span>...</span>) -->
+                <h1 id="blog-title">The Book My Father <span>Shouldn’t</span> Have Bought</h1>
+            </header>
+
+            <!-- INTEGRATED SOUNDTRACK / AUDIO PLAYER -->
+            <div class="audio-player">
+                <span class="soundtrack-tag" aria-hidden="true">♪ LISTEN</span>
+                <button class="play-pause" id="play-pause-btn" aria-label="Play or Pause Music">
+                    <img src="../../assets/images/Play.png" alt="Play" id="play-icon">
+                    <img src="../../assets/images/Pause.png" alt="Pause" id="pause-icon" style="display: none;">
+                </button>
+                <div class="progress-bar" id="progress-container" title="Seek">
+                    <div class="progress" id="progress"></div>
+                </div>
+                <div class="reader-time-readout">
+                    <span class="time" id="current-time">0:00</span>
+                    <span class="time-sep">/</span>
+                    <span class="time" id="duration">0:00</span>
+                </div>
+                <div class="reader-volume-wrap" title="Volume">
+                    <span class="vol-icon" aria-hidden="true">🔊</span>
+                    <input type="range" id="volume-slider" min="0" max="1" step="0.02" value="1" aria-label="Volume">
+                </div>
+                <!-- 3. EDIT MUSIC FILE PATH HERE (Inside Poems/music/) -->
+                <audio id="audio" src="music/p2-book/Relaxing Roman Music - Aetas Romana.mp3"></audio>
+            </div>
+
+            <!-- 4. EDIT TEXT FILE PATH HERE (Inside Poems/poem-texts/) -->
+            <main class="reader-body">
+                <section id="blog-content" data-src="poem-texts/p2-book.txt">
+                    <!-- Content is automatically fetched and rendered by ../scripts/site.js -->
+                </section>
+            </main>
+        </article>
+
+        <!-- CALM READER FOOTER -->
+        <footer class="reader-footer">
+            <div class="footer-container">
+                <div class="form">
+                    <div class="email-subscription">
+                        <form action="https://script.google.com/macros/s/AKfycbzonX0G6GFRdC-sG7LsboDOTNGik_qf_2Ud517Xhx5Og6XKJYGaRTc9VYGaYeimQqvWLQ/exec" method="post" target="_blank">
+                            <input type="email" name="email" placeholder="Enter email..." required>
+                            <button type="submit">
+                                <span>Submit</span>
+                                <span class="btn-arrow" aria-hidden="true">→</span>
+                            </button>
+                        </form>
+                    </div>
+                    <p class="footer-text">To ping you when yours truly drops a new blog or essay</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/pratiik_kumar/" target="_blank" rel="noopener noreferrer" class="social-circle social-ig" title="Instagram">
+                        <img src="../../assets/images/instagram-icon.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/pratik-kumar69/" target="_blank" rel="noopener noreferrer" class="social-circle social-li" title="LinkedIn">
+                        <img src="../../assets/images/linkedin-icon.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://x.com/kpratik_ps" target="_blank" rel="noopener noreferrer" class="social-circle social-tw" title="Twitter">
+                        <img src="../../assets/images/twitter-icon.png" alt="Twitter">
+                    </a>
+                    <a href="https://www.youtube.com/@pkthethug" target="_blank" rel="noopener noreferrer" class="social-circle social-yt" title="YouTube">
+                        <img src="../../assets/images/youtube-icon.png" alt="YouTube">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Consolidated script that handles audio player + text fetching -->
+    <script src="../../scripts/site.js"></script>
+</body>
+</html>

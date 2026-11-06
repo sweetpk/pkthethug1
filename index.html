@@ -4,49 +4,189 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pratik's Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Fredoka:wght@500;600;700&family=MuseoModerno:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <h1>welcome. you are on <span>pratik kumar's</span><br>personal website</h1>
-    </header>
+<body class="cartoon-home">
+    <!-- Background Kinetic Diagonal Pattern & Floating Cartoon Shapes -->
+    <div class="bg-decor" aria-hidden="true">
+        <div class="bg-diagonal-text"></div>
+        <!-- Groovy Wavy Pop-Art Ribbons (Inspired by Reference #2) -->
+        <svg class="groovy-waves" viewBox="0 0 900 700" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <!-- Outer Teal Ribbon -->
+            <path d="M220 720 C250 510, 440 480, 560 350 C680 220, 770 90, 930 20 L930 720 Z" fill="#00D2A0" stroke="#141413" stroke-width="5"/>
+            <!-- Coral Red Loop -->
+            <path d="M310 720 C340 550, 510 510, 630 390 C730 290, 810 170, 930 110 L930 310 C820 340, 750 310, 770 250 C790 190, 860 180, 930 160 L930 720 Z" fill="#FF5733" stroke="#141413" stroke-width="5"/>
+            <!-- Bubblegum Pink Wave -->
+            <path d="M410 720 C450 580, 590 540, 720 460 C810 400, 870 360, 930 340 L930 720 Z" fill="#FF70A6" stroke="#141413" stroke-width="5"/>
+            <!-- Electric Blue Inner Arch -->
+            <path d="M520 720 C560 610, 680 570, 800 540 C860 525, 900 520, 930 515 L930 720 Z" fill="#3B82F6" stroke="#141413" stroke-width="5"/>
+            <!-- Sunny Orange Corner Pocket -->
+            <path d="M640 720 C680 650, 780 620, 930 610 L930 720 Z" fill="#FF9F1C" stroke="#141413" stroke-width="5"/>
+        </svg>
 
-    <nav>
-        <ul>
-            <li><a href="wip.html">who tf</a></li> <!--intro-->
-            <li><a href="wip.html">projects</a></li> <!--work experience-->
-            <li><a href="main-content-list.html">with love</a></li> <!--writtent content-->
-            <li><a href="wip.html">games</a></li> <!--fun stuff-->
-        </ul>
-    </nav>
+        <!-- Big Jagged Cartoon Starburst Top-Right (Inspired by Reference #4) -->
+        <svg class="decor-starburst" viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M130 8 L162 76 L236 52 L196 118 L252 168 L178 182 L176 254 L122 202 L58 242 L74 168 L8 140 L76 102 L54 28 L120 68 Z" fill="#00B884" stroke="#141413" stroke-width="4.5" stroke-linejoin="round"/>
+        </svg>
 
-    <footer>
-        <div class="footer-container">
-            <div class="form">
-                <div class="email-subscription">
-                    <form action="https://script.google.com/macros/s/AKfycbzonX0G6GFRdC-sG7LsboDOTNGik_qf_2Ud517Xhx5Og6XKJYGaRTc9VYGaYeimQqvWLQ/exec" method="post" target="_blank">
-                        <input type="email" name="email" placeholder="enter email..." required>
-                        <button type="submit">submit</button>
-                    </form>                    
-                </div>
-                <p class="footer-text">to ping you when yours truly drops a new blog or essay</p>
-            </div>
-            <div class="footer-socials">
-                <a href="https://www.instagram.com/pratiik_kumar/" target="_blank" rel="noopener noreferrer">
-                    <img src="images/instagram-icon.png" alt="Instagram">
-                </a>
-                <a href="https://www.linkedin.com/in/pratik-kumar69/" target="_blank" rel="noopener noreferrer">
-                    <img src="images/linkedin-icon.png" alt="LinkedIn">
-                </a>
-                <a href="https://x.com/kpratik_ps" target="_blank" rel="noopener noreferrer">
-                    <img src="images/twitter-icon.png" alt="Twitter">
-                </a>
-                <a href="https://www.youtube.com/@pkthethug" target="_blank" rel="noopener noreferrer">
-                    <img src="images/youtube-icon.png" alt="YouTube">
-                </a>
+        <!-- Cartoon Cloud Blob Bottom-Left (Inspired by Reference #4) -->
+        <svg class="decor-cloud-blue" viewBox="0 0 360 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M65 185 C25 185, 8 152, 26 122 C12 92, 42 58, 78 66 C98 30, 156 26, 182 58 C218 35, 272 55, 276 96 C318 102, 332 148, 298 174 C278 192, 238 190, 212 185 Z" fill="#3B82F6" stroke="#141413" stroke-width="4.5" stroke-linejoin="round"/>
+        </svg>
+    </div>
+
+    <!-- Interactive Click-Burst Canvas -->
+    <canvas id="pop-canvas" aria-hidden="true"></canvas>
+
+    <!-- Main Cartoon Framed Board -->
+    <div class="cartoon-board">
+        <!-- TOP BENTO NAVBAR (Brand Block + Navigation Block) -->
+        <div class="top-bento-bar">
+            <!-- Block 1: Personal Brand Block -->
+            <a href="index.html" class="bento-block brand-block" aria-label="Pratik Home">
+                <span class="brand-badge-icon" aria-hidden="true">⚡</span>
+                <span class="brand-badge-text">pkthethug.in</span>
+            </a>
+
+            <!-- Block 2: Main Navigation Block -->
+            <nav class="bento-block nav-block" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="wip.html" class="nav-pill pill-yellow">Who TF</a></li> <!--intro-->
+                    <li><a href="wip.html" class="nav-pill pill-coral">Projects</a></li> <!--work experience-->
+                    <li><a href="Writings/writings-content-master.html" class="nav-pill pill-mint">With Love</a></li> <!--writtent content-->
+                    <li><a href="wip.html" class="nav-pill pill-pink">Games</a></li> <!--fun stuff-->
+                </ul>
+            </nav>
+
+            <!-- Spinning Groovy Daisy Flower tucked safely into the open top-right header space so it never covers any card -->
+            <div class="flower-wrapper" id="groovy-flower" title="Spin me!">
+                <svg class="daisy-svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g stroke="#141413" stroke-width="4.5">
+                        <ellipse cx="100" cy="36" rx="22" ry="32" fill="#FF5733"/>
+                        <ellipse cx="100" cy="164" rx="22" ry="32" fill="#FF5733"/>
+                        <ellipse cx="36" cy="100" rx="32" ry="22" fill="#FF5733"/>
+                        <ellipse cx="164" cy="100" rx="32" ry="22" fill="#FF5733"/>
+                        <ellipse cx="55" cy="55" rx="22" ry="32" transform="rotate(-45 55 55)" fill="#FF70A6"/>
+                        <ellipse cx="145" cy="145" rx="22" ry="32" transform="rotate(-45 145 145)" fill="#FF70A6"/>
+                        <ellipse cx="145" cy="55" rx="22" ry="32" transform="rotate(45 145 55)" fill="#FF70A6"/>
+                        <ellipse cx="55" cy="145" rx="22" ry="32" transform="rotate(45 55 145)" fill="#FF70A6"/>
+                        <circle cx="100" cy="100" r="34" fill="#FFD43B"/>
+                    </g>
+                    <!-- Cute Cartoon Smiley Inside the Flower -->
+                    <circle cx="90" cy="94" r="4" fill="#141413"/>
+                    <circle cx="110" cy="94" r="4" fill="#141413"/>
+                    <path d="M88 106 Q100 116 112 106" stroke="#141413" stroke-width="4" stroke-linecap="round"/>
+                </svg>
             </div>
         </div>
-    </footer>
+
+        <!-- MAIN HERO STAGE -->
+        <main class="hero-stage">
+            <!-- LEFT COLUMN: Triple-Stacked Cartoon Hero Card -->
+            <section class="hero-card-stack">
+                <!-- Offset background stack layers -->
+                <div class="stack-layer stack-layer-back" aria-hidden="true"></div>
+                <div class="stack-layer stack-layer-mid" aria-hidden="true"></div>
+
+                <!-- Foreground Hero Card -->
+                <div class="hero-card">
+                    <!-- Floating Cartoon Lightning Bolt Sticker -->
+                    <svg class="sticker-bolt" viewBox="0 0 64 84" fill="none" aria-hidden="true">
+                        <path d="M38 4 L8 46 H32 L22 80 L56 34 H32 L38 4 Z" fill="#FFD43B" stroke="#141413" stroke-width="4" stroke-linejoin="round"/>
+                    </svg>
+
+                    <!-- Header with proper capitalization -->
+                    <header class="hero-header">
+                        <h1>
+                            <span class="h1-kicker">Welcome. You Are On</span>
+                            <span class="h1-name">Pratik Kumar's</span><br>
+                            <span class="h1-sub-banner">
+                                <i class="banner-star" aria-hidden="true">✦</i>
+                                Personal Website
+                                <i class="banner-star" aria-hidden="true">✦</i>
+                            </span>
+                        </h1>
+                    </header>
+                </div>
+            </section>
+
+            <!-- RIGHT COLUMN: Groovy Cartoon Playground & Interactive Portal Stickers -->
+            <section class="groovy-playground" aria-label="Interactive Shortcuts">
+                <!-- 4-Pointed Cartoon Stars Floating Outside the Cards -->
+                <svg class="sparkle-star star-1" viewBox="0 0 48 48" aria-hidden="true">
+                    <path d="M24 2 L30 18 L46 24 L30 30 L24 46 L18 30 L2 24 L18 18 Z" fill="#FFFDF7" stroke="#141413" stroke-width="3.5" stroke-linejoin="round"/>
+                </svg>
+                <svg class="sparkle-star star-2" viewBox="0 0 48 48" aria-hidden="true">
+                    <path d="M24 2 L30 18 L46 24 L30 30 L24 46 L18 30 L2 24 L18 18 Z" fill="#FFD43B" stroke="#141413" stroke-width="3.5" stroke-linejoin="round"/>
+                </svg>
+
+                <!-- Interactive Blocky Cartoon Sticker Cards (Direct Visual Portals to the 4 Sections) -->
+                <div class="portal-stickers-grid">
+                    <a href="wip.html" class="portal-card card-who">
+                        <span class="portal-tag">01 ★ INTRO</span>
+                        <span class="portal-title">Who TF</span>
+                        <span class="portal-arrow" aria-hidden="true">↗</span>
+                    </a>
+
+                    <a href="wip.html" class="portal-card card-projects">
+                        <span class="portal-tag">02 ★ WORK</span>
+                        <span class="portal-title">Projects</span>
+                        <span class="portal-arrow" aria-hidden="true">↗</span>
+                    </a>
+
+                    <a href="Writings/writings-content-master.html" class="portal-card card-love">
+                        <span class="portal-badge-hot">READ NOW!</span>
+                        <span class="portal-tag">03 ♥ WRITINGS</span>
+                        <span class="portal-title">With Love</span>
+                        <span class="portal-arrow" aria-hidden="true">↗</span>
+                    </a>
+
+                    <a href="wip.html" class="portal-card card-games">
+                        <span class="portal-tag">04 ★ PLAY</span>
+                        <span class="portal-title">Games</span>
+                        <span class="portal-arrow" aria-hidden="true">↗</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER BAR (Email Subscription at the Bottom + Circular Cartoon Social Medallions) -->
+        <footer>
+            <div class="footer-container">
+                <div class="form">
+                    <div class="email-subscription">
+                        <form action="https://script.google.com/macros/s/AKfycbzonX0G6GFRdC-sG7LsboDOTNGik_qf_2Ud517Xhx5Og6XKJYGaRTc9VYGaYeimQqvWLQ/exec" method="post" target="_blank">
+                            <input type="email" name="email" placeholder="Enter email..." required>
+                            <button type="submit">
+                                <span>Submit</span>
+                                <span class="btn-arrow" aria-hidden="true">→</span>
+                            </button>
+                        </form>                    
+                    </div>
+                    <p class="footer-text">To ping you when yours truly drops a new blog or essay</p>
+                </div>
+
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/pratiik_kumar/" target="_blank" rel="noopener noreferrer" class="social-circle social-ig" title="Instagram">
+                        <img src="assets/images/instagram-icon.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/pratik-kumar69/" target="_blank" rel="noopener noreferrer" class="social-circle social-li" title="LinkedIn">
+                        <img src="assets/images/linkedin-icon.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://x.com/kpratik_ps" target="_blank" rel="noopener noreferrer" class="social-circle social-tw" title="Twitter">
+                        <img src="assets/images/twitter-icon.png" alt="Twitter">
+                    </a>
+                    <a href="https://www.youtube.com/@pkthethug" target="_blank" rel="noopener noreferrer" class="social-circle social-yt" title="YouTube">
+                        <img src="assets/images/youtube-icon.png" alt="YouTube">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="scripts/cartoon-pop.js"></script>
 </body>
 </html>

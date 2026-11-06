@@ -37,6 +37,16 @@
         // ensure non-blocking defaults
         let isPlaying = false;
 
+        // If audio file path was written relative to root (e.g. "assets/...") inside a subfolder ("Blogs/"), auto-fallback to "../"
+        audio.addEventListener('error', function onAudioError() {
+          const rawSrc = audio.getAttribute('src');
+          if (rawSrc && !rawSrc.startsWith('../') && !rawSrc.startsWith('http') && !rawSrc.startsWith('/')) {
+            audio.removeEventListener('error', onAudioError);
+            audio.setAttribute('src', '../' + rawSrc);
+            audio.load();
+          }
+        });
+
         // toggle play/pause
         playPauseBtn.addEventListener('click', () => {
           if (audio.paused) {
@@ -119,7 +129,11 @@
       const src = el.getAttribute('data-src');
       if (!src) continue;
       try {
-        const resp = await fetch(src);
+        let resp = await fetch(src);
+        if (!resp.ok && !src.startsWith('http') && !src.startsWith('/')) {
+          const altSrc = src.startsWith('../') ? src.slice(3) : '../' + src;
+          resp = await fetch(altSrc);
+        }
         if (!resp.ok) throw new Error(`Failed to fetch ${src}: ${resp.status}`);
         const text = await resp.text();
 

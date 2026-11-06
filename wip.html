@@ -1,50 +1,162 @@
-<!-- wip.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WIP-Page</title>
-    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Work in Progress — Pratik's Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Fredoka:wght@500;600;700&family=MuseoModerno:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <nav id="home-nav">
-        <ul>
-            <li><a href="index.html">home</a></li>
-        </ul>
-    </nav>
-    
-    <header>
-        <h1 id="wip-header">work in progress. check in some time</h1>
-    </header>    
+<body class="cartoon-home wip-page">
+    <!-- Distinct Cartoon Workshop / Blueprint Grid Background -->
+    <div class="bg-decor wip-bg-decor" aria-hidden="true">
+        <div class="bg-blueprint-grid"></div>
+        <!-- Spinning Yellow Cartoon Gear Top-Left -->
+        <svg class="wip-decor-gear gear-left" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M76 10 H104 L110 30 L128 38 L146 26 L164 44 L152 62 L160 80 L180 86 V114 L160 120 L152 138 L164 156 L146 174 L128 162 L110 170 L104 190 H76 L70 170 L52 162 L34 174 L16 156 L28 138 L20 120 L0 114 V86 L20 80 L28 62 L16 44 L34 26 L52 38 L70 30 Z" transform="translate(0 -10)" fill="#FFD43B" stroke="#141413" stroke-width="4.5" stroke-linejoin="round"/>
+            <circle cx="90" cy="90" r="28" fill="#FFFDF7" stroke="#141413" stroke-width="4.5"/>
+        </svg>
+        <!-- Spinning Pink Cartoon Gear Bottom-Right -->
+        <svg class="wip-decor-gear gear-right" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M76 10 H104 L110 30 L128 38 L146 26 L164 44 L152 62 L160 80 L180 86 V114 L160 120 L152 138 L164 156 L146 174 L128 162 L110 170 L104 190 H76 L70 170 L52 162 L34 174 L16 156 L28 138 L20 120 L0 114 V86 L20 80 L28 62 L16 44 L34 26 L52 38 L70 30 Z" transform="translate(0 -10)" fill="#FF70A6" stroke="#141413" stroke-width="4.5" stroke-linejoin="round"/>
+            <circle cx="90" cy="90" r="28" fill="#FFD43B" stroke="#141413" stroke-width="4.5"/>
+        </svg>
+    </div>
 
-    <footer>
-        <div class="footer-container">
-            <div class="form">
-                <div class="email-subscription">
-                    <form action="https://script.google.com/macros/s/AKfycbzonX0G6GFRdC-sG7LsboDOTNGik_qf_2Ud517Xhx5Og6XKJYGaRTc9VYGaYeimQqvWLQ/exec" method="post" target="_blank">
-                        <input type="email" name="email" placeholder="enter email..." required>
-                        <button type="submit">submit</button>
-                    </form>
-                </div>
-                <p class="footer-text">to ping you when yours truly drops a new blog or essay</p>
-            </div>
-            <div class="footer-socials">
-                <a href="https://www.instagram.com/pratiik_kumar/" target="_blank" rel="noopener noreferrer">
-                    <img src="images/instagram-icon.png" alt="Instagram">
-                </a>
-                <a href="https://www.linkedin.com/in/pratik-kumar69/" target="_blank" rel="noopener noreferrer">
-                    <img src="images/linkedin-icon.png" alt="LinkedIn">
-                </a>
-                <a href="https://x.com/kpratik_ps" target="_blank" rel="noopener noreferrer">
-                    <img src="images/twitter-icon.png" alt="Twitter">
-                </a>
-                <a href="https://www.youtube.com/@pkthethug" target="_blank" rel="noopener noreferrer">
-                    <img src="images/youtube-icon.png" alt="YouTube">
-                </a>
+    <canvas id="pop-canvas" aria-hidden="true"></canvas>
+
+    <div class="cartoon-board wip-board">
+        <!-- TOP BENTO NAVBAR -->
+        <div class="top-bento-bar">
+            <a href="index.html" class="bento-block brand-block" aria-label="Pratik Home">
+                <span class="brand-badge-icon" aria-hidden="true">⚡</span>
+                <span class="brand-badge-text">pkthethug.in</span>
+            </a>
+
+            <nav class="bento-block nav-block" id="home-nav-bento" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html" class="nav-pill pill-yellow">← Home</a></li>
+                    <li><a href="wip.html" class="nav-pill pill-coral">Projects</a></li>
+                    <li><a href="Writings/writings-content-master.html" class="nav-pill pill-mint">With Love</a></li>
+                    <li><a href="wip.html" class="nav-pill pill-pink">Games</a></li>
+                </ul>
+            </nav>
+
+            <div class="flower-wrapper" id="groovy-flower" title="Spin me!">
+                <svg class="daisy-svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g stroke="#141413" stroke-width="4.5">
+                        <ellipse cx="100" cy="36" rx="22" ry="32" fill="#FF5733"/>
+                        <ellipse cx="100" cy="164" rx="22" ry="32" fill="#FF5733"/>
+                        <ellipse cx="36" cy="100" rx="32" ry="22" fill="#FF5733"/>
+                        <ellipse cx="164" cy="100" rx="32" ry="22" fill="#FF5733"/>
+                        <ellipse cx="55" cy="55" rx="22" ry="32" transform="rotate(-45 55 55)" fill="#FF70A6"/>
+                        <ellipse cx="145" cy="145" rx="22" ry="32" transform="rotate(-45 145 145)" fill="#FF70A6"/>
+                        <ellipse cx="145" cy="55" rx="22" ry="32" transform="rotate(45 145 55)" fill="#FF70A6"/>
+                        <ellipse cx="55" cy="145" rx="22" ry="32" transform="rotate(45 55 145)" fill="#FF70A6"/>
+                        <circle cx="100" cy="100" r="34" fill="#FFD43B"/>
+                    </g>
+                    <circle cx="90" cy="94" r="4" fill="#141413"/>
+                    <circle cx="110" cy="94" r="4" fill="#141413"/>
+                    <path d="M88 106 Q100 116 112 106" stroke="#141413" stroke-width="4" stroke-linecap="round"/>
+                </svg>
             </div>
         </div>
-    </footer>
+
+        <!-- CENTERED CONSTRUCTION MARQUEE + HANDHELD YELLOW GAME CONSOLE -->
+        <main class="wip-workshop-main">
+            <!-- Top Construction Caution Banner -->
+            <header class="wip-caution-sign">
+                <div class="caution-stripes" aria-hidden="true"></div>
+                <div class="caution-body">
+                    <span class="caution-pill">🚧 UNDER CONSTRUCTION ★ STILL COOKING</span>
+                    <h1 id="wip-header">Work in Progress. Check in Some Time.</h1>
+                </div>
+            </header>
+
+            <!-- Centerpiece: Handheld Yellow Cartoon Game Console -->
+            <section class="handheld-console" aria-label="Star Catcher Mini Game">
+                <!-- Left Console Grip (Score + Left Button on Desktop) -->
+                <div class="console-side console-left">
+                    <div class="hud-stat stat-score">
+                        <span class="stat-label">SCORE</span>
+                        <span class="stat-val" id="game-score">0</span>
+                    </div>
+                    <div class="hud-stat stat-best">
+                        <span class="stat-label">BEST</span>
+                        <span class="stat-val" id="game-best">0</span>
+                    </div>
+                    <button type="button" class="touch-ctrl-btn side-dpad-btn" id="ctrl-left" aria-label="Move Left">◀ LEFT</button>
+                </div>
+
+                <!-- Center Console Screen -->
+                <div class="console-center">
+                    <div class="arcade-screen-wrap">
+                        <canvas id="wip-game-canvas" width="460" height="300"></canvas>
+
+                        <!-- Start / Game Over Overlay -->
+                        <div class="arcade-overlay" id="game-overlay">
+                            <span class="overlay-badge" id="overlay-badge">★ WIP MINI-ARCADE ★</span>
+                            <h2 class="overlay-title" id="overlay-title">Star Catcher!</h2>
+                            <p class="overlay-sub" id="overlay-sub">Drag, use ◀ ▶ keys, or tap buttons to catch ★ (+10) &amp; ⚡ (+25) and dodge 💣!</p>
+                            <button type="button" class="arcade-play-btn" id="game-start-btn">
+                                <span>Play Now</span>
+                                <span class="btn-arrow" aria-hidden="true">▶</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Console Grip (Lives + Right Button on Desktop) -->
+                <div class="console-side console-right">
+                    <div class="hud-stat stat-lives">
+                        <span class="stat-label">LIVES</span>
+                        <span class="stat-val" id="game-lives">♥♥♥</span>
+                    </div>
+                    <div class="console-speaker-dots" aria-hidden="true">
+                        <span></span><span></span><span></span>
+                        <span></span><span></span><span></span>
+                    </div>
+                    <button type="button" class="touch-ctrl-btn side-dpad-btn" id="ctrl-right" aria-label="Move Right">RIGHT ▶</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER BAR -->
+        <footer>
+            <div class="footer-container">
+                <div class="form">
+                    <div class="email-subscription">
+                        <form action="https://script.google.com/macros/s/AKfycbzonX0G6GFRdC-sG7LsboDOTNGik_qf_2Ud517Xhx5Og6XKJYGaRTc9VYGaYeimQqvWLQ/exec" method="post" target="_blank">
+                            <input type="email" name="email" placeholder="Enter email..." required>
+                            <button type="submit">
+                                <span>Submit</span>
+                                <span class="btn-arrow" aria-hidden="true">→</span>
+                            </button>
+                        </form>
+                    </div>
+                    <p class="footer-text">To ping you when yours truly drops a new blog or essay</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/pratiik_kumar/" target="_blank" rel="noopener noreferrer" class="social-circle social-ig" title="Instagram">
+                        <img src="assets/images/instagram-icon.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/pratik-kumar69/" target="_blank" rel="noopener noreferrer" class="social-circle social-li" title="LinkedIn">
+                        <img src="assets/images/linkedin-icon.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://x.com/kpratik_ps" target="_blank" rel="noopener noreferrer" class="social-circle social-tw" title="Twitter">
+                        <img src="assets/images/twitter-icon.png" alt="Twitter">
+                    </a>
+                    <a href="https://www.youtube.com/@pkthethug" target="_blank" rel="noopener noreferrer" class="social-circle social-yt" title="YouTube">
+                        <img src="assets/images/youtube-icon.png" alt="YouTube">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="scripts/cartoon-pop.js"></script>
+    <script src="scripts/wip-game.js"></script>
 </body>
 </html>

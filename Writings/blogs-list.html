@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs — Pratik's Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Fredoka:wght@500;600;700&family=MuseoModerno:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="cartoon-home ledger-page blogs-ledger-page">
+    <!-- Distinct Inner-Page Background -->
+    <div class="bg-decor hub-bg-decor" aria-hidden="true">
+        <div class="bg-notebook-grid"></div>
+        <svg class="hub-decor-sun" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="110" cy="110" r="78" fill="#00D2A0" stroke="#141413" stroke-width="4.5"/>
+        </svg>
+        <svg class="hub-decor-blob" viewBox="0 0 340 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M55 260 C35 190, 85 135, 145 125 C195 115, 225 45, 340 35 L340 260 Z" fill="#FFD43B" stroke="#141413" stroke-width="4.5"/>
+            <path d="M135 260 C125 210, 175 175, 235 165 C275 158, 300 115, 340 105 L340 260 Z" fill="#FF5733" stroke="#141413" stroke-width="4.5"/>
+        </svg>
+    </div>
+
+    <canvas id="pop-canvas" aria-hidden="true"></canvas>
+
+    <div class="cartoon-board ledger-board">
+        <!-- TOP BENTO NAVBAR -->
+        <div class="top-bento-bar">
+            <a href="../index.html" class="bento-block brand-block" aria-label="Pratik Home">
+                <span class="brand-badge-icon" aria-hidden="true">⚡</span>
+                <span class="brand-badge-text">pkthethug.in</span>
+            </a>
+
+            <nav class="bento-block nav-block" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="../index.html" class="nav-pill pill-yellow">← Home</a></li>
+                    <li><a href="writings-content-master.html" class="nav-pill pill-mint">← Written Content</a></li>
+                    <li><a href="poems-list.html" class="nav-pill pill-pink">Poems</a></li>
+                    <li><a href="../wip.html" class="nav-pill pill-coral">Projects</a></li>
+                </ul>
+            </nav>
+
+            <div class="flower-wrapper" id="groovy-flower" title="Spin me!">
+                <svg class="daisy-svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g stroke="#141413" stroke-width="4.5">
+                        <ellipse cx="100" cy="36" rx="22" ry="32" fill="#FF5733"/>
+                        <ellipse cx="100" cy="164" rx="22" ry="32" fill="#FF5733"/>
+                        <ellipse cx="36" cy="100" rx="32" ry="22" fill="#FF5733"/>
+                        <ellipse cx="164" cy="100" rx="32" ry="22" fill="#FF5733"/>
+                        <ellipse cx="55" cy="55" rx="22" ry="32" transform="rotate(-45 55 55)" fill="#FF70A6"/>
+                        <ellipse cx="145" cy="145" rx="22" ry="32" transform="rotate(-45 145 145)" fill="#FF70A6"/>
+                        <ellipse cx="145" cy="55" rx="22" ry="32" transform="rotate(45 145 55)" fill="#FF70A6"/>
+                        <ellipse cx="55" cy="145" rx="22" ry="32" transform="rotate(45 55 145)" fill="#FF70A6"/>
+                        <circle cx="100" cy="100" r="34" fill="#FFD43B"/>
+                    </g>
+                    <circle cx="90" cy="94" r="4" fill="#141413"/>
+                    <circle cx="110" cy="94" r="4" fill="#141413"/>
+                    <path d="M88 106 Q100 116 112 106" stroke="#141413" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+            </div>
+        </div>
+
+        <!-- SCROLLABLE CARTOON NOTEBOOK / DIRECTORY LEDGER FOR BLOGS -->
+        <main class="ledger-main">
+            <div class="ledger-sheet">
+                <header class="ledger-header header-mint">
+                    <div class="ledger-title-group">
+                        <span class="ledger-tag">ARCHIVE ★ 01</span>
+                        <h1 id="blogs-header">Blogs</h1>
+                    </div>
+                    <span class="ledger-badge" aria-hidden="true">INDEX LIST ↓</span>
+                </header>
+
+                <!-- Simple expandable list: just add <li><a href="Blogs/...">Title</a></li> as you write more! -->
+                <div class="ledger-scroll-area">
+                    <ul id="blogs-list" class="ledger-list">
+                        <li><a href="Blogs/b1-the-first-one.html">The First One...</a></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+        <!-- FOOTER BAR -->
+        <footer>
+            <div class="footer-container">
+                <div class="form">
+                    <div class="email-subscription">
+                        <form action="https://script.google.com/macros/s/AKfycbzonX0G6GFRdC-sG7LsboDOTNGik_qf_2Ud517Xhx5Og6XKJYGaRTc9VYGaYeimQqvWLQ/exec" method="post" target="_blank">
+                            <input type="email" name="email" placeholder="Enter email..." required>
+                            <button type="submit">
+                                <span>Submit</span>
+                                <span class="btn-arrow" aria-hidden="true">→</span>
+                            </button>
+                        </form>
+                    </div>
+                    <p class="footer-text">To ping you when yours truly drops a new blog or essay</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/pratiik_kumar/" target="_blank" rel="noopener noreferrer" class="social-circle social-ig" title="Instagram">
+                        <img src="../assets/images/instagram-icon.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/pratik-kumar69/" target="_blank" rel="noopener noreferrer" class="social-circle social-li" title="LinkedIn">
+                        <img src="../assets/images/linkedin-icon.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://x.com/kpratik_ps" target="_blank" rel="noopener noreferrer" class="social-circle social-tw" title="Twitter">
+                        <img src="../assets/images/twitter-icon.png" alt="Twitter">
+                    </a>
+                    <a href="https://www.youtube.com/@pkthethug" target="_blank" rel="noopener noreferrer" class="social-circle social-yt" title="YouTube">
+                        <img src="../assets/images/youtube-icon.png" alt="YouTube">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../scripts/cartoon-pop.js"></script>
+</body>
+</html>
