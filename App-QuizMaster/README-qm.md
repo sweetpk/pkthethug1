@@ -35,10 +35,11 @@ files into `question-banks/` like before. The one new step: after
 adding/removing/editing files, regenerate the manifest:
 
 ```
-node build-manifest.js
+node qm-build-manifest.js
 ```
+(or double-click `qm-update-manifest.bat` on Windows)
 
-Run this from the same folder as `quiz-master.html` (it expects a
+Run this from the same folder as `quizmaster.html` (it expects a
 `question-banks/` subfolder next to it). It scans every file once, and
 writes `question-banks/manifest.json` for you — no more hand-editing the
 manifest, and it now carries enough metadata (per-file category/tag lists)
