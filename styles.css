@@ -1013,6 +1013,15 @@ body.wip-page {
   text-shadow: 3px 3px 0px var(--yellow-main);
 }
 
+.wip-sub-desc {
+  font-family: var(--font-body);
+  font-size: clamp(0.88rem, 1.2vw, 1.02rem);
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0.2rem 0 0;
+  opacity: 0.88;
+}
+
 /* Handheld Yellow Cartoon Game Console */
 .handheld-console {
   width: 100%;
@@ -1245,7 +1254,12 @@ body.ledger-page {
   background-color: var(--yellow-pale);
 }
 
-.hub-bg-decor {
+body.games-page {
+  background-color: #F0E8FD; /* Soft arcade lilac / lavender tint — distinct from WIP's cyan and Writings' yellow */
+}
+
+.hub-bg-decor,
+.games-bg-decor {
   background-image: none;
 }
 
@@ -1278,6 +1292,10 @@ body.ledger-page {
 .hub-board,
 .ledger-board {
   background: rgba(255, 253, 247, 0.48);
+}
+
+.games-board {
+  background: rgba(255, 253, 247, 0.65);
 }
 
 /* ==========================================================================
@@ -1402,6 +1420,332 @@ body.ledger-page {
   background: var(--paper-white);
   color: var(--ink);
   box-shadow: 0 0 0 2px var(--ink);
+}
+
+/* ==========================================================================
+   GAMES.HTML — PLAYABLE GAMES ARCADE SHOWCASE
+   ========================================================================== */
+.games-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: clamp(1.6rem, 3.2vh, 2.6rem);
+  width: 100%;
+  padding: 0.5rem 0 1.5rem;
+}
+
+.games-banner-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: var(--pop-coral); /* Vibrant arcade coral banner */
+  border: var(--border-heavy);
+  border-radius: 24px;
+  padding: clamp(1.15rem, 2.2vw, 1.65rem) clamp(1.75rem, 4.5vw, 3.5rem);
+  box-shadow: var(--shadow-lg);
+  max-width: 840px;
+  width: 100%;
+}
+
+.games-banner-header .hub-kicker-pill {
+  background: var(--yellow-main);
+  color: var(--ink);
+  border: 2.5px solid var(--ink);
+  box-shadow: 2.5px 2.5px 0px var(--ink);
+}
+
+.games-banner-header .hub-title {
+  color: var(--paper-white);
+  text-shadow: 3.5px 3.5px 0px var(--ink);
+}
+
+/* Games Grid - Compact card sizing */
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 320px));
+  gap: clamp(1rem, 2vw, 1.5rem);
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+/* Game Card */
+.game-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--paper-white);
+  border: var(--border-heavy);
+  border-radius: 20px;
+  box-shadow: 7px 7px 0px var(--ink);
+  padding: 1.05rem 1rem;
+  color: var(--ink);
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.22s ease;
+  overflow: visible;
+}
+
+/* Card color variations */
+.game-card.card-mint {
+  background: var(--pop-mint);
+  transform: rotate(-1.2deg);
+}
+
+.game-card.card-pink {
+  background: var(--pop-pink);
+  transform: rotate(1.2deg);
+}
+
+.game-card.card-yellow {
+  background: var(--yellow-main);
+  transform: rotate(-0.8deg);
+}
+
+.game-card.card-cyan {
+  background: var(--pop-cyan);
+  transform: rotate(-1deg);
+}
+
+.game-card.card-coral {
+  background: var(--pop-coral);
+  color: var(--paper-white);
+  transform: rotate(1deg);
+}
+
+.game-card.card-white {
+  background: var(--paper-white);
+  transform: rotate(-0.5deg);
+}
+
+.game-card.card-yellow .game-tag {
+  background: var(--pop-mint);
+  color: var(--ink);
+}
+
+.game-card.card-yellow .game-play-btn {
+  background: var(--pop-coral);
+  color: var(--paper-white);
+}
+
+.game-card.card-yellow:hover .game-play-btn {
+  background: var(--pop-orange);
+  color: var(--paper-white);
+}
+
+.game-card:hover,
+.game-card:focus-visible {
+  transform: translate(-4px, -6px) rotate(0deg) scale(1.02);
+  box-shadow: 11px 11px 0px var(--ink);
+  z-index: 5;
+  outline: none;
+}
+
+.game-card:active {
+  transform: translate(2px, 2px) scale(0.99);
+  box-shadow: 4px 4px 0px var(--ink);
+}
+
+/* Game Card Header */
+.game-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.game-tag {
+  display: inline-block;
+  font-family: var(--font-cartoon);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  padding: 0.2rem 0.55rem;
+  background: var(--paper-white);
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  box-shadow: 2px 2px 0px var(--ink);
+}
+
+.game-badge {
+  display: inline-block;
+  font-family: var(--font-cartoon);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.55rem;
+  background: var(--pop-coral);
+  color: var(--paper-white);
+  border: 2px solid var(--ink);
+  border-radius: 6px;
+  box-shadow: 2px 2px 0px var(--ink);
+  transform: rotate(2deg);
+}
+
+.game-card.card-coral .game-badge {
+  background: var(--yellow-main);
+  color: var(--ink);
+}
+
+/* Visual Stage with Game Wallpaper Thumbnail */
+.game-visual-stage {
+  position: relative;
+  width: 100%;
+  height: 152px;
+  border: 2.5px solid var(--ink);
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+  box-shadow: 3.5px 3.5px 0px var(--ink);
+  background: rgba(255, 253, 247, 0.78);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-wallpaper-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.28s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.game-card:hover .game-wallpaper-img {
+  transform: scale(1.07);
+}
+
+.game-emoji-hero {
+  font-size: clamp(2.6rem, 4.5vw, 3.4rem);
+  line-height: 1;
+  filter: drop-shadow(2.5px 2.5px 0px rgba(20, 20, 19, 0.35));
+  transition: transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.game-card:hover .game-emoji-hero {
+  transform: scale(1.15) rotate(6deg);
+}
+
+/* Game Info */
+.game-info {
+  margin-bottom: 0.75rem;
+}
+
+.game-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.22rem, 1.8vw, 1.48rem);
+  font-weight: 800;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  margin: 0 0 0.15rem 0;
+  line-height: 1.18;
+}
+
+.game-subtitle {
+  display: block;
+  font-family: var(--font-cartoon);
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--ink);
+  opacity: 0.82;
+  margin-bottom: 0.45rem;
+}
+
+.game-desc {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  line-height: 1.42;
+  color: var(--ink);
+  margin: 0;
+}
+
+/* Controls Pills Row */
+.game-controls-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.ctrl-pill {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-cartoon);
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.18rem 0.5rem;
+  background: var(--paper-white);
+  color: var(--ink);
+  border: 1.5px solid var(--ink);
+  border-radius: 7px;
+  box-shadow: 1.5px 1.5px 0px var(--ink);
+}
+
+/* Play Action Row */
+.game-action-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 0.75rem;
+  border-top: 2px dashed rgba(20, 20, 19, 0.22);
+}
+
+.game-play-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-cartoon);
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--ink);
+  background: var(--yellow-main);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  padding: 0.35rem 0.95rem;
+  box-shadow: 2.5px 2.5px 0px var(--ink);
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.game-card:hover .game-play-btn {
+  background: var(--pop-orange);
+  color: var(--paper-white);
+  transform: translateX(3px);
+}
+
+.game-card-arrow {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--paper-white);
+  border: 2px solid var(--ink);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+  transform: rotate(0deg);
+  transform-origin: center;
+  transition: transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Hover mode: Arrow rotates 45deg clockwise from North-East (↗) to point STRAIGHT RIGHT (→) */
+.game-card:hover .game-card-arrow,
+.game-card:focus-visible .game-card-arrow {
+  transform: rotate(45deg) scale(1.15);
+  background: var(--yellow-main);
+  color: var(--ink);
 }
 
 /* ==========================================================================
@@ -2177,11 +2521,24 @@ body.poem-reader #blog-content p {
   }
 
   /* Hub Banner & Ledger Sheet on Mobile */
-  .hub-banner-header {
+  .hub-banner-header,
+  .games-banner-header {
     width: 100%;
     padding: 1rem 1.25rem;
     border-radius: 18px;
     box-shadow: 5px 5px 0px var(--ink);
+  }
+
+  .games-grid {
+    grid-template-columns: 1fr;
+    gap: 1.15rem;
+  }
+
+  .game-card {
+    padding: 1.15rem 1rem;
+    border-radius: 18px;
+    box-shadow: 6px 6px 0px var(--ink);
+    transform: none !important;
   }
 
   .ledger-sheet {

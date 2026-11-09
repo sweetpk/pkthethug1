@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games — Pratik's Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Fredoka:wght@500;600;700&family=MuseoModerno:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="cartoon-home games-page">
+    <!-- Distinct Inner-Page Background (Warm Notebook Grid + Floating Pop Badges) -->
+    <div class="bg-decor games-bg-decor" aria-hidden="true">
+        <div class="bg-notebook-grid"></div>
+        <!-- Top-Left Cartoon Sunburst (Electric Sky Cyan for Arcade Vibe) -->
+        <svg class="hub-decor-sun" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="110" cy="110" r="78" fill="#4CC9F0" stroke="#141413" stroke-width="4.5"/>
+            <path d="M110 6 L110 22 M110 198 L110 214 M6 110 L22 110 M198 110 L214 110 M36 36 L48 48 M172 172 L184 184 M184 36 L172 48 M48 172 L36 184" stroke="#141413" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+        <!-- Bottom-Right Wavy Pop Orange & Coral Corner Blob -->
+        <svg class="hub-decor-blob" viewBox="0 0 340 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M55 260 C35 190, 85 135, 145 125 C195 115, 225 45, 340 35 L340 260 Z" fill="#FF9F1C" stroke="#141413" stroke-width="4.5"/>
+            <path d="M135 260 C125 210, 175 175, 235 165 C275 158, 300 115, 340 105 L340 260 Z" fill="#FF5733" stroke="#141413" stroke-width="4.5"/>
+        </svg>
+    </div>
+
+    <canvas id="pop-canvas" aria-hidden="true"></canvas>
+
+    <div class="cartoon-board games-board">
+        <!-- TOP BENTO NAVBAR -->
+        <div class="top-bento-bar">
+            <a href="index.html" class="bento-block brand-block" aria-label="Pratik Home">
+                <span class="brand-badge-icon" aria-hidden="true">⚡</span>
+                <span class="brand-badge-text">pkthethug.in</span>
+            </a>
+
+            <nav class="bento-block nav-block" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html" class="nav-pill pill-yellow">← Home</a></li>
+                    <li><a href="wip.html" class="nav-pill pill-coral">Who TF</a></li>
+                    <li><a href="wip.html" class="nav-pill pill-mint">Projects</a></li>
+                    <li><a href="Writings/writings-content-master.html" class="nav-pill pill-pink">With Love</a></li>
+                </ul>
+            </nav>
+
+            <div class="flower-wrapper" id="groovy-flower" title="Spin me!">
+                <svg class="daisy-svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g stroke="#141413" stroke-width="4.5">
+                        <ellipse cx="100" cy="36" rx="22" ry="32" fill="#00D2A0"/>
+                        <ellipse cx="100" cy="164" rx="22" ry="32" fill="#00D2A0"/>
+                        <ellipse cx="36" cy="100" rx="32" ry="22" fill="#00D2A0"/>
+                        <ellipse cx="164" cy="100" rx="32" ry="22" fill="#00D2A0"/>
+                        <ellipse cx="55" cy="55" rx="22" ry="32" transform="rotate(-45 55 55)" fill="#FFD43B"/>
+                        <ellipse cx="145" cy="145" rx="22" ry="32" transform="rotate(-45 145 145)" fill="#FFD43B"/>
+                        <ellipse cx="145" cy="55" rx="22" ry="32" transform="rotate(45 145 55)" fill="#FFD43B"/>
+                        <ellipse cx="55" cy="145" rx="22" ry="32" transform="rotate(45 55 145)" fill="#FFD43B"/>
+                        <circle cx="100" cy="100" r="34" fill="#FF70A6"/>
+                    </g>
+                    <circle cx="90" cy="94" r="4" fill="#141413"/>
+                    <circle cx="110" cy="94" r="4" fill="#141413"/>
+                    <path d="M88 106 Q100 116 112 106" stroke="#141413" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+            </div>
+        </div>
+
+        <!-- MAIN GAMES SHOWCASE -->
+        <main class="games-main">
+            <header class="games-banner-header">
+                <span class="hub-kicker-pill">04 ★ THE ARCADE</span>
+                <h1 class="hub-title">Playable Games</h1>
+            </header>
+
+            <!-- Playable Games Grid (Fetched & Rendered Dynamically from Games/ Folder) -->
+            <div class="games-grid" id="games-grid">
+                <!-- Initial default cards ensure instant render even on static file:// or while fetching -->
+                <a href="Games/downhill-rush.html" class="game-card card-yellow" data-file="downhill-rush.html">
+                    <div class="game-card-header">
+                        <span class="game-tag">01 ★ ACTION / MTB</span>
+                        <span class="game-badge">HOT ★ PLAY NOW</span>
+                    </div>
+
+                    <div class="game-visual-stage">
+                        <img src="assets/images/downhill-rush-card.jpg" alt="Downhill Rush" class="game-wallpaper-img">
+                    </div>
+
+                    <div class="game-info">
+                        <h2 class="game-title">Downhill Rush</h2>
+                        <span class="game-subtitle">Endless Mountain Bike Freeride</span>
+                        <p class="game-desc">Carve steep slopes, execute massive backflips, pump rollers for speed, and dodge boulders on an infinite downhill trail.</p>
+                    </div>
+
+                    <div class="game-controls-row">
+                        <span class="ctrl-pill">⌨ Arrow Keys / Space</span>
+                        <span class="ctrl-pill">📱 Touch D-Pad</span>
+                        <span class="ctrl-pill">🔊 Sound FX</span>
+                    </div>
+
+                    <div class="game-action-row">
+                        <span class="game-play-btn">
+                            <span>Play Game</span>
+                            <span class="btn-arrow" aria-hidden="true">▶</span>
+                        </span>
+                        <span class="game-card-arrow" aria-hidden="true">↗</span>
+                    </div>
+                </a>
+            </div>
+        </main>
+
+        <!-- FOOTER BAR -->
+        <footer>
+            <div class="footer-container">
+                <div class="form">
+                    <div class="email-subscription">
+                        <form action="https://script.google.com/macros/s/AKfycbzonX0G6GFRdC-sG7LsboDOTNGik_qf_2Ud517Xhx5Og6XKJYGaRTc9VYGaYeimQqvWLQ/exec" method="post" target="_blank">
+                            <input type="email" name="email" placeholder="Enter email..." required>
+                            <button type="submit">
+                                <span>Submit</span>
+                                <span class="btn-arrow" aria-hidden="true">→</span>
+                            </button>
+                        </form>                    
+                    </div>
+                    <p class="footer-text">To ping you when yours truly drops a new blog, essay or game</p>
+                </div>
+
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/pratiik_kumar/" target="_blank" rel="noopener noreferrer" class="social-circle social-ig" title="Instagram">
+                        <img src="assets/images/instagram-icon.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/pratik-kumar69/" target="_blank" rel="noopener noreferrer" class="social-circle social-li" title="LinkedIn">
+                        <img src="assets/images/linkedin-icon.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://x.com/kpratik_ps" target="_blank" rel="noopener noreferrer" class="social-circle social-tw" title="Twitter">
+                        <img src="assets/images/twitter-icon.png" alt="Twitter">
+                    </a>
+                    <a href="https://www.youtube.com/@pkthethug" target="_blank" rel="noopener noreferrer" class="social-circle social-yt" title="YouTube">
+                        <img src="assets/images/youtube-icon.png" alt="YouTube">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Interactive Confetti Particles -->
+    <script src="scripts/cartoon-pop.js"></script>
+
+    <!-- Dynamic Games Fetcher & Catalog Loader -->
+    <script>
+    (function() {
+        const grid = document.getElementById('games-grid');
+        if (!grid) return;
+
+        // Fetch Games/manifest.json to dynamically render any new/updated games in Games/
+        fetch('Games/manifest.json')
+            .then(res => {
+                if (!res.ok) throw new Error('Manifest not found: ' + res.status);
+                return res.json();
+            })
+            .then(manifest => {
+                if (!Array.isArray(manifest) || !manifest.length) return;
+
+                // Color cycle for game cards
+                const colorPalette = ['card-mint', 'card-pink', 'card-yellow', 'card-coral'];
+
+                // Build HTML for manifest games
+                const gameCardsHtml = manifest.map((game, index) => {
+                    const colorClass = game.color ? `card-${game.color}` : colorPalette[index % colorPalette.length];
+                    const gamePath = `Games/${encodeURI(game.file)}`;
+                    const tag = game.tag || `0${index + 1} ★ GAME`;
+                    const badge = game.badge || 'PLAYABLE NOW';
+                    const icon = game.icon || '🎮';
+                    const title = game.title || game.file.replace(/\.html$/i, '');
+                    const subtitle = game.subtitle || 'Web Game';
+                    const desc = game.description || 'Click to play this game directly in your browser.';
+                    const controls = Array.isArray(game.controls) ? game.controls : ['⌨ Keyboard', '📱 Touch'];
+
+                    const visualStageHtml = game.image
+                        ? `<img src="${game.image}" alt="${title}" class="game-wallpaper-img">`
+                        : `<span class="game-emoji-hero">${icon}</span>`;
+
+                    const ctrlPills = controls.map(ctrl => `<span class="ctrl-pill">${ctrl}</span>`).join('');
+
+                    return `
+                    <a href="${gamePath}" class="game-card ${colorClass}" data-file="${game.file}">
+                        <div class="game-card-header">
+                            <span class="game-tag">${tag}</span>
+                            <span class="game-badge">${badge}</span>
+                        </div>
+
+                        <div class="game-visual-stage">
+                            ${visualStageHtml}
+                        </div>
+
+                        <div class="game-info">
+                            <h2 class="game-title">${title}</h2>
+                            <span class="game-subtitle">${subtitle}</span>
+                            <p class="game-desc">${desc}</p>
+                        </div>
+
+                        <div class="game-controls-row">
+                            ${ctrlPills}
+                        </div>
+
+                        <div class="game-action-row">
+                            <span class="game-play-btn">
+                                <span>Play Game</span>
+                                <span class="btn-arrow" aria-hidden="true">▶</span>
+                            </span>
+                            <span class="game-card-arrow" aria-hidden="true">↗</span>
+                        </div>
+                    </a>`;
+                }).join('');
+
+                grid.innerHTML = gameCardsHtml;
+            })
+            .catch(err => {
+                // Keep the static markup on fetch error (e.g. strict local file:// protocol)
+                console.log('Using static games catalog fallback:', err.message);
+            });
+    })();
+    </script>
+</body>
+</html>
