@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Bundler caches
+.vite/
+**/.vite/
+
+# OS files
+Thumbs.db
+.DS_Store

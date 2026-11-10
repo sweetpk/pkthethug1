@@ -1497,7 +1497,7 @@ body.games-page {
 /* Card color variations */
 .game-card.card-mint {
   background: var(--pop-mint);
-  transform: rotate(-1.2deg);
+  transform: rotate(1deg);
 }
 
 .game-card.card-pink {
@@ -1507,7 +1507,7 @@ body.games-page {
 
 .game-card.card-yellow {
   background: var(--yellow-main);
-  transform: rotate(-0.8deg);
+  transform: rotate(-1deg);
 }
 
 .game-card.card-cyan {
@@ -1537,6 +1537,16 @@ body.games-page {
 }
 
 .game-card.card-yellow:hover .game-play-btn {
+  background: var(--pop-orange);
+  color: var(--paper-white);
+}
+
+.game-card.card-mint .game-play-btn {
+  background: var(--yellow-main);
+  color: var(--ink);
+}
+
+.game-card.card-mint:hover .game-play-btn {
   background: var(--pop-orange);
   color: var(--paper-white);
 }
