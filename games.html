@@ -71,10 +71,9 @@
                 <h1 class="hub-title">Playable Games</h1>
             </header>
 
-            <!-- Playable Games Grid (Fetched & Rendered Dynamically from Games/ Folder) -->
+            <!-- Playable Games Grid -->
             <div class="games-grid" id="games-grid">
-                <!-- Initial default cards ensure instant render even on static file:// or while fetching -->
-                <a href="Games/downhill-rush.html" class="game-card card-yellow" data-file="downhill-rush.html">
+                <a href="Games/downhill-rush.html" class="game-card card-yellow">
                     <div class="game-card-header">
                         <span class="game-tag">01 ★ ACTION / MTB</span>
                         <span class="game-badge">HOT ★ PLAY NOW</span>
@@ -143,81 +142,5 @@
 
     <!-- Interactive Confetti Particles -->
     <script src="scripts/cartoon-pop.js"></script>
-
-    <!-- Dynamic Games Fetcher & Catalog Loader -->
-    <script>
-    (function() {
-        const grid = document.getElementById('games-grid');
-        if (!grid) return;
-
-        // Fetch Games/manifest.json to dynamically render any new/updated games in Games/
-        fetch('Games/manifest.json')
-            .then(res => {
-                if (!res.ok) throw new Error('Manifest not found: ' + res.status);
-                return res.json();
-            })
-            .then(manifest => {
-                if (!Array.isArray(manifest) || !manifest.length) return;
-
-                // Color cycle for game cards
-                const colorPalette = ['card-mint', 'card-pink', 'card-yellow', 'card-coral'];
-
-                // Build HTML for manifest games
-                const gameCardsHtml = manifest.map((game, index) => {
-                    const colorClass = game.color ? `card-${game.color}` : colorPalette[index % colorPalette.length];
-                    const gamePath = `Games/${encodeURI(game.file)}`;
-                    const tag = game.tag || `0${index + 1} ★ GAME`;
-                    const badge = game.badge || 'PLAYABLE NOW';
-                    const icon = game.icon || '🎮';
-                    const title = game.title || game.file.replace(/\.html$/i, '');
-                    const subtitle = game.subtitle || 'Web Game';
-                    const desc = game.description || 'Click to play this game directly in your browser.';
-                    const controls = Array.isArray(game.controls) ? game.controls : ['⌨ Keyboard', '📱 Touch'];
-
-                    const visualStageHtml = game.image
-                        ? `<img src="${game.image}" alt="${title}" class="game-wallpaper-img">`
-                        : `<span class="game-emoji-hero">${icon}</span>`;
-
-                    const ctrlPills = controls.map(ctrl => `<span class="ctrl-pill">${ctrl}</span>`).join('');
-
-                    return `
-                    <a href="${gamePath}" class="game-card ${colorClass}" data-file="${game.file}">
-                        <div class="game-card-header">
-                            <span class="game-tag">${tag}</span>
-                            <span class="game-badge">${badge}</span>
-                        </div>
-
-                        <div class="game-visual-stage">
-                            ${visualStageHtml}
-                        </div>
-
-                        <div class="game-info">
-                            <h2 class="game-title">${title}</h2>
-                            <span class="game-subtitle">${subtitle}</span>
-                            <p class="game-desc">${desc}</p>
-                        </div>
-
-                        <div class="game-controls-row">
-                            ${ctrlPills}
-                        </div>
-
-                        <div class="game-action-row">
-                            <span class="game-play-btn">
-                                <span>Play Game</span>
-                                <span class="btn-arrow" aria-hidden="true">▶</span>
-                            </span>
-                            <span class="game-card-arrow" aria-hidden="true">↗</span>
-                        </div>
-                    </a>`;
-                }).join('');
-
-                grid.innerHTML = gameCardsHtml;
-            })
-            .catch(err => {
-                // Keep the static markup on fetch error (e.g. strict local file:// protocol)
-                console.log('Using static games catalog fallback:', err.message);
-            });
-    })();
-    </script>
 </body>
 </html>
