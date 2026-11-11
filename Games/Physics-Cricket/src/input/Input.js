@@ -1,8 +1,8 @@
 import { CONFIG } from '../config.js';
 
 // Unified input: desktop mouse (pointer lock, relative deltas) and mobile
-// virtual analog joystick. Both drive the bat's swing target through the
-// same BatController API — there are no separate batting mechanics per platform.
+// screen-wide virtual analog touch control. Both drive the bat's swing target through
+// the same BatController API — there are no separate batting mechanics per platform.
 
 export class Input {
   constructor(canvas, joystickEl, knobEl) {
@@ -13,6 +13,8 @@ export class Input {
     this.mouseDY = 0;
     this.mouseIdleTime = 0;
     this.stick = { x: 0, y: 0, active: false, id: null };
+    this.originX = 0;
+    this.originY = 0;
     this.usingJoystick = this.isTouchDevice;
     this.joyEl = joystickEl;
     this.knobEl = knobEl;
@@ -56,65 +58,145 @@ export class Input {
 
   _setupJoystick() {
     const el = this.joyEl;
-    if (!el) return;
-    const radius = () => el.clientWidth * 0.5;
-    const update = (t) => {
-      const r = el.getBoundingClientRect();
-      const cx = r.left + r.width / 2, cy = r.top + r.height / 2;
-      let dx = (t.clientX - cx) / radius(), dy = (t.clientY - cy) / radius();
+    const knob = this.knobEl;
+
+    const radius = () => {
+      if (el && el.clientWidth > 20) return el.clientWidth * 0.5;
+      return 70;
+    };
+
+    const isInteractive = (target) => {
+      if (!target || !target.closest) return false;
+      return !!(
+        target.closest('#topControls') ||
+        target.closest('.icon-btn') ||
+        target.closest('button') ||
+        target.closest('a') ||
+        target.closest('input') ||
+        target.closest('select') ||
+        target.closest('.overlay:not(.hidden)')
+      );
+    };
+
+    const updateFromTouch = (t) => {
+      const r = radius();
+      let dx = (t.clientX - this.originX) / r;
+      let dy = (t.clientY - this.originY) / r;
       const m = Math.hypot(dx, dy);
       if (m > 1) { dx /= m; dy /= m; }
-      this.stick.x = dx; this.stick.y = dy;
-      this.knobEl.style.transform = `translate(${dx * radius() * 0.75}px, ${dy * radius() * 0.75}px)`;
+      this.stick.x = dx;
+      this.stick.y = dy;
+      if (knob) {
+        knob.style.transform = `translate(${dx * r * 0.75}px, ${dy * r * 0.75}px)`;
+      }
     };
-    el.addEventListener('touchstart', (e) => {
-      e.preventDefault();
+
+    // Full-screen touch control: player can touch anywhere on the screen
+    window.addEventListener('touchstart', (e) => {
+      // Don't intercept touches on buttons, UI controls, or open overlays
+      if (isInteractive(e.target)) return;
+      if (document.querySelector('.overlay:not(.hidden)')) return;
+      if (this.stick.active) return; // already tracking the primary finger
+
       const t = e.changedTouches[0];
+      if (!t) return;
+
+      e.preventDefault();
       this.stick.id = t.identifier;
       this.stick.active = true;
       this.usingJoystick = true;
-      update(t);
-    }, { passive: false });
-    el.addEventListener('touchmove', (e) => {
-      e.preventDefault();
-      for (const t of e.changedTouches) {
-        if (t.identifier === this.stick.id) update(t);
+      this.originX = t.clientX;
+      this.originY = t.clientY;
+      this.stick.x = 0;
+      this.stick.y = 0;
+
+      if (el) {
+        el.style.left = `${t.clientX}px`;
+        el.style.top = `${t.clientY}px`;
+        el.classList.add('active');
+      }
+      if (knob) {
+        knob.style.transform = 'translate(0px, 0px)';
       }
     }, { passive: false });
-    const end = (e) => {
+
+    window.addEventListener('touchmove', (e) => {
+      if (!this.stick.active) return;
+      for (const t of e.changedTouches) {
+        if (t.identifier === this.stick.id) {
+          e.preventDefault();
+          updateFromTouch(t);
+          break;
+        }
+      }
+    }, { passive: false });
+
+    const endTouch = (e) => {
+      if (!this.stick.active) return;
       for (const t of e.changedTouches) {
         if (t.identifier === this.stick.id) {
           this.stick.active = false;
           this.stick.id = null;
           this.stick.x = 0;
           this.stick.y = 0;
-          this.knobEl.style.transform = 'translate(0px, 0px)';
+          if (el) el.classList.remove('active');
+          if (knob) knob.style.transform = 'translate(0px, 0px)';
+          break;
         }
       }
     };
-    el.addEventListener('touchend', end);
-    el.addEventListener('touchcancel', end);
 
-    // Mouse fallback on joystick so desktop users can also test joystick directly
+    window.addEventListener('touchend', endTouch);
+    window.addEventListener('touchcancel', endTouch);
+
+    window.addEventListener('blur', () => {
+      if (this.stick.active) {
+        this.stick.active = false;
+        this.stick.id = null;
+        this.stick.x = 0;
+        this.stick.y = 0;
+        if (el) el.classList.remove('active');
+        if (knob) knob.style.transform = 'translate(0px, 0px)';
+      }
+    });
+
+    // Mouse fallback so desktop testing of the touch drag is still possible without pointer lock
     let dragging = false;
-    el.addEventListener('mousedown', (e) => {
-      dragging = true;
-      this.stick.active = true;
-      this.usingJoystick = true;
-      update(e);
-      e.stopPropagation();
-    });
-    window.addEventListener('mousemove', (e) => {
-      if (dragging) update(e);
-    });
-    window.addEventListener('mouseup', () => {
-      if (!dragging) return;
-      dragging = false;
-      this.stick.active = false;
-      this.stick.x = 0;
-      this.stick.y = 0;
-      this.knobEl.style.transform = 'translate(0px, 0px)';
-    });
+    if (el) {
+      el.addEventListener('mousedown', (e) => {
+        if (this.locked) return;
+        dragging = true;
+        this.stick.active = true;
+        this.usingJoystick = true;
+        this.originX = e.clientX;
+        this.originY = e.clientY;
+        el.style.left = `${e.clientX}px`;
+        el.style.top = `${e.clientY}px`;
+        el.classList.add('active');
+        e.stopPropagation();
+      });
+      window.addEventListener('mousemove', (e) => {
+        if (dragging && !this.locked) {
+          const r = radius();
+          let dx = (e.clientX - this.originX) / r;
+          let dy = (e.clientY - this.originY) / r;
+          const m = Math.hypot(dx, dy);
+          if (m > 1) { dx /= m; dy /= m; }
+          this.stick.x = dx;
+          this.stick.y = dy;
+          if (knob) knob.style.transform = `translate(${dx * r * 0.75}px, ${dy * r * 0.75}px)`;
+        }
+      });
+      window.addEventListener('mouseup', () => {
+        if (!dragging) return;
+        dragging = false;
+        this.stick.active = false;
+        this.stick.x = 0;
+        this.stick.y = 0;
+        el.classList.remove('active');
+        if (knob) knob.style.transform = 'translate(0px, 0px)';
+      });
+    }
   }
 
   /**

@@ -154,11 +154,26 @@ html, body {
 #hint.show { opacity: 1; }
 
 #joystick {
-  position: absolute; right: max(24px, env(safe-area-inset-right)); bottom: max(28px, env(safe-area-inset-bottom));
-  width: min(38vw, 175px); height: min(38vw, 175px); border-radius: 50%;
-  background: radial-gradient(circle, rgba(255,255,255,0.12), rgba(255,255,255,0.03));
-  border: 2px solid rgba(255, 255, 255, 0.4); pointer-events: auto; touch-action: none;
-  box-shadow: 0 6px 24px rgba(0,0,0,0.35); z-index: 12;
+  position: fixed;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, -50%);
+  width: min(34vw, 140px);
+  height: min(34vw, 140px);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.14), rgba(255,255,255,0.02));
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  pointer-events: none;
+  touch-action: none;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.35);
+  z-index: 12;
+  opacity: 0.25;
+  transition: opacity 0.15s ease-out, border-color 0.15s, box-shadow 0.15s;
+}
+#joystick.active {
+  opacity: 0.95;
+  border-color: #ffd166;
+  box-shadow: 0 0 20px rgba(255, 209, 102, 0.45), 0 6px 24px rgba(0,0,0,0.5);
 }
 #knob {
   position: absolute; left: 50%; top: 50%; width: 44%; height: 44%; margin: -22% 0 0 -22%;
