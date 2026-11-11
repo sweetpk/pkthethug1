@@ -410,7 +410,7 @@ function resume() {
   G.mode = 'playing';
   audio.init();
   audio.resume();
-  input.requestLock();
+  if (!isTouch) input.requestLock();
   updateJoystickVisibility();
   accumulator = 0;
   lastTime = performance.now();
@@ -443,7 +443,7 @@ if ($('soundBtn')) {
   });
 }
 canvas.addEventListener('click', () => {
-  if (G.mode === 'playing' && !input.locked) input.requestLock();
+  if (G.mode === 'playing' && !isTouch && !input.locked) input.requestLock();
 });
 input.onLockChange = (locked) => {
   if (isTouch) return;
