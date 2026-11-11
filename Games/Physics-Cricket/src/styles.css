@@ -31,6 +31,7 @@
   --panel-shadow: 8px 8px 0px #000000;
   --panel-radius: 12px;
 
+  --font-blocky: 'Bungee', 'Impact', 'Arial Black', 'Bricolage Grotesque', sans-serif;
   --font-athletic: 'Bricolage Grotesque', system-ui, -apple-system, sans-serif;
   --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
 }
@@ -449,30 +450,33 @@ html, body {
   margin-left: 4px;
 }
 
-/* Central Comic Match Event Banners (SIX, FOUR, WICKET) */
+/* Central Blocky Match Event Popups (SIX, FOUR, WICKET) */
 #message {
   position: absolute;
-  top: 28%;
+  top: 26%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0.85);
-  font-family: var(--font-athletic);
-  font-size: clamp(38px, 9vw, 84px);
+  transform: translate(-50%, -50%) scale(0.75);
+  font-family: var(--font-blocky);
+  font-size: clamp(26px, 6vw, 48px);
   font-weight: 900;
-  letter-spacing: 3px;
-  color: #ffffff;
-  -webkit-text-stroke: 3.5px #000000;
-  text-shadow: 
-    5px 5px 0px #000000,
-    -3px -3px 0px #000000,
-    3px -3px 0px #000000,
-    -3px 3px 0px #000000,
-    0px 5px 0px #000000;
-  opacity: 0;
-  transition: opacity 0.15s ease, transform 0.22s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  letter-spacing: 2px;
+  line-height: 1.1;
+  text-transform: uppercase;
   white-space: nowrap;
   pointer-events: none;
-  text-transform: uppercase;
   z-index: 15;
+  opacity: 0;
+  transition: opacity 0.12s ease-out, transform 0.18s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-shadow: none;
+  -webkit-text-stroke: 0;
+
+  /* Solid Block Card Styling: razor-sharp, zero stroke glitches, true blocky look */
+  background: #ffffff;
+  color: #000000;
+  border: 4px solid #000000;
+  box-shadow: 6px 6px 0px #000000;
+  border-radius: 8px;
+  padding: 12px 28px;
 }
 
 #message.show {
@@ -481,56 +485,56 @@ html, body {
 }
 
 #message.six {
+  background: #000000;
   color: #ffffff;
-  animation: comicBounce 0.4s ease infinite alternate;
+  border: 4px solid #000000;
+  box-shadow: 6px 6px 0px #000000, 0 0 0 2px #ffffff;
 }
 
 #message.four {
-  color: #ffffff;
+  background: #ffffff;
+  color: #000000;
+  border: 4px solid #000000;
+  box-shadow: 6px 6px 0px #000000;
 }
 
 #message.runs {
-  color: #ffffff;
-  font-size: clamp(32px, 7vw, 64px);
+  background: #f4f4f5;
+  color: #000000;
+  font-size: clamp(20px, 4.8vw, 36px);
+  border: 3px solid #000000;
+  box-shadow: 4px 4px 0px #000000;
+  padding: 8px 20px;
 }
 
 #message.wicket {
-  color: #000000;
-  -webkit-text-stroke: 3.5px #ffffff;
-  text-shadow: 
-    5px 5px 0px #ffffff,
-    -3px -3px 0px #ffffff,
-    3px -3px 0px #ffffff,
-    -3px 3px 0px #ffffff;
+  background: #000000;
+  color: #ffffff;
+  border: 4px solid #000000;
+  box-shadow: 6px 6px 0px #000000, 0 0 0 2px #ffffff;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
 }
 
 #message.milestone {
+  background: #000000;
   color: #ffffff;
-  font-size: clamp(28px, 6vw, 56px);
-  animation: comicBounce 0.35s ease infinite alternate;
+  border: 4px solid #000000;
+  box-shadow: 6px 6px 0px #000000;
 }
 
 #message.minor {
-  font-size: clamp(16px, 3.5vw, 26px);
-  font-weight: 900;
-  opacity: 0;
-  color: #000000;
+  font-size: clamp(13px, 2.8vw, 18px);
   background: #ffffff;
-  border: 2px solid #000000;
+  color: #000000;
+  border: 2.5px solid #000000;
   box-shadow: 3px 3px 0px #000000;
-  padding: 4px 12px;
-  border-radius: 4px;
-  -webkit-text-stroke: 0;
-  text-shadow: none;
+  padding: 5px 14px;
+  border-radius: 6px;
 }
 
 #message.minor.show {
   opacity: 1;
-}
-
-@keyframes comicBounce {
-  from { transform: translate(-50%, -50%) scale(1) rotate(-1.5deg); }
-  to { transform: translate(-50%, -50%) scale(1.08) rotate(1.5deg); }
 }
 
 #hint {
@@ -1158,6 +1162,13 @@ select {
     padding: 5px 12px;
     border-width: 2.5px;
     box-shadow: 3px 3px 0px #000000;
+  }
+
+  #message {
+    font-size: clamp(20px, 5.5vw, 34px);
+    padding: 8px 18px;
+    border-width: 3px;
+    box-shadow: 4px 4px 0px #000000;
   }
 
   .panel {
