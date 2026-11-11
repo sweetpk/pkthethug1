@@ -7,7 +7,10 @@ import { CONFIG } from '../config.js';
 export class Input {
   constructor(canvas, joystickEl, knobEl) {
     this.canvas = canvas;
-    this.isTouchDevice = matchMedia('(pointer: coarse)').matches || 'ontouchstart' in window;
+    this.isTouchDevice = Boolean(
+      (typeof window !== 'undefined' && ('ontouchstart' in window || (navigator.maxTouchPoints && navigator.maxTouchPoints > 0))) ||
+      (typeof matchMedia !== 'undefined' && matchMedia('(pointer: coarse)').matches)
+    );
     this.locked = false;
     this.mouseDX = 0;
     this.mouseDY = 0;

@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
   <meta name="theme-color" content="#0d1b2a" />
   <title>Physics Cricket – First-Person Batting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800;12..96,900&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./src/styles.css">
   <script type="module" src="./src/main.js"></script>
 </head>
@@ -12,64 +15,116 @@
   <canvas id="game"></canvas>
 
   <div id="hud" class="hidden">
-    <div id="scoreboard">
-      <div class="score"><span id="runs">0</span>/<span id="wkts">0</span></div>
-      <div class="sub">
-        <span>Overs <span id="overs">0.0</span></span>
-        <span class="hud-pill" id="boundaries">4s: 0 · 6s: 0</span>
-        <span class="hud-pill" id="strikeRate">SR 0</span>
+    <!-- Top Broadcast Header Bar -->
+    <header class="hud-top-bar">
+      <!-- 1. Match Scoreboard Card -->
+      <div id="scoreboard" class="hud-card">
+        <div class="score-primary">
+          <div class="score-display">
+            <span id="runs">0</span><span class="score-sep">/</span><span id="wkts">0</span>
+          </div>
+          <div class="overs-chip">
+            <span class="chip-label">OVERS</span>
+            <span id="overs" class="chip-val">0.0</span>
+          </div>
+        </div>
+        <div class="sub">
+          <span class="hud-pill" id="boundaries">4s: 0 · 6s: 0</span>
+          <span class="hud-pill" id="strikeRate">SR 0</span>
+        </div>
+        <div id="overStrip" class="over-strip"></div>
       </div>
-      <div id="overStrip" class="over-strip"></div>
-    </div>
-    <div id="deliveryInfo">
-      <div id="bowlerName"></div>
-      <div id="speed"></div>
-    </div>
-    <div id="lastShot"></div>
-    <div id="topControls">
-      <a href="../../games.html" class="icon-btn" title="Exit to Games" aria-label="Exit to Games" style="text-decoration:none;">✕</a>
-      <button id="soundBtn" class="icon-btn" title="Toggle Sound (M)" aria-label="Toggle Sound">🔊</button>
-      <button id="pauseBtn" class="icon-btn" title="Pause (P or Esc)" aria-label="Pause">❚❚</button>
-    </div>
-    <div id="message"></div>
-    <div id="hint"></div>
+
+      <!-- 2. Active Delivery Telemetry (Bowler & Pace) -->
+      <div id="deliveryInfo" class="hud-card">
+        <div id="bowlerName" class="bowler-name">MATCH READY</div>
+        <div id="speed" class="bowler-speed"></div>
+      </div>
+
+      <!-- 3. Top Action Buttons -->
+      <nav id="topControls" aria-label="Game Controls">
+        <a href="../../games.html" class="icon-btn exit-btn" title="Exit to Games" aria-label="Exit to Games">✕</a>
+        <button id="soundBtn" class="icon-btn" title="Toggle Sound (M)" aria-label="Toggle Sound">🔊</button>
+        <button id="pauseBtn" class="icon-btn" title="Pause (P or Esc)" aria-label="Pause">❚❚</button>
+      </nav>
+    </header>
+
+    <!-- Shot Telemetry Banner (Slides in on contact) -->
+    <div id="lastShot" class="shot-banner"></div>
+
+    <!-- Central Event Banner (FOUR, SIX, WICKET, MILESTONES) -->
+    <div id="message" aria-live="assertive"></div>
+    <div id="hint" role="status"></div>
     <div id="joystick" class="hidden"><div id="knob"></div></div>
   </div>
 
   <div id="startScreen" class="overlay">
     <div class="panel">
+      <div class="panel-badge">✦ 3D BATTING SIMULATION ✦</div>
       <h1>PHYSICS <span>CRICKET</span></h1>
-      <p class="tag">First-person 3D batting simulation. No preset shots. Just your bat, your hands, and genuine physics.</p>
-      <button id="playBtn" class="primary">PLAY</button>
-      <a href="../../games.html" style="color:#ffd166;text-decoration:none;font-weight:700;font-size:12.5px;letter-spacing:0.5px;margin-top:2px;display:inline-block;opacity:0.85;">← BACK TO GAMES</a>
-      <div class="controls">
-        <div class="control-box">
-          <h3>🏏 Desktop (Mouse)</h3>
-          <p>Click to lock the cursor and control the bat directly. Pull <b>down</b> for backlift, push <b>up / forward</b> to drive through the ball, and move <b>left / right</b> to aim and swing towards the leg side or off side.</p>
-          <p class="subtle">Watch the colored pitch ring (green = full, amber = good, coral = short, cyan = yorker) and time your swing through the ball.</p>
+      <p class="tag">Pure batting feel driven by true physics. No canned animations or shot buttons. Time your backlift, swing cleanly through the line, and find the rope.</p>
+
+      <div class="action-stack">
+        <button id="playBtn" class="primary">PLAY GAME</button>
+        <a href="../../games.html" class="back-link">← EXIT TO ARCADE</a>
+      </div>
+
+      <div class="controls-guide">
+        <div class="control-box control-box-touch">
+          <div class="control-header">
+            <span class="control-icon">📱</span>
+            <h3>Mobile / Touch (Drag Anywhere)</h3>
+            <span class="control-badge touch-badge">Touch Enabled</span>
+          </div>
+          <p>Touch and drag <b>anywhere on screen</b> to swing. Pull <b>down</b> for backlift, push <b>up / forward</b> to drive, or sweep sideways for cuts and pulls.</p>
         </div>
-        <div class="control-box">
-          <h3>📱 Mobile / Touch</h3>
-          <p>Touch and drag <b>anywhere on the screen</b> to swing. Pull <b>down</b> to cock your backlift, push <b>up / forward</b> to drive through the ball, or sweep sideways for cuts and pulls.</p>
+
+        <div class="control-box control-box-desktop">
+          <div class="control-header">
+            <span class="control-icon">🏏</span>
+            <h3>Desktop (Mouse Pointer Lock)</h3>
+            <span class="control-badge pc-badge">Mouse Control</span>
+          </div>
+          <p>Click screen to lock cursor. Pull <b>down</b> for backlift, flick <b>up</b> through the line of the ball, steer <b>left/right</b> for leg/off placement.</p>
+          <p class="subtle">Watch the pitch ring (green = full, amber = good, coral = short, cyan = yorker) and time your shot.</p>
         </div>
+
         <div class="tip-banner">
-          <b>⚡ Full Run Scoring:</b> Score <b>1, 2, or 3 runs</b> by piercing the outfield, <b>4</b> along the ground over the 58m rope, or <b>6</b> in the air! You have <b>3 wickets</b> per innings.
+          <span class="tip-icon">⚡</span>
+          <span><b>Scoring:</b> Outfield gaps earn <b>1, 2, or 3 runs</b>, along the turf over the rope is <b>4</b>, and clearing the rope is <b>6</b>! You have <b>3 wickets</b>.</span>
         </div>
       </div>
     </div>
   </div>
 
   <div id="pauseScreen" class="overlay hidden">
-    <div class="panel">
-      <h2>Game Paused</h2>
-      <button id="resumeBtn" class="primary">RESUME</button>
-      <button id="restartBtn">RESTART</button>
+    <div class="panel settings-panel">
+      <div class="panel-badge">MATCH PAUSED</div>
+      <h2>Game Settings</h2>
+
+      <div class="action-stack">
+        <button id="resumeBtn" class="primary">RESUME MATCH</button>
+        <button id="restartBtn" class="secondary">RESTART INNINGS</button>
+      </div>
+
       <div class="settings">
-        <label><span>Mouse Sensitivity</span> <input type="range" id="mouseSens" min="0.3" max="2.5" step="0.05" /><span id="mouseSensV"></span></label>
-        <label><span>Joystick Sensitivity</span> <input type="range" id="joySens" min="0.5" max="1.6" step="0.05" /><span id="joySensV"></span></label>
-        <label><span>Bat Responsiveness</span> <input type="range" id="resp" min="0.5" max="1.8" step="0.05" /><span id="respV"></span></label>
         <label>
-          <span>Virtual Joystick</span>
+          <span class="setting-title">Mouse Sensitivity</span>
+          <input type="range" id="mouseSens" min="0.3" max="2.5" step="0.05" />
+          <span id="mouseSensV" class="val-badge">1.00</span>
+        </label>
+        <label>
+          <span class="setting-title">Joystick Sensitivity</span>
+          <input type="range" id="joySens" min="0.5" max="1.6" step="0.05" />
+          <span id="joySensV" class="val-badge">1.00</span>
+        </label>
+        <label>
+          <span class="setting-title">Bat Responsiveness</span>
+          <input type="range" id="resp" min="0.5" max="1.8" step="0.05" />
+          <span id="respV" class="val-badge">1.00</span>
+        </label>
+        <label class="select-label">
+          <span class="setting-title">Touch Indicator</span>
           <select id="joyMode">
             <option value="auto">Auto (Touch Devices)</option>
             <option value="on">Always Visible</option>
@@ -82,12 +137,27 @@
   </div>
 
   <div id="overScreen" class="overlay hidden">
-    <div class="panel">
+    <div class="panel over-panel">
+      <div class="panel-badge wicket-badge">INNINGS OVER</div>
       <h2 id="overTitle">OUT!</h2>
-      <div class="final"><span id="finalRuns">0</span> runs <span class="small">from <span id="finalBalls">0</span> balls</span></div>
-      <div class="small" id="finalStats"></div>
-      <div class="small" id="best"></div>
-      <button id="againBtn" class="primary">BAT AGAIN</button>
+
+      <div class="scorecard-summary">
+        <div class="score-card-main">
+          <div class="scorecard-runs"><span id="finalRuns">0</span></div>
+          <div class="scorecard-lbl">RUNS SCORED</div>
+          <div class="scorecard-balls">from <span id="finalBalls">0</span> balls faced</div>
+        </div>
+
+        <div class="scorecard-chips">
+          <div class="summary-chip" id="finalStats">0 fours · 0 sixes</div>
+          <div class="summary-chip best-chip" id="best">Best: 0</div>
+        </div>
+      </div>
+
+      <div class="action-stack">
+        <button id="againBtn" class="primary">BAT AGAIN</button>
+        <a href="../../games.html" class="back-link">← EXIT TO ARCADE</a>
+      </div>
     </div>
   </div>
 

@@ -13,8 +13,17 @@ loadUserSettings();
 // ============================================================ setup
 const $ = (id) => document.getElementById(id);
 const canvas = $('game');
-const isTouch = matchMedia('(pointer: coarse)').matches || 'ontouchstart' in window;
-if (isTouch) document.body.classList.add('touch');
+const isTouch = Boolean(
+  (typeof window !== 'undefined' && ('ontouchstart' in window || (navigator.maxTouchPoints && navigator.maxTouchPoints > 0))) ||
+  (typeof matchMedia !== 'undefined' && matchMedia('(pointer: coarse)').matches)
+);
+if (isTouch) {
+  document.body.classList.add('touch');
+  document.body.classList.remove('desktop');
+} else {
+  document.body.classList.add('desktop');
+  document.body.classList.remove('touch');
+}
 
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: !isTouch || devicePixelRatio < 2, powerPreference: 'high-performance' });
 renderer.setPixelRatio(Math.min(devicePixelRatio, isTouch ? 1.5 : 2));
@@ -356,7 +365,7 @@ function simStep(dt, target) {
 // ============================================================ flow
 function updateJoystickVisibility() {
   const mode = CONFIG.control.showJoystick || 'auto';
-  const shouldShow = mode === 'on' || (mode === 'auto' && (isTouch || input.isTouchDevice));
+  const shouldShow = mode === 'on' || (mode === 'auto' && isTouch);
   $('joystick').classList.toggle('hidden', !shouldShow || G.mode !== 'playing');
 }
 
@@ -375,9 +384,12 @@ function startGame() {
   $('overScreen').classList.add('hidden');
   $('pauseScreen').classList.add('hidden');
   $('hud').classList.remove('hidden');
-  updateJoystickVisibility();
+  
+  // Set mode to playing BEFORE updating joystick visibility so it shows immediately
   G.mode = 'playing';
-  input.requestLock();
+  updateJoystickVisibility();
+
+  if (!isTouch) input.requestLock();
   startDelivery();
   G.runupTime = -0.6; // a short breath before the first run-up
 }
