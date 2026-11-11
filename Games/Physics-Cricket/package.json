@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host",
-    "build": "vite build",
+    "build": "vite build && node sync-build.js",
     "preview": "vite preview --host",
     "sim": "node tests/sim.mjs"
   },

@@ -113,6 +113,8 @@ export class Input {
       if (el) {
         el.style.left = `${t.clientX}px`;
         el.style.top = `${t.clientY}px`;
+        el.style.right = 'auto';
+        el.style.bottom = 'auto';
         el.classList.add('active');
       }
       if (knob) {

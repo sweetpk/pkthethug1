@@ -157,6 +157,8 @@ html, body {
   position: fixed;
   left: 50%;
   top: 75%;
+  right: auto !important;
+  bottom: auto !important;
   transform: translate(-50%, -50%);
   width: min(34vw, 140px);
   height: min(34vw, 140px);

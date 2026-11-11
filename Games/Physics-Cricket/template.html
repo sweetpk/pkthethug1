@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#0d1b2a" />
+  <title>Physics Cricket – First-Person Batting</title>
+  <link rel="stylesheet" href="./src/styles.css">
+  <script type="module" src="./src/main.js"></script>
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div id="hud" class="hidden">
+    <div id="scoreboard">
+      <div class="score"><span id="runs">0</span>/<span id="wkts">0</span></div>
+      <div class="sub">
+        <span>Overs <span id="overs">0.0</span></span>
+        <span class="hud-pill" id="boundaries">4s: 0 · 6s: 0</span>
+        <span class="hud-pill" id="strikeRate">SR 0</span>
+      </div>
+      <div id="overStrip" class="over-strip"></div>
+    </div>
+    <div id="deliveryInfo">
+      <div id="bowlerName"></div>
+      <div id="speed"></div>
+    </div>
+    <div id="lastShot"></div>
+    <div id="topControls">
+      <a href="../../games.html" class="icon-btn" title="Exit to Games" aria-label="Exit to Games" style="text-decoration:none;">✕</a>
+      <button id="soundBtn" class="icon-btn" title="Toggle Sound (M)" aria-label="Toggle Sound">🔊</button>
+      <button id="pauseBtn" class="icon-btn" title="Pause (P or Esc)" aria-label="Pause">❚❚</button>
+    </div>
+    <div id="message"></div>
+    <div id="hint"></div>
+    <div id="joystick" class="hidden"><div id="knob"></div></div>
+  </div>
+
+  <div id="startScreen" class="overlay">
+    <div class="panel">
+      <h1>PHYSICS <span>CRICKET</span></h1>
+      <p class="tag">First-person 3D batting simulation. No preset shots. Just your bat, your hands, and genuine physics.</p>
+      <button id="playBtn" class="primary">PLAY</button>
+      <a href="../../games.html" style="color:#ffd166;text-decoration:none;font-weight:700;font-size:12.5px;letter-spacing:0.5px;margin-top:2px;display:inline-block;opacity:0.85;">← BACK TO GAMES</a>
+      <div class="controls">
+        <div class="control-box">
+          <h3>🏏 Desktop (Mouse)</h3>
+          <p>Click to lock the cursor and control the bat directly. Pull <b>down</b> for backlift, push <b>up / forward</b> to drive through the ball, and move <b>left / right</b> to aim and swing towards the leg side or off side.</p>
+          <p class="subtle">Watch the colored pitch ring (green = full, amber = good, coral = short, cyan = yorker) and time your swing through the ball.</p>
+        </div>
+        <div class="control-box">
+          <h3>📱 Mobile / Touch</h3>
+          <p>Touch and drag <b>anywhere on the screen</b> to swing. Pull <b>down</b> to cock your backlift, push <b>up / forward</b> to drive through the ball, or sweep sideways for cuts and pulls.</p>
+        </div>
+        <div class="tip-banner">
+          <b>⚡ Full Run Scoring:</b> Score <b>1, 2, or 3 runs</b> by piercing the outfield, <b>4</b> along the ground over the 58m rope, or <b>6</b> in the air! You have <b>3 wickets</b> per innings.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="pauseScreen" class="overlay hidden">
+    <div class="panel">
+      <h2>Game Paused</h2>
+      <button id="resumeBtn" class="primary">RESUME</button>
+      <button id="restartBtn">RESTART</button>
+      <div class="settings">
+        <label><span>Mouse Sensitivity</span> <input type="range" id="mouseSens" min="0.3" max="2.5" step="0.05" /><span id="mouseSensV"></span></label>
+        <label><span>Joystick Sensitivity</span> <input type="range" id="joySens" min="0.5" max="1.6" step="0.05" /><span id="joySensV"></span></label>
+        <label><span>Bat Responsiveness</span> <input type="range" id="resp" min="0.5" max="1.8" step="0.05" /><span id="respV"></span></label>
+        <label>
+          <span>Virtual Joystick</span>
+          <select id="joyMode">
+            <option value="auto">Auto (Touch Devices)</option>
+            <option value="on">Always Visible</option>
+            <option value="off">Hidden</option>
+          </select>
+          <span></span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div id="overScreen" class="overlay hidden">
+    <div class="panel">
+      <h2 id="overTitle">OUT!</h2>
+      <div class="final"><span id="finalRuns">0</span> runs <span class="small">from <span id="finalBalls">0</span> balls</span></div>
+      <div class="small" id="finalStats"></div>
+      <div class="small" id="best"></div>
+      <button id="againBtn" class="primary">BAT AGAIN</button>
+    </div>
+  </div>
+
+</body>
+</html>
