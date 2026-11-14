@@ -1013,6 +1013,13 @@ const player = {
   dashBaseCooldown: 0.85,
   dashRange: 260,
   isDashing: false,
+  dashDuration: 0.12,
+  dashTimer: 0,
+  dashStartX: 0,
+  dashStartY: 0,
+  dashEndX: 0,
+  dashEndY: 0,
+  dashAngle: 0,
   dashPath: null,
   trail: [],
   scarf: []
@@ -1223,8 +1230,10 @@ function endTouch(t) {
     stickBase.style.display = 'none';
   }
   else if (t.identifier === touch.aimId) {
-    touch.aimId = null;
+    // Release aiming BEFORE clearing touch.aimId so getAimVector() has access to touch coordinates!
     releaseAiming();
+    touch.aimId = null;
+    lastAimVector = null;
   }
 }
 
@@ -1266,6 +1275,8 @@ function releaseAiming() {
   }
 }
 
+let lastAimVector = null;
+
 function getAimVector() {
   // If touch aiming on right half
   if (touch.aimId !== null) {
@@ -1273,7 +1284,9 @@ function getAimVector() {
     const dy = touch.aimCurrent.y - touch.aimStart.y;
     const dist = Math.hypot(dx, dy);
     if (dist > 18) {
-      return { x: dx / dist, y: dy / dist, dist: dist * 3.2 };
+      const v = { x: dx / dist, y: dy / dist, dist: dist * 3.2 };
+      lastAimVector = v;
+      return v;
     }
     // If user tapped without dragging, aim from player towards world touch point
     const touchWorldX = camera.x + (touch.aimCurrent.x - W / 2) / camera.zoom;
@@ -1282,10 +1295,28 @@ function getAimVector() {
     const tdy = touchWorldY - player.y;
     const tdist = Math.hypot(tdx, tdy);
     if (tdist > 1) {
-      return { x: tdx / tdist, y: tdy / tdist, dist: player.dashRange };
+      const v = { x: tdx / tdist, y: tdy / tdist, dist: player.dashRange };
+      lastAimVector = v;
+      return v;
     }
   }
-  // Otherwise aim towards mouse world cursor
+
+  // If we just released touch aim and have a cached aim vector
+  if (lastAimVector) {
+    const v = lastAimVector;
+    return v;
+  }
+
+  // If on a touch device or touch stick is active
+  if (document.body.classList.contains('is-touch') || touch.stickId !== null) {
+    if (touch.stickId !== null && Math.hypot(touch.stickVector.x, touch.stickVector.y) > 0.1) {
+      const sLen = Math.hypot(touch.stickVector.x, touch.stickVector.y);
+      return { x: touch.stickVector.x / sLen, y: touch.stickVector.y / sLen, dist: player.dashRange };
+    }
+    return { x: Math.cos(player.angle), y: Math.sin(player.angle), dist: player.dashRange };
+  }
+
+  // Otherwise aim towards mouse world cursor (Desktop)
   updateMouseWorldPos();
   const dx = mouse.worldX - player.x;
   const dy = mouse.worldY - player.y;
@@ -1326,10 +1357,24 @@ function executeDash() {
 
   // Dash animation & physics
   player.isDashing = true;
-  player.dashPath = { x1: startX, y1: startY, x2: endX, y2: endY, timer: 0.15 };
+  player.dashDuration = 0.12;
+  player.dashTimer = player.dashDuration;
+  player.dashStartX = startX;
+  player.dashStartY = startY;
+  player.dashEndX = endX;
+  player.dashEndY = endY;
+  player.dashAngle = Math.atan2(aim.y, aim.x);
+  player.angle = player.dashAngle;
+  player.dashPath = { x1: startX, y1: startY, x2: endX, y2: endY, timer: 0.22, maxTimer: 0.22 };
+  player.vx = 0;
+  player.vy = 0;
   player.x = endX;
   player.y = endY;
-  player.angle = Math.atan2(aim.y, aim.x);
+
+  // Add trail points immediately to create dash streak
+  player.trail.unshift({ x: (startX + endX) / 2, y: (startY + endY) / 2 });
+  player.trail.unshift({ x: endX, y: endY });
+  if (player.trail.length > 12) player.trail.length = 12;
 
   // Singularity Upgrade: Leaves black hole at origin
   if (playerUpgrades.has('singularity')) {
@@ -1848,39 +1893,63 @@ function updateGame(gDt, realDt) {
     }
   }
 
-  // Player Movement (Keyboard + Touch Virtual Stick)
-  let moveX = 0;
-  let moveY = 0;
-
-  if (keys.w) moveY -= 1;
-  if (keys.s) moveY += 1;
-  if (keys.a) moveX -= 1;
-  if (keys.d) moveX += 1;
-
-  if (touch.stickId !== null) {
-    moveX = touch.stickVector.x;
-    moveY = touch.stickVector.y;
+  // Dash path decay
+  if (player.dashPath) {
+    player.dashPath.timer -= realDt;
+    if (player.dashPath.timer <= 0) player.dashPath = null;
   }
 
-  const moveLen = Math.hypot(moveX, moveY);
-  if (moveLen > 0.1) {
-    const normX = moveX / (moveLen > 1 ? moveLen : 1);
-    const normY = moveY / (moveLen > 1 ? moveLen : 1);
-    const spd = player.speed * (playerUpgrades.has('hyper_dash') ? 1.25 : 1.0);
-    player.vx += (normX * spd - player.vx) * Math.min(1, gDt * 12);
-    player.vy += (normY * spd - player.vy) * Math.min(1, gDt * 12);
-    if (!isAiming) player.angle = Math.atan2(normY, normX);
+  // Dash state & movement lockout
+  if (player.isDashing) {
+    player.dashTimer -= realDt;
+    player.angle = player.dashAngle;
+    player.vx = 0;
+    player.vy = 0;
+    if (player.dashTimer <= 0) {
+      player.isDashing = false;
+      player.dashTimer = 0;
+    }
   } else {
-    player.vx *= Math.max(0, 1 - gDt * 14);
-    player.vy *= Math.max(0, 1 - gDt * 14);
+    // Player Movement (Keyboard + Touch Virtual Stick)
+    let moveX = 0;
+    let moveY = 0;
+
+    if (keys.w) moveY -= 1;
+    if (keys.s) moveY += 1;
+    if (keys.a) moveX -= 1;
+    if (keys.d) moveX += 1;
+
+    if (touch.stickId !== null) {
+      moveX = touch.stickVector.x;
+      moveY = touch.stickVector.y;
+    }
+
+    const moveLen = Math.hypot(moveX, moveY);
+    if (moveLen > 0.1) {
+      const normX = moveX / (moveLen > 1 ? moveLen : 1);
+      const normY = moveY / (moveLen > 1 ? moveLen : 1);
+      const spd = player.speed * (playerUpgrades.has('hyper_dash') ? 1.25 : 1.0);
+      player.vx += (normX * spd - player.vx) * Math.min(1, gDt * 12);
+      player.vy += (normY * spd - player.vy) * Math.min(1, gDt * 12);
+      if (!isAiming) player.angle = Math.atan2(normY, normX);
+    } else {
+      player.vx *= Math.max(0, 1 - gDt * 14);
+      player.vy *= Math.max(0, 1 - gDt * 14);
+    }
+
+    player.x += player.vx * gDt;
+    player.y += player.vy * gDt;
+
+    // Clamp player to arena
+    player.x = Math.max(player.radius + 10, Math.min(ARENA_W - player.radius - 10, player.x));
+    player.y = Math.max(player.radius + 10, Math.min(ARENA_H - player.radius - 10, player.y));
   }
 
-  player.x += player.vx * gDt;
-  player.y += player.vy * gDt;
-
-  // Clamp player to arena
-  player.x = Math.max(player.radius + 10, Math.min(ARENA_W - player.radius - 10, player.x));
-  player.y = Math.max(player.radius + 10, Math.min(ARENA_H - player.radius - 10, player.y));
+  // Face aim direction while aiming in bullet-time
+  if (isAiming) {
+    const aim = getAimVector();
+    player.angle = Math.atan2(aim.y, aim.x);
+  }
 
   // Trailing scarf/energy ribbon physics
   player.trail.unshift({ x: player.x, y: player.y });
@@ -2234,6 +2303,29 @@ function render() {
     ctx.restore();
   }
 
+  // Draw Dash Path Slash Line
+  if (player.dashPath) {
+    ctx.save();
+    const alpha = Math.max(0, player.dashPath.timer / player.dashPath.maxTimer);
+    ctx.strokeStyle = `rgba(0, 243, 255, ${alpha * 0.85})`;
+    ctx.lineWidth = 14 * alpha;
+    ctx.lineCap = 'round';
+    ctx.shadowColor = '#00f3ff';
+    ctx.shadowBlur = 18;
+    ctx.beginPath();
+    ctx.moveTo(player.dashPath.x1, player.dashPath.y1);
+    ctx.lineTo(player.dashPath.x2, player.dashPath.y2);
+    ctx.stroke();
+
+    ctx.strokeStyle = `rgba(255, 255, 255, ${alpha * 0.95})`;
+    ctx.lineWidth = 4 * alpha;
+    ctx.beginPath();
+    ctx.moveTo(player.dashPath.x1, player.dashPath.y1);
+    ctx.lineTo(player.dashPath.x2, player.dashPath.y2);
+    ctx.stroke();
+    ctx.restore();
+  }
+
   // 5. Draw Sliced Debris (Bisected geometries)
   for (const d of slicedDebris) {
     drawBisectedDebris(d);
@@ -2579,6 +2671,10 @@ function startGame() {
   player.vy = 0;
   player.stamina = 1.0;
   player.dashCooldown = 0;
+  player.isDashing = false;
+  player.dashTimer = 0;
+  player.dashPath = null;
+  lastAimVector = null;
 
   enemies = [];
   bullets = [];
