@@ -178,6 +178,7 @@ function release() {
   world.ball.launch(G.releasePos, G.releaseVel);
   judge.start();
   pitchMarker.show(G.delivery.lineX, G.delivery.bounceDist);
+  trail.setColor(0x38bdf8, 0.88);
   G.phase = 'live';
   G.phaseTime = 0;
   audio.bowlerRelease();
@@ -291,6 +292,7 @@ function handleEvents(events) {
       camFx.kick = Math.max(camFx.kick, 0.4 * intensity);
       if (!G.hitThisBall) {
         G.hitThisBall = true;
+        trail.setColor(0xf59e0b, 0.92);
         camFx.follow = true;
         camFx.hitTime = 0;
         const vh = Math.hypot(world.ball.vel.x, world.ball.vel.z);
@@ -332,6 +334,9 @@ function simStep(dt, target) {
     if (strideStep !== G.lastStrideStep && G.runupTime < G.runup.tRelease - 0.08) {
       G.lastStrideStep = strideStep;
       audio.bowlerStride();
+    }
+    if (!pitchMarker.active && G.runupTime >= G.runup.tRun) {
+      pitchMarker.show(G.delivery.lineX, G.delivery.bounceDist);
     }
   }
 
@@ -589,7 +594,7 @@ function render(alpha, dt, t) {
   if (ball.active) {
     ballRenderPos.lerpVectors(ball.prevPos, ball.pos, alpha);
     ballMesh.quaternion.copy(ball.orientation);
-    if (G.hitThisBall && G.phase !== 'runup') trail.push(ballRenderPos);
+    if (G.phase !== 'runup') trail.push(ballRenderPos);
   } else if (G.phase === 'runup' && pose.hand) {
     ballRenderPos.copy(pose.hand);
   } else {
