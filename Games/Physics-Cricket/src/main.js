@@ -6,7 +6,7 @@ import { makeRunup, bowlerPose } from './bowling/bowlerPose.js';
 import { DeliveryJudge } from './game/DeliveryJudge.js';
 import { Input } from './input/Input.js';
 import { AudioEngine } from './audio/AudioEngine.js';
-import { buildEnvironment, StumpsView, buildBatMesh, PitchMarker, buildBall, Trail, BowlerModel, ParticleFX, StadiumScreen } from './render/visuals.js';
+import { buildEnvironment, StumpsView, buildBatMesh, PitchMarker, buildBall, Trail, BowlerModel, ParticleFX, StadiumScreen, SwingRibbon, ImpactCallout } from './render/visuals.js';
 
 loadUserSettings();
 
@@ -46,6 +46,8 @@ const { mesh: ballMesh, shadow: ballShadow } = buildBall();
 scene.add(ballMesh, ballShadow);
 const trail = new Trail(scene);
 const particleFX = new ParticleFX(scene);
+const swingRibbon = new SwingRibbon(scene);
+const impactCallout = new ImpactCallout(scene);
 
 const world = new World();
 const planner = new DeliveryPlanner();
@@ -72,8 +74,17 @@ const G = {
   lastStrideStep: -1,
   hitFreeze: 0,
   hasFlybyPlayed: false,
+  emberTimer: 0,
   lastBanner: 'MATCH IN PROGRESS'
 };
+
+function triggerVfx(elId, cls) {
+  const el = $(elId);
+  if (!el) return;
+  el.className = '';
+  void el.offsetWidth;
+  el.className = cls;
+}
 const pose = {};
 const lastTarget = new THREE.Vector2().copy(world.bat.target);
 const stepTarget = new THREE.Vector2();
@@ -164,7 +175,9 @@ function startDelivery() {
   strikerStumps.reset();
   nonStrikerStumps.reset();
   trail.clear();
+  swingRibbon.clear();
   pitchMarker.hide();
+  G.emberTimer = 0;
   camFx.follow = false;
   camFx.hitTime = 0;
   camFx.zoom = 0;
@@ -184,6 +197,7 @@ function release() {
   G.phaseTime = 0;
   audio.bowlerRelease();
   $('speed').textContent = `${Math.round(G.delivery.kmh)} km/h`;
+  if (G.delivery.kmh >= 128) triggerVfx('vfxFlash', 'flash-fast');
 }
 
 function endDelivery(res) {
@@ -209,6 +223,9 @@ function endDelivery(res) {
     audio.boundaryFanfare(false);
     audio.boundaryClap();
     trail.setColor(0x38bdf8, 0.9);
+    particleFX.boundaryPyro(false);
+    triggerVfx('vfxFlash', 'flash-four');
+    triggerVfx('speedLines', 'active');
     G.lastBanner = '★ FOUR! ★';
   } else if (res.kind === 'six') {
     G.sixes++;
@@ -219,6 +236,9 @@ function endDelivery(res) {
     trail.setColor(0xffd166, 0.95);
     particleFX.confetti(new THREE.Vector3(0, 1.8, -1.22));
     particleFX.boundaryFirework(new THREE.Vector3(world.ball.pos.x, 2.5, world.ball.pos.z));
+    particleFX.boundaryPyro(true);
+    triggerVfx('vfxFlash', 'flash-six');
+    triggerVfx('speedLines', 'active');
     G.lastBanner = '★ MAXIMUM SIX! ★';
   } else if (res.kind === 'runs') {
     showMessage(res.text, 'runs', 1.3);
@@ -283,11 +303,19 @@ function handleEvents(events) {
       audio.batHit(e.quality, intensity, e.edge, soft);
       if (e.quality > 0.82 && !e.edge) {
         particleFX.sweetSpotBurst(e.pos, e.normal);
+        impactCallout.spawn('sweet', e.pos);
+        swingRibbon.flash(0xfef08a);
+        triggerVfx('vfxFlash', 'flash-sweet');
+        triggerVfx('speedLines', 'active');
         G.hitFreeze = 0.022; // 22ms crisp impact freeze for sweet spot crunch
       } else if (e.quality > 0.52 && !e.edge) {
         particleFX.impactSparks(e.pos, e.normal);
+        impactCallout.spawn('clean', e.pos);
+        swingRibbon.flash(0xfbbf24);
       } else if (e.edge) {
         audio.appeal();
+        impactCallout.spawn('edge', e.pos);
+        swingRibbon.flash(0xf87171);
       }
       camFx.shake = Math.max(camFx.shake, 0.15 + 0.55 * intensity * (e.edge ? 0.6 : 1));
       camFx.kick = Math.max(camFx.kick, 0.4 * intensity);
@@ -316,8 +344,12 @@ function handleEvents(events) {
       pitchMarker.fadeOut();
       audio.bounce(Math.min(1, e.speed / 8));
       particleFX.pitchDust(e.pos);
+      particleFX.pitchBounceRipple(e.pos, G.hitThisBall ? 0xfbbf24 : 0x38bdf8);
     } else if (e.type === 'stumps') {
       audio.stumps();
+      particleFX.stumpsBurst(e.pos);
+      impactCallout.spawn('stumps', e.pos);
+      triggerVfx('vfxFlash', 'flash-wicket');
       const targetStumps = e.isNonStriker ? nonStrikerStumps : strikerStumps;
       targetStumps.shatter(e.stump, world.ball.vel.clone().add(e.normal.clone().multiplyScalar(-e.speed * 0.5)));
     }
@@ -355,7 +387,12 @@ function simStep(dt, target) {
     // near miss: a quick flinch when an unplayed ball zips past the head
     if (!G.hitThisBall && !G.flinched) {
       const d = world.ball.pos.distanceTo(camera.position);
-      if (d < 0.65) { G.flinched = true; camFx.shake = Math.max(camFx.shake, 0.35); audio.whoosh(1); }
+      if (d < 0.65) {
+        G.flinched = true;
+        camFx.shake = Math.max(camFx.shake, 0.35);
+        audio.whoosh(1);
+        triggerVfx('vfxFlash', 'flash-miss');
+      }
     }
     const res = judge.update(dt, world.ball, events);
     if (res) endDelivery(res);
@@ -626,6 +663,15 @@ function render(alpha, dt, t) {
 
   strikerStumps.update(dt);
   nonStrikerStumps.update(dt);
+  if (G.hitThisBall && world.ball.active && world.ball.vel.lengthSq() > 484) {
+    G.emberTimer -= dt;
+    if (G.emberTimer <= 0) {
+      particleFX.ballFlightEmber(ballRenderPos, world.ball.vel);
+      G.emberTimer = 0.028;
+    }
+  }
+  swingRibbon.update(batMesh, dt, batMesh.visible && G.mode === 'playing');
+  impactCallout.update(dt);
   particleFX.update(dt);
   env.update(t);
   updateCamera(dt, t);

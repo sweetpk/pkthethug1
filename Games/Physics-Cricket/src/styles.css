@@ -66,6 +66,73 @@ html, body {
   display: block;
 }
 
+#vfxFlash,
+#speedLines {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 8;
+  opacity: 0;
+  will-change: opacity, transform;
+}
+
+#vfxFlash.flash-sweet {
+  background: radial-gradient(circle at center, rgba(254, 240, 138, 0.36) 0%, rgba(245, 158, 11, 0.14) 48%, transparent 78%);
+  animation: vfxFlashPop 340ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+#vfxFlash.flash-six {
+  background: radial-gradient(circle at center, rgba(253, 224, 71, 0.28) 25%, rgba(249, 115, 22, 0.26) 72%, rgba(245, 158, 11, 0.42) 100%);
+  animation: vfxFlashPop 520ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+#vfxFlash.flash-four {
+  background: radial-gradient(circle at center, transparent 40%, rgba(52, 211, 153, 0.28) 82%, rgba(16, 185, 129, 0.4) 100%);
+  animation: vfxFlashPop 440ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+#vfxFlash.flash-wicket {
+  background: radial-gradient(circle at center, rgba(254, 202, 202, 0.2) 15%, rgba(239, 68, 68, 0.44) 85%, rgba(185, 28, 28, 0.56) 100%);
+  animation: vfxFlashPop 480ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+#vfxFlash.flash-miss {
+  background: radial-gradient(circle at center, transparent 54%, rgba(148, 163, 184, 0.22) 86%, rgba(56, 189, 248, 0.28) 100%);
+  animation: vfxFlashPop 260ms ease-out forwards;
+}
+
+#vfxFlash.flash-fast {
+  background: radial-gradient(circle at center, transparent 60%, rgba(249, 115, 22, 0.2) 90%, rgba(239, 68, 68, 0.32) 100%);
+  animation: vfxFlashPop 360ms ease-out forwards;
+}
+
+#speedLines {
+  background: repeating-conic-gradient(
+    from 0deg at 50% 50%,
+    rgba(255, 255, 255, 0) 0deg 8.5deg,
+    rgba(255, 251, 235, 0.22) 8.5deg 10deg,
+    rgba(255, 255, 255, 0) 10deg 19deg,
+    rgba(253, 224, 71, 0.16) 19deg 20.5deg
+  );
+  -webkit-mask-image: radial-gradient(circle at center, transparent 56%, rgba(0, 0, 0, 0.85) 84%, black 95%);
+  mask-image: radial-gradient(circle at center, transparent 56%, rgba(0, 0, 0, 0.85) 84%, black 95%);
+}
+
+#speedLines.active {
+  animation: speedLinesBurst 520ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes vfxFlashPop {
+  0% { opacity: 1; transform: scale(0.98); }
+  100% { opacity: 0; transform: scale(1.04); }
+}
+
+@keyframes speedLinesBurst {
+  0% { opacity: 0; transform: scale(0.92) rotate(0deg); }
+  20% { opacity: 0.9; transform: scale(1) rotate(3deg); }
+  100% { opacity: 0; transform: scale(1.12) rotate(8deg); }
+}
+
 .hidden {
   display: none !important;
 }
@@ -498,11 +565,43 @@ html, body {
   box-shadow: 6px 6px 0px var(--ink), 0 0 0 2px var(--cream);
 }
 
+#message.six.show {
+  animation: msgSixPop 420ms cubic-bezier(0.22, 1.35, 0.36, 1);
+}
+
 #message.four {
   background: linear-gradient(135deg, #34d399 0%, #059669 100%);
   color: #ffffff;
   border: 4px solid var(--ink);
   box-shadow: 6px 6px 0px var(--ink), 0 0 0 2px var(--cream);
+}
+
+#message.four.show {
+  animation: msgFourPop 360ms cubic-bezier(0.22, 1.25, 0.36, 1);
+}
+
+#message.wicket.show {
+  animation: msgWicketShake 420ms cubic-bezier(0.36, 0.07, 0.19, 0.97);
+}
+
+@keyframes msgSixPop {
+  0% { transform: translate(-50%, -50%) scale(0.55) rotate(-4deg); }
+  55% { transform: translate(-50%, -50%) scale(1.14) rotate(2deg); }
+  100% { transform: translate(-50%, -50%) scale(1) rotate(0deg); }
+}
+
+@keyframes msgFourPop {
+  0% { transform: translate(-50%, -50%) scale(0.72); }
+  60% { transform: translate(-50%, -50%) scale(1.08); }
+  100% { transform: translate(-50%, -50%) scale(1); }
+}
+
+@keyframes msgWicketShake {
+  0% { transform: translate(-50%, -50%) scale(0.8); }
+  25% { transform: translate(-53%, -48%) scale(1.08) rotate(-2deg); }
+  50% { transform: translate(-47%, -52%) scale(1.06) rotate(2deg); }
+  75% { transform: translate(-52%, -50%) scale(1.02) rotate(-1deg); }
+  100% { transform: translate(-50%, -50%) scale(1) rotate(0deg); }
 }
 
 #message.runs {

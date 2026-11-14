@@ -1132,6 +1132,30 @@ export class StadiumScreen {
     g.fillStyle = '#0f172a';
     g.fillRect(0, 0, w, h);
 
+    const isSix = banner.includes('SIX') || banner.includes('6');
+    const isFour = banner.includes('FOUR') || banner.includes('4');
+    const isWkt = banner.includes('WICKET');
+
+    // Comic celebration sunburst rays behind scoreboard telemetry on boundaries / wickets
+    if (isSix || isFour || isWkt) {
+      g.save();
+      g.translate(w / 2, h * 0.44);
+      const rayCol = isSix ? 'rgba(251, 191, 36, 0.16)' : isFour ? 'rgba(16, 185, 129, 0.16)' : 'rgba(239, 68, 68, 0.18)';
+      g.fillStyle = rayCol;
+      const rays = 16;
+      for (let i = 0; i < rays; i += 2) {
+        const a0 = (i / rays) * Math.PI * 2;
+        const a1 = ((i + 1) / rays) * Math.PI * 2;
+        g.beginPath();
+        g.moveTo(0, 0);
+        g.lineTo(Math.cos(a0) * 650, Math.sin(a0) * 650);
+        g.lineTo(Math.cos(a1) * 650, Math.sin(a1) * 650);
+        g.closePath();
+        g.fill();
+      }
+      g.restore();
+    }
+
     // Subtle halftone background pattern
     g.fillStyle = 'rgba(56, 189, 248, 0.08)';
     for (let y = 24; y < h; y += 28) {
@@ -1142,7 +1166,7 @@ export class StadiumScreen {
       }
     }
 
-    g.strokeStyle = '#38bdf8';
+    g.strokeStyle = isSix ? '#fbbf24' : isFour ? '#10b981' : isWkt ? '#ef4444' : '#38bdf8';
     g.lineWidth = 12;
     g.strokeRect(6, 6, w - 12, h - 12);
 
@@ -1165,9 +1189,6 @@ export class StadiumScreen {
     g.font = '900 46px system-ui, sans-serif';
     g.fillText(`OVERS ${overs}`, w / 2, 316);
 
-    const isSix = banner.includes('6');
-    const isFour = banner.includes('4');
-    const isWkt = banner.includes('WICKET');
     g.fillStyle = isSix ? '#d97706' : isFour ? '#059669' : isWkt ? '#dc2626' : '#1e293b';
     g.fillRect(16, 356, w - 32, 136);
     g.strokeStyle = '#141413';
@@ -2236,7 +2257,7 @@ export class BowlerModel {
 // ============================================================================
 
 export class ParticleFX {
-  constructor(scene, maxParticles = 160) {
+  constructor(scene, maxParticles = 240) {
     this.max = maxParticles;
 
     // 8-point comic burst star with dark ink edge
@@ -2267,6 +2288,7 @@ export class ParticleFX {
     this.mesh = new THREE.InstancedMesh(geo, mat, maxParticles);
     this.mesh.instanceMatrix.setUsage(THREE.DynamicDrawUsage);
     this.mesh.frustumCulled = false;
+    this.mesh.renderOrder = 7;
     scene.add(this.mesh);
 
     this.particles = [];
@@ -2285,10 +2307,10 @@ export class ParticleFX {
       });
     }
 
-    // Pool of 3 expanding 3D comic impact shockwave rings
+    // Pool of 6 expanding 3D comic impact shockwave rings
     this.shockwaves = [];
     const waveGeo = new THREE.RingGeometry(0.08, 0.12, 28);
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 6; i++) {
       const waveMat = new THREE.MeshBasicMaterial({
         color: 0xfef08a,
         side: THREE.DoubleSide,
@@ -2298,6 +2320,7 @@ export class ParticleFX {
       });
       const ring = new THREE.Mesh(waveGeo, waveMat);
       ring.visible = false;
+      ring.renderOrder = 7;
       scene.add(ring);
       this.shockwaves.push({
         mesh: ring,
@@ -2374,6 +2397,88 @@ export class ParticleFX {
         0.35 + Math.random() * 0.25,
         3.5
       );
+    }
+  }
+
+  pitchBounceRipple(pos, colorHex = 0xfef08a) {
+    this._nVec.set(0, 1, 0);
+    const p = this._m; // reuse temporary position via spawnShockwave
+    this.spawnShockwave(new THREE.Vector3(pos.x, 0.026, pos.z), this._nVec, colorHex, 2.2, 0.26);
+    void p;
+  }
+
+  stumpsBurst(pos) {
+    const zAxis = new THREE.Vector3(0, 0, 1);
+    const yAxis = new THREE.Vector3(0, 1, 0);
+    this.spawnShockwave(pos, zAxis, 0xff2a55, 5.2, 0.30);
+    this.spawnShockwave(new THREE.Vector3(pos.x, 0.04, pos.z), yAxis, 0xfef08a, 4.0, 0.32);
+    const palette = [0xff2a55, 0xfef08a, 0xf59e0b, 0xffffff];
+    for (let i = 0; i < 32; i++) {
+      const a = Math.random() * Math.PI * 2;
+      const sp = 2.0 + Math.random() * 5.2;
+      const up = 1.6 + Math.random() * 4.5;
+      const col = palette[Math.floor(Math.random() * palette.length)];
+      this.spawn(
+        pos.x + (Math.random() - 0.5) * 0.14,
+        Math.max(0.15, pos.y),
+        pos.z,
+        Math.cos(a) * sp,
+        up,
+        Math.sin(a) * sp + 1.2,
+        col,
+        0.052 + Math.random() * 0.036,
+        0.38 + Math.random() * 0.28,
+        6.5
+      );
+    }
+  }
+
+  ballFlightEmber(pos, vel) {
+    const palette = [0xfef08a, 0xf59e0b, 0x38bdf8, 0xffffff];
+    const col = palette[Math.floor(Math.random() * palette.length)];
+    this.spawn(
+      pos.x + (Math.random() - 0.5) * 0.05,
+      pos.y + (Math.random() - 0.5) * 0.05,
+      pos.z + (Math.random() - 0.5) * 0.05,
+      -vel.x * 0.06 + (Math.random() - 0.5) * 0.9,
+      -vel.y * 0.06 + 0.4 + Math.random() * 0.8,
+      -vel.z * 0.06 + (Math.random() - 0.5) * 0.9,
+      col,
+      0.048 + Math.random() * 0.025,
+      0.28 + Math.random() * 0.16,
+      2.2
+    );
+  }
+
+  boundaryPyro(isSix = false) {
+    const F = CONFIG.field;
+    const r = F.boundaryRadius + 2.5;
+    const angles = [Math.PI * 0.78, Math.PI * 0.92, Math.PI * 1.08, Math.PI * 1.22];
+    const palette = isSix
+      ? [0xfef08a, 0xf59e0b, 0xffffff, 0x38bdf8, 0xdb2777]
+      : [0x10b981, 0x34d399, 0xfef08a, 0xffffff, 0x38bdf8];
+    const perCannon = isSix ? 18 : 12;
+    for (const a of angles) {
+      const cx = Math.sin(a) * r;
+      const cz = F.centerZ + Math.cos(a) * r;
+      for (let i = 0; i < perCannon; i++) {
+        const sp = 2.0 + Math.random() * 4.5;
+        const pa = Math.random() * Math.PI * 2;
+        const up = isSix ? 11 + Math.random() * 9 : 8 + Math.random() * 6;
+        const col = palette[Math.floor(Math.random() * palette.length)];
+        this.spawn(
+          cx + (Math.random() - 0.5) * 1.0,
+          0.6,
+          cz + (Math.random() - 0.5) * 1.0,
+          Math.cos(pa) * sp,
+          up,
+          Math.sin(pa) * sp,
+          col,
+          0.18 + Math.random() * 0.12,
+          1.4 + Math.random() * 0.8,
+          6.2
+        );
+      }
     }
   }
 
@@ -2509,5 +2614,296 @@ export class ParticleFX {
       sw.mesh.scale.setScalar(0.5 + (sw.maxScale - 0.5) * easeOut);
       sw.mat.opacity = 0.92 * (1 - u);
     }
+  }
+}
+
+// ============================================================================
+// SWING RIBBON (ANIME BAT WHOOSH ARC TRACED BY BLADE MOTION)
+// ============================================================================
+
+export class SwingRibbon {
+  constructor(scene, n = 12) {
+    this.n = n;
+    this.count = 0;
+    this.hasPrev = false;
+    this.alpha = 0;
+    this.flashTime = 0;
+    this._baseColor = new THREE.Color(0x38bdf8);
+    this._flashColor = new THREE.Color(0xfef08a);
+
+    this.toePts = Array.from({ length: n }, () => new THREE.Vector3());
+    this.topPts = Array.from({ length: n }, () => new THREE.Vector3());
+
+    this.posArr = new Float32Array(n * 2 * 3);
+    this.fadeArr = new Float32Array(n * 2);
+    this.edgeArr = new Float32Array(n * 2);
+    for (let i = 0; i < n; i++) {
+      this.edgeArr[i * 2] = 0.0;
+      this.edgeArr[i * 2 + 1] = 1.0;
+    }
+
+    const indices = [];
+    for (let i = 0; i < n - 1; i++) {
+      const a = 2 * i;
+      const b = 2 * i + 1;
+      const c = 2 * (i + 1);
+      const d = 2 * (i + 1) + 1;
+      indices.push(a, b, c, b, d, c);
+    }
+
+    this.geo = new THREE.BufferGeometry();
+    this.geo.setAttribute('position', new THREE.BufferAttribute(this.posArr, 3));
+    this.geo.setAttribute('aFade', new THREE.BufferAttribute(this.fadeArr, 1));
+    this.geo.setAttribute('aEdge', new THREE.BufferAttribute(this.edgeArr, 1));
+    this.geo.setIndex(indices);
+
+    this.mat = new THREE.ShaderMaterial({
+      side: THREE.DoubleSide,
+      transparent: true,
+      depthWrite: false,
+      blending: THREE.AdditiveBlending,
+      uniforms: {
+        uColor: { value: new THREE.Color(0x38bdf8) },
+        uOpacity: { value: 0 }
+      },
+      vertexShader: `
+        attribute float aFade;
+        attribute float aEdge;
+        varying float vFade;
+        varying float vEdge;
+        void main() {
+          vFade = aFade;
+          vEdge = aEdge;
+          gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+        }
+      `,
+      fragmentShader: `
+        uniform vec3 uColor;
+        uniform float uOpacity;
+        varying float vFade;
+        varying float vEdge;
+        void main() {
+          float bladeRim = smoothstep(0.0, 0.55, vEdge);
+          float core = smoothstep(0.62, 1.0, vEdge) * 0.6;
+          vec3 col = mix(uColor, vec3(1.0), core * vFade);
+          float a = vFade * vFade * bladeRim * uOpacity;
+          gl_FragColor = vec4(col, a);
+        }
+      `
+    });
+
+    this.mesh = new THREE.Mesh(this.geo, this.mat);
+    this.mesh.frustumCulled = false;
+    this.mesh.renderOrder = 9;
+    this.mesh.visible = false;
+    scene.add(this.mesh);
+
+    this._toe = new THREE.Vector3();
+    this._top = new THREE.Vector3();
+    this._prevToe = new THREE.Vector3();
+  }
+
+  clear() {
+    this.count = 0;
+    this.hasPrev = false;
+    this.alpha = 0;
+    this.flashTime = 0;
+    this.mat.uniforms.uOpacity.value = 0;
+    this.mat.uniforms.uColor.value.copy(this._baseColor);
+    this.mesh.visible = false;
+    this.geo.setDrawRange(0, 0);
+  }
+
+  flash(colorHex = 0xfef08a) {
+    this._flashColor.setHex(colorHex);
+    this.flashTime = 0.24;
+    this.alpha = Math.max(this.alpha, 0.72);
+  }
+
+  update(batMesh, dt, active) {
+    if (this.flashTime > 0 && dt > 0) {
+      this.flashTime = Math.max(0, this.flashTime - dt);
+      const k = this.flashTime / 0.24;
+      this.mat.uniforms.uColor.value.lerpColors(this._baseColor, this._flashColor, k);
+    } else {
+      this.mat.uniforms.uColor.value.copy(this._baseColor);
+    }
+
+    if (!active || dt <= 0) {
+      this.alpha = Math.max(0, this.alpha - Math.max(0, dt) * 10);
+      this.mat.uniforms.uOpacity.value = this.alpha;
+      if (this.alpha <= 0.01) {
+        this.mesh.visible = false;
+        this.hasPrev = false;
+        this.count = 0;
+      }
+      return;
+    }
+
+    this._toe.set(0, 0.03, 0).applyQuaternion(batMesh.quaternion).add(batMesh.position);
+    this._top.set(0, CONFIG.bat.bladeLength * 0.94, 0).applyQuaternion(batMesh.quaternion).add(batMesh.position);
+
+    if (!this.hasPrev) {
+      this.hasPrev = true;
+      this._prevToe.copy(this._toe);
+      this.toePts[0].copy(this._toe);
+      this.topPts[0].copy(this._top);
+      this.count = 1;
+      return;
+    }
+
+    const dist = this._toe.distanceTo(this._prevToe);
+    const speed = dist / Math.max(1e-4, dt);
+    const targetAlpha = THREE.MathUtils.clamp((speed - 4.2) / 14.0, 0, 1) * 0.62;
+    const rate = targetAlpha > this.alpha ? 22 : 10;
+    this.alpha += (targetAlpha - this.alpha) * (1 - Math.exp(-rate * dt));
+    this._prevToe.copy(this._toe);
+
+    if (dist > 0.004) {
+      if (this.count < this.n) this.count++;
+      for (let i = this.count - 1; i > 0; i--) {
+        this.toePts[i].copy(this.toePts[i - 1]);
+        this.topPts[i].copy(this.topPts[i - 1]);
+      }
+      this.toePts[0].copy(this._toe);
+      this.topPts[0].copy(this._top);
+    } else if (this.alpha <= 0.015) {
+      this.count = 0;
+    }
+
+    if (this.count < 2 || this.alpha <= 0.01) {
+      this.mesh.visible = false;
+      this.mat.uniforms.uOpacity.value = 0;
+      return;
+    }
+
+    const denom = Math.max(1, this.count - 1);
+    for (let i = 0; i < this.count; i++) {
+      const top = this.topPts[i];
+      const toe = this.toePts[i];
+      const pIdx = i * 6;
+      this.posArr[pIdx]     = top.x;
+      this.posArr[pIdx + 1] = top.y;
+      this.posArr[pIdx + 2] = top.z;
+      this.posArr[pIdx + 3] = toe.x;
+      this.posArr[pIdx + 4] = toe.y;
+      this.posArr[pIdx + 5] = toe.z;
+
+      const f = 1 - i / denom;
+      this.fadeArr[i * 2] = f;
+      this.fadeArr[i * 2 + 1] = f;
+    }
+
+    this.geo.attributes.position.needsUpdate = true;
+    this.geo.attributes.aFade.needsUpdate = true;
+    this.geo.setDrawRange(0, (this.count - 1) * 6);
+    this.mat.uniforms.uOpacity.value = this.alpha;
+    this.mesh.visible = true;
+  }
+}
+
+// ============================================================================
+// IMPACT CALLOUT (3D COMIC ONOMATOPOEIA BURST: SMASH! / CRACK! / NICK! / TIMBER!)
+// ============================================================================
+
+export class ImpactCallout {
+  constructor(scene) {
+    const makeBadge = (label, fillTop, fillBot, textCol = '#141413') => canvasTexture(256, 128, (g, w, h) => {
+      g.clearRect(0, 0, w, h);
+      const cx = w / 2, cy = h / 2;
+      const spikes = 14;
+
+      // Hard comic ink shadow offset
+      const drawBurst = (ox, oy) => {
+        g.beginPath();
+        for (let i = 0; i < spikes * 2; i++) {
+          const a = (i / (spikes * 2)) * Math.PI * 2;
+          const rx = (i % 2 === 0 ? 114 : 84);
+          const ry = (i % 2 === 0 ? 54 : 38);
+          const px = cx + ox + Math.cos(a) * rx;
+          const py = cy + oy + Math.sin(a) * ry;
+          if (i === 0) g.moveTo(px, py);
+          else g.lineTo(px, py);
+        }
+        g.closePath();
+      };
+
+      drawBurst(5, 5);
+      g.fillStyle = '#141413';
+      g.fill();
+
+      drawBurst(0, 0);
+      const grd = g.createLinearGradient(0, 12, 0, h - 12);
+      grd.addColorStop(0, fillTop);
+      grd.addColorStop(1, fillBot);
+      g.fillStyle = grd;
+      g.fill();
+      g.lineWidth = 6;
+      g.strokeStyle = '#141413';
+      g.stroke();
+
+      g.font = '900 42px "Bungee", Impact, system-ui, sans-serif';
+      g.textAlign = 'center';
+      g.textBaseline = 'middle';
+      if (textCol === '#ffffff') {
+        g.lineWidth = 7;
+        g.strokeStyle = '#141413';
+        g.strokeText(label, cx, cy + 2);
+      } else {
+        g.fillStyle = '#ffffff';
+        g.fillText(label, cx + 2, cy + 4);
+      }
+      g.fillStyle = textCol;
+      g.fillText(label, cx, cy + 2);
+    });
+
+    this.textures = {
+      sweet: makeBadge('SMASH!', '#fef08a', '#f59e0b', '#141413'),
+      clean: makeBadge('CRACK!', '#bae6fd', '#38bdf8', '#141413'),
+      edge: makeBadge('NICK!', '#fed7aa', '#fb923c', '#141413'),
+      stumps: makeBadge('TIMBER!', '#f87171', '#dc2626', '#ffffff')
+    };
+
+    this.mat = new THREE.SpriteMaterial({
+      map: this.textures.clean,
+      transparent: true,
+      opacity: 0,
+      depthTest: false,
+      depthWrite: false
+    });
+    this.sprite = new THREE.Sprite(this.mat);
+    this.sprite.visible = false;
+    this.sprite.renderOrder = 12;
+    scene.add(this.sprite);
+
+    this.active = false;
+    this.life = 0;
+    this.maxLife = 0.62;
+  }
+
+  spawn(kind, pos) {
+    this.mat.map = this.textures[kind] || this.textures.clean;
+    this.mat.needsUpdate = true;
+    this.sprite.position.set(pos.x, Math.max(0.28, pos.y + 0.24), pos.z + 0.12);
+    this.sprite.scale.set(0.1, 0.05, 1);
+    this.mat.opacity = 1;
+    this.sprite.visible = true;
+    this.active = true;
+    this.life = 0;
+  }
+
+  update(dt) {
+    if (!this.active) return;
+    this.life += dt;
+    if (this.life >= this.maxLife) {
+      this.active = false;
+      this.sprite.visible = false;
+      return;
+    }
+    const u = this.life / this.maxLife;
+    const pop = u < 0.20 ? (u / 0.20) * 1.20 : 1.20 - 0.22 * ((u - 0.20) / 0.80);
+    this.sprite.scale.set(0.84 * pop, 0.42 * pop, 1);
+    this.sprite.position.y += dt * 0.68;
+    this.mat.opacity = u < 0.65 ? 1 : Math.max(0, 1 - (u - 0.65) / 0.35);
   }
 }
