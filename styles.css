@@ -1469,7 +1469,7 @@ body.games-page {
   grid-template-columns: repeat(auto-fit, minmax(260px, 320px));
   gap: clamp(1rem, 2vw, 1.5rem);
   width: 100%;
-  max-width: 960px;
+  max-width: 1040px;
   margin: 0 auto;
   justify-content: center;
 }
@@ -1497,12 +1497,12 @@ body.games-page {
 /* Card color variations */
 .game-card.card-mint {
   background: var(--pop-mint);
-  transform: rotate(1deg);
+  transform: rotate(-1deg);
 }
 
 .game-card.card-pink {
   background: var(--pop-pink);
-  transform: rotate(1.2deg);
+  transform: rotate(1deg);
 }
 
 .game-card.card-yellow {
@@ -1547,6 +1547,26 @@ body.games-page {
 }
 
 .game-card.card-mint:hover .game-play-btn {
+  background: var(--pop-orange);
+  color: var(--paper-white);
+}
+
+.game-card.card-pink .game-tag {
+  background: var(--yellow-main);
+  color: var(--ink);
+}
+
+.game-card.card-pink .game-badge {
+  background: var(--pop-cyan);
+  color: var(--ink);
+}
+
+.game-card.card-pink .game-play-btn {
+  background: var(--yellow-main);
+  color: var(--ink);
+}
+
+.game-card.card-pink:hover .game-play-btn {
   background: var(--pop-orange);
   color: var(--paper-white);
 }
