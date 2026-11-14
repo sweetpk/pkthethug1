@@ -25,15 +25,15 @@ if (isTouch) {
   document.body.classList.remove('touch');
 }
 
-const renderer = new THREE.WebGLRenderer({ canvas, antialias: !isTouch || devicePixelRatio < 2, powerPreference: 'high-performance' });
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, powerPreference: 'high-performance' });
 renderer.setPixelRatio(Math.min(devicePixelRatio || 1, 3));
 renderer.outputColorSpace = THREE.SRGBColorSpace;
-renderer.shadowMap.enabled = !isTouch || devicePixelRatio <= 2;
+renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(CONFIG.camera.verticalFov, 1, 0.03, 900);
-const env = buildEnvironment(scene, isTouch ? 'low' : 'high');
+const env = buildEnvironment(scene, 'high');
 const jumbotron = new StadiumScreen(scene);
 
 const strikerStumps = new StumpsView(scene, CONFIG.stumps.z);
