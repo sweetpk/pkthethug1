@@ -94,8 +94,8 @@ export const CONFIG = {
   },
 
   camera: {
-    // Over-the-shoulder batting view with full bat & crease visibility
-    position: { x: -0.06, y: 1.58, z: 0.82 },
+    // Centered batting view aligned with the middle stump & pitch line
+    position: { x: 0.0, y: 1.58, z: 0.82 },
     pitchDeg: -14.5,
     verticalFov: 66,
     minHorizontalFov: 74
