@@ -26,7 +26,7 @@ if (isTouch) {
 }
 
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: !isTouch || devicePixelRatio < 2, powerPreference: 'high-performance' });
-renderer.setPixelRatio(Math.min(devicePixelRatio, isTouch ? 1.5 : 2));
+renderer.setPixelRatio(Math.min(devicePixelRatio || 1, 3));
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 renderer.shadowMap.enabled = !isTouch || devicePixelRatio <= 2;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
@@ -90,6 +90,7 @@ const camFx = {
 // ============================================================ resize
 function resize() {
   const w = window.innerWidth, h = window.innerHeight;
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 3));
   renderer.setSize(w, h, false);
   camera.aspect = w / h;
   // keep a minimum horizontal field of view on tall (portrait) screens
