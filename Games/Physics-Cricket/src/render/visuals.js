@@ -1404,7 +1404,6 @@ export function buildBatMesh() {
   });
 
   const willow = toonMat({ map: willowTex, color: 0xffffff });
-  const toeMat = toonMat({ color: 0x141413 });
   const collarMat = toonMat({ color: 0x1e3a8a });
 
   const hw = B.bladeWidth / 2;
@@ -1475,11 +1474,11 @@ export function buildBatMesh() {
       transparent: true,
       depthWrite: false,
       polygonOffset: true,
-      polygonOffsetFactor: -2,
-      polygonOffsetUnits: -2
+      polygonOffsetFactor: -4,
+      polygonOffsetUnits: -4
     })
   );
-  sweetDecal.position.set(0, B.sweetSpotFromToe, face + 0.0045);
+  sweetDecal.position.set(0, B.sweetSpotFromToe, face + 0.0055);
   g.add(sweetDecal);
 
   // Front shoulder brand decal
@@ -1500,12 +1499,13 @@ export function buildBatMesh() {
     new THREE.MeshBasicMaterial({
       map: shoulderTex,
       transparent: true,
+      depthWrite: false,
       polygonOffset: true,
-      polygonOffsetFactor: -2,
-      polygonOffsetUnits: -2
+      polygonOffsetFactor: -4,
+      polygonOffsetUnits: -4
     })
   );
-  shoulderDecal.position.set(0, B.bladeLength - 0.06, face + 0.0045);
+  shoulderDecal.position.set(0, B.bladeLength - 0.06, face + 0.0055);
   g.add(shoulderDecal);
 
   // Back comic shield sticker (prominently seen in first-person stance)
@@ -1554,16 +1554,6 @@ export function buildBatMesh() {
   sticker.position.set(0, B.bladeLength * 0.70, back - 0.0125);
   sticker.rotation.y = Math.PI;
   g.add(sticker);
-
-  // Toe guard with dark ink outline
-  const toeGuard = new THREE.Mesh(
-    new THREE.BoxGeometry(B.bladeWidth + 0.006, 0.019, face - back + 0.006),
-    toeMat
-  );
-  toeGuard.position.set(0, 0.0095, (face + back) / 2);
-  toeGuard.castShadow = true;
-  attachOutline(toeGuard, 0.004, 0x141413);
-  g.add(toeGuard);
 
   // Rubber splice collar at shoulder/handle junction
   const hc = (face + back) / 2;
