@@ -1500,6 +1500,16 @@ body.games-page {
   transform: rotate(-1deg);
 }
 
+.game-card.card-cyan {
+  background: var(--pop-cyan);
+  transform: rotate(1deg);
+}
+
+.game-card.card-coral {
+  background: var(--pop-coral);
+  transform: rotate(-1deg);
+}
+
 .game-card.card-pink {
   background: var(--pop-pink);
   transform: rotate(1deg);
@@ -1508,17 +1518,6 @@ body.games-page {
 .game-card.card-yellow {
   background: var(--yellow-main);
   transform: rotate(-1deg);
-}
-
-.game-card.card-cyan {
-  background: var(--pop-cyan);
-  transform: rotate(-1deg);
-}
-
-.game-card.card-coral {
-  background: var(--pop-coral);
-  color: var(--paper-white);
-  transform: rotate(1deg);
 }
 
 .game-card.card-white {
@@ -1569,6 +1568,64 @@ body.games-page {
 .game-card.card-pink:hover .game-play-btn {
   background: var(--pop-orange);
   color: var(--paper-white);
+}
+
+.game-card.card-cyan .game-tag {
+  background: var(--yellow-main);
+  color: var(--ink);
+}
+
+.game-card.card-cyan .game-badge {
+  background: var(--pop-coral);
+  color: var(--paper-white);
+}
+
+.game-card.card-cyan .game-play-btn {
+  background: var(--yellow-main);
+  color: var(--ink);
+}
+
+.game-card.card-cyan:hover .game-play-btn {
+  background: var(--pop-orange);
+  color: var(--paper-white);
+}
+
+.game-card.card-coral .game-title {
+  color: var(--paper-white);
+}
+
+.game-card.card-coral .game-subtitle {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.game-card.card-coral .game-desc {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.game-card.card-coral .game-tag {
+  background: var(--ink);
+  color: var(--paper-white);
+}
+
+.game-card.card-coral .game-badge {
+  background: var(--yellow-main);
+  color: var(--ink);
+}
+
+.game-card.card-coral .ctrl-pill {
+  background: rgba(20, 20, 19, 0.22);
+  border-color: rgba(20, 20, 19, 0.45);
+  color: var(--paper-white);
+}
+
+.game-card.card-coral .game-play-btn {
+  background: var(--yellow-main);
+  color: var(--ink);
+}
+
+.game-card.card-coral:hover .game-play-btn {
+  background: var(--paper-white);
+  color: var(--ink);
 }
 
 .game-card:hover,
