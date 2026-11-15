@@ -4,9 +4,10 @@ import { World } from './physics/World.js';
 import { DeliveryPlanner, solveRelease } from './bowling/DeliveryPlanner.js';
 import { makeRunup, bowlerPose } from './bowling/bowlerPose.js';
 import { DeliveryJudge } from './game/DeliveryJudge.js';
+import { createExhibitionMatch, createScenarioMatch, evaluateMatchStatus } from './game/MatchMode.js';
 import { Input } from './input/Input.js';
 import { AudioEngine } from './audio/AudioEngine.js';
-import { buildEnvironment, StumpsView, buildBatMesh, PitchMarker, buildBall, Trail, BowlerModel, ParticleFX, StadiumScreen, SwingRibbon, ImpactCallout } from './render/visuals.js';
+import { buildEnvironment, StumpsView, buildBatMesh, PitchMarker, buildBall, Trail, BowlerModel, FieldersView, ParticleFX, StadiumScreen, SwingRibbon, ImpactCallout, FIELDING_KITS, pickNextFieldingKit } from './render/visuals.js';
 
 loadUserSettings();
 
@@ -39,6 +40,7 @@ const jumbotron = new StadiumScreen(scene);
 const strikerStumps = new StumpsView(scene, CONFIG.stumps.z);
 const nonStrikerStumps = new StumpsView(scene, -PITCH_LENGTH);
 const bowlerModel = new BowlerModel(scene);
+const fieldersView = new FieldersView(scene);
 const batMesh = buildBatMesh();
 scene.add(batMesh);
 const pitchMarker = new PitchMarker(scene);
@@ -58,6 +60,17 @@ const audio = new AudioEngine();
 // ============================================================ game state
 const G = {
   mode: 'menu',          // menu | playing | paused | over
+  matchMode: 'exhibition', // exhibition | scenario
+  selectedOvers: 5,
+  totalOvers: 5,
+  maxBalls: 30,
+  maxWickets: 10,
+  target: 130,
+  startRuns: 0,
+  startBalls: 0,
+  startWickets: 0,
+  matchStatus: null,
+  fieldingKitIdx: 0,
   phase: 'idle',         // runup | live | result
   phaseTime: 0,
   runupTime: 0,
@@ -66,11 +79,11 @@ const G = {
   result: null,
   hitThisBall: false,
   flinched: false,
-  best: +(localStorage.getItem('physics-cricket-best') || 0),
   overBalls: [],
+  overRuns: 0,
+  overWickets: 0,
   m25: false,
   m50: false,
-  newBestAnnounced: false,
   lastStrideStep: -1,
   hitFreeze: 0,
   hasFlybyPlayed: false,
@@ -131,22 +144,31 @@ function setHint(text) {
 }
 function oversText(b) { return `${Math.floor(b / CONFIG.game.ballsPerOver)}.${b % CONFIG.game.ballsPerOver}`; }
 function updateScoreboard() {
+  const status = evaluateMatchStatus(G);
+
   $('runs').textContent = G.runs;
   $('wkts').textContent = G.wickets;
-  $('overs').textContent = oversText(G.balls);
-  if ($('boundaries')) {
-    $('boundaries').textContent = `4s: ${G.fours} · 6s: ${G.sixes}`;
+  $('overs').textContent = `${oversText(G.balls)}/${G.totalOvers}`;
+  if ($('chaseEquation')) {
+    $('chaseEquation').textContent = status.outcome === 'won'
+      ? 'TARGET CHASED!'
+      : `Need ${status.runsNeeded} off ${status.ballsRemaining}b`;
   }
-  if ($('strikeRate')) {
-    const sr = G.balls ? Math.round((G.runs / G.balls) * 100) : 0;
-    $('strikeRate').textContent = `SR ${sr}`;
+  if ($('reqRrPill')) {
+    $('reqRrPill').textContent = status.outcome === 'won' ? 'WON!' : `RRR ${status.reqRR.toFixed(1)}`;
   }
   if ($('overStrip')) {
     const html = G.overBalls.map((b) => `<span class="ball-dot ${b.cls}">${b.txt}</span>`).join('');
     $('overStrip').innerHTML = html;
   }
   if (jumbotron) {
-    jumbotron.update(G.runs, G.wickets, oversText(G.balls), G.lastBanner || '');
+    jumbotron.update(G.runs, G.wickets, oversText(G.balls), G.lastBanner || '', {
+      target: G.target,
+      totalOvers: G.totalOvers,
+      runsNeeded: status.runsNeeded,
+      ballsRemaining: status.ballsRemaining,
+      reqRR: status.reqRR
+    });
   }
 }
 
@@ -172,6 +194,8 @@ function startDelivery() {
   G.lastStrideStep = -1;
   G.hasFlybyPlayed = false;
   world.resetDelivery();
+  world.fielding.setDeliveryContext(d);
+  env.setBowlerSide(d.bowler.hand);
   strikerStumps.reset();
   nonStrikerStumps.reset();
   trail.clear();
@@ -182,16 +206,16 @@ function startDelivery() {
   camFx.hitTime = 0;
   camFx.zoom = 0;
   batMesh.visible = true;
-  $('bowlerName').textContent = `${d.bowler.name} bowler`;
+  $('bowlerName').textContent = d.bowler.name;
   $('speed').textContent = '';
   G.lastBanner = 'MATCH IN PROGRESS';
   updateScoreboard();
 }
 
 function release() {
-  world.ball.launch(G.releasePos, G.releaseVel);
+  world.ball.launch(G.releasePos, G.releaseVel, G.delivery.spin);
   judge.start();
-  pitchMarker.show(G.delivery.lineX, G.delivery.bounceDist);
+  pitchMarker.show(G.delivery.bounceX ?? G.delivery.lineX, G.delivery.bounceDist);
   trail.setColor(0x38bdf8, 0.88);
   G.phase = 'live';
   G.phaseTime = 0;
@@ -206,6 +230,8 @@ function endDelivery(res) {
   G.phaseTime = 0;
   G.balls++;
   G.runs += res.runs;
+  G.overRuns += res.runs;
+  if (res.kind === 'wicket') G.overWickets++;
   planner.recordOutcome(res.runs);
 
   // Record over timeline
@@ -246,34 +272,43 @@ function endDelivery(res) {
     G.lastBanner = `${res.runs} RUNS`;
   } else if (res.kind === 'wicket') {
     G.wickets++;
-    showMessage('WICKET!', 'wicket', 1.8);
-    audio.wicketWhistle();
+    showMessage(res.caught ? 'CAUGHT!' : 'WICKET!', 'wicket', 1.8);
+    if (!res.caught) audio.wicketWhistle();
     camFx.shake = Math.max(camFx.shake, 0.6);
-    G.lastBanner = '★ WICKET! ★';
+    G.lastBanner = res.caught ? '★ CAUGHT OUT! ★' : '★ WICKET! ★';
   } else {
     showMessage(res.text, 'minor', 1.0);
     G.lastBanner = 'DOT BALL';
   }
 
-  // Innings milestones
-  if (!G.m25 && G.runs >= 25) {
-    G.m25 = true;
-    setTimeout(() => { showMessage('⚡ QUICKFIRE 25! ⚡', 'milestone', 2.0); audio.cheer(0.7, 2.0); }, 1300);
-  }
-  if (!G.m50 && G.runs >= 50) {
-    G.m50 = true;
-    setTimeout(() => {
-      showMessage('🏆 HALF CENTURY! 50 RUNS 🏆', 'milestone', 2.5);
-      audio.cheer(1.0, 3.2);
-      particleFX.confetti(new THREE.Vector3(0, 2.0, -1.22));
-    }, 1300);
-  }
-  if (G.runs > G.best && G.best > 0 && !G.newBestAnnounced) {
-    G.newBestAnnounced = true;
-    setTimeout(() => { showMessage('⭐ NEW HIGH SCORE! ⭐', 'milestone', 2.2); audio.cheer(0.85, 2.5); }, 1400);
-  }
+  const status = evaluateMatchStatus(G);
+  G.matchStatus = status;
+  const playerRuns = Math.max(0, G.runs - G.startRuns);
 
-  if (res.distance && G.hitThisBall && $('lastShot').innerHTML && !$('lastShot').innerHTML.includes('m ·')) {
+  if (status.finished && status.outcome === 'won') {
+    showMessage(`🏆 VICTORY! (${res.text})`, 'milestone', 2.4);
+    audio.cheer(1.0, 3.6);
+    audio.boundaryFanfare(true);
+    audio.boundaryClap();
+    particleFX.confetti(new THREE.Vector3(0, 2.0, -1.22));
+    particleFX.boundaryPyro(true);
+    G.lastBanner = '★ VICTORY! TARGET CHASED! ★';
+  } else {
+    // Player innings milestones (based on runs scored during this chase)
+    if (!G.m25 && playerRuns >= 25) {
+      G.m25 = true;
+      setTimeout(() => { showMessage('⚡ QUICKFIRE 25! ⚡', 'milestone', 2.0); audio.cheer(0.7, 2.0); }, 1300);
+    }
+    if (!G.m50 && playerRuns >= 50) {
+      G.m50 = true;
+      setTimeout(() => {
+        showMessage('🏆 HALF CENTURY! 50 RUNS 🏆', 'milestone', 2.5);
+        audio.cheer(1.0, 3.2);
+        particleFX.confetti(new THREE.Vector3(0, 2.0, -1.22));
+      }, 1300);
+    }
+  }
+  if (res.kind === 'six' && res.distance && G.hitThisBall && $('lastShot').innerHTML && !$('lastShot').innerHTML.includes('m</span>')) {
     $('lastShot').innerHTML += ` · <span class="shot-dist">${res.distance}m</span>`;
   }
   updateScoreboard();
@@ -338,7 +373,7 @@ function handleEvents(events) {
         if (e.edge) tag = ' · <span class="tag-edge">EDGED</span>';
         else if (e.quality > 0.82) tag = ' · <span class="tag-sweet">SWEET SPOT ⭐</span>';
         else if (e.quality > 0.55) tag = ' · <span class="tag-clean">CRISP</span>';
-        $('lastShot').innerHTML = `${shotName} · ${Math.round(e.exitSpeed * 3.6)} km/h${tag}`;
+        $('lastShot').innerHTML = `${shotName}${tag}`;
       }
     } else if (e.type === 'bounce') {
       pitchMarker.fadeOut();
@@ -352,6 +387,23 @@ function handleEvents(events) {
       triggerVfx('vfxFlash', 'flash-wicket');
       const targetStumps = e.isNonStriker ? nonStrikerStumps : strikerStumps;
       targetStumps.shatter(e.stump, world.ball.vel.clone().add(e.normal.clone().multiplyScalar(-e.speed * 0.5)));
+    } else if (e.type === 'catch') {
+      audio.catchOut();
+      particleFX.catchBurst(e.pos);
+      impactCallout.spawn('catch', e.pos);
+      triggerVfx('vfxFlash', 'flash-wicket');
+      camFx.shake = Math.max(camFx.shake, 0.45);
+      if ($('lastShot').innerHTML && !$('lastShot').innerHTML.includes('CAUGHT')) {
+        $('lastShot').innerHTML += ` · <span class="tag-edge">CAUGHT (${e.fielder.toUpperCase()})</span>`;
+      }
+    } else if (e.type === 'fielded') {
+      if (G.hitThisBall) {
+        audio.fieldStop();
+        particleFX.pitchDust(e.pos);
+        if (e.sliding) impactCallout.spawn('fielded', e.pos);
+      } else {
+        audio.batHit(0.2, 0.35, false, true); // soft keeper glove thud
+      }
     }
   }
 }
@@ -369,7 +421,7 @@ function simStep(dt, target) {
       audio.bowlerStride();
     }
     if (!pitchMarker.active && G.runupTime >= G.runup.tRun) {
-      pitchMarker.show(G.delivery.lineX, G.delivery.bounceDist);
+      pitchMarker.show(G.delivery.bounceX ?? G.delivery.lineX, G.delivery.bounceDist);
     }
   }
 
@@ -399,8 +451,13 @@ function simStep(dt, target) {
   } else if (G.phase === 'result') {
     const wait = G.result.kind === 'wicket' ? 1.9 : CONFIG.game.resultPause + (G.result.runs ? 0.7 : 0);
     if (G.phaseTime > wait) {
-      if (G.wickets >= CONFIG.game.wickets) gameOver();
-      else startDelivery();
+      if (G.matchStatus?.finished || G.runs >= G.target || G.wickets >= G.maxWickets || G.balls >= G.maxBalls) {
+        gameOver();
+      } else if (G.balls > G.startBalls && G.balls % CONFIG.game.ballsPerOver === 0) {
+        showOverBreak();
+      } else {
+        startDelivery();
+      }
     }
   }
 }
@@ -412,29 +469,207 @@ function updateJoystickVisibility() {
   $('joystick').classList.toggle('hidden', !shouldShow || G.mode !== 'playing');
 }
 
-function startGame() {
+function startGame(matchMode = G.matchMode, overs = G.selectedOvers) {
   audio.init();
-  G.runs = G.wickets = G.balls = G.fours = G.sixes = 0;
+  G.matchMode = matchMode === 'scenario' ? 'scenario' : 'exhibition';
+  if (G.matchMode === 'exhibition') G.selectedOvers = [2, 5, 10].includes(overs) ? overs : 5;
+
+  // Randomize a fresh fielding & bowling team jersey kit (never repeating previous match)
+  G.fieldingKitIdx = pickNextFieldingKit(G.fieldingKitIdx);
+  const kit = FIELDING_KITS[G.fieldingKitIdx];
+  bowlerModel.applyKit(kit);
+  fieldersView.applyKit(kit);
+
+  // Build Exhibition or Scenario chase parameters
+  const match = G.matchMode === 'scenario'
+    ? createScenarioMatch()
+    : createExhibitionMatch(G.selectedOvers);
+
+  G.totalOvers = match.totalOvers;
+  G.maxBalls = match.maxBalls;
+  G.maxWickets = match.maxWickets;
+  G.target = match.target;
+  G.startRuns = match.startRuns;
+  G.startBalls = match.startBalls;
+  G.startWickets = match.startWickets;
+  G.matchStatus = null;
+
+  G.runs = match.startRuns;
+  G.wickets = match.startWickets;
+  G.balls = match.startBalls;
+  G.fours = 0;
+  G.sixes = 0;
   G.overBalls = [];
-  G.m25 = G.m50 = G.newBestAnnounced = false;
-  G.lastBanner = 'MATCH IN PROGRESS';
+  G.overRuns = 0;
+  G.overWickets = 0;
+  G.m25 = G.m50 = false;
+  G.lastBanner = match.banner;
+
   planner.reset();
+  planner.startOver(Math.floor(G.balls / CONFIG.game.ballsPerOver));
+  G.runup = makeRunup(planner.bowler);
+  G.runupTime = 0;
+  world.resetDelivery();
+  world.fielding.resetMatch();
+  env.setBowlerSide(planner.bowler.hand);
   world.bat.reset();
   lastTarget.copy(world.bat.target);
   updateScoreboard();
   $('lastShot').textContent = '';
+  if ($('bowlerName')) $('bowlerName').textContent = planner.bowler.name;
+  if ($('speed')) $('speed').textContent = '';
+  camFx.follow = false;
+  camFx.zoom = 0;
+
+  // Populate Pre-Match Chase Briefing modal
+  if ($('briefBadge')) {
+    $('briefBadge').textContent = G.matchMode === 'scenario' ? '⚡ SCENARIO CHALLENGE' : 'EXHIBITION CHASE';
+  }
+  if ($('briefTitle')) {
+    $('briefTitle').textContent = G.matchMode === 'scenario'
+      ? `SCORE: ${match.startRuns}/${match.startWickets} (${match.elapsedOvers}.0/${match.totalOvers} OV)`
+      : `TARGET: ${match.target} RUNS`;
+  }
+  if ($('briefSituation')) {
+    $('briefSituation').textContent = G.matchMode === 'scenario'
+      ? `${match.elapsedOvers} overs bowled · Target ${match.target} · ${match.wicketsRemaining} wickets in hand`
+      : `Full ${match.totalOvers}-over innings chase · 10 wickets in hand`;
+  }
+  if ($('briefEquation')) {
+    $('briefEquation').textContent = `NEED ${match.needRuns} RUNS OFF ${match.ballsRemaining} BALLS`;
+  }
+  if ($('briefBowler')) {
+    $('briefBowler').textContent = `Opening Bowler: ${planner.bowler.name}`;
+  }
+  if ($('briefTarget')) $('briefTarget').textContent = `Target: ${match.target}`;
+  if ($('briefWickets')) $('briefWickets').textContent = `Wickets Left: ${match.wicketsRemaining}`;
+  if ($('briefRrr')) $('briefRrr').textContent = `Req RR: ${match.reqRR.toFixed(1)} RPO`;
+
   $('startScreen').classList.add('hidden');
   $('overScreen').classList.add('hidden');
   $('pauseScreen').classList.add('hidden');
+  if ($('overBreakScreen')) $('overBreakScreen').classList.add('hidden');
   $('hud').classList.remove('hidden');
-  
-  // Set mode to playing BEFORE updating joystick visibility so it shows immediately
+  if ($('briefingScreen')) $('briefingScreen').classList.remove('hidden');
+
+  G.mode = 'briefing';
+  input.releaseLock();
+  updateJoystickVisibility();
+}
+
+function beginMatchFromBriefing() {
+  if (G.mode !== 'briefing') return;
+  audio.init();
+  audio.resume();
+  if ($('briefingScreen')) $('briefingScreen').classList.add('hidden');
   G.mode = 'playing';
   updateJoystickVisibility();
-
   if (!isTouch) input.requestLock();
   startDelivery();
-  G.runupTime = -0.6; // a short breath before the first run-up
+  G.runupTime = -0.6;
+  accumulator = 0;
+  lastTime = performance.now();
+}
+
+function showOverBreak() {
+  G.mode = 'over_break';
+  input.releaseLock();
+  updateJoystickVisibility();
+
+  const status = evaluateMatchStatus(G);
+  const completedOver = Math.floor(G.balls / CONFIG.game.ballsPerOver);
+  const crr = G.balls > 0 ? ((G.runs / G.balls) * 6).toFixed(1) : '0.0';
+
+  // Pick next over's bowler now so both the preview and next delivery match exactly
+  planner.startOver(completedOver);
+  env.setBowlerSide(planner.bowler.hand);
+
+  if ($('breakBadge')) $('breakBadge').textContent = `END OF OVER ${completedOver}`;
+  if ($('breakScore')) {
+    $('breakScore').innerHTML = `${G.runs}/${G.wickets} <span class="break-overs">(${completedOver}.0/${G.totalOvers} OV)</span>`;
+  }
+  if ($('breakEquation')) {
+    $('breakEquation').textContent = `Need ${status.runsNeeded} Run${status.runsNeeded === 1 ? '' : 's'} off ${status.ballsRemaining} Ball${status.ballsRemaining === 1 ? '' : 's'}`;
+  }
+  if ($('breakThisOverSummary')) {
+    $('breakThisOverSummary').textContent = `THIS OVER: ${G.overRuns} RUN${G.overRuns === 1 ? '' : 'S'} · ${G.overWickets} WKT${G.overWickets === 1 ? '' : 'S'}`;
+  }
+  if ($('breakOverStrip')) {
+    $('breakOverStrip').innerHTML = G.overBalls.map((b) => `<span class="ball-dot ${b.cls}">${b.txt}</span>`).join('');
+  }
+  if ($('breakNextBowler')) {
+    $('breakNextBowler').textContent = `Next Over: ${planner.bowler.name}`;
+  }
+  if ($('breakRates')) {
+    $('breakRates').textContent = `CRR ${crr} · RRR ${status.reqRR.toFixed(1)}`;
+  }
+  if ($('breakBoundaries')) {
+    $('breakBoundaries').textContent = `4s: ${G.fours} · 6s: ${G.sixes} · Wkts Left: ${status.wicketsRemaining}`;
+  }
+  if ($('continueOverBtn')) {
+    $('continueOverBtn').textContent = `🏏 CONTINUE TO OVER ${completedOver + 1}`;
+  }
+  if ($('overBreakScreen')) $('overBreakScreen').classList.remove('hidden');
+}
+
+function continueFromOverBreak() {
+  if (G.mode !== 'over_break') return;
+  if ($('overBreakScreen')) $('overBreakScreen').classList.add('hidden');
+  G.overBalls = [];
+  G.overRuns = 0;
+  G.overWickets = 0;
+  G.mode = 'playing';
+  audio.init();
+  audio.resume();
+  updateJoystickVisibility();
+  if (!isTouch) input.requestLock();
+  startDelivery();
+  G.runupTime = -0.5;
+  accumulator = 0;
+  lastTime = performance.now();
+}
+
+const MENU_VIEWS = {
+  home: 'menuHomeView',
+  mode: 'menuModeView',
+  overs: 'menuOversView',
+  howto: 'menuHowToView'
+};
+
+function setMenuView(viewName = 'home') {
+  for (const [key, id] of Object.entries(MENU_VIEWS)) {
+    const el = $(id);
+    if (el) el.classList.toggle('hidden', key !== viewName);
+  }
+}
+
+function showModeSelect(viewName = 'mode') {
+  G.mode = 'menu';
+  input.releaseLock();
+  audio.suspend();
+  updateJoystickVisibility();
+  setMenuView(viewName);
+  if ($('briefingScreen')) $('briefingScreen').classList.add('hidden');
+  if ($('overBreakScreen')) $('overBreakScreen').classList.add('hidden');
+  $('pauseScreen').classList.add('hidden');
+  $('overScreen').classList.add('hidden');
+  $('hud').classList.add('hidden');
+  $('startScreen').classList.remove('hidden');
+}
+
+function openMenuSettings() {
+  syncSettingsUI();
+  if ($('pauseBadge')) $('pauseBadge').textContent = 'GAME SETTINGS';
+  if ($('pauseMatchActions')) $('pauseMatchActions').classList.add('hidden');
+  if ($('menuSettingsActions')) $('menuSettingsActions').classList.remove('hidden');
+  $('startScreen').classList.add('hidden');
+  $('pauseScreen').classList.remove('hidden');
+}
+
+function closeMenuSettings() {
+  $('pauseScreen').classList.add('hidden');
+  setMenuView('home');
+  $('startScreen').classList.remove('hidden');
 }
 
 function pause() {
@@ -444,6 +679,9 @@ function pause() {
   audio.suspend();
   syncSettingsUI();
   updateJoystickVisibility();
+  if ($('pauseBadge')) $('pauseBadge').textContent = 'MATCH PAUSED';
+  if ($('pauseMatchActions')) $('pauseMatchActions').classList.remove('hidden');
+  if ($('menuSettingsActions')) $('menuSettingsActions').classList.add('hidden');
   $('pauseScreen').classList.remove('hidden');
 }
 
@@ -463,18 +701,46 @@ function gameOver() {
   G.mode = 'over';
   input.releaseLock();
   updateJoystickVisibility();
-  if (G.runs > G.best) { G.best = G.runs; localStorage.setItem('physics-cricket-best', String(G.best)); }
-  $('overTitle').textContent = G.result && G.result.text ? G.result.text.replace('!', '').toUpperCase() + '!' : 'OUT!';
-  $('finalRuns').textContent = G.runs;
-  $('finalBalls').textContent = G.balls;
-  $('finalStats').textContent = `${G.fours} fours · ${G.sixes} sixes · strike rate ${G.balls ? Math.round((G.runs / G.balls) * 100) : 0}`;
-  $('best').textContent = `Best: ${G.best}`;
+  const status = evaluateMatchStatus(G);
+  const playerRuns = Math.max(0, G.runs - G.startRuns);
+  const facedBalls = Math.max(0, G.balls - G.startBalls);
+
+  const badge = $('overBadge');
+  if (badge) {
+    badge.textContent = status.badge || 'INNINGS OVER';
+    badge.classList.toggle('victory-badge', status.outcome === 'won');
+    badge.classList.toggle('wicket-badge', status.outcome !== 'won');
+  }
+  $('overTitle').textContent = status.title || 'INNINGS OVER';
+  if ($('overSummary')) $('overSummary').textContent = status.summary || `Target ${G.target}`;
+  $('finalRuns').textContent = `${G.runs}/${G.wickets}`;
+  $('finalBalls').textContent = `${oversText(G.balls)} / ${G.totalOvers} overs · Target ${G.target}`;
+  const rpo = facedBalls ? ((playerRuns / facedBalls) * 6).toFixed(1) : '0.0';
+  $('finalStats').textContent = `${G.fours} fours · ${G.sixes} sixes · ${playerRuns} off ${facedBalls}b (RR ${rpo})`;
   $('overScreen').classList.remove('hidden');
 }
 
-$('playBtn').addEventListener('click', startGame);
-$('againBtn').addEventListener('click', startGame);
-$('restartBtn').addEventListener('click', startGame);
+if ($('menuPlayBtn')) $('menuPlayBtn').addEventListener('click', () => setMenuView('mode'));
+if ($('menuExhibitionBtn')) $('menuExhibitionBtn').addEventListener('click', () => setMenuView('overs'));
+if ($('menuHowToBtn')) $('menuHowToBtn').addEventListener('click', () => setMenuView('howto'));
+if ($('menuSettingsBtn')) $('menuSettingsBtn').addEventListener('click', openMenuSettings);
+if ($('closeSettingsBtn')) $('closeSettingsBtn').addEventListener('click', closeMenuSettings);
+document.querySelectorAll('[data-menu-target]').forEach((btn) => {
+  btn.addEventListener('click', () => setMenuView(btn.getAttribute('data-menu-target') || 'home'));
+});
+if ($('ex2Btn')) $('ex2Btn').addEventListener('click', () => startGame('exhibition', 2));
+if ($('ex5Btn')) $('ex5Btn').addEventListener('click', () => startGame('exhibition', 5));
+if ($('ex10Btn')) $('ex10Btn').addEventListener('click', () => startGame('exhibition', 10));
+if ($('scenarioBtn')) $('scenarioBtn').addEventListener('click', () => startGame('scenario'));
+if ($('playBtn')) $('playBtn').addEventListener('click', () => startGame());
+$('againBtn').addEventListener('click', () => startGame());
+$('restartBtn').addEventListener('click', () => startGame());
+if ($('changeModePauseBtn')) $('changeModePauseBtn').addEventListener('click', () => showModeSelect('mode'));
+if ($('changeModeOverBtn')) $('changeModeOverBtn').addEventListener('click', () => showModeSelect('mode'));
+if ($('startChaseBtn')) $('startChaseBtn').addEventListener('click', beginMatchFromBriefing);
+if ($('changeModeBriefBtn')) $('changeModeBriefBtn').addEventListener('click', () => showModeSelect('mode'));
+if ($('continueOverBtn')) $('continueOverBtn').addEventListener('click', continueFromOverBreak);
+if ($('changeModeBreakBtn')) $('changeModeBreakBtn').addEventListener('click', () => showModeSelect('mode'));
 $('resumeBtn').addEventListener('click', resume);
 $('pauseBtn').addEventListener('click', (e) => { e.stopPropagation(); pause(); });
 if ($('soundBtn')) {
@@ -497,7 +763,9 @@ document.addEventListener('visibilitychange', () => { if (document.hidden) pause
 window.addEventListener('keydown', (e) => {
   if (e.key === 'p' || e.key === 'P') { G.mode === 'paused' ? resume() : pause(); }
   if ((e.key === 'r' || e.key === 'R') && (G.mode === 'over' || G.mode === 'paused')) startGame();
-  if (e.key === 'Enter' && (G.mode === 'menu' || G.mode === 'over')) startGame();
+  if (e.key === 'Enter' && G.mode === 'over') startGame();
+  if ((e.key === 'Enter' || e.key === ' ') && G.mode === 'briefing') { e.preventDefault(); beginMatchFromBriefing(); }
+  if ((e.key === 'Enter' || e.key === ' ') && G.mode === 'over_break') { e.preventDefault(); continueFromOverBreak(); }
   if (e.key === 'm' || e.key === 'M') {
     const enabled = audio.toggleMute();
     if ($('soundBtn')) {
@@ -547,6 +815,21 @@ const worldUp = new THREE.Vector3(0, 1, 0);
 const ballRenderPos = new THREE.Vector3();
 
 function updateCamera(dt, t) {
+  if (G.mode === 'menu') {
+    batMesh.visible = false;
+    pitchMarker.hide();
+    const ang = t * 0.14;
+    const r = 26 + 6 * Math.sin(t * 0.23);
+    camera.position.set(
+      Math.sin(ang) * r,
+      7.5 + 2.2 * Math.cos(t * 0.19),
+      -10.5 + Math.cos(ang) * r * 0.75
+    );
+    tmpV.set(0, 1.4, -10.0);
+    camera.lookAt(tmpV);
+    return;
+  }
+
   camFx.shake *= Math.exp(-9 * dt);
   camFx.kick *= Math.exp(-12 * dt);
   const s = camFx.shake * 0.012;
@@ -626,10 +909,13 @@ function render(alpha, dt, t) {
   const rt = Math.max(0, G.runupTime);
   if (G.runup) bowlerPose(rt, G.runup, pose); else Object.assign(pose, { x: 0.42, y: 0, z: -30, lean: 0, armR: 0, armL: 0, legL: 0, legR: 0, kneeL: 0, kneeR: 0 });
   bowlerModel.apply(pose);
+  fieldersView.update(world.fielding, dt, t);
 
   // ball
   const ball = world.ball;
-  if (ball.active) {
+  if (world.fielding && world.fielding.heldBallPos) {
+    ballRenderPos.copy(world.fielding.heldBallPos);
+  } else if (ball.active) {
     ballRenderPos.lerpVectors(ball.prevPos, ball.pos, alpha);
     ballMesh.quaternion.copy(ball.orientation);
     if (G.phase !== 'runup') trail.push(ballRenderPos);
@@ -711,7 +997,7 @@ function frame(now) {
     }
     if (n > 0) lastTarget.copy(world.bat.target);
     accumulator -= n * PHYS_DT;
-  } else if (G.mode === 'menu') {
+  } else if (G.mode === 'menu' || G.mode === 'briefing') {
     // idle bowler + gentle bat sway in the background
     world.bat.step(PHYS_DT, world.bat.target);
   }

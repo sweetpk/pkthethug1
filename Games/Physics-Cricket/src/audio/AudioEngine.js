@@ -234,6 +234,23 @@ export class AudioEngine {
     });
   }
 
+  /** Crisp catch-out slap + appeal + umpire whistle + stadium cheer. */
+  catchOut() {
+    if (!this.ctx || !this.enabled) return;
+    this._noiseBurst({ freq: 900, q: 1.8, gain: 0.55, decay: 0.04 });
+    this._tone({ freq: 210, endFreq: 120, gain: 0.35, decay: 0.05 });
+    this.appeal();
+    this.wicketWhistle();
+    this.cheer(0.75, 2.4);
+  }
+
+  /** Quick turf slide brush + leather pat when a fielder stops a ground ball. */
+  fieldStop() {
+    if (!this.ctx || !this.enabled) return;
+    this._noiseBurst({ freq: 520, q: 1.2, type: 'lowpass', gain: 0.32, decay: 0.05 });
+    this._tone({ freq: 165, endFreq: 95, gain: 0.22, decay: 0.045 });
+  }
+
   toggleMute() {
     this.enabled = !this.enabled;
     if (this.master) {

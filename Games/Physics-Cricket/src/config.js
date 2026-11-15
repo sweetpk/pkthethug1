@@ -51,16 +51,16 @@ export const CONFIG = {
     inertiaTransverse: 0.090, // kg m^2 about the centre of mass
     inertiaLong: 0.0022,      // twist about the long axis
     sweetSpotFromToe: 0.19,
-    sweetSpotWidth: 0.18,     // generous sweet spot along the blade
-    restitution: 0.84,        // punchy bat-ball COR at the sweet spot for big sixes
-    restitutionFloor: 0.65,   // fraction of COR retained far from the sweet spot
+    sweetSpotWidth: 0.15,     // sweet spot along the blade (slightly tighter for sixes)
+    restitution: 0.76,        // balanced bat-ball COR at the sweet spot for satisfying sixes
+    restitutionFloor: 0.54,   // fraction of COR retained far from the sweet spot
     handCouplingMass: 1.40,   // extra translational mass from the batter's grip/wrists
     edgeRestitutionLoss: 0.25,
     friction: 0.26,
     softHandsMin: 0.40,       // COR multiplier for a stationary (dead) bat -> defensive block
     softHandsSpeed: 4.5,      // bat speed (m/s) at which full COR applies
-    swingPowerMultiplier: 1.25, // boosts bat swing velocity transfer at impact
-    maxExitSpeed: 56          // safety clamp for big sixes (~200 km/h)
+    swingPowerMultiplier: 1.14, // boosts bat swing velocity transfer at impact
+    maxExitSpeed: 52          // safety clamp for big sixes (~187 km/h)
   },
 
   control: {
@@ -117,8 +117,10 @@ export const CONFIG = {
   bowling: {
     speeds: {
       slow: [78, 95],
-      medium: [105, 120],
-      fast: [128, 144]
+      medium: [125, 140],
+      fastMedium: [125, 140],
+      swing: [140, 150],
+      fast: [145, 160]
     },
     releaseHeight: 2.15,
     lines: {
@@ -138,9 +140,50 @@ export const CONFIG = {
     }
   },
 
+  fielding: {
+    maxSpeed: 6.6,            // m/s top sprint speed for chasing fielders
+    jogSpeed: 3.6,            // m/s backup support speed
+    keeperSpeed: 5.8,         // m/s lateral movement speed for wicketkeeper
+    accel: 18.0,              // m/s^2 acceleration
+    reactionBase: 0.18,       // s base reaction delay after bat contact
+    reactionInfieldFast: 0.24,// s extra reaction delay when exitSpeed > 30 m/s inside ring
+    catchRadius: 1.15,        // m standard horizontal catch reach
+    diveCatchRadius: 1.55,    // m diving catch reach when fielder has time to set
+    fastShotCatchRadius: 0.62,// m tighter catch radius on blistering power shots (>31 m/s)
+    keeperCatchRadius: 1.45,  // m keeper/slip catch reach on edges behind
+    keeperCatchZoneRadius: 6.5, // m max distance from keeper home for aerial catches
+    keeperGroundRadius: 3.8,  // m max distance from keeper home for slow ground dribbles
+    keeperDepthSlow: 2.35,    // m keeper depth behind stumps for slow bowling (~80 km/h)
+    keeperDepthFast: 8.75,    // m keeper depth behind stumps for express pace (~142 km/h)
+    slipDepthSlow: 2.85,      // m first slip depth behind stumps for slow bowling
+    slipDepthFast: 8.05,      // m first slip depth behind stumps for fast bowling
+    slipWidthSlow: 2.40,      // m first slip lateral spacing for slow bowling
+    slipWidthFast: 3.60,      // m first slip lateral spacing for fast bowling
+    minSeparation: 2.6,       // m minimum personal space between any two fielders
+    minCatchHeight: 0.14,     // m minimum ball height for a legal catch
+    maxCatchHeight: 2.38,     // m maximum vertical jump reach for a catch
+    minCatchAirTime: 0.12,    // s minimum flight time after bat contact before catch check
+    stopRadius: 1.10,         // m ground ball interception radius
+    slideStopRadius: 1.45,    // m sliding stop radius when ball speed < 20 m/s
+    positions: [
+      { id: 'keeper', name: 'Wicketkeeper', x: 0.22, z: 3.8, isKeeper: true, ring: 'keeper' },
+      { id: 'slip', name: 'First Slip', x: 3.1, z: 4.3, ring: 'close' },
+      { id: 'point', name: 'Point', x: 19.5, z: -2.5, ring: 'infield' },
+      { id: 'cover', name: 'Cover', x: 17.5, z: -14.5, ring: 'infield' },
+      { id: 'midOff', name: 'Mid-Off', x: 6.8, z: -24.5, ring: 'infield' },
+      { id: 'midOn', name: 'Mid-On', x: -6.8, z: -24.5, ring: 'infield' },
+      { id: 'midWicket', name: 'Mid-Wicket', x: -18.0, z: -13.5, ring: 'infield' },
+      { id: 'squareLeg', name: 'Square Leg', x: -17.5, z: 1.5, ring: 'infield' },
+      { id: 'longOff', name: 'Long-Off', x: 14.5, z: -53.5, ring: 'boundary' },
+      { id: 'longOn', name: 'Long-On', x: -14.5, z: -53.5, ring: 'boundary' },
+      { id: 'deepCover', name: 'Deep Cover', x: 33.0, z: -38.5, ring: 'boundary' },
+      { id: 'deepMidWicket', name: 'Deep Mid-Wicket', x: -34.0, z: -34.5, ring: 'boundary' }
+    ]
+  },
+
   game: {
     ballsPerOver: 6,
-    wickets: 3,
+    wickets: 10,
     deadBallTimeout: 8.5,
     resultPause: 1.25
   }

@@ -3,6 +3,7 @@ import { CONFIG } from '../config.js';
 import { BatController } from '../bat/BatController.js';
 import { Ball } from './Ball.js';
 import { collideBatBall, collideStumps } from './collisions.js';
+import { FieldingSystem } from '../fielding/FieldingSystem.js';
 
 // Fixed-timestep physics world: bat, ball, stumps. Rendering-independent;
 // the same class is driven by the browser game loop and the headless tests.
@@ -11,6 +12,7 @@ export class World {
   constructor() {
     this.bat = new BatController();
     this.ball = new Ball();
+    this.fielding = new FieldingSystem();
     this.events = [];
     this.stumpsBroken = false;
     this.nonStrikerBroken = false;
@@ -22,6 +24,7 @@ export class World {
   resetDelivery() {
     this.ball.active = false;
     this.ball.rolling = false;
+    this.fielding.resetDelivery();
     this.stumpsBroken = false;
     this.nonStrikerBroken = false;
     this.lastBatContactTime = -1;
@@ -42,6 +45,7 @@ export class World {
         hit.repeat = this.lastBatContactTime >= 0 && this.time - this.lastBatContactTime < 0.12;
         hit.time = this.time;
         this.lastBatContactTime = this.time;
+        this.fielding.onBatHit(hit, ball);
         this.events.push(hit);
       }
       if (!this.stumpsBroken) {
@@ -63,9 +67,14 @@ export class World {
       }
     }
     if (ball.events.length) {
-      for (const e of ball.events) { e.time = this.time; this.events.push(e); }
+      for (const e of ball.events) {
+        e.time = this.time;
+        if (e.type === 'bounce') this.fielding.onBounce(e, ball);
+        this.events.push(e);
+      }
       ball.events.length = 0;
     }
+    this.fielding.step(dt, ball, this.time, this.events);
   }
 
   drainEvents() {

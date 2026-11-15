@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800;12..96,900&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="./assets/template-BBY99Zrz.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/template-DgrBrHtU.css">
+  <script type="module" crossorigin src="./assets/template-xyDqg-Xc.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/template-CokVrXy5.css">
 </head>
 <body>
   <canvas id="game"></canvas>
@@ -19,20 +19,20 @@
   <div id="hud" class="hidden">
     <!-- Top Broadcast Header Bar -->
     <header class="hud-top-bar">
-      <!-- 1. Match Scoreboard Card -->
+      <!-- 1. Clean Match Scoreboard Card -->
       <div id="scoreboard" class="hud-card">
         <div class="score-primary">
           <div class="score-display">
             <span id="runs">0</span><span class="score-sep">/</span><span id="wkts">0</span>
           </div>
           <div class="overs-chip">
-            <span class="chip-label">OVERS</span>
-            <span id="overs" class="chip-val">0.0</span>
+            <span class="chip-label">OV</span>
+            <span id="overs" class="chip-val">0.0/5</span>
           </div>
         </div>
-        <div class="sub">
-          <span class="hud-pill" id="boundaries">4s: 0 · 6s: 0</span>
-          <span class="hud-pill" id="strikeRate">SR 0</span>
+        <div id="chaseStrip" class="chase-strip">
+          <span class="hud-pill chase-pill" id="chaseEquation">Need 95 off 30b</span>
+          <span class="hud-pill reqrr-pill" id="reqRrPill">RRR 19.0</span>
         </div>
         <div id="overStrip" class="over-strip"></div>
       </div>
@@ -60,53 +60,168 @@
     <div id="joystick" class="hidden"><div id="knob"></div></div>
   </div>
 
-  <div id="startScreen" class="overlay">
-    <div class="panel">
-      <div class="panel-badge">✦ 3D CEL-SHADED ARCADE SIM ✦</div>
-      <h1>PHYSICS <span>CRICKET</span></h1>
-      <p class="tag">Pure batting feel driven by true physics. No canned animations or shot buttons. Time your backlift, swing cleanly through the line, and find the rope.</p>
+  <div id="startScreen" class="overlay menu-overlay">
+    <div class="menu-shell">
+      <header class="menu-hero">
+        <div class="panel-badge">✦ 3D PHYSICS BATTING SIM ✦</div>
+        <h1 class="menu-title">PHYSICS <span>CRICKET</span></h1>
+        <p class="menu-tagline">True bat-ball physics. Time your backlift and command the crease.</p>
+      </header>
 
-      <div class="action-stack">
-        <button id="playBtn" class="primary">PLAY GAME</button>
-        <a href="../../games.html" class="back-link">← EXIT TO ARCADE</a>
+      <main class="menu-stage panel">
+        <!-- View 1: Main Home Menu -->
+        <section id="menuHomeView" class="menu-view">
+          <button id="menuPlayBtn" class="primary menu-cta-btn">🏏 PLAY MATCH</button>
+          <div class="menu-secondary-row">
+            <button id="menuHowToBtn" class="secondary">HOW TO PLAY</button>
+            <button id="menuSettingsBtn" class="secondary">⚙ SETTINGS</button>
+          </div>
+          <a href="../../games.html" class="back-link menu-exit-link">← EXIT TO ARCADE</a>
+        </section>
+
+        <!-- View 2: Mode Selection -->
+        <section id="menuModeView" class="menu-view hidden">
+          <div class="menu-nav-hdr">
+            <button class="menu-back-btn" data-menu-target="home">← BACK</button>
+            <span class="menu-step-title">SELECT GAME MODE</span>
+          </div>
+          <div class="mode-cards-grid">
+            <button id="menuExhibitionBtn" class="mode-card-btn primary-card">
+              <span class="mode-card-badge">10 WICKETS · FULL CHASE</span>
+              <span class="mode-card-title">EXHIBITION</span>
+              <span class="mode-card-desc">Pick 2, 5, or 10 overs and chase down a fresh target.</span>
+            </button>
+            <button id="scenarioBtn" class="mode-card-btn scenario-card" data-mode="scenario">
+              <span class="mode-card-badge hardcore-tag">MID-INNINGS CRISIS</span>
+              <span class="mode-card-title">⚡ SCENARIO</span>
+              <span class="mode-card-desc">10-over match joined at 4–5 overs · 3–5 wkts left · 21–24 RRR.</span>
+            </button>
+          </div>
+        </section>
+
+        <!-- View 3: Exhibition Overs Selection -->
+        <section id="menuOversView" class="menu-view hidden">
+          <div class="menu-nav-hdr">
+            <button class="menu-back-btn" data-menu-target="mode">← BACK</button>
+            <span class="menu-step-title">SELECT OVERS</span>
+          </div>
+          <div class="mode-grid">
+            <button id="ex2Btn" class="mode-btn" data-mode="exhibition" data-overs="2">
+              <span class="mode-title">2 OVERS</span>
+              <span class="mode-meta">12 Balls · 15–19 RRR</span>
+            </button>
+            <button id="ex5Btn" class="mode-btn primary" data-mode="exhibition" data-overs="5">
+              <span class="mode-title">5 OVERS</span>
+              <span class="mode-meta">30 Balls · 18–21 RRR</span>
+            </button>
+            <button id="ex10Btn" class="mode-btn" data-mode="exhibition" data-overs="10">
+              <span class="mode-title">10 OVERS</span>
+              <span class="mode-meta">60 Balls · 18–21 RRR</span>
+            </button>
+          </div>
+        </section>
+
+        <!-- View 4: How To Play Guide -->
+        <section id="menuHowToView" class="menu-view hidden">
+          <div class="menu-nav-hdr">
+            <button class="menu-back-btn" data-menu-target="home">← BACK</button>
+            <span class="menu-step-title">HOW TO PLAY</span>
+          </div>
+          <div class="controls-guide menu-howto-guide">
+            <div class="control-box control-box-touch">
+              <div class="control-header">
+                <span class="control-icon">📱</span>
+                <h3>Mobile / Touch (Drag Anywhere)</h3>
+                <span class="control-badge touch-badge">Touch Enabled</span>
+              </div>
+              <p>Touch and drag <b>anywhere on screen</b> to swing. Pull <b>down</b> for backlift, push <b>up / forward</b> to drive, or sweep sideways for cuts and pulls.</p>
+            </div>
+
+            <div class="control-box control-box-desktop">
+              <div class="control-header">
+                <span class="control-icon">🏏</span>
+                <h3>Desktop (Mouse Pointer Lock)</h3>
+                <span class="control-badge pc-badge">Mouse Control</span>
+              </div>
+              <p>Click screen to lock cursor. Pull <b>down</b> for backlift, flick <b>up</b> through the line of the ball, steer <b>left/right</b> for leg/off placement.</p>
+              <p class="subtle">Watch the pitch ring (green = full, amber = good, coral = short, cyan = yorker) and time your shot.</p>
+            </div>
+
+            <div class="tip-banner">
+              <span class="tip-icon">⚡</span>
+              <span><b>Scoring:</b> Outfield gaps earn <b>1, 2, or 3 runs</b>, along the turf over the rope is <b>4</b>, and clearing the rope is <b>6</b>! You have <b>10 wickets</b> to chase the target.</span>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <div id="briefingScreen" class="overlay hidden">
+    <div class="panel briefing-panel">
+      <div id="briefBadge" class="panel-badge">EXHIBITION CHASE</div>
+      <h2 id="briefTitle">TARGET: 96 RUNS</h2>
+      <p id="briefSituation" class="chase-result-summary">Full 5-over innings chase · 10 wickets in hand</p>
+
+      <div class="scorecard-summary briefing-summary">
+        <div class="score-card-main">
+          <div class="brief-eq-lbl">CHASE EQUATION</div>
+          <div id="briefEquation" class="brief-equation">NEED 96 RUNS OFF 30 BALLS</div>
+          <div id="briefBowler" class="brief-bowler">Opening Bowler: Right-arm Fast</div>
+        </div>
+
+        <div class="scorecard-chips">
+          <div class="summary-chip" id="briefTarget">Target: 96</div>
+          <div class="summary-chip" id="briefWickets">Wickets Left: 10</div>
+          <div class="summary-chip best-chip" id="briefRrr">Req RR: 19.2 RPO</div>
+        </div>
       </div>
 
-      <div class="controls-guide">
-        <div class="control-box control-box-touch">
-          <div class="control-header">
-            <span class="control-icon">📱</span>
-            <h3>Mobile / Touch (Drag Anywhere)</h3>
-            <span class="control-badge touch-badge">Touch Enabled</span>
-          </div>
-          <p>Touch and drag <b>anywhere on screen</b> to swing. Pull <b>down</b> for backlift, push <b>up / forward</b> to drive, or sweep sideways for cuts and pulls.</p>
+      <div class="action-stack">
+        <button id="startChaseBtn" class="primary">🏏 START CHASE</button>
+        <button id="changeModeBriefBtn" class="secondary">← CHANGE MODE</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="overBreakScreen" class="overlay hidden">
+    <div class="panel over-panel">
+      <div id="breakBadge" class="panel-badge">END OF OVER 1</div>
+      <h2 id="breakScore">18/0 <span class="break-overs">(1.0/5 OV)</span></h2>
+      <p id="breakEquation" class="chase-result-summary">Need 78 Runs off 24 Balls</p>
+
+      <div class="scorecard-summary">
+        <div class="score-card-main">
+          <div id="breakThisOverSummary" class="brief-eq-lbl">THIS OVER: 18 RUNS · 0 WKTS</div>
+          <div id="breakOverStrip" class="over-strip break-over-strip"></div>
+          <div id="breakNextBowler" class="brief-bowler">Next Over: Slow Left-arm Orthodox</div>
         </div>
 
-        <div class="control-box control-box-desktop">
-          <div class="control-header">
-            <span class="control-icon">🏏</span>
-            <h3>Desktop (Mouse Pointer Lock)</h3>
-            <span class="control-badge pc-badge">Mouse Control</span>
-          </div>
-          <p>Click screen to lock cursor. Pull <b>down</b> for backlift, flick <b>up</b> through the line of the ball, steer <b>left/right</b> for leg/off placement.</p>
-          <p class="subtle">Watch the pitch ring (green = full, amber = good, coral = short, cyan = yorker) and time your shot.</p>
+        <div class="scorecard-chips">
+          <div class="summary-chip" id="breakRates">CRR 18.0 · RRR 19.5</div>
+          <div class="summary-chip best-chip" id="breakBoundaries">4s: 2 · 6s: 1 · Wkts Left: 10</div>
         </div>
+      </div>
 
-        <div class="tip-banner">
-          <span class="tip-icon">⚡</span>
-          <span><b>Scoring:</b> Outfield gaps earn <b>1, 2, or 3 runs</b>, along the turf over the rope is <b>4</b>, and clearing the rope is <b>6</b>! You have <b>3 wickets</b>.</span>
-        </div>
+      <div class="action-stack">
+        <button id="continueOverBtn" class="primary">🏏 CONTINUE TO OVER 2</button>
+        <button id="changeModeBreakBtn" class="secondary">CHANGE MODE</button>
       </div>
     </div>
   </div>
 
   <div id="pauseScreen" class="overlay hidden">
     <div class="panel settings-panel">
-      <div class="panel-badge">MATCH PAUSED</div>
+      <div id="pauseBadge" class="panel-badge">MATCH PAUSED</div>
       <h2>Game Settings</h2>
 
-      <div class="action-stack">
+      <div id="pauseMatchActions" class="action-stack">
         <button id="resumeBtn" class="primary">RESUME MATCH</button>
-        <button id="restartBtn" class="secondary">RESTART INNINGS</button>
+        <button id="restartBtn" class="secondary">RESTART MATCH</button>
+        <button id="changeModePauseBtn" class="secondary">CHANGE MODE</button>
+      </div>
+      <div id="menuSettingsActions" class="action-stack hidden">
+        <button id="closeSettingsBtn" class="primary">← BACK TO MENU</button>
       </div>
 
       <div class="settings">
@@ -140,24 +255,25 @@
 
   <div id="overScreen" class="overlay hidden">
     <div class="panel over-panel">
-      <div class="panel-badge wicket-badge">INNINGS OVER</div>
+      <div id="overBadge" class="panel-badge wicket-badge">INNINGS OVER</div>
       <h2 id="overTitle">OUT!</h2>
+      <p id="overSummary" class="chase-result-summary">Target 130</p>
 
       <div class="scorecard-summary">
         <div class="score-card-main">
           <div class="scorecard-runs"><span id="finalRuns">0</span></div>
-          <div class="scorecard-lbl">RUNS SCORED</div>
-          <div class="scorecard-balls">from <span id="finalBalls">0</span> balls faced</div>
+          <div class="scorecard-lbl">FINAL SCORE</div>
+          <div class="scorecard-balls"><span id="finalBalls">0</span></div>
         </div>
 
         <div class="scorecard-chips">
           <div class="summary-chip" id="finalStats">0 fours · 0 sixes</div>
-          <div class="summary-chip best-chip" id="best">Best: 0</div>
         </div>
       </div>
 
       <div class="action-stack">
-        <button id="againBtn" class="primary">BAT AGAIN</button>
+        <button id="againBtn" class="primary">PLAY AGAIN</button>
+        <button id="changeModeOverBtn" class="secondary">CHANGE MODE</button>
         <a href="../../games.html" class="back-link">← EXIT TO ARCADE</a>
       </div>
     </div>

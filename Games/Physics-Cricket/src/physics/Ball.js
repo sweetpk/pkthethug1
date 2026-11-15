@@ -28,11 +28,15 @@ export class Ball {
     this.dragK = 0.5 * CONFIG.physics.airDensity * b.dragCoefficient * Math.PI * b.radius * b.radius / b.mass;
   }
 
-  launch(pos, vel) {
+  launch(pos, vel, spin = null) {
     this.pos.copy(pos);
     this.prevPos.copy(pos);
     this.vel.copy(vel);
-    this.spin.set(-vel.length() * 2.0, 0, 0); // seam-up backspin, visual mostly
+    if (spin) {
+      this.spin.copy(spin);
+    } else {
+      this.spin.set(-vel.length() * 2.0, 0, 0); // seam-up backspin, visual mostly
+    }
     this.active = true;
     this.rolling = false;
   }

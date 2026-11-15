@@ -190,13 +190,16 @@ function buildUmpireNPC() {
 function buildNonStrikerNPC() {
   const g = new THREE.Group();
 
+  // Batting Team: Team India inspired Blue & Vibrant Saffron Orange kit
   const jerseyMat = toonMat({ color: 0x1d4ed8 });
-  const trimMat = toonMat({ color: 0xf59e0b });
-  const padMat = toonMat({ color: 0xf8fafc });
-  const helmetMat = toonMat({ color: 0x0f172a });
+  const pantsMat = toonMat({ color: 0x1e3a8a });
+  const trimMat = toonMat({ color: 0xf97316 });
+  const padMat = toonMat({ color: 0x1d4ed8 });
+  const helmetMat = toonMat({ color: 0x1e3a8a });
   const grilleMat = toonMat({ color: 0x94a3b8 });
   const skinMat = toonMat({ color: 0xd9823b });
-  const gloveMat = toonMat({ color: 0xf1f5f9 });
+  const gloveMat = toonMat({ color: 0xf8fafc });
+  const wristbandMat = toonMat({ color: 0xf97316 });
   const willowMat = toonMat({ color: 0xfde047 });
 
   // Ground contact shadow disc
@@ -211,9 +214,9 @@ function buildNonStrikerNPC() {
   const body = new THREE.Group();
   g.add(body);
 
-  // Legs with sculpted batting pads
+  // Legs with sculpted India Blue batting pads & orange straps
   for (const sx of [-0.11, 0.11]) {
-    const thigh = new THREE.Mesh(new THREE.CapsuleGeometry(0.07, 0.36, 4, 10), jerseyMat);
+    const thigh = new THREE.Mesh(new THREE.CapsuleGeometry(0.07, 0.36, 4, 10), pantsMat);
     thigh.position.set(sx, 0.72, 0);
     thigh.castShadow = true;
     attachOutline(thigh, 0.012, 0x141413);
@@ -229,13 +232,13 @@ function buildNonStrikerNPC() {
     padStraps.position.set(sx, 0.56, 0.02);
     body.add(padStraps);
 
-    const shoe = new THREE.Mesh(new THREE.BoxGeometry(0.11, 0.08, 0.24), padMat);
+    const shoe = new THREE.Mesh(new THREE.BoxGeometry(0.11, 0.08, 0.24), gloveMat);
     shoe.position.set(sx, 0.04, 0.05);
     attachOutline(shoe, 0.01, 0x141413);
     body.add(shoe);
   }
 
-  // Torso (blue & gold team kit)
+  // Torso (Team India blue & saffron orange jersey)
   const torso = new THREE.Mesh(new THREE.CapsuleGeometry(0.175, 0.38, 5, 12), jerseyMat);
   torso.position.y = 1.18;
   torso.scale.set(1.15, 1, 0.80);
@@ -248,6 +251,14 @@ function buildNonStrikerNPC() {
   chestStripe.position.set(0, 1.24, 0.01);
   chestStripe.rotation.x = 0.12;
   body.add(chestStripe);
+
+  // Saffron orange shoulder yoke stripes
+  for (const sx of [-0.19, 0.19]) {
+    const shoulderYoke = new THREE.Mesh(new THREE.BoxGeometry(0.11, 0.045, 0.12), trimMat);
+    shoulderYoke.position.set(sx, 1.33, 0.04);
+    shoulderYoke.rotation.z = sx < 0 ? 0.32 : -0.32;
+    body.add(shoulderYoke);
+  }
 
   // Arms & batting gloves holding bat at ready
   const armL = new THREE.Mesh(new THREE.CapsuleGeometry(0.048, 0.44, 4, 10), jerseyMat);
@@ -265,6 +276,11 @@ function buildNonStrikerNPC() {
   armR.castShadow = true;
   attachOutline(armR, 0.01, 0x141413);
   body.add(armR);
+
+  const wristCuff = new THREE.Mesh(new THREE.CylinderGeometry(0.056, 0.056, 0.05, 10), wristbandMat);
+  wristCuff.position.set(0.0, 0.94, 0.23);
+  wristCuff.rotation.x = -0.52;
+  body.add(wristCuff);
 
   const gloves = new THREE.Mesh(new THREE.SphereGeometry(0.068, 10, 8), gloveMat);
   gloves.position.set(0.0, 0.90, 0.26);
@@ -1028,6 +1044,14 @@ export function buildEnvironment(scene, quality) {
   return {
     flags,
     clouds: cloudGroup,
+    setBowlerSide(hand = 'right') {
+      const isLeft = hand === 'left';
+      // Right-arm bowls around x = +0.55 -> umpire stands on left (-0.55), non-striker at -1.38.
+      // Left-arm bowls around x = -0.55 -> umpire shifts right (+0.55), non-striker shifts to +1.38.
+      umpire.position.x = isLeft ? 0.55 : -0.55;
+      nonStriker.position.x = isLeft ? 1.38 : -1.38;
+      nonStriker.rotation.y = isLeft ? -0.14 : 0.14;
+    },
     update(t) {
       for (let i = 0; i < flags.length; i++) {
         const f = flags[i];
@@ -1126,7 +1150,7 @@ export class StadiumScreen {
     this.update(0, 0, '0.0', 'MATCH IN PROGRESS');
   }
 
-  update(runs, wkts, overs, banner = '') {
+  update(runs, wkts, overs, banner = '', chase = null) {
     const g = this.ctx, w = 1024, h = 512;
 
     g.fillStyle = '#0f172a';
@@ -1135,12 +1159,13 @@ export class StadiumScreen {
     const isSix = banner.includes('SIX') || banner.includes('6');
     const isFour = banner.includes('FOUR') || banner.includes('4');
     const isWkt = banner.includes('WICKET');
+    const isWin = banner.includes('VICTORY');
 
     // Comic celebration sunburst rays behind scoreboard telemetry on boundaries / wickets
-    if (isSix || isFour || isWkt) {
+    if (isSix || isFour || isWkt || isWin) {
       g.save();
       g.translate(w / 2, h * 0.44);
-      const rayCol = isSix ? 'rgba(251, 191, 36, 0.16)' : isFour ? 'rgba(16, 185, 129, 0.16)' : 'rgba(239, 68, 68, 0.18)';
+      const rayCol = (isSix || isWin) ? 'rgba(251, 191, 36, 0.16)' : isFour ? 'rgba(16, 185, 129, 0.16)' : 'rgba(239, 68, 68, 0.18)';
       g.fillStyle = rayCol;
       const rays = 16;
       for (let i = 0; i < rays; i += 2) {
@@ -1166,7 +1191,7 @@ export class StadiumScreen {
       }
     }
 
-    g.strokeStyle = isSix ? '#fbbf24' : isFour ? '#10b981' : isWkt ? '#ef4444' : '#38bdf8';
+    g.strokeStyle = (isSix || isWin) ? '#fbbf24' : isFour ? '#10b981' : isWkt ? '#ef4444' : '#38bdf8';
     g.lineWidth = 12;
     g.strokeRect(6, 6, w - 12, h - 12);
 
@@ -1182,22 +1207,38 @@ export class StadiumScreen {
     g.fillText('⚡ ARCADE STADIUM SCOREBOARD ⚡', w / 2, 72);
 
     g.fillStyle = '#ffffff';
-    g.font = '900 144px monospace';
-    g.fillText(`${runs}/${wkts}`, w / 2, 236);
+    g.font = '900 138px monospace';
+    g.fillText(`${runs}/${wkts}`, w / 2, 230);
 
     g.fillStyle = '#fbbf24';
-    g.font = '900 46px system-ui, sans-serif';
-    g.fillText(`OVERS ${overs}`, w / 2, 316);
+    g.font = '900 40px system-ui, sans-serif';
+    if (chase && chase.target > 0) {
+      g.textAlign = 'left';
+      g.fillText(`OVERS ${overs}/${chase.totalOvers}`, 48, 314);
+      g.textAlign = 'right';
+      g.fillStyle = '#38bdf8';
+      g.fillText(`TARGET ${chase.target}`, w - 48, 314);
+      g.textAlign = 'center';
+    } else {
+      g.fillText(`OVERS ${overs}`, w / 2, 314);
+    }
 
-    g.fillStyle = isSix ? '#d97706' : isFour ? '#059669' : isWkt ? '#dc2626' : '#1e293b';
+    g.fillStyle = (isSix || isWin) ? '#d97706' : isFour ? '#059669' : isWkt ? '#dc2626' : '#1e293b';
     g.fillRect(16, 356, w - 32, 136);
     g.strokeStyle = '#141413';
     g.lineWidth = 8;
     g.strokeRect(16, 356, w - 32, 136);
 
     g.fillStyle = '#ffffff';
-    g.font = '900 48px system-ui, sans-serif';
-    g.fillText(banner || '✦ TIMING IS KEY · DRIVE HARD ✦', w / 2, 440);
+    const hasCustomBanner = Boolean(banner && banner !== 'MATCH IN PROGRESS');
+    if (hasCustomBanner || !chase || chase.target <= 0) {
+      g.font = '900 46px system-ui, sans-serif';
+      g.fillText(banner || '✦ TIMING IS KEY · DRIVE HARD ✦', w / 2, 440);
+    } else {
+      g.font = '900 42px system-ui, sans-serif';
+      const rrrText = Number(chase.reqRR || 0).toFixed(1);
+      g.fillText(`NEED ${chase.runsNeeded} OFF ${chase.ballsRemaining}B · RRR ${rrrText}`, w / 2, 438);
+    }
 
     this.tex.needsUpdate = true;
   }
@@ -1425,7 +1466,7 @@ export function buildBatMesh() {
   });
 
   const willow = toonMat({ map: willowTex, color: 0xffffff });
-  const collarMat = toonMat({ color: 0x1e3a8a });
+  const collarMat = toonMat({ color: 0xf97316 });
 
   const hw = B.bladeWidth / 2;
   const shape = new THREE.Shape();
@@ -1529,13 +1570,13 @@ export function buildBatMesh() {
   shoulderDecal.position.set(0, B.bladeLength - 0.06, face + 0.0055);
   g.add(shoulderDecal);
 
-  // Back comic shield sticker (prominently seen in first-person stance)
+  // Back comic shield sticker (Team India Blue & Saffron Orange accents)
   const stickerTex = canvasTexture(256, 512, (ctx, w, h) => {
     ctx.fillStyle = '#1e3a8a';
     ctx.fillRect(0, 0, w, h);
 
-    // Diagonal racing stripes
-    ctx.fillStyle = '#2563eb';
+    // Diagonal India blue & vibrant saffron orange racing stripes
+    ctx.fillStyle = '#f97316';
     ctx.beginPath();
     ctx.moveTo(0, h * 0.18);
     ctx.lineTo(w, h * 0.05);
@@ -1544,7 +1585,7 @@ export function buildBatMesh() {
     ctx.closePath();
     ctx.fill();
 
-    ctx.strokeStyle = '#f59e0b';
+    ctx.strokeStyle = '#f97316';
     ctx.lineWidth = 10;
     ctx.strokeRect(8, 8, w - 16, h - 16);
 
@@ -1586,18 +1627,18 @@ export function buildBatMesh() {
   attachOutline(collar, 0.0035, 0x141413);
   g.add(collar);
 
-  // Dual-tone spiral/chevron rubber grip handle
+  // Dual-tone India Blue & Saffron Orange rubber grip handle
   const hl = B.totalLength - B.bladeLength;
   const gripTex = canvasTexture(128, 512, (ctx, w, h) => {
     ctx.fillStyle = '#f8fafc';
     ctx.fillRect(0, 0, w, h);
     for (let y = 0; y < h; y += 18) {
-      ctx.fillStyle = '#1e3a8a';
+      ctx.fillStyle = '#1d4ed8';
       ctx.fillRect(0, y, w, 7);
-      ctx.fillStyle = '#fbbf24';
-      ctx.fillRect(0, y + 7, w, 3);
+      ctx.fillStyle = '#f97316';
+      ctx.fillRect(0, y + 7, w, 4);
       ctx.fillStyle = '#141413';
-      ctx.fillRect(0, y + 10, w, 2);
+      ctx.fillRect(0, y + 11, w, 2);
     }
   });
   gripTex.wrapS = gripTex.wrapT = THREE.RepeatWrapping;
@@ -1615,7 +1656,7 @@ export function buildBatMesh() {
   // Top handle cap
   const topCap = new THREE.Mesh(
     new THREE.SphereGeometry(B.handleRadius * 1.05, 12, 8),
-    toonMat({ color: 0xf59e0b })
+    toonMat({ color: 0xf97316 })
   );
   topCap.position.set(0, B.totalLength, hc);
   attachOutline(topCap, 0.003, 0x141413);
@@ -2021,61 +2062,165 @@ export class Trail {
 }
 
 // ============================================================================
+// FIELDING TEAM ROTATING JERSEY KITS (5 DISTINCT HIGH-CONTRAST KITS)
+// ============================================================================
+
+export const FIELDING_KITS = [
+  {
+    name: 'Canary Gold',
+    shirtCss: '#facc15',
+    shirtHex: 0xfacc15,
+    trimHex: 0x0f172a,
+    trimCss: '#0f172a',
+    accentCss: '#059669',
+    accentHex: 0x059669,
+    pantsHex: 0x1e293b,
+    numFill: '#0f172a',
+    numStroke: '#ffffff'
+  },
+  {
+    name: 'Crimson Flame',
+    shirtCss: '#e11d48',
+    shirtHex: 0xe11d48,
+    trimHex: 0x0f172a,
+    trimCss: '#0f172a',
+    accentCss: '#fbbf24',
+    accentHex: 0xfbbf24,
+    pantsHex: 0x18181b,
+    numFill: '#ffffff',
+    numStroke: '#0f172a'
+  },
+  {
+    name: 'Royal Violet',
+    shirtCss: '#9333ea',
+    shirtHex: 0x9333ea,
+    trimHex: 0x0f172a,
+    trimCss: '#0f172a',
+    accentCss: '#f472b6',
+    accentHex: 0xf472b6,
+    pantsHex: 0x1e1b4b,
+    numFill: '#fef08a',
+    numStroke: '#0f172a'
+  },
+  {
+    name: 'Electric Cyan',
+    shirtCss: '#06b6d4',
+    shirtHex: 0x06b6d4,
+    trimHex: 0x0f172a,
+    trimCss: '#0f172a',
+    accentCss: '#fde047',
+    accentHex: 0xfde047,
+    pantsHex: 0x0f172a,
+    numFill: '#0f172a',
+    numStroke: '#ffffff'
+  },
+  {
+    name: 'Blaze Coral',
+    shirtCss: '#ea580c',
+    shirtHex: 0xea580c,
+    trimHex: 0x18181b,
+    trimCss: '#18181b',
+    accentCss: '#fef08a',
+    accentHex: 0xfef08a,
+    pantsHex: 0x1c1917,
+    numFill: '#ffffff',
+    numStroke: '#18181b'
+  }
+];
+
+export function pickNextFieldingKit(lastIdx = -1, rng = Math.random) {
+  const n = FIELDING_KITS.length;
+  if (lastIdx < 0 || lastIdx >= n) return Math.floor(rng() * n);
+  const offset = 1 + Math.floor(rng() * (n - 1));
+  return (lastIdx + offset) % n;
+}
+
+function makeBowlerJerseyTexture(kit) {
+  return canvasTexture(512, 512, (ctx, w, h) => {
+    ctx.fillStyle = kit.shirtCss;
+    ctx.fillRect(0, 0, w, h);
+
+    // Side athletic stripes (u=0 and u=0.5 under arms)
+    ctx.fillStyle = kit.trimCss;
+    ctx.fillRect(0, 0, w * 0.04, h);
+    ctx.fillRect(w * 0.96, 0, w * 0.04, h);
+    ctx.fillRect(w * 0.46, 0, w * 0.08, h);
+
+    // Front chest V-chevron centered at x = w * 0.75
+    const fc = w * 0.75;
+    ctx.fillStyle = kit.trimCss;
+    ctx.beginPath();
+    ctx.moveTo(fc - 68, h * 0.25);
+    ctx.lineTo(fc, h * 0.44);
+    ctx.lineTo(fc + 68, h * 0.25);
+    ctx.lineTo(fc + 68, h * 0.35);
+    ctx.lineTo(fc, h * 0.54);
+    ctx.lineTo(fc - 68, h * 0.35);
+    ctx.closePath();
+    ctx.fill();
+
+    ctx.fillStyle = kit.accentCss;
+    ctx.beginPath();
+    ctx.moveTo(fc - 54, h * 0.19);
+    ctx.lineTo(fc, h * 0.35);
+    ctx.lineTo(fc + 54, h * 0.19);
+    ctx.lineTo(fc + 54, h * 0.25);
+    ctx.lineTo(fc, h * 0.41);
+    ctx.lineTo(fc - 54, h * 0.25);
+    ctx.closePath();
+    ctx.fill();
+
+    // Collar trim
+    ctx.fillStyle = kit.trimCss;
+    ctx.fillRect(0, 0, w, h * 0.10);
+
+    // Back jersey number #99 centered at x = w * 0.25
+    ctx.font = '900 96px system-ui, sans-serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.lineWidth = 6;
+    ctx.strokeStyle = kit.numStroke;
+    ctx.strokeText('99', w * 0.25, h * 0.44);
+    ctx.fillStyle = kit.numFill;
+    ctx.fillText('99', w * 0.25, h * 0.44);
+  });
+}
+
+// ============================================================================
 // BOWLER (DETAILED CEL-SHADED ATHLETE — KINEMATIC HIERARCHY MATCHED TO BOWLER_DIMS)
 // ============================================================================
 
 export class BowlerModel {
   constructor(scene) {
     const D = BOWLER_DIMS;
+    const initKit = FIELDING_KITS[0];
 
-    // Textured athletic jersey: u=0.75 is front chest (+Z), u=0.25 is back (-Z) after geo.rotateY(PI/2)
-    const jerseyTex = canvasTexture(512, 512, (ctx, w, h) => {
-      ctx.fillStyle = '#1d4ed8';
-      ctx.fillRect(0, 0, w, h);
-
-      // Side athletic stripes (u=0 and u=0.5 under arms)
-      ctx.fillStyle = '#38bdf8';
-      ctx.fillRect(0, 0, w * 0.04, h);
-      ctx.fillRect(w * 0.96, 0, w * 0.04, h);
-      ctx.fillRect(w * 0.46, 0, w * 0.08, h);
-
-      // Front chest gold & cyan V-chevron centered at x = w * 0.75
-      const fc = w * 0.75;
-      ctx.fillStyle = '#f59e0b';
-      ctx.beginPath();
-      ctx.moveTo(fc - 68, h * 0.25);
-      ctx.lineTo(fc, h * 0.44);
-      ctx.lineTo(fc + 68, h * 0.25);
-      ctx.lineTo(fc + 68, h * 0.35);
-      ctx.lineTo(fc, h * 0.54);
-      ctx.lineTo(fc - 68, h * 0.35);
-      ctx.closePath();
-      ctx.fill();
-
-      // White collar trim
-      ctx.fillStyle = '#f8fafc';
-      ctx.fillRect(0, 0, w, h * 0.10);
-
-      // Back jersey number #99 centered at x = w * 0.25
-      ctx.fillStyle = '#f8fafc';
-      ctx.font = '900 96px system-ui, sans-serif';
-      ctx.textAlign = 'center';
-      ctx.textBaseline = 'middle';
-      ctx.fillText('99', w * 0.25, h * 0.44);
-    });
+    // Bowling & Fielding Team jersey: u=0.75 is front chest (+Z), u=0.25 is back (-Z) after geo.rotateY(PI/2)
+    const jerseyTex = makeBowlerJerseyTexture(initKit);
 
     const shirt = toonMat({ map: jerseyTex, color: 0xffffff });
-    const sleeveMat = toonMat({ color: 0x1d4ed8 });
-    const pants = toonMat({ color: 0xf8fafc });
-    const beltMat = toonMat({ color: 0x0f172a });
+    const sleeveMat = toonMat({ color: initKit.shirtHex });
+    const pants = toonMat({ color: initKit.pantsHex });
+    const beltMat = toonMat({ color: initKit.trimHex });
     const skin = toonMat({ color: 0xd9823b });
     const shoeMat = toonMat({ color: 0xf8fafc });
-    const shoeStripeMat = toonMat({ color: 0x1d4ed8 });
+    const shoeStripeMat = toonMat({ color: initKit.shirtHex });
     const shoeSoleMat = toonMat({ color: 0x0f172a });
     const visorMat = toonMat({ color: 0x06b6d4, emissive: 0x083344 });
-    const capMat = toonMat({ color: 0x1e3a8a });
-    const capPeakMat = toonMat({ color: 0xf59e0b });
-    const wristbandMat = toonMat({ color: 0xfbbf24 });
+    const capMat = toonMat({ color: initKit.shirtHex });
+    const capPeakMat = toonMat({ color: initKit.trimHex });
+    const wristbandMat = toonMat({ color: initKit.trimHex });
+
+    this._kitMats = {
+      shirt,
+      sleeveMat,
+      pants,
+      beltMat,
+      shoeStripeMat,
+      capMat,
+      capPeakMat,
+      wristbandMat
+    };
 
     this.root = new THREE.Group();
 
@@ -2236,6 +2381,23 @@ export class BowlerModel {
     this.legL = leg(1);
     this.legR = leg(-1);
     scene.add(this.root);
+  }
+
+  applyKit(kit) {
+    if (!kit || !this._kitMats) return;
+    const m = this._kitMats;
+    const prevMap = m.shirt.map;
+    m.shirt.map = makeBowlerJerseyTexture(kit);
+    m.shirt.needsUpdate = true;
+    if (prevMap) prevMap.dispose();
+
+    m.sleeveMat.color.setHex(kit.shirtHex);
+    m.pants.color.setHex(kit.pantsHex);
+    m.beltMat.color.setHex(kit.trimHex);
+    m.shoeStripeMat.color.setHex(kit.shirtHex);
+    m.capMat.color.setHex(kit.shirtHex);
+    m.capPeakMat.color.setHex(kit.trimHex);
+    m.wristbandMat.color.setHex(kit.trimHex);
   }
 
   apply(p) {
@@ -2429,6 +2591,32 @@ export class ParticleFX {
         0.052 + Math.random() * 0.036,
         0.38 + Math.random() * 0.28,
         6.5
+      );
+    }
+  }
+
+  catchBurst(pos) {
+    const zAxis = new THREE.Vector3(0, 0, 1);
+    const yAxis = new THREE.Vector3(0, 1, 0);
+    this.spawnShockwave(pos, zAxis, 0xff2a55, 4.8, 0.30);
+    this.spawnShockwave(new THREE.Vector3(pos.x, 0.04, pos.z), yAxis, 0xfef08a, 3.6, 0.32);
+    const palette = [0xff2a55, 0xfef08a, 0xf59e0b, 0xffffff];
+    for (let i = 0; i < 28; i++) {
+      const a = Math.random() * Math.PI * 2;
+      const sp = 1.8 + Math.random() * 4.8;
+      const up = 1.4 + Math.random() * 4.0;
+      const col = palette[Math.floor(Math.random() * palette.length)];
+      this.spawn(
+        pos.x + (Math.random() - 0.5) * 0.16,
+        Math.max(0.2, pos.y),
+        pos.z + (Math.random() - 0.5) * 0.16,
+        Math.cos(a) * sp,
+        up,
+        Math.sin(a) * sp,
+        col,
+        0.055 + Math.random() * 0.036,
+        0.38 + Math.random() * 0.26,
+        6.2
       );
     }
   }
@@ -2861,7 +3049,9 @@ export class ImpactCallout {
       sweet: makeBadge('SMASH!', '#fef08a', '#f59e0b', '#141413'),
       clean: makeBadge('CRACK!', '#bae6fd', '#38bdf8', '#141413'),
       edge: makeBadge('NICK!', '#fed7aa', '#fb923c', '#141413'),
-      stumps: makeBadge('TIMBER!', '#f87171', '#dc2626', '#ffffff')
+      stumps: makeBadge('TIMBER!', '#f87171', '#dc2626', '#ffffff'),
+      catch: makeBadge('CAUGHT!', '#f87171', '#dc2626', '#ffffff'),
+      fielded: makeBadge('STOP!', '#bae6fd', '#38bdf8', '#141413')
     };
 
     this.mat = new THREE.SpriteMaterial({
@@ -2905,5 +3095,703 @@ export class ImpactCallout {
     this.sprite.scale.set(0.84 * pop, 0.42 * pop, 1);
     this.sprite.position.y += dt * 0.68;
     this.mat.opacity = u < 0.65 ? 1 : Math.max(0, 1 - (u - 0.65) / 0.35);
+  }
+}
+
+// ============================================================================
+// FIELDERS (3D CEL-SHADED WICKETKEEPER & 9 FIELDERS)
+// ============================================================================
+
+export class FieldersView {
+  constructor(scene) {
+    const D = BOWLER_DIMS;
+    const initKit = FIELDING_KITS[0];
+
+    // Bowling & Fielding Team kit materials (dynamically updated each match via applyKit)
+    const jerseyMat = toonMat({ color: initKit.shirtHex });
+    const trimMat = toonMat({ color: initKit.trimHex });
+    const collarMat = toonMat({ color: initKit.trimHex });
+    const pantsMat = toonMat({ color: initKit.pantsHex });
+    const beltMat = toonMat({ color: initKit.trimHex });
+    const skinMat = toonMat({ color: 0xd9823b });
+    const shoeMat = toonMat({ color: 0xf8fafc });
+    const shoeStripeMat = toonMat({ color: initKit.shirtHex });
+    const shoeSoleMat = toonMat({ color: 0x0f172a });
+    const capMat = toonMat({ color: initKit.shirtHex });
+    const capPeakMat = toonMat({ color: initKit.trimHex });
+    const visorMat = toonMat({ color: 0x06b6d4, emissive: 0x083344 });
+    const wristbandMat = toonMat({ color: initKit.trimHex });
+    const padMat = toonMat({ color: initKit.shirtHex });
+    const helmetMat = toonMat({ color: initKit.trimHex });
+    const grilleMat = toonMat({ color: 0x94a3b8 });
+    const gloveMat = toonMat({ color: initKit.shirtHex });
+
+    this._kitMats = {
+      jerseyMat,
+      trimMat,
+      collarMat,
+      pantsMat,
+      beltMat,
+      shoeStripeMat,
+      capMat,
+      capPeakMat,
+      wristbandMat,
+      padMat,
+      helmetMat,
+      gloveMat
+    };
+    const shadowMat = new THREE.MeshBasicMaterial({
+      color: 0x141413,
+      transparent: true,
+      opacity: 0.42,
+      depthWrite: false
+    });
+
+    const shadowGeo = new THREE.CircleGeometry(0.34, 16);
+    const pelvisGeo = new THREE.CylinderGeometry(0.16, 0.15, 0.14, 10);
+    const beltGeo = new THREE.CylinderGeometry(0.165, 0.165, 0.04, 10);
+    const chestGeo = new THREE.CapsuleGeometry(0.175, D.torsoLength - 0.18, 5, 12);
+    const chestBandGeo = new THREE.BoxGeometry(0.32, 0.07, 0.28);
+    const collarGeo = new THREE.CylinderGeometry(0.105, 0.125, 0.05, 10);
+    const neckGeo = new THREE.CylinderGeometry(0.052, 0.062, 0.10, 8);
+    const headGeo = new THREE.SphereGeometry(0.115, 14, 10);
+    const visorFrameGeo = new THREE.BoxGeometry(0.19, 0.052, 0.05);
+    const visorLensGeo = new THREE.BoxGeometry(0.17, 0.036, 0.054);
+    const capGeo = new THREE.SphereGeometry(0.122, 12, 8, 0, Math.PI * 2, 0, Math.PI * 0.54);
+    const capBrimGeo = new THREE.CylinderGeometry(0.132, 0.138, 0.014, 10, 1, false, -Math.PI * 0.36, Math.PI * 0.72);
+    const helmetGeo = new THREE.SphereGeometry(0.132, 14, 10, 0, Math.PI * 2, 0, Math.PI * 0.62);
+    const peakGeo = new THREE.CylinderGeometry(0.135, 0.145, 0.016, 12, 1, false, -Math.PI * 0.35, Math.PI * 0.7);
+    const grilleGeo = new THREE.TorusGeometry(0.105, 0.009, 6, 12, Math.PI * 0.8);
+
+    const sleeveGeo = new THREE.CapsuleGeometry(0.054, 0.17, 4, 8);
+    const forearmGeo = new THREE.CapsuleGeometry(0.04, D.armLength - 0.30, 4, 8);
+    const bandGeo = new THREE.CylinderGeometry(0.043, 0.043, 0.05, 8);
+    const handGeo = new THREE.SphereGeometry(0.045, 8, 8);
+    const keeperGloveGeo = new THREE.SphereGeometry(0.072, 10, 8);
+
+    const thighGeo = new THREE.CapsuleGeometry(0.072, D.legLength / 2 - 0.144, 4, 8);
+    const shinGeo = new THREE.CapsuleGeometry(0.06, D.legLength / 2 - 0.12, 4, 8);
+    const kneeGeo = new THREE.SphereGeometry(0.064, 8, 8);
+    const padGeo = new THREE.BoxGeometry(0.14, 0.46, 0.13);
+    const padStrapGeo = new THREE.BoxGeometry(0.146, 0.045, 0.136);
+    const shoeBodyGeo = new THREE.BoxGeometry(0.11, 0.072, 0.24);
+    const shoeStripeGeo = new THREE.BoxGeometry(0.116, 0.026, 0.17);
+    const shoeSoleGeo = new THREE.BoxGeometry(0.116, 0.02, 0.25);
+
+    const buildRig = (spec) => {
+      const isKeeper = Boolean(spec.isKeeper);
+      const root = new THREE.Group();
+
+      const groundShadow = new THREE.Mesh(shadowGeo, shadowMat);
+      groundShadow.rotation.x = -Math.PI / 2;
+      groundShadow.position.y = 0.012;
+      root.add(groundShadow);
+
+      const body = new THREE.Group();
+      root.add(body);
+
+      const hips = new THREE.Group();
+      hips.position.y = D.hipHeight;
+      body.add(hips);
+
+      const pelvis = new THREE.Mesh(pelvisGeo, pantsMat);
+      pelvis.scale.set(1.1, 1, 0.8);
+      pelvis.castShadow = true;
+      attachOutline(pelvis, 0.012, 0x141413);
+      hips.add(pelvis);
+
+      const belt = new THREE.Mesh(beltGeo, beltMat);
+      belt.position.y = 0.055;
+      belt.scale.set(1.11, 1, 0.81);
+      hips.add(belt);
+
+      const torso = new THREE.Group();
+      hips.add(torso);
+
+      const chest = new THREE.Mesh(chestGeo, jerseyMat);
+      chest.position.y = D.torsoLength / 2;
+      chest.scale.set(1.14, 1, 0.80);
+      chest.castShadow = true;
+      attachOutline(chest, 0.014, 0x141413);
+      torso.add(chest);
+
+      const chestBand = new THREE.Mesh(chestBandGeo, trimMat);
+      chestBand.position.set(0, D.torsoLength * 0.56, 0.01);
+      torso.add(chestBand);
+
+      const collar = new THREE.Mesh(collarGeo, collarMat);
+      collar.position.y = D.torsoLength + 0.01;
+      attachOutline(collar, 0.007, 0x141413);
+      torso.add(collar);
+
+      const neck = new THREE.Mesh(neckGeo, skinMat);
+      neck.position.y = D.torsoLength + 0.06;
+      attachOutline(neck, 0.008, 0x141413);
+      torso.add(neck);
+
+      const headGrp = new THREE.Group();
+      headGrp.position.y = D.torsoLength + 0.185;
+      torso.add(headGrp);
+
+      const head = new THREE.Mesh(headGeo, skinMat);
+      head.position.y = 0;
+      head.castShadow = true;
+      attachOutline(head, 0.012, 0x141413);
+      headGrp.add(head);
+
+      if (isKeeper) {
+        const helmet = new THREE.Mesh(helmetGeo, helmetMat);
+        helmet.position.set(0, 0.015, -0.005);
+        helmet.rotation.x = -0.14;
+        helmet.castShadow = true;
+        attachOutline(helmet, 0.012, 0x141413);
+        headGrp.add(helmet);
+
+        const peak = new THREE.Mesh(peakGeo, helmetMat);
+        peak.position.set(0, 0.025, 0.055);
+        peak.rotation.x = 0.18;
+        attachOutline(peak, 0.006, 0x141413);
+        headGrp.add(peak);
+
+        const grille = new THREE.Mesh(grilleGeo, grilleMat);
+        grille.position.set(0, -0.04, 0.035);
+        grille.rotation.x = Math.PI / 2;
+        grille.rotation.z = -Math.PI * 0.4;
+        headGrp.add(grille);
+      } else {
+        const visorFrame = new THREE.Mesh(visorFrameGeo, beltMat);
+        visorFrame.position.set(0, 0.015, 0.098);
+        attachOutline(visorFrame, 0.004, 0x141413);
+        headGrp.add(visorFrame);
+
+        const visorLens = new THREE.Mesh(visorLensGeo, visorMat);
+        visorLens.position.set(0, 0.015, 0.101);
+        headGrp.add(visorLens);
+
+        const cap = new THREE.Mesh(capGeo, capMat);
+        cap.position.y = 0.02;
+        attachOutline(cap, 0.008, 0x141413);
+        headGrp.add(cap);
+
+        const capBrim = new THREE.Mesh(capBrimGeo, capPeakMat);
+        capBrim.position.set(0, 0.035, 0.082);
+        capBrim.rotation.x = 0.16;
+        attachOutline(capBrim, 0.005, 0x141413);
+        headGrp.add(capBrim);
+      }
+
+      const buildArm = (shoulderX) => {
+        const armGrp = new THREE.Group();
+        armGrp.position.set(shoulderX, D.torsoLength, 0);
+
+        const sleeve = new THREE.Mesh(sleeveGeo, jerseyMat);
+        sleeve.position.y = -0.105;
+        sleeve.castShadow = true;
+        attachOutline(sleeve, 0.011, 0x141413);
+        armGrp.add(sleeve);
+
+        const elbowY = -0.28;
+        const elbowGrp = new THREE.Group();
+        elbowGrp.position.y = elbowY;
+
+        const forearm = new THREE.Mesh(forearmGeo, skinMat);
+        forearm.position.y = -D.armLength * 0.60 - elbowY;
+        forearm.castShadow = true;
+        attachOutline(forearm, 0.010, 0x141413);
+        elbowGrp.add(forearm);
+
+        const band = new THREE.Mesh(bandGeo, wristbandMat);
+        band.position.y = -D.armLength + 0.085 - elbowY;
+        attachOutline(band, 0.005, 0x141413);
+        elbowGrp.add(band);
+
+        const hand = new THREE.Mesh(isKeeper ? keeperGloveGeo : handGeo, isKeeper ? gloveMat : skinMat);
+        hand.position.y = -D.armLength - elbowY;
+        hand.castShadow = true;
+        attachOutline(hand, 0.008, 0x141413);
+        elbowGrp.add(hand);
+
+        armGrp.add(elbowGrp);
+        torso.add(armGrp);
+        return { upper: armGrp, elbow: elbowGrp };
+      };
+
+      const armL = buildArm(D.shoulderHalf);
+      const armR = buildArm(-D.shoulderHalf);
+
+      const buildLeg = (side) => {
+        const thigh = new THREE.Group();
+        thigh.position.set(side * 0.105, 0, 0);
+
+        const thighMesh = new THREE.Mesh(thighGeo, pantsMat);
+        thighMesh.position.y = -D.legLength / 4;
+        thighMesh.castShadow = true;
+        attachOutline(thighMesh, 0.012, 0x141413);
+        thigh.add(thighMesh);
+
+        const shin = new THREE.Group();
+        shin.position.y = -D.legLength / 2;
+        thigh.add(shin);
+
+        const shinMesh = new THREE.Mesh(shinGeo, pantsMat);
+        shinMesh.position.y = -D.legLength / 4;
+        shinMesh.castShadow = true;
+        attachOutline(shinMesh, 0.012, 0x141413);
+        shin.add(shinMesh);
+
+        const knee = new THREE.Mesh(kneeGeo, pantsMat);
+        attachOutline(knee, 0.008, 0x141413);
+        shin.add(knee);
+
+        if (isKeeper) {
+          const pad = new THREE.Mesh(padGeo, padMat);
+          pad.position.set(0, -D.legLength / 4, 0.028);
+          pad.castShadow = true;
+          attachOutline(pad, 0.011, 0x141413);
+          shin.add(pad);
+
+          const strap = new THREE.Mesh(padStrapGeo, trimMat);
+          strap.position.set(0, -0.06, 0.028);
+          shin.add(strap);
+        }
+
+        const shoeBody = new THREE.Mesh(shoeBodyGeo, shoeMat);
+        shoeBody.position.set(0, -D.legLength / 2 + 0.025, 0.055);
+        shoeBody.castShadow = true;
+        attachOutline(shoeBody, 0.010, 0x141413);
+        shin.add(shoeBody);
+
+        const shoeStripe = new THREE.Mesh(shoeStripeGeo, shoeStripeMat);
+        shoeStripe.position.set(0, -D.legLength / 2 + 0.03, 0.045);
+        shin.add(shoeStripe);
+
+        const shoeSole = new THREE.Mesh(shoeSoleGeo, shoeSoleMat);
+        shoeSole.position.set(0, -D.legLength / 2 - 0.015, 0.055);
+        shin.add(shoeSole);
+
+        hips.add(thigh);
+        return { thigh, shin };
+      };
+
+      const legL = buildLeg(1);
+      const legR = buildLeg(-1);
+
+      root.position.set(spec.x, 0, spec.z);
+      scene.add(root);
+
+      const pose = {
+        hipsY: isKeeper ? 0.66 : 0.94,
+        bodyRotX: 0,
+        bodyRotZ: 0,
+        torsoRotX: isKeeper ? 0.36 : 0.15,
+        torsoRotY: 0,
+        headRotX: 0,
+        headRotY: 0,
+        armLX: isKeeper ? -0.75 : -0.28,
+        armLZ: isKeeper ? -0.14 : 0.06,
+        elbowLX: isKeeper ? -0.65 : -0.45,
+        armRX: isKeeper ? -0.75 : -0.28,
+        armRZ: isKeeper ? 0.14 : -0.06,
+        elbowRX: isKeeper ? -0.65 : -0.45,
+        thighLX: isKeeper ? -0.85 : -0.14,
+        thighLZ: isKeeper ? 0.18 : 0.08,
+        shinLX: isKeeper ? 1.10 : 0.22,
+        thighRX: isKeeper ? -0.85 : -0.14,
+        thighRZ: isKeeper ? -0.18 : -0.08,
+        shinRX: isKeeper ? 1.10 : 0.22
+      };
+
+      return { root, body, groundShadow, hips, torso, headGrp, armL, armR, legL, legR, isKeeper, specId: spec.id, pose };
+    };
+
+    this.rigs = CONFIG.fielding.positions.map(buildRig);
+  }
+
+  applyKit(kit) {
+    if (!kit || !this._kitMats) return;
+    const m = this._kitMats;
+    m.jerseyMat.color.setHex(kit.shirtHex);
+    m.trimMat.color.setHex(kit.trimHex);
+    m.collarMat.color.setHex(kit.trimHex);
+    m.pantsMat.color.setHex(kit.pantsHex);
+    m.beltMat.color.setHex(kit.trimHex);
+    m.shoeStripeMat.color.setHex(kit.shirtHex);
+    m.capMat.color.setHex(kit.shirtHex);
+    m.capPeakMat.color.setHex(kit.trimHex);
+    m.wristbandMat.color.setHex(kit.trimHex);
+    m.padMat.color.setHex(kit.shirtHex);
+    m.helmetMat.color.setHex(kit.trimHex);
+    m.gloveMat.color.setHex(kit.shirtHex);
+  }
+
+  update(fieldingSystem, dt, t, ball = null) {
+    if (!fieldingSystem) return;
+    const list = fieldingSystem.fielders;
+    const D = BOWLER_DIMS;
+    const clamp = THREE.MathUtils.clamp;
+    const bPos = (ball && ball.active && ball.pos)
+      ? ball.pos
+      : (fieldingSystem.heldBallPos || (fieldingSystem.ballActive ? fieldingSystem.ballPos : null));
+
+    for (let i = 0; i < list.length && i < this.rigs.length; i++) {
+      const f = list[i];
+      const rig = this.rigs[i];
+      const p = rig.pose;
+      const jumpY = f.jumpY || 0;
+
+      rig.root.position.set(f.pos.x, jumpY, f.pos.z);
+      rig.root.rotation.y = f.facing;
+      rig.groundShadow.position.y = 0.012 - jumpY;
+
+      const speed = f.vel.length();
+      const at = f.actionTimer || 0;
+
+      // Target joint values for current state
+      let hipsY = D.hipHeight;
+      let bodyRotX = 0;
+      let bodyRotZ = 0;
+      let torsoRotX = 0.15;
+      let torsoRotY = 0;
+      let headRotX = 0;
+      let headRotY = 0;
+      let armLX = -0.28, armLZ = 0.06, elbowLX = -0.45;
+      let armRX = -0.28, armRZ = -0.06, elbowRX = -0.45;
+      let thighLX = -0.14, thighLZ = 0.08, shinLX = 0.22;
+      let thighRX = -0.14, thighRZ = -0.08, shinRX = 0.22;
+      let rate = 14;
+      let trackBallHead = false;
+
+      if (f.state === 'diving') {
+        rate = 24;
+        const dir = f.diveDir || 1;
+        if (at < 0.25) {
+          // Phase 1: Full-stretch airborne horizontal dive
+          bodyRotZ = -dir * 1.15;
+          bodyRotX = 0.12;
+          hipsY = 0.44;
+          torsoRotX = 0.10;
+          armLX = -2.45; armRX = -2.45;
+          armLZ = -0.12; armRZ = 0.12;
+          elbowLX = -0.20; elbowRX = -0.20;
+          thighLX = 0.28; thighRX = 0.36;
+          shinLX = 0.25; shinRX = 0.30;
+          headRotX = -0.22;
+        } else if (at < 0.60) {
+          // Phase 2: Turf slide cradling ball into chest
+          const u = (at - 0.25) / 0.35;
+          bodyRotZ = -dir * (1.28 - 0.08 * u);
+          bodyRotX = 0.08;
+          hipsY = 0.30;
+          torsoRotX = 0.22;
+          armLX = -1.45; armRX = -1.45;
+          armLZ = -0.22; armRZ = 0.22;
+          elbowLX = -1.05; elbowRX = -1.05;
+          thighLX = 0.18; thighRX = 0.42;
+          shinLX = 0.45; shinRX = 0.65;
+        } else {
+          // Phase 3: Recover to one knee & hoist ball
+          rate = 12;
+          bodyRotZ = -dir * 0.12;
+          hipsY = 0.64;
+          torsoRotX = 0.06;
+          thighLX = -0.85; shinLX = 1.15; thighLZ = 0.12;
+          thighRX = 0.22; shinRX = 1.10; thighRZ = -0.10;
+          armRX = -2.55; armRZ = -0.10; elbowRX = -0.25;
+          armLX = -0.45; armLZ = 0.16; elbowLX = -0.55;
+          headRotX = -0.18;
+        }
+      } else if (f.state === 'catching') {
+        rate = 22;
+        const style = f.catchStyle || 'chest';
+        if (at < 0.34) {
+          if (style === 'overhead') {
+            hipsY = 0.86;
+            torsoRotX = -0.10;
+            headRotX = -0.45;
+            armLX = -2.55; armRX = -2.55;
+            armLZ = -0.12; armRZ = 0.12;
+            elbowLX = -0.35; elbowRX = -0.35;
+            thighLX = -0.28; shinLX = 0.45;
+            thighRX = 0.14; shinRX = 0.28;
+          } else if (style === 'low') {
+            hipsY = 0.58;
+            torsoRotX = 0.56;
+            headRotX = 0.12;
+            thighLX = -0.95; shinLX = 1.10; thighLZ = 0.10;
+            thighRX = -0.45; shinRX = 0.85; thighRZ = -0.10;
+            armLX = -0.88; armRX = -0.88;
+            armLZ = -0.18; armRZ = 0.18;
+            elbowLX = -0.40; elbowRX = -0.40;
+          } else {
+            // Chest / orthodox reverse-cup pouch
+            hipsY = 0.88;
+            torsoRotX = 0.12;
+            headRotX = 0.08;
+            thighLX = -0.32; shinLX = 0.48; thighLZ = 0.10;
+            thighRX = 0.14; shinRX = 0.26; thighRZ = -0.10;
+            armLX = -1.25; armRX = -1.25;
+            armLZ = -0.22; armRZ = 0.22;
+            elbowLX = -1.05; elbowRX = -1.05;
+          }
+        } else {
+          // Celebratory appeal raising ball in right hand
+          rate = 14;
+          hipsY = D.hipHeight;
+          torsoRotX = -0.06;
+          headRotX = -0.16;
+          armRX = -2.75; armRZ = -0.12; elbowRX = -0.20;
+          armLX = -0.35; armLZ = 0.14; elbowLX = -0.45;
+          thighLX = -0.12; shinLX = 0.18;
+          thighRX = 0.10; shinRX = 0.16;
+        }
+      } else if (f.state === 'fielded') {
+        rate = 20;
+        const stopStyle = f.stopStyle || 'pickup';
+        if (stopStyle === 'keeper_take') {
+          hipsY = clamp((f.catchHeight || 0.85) - 0.15, 0.60, 0.90);
+          torsoRotX = 0.34;
+          thighLX = -0.80; shinLX = 1.05; thighLZ = 0.18;
+          thighRX = -0.80; shinRX = 1.05; thighRZ = -0.18;
+          armLX = -1.05; armRX = -1.05;
+          armLZ = -0.20; armRZ = 0.20;
+          elbowLX = -0.85; elbowRX = -0.85;
+          trackBallHead = true;
+        } else {
+          const tGather = stopStyle === 'slide' ? 0.36 : 0.26;
+          if (at < tGather) {
+            if (stopStyle === 'slide') {
+              const dir = f.diveDir || 1;
+              hipsY = 0.36;
+              bodyRotZ = -dir * 0.68;
+              torsoRotX = 0.28;
+              thighLX = -0.55; shinLX = 0.15;
+              thighRX = -0.25; shinRX = 1.15;
+              armRX = -1.15; armRZ = 0.12; elbowRX = -0.30;
+              armLX = -0.45; armLZ = 0.35; elbowLX = -0.60;
+            } else {
+              hipsY = 0.62;
+              torsoRotX = 0.62;
+              headRotX = 0.22;
+              thighLX = -0.95; shinLX = 1.15; thighLZ = 0.12;
+              thighRX = -0.75; shinRX = 0.95; thighRZ = -0.12;
+              armLX = -0.82; armRX = -0.82;
+              armLZ = -0.15; armRZ = 0.15;
+              elbowLX = -0.30; elbowRX = -0.30;
+            }
+          } else if (at < tGather + 0.24) {
+            // Stage 2: Rise & cock throwing arm back (crow-hop return wind-up)
+            rate = 18;
+            hipsY = 0.96;
+            torsoRotY = -0.36;
+            torsoRotX = 0.04;
+            headRotY = 0.22;
+            armRX = -2.10; armRZ = -0.24; elbowRX = -0.95;
+            armLX = -1.05; armLZ = -0.08; elbowLX = -0.35;
+            thighLX = -0.24; shinLX = 0.32; thighLZ = 0.10;
+            thighRX = 0.18; shinRX = 0.22; thighRZ = -0.10;
+          } else {
+            // Stage 3: Smooth throwing follow-through & athletic ready finish
+            rate = 16;
+            hipsY = 0.95;
+            torsoRotY = 0.16;
+            torsoRotX = 0.18;
+            armRX = -1.15; armRZ = -0.06; elbowRX = -0.65;
+            armLX = -0.35; armLZ = 0.12; elbowLX = -0.55;
+            thighLX = -0.16; shinLX = 0.22;
+            thighRX = 0.12; shinRX = 0.18;
+          }
+        }
+      } else if (f.state === 'set_catch') {
+        rate = 16;
+        const shuffle = Math.sin(t * 7.5 + i) * 0.025;
+        hipsY = 0.87 + Math.abs(shuffle) * 0.3;
+        torsoRotX = 0.04;
+        armLX = -1.30; armRX = -1.30;
+        armLZ = -0.18; armRZ = 0.18;
+        elbowLX = -0.85; elbowRX = -0.85;
+        thighLX = -0.38 + shuffle; shinLX = 0.56; thighLZ = 0.13;
+        thighRX = -0.24 - shuffle; shinRX = 0.42; thighRZ = -0.13;
+        trackBallHead = true;
+      } else if ((f.state === 'chasing' || f.state === 'backup' || f.state === 'walk_in') && speed > 0.20) {
+        rate = 18;
+        const ph = f.stridePhase;
+        const speedRatio = clamp(speed / 6.2, 0.15, 1.0);
+        const bob = (0.018 + 0.036 * speedRatio) * Math.abs(Math.sin(ph));
+        hipsY = 0.95 - 0.03 * speedRatio + bob;
+        torsoRotX = 0.12 + 0.24 * speedRatio;
+        torsoRotY = -0.16 * Math.sin(ph) * speedRatio;
+
+        const legAmp = 0.30 + 0.48 * speedRatio;
+        thighLX = legAmp * Math.sin(ph);
+        thighRX = -thighLX;
+        shinLX = (0.28 + 0.44 * speedRatio) * Math.max(0, Math.sin(ph + 1.15)) + 0.12;
+        shinRX = (0.28 + 0.44 * speedRatio) * Math.max(0, Math.sin(ph + 1.15 + Math.PI)) + 0.12;
+
+        const armAmp = 0.28 + 0.48 * speedRatio;
+        armLX = -armAmp * Math.sin(ph) - 0.12 * speedRatio;
+        armRX = armAmp * Math.sin(ph) - 0.12 * speedRatio;
+        armLZ = 0.08; armRZ = -0.08;
+        elbowLX = -0.70 - 0.45 * speedRatio;
+        elbowRX = -0.70 - 0.45 * speedRatio;
+        trackBallHead = f.state === 'backup';
+
+        // Anticipatory aerial catch reach when running onto a descending catch
+        if (f._role === 'catcher' && f.state === 'chasing' && !fieldingSystem.groundedAfterHit && f._ballDist < 3.8) {
+          const reach = clamp(1 - f._ballDist / 3.8, 0, 1);
+          armLX = THREE.MathUtils.lerp(armLX, -1.35, reach);
+          armRX = THREE.MathUtils.lerp(armRX, -1.35, reach);
+          armLZ = THREE.MathUtils.lerp(armLZ, -0.14, reach);
+          armRZ = THREE.MathUtils.lerp(armRZ, 0.14, reach);
+          elbowLX = THREE.MathUtils.lerp(elbowLX, -0.80, reach);
+          elbowRX = THREE.MathUtils.lerp(elbowRX, -0.80, reach);
+          trackBallHead = true;
+        } else if (f.state === 'chasing' && (fieldingSystem.groundedAfterHit || f._ballY < 0.5) && f._ballDist < 3.2) {
+          // Anticipatory low gather crouch as chaser closes on a rolling ball
+          const gather = clamp(1 - f._ballDist / 3.2, 0, 1);
+          hipsY -= 0.16 * gather;
+          torsoRotX += 0.22 * gather;
+          armLX = THREE.MathUtils.lerp(armLX, -0.75, gather);
+          armRX = THREE.MathUtils.lerp(armRX, -0.75, gather);
+          armLZ = THREE.MathUtils.lerp(armLZ, -0.12, gather);
+          armRZ = THREE.MathUtils.lerp(armRZ, 0.12, gather);
+          elbowLX = THREE.MathUtils.lerp(elbowLX, -0.45, gather);
+          elbowRX = THREE.MathUtils.lerp(elbowRX, -0.45, gather);
+          trackBallHead = true;
+        }
+      } else if (
+        fieldingSystem.resolved &&
+        fieldingSystem.holder &&
+        (fieldingSystem.holder.state === 'catching' || fieldingSystem.holder.state === 'diving') &&
+        f !== fieldingSystem.holder
+      ) {
+        // Celebratory team wicket appeal when a teammate completes a catch
+        rate = 14;
+        hipsY = 0.96 + Math.abs(Math.sin(t * 6 + i)) * 0.04;
+        torsoRotX = -0.06;
+        armLX = -2.35; armRX = -2.35;
+        armLZ = -0.14; armRZ = 0.14;
+        elbowLX = -0.25; elbowRX = -0.25;
+        thighLX = -0.10; shinLX = 0.16;
+        thighRX = 0.10; shinRX = 0.16;
+        trackBallHead = true;
+      } else if (f.isKeeper) {
+        rate = 14;
+        const sway = Math.sin(t * 2.5) * 0.01;
+        const receiveReady = fieldingSystem.resolved && fieldingSystem.holder && fieldingSystem.holder.state === 'fielded';
+        const rise = bPos && fieldingSystem.hit && bPos.z > -4 ? clamp((bPos.y - 0.8) * 0.14, 0, 0.20) : 0;
+        hipsY = (receiveReady ? 0.78 : 0.66) + sway + rise;
+        torsoRotX = (receiveReady ? 0.24 : 0.36) - rise * 0.6;
+        thighLX = -0.85 + rise * 1.2; thighRX = thighLX;
+        thighLZ = 0.18; thighRZ = -0.18;
+        shinLX = 1.10 - rise * 1.2; shinRX = shinLX;
+        if (receiveReady) {
+          armLX = -1.05; armRX = -1.05;
+          armLZ = -0.18; armRZ = 0.18;
+          elbowLX = -0.75; elbowRX = -0.75;
+        } else {
+          armLX = -0.75; armRX = -0.75;
+          armLZ = -0.16; armRZ = 0.16;
+          elbowLX = -0.65; elbowRX = -0.65;
+        }
+        trackBallHead = true;
+      } else if (rig.specId === 'slip') {
+        rate = 14;
+        hipsY = 0.80 + Math.sin(t * 2.4 + i) * 0.01;
+        torsoRotX = 0.32;
+        thighLX = -0.45; thighRX = -0.45;
+        thighLZ = 0.14; thighRZ = -0.14;
+        shinLX = 0.55; shinRX = 0.55;
+        armLX = -0.55; armRX = -0.55;
+        armLZ = -0.10; armRZ = 0.10;
+        elbowLX = -0.55; elbowRX = -0.55;
+        trackBallHead = true;
+      } else if (!fieldingSystem.hit && bPos && bPos.z > -9.5 && bPos.z < -1.0 && f.ring === 'infield') {
+        // Pre-hit split-step coiled ready crouch as delivery reaches hitting zone
+        rate = 16;
+        hipsY = 0.86;
+        torsoRotX = 0.24;
+        thighLX = -0.34; thighRX = -0.34;
+        thighLZ = 0.14; thighRZ = -0.14;
+        shinLX = 0.46; shinRX = 0.46;
+        armLX = -0.48; armRX = -0.48;
+        armLZ = -0.06; armRZ = 0.06;
+        elbowLX = -0.60; elbowRX = -0.60;
+        trackBallHead = true;
+      } else {
+        rate = 14;
+        hipsY = 0.94 + Math.sin(t * 2.4 + i) * 0.012;
+        torsoRotX = 0.15;
+        thighLX = -0.14; thighRX = -0.14;
+        thighLZ = 0.08; thighRZ = -0.08;
+        shinLX = 0.22; shinRX = 0.22;
+        armLX = -0.28; armRX = -0.28;
+        armLZ = 0.06; armRZ = -0.06;
+        elbowLX = -0.45; elbowRX = -0.45;
+        trackBallHead = true;
+      }
+
+      if (trackBallHead && bPos) {
+        const dx = bPos.x - f.pos.x;
+        const dz = bPos.z - f.pos.z;
+        const flat = Math.hypot(dx, dz);
+        if (flat > 0.25) {
+          let relYaw = ((Math.atan2(dx, dz) - f.facing + Math.PI) % (Math.PI * 2)) - Math.PI;
+          if (relYaw < -Math.PI) relYaw += Math.PI * 2;
+          headRotY = clamp(relYaw, -0.75, 0.75);
+          const dy = bPos.y - (hipsY + D.torsoLength + 0.18);
+          headRotX = clamp(-Math.atan2(dy, Math.max(0.6, flat)) - torsoRotX * 0.65, -0.68, 0.42);
+        }
+        if (f.state === 'set_catch') {
+          headRotX = clamp(headRotX, -0.68, -0.24);
+        }
+      }
+
+      const k = dt > 0 ? (1 - Math.exp(-rate * dt)) : 0;
+      if (k > 0) {
+        p.hipsY += (hipsY - p.hipsY) * k;
+        p.bodyRotX += (bodyRotX - p.bodyRotX) * k;
+        p.bodyRotZ += (bodyRotZ - p.bodyRotZ) * k;
+        p.torsoRotX += (torsoRotX - p.torsoRotX) * k;
+        p.torsoRotY += (torsoRotY - p.torsoRotY) * k;
+        p.headRotX += (headRotX - p.headRotX) * k;
+        p.headRotY += (headRotY - p.headRotY) * k;
+        p.armLX += (armLX - p.armLX) * k;
+        p.armLZ += (armLZ - p.armLZ) * k;
+        p.elbowLX += (elbowLX - p.elbowLX) * k;
+        p.armRX += (armRX - p.armRX) * k;
+        p.armRZ += (armRZ - p.armRZ) * k;
+        p.elbowRX += (elbowRX - p.elbowRX) * k;
+        p.thighLX += (thighLX - p.thighLX) * k;
+        p.thighLZ += (thighLZ - p.thighLZ) * k;
+        p.shinLX += (shinLX - p.shinLX) * k;
+        p.thighRX += (thighRX - p.thighRX) * k;
+        p.thighRZ += (thighRZ - p.thighRZ) * k;
+        p.shinRX += (shinRX - p.shinRX) * k;
+      }
+
+      rig.hips.position.y = p.hipsY;
+      rig.body.rotation.x = p.bodyRotX;
+      rig.body.rotation.z = p.bodyRotZ;
+      rig.torso.rotation.x = p.torsoRotX;
+      rig.torso.rotation.y = p.torsoRotY;
+      rig.headGrp.rotation.x = p.headRotX;
+      rig.headGrp.rotation.y = p.headRotY;
+
+      rig.armL.upper.rotation.x = p.armLX;
+      rig.armL.upper.rotation.z = p.armLZ;
+      rig.armL.elbow.rotation.x = p.elbowLX;
+
+      rig.armR.upper.rotation.x = p.armRX;
+      rig.armR.upper.rotation.z = p.armRZ;
+      rig.armR.elbow.rotation.x = p.elbowRX;
+
+      rig.legL.thigh.rotation.x = p.thighLX;
+      rig.legL.thigh.rotation.z = p.thighLZ;
+      rig.legL.shin.rotation.x = p.shinLX;
+
+      rig.legR.thigh.rotation.x = p.thighRX;
+      rig.legR.thigh.rotation.z = p.thighRZ;
+      rig.legR.shin.rotation.x = p.shinRX;
+    }
   }
 }
