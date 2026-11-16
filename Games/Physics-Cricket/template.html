@@ -47,6 +47,7 @@
       <nav id="topControls" aria-label="Game Controls">
         <a href="../../games.html" id="exitBtn" class="icon-btn exit-btn" title="Exit to Games" aria-label="Exit to Games">✕</a>
         <button id="soundBtn" class="icon-btn" title="Toggle Sound (M)" aria-label="Toggle Sound">🔊</button>
+        <button id="fullscreenBtn" class="icon-btn" title="Fullscreen (F)" aria-label="Toggle Fullscreen">⛶</button>
         <button id="pauseBtn" class="icon-btn" title="Pause (P or Esc)" aria-label="Pause">❚❚</button>
       </nav>
     </header>
@@ -248,6 +249,11 @@
             <option value="off">Hidden</option>
           </select>
           <span></span>
+        </label>
+        <label id="fsSettingRow" class="fs-setting-row">
+          <span class="setting-title">Fullscreen Mode</span>
+          <span></span>
+          <button type="button" id="fsSettingBtn" class="fs-toggle-btn">OFF</button>
         </label>
       </div>
     </div>

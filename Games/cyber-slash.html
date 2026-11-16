@@ -2720,13 +2720,22 @@ document.getElementById('btn-sound').onclick = () => {
   document.getElementById('btn-sound').textContent = muted ? '🔇' : '🔊';
 };
 
-document.getElementById('btn-fullscreen').onclick = () => {
-  if (!document.fullscreenElement) {
-    document.documentElement.requestFullscreen().catch(() => {});
-  } else {
-    document.exitFullscreen().catch(() => {});
-  }
-};
+const fsBtn = document.getElementById('btn-fullscreen');
+const fsEl = document.documentElement;
+const reqFs = fsEl.requestFullscreen || fsEl.webkitRequestFullscreen;
+const exitFs = document.exitFullscreen || document.webkitExitFullscreen;
+const getFsEl = () => document.fullscreenElement || document.webkitFullscreenElement;
+if (reqFs) {
+  fsBtn.onclick = () => {
+    if (!getFsEl()) {
+      Promise.resolve(reqFs.call(fsEl)).catch(() => {});
+    } else if (exitFs) {
+      Promise.resolve(exitFs.call(document)).catch(() => {});
+    }
+  };
+} else {
+  fsBtn.style.display = 'none';
+}
 
 // Start loop
 requestAnimationFrame(gameLoop);

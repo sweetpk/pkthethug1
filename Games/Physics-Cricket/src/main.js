@@ -751,6 +751,45 @@ if ($('soundBtn')) {
     $('soundBtn').setAttribute('title', enabled ? 'Mute Sound (M)' : 'Unmute Sound (M)');
   });
 }
+const fsRoot = document.documentElement;
+const reqFullscreen = fsRoot.requestFullscreen || fsRoot.webkitRequestFullscreen;
+const exitFullscreen = document.exitFullscreen || document.webkitExitFullscreen;
+const getFullscreenEl = () => document.fullscreenElement || document.webkitFullscreenElement;
+function toggleFullscreen() {
+  if (!reqFullscreen) return;
+  if (getFullscreenEl()) {
+    if (exitFullscreen) Promise.resolve(exitFullscreen.call(document)).catch(() => {});
+  } else {
+    Promise.resolve(reqFullscreen.call(fsRoot)).catch(() => {});
+  }
+}
+function syncFullscreenUI() {
+  const active = !!getFullscreenEl();
+  if ($('fullscreenBtn')) $('fullscreenBtn').setAttribute('title', active ? 'Exit Fullscreen (F)' : 'Fullscreen (F)');
+  if ($('fsSettingBtn')) {
+    $('fsSettingBtn').textContent = active ? 'ON' : 'OFF';
+    $('fsSettingBtn').classList.toggle('on', active);
+  }
+}
+if (reqFullscreen) {
+  if ($('fullscreenBtn')) {
+    $('fullscreenBtn').addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleFullscreen();
+    });
+  }
+  if ($('fsSettingBtn')) {
+    $('fsSettingBtn').addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleFullscreen();
+    });
+  }
+  document.addEventListener('fullscreenchange', () => { syncFullscreenUI(); resize(); });
+  document.addEventListener('webkitfullscreenchange', () => { syncFullscreenUI(); resize(); });
+} else {
+  if ($('fullscreenBtn')) $('fullscreenBtn').style.display = 'none';
+  if ($('fsSettingRow')) $('fsSettingRow').style.display = 'none';
+}
 canvas.addEventListener('click', () => {
   if (G.mode === 'playing' && !isTouch && !input.locked) input.requestLock();
 });
@@ -772,6 +811,9 @@ window.addEventListener('keydown', (e) => {
       $('soundBtn').textContent = enabled ? '🔊' : '🔇';
       $('soundBtn').setAttribute('title', enabled ? 'Mute Sound (M)' : 'Unmute Sound (M)');
     }
+  }
+  if (e.key === 'f' || e.key === 'F') {
+    toggleFullscreen();
   }
 });
 // block page gestures on mobile

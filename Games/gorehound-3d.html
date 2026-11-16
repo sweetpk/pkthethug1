@@ -162,6 +162,15 @@
     font-size: 16px; display: grid; place-items: center; cursor: pointer;
   }
   .icon-btn:active { transform: scale(0.92); }
+  @media (max-width: 600px) {
+    .hud-top { gap: 4px; }
+    .hud-panel { padding: 6px 8px; }
+    .hp-wrap { width: 106px; }
+    .wave-box { min-width: 90px; }
+    .hud-right { flex-direction: column-reverse; align-items: flex-end; gap: 4px; }
+    .hud-btns { gap: 4px; }
+    .icon-btn { width: 32px; height: 32px; font-size: 14px; }
+  }
 
   /* Crosshair & Chamber */
   #crosshair {
@@ -408,6 +417,7 @@
       <div class="hud-btns">
         <a href="../games.html" class="icon-btn" title="Exit to Games" aria-label="Exit to Games" style="text-decoration:none;">✕</a>
         <button class="icon-btn" id="btnMute" title="Audio">🔊</button>
+        <button class="icon-btn" id="btnFullscreen" title="Fullscreen" aria-label="Fullscreen">⛶</button>
         <button class="icon-btn" id="btnPause" title="Pause">⏸</button>
       </div>
     </div>
@@ -513,6 +523,10 @@
       <div class="setting-row">
         <span>Audio</span>
         <button class="toggle-pill on" id="btnPauseMute">ON</button>
+      </div>
+      <div class="setting-row" id="fsSettingRow">
+        <span>Fullscreen</span>
+        <button class="toggle-pill" id="btnPauseFs">OFF</button>
       </div>
     </div>
     <button class="primary-btn" id="btnResume" style="margin-top:16px;">RESUME SLAUGHTER</button>
@@ -2624,6 +2638,39 @@
   document.getElementById('btnPause').onclick = togglePause;
   document.getElementById('btnMute').onclick = toggleMute;
   document.getElementById('btnPauseMute').onclick = toggleMute;
+
+  const fsEl = document.documentElement;
+  const reqFs = fsEl.requestFullscreen || fsEl.webkitRequestFullscreen;
+  const exitFs = document.exitFullscreen || document.webkitExitFullscreen;
+  const getFsEl = () => document.fullscreenElement || document.webkitFullscreenElement;
+  const btnFs = document.getElementById('btnFullscreen');
+  const btnPauseFs = document.getElementById('btnPauseFs');
+  const fsRow = document.getElementById('fsSettingRow');
+  function toggleFullscreen() {
+    if (!reqFs) return;
+    if (getFsEl()) {
+      if (exitFs) Promise.resolve(exitFs.call(document)).catch(() => {});
+    } else {
+      Promise.resolve(reqFs.call(fsEl)).catch(() => {});
+    }
+  }
+  function syncFullscreenUI() {
+    const active = !!getFsEl();
+    if (btnFs) btnFs.title = active ? 'Exit Fullscreen' : 'Fullscreen';
+    if (btnPauseFs) {
+      btnPauseFs.textContent = active ? 'ON' : 'OFF';
+      btnPauseFs.classList.toggle('on', active);
+    }
+  }
+  if (reqFs) {
+    if (btnFs) btnFs.onclick = toggleFullscreen;
+    if (btnPauseFs) btnPauseFs.onclick = toggleFullscreen;
+    document.addEventListener('fullscreenchange', () => { syncFullscreenUI(); resize(); });
+    document.addEventListener('webkitfullscreenchange', () => { syncFullscreenUI(); resize(); });
+  } else {
+    if (btnFs) btnFs.style.display = 'none';
+    if (fsRow) fsRow.style.display = 'none';
+  }
 
   document.getElementById('sensSlider').oninput = e => { sensitivity = parseFloat(e.target.value); };
   document.getElementById('btnAutoFire').onclick = () => {

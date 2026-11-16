@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800;12..96,900&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="./assets/template-xyDqg-Xc.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/template-CokVrXy5.css">
+  <script type="module" crossorigin src="./assets/template-BTkJzwK9.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/template-Cvf6YQEj.css">
 </head>
 <body>
   <canvas id="game"></canvas>
@@ -47,6 +47,7 @@
       <nav id="topControls" aria-label="Game Controls">
         <a href="../../games.html" id="exitBtn" class="icon-btn exit-btn" title="Exit to Games" aria-label="Exit to Games">✕</a>
         <button id="soundBtn" class="icon-btn" title="Toggle Sound (M)" aria-label="Toggle Sound">🔊</button>
+        <button id="fullscreenBtn" class="icon-btn" title="Fullscreen (F)" aria-label="Toggle Fullscreen">⛶</button>
         <button id="pauseBtn" class="icon-btn" title="Pause (P or Esc)" aria-label="Pause">❚❚</button>
       </nav>
     </header>
@@ -248,6 +249,11 @@
             <option value="off">Hidden</option>
           </select>
           <span></span>
+        </label>
+        <label id="fsSettingRow" class="fs-setting-row">
+          <span class="setting-title">Fullscreen Mode</span>
+          <span></span>
+          <button type="button" id="fsSettingBtn" class="fs-toggle-btn">OFF</button>
         </label>
       </div>
     </div>
