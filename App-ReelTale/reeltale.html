@@ -5,335 +5,805 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>REELTALE — Flash Fiction Reels</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Cormorant+Garamond:ital,wght@0,500;1,600&family=Lora:ital,wght@0,400;1,400&family=Poppins:ital,wght@0,700;0,800;1,800&family=Nunito:wght@500;700;800&family=Cinzel:wght@600;700&family=EB+Garamond:ital,wght@0,400;1,500&family=Special+Elite&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cormorant+Garamond:ital,wght@0,600;1,600;1,700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=Nunito:wght@600;700;800&family=Poppins:ital,wght@0,600;0,700;0,800;1,800&family=Special+Elite&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ui-display:'Poppins',sans-serif;
-    --ui-body:'Inter',sans-serif;
+    --ui-display:'Syne','Poppins',sans-serif;
+    --ui-sans:'Inter',sans-serif;
+    --ui-mono:'IBM Plex Mono',monospace;
+    --bg-void:#070709;
+    --ink-light:#f5f2eb;
+    --ink-muted:#9f9b93;
+    --ink-dim:#66625b;
+    --rose:#ea7a8f;
+    --gold:#e8c170;
+    --teal:#5bc8b8;
+    --violet:#9d7cf4;
+    --ring-focus:rgba(232,193,112,.85);
+    --safe-top:env(safe-area-inset-top, 0px);
+    --safe-bottom:env(safe-area-inset-bottom, 0px);
+    --safe-left:env(safe-area-inset-left, 0px);
+    --safe-right:env(safe-area-inset-right, 0px);
   }
+
   *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
   html,body{height:100%;}
   body{
     margin:0;
-    font-family:var(--ui-body);
-    background:#0b0b0d;
-    color:#f2f0ee;
+    font-family:var(--ui-sans);
+    background:var(--bg-void);
+    color:var(--ink-light);
     overflow:hidden;
+    height:100vh;
     height:100dvh;
     width:100vw;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
   }
-  #app{position:relative;width:100%;height:100dvh;}
+
+  /* Subtle tactile film grain over the whole viewport */
+  body::after{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:100;
+    opacity:.035;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  button{font-family:inherit;}
+  button:focus-visible{
+    outline:2px solid var(--ring-focus);
+    outline-offset:3px;
+  }
+  .reel[data-genre="comedy"] button:focus-visible{
+    outline-color:#241004;
+  }
+
+  #app{
+    position:relative;
+    width:100%;
+    height:100%;
+  }
   .hidden{display:none !important;}
 
-  /* ================= GENRE SELECT SCREEN ================= */
+  /* ==========================================================================
+     1. GENRE SELECTION LOBBY (#genre-screen)
+     ========================================================================== */
   #genre-screen{
+    position:relative;
     height:100%;
     width:100%;
+    overflow-y:auto;
+    overflow-x:hidden;
     display:flex;
     flex-direction:column;
     align-items:center;
-    justify-content:center;
-    padding:32px 24px;
-    background:
-      radial-gradient(circle at 20% 15%, rgba(233,120,140,.18), transparent 40%),
-      radial-gradient(circle at 85% 20%, rgba(120,180,230,.15), transparent 45%),
-      radial-gradient(circle at 50% 90%, rgba(230,190,110,.12), transparent 40%),
-      #0b0b0d;
+    padding:
+      calc(28px + var(--safe-top))
+      calc(20px + var(--safe-right))
+      calc(28px + var(--safe-bottom))
+      calc(20px + var(--safe-left));
+    background:var(--bg-void);
   }
+
+  /* Atmospheric layered aura behind the lobby */
+  .lobby-aura{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:0;
+    overflow:hidden;
+    background:
+      radial-gradient(ellipse 70% 55% at 15% 15%, rgba(234,122,143,.16), transparent 65%),
+      radial-gradient(ellipse 65% 55% at 88% 20%, rgba(124,142,244,.14), transparent 65%),
+      radial-gradient(ellipse 60% 50% at 50% 92%, rgba(232,193,112,.12), transparent 65%),
+      linear-gradient(180deg, #09090d 0%, #050507 100%);
+  }
+  .lobby-aura::before{
+    content:"";
+    position:absolute;
+    inset:-20%;
+    background:
+      radial-gradient(circle at 30% 40%, rgba(234,122,143,.07), transparent 40%),
+      radial-gradient(circle at 72% 60%, rgba(91,200,184,.06), transparent 40%);
+    animation:auraDrift 18s ease-in-out infinite alternate;
+  }
+  /* Subtle architectural grid lines */
+  .lobby-aura::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background-image:
+      linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+    background-size:64px 64px;
+    mask-image:radial-gradient(ellipse 75% 70% at 50% 48%, #000 10%, transparent 80%);
+    -webkit-mask-image:radial-gradient(ellipse 75% 70% at 50% 48%, #000 10%, transparent 80%);
+  }
+  @keyframes auraDrift{
+    0%{transform:translate3d(-2%, -1%, 0) scale(1);}
+    100%{transform:translate3d(2%, 2%, 0) scale(1.06);}
+  }
+
+  .lobby-shell{
+    position:relative;
+    z-index:1;
+    width:100%;
+    max-width:640px;
+    margin:auto 0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+  }
+
+  .edition-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:6px 14px;
+    border-radius:999px;
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.1);
+    backdrop-filter:blur(12px);
+    font-family:var(--ui-mono);
+    font-size:10.5px;
+    letter-spacing:1.8px;
+    text-transform:uppercase;
+    color:#cfc9be;
+    margin-bottom:18px;
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.08);
+  }
+  .edition-dot{
+    width:6px;height:6px;border-radius:50%;
+    background:var(--rose);
+    box-shadow:0 0 10px var(--rose);
+  }
+
   .brand{
     font-family:var(--ui-display);
     font-weight:800;
-    font-style:italic;
-    font-size:clamp(30px,7vw,42px);
-    letter-spacing:.5px;
-    margin:0 0 6px;
-    background:linear-gradient(100deg,#f2f0ee,#e9788c 45%,#e6be6e 75%,#f2f0ee);
+    font-size:clamp(40px, 9vw, 66px);
+    line-height:.96;
+    letter-spacing:-1.5px;
+    margin:0 0 14px;
+    background:linear-gradient(125deg, #fffdf9 10%, #f3b5c0 45%, #ebd08c 75%, #fffdf9 100%);
+    background-size:200% auto;
     -webkit-background-clip:text;
     background-clip:text;
     color:transparent;
+    filter:drop-shadow(0 8px 30px rgba(234,122,143,.16));
   }
+
   .brand-sub{
-    font-size:14px;
-    color:#9a978f;
-    margin:0 0 40px;
-    text-align:center;
-    max-width:320px;
-    line-height:1.5;
+    font-size:clamp(14px, 2.2vw, 16px);
+    color:var(--ink-muted);
+    margin:0 0 32px;
+    max-width:410px;
+    line-height:1.6;
+    font-weight:400;
+  }
+
+  .genre-section-head{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+    margin:0 0 16px;
+  }
+  .genre-section-head::before,
+  .genre-section-head::after{
+    content:"";
+    height:1px;
+    flex:1;
+    max-width:90px;
+    background:linear-gradient(90deg, transparent, rgba(255,255,255,.14), transparent);
   }
   .genre-prompt{
-    font-size:13px;
+    font-family:var(--ui-mono);
+    font-size:11px;
     text-transform:uppercase;
-    letter-spacing:1.5px;
-    color:#c9c6bd;
-    margin:0 0 16px;
-    font-weight:600;
+    letter-spacing:2.2px;
+    color:#c6c0b4;
+    margin:0;
+    font-weight:500;
   }
+
   .genre-grid{
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:repeat(2, minmax(0, 1fr));
     gap:14px;
     width:100%;
-    max-width:380px;
-    min-height:40px;
+    min-height:60px;
   }
-  .genre-status{
-    font-size:12.5px;
-    color:#9a978f;
-    margin:16px 0 0;
-    text-align:center;
-    max-width:320px;
-    line-height:1.55;
-  }
-  .genre-status.error{color:#e9788c;}
-  .genre-status code{
-    background:rgba(255,255,255,.08);
-    padding:1px 6px;
-    border-radius:5px;
-    font-size:11.5px;
-  }
+
+  /* Genre Cards — Editorial Cinema Tiles */
   .genre-card{
     position:relative;
-    border-radius:18px;
-    padding:24px 14px;
-    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:space-between;
+    text-align:left;
+    min-height:126px;
+    padding:18px 18px 16px;
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,.09);
+    background:rgba(255,255,255,.028);
+    color:var(--ink-light);
     cursor:pointer;
-    border:1.5px solid rgba(255,255,255,.08);
-    background:rgba(255,255,255,.03);
-    transition:transform .15s ease, border-color .2s ease, background .2s ease;
+    overflow:hidden;
     user-select:none;
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,.07),
+      0 14px 32px -18px rgba(0,0,0,.85);
+    transition:
+      transform .22s cubic-bezier(.2,.8,.2,1),
+      border-color .22s ease,
+      background .25s ease,
+      box-shadow .25s ease;
   }
-  .genre-card:active{transform:scale(.96);}
+
+  .genre-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    opacity:.75;
+    pointer-events:none;
+    transition:opacity .25s ease;
+  }
+  .genre-card:hover{
+    transform:translateY(-3px);
+    border-color:rgba(255,255,255,.2);
+  }
+  .genre-card:active{transform:scale(.975);}
+
+  /* Per-genre subtle atmosphere inside lobby cards */
+  .genre-card[data-g="romance"]{
+    --g-accent:#ea7a8f;
+    --g-glow:rgba(234,122,143,.24);
+  }
+  .genre-card[data-g="romance"]::before{
+    background:radial-gradient(circle at 85% 15%, rgba(234,122,143,.22), transparent 62%);
+  }
+
+  .genre-card[data-g="comedy"]{
+    --g-accent:#f5b041;
+    --g-glow:rgba(245,176,65,.24);
+  }
+  .genre-card[data-g="comedy"]::before{
+    background:radial-gradient(circle at 85% 15%, rgba(245,176,65,.22), transparent 62%);
+  }
+
+  .genre-card[data-g="fantasy"]{
+    --g-accent:#9f85f7;
+    --g-glow:rgba(159,133,247,.26);
+  }
+  .genre-card[data-g="fantasy"]::before{
+    background:radial-gradient(circle at 85% 15%, rgba(159,133,247,.24), transparent 62%);
+  }
+
+  .genre-card[data-g="mystery"]{
+    --g-accent:#92a3ba;
+    --g-glow:rgba(146,163,186,.24);
+  }
+  .genre-card[data-g="mystery"]::before{
+    background:radial-gradient(circle at 85% 15%, rgba(146,163,186,.20), transparent 62%);
+  }
+
+  .genre-card-top{
+    position:relative;
+    z-index:1;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:14px;
+  }
+  .g-icon{
+    width:36px;
+    height:36px;
+    border-radius:11px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.09);
+    color:var(--g-accent, #e8c170);
+    transition:transform .22s ease, background .22s ease, border-color .22s ease;
+  }
+  .g-icon svg{width:18px;height:18px;}
+
+  .check{
+    width:22px;height:22px;
+    border-radius:50%;
+    border:1.5px solid rgba(255,255,255,.18);
+    background:rgba(255,255,255,.04);
+    display:flex;align-items:center;justify-content:center;
+    transition:all .2s cubic-bezier(.2,.9,.3,1);
+  }
+  .check svg{
+    width:12px;height:12px;
+    stroke:#140d0f;
+    opacity:0;
+    transform:scale(.4);
+    transition:all .18s ease;
+  }
+
+  .genre-card-body{
+    position:relative;
+    z-index:1;
+    width:100%;
+  }
   .genre-card .g-name{
+    display:block;
+    font-family:var(--ui-display);
+    font-weight:700;
+    font-size:18px;
+    letter-spacing:-.2px;
+    margin-bottom:3px;
+    color:#fbf8f3;
+  }
+  .genre-card .g-meta{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:8px;
+    font-size:12px;
+    color:var(--ink-muted);
+    line-height:1.35;
+  }
+  .g-count{
+    font-family:var(--ui-mono);
+    font-size:10.5px;
+    color:rgba(255,255,255,.55);
+    flex-shrink:0;
+  }
+
+  /* Selected State */
+  .genre-card.selected{
+    border-color:var(--g-accent, var(--rose));
+    background:rgba(255,255,255,.065);
+    box-shadow:
+      0 0 0 1px var(--g-accent, var(--rose)) inset,
+      0 18px 36px -18px var(--g-glow, rgba(234,122,143,.45));
+  }
+  .genre-card.selected::before{opacity:1;}
+  .genre-card.selected .g-icon{
+    background:var(--g-glow, rgba(234,122,143,.2));
+    border-color:rgba(255,255,255,.22);
+    transform:scale(1.06);
+  }
+  .genre-card.selected .check{
+    background:var(--g-accent, var(--rose));
+    border-color:var(--g-accent, var(--rose));
+    box-shadow:0 0 14px var(--g-glow, rgba(234,122,143,.5));
+  }
+  .genre-card.selected .check svg{
+    opacity:1;
+    transform:scale(1);
+  }
+
+  .genre-status{
+    font-size:13px;
+    color:var(--ink-muted);
+    margin:18px 0 0;
+    min-height:20px;
+    text-align:center;
+    max-width:380px;
+    line-height:1.55;
+  }
+  .genre-status.error{color:#f38b9d;}
+  .genre-status code{
+    background:rgba(255,255,255,.08);
+    padding:2px 7px;
+    border-radius:6px;
+    font-family:var(--ui-mono);
+    font-size:11.5px;
+  }
+
+  #start-btn{
+    margin-top:20px;
+    padding:16px 44px;
+    border-radius:999px;
+    border:1px solid rgba(255,255,255,.08);
     font-family:var(--ui-display);
     font-weight:700;
     font-size:15px;
     letter-spacing:.3px;
-  }
-  .genre-card[data-g="romance"]{background:linear-gradient(150deg,rgba(229,143,160,.10),rgba(255,255,255,.02));}
-  .genre-card[data-g="comedy"]{background:linear-gradient(150deg,rgba(255,180,84,.12),rgba(255,255,255,.02));}
-  .genre-card[data-g="fantasy"]{background:linear-gradient(150deg,rgba(89,195,180,.10),rgba(255,255,255,.02));}
-  .genre-card[data-g="mystery"]{background:linear-gradient(150deg,rgba(154,48,64,.14),rgba(255,255,255,.02));}
-  .genre-card.selected{
-    border-color:#e9788c;
-    background:rgba(233,120,140,.14);
-    box-shadow:0 0 0 1px rgba(233,120,140,.4) inset, 0 8px 20px -10px rgba(233,120,140,.5);
-  }
-  .genre-card.selected .check{
-    opacity:1;
-    transform:scale(1);
-  }
-  .check{
-    position:absolute;
-    top:8px;
-    right:8px;
-    width:20px;height:20px;
-    border-radius:50%;
-    background:#e9788c;
-    display:flex;align-items:center;justify-content:center;
-    opacity:0;
-    transform:scale(.5);
-    transition:all .18s ease;
-  }
-  .check svg{width:11px;height:11px;stroke:#1a0e10;}
-
-  #start-btn{
-    margin-top:30px;
-    padding:15px 42px;
-    border-radius:30px;
-    border:none;
-    font-family:var(--ui-display);
-    font-weight:700;
-    font-size:15px;
-    letter-spacing:.4px;
-    background:#2a2a2e;
-    color:#6f6c66;
+    background:rgba(255,255,255,.05);
+    color:var(--ink-dim);
     cursor:not-allowed;
-    transition:all .25s ease;
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    transition:all .26s cubic-bezier(.2,.8,.2,1);
   }
   #start-btn.ready{
-    background:linear-gradient(100deg,#e9788c,#e6be6e);
-    color:#1a0e10;
+    background:linear-gradient(115deg, #f0899c 0%, #ecc576 100%);
+    border-color:rgba(255,255,255,.35);
+    color:#160c0f;
     cursor:pointer;
-    box-shadow:0 10px 24px -10px rgba(233,120,140,.6);
+    box-shadow:
+      0 14px 34px -10px rgba(234,122,143,.55),
+      inset 0 1px 0 rgba(255,255,255,.5);
+  }
+  #start-btn.ready:hover{
+    transform:translateY(-2px);
+    box-shadow:
+      0 18px 40px -10px rgba(234,122,143,.7),
+      inset 0 1px 0 rgba(255,255,255,.6);
   }
   #start-btn.ready:active{transform:scale(.97);}
 
-  /* ================= STAGE (holds phone frame + desktop arrows) ================= */
+  @media (max-width:520px){
+    .brand-sub{margin-bottom:24px;}
+    .genre-grid{gap:10px;}
+    .genre-card{
+      min-height:112px;
+      padding:14px 14px 13px;
+      border-radius:17px;
+    }
+    .g-icon{width:32px;height:32px;border-radius:9px;}
+    .g-icon svg{width:16px;height:16px;}
+    .genre-card .g-name{font-size:16px;}
+    .genre-card .g-meta{font-size:11px;}
+    .genre-card-top{margin-bottom:10px;}
+    #start-btn{width:100%;max-width:320px;justify-content:center;padding:15px 28px;}
+  }
+  @media (max-height:660px){
+    .brand{font-size:36px;margin-bottom:8px;}
+    .brand-sub{margin-bottom:18px;font-size:13px;}
+    .edition-badge{margin-bottom:12px;}
+    .genre-card{min-height:96px;padding:12px 14px;}
+  }
+
+  /* ==========================================================================
+     2. READING STAGE (#stage)
+     ========================================================================== */
   #stage{
+    position:relative;
     height:100%;
     width:100%;
     display:flex;
     align-items:center;
     justify-content:center;
-    gap:22px;
-    background:#0b0b0d;
+    background:var(--bg-void);
+    overflow:hidden;
   }
+
+  /* Dynamic Cinema Backdrop — reacts smoothly to active story genre */
+  .stage-backdrop{
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    z-index:0;
+    background:
+      radial-gradient(circle at 50% 45%, rgba(255,255,255,.04), transparent 60%),
+      #070709;
+    transition:background .7s ease;
+  }
+  #stage[data-genre="romance"] .stage-backdrop{
+    background:
+      radial-gradient(ellipse 65% 65% at 38% 35%, rgba(212,78,108,.24), transparent 65%),
+      radial-gradient(ellipse 55% 55% at 72% 75%, rgba(232,193,112,.14), transparent 65%),
+      #090507;
+  }
+  #stage[data-genre="comedy"] .stage-backdrop{
+    background:
+      radial-gradient(ellipse 65% 65% at 40% 35%, rgba(255,176,65,.22), transparent 65%),
+      radial-gradient(ellipse 55% 55% at 75% 75%, rgba(249,95,79,.16), transparent 65%),
+      #0b0705;
+  }
+  #stage[data-genre="fantasy"] .stage-backdrop{
+    background:
+      radial-gradient(ellipse 65% 65% at 40% 35%, rgba(124,78,224,.26), transparent 65%),
+      radial-gradient(ellipse 55% 55% at 75% 75%, rgba(91,200,184,.14), transparent 65%),
+      #06040e;
+  }
+  #stage[data-genre="mystery"] .stage-backdrop{
+    background:
+      radial-gradient(ellipse 65% 65% at 42% 35%, rgba(120,145,180,.18), transparent 65%),
+      radial-gradient(ellipse 55% 55% at 75% 75%, rgba(175,52,70,.14), transparent 65%),
+      #050608;
+  }
+
+  .stage-layout{
+    position:relative;
+    z-index:1;
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:28px;
+  }
+
+  /* Mobile-first full-bleed phone frame */
   .phone-frame{
     position:relative;
     width:100%;
-    height:100dvh;
-    max-width:460px;
-    max-height:960px;
+    height:100%;
+    max-width:480px;
     overflow:hidden;
     background:#000;
-    box-shadow:none;
   }
+
   @media (min-width:760px){
+    .stage-layout{
+      padding:20px 28px;
+    }
     .phone-frame{
-      width:420px;
-      height:min(88vh,880px);
-      border-radius:32px;
-      box-shadow:0 30px 80px -20px rgba(0,0,0,.7), 0 0 0 8px #17171a, 0 0 0 9px rgba(255,255,255,.06);
+      width:min(430px, calc(100vw - 260px));
+      height:min(88dvh, 840px);
+      min-width:340px;
+      border-radius:34px;
+      box-shadow:
+        0 38px 90px -20px rgba(0,0,0,.85),
+        0 0 0 1px rgba(255,255,255,.14),
+        0 0 0 9px rgba(20,20,24,.9),
+        0 0 0 10px rgba(255,255,255,.07);
     }
   }
 
+  /* ==========================================================================
+     3. THE REEL SURFACE & LAYOUT
+     ========================================================================== */
   .reel{
     position:relative;
     width:100%;
     height:100%;
+    border-radius:inherit;
     overflow:hidden;
-    background:#15151a;
-    transition:background 0.5s ease;
+    background:#141418;
+    transition:background .55s ease;
   }
+  /* Subtle editorial vignette inside the reel */
   .reel::before{
     content:"";
     position:absolute;
     inset:0;
     pointer-events:none;
     z-index:2;
-    background:linear-gradient(to bottom, rgba(0,0,0,.24) 0%, transparent 20%, transparent 66%, rgba(0,0,0,.42) 100%);
+    background:linear-gradient(
+      to bottom,
+      rgba(0,0,0,.32) 0%,
+      transparent 22%,
+      transparent 66%,
+      rgba(0,0,0,.46) 100%
+    );
   }
+  /* Glossy inner hairline frame */
+  .reel-rim{
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    z-index:8;
+    border-radius:inherit;
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.18);
+  }
+
   .reel-surface{
     position:absolute;
     inset:0;
+    z-index:4;
     display:flex;
     flex-direction:column;
+    padding-top:var(--safe-top);
+    padding-bottom:var(--safe-bottom);
   }
 
-  /* progress segments */
+  /* Progress Segments */
   .progress-row{
     display:flex;
-    gap:5px;
-    padding:14px 14px 0;
+    gap:6px;
+    padding:14px 16px 0;
     position:relative;
-    z-index:5;
+    z-index:6;
+    flex-shrink:0;
   }
   .seg{
     flex:1;
-    height:3px;
-    border-radius:3px;
-    background:rgba(255,255,255,.25);
+    height:3.5px;
+    border-radius:999px;
+    background:rgba(255,255,255,.22);
     overflow:hidden;
   }
   .seg i{
     display:block;
     height:100%;
     width:0%;
+    border-radius:999px;
     background:#fff;
-    transition:width .35s ease;
+    transition:width .35s cubic-bezier(.22,1,.36,1);
+  }
+  .seg.active i{
+    box-shadow:0 0 10px rgba(255,255,255,.65);
   }
 
+  /* Top Meta Bar */
   .top-bar{
     position:relative;
-    z-index:5;
+    z-index:6;
     padding:14px 18px 0;
     display:flex;
     align-items:center;
+    justify-content:space-between;
     gap:10px;
+    flex-shrink:0;
   }
   .genre-pill{
-    font-size:10px;
-    letter-spacing:1.2px;
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    font-family:var(--ui-mono);
+    font-size:10.5px;
+    letter-spacing:1.4px;
     text-transform:uppercase;
-    padding:4px 10px;
-    border-radius:20px;
-    background:rgba(255,255,255,.14);
-    backdrop-filter:blur(6px);
-    font-weight:700;
-    font-family:var(--ui-display);
+    padding:5px 11px;
+    border-radius:999px;
+    background:rgba(255,255,255,.13);
+    border:1px solid rgba(255,255,255,.16);
+    backdrop-filter:blur(8px);
+    font-weight:500;
   }
+  .slide-counter{
+    font-family:var(--ui-mono);
+    font-size:11px;
+    letter-spacing:.8px;
+    color:rgba(255,255,255,.72);
+    padding:4px 9px;
+    border-radius:999px;
+    background:rgba(0,0,0,.22);
+    border:1px solid rgba(255,255,255,.1);
+  }
+
   .story-title{
-    margin:10px 18px 0;
+    margin:12px 20px 0;
     position:relative;
-    z-index:5;
-    font-size:22px;
-    line-height:1.25;
-    text-shadow:0 2px 14px rgba(0,0,0,.45);
+    z-index:6;
+    font-size:clamp(21px, 3.2vw, 25px);
+    line-height:1.22;
+    text-shadow:0 2px 16px rgba(0,0,0,.42);
     flex-shrink:0;
   }
 
-  /* content row: text column + action rail column, side by side so they never overlap */
+  /* Content Row: Slide Body + Action Rail */
   .content-row{
     flex:1;
     min-height:0;
     display:flex;
     flex-direction:row;
     position:relative;
-    z-index:4;
+    z-index:5;
   }
+
+  /* Note: margin:auto 0 on .slide-text safely centers short text AND scrolls tall text from the top */
   .slide-wrap{
     flex:1;
     min-width:0;
     display:flex;
-    align-items:center;
-    padding:6px 8px 6px 26px;
+    flex-direction:column;
+    padding:16px 10px 16px 22px;
     overflow-y:auto;
     scrollbar-width:none;
+    -webkit-mask-image:linear-gradient(to bottom, transparent 0, #000 12px, #000 calc(100% - 12px), transparent 100%);
+    mask-image:linear-gradient(to bottom, transparent 0, #000 12px, #000 calc(100% - 12px), transparent 100%);
   }
   .slide-wrap::-webkit-scrollbar{display:none;}
+
   .slide-text{
-    font-size:19px;
-    line-height:1.65;
-    margin:0;
-    text-shadow:0 2px 18px rgba(0,0,0,.4);
-    animation:slideIn .38s ease;
+    margin:auto 0;
+    font-size:18.5px;
+    line-height:1.68;
+    text-shadow:0 2px 18px rgba(0,0,0,.35);
+    word-wrap:break-word;
   }
-  @keyframes slideIn{
+
+  /* Directional Animations */
+  .slide-text.anim-next{animation:slideFromRight .36s cubic-bezier(.22,1,.36,1);}
+  .slide-text.anim-prev{animation:slideFromLeft .36s cubic-bezier(.22,1,.36,1);}
+  .slide-text.anim-story-next{animation:storyFromBottom .48s cubic-bezier(.22,1,.36,1);}
+  .slide-text.anim-story-prev{animation:storyFromTop .48s cubic-bezier(.22,1,.36,1);}
+
+  @keyframes slideFromRight{
     from{opacity:0; transform:translateX(26px);}
     to{opacity:1; transform:translateX(0);}
   }
-  .slide-text.story-in{
-    animation:storyIn .5s ease;
+  @keyframes slideFromLeft{
+    from{opacity:0; transform:translateX(-26px);}
+    to{opacity:1; transform:translateX(0);}
   }
-  @keyframes storyIn{
-    from{opacity:0; transform:translateY(18px);}
+  @keyframes storyFromBottom{
+    from{opacity:0; transform:translateY(22px);}
     to{opacity:1; transform:translateY(0);}
   }
-  .slide-wrap.edge-bounce-left{animation:edgeBounceLeft .3s ease;}
-  .slide-wrap.edge-bounce-right{animation:edgeBounceRight .3s ease;}
-  @keyframes edgeBounceLeft{0%{transform:translateX(0);}45%{transform:translateX(16px);}100%{transform:translateX(0);}}
-  @keyframes edgeBounceRight{0%{transform:translateX(0);}45%{transform:translateX(-16px);}100%{transform:translateX(0);}}
+  @keyframes storyFromTop{
+    from{opacity:0; transform:translateY(-22px);}
+    to{opacity:1; transform:translateY(0);}
+  }
 
-  /* side action rail — own column, never overlaps the text column */
+  .slide-wrap.edge-bounce-left{animation:edgeBounceLeft .32s cubic-bezier(.2,.8,.3,1);}
+  .slide-wrap.edge-bounce-right{animation:edgeBounceRight .32s cubic-bezier(.2,.8,.3,1);}
+  @keyframes edgeBounceLeft{0%{transform:translateX(0);}42%{transform:translateX(14px);}100%{transform:translateX(0);}}
+  @keyframes edgeBounceRight{0%{transform:translateX(0);}42%{transform:translateX(-14px);}100%{transform:translateX(0);}}
+
+  /* Side Action Rail */
   .action-rail{
     flex-shrink:0;
-    width:58px;
+    width:62px;
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:flex-end;
-    gap:19px;
-    padding:0 10px 4px 0;
+    gap:16px;
+    padding:0 12px 10px 0;
     position:relative;
     z-index:6;
   }
   .action-btn{
-    background:none;border:none;color:#fff;cursor:pointer;
-    display:flex;flex-direction:column;align-items:center;gap:4px;
-    padding:0; font-family:var(--ui-body);
+    background:none;
+    border:none;
+    color:#fff;
+    cursor:pointer;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:5px;
+    padding:4px;
+    border-radius:14px;
+    transition:transform .16s ease;
   }
-  .action-btn svg{width:27px;height:27px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.5));transition:transform .15s ease;}
-  .action-btn:active svg{transform:scale(.8);}
-  .action-btn span{font-size:11px;font-weight:600;text-shadow:0 1px 6px rgba(0,0,0,.6);}
-  .action-btn.liked svg{fill:#ea3d5c;stroke:#ea3d5c;}
+  .action-btn-circle{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(0,0,0,.22);
+    border:1px solid rgba(255,255,255,.16);
+    backdrop-filter:blur(8px);
+    transition:background .2s ease, border-color .2s ease, transform .15s ease;
+  }
+  .action-btn:hover .action-btn-circle{
+    background:rgba(255,255,255,.14);
+    border-color:rgba(255,255,255,.32);
+  }
+  .action-btn:active .action-btn-circle{transform:scale(.86);}
+  .action-btn svg{
+    width:20px;
+    height:20px;
+    transition:transform .18s ease, fill .18s ease, stroke .18s ease;
+  }
+  .action-btn span{
+    font-family:var(--ui-sans);
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:.2px;
+    text-shadow:0 1px 6px rgba(0,0,0,.55);
+  }
+  .action-btn.liked .action-btn-circle{
+    background:rgba(234,61,92,.22);
+    border-color:rgba(234,61,92,.55);
+  }
+  .action-btn.liked svg{fill:#ff4b6e;stroke:#ff4b6e;}
+  .action-btn.saved .action-btn-circle{
+    background:rgba(255,255,255,.22);
+    border-color:rgba(255,255,255,.55);
+  }
   .action-btn.saved svg{fill:#fff;}
-  .pulse{animation:pulseKey .3s ease;}
-  @keyframes pulseKey{0%{transform:scale(1);}50%{transform:scale(1.3);}100%{transform:scale(1);}}
+  .pulse{animation:pulseKey .32s cubic-bezier(.2,.9,.3,1);}
+  @keyframes pulseKey{0%{transform:scale(1);}50%{transform:scale(1.32);}100%{transform:scale(1);}}
 
-  /* footer: profile row + swipe hint, own row below the content — never overlaps text or actions */
+  /* Footer Zone */
   .footer-zone{
     flex-shrink:0;
-    padding:0 18px 20px;
+    padding:6px 18px 18px;
     display:flex;
     flex-direction:column;
     gap:10px;
@@ -346,228 +816,467 @@
     gap:10px;
   }
   .avatar{
-    width:38px;height:38px;border-radius:50%;
+    width:36px;height:36px;border-radius:50%;
     display:flex;align-items:center;justify-content:center;
-    font-family:var(--ui-display);font-weight:800;font-size:13px;
-    background:conic-gradient(from 220deg,#e9788c,#e6be6e,#59c3b4,#e9788c);
-    color:#1a0e10;
-    border:2px solid rgba(255,255,255,.75);
+    font-family:var(--ui-display);font-weight:800;font-size:12px;
+    background:conic-gradient(from 210deg, #f0899c, #ecc576, #5bc8b8, #f0899c);
+    color:#160c0f;
+    border:2px solid rgba(255,255,255,.85);
+    box-shadow:0 4px 12px rgba(0,0,0,.35);
     flex-shrink:0;
+  }
+  .profile-meta{
+    display:flex;
+    align-items:center;
+    gap:8px;
   }
   .handle{
     font-weight:700;
     font-size:14px;
-    text-shadow:0 1px 8px rgba(0,0,0,.5);
+    letter-spacing:.1px;
+    text-shadow:0 1px 8px rgba(0,0,0,.45);
+  }
+  .handle-dot{
+    width:3px;height:3px;border-radius:50%;
+    background:rgba(255,255,255,.45);
+  }
+  .handle-tag{
+    font-family:var(--ui-mono);
+    font-size:10.5px;
+    letter-spacing:.6px;
+    opacity:.72;
   }
 
-  /* swipe hint */
+  /* Swipe Hint */
   .swipe-hint{
-    font-size:12.5px;
+    font-size:12px;
     font-weight:600;
-    letter-spacing:.2px;
-    color:rgba(255,255,255,.88);
+    letter-spacing:.25px;
+    color:rgba(255,255,255,.86);
     display:flex;
     align-items:center;
-    gap:6px;
-    text-shadow:0 1px 8px rgba(0,0,0,.5);
-    min-height:16px;
+    gap:7px;
+    text-shadow:0 1px 8px rgba(0,0,0,.45);
+    min-height:18px;
   }
   .swipe-hint .chev{
-    display:inline-block;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
     animation:chevBounce 1.3s ease-in-out infinite;
   }
   @keyframes chevBounce{
     0%,100%{transform:translateX(0);}
-    50%{transform:translateX(-5px);}
+    50%{transform:translateX(-4px);}
   }
   .swipe-hint.up .chev{animation:chevBounceUp 1.3s ease-in-out infinite;}
   @keyframes chevBounceUp{
     0%,100%{transform:translateY(0);}
-    50%{transform:translateY(-5px);}
+    50%{transform:translateY(-4px);}
   }
 
-  /* desktop arrows — 4-direction d-pad */
-  .desktop-arrows{
+  /* ==========================================================================
+     4. DESKTOP STUDIO CONTROLS (4-way D-pad dock)
+     ========================================================================== */
+  .desktop-controls{
     display:none;
-    grid-template-columns:50px 50px 50px;
-    grid-template-rows:50px 50px 50px;
-    gap:8px;
+    flex-direction:column;
+    align-items:center;
+    gap:16px;
+    padding:20px 18px;
+    border-radius:26px;
+    background:rgba(255,255,255,.035);
+    border:1px solid rgba(255,255,255,.09);
+    backdrop-filter:blur(16px);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,.08),
+      0 24px 50px -20px rgba(0,0,0,.8);
   }
   @media (min-width:760px){
-    .desktop-arrows{display:grid;}
+    .desktop-controls{display:flex;}
+  }
+
+  .controls-caption{
+    font-family:var(--ui-mono);
+    font-size:10px;
+    letter-spacing:1.8px;
+    text-transform:uppercase;
+    color:var(--ink-muted);
+    margin:0;
+  }
+
+  .desktop-arrows{
+    display:grid;
+    grid-template-columns:52px 52px 52px;
+    grid-template-rows:52px 52px 52px;
+    gap:8px;
+    align-items:center;
+    justify-items:center;
+  }
+  .dpad-center{
+    grid-column:2;
+    grid-row:2;
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.14);
   }
   .darrow{
-    width:50px;height:50px;
-    border-radius:50%;
-    border:1.5px solid rgba(255,255,255,.15);
+    width:52px;height:52px;
+    border-radius:16px;
+    border:1px solid rgba(255,255,255,.13);
     background:rgba(255,255,255,.05);
-    color:#f2f0ee;
+    color:var(--ink-light);
     display:flex;align-items:center;justify-content:center;
     cursor:pointer;
-    transition:all .15s ease;
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.07);
+    transition:all .16s ease;
   }
-  .darrow:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.3);}
-  .darrow:active{transform:scale(.92);}
-  .darrow:disabled{opacity:.3;cursor:default;}
-  .darrow:disabled:hover{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.15);}
-  .darrow svg{width:21px;height:21px;}
+  .darrow:hover:not(:disabled){
+    background:rgba(255,255,255,.13);
+    border-color:rgba(255,255,255,.32);
+    transform:translateY(-1px);
+  }
+  .darrow:active:not(:disabled){transform:scale(.93);}
+  .darrow:disabled{opacity:.25;cursor:default;}
+  .darrow svg{width:20px;height:20px;}
   .darrow.up{grid-column:2;grid-row:1;}
   .darrow.left{grid-column:1;grid-row:2;}
   .darrow.right{grid-column:3;grid-row:2;}
   .darrow.down{grid-column:2;grid-row:3;}
 
-  /* ================= GENRE THEMES ================= */
+  .controls-legend{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+    width:100%;
+    padding-top:12px;
+    border-top:1px solid rgba(255,255,255,.08);
+    font-size:11.5px;
+    color:var(--ink-muted);
+  }
+  .legend-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+  }
+  .legend-keys{
+    display:inline-flex;
+    gap:4px;
+  }
+  .kbd{
+    font-family:var(--ui-mono);
+    font-size:10px;
+    padding:2px 6px;
+    border-radius:6px;
+    background:rgba(255,255,255,.07);
+    border:1px solid rgba(255,255,255,.14);
+    color:#e2ddd3;
+  }
+
+  /* ==========================================================================
+     5. REBORN GENRE THEMES
+     ========================================================================== */
+
+  /* ROMANCE — Velvet Candlelight */
   .reel[data-genre="romance"]{
     background:
-      radial-gradient(2px 2px at 18% 22%, rgba(255,214,224,.5), transparent),
-      radial-gradient(1.5px 1.5px at 78% 15%, rgba(255,214,224,.4), transparent),
-      radial-gradient(2px 2px at 60% 78%, rgba(230,190,110,.35), transparent),
+      radial-gradient(2px 2px at 18% 22%, rgba(255,214,224,.55), transparent),
+      radial-gradient(1.5px 1.5px at 78% 15%, rgba(255,214,224,.45), transparent),
+      radial-gradient(2px 2px at 60% 78%, rgba(232,193,112,.40), transparent),
       radial-gradient(1.5px 1.5px at 30% 85%, rgba(255,214,224,.35), transparent),
-      radial-gradient(circle at 75% 90%, rgba(230,190,110,.10), transparent 45%),
-      radial-gradient(circle at 25% 35%, rgba(255,175,195,.14), transparent 50%),
-      radial-gradient(circle at 30% 0%,#6b2a3d,#2f121a 60%,#1c0a0f);
+      radial-gradient(circle at 75% 88%, rgba(232,193,112,.14), transparent 48%),
+      radial-gradient(circle at 22% 28%, rgba(234,122,143,.22), transparent 52%),
+      radial-gradient(circle at 30% 0%, #732940 0%, #31111c 58%, #18070d 100%);
   }
-  .reel[data-genre="romance"] .story-title{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;color:#ffd9e0;text-shadow:0 0 22px rgba(233,120,140,.5), 0 2px 14px rgba(0,0,0,.45);}
-  .reel[data-genre="romance"] .slide-text{font-family:'Lora',serif;color:#fbeee7;}
-  .reel[data-genre="romance"] .genre-pill{background:rgba(233,120,140,.28);color:#ffe1e7;}
-  .reel[data-genre="romance"] .handle{color:#ffe1e7;}
+  .reel[data-genre="romance"] .story-title{
+    font-family:'Cormorant Garamond',serif;
+    font-style:italic;
+    font-weight:700;
+    font-size:clamp(24px, 3.6vw, 29px);
+    color:#ffe2e7;
+    text-shadow:0 0 26px rgba(234,122,143,.45), 0 2px 14px rgba(0,0,0,.5);
+  }
+  .reel[data-genre="romance"] .slide-text{
+    font-family:'Lora',serif;
+    color:#fdf3ee;
+  }
+  .reel[data-genre="romance"] .genre-pill{
+    background:rgba(234,122,143,.24);
+    border-color:rgba(255,190,204,.28);
+    color:#ffe5ea;
+  }
+  .reel[data-genre="romance"] .seg i{background:#ffd7df;}
+  .reel[data-genre="romance"] .handle{color:#ffe5ea;}
 
+  /* COMEDY — Sunlit Pop-Editorial Print */
   .reel[data-genre="comedy"]{
     background:
-      radial-gradient(circle, rgba(255,255,255,.22) 1.4px, transparent 1.6px) 0 0/34px 34px,
-      radial-gradient(circle at 90% 8%, rgba(255,255,255,.40), transparent 30%),
-      radial-gradient(circle at 6% 92%, rgba(255,255,255,.20), transparent 34%),
-      linear-gradient(155deg,#ffc93c 0%,#ff9a3c 48%,#f9564f 100%);
+      radial-gradient(circle, rgba(160,65,10,.11) 1.3px, transparent 1.5px) 0 0 / 26px 26px,
+      radial-gradient(circle at 88% 10%, rgba(255,255,255,.55), transparent 36%),
+      radial-gradient(circle at 10% 90%, rgba(255,112,67,.22), transparent 40%),
+      linear-gradient(155deg, #fff1c9 0%, #ffd56b 48%, #ff9d52 100%);
   }
   .reel[data-genre="comedy"]::before{
-    background:linear-gradient(to bottom, rgba(255,255,255,.20) 0%, transparent 24%, transparent 58%, rgba(60,16,8,.30) 100%);
+    background:linear-gradient(
+      to bottom,
+      rgba(255,255,255,.26) 0%,
+      transparent 22%,
+      transparent 62%,
+      rgba(120,38,8,.16) 100%
+    );
+  }
+  .reel[data-genre="comedy"] .seg{background:rgba(42,19,5,.16);}
+  .reel[data-genre="comedy"] .seg i{background:#2a1305;}
+  .reel[data-genre="comedy"] .seg.active i{box-shadow:0 0 8px rgba(42,19,5,.35);}
+  .reel[data-genre="comedy"] .genre-pill{
+    background:rgba(255,255,255,.68);
+    border-color:rgba(42,19,5,.16);
+    color:#7a2709;
+  }
+  .reel[data-genre="comedy"] .slide-counter{
+    background:rgba(42,19,5,.10);
+    border-color:rgba(42,19,5,.14);
+    color:#3b1b09;
   }
   .reel[data-genre="comedy"] .story-title{
     font-family:'Poppins',sans-serif;
     font-style:italic;
     font-weight:800;
-    color:#2a1305;
-    text-shadow:0 2px 0 rgba(255,255,255,.55), 0 6px 16px rgba(60,16,8,.25);
+    color:#241004;
+    text-shadow:0 2px 0 rgba(255,255,255,.65);
   }
   .reel[data-genre="comedy"] .slide-text{
     font-family:'Nunito',sans-serif;
-    font-weight:800;
-    color:#2a1305;
-    text-shadow:0 1.5px 0 rgba(255,255,255,.45);
+    font-weight:700;
+    color:#241004;
+    text-shadow:0 1px 0 rgba(255,255,255,.45);
   }
-  .reel[data-genre="comedy"] .genre-pill{background:rgba(255,255,255,.55);color:#8a2e10;}
-  .reel[data-genre="comedy"] .handle{color:#2a1305;}
-  .reel[data-genre="comedy"] .swipe-hint{color:rgba(40,16,4,.88);}
-  .reel[data-genre="comedy"] .action-btn{color:#2a1305;}
-  .reel[data-genre="comedy"] .action-btn svg{filter:none;}
+  .reel[data-genre="comedy"] .action-btn{color:#241004;}
+  .reel[data-genre="comedy"] .action-btn-circle{
+    background:rgba(255,255,255,.5);
+    border-color:rgba(42,19,5,.16);
+  }
+  .reel[data-genre="comedy"] .action-btn:hover .action-btn-circle{
+    background:rgba(255,255,255,.82);
+  }
+  .reel[data-genre="comedy"] .action-btn.liked .action-btn-circle{
+    background:rgba(234,61,92,.18);
+    border-color:rgba(234,61,92,.5);
+  }
+  .reel[data-genre="comedy"] .action-btn.saved .action-btn-circle{
+    background:#241004;
+    color:#ffd56b;
+  }
+  .reel[data-genre="comedy"] .action-btn.saved svg{fill:#ffd56b;stroke:#ffd56b;}
+  .reel[data-genre="comedy"] .action-btn span{text-shadow:none;}
+  .reel[data-genre="comedy"] .handle{color:#241004;text-shadow:none;}
+  .reel[data-genre="comedy"] .handle-dot{background:rgba(36,16,4,.4);}
+  .reel[data-genre="comedy"] .handle-tag{color:#4d250b;}
+  .reel[data-genre="comedy"] .swipe-hint{color:rgba(36,16,4,.85);text-shadow:none;}
 
+  /* FANTASY — Astral Grimoire */
   .reel[data-genre="fantasy"]{
     background:
       radial-gradient(1.5px 1.5px at 20% 20%, #fff, transparent),
       radial-gradient(1px 1px at 70% 15%, #fff, transparent),
-      radial-gradient(1.5px 1.5px at 40% 65%, #e6be6e, transparent),
+      radial-gradient(1.5px 1.5px at 40% 65%, #e8c170, transparent),
       radial-gradient(1px 1px at 85% 70%, #fff, transparent),
       radial-gradient(1.5px 1.5px at 55% 85%, #fff, transparent),
-      radial-gradient(1px 1px at 10% 80%, #59c3b4, transparent),
+      radial-gradient(1px 1px at 10% 80%, #5bc8b8, transparent),
       radial-gradient(1px 1px at 92% 40%, #fff, transparent),
-      radial-gradient(1.5px 1.5px at 5% 45%, #e6be6e, transparent),
-      radial-gradient(circle at 50% 0%, #4a2680,#170a30 65%, #0e0620);
+      radial-gradient(1.5px 1.5px at 5% 45%, #e8c170, transparent),
+      radial-gradient(circle at 50% 0%, #4b2488 0%, #190c36 62%, #0c061e 100%);
   }
   .reel[data-genre="fantasy"]::after{
     content:"";
-    position:absolute;inset:0;
+    position:absolute;
+    inset:0;
     background:
       radial-gradient(1.5px 1.5px at 25% 30%, #fff, transparent),
       radial-gradient(1px 1px at 65% 55%, #fff, transparent),
-      radial-gradient(1.5px 1.5px at 80% 22%, #e6be6e, transparent);
-    animation:twinkle 3.4s ease-in-out infinite;
+      radial-gradient(1.5px 1.5px at 80% 22%, #e8c170, transparent);
+    animation:twinkle 3.6s ease-in-out infinite;
     pointer-events:none;
     z-index:1;
   }
   @keyframes twinkle{0%,100%{opacity:.25;}50%{opacity:.95;}}
-  .reel[data-genre="fantasy"] .story-title{font-family:'Cinzel',serif;font-weight:700;color:#e9d9a8;letter-spacing:.5px;text-shadow:0 0 18px rgba(233,190,110,.55), 0 2px 14px rgba(0,0,0,.5);}
-  .reel[data-genre="fantasy"] .slide-text{font-family:'EB Garamond',serif;font-size:20px;color:#eee6f7;}
-  .reel[data-genre="fantasy"] .genre-pill{background:rgba(217,180,92,.18);color:#e9d9a8;}
-  .reel[data-genre="fantasy"] .handle{color:#e9d9a8;}
+  .reel[data-genre="fantasy"] .story-title{
+    font-family:'Cinzel',serif;
+    font-weight:700;
+    color:#f0deb0;
+    letter-spacing:.5px;
+    text-shadow:0 0 22px rgba(232,193,112,.5), 0 2px 14px rgba(0,0,0,.55);
+  }
+  .reel[data-genre="fantasy"] .slide-text{
+    font-family:'EB Garamond',serif;
+    font-size:20px;
+    color:#f1eafb;
+  }
+  .reel[data-genre="fantasy"] .genre-pill{
+    background:rgba(232,193,112,.16);
+    border-color:rgba(232,193,112,.3);
+    color:#f0deb0;
+  }
+  .reel[data-genre="fantasy"] .seg i{background:#f0deb0;}
+  .reel[data-genre="fantasy"] .handle{color:#f0deb0;}
 
+  /* MYSTERY — Neo-Noir Dossier */
   .reel[data-genre="mystery"]{
     background:
-      radial-gradient(ellipse at 50% 30%, rgba(150,170,200,.12), transparent 45%),
-      radial-gradient(ellipse at 50% 40%, rgba(120,140,170,.10), transparent 55%),
-      radial-gradient(ellipse at 50% 50%, #26262d 0%, #101012 75%, #060607 100%);
+      repeating-linear-gradient(
+        -24deg,
+        rgba(255,255,255,.018) 0px,
+        rgba(255,255,255,.018) 28px,
+        transparent 28px,
+        transparent 68px
+      ),
+      radial-gradient(ellipse at 45% 24%, rgba(145,168,200,.14), transparent 52%),
+      radial-gradient(ellipse at 50% 50%, #24262e 0%, #101115 72%, #060608 100%);
   }
-  .reel[data-genre="mystery"]::after{
-    content:"";
-    position:absolute;inset:0;
-    background:repeating-radial-gradient(circle at 50% 50%, rgba(255,255,255,.025) 0, rgba(255,255,255,.025) 1px, transparent 1px, transparent 3px);
-    mix-blend-mode:overlay;
-    pointer-events:none;
-    z-index:3;
+  .reel[data-genre="mystery"] .story-title{
+    font-family:'Special Elite',cursive;
+    font-weight:400;
+    color:#e4c4ba;
+    letter-spacing:.4px;
+    text-shadow:0 0 22px rgba(145,168,200,.25), 0 2px 14px rgba(0,0,0,.65);
   }
-  .reel[data-genre="mystery"] .story-title{font-family:'Special Elite',cursive;font-weight:400;color:#d8b6ac;letter-spacing:.5px;text-shadow:0 0 20px rgba(140,160,190,.3), 0 2px 14px rgba(0,0,0,.6);}
-  .reel[data-genre="mystery"] .slide-text{font-family:'IBM Plex Mono',monospace;color:#d9d6cf;font-size:16.5px;line-height:1.75;}
-  .reel[data-genre="mystery"] .genre-pill{background:rgba(154,48,64,.28);color:#f0c9ce;}
+  .reel[data-genre="mystery"] .slide-text{
+    font-family:'IBM Plex Mono',monospace;
+    color:#dedad2;
+    font-size:15.5px;
+    line-height:1.78;
+  }
+  .reel[data-genre="mystery"] .genre-pill{
+    background:rgba(182,58,76,.26);
+    border-color:rgba(230,115,132,.3);
+    color:#f5cfd5;
+  }
+  .reel[data-genre="mystery"] .seg i{background:#e4c4ba;}
   .reel[data-genre="mystery"] .handle{color:#e6e2d8;}
 
-  /* on desktop the phone frame is smaller but the viewport is huge — the mobile-tuned
-     font size left almost no breathing room, so trim it down and open up the padding */
+  /* Responsive Typography Tuning */
   @media (min-width:760px){
-    .slide-wrap{padding:6px 16px 6px 30px;}
-    .slide-text{font-size:16.5px;}
-    .reel[data-genre="fantasy"] .slide-text{font-size:17.5px;}
-    .reel[data-genre="mystery"] .slide-text{font-size:15px;}
+    .slide-wrap{padding:14px 14px 14px 26px;}
+    .slide-text{font-size:16.5px;line-height:1.68;}
+    .reel[data-genre="fantasy"] .slide-text{font-size:18px;}
+    .reel[data-genre="mystery"] .slide-text{font-size:14.5px;line-height:1.75;}
+  }
+  @media (max-width:380px){
+    .slide-wrap{padding:10px 6px 10px 16px;}
+    .slide-text{font-size:17px;line-height:1.6;}
+    .reel[data-genre="fantasy"] .slide-text{font-size:18.5px;}
+    .reel[data-genre="mystery"] .slide-text{font-size:14.5px;}
+    .action-rail{width:54px;gap:12px;padding-right:8px;}
+    .action-btn-circle{width:36px;height:36px;}
+  }
+  @media (max-height:600px){
+    .story-title{margin-top:8px;font-size:20px;}
+    .action-rail{gap:10px;padding-bottom:6px;}
+    .action-btn-circle{width:34px;height:34px;}
+    .footer-zone{padding-bottom:12px;gap:6px;}
   }
 
-  /* ================= END SCREEN ================= */
+  /* ==========================================================================
+     6. END OF STORIES SCREEN (#end-screen)
+     ========================================================================== */
   #end-screen{
     position:absolute;
     inset:0;
+    z-index:20;
     display:flex;
-    flex-direction:column;
     align-items:center;
     justify-content:center;
-    text-align:center;
-    padding:40px;
-    background:radial-gradient(circle at 50% 30%, rgba(233,120,140,.15), transparent 50%), #0b0b0d;
-    z-index:20;
+    padding:24px;
+    background:
+      radial-gradient(circle at 50% 35%, rgba(234,122,143,.16), transparent 58%),
+      rgba(7,7,9,.92);
+    backdrop-filter:blur(18px);
+    animation:fadeIn .35s ease;
   }
-  #end-screen .e-icon{font-size:38px;margin-bottom:18px;}
+  @keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+
+  .end-card{
+    width:100%;
+    max-width:380px;
+    padding:36px 28px 30px;
+    border-radius:28px;
+    text-align:center;
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.11);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,.1),
+      0 30px 70px -20px rgba(0,0,0,.9);
+  }
+  .e-icon{
+    width:62px;height:62px;
+    margin:0 auto 20px;
+    border-radius:18px;
+    display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(135deg, rgba(234,122,143,.18), rgba(232,193,112,.14));
+    border:1px solid rgba(255,255,255,.14);
+    color:var(--gold);
+  }
+  .e-icon svg{width:28px;height:28px;}
   #end-screen h2{
     font-family:var(--ui-display);
     font-weight:700;
-    font-size:22px;
+    font-size:24px;
+    letter-spacing:-.4px;
     margin:0 0 10px;
+    color:var(--ink-light);
   }
   #end-screen p{
-    color:#a8a59d;
+    color:var(--ink-muted);
     font-size:14px;
-    line-height:1.6;
-    max-width:280px;
+    line-height:1.65;
     margin:0 0 26px;
   }
   #restart-btn{
-    padding:13px 32px;
-    border-radius:30px;
-    border:none;
+    width:100%;
+    padding:15px 28px;
+    border-radius:999px;
+    border:1px solid rgba(255,255,255,.3);
     font-family:var(--ui-display);
     font-weight:700;
-    font-size:14px;
-    background:linear-gradient(100deg,#e9788c,#e6be6e);
-    color:#1a0e10;
+    font-size:14.5px;
+    background:linear-gradient(115deg, #f0899c 0%, #ecc576 100%);
+    color:#160c0f;
     cursor:pointer;
+    box-shadow:0 12px 28px -10px rgba(234,122,143,.55);
+    transition:transform .16s ease, box-shadow .2s ease;
+  }
+  #restart-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 16px 34px -10px rgba(234,122,143,.7);
   }
   #restart-btn:active{transform:scale(.97);}
+
   #reset-history-btn{
-    margin-top:18px;
+    margin-top:16px;
     background:none;
     border:none;
-    color:#6f6c66;
-    font-size:12px;
+    color:var(--ink-muted);
+    font-size:12.5px;
     text-decoration:underline;
+    text-underline-offset:3px;
     cursor:pointer;
-    font-family:var(--ui-body);
+    padding:6px 10px;
+    border-radius:8px;
+    transition:color .18s ease;
   }
-  #reset-history-btn:active{color:#9a978f;}
+  #reset-history-btn:hover{color:var(--ink-light);}
+
+  /* Reduced Motion Support */
+  @media (prefers-reduced-motion: reduce){
+    *, *::before, *::after{
+      animation-duration:.01ms !important;
+      animation-iteration-count:1 !important;
+      transition-duration:.01ms !important;
+    }
+  }
 </style>
 </head>
 <body>
@@ -575,82 +1284,141 @@
 <div id="app">
 
   <!-- ============ GENRE SELECTION SCREEN ============ -->
-  <div id="genre-screen">
-    <h1 class="brand">reeltale</h1>
-    <p class="brand-sub">Tiny stories, told one slide at a time. Pick what you're in the mood for.</p>
-    <p class="genre-prompt">Choose your genres</p>
-    <div class="genre-grid" id="genre-grid"></div>
-    <p class="genre-status" id="genre-status">Loading stories…</p>
-    <button id="start-btn">Start reading</button>
-  </div>
+  <main id="genre-screen">
+    <div class="lobby-aura" aria-hidden="true"></div>
+
+    <div class="lobby-shell">
+      <div class="edition-badge">
+        <span class="edition-dot" aria-hidden="true"></span>
+        <span>Flash Fiction Reels</span>
+      </div>
+
+      <h1 class="brand">reeltale</h1>
+      <p class="brand-sub">Tiny stories, told one slide at a time. Pick what you're in the mood for.</p>
+
+      <div class="genre-section-head">
+        <p class="genre-prompt" id="genre-prompt-label">Choose your genres</p>
+      </div>
+
+      <div class="genre-grid" id="genre-grid" role="group" aria-labelledby="genre-prompt-label"></div>
+
+      <p class="genre-status" id="genre-status" aria-live="polite">Loading stories…</p>
+
+      <button type="button" id="start-btn">Start reading</button>
+    </div>
+  </main>
 
   <!-- ============ MAIN REELS SCREEN ============ -->
-  <div id="stage" class="hidden">
-    <div class="phone-frame">
-      <div class="reel" id="reel" data-genre="romance">
-        <div class="reel-surface">
-          <div class="progress-row" id="progress-row"></div>
-          <div class="top-bar">
-            <span class="genre-pill" id="genre-pill">Romance</span>
-          </div>
-          <h1 class="story-title" id="story-title">Title</h1>
+  <div id="stage" class="hidden" data-genre="romance">
+    <div class="stage-backdrop" aria-hidden="true"></div>
 
-          <div class="content-row">
-            <div class="slide-wrap">
-              <p class="slide-text" id="slide-text">Slide text</p>
+    <div class="stage-layout">
+      <div class="phone-frame">
+        <article class="reel" id="reel" data-genre="romance" aria-label="Story reader">
+          <div class="reel-rim" aria-hidden="true"></div>
+          <div class="reel-surface">
+            <div class="progress-row" id="progress-row" aria-hidden="true"></div>
+
+            <div class="top-bar">
+              <span class="genre-pill" id="genre-pill">Romance</span>
+              <span class="slide-counter" id="slide-counter" aria-label="Slide progress">1 / 1</span>
             </div>
-            <div class="action-rail">
-              <button class="action-btn" id="like-btn">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6z"></path></svg>
-                <span id="like-count">2.4k</span>
-              </button>
-              <button class="action-btn" id="comment-btn">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-4-1L3 20l1-5.5A8.5 8.5 0 1 1 21 11.5z"></path></svg>
-                <span>318</span>
-              </button>
-              <button class="action-btn" id="share-btn">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-                <span>Share</span>
-              </button>
-              <button class="action-btn" id="save-btn">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
-                <span>Save</span>
-              </button>
+
+            <h1 class="story-title" id="story-title" aria-live="polite">Title</h1>
+
+            <div class="content-row">
+              <div class="slide-wrap">
+                <p class="slide-text" id="slide-text" aria-live="polite">Slide text</p>
+              </div>
+
+              <div class="action-rail" aria-label="Story actions">
+                <button type="button" class="action-btn" id="like-btn" aria-label="Like story">
+                  <span class="action-btn-circle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6z"></path></svg>
+                  </span>
+                  <span id="like-count">2.4k</span>
+                </button>
+                <button type="button" class="action-btn" id="comment-btn" aria-label="Comments">
+                  <span class="action-btn-circle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-4-1L3 20l1-5.5A8.5 8.5 0 1 1 21 11.5z"></path></svg>
+                  </span>
+                  <span>318</span>
+                </button>
+                <button type="button" class="action-btn" id="share-btn" aria-label="Share story">
+                  <span class="action-btn-circle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                  </span>
+                  <span>Share</span>
+                </button>
+                <button type="button" class="action-btn" id="save-btn" aria-label="Save story">
+                  <span class="action-btn-circle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+                  </span>
+                  <span>Save</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="footer-zone">
+              <div class="profile-row">
+                <div class="avatar" aria-hidden="true">PK</div>
+                <div class="profile-meta">
+                  <span class="handle">pkthethug</span>
+                  <span class="handle-dot" aria-hidden="true"></span>
+                  <span class="handle-tag">REELTALE</span>
+                </div>
+              </div>
+              <div class="swipe-hint" id="swipe-hint"></div>
             </div>
           </div>
+        </article>
+      </div>
 
-          <div class="footer-zone">
-            <div class="profile-row">
-              <div class="avatar">PK</div>
-              <span class="handle">pkthethug</span>
-            </div>
-            <div class="swipe-hint" id="swipe-hint"><span class="chev">‹</span> Swipe left to keep reading</div>
+      <!-- Desktop D-pad Navigation Dock -->
+      <aside class="desktop-controls" aria-label="Reader navigation controls">
+        <p class="controls-caption">Navigation</p>
+        <div class="desktop-arrows">
+          <button type="button" class="darrow up" id="arrow-up" title="Previous story (Arrow Up)" aria-label="Previous story">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+          </button>
+          <button type="button" class="darrow left" id="arrow-left" title="Previous slide (Arrow Left)" aria-label="Previous slide">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+          <div class="dpad-center" aria-hidden="true"></div>
+          <button type="button" class="darrow right" id="arrow-right" title="Next slide (Arrow Right)" aria-label="Next slide">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+          <button type="button" class="darrow down" id="arrow-down" title="Next story (Arrow Down)" aria-label="Next story">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+        </div>
+        <div class="controls-legend" aria-hidden="true">
+          <div class="legend-row">
+            <span>Slides</span>
+            <span class="legend-keys"><span class="kbd">←</span><span class="kbd">→</span></span>
+          </div>
+          <div class="legend-row">
+            <span>Stories</span>
+            <span class="legend-keys"><span class="kbd">↑</span><span class="kbd">↓</span></span>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="desktop-arrows">
-      <button class="darrow up" id="arrow-up" title="Previous story">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
-      </button>
-      <button class="darrow left" id="arrow-left" title="Previous slide">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
-      </button>
-      <button class="darrow right" id="arrow-right" title="Next slide">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-      </button>
-      <button class="darrow down" id="arrow-down" title="Next story">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-      </button>
+      </aside>
     </div>
 
     <!-- ============ END OF STORIES SCREEN ============ -->
-    <div id="end-screen" class="hidden">
-      <div class="e-icon">📖</div>
-      <h2>That's all for now</h2>
-      <p>You've reached the end of today's stories. Keep coming back for more.</p>
-      <button id="restart-btn">Choose genres again</button>
-      <button id="reset-history-btn">Reset read history</button>
+    <div id="end-screen" class="hidden" role="dialog" aria-modal="true" aria-labelledby="end-title">
+      <div class="end-card">
+        <div class="e-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+          </svg>
+        </div>
+        <h2 id="end-title">That's all for now</h2>
+        <p>You've reached the end of today's stories. Keep coming back for more.</p>
+        <button type="button" id="restart-btn">Choose genres again</button>
+        <button type="button" id="reset-history-btn">Reset read history</button>
+      </div>
     </div>
   </div>
 
@@ -660,6 +1428,25 @@
 // ================= CONFIG =================
 const STORY_FOLDER = 'Story-JSONs/';
 const GENRE_ORDER = ['romance','comedy','fantasy','mystery'];
+
+const GENRE_META = {
+  romance: {
+    tagline: 'Velvet candlelight & love',
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>'
+  },
+  comedy: {
+    tagline: 'Sharp wit & absurd twists',
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>'
+  },
+  fantasy: {
+    tagline: 'Starlight, magic & myth',
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>'
+  },
+  mystery: {
+    tagline: 'Noir shadows & secrets',
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>'
+  }
+};
 
 // ================= STATE =================
 let ALL_STORIES = [];
@@ -702,6 +1489,7 @@ const startBtn = document.getElementById('start-btn');
 const stage = document.getElementById('stage');
 const reel = document.getElementById('reel');
 const genrePill = document.getElementById('genre-pill');
+const slideCounterEl = document.getElementById('slide-counter');
 const storyTitleEl = document.getElementById('story-title');
 const slideTextEl = document.getElementById('slide-text');
 const progressRow = document.getElementById('progress-row');
@@ -798,14 +1586,30 @@ function buildGenreGrid(){
   });
   genreGrid.innerHTML = '';
   genres.forEach(g => {
-    const card = document.createElement('div');
+    const count = ALL_STORIES.filter(s => s.genre === g).length;
+    const meta = GENRE_META[g] || {
+      tagline: 'Curated flash fiction',
+      icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>'
+    };
+
+    const card = document.createElement('button');
+    card.type = 'button';
     card.className = 'genre-card';
     card.dataset.g = g;
+    card.setAttribute('aria-pressed', 'false');
     card.innerHTML =
-      '<span class="check"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>' +
-      '<span class="g-name">' + capitalize(g) + '</span>';
+      '<div class="genre-card-top">' +
+        '<span class="g-icon" aria-hidden="true">' + meta.icon + '</span>' +
+        '<span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>' +
+      '</div>' +
+      '<div class="genre-card-body">' +
+        '<span class="g-name">' + capitalize(g) + '</span>' +
+        '<span class="g-meta"><span>' + meta.tagline + '</span><span class="g-count">' + count + '</span></span>' +
+      '</div>';
+
     card.addEventListener('click', () => {
-      card.classList.toggle('selected');
+      const selected = card.classList.toggle('selected');
+      card.setAttribute('aria-pressed', selected ? 'true' : 'false');
       const anySelected = genreGrid.querySelectorAll('.genre-card.selected').length > 0;
       startBtn.classList.toggle('ready', anySelected);
       // selection changed — any pending "re-read?" prompt no longer applies
@@ -872,7 +1676,7 @@ startBtn.addEventListener('click', () => {
   genreScreen.classList.add('hidden');
   stage.classList.remove('hidden');
   endScreen.classList.add('hidden');
-  render(true);
+  render('story-next');
 });
 
 function shuffle(arr){
@@ -883,26 +1687,36 @@ function shuffle(arr){
 }
 
 // ================= RENDER =================
-function render(isNewStory){
+function render(direction){
   if (storyIndex >= queue.length){
     showEnd();
     return;
   }
   const story = queue[storyIndex];
+  stage.dataset.genre = story.genre;
   reel.dataset.genre = story.genre;
   genrePill.textContent = capitalize(story.genre);
+  slideCounterEl.textContent = (slideIndex + 1) + ' / ' + story.slides.length;
   storyTitleEl.textContent = story.title;
   slideTextEl.textContent = story.slides[slideIndex];
-  slideTextEl.classList.remove('slide-text','story-in');
+
+  slideTextEl.className = 'slide-text';
   void slideTextEl.offsetWidth; // restart animation
-  slideTextEl.className = 'slide-text ' + (isNewStory ? 'story-in' : '');
+  const animMap = {
+    'next': 'anim-next',
+    'prev': 'anim-prev',
+    'story-next': 'anim-story-next',
+    'story-prev': 'anim-story-prev'
+  };
+  const animClass = animMap[direction] || (direction === true ? 'anim-story-next' : 'anim-next');
+  slideTextEl.classList.add(animClass);
   slideTextEl.parentElement.scrollTop = 0;
 
   // progress segments
   progressRow.innerHTML = '';
   story.slides.forEach((_, i) => {
     const seg = document.createElement('div');
-    seg.className = 'seg';
+    seg.className = 'seg' + (i === slideIndex ? ' active' : '');
     const fill = document.createElement('i');
     fill.style.width = (i <= slideIndex ? '100%' : '0%');
     seg.appendChild(fill);
@@ -927,7 +1741,7 @@ function render(isNewStory){
     swipeHint.innerHTML = '';
   }
 
-  // desktop arrow enabled state — left/right only move within the current story now
+  // desktop arrow enabled state — left/right only move within the current story
   arrowLeft.disabled = (slideIndex === 0);
   arrowRight.disabled = (slideIndex === story.slides.length - 1);
   arrowUp.disabled = (storyIndex === 0);
@@ -947,18 +1761,18 @@ function nextSlide(){
   if (!story) return;
   if (slideIndex < story.slides.length - 1){
     slideIndex++;
-    render(false);
+    render('next');
   } else {
-    edgeBounce('right'); // last slide of the story — left/right no longer changes stories
+    edgeBounce('right');
   }
 }
 
 function prevSlide(){
   if (slideIndex > 0){
     slideIndex--;
-    render(false);
+    render('prev');
   } else {
-    edgeBounce('left'); // first slide of the story — left/right no longer changes stories
+    edgeBounce('left');
   }
 }
 
@@ -975,7 +1789,7 @@ function nextStory(){
   if (storyIndex < queue.length - 1){
     storyIndex++;
     slideIndex = 0;
-    render(true);
+    render('story-next');
   } else {
     storyIndex = queue.length;
     showEnd();
@@ -986,7 +1800,7 @@ function prevStory(){
   if (storyIndex > 0){
     storyIndex--;
     slideIndex = 0;
-    render(true);
+    render('story-prev');
   }
 }
 
@@ -1024,7 +1838,7 @@ arrowDown.addEventListener('click', nextStory);
 arrowUp.addEventListener('click', prevStory);
 
 document.addEventListener('keydown', (e) => {
-  if (stage.classList.contains('hidden')) return;
+  if (stage.classList.contains('hidden') || !endScreen.classList.contains('hidden')) return;
   if (e.key === 'ArrowRight') nextSlide();
   else if (e.key === 'ArrowLeft') prevSlide();
   else if (e.key === 'ArrowDown') nextStory();
@@ -1049,13 +1863,19 @@ saveBtn.addEventListener('click', () => {
 });
 
 function pulse(el){
-  el.querySelector('svg').classList.add('pulse');
-  setTimeout(() => el.querySelector('svg').classList.remove('pulse'), 300);
+  const svg = el.querySelector('svg');
+  svg.classList.remove('pulse');
+  void svg.offsetWidth;
+  svg.classList.add('pulse');
+  setTimeout(() => svg.classList.remove('pulse'), 320);
 }
 
 // ================= RESTART =================
 restartBtn.addEventListener('click', () => {
-  genreGrid.querySelectorAll('.genre-card.selected').forEach(c => c.classList.remove('selected'));
+  genreGrid.querySelectorAll('.genre-card.selected').forEach(c => {
+    c.classList.remove('selected');
+    c.setAttribute('aria-pressed', 'false');
+  });
   startBtn.classList.remove('ready');
   startBtn.textContent = 'Start reading';
   pendingRereadGenres = null;
