@@ -1520,6 +1520,31 @@ body.games-page {
   transform: rotate(-1deg);
 }
 
+.game-card.card-orange {
+  background: var(--pop-orange);
+  transform: rotate(1deg);
+}
+
+.game-card.card-orange .game-tag {
+  background: var(--paper-white);
+  color: var(--ink);
+}
+
+.game-card.card-orange .game-badge {
+  background: var(--ink);
+  color: var(--yellow-main);
+}
+
+.game-card.card-orange .game-play-btn {
+  background: var(--yellow-main);
+  color: var(--ink);
+}
+
+.game-card.card-orange:hover .game-play-btn {
+  background: var(--pop-coral);
+  color: var(--paper-white);
+}
+
 .game-card.card-white {
   background: var(--paper-white);
   transform: rotate(-0.5deg);

@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "name": "Foundry_5P_Deathmatch_Arena",
+    "description": "Low-poly, moderately detailed 34m x 34m tactical sci-fi/industrial FPS arena designed for 5-player online deathmatch.",
+    "units": "meters",
+    "up_axis_spec": "Z",
+    "recommended_players": 5,
+    "bounds": { "x": [-17, 17], "y": [-17, 17], "z": [0, 7.5] }
+  },
+  "materials": {
+    "concrete_floor": { "color": [0.22, 0.24, 0.27, 1.0], "roughness": 0.88, "metallic": 0.05 },
+    "concrete_dark":  { "color": [0.14, 0.15, 0.18, 1.0], "roughness": 0.90, "metallic": 0.05 },
+    "wall_slate":     { "color": [0.28, 0.31, 0.35, 1.0], "roughness": 0.82, "metallic": 0.10 },
+    "steel_dark":     { "color": [0.18, 0.20, 0.23, 1.0], "roughness": 0.45, "metallic": 0.78 },
+    "steel_mid":      { "color": [0.36, 0.40, 0.45, 1.0], "roughness": 0.38, "metallic": 0.82 },
+    "hazard_yellow":  { "color": [0.88, 0.60, 0.10, 1.0], "roughness": 0.45, "metallic": 0.20 },
+    "container_teal": { "color": [0.14, 0.38, 0.42, 1.0], "roughness": 0.52, "metallic": 0.45 },
+    "container_rust": { "color": [0.56, 0.23, 0.15, 1.0], "roughness": 0.58, "metallic": 0.40 },
+    "crate_wood":     { "color": [0.48, 0.35, 0.22, 1.0], "roughness": 0.80, "metallic": 0.05 },
+    "crate_olive":    { "color": [0.25, 0.32, 0.22, 1.0], "roughness": 0.68, "metallic": 0.15 },
+    "emissive_cyan":  { "color": [0.12, 0.82, 0.95, 1.0], "roughness": 0.20, "metallic": 0.0, "emissive": [0.18, 0.90, 1.0], "emissive_strength": 3.5 },
+    "emissive_amber": { "color": [1.00, 0.65, 0.12, 1.0], "roughness": 0.20, "metallic": 0.0, "emissive": [1.00, 0.68, 0.14], "emissive_strength": 3.5 },
+    "emissive_green": { "color": [0.18, 0.92, 0.42, 1.0], "roughness": 0.20, "metallic": 0.0, "emissive": [0.20, 0.95, 0.45], "emissive_strength": 3.2 },
+    "emissive_blue":  { "color": [0.20, 0.52, 1.00, 1.0], "roughness": 0.20, "metallic": 0.0, "emissive": [0.22, 0.55, 1.00], "emissive_strength": 3.2 },
+    "emissive_light": { "color": [0.98, 0.95, 0.88, 1.0], "roughness": 0.15, "metallic": 0.0, "emissive": [1.00, 0.96, 0.88], "emissive_strength": 4.5 }
+  },
+  "collections": {
+    "01_Structure": [
+      { "name": "Arena_Floor", "type": "box", "center": [0, 0, -0.25], "size": [34.0, 34.0, 0.5], "material": "concrete_floor" },
+      { "name": "Floor_Lane_NS", "type": "box", "center": [0, 0, 0.012], "size": [1.8, 25.0, 0.024], "material": "concrete_dark" },
+      { "name": "Floor_Lane_EW", "type": "box", "center": [0, 0, 0.012], "size": [25.0, 1.8, 0.024], "material": "concrete_dark" },
+      { "name": "Floor_Center_Pad", "type": "chamfer_box", "center": [0, 0, 0.015], "size": [7.6, 7.6, 0.03], "chamfer": 1.6, "material": "steel_dark" },
+
+      { "name": "Wall_North", "type": "box", "center": [0, 16.5, 3.25], "size": [34.0, 1.0, 6.5], "material": "wall_slate" },
+      { "name": "Wall_South", "type": "box", "center": [0, -16.5, 3.25], "size": [34.0, 1.0, 6.5], "material": "wall_slate" },
+      { "name": "Wall_East",  "type": "box", "center": [16.5, 0, 3.25], "size": [1.0, 32.0, 6.5], "material": "wall_slate" },
+      { "name": "Wall_West",  "type": "box", "center": [-16.5, 0, 3.25], "size": [1.0, 32.0, 6.5], "material": "wall_slate" },
+
+      { "name": "Plinth_North", "type": "box", "center": [0, 15.88, 0.25], "size": [32.0, 0.28, 0.5], "material": "concrete_dark" },
+      { "name": "Plinth_South", "type": "box", "center": [0, -15.88, 0.25], "size": [32.0, 0.28, 0.5], "material": "concrete_dark" },
+      { "name": "Plinth_East",  "type": "box", "center": [15.88, 0, 0.25], "size": [0.28, 32.0, 0.5], "material": "concrete_dark" },
+      { "name": "Plinth_West",  "type": "box", "center": [-15.88, 0, 0.25], "size": [0.28, 32.0, 0.5], "material": "concrete_dark" },
+
+      { "name": "Cornice_North", "type": "box", "center": [0, 16.35, 6.45], "size": [34.2, 1.5, 0.55], "material": "steel_dark" },
+      { "name": "Cornice_South", "type": "box", "center": [0, -16.35, 6.45], "size": [34.2, 1.5, 0.55], "material": "steel_dark" },
+      { "name": "Cornice_East",  "type": "box", "center": [16.35, 0, 6.45], "size": [1.5, 34.2, 0.55], "material": "steel_dark" },
+      { "name": "Cornice_West",  "type": "box", "center": [-16.35, 0, 6.45], "size": [1.5, 34.2, 0.55], "material": "steel_dark" },
+
+      { "name": "Bastion_NE", "type": "chamfer_box", "center": [15.2, 15.2, 3.75], "size": [5.2, 5.2, 7.5], "chamfer": 0.9, "rotZ": 45, "material": "concrete_dark" },
+      { "name": "Bastion_NW", "type": "chamfer_box", "center": [-15.2, 15.2, 3.75], "size": [5.2, 5.2, 7.5], "chamfer": 0.9, "rotZ": 45, "material": "concrete_dark" },
+      { "name": "Bastion_SE", "type": "chamfer_box", "center": [15.2, -15.2, 3.75], "size": [5.2, 5.2, 7.5], "chamfer": 0.9, "rotZ": 45, "material": "concrete_dark" },
+      { "name": "Bastion_SW", "type": "chamfer_box", "center": [-15.2, -15.2, 3.75], "size": [5.2, 5.2, 7.5], "chamfer": 0.9, "rotZ": 45, "material": "concrete_dark" },
+
+      { "name": "WallBand_N", "type": "box", "center": [0, 15.96, 3.3], "size": [25.0, 0.12, 0.25], "material": "hazard_yellow" },
+      { "name": "WallBand_S", "type": "box", "center": [0, -15.96, 3.3], "size": [25.0, 0.12, 0.25], "material": "hazard_yellow" },
+      { "name": "WallBand_E", "type": "box", "center": [15.96, 0, 3.3], "size": [0.12, 25.0, 0.25], "material": "hazard_yellow" },
+      { "name": "WallBand_W", "type": "box", "center": [-15.96, 0, 3.3], "size": [0.12, 25.0, 0.25], "material": "hazard_yellow" }
+    ],
+    "02_Platforms_Ramps": [
+      { "name": "Center_Hub_Deck", "type": "chamfer_box", "center": [0, 0, 2.225], "size": [6.8, 6.8, 0.35], "chamfer": 1.4, "material": "steel_mid" },
+      { "name": "Center_Hub_Trim", "type": "chamfer_box", "center": [0, 0, 2.02], "size": [6.96, 6.96, 0.08], "chamfer": 1.44, "material": "hazard_yellow" },
+      { "name": "Center_Col_NE", "type": "chamfer_box", "center": [2.35, 2.35, 1.025], "size": [0.65, 0.65, 2.05], "chamfer": 0.14, "material": "steel_dark" },
+      { "name": "Center_Col_NW", "type": "chamfer_box", "center": [-2.35, 2.35, 1.025], "size": [0.65, 0.65, 2.05], "chamfer": 0.14, "material": "steel_dark" },
+      { "name": "Center_Col_SE", "type": "chamfer_box", "center": [2.35, -2.35, 1.025], "size": [0.65, 0.65, 2.05], "chamfer": 0.14, "material": "steel_dark" },
+      { "name": "Center_Col_SW", "type": "chamfer_box", "center": [-2.35, -2.35, 1.025], "size": [0.65, 0.65, 2.05], "chamfer": 0.14, "material": "steel_dark" },
+      { "name": "Center_Parapet_NE", "type": "box", "center": [2.25, 2.25, 2.925], "size": [2.0, 0.32, 1.05], "rotZ": -45, "material": "steel_dark" },
+      { "name": "Center_Parapet_NW", "type": "box", "center": [-2.25, 2.25, 2.925], "size": [2.0, 0.32, 1.05], "rotZ": 45, "material": "steel_dark" },
+      { "name": "Center_Parapet_SE", "type": "box", "center": [2.25, -2.25, 2.925], "size": [2.0, 0.32, 1.05], "rotZ": 45, "material": "steel_dark" },
+      { "name": "Center_Parapet_SW", "type": "box", "center": [-2.25, -2.25, 2.925], "size": [2.0, 0.32, 1.05], "rotZ": -45, "material": "steel_dark" },
+
+      { "name": "West_Deck", "type": "chamfer_box", "center": [-9.5, 0, 1.825], "size": [4.0, 8.4, 0.35], "chamfer": 0.45, "material": "steel_mid" },
+      { "name": "West_Deck_OuterCover", "type": "box", "center": [-11.35, 0, 2.525], "size": [0.3, 4.4, 1.05], "material": "steel_dark" },
+      { "name": "West_Leg_1", "type": "box", "center": [-11.0, 3.6, 0.825], "size": [0.45, 0.45, 1.65], "material": "steel_dark" },
+      { "name": "West_Leg_2", "type": "box", "center": [-8.0, 3.6, 0.825], "size": [0.45, 0.45, 1.65], "material": "steel_dark" },
+      { "name": "West_Leg_3", "type": "box", "center": [-11.0, -3.6, 0.825], "size": [0.45, 0.45, 1.65], "material": "steel_dark" },
+      { "name": "West_Leg_4", "type": "box", "center": [-8.0, -3.6, 0.825], "size": [0.45, 0.45, 1.65], "material": "steel_dark" },
+
+      { "name": "East_Deck", "type": "chamfer_box", "center": [9.5, 0, 1.825], "size": [4.0, 8.4, 0.35], "chamfer": 0.45, "material": "steel_mid" },
+      { "name": "East_Deck_OuterCover", "type": "box", "center": [11.35, 0, 2.525], "size": [0.3, 4.4, 1.05], "material": "steel_dark" },
+      { "name": "East_Leg_1", "type": "box", "center": [11.0, 3.6, 0.825], "size": [0.45, 0.45, 1.65], "material": "steel_dark" },
+      { "name": "East_Leg_2", "type": "box", "center": [8.0, 3.6, 0.825], "size": [0.45, 0.45, 1.65], "material": "steel_dark" },
+      { "name": "East_Leg_3", "type": "box", "center": [11.0, -3.6, 0.825], "size": [0.45, 0.45, 1.65], "material": "steel_dark" },
+      { "name": "East_Leg_4", "type": "box", "center": [8.0, -3.6, 0.825], "size": [0.45, 0.45, 1.65], "material": "steel_dark" },
+
+      { "name": "West_South_Ramp", "type": "ramp", "center": [-9.5, -6.7, 0.0], "width": 2.6, "length": 5.0, "height": 2.0, "rotZ": 90, "material": "concrete_dark" },
+      { "name": "East_South_Ramp", "type": "ramp", "center": [9.5, -6.7, 0.0], "width": 2.6, "length": 5.0, "height": 2.0, "rotZ": 90, "material": "concrete_dark" },
+      { "name": "West_North_Stairs", "type": "stairs", "center": [-9.5, 6.7, 0.0], "width": 2.6, "length": 5.0, "height": 2.0, "steps": 10, "rotZ": -90, "material": "concrete_dark" },
+      { "name": "East_North_Stairs", "type": "stairs", "center": [9.5, 6.7, 0.0], "width": 2.6, "length": 5.0, "height": 2.0, "steps": 10, "rotZ": -90, "material": "concrete_dark" },
+
+      { "name": "Catwalk_West", "type": "sloped_bridge", "start": [-7.5, 0, 2.0], "end": [-3.4, 0, 2.4], "width": 2.6, "thickness": 0.25, "material": "steel_mid" },
+      { "name": "Catwalk_West_Rail_N", "type": "railing", "start": [-7.3, 1.18, 2.0], "end": [-3.6, 1.18, 2.4], "height": 0.95, "posts": 3, "material": "steel_dark" },
+      { "name": "Catwalk_West_Rail_S", "type": "railing", "start": [-7.3, -1.18, 2.0], "end": [-3.6, -1.18, 2.4], "height": 0.95, "posts": 3, "material": "steel_dark" },
+
+      { "name": "Catwalk_East", "type": "sloped_bridge", "start": [7.5, 0, 2.0], "end": [3.4, 0, 2.4], "width": 2.6, "thickness": 0.25, "material": "steel_mid" },
+      { "name": "Catwalk_East_Rail_N", "type": "railing", "start": [7.3, 1.18, 2.0], "end": [3.6, 1.18, 2.4], "height": 0.95, "posts": 3, "material": "steel_dark" },
+      { "name": "Catwalk_East_Rail_S", "type": "railing", "start": [7.3, -1.18, 2.0], "end": [3.6, -1.18, 2.4], "height": 0.95, "posts": 3, "material": "steel_dark" },
+
+      { "name": "South_Bunker_Platform", "type": "chamfer_box", "center": [0, -12.0, 0.5], "size": [5.0, 2.8, 1.0], "chamfer": 0.35, "material": "concrete_dark" },
+      { "name": "South_Bunker_Parapet", "type": "box", "center": [0, -10.8, 1.45], "size": [3.4, 0.35, 0.9], "material": "wall_slate" },
+      { "name": "South_Bunker_Ramp_W", "type": "ramp", "center": [-3.5, -12.0, 0.0], "width": 2.2, "length": 2.2, "height": 1.0, "rotZ": 0, "material": "concrete_dark" },
+      { "name": "South_Bunker_Ramp_E", "type": "ramp", "center": [3.5, -12.0, 0.0], "width": 2.2, "length": 2.2, "height": 1.0, "rotZ": 180, "material": "concrete_dark" }
+    ],
+    "03_Cover_Props": [
+      { "name": "Container_NW", "type": "container", "center": [-4.0, 8.4, 0.0], "size": [3.8, 2.1, 2.4], "rotZ": 20, "material": "container_teal", "frame_material": "steel_dark" },
+      { "name": "Container_NE", "type": "container", "center": [4.0, 8.4, 0.0], "size": [3.8, 2.1, 2.4], "rotZ": -20, "material": "container_rust", "frame_material": "steel_dark" },
+      { "name": "Container_SW", "type": "container", "center": [-4.0, -8.8, 0.0], "size": [3.8, 2.1, 2.4], "rotZ": -18, "material": "container_rust", "frame_material": "steel_dark" },
+      { "name": "Container_SE", "type": "container", "center": [4.0, -8.8, 0.0], "size": [3.8, 2.1, 2.4], "rotZ": 18, "material": "container_teal", "frame_material": "steel_dark" },
+
+      { "name": "Pillar_NW", "type": "chamfer_box", "center": [-5.4, 3.8, 2.2], "size": [1.0, 1.0, 4.4], "chamfer": 0.22, "material": "wall_slate" },
+      { "name": "Pillar_NW_Base", "type": "chamfer_box", "center": [-5.4, 3.8, 0.22], "size": [1.35, 1.35, 0.44], "chamfer": 0.25, "material": "steel_dark" },
+      { "name": "Pillar_NW_Band", "type": "chamfer_box", "center": [-5.4, 3.8, 1.6], "size": [1.06, 1.06, 0.25], "chamfer": 0.22, "material": "hazard_yellow" },
+
+      { "name": "Pillar_NE", "type": "chamfer_box", "center": [5.4, 3.8, 2.2], "size": [1.0, 1.0, 4.4], "chamfer": 0.22, "material": "wall_slate" },
+      { "name": "Pillar_NE_Base", "type": "chamfer_box", "center": [5.4, 3.8, 0.22], "size": [1.35, 1.35, 0.44], "chamfer": 0.25, "material": "steel_dark" },
+      { "name": "Pillar_NE_Band", "type": "chamfer_box", "center": [5.4, 3.8, 1.6], "size": [1.06, 1.06, 0.25], "chamfer": 0.22, "material": "hazard_yellow" },
+
+      { "name": "Pillar_SW", "type": "chamfer_box", "center": [-5.4, -3.8, 2.2], "size": [1.0, 1.0, 4.4], "chamfer": 0.22, "material": "wall_slate" },
+      { "name": "Pillar_SW_Base", "type": "chamfer_box", "center": [-5.4, -3.8, 0.22], "size": [1.35, 1.35, 0.44], "chamfer": 0.25, "material": "steel_dark" },
+      { "name": "Pillar_SW_Band", "type": "chamfer_box", "center": [-5.4, -3.8, 1.6], "size": [1.06, 1.06, 0.25], "chamfer": 0.22, "material": "hazard_yellow" },
+
+      { "name": "Pillar_SE", "type": "chamfer_box", "center": [5.4, -3.8, 2.2], "size": [1.0, 1.0, 4.4], "chamfer": 0.22, "material": "wall_slate" },
+      { "name": "Pillar_SE_Base", "type": "chamfer_box", "center": [5.4, -3.8, 0.22], "size": [1.35, 1.35, 0.44], "chamfer": 0.25, "material": "steel_dark" },
+      { "name": "Pillar_SE_Band", "type": "chamfer_box", "center": [5.4, -3.8, 1.6], "size": [1.06, 1.06, 0.25], "chamfer": 0.22, "material": "hazard_yellow" },
+
+      { "name": "Barrier_N1", "type": "jersey_barrier", "center": [-2.2, 5.4, 0.0], "length": 2.4, "rotZ": 12, "material": "wall_slate" },
+      { "name": "Barrier_N2", "type": "jersey_barrier", "center": [2.2, 5.4, 0.0], "length": 2.4, "rotZ": -12, "material": "wall_slate" },
+      { "name": "Barrier_S1", "type": "jersey_barrier", "center": [-2.2, -5.4, 0.0], "length": 2.4, "rotZ": -12, "material": "wall_slate" },
+      { "name": "Barrier_S2", "type": "jersey_barrier", "center": [2.2, -5.4, 0.0], "length": 2.4, "rotZ": 12, "material": "wall_slate" },
+      { "name": "Barrier_W_Flank", "type": "jersey_barrier", "center": [-13.8, -3.5, 0.0], "length": 2.2, "rotZ": 80, "material": "wall_slate" },
+      { "name": "Barrier_E_Flank", "type": "jersey_barrier", "center": [13.8, -3.5, 0.0], "length": 2.2, "rotZ": -80, "material": "wall_slate" },
+
+      { "name": "Crate_NW_Step1", "type": "crate", "center": [-1.8, 7.2, 0.0], "size": [1.1, 1.1, 1.05], "rotZ": 15, "material": "crate_wood", "trim_material": "steel_dark" },
+      { "name": "Crate_NW_Step2", "type": "crate", "center": [-2.6, 6.7, 0.0], "size": [0.9, 0.9, 0.85], "rotZ": -8, "material": "crate_olive", "trim_material": "steel_dark" },
+      { "name": "Crate_NE_Step1", "type": "crate", "center": [1.8, 7.2, 0.0], "size": [1.1, 1.1, 1.05], "rotZ": -15, "material": "crate_wood", "trim_material": "steel_dark" },
+      { "name": "Crate_SW_Step1", "type": "crate", "center": [-1.9, -7.5, 0.0], "size": [1.1, 1.1, 1.05], "rotZ": -10, "material": "crate_olive", "trim_material": "steel_dark" },
+      { "name": "Crate_SE_Step1", "type": "crate", "center": [1.9, -7.5, 0.0], "size": [1.1, 1.1, 1.05], "rotZ": 10, "material": "crate_wood", "trim_material": "steel_dark" },
+      { "name": "Crate_Mid_Stack1", "type": "crate", "center": [-14.0, -9.8, 0.0], "size": [1.2, 1.2, 1.1], "rotZ": 5, "material": "crate_wood", "trim_material": "steel_dark" },
+      { "name": "Crate_Mid_Stack2", "type": "crate", "center": [-14.0, -9.8, 1.1], "size": [0.85, 0.85, 0.85], "rotZ": 28, "material": "crate_olive", "trim_material": "steel_dark" },
+      { "name": "Crate_East_Stack1", "type": "crate", "center": [14.0, -9.8, 0.0], "size": [1.2, 1.2, 1.1], "rotZ": -5, "material": "crate_wood", "trim_material": "steel_dark" },
+
+      { "name": "Silo_NW_1", "type": "cylinder", "center": [-14.2, 10.6, 1.0], "radiusBottom": 0.65, "radiusTop": 0.62, "height": 2.0, "segments": 12, "material": "steel_mid" },
+      { "name": "Silo_NW_2", "type": "cylinder", "center": [-12.8, 11.4, 0.75], "radiusBottom": 0.50, "radiusTop": 0.48, "height": 1.5, "segments": 12, "material": "hazard_yellow" },
+      { "name": "Silo_NE_1", "type": "cylinder", "center": [14.2, 10.6, 1.0], "radiusBottom": 0.65, "radiusTop": 0.62, "height": 2.0, "segments": 12, "material": "steel_mid" },
+      { "name": "Silo_NE_2", "type": "cylinder", "center": [12.8, 11.4, 0.75], "radiusBottom": 0.50, "radiusTop": 0.48, "height": 1.5, "segments": 12, "material": "hazard_yellow" },
+
+      { "name": "SpawnShield_01_N", "type": "chamfer_box", "center": [0.0, 11.4, 1.1], "size": [4.0, 0.55, 2.2], "chamfer": 0.12, "material": "steel_dark" },
+      { "name": "SpawnShield_02_EN", "type": "chamfer_box", "center": [12.2, 2.4, 0.95], "size": [2.4, 0.45, 1.9], "chamfer": 0.1, "rotZ": -35, "material": "steel_dark" },
+      { "name": "SpawnShield_03_SE", "type": "chamfer_box", "center": [7.2, -11.3, 0.95], "size": [2.4, 0.45, 1.9], "chamfer": 0.1, "rotZ": 25, "material": "steel_dark" },
+      { "name": "SpawnShield_04_SW", "type": "chamfer_box", "center": [-7.2, -11.3, 0.95], "size": [2.4, 0.45, 1.9], "chamfer": 0.1, "rotZ": -25, "material": "steel_dark" },
+      { "name": "SpawnShield_05_WN", "type": "chamfer_box", "center": [-12.2, 2.4, 0.95], "size": [2.4, 0.45, 1.9], "chamfer": 0.1, "rotZ": 35, "material": "steel_dark" }
+    ],
+    "04_Details_Trim": [
+      { "name": "Gantry_North", "type": "box", "center": [0, 6.5, 6.2], "size": [32.0, 0.55, 0.5], "material": "steel_dark" },
+      { "name": "Gantry_South", "type": "box", "center": [0, -6.5, 6.2], "size": [32.0, 0.55, 0.5], "material": "steel_dark" },
+
+      { "name": "LightPod_N_W", "type": "box", "center": [-8.0, 6.5, 5.85], "size": [1.8, 0.7, 0.25], "material": "steel_mid" },
+      { "name": "LightGlow_N_W", "type": "box", "center": [-8.0, 6.5, 5.70], "size": [1.5, 0.45, 0.06], "material": "emissive_light" },
+      { "name": "LightPod_N_C", "type": "box", "center": [0.0, 6.5, 5.85], "size": [1.8, 0.7, 0.25], "material": "steel_mid" },
+      { "name": "LightGlow_N_C", "type": "box", "center": [0.0, 6.5, 5.70], "size": [1.5, 0.45, 0.06], "material": "emissive_light" },
+      { "name": "LightPod_N_E", "type": "box", "center": [8.0, 6.5, 5.85], "size": [1.8, 0.7, 0.25], "material": "steel_mid" },
+      { "name": "LightGlow_N_E", "type": "box", "center": [8.0, 6.5, 5.70], "size": [1.5, 0.45, 0.06], "material": "emissive_light" },
+
+      { "name": "LightPod_S_W", "type": "box", "center": [-8.0, -6.5, 5.85], "size": [1.8, 0.7, 0.25], "material": "steel_mid" },
+      { "name": "LightGlow_S_W", "type": "box", "center": [-8.0, -6.5, 5.70], "size": [1.5, 0.45, 0.06], "material": "emissive_light" },
+      { "name": "LightPod_S_C", "type": "box", "center": [0.0, -6.5, 5.85], "size": [1.8, 0.7, 0.25], "material": "steel_mid" },
+      { "name": "LightGlow_S_C", "type": "box", "center": [0.0, -6.5, 5.70], "size": [1.5, 0.45, 0.06], "material": "emissive_light" },
+      { "name": "LightPod_S_E", "type": "box", "center": [8.0, -6.5, 5.85], "size": [1.8, 0.7, 0.25], "material": "steel_mid" },
+      { "name": "LightGlow_S_E", "type": "box", "center": [8.0, -6.5, 5.70], "size": [1.5, 0.45, 0.06], "material": "emissive_light" },
+
+      { "name": "Buttress_N_1", "type": "box", "center": [-7.5, 15.75, 3.25], "size": [0.9, 0.5, 6.5], "material": "concrete_dark" },
+      { "name": "Buttress_N_2", "type": "box", "center": [7.5, 15.75, 3.25], "size": [0.9, 0.5, 6.5], "material": "concrete_dark" },
+      { "name": "Buttress_S_1", "type": "box", "center": [-7.5, -15.75, 3.25], "size": [0.9, 0.5, 6.5], "material": "concrete_dark" },
+      { "name": "Buttress_S_2", "type": "box", "center": [7.5, -15.75, 3.25], "size": [0.9, 0.5, 6.5], "material": "concrete_dark" },
+      { "name": "Buttress_E_1", "type": "box", "center": [15.75, -7.5, 3.25], "size": [0.5, 0.9, 6.5], "material": "concrete_dark" },
+      { "name": "Buttress_E_2", "type": "box", "center": [15.75, 7.5, 3.25], "size": [0.5, 0.9, 6.5], "material": "concrete_dark" },
+      { "name": "Buttress_W_1", "type": "box", "center": [-15.75, -7.5, 3.25], "size": [0.5, 0.9, 6.5], "material": "concrete_dark" },
+      { "name": "Buttress_W_2", "type": "box", "center": [-15.75, 7.5, 3.25], "size": [0.5, 0.9, 6.5], "material": "concrete_dark" },
+
+      { "name": "WallLight_N1", "type": "box", "center": [-7.5, 15.48, 3.5], "size": [0.16, 0.08, 2.8], "material": "emissive_cyan" },
+      { "name": "WallLight_N2", "type": "box", "center": [7.5, 15.48, 3.5], "size": [0.16, 0.08, 2.8], "material": "emissive_cyan" },
+      { "name": "WallLight_S1", "type": "box", "center": [-7.5, -15.48, 3.5], "size": [0.16, 0.08, 2.8], "material": "emissive_amber" },
+      { "name": "WallLight_S2", "type": "box", "center": [7.5, -15.48, 3.5], "size": [0.16, 0.08, 2.8], "material": "emissive_amber" },
+      { "name": "WallLight_E1", "type": "box", "center": [15.48, -7.5, 3.5], "size": [0.08, 0.16, 2.8], "material": "emissive_cyan" },
+      { "name": "WallLight_E2", "type": "box", "center": [15.48, 7.5, 3.5], "size": [0.08, 0.16, 2.8], "material": "emissive_cyan" },
+      { "name": "WallLight_W1", "type": "box", "center": [-15.48, -7.5, 3.5], "size": [0.08, 0.16, 2.8], "material": "emissive_amber" },
+      { "name": "WallLight_W2", "type": "box", "center": [-15.48, 7.5, 3.5], "size": [0.08, 0.16, 2.8], "material": "emissive_amber" }
+    ],
+    "05_Spawns_Pickups": [
+      { "name": "SpawnPad_01", "type": "cylinder", "center": [0.0, 13.6, 0.04], "radiusBottom": 0.95, "radiusTop": 0.85, "height": 0.08, "segments": 8, "material": "steel_dark" },
+      { "name": "SpawnGlow_01", "type": "cylinder", "center": [0.0, 13.6, 0.085], "radiusBottom": 0.65, "radiusTop": 0.65, "height": 0.02, "segments": 8, "material": "emissive_cyan" },
+
+      { "name": "SpawnPad_02", "type": "cylinder", "center": [13.8, 4.2, 0.04], "radiusBottom": 0.95, "radiusTop": 0.85, "height": 0.08, "segments": 8, "material": "steel_dark" },
+      { "name": "SpawnGlow_02", "type": "cylinder", "center": [13.8, 4.2, 0.085], "radiusBottom": 0.65, "radiusTop": 0.65, "height": 0.02, "segments": 8, "material": "emissive_cyan" },
+
+      { "name": "SpawnPad_03", "type": "cylinder", "center": [8.5, -13.2, 0.04], "radiusBottom": 0.95, "radiusTop": 0.85, "height": 0.08, "segments": 8, "material": "steel_dark" },
+      { "name": "SpawnGlow_03", "type": "cylinder", "center": [8.5, -13.2, 0.085], "radiusBottom": 0.65, "radiusTop": 0.65, "height": 0.02, "segments": 8, "material": "emissive_cyan" },
+
+      { "name": "SpawnPad_04", "type": "cylinder", "center": [-8.5, -13.2, 0.04], "radiusBottom": 0.95, "radiusTop": 0.85, "height": 0.08, "segments": 8, "material": "steel_dark" },
+      { "name": "SpawnGlow_04", "type": "cylinder", "center": [-8.5, -13.2, 0.085], "radiusBottom": 0.65, "radiusTop": 0.65, "height": 0.02, "segments": 8, "material": "emissive_cyan" },
+
+      { "name": "SpawnPad_05", "type": "cylinder", "center": [-13.8, 4.2, 0.04], "radiusBottom": 0.95, "radiusTop": 0.85, "height": 0.08, "segments": 8, "material": "steel_dark" },
+      { "name": "SpawnGlow_05", "type": "cylinder", "center": [-13.8, 4.2, 0.085], "radiusBottom": 0.65, "radiusTop": 0.65, "height": 0.02, "segments": 8, "material": "emissive_cyan" },
+
+      { "name": "PickupPad_Heavy_Center", "type": "cylinder", "center": [0.0, 0.0, 2.45], "radiusBottom": 0.85, "radiusTop": 0.72, "height": 0.10, "segments": 8, "material": "steel_dark" },
+      { "name": "PickupGlow_Heavy_Center", "type": "cylinder", "center": [0.0, 0.0, 2.51], "radiusBottom": 0.55, "radiusTop": 0.55, "height": 0.02, "segments": 8, "material": "emissive_amber" },
+
+      { "name": "PickupPad_Armor_West", "type": "cylinder", "center": [-9.5, 0.0, 2.04], "radiusBottom": 0.70, "radiusTop": 0.60, "height": 0.08, "segments": 8, "material": "steel_dark" },
+      { "name": "PickupGlow_Armor_West", "type": "cylinder", "center": [-9.5, 0.0, 2.09], "radiusBottom": 0.45, "radiusTop": 0.45, "height": 0.02, "segments": 8, "material": "emissive_blue" },
+
+      { "name": "PickupPad_Armor_East", "type": "cylinder", "center": [9.5, 0.0, 2.04], "radiusBottom": 0.70, "radiusTop": 0.60, "height": 0.08, "segments": 8, "material": "steel_dark" },
+      { "name": "PickupGlow_Armor_East", "type": "cylinder", "center": [9.5, 0.0, 2.09], "radiusBottom": 0.45, "radiusTop": 0.45, "height": 0.02, "segments": 8, "material": "emissive_blue" },
+
+      { "name": "PickupPad_Health_N", "type": "cylinder", "center": [0.0, 5.2, 0.04], "radiusBottom": 0.65, "radiusTop": 0.55, "height": 0.08, "segments": 8, "material": "steel_dark" },
+      { "name": "PickupGlow_Health_N", "type": "cylinder", "center": [0.0, 5.2, 0.09], "radiusBottom": 0.42, "radiusTop": 0.42, "height": 0.02, "segments": 8, "material": "emissive_green" },
+
+      { "name": "PickupPad_Health_S", "type": "cylinder", "center": [0.0, -5.2, 0.04], "radiusBottom": 0.65, "radiusTop": 0.55, "height": 0.08, "segments": 8, "material": "steel_dark" },
+      { "name": "PickupGlow_Health_S", "type": "cylinder", "center": [0.0, -5.2, 0.09], "radiusBottom": 0.42, "radiusTop": 0.42, "height": 0.02, "segments": 8, "material": "emissive_green" }
+    ]
+  },
+  "markers": {
+    "spawns": [
+      { "name": "SpawnPoint_01", "position": [0.0, 13.6, 0.1], "yaw_deg": -90 },
+      { "name": "SpawnPoint_02", "position": [13.8, 4.2, 0.1], "yaw_deg": 197 },
+      { "name": "SpawnPoint_03", "position": [8.5, -13.2, 0.1], "yaw_deg": 122 },
+      { "name": "SpawnPoint_04", "position": [-8.5, -13.2, 0.1], "yaw_deg": 58 },
+      { "name": "SpawnPoint_05", "position": [-13.8, 4.2, 0.1], "yaw_deg": -17 }
+    ],
+    "pickups": [
+      { "name": "PickupMarker_Heavy", "kind": "heavy_weapon", "position": [0.0, 0.0, 2.55] },
+      { "name": "PickupMarker_Armor_W", "kind": "armor", "position": [-9.5, 0.0, 2.15] },
+      { "name": "PickupMarker_Armor_E", "kind": "armor", "position": [9.5, 0.0, 2.15] },
+      { "name": "PickupMarker_Health_N", "kind": "health", "position": [0.0, 5.2, 0.15] },
+      { "name": "PickupMarker_Health_S", "kind": "health", "position": [0.0, -5.2, 0.15] }
+    ]
+  }
+}

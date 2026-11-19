@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thaye-Thaye // Tactical Arena FPS</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <!-- Desktop-Only Gate for Touch-Only Devices -->
+    <div id="desktop-only-overlay" class="desktop-only-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="desktop-only-title">
+      <div class="desktop-only-card">
+        <div class="desktop-only-badge">DESKTOP REQUIRED // KEYBOARD + MOUSE</div>
+        <div class="desktop-only-icon" aria-hidden="true">🖥️</div>
+        <h1 id="desktop-only-title" class="desktop-only-title">THAYE<span>-THAYE</span></h1>
+        <p class="desktop-only-subtitle">Desktop Machines Only</p>
+        <p class="desktop-only-desc">
+          Thaye-Thaye is a fast-paced 3D tactical arena FPS built for desktop keyboard &amp; mouse pointer-lock controls. Touch-only mobile and tablet devices are not supported.
+        </p>
+        <div class="desktop-only-reqs">
+          <span><b>WASD</b> Movement</span>
+          <span><b>MOUSE</b> Pointer-Lock Aim</span>
+          <span><b>1–5 / G / R</b> Combat Controls</span>
+        </div>
+        <a href="../../games.html" class="desktop-only-back">← BACK TO ARCADE</a>
+      </div>
+    </div>
+
+    <canvas id="game-canvas"></canvas>
+
+    <!-- Damage Vignette & Screen Effects -->
+    <div id="damage-vignette"></div>
+    <div id="pickup-flash"></div>
+    <div id="damage-indicators"></div>
+
+    <!-- In-Game HUD -->
+    <div id="hud" class="hidden">
+      <!-- Top Center: Match Timer & Score Leader -->
+      <div class="hud-top-bar">
+        <div class="hud-match-card">
+          <div class="hud-mode">5P FFA DEATHMATCH</div>
+          <div class="hud-timer" id="hud-timer">05:00</div>
+          <div class="hud-target">FIRST TO <span id="hud-score-limit">20</span></div>
+        </div>
+        <div class="hud-mini-standings" id="hud-mini-standings"></div>
+        <div class="spawn-shield-badge hidden" id="spawn-shield">SPAWN SHIELD 1.6s</div>
+      </div>
+
+      <!-- Top Right: Kill Feed -->
+      <div id="kill-feed" class="kill-feed"></div>
+
+      <!-- Center Crosshair & Hitmarkers -->
+      <div id="crosshair" class="crosshair">
+        <div class="ch-line ch-top"></div>
+        <div class="ch-line ch-bottom"></div>
+        <div class="ch-line ch-left"></div>
+        <div class="ch-line ch-right"></div>
+        <div class="ch-dot"></div>
+      </div>
+      <div id="hitmarker" class="hitmarker">
+        <span class="hm-seg hm-tl"></span>
+        <span class="hm-seg hm-tr"></span>
+        <span class="hm-seg hm-bl"></span>
+        <span class="hm-seg hm-br"></span>
+      </div>
+
+      <!-- Center Alerts (Grenade Danger / Kill Banner / Reload) -->
+      <div id="grenade-warning" class="grenade-warning hidden">FRAG GRENADE NEARBY</div>
+      <div id="kill-banner" class="kill-banner hidden"></div>
+      <div id="reload-prompt" class="reload-prompt hidden">
+        <span>RELOADING</span>
+        <div class="reload-bar"><div id="reload-fill"></div></div>
+      </div>
+
+      <!-- Bottom Left: Stance, Health & Armor -->
+      <div class="hud-vitals-wrap">
+        <div id="stance-pill" class="stance-pill">STAND</div>
+        <div class="hud-vitals">
+          <div class="vital-row">
+            <span class="vital-tag armor-tag">ARMOR</span>
+            <div class="vital-bar-bg">
+              <div id="armor-bar" class="vital-bar armor-bar" style="width: 50%"></div>
+            </div>
+            <span id="armor-val" class="vital-num">50</span>
+          </div>
+          <div class="vital-row">
+            <span class="vital-tag hp-tag">HEALTH</span>
+            <div class="vital-bar-bg">
+              <div id="hp-bar" class="vital-bar hp-bar" style="width: 100%"></div>
+            </div>
+            <span id="hp-val" class="vital-num">100</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Right: 5-Weapon Loadout & Ammo -->
+      <div class="hud-weapons">
+        <div class="weapon-slots">
+          <div class="w-slot" data-weapon="knife">
+            <span class="w-key">1</span>
+            <span class="w-name">KNIFE</span>
+          </div>
+          <div class="w-slot active" data-weapon="rifle">
+            <span class="w-key">2</span>
+            <span class="w-name">RIFLE</span>
+          </div>
+          <div class="w-slot" data-weapon="shotgun">
+            <span class="w-key">3</span>
+            <span class="w-name">SHOTGUN</span>
+          </div>
+          <div class="w-slot" data-weapon="revolver">
+            <span class="w-key">4</span>
+            <span class="w-name">REVOLVER</span>
+          </div>
+          <div class="w-slot" data-weapon="grenade">
+            <span class="w-key">5</span>
+            <span class="w-name">M69 FRAG <b id="hud-nade-count" class="nade-pill">3</b></span>
+          </div>
+        </div>
+        <div class="ammo-readout" id="ammo-readout">
+          <span id="ammo-mag" class="ammo-mag">30</span>
+          <span class="ammo-sep">/</span>
+          <span id="ammo-reserve" class="ammo-reserve">120</span>
+        </div>
+      </div>
+
+      <!-- Pause / Pointer Unlock Action Bar -->
+      <div id="pointer-hint" class="pointer-hint hidden">
+        <div class="pause-title">PAUSED — CLICK VIEWPORT OR RESUME TO LOCK AIM</div>
+        <div class="pause-actions">
+          <button type="button" id="btn-resume-match" class="pause-btn primary">RESUME</button>
+          <button type="button" id="btn-pause-fullscreen" class="pause-btn" data-fullscreen-btn>⛶ FULLSCREEN</button>
+          <button type="button" id="btn-quit-menu" class="pause-btn">MAIN MENU</button>
+        </div>
+        <div class="pause-keys">
+          <span><b>WASD</b> Move</span>
+          <span><b>CTRL/C</b> Crouch</span>
+          <span><b>SPACE</b> Jump</span>
+          <span><b>SHIFT</b> Sprint</span>
+          <span><b>G</b> Quick Frag</span>
+          <span><b>1-5</b> Arsenal</span>
+          <span><b>R</b> Reload</span>
+          <span><b>F</b> Fullscreen</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Death / Respawn Overlay -->
+    <div id="death-overlay" class="death-overlay hidden">
+      <div class="death-card">
+        <div class="death-title">ELIMINATED</div>
+        <div id="death-killer" class="death-sub">BY BOT</div>
+        <div class="death-timer">RESPAWNING IN <span id="respawn-countdown">3</span>s</div>
+      </div>
+    </div>
+
+    <!-- Scoreboard (TAB) -->
+    <div id="scoreboard" class="scoreboard hidden">
+      <div class="sb-panel">
+        <div class="sb-header">
+          <h2>THAYE-THAYE // SCOREBOARD</h2>
+          <span id="sb-status">FREE FOR ALL — 5 COMBATANTS</span>
+        </div>
+        <table class="sb-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>OPERATIVE</th>
+              <th>KILLS</th>
+              <th>DEATHS</th>
+              <th>K/D</th>
+              <th>GIBS</th>
+            </tr>
+          </thead>
+          <tbody id="sb-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Main Menu / Multi-Stage Flow -->
+    <div id="menu-overlay" class="menu-overlay">
+      <div class="menu-shell">
+        <header class="menu-topbar">
+          <div class="brand-lockup">
+            <span class="brand-kicker">INDRA SECTOR // OFFLINE ARENA</span>
+            <h1 class="menu-title">THAYE<span>-THAYE</span></h1>
+          </div>
+          <div class="topbar-right">
+            <button type="button" id="btn-fullscreen" class="fs-btn" data-fullscreen-btn title="Toggle Fullscreen (F)">⛶ FULLSCREEN</button>
+            <div class="stage-crumb" id="stage-crumb">MAIN LOBBY</div>
+          </div>
+        </header>
+
+        <!-- STAGE 1: CLEAN HOME NAVIGATION RAIL -->
+        <section class="menu-stage active" id="stage-home" data-stage="home">
+          <nav class="home-nav">
+            <button type="button" id="btn-nav-play" class="nav-item primary">
+              <span class="nav-label">PLAY MATCH</span>
+              <span class="nav-sub">CONFIGURE RULES &amp; DEPLOY</span>
+              <span class="nav-arrow">→</span>
+            </button>
+            <button type="button" id="btn-quick-deploy" class="nav-item accent" disabled>
+              <span class="nav-label">LOADING ASSETS...</span>
+              <span class="nav-sub">INSTANT CASUAL DEATHMATCH</span>
+              <span class="nav-arrow">▸</span>
+            </button>
+            <button type="button" id="btn-nav-arsenal" class="nav-item">
+              <span class="nav-label">ARSENAL</span>
+              <span class="nav-sub">INSPECT 5 WEAPONS IN 3D</span>
+              <span class="nav-arrow">→</span>
+            </button>
+            <button type="button" id="btn-nav-settings" class="nav-item">
+              <span class="nav-label">SETTINGS</span>
+              <span class="nav-sub">AIM SENSITIVITY &amp; AUDIO</span>
+              <span class="nav-arrow">→</span>
+            </button>
+            <button type="button" id="btn-nav-controls" class="nav-item">
+              <span class="nav-label">CONTROLS</span>
+              <span class="nav-sub">KEYBINDS &amp; COMBAT MOVES</span>
+              <span class="nav-arrow">→</span>
+            </button>
+          </nav>
+        </section>
+
+        <!-- STAGE 2: MATCH SETUP -->
+        <section class="menu-stage" id="stage-play" data-stage="play">
+          <div class="stage-card">
+            <div class="stage-head">
+              <button type="button" class="back-btn" data-back="home">← BACK</button>
+              <span class="stage-title">MATCH SETUP</span>
+            </div>
+            <p class="stage-desc">5-Operative Free-For-All. First combatant to reach the elimination cap claims the sector.</p>
+
+            <div class="menu-section">
+              <label class="menu-label">BOT DIFFICULTY <span id="diff-desc">FAIR REACTION &amp; SPREAD</span></label>
+              <div class="seg-group" id="diff-group">
+                <button type="button" class="seg-btn active" data-value="normal">CASUAL</button>
+                <button type="button" class="seg-btn" data-value="hard">VETERAN</button>
+                <button type="button" class="seg-btn" data-value="nightmare">APEX</button>
+              </div>
+              <input type="hidden" id="opt-difficulty" value="normal" />
+            </div>
+
+            <div class="menu-section">
+              <label class="menu-label">SCORE LIMIT</label>
+              <div class="seg-group" id="score-group">
+                <button type="button" class="seg-btn" data-value="15">15 KILLS</button>
+                <button type="button" class="seg-btn active" data-value="20">20 KILLS</button>
+                <button type="button" class="seg-btn" data-value="30">30 KILLS</button>
+              </div>
+              <input type="hidden" id="opt-score-limit" value="20" />
+            </div>
+
+            <button id="btn-deploy" class="deploy-btn" disabled>LOADING ARENA &amp; ASSETS...</button>
+          </div>
+        </section>
+
+        <!-- STAGE 3: INTERACTIVE 3D ARSENAL -->
+        <section class="menu-stage" id="stage-arsenal" data-stage="arsenal">
+          <div class="stage-card">
+            <div class="stage-head">
+              <button type="button" class="back-btn" data-back="home">← BACK</button>
+              <span class="stage-title">OPERATIVE ARSENAL</span>
+            </div>
+
+            <div class="arsenal-list" id="arsenal-tabs">
+              <button type="button" class="arsenal-btn" data-weapon="knife"><span>1</span> COMBAT KNIFE <b>MELEE</b></button>
+              <button type="button" class="arsenal-btn active" data-weapon="rifle"><span>2</span> MK-II RIFLE <b>AUTO</b></button>
+              <button type="button" class="arsenal-btn" data-weapon="shotgun"><span>3</span> SHOTGUN <b>PUMP</b></button>
+              <button type="button" class="arsenal-btn" data-weapon="revolver"><span>4</span> .44 MAGNUM REVOLVER <b>PISTOL</b></button>
+              <button type="button" class="arsenal-btn" data-weapon="grenade"><span>5</span> M69 FRAG GRENADE <b>EXPLOSIVE</b></button>
+            </div>
+
+            <div class="weapon-spec-card" id="weapon-spec-card">
+              <div class="spec-main">
+                <span class="spec-name" id="spec-name">MK-II ASSAULT RIFLE</span>
+                <span class="spec-role" id="spec-role">AUTO • HOLOGRAPHIC SIGHT</span>
+              </div>
+              <div class="spec-stats" id="spec-stats">24 DMG • 30 MAG • MEDIUM / LONG RANGE</div>
+              <div class="stat-bars">
+                <div class="sb-row"><span>DAMAGE</span><div class="sb-track"><div id="bar-dmg" style="width: 48%"></div></div></div>
+                <div class="sb-row"><span>FIRE RATE</span><div class="sb-track"><div id="bar-rof" style="width: 85%"></div></div></div>
+                <div class="sb-row"><span>RANGE</span><div class="sb-track"><div id="bar-rng" style="width: 82%"></div></div></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- STAGE 4: SETTINGS -->
+        <section class="menu-stage" id="stage-settings" data-stage="settings">
+          <div class="stage-card">
+            <div class="stage-head">
+              <button type="button" class="back-btn" data-back="home">← BACK</button>
+              <span class="stage-title">SETTINGS</span>
+            </div>
+
+            <div class="menu-section slider-box">
+              <label class="menu-label">MOUSE SENSITIVITY <span id="sens-val">1.0</span></label>
+              <input id="opt-sens" type="range" min="0.3" max="2.5" step="0.1" value="1.0" />
+            </div>
+            <div class="menu-section slider-box">
+              <label class="menu-label">MASTER VOLUME <span id="vol-val">75%</span></label>
+              <input id="opt-vol" type="range" min="0" max="1" step="0.05" value="0.75" />
+            </div>
+            <button type="button" id="btn-reset-settings" class="secondary-btn">RESET TO DEFAULTS</button>
+          </div>
+        </section>
+
+        <!-- STAGE 5: CONTROLS -->
+        <section class="menu-stage" id="stage-controls" data-stage="controls">
+          <div class="stage-card">
+            <div class="stage-head">
+              <button type="button" class="back-btn" data-back="home">← BACK</button>
+              <span class="stage-title">CONTROLS</span>
+            </div>
+            <div class="controls-grid">
+              <div class="ctrl-row"><kbd>W A S D</kbd><span>Move Operative</span></div>
+              <div class="ctrl-row"><kbd>SPACE</kbd><span>Jump / Vault</span></div>
+              <div class="ctrl-row"><kbd>SHIFT</kbd><span>Tactical Sprint</span></div>
+              <div class="ctrl-row"><kbd>CTRL / C</kbd><span>Crouch (Hold / Toggle)</span></div>
+              <div class="ctrl-row"><kbd>LMB</kbd><span>Fire / Slash / Throw</span></div>
+              <div class="ctrl-row"><kbd>RMB</kbd><span>Aim Down Sights</span></div>
+              <div class="ctrl-row"><kbd>1 - 5</kbd><span>Select Weapon Slot</span></div>
+              <div class="ctrl-row"><kbd>G</kbd><span>Quick Throw Grenade</span></div>
+              <div class="ctrl-row"><kbd>R</kbd><span>Reload Weapon</span></div>
+              <div class="ctrl-row"><kbd>F</kbd><span>Toggle Fullscreen</span></div>
+              <div class="ctrl-row"><kbd>TAB / ESC</kbd><span>Scoreboard / Pause</span></div>
+            </div>
+          </div>
+        </section>
+
+        <footer class="menu-footer">
+          <span>BHARAT ARENA • 5 COMBATANTS</span>
+          <span>THAYE-THAYE // CEL-SHADED EDITION</span>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Match End Overlay -->
+    <div id="gameover-overlay" class="menu-overlay hidden">
+      <div class="menu-panel gameover-panel">
+        <div class="menu-badge">MATCH COMPLETE</div>
+        <h1 id="go-winner" class="menu-title">VICTORY</h1>
+        <p id="go-subtitle" class="menu-desc"></p>
+        <div id="go-standings" class="go-standings"></div>
+        <div class="go-actions">
+          <button id="btn-play-again" class="deploy-btn">PLAY AGAIN</button>
+          <button id="btn-change-char" class="secondary-btn">MAIN MENU</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
