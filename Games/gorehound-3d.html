@@ -316,65 +316,292 @@
 
   /* Overlays */
   .overlay {
-    position: fixed; inset: 0; z-index: 20; display: flex; align-items: center; justify-content: center;
-    padding: 18px; background: radial-gradient(circle at center, rgba(35, 6, 10, 0.7), rgba(6, 1, 3, 0.9));
-    backdrop-filter: blur(5px);
+    position: fixed; inset: 0; z-index: 20; display: flex; flex-direction: column;
+    overflow-y: auto; -webkit-overflow-scrolling: touch; touch-action: pan-y;
+    padding: calc(12px + var(--st)) calc(16px + var(--sr)) calc(12px + var(--sb)) calc(16px + var(--sl));
+    background: radial-gradient(circle at center, rgba(35, 6, 10, 0.55), rgba(6, 1, 3, 0.88));
+    backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+  }
+  .overlay button:focus-visible, .overlay a:focus-visible, .overlay input:focus-visible {
+    outline: 2.5px solid #ffd166; outline-offset: 2px;
+  }
+  #pauseOverlay, #gameoverOverlay {
+    align-items: center; justify-content: center;
+    background: radial-gradient(circle at center, rgba(35, 6, 10, 0.72), rgba(6, 1, 3, 0.92));
   }
   .card {
-    width: min(530px, 100%); max-height: 92vh; overflow-y: auto;
+    margin: auto;
+    width: min(530px, 100%); max-height: 92vh; overflow-y: auto; -webkit-overflow-scrolling: touch;
     background: linear-gradient(180deg, rgba(30, 8, 13, 0.96), rgba(13, 3, 5, 0.98));
-    border: 1px solid rgba(255, 55, 85, 0.55); border-radius: 14px; padding: 24px 22px;
+    border: 1px solid rgba(255, 55, 85, 0.55); border-radius: 14px; padding: clamp(14px, 3vmin, 24px);
     box-shadow: 0 22px 64px rgba(0, 0, 0, 0.88), 0 0 48px rgba(217, 4, 41, 0.28);
     text-align: center;
   }
+
+  /* Multi-Step Menu Shell */
+  #menuOverlay {
+    justify-content: space-between;
+    background: linear-gradient(100deg, rgba(16, 3, 6, 0.88) 0%, rgba(22, 4, 8, 0.45) 50%, rgba(12, 2, 5, 0.78) 100%);
+    gap: 10px;
+  }
+  .menu-shell {
+    width: 100%; max-width: 1080px; margin: 0 auto;
+    flex: 1 1 auto; min-height: 0;
+    display: flex; flex-direction: column; justify-content: space-between; gap: 10px;
+  }
+  .menu-topbar {
+    display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap;
+    padding: 8px 14px; border-radius: 12px;
+    background: linear-gradient(180deg, rgba(28, 7, 12, 0.92), rgba(14, 3, 6, 0.88));
+    border: 1px solid rgba(255, 55, 85, 0.45);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.65), inset 0 0 18px rgba(217, 4, 41, 0.14);
+  }
+  .brand-lockup { display: flex; flex-direction: column; gap: 2px; }
+  .brand-kicker {
+    font-size: 9.5px; font-weight: 900; letter-spacing: 0.2em; color: #ff8599; text-transform: uppercase;
+  }
   .logo {
-    font-size: clamp(30px, 7vw, 50px); font-weight: 950; letter-spacing: 0.08em; line-height: 1;
-    background: linear-gradient(180deg, #ffffff 0%, #ff4d6d 50%, #8a0018 100%);
-    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0 4px 18px rgba(255, 20, 50, 0.68));
+    font-size: clamp(22px, 4.2vw, 38px); font-weight: 950; letter-spacing: 0.08em; line-height: 1;
+    background: linear-gradient(180deg, #ffffff 0%, #ff4d6d 50%, #9b001d 100%);
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 3px 14px rgba(255, 20, 50, 0.6));
   }
-  .subtitle { margin-top: 6px; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #e89ca9; font-weight: 800; }
-  .diff-row { display: flex; gap: 8px; margin: 18px 0 14px; }
+  .subtitle { margin-top: 6px; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #e89ca9; font-weight: 800; }
+  .topbar-right { display: flex; align-items: center; gap: 7px; flex-wrap: wrap; }
+  .arcade-pill {
+    display: inline-flex; align-items: center; gap: 6px; padding: 7px 13px; border-radius: 8px;
+    border: 1px solid rgba(255, 75, 95, 0.58); background: rgba(217, 4, 41, 0.18);
+    color: #ffd166; text-decoration: none; font-size: 11px; font-weight: 900;
+    letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer;
+    transition: transform 0.1s, background 0.15s;
+  }
+  .arcade-pill:hover { background: rgba(217, 4, 41, 0.34); transform: translateY(-1px); }
+  .rotate-pill { display: none; border-color: rgba(255, 209, 102, 0.55); background: rgba(255, 209, 102, 0.14); color: #ffd166; }
+  .stage-crumb {
+    padding: 6px 11px; border-radius: 8px; background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 70, 95, 0.32); font-size: 10.5px; font-weight: 900;
+    letter-spacing: 0.14em; color: #f4d6dc; text-transform: uppercase;
+  }
+
+  .menu-stage {
+    display: none; flex: 1 1 auto; min-height: 0; align-items: center; justify-content: center;
+    animation: hellFade 0.18s ease-out;
+  }
+  .menu-stage.active { display: flex; }
+  @keyframes hellFade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+  /* Home Split */
+  .home-layout {
+    width: 100%; display: grid;
+    grid-template-columns: minmax(250px, 340px) minmax(240px, 360px);
+    justify-content: space-between; align-items: end; gap: 16px;
+  }
+  .home-nav { display: flex; flex-direction: column; gap: 7px; width: 100%; }
+  .nav-item {
+    width: 100%; display: grid; grid-template-columns: 1fr auto; grid-template-rows: auto auto;
+    align-items: center; text-align: left; text-decoration: none;
+    padding: 10px 15px; border-radius: 10px;
+    border: 1px solid rgba(255, 70, 95, 0.36);
+    background: linear-gradient(160deg, rgba(32, 8, 14, 0.9), rgba(14, 3, 6, 0.88));
+    color: #f8e8ea; cursor: pointer;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.55);
+    transition: transform 0.12s, border-color 0.15s, background 0.15s;
+  }
+  .nav-item:hover, .nav-item:focus-visible {
+    transform: translateX(4px); border-color: #ff6b81;
+    background: linear-gradient(160deg, rgba(56, 12, 22, 0.94), rgba(22, 5, 9, 0.92));
+  }
+  .nav-item.primary {
+    border-color: #ff8599;
+    background: linear-gradient(180deg, #ef233c, #9b001d);
+    color: #fff;
+    box-shadow: 0 4px 0 #5b0010, 0 12px 28px rgba(217, 4, 41, 0.5);
+  }
+  .nav-item.accent {
+    border-color: rgba(255, 209, 102, 0.55);
+    background: linear-gradient(135deg, rgba(255, 109, 0, 0.25), rgba(34, 8, 14, 0.92));
+  }
+  .nav-item.exit-arcade {
+    border-color: rgba(255, 255, 255, 0.2);
+    background: linear-gradient(160deg, rgba(22, 10, 14, 0.86), rgba(10, 4, 6, 0.9));
+  }
+  .nav-label { font-size: clamp(13px, 2.2vmin, 16px); font-weight: 900; letter-spacing: 0.08em; line-height: 1.1; }
+  .nav-sub { grid-column: 1; font-size: 10.5px; font-weight: 600; color: #e8b4be; margin-top: 2px; }
+  .nav-item.primary .nav-sub { color: #ffe3e8; }
+  .nav-arrow { grid-column: 2; grid-row: 1 / span 2; font-size: 17px; font-weight: 900; padding-left: 10px; color: #ffd166; }
+
+  .lobby-dossier {
+    background: linear-gradient(180deg, rgba(28, 7, 12, 0.9), rgba(12, 3, 5, 0.92));
+    border: 1px solid rgba(255, 55, 85, 0.45); border-radius: 14px; padding: 13px 15px;
+    box-shadow: 0 16px 38px rgba(0, 0, 0, 0.65);
+    display: flex; flex-direction: column; gap: 10px;
+  }
+  .dossier-head {
+    display: flex; justify-content: space-between; align-items: center;
+    border-bottom: 1px solid rgba(255, 70, 95, 0.25); padding-bottom: 7px;
+  }
+  .dossier-head strong { font-size: 11px; font-weight: 900; letter-spacing: 0.16em; color: #ff6b81; }
+  .dossier-badge {
+    padding: 3px 9px; border-radius: 999px; background: rgba(255, 209, 102, 0.16);
+    border: 1px solid rgba(255, 209, 102, 0.45); color: #ffd166; font-size: 10.5px; font-weight: 900;
+  }
+  .dossier-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .dossier-cell {
+    background: rgba(0, 0, 0, 0.38); border: 1px solid rgba(255, 70, 95, 0.24);
+    border-radius: 8px; padding: 8px 10px;
+  }
+  .dossier-cell small { display: block; font-size: 9px; font-weight: 800; letter-spacing: 0.12em; color: #c9a2aa; }
+  .dossier-cell b { display: block; font-size: 14px; font-weight: 900; color: #ff6b81; margin-top: 2px; }
+  .dossier-tip {
+    font-size: 11px; line-height: 1.4; color: #ecd3d8;
+    background: rgba(217, 4, 41, 0.12); border: 1px solid rgba(255, 70, 95, 0.22);
+    border-radius: 8px; padding: 8px 10px;
+  }
+  .dossier-tip b { color: #ffd166; }
+
+  /* Sub-Stage Panel */
+  .stage-card {
+    width: 100%; max-width: 900px; margin: 0 auto;
+    background: linear-gradient(180deg, rgba(28, 7, 12, 0.94), rgba(12, 3, 5, 0.96));
+    border: 1px solid rgba(255, 55, 85, 0.5); border-radius: 16px;
+    padding: clamp(12px, 2.2vmin, 18px);
+    box-shadow: 0 22px 54px rgba(0, 0, 0, 0.78);
+    display: flex; flex-direction: column; gap: 11px; text-align: left;
+  }
+  .stage-head {
+    display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap;
+    border-bottom: 1px solid rgba(255, 70, 95, 0.25); padding-bottom: 9px;
+  }
+  .stage-head-left { display: flex; align-items: center; gap: 10px; }
+  .back-btn {
+    padding: 6px 12px; border-radius: 8px; border: 1px solid rgba(255, 70, 95, 0.45);
+    background: rgba(255, 255, 255, 0.08); color: #fff; font-size: 11px; font-weight: 900;
+    letter-spacing: 0.08em; cursor: pointer;
+  }
+  .back-btn:hover { background: rgba(255, 70, 95, 0.24); }
+  .stage-title { font-size: clamp(14px, 2.5vmin, 18px); font-weight: 900; letter-spacing: 0.08em; color: #ff6b81; }
+
+  .diff-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 9px; }
   .diff-btn {
-    flex: 1; padding: 10px 8px; border-radius: 8px; border: 1px solid rgba(255, 70, 95, 0.32);
-    background: rgba(45, 10, 18, 0.65); color: #d8b4bc; font-weight: 800; font-size: 12px; cursor: pointer;
+    padding: 12px; border-radius: 10px; border: 1.5px solid rgba(255, 70, 95, 0.34);
+    background: rgba(45, 10, 18, 0.65); color: #e4cad0; font-weight: 800; font-size: 12px;
+    cursor: pointer; text-align: left; display: flex; flex-direction: column; gap: 4px;
+    transition: border-color 0.15s, background 0.15s, transform 0.1s;
   }
+  .diff-btn:hover { background: rgba(70, 14, 26, 0.78); }
+  .diff-btn strong { font-size: 14px; font-weight: 900; letter-spacing: 0.08em; color: #fff; }
+  .diff-btn span { font-size: 11px; line-height: 1.35; opacity: 0.85; }
+  .diff-btn small { font-size: 10px; font-weight: 800; color: #ffd166; margin-top: 2px; }
   .diff-btn.active {
-    background: linear-gradient(180deg, #d90429, #7d0217); border-color: #ff6b81; color: #fff;
-    box-shadow: 0 0 18px rgba(217, 4, 41, 0.55);
+    background: linear-gradient(180deg, rgba(217, 4, 41, 0.85), rgba(125, 2, 23, 0.92));
+    border-color: #ff8599; color: #fff;
+    box-shadow: 0 0 22px rgba(217, 4, 41, 0.55);
   }
+
+  .arsenal-split { display: grid; grid-template-columns: 0.9fr 1.2fr; gap: 12px; }
+  .arsenal-list { display: flex; flex-direction: column; gap: 6px; }
+  .arsenal-tab {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 8px 11px; border-radius: 9px; border: 1px solid rgba(255, 70, 95, 0.3);
+    background: rgba(0, 0, 0, 0.38); color: #f4d6dc; font-size: 12px; font-weight: 800;
+    cursor: pointer; text-align: left;
+  }
+  .arsenal-tab.active {
+    border-color: #ff6b81; background: linear-gradient(90deg, rgba(217, 4, 41, 0.55), rgba(45, 10, 18, 0.85));
+    color: #fff;
+  }
+  .arsenal-tab span { font-size: 10px; color: #ffd166; letter-spacing: 0.08em; }
+  .arsenal-detail {
+    background: rgba(0, 0, 0, 0.4); border: 1px solid rgba(255, 70, 95, 0.3);
+    border-radius: 12px; padding: 12px 14px; display: flex; flex-direction: column; justify-content: space-between; gap: 10px;
+  }
+  .w-stat-row { display: flex; flex-direction: column; gap: 3px; }
+  .w-stat-top { display: flex; justify-content: space-between; font-size: 10.5px; font-weight: 800; color: #e8b4be; }
+  .w-stat-track { height: 6px; border-radius: 999px; background: rgba(255, 255, 255, 0.12); overflow: hidden; }
+  .w-stat-fill { height: 100%; border-radius: 999px; background: linear-gradient(90deg, #ff1e42, #ffd166); transition: width 0.22s ease; }
+
   .primary-btn {
-    width: 100%; padding: 14px 18px; border-radius: 10px; border: 1px solid #ff6b81;
-    background: linear-gradient(180deg, #ef233c, #9b001d); color: #fff; font-size: 16px; font-weight: 900;
+    width: 100%; padding: 13px 18px; border-radius: 10px; border: 1px solid #ff6b81;
+    background: linear-gradient(180deg, #ef233c, #9b001d); color: #fff; font-size: 15px; font-weight: 900;
     letter-spacing: 0.12em; cursor: pointer; box-shadow: 0 8px 28px rgba(217, 4, 41, 0.58);
   }
   .primary-btn:hover { filter: brightness(1.1); }
   .primary-btn:active { transform: scale(0.98); }
   .secondary-btn {
-    width: 100%; margin-top: 10px; padding: 11px 16px; border-radius: 10px;
+    width: 100%; margin-top: 8px; padding: 10px 16px; border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.22); background: rgba(255, 255, 255, 0.07);
-    color: #f4d6dc; font-size: 13px; font-weight: 800; letter-spacing: 0.08em; cursor: pointer;
+    color: #f4d6dc; font-size: 12.5px; font-weight: 800; letter-spacing: 0.08em; cursor: pointer;
+    display: inline-block; text-align: center; text-decoration: none;
   }
-  .controls-grid { margin-top: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; text-align: left; }
+  .controls-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 9px; text-align: left; }
   .ctrl-box {
-    background: rgba(0, 0, 0, 0.4); border: 1px solid rgba(255, 70, 95, 0.24);
-    border-radius: 8px; padding: 10px; font-size: 11px; line-height: 1.5; color: #e4cad0;
+    background: rgba(0, 0, 0, 0.42); border: 1px solid rgba(255, 70, 95, 0.26);
+    border-radius: 10px; padding: 10px 12px; font-size: 11.5px; line-height: 1.5; color: #e4cad0;
   }
-  .ctrl-box b { display: block; color: #ff6b81; font-size: 11px; letter-spacing: 0.08em; margin-bottom: 4px; }
+  .ctrl-box b { display: block; color: #ff6b81; font-size: 11px; letter-spacing: 0.1em; margin-bottom: 5px; }
+  .settings-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
   .setting-row {
-    display: flex; justify-content: space-between; align-items: center;
-    padding: 10px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.08); font-size: 13px; font-weight: 700;
+    display: flex; justify-content: space-between; align-items: center; gap: 8px;
+    padding: 8px 11px; border-radius: 9px; background: rgba(0, 0, 0, 0.32);
+    border: 1px solid rgba(255, 70, 95, 0.2); font-size: 12.5px; font-weight: 700;
   }
-  .setting-row input[type="range"] { width: 140px; accent-color: #ff1e42; }
+  .setting-row input[type="range"] { width: 120px; accent-color: #ff1e42; }
   .toggle-pill {
-    padding: 6px 12px; border-radius: 999px; border: 1px solid rgba(255, 70, 95, 0.45);
-    background: rgba(50, 12, 20, 0.8); color: #fff; font-size: 11px; font-weight: 800; cursor: pointer;
+    padding: 5px 12px; border-radius: 999px; border: 1px solid rgba(255, 70, 95, 0.45);
+    background: rgba(50, 12, 20, 0.8); color: #fff; font-size: 11px; font-weight: 800; cursor: pointer; flex-shrink: 0;
   }
   .toggle-pill.on { background: #d90429; border-color: #ff8599; }
-  .stats-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin: 16px 0; }
+  .stats-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin: 14px 0; }
   .stat-cell { background: rgba(0, 0, 0, 0.42); border: 1px solid rgba(255, 70, 95, 0.25); border-radius: 8px; padding: 10px; }
   .stat-cell .v { font-size: 20px; font-weight: 900; color: #ff4d6d; }
   .stat-cell .k { font-size: 10px; letter-spacing: 0.1em; color: #c9a2aa; font-weight: 700; }
+
+  .menu-footer {
+    display: flex; justify-content: space-between; align-items: center; gap: 10px;
+    font-size: 10.5px; font-weight: 800; letter-spacing: 0.12em; color: #c9a2aa; text-transform: uppercase;
+  }
+
+  /* Landscape Prompt for Mobile Portrait */
+  #rotatePrompt {
+    display: none; position: fixed; inset: 0; z-index: 60;
+    background: rgba(10, 2, 4, 0.93); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    align-items: center; justify-content: center;
+    padding: calc(18px + var(--st)) calc(18px + var(--sr)) calc(18px + var(--sb)) calc(18px + var(--sl));
+  }
+  #rotatePrompt.visible { display: flex; }
+  .rotate-card {
+    width: min(92vw, 390px);
+    background: linear-gradient(180deg, rgba(34, 8, 14, 0.96), rgba(14, 3, 6, 0.98));
+    border: 1.5px solid rgba(255, 70, 95, 0.55); border-radius: 16px; padding: 22px 20px;
+    text-align: center; box-shadow: 0 22px 60px rgba(0, 0, 0, 0.78);
+    display: flex; flex-direction: column; align-items: center; gap: 11px;
+  }
+  .rotate-icon { font-size: 38px; display: inline-block; animation: rotatePhoneHell 2.1s ease-in-out infinite; }
+  @keyframes rotatePhoneHell { 0%, 20% { transform: rotate(0deg); } 50%, 75% { transform: rotate(-90deg); } 100% { transform: rotate(0deg); } }
+  .rotate-title { font-size: 19px; font-weight: 900; letter-spacing: 0.06em; color: #ff6b81; }
+  .rotate-desc { font-size: 12.5px; line-height: 1.5; color: #e4cad0; }
+
+  @media (max-width: 760px) {
+    .home-layout, .diff-cards, .arsenal-split, .controls-grid, .settings-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-height: 480px) {
+    #menuOverlay { padding: calc(8px + var(--st)) calc(12px + var(--sr)) calc(8px + var(--sb)) calc(12px + var(--sl)); gap: 6px; }
+    .menu-topbar { padding: 6px 11px; }
+    .brand-kicker { display: none; }
+    .logo { font-size: clamp(19px, 4vw, 28px); }
+    .home-layout { grid-template-columns: minmax(220px, 300px) minmax(220px, 1fr); gap: 10px; align-items: center; }
+    .home-nav { gap: 5px; }
+    .nav-item { padding: 7px 11px; }
+    .nav-sub { display: none; }
+    .lobby-dossier { padding: 9px 11px; gap: 7px; }
+    .stage-card { padding: 10px 12px; gap: 8px; }
+    .diff-cards, .controls-grid { grid-template-columns: repeat(3, 1fr); gap: 7px; }
+    .arsenal-split { grid-template-columns: 0.9fr 1.2fr; gap: 8px; }
+    .settings-grid { grid-template-columns: repeat(2, 1fr); gap: 6px; }
+    .menu-footer { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) { .menu-stage, .rotate-icon { animation: none !important; } }
+
   #pointerNotice {
     position: fixed; left: 50%; top: 74px; transform: translateX(-50%); z-index: 8;
     background: rgba(18, 4, 8, 0.88); border: 1px solid rgba(255, 70, 95, 0.48);
@@ -467,76 +694,311 @@
   </div>
 </div>
 
-<!-- Start Menu -->
-<div class="overlay" id="menuOverlay">
-  <div class="card">
-    <div class="logo">GOREHOUND 3D</div>
-    <div class="subtitle">Hell-Foundry Ultimate Edition</div>
+<!-- Mobile Portrait Landscape Prompt -->
+<div id="rotatePrompt" role="dialog" aria-modal="true" aria-labelledby="rotateTitle">
+  <div class="rotate-card">
+    <div class="rotate-icon" aria-hidden="true">📱</div>
+    <h2 class="rotate-title" id="rotateTitle">BEST IN LANDSCAPE</h2>
+    <p class="rotate-desc">
+      Rotate your device horizontally for wider Hell-Foundry FOV, full 5-weapon selector visibility, and dual-thumb FPS aim.
+    </p>
+    <button type="button" class="primary-btn" id="btnEnterLandscape">↻ ENTER LANDSCAPE + FULLSCREEN</button>
+    <button type="button" class="secondary-btn" id="btnDismissRotate" style="margin-top:0;">CONTINUE IN PORTRAIT</button>
+  </div>
+</div>
 
-    <div class="diff-row" id="diffRow">
-      <button class="diff-btn" data-d="0">BRUTAL</button>
-      <button class="diff-btn active" data-d="1">CARNAGE</button>
-      <button class="diff-btn" data-d="2">NIGHTMARE</button>
-    </div>
-
-    <button class="primary-btn" id="btnStart">ENTER THE SLAUGHTER-YARD</button>
-    <a href="../games.html" style="color:#ff4d6d;text-decoration:none;font-weight:800;font-size:clamp(12px,2vmin,14px);letter-spacing:0.1em;margin-top:10px;opacity:0.9;display:inline-block;">← BACK TO GAMES</a>
-
-    <div class="controls-grid">
-      <div class="ctrl-box">
-        <b>DESKTOP</b>
-        WASD Move • Mouse Aim • Q Swap • R Reload<br>
-        L-Click Fire • R-Click/F Cleaver &amp; Exec<br>
-        Shift Dash • Space Jump • 1-5 Weapons
+<!-- Multi-Step Main Menu -->
+<div class="overlay" id="menuOverlay" role="dialog" aria-label="Gorehound 3D Main Menu">
+  <div class="menu-shell">
+    <header class="menu-topbar">
+      <div class="brand-lockup">
+        <span class="brand-kicker">HELL-FOUNDRY ULTIMATE EDITION</span>
+        <h1 class="logo">GOREHOUND 3D</h1>
       </div>
-      <div class="ctrl-box">
-        <b>MOBILE / TOUCH</b>
-        Left Thumb Move • Right Drag Aim<br>
-        Hold FIRE &amp; Drag to Aim+Shoot<br>
-        Chainsaw [5] or Cleave Heals You!
+      <div class="topbar-right">
+        <button type="button" class="arcade-pill rotate-pill" id="btnMenuRotateHint" title="Switch to Landscape">↻ LANDSCAPE</button>
+        <a href="../games.html" class="arcade-pill" title="Back to Arcade">← ARCADE</a>
+        <button type="button" class="icon-btn" id="btnMenuMute" title="Toggle Audio (M)" aria-label="Toggle Audio">🔊</button>
+        <button type="button" class="icon-btn" id="btnMenuFs" title="Toggle Fullscreen" aria-label="Toggle Fullscreen">⛶</button>
+        <div class="stage-crumb" id="stageCrumb">CITADEL HUB</div>
       </div>
-    </div>
+    </header>
+
+    <!-- STAGE 1: CITADEL HOME -->
+    <section class="menu-stage active" id="stage-home" data-stage="home">
+      <div class="home-layout">
+        <nav class="home-nav" aria-label="Main Menu">
+          <button type="button" class="nav-item primary" id="btnNavPlay">
+            <span class="nav-label">PLAY SLAUGHTER</span>
+            <span class="nav-sub">SELECT THREAT LEVEL &amp; DEPLOY</span>
+            <span class="nav-arrow" aria-hidden="true">→</span>
+          </button>
+          <button type="button" class="nav-item accent" id="btnQuickDeploy">
+            <span class="nav-label">QUICK DEPLOY</span>
+            <span class="nav-sub" id="quickDeploySub">DROP INTO CARNAGE</span>
+            <span class="nav-arrow" aria-hidden="true">▸</span>
+          </button>
+          <button type="button" class="nav-item" id="btnNavArsenal">
+            <span class="nav-label">HELL ARSENAL</span>
+            <span class="nav-sub">INSPECT 5 WEAPONS &amp; EXECUTION INTEL</span>
+            <span class="nav-arrow" aria-hidden="true">→</span>
+          </button>
+          <button type="button" class="nav-item" id="btnNavControls">
+            <span class="nav-label">CONTROLS</span>
+            <span class="nav-sub">DESKTOP &amp; DUAL-STICK MOBILE</span>
+            <span class="nav-arrow" aria-hidden="true">→</span>
+          </button>
+          <button type="button" class="nav-item" id="btnNavSettings">
+            <span class="nav-label">SETTINGS</span>
+            <span class="nav-sub">SENSITIVITY, GORE, TOUCH &amp; ACCESSIBILITY</span>
+            <span class="nav-arrow" aria-hidden="true">→</span>
+          </button>
+          <a href="../games.html" class="nav-item exit-arcade" id="btnBackArcade">
+            <span class="nav-label">BACK TO ARCADE</span>
+            <span class="nav-sub">RETURN TO GAMES HUB</span>
+            <span class="nav-arrow" aria-hidden="true">←</span>
+          </a>
+        </nav>
+
+        <aside class="lobby-dossier" aria-label="Slayer Dossier">
+          <div class="dossier-head">
+            <strong>SLAYER DOSSIER</strong>
+            <span class="dossier-badge" id="dossierDiffBadge">CARNAGE</span>
+          </div>
+          <div class="dossier-grid">
+            <div class="dossier-cell">
+              <small>BEST SLAUGHTER</small>
+              <b id="dossierBestScore">0</b>
+            </div>
+            <div class="dossier-cell">
+              <small>BEST WAVE</small>
+              <b id="dossierBestWave">1</b>
+            </div>
+            <div class="dossier-cell">
+              <small>CAREER KILLS</small>
+              <b id="dossierTotalKills">0</b>
+            </div>
+            <div class="dossier-cell">
+              <small>SKULLS POPPED</small>
+              <b id="dossierTotalHeads">0</b>
+            </div>
+          </div>
+          <div class="dossier-tip">
+            <b>BLOOD FUEL:</b> Low HP? Slice foes with the <b>Ripper Chainsaw [5]</b> or <b>Glory Execute [F / CLEAVE]</b> staggered demons to rip back health!
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- STAGE 2: THREAT PROTOCOL / DIFFICULTY SELECT -->
+    <section class="menu-stage" id="stage-play" data-stage="play">
+      <div class="stage-card">
+        <div class="stage-head">
+          <div class="stage-head-left">
+            <button type="button" class="back-btn" data-back="home">← BACK</button>
+            <span class="stage-title">SELECT THREAT PROTOCOL</span>
+          </div>
+        </div>
+
+        <div class="diff-cards" id="diffRow">
+          <button type="button" class="diff-btn" data-d="0">
+            <strong>BRUTAL</strong>
+            <span>Forgiving damage &amp; steady wave pacing for warmups.</span>
+            <small>80% ENEMY HP • 75% DMG</small>
+          </button>
+          <button type="button" class="diff-btn active" data-d="1">
+            <strong>CARNAGE</strong>
+            <span>Intended Hell-Foundry rhythm. Relentless packs &amp; fair ammo.</span>
+            <small>100% ENEMY HP • 100% DMG</small>
+          </button>
+          <button type="button" class="diff-btn" data-d="2">
+            <strong>NIGHTMARE</strong>
+            <span>Hyper-aggressive hordes &amp; brutal hits. Keep dashing!</span>
+            <small>135% ENEMY HP • 130% DMG</small>
+          </button>
+        </div>
+
+        <button type="button" class="primary-btn" id="btnStart">ENTER THE SLAUGHTER-YARD</button>
+      </div>
+    </section>
+
+    <!-- STAGE 3: HELL ARSENAL -->
+    <section class="menu-stage" id="stage-arsenal" data-stage="arsenal">
+      <div class="stage-card">
+        <div class="stage-head">
+          <div class="stage-head-left">
+            <button type="button" class="back-btn" data-back="home">← BACK</button>
+            <span class="stage-title">HELL-FOUNDRY ARSENAL</span>
+          </div>
+        </div>
+
+        <div class="arsenal-split">
+          <div class="arsenal-list" id="arsenalTabs">
+            <button type="button" class="arsenal-tab active" data-w="0">1. HELLBREAKER <span>∞ BUCKSHOT</span></button>
+            <button type="button" class="arsenal-tab" data-w="1">2. EXECUTIONER .500 <span>PIERCING</span></button>
+            <button type="button" class="arsenal-tab" data-w="2">3. MEATGRINDER <span>ROTARY</span></button>
+            <button type="button" class="arsenal-tab" data-w="3">4. BONE-SHREDDER <span>FLAK</span></button>
+            <button type="button" class="arsenal-tab" data-w="4">5. RIPPER CHAINSAW <span>HEAL + AMMO</span></button>
+          </div>
+          <div class="arsenal-detail">
+            <div>
+              <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;">
+                <strong id="arsName" style="font-size:17px;color:#fff;letter-spacing:0.06em;">HELLBREAKER</strong>
+                <span id="arsRole" style="font-size:10.5px;font-weight:900;color:#ffd166;">12-PELLET DOUBLE BARREL</span>
+              </div>
+              <p id="arsDesc" style="font-size:12px;line-height:1.45;color:#e4cad0;margin:6px 0 10px;"></p>
+              <div class="w-stat-row">
+                <div class="w-stat-top"><span>DAMAGE OUTPUT</span><span id="arsValDmg">90</span></div>
+                <div class="w-stat-track"><div class="w-stat-fill" id="arsBarDmg" style="width:90%"></div></div>
+              </div>
+              <div class="w-stat-row" style="margin-top:6px;">
+                <div class="w-stat-top"><span>FIRE CADENCE</span><span id="arsValRof">55</span></div>
+                <div class="w-stat-track"><div class="w-stat-fill" id="arsBarRof" style="width:55%"></div></div>
+              </div>
+              <div class="w-stat-row" style="margin-top:6px;">
+                <div class="w-stat-top"><span>EFFECTIVE RANGE</span><span id="arsValRng">50</span></div>
+                <div class="w-stat-track"><div class="w-stat-fill" id="arsBarRng" style="width:50%"></div></div>
+              </div>
+            </div>
+            <button type="button" class="primary-btn" id="btnArsenalDeploy">DEPLOY WITH LOADOUT</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STAGE 4: CONTROLS -->
+    <section class="menu-stage" id="stage-controls" data-stage="controls">
+      <div class="stage-card">
+        <div class="stage-head">
+          <div class="stage-head-left">
+            <button type="button" class="back-btn" data-back="home">← BACK</button>
+            <span class="stage-title">COMBAT CONTROLS</span>
+          </div>
+        </div>
+
+        <div class="controls-grid">
+          <div class="ctrl-box">
+            <b>DESKTOP</b>
+            WASD Move • Mouse Pointer-Lock Aim<br>
+            L-Click Fire • R-Click / F Cleave &amp; Execute<br>
+            Q Quick Swap • R Reload • 1–5 Weapons<br>
+            Shift Dash • Space Jump • P / Esc Pause
+          </div>
+          <div class="ctrl-box">
+            <b>MOBILE LANDSCAPE</b>
+            Left Half: Floating Move Stick<br>
+            Right Half: Drag to Aim<br>
+            Hold FIRE &amp; Drag to Aim + Shoot<br>
+            Tap Weapon Slots to Switch Arsenal
+          </div>
+          <div class="ctrl-box">
+            <b>SURVIVAL RULES</b>
+            Staggered foes glow gold — Glory Execute for HP!<br>
+            Ripper Chainsaw [5] harvests ammo &amp; blood.<br>
+            Shoot red fuel barrels to detonate packs.<br>
+            Bosses spawn on milestone waves!
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STAGE 5: SETTINGS & ACCESSIBILITY -->
+    <section class="menu-stage" id="stage-settings" data-stage="settings">
+      <div class="stage-card">
+        <div class="stage-head">
+          <div class="stage-head-left">
+            <button type="button" class="back-btn" data-back="home">← BACK</button>
+            <span class="stage-title">SETTINGS &amp; ACCESSIBILITY</span>
+          </div>
+        </div>
+
+        <div class="settings-grid">
+          <div class="setting-row">
+            <span>Look Sensitivity <b id="mSensVal" style="color:#ffd166;margin-left:4px;">1.0x</b></span>
+            <input type="range" id="mSensSlider" min="0.3" max="2.5" step="0.1" value="1.0">
+          </div>
+          <div class="setting-row">
+            <span>Auto-Fire on Target</span>
+            <button type="button" class="toggle-pill" id="mBtnAutoFire">OFF</button>
+          </div>
+          <div class="setting-row">
+            <span>Touch Controls</span>
+            <button type="button" class="toggle-pill" id="mBtnTouchMode">AUTO</button>
+          </div>
+          <div class="setting-row">
+            <span>Gore Density</span>
+            <button type="button" class="toggle-pill on" id="mBtnGoreMode">EXTREME</button>
+          </div>
+          <div class="setting-row">
+            <span>Audio</span>
+            <button type="button" class="toggle-pill on" id="mBtnMute">ON</button>
+          </div>
+          <div class="setting-row">
+            <span>Reduced Screen Shake</span>
+            <button type="button" class="toggle-pill" id="mBtnReducedShake">OFF</button>
+          </div>
+          <div class="setting-row" id="mFsRow">
+            <span>Fullscreen</span>
+            <button type="button" class="toggle-pill" id="mBtnFs">OFF</button>
+          </div>
+          <div class="setting-row">
+            <span>Slayer Records</span>
+            <button type="button" class="toggle-pill" id="btnResetStats">RESET</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="menu-footer">
+      <span>5 WEAPONS • PROCEDURAL 3D ARENA • BOSS WAVES</span>
+      <span>LANDSCAPE RECOMMENDED FOR MOBILE</span>
+    </footer>
   </div>
 </div>
 
 <!-- Pause Overlay -->
-<div class="overlay" id="pauseOverlay" style="display:none;">
+<div class="overlay" id="pauseOverlay" style="display:none;" role="dialog" aria-modal="true" aria-label="Game Paused">
   <div class="card">
     <div class="logo" style="font-size:30px;">PAUSED</div>
-    <div style="margin-top:14px;">
+    <div style="margin-top:12px;">
       <div class="setting-row">
         <span>Look Sensitivity</span>
         <input type="range" id="sensSlider" min="0.3" max="2.5" step="0.1" value="1.0">
       </div>
       <div class="setting-row">
         <span>Auto-Fire on Target</span>
-        <button class="toggle-pill" id="btnAutoFire">OFF</button>
+        <button type="button" class="toggle-pill" id="btnAutoFire">OFF</button>
       </div>
       <div class="setting-row">
         <span>Touch Controls</span>
-        <button class="toggle-pill" id="btnTouchMode">AUTO</button>
+        <button type="button" class="toggle-pill" id="btnTouchMode">AUTO</button>
       </div>
       <div class="setting-row">
         <span>Gore Density</span>
-        <button class="toggle-pill on" id="btnGoreMode">EXTREME</button>
+        <button type="button" class="toggle-pill on" id="btnGoreMode">EXTREME</button>
       </div>
       <div class="setting-row">
         <span>Audio</span>
-        <button class="toggle-pill on" id="btnPauseMute">ON</button>
+        <button type="button" class="toggle-pill on" id="btnPauseMute">ON</button>
+      </div>
+      <div class="setting-row">
+        <span>Reduced Screen Shake</span>
+        <button type="button" class="toggle-pill" id="btnReducedShake">OFF</button>
       </div>
       <div class="setting-row" id="fsSettingRow">
         <span>Fullscreen</span>
-        <button class="toggle-pill" id="btnPauseFs">OFF</button>
+        <button type="button" class="toggle-pill" id="btnPauseFs">OFF</button>
       </div>
     </div>
-    <button class="primary-btn" id="btnResume" style="margin-top:16px;">RESUME SLAUGHTER</button>
-    <button class="secondary-btn" id="btnRestart">RESTART YARD</button>
-    <a href="../games.html" class="secondary-btn" style="text-decoration:none;text-align:center;margin-top:8px;">EXIT TO ARCADE</a>
+    <button type="button" class="primary-btn" id="btnResume" style="margin-top:14px;">RESUME SLAUGHTER</button>
+    <button type="button" class="secondary-btn" id="btnRestart">RESTART YARD</button>
+    <button type="button" class="secondary-btn" id="btnPauseMenu">MAIN MENU</button>
+    <a href="../games.html" class="secondary-btn" style="margin-top:8px;">BACK TO ARCADE</a>
   </div>
 </div>
 
 <!-- Game Over Overlay -->
-<div class="overlay" id="gameoverOverlay" style="display:none;">
+<div class="overlay" id="gameoverOverlay" style="display:none;" role="dialog" aria-modal="true" aria-label="Game Over">
   <div class="card">
     <div class="logo" style="font-size:34px;">TORN APART</div>
     <div class="subtitle">THE HORDE FEASTED ON YOUR FLESH</div>
@@ -546,8 +1008,9 @@
       <div class="stat-cell"><div class="v" id="stKills">0</div><div class="k">TOTAL KILLS</div></div>
       <div class="stat-cell"><div class="v" id="stHeads">0</div><div class="k">SKULLS POPPED</div></div>
     </div>
-    <button class="primary-btn" id="btnRetry">SPILL MORE BLOOD</button>
-    <a href="../games.html" style="color:#ff4d6d;text-decoration:none;font-weight:800;font-size:clamp(12px,2vmin,14px);letter-spacing:0.1em;margin-top:12px;opacity:0.9;display:inline-block;">← BACK TO GAMES</a>
+    <button type="button" class="primary-btn" id="btnRetry">SPILL MORE BLOOD</button>
+    <button type="button" class="secondary-btn" id="btnGoMenu">MAIN MENU</button>
+    <a href="../games.html" class="secondary-btn" style="margin-top:8px;">BACK TO ARCADE</a>
   </div>
 </div>
 
@@ -592,6 +1055,17 @@
     setMuted(m) {
       this.muted = m;
       if (this.master && this.ctx) this.master.gain.setTargetAtTime(m ? 0 : 0.58, this.ctx.currentTime, 0.02);
+    }
+    playUi(kind = 'tap') {
+      if (!this.ctx || this.muted) return;
+      const t = this.ctx.currentTime;
+      if (kind === 'back') this._osc(310, 190, 0.065, 'triangle', 0.14, t);
+      else if (kind === 'confirm') {
+        this._osc(440, 620, 0.06, 'sawtooth', 0.11, t);
+        this._osc(660, 880, 0.08, 'triangle', 0.11, t + 0.04);
+      } else {
+        this._osc(520, 660, 0.045, 'triangle', 0.10, t);
+      }
     }
     playShot(weaponIdx) {
       if (!this.ctx || this.muted) return;
@@ -1685,6 +2159,37 @@
 
   let difficulty = 1, goreLevel = 2, state = 'menu', sensitivity = 1.0;
   let autoFireEnabled = false, touchMode = 'auto', isTouchActive = false;
+  let reducedShake = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let rotateDismissed = false;
+
+  let ghSave = { bestScore: 0, bestWave: 1, totalKills: 0, totalHeads: 0 };
+  try {
+    const raw = localStorage.getItem('gorehound_3d_save_v1');
+    if (raw) ghSave = { ...ghSave, ...JSON.parse(raw) };
+  } catch (_) {}
+  function persistGhSave() {
+    try { localStorage.setItem('gorehound_3d_save_v1', JSON.stringify(ghSave)); } catch (_) {}
+  }
+
+  let ghPrefs = {};
+  try {
+    const rawP = localStorage.getItem('gorehound_3d_prefs_v1');
+    if (rawP) ghPrefs = JSON.parse(rawP) || {};
+  } catch (_) {}
+  if (typeof ghPrefs.difficulty === 'number' && ghPrefs.difficulty >= 0 && ghPrefs.difficulty <= 2) difficulty = ghPrefs.difficulty;
+  if (typeof ghPrefs.goreLevel === 'number' && ghPrefs.goreLevel >= 0 && ghPrefs.goreLevel <= 2) goreLevel = ghPrefs.goreLevel;
+  if (typeof ghPrefs.sensitivity === 'number') sensitivity = Math.max(0.3, Math.min(2.5, ghPrefs.sensitivity));
+  if (typeof ghPrefs.autoFireEnabled === 'boolean') autoFireEnabled = ghPrefs.autoFireEnabled;
+  if (['auto', 'on', 'off'].includes(ghPrefs.touchMode)) touchMode = ghPrefs.touchMode;
+  if (typeof ghPrefs.muted === 'boolean') sound.muted = ghPrefs.muted;
+  if (typeof ghPrefs.reducedShake === 'boolean') reducedShake = ghPrefs.reducedShake;
+  function persistGhPrefs() {
+    try {
+      localStorage.setItem('gorehound_3d_prefs_v1', JSON.stringify({
+        difficulty, goreLevel, sensitivity, autoFireEnabled, touchMode, muted: sound.muted, reducedShake
+      }));
+    } catch (_) {}
+  }
 
   const player = {
     x: 0, y: 1.65, z: 16, vx: 0, vy: 0, vz: 0, yaw: 0, pitch: 0, roll: 0,
@@ -2367,17 +2872,30 @@
   const joyKnob = document.getElementById('joystickKnob');
   const pointerNotice = document.getElementById('pointerNotice');
 
+  function isCoarseTouchDevice() {
+    return matchMedia('(pointer: coarse)').matches || ('ontouchstart' in window && navigator.maxTouchPoints > 0);
+  }
+
+  function updateOrientationPrompt() {
+    const coarse = isCoarseTouchDevice();
+    const portrait = window.innerHeight > window.innerWidth;
+    const promptEl = document.getElementById('rotatePrompt');
+    const hintBtn = document.getElementById('btnMenuRotateHint');
+    if (promptEl) promptEl.classList.toggle('visible', coarse && portrait && !rotateDismissed);
+    if (hintBtn) hintBtn.style.display = (coarse && portrait) ? 'inline-flex' : 'none';
+  }
+
   function updateTouchVisibility() {
     const show = (touchMode === 'on') || (touchMode === 'auto' && isTouchActive);
     touchLayer.style.display = (state === 'play' && show) ? 'block' : 'none';
     pointerNotice.style.display = (state === 'play' && !show && !pointerLocked) ? 'block' : 'none';
     updateWeaponBar();
+    updateOrientationPrompt();
   }
 
-  if ('ontouchstart' in window && window.innerWidth <= 900) {
-    isTouchActive = true; autoFireEnabled = true;
-    document.getElementById('btnAutoFire').textContent = 'ON';
-    document.getElementById('btnAutoFire').classList.add('on');
+  if (isCoarseTouchDevice()) {
+    isTouchActive = true;
+    if (typeof ghPrefs.autoFireEnabled !== 'boolean') autoFireEnabled = true;
   }
 
   window.addEventListener('keydown', e => {
@@ -2395,7 +2913,12 @@
       if (code === 'Space' && player.grounded) { player.vy = 8.8; player.grounded = false; }
       if (code === 'KeyP' || code === 'Escape') togglePause();
       if (code === 'KeyM') toggleMute();
-    } else if (state === 'paused' && (code === 'KeyP' || code === 'Escape')) togglePause();
+    } else if (state === 'paused' && (code === 'KeyP' || code === 'Escape')) {
+      togglePause();
+    } else if (state === 'menu') {
+      if (code === 'Escape' && typeof handleGhMenuBack === 'function') handleGhMenuBack();
+      else if (code === 'KeyM') toggleMute();
+    }
   });
   window.addEventListener('keyup', e => { keys[e.code] = false; });
 
@@ -2570,15 +3093,153 @@
     slot.addEventListener('click', () => selectWeapon(+slot.dataset.w));
     slot.addEventListener('touchstart', e => { e.preventDefault(); selectWeapon(+slot.dataset.w); }, { passive: false });
   });
+  const GH_DIFF_NAMES = ['BRUTAL', 'CARNAGE', 'NIGHTMARE'];
+  const GH_STAGE_CRUMBS = {
+    home: 'CITADEL HUB',
+    play: 'THREAT PROTOCOL',
+    arsenal: 'HELL ARSENAL',
+    controls: 'CONTROLS',
+    settings: 'SETTINGS'
+  };
+  const GH_ARSENAL_DATA = [
+    { name: 'HELLBREAKER', role: '12-PELLET DOUBLE BARREL', desc: 'Devastating close-quarters scattergun with infinite reserve shells. Shatters limbs and staggers Brutes.', dmg: 92, rof: 52, rng: 46 },
+    { name: 'EXECUTIONER .500', role: 'ARMOR-PIERCING REVOLVER', desc: '6-round magnum cannon that pierces up to 2 demons in a line and pops skulls cleanly at long range.', dmg: 88, rof: 72, rng: 95 },
+    { name: 'MEATGRINDER', role: 'ROTARY CHAINGUN', desc: 'High-RPM suppression rotary cannon that shreds packs of Hounds and Shamblers in seconds.', dmg: 68, rof: 98, rng: 78 },
+    { name: 'BONE-SHREDDER', role: 'EXPLOSIVE FLAK CANNON', desc: 'Launches unstable plasma-flak projectiles that detonate on impact for massive area gibs.', dmg: 98, rof: 44, rng: 84 },
+    { name: 'RIPPER CHAINSAW', role: 'BLOOD & AMMO HARVESTER', desc: 'Melee shredder that carves demons up close, restoring Blood HP and spilling ammo pickups!', dmg: 84, rof: 94, rng: 24 }
+  ];
+  let currentGhStage = 'home';
+
+  function setGhMenuStage(stageName, focusPrimary = false) {
+    currentGhStage = stageName;
+    document.querySelectorAll('#menuOverlay .menu-stage').forEach(sec => {
+      sec.classList.toggle('active', sec.dataset.stage === stageName);
+    });
+    const crumb = document.getElementById('stageCrumb');
+    if (crumb) crumb.textContent = GH_STAGE_CRUMBS[stageName] || 'CITADEL HUB';
+    if (focusPrimary) {
+      const activeSec = document.querySelector('#menuOverlay .menu-stage.active');
+      const firstBtn = activeSec ? activeSec.querySelector('button, a') : null;
+      if (firstBtn) firstBtn.focus({ preventScroll: true });
+    }
+  }
+
+  function handleGhMenuBack() {
+    if (currentGhStage !== 'home') {
+      sound.init(); sound.playUi('back');
+      setGhMenuStage('home', true);
+    }
+  }
+
+  function renderArsenalDetail(wIdx) {
+    const info = GH_ARSENAL_DATA[wIdx] || GH_ARSENAL_DATA[0];
+    document.querySelectorAll('#arsenalTabs .arsenal-tab').forEach(b => b.classList.toggle('active', +b.dataset.w === wIdx));
+    document.getElementById('arsName').textContent = info.name;
+    document.getElementById('arsRole').textContent = info.role;
+    document.getElementById('arsDesc').textContent = info.desc;
+    document.getElementById('arsValDmg').textContent = info.dmg;
+    document.getElementById('arsBarDmg').style.width = `${info.dmg}%`;
+    document.getElementById('arsValRof').textContent = info.rof;
+    document.getElementById('arsBarRof').style.width = `${info.rof}%`;
+    document.getElementById('arsValRng').textContent = info.rng;
+    document.getElementById('arsBarRng').style.width = `${info.rng}%`;
+  }
+
+  function syncGhUI() {
+    document.querySelectorAll('#diffRow .diff-btn').forEach(x => x.classList.toggle('active', +x.dataset.d === difficulty));
+    const dName = GH_DIFF_NAMES[difficulty] || 'CARNAGE';
+    const dBadge = document.getElementById('dossierDiffBadge');
+    if (dBadge) dBadge.textContent = dName;
+    const qSub = document.getElementById('quickDeploySub');
+    if (qSub) qSub.textContent = `DROP INTO ${dName}`;
+
+    document.getElementById('dossierBestScore').textContent = (ghSave.bestScore || 0).toLocaleString();
+    document.getElementById('dossierBestWave').textContent = ghSave.bestWave || 1;
+    document.getElementById('dossierTotalKills').textContent = (ghSave.totalKills || 0).toLocaleString();
+    document.getElementById('dossierTotalHeads').textContent = (ghSave.totalHeads || 0).toLocaleString();
+
+    ['sensSlider', 'mSensSlider'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.value = String(sensitivity);
+    });
+    const sv = document.getElementById('mSensVal');
+    if (sv) sv.textContent = `${sensitivity.toFixed(1)}x`;
+
+    const setPair = (ids, txt, on) => {
+      ids.forEach(id => {
+        const el = document.getElementById(id);
+        if (!el) return;
+        el.textContent = txt;
+        el.classList.toggle('on', !!on);
+      });
+    };
+    setPair(['btnAutoFire', 'mBtnAutoFire'], autoFireEnabled ? 'ON' : 'OFF', autoFireEnabled);
+    setPair(['btnTouchMode', 'mBtnTouchMode'], touchMode.toUpperCase(), touchMode === 'on');
+    setPair(['btnGoreMode', 'mBtnGoreMode'], ['BALANCED', 'HIGH', 'EXTREME'][goreLevel], goreLevel === 2);
+    setPair(['btnPauseMute', 'mBtnMute'], sound.muted ? 'OFF' : 'ON', !sound.muted);
+    setPair(['btnReducedShake', 'mBtnReducedShake'], reducedShake ? 'ON' : 'OFF', reducedShake);
+    const muteIcon = sound.muted ? '🔇' : '🔊';
+    document.getElementById('btnMute').textContent = muteIcon;
+    document.getElementById('btnMenuMute').textContent = muteIcon;
+  }
+
   document.querySelectorAll('.diff-btn').forEach(b => {
     b.addEventListener('click', () => {
+      sound.init(); sound.playUi('tap');
       difficulty = +b.dataset.d;
-      document.querySelectorAll('.diff-btn').forEach(x => x.classList.toggle('active', x === b));
+      persistGhPrefs();
+      syncGhUI();
     });
   });
 
+  document.querySelectorAll('#arsenalTabs .arsenal-tab').forEach(tab => {
+    tab.onclick = () => {
+      sound.init(); sound.playUi('tap');
+      renderArsenalDetail(+tab.dataset.w);
+    };
+  });
+
+  document.getElementById('btnNavPlay').onclick = () => { sound.init(); sound.playUi('confirm'); setGhMenuStage('play', true); };
+  document.getElementById('btnQuickDeploy').onclick = startNewGame;
+  document.getElementById('btnArsenalDeploy').onclick = startNewGame;
+  document.getElementById('btnNavArsenal').onclick = () => { sound.init(); sound.playUi('confirm'); setGhMenuStage('arsenal', true); };
+  document.getElementById('btnNavControls').onclick = () => { sound.init(); sound.playUi('confirm'); setGhMenuStage('controls', true); };
+  document.getElementById('btnNavSettings').onclick = () => { sound.init(); sound.playUi('confirm'); setGhMenuStage('settings', true); };
+  document.querySelectorAll('#menuOverlay [data-back]').forEach(b => {
+    b.onclick = () => { sound.init(); sound.playUi('back'); setGhMenuStage(b.dataset.back, true); };
+  });
+
+  const ghNav = document.querySelector('#stage-home .home-nav');
+  if (ghNav) {
+    ghNav.addEventListener('keydown', e => {
+      if (e.code !== 'ArrowDown' && e.code !== 'ArrowUp') return;
+      const items = [...ghNav.querySelectorAll('.nav-item')];
+      const idx = items.indexOf(document.activeElement);
+      e.preventDefault();
+      const next = e.code === 'ArrowDown' ? items[(idx + 1 + items.length) % items.length] : items[(idx - 1 + items.length) % items.length];
+      if (next) next.focus();
+    });
+  }
+
+  function returnToGhMenu() {
+    state = 'menu'; mouseFire = false; touchFireHeld = false;
+    if (document.pointerLockElement) document.exitPointerLock();
+    document.getElementById('hud').style.display = 'none';
+    document.getElementById('bossBarWrap').style.display = 'none';
+    document.getElementById('crosshair').style.display = 'none';
+    document.getElementById('chamberHud').style.display = 'none';
+    document.getElementById('executePrompt').style.display = 'none';
+    document.getElementById('pauseOverlay').style.display = 'none';
+    document.getElementById('gameoverOverlay').style.display = 'none';
+    document.getElementById('menuOverlay').style.display = 'flex';
+    updateTouchVisibility();
+    syncGhUI();
+    setGhMenuStage('home');
+  }
+
   function startNewGame() {
     sound.init();
+    sound.playUi('confirm');
     player.x = 0; player.y = 1.65; player.z = 16;
     player.vx = 0; player.vy = 0; player.vz = 0;
     player.yaw = 0; player.pitch = 0; player.roll = 0;
@@ -2615,6 +3276,7 @@
       document.getElementById('pauseOverlay').style.display = 'flex';
       if (document.pointerLockElement) document.exitPointerLock();
       updateTouchVisibility();
+      syncGhUI();
     } else if (state === 'paused') {
       state = 'play';
       document.getElementById('pauseOverlay').style.display = 'none';
@@ -2626,9 +3288,8 @@
   function toggleMute() {
     sound.init();
     const m = !sound.muted; sound.setMuted(m);
-    document.getElementById('btnMute').textContent = m ? '🔇' : '🔊';
-    const pm = document.getElementById('btnPauseMute');
-    pm.textContent = m ? 'OFF' : 'ON'; pm.classList.toggle('on', !m);
+    persistGhPrefs();
+    syncGhUI();
   }
 
   document.getElementById('btnStart').onclick = startNewGame;
@@ -2636,16 +3297,23 @@
   document.getElementById('btnRestart').onclick = startNewGame;
   document.getElementById('btnResume').onclick = togglePause;
   document.getElementById('btnPause').onclick = togglePause;
+  document.getElementById('btnPauseMenu').onclick = returnToGhMenu;
+  document.getElementById('btnGoMenu').onclick = returnToGhMenu;
   document.getElementById('btnMute').onclick = toggleMute;
+  document.getElementById('btnMenuMute').onclick = toggleMute;
   document.getElementById('btnPauseMute').onclick = toggleMute;
+  document.getElementById('mBtnMute').onclick = toggleMute;
 
   const fsEl = document.documentElement;
   const reqFs = fsEl.requestFullscreen || fsEl.webkitRequestFullscreen;
   const exitFs = document.exitFullscreen || document.webkitExitFullscreen;
   const getFsEl = () => document.fullscreenElement || document.webkitFullscreenElement;
   const btnFs = document.getElementById('btnFullscreen');
+  const btnMenuFs = document.getElementById('btnMenuFs');
   const btnPauseFs = document.getElementById('btnPauseFs');
+  const mBtnFs = document.getElementById('mBtnFs');
   const fsRow = document.getElementById('fsSettingRow');
+  const mFsRow = document.getElementById('mFsRow');
   function toggleFullscreen() {
     if (!reqFs) return;
     if (getFsEl()) {
@@ -2657,37 +3325,96 @@
   function syncFullscreenUI() {
     const active = !!getFsEl();
     if (btnFs) btnFs.title = active ? 'Exit Fullscreen' : 'Fullscreen';
-    if (btnPauseFs) {
-      btnPauseFs.textContent = active ? 'ON' : 'OFF';
-      btnPauseFs.classList.toggle('on', active);
-    }
+    [btnPauseFs, mBtnFs].forEach(b => {
+      if (!b) return;
+      b.textContent = active ? 'ON' : 'OFF';
+      b.classList.toggle('on', active);
+    });
   }
   if (reqFs) {
     if (btnFs) btnFs.onclick = toggleFullscreen;
+    if (btnMenuFs) btnMenuFs.onclick = toggleFullscreen;
     if (btnPauseFs) btnPauseFs.onclick = toggleFullscreen;
+    if (mBtnFs) mBtnFs.onclick = toggleFullscreen;
     document.addEventListener('fullscreenchange', () => { syncFullscreenUI(); resize(); });
     document.addEventListener('webkitfullscreenchange', () => { syncFullscreenUI(); resize(); });
   } else {
     if (btnFs) btnFs.style.display = 'none';
+    if (btnMenuFs) btnMenuFs.style.display = 'none';
     if (fsRow) fsRow.style.display = 'none';
+    if (mFsRow) mFsRow.style.display = 'none';
   }
 
-  document.getElementById('sensSlider').oninput = e => { sensitivity = parseFloat(e.target.value); };
-  document.getElementById('btnAutoFire').onclick = () => {
-    autoFireEnabled = !autoFireEnabled;
-    const b = document.getElementById('btnAutoFire');
-    b.textContent = autoFireEnabled ? 'ON' : 'OFF'; b.classList.toggle('on', autoFireEnabled);
-  };
-  document.getElementById('btnTouchMode').onclick = () => {
-    touchMode = touchMode === 'auto' ? 'on' : (touchMode === 'on' ? 'off' : 'auto');
-    document.getElementById('btnTouchMode').textContent = touchMode.toUpperCase();
-    updateTouchVisibility();
-  };
-  document.getElementById('btnGoreMode').onclick = () => {
-    goreLevel = (goreLevel + 2) % 3;
-    document.getElementById('btnGoreMode').textContent = ['BALANCED', 'HIGH', 'EXTREME'][goreLevel];
+  async function tryEnterLandscape() {
+    sound.init(); sound.playUi('confirm');
+    try { if (reqFs && !getFsEl()) await Promise.resolve(reqFs.call(fsEl)); } catch (_) {}
+    try { if (screen.orientation && screen.orientation.lock) await screen.orientation.lock('landscape'); } catch (_) {}
+    rotateDismissed = true;
+    updateOrientationPrompt();
     resize();
+  }
+  document.getElementById('btnEnterLandscape').onclick = tryEnterLandscape;
+  document.getElementById('btnMenuRotateHint').onclick = tryEnterLandscape;
+  document.getElementById('btnDismissRotate').onclick = () => {
+    sound.init(); sound.playUi('back');
+    rotateDismissed = true;
+    updateOrientationPrompt();
   };
+
+  ['sensSlider', 'mSensSlider'].forEach(id => {
+    document.getElementById(id).oninput = e => {
+      sensitivity = parseFloat(e.target.value);
+      persistGhPrefs();
+      syncGhUI();
+    };
+  });
+  function toggleAutoFireSetting() {
+    sound.init(); sound.playUi('tap');
+    autoFireEnabled = !autoFireEnabled;
+    persistGhPrefs(); syncGhUI();
+  }
+  function cycleTouchSetting() {
+    sound.init(); sound.playUi('tap');
+    touchMode = touchMode === 'auto' ? 'on' : (touchMode === 'on' ? 'off' : 'auto');
+    persistGhPrefs(); updateTouchVisibility(); syncGhUI();
+  }
+  function cycleGoreSetting() {
+    sound.init(); sound.playUi('tap');
+    goreLevel = (goreLevel + 2) % 3;
+    persistGhPrefs(); syncGhUI(); resize();
+  }
+  function toggleReducedShakeSetting() {
+    sound.init(); sound.playUi('tap');
+    reducedShake = !reducedShake;
+    persistGhPrefs(); syncGhUI();
+  }
+  ['btnAutoFire', 'mBtnAutoFire'].forEach(id => { document.getElementById(id).onclick = toggleAutoFireSetting; });
+  ['btnTouchMode', 'mBtnTouchMode'].forEach(id => { document.getElementById(id).onclick = cycleTouchSetting; });
+  ['btnGoreMode', 'mBtnGoreMode'].forEach(id => { document.getElementById(id).onclick = cycleGoreSetting; });
+  ['btnReducedShake', 'mBtnReducedShake'].forEach(id => { document.getElementById(id).onclick = toggleReducedShakeSetting; });
+
+  let ghResetTimer = null;
+  document.getElementById('btnResetStats').onclick = e => {
+    sound.init();
+    const btn = e.currentTarget;
+    if (btn.dataset.armed !== '1') {
+      btn.dataset.armed = '1'; btn.textContent = 'CONFIRM?'; btn.classList.add('on');
+      sound.playUi('tap');
+      clearTimeout(ghResetTimer);
+      ghResetTimer = setTimeout(() => { btn.dataset.armed = '0'; btn.textContent = 'RESET'; btn.classList.remove('on'); }, 3000);
+      return;
+    }
+    clearTimeout(ghResetTimer);
+    btn.dataset.armed = '0'; btn.textContent = 'CLEARED'; btn.classList.remove('on');
+    ghSave = { bestScore: 0, bestWave: 1, totalKills: 0, totalHeads: 0 };
+    persistGhSave(); syncGhUI();
+    sound.playUi('back');
+    setTimeout(() => { btn.textContent = 'RESET'; }, 1400);
+  };
+
+  renderArsenalDetail(0);
+  syncGhUI();
+  updateOrientationPrompt();
   window.addEventListener('visibilitychange', () => { if (document.hidden && state === 'play') togglePause(); });
 
   // =========================================================================
@@ -3169,6 +3896,12 @@
       document.getElementById('executePrompt').style.display = 'none';
       updateTouchVisibility();
 
+      ghSave.bestScore = Math.max(ghSave.bestScore || 0, score);
+      ghSave.bestWave = Math.max(ghSave.bestWave || 1, wave);
+      ghSave.totalKills = (ghSave.totalKills || 0) + kills;
+      ghSave.totalHeads = (ghSave.totalHeads || 0) + headpops;
+      persistGhSave();
+
       document.getElementById('stScore').textContent = score.toLocaleString();
       document.getElementById('stWave').textContent = wave;
       document.getElementById('stKills').textContent = kills;
@@ -3596,7 +4329,8 @@
       camX = Math.sin(t) * 23; camY = 8.6; camZ = Math.cos(t) * 23;
       M4.lookAt(viewMat, camX, camY, camZ, 0, 1.8, 0, 0, 1, 0);
     } else {
-      const sx = (Math.random() - 0.5) * shakeMag * 0.22, sy = (Math.random() - 0.5) * shakeMag * 0.22;
+      const sAmt = reducedShake ? 0 : shakeMag * 0.22;
+      const sx = (Math.random() - 0.5) * sAmt, sy = (Math.random() - 0.5) * sAmt;
       const bob = player.grounded ? Math.sin(player.bobPhase) * 0.045 : 0;
       const [fx, fy, fz] = getForwardVec(player.yaw, player.pitch);
       const upX = -Math.sin(player.roll) * Math.cos(player.yaw), upZ = -Math.sin(player.roll) * Math.sin(player.yaw);
@@ -3759,8 +4493,11 @@
     glCanvas.height = Math.max(1, Math.floor(h * dpr));
     visorCanvas.width = w;
     visorCanvas.height = h;
+    updateOrientationPrompt();
   }
   window.addEventListener('resize', resize);
+  window.addEventListener('orientationchange', () => setTimeout(resize, 180));
+  if (window.visualViewport) window.visualViewport.addEventListener('resize', resize);
   resize(); resetBarrels(); clearFloorBlood();
 
   let lastTime = performance.now();

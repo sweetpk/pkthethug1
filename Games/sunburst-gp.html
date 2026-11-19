@@ -541,54 +541,359 @@
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     touch-action: pan-y;
-    padding: calc(14px + var(--st)) calc(14px + var(--sr)) calc(14px + var(--sb)) calc(14px + var(--sl));
+    padding: calc(12px + var(--st)) calc(16px + var(--sr)) calc(12px + var(--sb)) calc(16px + var(--sl));
   }
+  .overlay button:focus-visible,
+  .overlay a:focus-visible {
+    outline: 2.5px solid var(--sun);
+    outline-offset: 2px;
+  }
+
+  /* ==================== MULTI-STEP MENU SHELL ==================== */
   #menuOverlay {
     justify-content: space-between;
-    background: linear-gradient(180deg, rgba(8, 24, 52, 0.55) 0%, rgba(8, 24, 52, 0.08) 38%, rgba(8, 24, 52, 0.72) 100%);
+    background: linear-gradient(105deg, rgba(6, 18, 42, 0.84) 0%, rgba(8, 22, 48, 0.42) 48%, rgba(6, 18, 42, 0.68) 100%);
     pointer-events: auto;
+    gap: 10px;
   }
-  .menu-header {
-    text-align: center;
-    margin-top: 2px;
+  .menu-shell {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: 0;
+  }
+  .menu-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 8px 14px;
+    border-radius: 16px;
+    background: linear-gradient(160deg, rgba(12, 30, 64, 0.86), rgba(7, 18, 40, 0.78));
+    border: 1.5px solid rgba(255, 255, 255, 0.22);
+    box-shadow: 0 10px 28px rgba(4, 12, 28, 0.42), inset 0 1px 0 rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  .brand-lockup {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
   }
   .brand-tag {
     display: inline-block;
-    padding: 4px 14px;
+    align-self: flex-start;
+    padding: 2px 10px;
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 0.2em;
+    background: rgba(0, 229, 255, 0.16);
+    border: 1px solid rgba(0, 229, 255, 0.42);
+    color: var(--aqua);
+    font-size: 9.5px;
+    font-weight: 900;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
-    margin-bottom: 4px;
   }
   .game-title {
-    font-size: clamp(34px, 8.5vw, 72px);
+    font-size: clamp(22px, 4.2vw, 38px);
     font-weight: 900;
     font-style: italic;
-    letter-spacing: 0.02em;
-    line-height: 0.95;
-    background: linear-gradient(180deg, #ffffff 15%, #ffe66d 60%, #ff8c42 100%);
+    letter-spacing: 0.03em;
+    line-height: 0.98;
+    background: linear-gradient(180deg, #ffffff 15%, #ffe66d 62%, #ff8c42 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    filter: drop-shadow(0 5px 0 rgba(12, 26, 48, 0.65)) drop-shadow(0 12px 28px rgba(0, 0, 0, 0.38));
+    filter: drop-shadow(0 3px 0 rgba(12, 26, 48, 0.72));
   }
-  .menu-deck {
+  .topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    flex-wrap: wrap;
+  }
+  .arcade-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 13px;
+    border-radius: 999px;
+    border: 1.5px solid rgba(255, 210, 63, 0.55);
+    background: rgba(255, 210, 63, 0.14);
+    color: var(--sun);
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.12s, background 0.15s;
+  }
+  .arcade-pill:hover { background: rgba(255, 210, 63, 0.25); transform: translateY(-1px); }
+  .arcade-pill:active { transform: scale(0.96); }
+  .rotate-pill {
+    display: none;
+    border-color: rgba(0, 229, 255, 0.55);
+    background: rgba(0, 229, 255, 0.16);
+    color: var(--aqua);
+  }
+  .stage-crumb {
+    padding: 6px 12px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.09);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-size: 10.5px;
+    font-weight: 900;
+    letter-spacing: 0.14em;
+    color: rgba(224, 242, 254, 0.92);
+    text-transform: uppercase;
+  }
+
+  /* Menu Stage Views */
+  .menu-stage {
+    display: none;
+    flex: 1 1 auto;
+    min-height: 0;
+    align-items: center;
+    justify-content: center;
+    animation: menuStageIn 0.18s ease-out;
+  }
+  .menu-stage.active { display: flex; }
+  @keyframes menuStageIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Home Lobby: Landscape Split (Nav Rail Left + Live Telemetry Right) */
+  .home-layout {
     width: 100%;
-    max-width: 860px;
-    margin: 0 auto;
-    background: linear-gradient(175deg, rgba(14, 32, 66, 0.86), rgba(8, 20, 44, 0.82));
-    border: 1.5px solid rgba(255, 255, 255, 0.28);
-    border-radius: 22px;
-    padding: clamp(12px, 2.5vmin, 20px);
-    box-shadow: 0 18px 46px rgba(4, 14, 34, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    display: grid;
+    grid-template-columns: minmax(250px, 340px) minmax(240px, 360px);
+    justify-content: space-between;
+    align-items: end;
+    gap: 16px;
+  }
+  .home-nav {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 7px;
+    width: 100%;
   }
+  .nav-item {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    text-align: left;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 14px;
+    border: 1.5px solid rgba(255, 255, 255, 0.22);
+    background: linear-gradient(155deg, rgba(12, 30, 64, 0.88), rgba(8, 20, 44, 0.82));
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 8px 22px rgba(4, 12, 28, 0.36);
+    transition: transform 0.12s, border-color 0.15s, background 0.15s, box-shadow 0.15s;
+  }
+  .nav-item:hover, .nav-item:focus-visible {
+    transform: translateX(4px);
+    border-color: var(--aqua);
+    background: linear-gradient(155deg, rgba(18, 44, 92, 0.94), rgba(10, 26, 56, 0.9));
+  }
+  .nav-item:active { transform: scale(0.985); }
+  .nav-item.primary {
+    border-color: #fff2a6;
+    background: linear-gradient(135deg, #ffe45e 0%, #ffb703 100%);
+    color: #0e1e36;
+    box-shadow: 0 4px 0 #c97b00, 0 12px 28px rgba(255, 183, 3, 0.38);
+  }
+  .nav-item.primary:hover { filter: brightness(1.04); border-color: #fff; }
+  .nav-item.accent {
+    border-color: rgba(0, 229, 255, 0.55);
+    background: linear-gradient(135deg, rgba(0, 229, 255, 0.24), rgba(14, 38, 82, 0.9));
+  }
+  .nav-item.exit-arcade {
+    border-color: rgba(255, 75, 92, 0.4);
+    background: linear-gradient(155deg, rgba(44, 14, 28, 0.82), rgba(20, 10, 24, 0.84));
+  }
+  .nav-item.exit-arcade:hover { border-color: var(--coral); }
+  .nav-label {
+    font-size: clamp(13px, 2.2vmin, 16px);
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 0.06em;
+    line-height: 1.1;
+  }
+  .nav-sub {
+    grid-column: 1;
+    font-size: 10.5px;
+    font-weight: 600;
+    opacity: 0.82;
+    margin-top: 2px;
+  }
+  .nav-item.primary .nav-sub { opacity: 0.85; color: #1d3557; font-weight: 700; }
+  .nav-arrow {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    font-size: 17px;
+    font-weight: 900;
+    padding-left: 10px;
+  }
+
+  .lobby-telemetry {
+    background: linear-gradient(170deg, rgba(12, 30, 64, 0.86), rgba(7, 18, 40, 0.82));
+    border: 1.5px solid rgba(255, 255, 255, 0.24);
+    border-radius: 18px;
+    padding: 13px 15px;
+    box-shadow: 0 14px 36px rgba(4, 12, 28, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .tel-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    padding-bottom: 7px;
+  }
+  .tel-head strong {
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.15em;
+    color: var(--aqua);
+    text-transform: uppercase;
+  }
+  .stars-badge {
+    padding: 3px 9px;
+    border-radius: 999px;
+    background: rgba(255, 210, 63, 0.18);
+    border: 1px solid rgba(255, 210, 63, 0.48);
+    color: var(--sun);
+    font-size: 11px;
+    font-weight: 900;
+  }
+  .tel-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .tel-cell {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 11px;
+    padding: 8px 10px;
+  }
+  .tel-cell small {
+    display: block;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    color: rgba(186, 230, 253, 0.8);
+    text-transform: uppercase;
+  }
+  .tel-cell b {
+    display: block;
+    font-size: 13px;
+    font-weight: 900;
+    font-style: italic;
+    margin-top: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .tel-tip {
+    font-size: 11px;
+    line-height: 1.4;
+    color: rgba(224, 242, 254, 0.88);
+    background: rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+    padding: 7px 10px;
+  }
+  .tel-tip b { color: var(--sun); }
+
+  /* Sub-Stage Deck Card */
+  .stage-card {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    background: linear-gradient(175deg, rgba(12, 30, 64, 0.9), rgba(7, 18, 40, 0.88));
+    border: 1.5px solid rgba(255, 255, 255, 0.26);
+    border-radius: 20px;
+    padding: clamp(12px, 2.2vmin, 18px);
+    box-shadow: 0 18px 46px rgba(4, 14, 34, 0.52), inset 0 1px 0 rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+  }
+  .stage-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    padding-bottom: 9px;
+  }
+  .stage-head-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .back-btn {
+    padding: 6px 12px;
+    border-radius: 10px;
+    border: 1.5px solid rgba(255, 255, 255, 0.28);
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition: background 0.12s, transform 0.1s;
+  }
+  .back-btn:hover { background: rgba(255, 255, 255, 0.2); }
+  .back-btn:active { transform: scale(0.95); }
+  .stage-title {
+    font-size: clamp(14px, 2.5vmin, 18px);
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 0.06em;
+    color: var(--sun);
+  }
+  .step-pills {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+  .step-pill {
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.07);
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+  }
+  .step-pill.active {
+    background: var(--aqua);
+    color: #08182e;
+    border-color: #fff;
+  }
+
   .section-lbl {
     font-size: 10px;
     font-weight: 800;
@@ -600,14 +905,11 @@
   .track-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
-  }
-  @media (max-width: 640px) {
-    .track-grid { grid-template-columns: 1fr; }
+    gap: 9px;
   }
   .track-card {
     text-align: left;
-    padding: 10px 12px;
+    padding: 11px 12px;
     border-radius: 14px;
     border: 2px solid rgba(255, 255, 255, 0.18);
     background: rgba(255, 255, 255, 0.08);
@@ -615,18 +917,20 @@
     cursor: pointer;
     transition: transform 0.12s, border-color 0.15s, background 0.15s;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     gap: 8px;
   }
-  .track-card:hover { background: rgba(255, 255, 255, 0.14); }
+  .track-card:hover { background: rgba(255, 255, 255, 0.14); transform: translateY(-1px); }
   .track-card.active {
     border-color: var(--sun);
     background: linear-gradient(135deg, rgba(255, 210, 63, 0.24), rgba(0, 229, 255, 0.18));
     box-shadow: 0 0 18px rgba(255, 210, 63, 0.28);
   }
+  .track-card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
   .track-card .t-name { font-size: 14px; font-weight: 900; font-style: italic; }
   .track-card .t-sub { font-size: 11px; color: rgba(224, 242, 254, 0.85); margin-top: 2px; }
+  .track-card .t-meta { font-size: 10px; font-weight: 700; color: rgba(186, 230, 253, 0.78); }
   .track-card .t-best { text-align: right; font-size: 11px; font-weight: 800; color: var(--sun); white-space: nowrap; }
 
   .car-diff-row {
@@ -634,16 +938,15 @@
     flex-wrap: wrap;
     gap: 12px;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
   }
   .car-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 7px;
-    flex: 1 1 320px;
+    flex: 1 1 360px;
   }
   .car-chip {
-    flex: 1 1 135px;
     padding: 8px 10px;
     border-radius: 12px;
     border: 2px solid rgba(255, 255, 255, 0.2);
@@ -652,38 +955,52 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 9px;
     text-align: left;
     transition: border-color 0.15s, background 0.15s;
   }
+  .car-chip:hover { background: rgba(255, 255, 255, 0.14); }
   .car-chip.active {
     border-color: var(--aqua);
     background: rgba(0, 229, 255, 0.2);
+    box-shadow: 0 0 14px rgba(0, 229, 255, 0.25);
   }
   .car-swatch {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     border-radius: 6px;
     border: 2px solid #fff;
     flex-shrink: 0;
   }
-  .car-chip b { display: block; font-size: 11.5px; font-weight: 900; white-space: nowrap; }
+  .car-chip b { display: block; font-size: 12px; font-weight: 900; white-space: nowrap; }
   .car-chip span { display: block; font-size: 10px; opacity: 0.82; white-space: nowrap; }
-  .car-bars { display: flex; gap: 3px; margin-top: 3px; }
-  .car-bar { flex: 1; height: 3px; border-radius: 3px; background: rgba(255, 255, 255, 0.16); overflow: hidden; }
+  .car-bars { display: flex; gap: 3px; margin-top: 4px; }
+  .car-bar { flex: 1; height: 3.5px; border-radius: 3px; background: rgba(255, 255, 255, 0.16); overflow: hidden; }
   .car-bar i { display: block; height: 100%; border-radius: 3px; background: linear-gradient(90deg, #00e5ff, #ffd23f); }
 
+  .pace-panel {
+    flex: 0 1 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.22);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 13px;
+    padding: 10px;
+    gap: 8px;
+  }
   .diff-group {
     display: flex;
-    gap: 6px;
-    background: rgba(0, 0, 0, 0.25);
+    gap: 5px;
+    background: rgba(0, 0, 0, 0.28);
     padding: 4px;
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 11px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
   }
   .diff-btn {
-    padding: 7px 12px;
-    border-radius: 9px;
+    flex: 1;
+    padding: 7px 8px;
+    border-radius: 8px;
     border: 0;
     background: transparent;
     color: rgba(255, 255, 255, 0.78);
@@ -696,6 +1013,82 @@
     background: var(--sun);
     color: #161a26;
   }
+  .pace-desc {
+    font-size: 11px;
+    color: rgba(224, 242, 254, 0.85);
+    line-height: 1.4;
+  }
+
+  /* Garage Showroom Split */
+  .garage-split {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 12px;
+    align-items: stretch;
+  }
+  .garage-specs-box {
+    background: rgba(0, 0, 0, 0.26);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 14px;
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .spec-row {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .spec-row-top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+  }
+  .spec-track {
+    height: 7px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.14);
+    overflow: hidden;
+  }
+  .spec-fill {
+    height: 100%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--aqua), var(--sun));
+    transition: width 0.25s ease;
+  }
+
+  /* Controls & Settings Grids */
+  .controls-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 9px;
+  }
+  .ctrl-card {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 13px;
+    padding: 10px 12px;
+    font-size: 11.5px;
+    line-height: 1.5;
+    color: rgba(224, 242, 254, 0.92);
+  }
+  .ctrl-card h3 {
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    color: var(--sun);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+  }
+  .settings-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
 
   .menu-cta-row {
     display: flex;
@@ -703,6 +1096,7 @@
     gap: 10px;
     align-items: center;
     justify-content: space-between;
+    padding-top: 4px;
   }
   .ctrl-summary {
     font-size: 11.5px;
@@ -713,8 +1107,8 @@
   .primary-btn {
     border: 0;
     border-radius: 999px;
-    padding: 13px 36px;
-    font-size: clamp(16px, 3vmin, 20px);
+    padding: 12px 30px;
+    font-size: clamp(14px, 2.8vmin, 18px);
     font-weight: 900;
     font-style: italic;
     letter-spacing: 0.08em;
@@ -731,8 +1125,8 @@
   .secondary-btn {
     border: 1.5px solid rgba(255, 255, 255, 0.38);
     border-radius: 999px;
-    padding: 11px 24px;
-    font-size: 14px;
+    padding: 10px 22px;
+    font-size: 13px;
     font-weight: 800;
     letter-spacing: 0.06em;
     color: #fff;
@@ -741,63 +1135,168 @@
   }
   .secondary-btn:active { transform: scale(0.96); }
 
+  .menu-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 10.5px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    color: rgba(215, 240, 255, 0.78);
+    text-transform: uppercase;
+    padding: 0 4px;
+  }
+
+  /* Mobile Portrait Landscape-Encouragement Prompt */
+  #rotatePrompt {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 60;
+    background: rgba(6, 16, 38, 0.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    align-items: center;
+    justify-content: center;
+    padding: calc(18px + var(--st)) calc(18px + var(--sr)) calc(18px + var(--sb)) calc(18px + var(--sl));
+  }
+  #rotatePrompt.visible { display: flex; }
+  .rotate-card {
+    width: min(92vw, 390px);
+    background: linear-gradient(175deg, rgba(16, 40, 82, 0.96), rgba(8, 20, 44, 0.98));
+    border: 2px solid rgba(0, 229, 255, 0.45);
+    border-radius: 22px;
+    padding: 22px 20px;
+    text-align: center;
+    box-shadow: 0 22px 60px rgba(0, 0, 0, 0.65);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 11px;
+  }
+  .rotate-icon {
+    font-size: 38px;
+    display: inline-block;
+    animation: rotatePhoneHint 2.1s ease-in-out infinite;
+  }
+  @keyframes rotatePhoneHint {
+    0%, 20% { transform: rotate(0deg); }
+    50%, 75% { transform: rotate(-90deg); }
+    100% { transform: rotate(0deg); }
+  }
+  .rotate-title {
+    font-size: 19px;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--sun);
+    letter-spacing: 0.04em;
+  }
+  .rotate-desc {
+    font-size: 12.5px;
+    line-height: 1.5;
+    color: rgba(224, 242, 254, 0.9);
+  }
+  .rotate-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    margin-top: 4px;
+  }
+
+  /* Responsive Landscape & Portrait Adaptations */
+  @media (max-width: 760px) {
+    .home-layout { grid-template-columns: 1fr; align-items: stretch; }
+    .track-grid { grid-template-columns: 1fr; }
+    .garage-split { grid-template-columns: 1fr; }
+    .controls-cards { grid-template-columns: 1fr; }
+    .settings-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-height: 480px) {
+    #menuOverlay { padding: calc(8px + var(--st)) calc(12px + var(--sr)) calc(8px + var(--sb)) calc(12px + var(--sl)); gap: 6px; }
+    .menu-topbar { padding: 6px 11px; border-radius: 13px; }
+    .brand-tag { display: none; }
+    .game-title { font-size: clamp(19px, 4vw, 28px); }
+    .home-layout { grid-template-columns: minmax(220px, 300px) minmax(220px, 1fr); gap: 10px; align-items: center; }
+    .home-nav { gap: 5px; }
+    .nav-item { padding: 7px 11px; border-radius: 11px; }
+    .nav-sub { display: none; }
+    .lobby-telemetry { padding: 9px 11px; gap: 7px; border-radius: 14px; }
+    .stage-card { padding: 10px 12px; gap: 8px; border-radius: 15px; }
+    .track-grid { grid-template-columns: repeat(3, 1fr); gap: 7px; }
+    .track-card { padding: 8px 10px; gap: 4px; }
+    .car-grid { grid-template-columns: repeat(2, 1fr); gap: 6px; }
+    .car-chip { padding: 6px 8px; }
+    .controls-cards { grid-template-columns: repeat(3, 1fr); gap: 7px; }
+    .settings-grid { grid-template-columns: repeat(2, 1fr); gap: 6px; }
+    .setting-row { padding: 6px 10px; font-size: 12px; }
+    .primary-btn { padding: 9px 22px; font-size: 14px; }
+    .menu-footer { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .menu-stage, .rotate-icon { animation: none !important; }
+  }
+
   /* Center Modal Cards (Pause & Finish) */
   #pauseOverlay, #finishOverlay {
     display: none;
     align-items: center;
     justify-content: center;
-    background: rgba(8, 20, 42, 0.65);
+    background: rgba(8, 20, 42, 0.68);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
   }
   .modal-card {
     margin: auto;
-    width: min(94vw, 480px);
-    background: linear-gradient(180deg, rgba(16, 38, 74, 0.94), rgba(10, 24, 48, 0.96));
+    width: min(94vw, 520px);
+    background: linear-gradient(180deg, rgba(16, 38, 74, 0.95), rgba(10, 24, 48, 0.97));
     border: 2px solid rgba(255, 255, 255, 0.28);
-    border-radius: 24px;
-    padding: 22px;
+    border-radius: 22px;
+    padding: clamp(14px, 3vmin, 22px);
     box-shadow: 0 20px 54px rgba(0, 0, 0, 0.5);
     text-align: center;
   }
   .modal-title {
-    font-size: clamp(26px, 6vmin, 42px);
+    font-size: clamp(24px, 5.5vmin, 38px);
     font-weight: 900;
     font-style: italic;
     color: var(--sun);
     text-shadow: 0 3px 0 rgba(0, 0, 0, 0.35);
   }
   .modal-sub {
-    font-size: 13px;
+    font-size: 12.5px;
     color: rgba(215, 240, 255, 0.88);
-    margin: 4px 0 14px;
+    margin: 3px 0 11px;
   }
   .setting-list {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    margin: 12px 0 18px;
+    gap: 7px;
+    margin: 10px 0 14px;
     text-align: left;
   }
   .setting-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 8px;
     padding: 8px 12px;
-    border-radius: 12px;
+    border-radius: 11px;
     background: rgba(255, 255, 255, 0.08);
-    font-size: 13px;
+    font-size: 12.5px;
     font-weight: 700;
   }
   .toggle-pill {
-    padding: 5px 14px;
+    padding: 5px 13px;
     border-radius: 999px;
     border: 1.5px solid rgba(255, 255, 255, 0.35);
     background: rgba(255, 255, 255, 0.12);
     color: #fff;
-    font-size: 12px;
+    font-size: 11.5px;
     font-weight: 900;
     cursor: pointer;
+    flex-shrink: 0;
   }
   .toggle-pill.on {
     background: var(--mint);
@@ -807,13 +1306,13 @@
   .btn-stack {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 9px;
     justify-content: center;
   }
   .stars-row {
-    font-size: 34px;
+    font-size: 30px;
     letter-spacing: 6px;
-    margin: 4px 0 10px;
+    margin: 2px 0 8px;
     color: var(--sun);
     text-shadow: 0 0 16px rgba(255, 210, 63, 0.65);
   }
@@ -821,16 +1320,16 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 8px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
   .stat-cell {
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.16);
     border-radius: 12px;
-    padding: 9px;
+    padding: 8px;
   }
   .stat-cell .v {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 900;
     font-variant-numeric: tabular-nums;
     color: #fff;
@@ -843,9 +1342,9 @@
     margin-top: 2px;
   }
   .standings-mini {
-    max-height: 112px;
+    max-height: 105px;
     overflow-y: auto;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
     border-radius: 12px;
     background: rgba(0, 0, 0, 0.22);
     padding: 6px;
@@ -953,66 +1452,307 @@
   </div>
 </div>
 
-<!-- MAIN MENU OVERLAY -->
-<div class="overlay" id="menuOverlay">
-  <div class="menu-header">
-    <div class="brand-tag">SUNLIT 3D ARCADE GRAND PRIX</div>
-    <h1 class="game-title">SUNBURST GP</h1>
-  </div>
-
-  <div class="menu-deck">
-    <div>
-      <div class="section-lbl">SELECT CIRCUIT</div>
-      <div class="track-grid" id="trackGrid"></div>
-    </div>
-
-    <div class="car-diff-row">
-      <div style="flex:1 1 340px;">
-        <div class="section-lbl">SELECT GARAGE MACHINE</div>
-        <div class="car-grid" id="carGrid"></div>
-      </div>
-      <div>
-        <div class="section-lbl">PACE CLASS</div>
-        <div class="diff-group" id="diffGroup">
-          <button class="diff-btn" data-d="0">CRUISE</button>
-          <button class="diff-btn active" data-d="1">PRO</button>
-          <button class="diff-btn" data-d="2">ACE</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="menu-cta-row">
-      <div class="ctrl-summary" id="menuCtrlHint"></div>
-      <button class="primary-btn" id="btnRace">START RACE 🏁</button>
-      <a href="../games.html" style="color:var(--sun);text-decoration:none;font-weight:800;font-size:clamp(12px,2vmin,14px);letter-spacing:0.08em;margin-top:6px;opacity:0.9;display:inline-block;width:100%;text-align:center;">← BACK TO GAMES</a>
+<!-- MOBILE PORTRAIT LANDSCAPE PROMPT -->
+<div id="rotatePrompt" role="dialog" aria-modal="true" aria-labelledby="rotateTitle">
+  <div class="rotate-card">
+    <div class="rotate-icon" aria-hidden="true">📱</div>
+    <h2 class="rotate-title" id="rotateTitle">BEST IN LANDSCAPE</h2>
+    <p class="rotate-desc">
+      Rotate your phone sideways for full-width 3D drift vision, larger speedometer HUD, and comfortable thumb steering.
+    </p>
+    <div class="rotate-actions">
+      <button type="button" class="primary-btn" id="btnEnterLandscape">↻ ENTER LANDSCAPE + FULLSCREEN</button>
+      <button type="button" class="secondary-btn" id="btnDismissRotate">CONTINUE IN PORTRAIT</button>
     </div>
   </div>
 </div>
 
+<!-- MAIN MENU OVERLAY (MULTI-STEP) -->
+<div class="overlay" id="menuOverlay" role="dialog" aria-label="Sunburst GP Main Menu">
+  <div class="menu-shell">
+    <header class="menu-topbar">
+      <div class="brand-lockup">
+        <span class="brand-tag">SUNLIT 3D ARCADE GRAND PRIX</span>
+        <h1 class="game-title">SUNBURST GP</h1>
+      </div>
+      <div class="topbar-right">
+        <button type="button" class="arcade-pill rotate-pill" id="btnMenuRotateHint" title="Switch to Landscape">↻ LANDSCAPE</button>
+        <a href="../games.html" class="arcade-pill" title="Back to Arcade">← ARCADE</a>
+        <button type="button" class="icon-btn" id="btnMenuMute" title="Toggle Sound (M)" aria-label="Toggle Sound">🔊</button>
+        <button type="button" class="icon-btn" id="btnMenuFs" title="Toggle Fullscreen" aria-label="Toggle Fullscreen">⛶</button>
+        <div class="stage-crumb" id="stageCrumb">MAIN LOBBY</div>
+      </div>
+    </header>
+
+    <!-- STEP 1: MAIN LOBBY -->
+    <section class="menu-stage active" id="stage-home" data-stage="home">
+      <div class="home-layout">
+        <nav class="home-nav" aria-label="Main Menu">
+          <button type="button" class="nav-item primary" id="btnNavGrandPrix">
+            <span class="nav-label">GRAND PRIX</span>
+            <span class="nav-sub">CHOOSE CIRCUIT, MACHINE &amp; PACE</span>
+            <span class="nav-arrow" aria-hidden="true">→</span>
+          </button>
+          <button type="button" class="nav-item accent" id="btnQuickRace">
+            <span class="nav-label">QUICK RACE</span>
+            <span class="nav-sub" id="quickRaceSub">INSTANT GRID DROP</span>
+            <span class="nav-arrow" aria-hidden="true">▸</span>
+          </button>
+          <button type="button" class="nav-item" id="btnNavGarage">
+            <span class="nav-label">GARAGE SHOWROOM</span>
+            <span class="nav-sub">COMPARE 4 MACHINES IN LIVE 3D</span>
+            <span class="nav-arrow" aria-hidden="true">→</span>
+          </button>
+          <button type="button" class="nav-item" id="btnNavControls">
+            <span class="nav-label">CONTROLS &amp; DRIFT GUIDE</span>
+            <span class="nav-sub">TOUCH, KEYBOARD &amp; GAMEPAD</span>
+            <span class="nav-arrow" aria-hidden="true">→</span>
+          </button>
+          <button type="button" class="nav-item" id="btnNavSettings">
+            <span class="nav-label">SETTINGS</span>
+            <span class="nav-sub">AUDIO, TOUCH, TILT &amp; ACCESSIBILITY</span>
+            <span class="nav-arrow" aria-hidden="true">→</span>
+          </button>
+          <a href="../games.html" class="nav-item exit-arcade" id="btnBackArcade">
+            <span class="nav-label">BACK TO ARCADE</span>
+            <span class="nav-sub">RETURN TO GAMES HUB</span>
+            <span class="nav-arrow" aria-hidden="true">←</span>
+          </a>
+        </nav>
+
+        <aside class="lobby-telemetry" aria-label="Current Setup Telemetry">
+          <div class="tel-head">
+            <strong>CURRENT ENTRY</strong>
+            <span class="stars-badge" id="lobbyTotalStars">★ 0 / 9</span>
+          </div>
+          <div class="tel-grid">
+            <div class="tel-cell">
+              <small>CIRCUIT</small>
+              <b id="lobbyTrackName">AZURE COAST</b>
+            </div>
+            <div class="tel-cell">
+              <small>BEST TIME</small>
+              <b id="lobbyTrackBest">--:--.--</b>
+            </div>
+            <div class="tel-cell">
+              <small>MACHINE</small>
+              <b id="lobbyCarName">SOLARIS GT</b>
+            </div>
+            <div class="tel-cell">
+              <small>PACE CLASS</small>
+              <b id="lobbyDiffName">PRO</b>
+            </div>
+          </div>
+          <div class="tel-tip" id="menuCtrlHint"></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- STEP 2A: CIRCUIT SELECT -->
+    <section class="menu-stage" id="stage-circuit" data-stage="circuit">
+      <div class="stage-card">
+        <div class="stage-head">
+          <div class="stage-head-left">
+            <button type="button" class="back-btn" data-back="home">← BACK</button>
+            <span class="stage-title">STEP 1: SELECT CIRCUIT</span>
+          </div>
+          <div class="step-pills">
+            <button type="button" class="step-pill active" data-goto="circuit">1. CIRCUIT</button>
+            <button type="button" class="step-pill" data-goto="machine">2. MACHINE &amp; PACE</button>
+          </div>
+        </div>
+
+        <div class="track-grid" id="trackGrid"></div>
+
+        <div class="menu-cta-row">
+          <div class="ctrl-summary" id="circuitDescBar">Select a championship circuit to preview in live 3D.</div>
+          <button type="button" class="primary-btn" id="btnNextMachine">CHOOSE MACHINE →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEP 2B: MACHINE & PACE CLASS -->
+    <section class="menu-stage" id="stage-machine" data-stage="machine">
+      <div class="stage-card">
+        <div class="stage-head">
+          <div class="stage-head-left">
+            <button type="button" class="back-btn" data-back="circuit">← BACK</button>
+            <span class="stage-title">STEP 2: MACHINE &amp; PACE</span>
+          </div>
+          <div class="step-pills">
+            <button type="button" class="step-pill" data-goto="circuit">1. CIRCUIT</button>
+            <button type="button" class="step-pill active" data-goto="machine">2. MACHINE &amp; PACE</button>
+          </div>
+        </div>
+
+        <div class="car-diff-row">
+          <div style="flex:1 1 360px;">
+            <div class="section-lbl">GARAGE MACHINE</div>
+            <div class="car-grid" id="carGrid"></div>
+          </div>
+          <div class="pace-panel">
+            <div>
+              <div class="section-lbl">PACE CLASS</div>
+              <div class="diff-group" id="diffGroup">
+                <button type="button" class="diff-btn" data-d="0">CRUISE</button>
+                <button type="button" class="diff-btn active" data-d="1">PRO</button>
+                <button type="button" class="diff-btn" data-d="2">ACE</button>
+              </div>
+            </div>
+            <div class="pace-desc" id="paceDesc">Balanced rival pack speed &amp; slipstream pressure.</div>
+          </div>
+        </div>
+
+        <div class="menu-cta-row">
+          <div class="ctrl-summary" id="setupReadySummary">Ready on <b>AZURE COAST</b></div>
+          <button type="button" class="primary-btn" id="btnRace">START RACE 🏁</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEP 3: GARAGE SHOWROOM -->
+    <section class="menu-stage" id="stage-garage" data-stage="garage">
+      <div class="stage-card">
+        <div class="stage-head">
+          <div class="stage-head-left">
+            <button type="button" class="back-btn" data-back="home">← BACK</button>
+            <span class="stage-title">GARAGE SHOWROOM</span>
+          </div>
+          <span class="stage-crumb" style="font-size:10px;">LIVE 3D PREVIEW</span>
+        </div>
+
+        <div class="garage-split">
+          <div class="car-grid" id="garageCarGrid"></div>
+          <div class="garage-specs-box">
+            <div>
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+                <strong id="garageTitle" style="font-size:16px;font-style:italic;color:var(--sun);">SOLARIS GT</strong>
+                <span id="garageTag" style="font-size:11px;font-weight:800;color:var(--aqua);">ALL-ROUNDER</span>
+              </div>
+              <div class="spec-row">
+                <div class="spec-row-top"><span>TOP SPEED</span><span id="gValSpd">246 KM/H</span></div>
+                <div class="spec-track"><div class="spec-fill" id="gBarSpd" style="width:72%"></div></div>
+              </div>
+              <div class="spec-row" style="margin-top:6px;">
+                <div class="spec-row-top"><span>ACCELERATION</span><span id="gValAcc">78</span></div>
+                <div class="spec-track"><div class="spec-fill" id="gBarAcc" style="width:78%"></div></div>
+              </div>
+              <div class="spec-row" style="margin-top:6px;">
+                <div class="spec-row-top"><span>DRIFT GRIP</span><span id="gValGrip">82</span></div>
+                <div class="spec-track"><div class="spec-fill" id="gBarGrip" style="width:82%"></div></div>
+              </div>
+              <div class="spec-row" style="margin-top:6px;">
+                <div class="spec-row-top"><span>NITRO OUTPUT</span><span id="gValNitro">75</span></div>
+                <div class="spec-track"><div class="spec-fill" id="gBarNitro" style="width:75%"></div></div>
+              </div>
+            </div>
+            <div class="menu-cta-row">
+              <button type="button" class="secondary-btn" data-back="home">CONFIRM MACHINE</button>
+              <button type="button" class="primary-btn" id="btnGarageRace">RACE THIS CAR 🏁</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEP 4: CONTROLS & DRIFT GUIDE -->
+    <section class="menu-stage" id="stage-controls" data-stage="controls">
+      <div class="stage-card">
+        <div class="stage-head">
+          <div class="stage-head-left">
+            <button type="button" class="back-btn" data-back="home">← BACK</button>
+            <span class="stage-title">CONTROLS &amp; DRIFT GUIDE</span>
+          </div>
+        </div>
+
+        <div class="controls-cards">
+          <div class="ctrl-card">
+            <h3>⌨️ DESKTOP</h3>
+            <p>
+              <b>W / ↑</b> Gas • <b>S / ↓</b> Brake<br>
+              <b>A / D</b> or <b>← / →</b> Steer<br>
+              <b>Space</b> Power Drift<br>
+              <b>Shift / E</b> Nitro Boost<br>
+              <b>C</b> Camera • <b>R</b> Respawn • <b>P</b> Pause
+            </p>
+          </div>
+          <div class="ctrl-card">
+            <h3>📱 MOBILE LANDSCAPE</h3>
+            <p>
+              <b>Left Pad:</b> Slide thumb to steer<br>
+              <b>DRIFT:</b> Hold through bends<br>
+              <b>NITRO:</b> Tap for boost burst<br>
+              <b>Auto-Gas:</b> Enabled by default on touch<br>
+              <i>Optional Tilt Steering in Settings!</i>
+            </p>
+          </div>
+          <div class="ctrl-card">
+            <h3>🏁 PRO DRIFT TIPS</h3>
+            <p>
+              <b>Rocket Start:</b> Hold Gas in the gold countdown zone!<br>
+              <b>3-Tier Drift:</b> Charge Blue → Gold → Ultra-Violet sparks, then release for a mini-turbo!<br>
+              <b>Slipstream:</b> Tuck behind rivals to build Nitro!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEP 5: SETTINGS & ACCESSIBILITY -->
+    <section class="menu-stage" id="stage-settings" data-stage="settings">
+      <div class="stage-card">
+        <div class="stage-head">
+          <div class="stage-head-left">
+            <button type="button" class="back-btn" data-back="home">← BACK</button>
+            <span class="stage-title">SETTINGS &amp; ACCESSIBILITY</span>
+          </div>
+        </div>
+
+        <div class="settings-grid">
+          <div class="setting-row"><span>Music Groove</span><button type="button" class="toggle-pill on" id="mSetMusic">ON</button></div>
+          <div class="setting-row"><span>Sound Effects</span><button type="button" class="toggle-pill on" id="mSetSfx">ON</button></div>
+          <div class="setting-row"><span>Touch Controls</span><button type="button" class="toggle-pill" id="mSetTouch">AUTO</button></div>
+          <div class="setting-row"><span>Auto-Accelerate</span><button type="button" class="toggle-pill" id="mSetAutoGas">AUTO</button></div>
+          <div class="setting-row"><span>Tilt Steering (Mobile)</span><button type="button" class="toggle-pill" id="mSetTilt">OFF</button></div>
+          <div class="setting-row"><span>Graphics Quality</span><button type="button" class="toggle-pill on" id="mSetQuality">HIGH</button></div>
+          <div class="setting-row"><span>Reduced Screen FX</span><button type="button" class="toggle-pill" id="mSetReduced">OFF</button></div>
+          <div class="setting-row"><span>Career Records</span><button type="button" class="toggle-pill" id="btnResetRecords">RESET</button></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="menu-footer">
+      <span>3 CIRCUITS • 8-RACER PACK • 3-TIER DRIFT BOOST</span>
+      <span>LANDSCAPE RECOMMENDED FOR MOBILE</span>
+    </footer>
+  </div>
+</div>
+
 <!-- PAUSE OVERLAY -->
-<div class="overlay" id="pauseOverlay">
+<div class="overlay" id="pauseOverlay" role="dialog" aria-modal="true" aria-label="Race Paused">
   <div class="modal-card">
     <div class="modal-title">RACE PAUSED</div>
     <div class="modal-sub" id="pauseTrackName">AZURE COAST</div>
     <div class="setting-list">
-      <div class="setting-row"><span>Music Groove</span><button class="toggle-pill on" id="setMusic">ON</button></div>
-      <div class="setting-row"><span>Sound Effects</span><button class="toggle-pill on" id="setSfx">ON</button></div>
-      <div class="setting-row"><span>Touch Controls</span><button class="toggle-pill" id="setTouch">AUTO</button></div>
-      <div class="setting-row"><span>Auto-Accelerate</span><button class="toggle-pill" id="setAutoGas">AUTO</button></div>
-      <div class="setting-row"><span>Tilt Steering (Mobile)</span><button class="toggle-pill" id="setTilt">OFF</button></div>
-      <div class="setting-row"><span>Graphics Quality</span><button class="toggle-pill on" id="setQuality">HIGH</button></div>
+      <div class="setting-row"><span>Music Groove</span><button type="button" class="toggle-pill on" id="setMusic">ON</button></div>
+      <div class="setting-row"><span>Sound Effects</span><button type="button" class="toggle-pill on" id="setSfx">ON</button></div>
+      <div class="setting-row"><span>Touch Controls</span><button type="button" class="toggle-pill" id="setTouch">AUTO</button></div>
+      <div class="setting-row"><span>Auto-Accelerate</span><button type="button" class="toggle-pill" id="setAutoGas">AUTO</button></div>
+      <div class="setting-row"><span>Tilt Steering (Mobile)</span><button type="button" class="toggle-pill" id="setTilt">OFF</button></div>
+      <div class="setting-row"><span>Graphics Quality</span><button type="button" class="toggle-pill on" id="setQuality">HIGH</button></div>
+      <div class="setting-row"><span>Reduced Screen FX</span><button type="button" class="toggle-pill" id="setReduced">OFF</button></div>
     </div>
     <div class="btn-stack">
-      <button class="primary-btn" id="btnResume">RESUME</button>
-      <button class="secondary-btn" id="btnRestart">RESTART</button>
-      <button class="secondary-btn" id="btnToMenu">GARAGE</button>
-      <a href="../games.html" class="secondary-btn" style="text-decoration:none;text-align:center;">EXIT TO ARCADE</a>
+      <button type="button" class="primary-btn" id="btnResume">RESUME</button>
+      <button type="button" class="secondary-btn" id="btnRestart">RESTART</button>
+      <button type="button" class="secondary-btn" id="btnToMenu">MAIN MENU</button>
+      <a href="../games.html" class="secondary-btn" style="text-decoration:none;text-align:center;">BACK TO ARCADE</a>
     </div>
   </div>
 </div>
 
 <!-- FINISH OVERLAY -->
-<div class="overlay" id="finishOverlay">
+<div class="overlay" id="finishOverlay" role="dialog" aria-modal="true" aria-label="Race Results">
   <div class="modal-card">
     <div class="modal-title" id="finRankTitle">1ST PLACE!</div>
     <div class="stars-row" id="finStars">★★★</div>
@@ -1025,10 +1765,10 @@
     </div>
     <div class="standings-mini" id="finStandings"></div>
     <div class="btn-stack">
-      <button class="primary-btn" id="btnNextTrack">NEXT TRACK ▶</button>
-      <button class="secondary-btn" id="btnRaceAgain">RACE AGAIN</button>
-      <button class="secondary-btn" id="btnFinMenu">GARAGE</button>
-      <a href="../games.html" class="secondary-btn" style="text-decoration:none;text-align:center;">EXIT TO ARCADE</a>
+      <button type="button" class="primary-btn" id="btnNextTrack">NEXT TRACK ▶</button>
+      <button type="button" class="secondary-btn" id="btnRaceAgain">RACE AGAIN</button>
+      <button type="button" class="secondary-btn" id="btnFinMenu">MAIN MENU</button>
+      <a href="../games.html" class="secondary-btn" style="text-decoration:none;text-align:center;">BACK TO ARCADE</a>
     </div>
   </div>
 </div>
@@ -1394,6 +2134,16 @@
         ? [523.25, 659.25, 783.99, 1046.5, 987.77, 1046.5]
         : [392.0, 493.88, 587.33, 783.99];
       notes.forEach((f, i) => this._tone(f, f, 0.24, 'triangle', 0.26, i * 0.09));
+    }
+    playUi(kind = 'tap') {
+      if (!this.ctx || !this.sfxOn || this.muted) return;
+      if (kind === 'back') this._tone(420, 290, 0.065, 'triangle', 0.12);
+      else if (kind === 'confirm') {
+        this._tone(540, 680, 0.065, 'triangle', 0.14);
+        this._tone(780, 960, 0.08, 'triangle', 0.12, 0.045);
+      } else {
+        this._tone(640, 760, 0.045, 'triangle', 0.11);
+      }
     }
   }
 
@@ -3052,6 +3802,7 @@
   let difficulty = 1; // 0 Cruise, 1 Pro, 2 Ace
   let camMode = 0; // 0 Dynamic Chase, 1 Close Action, 2 Hood, 3 Bumper
   let qualityMode = 1; // 0 Eco, 1 High
+  let reducedFx = matchMedia('(prefers-reduced-motion: reduce)').matches;
   let simTime = 0;
   let physAccum = 0;
   let overtakeCd = 0;
@@ -3066,15 +3817,32 @@
   let racers = [];
   let player = null;
 
-  // Persistent Progress (Times & Stars)
+  // Persistent Progress (Times & Stars) & User Preferences
   let save = { bestTime: {}, stars: {} };
   try {
     const raw = localStorage.getItem('sunburst_gp_save_v1');
-    if (raw) save = JSON.parse(raw);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      save = { bestTime: parsed.bestTime || {}, stars: parsed.stars || {} };
+    }
   } catch (_) {}
   function persistSave() {
     try { localStorage.setItem('sunburst_gp_save_v1', JSON.stringify(save)); } catch (_) {}
   }
+
+  let prefs = {};
+  try {
+    const rawP = localStorage.getItem('sunburst_gp_prefs_v1');
+    if (rawP) prefs = JSON.parse(rawP) || {};
+  } catch (_) {}
+  if (typeof prefs.musicOn === 'boolean') audio.musicOn = prefs.musicOn;
+  if (typeof prefs.sfxOn === 'boolean') audio.sfxOn = prefs.sfxOn;
+  if (typeof prefs.muted === 'boolean') audio.muted = prefs.muted;
+  if (typeof prefs.qualityMode === 'number') qualityMode = prefs.qualityMode ? 1 : 0;
+  if (typeof prefs.reducedFx === 'boolean') reducedFx = prefs.reducedFx;
+  if (typeof prefs.selectedTrack === 'number' && TRACKS[prefs.selectedTrack]) selectedTrack = prefs.selectedTrack;
+  if (typeof prefs.selectedCar === 'number' && CARS[prefs.selectedCar]) selectedCar = prefs.selectedCar;
+  if (typeof prefs.difficulty === 'number' && prefs.difficulty >= 0 && prefs.difficulty <= 2) difficulty = prefs.difficulty;
 
   // Closest spline projection using local search window (safe for overpasses!)
   function findTrackInfo(x, y, z, hintIdx, fullScan = false) {
@@ -3250,11 +4018,12 @@
   // 9. INPUT MANAGER (KEYBOARD, TOUCH SLIDE STEER, OPTIONAL TILT, GAMEPAD)
   // =========================================================================
   const keys = {};
-  let touchMode = 'auto'; // auto | on | off
-  let autoGasMode = 'auto'; // auto | on | off
+  let touchMode = ['auto', 'on', 'off'].includes(prefs.touchMode) ? prefs.touchMode : 'auto'; // auto | on | off
+  let autoGasMode = ['auto', 'on', 'off'].includes(prefs.autoGasMode) ? prefs.autoGasMode : 'auto'; // auto | on | off
   let tiltEnabled = false;
   let tiltSteer = 0;
   let isTouchActive = false;
+  let rotateDismissed = false;
 
   const touchState = {
     steerId: null,
@@ -3271,6 +4040,20 @@
     return matchMedia('(pointer: coarse)').matches || ('ontouchstart' in window && navigator.maxTouchPoints > 0);
   }
 
+  function updateOrientationPrompt() {
+    const coarse = matchMedia('(pointer: coarse)').matches || ('ontouchstart' in window && navigator.maxTouchPoints > 0);
+    const portrait = window.innerHeight > window.innerWidth;
+    const promptEl = document.getElementById('rotatePrompt');
+    const hintBtn = document.getElementById('btnMenuRotateHint');
+    if (promptEl) {
+      const showPrompt = coarse && portrait && !rotateDismissed;
+      promptEl.classList.toggle('visible', showPrompt);
+    }
+    if (hintBtn) {
+      hintBtn.style.display = (coarse && portrait) ? 'inline-flex' : 'none';
+    }
+  }
+
   function applyInputClasses() {
     isTouchActive = detectTouchDevice();
     document.body.classList.toggle('touch', isTouchActive);
@@ -3280,17 +4063,22 @@
     const autoGas = autoGasMode === 'on' || (autoGasMode === 'auto' && isTouchActive);
     document.body.classList.toggle('manual-gas', !autoGas);
 
-    document.getElementById('menuCtrlHint').innerHTML = isTouchActive
-      ? '<b>Slide Left Pad</b> to Steer • <b>DRIFT</b> corners for Turbo • Tap <b>NITRO</b>!'
-      : '<b>W / ↑</b> Gas • <b>A / D</b> or <b>← / →</b> Steer • <b>Space</b> Drift • <b>Shift / E</b> Nitro • <b>C</b> Cam';
+    const hintEl = document.getElementById('menuCtrlHint');
+    if (hintEl) {
+      hintEl.innerHTML = isTouchActive
+        ? '<b>Slide Left Pad</b> to Steer • <b>DRIFT</b> corners for Turbo • Tap <b>NITRO</b>!'
+        : '<b>W / ↑</b> Gas • <b>A / D</b> or <b>← / →</b> Steer • <b>Space</b> Drift • <b>Shift / E</b> Nitro • <b>C</b> Cam';
+    }
+    updateOrientationPrompt();
   }
 
   window.addEventListener('keydown', (e) => {
     audio.init();
-    if (['Space', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(e.code)) e.preventDefault();
+    if (state !== 'menu' && ['Space', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(e.code)) e.preventDefault();
     keys[e.code] = true;
     if (e.code === 'KeyP' || e.code === 'Escape') {
       if (state === 'race' || state === 'countdown') togglePause();
+      else if (state === 'menu' && e.code === 'Escape' && typeof handleMenuBackKey === 'function') handleMenuBackKey();
     } else if (e.code === 'KeyC' && (state === 'race' || state === 'countdown')) {
       camMode = (camMode + 1) % 4;
       showCallout(['DYNAMIC CHASE', 'CLOSE ACTION', 'HOOD CAM', 'BUMPER CAM'][camMode], '#90e0ef', 1.0);
@@ -4274,7 +5062,7 @@
     const aspect = w / Math.max(1, h);
     M4.perspective(projMat, fovCur * Math.PI / 180, aspect, 0.6, 950.0);
 
-    const thump = camShake * 0.16;
+    const thump = reducedFx ? 0 : camShake * 0.16;
     const sx = Math.sin(simTime * 42) * thump;
     const sy = Math.cos(simTime * 35) * thump;
     M4.lookAt(viewMat, camX + sx, camY + sy, camZ, camLookX + sx * 0.5, camLookY + sy * 0.5, camLookZ, 0, 1, 0);
@@ -4516,7 +5304,7 @@
 
     // 4. Batched Skidmarks, Billboard Particles & GPU Additive Speedlines (ZERO 2D canvas overhead!)
     const pSpdRender = (state === 'race' && player) ? Math.hypot(player.vx, player.vz) : 0;
-    const drawSpeedlines = state === 'race' && player && (player.boostTimer > 0 || pSpdRender > 56);
+    const drawSpeedlines = !reducedFx && state === 'race' && player && (player.boostTimer > 0 || pSpdRender > 56);
     if (skidCount > 0 || partCount > 0 || drawSpeedlines) {
       gl.useProgram(partProg);
       gl.enable(gl.BLEND);
@@ -4808,78 +5596,287 @@
   }
 
   // =========================================================================
-  // 13. UI MENUS, FLOW TRANSITIONS & SETTINGS
+  // 13. UI MENUS, MULTI-STEP FLOW TRANSITIONS & SETTINGS
   // =========================================================================
+  const PACE_LABELS = ['CRUISE', 'PRO', 'ACE'];
+  const PACE_DESCS = [
+    'Relaxed rival pace — ideal for learning drift lines & boost chains.',
+    'Balanced rival pack speed, slipstream drafting & competitive finishes.',
+    'Relentless championship pace — nail 3-tier drifts & rocket starts!'
+  ];
+  const STAGE_CRUMBS = {
+    home: 'MAIN LOBBY',
+    circuit: '01 / CIRCUIT',
+    machine: '02 / MACHINE & PACE',
+    garage: 'GARAGE SHOWROOM',
+    controls: 'CONTROLS & GUIDE',
+    settings: 'SETTINGS'
+  };
+  let currentStage = 'home';
+
+  function persistPrefs() {
+    try {
+      localStorage.setItem('sunburst_gp_prefs_v1', JSON.stringify({
+        musicOn: audio.musicOn,
+        sfxOn: audio.sfxOn,
+        muted: audio.muted,
+        qualityMode,
+        touchMode,
+        autoGasMode,
+        reducedFx,
+        selectedTrack,
+        selectedCar,
+        difficulty
+      }));
+    } catch (_) {}
+  }
+
+  function setMenuStage(stageName, focusPrimary = false) {
+    currentStage = stageName;
+    document.querySelectorAll('#menuOverlay .menu-stage').forEach((sec) => {
+      sec.classList.toggle('active', sec.dataset.stage === stageName);
+    });
+    const crumb = document.getElementById('stageCrumb');
+    if (crumb) crumb.textContent = STAGE_CRUMBS[stageName] || 'MAIN LOBBY';
+    if (focusPrimary) {
+      const activeSec = document.querySelector('#menuOverlay .menu-stage.active');
+      const firstBtn = activeSec ? activeSec.querySelector('button, a') : null;
+      if (firstBtn) firstBtn.focus({ preventScroll: true });
+    }
+  }
+
+  function handleMenuBackKey() {
+    if (currentStage === 'machine') {
+      audio.playUi('back');
+      setMenuStage('circuit', true);
+    } else if (currentStage !== 'home') {
+      audio.playUi('back');
+      setMenuStage('home', true);
+    }
+  }
+
+  function syncSettingsUI() {
+    const setPair = (ids, text, active) => {
+      ids.forEach((id) => {
+        const el = document.getElementById(id);
+        if (!el) return;
+        el.textContent = text;
+        el.classList.toggle('on', !!active);
+      });
+    };
+    setPair(['setMusic', 'mSetMusic'], audio.musicOn ? 'ON' : 'OFF', audio.musicOn);
+    setPair(['setSfx', 'mSetSfx'], audio.sfxOn ? 'ON' : 'OFF', audio.sfxOn);
+    setPair(['setTouch', 'mSetTouch'], touchMode.toUpperCase(), touchMode === 'on');
+    setPair(['setAutoGas', 'mSetAutoGas'], autoGasMode.toUpperCase(), autoGasMode === 'on');
+    setPair(['setTilt', 'mSetTilt'], tiltEnabled ? 'ON' : 'OFF', tiltEnabled);
+    setPair(['setQuality', 'mSetQuality'], qualityMode === 1 ? 'HIGH' : 'ECO', qualityMode === 1);
+    setPair(['setReduced', 'mSetReduced'], reducedFx ? 'ON' : 'OFF', reducedFx);
+    const muteTxt = audio.muted ? '🔇' : '🔊';
+    const bMute = document.getElementById('btnMute');
+    const bMenuMute = document.getElementById('btnMenuMute');
+    if (bMute) bMute.textContent = muteTxt;
+    if (bMenuMute) bMenuMute.textContent = muteTxt;
+  }
+
+  function renderCarChip(c, idx) {
+    const chip = document.createElement('button');
+    chip.type = 'button';
+    chip.className = 'car-chip' + (idx === selectedCar ? ' active' : '');
+    const rgb = `rgb(${c.color[0] * 255 | 0},${c.color[1] * 255 | 0},${c.color[2] * 255 | 0})`;
+    const sPct = Math.round(clamp((c.topSpd - 62) / 11 * 100, 35, 100));
+    const aPct = Math.round(clamp((c.accel - 33) / 11 * 100, 35, 100));
+    const hPct = Math.round(clamp((c.grip - 0.88) / 0.32 * 100, 35, 100));
+    chip.innerHTML = `
+      <span class="car-swatch" style="background:${rgb}"></span>
+      <div style="flex:1;min-width:0">
+        <b>${c.name}</b><span>${c.tag}</span>
+        <div class="car-bars" title="SPD / ACC / HND">
+          <span class="car-bar"><i style="width:${sPct}%"></i></span>
+          <span class="car-bar"><i style="width:${aPct}%"></i></span>
+          <span class="car-bar"><i style="width:${hPct}%"></i></span>
+        </div>
+      </div>
+    `;
+    chip.onclick = () => {
+      audio.init();
+      audio.playUi('tap');
+      if (selectedCar !== idx) {
+        selectedCar = idx;
+        persistPrefs();
+        setupGrid(true);
+      }
+      buildMenuUI();
+    };
+    return chip;
+  }
+
+  function updateLobbyTelemetry() {
+    const t = TRACKS[selectedTrack];
+    const c = CARS[selectedCar];
+    const totalStars = TRACKS.reduce((acc, tr) => acc + (save.stars[tr.id] || 0), 0);
+    const bt = save.bestTime[t.id];
+
+    const elStars = document.getElementById('lobbyTotalStars');
+    if (elStars) elStars.textContent = `★ ${totalStars} / ${TRACKS.length * 3}`;
+    const elT = document.getElementById('lobbyTrackName');
+    if (elT) elT.textContent = t.name;
+    const elB = document.getElementById('lobbyTrackBest');
+    if (elB) elB.textContent = bt ? fmtTime(bt) : '--:--.--';
+    const elC = document.getElementById('lobbyCarName');
+    if (elC) elC.textContent = c.name;
+    const elD = document.getElementById('lobbyDiffName');
+    if (elD) elD.textContent = PACE_LABELS[difficulty];
+    const elQr = document.getElementById('quickRaceSub');
+    if (elQr) elQr.textContent = `${t.name} • ${c.name} • ${PACE_LABELS[difficulty]}`;
+    const elSum = document.getElementById('setupReadySummary');
+    if (elSum) elSum.innerHTML = `Grid: <b>${t.name}</b> • <b>${c.name}</b> (${PACE_LABELS[difficulty]})`;
+    const elCDesc = document.getElementById('circuitDescBar');
+    if (elCDesc) elCDesc.innerHTML = `<b>${t.name}</b> — ${t.subtitle} (${t.boostS.length} Boost Pads • ${t.jumpS.length} Jump Ramp${t.jumpS.length > 1 ? 's' : ''})`;
+    const elPDesc = document.getElementById('paceDesc');
+    if (elPDesc) elPDesc.textContent = PACE_DESCS[difficulty];
+
+    // Garage Showroom Details
+    const sPct = Math.round(clamp((c.topSpd - 62) / 11 * 100, 35, 100));
+    const aPct = Math.round(clamp((c.accel - 33) / 11 * 100, 35, 100));
+    const hPct = Math.round(clamp((c.grip - 0.88) / 0.32 * 100, 35, 100));
+    const nPct = Math.round(clamp((c.nitroPow - 0.94) / 0.24 * 100, 35, 100));
+    const gTitle = document.getElementById('garageTitle');
+    if (gTitle) gTitle.textContent = c.name;
+    const gTag = document.getElementById('garageTag');
+    if (gTag) gTag.textContent = c.tag.toUpperCase();
+    const setBar = (valId, barId, txt, pct) => {
+      const vEl = document.getElementById(valId);
+      const bEl = document.getElementById(barId);
+      if (vEl) vEl.textContent = txt;
+      if (bEl) bEl.style.width = `${pct}%`;
+    };
+    setBar('gValSpd', 'gBarSpd', `${Math.round(c.topSpd * 3.6)} KM/H`, sPct);
+    setBar('gValAcc', 'gBarAcc', `${aPct}/100`, aPct);
+    setBar('gValGrip', 'gBarGrip', `${hPct}/100`, hPct);
+    setBar('gValNitro', 'gBarNitro', `${nPct}/100`, nPct);
+  }
+
   function buildMenuUI() {
     const tGrid = document.getElementById('trackGrid');
-    tGrid.innerHTML = '';
-    TRACKS.forEach((t, idx) => {
-      const card = document.createElement('button');
-      card.className = 'track-card' + (idx === selectedTrack ? ' active' : '');
-      const st = save.stars[t.id] || 0;
-      const bt = save.bestTime[t.id];
-      const starsHtml = `${'★'.repeat(st)}<span style="opacity:0.28">${'★'.repeat(3 - st)}</span>`;
-      card.innerHTML = `
-        <div>
-          <div class="t-name">${t.name}</div>
-          <div class="t-sub">${t.subtitle}</div>
-        </div>
-        <div class="t-best">${starsHtml}<br>${bt ? fmtTime(bt) : '--:--.--'}</div>
-      `;
-      card.onclick = () => {
-        audio.init();
-        if (selectedTrack !== idx) {
-          selectedTrack = idx;
-          setupGrid(true);
-        }
-        buildMenuUI();
-      };
-      tGrid.appendChild(card);
-    });
+    if (tGrid) {
+      tGrid.innerHTML = '';
+      TRACKS.forEach((t, idx) => {
+        const card = document.createElement('button');
+        card.type = 'button';
+        card.className = 'track-card' + (idx === selectedTrack ? ' active' : '');
+        const st = save.stars[t.id] || 0;
+        const bt = save.bestTime[t.id];
+        const starsHtml = `${'★'.repeat(st)}<span style="opacity:0.28">${'★'.repeat(3 - st)}</span>`;
+        card.innerHTML = `
+          <div class="track-card-top">
+            <div>
+              <div class="t-name">${t.name}</div>
+              <div class="t-sub">${t.subtitle}</div>
+            </div>
+            <div class="t-best">${starsHtml}<br>${bt ? fmtTime(bt) : '--:--.--'}</div>
+          </div>
+          <div class="t-meta">⚡ ${t.boostS.length} BOOSTS • 🛫 ${t.jumpS.length} JUMPS • 3 LAPS</div>
+        `;
+        card.onclick = () => {
+          audio.init();
+          audio.playUi('tap');
+          if (selectedTrack !== idx) {
+            selectedTrack = idx;
+            persistPrefs();
+            setupGrid(true);
+          }
+          buildMenuUI();
+        };
+        tGrid.appendChild(card);
+      });
+    }
 
     const cGrid = document.getElementById('carGrid');
-    cGrid.innerHTML = '';
-    CARS.forEach((c, idx) => {
-      const chip = document.createElement('button');
-      chip.className = 'car-chip' + (idx === selectedCar ? ' active' : '');
-      const rgb = `rgb(${c.color[0] * 255 | 0},${c.color[1] * 255 | 0},${c.color[2] * 255 | 0})`;
-      const sPct = Math.round(clamp((c.topSpd - 62) / 11 * 100, 35, 100));
-      const aPct = Math.round(clamp((c.accel - 33) / 11 * 100, 35, 100));
-      const hPct = Math.round(clamp((c.grip - 0.88) / 0.32 * 100, 35, 100));
-      chip.innerHTML = `
-        <span class="car-swatch" style="background:${rgb}"></span>
-        <div style="flex:1;min-width:0">
-          <b>${c.name}</b><span>${c.tag}</span>
-          <div class="car-bars" title="SPD / ACC / HND">
-            <span class="car-bar"><i style="width:${sPct}%"></i></span>
-            <span class="car-bar"><i style="width:${aPct}%"></i></span>
-            <span class="car-bar"><i style="width:${hPct}%"></i></span>
-          </div>
-        </div>
-      `;
-      chip.onclick = () => {
-        audio.init();
-        if (selectedCar !== idx) {
-          selectedCar = idx;
-          setupGrid(true);
-        }
-        buildMenuUI();
-      };
-      cGrid.appendChild(chip);
+    if (cGrid) {
+      cGrid.innerHTML = '';
+      CARS.forEach((c, idx) => cGrid.appendChild(renderCarChip(c, idx)));
+    }
+
+    const gGrid = document.getElementById('garageCarGrid');
+    if (gGrid) {
+      gGrid.innerHTML = '';
+      CARS.forEach((c, idx) => gGrid.appendChild(renderCarChip(c, idx)));
+    }
+
+    document.querySelectorAll('#diffGroup .diff-btn').forEach((b) => {
+      b.classList.toggle('active', Number(b.dataset.d) === difficulty);
     });
+
+    updateLobbyTelemetry();
+    syncSettingsUI();
   }
 
   document.querySelectorAll('#diffGroup .diff-btn').forEach((btn) => {
     btn.onclick = () => {
       audio.init();
+      audio.playUi('tap');
       difficulty = Number(btn.dataset.d);
-      document.querySelectorAll('#diffGroup .diff-btn').forEach((b) => b.classList.toggle('active', b === btn));
+      persistPrefs();
       setupGrid(true);
+      buildMenuUI();
     };
   });
 
+  // Multi-Step Menu Navigation Wiring
+  document.getElementById('btnNavGrandPrix').onclick = () => {
+    audio.init(); audio.playUi('confirm');
+    setMenuStage('circuit', true);
+  };
+  document.getElementById('btnQuickRace').onclick = startRace;
+  document.getElementById('btnNavGarage').onclick = () => {
+    audio.init(); audio.playUi('confirm');
+    setMenuStage('garage', true);
+  };
+  document.getElementById('btnNavControls').onclick = () => {
+    audio.init(); audio.playUi('confirm');
+    setMenuStage('controls', true);
+  };
+  document.getElementById('btnNavSettings').onclick = () => {
+    audio.init(); audio.playUi('confirm');
+    setMenuStage('settings', true);
+  };
+  document.getElementById('btnNextMachine').onclick = () => {
+    audio.init(); audio.playUi('confirm');
+    setMenuStage('machine', true);
+  };
+  document.getElementById('btnGarageRace').onclick = startRace;
+
+  document.querySelectorAll('#menuOverlay [data-back]').forEach((btn) => {
+    btn.onclick = () => {
+      audio.init(); audio.playUi('back');
+      setMenuStage(btn.dataset.back, true);
+    };
+  });
+  document.querySelectorAll('#menuOverlay [data-goto]').forEach((btn) => {
+    btn.onclick = () => {
+      audio.init(); audio.playUi('tap');
+      setMenuStage(btn.dataset.goto, true);
+    };
+  });
+
+  // Keyboard Up/Down Navigation inside Home Nav Rail
+  const homeNavEl = document.querySelector('#stage-home .home-nav');
+  if (homeNavEl) {
+    homeNavEl.addEventListener('keydown', (e) => {
+      if (e.code !== 'ArrowDown' && e.code !== 'ArrowUp') return;
+      const items = [...homeNavEl.querySelectorAll('.nav-item')];
+      const idx = items.indexOf(document.activeElement);
+      e.preventDefault();
+      const next = e.code === 'ArrowDown'
+        ? items[(idx + 1 + items.length) % items.length]
+        : items[(idx - 1 + items.length) % items.length];
+      if (next) next.focus();
+    });
+  }
+
   function startRace() {
     audio.init();
+    audio.playUi('confirm');
     paused = false;
     setupGrid(false);
     state = 'countdown';
@@ -4959,6 +5956,7 @@
     document.getElementById('pauseTrackName').textContent = TRACKS[selectedTrack].name;
     document.getElementById('pauseOverlay').style.display = paused ? 'flex' : 'none';
     document.getElementById('touchControls').classList.toggle('active', !paused && isTouchActive);
+    syncSettingsUI();
   }
 
   function returnToMenu() {
@@ -4966,6 +5964,7 @@
     state = 'menu';
     setupGrid(true);
     buildMenuUI();
+    setMenuStage('home');
     const cdEl = document.getElementById('countdownText');
     cdEl.classList.remove('show');
     cdEl.textContent = '';
@@ -4982,7 +5981,8 @@
     audio.init();
     audio.muted = !audio.muted;
     audio.syncVolumes();
-    document.getElementById('btnMute').textContent = audio.muted ? '🔇' : '🔊';
+    persistPrefs();
+    syncSettingsUI();
   }
 
   // Wire Buttons
@@ -4995,6 +5995,7 @@
   document.getElementById('btnFinMenu').onclick = returnToMenu;
   document.getElementById('btnNextTrack').onclick = () => {
     selectedTrack = (selectedTrack + 1) % TRACKS.length;
+    persistPrefs();
     startRace();
   };
   document.getElementById('btnCam').onclick = () => {
@@ -5002,43 +6003,90 @@
     showCallout(['DYNAMIC CHASE', 'CLOSE ACTION', 'HOOD CAM', 'BUMPER CAM'][camMode], '#90e0ef', 1.0);
   };
   document.getElementById('btnMute').onclick = toggleMute;
+  document.getElementById('btnMenuMute').onclick = toggleMute;
 
+  const fsEl = document.documentElement;
+  const reqFs = fsEl.requestFullscreen || fsEl.webkitRequestFullscreen;
+  const exitFs = document.exitFullscreen || document.webkitExitFullscreen;
+  const getFsEl = () => document.fullscreenElement || document.webkitFullscreenElement;
   const fsBtn = document.getElementById('btnFullscreen');
-  if (document.documentElement.requestFullscreen) {
-    fsBtn.onclick = () => {
-      if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
-      else document.documentElement.requestFullscreen().catch(() => {});
-    };
+  const menuFsBtn = document.getElementById('btnMenuFs');
+  function toggleFullscreen() {
+    if (!reqFs) return;
+    if (getFsEl()) {
+      if (exitFs) Promise.resolve(exitFs.call(document)).catch(() => {});
+    } else {
+      Promise.resolve(reqFs.call(fsEl)).catch(() => {});
+    }
+  }
+  if (reqFs) {
+    fsBtn.onclick = toggleFullscreen;
+    menuFsBtn.onclick = toggleFullscreen;
   } else {
     fsBtn.style.display = 'none';
+    menuFsBtn.style.display = 'none';
   }
 
-  // Pause Settings Toggles
-  document.getElementById('setMusic').onclick = (e) => {
+  // Landscape Orientation Prompt Handlers
+  async function tryEnterLandscape() {
+    audio.init();
+    audio.playUi('confirm');
+    try {
+      if (reqFs && !getFsEl()) await Promise.resolve(reqFs.call(fsEl));
+    } catch (_) {}
+    try {
+      if (screen.orientation && screen.orientation.lock) {
+        await screen.orientation.lock('landscape');
+      }
+    } catch (_) {}
+    rotateDismissed = true;
+    updateOrientationPrompt();
+    resize();
+  }
+  document.getElementById('btnEnterLandscape').onclick = tryEnterLandscape;
+  document.getElementById('btnMenuRotateHint').onclick = tryEnterLandscape;
+  document.getElementById('btnDismissRotate').onclick = () => {
+    audio.init();
+    audio.playUi('back');
+    rotateDismissed = true;
+    updateOrientationPrompt();
+  };
+
+  // Unified Settings Toggles (Menu Settings + Pause Settings)
+  function toggleMusicSetting() {
+    audio.init();
     audio.musicOn = !audio.musicOn;
     audio.syncVolumes();
-    e.target.textContent = audio.musicOn ? 'ON' : 'OFF';
-    e.target.classList.toggle('on', audio.musicOn);
-  };
-  document.getElementById('setSfx').onclick = (e) => {
+    audio.playUi('tap');
+    persistPrefs();
+    syncSettingsUI();
+  }
+  function toggleSfxSetting() {
+    audio.init();
     audio.sfxOn = !audio.sfxOn;
     audio.syncVolumes();
-    e.target.textContent = audio.sfxOn ? 'ON' : 'OFF';
-    e.target.classList.toggle('on', audio.sfxOn);
-  };
-  document.getElementById('setTouch').onclick = (e) => {
+    audio.playUi('tap');
+    persistPrefs();
+    syncSettingsUI();
+  }
+  function cycleTouchSetting() {
+    audio.init();
     touchMode = touchMode === 'auto' ? 'on' : (touchMode === 'on' ? 'off' : 'auto');
-    e.target.textContent = touchMode.toUpperCase();
-    e.target.classList.toggle('on', touchMode === 'on');
+    audio.playUi('tap');
+    persistPrefs();
     applyInputClasses();
-  };
-  document.getElementById('setAutoGas').onclick = (e) => {
+    syncSettingsUI();
+  }
+  function cycleAutoGasSetting() {
+    audio.init();
     autoGasMode = autoGasMode === 'auto' ? 'on' : (autoGasMode === 'on' ? 'off' : 'auto');
-    e.target.textContent = autoGasMode.toUpperCase();
-    e.target.classList.toggle('on', autoGasMode === 'on');
+    audio.playUi('tap');
+    persistPrefs();
     applyInputClasses();
-  };
-  document.getElementById('setTilt').onclick = async (e) => {
+    syncSettingsUI();
+  }
+  async function toggleTiltSetting() {
+    audio.init();
     if (!tiltEnabled && typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function') {
       try {
         const perm = await DeviceOrientationEvent.requestPermission();
@@ -5046,14 +6094,59 @@
       } catch (_) { return; }
     }
     tiltEnabled = !tiltEnabled;
-    e.target.textContent = tiltEnabled ? 'ON' : 'OFF';
-    e.target.classList.toggle('on', tiltEnabled);
-  };
-  document.getElementById('setQuality').onclick = (e) => {
+    audio.playUi('tap');
+    syncSettingsUI();
+  }
+  function toggleQualitySetting() {
+    audio.init();
     qualityMode = qualityMode === 1 ? 0 : 1;
-    e.target.textContent = qualityMode === 1 ? 'HIGH' : 'ECO';
-    e.target.classList.toggle('on', qualityMode === 1);
+    audio.playUi('tap');
+    persistPrefs();
+    syncSettingsUI();
     resize();
+  }
+  function toggleReducedSetting() {
+    audio.init();
+    reducedFx = !reducedFx;
+    audio.playUi('tap');
+    persistPrefs();
+    syncSettingsUI();
+  }
+
+  ['setMusic', 'mSetMusic'].forEach((id) => { document.getElementById(id).onclick = toggleMusicSetting; });
+  ['setSfx', 'mSetSfx'].forEach((id) => { document.getElementById(id).onclick = toggleSfxSetting; });
+  ['setTouch', 'mSetTouch'].forEach((id) => { document.getElementById(id).onclick = cycleTouchSetting; });
+  ['setAutoGas', 'mSetAutoGas'].forEach((id) => { document.getElementById(id).onclick = cycleAutoGasSetting; });
+  ['setTilt', 'mSetTilt'].forEach((id) => { document.getElementById(id).onclick = toggleTiltSetting; });
+  ['setQuality', 'mSetQuality'].forEach((id) => { document.getElementById(id).onclick = toggleQualitySetting; });
+  ['setReduced', 'mSetReduced'].forEach((id) => { document.getElementById(id).onclick = toggleReducedSetting; });
+
+  let resetConfirmTimer = null;
+  document.getElementById('btnResetRecords').onclick = (e) => {
+    audio.init();
+    const btn = e.currentTarget;
+    if (btn.dataset.armed !== '1') {
+      btn.dataset.armed = '1';
+      btn.textContent = 'CONFIRM?';
+      btn.classList.add('on');
+      audio.playUi('tap');
+      clearTimeout(resetConfirmTimer);
+      resetConfirmTimer = setTimeout(() => {
+        btn.dataset.armed = '0';
+        btn.textContent = 'RESET';
+        btn.classList.remove('on');
+      }, 3000);
+      return;
+    }
+    clearTimeout(resetConfirmTimer);
+    btn.dataset.armed = '0';
+    btn.textContent = 'CLEARED';
+    btn.classList.remove('on');
+    save = { bestTime: {}, stars: {} };
+    persistSave();
+    buildMenuUI();
+    audio.playUi('back');
+    setTimeout(() => { btn.textContent = 'RESET'; }, 1400);
   };
 
   // Lifecycle & Mobile Touch Guards
@@ -5061,7 +6154,7 @@
     if (touchMode === 'auto' && !isTouchActive) applyInputClasses();
   }, { passive: true });
   document.addEventListener('touchmove', (e) => {
-    if (!e.target.closest('.overlay')) e.preventDefault();
+    if (!e.target.closest('.overlay') && !e.target.closest('#rotatePrompt')) e.preventDefault();
   }, { passive: false });
   document.addEventListener('visibilitychange', () => {
     if (document.hidden && (state === 'race' || state === 'countdown') && !paused) togglePause();
@@ -5081,6 +6174,7 @@
     const mmBox = document.getElementById('minimapWrap').getBoundingClientRect();
     mmCanvas.width = Math.max(80, Math.floor((mmBox.width || 110) * dpr));
     mmCanvas.height = Math.max(80, Math.floor((mmBox.height || 110) * dpr));
+    updateOrientationPrompt();
   }
   window.addEventListener('resize', resize);
   window.addEventListener('orientationchange', () => setTimeout(resize, 180));
