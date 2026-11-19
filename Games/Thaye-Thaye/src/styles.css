@@ -779,7 +779,8 @@ body {
   gap: 10px;
 }
 
-.fs-btn {
+.fs-btn,
+.arcade-back-btn {
   padding: 6px 12px;
   border-radius: 4px;
   background: rgba(10, 14, 22, 0.78);
@@ -788,13 +789,25 @@ body {
   font-weight: 800;
   letter-spacing: 0.12em;
   color: #24d8ff;
+  text-decoration: none;
   cursor: pointer;
   transition: background 0.14s ease, border-color 0.14s ease, transform 0.12s ease;
+}
+
+.arcade-back-btn {
+  border-color: rgba(245, 158, 11, 0.5);
+  color: #fbbf24;
 }
 
 .fs-btn:hover {
   background: rgba(36, 216, 255, 0.16);
   border-color: #7eeeff;
+  transform: translateY(-1px);
+}
+
+.arcade-back-btn:hover {
+  background: rgba(245, 158, 11, 0.16);
+  border-color: #fcd34d;
   transform: translateY(-1px);
 }
 
@@ -853,6 +866,7 @@ body {
   border-radius: 6px;
   color: #f8fafc;
   text-align: left;
+  text-decoration: none;
   cursor: pointer;
   backdrop-filter: blur(12px);
   transition: transform 0.14s ease, border-color 0.14s ease, background 0.14s ease, box-shadow 0.14s ease;
@@ -886,6 +900,19 @@ body {
 
 .nav-item.accent {
   border-left-color: #f59e0b;
+}
+
+.nav-item.exit-arcade {
+  border-left-color: rgba(248, 113, 113, 0.7);
+}
+
+.nav-item.exit-arcade .nav-arrow {
+  color: #f87171;
+}
+
+.nav-item.exit-arcade:hover {
+  border-color: rgba(248, 113, 113, 0.55);
+  border-left-color: #f87171;
 }
 
 .nav-item:disabled {
