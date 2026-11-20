@@ -8,6 +8,9 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>GOREHOUND 3D — Hell-Foundry Ultimate Edition</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Teko:wght@600;700&display=swap" rel="stylesheet">
 <style>
   :root {
     --sl: env(safe-area-inset-left, 0px);
@@ -338,267 +341,247 @@
     text-align: center;
   }
 
-  /* Multi-Step Menu Shell */
+  /* ==================== GOREHOUND 3D: BRUTALIST HELL-FOUNDRY ==================== */
   #menuOverlay {
     justify-content: space-between;
-    background: linear-gradient(100deg, rgba(16, 3, 6, 0.88) 0%, rgba(22, 4, 8, 0.45) 50%, rgba(12, 2, 5, 0.78) 100%);
-    gap: 10px;
+    background: radial-gradient(circle at 50% 42%, rgba(40, 4, 8, 0.25) 0%, rgba(12, 2, 4, 0.86) 100%);
+    font-family: "Rajdhani", "Segoe UI", system-ui, sans-serif;
   }
   .menu-shell {
-    width: 100%; max-width: 1080px; margin: 0 auto;
+    width: 100%; max-width: 1020px; margin: 0 auto;
     flex: 1 1 auto; min-height: 0;
-    display: flex; flex-direction: column; justify-content: space-between; gap: 10px;
+    display: flex; flex-direction: column; justify-content: space-between; gap: 8px;
   }
-  .menu-topbar {
-    display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap;
-    padding: 8px 14px; border-radius: 12px;
-    background: linear-gradient(180deg, rgba(28, 7, 12, 0.92), rgba(14, 3, 6, 0.88));
-    border: 1px solid rgba(255, 55, 85, 0.45);
-    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.65), inset 0 0 18px rgba(217, 4, 41, 0.14);
+  .hell-header {
+    display: flex; align-items: center; justify-content: space-between; gap: 10px;
+    border-bottom: 2px solid rgba(239, 35, 60, 0.45);
+    padding-bottom: 6px;
   }
-  .brand-lockup { display: flex; flex-direction: column; gap: 2px; }
-  .brand-kicker {
-    font-size: 9.5px; font-weight: 900; letter-spacing: 0.2em; color: #ff8599; text-transform: uppercase;
-  }
+  .hell-brand { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
   .logo {
-    font-size: clamp(22px, 4.2vw, 38px); font-weight: 950; letter-spacing: 0.08em; line-height: 1;
-    background: linear-gradient(180deg, #ffffff 0%, #ff4d6d 50%, #9b001d 100%);
+    font-family: "Teko", Impact, sans-serif;
+    font-size: clamp(32px, 5.5vw, 56px); font-weight: 700; letter-spacing: 0.06em; line-height: 0.86;
+    background: linear-gradient(180deg, #ffffff 10%, #ff4d6d 56%, #9b001d 100%);
     -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0 3px 14px rgba(255, 20, 50, 0.6));
+    filter: drop-shadow(0 4px 14px rgba(255, 20, 50, 0.6));
   }
-  .subtitle { margin-top: 6px; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #e89ca9; font-weight: 800; }
-  .topbar-right { display: flex; align-items: center; gap: 7px; flex-wrap: wrap; }
+  .hell-record-tag {
+    font-size: 11.5px; font-weight: 700; letter-spacing: 0.14em; color: #ffd166;
+    text-transform: uppercase; background: rgba(18, 4, 8, 0.72);
+    padding: 3px 9px; border-left: 3px solid #ef233c;
+  }
+  .subtitle { margin-top: 4px; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #e89ca9; font-weight: 700; }
+  .topbar-right { display: flex; align-items: center; gap: 7px; }
   .arcade-pill {
-    display: inline-flex; align-items: center; gap: 6px; padding: 7px 13px; border-radius: 8px;
-    border: 1px solid rgba(255, 75, 95, 0.58); background: rgba(217, 4, 41, 0.18);
-    color: #ffd166; text-decoration: none; font-size: 11px; font-weight: 900;
-    letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer;
-    transition: transform 0.1s, background 0.15s;
+    display: inline-flex; align-items: center; gap: 5px; height: 36px; padding: 0 13px;
+    border: 1px solid rgba(255, 75, 95, 0.65); background: rgba(24, 5, 10, 0.86);
+    color: #ffd166; text-decoration: none; font-size: 12px; font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer;
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+    transition: background 0.14s, transform 0.1s;
   }
-  .arcade-pill:hover { background: rgba(217, 4, 41, 0.34); transform: translateY(-1px); }
-  .rotate-pill { display: none; border-color: rgba(255, 209, 102, 0.55); background: rgba(255, 209, 102, 0.14); color: #ffd166; }
-  .stage-crumb {
-    padding: 6px 11px; border-radius: 8px; background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 70, 95, 0.32); font-size: 10.5px; font-weight: 900;
-    letter-spacing: 0.14em; color: #f4d6dc; text-transform: uppercase;
-  }
+  .arcade-pill:hover { background: rgba(217, 4, 41, 0.42); }
+  .rotate-pill { display: none; border-color: rgba(255, 209, 102, 0.65); }
 
   .menu-stage {
     display: none; flex: 1 1 auto; min-height: 0; align-items: center; justify-content: center;
-    animation: hellFade 0.18s ease-out;
+    animation: hellSlam 0.16s ease-out;
   }
   .menu-stage.active { display: flex; }
-  @keyframes hellFade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes hellSlam { from { opacity: 0; transform: scale(0.985); } to { opacity: 1; transform: scale(1); } }
 
-  /* Home Split */
-  .home-layout {
-    width: 100%; display: grid;
-    grid-template-columns: minmax(250px, 340px) minmax(240px, 360px);
-    justify-content: space-between; align-items: end; gap: 16px;
+  /* STAGE 1: CENTERED ALTAR GATE (Arena breathes behind!) */
+  .hell-gate {
+    width: min(100%, 760px);
+    display: flex; flex-direction: column; gap: 10px; align-items: stretch;
   }
-  .home-nav { display: flex; flex-direction: column; gap: 7px; width: 100%; }
-  .nav-item {
-    width: 100%; display: grid; grid-template-columns: 1fr auto; grid-template-rows: auto auto;
-    align-items: center; text-align: left; text-decoration: none;
-    padding: 10px 15px; border-radius: 10px;
-    border: 1px solid rgba(255, 70, 95, 0.36);
-    background: linear-gradient(160deg, rgba(32, 8, 14, 0.9), rgba(14, 3, 6, 0.88));
-    color: #f8e8ea; cursor: pointer;
-    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.55);
-    transition: transform 0.12s, border-color 0.15s, background 0.15s;
+  .hell-edict {
+    text-align: center;
+    font-size: 12.5px; font-weight: 700; letter-spacing: 0.24em; color: #e8b4be;
+    text-transform: uppercase; text-shadow: 0 2px 8px #000;
   }
-  .nav-item:hover, .nav-item:focus-visible {
-    transform: translateX(4px); border-color: #ff6b81;
-    background: linear-gradient(160deg, rgba(56, 12, 22, 0.94), rgba(22, 5, 9, 0.92));
+  .hell-cta-slab {
+    padding: clamp(13px, 2.5vmin, 18px) 22px;
+    border: 1.5px solid #ff8599;
+    background: linear-gradient(180deg, #ef233c 0%, #8a0018 100%);
+    color: #fff; cursor: pointer;
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    clip-path: polygon(14px 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%, 0 14px);
+    box-shadow: 0 14px 36px rgba(217, 4, 41, 0.55);
+    transition: transform 0.1s, filter 0.14s;
   }
-  .nav-item.primary {
-    border-color: #ff8599;
-    background: linear-gradient(180deg, #ef233c, #9b001d);
-    color: #fff;
-    box-shadow: 0 4px 0 #5b0010, 0 12px 28px rgba(217, 4, 41, 0.5);
+  .hell-cta-slab:hover { filter: brightness(1.12); transform: translateY(-1px); }
+  .hell-cta-slab:active { transform: scale(0.985); }
+  .hell-cta-slab strong {
+    font-family: "Teko", Impact, sans-serif;
+    font-size: clamp(24px, 4.2vmin, 34px); font-weight: 700; letter-spacing: 0.08em; line-height: 0.92;
   }
-  .nav-item.accent {
-    border-color: rgba(255, 209, 102, 0.55);
-    background: linear-gradient(135deg, rgba(255, 109, 0, 0.25), rgba(34, 8, 14, 0.92));
-  }
-  .nav-item.exit-arcade {
-    border-color: rgba(255, 255, 255, 0.2);
-    background: linear-gradient(160deg, rgba(22, 10, 14, 0.86), rgba(10, 4, 6, 0.9));
-  }
-  .nav-label { font-size: clamp(13px, 2.2vmin, 16px); font-weight: 900; letter-spacing: 0.08em; line-height: 1.1; }
-  .nav-sub { grid-column: 1; font-size: 10.5px; font-weight: 600; color: #e8b4be; margin-top: 2px; }
-  .nav-item.primary .nav-sub { color: #ffe3e8; }
-  .nav-arrow { grid-column: 2; grid-row: 1 / span 2; font-size: 17px; font-weight: 900; padding-left: 10px; color: #ffd166; }
+  .hell-cta-slab span { font-size: 12px; font-weight: 700; letter-spacing: 0.14em; color: #ffd166; }
 
-  .lobby-dossier {
-    background: linear-gradient(180deg, rgba(28, 7, 12, 0.9), rgba(12, 3, 5, 0.92));
-    border: 1px solid rgba(255, 55, 85, 0.45); border-radius: 14px; padding: 13px 15px;
-    box-shadow: 0 16px 38px rgba(0, 0, 0, 0.65);
-    display: flex; flex-direction: column; gap: 10px;
+  .hell-sub-strip {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px;
   }
-  .dossier-head {
-    display: flex; justify-content: space-between; align-items: center;
-    border-bottom: 1px solid rgba(255, 70, 95, 0.25); padding-bottom: 7px;
+  .hell-slab-btn {
+    padding: 11px 12px; border: 1px solid rgba(255, 70, 95, 0.45);
+    background: linear-gradient(180deg, rgba(28, 7, 12, 0.92), rgba(12, 3, 5, 0.94));
+    color: #f8e8ea; text-decoration: none; cursor: pointer; text-align: center;
+    clip-path: polygon(9px 0, 100% 0, 100% calc(100% - 9px), calc(100% - 9px) 100%, 0 100%, 0 9px);
+    transition: border-color 0.14s, background 0.14s;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px;
   }
-  .dossier-head strong { font-size: 11px; font-weight: 900; letter-spacing: 0.16em; color: #ff6b81; }
-  .dossier-badge {
-    padding: 3px 9px; border-radius: 999px; background: rgba(255, 209, 102, 0.16);
-    border: 1px solid rgba(255, 209, 102, 0.45); color: #ffd166; font-size: 10.5px; font-weight: 900;
+  .hell-slab-btn:hover { border-color: #ff6b81; background: rgba(58, 12, 22, 0.94); }
+  .hell-slab-btn b {
+    font-family: "Teko", Impact, sans-serif;
+    font-size: 20px; font-weight: 600; letter-spacing: 0.08em; line-height: 1; color: #fff;
   }
-  .dossier-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-  .dossier-cell {
-    background: rgba(0, 0, 0, 0.38); border: 1px solid rgba(255, 70, 95, 0.24);
-    border-radius: 8px; padding: 8px 10px;
-  }
-  .dossier-cell small { display: block; font-size: 9px; font-weight: 800; letter-spacing: 0.12em; color: #c9a2aa; }
-  .dossier-cell b { display: block; font-size: 14px; font-weight: 900; color: #ff6b81; margin-top: 2px; }
-  .dossier-tip {
-    font-size: 11px; line-height: 1.4; color: #ecd3d8;
-    background: rgba(217, 4, 41, 0.12); border: 1px solid rgba(255, 70, 95, 0.22);
-    border-radius: 8px; padding: 8px 10px;
-  }
-  .dossier-tip b { color: #ffd166; }
+  .hell-slab-btn small { font-size: 10.5px; font-weight: 700; letter-spacing: 0.1em; color: #d8a2ad; text-transform: uppercase; }
 
-  /* Sub-Stage Panel */
+  /* SUB-STAGES: CHAMFERED COMMAND SLABS */
   .stage-card {
-    width: 100%; max-width: 900px; margin: 0 auto;
-    background: linear-gradient(180deg, rgba(28, 7, 12, 0.94), rgba(12, 3, 5, 0.96));
-    border: 1px solid rgba(255, 55, 85, 0.5); border-radius: 16px;
-    padding: clamp(12px, 2.2vmin, 18px);
-    box-shadow: 0 22px 54px rgba(0, 0, 0, 0.78);
-    display: flex; flex-direction: column; gap: 11px; text-align: left;
+    width: 100%; max-width: 920px; margin: 0 auto;
+    background: linear-gradient(180deg, rgba(26, 6, 11, 0.95), rgba(10, 2, 4, 0.97));
+    border-top: 3px solid #ef233c; border-left: 1px solid rgba(255, 55, 85, 0.42);
+    border-right: 1px solid rgba(255, 55, 85, 0.42); border-bottom: 1px solid rgba(255, 55, 85, 0.42);
+    padding: clamp(11px, 2vmin, 16px);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%);
+    box-shadow: 0 22px 54px rgba(0, 0, 0, 0.82);
+    display: flex; flex-direction: column; gap: 10px; text-align: left;
   }
   .stage-head {
-    display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap;
-    border-bottom: 1px solid rgba(255, 70, 95, 0.25); padding-bottom: 9px;
+    display: flex; align-items: center; justify-content: space-between; gap: 10px;
+    border-bottom: 1px solid rgba(255, 70, 95, 0.25); padding-bottom: 7px;
   }
   .stage-head-left { display: flex; align-items: center; gap: 10px; }
   .back-btn {
-    padding: 6px 12px; border-radius: 8px; border: 1px solid rgba(255, 70, 95, 0.45);
-    background: rgba(255, 255, 255, 0.08); color: #fff; font-size: 11px; font-weight: 900;
-    letter-spacing: 0.08em; cursor: pointer;
+    padding: 5px 12px; border: 1px solid rgba(255, 70, 95, 0.52);
+    background: rgba(255, 255, 255, 0.07); color: #fff; font-size: 11.5px; font-weight: 700;
+    letter-spacing: 0.1em; cursor: pointer;
   }
-  .back-btn:hover { background: rgba(255, 70, 95, 0.24); }
-  .stage-title { font-size: clamp(14px, 2.5vmin, 18px); font-weight: 900; letter-spacing: 0.08em; color: #ff6b81; }
+  .back-btn:hover { background: rgba(255, 70, 95, 0.28); }
+  .stage-title {
+    font-family: "Teko", Impact, sans-serif;
+    font-size: clamp(20px, 3vmin, 26px); font-weight: 700; letter-spacing: 0.08em; line-height: 1; color: #ff6b81;
+  }
 
   .diff-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 9px; }
   .diff-btn {
-    padding: 12px; border-radius: 10px; border: 1.5px solid rgba(255, 70, 95, 0.34);
-    background: rgba(45, 10, 18, 0.65); color: #e4cad0; font-weight: 800; font-size: 12px;
+    padding: 11px 12px; border: 1.5px solid rgba(255, 70, 95, 0.34);
+    background: rgba(42, 9, 16, 0.72); color: #e4cad0; font-weight: 700; font-size: 12px;
     cursor: pointer; text-align: left; display: flex; flex-direction: column; gap: 4px;
-    transition: border-color 0.15s, background 0.15s, transform 0.1s;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+    transition: border-color 0.14s, background 0.14s;
   }
-  .diff-btn:hover { background: rgba(70, 14, 26, 0.78); }
-  .diff-btn strong { font-size: 14px; font-weight: 900; letter-spacing: 0.08em; color: #fff; }
-  .diff-btn span { font-size: 11px; line-height: 1.35; opacity: 0.85; }
-  .diff-btn small { font-size: 10px; font-weight: 800; color: #ffd166; margin-top: 2px; }
+  .diff-btn:hover { background: rgba(70, 14, 26, 0.82); }
+  .diff-btn strong { font-family: "Teko", sans-serif; font-size: 22px; font-weight: 700; letter-spacing: 0.06em; line-height: 1; color: #fff; }
+  .diff-btn span { font-size: 11.5px; line-height: 1.3; opacity: 0.86; }
+  .diff-btn small { font-size: 10.5px; font-weight: 700; color: #ffd166; letter-spacing: 0.06em; }
   .diff-btn.active {
-    background: linear-gradient(180deg, rgba(217, 4, 41, 0.85), rgba(125, 2, 23, 0.92));
-    border-color: #ff8599; color: #fff;
-    box-shadow: 0 0 22px rgba(217, 4, 41, 0.55);
+    background: linear-gradient(180deg, rgba(217, 4, 41, 0.85), rgba(118, 2, 22, 0.94));
+    border-color: #ff8599; color: #fff; box-shadow: 0 0 22px rgba(217, 4, 41, 0.5);
   }
 
-  .arsenal-split { display: grid; grid-template-columns: 0.9fr 1.2fr; gap: 12px; }
-  .arsenal-list { display: flex; flex-direction: column; gap: 6px; }
+  /* Arsenal Horizontal Rack + Detail */
+  .arsenal-rack { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
   .arsenal-tab {
-    display: flex; justify-content: space-between; align-items: center;
-    padding: 8px 11px; border-radius: 9px; border: 1px solid rgba(255, 70, 95, 0.3);
-    background: rgba(0, 0, 0, 0.38); color: #f4d6dc; font-size: 12px; font-weight: 800;
-    cursor: pointer; text-align: left;
+    padding: 8px 8px; border: 1px solid rgba(255, 70, 95, 0.32);
+    background: rgba(0, 0, 0, 0.42); color: #f4d6dc; font-size: 11.5px; font-weight: 700;
+    cursor: pointer; text-align: left; display: flex; flex-direction: column; gap: 2px;
   }
   .arsenal-tab.active {
-    border-color: #ff6b81; background: linear-gradient(90deg, rgba(217, 4, 41, 0.55), rgba(45, 10, 18, 0.85));
-    color: #fff;
+    border-color: #ff6b81; background: linear-gradient(180deg, rgba(217, 4, 41, 0.6), rgba(45, 10, 18, 0.9)); color: #fff;
   }
-  .arsenal-tab span { font-size: 10px; color: #ffd166; letter-spacing: 0.08em; }
+  .arsenal-tab span { font-size: 9.5px; color: #ffd166; letter-spacing: 0.08em; }
   .arsenal-detail {
-    background: rgba(0, 0, 0, 0.4); border: 1px solid rgba(255, 70, 95, 0.3);
-    border-radius: 12px; padding: 12px 14px; display: flex; flex-direction: column; justify-content: space-between; gap: 10px;
+    background: rgba(0, 0, 0, 0.42); border: 1px solid rgba(255, 70, 95, 0.28);
+    padding: 11px 13px; display: grid; grid-template-columns: 1.2fr 1fr; gap: 14px; align-items: center;
   }
   .w-stat-row { display: flex; flex-direction: column; gap: 3px; }
-  .w-stat-top { display: flex; justify-content: space-between; font-size: 10.5px; font-weight: 800; color: #e8b4be; }
-  .w-stat-track { height: 6px; border-radius: 999px; background: rgba(255, 255, 255, 0.12); overflow: hidden; }
-  .w-stat-fill { height: 100%; border-radius: 999px; background: linear-gradient(90deg, #ff1e42, #ffd166); transition: width 0.22s ease; }
+  .w-stat-top { display: flex; justify-content: space-between; font-size: 10.5px; font-weight: 700; color: #e8b4be; }
+  .w-stat-track { height: 6px; background: rgba(255, 255, 255, 0.12); overflow: hidden; }
+  .w-stat-fill { height: 100%; background: linear-gradient(90deg, #ff1e42, #ffd166); transition: width 0.22s ease; }
+
+  /* Combined Controls & Options Two-Column Landscape */
+  .options-split { display: grid; grid-template-columns: 0.95fr 1.15fr; gap: 12px; align-items: start; }
+  .ctrl-pane { display: flex; flex-direction: column; gap: 7px; }
+  .ctrl-box {
+    background: rgba(0, 0, 0, 0.42); border: 1px solid rgba(255, 70, 95, 0.24);
+    padding: 8px 10px; font-size: 11.5px; line-height: 1.45; color: #e4cad0;
+  }
+  .ctrl-box b { display: block; color: #ff6b81; font-size: 11px; letter-spacing: 0.1em; margin-bottom: 3px; }
+  .settings-pane { display: flex; flex-direction: column; gap: 6px; }
 
   .primary-btn {
-    width: 100%; padding: 13px 18px; border-radius: 10px; border: 1px solid #ff6b81;
-    background: linear-gradient(180deg, #ef233c, #9b001d); color: #fff; font-size: 15px; font-weight: 900;
-    letter-spacing: 0.12em; cursor: pointer; box-shadow: 0 8px 28px rgba(217, 4, 41, 0.58);
+    width: 100%; padding: 12px 18px; border: 1px solid #ff8599;
+    background: linear-gradient(180deg, #ef233c, #9b001d); color: #fff;
+    font-family: "Teko", Impact, sans-serif; font-size: 22px; font-weight: 700;
+    letter-spacing: 0.1em; line-height: 1; cursor: pointer;
+    clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+    box-shadow: 0 8px 26px rgba(217, 4, 41, 0.55);
   }
   .primary-btn:hover { filter: brightness(1.1); }
-  .primary-btn:active { transform: scale(0.98); }
   .secondary-btn {
-    width: 100%; margin-top: 8px; padding: 10px 16px; border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.22); background: rgba(255, 255, 255, 0.07);
-    color: #f4d6dc; font-size: 12.5px; font-weight: 800; letter-spacing: 0.08em; cursor: pointer;
+    width: 100%; margin-top: 8px; padding: 9px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.24); background: rgba(255, 255, 255, 0.07);
+    color: #f4d6dc; font-size: 12.5px; font-weight: 700; letter-spacing: 0.08em; cursor: pointer;
     display: inline-block; text-align: center; text-decoration: none;
   }
-  .controls-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 9px; text-align: left; }
-  .ctrl-box {
-    background: rgba(0, 0, 0, 0.42); border: 1px solid rgba(255, 70, 95, 0.26);
-    border-radius: 10px; padding: 10px 12px; font-size: 11.5px; line-height: 1.5; color: #e4cad0;
-  }
-  .ctrl-box b { display: block; color: #ff6b81; font-size: 11px; letter-spacing: 0.1em; margin-bottom: 5px; }
-  .settings-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
   .setting-row {
     display: flex; justify-content: space-between; align-items: center; gap: 8px;
-    padding: 8px 11px; border-radius: 9px; background: rgba(0, 0, 0, 0.32);
-    border: 1px solid rgba(255, 70, 95, 0.2); font-size: 12.5px; font-weight: 700;
+    padding: 6px 10px; background: rgba(0, 0, 0, 0.34);
+    border: 1px solid rgba(255, 70, 95, 0.2); font-size: 12px; font-weight: 700;
   }
-  .setting-row input[type="range"] { width: 120px; accent-color: #ff1e42; }
+  .setting-row input[type="range"] { width: 115px; accent-color: #ff1e42; }
   .toggle-pill {
-    padding: 5px 12px; border-radius: 999px; border: 1px solid rgba(255, 70, 95, 0.45);
-    background: rgba(50, 12, 20, 0.8); color: #fff; font-size: 11px; font-weight: 800; cursor: pointer; flex-shrink: 0;
+    padding: 4px 11px; border: 1px solid rgba(255, 70, 95, 0.5);
+    background: rgba(50, 12, 20, 0.85); color: #fff; font-size: 11px; font-weight: 700; cursor: pointer; flex-shrink: 0;
   }
   .toggle-pill.on { background: #d90429; border-color: #ff8599; }
   .stats-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin: 14px 0; }
-  .stat-cell { background: rgba(0, 0, 0, 0.42); border: 1px solid rgba(255, 70, 95, 0.25); border-radius: 8px; padding: 10px; }
+  .stat-cell { background: rgba(0, 0, 0, 0.42); border: 1px solid rgba(255, 70, 95, 0.25); padding: 10px; }
   .stat-cell .v { font-size: 20px; font-weight: 900; color: #ff4d6d; }
   .stat-cell .k { font-size: 10px; letter-spacing: 0.1em; color: #c9a2aa; font-weight: 700; }
 
-  .menu-footer {
-    display: flex; justify-content: space-between; align-items: center; gap: 10px;
-    font-size: 10.5px; font-weight: 800; letter-spacing: 0.12em; color: #c9a2aa; text-transform: uppercase;
-  }
-
-  /* Landscape Prompt for Mobile Portrait */
   #rotatePrompt {
     display: none; position: fixed; inset: 0; z-index: 60;
-    background: rgba(10, 2, 4, 0.93); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    background: rgba(10, 2, 4, 0.93); backdrop-filter: blur(10px);
     align-items: center; justify-content: center;
     padding: calc(18px + var(--st)) calc(18px + var(--sr)) calc(18px + var(--sb)) calc(18px + var(--sl));
   }
   #rotatePrompt.visible { display: flex; }
   .rotate-card {
-    width: min(92vw, 390px);
+    width: min(92vw, 380px);
     background: linear-gradient(180deg, rgba(34, 8, 14, 0.96), rgba(14, 3, 6, 0.98));
-    border: 1.5px solid rgba(255, 70, 95, 0.55); border-radius: 16px; padding: 22px 20px;
+    border-top: 3px solid #ef233c; border: 1.5px solid rgba(255, 70, 95, 0.55); padding: 20px 18px;
     text-align: center; box-shadow: 0 22px 60px rgba(0, 0, 0, 0.78);
-    display: flex; flex-direction: column; align-items: center; gap: 11px;
+    display: flex; flex-direction: column; align-items: center; gap: 10px;
   }
-  .rotate-icon { font-size: 38px; display: inline-block; animation: rotatePhoneHell 2.1s ease-in-out infinite; }
+  .rotate-icon { font-size: 36px; display: inline-block; animation: rotatePhoneHell 2.1s ease-in-out infinite; }
   @keyframes rotatePhoneHell { 0%, 20% { transform: rotate(0deg); } 50%, 75% { transform: rotate(-90deg); } 100% { transform: rotate(0deg); } }
-  .rotate-title { font-size: 19px; font-weight: 900; letter-spacing: 0.06em; color: #ff6b81; }
-  .rotate-desc { font-size: 12.5px; line-height: 1.5; color: #e4cad0; }
+  .rotate-title { font-family: "Teko", sans-serif; font-size: 24px; letter-spacing: 0.08em; color: #ff6b81; line-height: 1; }
+  .rotate-desc { font-size: 12.5px; line-height: 1.45; color: #e4cad0; }
 
-  @media (max-width: 760px) {
-    .home-layout, .diff-cards, .arsenal-split, .controls-grid, .settings-grid { grid-template-columns: 1fr; }
+  @media (max-width: 760px) and (orientation: portrait) {
+    .hell-sub-strip, .diff-cards, .arsenal-detail, .options-split { grid-template-columns: 1fr; }
+    .arsenal-rack { grid-template-columns: repeat(2, 1fr); }
   }
-  @media (max-height: 480px) {
-    #menuOverlay { padding: calc(8px + var(--st)) calc(12px + var(--sr)) calc(8px + var(--sb)) calc(12px + var(--sl)); gap: 6px; }
-    .menu-topbar { padding: 6px 11px; }
-    .brand-kicker { display: none; }
-    .logo { font-size: clamp(19px, 4vw, 28px); }
-    .home-layout { grid-template-columns: minmax(220px, 300px) minmax(220px, 1fr); gap: 10px; align-items: center; }
-    .home-nav { gap: 5px; }
-    .nav-item { padding: 7px 11px; }
-    .nav-sub { display: none; }
-    .lobby-dossier { padding: 9px 11px; gap: 7px; }
-    .stage-card { padding: 10px 12px; gap: 8px; }
-    .diff-cards, .controls-grid { grid-template-columns: repeat(3, 1fr); gap: 7px; }
-    .arsenal-split { grid-template-columns: 0.9fr 1.2fr; gap: 8px; }
-    .settings-grid { grid-template-columns: repeat(2, 1fr); gap: 6px; }
-    .menu-footer { display: none; }
+  @media (max-height: 460px) {
+    #menuOverlay { padding: calc(8px + var(--st)) calc(12px + var(--sr)) calc(8px + var(--sb)) calc(12px + var(--sl)); }
+    .logo { font-size: clamp(26px, 5vw, 36px); }
+    .hell-gate { gap: 7px; }
+    .hell-edict { display: none; }
+    .hell-cta-slab { padding: 10px 16px; }
+    .hell-slab-btn { padding: 7px 8px; }
+    .stage-card { padding: 9px 11px; gap: 7px; }
+    .diff-btn { padding: 8px 10px; }
+    .arsenal-detail { padding: 8px 10px; gap: 10px; }
+    .setting-row { padding: 4px 8px; font-size: 11.5px; }
+    .primary-btn { padding: 9px 14px; font-size: 19px; }
+    .card { width: min(680px, 100%); padding: 11px 14px; }
+    .pause-settings-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; margin-top: 8px !important; }
+    .modal-actions-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; margin-top: 8px; }
+    .modal-actions-grid .primary-btn { grid-column: 1 / -1; margin-top: 0 !important; }
+    .modal-actions-grid .secondary-btn { margin-top: 0 !important; padding: 7px 10px; }
+    .stats-grid { grid-template-columns: repeat(4, 1fr); gap: 6px; margin: 8px 0; }
   }
   @media (prefers-reduced-motion: reduce) { .menu-stage, .rotate-icon { animation: none !important; } }
 
@@ -707,252 +690,167 @@
   </div>
 </div>
 
-<!-- Multi-Step Main Menu -->
+<!-- GOREHOUND 3D: BRUTALIST INDUSTRIAL CATHEDRAL MENU -->
 <div class="overlay" id="menuOverlay" role="dialog" aria-label="Gorehound 3D Main Menu">
   <div class="menu-shell">
-    <header class="menu-topbar">
-      <div class="brand-lockup">
-        <span class="brand-kicker">HELL-FOUNDRY ULTIMATE EDITION</span>
+    <header class="hell-header">
+      <div class="hell-brand">
         <h1 class="logo">GOREHOUND 3D</h1>
+        <span class="hell-record-tag" id="hellRecordTag">BEST WAVE 1 • 0 SLAUGHTER</span>
       </div>
       <div class="topbar-right">
         <button type="button" class="arcade-pill rotate-pill" id="btnMenuRotateHint" title="Switch to Landscape">↻ LANDSCAPE</button>
         <a href="../games.html" class="arcade-pill" title="Back to Arcade">← ARCADE</a>
         <button type="button" class="icon-btn" id="btnMenuMute" title="Toggle Audio (M)" aria-label="Toggle Audio">🔊</button>
         <button type="button" class="icon-btn" id="btnMenuFs" title="Toggle Fullscreen" aria-label="Toggle Fullscreen">⛶</button>
-        <div class="stage-crumb" id="stageCrumb">CITADEL HUB</div>
       </div>
     </header>
 
-    <!-- STAGE 1: CITADEL HOME -->
+    <!-- STAGE 1: CENTERED ALTAR GATE -->
     <section class="menu-stage active" id="stage-home" data-stage="home">
-      <div class="home-layout">
-        <nav class="home-nav" aria-label="Main Menu">
-          <button type="button" class="nav-item primary" id="btnNavPlay">
-            <span class="nav-label">PLAY SLAUGHTER</span>
-            <span class="nav-sub">SELECT THREAT LEVEL &amp; DEPLOY</span>
-            <span class="nav-arrow" aria-hidden="true">→</span>
+      <div class="hell-gate">
+        <div class="hell-edict">HELL-FOUNDRY ULTIMATE EDITION // 5 WEAPONS // RIP &amp; TEAR</div>
+        <button type="button" class="hell-cta-slab" id="btnNavPlay">
+          <strong>ENTER THE SLAUGHTER-YARD</strong>
+          <span id="quickDeploySub">CARNAGE PROTOCOL →</span>
+        </button>
+        <div class="hell-sub-strip">
+          <button type="button" class="hell-slab-btn" id="btnNavArsenal">
+            <b>ARSENAL</b>
+            <small>5 WEAPONS</small>
           </button>
-          <button type="button" class="nav-item accent" id="btnQuickDeploy">
-            <span class="nav-label">QUICK DEPLOY</span>
-            <span class="nav-sub" id="quickDeploySub">DROP INTO CARNAGE</span>
-            <span class="nav-arrow" aria-hidden="true">▸</span>
+          <button type="button" class="hell-slab-btn" id="btnNavOptions">
+            <b>CONTROLS &amp; OPTIONS</b>
+            <small>AIM, TOUCH &amp; GORE</small>
           </button>
-          <button type="button" class="nav-item" id="btnNavArsenal">
-            <span class="nav-label">HELL ARSENAL</span>
-            <span class="nav-sub">INSPECT 5 WEAPONS &amp; EXECUTION INTEL</span>
-            <span class="nav-arrow" aria-hidden="true">→</span>
-          </button>
-          <button type="button" class="nav-item" id="btnNavControls">
-            <span class="nav-label">CONTROLS</span>
-            <span class="nav-sub">DESKTOP &amp; DUAL-STICK MOBILE</span>
-            <span class="nav-arrow" aria-hidden="true">→</span>
-          </button>
-          <button type="button" class="nav-item" id="btnNavSettings">
-            <span class="nav-label">SETTINGS</span>
-            <span class="nav-sub">SENSITIVITY, GORE, TOUCH &amp; ACCESSIBILITY</span>
-            <span class="nav-arrow" aria-hidden="true">→</span>
-          </button>
-          <a href="../games.html" class="nav-item exit-arcade" id="btnBackArcade">
-            <span class="nav-label">BACK TO ARCADE</span>
-            <span class="nav-sub">RETURN TO GAMES HUB</span>
-            <span class="nav-arrow" aria-hidden="true">←</span>
+          <a href="../games.html" class="hell-slab-btn" id="btnBackArcade">
+            <b>← ARCADE</b>
+            <small>EXIT TO HUB</small>
           </a>
-        </nav>
-
-        <aside class="lobby-dossier" aria-label="Slayer Dossier">
-          <div class="dossier-head">
-            <strong>SLAYER DOSSIER</strong>
-            <span class="dossier-badge" id="dossierDiffBadge">CARNAGE</span>
-          </div>
-          <div class="dossier-grid">
-            <div class="dossier-cell">
-              <small>BEST SLAUGHTER</small>
-              <b id="dossierBestScore">0</b>
-            </div>
-            <div class="dossier-cell">
-              <small>BEST WAVE</small>
-              <b id="dossierBestWave">1</b>
-            </div>
-            <div class="dossier-cell">
-              <small>CAREER KILLS</small>
-              <b id="dossierTotalKills">0</b>
-            </div>
-            <div class="dossier-cell">
-              <small>SKULLS POPPED</small>
-              <b id="dossierTotalHeads">0</b>
-            </div>
-          </div>
-          <div class="dossier-tip">
-            <b>BLOOD FUEL:</b> Low HP? Slice foes with the <b>Ripper Chainsaw [5]</b> or <b>Glory Execute [F / CLEAVE]</b> staggered demons to rip back health!
-          </div>
-        </aside>
+        </div>
       </div>
     </section>
 
-    <!-- STAGE 2: THREAT PROTOCOL / DIFFICULTY SELECT -->
+    <!-- STAGE 2: THREAT PROTOCOL (DIFFICULTY MONOLITHS) -->
     <section class="menu-stage" id="stage-play" data-stage="play">
       <div class="stage-card">
         <div class="stage-head">
           <div class="stage-head-left">
             <button type="button" class="back-btn" data-back="home">← BACK</button>
-            <span class="stage-title">SELECT THREAT PROTOCOL</span>
+            <span class="stage-title">SELECT PAIN TIER</span>
           </div>
         </div>
 
         <div class="diff-cards" id="diffRow">
           <button type="button" class="diff-btn" data-d="0">
             <strong>BRUTAL</strong>
-            <span>Forgiving damage &amp; steady wave pacing for warmups.</span>
-            <small>80% ENEMY HP • 75% DMG</small>
+            <span>Steady wave pacing for warmups.</span>
+            <small>80% HP • 75% ENEMY DMG</small>
           </button>
           <button type="button" class="diff-btn active" data-d="1">
             <strong>CARNAGE</strong>
-            <span>Intended Hell-Foundry rhythm. Relentless packs &amp; fair ammo.</span>
-            <small>100% ENEMY HP • 100% DMG</small>
+            <span>Relentless Hell-Foundry rhythm.</span>
+            <small>100% HP • 100% ENEMY DMG</small>
           </button>
           <button type="button" class="diff-btn" data-d="2">
             <strong>NIGHTMARE</strong>
-            <span>Hyper-aggressive hordes &amp; brutal hits. Keep dashing!</span>
-            <small>135% ENEMY HP • 130% DMG</small>
+            <span>Hyper-aggressive hordes. Keep dashing!</span>
+            <small>135% HP • 130% ENEMY DMG</small>
           </button>
         </div>
 
-        <button type="button" class="primary-btn" id="btnStart">ENTER THE SLAUGHTER-YARD</button>
+        <button type="button" class="primary-btn" id="btnStart">DROP INTO THE YARD</button>
       </div>
     </section>
 
-    <!-- STAGE 3: HELL ARSENAL -->
+    <!-- STAGE 3: WEAPON RACK -->
     <section class="menu-stage" id="stage-arsenal" data-stage="arsenal">
       <div class="stage-card">
         <div class="stage-head">
           <div class="stage-head-left">
             <button type="button" class="back-btn" data-back="home">← BACK</button>
-            <span class="stage-title">HELL-FOUNDRY ARSENAL</span>
+            <span class="stage-title">HELL ARSENAL</span>
           </div>
         </div>
 
-        <div class="arsenal-split">
-          <div class="arsenal-list" id="arsenalTabs">
-            <button type="button" class="arsenal-tab active" data-w="0">1. HELLBREAKER <span>∞ BUCKSHOT</span></button>
-            <button type="button" class="arsenal-tab" data-w="1">2. EXECUTIONER .500 <span>PIERCING</span></button>
-            <button type="button" class="arsenal-tab" data-w="2">3. MEATGRINDER <span>ROTARY</span></button>
-            <button type="button" class="arsenal-tab" data-w="3">4. BONE-SHREDDER <span>FLAK</span></button>
-            <button type="button" class="arsenal-tab" data-w="4">5. RIPPER CHAINSAW <span>HEAL + AMMO</span></button>
-          </div>
-          <div class="arsenal-detail">
-            <div>
-              <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;">
-                <strong id="arsName" style="font-size:17px;color:#fff;letter-spacing:0.06em;">HELLBREAKER</strong>
-                <span id="arsRole" style="font-size:10.5px;font-weight:900;color:#ffd166;">12-PELLET DOUBLE BARREL</span>
-              </div>
-              <p id="arsDesc" style="font-size:12px;line-height:1.45;color:#e4cad0;margin:6px 0 10px;"></p>
-              <div class="w-stat-row">
-                <div class="w-stat-top"><span>DAMAGE OUTPUT</span><span id="arsValDmg">90</span></div>
-                <div class="w-stat-track"><div class="w-stat-fill" id="arsBarDmg" style="width:90%"></div></div>
-              </div>
-              <div class="w-stat-row" style="margin-top:6px;">
-                <div class="w-stat-top"><span>FIRE CADENCE</span><span id="arsValRof">55</span></div>
-                <div class="w-stat-track"><div class="w-stat-fill" id="arsBarRof" style="width:55%"></div></div>
-              </div>
-              <div class="w-stat-row" style="margin-top:6px;">
-                <div class="w-stat-top"><span>EFFECTIVE RANGE</span><span id="arsValRng">50</span></div>
-                <div class="w-stat-track"><div class="w-stat-fill" id="arsBarRng" style="width:50%"></div></div>
-              </div>
+        <div class="arsenal-rack" id="arsenalTabs">
+          <button type="button" class="arsenal-tab active" data-w="0">1. HELLBREAKER<span>∞ BUCKSHOT</span></button>
+          <button type="button" class="arsenal-tab" data-w="1">2. .500 REV<span>PIERCING</span></button>
+          <button type="button" class="arsenal-tab" data-w="2">3. CHAINGUN<span>ROTARY</span></button>
+          <button type="button" class="arsenal-tab" data-w="3">4. FLAK CANNON<span>EXPLOSIVE</span></button>
+          <button type="button" class="arsenal-tab" data-w="4">5. CHAINSAW<span>HEAL + AMMO</span></button>
+        </div>
+
+        <div class="arsenal-detail">
+          <div>
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;">
+              <strong id="arsName" style="font-family:'Teko',sans-serif;font-size:24px;line-height:1;color:#fff;">HELLBREAKER</strong>
+              <span id="arsRole" style="font-size:11px;font-weight:700;color:#ffd166;">12-PELLET DOUBLE BARREL</span>
             </div>
-            <button type="button" class="primary-btn" id="btnArsenalDeploy">DEPLOY WITH LOADOUT</button>
+            <p id="arsDesc" style="font-size:12px;line-height:1.4;color:#e4cad0;margin-top:4px;"></p>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <div class="w-stat-row">
+              <div class="w-stat-top"><span>DAMAGE</span><span id="arsValDmg">92</span></div>
+              <div class="w-stat-track"><div class="w-stat-fill" id="arsBarDmg" style="width:92%"></div></div>
+            </div>
+            <div class="w-stat-row">
+              <div class="w-stat-top"><span>CADENCE</span><span id="arsValRof">52</span></div>
+              <div class="w-stat-track"><div class="w-stat-fill" id="arsBarRof" style="width:52%"></div></div>
+            </div>
+            <div class="w-stat-row">
+              <div class="w-stat-top"><span>RANGE</span><span id="arsValRng">46</span></div>
+              <div class="w-stat-track"><div class="w-stat-fill" id="arsBarRng" style="width:46%"></div></div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- STAGE 4: CONTROLS -->
-    <section class="menu-stage" id="stage-controls" data-stage="controls">
+    <!-- STAGE 4: CONTROLS & OPTIONS (COMBINED 2-COLUMN LANDSCAPE PANEL) -->
+    <section class="menu-stage" id="stage-options" data-stage="options">
       <div class="stage-card">
         <div class="stage-head">
           <div class="stage-head-left">
             <button type="button" class="back-btn" data-back="home">← BACK</button>
-            <span class="stage-title">COMBAT CONTROLS</span>
+            <span class="stage-title">CONTROLS &amp; OPTIONS</span>
           </div>
         </div>
 
-        <div class="controls-grid">
-          <div class="ctrl-box">
-            <b>DESKTOP</b>
-            WASD Move • Mouse Pointer-Lock Aim<br>
-            L-Click Fire • R-Click / F Cleave &amp; Execute<br>
-            Q Quick Swap • R Reload • 1–5 Weapons<br>
-            Shift Dash • Space Jump • P / Esc Pause
+        <div class="options-split">
+          <div class="ctrl-pane">
+            <div class="ctrl-box">
+              <b>DESKTOP</b>
+              WASD Move • Mouse Aim • L-Click Fire<br>
+              R-Click / F Cleave &amp; Glory Execute<br>
+              Shift Dash • Space Jump • 1–5 Weapons • R Reload
+            </div>
+            <div class="ctrl-box">
+              <b>MOBILE LANDSCAPE</b>
+              Left Thumb Move • Right Drag Aim<br>
+              Hold FIRE &amp; Drag to Aim+Shoot<br>
+              Chainsaw [5] or Cleave restores Blood HP!
+            </div>
           </div>
-          <div class="ctrl-box">
-            <b>MOBILE LANDSCAPE</b>
-            Left Half: Floating Move Stick<br>
-            Right Half: Drag to Aim<br>
-            Hold FIRE &amp; Drag to Aim + Shoot<br>
-            Tap Weapon Slots to Switch Arsenal
-          </div>
-          <div class="ctrl-box">
-            <b>SURVIVAL RULES</b>
-            Staggered foes glow gold — Glory Execute for HP!<br>
-            Ripper Chainsaw [5] harvests ammo &amp; blood.<br>
-            Shoot red fuel barrels to detonate packs.<br>
-            Bosses spawn on milestone waves!
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- STAGE 5: SETTINGS & ACCESSIBILITY -->
-    <section class="menu-stage" id="stage-settings" data-stage="settings">
-      <div class="stage-card">
-        <div class="stage-head">
-          <div class="stage-head-left">
-            <button type="button" class="back-btn" data-back="home">← BACK</button>
-            <span class="stage-title">SETTINGS &amp; ACCESSIBILITY</span>
-          </div>
-        </div>
-
-        <div class="settings-grid">
-          <div class="setting-row">
-            <span>Look Sensitivity <b id="mSensVal" style="color:#ffd166;margin-left:4px;">1.0x</b></span>
-            <input type="range" id="mSensSlider" min="0.3" max="2.5" step="0.1" value="1.0">
-          </div>
-          <div class="setting-row">
-            <span>Auto-Fire on Target</span>
-            <button type="button" class="toggle-pill" id="mBtnAutoFire">OFF</button>
-          </div>
-          <div class="setting-row">
-            <span>Touch Controls</span>
-            <button type="button" class="toggle-pill" id="mBtnTouchMode">AUTO</button>
-          </div>
-          <div class="setting-row">
-            <span>Gore Density</span>
-            <button type="button" class="toggle-pill on" id="mBtnGoreMode">EXTREME</button>
-          </div>
-          <div class="setting-row">
-            <span>Audio</span>
-            <button type="button" class="toggle-pill on" id="mBtnMute">ON</button>
-          </div>
-          <div class="setting-row">
-            <span>Reduced Screen Shake</span>
-            <button type="button" class="toggle-pill" id="mBtnReducedShake">OFF</button>
-          </div>
-          <div class="setting-row" id="mFsRow">
-            <span>Fullscreen</span>
-            <button type="button" class="toggle-pill" id="mBtnFs">OFF</button>
-          </div>
-          <div class="setting-row">
-            <span>Slayer Records</span>
-            <button type="button" class="toggle-pill" id="btnResetStats">RESET</button>
+          <div class="settings-pane">
+            <div class="setting-row">
+              <span>Sensitivity <b id="mSensVal" style="color:#ffd166;">1.0x</b></span>
+              <input type="range" id="mSensSlider" min="0.3" max="2.5" step="0.1" value="1.0">
+            </div>
+            <div class="setting-row"><span>Auto-Fire on Target</span><button type="button" class="toggle-pill" id="mBtnAutoFire">OFF</button></div>
+            <div class="setting-row"><span>Touch Controls</span><button type="button" class="toggle-pill" id="mBtnTouchMode">AUTO</button></div>
+            <div class="setting-row"><span>Gore Density</span><button type="button" class="toggle-pill on" id="mBtnGoreMode">EXTREME</button></div>
+            <div class="setting-row"><span>Reduced Shake</span><button type="button" class="toggle-pill" id="mBtnReducedShake">OFF</button></div>
+            <div class="setting-row"><span>Clear Records</span><button type="button" class="toggle-pill" id="btnResetStats">RESET</button></div>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="menu-footer">
-      <span>5 WEAPONS • PROCEDURAL 3D ARENA • BOSS WAVES</span>
-      <span>LANDSCAPE RECOMMENDED FOR MOBILE</span>
-    </footer>
+    <div style="font-size:10.5px;font-weight:700;letter-spacing:0.14em;color:#c9a2aa;text-align:center;">
+      LANDSCAPE RECOMMENDED ON MOBILE
+    </div>
   </div>
 </div>
 
@@ -960,7 +858,7 @@
 <div class="overlay" id="pauseOverlay" style="display:none;" role="dialog" aria-modal="true" aria-label="Game Paused">
   <div class="card">
     <div class="logo" style="font-size:30px;">PAUSED</div>
-    <div style="margin-top:12px;">
+    <div class="pause-settings-grid" style="margin-top:12px;">
       <div class="setting-row">
         <span>Look Sensitivity</span>
         <input type="range" id="sensSlider" min="0.3" max="2.5" step="0.1" value="1.0">
@@ -990,10 +888,12 @@
         <button type="button" class="toggle-pill" id="btnPauseFs">OFF</button>
       </div>
     </div>
-    <button type="button" class="primary-btn" id="btnResume" style="margin-top:14px;">RESUME SLAUGHTER</button>
-    <button type="button" class="secondary-btn" id="btnRestart">RESTART YARD</button>
-    <button type="button" class="secondary-btn" id="btnPauseMenu">MAIN MENU</button>
-    <a href="../games.html" class="secondary-btn" style="margin-top:8px;">BACK TO ARCADE</a>
+    <div class="modal-actions-grid">
+      <button type="button" class="primary-btn" id="btnResume" style="margin-top:14px;">RESUME SLAUGHTER</button>
+      <button type="button" class="secondary-btn" id="btnRestart">RESTART YARD</button>
+      <button type="button" class="secondary-btn" id="btnPauseMenu">MAIN MENU</button>
+      <a href="../games.html" class="secondary-btn" style="margin-top:8px;">BACK TO ARCADE</a>
+    </div>
   </div>
 </div>
 
@@ -1008,9 +908,11 @@
       <div class="stat-cell"><div class="v" id="stKills">0</div><div class="k">TOTAL KILLS</div></div>
       <div class="stat-cell"><div class="v" id="stHeads">0</div><div class="k">SKULLS POPPED</div></div>
     </div>
-    <button type="button" class="primary-btn" id="btnRetry">SPILL MORE BLOOD</button>
-    <button type="button" class="secondary-btn" id="btnGoMenu">MAIN MENU</button>
-    <a href="../games.html" class="secondary-btn" style="margin-top:8px;">BACK TO ARCADE</a>
+    <div class="modal-actions-grid">
+      <button type="button" class="primary-btn" id="btnRetry">SPILL MORE BLOOD</button>
+      <button type="button" class="secondary-btn" id="btnGoMenu">MAIN MENU</button>
+      <a href="../games.html" class="secondary-btn" style="margin-top:8px;">BACK TO ARCADE</a>
+    </div>
   </div>
 </div>
 
@@ -3094,13 +2996,6 @@
     slot.addEventListener('touchstart', e => { e.preventDefault(); selectWeapon(+slot.dataset.w); }, { passive: false });
   });
   const GH_DIFF_NAMES = ['BRUTAL', 'CARNAGE', 'NIGHTMARE'];
-  const GH_STAGE_CRUMBS = {
-    home: 'CITADEL HUB',
-    play: 'THREAT PROTOCOL',
-    arsenal: 'HELL ARSENAL',
-    controls: 'CONTROLS',
-    settings: 'SETTINGS'
-  };
   const GH_ARSENAL_DATA = [
     { name: 'HELLBREAKER', role: '12-PELLET DOUBLE BARREL', desc: 'Devastating close-quarters scattergun with infinite reserve shells. Shatters limbs and staggers Brutes.', dmg: 92, rof: 52, rng: 46 },
     { name: 'EXECUTIONER .500', role: 'ARMOR-PIERCING REVOLVER', desc: '6-round magnum cannon that pierces up to 2 demons in a line and pops skulls cleanly at long range.', dmg: 88, rof: 72, rng: 95 },
@@ -3115,8 +3010,6 @@
     document.querySelectorAll('#menuOverlay .menu-stage').forEach(sec => {
       sec.classList.toggle('active', sec.dataset.stage === stageName);
     });
-    const crumb = document.getElementById('stageCrumb');
-    if (crumb) crumb.textContent = GH_STAGE_CRUMBS[stageName] || 'CITADEL HUB';
     if (focusPrimary) {
       const activeSec = document.querySelector('#menuOverlay .menu-stage.active');
       const firstBtn = activeSec ? activeSec.querySelector('button, a') : null;
@@ -3148,15 +3041,10 @@
   function syncGhUI() {
     document.querySelectorAll('#diffRow .diff-btn').forEach(x => x.classList.toggle('active', +x.dataset.d === difficulty));
     const dName = GH_DIFF_NAMES[difficulty] || 'CARNAGE';
-    const dBadge = document.getElementById('dossierDiffBadge');
-    if (dBadge) dBadge.textContent = dName;
     const qSub = document.getElementById('quickDeploySub');
-    if (qSub) qSub.textContent = `DROP INTO ${dName}`;
-
-    document.getElementById('dossierBestScore').textContent = (ghSave.bestScore || 0).toLocaleString();
-    document.getElementById('dossierBestWave').textContent = ghSave.bestWave || 1;
-    document.getElementById('dossierTotalKills').textContent = (ghSave.totalKills || 0).toLocaleString();
-    document.getElementById('dossierTotalHeads').textContent = (ghSave.totalHeads || 0).toLocaleString();
+    if (qSub) qSub.textContent = `${dName} PROTOCOL →`;
+    const recTag = document.getElementById('hellRecordTag');
+    if (recTag) recTag.textContent = `BEST WAVE ${ghSave.bestWave || 1} • ${(ghSave.bestScore || 0).toLocaleString()} SLAUGHTER`;
 
     ['sensSlider', 'mSensSlider'].forEach(id => {
       const el = document.getElementById(id);
@@ -3176,7 +3064,7 @@
     setPair(['btnAutoFire', 'mBtnAutoFire'], autoFireEnabled ? 'ON' : 'OFF', autoFireEnabled);
     setPair(['btnTouchMode', 'mBtnTouchMode'], touchMode.toUpperCase(), touchMode === 'on');
     setPair(['btnGoreMode', 'mBtnGoreMode'], ['BALANCED', 'HIGH', 'EXTREME'][goreLevel], goreLevel === 2);
-    setPair(['btnPauseMute', 'mBtnMute'], sound.muted ? 'OFF' : 'ON', !sound.muted);
+    setPair(['btnPauseMute'], sound.muted ? 'OFF' : 'ON', !sound.muted);
     setPair(['btnReducedShake', 'mBtnReducedShake'], reducedShake ? 'ON' : 'OFF', reducedShake);
     const muteIcon = sound.muted ? '🔇' : '🔊';
     document.getElementById('btnMute').textContent = muteIcon;
@@ -3200,23 +3088,21 @@
   });
 
   document.getElementById('btnNavPlay').onclick = () => { sound.init(); sound.playUi('confirm'); setGhMenuStage('play', true); };
-  document.getElementById('btnQuickDeploy').onclick = startNewGame;
-  document.getElementById('btnArsenalDeploy').onclick = startNewGame;
   document.getElementById('btnNavArsenal').onclick = () => { sound.init(); sound.playUi('confirm'); setGhMenuStage('arsenal', true); };
-  document.getElementById('btnNavControls').onclick = () => { sound.init(); sound.playUi('confirm'); setGhMenuStage('controls', true); };
-  document.getElementById('btnNavSettings').onclick = () => { sound.init(); sound.playUi('confirm'); setGhMenuStage('settings', true); };
+  document.getElementById('btnNavOptions').onclick = () => { sound.init(); sound.playUi('confirm'); setGhMenuStage('options', true); };
   document.querySelectorAll('#menuOverlay [data-back]').forEach(b => {
     b.onclick = () => { sound.init(); sound.playUi('back'); setGhMenuStage(b.dataset.back, true); };
   });
 
-  const ghNav = document.querySelector('#stage-home .home-nav');
-  if (ghNav) {
-    ghNav.addEventListener('keydown', e => {
-      if (e.code !== 'ArrowDown' && e.code !== 'ArrowUp') return;
-      const items = [...ghNav.querySelectorAll('.nav-item')];
+  const ghGate = document.querySelector('#stage-home .hell-gate');
+  if (ghGate) {
+    ghGate.addEventListener('keydown', e => {
+      if (!['ArrowDown', 'ArrowUp', 'ArrowLeft', 'ArrowRight'].includes(e.code)) return;
+      const items = [...ghGate.querySelectorAll('button, a')];
       const idx = items.indexOf(document.activeElement);
       e.preventDefault();
-      const next = e.code === 'ArrowDown' ? items[(idx + 1 + items.length) % items.length] : items[(idx - 1 + items.length) % items.length];
+      const fwd = e.code === 'ArrowDown' || e.code === 'ArrowRight';
+      const next = fwd ? items[(idx + 1 + items.length) % items.length] : items[(idx - 1 + items.length) % items.length];
       if (next) next.focus();
     });
   }
@@ -3302,7 +3188,6 @@
   document.getElementById('btnMute').onclick = toggleMute;
   document.getElementById('btnMenuMute').onclick = toggleMute;
   document.getElementById('btnPauseMute').onclick = toggleMute;
-  document.getElementById('mBtnMute').onclick = toggleMute;
 
   const fsEl = document.documentElement;
   const reqFs = fsEl.requestFullscreen || fsEl.webkitRequestFullscreen;
@@ -3311,9 +3196,7 @@
   const btnFs = document.getElementById('btnFullscreen');
   const btnMenuFs = document.getElementById('btnMenuFs');
   const btnPauseFs = document.getElementById('btnPauseFs');
-  const mBtnFs = document.getElementById('mBtnFs');
   const fsRow = document.getElementById('fsSettingRow');
-  const mFsRow = document.getElementById('mFsRow');
   function toggleFullscreen() {
     if (!reqFs) return;
     if (getFsEl()) {
@@ -3325,24 +3208,21 @@
   function syncFullscreenUI() {
     const active = !!getFsEl();
     if (btnFs) btnFs.title = active ? 'Exit Fullscreen' : 'Fullscreen';
-    [btnPauseFs, mBtnFs].forEach(b => {
-      if (!b) return;
-      b.textContent = active ? 'ON' : 'OFF';
-      b.classList.toggle('on', active);
-    });
+    if (btnPauseFs) {
+      btnPauseFs.textContent = active ? 'ON' : 'OFF';
+      btnPauseFs.classList.toggle('on', active);
+    }
   }
   if (reqFs) {
     if (btnFs) btnFs.onclick = toggleFullscreen;
     if (btnMenuFs) btnMenuFs.onclick = toggleFullscreen;
     if (btnPauseFs) btnPauseFs.onclick = toggleFullscreen;
-    if (mBtnFs) mBtnFs.onclick = toggleFullscreen;
     document.addEventListener('fullscreenchange', () => { syncFullscreenUI(); resize(); });
     document.addEventListener('webkitfullscreenchange', () => { syncFullscreenUI(); resize(); });
   } else {
     if (btnFs) btnFs.style.display = 'none';
     if (btnMenuFs) btnMenuFs.style.display = 'none';
     if (fsRow) fsRow.style.display = 'none';
-    if (mFsRow) mFsRow.style.display = 'none';
   }
 
   async function tryEnterLandscape() {
