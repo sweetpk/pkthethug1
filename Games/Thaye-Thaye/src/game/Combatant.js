@@ -57,8 +57,8 @@ export class Combatant {
 
     if (!this.isPlayer) {
       this._initNameplate();
-      this._buildCharacter();
     }
+    this._buildCharacter();
   }
 
   _initNameplate() {
@@ -148,9 +148,10 @@ export class Combatant {
     this.lastAttacker = null;
     this.resetAmmo();
 
-    if (!this.isPlayer) {
-      this._buildCharacter();
-      this.syncTransform();
+    this._buildCharacter();
+    this.syncTransform();
+    if (this.animator) {
+      this.updateAnimation(0.016);
     }
   }
 
@@ -160,7 +161,7 @@ export class Combatant {
     this.isReloading = false;
     this.reloadTimer = 0;
     this.fireCooldown = Math.max(this.fireCooldown, 0.18);
-    if (!this.isPlayer && this.charInst) {
+    if (this.charInst && this.hasRightArm()) {
       this.weaponSystem.attachToCharacterHand(this.charInst, weaponId);
     }
     return true;
@@ -233,7 +234,7 @@ export class Combatant {
    */
   getHitSpheres() {
     if (!this.alive) return [];
-    if (this.isPlayer) {
+    if (!this.charInst) {
       const c = this.crouchAlpha || 0;
       return [
         { zone: "head", center: new THREE.Vector3(this.pos.x, this.pos.y + 1.56 - c * 0.56, this.pos.z), radius: 0.21 },
@@ -327,7 +328,7 @@ export class Combatant {
   }
 
   recordLimbDamage(zone, dmg) {
-    if (this.isPlayer || !this.charInst || !(zone in this.limbDmg)) return false;
+    if (!this.charInst || !(zone in this.limbDmg)) return false;
     if (this.charInst.severedZones.has(zone)) return false;
     this.limbDmg[zone] += dmg;
     return this.limbDmg[zone] >= 28;
@@ -342,8 +343,8 @@ export class Combatant {
       dmg -= absorbed * 0.75;
     }
     this.hp = Math.max(0, this.hp - dmg);
+    if (this.animator) this.animator.triggerFlinch();
     if (!this.isPlayer) {
-      if (this.animator) this.animator.triggerFlinch();
       this._redrawNameplate();
     }
     if (this.hp <= 0) {

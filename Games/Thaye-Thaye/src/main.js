@@ -247,7 +247,7 @@ async function bootDesktopGame() {
     }
     sound.stopReload();
     engine.weaponSystem.setActiveViewmodel(engine.player?.activeWeapon, false);
-    engine.weaponSystem.clearProjectiles();
+    engine.cleanupMatch();
     engine.state = "menu";
     goToMenuStage("home");
     engine._buildMenuPreview();

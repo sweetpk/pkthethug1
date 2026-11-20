@@ -32,6 +32,8 @@ export class HudController {
     this.ammoReserve = document.getElementById("ammo-reserve");
     this.nadeCountEl = document.getElementById("hud-nade-count");
     this.stancePill = document.getElementById("stance-pill");
+    this.camModePill = document.getElementById("cam-mode-pill");
+    this.limbStatusEl = document.getElementById("limb-status");
     this.grenadeWarning = document.getElementById("grenade-warning");
     this.weaponSlots = document.querySelectorAll(".w-slot");
 
@@ -235,7 +237,7 @@ export class HudController {
       .join("");
   }
 
-  updateHUD(player, combatants, matchTime, isADS, grenades = [], recoilPitch = 0) {
+  updateHUD(player, combatants, matchTime, isADS, grenades = [], recoilPitch = 0, isThirdPerson = false) {
     // Timer
     const mins = Math.floor(matchTime / 60);
     const secs = Math.floor(matchTime % 60);
@@ -273,10 +275,34 @@ export class HudController {
       this.nadeCountEl.textContent = String(player.ammo.grenade?.mag ?? 0);
     }
     if (this.stancePill) {
-      const crouched = player.isCrouching || player.crouchAlpha > 0.35;
-      this.stancePill.textContent = crouched ? "CROUCH" : player.isSprinting ? "SPRINT" : "STAND";
+      const bothLegsLost = player.hasBothLegsSevered();
+      const crippled = player.isLegCrippled();
+      const crouched = !crippled && (player.isCrouching || player.crouchAlpha > 0.35);
+      this.stancePill.textContent = bothLegsLost
+        ? "DOWNED"
+        : crippled
+          ? "CRIPPLED"
+          : crouched
+            ? "CROUCH"
+            : player.isSprinting
+              ? "SPRINT"
+              : "STAND";
       this.stancePill.classList.toggle("crouched", crouched);
-      this.stancePill.classList.toggle("sprinting", !crouched && player.isSprinting);
+      this.stancePill.classList.toggle("sprinting", !crouched && !crippled && player.isSprinting);
+      this.stancePill.classList.toggle("crippled", crippled);
+    }
+    if (this.camModePill) {
+      this.camModePill.textContent = isThirdPerson ? "3P [V]" : "1P [V]";
+    }
+    if (this.limbStatusEl) {
+      const chips = [];
+      if (player.bleedRate > 0) chips.push(`<span class="limb-chip bleed">BLEEDING</span>`);
+      if (!player.hasRightArm()) chips.push(`<span class="limb-chip">DISARMED</span>`);
+      if (!player.hasLeftArm()) chips.push(`<span class="limb-chip">ONE-HANDED</span>`);
+      if (player.hasBothLegsSevered()) chips.push(`<span class="limb-chip">NO LEGS</span>`);
+      else if (player.isLegCrippled()) chips.push(`<span class="limb-chip">CRIPPLED</span>`);
+      this.limbStatusEl.innerHTML = chips.join("");
+      this.limbStatusEl.classList.toggle("hidden", chips.length === 0);
     }
 
     const st = WEAPON_STATS[player.activeWeapon];
@@ -302,7 +328,7 @@ export class HudController {
     }
 
     // Reload bar
-    if (player.isReloading && st.reloadTime > 0) {
+    if (player.isReloading && player.hasRightArm() && st.reloadTime > 0) {
       this.reloadPrompt.classList.remove("hidden");
       const prog = Math.min(100, ((st.reloadTime - player.reloadTimer) / st.reloadTime) * 100);
       this.reloadFill.style.width = `${prog}%`;
@@ -320,18 +346,24 @@ export class HudController {
       }
     }
 
-    // Crosshair spread & crisp sight takeover when ADS on Rifle / Revolver
+    // Crosshair spread & crisp sight takeover when ADS on Rifle / Revolver (1st-person only)
     const speed = Math.hypot(player.vel.x, player.vel.z);
     const adsSight =
+      !isThirdPerson &&
       isADS &&
       (player.activeWeapon === "rifle" || player.activeWeapon === "revolver") &&
       !player.isReloading &&
-      !player.isSprinting;
+      !player.isSprinting &&
+      player.hasLeftArm() &&
+      player.hasRightArm();
     const adsShotgun = isADS && player.activeWeapon === "shotgun" && !player.isReloading && !player.isSprinting;
     const crouchTighten = 1 - (player.crouchAlpha || 0) * 0.28;
+    const oneHandSpreadPx = player.hasLeftArm() ? 0 : 8;
     const recoilBloom = Math.min(11, Math.abs(recoilPitch) * 65);
-    const spreadPx = isADS ? 3.5 : (7 + speed * 1.1 + (player.activeWeapon === "shotgun" ? 8 : 0) + recoilBloom) * crouchTighten;
+    const spreadPx = isADS
+      ? 3.5 + oneHandSpreadPx
+      : (7 + speed * 1.1 + (player.activeWeapon === "shotgun" ? 8 : 0) + recoilBloom + oneHandSpreadPx) * crouchTighten;
     this.crosshair.style.setProperty("--spread", `${spreadPx.toFixed(1)}px`);
-    this.crosshair.style.opacity = adsSight ? "0" : adsShotgun ? "0.85" : "1";
+    this.crosshair.style.opacity = !player.hasRightArm() ? "0.35" : adsSight ? "0" : adsShotgun ? "0.85" : "1";
   }
 }

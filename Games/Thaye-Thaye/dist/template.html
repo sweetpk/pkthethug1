@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thaye-Thaye // Tactical Arena FPS</title>
-    <script type="module" crossorigin src="./assets/template-DLr2PjE4.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/template-COtUdlRa.css">
+    <script type="module" crossorigin src="./assets/template-CDWIR0b7.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/template-Cr8gTiRi.css">
   </head>
   <body>
     <!-- Desktop-Only Gate for Touch-Only Devices -->
@@ -73,9 +73,13 @@
         <div class="reload-bar"><div id="reload-fill"></div></div>
       </div>
 
-      <!-- Bottom Left: Stance, Health & Armor -->
+      <!-- Bottom Left: Limb Status, Stance, Health & Armor -->
       <div class="hud-vitals-wrap">
-        <div id="stance-pill" class="stance-pill">STAND</div>
+        <div id="limb-status" class="limb-status hidden"></div>
+        <div class="stance-row">
+          <div id="stance-pill" class="stance-pill">STAND</div>
+          <div id="cam-mode-pill" class="cam-mode-pill">1P [V]</div>
+        </div>
         <div class="hud-vitals">
           <div class="vital-row">
             <span class="vital-tag armor-tag">ARMOR</span>
@@ -135,9 +139,10 @@
         </div>
         <div class="pause-keys">
           <span><b>WASD</b> Move</span>
-          <span><b>CTRL/C</b> Crouch</span>
+          <span><b>C</b> Crouch</span>
           <span><b>SPACE</b> Jump</span>
           <span><b>SHIFT</b> Sprint</span>
+          <span><b>V</b> 1P / 3P View</span>
           <span><b>G</b> Quick Frag</span>
           <span><b>1-5</b> Arsenal</span>
           <span><b>R</b> Reload</span>
@@ -324,7 +329,8 @@
               <div class="ctrl-row"><kbd>W A S D</kbd><span>Move Operative</span></div>
               <div class="ctrl-row"><kbd>SPACE</kbd><span>Jump / Vault</span></div>
               <div class="ctrl-row"><kbd>SHIFT</kbd><span>Tactical Sprint</span></div>
-              <div class="ctrl-row"><kbd>CTRL / C</kbd><span>Crouch (Hold / Toggle)</span></div>
+              <div class="ctrl-row"><kbd>C</kbd><span>Crouch (Hold)</span></div>
+              <div class="ctrl-row"><kbd>V</kbd><span>1st / 3rd Person View</span></div>
               <div class="ctrl-row"><kbd>LMB</kbd><span>Fire / Slash / Throw</span></div>
               <div class="ctrl-row"><kbd>RMB</kbd><span>Aim Down Sights</span></div>
               <div class="ctrl-row"><kbd>1 - 5</kbd><span>Select Weapon Slot</span></div>

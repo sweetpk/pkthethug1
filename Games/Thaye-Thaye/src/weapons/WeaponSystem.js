@@ -134,6 +134,9 @@ export class WeaponSystem {
     this.muzzleFlashMesh = null;
     this.muzzleLight = null;
     this.flashTimer = 0;
+    this.tpsMuzzleFlash = null;
+    this.tpsMuzzleLight = null;
+    this.tpsFlashTimer = 0;
 
     // Viewmodel animation state
     this.bobPhase = 0;
@@ -214,6 +217,13 @@ export class WeaponSystem {
     this.muzzleLight = new THREE.PointLight(0xffb84d, 0, 7.0);
     this.vmRoot.add(this.muzzleLight);
 
+    // 3rd-person world-space muzzle flash + point light
+    this.tpsMuzzleFlash = flashGroup.clone();
+    this.tpsMuzzleFlash.visible = false;
+    this.scene.add(this.tpsMuzzleFlash);
+    this.tpsMuzzleLight = new THREE.PointLight(0xffb84d, 0, 7.5);
+    this.scene.add(this.tpsMuzzleLight);
+
     // Glowing cyan crescent slash arc for melee swings
     const arcGeo = new THREE.RingGeometry(0.18, 0.28, 20, 1, -0.5, Math.PI * 0.9);
     this.slashArcMat = new THREE.MeshBasicMaterial({
@@ -267,11 +277,11 @@ export class WeaponSystem {
     this.swayY = THREE.MathUtils.clamp(this.swayY + dy * 0.00018, -0.025, 0.025);
   }
 
-  triggerFireFX(weaponId) {
+  triggerFireFX(weaponId, thirdPersonChar = null) {
     this.fireHoldTimer = 0.36;
     if (weaponId === "knife") {
       this.slashAnim = 1.0;
-      if (this.slashArcMesh) {
+      if (!thirdPersonChar && this.slashArcMesh) {
         this.slashArcMesh.visible = true;
         this.slashArcMesh.rotation.set(0.35, -0.25, -0.45);
         this.slashArcMat.opacity = 0.85;
@@ -285,6 +295,18 @@ export class WeaponSystem {
     const adsScale = 1 - this.adsAlpha * 0.30;
     this.recoilZ = (weaponId === "shotgun" ? 0.17 : weaponId === "revolver" ? 0.12 : 0.048) * adsScale;
     this.recoilPitch = (weaponId === "shotgun" ? 0.30 : weaponId === "revolver" ? 0.38 : 0.055) * adsScale;
+
+    if (thirdPersonChar) {
+      if (weaponId === "rifle" || weaponId === "shotgun") {
+        const tpsGun = thirdPersonChar.weaponMount?.children?.[0];
+        if (tpsGun) {
+          thirdPersonChar.root.updateMatrixWorld(true);
+          this._spawnShellCasing(weaponId, tpsGun, thirdPersonChar.root.quaternion, true);
+        }
+      }
+      return;
+    }
+
     this.flashTimer = 0.048;
 
     const vm = this.vmWeapons[weaponId];
@@ -299,27 +321,32 @@ export class WeaponSystem {
       this.muzzleLight.position.copy(this.muzzleFlashMesh.position);
       this.muzzleLight.intensity = weaponId === "shotgun" ? 9 : weaponId === "revolver" ? 7 : 5;
       if (weaponId === "rifle" || weaponId === "shotgun") {
-        this._spawnShellCasing(weaponId, vm);
+        this._spawnShellCasing(weaponId, vm, this.camera.quaternion, false);
       }
     }
   }
 
-  _spawnShellCasing(weaponId, vm) {
+  _spawnShellCasing(weaponId, gunObj, basisQuat, isThirdPerson = false) {
     if (this.shells.length > 35) {
       const old = this.shells.shift();
       this.scene.remove(old.mesh);
     }
     const isShotgun = weaponId === "shotgun";
     const mesh = new THREE.Mesh(this.shellGeo, isShotgun ? this.shotShellMat : this.brassMat);
-    if (isShotgun) mesh.scale.set(1.45, 1.4, 1.45);
-    const localPort = new THREE.Vector3(0.04, 0.04, -0.07);
-    const worldPort = vm.localToWorld(localPort);
+    const tpsMult = isThirdPerson ? 1.2 : 1.0;
+    if (isShotgun) mesh.scale.set(1.45 * tpsMult, 1.4 * tpsMult, 1.45 * tpsMult);
+    else if (isThirdPerson) mesh.scale.setScalar(tpsMult);
+
+    const localPort = isThirdPerson
+      ? new THREE.Vector3(0.03, 0.05, -0.08)
+      : new THREE.Vector3(0.04, 0.04, -0.07);
+    const worldPort = gunObj.localToWorld(localPort);
     mesh.position.copy(worldPort);
     mesh.rotation.set(Math.random() * 3, Math.random() * 3, Math.random() * 3);
     this.scene.add(mesh);
 
-    const right = new THREE.Vector3(1, 0, 0).applyQuaternion(this.camera.quaternion);
-    const up = new THREE.Vector3(0, 1, 0).applyQuaternion(this.camera.quaternion);
+    const right = new THREE.Vector3(1, 0, 0).applyQuaternion(basisQuat);
+    const up = new THREE.Vector3(0, 1, 0).applyQuaternion(basisQuat);
     const vel = right
       .multiplyScalar(1.8 + Math.random() * 0.9)
       .addScaledVector(up, 1.5 + Math.random() * 0.7);
@@ -334,6 +361,20 @@ export class WeaponSystem {
 
   triggerSwitch() {
     this.switchDrop = 0.22;
+  }
+
+  triggerThirdPersonFlash(pos, dir, weaponId) {
+    if (!this.tpsMuzzleFlash || !this.tpsMuzzleLight) return;
+    this.tpsFlashTimer = 0.052;
+    this.tpsMuzzleFlash.position.copy(pos);
+    this.tpsMuzzleFlash.lookAt(pos.x + dir.x, pos.y + dir.y, pos.z + dir.z);
+    this.tpsMuzzleFlash.rotateZ(Math.random() * Math.PI);
+    this.tpsMuzzleFlash.scale.setScalar(
+      weaponId === "shotgun" ? 1.8 : weaponId === "revolver" ? 1.45 : 1.05
+    );
+    this.tpsMuzzleFlash.visible = true;
+    this.tpsMuzzleLight.position.copy(pos);
+    this.tpsMuzzleLight.intensity = weaponId === "shotgun" ? 9.5 : weaponId === "revolver" ? 7.5 : 5.5;
   }
 
   updateViewmodel(dt, weaponId, moveSpeed, grounded, isSprinting, isADS, isReloading, reloadProg) {
@@ -552,9 +593,19 @@ export class WeaponSystem {
       b.waveMat.dispose();
     }
     this.blasts.length = 0;
+    this.tpsFlashTimer = 0;
+    if (this.tpsMuzzleFlash) this.tpsMuzzleFlash.visible = false;
+    if (this.tpsMuzzleLight) this.tpsMuzzleLight.intensity = 0;
   }
 
   updateFX(dt, arena = null, onDetonate = null, onBounce = null) {
+    if (this.tpsFlashTimer > 0) {
+      this.tpsFlashTimer -= dt;
+      if (this.tpsFlashTimer <= 0) {
+        if (this.tpsMuzzleFlash) this.tpsMuzzleFlash.visible = false;
+        if (this.tpsMuzzleLight) this.tpsMuzzleLight.intensity = 0;
+      }
+    }
     for (let i = this.tracers.length - 1; i >= 0; i--) {
       const t = this.tracers[i];
       t.age += dt;

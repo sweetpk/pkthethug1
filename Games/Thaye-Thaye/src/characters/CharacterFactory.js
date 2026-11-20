@@ -30,9 +30,9 @@ export const BOT_PALETTES = [
   },
   {
     name: "SOLAR",
-    hex: "#f59e0b",
-    color: 0xf59e0b,
-    armor: 0xd97706,
+    hex: "#fb923c",
+    color: 0xfb923c,
+    armor: 0xea580c,
     visor: 0xfde047,
   },
 ];
@@ -321,8 +321,8 @@ export class CharacterFactory {
         let emInt = baseCfg.emissiveIntensity ?? 0;
 
         if (palette) {
-          if (obj.name === "Op_Armor_Primary") colHex = palette.armor;
-          else if (obj.name === "Op_Visor") {
+          if (obj.name === "Op_Armor_Primary" && palette.armor !== undefined) colHex = palette.armor;
+          else if (obj.name === "Op_Visor" && palette.visor !== undefined) {
             colHex = palette.visor;
             emHex = palette.visor;
           }

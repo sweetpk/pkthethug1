@@ -382,6 +382,12 @@ body {
   gap: 6px;
 }
 
+.stance-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 .stance-pill {
   padding: 3px 9px;
   border-radius: 4px;
@@ -402,6 +408,45 @@ body {
 .stance-pill.sprinting {
   border-color: #24d8ff;
   color: #bae6fd;
+}
+
+.stance-pill.crippled {
+  border-color: #ef4444;
+  color: #fecaca;
+  background: rgba(127, 29, 29, 0.7);
+}
+
+.cam-mode-pill {
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: rgba(12, 16, 23, 0.78);
+  border: 1px solid rgba(36, 216, 255, 0.35);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: #7eeeff;
+}
+
+.limb-status {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  max-width: 270px;
+}
+
+.limb-chip {
+  padding: 2px 7px;
+  border-radius: 3px;
+  background: rgba(127, 29, 29, 0.85);
+  border: 1px solid #f87171;
+  font-size: 9.5px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  color: #fee2e2;
+}
+
+.limb-chip.bleed {
+  animation: nadePulse 0.7s ease-in-out infinite;
 }
 
 .hud-vitals {

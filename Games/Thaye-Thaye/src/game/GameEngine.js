@@ -69,7 +69,10 @@ export class GameEngine {
     this.jumpBufferTimer = 0;
     this.wasPlayerGrounded = true;
     this.landDip = 0;
-    this.crouchToggle = false;
+    this.thirdPerson = false;
+    this.tpsCamDist = 2.15;
+    this.tpsAdsAlpha = 0;
+    this.tpsRecoilZ = 0;
 
     this._bindEvents();
   }
@@ -99,7 +102,10 @@ export class GameEngine {
       this.previewAnimator = null;
     }
     if (this.state !== "menu") return;
-    this.previewChar = this.charFactory.createCharacter(this.selectedGender, null);
+    this.previewChar = this.charFactory.createCharacter(this.selectedGender, {
+      armor: 0xfacc15,
+      visor: 0x1ee8ff,
+    });
     this.previewAnimator = new ProceduralAnimator(this.previewChar);
     this.previewChar.root.position.set(0.0, 2.4, 1.45);
     this.scene.add(this.previewChar.root);
@@ -126,15 +132,28 @@ export class GameEngine {
     }
   }
 
+  cleanupMatch() {
+    for (const c of this.combatants) {
+      if (c.charInst?.root) this.scene.remove(c.charInst.root);
+    }
+    this.ragdolls?.clearAll();
+    this.weaponSystem.clearProjectiles();
+    this.combatants = [];
+    this.botControllers = [];
+    this.player = null;
+  }
+
   startMatch({ gender, difficulty, scoreLimit }) {
     this.selectedGender = gender;
     this.difficulty = difficulty;
     this.scoreLimit = scoreLimit;
-    this.crouchToggle = false;
     this.coyoteTimer = 0;
     this.jumpBufferTimer = 0;
     this.wasPlayerGrounded = true;
     this.landDip = 0;
+    this.tpsCamDist = 2.15;
+    this.tpsAdsAlpha = 0;
+    this.tpsRecoilZ = 0;
     this.mouseDown = false;
     this.adsDown = false;
     this.camRecoilPitch = 0;
@@ -146,13 +165,7 @@ export class GameEngine {
       this.scene.remove(this.previewChar.root);
       this.previewChar = null;
     }
-    for (const c of this.combatants) {
-      if (c.charInst?.root) this.scene.remove(c.charInst.root);
-    }
-    this.ragdolls.clearAll();
-    this.weaponSystem.clearProjectiles();
-    this.combatants = [];
-    this.botControllers = [];
+    this.cleanupMatch();
 
     // Create 1 human player + 4 bots (using the SAME chosen gender model, themed colors!)
     this.player = new Combatant({
@@ -160,7 +173,7 @@ export class GameEngine {
       name: "YOU",
       isPlayer: true,
       gender: this.selectedGender,
-      palette: { hex: "#24d8ff", color: 0x24d8ff },
+      palette: { hex: "#24d8ff", color: 0x24d8ff, armor: 0xfacc15, visor: 0x1ee8ff },
       charFactory: this.charFactory,
       weaponSystem: this.weaponSystem,
       scene: this.scene,
@@ -188,6 +201,9 @@ export class GameEngine {
       const sp = spawns[idx % spawns.length];
       c.spawnAt(sp.position, sp.yaw);
     });
+    if (this.player?.charInst) {
+      this.player.charInst.root.visible = this.thirdPerson;
+    }
     this.botControllers.forEach((bc) => bc.onSpawn());
 
     // Reset pickups
@@ -200,10 +216,10 @@ export class GameEngine {
     this.multiKillCount = 0;
     this.multiKillTimer = 0;
     this.fovKick = 0;
-    this.camera.fov = 76;
+    this.camera.fov = this.thirdPerson ? 72 : 76;
     this.camera.updateProjectionMatrix();
     this.state = "playing";
-    this.weaponSystem.setActiveViewmodel(this.player.activeWeapon, true);
+    this.weaponSystem.setActiveViewmodel(this.player.activeWeapon, !this.thirdPerson);
     this.ui.showMatchHUD(this.scoreLimit);
     this.requestLock();
   }
@@ -227,6 +243,7 @@ export class GameEngine {
       if (!this.pointerLocked) {
         this.mouseDown = false;
         this.adsDown = false;
+        this.keys = {};
       }
     });
 
@@ -255,7 +272,8 @@ export class GameEngine {
 
     window.addEventListener("mousemove", (e) => {
       if (this.state !== "playing" || !this.pointerLocked || !this.player?.alive) return;
-      const sens = 0.0021 * this.sensitivity * (this.adsDown ? 0.65 : 1.0);
+      const canAds = this.adsDown && this.player.hasLeftArm() && this.player.hasRightArm();
+      const sens = 0.0021 * this.sensitivity * (canAds ? 0.65 : 1.0);
       this.player.yaw -= e.movementX * sens;
       this.player.pitch = THREE.MathUtils.clamp(this.player.pitch - e.movementY * sens, -1.48, 1.48);
       this.weaponSystem.addSway(e.movementX, e.movementY);
@@ -277,6 +295,9 @@ export class GameEngine {
         e.preventDefault();
         this.ui.setScoreboardVisible(true, this.combatants);
       }
+      if (e.code === "KeyV" && !e.repeat) {
+        this._toggleCameraView();
+      }
       if (!this.player?.alive) return;
 
       if (e.code === "Digit1") this._switchPlayerWeapon("knife");
@@ -287,10 +308,7 @@ export class GameEngine {
       if (e.code === "KeyG" && !e.repeat) {
         this._throwQuickGrenade();
       }
-      if (e.code === "KeyC" && !e.repeat) {
-        this.crouchToggle = !this.crouchToggle;
-      }
-      if (e.code === "KeyR") {
+      if (e.code === "KeyR" && this.player.hasRightArm()) {
         if (this.player.startReload()) this.sound.playReload(this.player.activeWeapon);
       }
       if (e.code === "Space" && !e.repeat) {
@@ -306,10 +324,24 @@ export class GameEngine {
     });
   }
 
+  _toggleCameraView() {
+    this.thirdPerson = !this.thirdPerson;
+    this.sound.playSwitch();
+    if (this.player?.alive) {
+      if (this.player.charInst) {
+        this.player.charInst.root.visible = this.thirdPerson;
+      }
+      this.weaponSystem.setActiveViewmodel(
+        this.player.activeWeapon,
+        !this.thirdPerson && this.player.hasRightArm()
+      );
+    }
+  }
+
   _switchPlayerWeapon(wId) {
     if (this.player.switchWeapon(wId)) {
       this.sound.stopReload();
-      this.weaponSystem.setActiveViewmodel(wId, true);
+      this.weaponSystem.setActiveViewmodel(wId, !this.thirdPerson && this.player.hasRightArm());
       this.weaponSystem.triggerSwitch();
       this.sound.playSwitch();
     }
@@ -333,9 +365,38 @@ export class GameEngine {
     return best;
   }
 
+  _getPlayerAimRay() {
+    const p = this.player;
+    if (!this.thirdPerson) {
+      return {
+        origin: this.camera.position.clone(),
+        dir: new THREE.Vector3(0, 0, -1).applyQuaternion(this.camera.quaternion).normalize(),
+      };
+    }
+
+    const eyeHeight = Math.max(0.45, 1.60 - p.crouchAlpha * 0.58 - p.getStanceDrop());
+    const origin = new THREE.Vector3(p.pos.x, p.pos.y + eyeHeight, p.pos.z);
+    const camOrigin = this.camera.position.clone();
+    const camDir = new THREE.Vector3(0, 0, -1).applyQuaternion(this.camera.quaternion).normalize();
+    const minOffset = Math.max(0.5, this.tpsCamDist + 0.35);
+    const rayStart = camOrigin.clone().addScaledVector(camDir, minOffset);
+
+    const wallHit = this.arena.raycast(rayStart, camDir, 80);
+    let bestDist = wallHit ? wallHit.distance : 80;
+    for (const other of this.combatants) {
+      if (other === p || !other.alive) continue;
+      const res = other.raycastHit(rayStart, camDir, bestDist);
+      if (res && res.distance < bestDist) bestDist = res.distance;
+    }
+
+    const aimPoint = rayStart.addScaledVector(camDir, bestDist);
+    const dir = aimPoint.sub(origin).normalize();
+    return { origin, dir };
+  }
+
   _tryPlayerFire(isClick) {
     const p = this.player;
-    if (!p || !p.alive || p.isReloading || p.fireCooldown > 0) return;
+    if (!p || !p.alive || !p.hasRightArm() || p.isReloading || p.fireCooldown > 0) return;
     const st = WEAPON_STATS[p.activeWeapon];
     if (!isClick && !st.auto) return;
 
@@ -349,8 +410,7 @@ export class GameEngine {
       return;
     }
 
-    const origin = this.camera.position.clone();
-    const dir = new THREE.Vector3(0, 0, -1).applyQuaternion(this.camera.quaternion).normalize();
+    const { origin, dir } = this._getPlayerAimRay();
 
     if (p.activeWeapon === "grenade") {
       this._throwGrenade(p, origin, dir);
@@ -364,21 +424,21 @@ export class GameEngine {
       return;
     }
 
-    if (p.activeWeapon === "knife" && p.grounded) {
+    if (p.activeWeapon === "knife" && p.grounded && !p.isLegCrippled()) {
       // Slight melee lunge
       const fwd = new THREE.Vector3(dir.x, 0, dir.z).normalize();
       p.vel.addScaledVector(fwd, 4.2);
     }
 
-    this._executeFire(p, origin, dir, this.adsDown);
+    const effectiveAds = this.adsDown && p.hasLeftArm() && p.hasRightArm();
+    this._executeFire(p, origin, dir, effectiveAds);
   }
 
   _throwQuickGrenade() {
     const p = this.player;
-    if (!p || !p.alive || p.isReloading || p.fireCooldown > 0) return;
+    if (!p || !p.alive || !p.hasRightArm() || p.isReloading || p.fireCooldown > 0) return;
     if (!p.ammo.grenade || p.ammo.grenade.mag <= 0) return;
-    const origin = this.camera.position.clone();
-    const dir = new THREE.Vector3(0, 0, -1).applyQuaternion(this.camera.quaternion).normalize();
+    const { origin, dir } = this._getPlayerAimRay();
     this._throwGrenade(p, origin, dir);
   }
 
@@ -396,7 +456,8 @@ export class GameEngine {
     if (thrower.isPlayer) {
       if (thrower.activeWeapon === "grenade") this.weaponSystem.triggerFireFX("grenade");
       else this.weaponSystem.switchDrop = Math.max(this.weaponSystem.switchDrop, 0.14);
-    } else if (thrower.animator) {
+    }
+    if (thrower.animator) {
       thrower.animator.triggerSlash();
     }
 
@@ -465,8 +526,84 @@ export class GameEngine {
       } else if (res.actualDmg > 0) {
         c.vel.addScaledVector(blastDir, st.hitKnockback * falloff);
         this.ragdolls.spawnBloodBurst(torso, blastDir.clone().multiplyScalar(3.5), 6, false);
+
+        // Close non-lethal frag blasts can blow off a limb too
+        if (res.actualDmg >= 35 && c.charInst) {
+          const intact = ["leftArm", "rightArm", "leftLeg", "rightLeg"].filter(
+            (z) => !c.charInst.severedZones.has(z)
+          );
+          if (intact.length > 0 && (rawDmg >= 55 || Math.random() < 0.65)) {
+            const z = intact[Math.floor(Math.random() * intact.length)];
+            if (c.recordLimbDamage(z, 30)) {
+              this._severCombatantLimb(c, z, torso, blastDir, st.impulse * 0.85, g.thrower);
+            }
+          }
+        }
       }
     }
+  }
+
+  _severCombatantLimb(victim, zone, hitPoint, dir, impulse, shooter) {
+    if (!victim?.charInst) return false;
+    const boneName = LIMB_ZONES[zone]?.rootBone;
+    const limbPos = new THREE.Vector3();
+    const bone = boneName ? victim.charInst.bones[boneName] : null;
+    if (bone) bone.getWorldPosition(limbPos);
+    else limbPos.copy(hitPoint);
+
+    if (!this.charFactory.severLimbOnSkeleton(victim.charInst, zone)) return false;
+
+    victim.bleedRate += 4.5;
+    if (shooter && shooter !== victim) shooter.gibs += 1;
+
+    const launchVel = dir.clone().multiplyScalar(impulse * 0.72);
+    this.ragdolls.spawnSeveredLimb(victim.charInst, zone, limbPos, launchVel);
+    this.sound.playGore(shooter?.isPlayer || victim.isPlayer ? 1.0 : 0.55);
+
+    // If shooting arm was severed, disarm them & drop their gun on the floor
+    if (zone === "rightArm") {
+      if (victim.charInst.weaponMount) {
+        while (victim.charInst.weaponMount.children.length > 0) {
+          victim.charInst.weaponMount.remove(victim.charInst.weaponMount.children[0]);
+        }
+      }
+      const dropped = this.weaponSystem.createThirdPersonModel(victim.activeWeapon);
+      this.ragdolls.spawnDroppedWeapon(dropped, limbPos, victim.vel, launchVel);
+
+      if (victim.isPlayer) {
+        victim.isReloading = false;
+        victim.reloadTimer = 0;
+        this.sound.stopReload();
+        this.adsDown = false;
+        this.weaponSystem.setActiveViewmodel(victim.activeWeapon, false);
+      }
+    } else if (zone === "leftArm" && victim.isPlayer) {
+      this.adsDown = false;
+    }
+
+    const partNames = {
+      leftArm: "LEFT ARM",
+      rightArm: "RIGHT ARM",
+      leftLeg: "LEFT LEG",
+      rightLeg: "RIGHT LEG",
+    };
+
+    if (victim.isPlayer) {
+      this.camShake = Math.min(0.12, this.camShake + 0.085);
+      const effectTag =
+        zone === "rightArm"
+          ? " • DISARMED!"
+          : zone === "leftArm"
+            ? " • UNSTEADY AIM!"
+            : victim.hasBothLegsSevered()
+              ? " • IMMOBILIZED!"
+              : " • CRIPPLED!";
+      this.ui.showKillBanner(`YOUR ${partNames[zone] || "LIMB"} WAS BLOWN OFF${effectTag}`);
+    } else if (shooter?.isPlayer) {
+      this.ui.showKillBanner(`SEVERED ${victim.name}'S ${partNames[zone] || "LIMB"}!`);
+    }
+
+    return true;
   }
 
   _executeFire(shooter, origin, baseDir, isADS = false, dmgMult = 1.0, cooldownMult = 1.0) {
@@ -488,25 +625,72 @@ export class GameEngine {
     // Visual animations
     if (shooter.isPlayer) {
       const crouchFactor = 1 - (shooter.crouchAlpha || 0) * 0.22;
-      this.weaponSystem.triggerFireFX(shooter.activeWeapon);
-      this.camRecoilPitch += st.recoilPitch * (isADS ? 0.68 : 1.0) * crouchFactor;
-      this.camRecoilYaw += (Math.random() - 0.5) * st.recoilYaw * crouchFactor;
-      const shakeGain = shooter.activeWeapon === "shotgun" ? 0.062 : shooter.activeWeapon === "revolver" ? 0.042 : 0.01;
-      const shakeCap = shooter.activeWeapon === "rifle" ? 0.05 : 0.085;
+      const oneHandPitch = shooter.hasLeftArm() ? 1.0 : 1.45;
+      const oneHandYaw = shooter.hasLeftArm() ? 1.0 : 1.75;
+      const tpsPitchBoost = this.thirdPerson
+        ? st.id === "shotgun"
+          ? 1.45
+          : st.id === "revolver"
+            ? 1.4
+            : 1.25
+        : 1.0;
+      const tpsYawBoost = this.thirdPerson
+        ? st.id === "shotgun"
+          ? 1.5
+          : st.id === "revolver"
+            ? 1.4
+            : 1.2
+        : 1.0;
+      const tpsShakeMult = this.thirdPerson ? 1.45 : 1.0;
+      this.weaponSystem.triggerFireFX(
+        shooter.activeWeapon,
+        this.thirdPerson ? shooter.charInst : null
+      );
+      this.camRecoilPitch += st.recoilPitch * (isADS ? 0.68 : 1.0) * crouchFactor * oneHandPitch * tpsPitchBoost;
+      this.camRecoilYaw += (Math.random() - 0.5) * st.recoilYaw * crouchFactor * oneHandYaw * tpsYawBoost;
+      const shakeGain =
+        (shooter.activeWeapon === "shotgun" ? 0.062 : shooter.activeWeapon === "revolver" ? 0.042 : 0.01) *
+        tpsShakeMult;
+      const shakeCap = (shooter.activeWeapon === "rifle" ? 0.05 : 0.085) * tpsShakeMult;
       this.camShake = Math.min(shakeCap, this.camShake + shakeGain);
-    } else if (shooter.animator) {
+      if (this.thirdPerson) {
+        this.tpsRecoilZ = Math.min(
+          0.22,
+          this.tpsRecoilZ +
+            (st.id === "shotgun" ? 0.145 : st.id === "revolver" ? 0.10 : st.id === "rifle" ? 0.028 : 0)
+        );
+      }
+    }
+    if (shooter.animator) {
       if (shooter.activeWeapon === "knife") shooter.animator.triggerSlash();
       else shooter.animator.triggerFire(shooter.activeWeapon === "shotgun" ? 1.0 : shooter.activeWeapon === "revolver" ? 0.85 : 0.55);
     }
 
-    const muzzleStart = shooter.isPlayer
-      ? this.weaponSystem.getMuzzleWorldPos(shooter.activeWeapon, origin, baseDir)
-      : origin.clone().addScaledVector(baseDir, 0.5).add(new THREE.Vector3(0, -0.18, 0));
+    let muzzleStart;
+    if (shooter.isPlayer && !this.thirdPerson) {
+      muzzleStart = this.weaponSystem.getMuzzleWorldPos(shooter.activeWeapon, origin, baseDir);
+    } else if (shooter.charInst?.weaponMount) {
+      shooter.charInst.root.updateMatrixWorld(true);
+      const mp = shooter.charInst.weaponMount.getObjectByName("MuzzlePoint");
+      if (mp) {
+        muzzleStart = new THREE.Vector3();
+        mp.getWorldPosition(muzzleStart);
+      } else {
+        muzzleStart = origin.clone().addScaledVector(baseDir, 0.5).add(new THREE.Vector3(0, -0.18, 0));
+      }
+    } else {
+      muzzleStart = origin.clone().addScaledVector(baseDir, 0.5).add(new THREE.Vector3(0, -0.18, 0));
+    }
+
+    if (shooter.isPlayer && this.thirdPerson && st.id !== "knife") {
+      this.weaponSystem.triggerThirdPersonFlash(muzzleStart, baseDir, st.id);
+    }
 
     let anyHit = false;
     let anyHeadshot = false;
     let anyKill = false;
-    const spreadAmt = (isADS ? st.adsSpread : st.spread) * (1 - (shooter.crouchAlpha || 0) * 0.22);
+    const oneHandSpread = shooter.isPlayer && !shooter.hasLeftArm() ? 0.038 : 0;
+    const spreadAmt = ((isADS ? st.adsSpread : st.spread) + oneHandSpread) * (1 - (shooter.crouchAlpha || 0) * 0.22);
 
     // Track per-victim damage in case multiple shotgun pellets hit same target
     const victimHits = new Map();
@@ -606,8 +790,18 @@ export class GameEngine {
       }
     }
 
-    if (shooter.isPlayer && (st.id === "shotgun" || st.id === "revolver")) {
-      this.fovKick = Math.min(5.5, this.fovKick + (st.id === "shotgun" ? 4.2 : 2.5));
+    if (shooter.isPlayer && (st.id === "shotgun" || st.id === "revolver" || (this.thirdPerson && st.id === "rifle"))) {
+      const fovAdd = this.thirdPerson
+        ? st.id === "shotgun"
+          ? 5.2
+          : st.id === "revolver"
+            ? 3.4
+            : 1.1
+        : st.id === "shotgun"
+          ? 4.2
+          : 2.5;
+      const fovCap = this.thirdPerson && st.id !== "rifle" ? 7.0 : 5.5;
+      this.fovKick = Math.min(fovCap, this.fovKick + fovAdd);
     }
 
     // Apply aggregated damage, live bullet impact pushback, wall splatter, & live dismemberment!
@@ -642,42 +836,8 @@ export class GameEngine {
         this.ragdolls.spawnBloodBurst(info.point, info.dir.clone().multiplyScalar(3.4), 6, false);
 
         // Live Non-Lethal Limb Dismemberment (arms & legs can be shot off BEFORE dying!)
-        if (!victim.isPlayer && victim.charInst && victim.recordLimbDamage(info.zone, info.dmg)) {
-          const z = info.zone;
-          const boneName = LIMB_ZONES[z]?.rootBone;
-          const limbPos = new THREE.Vector3();
-          const bone = boneName ? victim.charInst.bones[boneName] : null;
-          if (bone) bone.getWorldPosition(limbPos);
-          else limbPos.copy(info.point);
-
-          if (this.charFactory.severLimbOnSkeleton(victim.charInst, z)) {
-            victim.bleedRate += 4.5;
-            shooter.gibs += 1;
-            const launchVel = info.dir.clone().multiplyScalar(st.impulse * 0.72);
-            this.ragdolls.spawnSeveredLimb(victim.charInst, z, limbPos, launchVel);
-            this.sound.playGore(shooter.isPlayer ? 1.0 : 0.55);
-
-            // If shooting arm was severed, disarm them & drop their gun on the floor!
-            if (z === "rightArm") {
-              if (victim.charInst.weaponMount) {
-                while (victim.charInst.weaponMount.children.length > 0) {
-                  victim.charInst.weaponMount.remove(victim.charInst.weaponMount.children[0]);
-                }
-              }
-              const dropped = this.weaponSystem.createThirdPersonModel(victim.activeWeapon);
-              this.ragdolls.spawnDroppedWeapon(dropped, limbPos, victim.vel, launchVel);
-            }
-
-            if (shooter.isPlayer) {
-              const partNames = {
-                leftArm: "LEFT ARM",
-                rightArm: "RIGHT ARM",
-                leftLeg: "LEFT LEG",
-                rightLeg: "RIGHT LEG",
-              };
-              this.ui.showKillBanner(`SEVERED ${victim.name}'S ${partNames[z] || "LIMB"}!`);
-            }
-          }
+        if (victim.charInst && victim.recordLimbDamage(info.zone, info.dmg)) {
+          this._severCombatantLimb(victim, info.zone, info.point, info.dir, st.impulse, shooter);
         }
       }
     }
@@ -706,7 +866,8 @@ export class GameEngine {
     }
 
     let dismemberedZone = null;
-    if (!victim.isPlayer && victim.charInst) {
+    if (victim.charInst) {
+      victim.charInst.root.visible = true;
       // Decide if dismemberment triggers on lethal shot
       let targetZone = hitInfo.zone;
       if (targetZone === "chest" && (weaponStats.id === "shotgun" || weaponStats.id === "knife")) {
@@ -728,10 +889,10 @@ export class GameEngine {
 
         if (this.charFactory.severLimbOnSkeleton(victim.charInst, targetZone)) {
           dismemberedZone = targetZone;
-          killer.gibs += 1;
+          if (killer && killer !== victim) killer.gibs += 1;
           const launchVel = hitInfo.dir.clone().multiplyScalar(weaponStats.impulse * 0.65);
           this.ragdolls.spawnSeveredLimb(victim.charInst, targetZone, limbWorldPos, launchVel);
-          this.sound.playGore(killer.isPlayer ? 1.0 : 0.5);
+          this.sound.playGore(killer?.isPlayer || victim.isPlayer ? 1.0 : 0.5);
         }
       }
 
@@ -788,25 +949,69 @@ export class GameEngine {
     if (!p.alive) {
       p.respawnTimer -= dt;
       this.ui.updateDeathCountdown(Math.max(0, Math.ceil(p.respawnTimer)));
-      // Dramatic death camera tilt looking down
-      this.camera.position.lerp(new THREE.Vector3(p.pos.x, p.pos.y + 0.45, p.pos.z), dt * 4);
-      this.camera.rotation.z = THREE.MathUtils.lerp(this.camera.rotation.z, 0.38, dt * 5);
+      if (this.thirdPerson) {
+        const focus = new THREE.Vector3(p.pos.x, p.pos.y + 0.45, p.pos.z);
+        const backDir = new THREE.Vector3(Math.sin(p.yaw), 0.36, Math.cos(p.yaw)).normalize();
+        const wall = this.arena.raycast(focus, backDir, 2.5);
+        const dist = wall ? Math.max(0.6, wall.distance - 0.2) : 2.3;
+        const targetPos = focus.clone().addScaledVector(backDir, dist);
+        targetPos.y = Math.max(p.pos.y + 0.35, targetPos.y);
+        this.camera.position.lerp(targetPos, Math.min(1, dt * 6));
+        this.camera.lookAt(focus);
+      } else {
+        // Dramatic death camera tilt looking down
+        const back = new THREE.Vector3(Math.sin(p.yaw) * 0.45, 0.52, Math.cos(p.yaw) * 0.45);
+        this.camera.position.lerp(p.pos.clone().add(back), dt * 4);
+        this.camera.rotation.z = THREE.MathUtils.lerp(this.camera.rotation.z, 0.38, dt * 5);
+      }
       if (p.respawnTimer <= 0) {
         const sp = this._pickBestSpawn();
         p.spawnAt(sp.position, sp.yaw);
-        this.crouchToggle = false;
+        if (p.charInst) p.charInst.root.visible = this.thirdPerson;
         this.coyoteTimer = 0;
         this.jumpBufferTimer = 0;
         this.wasPlayerGrounded = true;
         this.landDip = 0;
+        this.tpsCamDist = 2.15;
+        this.tpsAdsAlpha = 0;
+        this.tpsRecoilZ = 0;
         this.camera.rotation.z = 0;
-        this.weaponSystem.setActiveViewmodel(p.activeWeapon, true);
+        this.weaponSystem.setActiveViewmodel(p.activeWeapon, !this.thirdPerson);
         this.ui.hideDeathOverlay();
       }
       return;
     }
 
-    // Movement & crouch input (with ceiling clearance check before standing up)
+    // Arterial stump bleeding when player is dismembered while alive
+    if (p.bleedRate > 0 && p.alive) {
+      p.hp = Math.max(0, p.hp - p.bleedRate * dt);
+      p.bleedDripTimer += dt;
+      if (p.bleedDripTimer > 0.28) {
+        p.bleedDripTimer = 0;
+        const spurtPos = new THREE.Vector3(p.pos.x, p.pos.y + 1.05 - p.getStanceDrop(), p.pos.z);
+        this.ragdolls.spawnBloodBurst(spurtPos, p.vel.clone().multiplyScalar(0.3), 2, false);
+        if (p.grounded && Math.random() < 0.34) {
+          this.ragdolls.spawnBloodDecal(p.pos, 0.36);
+        }
+      }
+      if (p.hp <= 0) {
+        p.alive = false;
+        p.deaths += 1;
+        p.respawnTimer = 3.0;
+        const killer = p.lastAttacker || p;
+        const hitInfo = {
+          point: new THREE.Vector3(p.pos.x, p.pos.y + 1.0 - p.getStanceDrop(), p.pos.z),
+          dir: new THREE.Vector3(0, 0, -1),
+          zone: "chest",
+          dist: 3,
+          headshot: false,
+        };
+        this._handleKill(killer, p, hitInfo, WEAPON_STATS[killer.activeWeapon] || WEAPON_STATS.rifle);
+        return;
+      }
+    }
+
+    // Movement & crouch input (Hold C only; disabled when leg-crippled)
     let fwdInput = 0;
     let rightInput = 0;
     if (this.keys["KeyW"] || this.keys["ArrowUp"]) fwdInput += 1;
@@ -814,13 +1019,11 @@ export class GameEngine {
     if (this.keys["KeyD"] || this.keys["ArrowRight"]) rightInput += 1;
     if (this.keys["KeyA"] || this.keys["ArrowLeft"]) rightInput -= 1;
 
-    const holdCrouch = !!(this.keys["ControlLeft"] || this.keys["ControlRight"]);
+    const crippled = p.isLegCrippled();
+    const bothLegsLost = p.hasBothLegsSevered();
     const shiftHeld = !!(this.keys["ShiftLeft"] || this.keys["ShiftRight"]);
-    if (shiftHeld && !holdCrouch && this.crouchToggle) {
-      this.crouchToggle = false;
-    }
-    let wantCrouch = holdCrouch || this.crouchToggle;
-    if (!wantCrouch && p.crouchAlpha > 0.04) {
+    let wantCrouch = !crippled && !!this.keys["KeyC"];
+    if (!crippled && !wantCrouch && p.crouchAlpha > 0.04) {
       const ceilCheck = this.arena.raycast(
         new THREE.Vector3(p.pos.x, p.pos.y + 0.9, p.pos.z),
         new THREE.Vector3(0, 1, 0),
@@ -832,13 +1035,15 @@ export class GameEngine {
     }
     p.isCrouching = wantCrouch;
     p.crouchAlpha = THREE.MathUtils.lerp(p.crouchAlpha, wantCrouch ? 1 : 0, Math.min(1, dt * 13));
-    p.height = THREE.MathUtils.lerp(1.76, 1.14, p.crouchAlpha);
+    p.height = Math.max(0.75, THREE.MathUtils.lerp(1.76, 1.14, p.crouchAlpha) - p.getStanceDrop());
 
-    const wantSprint = shiftHeld && fwdInput > 0 && !this.adsDown && !wantCrouch;
+    const effectiveAds = this.adsDown && p.hasLeftArm() && p.hasRightArm();
+    const wantSprint = shiftHeld && fwdInput > 0 && !effectiveAds && !wantCrouch && !crippled;
     p.isSprinting = wantSprint;
     const knifeBoost = p.activeWeapon === "knife" ? 1.2 : 1.0;
-    const baseSpeed = wantCrouch ? 3.9 : wantSprint ? 9.2 : this.adsDown ? 4.6 : 6.8;
-    const maxSpeed = baseSpeed * knifeBoost;
+    const baseSpeed = wantCrouch ? 3.9 : wantSprint ? 9.2 : effectiveAds ? 4.6 : 6.8;
+    const legMult = bothLegsLost ? 0 : crippled ? 0.40 : 1.0;
+    const maxSpeed = baseSpeed * knifeBoost * legMult;
 
     const fwd = new THREE.Vector3(-Math.sin(p.yaw), 0, -Math.cos(p.yaw));
     const right = new THREE.Vector3(Math.cos(p.yaw), 0, -Math.sin(p.yaw));
@@ -848,8 +1053,7 @@ export class GameEngine {
     // Coyote time + jump buffering for ultra-responsive jumps on ledges & ramps
     this.coyoteTimer = p.grounded ? 0.11 : Math.max(0, this.coyoteTimer - dt);
     this.jumpBufferTimer = Math.max(0, this.jumpBufferTimer - dt);
-    if (this.jumpBufferTimer > 0 && this.coyoteTimer > 0) {
-      if (!holdCrouch && this.crouchToggle) this.crouchToggle = false;
+    if (this.jumpBufferTimer > 0 && this.coyoteTimer > 0 && !crippled) {
       p.vel.y = 7.75;
       p.grounded = false;
       this.coyoteTimer = 0;
@@ -886,7 +1090,7 @@ export class GameEngine {
     }
 
     // Continuous auto-fire & keep weapon pointed forward while shooting on the run
-    if (this.mouseDown && this.pointerLocked) {
+    if (this.mouseDown && this.pointerLocked && p.hasRightArm()) {
       if (!p.isReloading && p.ammo[p.activeWeapon]?.mag > 0) {
         this.weaponSystem.fireHoldTimer = Math.max(this.weaponSystem.fireHoldTimer, 0.22);
       }
@@ -896,39 +1100,88 @@ export class GameEngine {
     // Pickups check
     this._checkPickups(p);
 
-    // Camera transform + framerate-independent recoil recovery + ADS FOV
+    // Camera transform + framerate-independent recoil recovery + ADS FOV (1P & 3P)
     this.camRecoilPitch = THREE.MathUtils.lerp(this.camRecoilPitch, 0, dampRec);
     this.camRecoilYaw = THREE.MathUtils.lerp(this.camRecoilYaw, 0, dampRec);
     this.camShake = Math.max(0, this.camShake - dt * 0.28);
+    this.tpsRecoilZ = THREE.MathUtils.lerp(this.tpsRecoilZ, 0, Math.min(1, dt * 15));
 
     const shakeX = (Math.random() - 0.5) * this.camShake;
     const shakeY = (Math.random() - 0.5) * this.camShake;
 
     const bob = p.grounded && horizSpeed > 0.5 ? Math.sin(this.weaponSystem.bobPhase * 2) * (wantCrouch ? 0.012 : 0.022) : 0;
-    const eyeHeight = 1.60 - p.crouchAlpha * 0.58;
-    this.camera.position.set(p.pos.x, p.pos.y + eyeHeight + bob - this.landDip, p.pos.z);
-    this.camera.rotation.set(
-      THREE.MathUtils.clamp(p.pitch + this.camRecoilPitch + shakeY, -1.52, 1.52),
-      p.yaw + this.camRecoilYaw + shakeX,
-      0
-    );
+    const eyeHeight = Math.max(0.45, 1.60 - p.crouchAlpha * 0.58 - p.getStanceDrop());
+    const camPitch = THREE.MathUtils.clamp(p.pitch + this.camRecoilPitch + shakeY, -1.52, 1.52);
+    const camYaw = p.yaw + this.camRecoilYaw + shakeX;
+
+    if (this.thirdPerson) {
+      const targetTpsAds =
+        effectiveAds && p.activeWeapon !== "knife" && p.activeWeapon !== "grenade" && !p.isReloading && !wantSprint ? 1 : 0;
+      this.tpsAdsAlpha = THREE.MathUtils.lerp(this.tpsAdsAlpha, targetTpsAds, Math.min(1, dt * 14));
+
+      const tpsPitch = THREE.MathUtils.clamp(camPitch, -1.28, 1.28);
+      const qCam = new THREE.Quaternion().setFromEuler(new THREE.Euler(tpsPitch, camYaw, 0, "YXZ"));
+      const camFwd = new THREE.Vector3(0, 0, -1).applyQuaternion(qCam);
+      const camRight = new THREE.Vector3(1, 0, 0).applyQuaternion(qCam);
+      const camUp = new THREE.Vector3(0, 1, 0).applyQuaternion(qCam);
+
+      const pivot = new THREE.Vector3(p.pos.x, p.pos.y + eyeHeight + bob * 0.4 - this.landDip, p.pos.z);
+      let rightOff = THREE.MathUtils.lerp(0.46, 0.38, this.tpsAdsAlpha);
+      const upOff = THREE.MathUtils.lerp(0.18, 0.10, this.tpsAdsAlpha);
+      const desiredBack = THREE.MathUtils.lerp(2.15, 1.32, this.tpsAdsAlpha);
+
+      const shoulderWall = this.arena.raycast(pivot, camRight, rightOff + 0.18);
+      if (shoulderWall && shoulderWall.distance < rightOff + 0.18) {
+        rightOff = Math.max(0.05, shoulderWall.distance - 0.18);
+      }
+
+      const shoulderPivot = pivot
+        .clone()
+        .addScaledVector(camRight, rightOff)
+        .addScaledVector(camUp, upOff);
+      const backDir = camFwd.clone().negate();
+      const backWall = this.arena.raycast(shoulderPivot, backDir, desiredBack + 0.22);
+      const targetDist = backWall ? Math.max(0.35, backWall.distance - 0.18) : desiredBack;
+      const distLerp = targetDist < this.tpsCamDist ? Math.min(1, dt * 24) : Math.min(1, dt * 10);
+      this.tpsCamDist = THREE.MathUtils.lerp(this.tpsCamDist, targetDist, distLerp);
+      const maxSafeDist = backWall ? Math.max(0.35, backWall.distance - 0.14) : this.tpsCamDist + this.tpsRecoilZ;
+      const finalDist = Math.min(this.tpsCamDist + this.tpsRecoilZ, maxSafeDist);
+
+      this.camera.position.copy(shoulderPivot).addScaledVector(camFwd, -finalDist);
+      this.camera.position.y = Math.max(p.pos.y + 0.22, this.camera.position.y);
+      this.camera.rotation.set(tpsPitch, camYaw, 0);
+    } else {
+      this.camera.position.set(p.pos.x, p.pos.y + eyeHeight + bob - this.landDip, p.pos.z);
+      this.camera.rotation.set(camPitch, camYaw, 0);
+    }
 
     this.fovKick = Math.max(0, this.fovKick - dt * 16);
     if (this.multiKillTimer > 0) this.multiKillTimer = Math.max(0, this.multiKillTimer - dt);
 
     const baseFov =
-      this.adsDown && p.activeWeapon !== "knife" && p.activeWeapon !== "grenade" && !p.isReloading
+      effectiveAds && p.activeWeapon !== "knife" && p.activeWeapon !== "grenade" && !p.isReloading
         ? p.activeWeapon === "revolver"
           ? 60
           : 56
         : wantSprint
-          ? 82
-          : 76;
+          ? this.thirdPerson
+            ? 78
+            : 82
+          : this.thirdPerson
+            ? 72
+            : 76;
     const targetFov = baseFov + this.fovKick;
     if (Math.abs(this.camera.fov - targetFov) > 0.05) {
       this.camera.fov = THREE.MathUtils.lerp(this.camera.fov, targetFov, Math.min(1, dt * 14));
       this.camera.updateProjectionMatrix();
     }
+
+    // Keep player's 3rd-person body animated & hitboxes accurate in both 1P and 3P
+    if (p.charInst) {
+      p.charInst.root.visible = this.thirdPerson;
+      p.updateAnimation(dt);
+    }
+    this.weaponSystem.setActiveViewmodel(p.activeWeapon, !this.thirdPerson && p.hasRightArm());
 
     const st = WEAPON_STATS[p.activeWeapon];
     const reloadProg = p.isReloading && st.reloadTime > 0 ? 1 - p.reloadTimer / st.reloadTime : 0;
@@ -938,7 +1191,7 @@ export class GameEngine {
       horizSpeed,
       p.grounded,
       wantSprint,
-      this.adsDown,
+      effectiveAds,
       p.isReloading,
       reloadProg
     );
@@ -1123,9 +1376,10 @@ export class GameEngine {
         this.player,
         this.combatants,
         this.matchTime,
-        this.adsDown,
+        this.adsDown && this.player.hasLeftArm() && this.player.hasRightArm(),
         this.weaponSystem.grenades,
-        this.camRecoilPitch
+        this.camRecoilPitch,
+        this.thirdPerson
       );
 
       if (this.matchTime <= 0) {

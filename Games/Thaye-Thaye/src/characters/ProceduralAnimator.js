@@ -273,7 +273,7 @@ export class ProceduralAnimator {
     }
 
     // Decay action impulses
-    this.fireKick = Math.max(0, this.fireKick - dt * 7.2);
+    this.fireKick = Math.max(0, this.fireKick - dt * 5.8);
     this.slashTimer = Math.max(0, this.slashTimer - dt);
     this.hitFlinch = Math.max(0, this.hitFlinch - dt * 5.2);
 
@@ -430,7 +430,8 @@ export class ProceduralAnimator {
     // =========================================================================
     const breathe = Math.sin(this.idlePhase) * 0.028;
     const flinchBack = -this.hitFlinch * 0.30;
-    const recoilBack = -this.fireKick * 0.10;
+    const recoilSpineScale = weaponType === "shotgun" ? 0.21 : weaponType === "revolver" ? 0.14 : 0.095;
+    const recoilBack = -this.fireKick * recoilSpineScale;
     const fwdLean = 0.14 * Math.max(0, fwdFactor) + 0.05 + this.landCompress * 0.16;
     const sideLean = -strafeFactor * 0.11;
 
@@ -507,8 +508,8 @@ export class ProceduralAnimator {
     // Engage left clavicle slightly forward on two-handed weapons for natural relaxed reach
     const twoHanded = weaponType === "rifle" || weaponType === "shotgun" || weaponType === "revolver";
     if (twoHanded) {
-      this._rotateBone("mixamorigLeftShoulder", 0, 0.20, 0.06);
-      this._rotateBone("mixamorigRightShoulder", 0, -0.08, -0.04);
+      this._rotateBone("mixamorigLeftShoulder", 0, 0.26, 0.06);
+      this._rotateBone("mixamorigRightShoulder", 0, -0.06, -0.04);
     }
 
     this.char.root.updateMatrixWorld(true);
@@ -527,12 +528,15 @@ export class ProceduralAnimator {
 
     let slashArc = 0;
     let slashWind = 0;
-    const kick = this.fireKick * 0.22;
+    const k = Math.min(1.2, this.fireKick);
+    const kickZ = weaponType === "shotgun" ? k * 0.072 : weaponType === "revolver" ? k * 0.045 : k * 0.026;
+    const kickY = weaponType === "shotgun" ? k * 0.030 : weaponType === "revolver" ? k * 0.052 : k * 0.014;
+    const muzzleFlip = weaponType === "revolver" ? k * 0.42 : weaponType === "shotgun" ? k * 0.32 : k * 0.14;
     const swayY = Math.sin(this.idlePhase * 0.9) * 0.018 + c * 0.025 * stride;
     const reloadDip = this.reloadBlend * Math.sin(reloadProg * Math.PI);
     const qAim = new THREE.Quaternion().setFromAxisAngle(
       new THREE.Vector3(1, 0, 0),
-      aimPitch + (weaponType === "revolver" ? kick * 0.55 : kick * 0.35) + swayY
+      aimPitch + muzzleFlip * 0.45 + swayY
     );
 
     // Define right-hand palm target relative to shoulderMidRoot per weapon
@@ -564,12 +568,12 @@ export class ProceduralAnimator {
       rightFingersDir = new THREE.Vector3(-0.24, 0.15 + toss * 0.5, -0.95).normalize();
       rightPalmDir = new THREE.Vector3(-0.94, 0.12, -0.30).normalize();
     } else if (weaponType === "revolver") {
-      rightPalmOffset = new THREE.Vector3(0.055, -0.035 + kick * 0.05, -0.35 + kick * 0.04).applyQuaternion(qAim);
+      rightPalmOffset = new THREE.Vector3(0.118, -0.038 + kickY, -0.375 + kickZ).applyQuaternion(qAim);
     } else if (weaponType === "shotgun") {
-      rightPalmOffset = new THREE.Vector3(0.095, -0.075, -0.235 + kick * 0.04).applyQuaternion(qAim);
+      rightPalmOffset = new THREE.Vector3(0.136, -0.072 + kickY, -0.255 + kickZ).applyQuaternion(qAim);
     } else {
       // Rifle: stock nested cleanly in front of right deltoid with room ahead of chest armor
-      rightPalmOffset = new THREE.Vector3(0.092, -0.070, -0.230 + kick * 0.03).applyQuaternion(qAim);
+      rightPalmOffset = new THREE.Vector3(0.132, -0.068 + kickY, -0.250 + kickZ).applyQuaternion(qAim);
     }
 
     const rightPalmTarget = shoulderMidRoot.clone().add(rightPalmOffset);
@@ -603,7 +607,7 @@ export class ProceduralAnimator {
 
       const reloadTilt = reloadDip * 0.45;
       const aimEuler = new THREE.Euler(
-        aimPitch + this.fireKick * 0.14 - slashArc * 0.85 + slashWind * 0.35 + reloadTilt,
+        aimPitch + muzzleFlip - slashArc * 0.85 + slashWind * 0.35 + reloadTilt,
         slashArc * 1.1 - slashWind * 0.4,
         reloadTilt * 0.4,
         "YXZ"
@@ -621,7 +625,8 @@ export class ProceduralAnimator {
     let leftFingersDir;
     let leftPalmDir;
 
-    if (twoHanded && mount && reloadDip < 0.15) {
+    const hasRightArm = !sev?.has("rightArm");
+    if (twoHanded && hasRightArm && mount && reloadDip < 0.15) {
       this.char.root.updateMatrixWorld(true);
       const ws = this.char.handWorldScale?.x || 1;
       const invS = ws > 1e-5 ? 1.0 / ws : 1.0;
