@@ -522,16 +522,24 @@
     .track-card { padding: 7px 10px; border-radius: 11px; }
     .car-chip { padding: 6px 8px; }
   }
-  @media (max-height: 440px) {
-    .hud-bottom { margin-bottom: 0 !important; gap: 10px; }
+  @media (max-height: 480px) {
+    #centerFeed { top: 34%; }
+    #countdownText { font-size: clamp(40px, 12vmin, 72px); }
+    #revBox { margin: 5px auto 0; padding: 5px 10px; }
+    .hud-bottom { margin-bottom: 0 !important; gap: 8px; }
     body.touch .hud-bottom { justify-content: center; }
     body.touch .speed-cluster {
       margin-left: 0;
-      min-width: 146px;
+      min-width: 136px;
       padding: 4px 10px;
     }
     body.touch .flow-box { padding: 4px 10px; }
-    #minimapWrap { width: 74px; height: 74px; }
+    #minimapWrap { width: 72px; height: 72px; }
+    #steerPad { width: clamp(148px, 25vw, 196px); height: 70px; padding: 0 16px; }
+    #tDrift { width: 62px; height: 62px; font-size: 11px; }
+    #tNitro { width: 68px; height: 68px; font-size: 11px; }
+    #tBrake { width: 44px; height: 44px; font-size: 9px; }
+    #tGas { width: 54px; height: 54px; font-size: 10px; }
   }
 
   /* ==================== OVERLAYS (MENU, PAUSE, FINISH) ==================== */
@@ -573,7 +581,8 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 12px;
+    flex-wrap: wrap;
+    gap: 10px;
     padding-top: 2px;
   }
   .pit-brand {
@@ -625,6 +634,7 @@
   .pit-tools {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 7px;
   }
   .arcade-pill {
@@ -697,6 +707,7 @@
     -webkit-backdrop-filter: blur(10px);
   }
   .pit-btn {
+    min-width: 0;
     border: 1.5px solid rgba(255, 255, 255, 0.2);
     border-radius: 12px;
     padding: 11px 16px;
@@ -948,6 +959,7 @@
     z-index: 60;
     background: rgba(6, 16, 38, 0.92);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     align-items: center;
     justify-content: center;
     padding: calc(18px + var(--st)) calc(18px + var(--sr)) calc(18px + var(--sb)) calc(18px + var(--sl));
@@ -958,7 +970,7 @@
     background: linear-gradient(175deg, rgba(16, 40, 82, 0.96), rgba(8, 20, 44, 0.98));
     border: 2px solid rgba(0, 229, 255, 0.5);
     border-radius: 20px;
-    padding: 20px 18px;
+    padding: 22px 18px;
     text-align: center;
     box-shadow: 0 22px 60px rgba(0, 0, 0, 0.65);
     display: flex;
@@ -968,40 +980,22 @@
   }
   .rotate-icon { font-size: 36px; display: inline-block; animation: rotatePhoneHint 2.1s ease-in-out infinite; }
   @keyframes rotatePhoneHint { 0%, 20% { transform: rotate(0deg); } 50%, 75% { transform: rotate(-90deg); } 100% { transform: rotate(0deg); } }
-  .rotate-title { font-family: "Russo One", sans-serif; font-size: 18px; font-style: italic; color: var(--sun); }
+  .rotate-title { font-family: "Russo One", sans-serif; font-size: 19px; font-style: italic; color: var(--sun); }
   .rotate-desc { font-size: 12.5px; line-height: 1.5; color: rgba(224, 242, 254, 0.9); }
-
-  @media (max-width: 900px) {
-    .car-grid { grid-template-columns: repeat(2, 1fr); }
+  .rotate-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    margin-top: 6px;
   }
-  @media (max-width: 780px) and (orientation: portrait) {
-    .pit-action-bar { grid-template-columns: 1fr 1fr; }
-    .pit-btn.go { grid-column: 1 / -1; }
-    .track-grid, .controls-cards, .settings-grid { grid-template-columns: 1fr; }
-    .machine-dock-grid { grid-template-columns: 1fr; }
-  }
-  @media (max-height: 460px) {
-    #menuOverlay { padding: calc(8px + var(--st)) calc(12px + var(--sr)) calc(8px + var(--sb)) calc(12px + var(--sl)); }
-    .game-title { font-size: clamp(22px, 4.4vw, 30px); }
-    .pit-kicker-row { display: none; }
-    .pit-action-bar { padding: 7px; gap: 7px; border-radius: 14px; }
-    .pit-btn { padding: 8px 12px; }
-    .paddock-dock { padding: 9px 11px; gap: 7px; border-radius: 15px; }
-    .track-card { padding: 7px 9px; }
-    .car-grid { grid-template-columns: repeat(2, 1fr); gap: 6px; }
-    .car-chip { padding: 6px 7px; }
-    .car-swatch { height: 22px; width: 13px; }
-    .settings-grid { grid-template-columns: repeat(3, 1fr); gap: 6px; }
-    .setting-row { padding: 5px 9px; font-size: 11px; }
-    .toggle-pill { padding: 4px 10px; font-size: 10.5px; }
-    .primary-btn { padding: 8px 20px; font-size: 13px; }
-    .modal-card { width: min(94vw, 640px); padding: 12px 14px; }
-    .setting-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; margin: 8px 0 10px; }
-    .stats-grid { grid-template-columns: repeat(4, 1fr); gap: 6px; margin-bottom: 8px; }
-    .standings-mini { max-height: 74px; margin-bottom: 8px; }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    .menu-stage, .rotate-icon { animation: none !important; }
+  .rotate-actions .primary-btn,
+  .rotate-actions .secondary-btn {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 13px;
+    line-height: 1.2;
+    margin: 0;
   }
 
   /* Center Modal Cards (Pause & Finish) */
@@ -1015,7 +1009,7 @@
   }
   .modal-card {
     margin: auto;
-    width: min(94vw, 520px);
+    width: min(94vw, 540px);
     background: linear-gradient(180deg, rgba(16, 38, 74, 0.95), rgba(10, 24, 48, 0.97));
     border: 2px solid rgba(255, 255, 255, 0.28);
     border-radius: 22px;
@@ -1024,14 +1018,16 @@
     text-align: center;
   }
   .modal-title {
-    font-size: clamp(24px, 5.5vmin, 38px);
-    font-weight: 900;
+    font-family: "Russo One", "Segoe UI", sans-serif;
+    font-size: clamp(22px, 5vmin, 34px);
+    font-weight: 400;
     font-style: italic;
     color: var(--sun);
     text-shadow: 0 3px 0 rgba(0, 0, 0, 0.35);
+    line-height: 1.05;
   }
   .modal-sub {
-    font-size: 12.5px;
+    font-size: 12px;
     color: rgba(215, 240, 255, 0.88);
     margin: 3px 0 11px;
   }
@@ -1075,18 +1071,36 @@
     gap: 9px;
     justify-content: center;
   }
+  .fin-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+  .fin-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
   .stars-row {
-    font-size: 30px;
-    letter-spacing: 6px;
-    margin: 2px 0 8px;
+    font-size: 28px;
+    letter-spacing: 5px;
     color: var(--sun);
     text-shadow: 0 0 16px rgba(255, 210, 63, 0.65);
+    line-height: 1;
+  }
+  .fin-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 12px;
   }
   .stats-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 8px;
-    margin-bottom: 12px;
   }
   .stat-cell {
     background: rgba(255, 255, 255, 0.08);
@@ -1108,22 +1122,115 @@
     margin-top: 2px;
   }
   .standings-mini {
-    max-height: 105px;
+    max-height: 126px;
     overflow-y: auto;
-    margin-bottom: 12px;
     border-radius: 12px;
-    background: rgba(0, 0, 0, 0.22);
+    background: rgba(0, 0, 0, 0.24);
     padding: 6px;
     text-align: left;
-    font-size: 12px;
+    font-size: 11.5px;
   }
   .st-row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+    min-width: 0;
     padding: 3px 8px;
     border-radius: 7px;
   }
+  .st-row > span:first-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .st-row > span:last-child {
+    flex-shrink: 0;
+    font-variant-numeric: tabular-nums;
+  }
   .st-row.me { background: rgba(255, 210, 63, 0.25); color: var(--sun); font-weight: 900; }
+
+  /* Responsive Rules (placed AFTER base rules so cascade always wins!) */
+  @media (max-width: 900px) {
+    .car-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 780px) and (orientation: portrait) {
+    .pit-action-bar { grid-template-columns: 1fr 1fr; }
+    .pit-btn.go, .pit-btn.quick { grid-column: 1 / -1; }
+    .track-grid, .controls-cards, .settings-grid { grid-template-columns: 1fr; }
+    .machine-dock-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-height: 500px) {
+    #menuOverlay, #pauseOverlay, #finishOverlay {
+      padding: calc(8px + var(--st)) calc(12px + var(--sr)) calc(8px + var(--sb)) calc(12px + var(--sl));
+    }
+    .game-title { font-size: clamp(20px, 4.2vw, 28px); }
+    .pit-kicker-row { display: none; }
+    .pit-action-bar { padding: 7px; gap: 6px; border-radius: 14px; }
+    .pit-btn { padding: 8px 10px; }
+    .pit-btn.compact { min-width: 72px; }
+    .paddock-dock { padding: 9px 11px; gap: 7px; border-radius: 15px; }
+    .track-card { min-width: 0; padding: 7px 9px; }
+    .car-grid { grid-template-columns: repeat(2, 1fr); gap: 6px; }
+    .car-chip { min-width: 0; padding: 5px 7px; }
+    .car-swatch { height: 22px; width: 13px; }
+    .settings-grid { grid-template-columns: repeat(3, 1fr); gap: 6px; }
+    .setting-row { min-width: 0; padding: 5px 9px; font-size: 11px; }
+    .toggle-pill { padding: 4px 10px; font-size: 10.5px; }
+    .primary-btn { padding: 8px 18px; font-size: 12.5px; }
+    .secondary-btn { padding: 7px 14px; font-size: 11.5px; }
+    .rotate-card { padding: 14px 16px; max-height: 94dvh; overflow-y: auto; }
+
+    /* Zero-Scroll Landscape Pause & Finish Cards */
+    .modal-card {
+      width: min(96vw, 720px);
+      padding: 11px 14px;
+      border-radius: 18px;
+    }
+    .modal-title { font-size: 22px; }
+    .modal-sub { font-size: 11px; margin: 1px 0 7px; }
+    .fin-head { margin-bottom: 6px; }
+    .fin-head .modal-sub { margin: 2px 0 0; }
+    .setting-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px;
+      margin: 6px 0 9px;
+    }
+    .stars-row { font-size: 20px; letter-spacing: 3px; }
+    .fin-body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      align-items: stretch;
+      margin-bottom: 9px;
+    }
+    .stats-grid { gap: 5px; }
+    .stat-cell { min-width: 0; padding: 6px 8px; border-radius: 10px; }
+    .stat-cell .v { font-size: 15px; }
+    .stat-cell .k { font-size: 9px; }
+    .standings-mini {
+      max-height: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px 8px;
+      align-content: center;
+      font-size: 10.5px;
+      padding: 6px 8px;
+    }
+    .st-row { padding: 2px 5px; }
+    .btn-stack { gap: 7px; }
+  }
+  @media (max-height: 500px) and (max-width: 740px) {
+    .settings-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-height: 500px) and (max-width: 620px) {
+    .machine-dock-grid { grid-template-columns: 1fr; gap: 6px; }
+    .diff-group { justify-content: center; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .menu-stage, .rotate-icon { animation: none !important; }
+  }
 </style>
 </head>
 <body>
@@ -1408,16 +1515,22 @@
 <!-- FINISH OVERLAY -->
 <div class="overlay" id="finishOverlay" role="dialog" aria-modal="true" aria-label="Race Results">
   <div class="modal-card">
-    <div class="modal-title" id="finRankTitle">1ST PLACE!</div>
-    <div class="stars-row" id="finStars">★★★</div>
-    <div class="modal-sub" id="finSub">CHAMPION OF THE COASTLINE!</div>
-    <div class="stats-grid">
-      <div class="stat-cell"><div class="v" id="finTime">00:00.00</div><div class="k">TOTAL TIME</div></div>
-      <div class="stat-cell"><div class="v" id="finBestLap">00:00.00</div><div class="k">BEST LAP</div></div>
-      <div class="stat-cell"><div class="v" id="finTopSpd">0 KM/H</div><div class="k">TOP SPEED</div></div>
-      <div class="stat-cell"><div class="v" id="finScore">0</div><div class="k">FLOW SCORE</div></div>
+    <div class="fin-head">
+      <div class="fin-title-row">
+        <div class="modal-title" id="finRankTitle">1ST PLACE!</div>
+        <div class="stars-row" id="finStars">★★★</div>
+      </div>
+      <div class="modal-sub" id="finSub">CHAMPION OF THE COASTLINE!</div>
     </div>
-    <div class="standings-mini" id="finStandings"></div>
+    <div class="fin-body">
+      <div class="stats-grid">
+        <div class="stat-cell"><div class="v" id="finTime">00:00.00</div><div class="k">TOTAL TIME</div></div>
+        <div class="stat-cell"><div class="v" id="finBestLap">00:00.00</div><div class="k">BEST LAP</div></div>
+        <div class="stat-cell"><div class="v" id="finTopSpd">0 KM/H</div><div class="k">TOP SPEED</div></div>
+        <div class="stat-cell"><div class="v" id="finScore">0</div><div class="k">FLOW SCORE</div></div>
+      </div>
+      <div class="standings-mini" id="finStandings"></div>
+    </div>
     <div class="btn-stack">
       <button type="button" class="primary-btn" id="btnNextTrack">NEXT TRACK ▶</button>
       <button type="button" class="secondary-btn" id="btnRaceAgain">RACE AGAIN</button>
