@@ -309,7 +309,7 @@ function endDelivery(res) {
     }
   }
   if (res.kind === 'six' && res.distance && G.hitThisBall && $('lastShot').innerHTML && !$('lastShot').innerHTML.includes('m</span>')) {
-    $('lastShot').innerHTML += ` · <span class="shot-dist">${res.distance}m</span>`;
+    $('lastShot').innerHTML += `<span class="shot-dist">${res.distance}m</span>`;
   }
   updateScoreboard();
 }
@@ -370,10 +370,10 @@ function handleEvents(events) {
         camFx.lookPos.copy(world.ball.pos);
         const shotName = classifyShot(world.ball.vel, e);
         let tag = '';
-        if (e.edge) tag = ' · <span class="tag-edge">EDGED</span>';
-        else if (e.quality > 0.82) tag = ' · <span class="tag-sweet">SWEET SPOT ⭐</span>';
-        else if (e.quality > 0.55) tag = ' · <span class="tag-clean">CRISP</span>';
-        $('lastShot').innerHTML = `${shotName}${tag}`;
+        if (e.edge) tag = '<span class="tag-edge">EDGED</span>';
+        else if (e.quality > 0.82) tag = '<span class="tag-sweet">SWEET SPOT ⭐</span>';
+        else if (e.quality > 0.55) tag = '<span class="tag-clean">CRISP</span>';
+        $('lastShot').innerHTML = `<span class="shot-name">${shotName}</span>${tag}`;
       }
     } else if (e.type === 'bounce') {
       pitchMarker.fadeOut();
@@ -394,7 +394,7 @@ function handleEvents(events) {
       triggerVfx('vfxFlash', 'flash-wicket');
       camFx.shake = Math.max(camFx.shake, 0.45);
       if ($('lastShot').innerHTML && !$('lastShot').innerHTML.includes('CAUGHT')) {
-        $('lastShot').innerHTML += ` · <span class="tag-edge">CAUGHT (${e.fielder.toUpperCase()})</span>`;
+        $('lastShot').innerHTML += `<span class="tag-edge">CAUGHT (${e.fielder.toUpperCase()})</span>`;
       }
     } else if (e.type === 'fielded') {
       if (G.hitThisBall) {
