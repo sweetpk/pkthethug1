@@ -300,7 +300,7 @@ export class HudController {
       if (!player.hasRightArm()) chips.push(`<span class="limb-chip">DISARMED</span>`);
       if (!player.hasLeftArm()) chips.push(`<span class="limb-chip">ONE-HANDED</span>`);
       if (player.hasBothLegsSevered()) chips.push(`<span class="limb-chip">NO LEGS</span>`);
-      else if (player.isLegCrippled()) chips.push(`<span class="limb-chip">CRIPPLED</span>`);
+      else if (player.isLegCrippled()) chips.push(`<span class="limb-chip">1 LEG LOST</span>`);
       this.limbStatusEl.innerHTML = chips.join("");
       this.limbStatusEl.classList.toggle("hidden", chips.length === 0);
     }

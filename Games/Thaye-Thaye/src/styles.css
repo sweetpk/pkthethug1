@@ -446,7 +446,18 @@ body {
 }
 
 .limb-chip.bleed {
-  animation: nadePulse 0.7s ease-in-out infinite;
+  animation: bleedPulse 0.75s ease-in-out infinite;
+}
+
+@keyframes bleedPulse {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 6px rgba(248, 113, 113, 0.55);
+  }
+  50% {
+    opacity: 0.72;
+    box-shadow: 0 0 10px rgba(248, 113, 113, 0.9);
+  }
 }
 
 .hud-vitals {
