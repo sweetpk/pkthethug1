@@ -8,6 +8,9 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>SUNSHORE BASTION</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Rubik:wght@600;700;800;900&display=swap" rel="stylesheet">
 <style>
   :root {
     --sl: env(safe-area-inset-left, 0px);
@@ -40,7 +43,7 @@
     overflow: hidden;
     background: #14b8f0;
     color: #fff;
-    font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    font-family: "Rubik", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     touch-action: none;
     overscroll-behavior: none;
   }
@@ -193,14 +196,16 @@
   #bossFill { background: linear-gradient(180deg, #ff7675 0%, #ff3b3b 55%, #d62828 100%); }
 
   #bannerToast {
-    font-size: clamp(18px, 3vw, 28px);
-    font-weight: 900;
-    font-style: italic;
-    letter-spacing: 0.10em;
+    font-family: "Lilita One", "Rubik", "Arial Black", sans-serif;
+    font-size: clamp(20px, 3.2vw, 30px);
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #fffbe6;
-    -webkit-text-stroke: 1.5px var(--ink);
-    text-shadow: 3px 3px 0 var(--ink);
+    paint-order: stroke fill;
+    -webkit-text-stroke: 0.14em var(--ink);
+    text-shadow: 0 0.09em 0 var(--ink);
     opacity: 0;
     transform: translateY(-6px) scale(0.95);
     transition: opacity 0.22s ease, transform 0.22s ease;
@@ -391,15 +396,55 @@
     pointer-events: none;
     display: none;
   }
-  body.touch-mode #touchLayer { display: block; }
+  body.touch-mode.in-play #touchLayer { display: block; }
   body.touch-mode .hud-bottom-desktop { display: none; }
 
-  .helm-pad {
+  .touch-helm-group {
     position: fixed;
     left: calc(16px + var(--sl));
-    bottom: calc(18px + var(--sb));
-    width: clamp(124px, 28vmin, 158px);
-    height: clamp(124px, 28vmin, 158px);
+    bottom: calc(16px + var(--sb));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    pointer-events: none;
+  }
+  .touch-sail-bar {
+    pointer-events: auto;
+    background: rgba(18, 46, 88, 0.88);
+    border: 2.5px solid var(--ink);
+    border-radius: 12px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    box-shadow: 3px 3px 0 var(--ink);
+    touch-action: manipulation;
+  }
+  .t-gear-btn {
+    border: 2px solid transparent;
+    background: rgba(255, 255, 255, 0.10);
+    color: #d6f3ff;
+    border-radius: 8px;
+    padding: 5px 10px;
+    min-width: 34px;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    touch-action: manipulation;
+    transition: transform 0.08s ease, background 0.1s ease;
+  }
+  .t-gear-btn:active { transform: scale(0.94); }
+  .t-gear-btn.active {
+    background: linear-gradient(180deg, #6ff7ff 0%, #19c8f5 100%);
+    color: var(--ink);
+    border-color: var(--ink);
+  }
+  .helm-pad {
+    position: relative;
+    width: clamp(120px, 26vmin, 152px);
+    height: clamp(120px, 26vmin, 152px);
     border-radius: 50%;
     background: rgba(18, 46, 88, 0.72);
     border: 2.5px solid var(--ink);
@@ -407,28 +452,17 @@
     pointer-events: auto;
     touch-action: none;
   }
-  .helm-pips {
+  .helm-arrow {
     position: absolute;
-    left: 9px;
     top: 50%;
     transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    font-size: 11px;
+    color: rgba(155, 232, 255, 0.58);
     pointer-events: none;
+    line-height: 1;
   }
-  .helm-pip {
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    background: #274c80;
-    border: 2px solid var(--ink);
-    transition: transform 0.12s, background 0.12s;
-  }
-  .helm-pip.on {
-    background: var(--aqua);
-    transform: scale(1.32);
-  }
+  .helm-arrow.left { left: 10px; }
+  .helm-arrow.right { right: 10px; }
   .helm-knob {
     position: absolute;
     left: 50%;
@@ -540,14 +574,16 @@
     box-shadow: 3px 3px 0 rgba(12, 24, 51, 0.45);
   }
   .game-title {
-    font-size: clamp(36px, 6vw, 56px);
-    font-weight: 900;
-    font-style: italic;
-    letter-spacing: 0.02em;
-    line-height: 0.96;
+    font-family: "Lilita One", "Rubik", "Arial Black", sans-serif;
+    font-size: clamp(38px, 6.2vw, 58px);
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    line-height: 1.04;
     color: #ffe26a;
-    -webkit-text-stroke: 2px var(--ink);
-    text-shadow: 4px 4px 0 var(--ink);
+    paint-order: stroke fill;
+    -webkit-text-stroke: 0.13em var(--ink);
+    text-shadow: 0 0.08em 0 var(--ink);
   }
   .record-strip {
     display: flex;
@@ -617,13 +653,15 @@
     border-bottom: 2px solid rgba(12, 24, 51, 0.45);
   }
   .panel-title {
-    font-size: 22px;
-    font-weight: 900;
-    font-style: italic;
-    letter-spacing: 0.06em;
+    font-family: "Lilita One", "Rubik", "Arial Black", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.05em;
     color: var(--gold);
-    -webkit-text-stroke: 1px var(--ink);
-    text-shadow: 2px 2px 0 var(--ink);
+    paint-order: stroke fill;
+    -webkit-text-stroke: 0.13em var(--ink);
+    text-shadow: 0 0.08em 0 var(--ink);
     text-transform: uppercase;
   }
   .back-btn {
@@ -822,7 +860,7 @@
     #menuMain { justify-content: center; padding-left: 18px; background: rgba(10, 22, 48, 0.35); }
     #menuShipyard { justify-content: center; padding-right: 18px; align-items: flex-end; }
   }
-  @media (max-height: 460px) {
+  @media (max-height: 480px) {
     .menu-layer { overflow-y: auto; }
     #menuMain { padding-top: calc(46px + var(--st)); padding-bottom: 12px; }
     .main-stack { gap: 7px; max-width: 300px; }
@@ -832,10 +870,34 @@
     .nav-btn { padding: 9px 14px; font-size: 13px; border-radius: 11px; }
     .nav-btn.primary { padding: 10px 15px; font-size: 14px; }
     .panel-card { padding: 14px; }
+    #menuShipyard {
+      justify-content: flex-end;
+      align-items: center;
+      padding: calc(48px + var(--st)) calc(14px + var(--sr)) calc(12px + var(--sb)) 14px;
+    }
+    #menuShipyard .panel-card {
+      max-width: min(46vw, 350px);
+      max-height: calc(100vh - 64px - var(--st) - var(--sb));
+      padding: 12px 14px;
+    }
+    #menuShipyard .panel-head { margin-bottom: 10px; padding-bottom: 7px; }
+    #menuShipyard .livery-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+    #menuShipyard .livery-btn { padding: 7px 8px; gap: 7px; border-radius: 10px; }
+    #menuShipyard .swatch { width: 18px; height: 18px; flex: 0 0 18px; border-radius: 5px; }
+    #menuShipyard .livery-name { font-size: 11px; }
+    #menuShipyard .fleet-list { gap: 5px; }
+    #menuShipyard .fleet-row { padding: 6px 8px; font-size: 11px; gap: 7px; }
+    #menuShipyard .fleet-row b { min-width: 86px; font-size: 11px; }
     .upgrade-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
     .upg-card { flex-direction: column; text-align: center; padding: 10px 8px; }
     #minimap { width: 66px; height: 66px; }
-    .helm-pad { width: 114px; height: 114px; }
+    .touch-helm-group { gap: 6px; bottom: calc(12px + var(--sb)); }
+    .t-gear-btn { padding: 4px 9px; min-width: 30px; font-size: 10px; }
+    .helm-pad { width: 108px; height: 108px; }
     .touch-actions { --tb: 50px; width: 158px; height: 158px; }
   }
 
@@ -910,13 +972,15 @@
   .rotate-icon { font-size: 36px; display: inline-block; animation: rotatePhoneBastion 2.1s ease-in-out infinite; }
   @keyframes rotatePhoneBastion { 0%, 20% { transform: rotate(0deg); } 50%, 75% { transform: rotate(-90deg); } 100% { transform: rotate(0deg); } }
   .rotate-title {
-    font-size: 20px;
-    font-weight: 900;
-    font-style: italic;
+    font-family: "Lilita One", "Rubik", "Arial Black", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
     letter-spacing: 0.05em;
     color: var(--gold);
-    -webkit-text-stroke: 1px var(--ink);
-    text-shadow: 2px 2px 0 var(--ink);
+    paint-order: stroke fill;
+    -webkit-text-stroke: 0.13em var(--ink);
+    text-shadow: 0 0.08em 0 var(--ink);
   }
   .rotate-desc { font-size: 12px; line-height: 1.45; color: #dff5ff; font-weight: 600; }
   @media (prefers-reduced-motion: reduce) {
@@ -1017,14 +1081,18 @@
 
   <!-- MOBILE TOUCH CONTROLS -->
   <div id="touchLayer">
-    <div class="helm-pad" id="helmPad">
-      <div class="helm-pips">
-        <div class="helm-pip" id="pip2"></div>
-        <div class="helm-pip on" id="pip1"></div>
-        <div class="helm-pip" id="pip0"></div>
+    <div class="touch-helm-group">
+      <div class="touch-sail-bar" role="group" aria-label="Sail Speed">
+        <button type="button" class="t-gear-btn" data-gear="0" aria-label="Anchor">0</button>
+        <button type="button" class="t-gear-btn active" data-gear="1" aria-label="Half Sail">&frac12;</button>
+        <button type="button" class="t-gear-btn" data-gear="2" aria-label="Full Sail">FULL</button>
       </div>
-      <div class="helm-knob" id="helmKnob">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+      <div class="helm-pad" id="helmPad">
+        <span class="helm-arrow left" aria-hidden="true">&#9664;</span>
+        <span class="helm-arrow right" aria-hidden="true">&#9654;</span>
+        <div class="helm-knob" id="helmKnob">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+        </div>
       </div>
     </div>
 
@@ -1169,7 +1237,7 @@
         <button class="back-btn" id="controlsBackBtn">BACK</button>
       </div>
       <div class="ctrl-grid">
-        <div class="ctrl-cell"><b>SAIL &amp; HELM</b>W / S Sails &bull; A / D Steer &bull; Left Stick on Touch</div>
+        <div class="ctrl-cell"><b>SAIL &amp; HELM</b>W / S Sails &bull; A / D Steer &bull; Touch Stick + Sail Buttons</div>
         <div class="ctrl-cell"><b>BROADSIDES</b>Q Port &bull; E Starboard &bull; SPACE Auto-Fire</div>
         <div class="ctrl-cell"><b>ARTILLERY</b>R Sky Mortar &bull; &lt;42m = Molten Heavy Shot</div>
         <div class="ctrl-cell"><b>RAM &amp; CAMERA</b>SHIFT Surge + Kegs &bull; Drag Orbit &bull; C Reset</div>
@@ -1870,6 +1938,7 @@
     uniform mat4 uModel;
     uniform float uTime;
     uniform float uSailBillow;
+    uniform vec2 uViewport;
     uniform vec2 uInvViewport;
     uniform float uOutlinePx;
     varying vec3 vWorldPos;
@@ -1883,12 +1952,15 @@
       }
       vec4 clipPos = uMVP * vec4(p, 1.0);
       float snLen = length(aSmoothNormal);
-      if (snLen > 0.05) {
+      if (snLen > 0.05 && clipPos.w > 0.1) {
         vec2 cn = (uMVP * vec4(aSmoothNormal / snLen, 0.0)).xy;
-        float cnLen = length(cn);
-        if (cnLen > 0.0001) {
-          float distScale = clamp(clipPos.w, 8.0, 95.0) * (1.0 - smoothstep(135.0, 290.0, clipPos.w) * 0.65);
-          clipPos.xy += (cn / cnLen) * uInvViewport * (uOutlinePx * distScale);
+        vec2 cnPx = cn * uViewport;
+        float cnLen = length(cnPx);
+        if (cnLen > 0.001) {
+          float distFade = mix(1.0, 0.35, smoothstep(45.0, 175.0, clipPos.w));
+          float nearFade = smoothstep(3.0, 12.0, clipPos.w);
+          float px = uOutlinePx * clamp(snLen, 0.0, 1.25) * distFade * nearFade;
+          clipPos.xy += (cnPx / cnLen) * uInvViewport * (px * clipPos.w);
         }
       }
       vWorldPos = (uModel * vec4(p, 1.0)).xyz;
@@ -1899,9 +1971,9 @@
     uniform vec3 uCamPos;
     uniform vec3 uFogColor;
     void main() {
-      vec3 ink = vec3(0.05, 0.09, 0.21);
+      vec3 ink = vec3(0.06, 0.11, 0.24);
       float camDist = length(uCamPos - vWorldPos);
-      float fog = smoothstep(190.0, 365.0, camDist);
+      float fog = smoothstep(185.0, 355.0, camDist);
       gl_FragColor = vec4(mix(ink, uFogColor, fog), 1.0);
     }
   `);
@@ -1933,7 +2005,7 @@
   const L_SKY = cacheLocs(skyProg, ['aPos'], ['uVP', 'uCamPos', 'uSkyZenith', 'uSkyMid', 'uSkyHorizon', 'uSunDir', 'uSunColor']);
   const L_OCEAN = cacheLocs(oceanProg, ['aXZ'], ['uVP', 'uTime', 'uCamPos', 'uSunDir', 'uSunColor', 'uFogColor', 'uShallowCol', 'uDeepCol', 'uObstacles[0]']);
   const L_SOLID = cacheLocs(solidProg, ['aPos', 'aNormal', 'aColor', 'aWind'], ['uMVP', 'uModel', 'uTime', 'uSailBillow', 'uCamPos', 'uSunDir', 'uSunColor', 'uFogColor', 'uFlash', 'uUnlit']);
-  const L_OUTLINE = cacheLocs(outlineProg, ['aPos', 'aSmoothNormal', 'aWind'], ['uMVP', 'uModel', 'uTime', 'uSailBillow', 'uInvViewport', 'uOutlinePx', 'uCamPos', 'uFogColor']);
+  const L_OUTLINE = cacheLocs(outlineProg, ['aPos', 'aSmoothNormal', 'aWind'], ['uMVP', 'uModel', 'uTime', 'uSailBillow', 'uViewport', 'uInvViewport', 'uOutlinePx', 'uCamPos', 'uFogColor']);
   const L_WFX = cacheLocs(waterFxProg, ['aPos', 'aCol'], ['uVP']);
 
   // =========================================================================
@@ -1952,7 +2024,9 @@
   };
 
   class MeshBuilder {
-    constructor() { this.data = []; }
+    constructor() { this.data = []; this.ow = 1.0; }
+
+    setOutline(w) { this.ow = w; return this; }
 
     tri(ax, ay, az, bx, by, bz, cx, cy, cz, col, windA = 0, windB = 0, windC = 0) {
       const ux = bx - ax, uy = by - ay, uz = bz - az;
@@ -1962,11 +2036,11 @@
       let nz = ux * vy - uy * vx;
       const len = Math.hypot(nx, ny, nz) || 1;
       nx /= len; ny /= len; nz /= len;
-      const r = col[0], g = col[1], b = col[2];
+      const r = col[0], g = col[1], b = col[2], ow = this.ow;
       this.data.push(
-        ax, ay, az, nx, ny, nz, r, g, b, windA,
-        bx, by, bz, nx, ny, nz, r, g, b, windB,
-        cx, cy, cz, nx, ny, nz, r, g, b, windC
+        ax, ay, az, nx, ny, nz, r, g, b, windA, ow,
+        bx, by, bz, nx, ny, nz, r, g, b, windB, ow,
+        cx, cy, cz, nx, ny, nz, r, g, b, windC, ow
       );
     }
 
@@ -1976,8 +2050,11 @@
     }
 
     quadDouble(ax, ay, az, bx, by, bz, cx, cy, cz, dx, dy, dz, col, wa = 0, wb = 0, wc = 0, wd = 0) {
+      const prevOw = this.ow;
+      this.ow = 0;
       this.quad(ax, ay, az, bx, by, bz, cx, cy, cz, dx, dy, dz, col, wa, wb, wc, wd);
       this.quad(ax, ay, az, dx, dy, dz, cx, cy, cz, bx, by, bz, col, wa, wd, wc, wb);
+      this.ow = prevOw;
     }
 
     box(cx, cy, cz, sx, sy, sz, col, yaw = 0, pitch = 0) {
@@ -1999,14 +2076,17 @@
       this.quad(...p4, ...p5, ...p1, ...p0, col);
     }
 
-    // Angled shroud/stay beam between two 3D points
+    // Angled shroud/stay beam between two 3D points (no bloated outline on thin ropes)
     strut(ax, ay, az, bx, by, bz, thickness, col) {
+      const prevOw = this.ow;
+      this.ow = 0;
       const dx = bx - ax, dy = by - ay, dz = bz - az;
       const len = Math.hypot(dx, dy, dz) || 1;
       const yaw = Math.atan2(dx, dz);
       const horiz = Math.hypot(dx, dz);
       const pitch = -Math.atan2(dy, horiz);
       this.box((ax + bx) * 0.5, (ay + by) * 0.5, (az + bz) * 0.5, thickness, thickness, len, col, yaw, pitch);
+      this.ow = prevOw;
     }
 
     prism(cx, y0, y1, cz, rBot, rTop, segs, col, jitter = 0, seed = 1) {
@@ -2057,12 +2137,14 @@
     }
 
     palmTree(x, y, z, scale = 1, leanAngle = 0) {
+      const prevOw = this.ow;
       const trunkCol = hexRGB('#9a6842');
       const frondCol = hexRGB('#36d160');
       const frondDark = hexRGB('#249e45');
       let tx = x, ty = y, tz = z;
       const lx = Math.cos(leanAngle) * 0.45 * scale;
       const lz = Math.sin(leanAngle) * 0.45 * scale;
+      this.ow = 0.45;
       for (let i = 0; i < 5; i++) {
         const nx = tx + lx * (i * 0.35 + 0.22);
         const ny = ty + 1.25 * scale;
@@ -2070,6 +2152,7 @@
         this.box((tx + nx) * 0.5, (ty + ny) * 0.5, (tz + nz) * 0.5, (0.44 - i * 0.05) * scale, 1.35 * scale, (0.44 - i * 0.05) * scale, trunkCol);
         tx = nx; ty = ny; tz = nz;
       }
+      this.ow = 0;
       for (let f = 0; f < 7; f++) {
         const a = (f / 7) * Math.PI * 2 + leanAngle * 0.5;
         const ca = Math.cos(a), sa = Math.sin(a);
@@ -2083,6 +2166,7 @@
         this.tri(tx, ty + 0.1 * scale, tz, tipX, tipY, tipZ, mx + px, my, mz + pz, c, 0, 0.5, 0.25);
         this.tri(tx, ty + 0.1 * scale, tz, mx - px, my, mz - pz, tipX, tipY, tipZ, c, 0, 0.25, 0.5);
       }
+      this.ow = prevOw;
     }
 
     // Sculpted 7-Station Naval Hull (verified outward CCW normals, swept bulwarks & generous freeboard)
@@ -2153,11 +2237,14 @@
 
     // Curved 4x3 Billowing Square Sail
     sail(cx, yBot, yTop, z, width, colTop, colBot) {
+      const prevOw = this.ow;
       const cols = 4, rows = 3;
       const hw = width * 0.5;
       const yardCol = hexRGB('#633e23');
+      this.ow = 0.42;
       this.box(cx, yTop + 0.10, z, width * 1.08, 0.18, 0.18, yardCol);
       this.box(cx, yBot - 0.08, z, width * 0.96, 0.14, 0.14, yardCol);
+      this.ow = prevOw;
       const pts = [];
       for (let r = 0; r <= rows; r++) {
         const rv = r / rows;
@@ -2196,16 +2283,20 @@
 
     // Tapered Cannon with Brass Ring
     cannon(x, y, z, side, ironCol, brassCol) {
+      const prevOw = this.ow;
+      this.ow = 0.50;
       this.box(x + side * 0.45, y, z, 1.25, 0.34, 0.34, ironCol);
       this.box(x + side * 1.05, y, z, 0.22, 0.42, 0.42, brassCol);
+      this.ow = prevOw;
     }
 
     build() {
       const src = this.data;
-      const vertCount = src.length / 10;
+      const vertCount = src.length / 11;
       const acc = new Map();
       for (let i = 0; i < vertCount; i++) {
-        const j = i * 10;
+        const j = i * 11;
+        if (src[j + 10] <= 0.01) continue;
         const key = `${Math.round(src[j] * 200)}_${Math.round(src[j + 1] * 200)}_${Math.round(src[j + 2] * 200)}`;
         let sum = acc.get(key);
         if (!sum) { sum = [0, 0, 0]; acc.set(key, sum); }
@@ -2216,13 +2307,21 @@
       // Pack 13 floats/vert: pos(3), flatNormal(3), smoothNormal(3), color(3), wind(1)
       const out = new Float32Array(vertCount * 13);
       for (let i = 0; i < vertCount; i++) {
-        const j = i * 10, k = i * 13;
-        const key = `${Math.round(src[j] * 200)}_${Math.round(src[j + 1] * 200)}_${Math.round(src[j + 2] * 200)}`;
-        const sum = acc.get(key);
-        const len = Math.hypot(sum[0], sum[1], sum[2]);
-        const snx = len > 0.05 ? sum[0] / len : 0;
-        const sny = len > 0.05 ? sum[1] / len : 0;
-        const snz = len > 0.05 ? sum[2] / len : 0;
+        const j = i * 11, k = i * 13;
+        const ow = src[j + 10];
+        let snx = 0, sny = 0, snz = 0;
+        if (ow > 0.01) {
+          const key = `${Math.round(src[j] * 200)}_${Math.round(src[j + 1] * 200)}_${Math.round(src[j + 2] * 200)}`;
+          const sum = acc.get(key);
+          if (sum) {
+            const len = Math.hypot(sum[0], sum[1], sum[2]);
+            if (len > 0.05) {
+              snx = (sum[0] / len) * ow;
+              sny = (sum[1] / len) * ow;
+              snz = (sum[2] / len) * ow;
+            }
+          }
+        }
         out[k] = src[j]; out[k + 1] = src[j + 1]; out[k + 2] = src[j + 2];
         out[k + 3] = src[j + 3]; out[k + 4] = src[j + 4]; out[k + 5] = src[j + 5];
         out[k + 6] = snx; out[k + 7] = sny; out[k + 8] = snz;
@@ -2332,24 +2431,28 @@
     // Star-Fort Stone Battlement Walls + Crenellated Merlons
     mb.prism(0, 5.2, 10.6, 0, 14.0, 12.8, 8, wallStone);
     mb.prism(0, 10.6, 11.4, 0, 13.3, 13.3, 8, wallTrim);
+    mb.setOutline(0.65);
     for (let m = 0; m < 16; m++) {
       const ma = (m / 16) * Math.PI * 2;
       mb.box(Math.cos(ma) * 12.2, 12.1, Math.sin(ma) * 12.2, 1.7, 1.3, 1.1, wallStone, -ma);
     }
 
     // Inner Keep Barracks with Warm Terracotta Roofs
+    mb.setOutline(0.85);
     mb.box(-4.2, 12.2, 3.8, 4.4, 2.6, 3.4, whiteCol, 0.25);
     mb.box(-4.2, 13.8, 3.8, 4.8, 1.0, 3.8, redRoof, 0.25);
     mb.box(4.6, 12.0, -4.0, 4.0, 2.4, 3.2, whiteCol, -0.35);
     mb.box(4.6, 13.5, -4.0, 4.4, 1.0, 3.6, redRoof, -0.35);
 
     // 4 Corner Bastion Watchtowers
+    mb.setOutline(0.95);
     [[-9.5, -9.5], [9.5, -9.5], [9.5, 9.5], [-9.5, 9.5]].forEach(([tx, tz]) => {
       mb.prism(tx, 5.0, 13.0, tz, 3.5, 3.0, 6, wallStone);
       mb.prism(tx, 12.8, 13.7, tz, 3.6, 3.6, 6, wallTrim);
     });
 
     // Central Striped Lighthouse Spire + Gallery + Lantern Dome
+    mb.setOutline(0.90);
     mb.prism(0, 11.2, 16.0, 0, 3.4, 2.9, 8, whiteCol);
     mb.prism(0, 16.0, 20.5, 0, 2.9, 2.4, 8, redRoof);
     mb.prism(0, 20.5, 24.4, 0, 2.4, 2.0, 8, whiteCol);
@@ -2365,19 +2468,24 @@
         const dist = 20.5 + step * 3.2;
         const px = ca * dist, pz = sa * dist;
         const py = 2.6 - step * 0.22;
+        mb.setOutline(0.60);
         mb.box(px, py, pz, 3.7, 0.44, 4.1, woodDeck, -ang + Math.PI * 0.5);
+        mb.setOutline(0.32);
         mb.box(px + rx, py + 0.65, pz + rz, 0.30, 1.2, 0.30, woodDark);
         mb.box(px - rx, py + 0.65, pz - rz, 0.30, 1.2, 0.30, woodDark);
         if (step % 2 === 1) {
+          mb.setOutline(0.45);
           mb.box(px + rx * 0.88, py - 2.4, pz + rz * 0.88, 0.46, 5.2, 0.46, woodDark);
           mb.box(px - rx * 0.88, py - 2.4, pz - rz * 0.88, 0.46, 5.2, 0.46, woodDark);
           mb.strut(px + rx * 0.85, py - 0.5, pz + rz * 0.85, px - rx * 0.85, py - 3.6, pz - rz * 0.85, 0.22, woodDark);
         }
       }
       const endD = 32.5;
+      mb.setOutline(0.65);
       mb.box(ca * endD, 2.4, sa * endD, 1.4, 1.4, 1.4, woodDeck, ang);
       mb.box(ca * (endD - 2.4) - sa * 1.5, 2.1, sa * (endD - 2.4) + ca * 1.5, 1.1, 1.1, 0.5, buoyOrange, ang);
     });
+    mb.setOutline(1.0);
 
     // Lush Tropical Palms
     [
@@ -2436,8 +2544,10 @@
     mh.shipHull(14.2, 5.1, 2.4, hexRGB(liv.keel), hexRGB(liv.hull), hexRGB(liv.stripe), hexRGB(liv.rail), hexRGB(liv.deck));
 
     // Stern Captain Quarterdeck Cabin + Windows + Roof + Lanterns
+    mh.setOutline(0.75);
     mh.box(0, 2.2, 4.1, 3.1, 1.95, 2.8, hexRGB(liv.cabin));
     mh.box(0, 3.3, 4.1, 3.5, 0.36, 3.2, hexRGB(liv.roof));
+    mh.setOutline(0.35);
     mh.box(0, 2.35, 5.55, 2.2, 0.65, 0.16, gold); // Glowing stern gallery window band
     mh.box(-1.45, 2.65, 5.65, 0.42, 0.58, 0.42, gold);
     mh.box(1.45, 2.65, 5.65, 0.42, 0.58, 0.42, gold);
@@ -2446,11 +2556,14 @@
     mh.box(0, 2.55, 2.0, 0.95, 0.95, 0.18, gold);
 
     // Reinforced Iron & Gold Ramming Prow + Bowsprit
+    mh.setOutline(0.80);
     mh.box(0, 1.4, -7.5, 0.72, 1.05, 2.5, iron);
     mh.box(0, 1.75, -8.3, 0.98, 0.58, 1.1, gold);
+    mh.setOutline(0.40);
     mh.box(0, 2.55, -8.4, 0.26, 0.26, 4.9, mast, 0, 0.30);
 
     // Masts + Crow's Nests + Shroud Rigging
+    mh.setOutline(0.45);
     mh.box(0, 6.5, -1.9, 0.44, 11.4, 0.44, mast);
     mh.box(0, 10.2, -1.9, 1.45, 0.32, 1.45, mast); // Main crow's nest
     mh.box(0, 5.5, 2.2, 0.38, 8.8, 0.38, mast);
@@ -2492,6 +2605,7 @@
 
     if (kind === 'sloop') {
       mb.shipHull(10.6, 4.0, 2.0, hexRGB('#42281d'), hexRGB('#6e4230'), hexRGB('#d94141'), hexRGB('#331d14'), deckCol);
+      mb.setOutline(0.45);
       mb.box(0, 5.4, -0.3, 0.34, 9.2, 0.34, mastCol);
       mb.box(0, 1.9, -6.0, 0.22, 0.22, 3.2, mastCol, 0, 0.28);
       mb.sail(0, 3.2, 6.3, -0.45, 4.9, hexRGB('#f74949'), hexRGB('#f8f1e6'));
@@ -2504,16 +2618,21 @@
       }
     } else if (kind === 'brander') {
       mb.shipHull(10.0, 3.8, 1.9, hexRGB('#241a18'), hexRGB('#3a2723'), hexRGB('#ff5722'), hexRGB('#1f1514'), hexRGB('#422a23'));
+      mb.setOutline(0.45);
       mb.box(0, 5.0, 0.2, 0.32, 8.0, 0.32, mastCol);
       mb.sail(0, 3.2, 7.6, 0.05, 4.5, hexRGB('#ff7029'), hexRGB('#2a1f1e'));
+      mb.setOutline(0.75);
       mb.box(0, 1.8, -3.7, 1.6, 1.3, 1.6, hexRGB('#ff4526'));
       mb.puff(0, 2.8, -3.8, 1.0, hexRGB('#ffcf40'));
       mb.box(-0.9, 1.5, 0.9, 1.0, 1.15, 1.0, hexRGB('#d83226'));
       mb.box(0.9, 1.5, 0.9, 1.0, 1.15, 1.0, hexRGB('#d83226'));
     } else if (kind === 'brig') {
       mb.shipHull(14.4, 5.1, 2.4, hexRGB('#301d1f'), hexRGB('#593136'), hexRGB('#d62839'), hexRGB('#261517'), deckCol);
+      mb.setOutline(0.75);
       mb.box(0, 2.2, 4.3, 2.9, 1.8, 2.6, hexRGB('#3d2225'));
+      mb.setOutline(0.35);
       mb.box(0, 2.3, 5.65, 2.0, 0.55, 0.16, brass);
+      mb.setOutline(0.45);
       mb.box(0, 6.4, -1.8, 0.42, 11.2, 0.42, mastCol);
       mb.box(0, 9.8, -1.8, 1.35, 0.28, 1.35, mastCol);
       mb.box(0, 5.5, 2.4, 0.36, 9.0, 0.36, mastCol);
@@ -2532,19 +2651,25 @@
       }
     } else if (kind === 'mortar') {
       mb.shipHull(15.6, 5.9, 2.6, hexRGB('#271a38'), hexRGB('#4a316e'), hexRGB('#a367e8'), hexRGB('#241836'), hexRGB('#6c527a'));
+      mb.setOutline(0.75);
       mb.box(0, 2.4, 4.7, 3.3, 2.0, 2.8, hexRGB('#36234f'));
+      mb.setOutline(0.45);
       mb.box(0, 6.4, 2.7, 0.42, 10.6, 0.42, mastCol);
       mb.sail(0, 4.2, 8.2, 2.55, 5.8, hexRGB('#9d5ae8'), hexRGB('#4f2b82'));
       mb.sail(0, 8.4, 10.4, 2.55, 4.2, hexRGB('#e0c4ff'), hexRGB('#9d5ae8'));
+      mb.setOutline(0.75);
       mb.prism(0, 1.6, 3.9, -2.2, 1.45, 1.1, 8, brass);
       mb.box(0, 3.7, -2.6, 1.55, 1.75, 1.55, hexRGB('#2f2a38'), 0, 0.38);
     } else {
       // Dreadnought Boss Man O' War
       mb.shipHull(22.0, 8.0, 3.4, hexRGB('#18161d'), hexRGB('#2e2836'), hexRGB('#e5b43c'), hexRGB('#191520'), hexRGB('#5c4130'));
+      mb.setOutline(0.80);
       mb.box(0, 3.1, 6.6, 4.6, 2.7, 4.0, hexRGB('#221c29'));
+      mb.setOutline(0.35);
       mb.box(0, 3.2, 8.65, 3.6, 0.85, 0.2, hexRGB('#ffd447'));
       mb.box(-2.2, 3.5, 8.6, 0.7, 0.9, 0.7, hexRGB('#ffcf40'));
       mb.box(2.2, 3.5, 8.6, 0.7, 0.9, 0.7, hexRGB('#ffcf40'));
+      mb.setOutline(0.48);
       mb.box(0, 8.4, -4.4, 0.54, 14.8, 0.54, mastCol);
       mb.box(0, 9.5, 0.4, 0.60, 16.8, 0.60, mastCol);
       mb.box(0, 7.6, 5.2, 0.48, 12.8, 0.48, mastCol);
@@ -2588,6 +2713,7 @@
   const repairCrateMesh = (() => {
     const mb = new MeshBuilder();
     mb.box(0, 0, 0, 2.2, 1.7, 2.2, hexRGB('#d99b56'));
+    mb.setOutline(0.35);
     mb.box(0, 0.92, 0, 1.4, 0.2, 0.45, hexRGB('#2ee59d'));
     mb.box(0, 0.92, 0, 0.45, 0.2, 1.4, hexRGB('#2ee59d'));
     return mb.build();
@@ -2596,6 +2722,7 @@
   const goldCrateMesh = (() => {
     const mb = new MeshBuilder();
     mb.box(0, 0, 0, 2.1, 1.5, 1.6, hexRGB('#8c4e24'));
+    mb.setOutline(0.55);
     mb.box(0, 0.55, 0, 2.2, 0.55, 1.7, hexRGB('#ffd447'));
     return mb.build();
   })();
@@ -2963,6 +3090,15 @@
       document.getElementById(id).classList.toggle('hidden', k !== layer);
     });
     document.getElementById('hud').style.display = (layer === 'none' || layer === 'pause' || layer === 'upgrade') ? 'flex' : 'none';
+    const inPlay = layer === 'none';
+    document.body.classList.toggle('in-play', inPlay);
+    if (!inPlay) {
+      touchSteer = 0;
+      if (typeof helmKnob !== 'undefined' && helmKnob) {
+        helmPid = null;
+        helmKnob.style.transform = 'translate(0px, 0px)';
+      }
+    }
   }
 
   function returnToMainMenu() {
@@ -3112,10 +3248,9 @@
   }
 
   function syncGearButtons() {
-    document.querySelectorAll('.gear-btn').forEach(btn => {
+    document.querySelectorAll('.gear-btn, .t-gear-btn').forEach(btn => {
       btn.classList.toggle('active', parseInt(btn.dataset.gear, 10) === player.gear);
     });
-    [0, 1, 2].forEach(i => document.getElementById('pip' + i).classList.toggle('on', i === player.gear));
   }
 
   // --- Combat Actions ---
@@ -3349,8 +3484,9 @@
   window.addEventListener('pointerup', (e) => { if (e.pointerId === dragPid) draggingCam = false; });
   glCanvas.addEventListener('wheel', (e) => { state.camDist = clamp(state.camDist + e.deltaY * 0.025, 24, 58); }, { passive: true });
 
-  // Desktop & Mobile Weapon Buttons
+  // Desktop & Mobile Weapon & Sail Buttons
   document.querySelectorAll('.gear-btn').forEach(b => b.addEventListener('click', () => { sfx.init(); setGear(parseInt(b.dataset.gear, 10)); }));
+  document.querySelectorAll('.t-gear-btn').forEach(b => b.addEventListener('pointerdown', (e) => { e.preventDefault(); sfx.init(); setGear(parseInt(b.dataset.gear, 10)); }));
   document.getElementById('btnPort').addEventListener('click', () => { sfx.init(); fireSideBroadside(-1); });
   document.getElementById('btnStbd').addEventListener('click', () => { sfx.init(); fireSideBroadside(1); });
   document.getElementById('btnMortar').addEventListener('click', () => { sfx.init(); fireMortar(); });
@@ -3361,7 +3497,7 @@
   document.getElementById('tMortar').addEventListener('pointerdown', (e) => { e.preventDefault(); sfx.init(); fireMortar(); });
   document.getElementById('tSurge').addEventListener('pointerdown', (e) => { e.preventDefault(); sfx.init(); triggerSurge(); });
 
-  // Virtual Nautical Helm Pad
+  // Virtual Nautical Helm Pad (Steering Only)
   const helmPad = document.getElementById('helmPad');
   const helmKnob = document.getElementById('helmKnob');
   let helmPid = null;
@@ -3369,16 +3505,11 @@
     const rect = helmPad.getBoundingClientRect();
     const ox = rect.left + rect.width * 0.5, oy = rect.top + rect.height * 0.5;
     const maxR = rect.width * 0.36;
-    let dx = cx - ox, dy = cy - oy;
-    const dist = Math.hypot(dx, dy);
-    if (dist > maxR) { dx = (dx / dist) * maxR; dy = (dy / dist) * maxR; }
+    const dx = clamp(cx - ox, -maxR, maxR);
+    const dy = clamp(cy - oy, -maxR * 0.32, maxR * 0.32);
     helmKnob.style.transform = `translate(${dx}px, ${dy}px)`;
     const nx = dx / maxR;
-    touchSteer = Math.abs(nx) < 0.14 ? 0 : nx;
-    const ny = dy / maxR;
-    if (ny < -0.38) setGear(2);
-    else if (ny > 0.42) setGear(0);
-    else if (Math.abs(ny) < 0.25 && dist > maxR * 0.22) setGear(1);
+    touchSteer = Math.abs(nx) < 0.12 ? 0 : nx;
   }
   helmPad.addEventListener('pointerdown', (e) => { e.preventDefault(); sfx.init(); helmPid = e.pointerId; helmPad.setPointerCapture(helmPid); updateHelmTouch(e.clientX, e.clientY); });
   helmPad.addEventListener('pointermove', (e) => { if (e.pointerId === helmPid) updateHelmTouch(e.clientX, e.clientY); });
@@ -4250,10 +4381,17 @@
     if (state.mode === 'title') {
       if (state.menuLayer === 'shipyard') {
         const oa = t * 0.36 + 0.7;
-        tCamX = player.x + Math.cos(oa) * 23;
-        tCamY = 10.5;
-        tCamZ = player.z + Math.sin(oa) * 23;
-        tLookX = player.x + 5; tLookY = 4.5; tLookZ = player.z;
+        const aspect = viewW / Math.max(1, viewH);
+        const isPortrait = aspect < 1.0;
+        const orbitR = isPortrait ? 25 : 23;
+        tCamX = player.x + Math.cos(oa) * orbitR;
+        tCamY = isPortrait ? 11.5 : 10.2;
+        tCamZ = player.z + Math.sin(oa) * orbitR;
+        const rightX = Math.sin(oa), rightZ = -Math.cos(oa);
+        const shift = isPortrait ? 0 : orbitR * Math.tan(28 * Math.PI / 180) * aspect * 0.42;
+        tLookX = player.x + rightX * shift;
+        tLookY = isPortrait ? 1.8 : 4.6;
+        tLookZ = player.z + rightZ * shift;
       } else {
         const oa = t * 0.14;
         tCamX = Math.cos(oa) * 88;
@@ -4464,6 +4602,7 @@
     gl.useProgram(L_OUTLINE.prog);
     gl.cullFace(gl.FRONT);
     gl.uniform1f(L_OUTLINE.u.uTime, t);
+    gl.uniform2f(L_OUTLINE.u.uViewport, viewW, viewH);
     gl.uniform2f(L_OUTLINE.u.uInvViewport, 2.0 / viewW, 2.0 / viewH);
     gl.uniform3f(L_OUTLINE.u.uCamPos, camX, camY, camZ);
     gl.uniform3fv(L_OUTLINE.u.uFogColor, mood.horizon);
@@ -4472,50 +4611,39 @@
     gl.enableVertexAttribArray(L_OUTLINE.a.aSmoothNormal);
     gl.enableVertexAttribArray(L_OUTLINE.a.aWind);
 
-    drawOutlineMesh(fortMesh, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0.35, 2.0);
+    drawOutlineMesh(fortMesh, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0.35, 1.25);
     for (let ti = 0; ti < fort.turretCount; ti++) {
       const tur = fort.turrets[ti];
-      drawOutlineMesh(turretMesh, tur.x, tur.y, tur.z, tur.yaw, 0, 0, 1, 1, 1, 0, 1.8);
+      drawOutlineMesh(turretMesh, tur.x, tur.y, tur.z, tur.yaw, 0, 0, 1, 1, 1, 0, 1.15);
     }
     for (let i = 0; i < rockMeshes.length; i++) {
       const obs = OBSTACLES[i + 1];
-      drawOutlineMesh(rockMeshes[i], obs.x, 0, obs.z, obs.seed, 0, 0, 1, 1, 1, 0.25, 2.2);
-    }
-    for (let i = 0; i < CLOUDS.length; i++) {
-      const cl = CLOUDS[i];
-      drawOutlineMesh(cloudMesh, cl.x, cl.y, cl.z, cl.yaw, 0, 0, cl.sx, cl.sy, cl.sz, 0, 1.5);
+      drawOutlineMesh(rockMeshes[i], obs.x, 0, obs.z, obs.seed, 0, 0, 1, 1, 1, 0.25, 1.25);
     }
 
-    drawOutlineMesh(playerHullMesh, player.x, pWaveY + 0.55, player.z, player.yaw, player.pitch, player.roll, 1, 1, 1, 0.55, 2.3);
+    drawOutlineMesh(playerHullMesh, player.x, pWaveY + 0.55, player.z, player.yaw, player.pitch, player.roll, 1, 1, 1, 0.55, 1.30);
     for (let i = 0; i < enemies.length; i++) {
       const e = enemies[i];
       const wy = getWaveHeight(e.x, e.z, t) + 0.48 - (e.sinking ? e.sinkT * 3.4 : 0);
-      drawOutlineMesh(enemyMeshes[e.kind], e.x, wy, e.z, e.yaw, e.pitch, e.roll, 1, 1, 1, 0.95, 2.2);
+      drawOutlineMesh(enemyMeshes[e.kind], e.x, wy, e.z, e.yaw, e.pitch, e.roll, 1, 1, 1, 0.95, 1.25);
     }
     for (let i = 0; i < MAX_CRATES; i++) {
       const c = crates[i]; if (!c.active) continue;
       const wy = getWaveHeight(c.x, c.z, t) + 0.1 + Math.sin(t * 3 + i) * 0.16;
-      drawOutlineMesh(c.kind === 'repair' ? repairCrateMesh : goldCrateMesh, c.x, wy, c.z, c.yaw, Math.sin(t * 2 + i) * 0.12, Math.cos(t * 2.2 + i) * 0.12, 1, 1, 1, 0, 1.8);
+      drawOutlineMesh(c.kind === 'repair' ? repairCrateMesh : goldCrateMesh, c.x, wy, c.z, c.yaw, Math.sin(t * 2 + i) * 0.12, Math.cos(t * 2.2 + i) * 0.12, 1, 1, 1, 0, 1.05);
     }
     for (let i = 0; i < MAX_KEGS; i++) {
       const k = kegs[i]; if (!k.active) continue;
       const wy = getWaveHeight(k.x, k.z, t) + 0.15;
-      drawOutlineMesh(fireBarrelMesh, k.x, wy, k.z, k.yaw, 0, 0, 1, 1, 1, 0, 1.8);
+      drawOutlineMesh(fireBarrelMesh, k.x, wy, k.z, k.yaw, 0, 0, 1, 1, 1, 0, 1.05);
     }
     for (let i = 0; i < MAX_BALLS; i++) {
       const b = balls[i]; if (!b.active) continue;
-      drawOutlineMesh(b.heavy ? ballHeavyMesh : ballIronMesh, b.x, b.y, b.z, 0, 0, 0, 1, 1, 1, 0, 1.6);
+      drawOutlineMesh(b.heavy ? ballHeavyMesh : ballIronMesh, b.x, b.y, b.z, 0, 0, 0, 1, 1, 1, 0, 1.00);
     }
     for (let i = 0; i < MAX_MORTARS; i++) {
       const m = mortars[i]; if (!m.active || m.t < 0) continue;
-      drawOutlineMesh(ballMortarMesh, m.x, m.y, m.z, t * 4, t * 3, 0, 1.15, 1.15, 1.15, 0, 1.6);
-    }
-    for (let i = 0; i < MAX_PUFFS; i++) {
-      const p = puffs[i]; if (!p.active) continue;
-      const u = 1 - p.life / p.maxLife;
-      const sc = lerp(p.s0, p.s1, u) * (1 - Math.pow(u, 3) * 0.72);
-      const mesh = p.kind === 'fire' ? firePuffMesh : (p.kind === 'splash' ? splashPuffMesh : puffMesh);
-      drawOutlineMesh(mesh, p.x, p.y, p.z, p.rot, p.rot * 0.6, 0, sc, sc, sc, 0, 1.7);
+      drawOutlineMesh(ballMortarMesh, m.x, m.y, m.z, t * 4, t * 3, 0, 1.15, 1.15, 1.15, 0, 1.00);
     }
 
     gl.cullFace(gl.BACK);
@@ -4594,16 +4722,18 @@
 
       fxCtx.textAlign = 'center';
       fxCtx.textBaseline = 'middle';
+      fxCtx.lineJoin = 'round';
+      fxCtx.miterLimit = 2;
       for (let i = 0; i < MAX_POPUPS; i++) {
         const p = popups[i]; if (!p.active) continue;
         const proj = projectToScreen(p.x, p.y, p.z);
         if (!proj) continue;
         fxCtx.globalAlpha = clamp(p.life / (p.maxLife * 0.45), 0, 1);
-        fxCtx.font = `italic 900 ${p.big ? 18 : 14}px "Segoe UI", system-ui, sans-serif`;
+        fxCtx.font = `900 ${p.big ? 19 : 15}px "Rubik", system-ui, sans-serif`;
         fxCtx.fillStyle = '#0c1833';
         fxCtx.fillText(p.text, proj.x + 2, proj.y + 2);
         fxCtx.strokeStyle = '#0c1833';
-        fxCtx.lineWidth = 4.5;
+        fxCtx.lineWidth = 4;
         fxCtx.strokeText(p.text, proj.x, proj.y);
         fxCtx.fillStyle = p.color;
         fxCtx.fillText(p.text, proj.x, proj.y);
