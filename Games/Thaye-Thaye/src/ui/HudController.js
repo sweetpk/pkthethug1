@@ -62,7 +62,7 @@ export class HudController {
   onAssetsReady() {
     if (this.btnDeploy) {
       this.btnDeploy.disabled = false;
-      this.btnDeploy.textContent = "DEPLOY TO ARENA";
+      this.btnDeploy.textContent = "DEPLOY";
     }
     if (this.btnQuickDeploy) {
       this.btnQuickDeploy.disabled = false;
@@ -218,11 +218,11 @@ export class HudController {
     if (winner.isPlayer) {
       titleEl.textContent = "VICTORY";
       titleEl.style.color = "#24d8ff";
-      subEl.textContent = `Shabash! You ruled Thaye-Thaye with ${winner.kills} eliminations and ${winner.gibs} dismemberments.`;
+      subEl.textContent = `${winner.kills} Kills • ${winner.gibs} Dismemberments`;
     } else {
       titleEl.textContent = "DEFEAT";
       titleEl.style.color = "#f87171";
-      subEl.textContent = `${winner.name} claimed the arena with ${winner.kills} eliminations.`;
+      subEl.textContent = `${winner.name} won with ${winner.kills} Kills.`;
     }
 
     listEl.innerHTML = sorted

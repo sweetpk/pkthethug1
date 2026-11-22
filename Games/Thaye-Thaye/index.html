@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thaye-Thaye // Tactical Arena FPS</title>
-    <link rel="icon" type="image/png" href="../../assets/images/PK-Logo-Light.png">
-    <link rel="apple-touch-icon" href="../../assets/images/PK-Logo-Light.png">
-    <script type="module" crossorigin src="./assets/template-DRUU0Cgg.js"></script>
+    <link rel="icon" type="image/png" href="./assets/PK-Logo-Light-Da-0JOHX.png">
+    <link rel="apple-touch-icon" href="./assets/PK-Logo-Light-Da-0JOHX.png">
+    <script type="module" crossorigin src="./assets/template-BQoQCUim.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/template-CVGObuop.css">
   </head>
   <body>
@@ -131,9 +131,9 @@
         </div>
       </div>
 
-      <!-- Pause / Pointer Unlock Action Bar -->
+      <!-- Pause Overlay -->
       <div id="pointer-hint" class="pointer-hint hidden">
-        <div class="pause-title">PAUSED — CLICK VIEWPORT OR RESUME TO LOCK AIM</div>
+        <div class="pause-title">PAUSED</div>
         <div class="pause-actions">
           <button type="button" id="btn-resume-match" class="pause-btn primary">RESUME</button>
           <button type="button" id="btn-pause-fullscreen" class="pause-btn" data-fullscreen-btn>⛶ FULLSCREEN</button>
@@ -190,13 +190,11 @@
       <div class="menu-shell">
         <header class="menu-topbar">
           <div class="brand-lockup">
-            <span class="brand-kicker">INDRA SECTOR // OFFLINE ARENA</span>
             <h1 class="menu-title">THAYE<span>-THAYE</span></h1>
           </div>
           <div class="topbar-right">
             <a href="../../games.html" class="arcade-back-btn" title="Back to Arcade">← ARCADE</a>
             <button type="button" id="btn-fullscreen" class="fs-btn" data-fullscreen-btn title="Toggle Fullscreen (F)">⛶ FULLSCREEN</button>
-            <div class="stage-crumb" id="stage-crumb">MAIN LOBBY</div>
           </div>
         </header>
 
@@ -205,32 +203,26 @@
           <nav class="home-nav">
             <button type="button" id="btn-nav-play" class="nav-item primary">
               <span class="nav-label">PLAY MATCH</span>
-              <span class="nav-sub">CONFIGURE RULES &amp; DEPLOY</span>
               <span class="nav-arrow">→</span>
             </button>
             <button type="button" id="btn-quick-deploy" class="nav-item accent" disabled>
               <span class="nav-label">LOADING ASSETS...</span>
-              <span class="nav-sub">INSTANT CASUAL DEATHMATCH</span>
               <span class="nav-arrow">▸</span>
             </button>
             <button type="button" id="btn-nav-arsenal" class="nav-item">
               <span class="nav-label">ARSENAL</span>
-              <span class="nav-sub">INSPECT 5 WEAPONS IN 3D</span>
               <span class="nav-arrow">→</span>
             </button>
             <button type="button" id="btn-nav-settings" class="nav-item">
               <span class="nav-label">SETTINGS</span>
-              <span class="nav-sub">AIM SENSITIVITY &amp; AUDIO</span>
               <span class="nav-arrow">→</span>
             </button>
             <button type="button" id="btn-nav-controls" class="nav-item">
               <span class="nav-label">CONTROLS</span>
-              <span class="nav-sub">KEYBINDS &amp; COMBAT MOVES</span>
               <span class="nav-arrow">→</span>
             </button>
             <a href="../../games.html" id="btn-back-arcade" class="nav-item exit-arcade">
               <span class="nav-label">BACK TO ARCADE</span>
-              <span class="nav-sub">RETURN TO GAMES HUB</span>
               <span class="nav-arrow">←</span>
             </a>
           </nav>
@@ -243,10 +235,9 @@
               <button type="button" class="back-btn" data-back="home">← BACK</button>
               <span class="stage-title">MATCH SETUP</span>
             </div>
-            <p class="stage-desc">5-Operative Free-For-All. First combatant to reach the elimination cap claims the sector.</p>
 
             <div class="menu-section">
-              <label class="menu-label">BOT DIFFICULTY <span id="diff-desc">FAIR REACTION &amp; SPREAD</span></label>
+              <label class="menu-label">BOT DIFFICULTY</label>
               <div class="seg-group" id="diff-group">
                 <button type="button" class="seg-btn active" data-value="normal">CASUAL</button>
                 <button type="button" class="seg-btn" data-value="hard">VETERAN</button>
@@ -265,7 +256,7 @@
               <input type="hidden" id="opt-score-limit" value="20" />
             </div>
 
-            <button id="btn-deploy" class="deploy-btn" disabled>LOADING ARENA &amp; ASSETS...</button>
+            <button id="btn-deploy" class="deploy-btn" disabled>LOADING ASSETS...</button>
           </div>
         </section>
 
@@ -274,7 +265,7 @@
           <div class="stage-card">
             <div class="stage-head">
               <button type="button" class="back-btn" data-back="home">← BACK</button>
-              <span class="stage-title">OPERATIVE ARSENAL</span>
+              <span class="stage-title">ARSENAL</span>
             </div>
 
             <div class="arsenal-list" id="arsenal-tabs">
@@ -343,11 +334,6 @@
             </div>
           </div>
         </section>
-
-        <footer class="menu-footer">
-          <span>BHARAT ARENA • 5 COMBATANTS</span>
-          <span>THAYE-THAYE // CEL-SHADED EDITION</span>
-        </footer>
       </div>
     </div>
 

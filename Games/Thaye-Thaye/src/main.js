@@ -91,25 +91,11 @@ async function bootDesktopGame() {
     });
   }
 
-  const STAGE_LABELS = {
-    home: "MAIN LOBBY",
-    play: "MATCH SETUP",
-    arsenal: "ARSENAL // 3D INSPECT",
-    settings: "SETTINGS",
-    controls: "COMBAT CONTROLS",
-  };
-
-  const DIFF_LABELS = {
-    normal: "FAIR REACTION & SPREAD",
-    hard: "SHARP • COMMANDO TACTICS",
-    nightmare: "APEX • MARCOS PRECISION",
-  };
-
   const WEAPON_SPECS = {
     knife: {
       name: "COMBAT KNIFE",
       role: "MELEE • +20% SPRINT SPEED",
-      stats: "75 DMG • 1.85x HEADSHOT • SILENT DISMEMBERMENT",
+      stats: "75 DMG • 1.85x HEADSHOT • DISMEMBERMENT",
       bars: [65, 90, 18],
     },
     rifle: {
@@ -121,29 +107,27 @@ async function bootDesktopGame() {
     shotgun: {
       name: "SHOTGUN",
       role: "PUMP • 9-PELLET BUCKSHOT",
-      stats: "126 MAX DMG • 6 SHELLS • HEAVY RECOIL BLAST",
+      stats: "126 MAX DMG • 6 SHELLS • HEAVY RECOIL",
       bars: [95, 46, 38],
     },
     revolver: {
-      name: ".44 APEX MAGNUM REVOLVER",
-      role: "RAPID AUTO • TRITIUM IRON SIGHTS",
-      stats: "58 DMG • 2.15x HEADSHOT • 6-SHOT HAND CANNON",
+      name: ".44 MAGNUM REVOLVER",
+      role: "AUTO • IRON SIGHTS",
+      stats: "58 DMG • 2.15x HEADSHOT • 6-SHOT",
       bars: [82, 72, 78],
     },
     grenade: {
       name: "M69 FRAG GRENADE",
-      role: "THROWN • [G] QUICK TOSS ANYTIME",
-      stats: "135 BLAST DMG • 6.2M RADIUS • SHRAPNEL GIBS",
+      role: "THROWN • [G] QUICK THROW",
+      stats: "135 BLAST DMG • 6.2M RADIUS • SHRAPNEL",
       bars: [100, 30, 56],
     },
   };
 
-  const stageCrumb = document.getElementById("stage-crumb");
   const allStages = document.querySelectorAll(".menu-stage");
 
   function goToMenuStage(stage) {
     allStages.forEach((el) => el.classList.toggle("active", el.dataset.stage === stage));
-    if (stageCrumb) stageCrumb.textContent = STAGE_LABELS[stage] || "MAIN LOBBY";
     engine.setMenuStage(stage);
     sound.playSwitch();
   }
@@ -196,10 +180,7 @@ async function bootDesktopGame() {
     });
   }
 
-  const diffDesc = document.getElementById("diff-desc");
-  wireSegGroup("diff-group", "opt-difficulty", (val) => {
-    if (diffDesc && DIFF_LABELS[val]) diffDesc.textContent = DIFF_LABELS[val];
-  });
+  wireSegGroup("diff-group", "opt-difficulty");
   wireSegGroup("score-group", "opt-score-limit");
 
   const sensInput = document.getElementById("opt-sens");
@@ -246,6 +227,8 @@ async function bootDesktopGame() {
       document.exitPointerLock?.();
     }
     sound.stopReload();
+    sound.resume();
+    engine.paused = false;
     engine.weaponSystem.setActiveViewmodel(engine.player?.activeWeapon, false);
     engine.cleanupMatch();
     engine.state = "menu";
@@ -260,8 +243,7 @@ async function bootDesktopGame() {
   document.getElementById("btn-play-again").addEventListener("click", launchMatch);
   document.getElementById("btn-change-char").addEventListener("click", returnToMainMenu);
   document.getElementById("btn-resume-match")?.addEventListener("click", () => {
-    sound.init();
-    engine.requestLock();
+    engine.resumeMatch();
   });
   document.getElementById("btn-quit-menu")?.addEventListener("click", returnToMainMenu);
 

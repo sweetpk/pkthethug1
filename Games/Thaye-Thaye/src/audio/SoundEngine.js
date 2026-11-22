@@ -110,6 +110,18 @@ export class SoundEngine {
     }
   }
 
+  pause() {
+    if (this.ctx && this.ctx.state === "running") {
+      this.ctx.suspend().catch(() => {});
+    }
+  }
+
+  resume() {
+    if (this.ctx && this.ctx.state === "suspended") {
+      this.ctx.resume().catch(() => {});
+    }
+  }
+
   setVolume(v) {
     this.volume = Math.max(0, Math.min(1, v));
     if (this.master && this.ctx) {

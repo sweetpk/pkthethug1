@@ -45,6 +45,8 @@ export class GameEngine {
     this.botControllers = [];
 
     this.matchTime = 300;
+    this.matchClock = 0;
+    this.paused = false;
     this.clock = new THREE.Clock();
     this.menuTime = 0;
     this.menuStage = "home"; // home | play | arsenal | settings | controls
@@ -213,6 +215,8 @@ export class GameEngine {
     }
 
     this.matchTime = 300;
+    this.matchClock = 0;
+    this.paused = false;
     this.multiKillCount = 0;
     this.multiKillTimer = 0;
     this.fovKick = 0;
@@ -221,6 +225,16 @@ export class GameEngine {
     this.state = "playing";
     this.weaponSystem.setActiveViewmodel(this.player.activeWeapon, !this.thirdPerson);
     this.ui.showMatchHUD(this.scoreLimit);
+    this.ui.setPointerHint(false);
+    this.requestLock();
+  }
+
+  resumeMatch() {
+    if (this.state !== "playing") return;
+    this.sound.init();
+    this.sound.resume();
+    this.paused = false;
+    this.ui.setPointerHint(false);
     this.requestLock();
   }
 
@@ -238,24 +252,38 @@ export class GameEngine {
     });
 
     document.addEventListener("pointerlockchange", () => {
+      const wasLocked = this.pointerLocked;
       this.pointerLocked = document.pointerLockElement === this.canvas;
-      this.ui.setPointerHint(this.state === "playing" && !this.pointerLocked);
-      if (!this.pointerLocked) {
+      if (this.state === "playing" && !this.pointerLocked) {
+        if (wasLocked) {
+          this.paused = true;
+          this.sound.pause();
+          this.ui.setScoreboardVisible(false, this.combatants);
+        }
+        this.ui.setPointerHint(this.paused);
         this.mouseDown = false;
         this.adsDown = false;
         this.keys = {};
+      } else if (this.pointerLocked) {
+        this.paused = false;
+        this.sound.resume();
+        this.ui.setPointerHint(false);
+      }
+    });
+
+    document.addEventListener("pointerlockerror", () => {
+      if (this.state === "playing") {
+        this.paused = true;
+        this.sound.pause();
+        this.ui.setPointerHint(true);
       }
     });
 
     this.canvas.addEventListener("mousedown", (e) => {
-      if (this.state !== "playing") return;
+      if (this.state !== "playing" || this.paused || !this.pointerLocked) return;
       this.sound.init();
       if (e.button === 2) {
         this.adsDown = true;
-      }
-      if (!this.pointerLocked) {
-        this.requestLock();
-        return;
       }
       if (e.button === 0) {
         this.mouseDown = true;
@@ -288,8 +316,8 @@ export class GameEngine {
     });
 
     window.addEventListener("keydown", (e) => {
+      if (this.state !== "playing" || this.paused) return;
       this.keys[e.code] = true;
-      if (this.state !== "playing") return;
 
       if (e.code === "Tab") {
         e.preventDefault();
@@ -416,7 +444,7 @@ export class GameEngine {
       this._throwGrenade(p, origin, dir);
       if (p.ammo.grenade.mag <= 0) {
         setTimeout(() => {
-          if (this.state === "playing" && this.player?.alive && this.player.activeWeapon === "grenade") {
+          if (this.state === "playing" && !this.paused && this.player?.alive && this.player.activeWeapon === "grenade") {
             this._switchPlayerWeapon(this.player.ammo.rifle.mag > 0 ? "rifle" : "knife");
           }
         }, 280);
@@ -935,9 +963,12 @@ export class GameEngine {
 
   _endMatch() {
     this.state = "gameover";
+    this.paused = false;
+    this.sound.resume();
     if (document.pointerLockElement === this.canvas) {
       document.exitPointerLock?.();
     }
+    this.ui.setPointerHint(false);
     this.weaponSystem.setActiveViewmodel(this.player.activeWeapon, false);
     this.ui.showGameOver(this.combatants);
   }
@@ -1356,9 +1387,10 @@ export class GameEngine {
           Math.min(1, dt * 5)
         );
       }
-    } else if (this.state === "playing") {
+    } else if (this.state === "playing" && !this.paused) {
       this.matchTime = Math.max(0, this.matchTime - dt);
-      this.arena.updatePickups(dt, performance.now() * 0.001);
+      this.matchClock += dt;
+      this.arena.updatePickups(dt, this.matchClock);
       this._updatePlayer(dt);
       this._updateBots(dt);
       this.ragdolls.update(dt);
