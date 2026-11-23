@@ -2485,6 +2485,534 @@ body.poem-reader #blog-content p {
 }
 
 /* ==========================================================================
+   WHO-TF.HTML — CREATIVE CARTOON INTRO PAGE
+   ========================================================================== */
+body.intro-page {
+  background-color: #FFF0E5; /* Warm peach-cream canvas distinct from home/games/writings */
+}
+
+.intro-bg-decor {
+  background-image: radial-gradient(rgba(20, 20, 19, 0.085) 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+}
+
+.intro-decor-starburst {
+  position: absolute;
+  top: -48px;
+  left: -48px;
+  width: clamp(145px, 18vw, 225px);
+  height: clamp(145px, 18vw, 225px);
+  animation: slowSpin 40s linear infinite;
+}
+
+.intro-decor-waves {
+  position: absolute;
+  right: -12px;
+  bottom: -12px;
+  width: clamp(230px, 34vw, 410px);
+  height: auto;
+  filter: drop-shadow(-3px -3px 0px rgba(20, 20, 19, 0.1));
+}
+
+.intro-board {
+  background: rgba(255, 253, 247, 0.62);
+}
+
+.intro-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1.5rem, 3.2vh, 2.35rem);
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0.4rem 0 0.75rem;
+}
+
+/* SECTION 1: PORTRAIT STACK + COMIC SPEECH BUBBLE */
+.intro-hero-spread {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(240px, 310px) 1fr;
+  gap: clamp(1.4rem, 3.2vw, 2.6rem);
+  align-items: center;
+}
+
+/* Stacked Cartoon Portrait Frame */
+.intro-portrait-stack {
+  position: relative;
+  width: 100%;
+  max-width: 310px;
+  padding-right: 14px;
+  padding-bottom: 14px;
+  transform: rotate(-1.8deg);
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.intro-portrait-stack:hover {
+  transform: rotate(0deg) scale(1.02);
+}
+
+.portrait-stack-layer {
+  position: absolute;
+  inset: 0 14px 14px 0;
+  border: var(--border-heavy);
+  border-radius: 24px;
+}
+
+.portrait-layer-back {
+  background: var(--pop-pink);
+  transform: translate(14px, 14px);
+  z-index: 1;
+}
+
+.portrait-layer-mid {
+  background: var(--pop-mint);
+  transform: translate(7px, 7px);
+  z-index: 2;
+}
+
+.portrait-frame {
+  position: relative;
+  z-index: 3;
+  margin: 0;
+  background: var(--paper-white);
+  border: var(--border-heavy);
+  border-radius: 24px;
+  padding: 0.75rem 0.75rem 0.85rem;
+  box-shadow: 2px 2px 0px var(--ink);
+}
+
+/* Masking Tape Stickers on Portrait Corners */
+.tape-sticker {
+  position: absolute;
+  top: -11px;
+  width: 56px;
+  height: 20px;
+  background: rgba(255, 212, 59, 0.92);
+  border: 2px solid var(--ink);
+  box-shadow: 2px 2px 0px var(--ink);
+  z-index: 5;
+  pointer-events: none;
+}
+
+.tape-top-left {
+  left: 14px;
+  transform: rotate(-12deg);
+}
+
+.tape-top-right {
+  right: 14px;
+  transform: rotate(10deg);
+}
+
+.portrait-sparkle {
+  position: absolute;
+  bottom: -16px;
+  left: -16px;
+  width: 38px;
+  height: 38px;
+  z-index: 6;
+  filter: drop-shadow(2px 2px 0px var(--ink));
+  pointer-events: none;
+  animation: twinkleBounce 2.8s ease-in-out infinite alternate;
+}
+
+.portrait-img-wrap {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: var(--border-thick);
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--yellow-pale);
+}
+
+.portrait-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.portrait-caption-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.65rem;
+  padding: 0.15rem 0.25rem 0;
+}
+
+.portrait-name-tag {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+
+.portrait-age-badge {
+  font-family: var(--font-cartoon);
+  font-size: 0.85rem;
+  font-weight: 800;
+  background: var(--yellow-main);
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  padding: 0.12rem 0.6rem;
+  box-shadow: 2px 2px 0px var(--ink);
+}
+
+/* Right: Comic Speech Bubble Intro Card */
+.intro-speech-card {
+  position: relative;
+  background: var(--paper-white);
+  border: var(--border-heavy);
+  border-radius: 26px;
+  padding: clamp(1.5rem, 3.2vw, 2.4rem) clamp(1.4rem, 3.2vw, 2.5rem);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Comic Speech Tail pointing Left toward the Portrait on Desktop */
+.speech-tail {
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 34px;
+  height: 34px;
+  background: var(--paper-white);
+  border-left: var(--border-heavy);
+  border-bottom: var(--border-heavy);
+  z-index: 2;
+}
+
+.intro-bolt-doodle {
+  position: absolute;
+  top: -22px;
+  right: 22px;
+  width: clamp(38px, 4.2vw, 48px);
+  height: auto;
+  filter: drop-shadow(3px 3px 0px var(--ink));
+  transform: rotate(10deg);
+  pointer-events: none;
+}
+
+.intro-kicker {
+  background: var(--pop-mint);
+  margin-bottom: 1.25rem;
+}
+
+.intro-greeting {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.2vw, 3.25rem);
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+  margin: 0 0 1.25rem 0;
+}
+
+.highlight-marker {
+  display: inline-block;
+  background: var(--yellow-main);
+  padding: 0.02em 0.32em;
+  margin-top: 0.08em;
+  border: 2.5px solid var(--ink);
+  border-radius: 12px;
+  box-shadow: 3px 3px 0px var(--ink);
+  transform: rotate(-1deg);
+}
+
+.intro-lead {
+  font-family: var(--font);
+  font-size: clamp(1.08rem, 1.75vw, 1.38rem);
+  font-weight: 700;
+  line-height: 1.72;
+  color: var(--ink);
+  margin: 0;
+}
+
+.highlight-pill {
+  display: inline-block;
+  background: var(--pop-pink);
+  color: var(--ink);
+  padding: 0.04em 0.5em;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  box-shadow: 2px 2px 0px var(--ink);
+  font-family: var(--font-cartoon);
+  font-weight: 700;
+}
+
+/* SECTION 2: (MY) BIG FOUR — 2x2 CREATIVE BENTO CARDS */
+.big-four-section {
+  width: 100%;
+}
+
+.big-four-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(1rem, 2vw, 1.5rem);
+  width: 100%;
+}
+
+.big4-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.95rem;
+  padding: clamp(1.2rem, 2.3vw, 1.65rem);
+  border: var(--border-heavy);
+  border-radius: 22px;
+  box-shadow: var(--shadow-lg);
+  color: var(--ink);
+  text-decoration: none;
+  transition:
+    transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.22s ease;
+}
+
+.card-big4-games   { background: var(--pop-mint);    transform: rotate(-0.9deg); }
+.card-big4-writing { background: var(--pop-pink);    transform: rotate(0.9deg); }
+.card-big4-design  { background: var(--yellow-main); transform: rotate(0.8deg); }
+.card-big4-film    { background: var(--pop-cyan);    transform: rotate(-0.8deg); }
+
+a.big4-card:hover,
+a.big4-card:focus-visible {
+  transform: translate(-4px, -6px) rotate(0deg) scale(1.02);
+  box-shadow: 11px 11px 0px var(--ink);
+  z-index: 5;
+  outline: none;
+}
+
+a.big4-card:active {
+  transform: translate(2px, 2px) scale(0.99);
+  box-shadow: 3px 3px 0px var(--ink);
+}
+
+.big4-card.is-unlinked:hover {
+  transform: translateY(-3px) rotate(0deg);
+  box-shadow: 9px 9px 0px var(--ink);
+}
+
+.big4-top-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.big4-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-cartoon);
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  background: var(--paper-white);
+  color: var(--ink);
+  border: 2.5px solid var(--ink);
+  border-radius: 999px;
+  padding: 0.22rem 0.75rem;
+  box-shadow: 2.5px 2.5px 0px var(--ink);
+}
+
+.big4-icon-box {
+  width: 58px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  filter: drop-shadow(3px 3px 0px rgba(20, 20, 19, 0.22));
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.big4-icon-box svg {
+  width: 100%;
+  height: 100%;
+}
+
+.big4-card:hover .big4-icon-box {
+  transform: scale(1.12) rotate(-6deg);
+}
+
+.big4-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding-right: 2.5rem;
+}
+
+.big4-card.is-unlinked .big4-body {
+  padding-right: 0.25rem;
+}
+
+.big4-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 2.5vw, 2.05rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--ink);
+  margin: 0;
+}
+
+.big4-desc {
+  font-family: var(--font);
+  font-size: clamp(0.98rem, 1.3vw, 1.12rem);
+  font-weight: 700;
+  line-height: 1.48;
+  color: rgba(20, 20, 19, 0.9);
+  margin: 0;
+}
+
+.big4-arrow {
+  bottom: 1.15rem;
+  right: 1.15rem;
+}
+
+a.big4-card:hover .big4-arrow {
+  transform: rotate(45deg) scale(1.14);
+  background: var(--paper-white);
+  color: var(--ink);
+  box-shadow: 0 0 0 2px var(--ink);
+}
+
+/* SECTION 3: HISTORY & HIGH FANTASY + HUB SIGN-OFF */
+.intro-bottom-bento {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.9fr 1.3fr;
+  gap: clamp(1rem, 2vw, 1.5rem);
+  align-items: stretch;
+}
+
+.intro-lore-card,
+.intro-hub-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.9rem;
+  padding: clamp(1.25rem, 2.4vw, 1.7rem);
+  border: var(--border-heavy);
+  border-radius: 22px;
+  box-shadow: var(--shadow-lg);
+}
+
+.intro-lore-card {
+  background: #CDB4FF;
+  justify-content: center;
+  gap: 1.15rem;
+  transform: rotate(0.6deg);
+}
+
+.lore-art-strip {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.lore-sticker-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 58px;
+  padding: 0.45rem;
+  background: var(--paper-white);
+  border: 2.5px solid var(--ink);
+  border-radius: 16px;
+  box-shadow: 3.5px 3.5px 0px var(--ink);
+  transition: transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.lore-sticker-history {
+  background: var(--yellow-pale);
+  transform: rotate(-4deg);
+}
+
+.lore-sticker-fantasy {
+  background: var(--paper-white);
+  transform: rotate(3.5deg);
+}
+
+.intro-lore-card:hover .lore-sticker-history {
+  transform: rotate(-8deg) translateY(-2px);
+}
+
+.intro-lore-card:hover .lore-sticker-fantasy {
+  transform: rotate(7deg) translateY(-2px);
+}
+
+.lore-sticker-badge svg {
+  width: 100%;
+  height: 100%;
+}
+
+.intro-lore-text {
+  font-family: var(--font-display);
+  font-size: clamp(1.12rem, 1.6vw, 1.32rem);
+  font-weight: 800;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 0;
+}
+
+.intro-hub-card {
+  background: var(--pop-coral);
+  color: var(--paper-white);
+  transform: rotate(-0.6deg);
+}
+
+.intro-hub-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.intro-hub-text {
+  font-family: var(--font);
+  font-size: clamp(1.04rem, 1.45vw, 1.2rem);
+  font-weight: 700;
+  line-height: 1.55;
+  color: var(--paper-white);
+  margin: 0;
+}
+
+.cya-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cya-stamp {
+  display: inline-block;
+  font-family: var(--font-groovy);
+  font-size: clamp(1.5rem, 2.6vw, 2.05rem);
+  line-height: 1;
+  background: var(--yellow-main);
+  color: var(--ink);
+  border: var(--border-thick);
+  border-radius: 16px;
+  padding: 0.45rem 1.15rem;
+  box-shadow: 4px 4px 0px var(--ink);
+  transform: rotate(-4deg);
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.intro-hub-card:hover .cya-stamp {
+  transform: rotate(2deg) scale(1.08);
+}
+
+/* ==========================================================================
    RESPONSIVE DESIGN (TABLETS, PHONES, COMPACT SCREENS)
    ========================================================================== */
 
@@ -2514,6 +3042,11 @@ body.poem-reader #blog-content p {
   #blogs-list.hub-category-row {
     grid-template-columns: repeat(2, 1fr);
     max-width: 640px;
+  }
+
+  .intro-hero-spread {
+    grid-template-columns: minmax(220px, 265px) 1fr;
+    gap: 1.5rem;
   }
 
   .footer-container {
@@ -2567,6 +3100,32 @@ body.poem-reader #blog-content p {
     display: grid;
     align-content: center;
     flex: 1;
+  }
+
+  /* Intro Page Tablet Stack */
+  .intro-hero-spread {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1.75rem;
+  }
+
+  .intro-portrait-stack {
+    max-width: 280px;
+  }
+
+  .intro-speech-card {
+    width: 100%;
+  }
+
+  /* Rotate speech tail to point UP toward the portrait */
+  .speech-tail {
+    left: 50%;
+    top: -19px;
+    transform: translateX(-50%) rotate(135deg);
+  }
+
+  .intro-bottom-bento {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -2730,6 +3289,131 @@ body.poem-reader #blog-content p {
     border-radius: 18px;
     box-shadow: 6px 6px 0px var(--ink);
     transform: none !important;
+  }
+
+  /* Intro Page on Mobile */
+  .intro-main {
+    gap: 1.35rem;
+    padding: 0.25rem 0 0.5rem;
+  }
+
+  .intro-portrait-stack {
+    max-width: 245px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    transform: rotate(-1deg);
+  }
+
+  .portrait-stack-layer {
+    inset: 0 10px 10px 0;
+    border-radius: 18px;
+  }
+
+  .portrait-layer-back {
+    transform: translate(10px, 10px);
+  }
+
+  .portrait-layer-mid {
+    transform: translate(5px, 5px);
+  }
+
+  .portrait-frame {
+    border-radius: 18px;
+    padding: 0.6rem 0.6rem 0.7rem;
+  }
+
+  .portrait-img-wrap {
+    border-radius: 12px;
+  }
+
+  .tape-sticker {
+    width: 44px;
+    height: 16px;
+    top: -9px;
+  }
+
+  .portrait-sparkle {
+    width: 30px;
+    height: 30px;
+    bottom: -12px;
+    left: -10px;
+  }
+
+  .intro-speech-card {
+    border-radius: 18px;
+    padding: 1.45rem 1.15rem 1.35rem;
+    box-shadow: 6px 6px 0px var(--ink);
+  }
+
+  .intro-kicker {
+    margin-bottom: 1.05rem;
+  }
+
+  .speech-tail {
+    width: 26px;
+    height: 26px;
+    top: -15px;
+  }
+
+  .intro-bolt-doodle {
+    width: 34px;
+    top: -17px;
+    right: 14px;
+  }
+
+  .intro-greeting {
+    font-size: clamp(1.65rem, 7vw, 2.15rem);
+    margin-bottom: 1.05rem;
+  }
+
+  .intro-lead {
+    font-size: 1rem;
+    line-height: 1.68;
+  }
+
+  .big-four-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .big4-card {
+    padding: 1.15rem 1rem;
+    border-radius: 18px;
+    box-shadow: 6px 6px 0px var(--ink);
+    transform: none !important;
+    gap: 0.75rem;
+  }
+
+  .big4-icon-box {
+    width: 48px;
+    height: 44px;
+  }
+
+  .big4-body {
+    padding-right: 2.2rem;
+  }
+
+  .big4-card.is-unlinked .big4-body {
+    padding-right: 0;
+  }
+
+  .big4-arrow {
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .intro-lore-card,
+  .intro-hub-card {
+    padding: 1.15rem 1.05rem;
+    border-radius: 18px;
+    box-shadow: 6px 6px 0px var(--ink);
+    transform: none !important;
+  }
+
+  .cya-stamp {
+    font-size: 1.4rem;
+    padding: 0.4rem 0.95rem;
+    border-radius: 12px;
   }
 
   .ledger-sheet {
