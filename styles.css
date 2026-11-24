@@ -1714,6 +1714,56 @@ body.games-page {
   color: var(--ink);
 }
 
+.game-card.card-purple {
+  background: var(--pop-purple);
+}
+
+.game-card.card-purple .game-title {
+  color: var(--paper-white);
+}
+
+.game-card.card-purple .game-subtitle {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.game-card.card-purple .game-desc {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.game-card.card-purple .game-tag {
+  background: var(--paper-white);
+  color: var(--ink);
+}
+
+.game-card.card-purple .game-badge {
+  background: var(--yellow-main);
+  color: var(--ink);
+}
+
+.game-card.card-purple .ctrl-pill {
+  background: rgba(20, 20, 19, 0.24);
+  border-color: rgba(20, 20, 19, 0.45);
+  color: var(--paper-white);
+}
+
+.game-card.card-purple .game-play-btn {
+  background: var(--yellow-main);
+  color: var(--ink);
+}
+
+.game-card.card-purple:hover .game-play-btn {
+  background: var(--paper-white);
+  color: var(--ink);
+}
+
+.game-card:nth-child(odd) {
+  transform: rotate(-1deg);
+}
+
+.game-card:nth-child(even) {
+  transform: rotate(1deg);
+}
+
 .game-card:hover,
 .game-card:focus-visible {
   transform: translate(-4px, -6px) rotate(0deg) scale(1.02);
