@@ -2075,6 +2075,67 @@ body.games-page {
   color: var(--ink);
 }
 
+/* Story Theme: Delhi Terracotta Dusk (Nothing Before May) */
+.game-card.card-delhi {
+  background: #C86446;
+}
+
+.game-card.card-delhi .game-title {
+  color: var(--paper-white);
+  text-shadow: 2px 2px 0px rgba(20, 20, 19, 0.25);
+}
+
+.game-card.card-delhi .game-subtitle {
+  color: #FFE49E;
+  opacity: 1;
+}
+
+.game-card.card-delhi .game-desc {
+  color: rgba(255, 253, 247, 0.96);
+}
+
+.game-card.card-delhi .game-tag {
+  background: var(--yellow-main);
+  color: var(--ink);
+}
+
+.game-card.card-delhi .game-badge {
+  background: #1B263B;
+  color: var(--paper-white);
+}
+
+.game-card.card-delhi .ctrl-pill {
+  background: rgba(255, 253, 247, 0.92);
+  border-color: var(--ink);
+  color: var(--ink);
+  box-shadow: 1.5px 1.5px 0px var(--ink);
+}
+
+.game-card.card-delhi .game-action-row {
+  border-top-color: rgba(255, 253, 247, 0.32);
+}
+
+.game-card.card-delhi .game-play-btn {
+  background: var(--yellow-main);
+  color: var(--ink);
+}
+
+.game-card.card-delhi:hover .game-play-btn {
+  background: #1B263B;
+  color: var(--paper-white);
+}
+
+.game-card.card-delhi .game-card-arrow {
+  background: var(--yellow-main);
+  color: var(--ink);
+}
+
+.game-card.card-delhi:hover .game-card-arrow,
+.game-card.card-delhi:focus-visible .game-card-arrow {
+  background: var(--paper-white);
+  color: var(--ink);
+}
+
 /* ==========================================================================
    BLOGS-LIST & POEMS-LIST — SCROLLABLE CARTOON NOTEBOOK / LEDGER SYSTEM
    ========================================================================== */
