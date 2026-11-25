@@ -1,0 +1,3221 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="night" data-weather="storm" data-size="m">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>After the Last Local — A Mumbai Monsoon Story</title>
+<link rel="icon" type="image/png" href="../../assets/images/PK-Logo-Light.png" />
+<link rel="apple-touch-icon" href="../../assets/images/PK-Logo-Light.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --font-serif: 'Newsreader', Georgia, 'Times New Roman', serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+    --prose-size: 1.14rem;
+    --prose-lh: 1.82;
+    --max-width: 680px;
+    --radius-lg: 16px;
+    --radius-md: 12px;
+    --radius-sm: 8px;
+    --transition: 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  [data-size="s"] { --prose-size: 1.02rem; --prose-lh: 1.75; }
+  [data-size="m"] { --prose-size: 1.14rem; --prose-lh: 1.82; }
+  [data-size="l"] { --prose-size: 1.28rem; --prose-lh: 1.86; }
+
+  /* Theme: Monsoon Night */
+  [data-theme="night"] {
+    --bg-base: #0b1017;
+    --bg-grad-1: #111a28;
+    --bg-grad-2: #0a0e14;
+    --surface: rgba(18, 25, 36, 0.86);
+    --surface-solid: #141c28;
+    --surface-elevated: rgba(27, 36, 51, 0.92);
+    --border: rgba(255, 255, 255, 0.08);
+    --border-strong: rgba(229, 169, 84, 0.35);
+    --text-main: #ede6da;
+    --text-soft: #b6b0a6;
+    --text-muted: #7f8ca0;
+    --accent: #e5a954;
+    --accent-soft: rgba(229, 169, 84, 0.13);
+    --accent-glow: rgba(229, 169, 84, 0.22);
+    --rose: #d97a6c;
+    --rose-soft: rgba(217, 122, 108, 0.14);
+    --chat-bg: #0f1621;
+    --chat-me: #1f3c36;
+    --chat-them: #1b2432;
+    --ticket-bg: #e9dec6;
+    --ticket-ink: #221d17;
+    --shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Theme: Warm Paper */
+  [data-theme="paper"] {
+    --bg-base: #f4eee2;
+    --bg-grad-1: #efe6d5;
+    --bg-grad-2: #f8f4ec;
+    --surface: rgba(252, 249, 243, 0.92);
+    --surface-solid: #fbf7ef;
+    --surface-elevated: #ffffff;
+    --border: rgba(45, 34, 24, 0.1);
+    --border-strong: rgba(178, 102, 36, 0.42);
+    --text-main: #241e18;
+    --text-soft: #4c4238;
+    --text-muted: #84786b;
+    --accent: #b8651b;
+    --accent-soft: rgba(184, 101, 27, 0.1);
+    --accent-glow: rgba(184, 101, 27, 0.16);
+    --rose: #b84b42;
+    --rose-soft: rgba(184, 75, 66, 0.1);
+    --chat-bg: #ebe4d6;
+    --chat-me: #d4ebd7;
+    --chat-them: #ffffff;
+    --ticket-bg: #f1e3c4;
+    --ticket-ink: #221d17;
+    --shadow: 0 18px 45px rgba(48, 34, 20, 0.09);
+  }
+
+  /* Weather-responsive subtle backdrop shifts */
+  [data-theme="night"][data-weather="golden"] {
+    --bg-grad-1: #23191d;
+    --bg-grad-2: #0d1118;
+  }
+  [data-theme="night"][data-weather="dawn"] {
+    --bg-grad-1: #1d1a2c;
+    --bg-grad-2: #0f1622;
+  }
+  [data-theme="night"][data-weather="indoor"] {
+    --bg-grad-1: #1b1714;
+    --bg-grad-2: #0c0e13;
+  }
+
+  * { box-sizing: border-box; }
+
+  html {
+    background: var(--bg-base);
+    color: var(--text-main);
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    font-family: var(--font-sans);
+    background:
+      radial-gradient(ellipse 85% 60% at 50% 0%, var(--bg-grad-1), transparent 70%),
+      linear-gradient(180deg, var(--bg-base) 0%, var(--bg-grad-2) 100%);
+    color: var(--text-main);
+    overflow-x: hidden;
+    transition: background 0.9s ease, color 0.35s ease;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  #rain-canvas {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.55;
+    transition: opacity 0.8s ease;
+  }
+  [data-theme="paper"] #rain-canvas { opacity: 0.22; }
+  body.reduced-motion #rain-canvas { display: none; }
+
+  /* Top Navigation Bar */
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    background: color-mix(in srgb, var(--bg-base) 80%, transparent);
+    border-bottom: 1px solid var(--border);
+    padding: calc(10px + env(safe-area-inset-top)) 18px 10px;
+    transition: opacity 0.35s ease, transform 0.35s ease;
+  }
+  .topbar.hidden {
+    display: none;
+  }
+  .topbar-inner {
+    max-width: 820px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .scene-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+  }
+  .scene-chapter {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .scene-location {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+  .icon-btn {
+    appearance: none;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text-soft);
+    border-radius: 10px;
+    height: 36px;
+    min-width: 36px;
+    padding: 0 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition);
+    -webkit-tap-highlight-color: transparent;
+  }
+  .icon-btn:hover {
+    border-color: var(--border-strong);
+    color: var(--text-main);
+    background: var(--surface-elevated);
+  }
+  .icon-btn.active {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--accent-soft);
+  }
+  .icon-btn svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+  }
+  .btn-label { display: inline; }
+  @media (max-width: 600px) {
+    .btn-label { display: none; }
+    .icon-btn { padding: 0 8px; }
+  }
+
+  .progress-track {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background: transparent;
+    overflow: hidden;
+  }
+  .progress-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--rose), var(--accent));
+    transition: width 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  /* Layout Shell */
+  .app-shell {
+    position: relative;
+    z-index: 2;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 24px 20px 80px;
+  }
+
+  /* Title Screen */
+  .title-screen {
+    min-height: calc(100dvh - 48px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 24px 12px;
+    animation: fadeUp 0.8s ease both;
+  }
+  .title-kicker {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 18px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--border-strong);
+    background: var(--accent-soft);
+  }
+  .title-main {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    font-size: clamp(2.4rem, 7vw, 4.1rem);
+    line-height: 1.06;
+    letter-spacing: -0.02em;
+    margin: 0 0 14px;
+    color: var(--text-main);
+  }
+  .title-main em {
+    font-style: italic;
+    color: var(--accent);
+  }
+  .title-sub {
+    font-family: var(--font-serif);
+    font-size: clamp(1.06rem, 2.6vw, 1.24rem);
+    line-height: 1.65;
+    color: var(--text-soft);
+    max-width: 520px;
+    margin: 0 0 32px;
+  }
+  .title-cta-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    max-width: 340px;
+  }
+  .primary-btn {
+    width: 100%;
+    appearance: none;
+    border: none;
+    border-radius: var(--radius-md);
+    padding: 15px 24px;
+    font-family: var(--font-sans);
+    font-size: 0.98rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+    background: linear-gradient(135deg, var(--accent), #d68d3a);
+    color: #16110b;
+    box-shadow: 0 10px 28px var(--accent-glow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .primary-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.06);
+  }
+  .primary-btn:active { transform: translateY(0); }
+
+  .secondary-btn {
+    width: 100%;
+    appearance: none;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 13px 20px;
+    font-family: var(--font-sans);
+    font-size: 0.92rem;
+    font-weight: 500;
+    cursor: pointer;
+    background: var(--surface);
+    color: var(--text-main);
+    transition: all var(--transition);
+    -webkit-tap-highlight-color: transparent;
+  }
+  .secondary-btn:hover {
+    border-color: var(--border-strong);
+    background: var(--surface-elevated);
+  }
+
+  .title-meta-row {
+    margin-top: 34px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 18px;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+  .title-meta-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .title-controls {
+    margin-top: 22px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Chapter Banner */
+  .chapter-banner {
+    margin: 10px 0 28px;
+    padding: 20px 22px;
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    text-align: center;
+    animation: fadeUp 0.5s ease both;
+  }
+  .chapter-banner-num {
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 6px;
+  }
+  .chapter-banner-title {
+    font-family: var(--font-serif);
+    font-size: clamp(1.45rem, 4vw, 1.95rem);
+    font-weight: 500;
+    margin: 0;
+    line-height: 1.25;
+  }
+
+  /* Story Prose Card */
+  .story-stage {
+    animation: fadeUp 0.4s ease both;
+  }
+  .story-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: clamp(22px, 4.5vw, 38px) clamp(20px, 5vw, 40px);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  .scene-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+  }
+  .scene-tag::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 10px var(--accent);
+  }
+
+  .prose-block {
+    font-family: var(--font-serif);
+    font-size: var(--prose-size);
+    line-height: var(--prose-lh);
+    color: var(--text-main);
+    margin: 0 0 1.25em;
+    letter-spacing: 0.004em;
+  }
+  .prose-block:last-child { margin-bottom: 0; }
+  .prose-block em { color: color-mix(in srgb, var(--text-main) 90%, var(--accent)); }
+  .prose-block strong { font-weight: 600; color: var(--text-main); }
+
+  .prose-quote {
+    margin: 1.3em 0;
+    padding: 4px 0 4px 18px;
+    border-left: 2px solid var(--accent);
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: calc(var(--prose-size) * 1.02);
+    line-height: var(--prose-lh);
+    color: var(--text-soft);
+  }
+
+  .scene-divider {
+    text-align: center;
+    margin: 24px 0;
+    color: var(--accent);
+    letter-spacing: 0.45em;
+    font-size: 0.9rem;
+    opacity: 0.75;
+    user-select: none;
+  }
+
+  /* WhatsApp / Phone Chat Widget */
+  .chat-card {
+    margin: 22px 0;
+    border-radius: var(--radius-md);
+    background: var(--chat-bg);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    font-family: var(--font-sans);
+  }
+  .chat-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 14px;
+    border-bottom: 1px solid var(--border);
+    background: color-mix(in srgb, var(--surface-solid) 88%, transparent);
+  }
+  .chat-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--rose), var(--accent));
+    color: #16110b;
+    font-weight: 700;
+    font-size: 0.82rem;
+    display: grid;
+    place-items: center;
+  }
+  .chat-name { font-size: 0.86rem; font-weight: 600; color: var(--text-main); }
+  .chat-status { font-size: 0.72rem; color: var(--text-muted); }
+  .chat-body {
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+  .bubble {
+    max-width: 84%;
+    padding: 9px 13px;
+    border-radius: 13px;
+    font-size: 0.9rem;
+    line-height: 1.48;
+    color: var(--text-main);
+    position: relative;
+  }
+  .bubble.them {
+    align-self: flex-start;
+    background: var(--chat-them);
+    border-bottom-left-radius: 4px;
+  }
+  .bubble.me {
+    align-self: flex-end;
+    background: var(--chat-me);
+    border-bottom-right-radius: 4px;
+  }
+  .bubble-time {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.67rem;
+    opacity: 0.62;
+    text-align: right;
+    font-family: var(--font-mono);
+  }
+
+  /* Physical Prop Cards (Train Ticket, Email, Handwritten Note) */
+  .prop-ticket {
+    margin: 24px auto;
+    max-width: 440px;
+    background: var(--ticket-bg);
+    color: var(--ticket-ink);
+    border-radius: 6px;
+    padding: 16px 20px;
+    font-family: var(--font-mono);
+    border: 1px dashed rgba(34, 29, 23, 0.35);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+    transform: rotate(-0.8deg);
+    position: relative;
+  }
+  .prop-ticket-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    border-bottom: 1px solid rgba(34, 29, 23, 0.2);
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  .prop-ticket-route {
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+  }
+  .prop-ticket-sub {
+    font-size: 0.74rem;
+    opacity: 0.78;
+    margin-bottom: 12px;
+  }
+  .prop-ticket-sharpie {
+    border-top: 1px dotted rgba(34, 29, 23, 0.3);
+    padding-top: 10px;
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1.12rem;
+    color: #192b5a;
+  }
+
+  .prop-email {
+    margin: 22px 0;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    background: var(--surface-elevated);
+    padding: 16px 18px;
+    font-family: var(--font-sans);
+  }
+  .prop-email-label {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    margin-bottom: 6px;
+  }
+  .prop-email-subject {
+    font-weight: 700;
+    font-size: 0.98rem;
+    margin-bottom: 4px;
+    color: var(--text-main);
+  }
+  .prop-email-from {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+  .prop-email-body {
+    font-size: 0.9rem;
+    line-height: 1.62;
+    color: var(--text-soft);
+  }
+
+  .prop-draft {
+    margin: 22px 0;
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(217, 122, 108, 0.35);
+    background: var(--rose-soft);
+    padding: 14px 16px;
+    font-family: var(--font-sans);
+  }
+  .prop-draft-label {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--rose);
+    margin-bottom: 6px;
+  }
+  .prop-draft-text {
+    font-size: 0.94rem;
+    line-height: 1.55;
+    color: var(--text-main);
+  }
+
+  /* Choices Section */
+  .choices-wrap {
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    animation: fadeUp 0.45s 0.08s ease both;
+  }
+  .choice-btn {
+    width: 100%;
+    text-align: left;
+    appearance: none;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 15px 18px;
+    color: var(--text-main);
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    transition: transform 0.18s ease, border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+    backdrop-filter: blur(10px);
+  }
+  .choice-btn:hover {
+    border-color: var(--border-strong);
+    background: var(--surface-elevated);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  }
+  .choice-btn:active { transform: scale(0.992); }
+  .choice-num {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    margin-top: 2px;
+    border-radius: 7px;
+    background: var(--accent-soft);
+    border: 1px solid var(--border-strong);
+    color: var(--accent);
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    font-weight: 600;
+    display: grid;
+    place-items: center;
+  }
+  .choice-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .choice-title {
+    font-family: var(--font-sans);
+    font-size: 0.98rem;
+    font-weight: 500;
+    line-height: 1.48;
+    color: var(--text-main);
+  }
+  .choice-sub {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+  }
+
+  .below-choices {
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .text-link-btn {
+    appearance: none;
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-family: var(--font-sans);
+    font-size: 0.82rem;
+    cursor: pointer;
+    padding: 6px 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.2s ease;
+  }
+  .text-link-btn:hover { color: var(--accent); }
+  .text-link-btn:disabled { opacity: 0.35; pointer-events: none; }
+
+  /* Ending Panel */
+  .ending-card {
+    margin-top: 24px;
+    padding: 28px 24px;
+    border-radius: var(--radius-lg);
+    background: linear-gradient(180deg, var(--accent-soft), var(--surface));
+    border: 1px solid var(--border-strong);
+    text-align: center;
+    animation: fadeUp 0.6s ease both;
+  }
+  .ending-badge {
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+  .ending-title {
+    font-family: var(--font-serif);
+    font-size: clamp(1.6rem, 4.5vw, 2.2rem);
+    font-weight: 500;
+    margin: 0 0 8px;
+  }
+  .ending-subtitle {
+    font-family: var(--font-serif);
+    font-style: italic;
+    color: var(--text-soft);
+    margin: 0 0 22px;
+    font-size: 1.05rem;
+  }
+  .memory-recap {
+    text-align: left;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 16px 18px;
+    margin: 0 0 22px;
+  }
+  .memory-recap-title {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+  }
+  .memory-list {
+    margin: 0;
+    padding-left: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--text-soft);
+  }
+  .ending-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .ending-actions button { width: auto; min-width: 170px; }
+
+  /* Drawer / Modal */
+  .modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(5, 8, 13, 0.68);
+    backdrop-filter: blur(6px);
+    z-index: 60;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+  }
+  .modal-backdrop.open { display: flex; }
+  .modal-panel {
+    width: 100%;
+    max-width: 560px;
+    max-height: 86dvh;
+    overflow-y: auto;
+    background: var(--surface-solid);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 22px 22px 26px;
+    box-shadow: var(--shadow);
+    animation: fadeUp 0.25s ease both;
+  }
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  .modal-title {
+    font-family: var(--font-serif);
+    font-size: 1.38rem;
+    font-weight: 500;
+    margin: 0;
+  }
+  .modal-section-label {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 18px 0 10px;
+  }
+  .ending-grid {
+    display: grid;
+    gap: 9px;
+  }
+  .ending-item {
+    padding: 12px 14px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    background: var(--surface);
+  }
+  .ending-item.unlocked {
+    border-color: var(--border-strong);
+    background: var(--accent-soft);
+  }
+  .ending-item-head {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 3px;
+  }
+  .ending-item-desc {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    line-height: 1.45;
+  }
+  .replay-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+  }
+  .pill-btn {
+    appearance: none;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text-main);
+    border-radius: 999px;
+    padding: 7px 14px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .pill-btn:hover {
+    border-color: var(--border-strong);
+    color: var(--accent);
+  }
+
+  .toast {
+    position: fixed;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: var(--surface-solid);
+    border: 1px solid var(--border-strong);
+    color: var(--text-main);
+    padding: 9px 16px;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    box-shadow: var(--shadow);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 80;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+  }
+  .toast.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 520px) {
+    .app-shell { padding: 14px 12px 72px; }
+    .story-card { padding: 20px 17px; }
+    .choice-btn { padding: 13px 14px; gap: 11px; }
+    .choice-title { font-size: 0.94rem; }
+  }
+</style>
+</head>
+<body>
+<canvas id="rain-canvas" aria-hidden="true"></canvas>
+
+<header id="topbar" class="topbar hidden">
+  <div class="topbar-inner">
+    <div class="scene-meta">
+      <div id="top-chapter" class="scene-chapter">CHAPTER I</div>
+      <div id="top-location" class="scene-location">DADAR STATION · 23:48</div>
+    </div>
+    <div class="topbar-actions">
+      <button id="btn-journal" class="icon-btn" title="Memory Journal & Endings">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+        <span class="btn-label">Journal</span>
+      </button>
+      <button id="btn-audio" class="icon-btn" title="Toggle Rain Ambience">
+        <svg id="audio-icon-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+        <svg id="audio-icon-on" style="display:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+        <span class="btn-label">Rain</span>
+      </button>
+      <button id="btn-size" class="icon-btn" title="Text Size (S/M/L)">
+        <span style="font-family:var(--font-serif);font-weight:600">Aa</span>
+      </button>
+      <button id="btn-theme" class="icon-btn" title="Switch Theme (Night / Paper)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+      </button>
+      <button id="btn-home" class="icon-btn" title="Title Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="progress-track"><div id="progress-fill" class="progress-fill"></div></div>
+</header>
+
+<main id="app" class="app-shell"></main>
+
+<!-- Journal & Endings Modal -->
+<div id="journal-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-panel">
+    <div class="modal-header">
+      <h2 id="modal-title" class="modal-title">The Dadar Ticket &amp; Memories</h2>
+      <button id="btn-close-modal" class="icon-btn" aria-label="Close">✕</button>
+    </div>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<div id="toast" class="toast"></div>
+
+<script>
+(() => {
+  "use strict";
+
+  const SAVE_KEY = "after_last_local_save_v1";
+  const META_KEY = "after_last_local_meta_v1";
+
+  const ENDINGS_CATALOG = [
+    { id: "ending_1", num: "I", title: "Two Return Tickets, One Suitcase", desc: "Leaving safety behind and stepping onto the escalator together.", hint: "Requires bold personal courage, deep honesty, and refusing to settle for a half-life." },
+    { id: "ending_2", num: "II", title: "The Monsoon We Kept", desc: "Choosing to stay, build, and root a messy real life in Mumbai.", hint: "Earned through steady trust, warmth, and helping each other face what you were running from." },
+    { id: "ending_3", num: "III", title: "What We Almost Said at Marine Drive", desc: "An unforgettable dawn walk where pride kept three words unspoken.", hint: "High affection and spark, tempered by holding back when the door opened." },
+    { id: "ending_4", num: "IV", title: "Before the Concrete Dries", desc: "Loving someone honestly enough to let their wings open without bitterness.", hint: "High honesty and respect when your timelines genuinely point in different directions." },
+    { id: "ending_5", num: "V", title: "The Text That Stayed in Drafts", desc: "Choosing armour over risk—and finally waking up in the rain alone.", hint: "When guardedness, safe obligations, or pride keep you behind glass." }
+  ];
+
+  function freshState() {
+    return {
+      stats: {
+        honesty: 0,
+        openness: 0,
+        spark: 0,
+        warmth: 0,
+        trust: 0,
+        courage: 0,
+        guard: 0,
+        duty: 0,
+        friction: 0
+      },
+      flags: {},
+      memories: [],
+      readingWords: 0
+    };
+  }
+
+  function addMemory(s, text) {
+    if (!s.memories.includes(text)) s.memories.push(text);
+  }
+
+  function cloneState(s) {
+    return JSON.parse(JSON.stringify(s));
+  }
+
+  function loadMeta() {
+    try {
+      const raw = localStorage.getItem(META_KEY);
+      if (raw) return JSON.parse(raw);
+    } catch (_) {}
+    return { unlockedEndings: [], theme: "night", size: "m", reducedMotion: false };
+  }
+
+  function saveMeta(meta) {
+    try { localStorage.setItem(META_KEY, JSON.stringify(meta)); } catch (_) {}
+  }
+
+  function loadSave() {
+    try {
+      const raw = localStorage.getItem(SAVE_KEY);
+      if (raw) return JSON.parse(raw);
+    } catch (_) {}
+    return null;
+  }
+
+  function writeSave() {
+    try {
+      localStorage.setItem(SAVE_KEY, JSON.stringify({
+        sceneId: runtime.sceneId,
+        state: runtime.state,
+        history: runtime.history.slice(-30),
+        lastChapterBanner: runtime.lastChapterBanner
+      }));
+    } catch (_) {}
+  }
+
+  function clearSave() {
+    try { localStorage.removeItem(SAVE_KEY); } catch (_) {}
+  }
+
+  const meta = loadMeta();
+  document.documentElement.setAttribute("data-theme", meta.theme || "night");
+  document.documentElement.setAttribute("data-size", meta.size || "m");
+  if (meta.reducedMotion) document.body.classList.add("reduced-motion");
+
+  const runtime = {
+    view: "title",
+    sceneId: "c1_intro",
+    state: freshState(),
+    history: [],
+    lastChapterBanner: 0,
+    currentChoices: []
+  };
+
+  /* ---------------- Web Audio Procedural Rain ---------------- */
+  const rainAudio = {
+    ctx: null,
+    master: null,
+    filter: null,
+    playing: false,
+    toggle() {
+      if (this.playing) {
+        this.stop();
+        return false;
+      } else {
+        this.start();
+        return true;
+      }
+    },
+    start() {
+      try {
+        if (!this.ctx) {
+          const AudioCtx = window.AudioContext || window.webkitAudioContext;
+          this.ctx = new AudioCtx();
+          const bufferSize = this.ctx.sampleRate * 3;
+          const buffer = this.ctx.createBuffer(1, bufferSize, this.ctx.sampleRate);
+          const data = buffer.getChannelData(0);
+          let b0 = 0, b1 = 0, b2 = 0;
+          for (let i = 0; i < bufferSize; i++) {
+            const white = Math.random() * 2 - 1;
+            b0 = 0.997 * b0 + white * 0.029;
+            b1 = 0.985 * b1 + white * 0.032;
+            b2 = 0.950 * b2 + white * 0.048;
+            data[i] = (b0 + b1 + b2 + white * 0.08) * 0.45;
+          }
+          const src = this.ctx.createBufferSource();
+          src.buffer = buffer;
+          src.loop = true;
+
+          this.filter = this.ctx.createBiquadFilter();
+          this.filter.type = "lowpass";
+          this.filter.frequency.value = 1150;
+
+          this.master = this.ctx.createGain();
+          this.master.gain.value = 0.0001;
+
+          src.connect(this.filter);
+          this.filter.connect(this.master);
+          this.master.connect(this.ctx.destination);
+          src.start();
+        }
+        if (this.ctx.state === "suspended") this.ctx.resume();
+        this.master.gain.cancelScheduledValues(this.ctx.currentTime);
+        this.master.gain.linearRampToValueAtTime(0.22, this.ctx.currentTime + 0.9);
+        this.playing = true;
+        this.setWeather(document.documentElement.getAttribute("data-weather") || "storm");
+      } catch (_) {
+        showToast("Audio unavailable in this browser.");
+      }
+    },
+    stop() {
+      if (this.ctx && this.master) {
+        this.master.gain.cancelScheduledValues(this.ctx.currentTime);
+        this.master.gain.linearRampToValueAtTime(0.0001, this.ctx.currentTime + 0.45);
+      }
+      this.playing = false;
+    },
+    setWeather(w) {
+      if (!this.ctx || !this.filter || !this.playing) return;
+      const freqMap = { storm: 1450, drizzle: 900, mist: 650, indoor: 520, golden: 420, dawn: 480 };
+      const gainMap = { storm: 0.26, drizzle: 0.16, mist: 0.12, indoor: 0.15, golden: 0.07, dawn: 0.08 };
+      const t = this.ctx.currentTime;
+      this.filter.frequency.linearRampToValueAtTime(freqMap[w] || 1000, t + 1.2);
+      this.master.gain.linearRampToValueAtTime(gainMap[w] || 0.16, t + 1.2);
+    }
+  };
+
+  /* ---------------- Ambient Rain Canvas ---------------- */
+  (() => {
+    const canvas = document.getElementById("rain-canvas");
+    const ctx = canvas.getContext("2d");
+    let w = 0, h = 0, dpr = 1;
+    const drops = [];
+    const COUNT = 85;
+
+    function resize() {
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      w = window.innerWidth;
+      h = window.innerHeight;
+      canvas.width = w * dpr;
+      canvas.height = h * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    window.addEventListener("resize", resize);
+    resize();
+
+    for (let i = 0; i < COUNT; i++) {
+      drops.push({
+        x: Math.random() * w,
+        y: Math.random() * h,
+        len: 10 + Math.random() * 22,
+        speed: 6 + Math.random() * 9,
+        alpha: 0.08 + Math.random() * 0.22
+      });
+    }
+
+    function tick() {
+      if (!document.body.classList.contains("reduced-motion")) {
+        ctx.clearRect(0, 0, w, h);
+        const weather = document.documentElement.getAttribute("data-weather") || "storm";
+        const isPaper = document.documentElement.getAttribute("data-theme") === "paper";
+        const mult = weather === "storm" ? 1 : weather === "drizzle" ? 0.55 : weather === "indoor" ? 0.35 : 0.18;
+        const activeCount = Math.floor(COUNT * mult);
+        ctx.lineWidth = 1;
+        for (let i = 0; i < activeCount; i++) {
+          const d = drops[i];
+          ctx.strokeStyle = isPaper
+            ? `rgba(110, 92, 74, ${d.alpha * 0.65})`
+            : `rgba(195, 215, 240, ${d.alpha})`;
+          ctx.beginPath();
+          ctx.moveTo(d.x, d.y);
+          ctx.lineTo(d.x - 1.8, d.y + d.len);
+          ctx.stroke();
+          d.x -= 1.1;
+          d.y += d.speed * (weather === "storm" ? 1.15 : 0.8);
+          if (d.y > h + 20) {
+            d.y = -30;
+            d.x = Math.random() * (w + 80);
+          }
+        }
+      }
+      requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  })();
+
+  /* ---------------- UI Helpers ---------------- */
+  const appEl = document.getElementById("app");
+  const topbar = document.getElementById("topbar");
+  const topChapter = document.getElementById("top-chapter");
+  const topLocation = document.getElementById("top-location");
+  const progressFill = document.getElementById("progress-fill");
+  const modalBackdrop = document.getElementById("journal-modal");
+  const modalBody = document.getElementById("modal-body");
+
+  let toastTimer = null;
+  function showToast(msg) {
+    const el = document.getElementById("toast");
+    el.textContent = msg;
+    el.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => el.classList.remove("show"), 2400);
+  }
+
+  function escapeHtml(str) {
+    return String(str)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function formatRich(str) {
+    // Allow intentional inline tags like <em>, <strong>, <br> from story data safely
+    return String(str);
+  }
+
+  function countWordsInBlocks(blocks) {
+    let words = 0;
+    for (const b of blocks) {
+      if (b.text) words += b.text.replace(/<[^>]+>/g, "").trim().split(/\s+/).length;
+      if (b.messages) {
+        for (const m of b.messages) words += m.text.trim().split(/\s+/).length;
+      }
+      if (b.data && b.data.body) words += b.data.body.replace(/<[^>]+>/g, "").trim().split(/\s+/).length;
+    }
+    return words;
+  }
+
+  function renderBlock(b) {
+    if (b.type === "p") {
+      return `<p class="prose-block">${formatRich(b.text)}</p>`;
+    }
+    if (b.type === "quote") {
+      return `<blockquote class="prose-quote">${formatRich(b.text)}</blockquote>`;
+    }
+    if (b.type === "divider") {
+      return `<div class="scene-divider" aria-hidden="true">· · ·</div>`;
+    }
+    if (b.type === "chat") {
+      const msgs = b.messages.map(m => `
+        <div class="bubble ${m.from === "me" ? "me" : "them"}">
+          ${escapeHtml(m.text)}
+          ${m.time ? `<span class="bubble-time">${escapeHtml(m.time)}${m.from === "me" ? " ✓✓" : ""}</span>` : ""}
+        </div>`).join("");
+      return `
+        <div class="chat-card">
+          <div class="chat-head">
+            <div class="chat-avatar">${escapeHtml((b.header || "T")[0])}</div>
+            <div>
+              <div class="chat-name">${escapeHtml(b.header || "Tara")}</div>
+              <div class="chat-status">${escapeHtml(b.status || "online")}</div>
+            </div>
+          </div>
+          <div class="chat-body">${msgs}</div>
+        </div>`;
+    }
+    if (b.type === "prop") {
+      const d = b.data || {};
+      if (b.kind === "ticket") {
+        return `
+          <div class="prop-ticket">
+            <div class="prop-ticket-header">
+              <span>WESTERN RAILWAY · II CL</span>
+              <span>₹${escapeHtml(d.fare || "10")} · ${escapeHtml(d.date || "TUE JUL")}</span>
+            </div>
+            <div class="prop-ticket-route">${escapeHtml(d.route || "DADAR → BANDRA")}</div>
+            <div class="prop-ticket-sub">${escapeHtml(d.meta || "VALID FOR ONE JOURNEY · NON-TRANSFERABLE")}</div>
+            <div class="prop-ticket-sharpie">${formatRich(d.note || "")}</div>
+          </div>`;
+      }
+      if (b.kind === "email") {
+        return `
+          <div class="prop-email">
+            <div class="prop-email-label">${escapeHtml(d.label || "INBOX")}</div>
+            <div class="prop-email-subject">${escapeHtml(d.subject || "")}</div>
+            <div class="prop-email-from">${escapeHtml(d.from || "")}</div>
+            <div class="prop-email-body">${formatRich(d.body || "")}</div>
+          </div>`;
+      }
+      if (b.kind === "draft") {
+        return `
+          <div class="prop-draft">
+            <div class="prop-draft-label">${escapeHtml(d.label || "UNSENT DRAFT")}</div>
+            <div class="prop-draft-text">${formatRich(d.body || "")}</div>
+          </div>`;
+      }
+    }
+    return "";
+  }
+
+  /* ---------------- Render Views ---------------- */
+  function renderTitle() {
+    runtime.view = "title";
+    topbar.classList.add("hidden");
+    document.documentElement.setAttribute("data-weather", "storm");
+    const saved = loadSave();
+    const unlockedCount = (meta.unlockedEndings || []).length;
+
+    appEl.innerHTML = `
+      <section class="title-screen">
+        <div class="title-kicker">Interactive Romance · Mumbai · ~30 Min</div>
+        <h1 class="title-main">After the <em>Last Local</em></h1>
+        <p class="title-sub">
+          11:48 PM at Dadar Station. One cancelled train, a soggy box of medu vada,
+          and seven days of monsoon that ask what you’re actually willing to risk at twenty-five.
+        </p>
+        <div class="title-cta-group">
+          ${saved ? `<button id="btn-continue" class="primary-btn">Continue Journey</button>` : ""}
+          <button id="btn-new" class="${saved ? "secondary-btn" : "primary-btn"}">${saved ? "Start a New Story" : "Begin Story"}</button>
+          <button id="btn-title-journal" class="secondary-btn">Endings &amp; Memories (${unlockedCount}/5 Unlocked)</button>
+        </div>
+        <div class="title-meta-row">
+          <span class="title-meta-pill">6 Chapters</span>
+          <span>·</span>
+          <span class="title-meta-pill">5 Distinct Endings</span>
+          <span>·</span>
+          <span class="title-meta-pill">Auto-Saved Locally</span>
+        </div>
+        <div class="title-controls">
+          <a href="../episodes-list.html" class="pill-btn" style="text-decoration:none;display:inline-flex;align-items:center;">← All Episodes</a>
+          <button id="btn-title-theme" class="pill-btn">Theme: ${meta.theme === "paper" ? "Warm Paper" : "Monsoon Night"}</button>
+          <button id="btn-title-audio" class="pill-btn">Rain Audio: ${rainAudio.playing ? "On" : "Off"}</button>
+          <button id="btn-title-motion" class="pill-btn">Rain Visuals: ${meta.reducedMotion ? "Off" : "On"}</button>
+        </div>
+      </section>
+    `;
+
+    const contBtn = document.getElementById("btn-continue");
+    if (contBtn) {
+      contBtn.onclick = () => {
+        runtime.sceneId = saved.sceneId;
+        runtime.state = saved.state;
+        runtime.history = saved.history || [];
+        runtime.lastChapterBanner = saved.lastChapterBanner || 0;
+        renderScene();
+      };
+    }
+
+    document.getElementById("btn-new").onclick = () => {
+      runtime.sceneId = "c1_intro";
+      runtime.state = freshState();
+      runtime.history = [];
+      runtime.lastChapterBanner = 0;
+      writeSave();
+      renderScene();
+    };
+
+    document.getElementById("btn-title-journal").onclick = openJournal;
+    document.getElementById("btn-title-theme").onclick = () => { toggleTheme(); renderTitle(); };
+    document.getElementById("btn-title-audio").onclick = () => { toggleAudio(); renderTitle(); };
+    document.getElementById("btn-title-motion").onclick = () => {
+      meta.reducedMotion = !meta.reducedMotion;
+      document.body.classList.toggle("reduced-motion", meta.reducedMotion);
+      saveMeta(meta);
+      renderTitle();
+    };
+  }
+
+  function renderScene() {
+    const scene = STORY[runtime.sceneId];
+    if (!scene) {
+      showToast("Scene missing: " + runtime.sceneId);
+      return;
+    }
+
+    runtime.view = "game";
+    topbar.classList.remove("hidden");
+
+    const weather = scene.weather || "storm";
+    document.documentElement.setAttribute("data-weather", weather);
+    rainAudio.setWeather(weather);
+
+    const roman = ["", "I", "II", "III", "IV", "V", "VI"][scene.chapter] || scene.chapter;
+    topChapter.textContent = `CHAPTER ${roman} · ${scene.chapterTitle.toUpperCase()}`;
+    topLocation.textContent = scene.location || "MUMBAI";
+    progressFill.style.width = `${Math.min(100, Math.max(3, scene.progress || 0))}%`;
+
+    const showBanner = scene.chapter && scene.chapter !== runtime.lastChapterBanner;
+    if (showBanner) runtime.lastChapterBanner = scene.chapter;
+
+    const blocks = typeof scene.body === "function" ? scene.body(runtime.state) : scene.body;
+    const rawChoices = typeof scene.choices === "function" ? scene.choices(runtime.state) : (scene.choices || []);
+    const visibleChoices = rawChoices.filter(c => !c.condition || c.condition(runtime.state));
+    runtime.currentChoices = visibleChoices;
+
+    let endingHtml = "";
+    if (scene.ending) {
+      if (!meta.unlockedEndings.includes(scene.ending.id)) {
+        meta.unlockedEndings.push(scene.ending.id);
+        saveMeta(meta);
+      }
+      const memoriesList = runtime.state.memories.length
+        ? runtime.state.memories.map(m => `<li>${escapeHtml(m)}</li>`).join("")
+        : `<li>You walked through the rain quietly, leaving few footprints.</li>`;
+
+      endingHtml = `
+        <div class="ending-card">
+          <div class="ending-badge">ENDING ${escapeHtml(scene.ending.num)} OF V</div>
+          <h2 class="ending-title">${escapeHtml(scene.ending.title)}</h2>
+          <p class="ending-subtitle">${escapeHtml(scene.ending.subtitle)}</p>
+          <div class="memory-recap">
+            <div class="memory-recap-title">Moments That Brought You Here (${runtime.state.memories.length})</div>
+            <ul class="memory-list">${memoriesList}</ul>
+          </div>
+          <div class="ending-actions">
+            <button id="btn-end-replay" class="primary-btn">Play Again</button>
+            <button id="btn-end-gallery" class="secondary-btn">View All 5 Endings (${meta.unlockedEndings.length}/5)</button>
+          </div>
+        </div>`;
+    }
+
+    const choicesHtml = visibleChoices.length
+      ? `<div class="choices-wrap">
+          ${visibleChoices.map((c, idx) => `
+            <button class="choice-btn" data-idx="${idx}">
+              <span class="choice-num">${idx + 1}</span>
+              <span class="choice-content">
+                <span class="choice-title">${formatRich(c.text)}</span>
+                ${c.sub ? `<span class="choice-sub">${formatRich(c.sub)}</span>` : ""}
+              </span>
+            </button>
+          `).join("")}
+        </div>`
+      : "";
+
+    const bannerHtml = showBanner
+      ? `<div class="chapter-banner">
+           <div class="chapter-banner-num">Chapter ${roman}</div>
+           <h2 class="chapter-banner-title">${escapeHtml(scene.chapterTitle)}</h2>
+         </div>`
+      : "";
+
+    appEl.innerHTML = `
+      ${bannerHtml}
+      <article class="story-stage">
+        <div class="story-card">
+          <div class="scene-tag">${escapeHtml(scene.location || "MUMBAI")}</div>
+          ${blocks.map(renderBlock).join("")}
+        </div>
+        ${choicesHtml}
+        ${endingHtml}
+        <div class="below-choices">
+          <button id="btn-undo" class="text-link-btn" ${runtime.history.length ? "" : "disabled"}>
+            ← Step back
+          </button>
+          <span style="font-size:0.75rem;color:var(--text-muted);font-family:var(--font-mono)">
+            ${runtime.state.memories.length} memories kept
+          </span>
+        </div>
+      </article>
+    `;
+
+    document.querySelectorAll(".choice-btn").forEach(btn => {
+      btn.onclick = () => pickChoice(Number(btn.dataset.idx));
+    });
+
+    const undoBtn = document.getElementById("btn-undo");
+    if (undoBtn) undoBtn.onclick = stepBack;
+
+    if (scene.ending) {
+      document.getElementById("btn-end-replay").onclick = () => {
+        runtime.sceneId = "c1_intro";
+        runtime.state = freshState();
+        runtime.history = [];
+        runtime.lastChapterBanner = 0;
+        writeSave();
+        renderScene();
+      };
+      document.getElementById("btn-end-gallery").onclick = openJournal;
+    }
+
+    writeSave();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  function pickChoice(idx) {
+    const choice = runtime.currentChoices[idx];
+    if (!choice) return;
+
+    const currentScene = STORY[runtime.sceneId];
+    const blocks = typeof currentScene.body === "function" ? currentScene.body(runtime.state) : currentScene.body;
+
+    runtime.history.push({
+      sceneId: runtime.sceneId,
+      state: cloneState(runtime.state),
+      lastChapterBanner: runtime.lastChapterBanner
+    });
+
+    if (choice.effect) choice.effect(runtime.state);
+    runtime.state.readingWords += countWordsInBlocks(blocks);
+
+    const nextId = typeof choice.next === "function" ? choice.next(runtime.state) : choice.next;
+    runtime.sceneId = nextId;
+    renderScene();
+  }
+
+  function stepBack() {
+    if (!runtime.history.length) return;
+    const prev = runtime.history.pop();
+    runtime.sceneId = prev.sceneId;
+    runtime.state = prev.state;
+    runtime.lastChapterBanner = prev.lastChapterBanner;
+    renderScene();
+  }
+
+  /* ---------------- Journal & Chapter Jump ---------------- */
+  function openJournal() {
+    const unlocked = meta.unlockedEndings || [];
+    const memories = runtime.state.memories || [];
+
+    const endingsHtml = ENDINGS_CATALOG.map(e => {
+      const isUnlocked = unlocked.includes(e.id);
+      return `
+        <div class="ending-item ${isUnlocked ? "unlocked" : ""}">
+          <div class="ending-item-head">
+            ${isUnlocked ? `✓ Ending ${e.num}: ${escapeHtml(e.title)}` : `🔒 Ending ${e.num}: Undiscovered`}
+          </div>
+          <div class="ending-item-desc">
+            ${isUnlocked ? escapeHtml(e.desc) : `Clue: ${escapeHtml(e.hint)}`}
+          </div>
+        </div>`;
+    }).join("");
+
+    const memoriesHtml = memories.length
+      ? `<ul class="memory-list">${memories.map(m => `<li>${escapeHtml(m)}</li>`).join("")}</ul>`
+      : `<p style="font-size:0.86rem;color:var(--text-muted);margin:0;">No memories recorded yet in this playthrough.</p>`;
+
+    const canJump = unlocked.length > 0;
+    const jumpHtml = canJump ? `
+      <div class="modal-section-label">Replay Shortcuts (Unlocked)</div>
+      <p style="font-size:0.8rem;color:var(--text-muted);margin:0 0 8px;">Jump to pivotal chapters with a fresh balanced state to explore other endings faster:</p>
+      <div class="replay-row">
+        <button class="pill-btn" data-jump="c3_saturday_meet">Ch III: Saturday Meet</button>
+        <button class="pill-btn" data-jump="c4_carter_road">Ch IV: Carter Road</button>
+        <button class="pill-btn" data-jump="c5_tuesday_crossroads">Ch V: Tuesday Choice</button>
+      </div>` : "";
+
+    modalBody.innerHTML = `
+      <div class="modal-section-label">Your Current Memories</div>
+      ${memoriesHtml}
+      <div class="modal-section-label">Endings Gallery (${unlocked.length}/5)</div>
+      <div class="ending-grid">${endingsHtml}</div>
+      ${jumpHtml}
+      <div class="modal-section-label">Story Controls</div>
+      <div class="replay-row">
+        <button id="btn-modal-restart" class="pill-btn">Restart From Chapter I</button>
+        <button id="btn-modal-clear" class="pill-btn">Clear Saved Progress</button>
+      </div>
+    `;
+
+    modalBody.querySelectorAll("[data-jump]").forEach(btn => {
+      btn.onclick = () => {
+        const target = btn.getAttribute("data-jump");
+        const s = freshState();
+        s.stats = { honesty: 2, openness: 2, spark: 2, warmth: 2, trust: 2, courage: 1, guard: 1, duty: 1, friction: 0 };
+        addMemory(s, "Jumped directly into the story mid-monsoon.");
+        runtime.state = s;
+        runtime.history = [];
+        runtime.lastChapterBanner = 0;
+        runtime.sceneId = target;
+        closeJournal();
+        renderScene();
+      };
+    });
+
+    document.getElementById("btn-modal-restart").onclick = () => {
+      runtime.sceneId = "c1_intro";
+      runtime.state = freshState();
+      runtime.history = [];
+      runtime.lastChapterBanner = 0;
+      closeJournal();
+      renderScene();
+    };
+    document.getElementById("btn-modal-clear").onclick = () => {
+      clearSave();
+      showToast("Saved slot cleared.");
+    };
+
+    modalBackdrop.classList.add("open");
+  }
+
+  function closeJournal() {
+    modalBackdrop.classList.remove("open");
+  }
+
+  function toggleTheme() {
+    meta.theme = meta.theme === "night" ? "paper" : "night";
+    document.documentElement.setAttribute("data-theme", meta.theme);
+    saveMeta(meta);
+    showToast(meta.theme === "paper" ? "Warm Paper mode" : "Monsoon Night mode");
+  }
+
+  function cycleSize() {
+    const order = ["s", "m", "l"];
+    const next = order[(order.indexOf(meta.size || "m") + 1) % order.length];
+    meta.size = next;
+    document.documentElement.setAttribute("data-size", next);
+    saveMeta(meta);
+    showToast(`Text size: ${next.toUpperCase()}`);
+  }
+
+  function toggleAudio() {
+    const on = rainAudio.toggle();
+    document.getElementById("btn-audio").classList.toggle("active", on);
+    document.getElementById("audio-icon-on").style.display = on ? "inline" : "none";
+    document.getElementById("audio-icon-off").style.display = on ? "none" : "inline";
+    showToast(on ? "Rain ambience on" : "Rain ambience muted");
+  }
+
+  document.getElementById("btn-journal").onclick = openJournal;
+  document.getElementById("btn-close-modal").onclick = closeJournal;
+  modalBackdrop.onclick = (e) => { if (e.target === modalBackdrop) closeJournal(); };
+  document.getElementById("btn-theme").onclick = toggleTheme;
+  document.getElementById("btn-size").onclick = cycleSize;
+  document.getElementById("btn-audio").onclick = toggleAudio;
+  document.getElementById("btn-home").onclick = renderTitle;
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && modalBackdrop.classList.contains("open")) {
+      closeJournal();
+      return;
+    }
+    if (runtime.view !== "game" || modalBackdrop.classList.contains("open")) return;
+    if (["1", "2", "3", "4"].includes(e.key)) {
+      const idx = Number(e.key) - 1;
+      if (runtime.currentChoices[idx]) pickChoice(idx);
+    }
+  });
+
+  /* ---------------- Story Container (Populated Below) ---------------- */
+  const STORY = {};
+
+  /* ============================================================================
+     CHAPTER I: PLATFORM 4, FAST TRAIN TO NOWHERE
+  ============================================================================ */
+
+  STORY["c1_intro"] = {
+    chapter: 1,
+    chapterTitle: "Platform 4, Fast Train to Nowhere",
+    location: "DADAR STATION · TUESDAY, 23:48",
+    weather: "storm",
+    progress: 3,
+    body: () => [
+      { type: "p", text: "At 11:48 PM on a Tuesday in July, Mumbai stops pretending to be a city of dreams and becomes a giant bucket someone kicked over." },
+      { type: "p", text: "You are standing on Dadar Platform 4, soaked from the knees down, holding three deeply pathetic objects: an office laptop bag whose zipper has surrendered to rust, an iPhone stuck at one percent battery, and a sweating steel tiffin box of medu vada your mother packed in Pune on Sunday night—which you forgot in the office fridge until fifteen minutes ago." },
+      { type: "p", text: "Above your head, the digital indicator flickers from <em>23:51 BANDRA FAST</em> to a single red line, then gives up altogether and goes dark. A voice over the loudspeaker crackles through static to inform everyone that waterlogging near Matunga has suspended Western fast services until further notice." },
+      { type: "p", text: "A collective groan rises from twelve stragglers, two chai-sellers, and a pigeon that clearly regrets its life choices." },
+      { type: "p", text: "Four feet to your left, under the buzzing yellow tube light, stands a girl in an oversized faded denim jacket. Her red Converse are already murdered by platform slush. One hand holds a soggy paperback upside down; the other clutches a three-foot cardboard portfolio tube wrapped desperately inside two BigBasket grocery bags secured with rubber bands." },
+      { type: "p", text: "She stares at the dead indicator board, lets out a slow breath through her nose, and mutters, <em>“Awesome. Love this for my lungs.”</em>" }
+    ],
+    choices: () => [
+      {
+        text: "“If it helps, my mother’s cold medu vada also didn’t sign up for this.”",
+        sub: "Break the ice with absurd honesty.",
+        effect: (s) => { s.stats.spark += 1; s.stats.openness += 1; s.flags.c1_opener = "vada"; },
+        next: "c1_platform"
+      },
+      {
+        text: "Pull the last dry packet of tissues from your bag and hold it out silently.",
+        sub: "Notice her soaked sleeves before saying a word.",
+        effect: (s) => { s.stats.warmth += 1; s.stats.trust += 1; s.flags.c1_opener = "tissue"; },
+        next: "c1_platform"
+      },
+      {
+        text: "“Think they’re running slow locals, or should we both start swimming toward Bandra?”",
+        sub: "Keep it light, practical, and easy.",
+        effect: (s) => { s.stats.spark += 1; s.flags.c1_opener = "swim"; },
+        next: "c1_platform"
+      }
+    ]
+  };
+
+  STORY["c1_platform"] = {
+    chapter: 1,
+    chapterTitle: "Platform 4, Fast Train to Nowhere",
+    location: "DADAR STATION · TUESDAY, 23:53",
+    weather: "storm",
+    progress: 6,
+    body: (s) => {
+      const opening =
+        s.flags.c1_opener === "vada"
+          ? `She turns her head slowly, looks down at the steel box sweating in your hand, then back up at your face. One corner of her mouth twitches. “Wait. Did you seriously carry steel-dabba vadas on the Dadar bridge during a red alert?”`
+          : s.flags.c1_opener === "tissue"
+          ? `She blinks at the crumpled pocket pack of Origami tissues in your hand, then looks up—sharp brown eyes, wet strands of hair plastered to her collarbone, faint smudge of charcoal near her thumb. “Are these contraband? Because nobody on Western Railway owns dry paper right now.”`
+          : `She looks at you sideways, sizing you up in half a second—soaked oxford shirt, lanyard still tucked awkwardly into your pocket, eyes dead from a fluorescent Lower Parel screen. “Unless you’re an Olympic backstroker, I think Dadar just adopted us.”`;
+
+      return [
+        { type: "p", text: opening },
+        { type: "p", text: `She shifts the BigBasket-armoured tube onto her other hip. “I’m Tara, by the way. Currently questioning why I didn’t become a dentist in Nagpur like my chacha wanted.”` },
+        { type: "p", text: `“Kabir,” you say. “And because dentists don’t get to wrap cardboard tubes in BigBasket bags at midnight. What’s in there—secret missile blueprints?”` },
+        { type: "p", text: `“Worse. Hand-measured elevation drawings of a 1924 staircase that a builder wants to turn into a Sephora.” She taps the plastic wrap protectively. “If rain gets through this tape, three days of my life turns into papier-mâché.”` },
+        { type: "p", text: `A sharp crack of thunder rattles the corrugated tin roof overhead. Wind sweeps horizontal sheets of rain straight onto the platform, forcing both of you two steps backward until your shoulder nearly brushes hers. Your phone buzzes once—<em>Low Battery: Shutting Down</em>—and dies completely.` },
+        { type: "p", text: `Tara glances at your black screen. “Please tell me you don’t live in Virar.”` },
+        { type: "p", text: `“Bandra. Pali Naka side. Well, technically a lane behind Pali Naka where the broker called a damp balcony ‘sea-facing ventilation.’”` },
+        { type: "p", text: `Her eyebrows lift. “Wait. I’m in Ranwar Village. Five minutes from Pali.” She checks her own phone—4%, three flashing notifications, zero Uber drivers within four kilometres. “Okay. Two choices: we die of trench foot on Platform 4, or we brave Dadar West outside and find actual wheels.”` }
+      ];
+    },
+    choices: () => [
+      {
+        text: "Pop open the steel tiffin first. “Fuel before war. Eat half a vada with me.”",
+        sub: "Ridiculous, domestic, oddly disarming.",
+        effect: (s) => {
+          s.stats.warmth += 1; s.stats.spark += 1;
+          s.flags.shared_vada = true;
+          addMemory(s, "Shared cold Pune medu vada with Tara under Dadar’s flickering tube lights.");
+        },
+        next: "c1_outside"
+      },
+      {
+        text: "Ask to see one peek of her drawings before you step out into the deluge.",
+        sub: "Show real curiosity about what she protects so fiercely.",
+        effect: (s) => {
+          s.stats.openness += 1; s.stats.trust += 1;
+          s.flags.saw_drawing_ch1 = true;
+          addMemory(s, "Asked about her 1924 staircase drawings before leaving Platform 4.");
+        },
+        next: "c1_outside"
+      },
+      {
+        text: "“Lead the way, architect. Let’s go fight cab surge prices together.”",
+        sub: "Match her energy and move fast.",
+        effect: (s) => { s.stats.courage += 1; s.stats.spark += 1; },
+        next: "c1_outside"
+      }
+    ]
+  };
+
+  STORY["c1_outside"] = {
+    chapter: 1,
+    chapterTitle: "Platform 4, Fast Train to Nowhere",
+    location: "DADAR WEST EXIT · 00:08",
+    weather: "storm",
+    progress: 10,
+    body: (s) => {
+      const callback = s.flags.shared_vada
+        ? `Neither of you expects cold, two-day-old medu vada with slightly sour coconut chutney to taste like survival, yet there you are—chewing earnestly while a station announcement drones behind you. Tara laughs mid-bite, wipes chutney off her knuckle, and says, <em>“Okay, your mom wins. Tell her I’d marry her chutney.”</em>`
+        : s.flags.saw_drawing_ch1
+        ? `She hesitates only a second before peeling back one edge of the plastic bag. Inside, rolled tight, is heavy ivory paper covered in fine ink lines—balustrades, arched fanlights, tiny handwritten notes about limestone cracks. <em>“Most people look at old Bombay and just see mold,”</em> she says softly, sealing it back up. <em>“Nice to meet someone who asks.”</em>`
+        : `She grins—quick, slightly crooked—and adjusts the strap of her soaked tote. <em>“God help the kaali-peeli driver who tries to charge us double tonight.”</em>`;
+
+      return [
+        { type: "p", text: callback },
+        { type: "p", text: `The foot overbridge smells of wet iron, fried samosas from six hours ago, and damp human exhaustion. When you emerge outside Dadar West, the street looks like a brown river with headlights floating in it.` },
+        { type: "p", text: `Tara holds her phone under her denim jacket like a secret weapon. “Uber says ₹940 to Bandra. Surge is 3.4x. Ola says ‘No cabs available, try walking.’” She locks the screen at 3%. “Lovely. Big Tech has officially abandoned us.”` },
+        { type: "p", text: `Across the clogged intersection, beneath a blue tarpaulin tied to an electricity pole, a tiny roadside tapri is still open. Steam curls into the rain from an aluminum kettle. Three delivery guys in orange Swiggy raincoats stand huddled around it, smoking and arguing about cricket. Beside the tapri, a solitary black-and-yellow Fiat taxi sits idling with its hazard lights blinking.` }
+      ];
+    },
+    choices: () => [
+      {
+        text: "“First cutting chai under that blue tarp, then we haggle with the taxi uncle.”",
+        sub: "Slow down for ten minutes and actually breathe.",
+        effect: (s) => { s.stats.warmth += 1; s.stats.openness += 1; s.flags.ch1_tapri = true; },
+        next: "c1_tapri"
+      },
+      {
+        text: "Sprint straight for the kaali-peeli before one of the other stranded commuters steals it.",
+        sub: "Get out of the storm first, talk in the cab.",
+        effect: (s) => { s.stats.duty += 1; s.flags.ch1_rushed_cab = true; },
+        next: "c1_cab_ride"
+      }
+    ]
+  };
+
+  STORY["c1_tapri"] = {
+    chapter: 1,
+    chapterTitle: "Platform 4, Fast Train to Nowhere",
+    location: "SHIVAJI MANDIR FLYOVER TAPRI · 00:19",
+    weather: "storm",
+    progress: 14,
+    body: () => [
+      { type: "p", text: `You make a mad dash across ankle-deep water, Tara yelping as a passing BEST bus sends a brown tidal wave straight at your shins. Under the blue tarp, rain hammers the plastic like applause.` },
+      { type: "p", text: `“Do cutting,” you tell the boy behind the stove, digging two damp twenty-rupee notes out of your jeans.` },
+      { type: "p", text: `The glasses are scorching hot—cheap ribbed glass you can only hold by pinching the very rim with thumb and forefinger. Ginger and crushed cardamom hit your nose before the first sip hits your tongue. Around your ankles, a three-legged ginger street dog shakes water off its ears, splattering both of you, then sits down squarely on Tara’s ruined Converse as if claiming ownership.` },
+      { type: "p", text: `She doesn’t shoo him away. She just looks down at the dog and says, <em>“Same, buddy. I also don’t want to go to work tomorrow.”</em>` },
+      { type: "p", text: `You watch her profile in the orange glow of the gas stove. Half her hair is drying in wild curls; the other half is still dark with rain. There’s something unusually unhurried about how she takes up space—even soaked, even tired at half past midnight.` },
+      { type: "p", text: `“So,” Tara says, blowing across her glass, “why were you still in Lower Parel at 11:30? Saving lives? Writing code that cures boredom?”` },
+      { type: "p", text: `“Worse. Designing a pop-up modal for a fintech app that apologizes softly while charging people a ₹500 late fee.”` },
+      { type: "p", text: `She snorts into her chai. “God. Do you at least like it?”` }
+    ],
+    choices: () => [
+      {
+        text: "“Honestly? No. I came to Mumbai thinking I’d make things that mattered, and lately I just move rectangles around.”",
+        sub: "Tell a stranger the truth you haven’t even told Sid.",
+        effect: (s) => {
+          s.stats.honesty += 2; s.stats.openness += 1;
+          s.flags.admitted_stuck = true;
+          addMemory(s, "Admitted at a midnight tapri that your fintech job was hollowing you out.");
+        },
+        next: "c1_cab_ride"
+      },
+      {
+        text: "“It pays the Bandra rent and keeps my parents from having a heart attack. That’s the deal at twenty-five, right?”",
+        sub: "Deflect with sensible reality.",
+        effect: (s) => { s.stats.guard += 1; s.stats.duty += 1; },
+        next: "c1_cab_ride"
+      },
+      {
+        text: "“Only on days the office AC works. More importantly, what kind of person measures staircases until midnight?”",
+        sub: "Flip the spotlight back onto her.",
+        effect: (s) => { s.stats.spark += 1; s.stats.guard += 1; },
+        next: "c1_cab_ride"
+      }
+    ]
+  };
+
+  STORY["c1_cab_ride"] = {
+    chapter: 1,
+    chapterTitle: "Platform 4, Fast Train to Nowhere",
+    location: "MAHIM CAUSEWAY · 00:42",
+    weather: "drizzle",
+    progress: 18,
+    body: (s) => {
+      const intro = s.flags.ch1_rushed_cab
+        ? `You beat two suited guys to the Fiat by four seconds, negotiate ₹350 flat to Bandra after three rounds of dramatic hand-waving, and collapse into the vinyl back seat panting like you just robbed a bank. Tara drops in beside you, clutching her BigBasket tube like a newborn.`
+        : `Twenty minutes later—hands warm from glass chai, shoes still squelching—the same kaali-peeli driver waves you over after the other commuters wander off. Half in broken Marathi, half with a grin, you talk him down to ₹300 flat to Bandra.`;
+
+      const mid = s.flags.admitted_stuck
+        ? `For the first five minutes past Shivaji Park, neither of you talks. The cab’s wipers thump out a crooked rhythm. Then Tara says quietly, looking at the dark sea near Dadar Chowpatty: “About what you said back there. Moving rectangles.” She pulls her wet jacket tighter around her ribs. “I think everyone in this city hits twenty-five and realizes nobody’s coming to hand us the real version of our lives. We kind of have to steal it back.”`
+        : `Past Shivaji Park, the streetlamps smear long yellow ribbons across the fogged windshield. On the driver’s crackling FM, an old 2004 KK song plays low beneath the drum of rain on the roof. Every time the cab hits a pothole, your knee bumps hers and neither of you moves an inch.`;
+
+      return [
+        { type: "p", text: intro },
+        { type: "p", text: `Inside, the cab smells of wet rexine seats, cheap jasmine air freshener, and warm exhaust. The windows fog up almost instantly, sealing the two of you inside a tiny yellow-and-black bubble floating through a drowned city.` },
+        { type: "p", text: mid },
+        { type: "p", text: `Near Mahim Causeway, the AC-less breeze coming through the cracked quarter-glass turns cold. Tara shivers once, trying to hide it by tucking her chin into her collar. Over your soaked shirt, you’re still wearing a dry navy overshirt you’d stuffed inside your backpack before leaving office.` }
+      ];
+    },
+    choices: () => [
+      {
+        text: "Unzip your bag, pull out the dry navy overshirt, and drape it over her shoulders.",
+        sub: "Simple, quiet care—no big speech.",
+        effect: (s) => {
+          s.stats.warmth += 2; s.stats.trust += 1;
+          s.flags.gave_shirt = true;
+          addMemory(s, "Lent her your dry navy overshirt in the back of a kaali-peeli over Mahim Causeway.");
+        },
+        next: "c1_goodbye_bandra"
+      },
+      {
+        text: "Wipe a circle onto the foggy glass with your sleeve. “Look—Bandra without traffic. A rare wildlife sighting.”",
+        sub: "Make her laugh and keep the energy electric.",
+        effect: (s) => { s.stats.spark += 2; },
+        next: "c1_goodbye_bandra"
+      },
+      {
+        text: "Ask what she actually hopes happens to that 1924 building—if the builder wins anyway.",
+        sub: "Listen to the thing she cares about most.",
+        effect: (s) => { s.stats.openness += 1; s.stats.honesty += 1; s.flags.asked_mansion = true; },
+        next: "c1_goodbye_bandra"
+      }
+    ]
+  };
+
+  STORY["c1_goodbye_bandra"] = {
+    chapter: 1,
+    chapterTitle: "Platform 4, Fast Train to Nowhere",
+    location: "PALI NAKA JUNCTION · 01:12",
+    weather: "drizzle",
+    progress: 22,
+    body: (s) => {
+      const shirtBeat = s.flags.gave_shirt
+        ? `She looks down at your oversized navy shirt swallowed around her shoulders, sleeves rolled twice over her wrists, and doesn’t even argue. Just pulls the collar up to her chin. <em>“Okay,”</em> she murmurs. <em>“Now I legally have to see you again to return this.”</em>`
+        : s.flags.asked_mansion
+        ? `When you asked about Rustom Mansion back on the bridge, her face went strangely still before she answered: <em>“If they tear it down, at least someone measured every inch of it before it vanished. That’s how I sleep at night.”</em> Something in that sentence stayed lodged behind your ribs.`
+        : `She drew a tiny crooked smiley face inside the clear circle you wiped on the window, then watched Bandra’s empty bakeries blur past through it.`;
+
+      return [
+        { type: "p", text: `The taxi groans to a halt near Pali Naka under a dripping gulmohar tree. By some miracle, the rain has slowed from a roar to a soft, silver drizzle.` },
+        { type: "p", text: shirtBeat },
+        { type: "p", text: `You step out onto the glistening pavement. Both of your phones are dead bricks. Tara pats her jeans, digs into her tote, and pulls out a battered black Sharpie whose tip is nearly dry.` },
+        { type: "p", text: `“Paper,” she says, holding out her palm. “Before I disappear into a fairy tale and you never find me again.”` },
+        { type: "p", text: `You check your pockets and pull out the only dry-ish scrap you own: your crumpled Western Railway ticket from Dadar to Bandra. She flattens it against the cab’s wet hood, scrawls ten digits across the back with a fierce squeak of felt, and hands it back.` },
+        {
+          type: "prop",
+          kind: "ticket",
+          data: {
+            route: "DADAR → BANDRA",
+            fare: "10",
+            date: "TUE 23:24",
+            meta: "VALID FOR 1 ADULT · II CLASS · WESTERN RLY",
+            note: "98204-XX719 — Tara (don’t text ‘wyd’ at 2pm)"
+          }
+        },
+        { type: "p", text: `Her lane into Ranwar Village is dark, narrow, and lit by one flickering porch bulb fifty yards down.` }
+      ];
+    },
+    choices: () => [
+      {
+        text: "“Wait—your lane looks straight out of a horror movie. Let me walk you to your gate.”",
+        sub: "Five extra minutes in the drizzle.",
+        effect: (s) => {
+          s.stats.warmth += 1; s.stats.trust += 1;
+          s.flags.walked_ch1 = true;
+          addMemory(s, "Walked her down the quiet Ranwar lane to her gate at 1:15 AM.");
+        },
+        next: "c1_home_sid"
+      },
+      {
+        text: "Hold up the ticket like a royal decree. “Texting you strictly at 1:59 PM tomorrow, got it.”",
+        sub: "Leave on a sharp, grinning high note.",
+        effect: (s) => { s.stats.spark += 2; },
+        next: "c1_home_sid"
+      },
+      {
+        text: "“Hey—thank you for making a terrible Tuesday feel weirdly good, Tara.”",
+        sub: "Say the uncool, sincere thing out loud.",
+        effect: (s) => { s.stats.honesty += 1; s.stats.openness += 1; },
+        next: "c1_home_sid"
+      }
+    ]
+  };
+
+  STORY["c1_home_sid"] = {
+    chapter: 1,
+    chapterTitle: "Platform 4, Fast Train to Nowhere",
+    location: "YOUR BANDRA 2BHK · 01:40",
+    weather: "indoor",
+    progress: 26,
+    body: (s) => {
+      const laneNote = s.flags.walked_ch1
+        ? `At her rusted blue gate, she paused with one hand on the latch. For half a second, the porch light caught the water beads on her eyelashes. <em>“Goodnight, Kabir,”</em> she said softly, before disappearing up the stone steps.`
+        : `She walked backward for five steps down the lane, waving with two fingers until the dark swallowed her denim jacket.`;
+
+      return [
+        { type: "p", text: laneNote },
+        { type: "p", text: `By the time you climb the three flights to your flat—no lift, stairs smelling permanently of wet cement and someone’s leftover fish curry—it’s 1:40 AM.` },
+        { type: "p", text: `Inside, the living room light is on. <strong>Siddharth</strong>—your flatmate of two years, ad-sales hustler, and human Golden Retriever—is sitting cross-legged on the sofa in faded Liverpool shorts, eating cold butter chicken directly from a black plastic Swiggy tub while watching 2011 World Cup highlights on mute.` },
+        { type: "p", text: `“Bro,” Sid says without looking up. “First of all, you look like a drowned golden retriever. Second, where is your overshirt? Wait—did you get mugged in Dadar?”` },
+        { type: "p", text: `“No. Met someone on Platform 4.”` },
+        { type: "p", text: `Sid freezes mid-naan. Slowly turns his head. “Platform 4. In a red alert. Does she have both kidneys, or are we waking up tomorrow in a bathtub full of ice?”` },
+        { type: "p", text: `You laugh, drop your soaking bag by the leaking window frame, and set the Dadar train ticket carefully beside your phone charger. As you lie under the ceiling fan—regulator on 3, making its familiar <em>tik-tik-tik</em> click every fourth rotation—you realize you aren’t thinking about tomorrow’s 10 AM standup at all.` }
+      ];
+    },
+    choices: () => [
+      {
+        text: "Plug in your phone, smile at the ceiling, and fall asleep.",
+        next: "c2_morning"
+      }
+    ]
+  };
+
+  /* ============================================================================
+     CHAPTER II: CARDAMOM & WET CEMENT
+  ============================================================================ */
+
+  STORY["c2_morning"] = {
+    chapter: 2,
+    chapterTitle: "Cardamom & Wet Cement",
+    location: "LOWER PAREL OFFICE · WEDNESDAY, 11:20",
+    weather: "drizzle",
+    progress: 30,
+    body: () => [
+      { type: "p", text: `Wednesday morning smells like wet socks and office air-conditioning set to Arctic.` },
+      { type: "p", text: `On the twelfth floor of Peninsula Corporate Park, your Product Manager <strong>Rohan</strong> taps his Apple Watch twice and says, “Kabir, love the cleaner typography on the overdue-EMI screen, super empathetic—can we just make the ‘Pay Now’ button feel a bit more… celebratory? Like micro-confetti?”` },
+      { type: "p", text: `You stare at him. “Confetti. For someone paying a late penalty.”` },
+      { type: "p", text: `“Delight-first UX, bro. Q3 review is next week, remember? Let’s align.”` },
+      { type: "p", text: `Back at your desk, you open Figma, drag a rectangle three pixels to the left, and stop. Tucked beside your keyboard is the dry, wrinkled Western Railway ticket. The Sharpie ink has bled slightly into the cardboard grain, turning <em>Tara</em> into something soft around the edges.` },
+      { type: "p", text: `It’s 11:24 AM. You save her number. Your thumb hovers over the WhatsApp keyboard.` }
+    ],
+    choices: () => [
+      {
+        text: "Send: “Update: the rest of the medu vadas have been safely relocated to my stomach. How’s the 1924 staircase?”",
+        sub: "Playful callback to last night.",
+        effect: (s) => { s.stats.spark += 1; s.flags.ch2_text = "vada"; },
+        next: "c2_text_reply"
+      },
+      {
+        text: "Send: “Checking in—did your drawings survive the storm, and did you catch a cold?”",
+        sub: "Warm, thoughtful, uncomplicated.",
+        effect: (s) => { s.stats.warmth += 1; s.stats.trust += 1; s.flags.ch2_text = "warm"; },
+        next: "c2_text_reply"
+      },
+      {
+        text: "Send: “Hey, it’s Kabir from Dadar. Still owe you a dry chai when you’re free.”",
+        sub: "Simple, direct, no games.",
+        effect: (s) => { s.stats.honesty += 1; s.flags.ch2_text = "direct"; },
+        next: "c2_text_reply"
+      }
+    ]
+  };
+
+  STORY["c2_text_reply"] = {
+    chapter: 2,
+    chapterTitle: "Cardamom & Wet Cement",
+    location: "LOWER PAREL → FORT · THURSDAY EVENING",
+    weather: "drizzle",
+    progress: 34,
+    body: (s) => {
+      const chatMsgs = s.flags.ch2_text === "vada"
+        ? [
+            { from: "me", text: "Update: the rest of the medu vadas have been safely relocated to my stomach. How’s the 1924 staircase?", time: "11:25" },
+            { from: "them", text: "RIP vadas, gone too soon 🙏", time: "11:28" },
+            { from: "them", text: "Drawings survived! Only one corner smells faintly of BigBasket onions.", time: "11:29" }
+          ]
+        : s.flags.ch2_text === "warm"
+        ? [
+            { from: "me", text: "Checking in—did your drawings survive the storm, and did you catch a cold?", time: "11:25" },
+            { from: "them", text: "Zero sneeze count so far! Also I stole your overshirt for another day because Mumbai humidity refuses to dry anything.", time: "11:31" },
+            { from: "me", text: "Keep it as ransom until Friday.", time: "11:32" }
+          ]
+        : [
+            { from: "me", text: "Hey, it’s Kabir from Dadar. Still owe you a dry chai when you’re free.", time: "11:25" },
+            { from: "them", text: "Look at you, not texting ‘wyd’ at 2pm. I’m impressed.", time: "11:30" },
+            { from: "them", text: "Wait—dry chai sounds fake, but I do need a second pair of hands tomorrow.", time: "11:31" }
+          ];
+
+      return [
+        {
+          type: "chat",
+          header: "Tara (Dadar Ticket)",
+          status: "last seen today at 11:32 AM",
+          messages: chatMsgs
+        },
+        { type: "p", text: `By Thursday night, a strange, effortless rhythm builds between the two of you—the kind where you’re sharing blurry photos of bad office coffee and debating whether Bandra’s best momos are outside National College or near Carter Road.` },
+        { type: "p", text: `Then on Friday afternoon at 4:45 PM, your work calendar chimes twice.` },
+        { type: "p", text: `First ping: <strong>Rohan (Slack)</strong> — <em>“Hey team! VP Vikram is down from Bangalore tonight. Mandatory casual drinks at Social Lower Parel from 6:30. Great visibility before next week’s Senior Product promotion cycle!”</em>` },
+        { type: "p", text: `Second ping, thirty seconds later: <strong>Tara</strong> — <em>“Last day they’re letting me inside Rustom Mansion in Fort before the owner locks the gates for weekend inspection. Sunset hit the glass skylight for like twenty minutes yesterday and I need someone to hold my reflector/tripod while I shoot. 6:45 at Horniman Circle? (Also bringing your shirt. Probably.)”</em>` },
+        { type: "p", text: `You look at the VP’s calendar invite. Then at the rain tapping against the twelfth-floor glass. You’ve been chasing that Senior title for eleven months so your father stops asking if startups are “stable.”` }
+      ];
+    },
+    choices: () => [
+      {
+        text: "Shut your laptop at 6:05 PM, invent a sudden migraine on Slack, and catch the 6:18 slow train to Churchgate.",
+        sub: "Risk looking flaky before your promotion review. Be there on time.",
+        effect: (s) => {
+          s.stats.courage += 2; s.stats.spark += 1; s.stats.warmth += 1;
+          s.flags.early_fort = true;
+          addMemory(s, "Ditched VP drinks in Lower Parel to catch sunset with Tara at Rustom Mansion.");
+        },
+        next: "c2_fort_early"
+      },
+      {
+        text: "Show face at Social for an hour, shake Vikram’s hand, and rush to Fort afterward—even if you’re ninety minutes late.",
+        sub: "Try to be responsible to everyone at once.",
+        effect: (s) => {
+          s.stats.duty += 2; s.stats.friction += 1;
+          s.flags.late_fort = true;
+          addMemory(s, "Stayed for the VP drinks first and kept Tara waiting outside in the Fort rain.");
+        },
+        next: "c2_fort_late"
+      }
+    ]
+  };
+
+  STORY["c2_fort_early"] = {
+    chapter: 2,
+    chapterTitle: "Cardamom & Wet Cement",
+    location: "RUSTOM MANSION, FORT · FRIDAY, 18:50",
+    weather: "golden",
+    progress: 40,
+    body: (s) => [
+      { type: "p", text: `By some miracle known only to the Mumbai monsoon gods, the clouds crack open right at 6:40 PM. Not clear blue—something better: bruised violet sky cut by a sudden slant of wet gold light hitting the old Burma teak shutters of Ballard Estate.` },
+      { type: "p", text: `Tara is waiting by the arched stone entrance of Rustom Mansion, wearing a yellow cotton kurta over faded jeans, hair pinned up with a wooden pencil. When she spots you walking up with zero breathless panic, her whole face opens.` },
+      { type: "p", text: `“Wait—you actually came on time,” she says, sounding half-surprised. “Don’t tell me you bunked corporate India for an old staircase.”` },
+      { type: "p", text: `“Migraine,” you lie smoothly. “Very tragic. Required immediate exposure to limestone dust.”` },
+      { type: "p", text: `Inside, Rustom Mansion is breathtaking in a wounded kind of way. Checkered Minton tiles cracked by tree roots, wrought-iron railings shaped like sunbursts, and a three-storey stairwell crowned by a dusty stained-glass dome that turns the evening sun into amber and moss-green on her cheeks.` },
+      { type: "p", text: `For forty minutes you hold a folding silver reflector while she climbs up and down the creaking steps, muttering measurements, biting her lip when the light shifts, handing you her DSLR so she can sketch a corbel detail in charcoal. ${s.flags.gave_shirt ? "Your navy overshirt is folded neatly inside her tote, peeking out like an unspoken promise." : "Her sleeve brushes your elbow every time she leans over to check your screen."}` },
+      { type: "p", text: `“My grandfather used to bring me to buildings like this in Pune when I was nine,” she says quietly, sitting on the top landing beside a dusty bucket. “He was a draftsman for PWD. Told me a city forgets who it is the day it only builds things out of glass.”` },
+      { type: "p", text: `“Is that why you do this?”` },
+      { type: "p", text: `She looks down at her charcoal-stained fingers. “Partly. Partly because stone doesn’t wake up one morning and move to another country without telling you.” She catches herself, blinks, and stands up quickly. “Anyway. Come on. I’m starving and Yazdani still has hot brun-maska if we run.”` }
+    ],
+    choices: () => [
+      {
+        text: "Touch her wrist lightly before she heads down the stairs. “Hey—who left without telling you?”",
+        sub: "Don’t let the real sentence slip past.",
+        effect: (s) => { s.stats.openness += 2; s.stats.honesty += 1; s.flags.fort_asked = true; },
+        next: "c2_dinner_irani"
+      },
+      {
+        text: "Race her down the spiral steps without pushing. “Last one to Yazdani pays for the custard.”",
+        sub: "Respect the boundary she just pulled up.",
+        effect: (s) => { s.stats.trust += 1; s.stats.spark += 1; },
+        next: "c2_dinner_irani"
+      }
+    ]
+  };
+
+  STORY["c2_fort_late"] = {
+    chapter: 2,
+    chapterTitle: "Cardamom & Wet Cement",
+    location: "FORT LANES · FRIDAY, 20:35",
+    weather: "storm",
+    progress: 40,
+    body: () => [
+      { type: "p", text: `One drink turned into two gin-and-tonics Vikram insisted on ordering, plus forty minutes of listening to him explain “AI-enabled credit empathy.” By the time you escape Lower Parel, the sky has bruised black again and rain is bucketing down.` },
+      { type: "p", text: `Your phone buzzed at 7:30: <em>“Watchman locked Rustom Mansion at 7:45. Don’t rush if you’re stuck.”</em>` },
+      { type: "p", text: `At 8:35 PM, Fort looks like a theatre after everyone left. You jog past Horniman Circle and spot Tara sitting under the narrow green awning of a shuttered bookshop across from Yazdani Bakery, knees tucked up, watching rain drip off a lamppost. She’s holding a paper bag of half-cold bun-maska.` },
+      { type: "p", text: `When you stop in front of her, chest heaving and shirt stuck to your ribs, she doesn’t smile right away. She looks tired.` },
+      { type: "p", text: `“Hey,” she says evenly. “You didn’t have to run through a flood. I told you not to rush.”` },
+      { type: "p", text: `“I’m sorry, Tara. Truly. My VP flew in and Rohan cornered me about next week’s promotion—”` },
+      { type: "p", text: `“I get it,” she interrupts gently, though her shoulders stay tight. “People have jobs. I just… I hate standing on pavements waiting to see if someone’s actually going to show up. That’s a me thing. Not yours.”` }
+    ],
+    choices: () => [
+      {
+        text: "Sit straight down on the wet stone step next to her. “No. I messed up my priorities tonight. I’m really sorry.”",
+        sub: "Own it without making an excuse.",
+        effect: (s) => {
+          s.stats.honesty += 2; s.stats.trust += 1;
+          s.flags.apologized_fort = true;
+          addMemory(s, "Sat beside her on a wet Fort pavement and owned up to putting work first.");
+        },
+        next: "c2_dinner_irani"
+      },
+      {
+        text: "“Come on, don’t be mad. The bakery’s still open around the corner—let me buy you three caramel custards.”",
+        sub: "Try to charm your way past the awkwardness.",
+        effect: (s) => { s.stats.guard += 1; s.stats.friction += 1; },
+        next: "c2_dinner_irani"
+      }
+    ]
+  };
+
+  STORY["c2_dinner_irani"] = {
+    chapter: 2,
+    chapterTitle: "Cardamom & Wet Cement",
+    location: "IRANI CAFÉ, FORT · FRIDAY, 21:15",
+    weather: "indoor",
+    progress: 45,
+    body: (s) => {
+      let opener = "";
+      if (s.flags.early_fort && s.flags.fort_asked) {
+        opener = `Inside the Irani café—marble-top tables, bentwood chairs, glass jars of nankhatai gleaming under a 40-watt bulb—she finally answered the question from the stairs over two bowls of kheema pav. <em>“My older brother,”</em> she said, tearing bread slowly. <em>“Left for Toronto six years ago saying he’d come back in two. Then stopped calling on Diwali. My dad pretends he’s fine; I started drawing old buildings so something stays put.”</em>`;
+      } else if (s.flags.early_fort) {
+        opener = `The Irani café smells of butter, roasted tea leaves, and ninety years of gossip. Over marble-top tables and chipped saucers of caramel custard, Tara starts inventing outrageous backstories for the elderly Parsi couple sitting by the cash counter.`;
+      } else if (s.flags.apologized_fort) {
+        opener = `Sitting down next to her on that wet pavement thawed something. Five minutes later, inside the glowing Irani café down the lane, she bumps your elbow with hers while sharing the last piece of bun-maska. <em>“Thank you for not giving me corporate PR spin,”</em> she says quietly. <em>“I appreciate honesty more than punctuality anyway.”</em>`;
+      } else {
+        opener = `Inside the Irani café, the silence between bites of bun-maska takes ten minutes to loosen. She’s polite, funny when you poke at the grumpy waiter, yet there’s a thin sheet of glass between you that wasn’t there on Dadar Platform 4.`;
+      }
+
+      return [
+        { type: "p", text: opener },
+        { type: "p", text: `Outside, lightning flickers green behind the old stone clocktower. The waiter—who looks like he’s been annoyed at twenty-five-year-olds since 1978—slams down two cups of Iranian chai without spilling a drop.` },
+        { type: "p", text: `Tara wraps both hands around her saucer. “Your turn, Kabir. We’ve covered my tragic obsession with limestone and your evil confetti button. What did you actually leave Pune for?”` },
+        { type: "p", text: `You trace a ring of water on the marble table. Nobody asks you that anymore—not Sid, not your colleagues, definitely not your parents, who treat your move to Mumbai like a temporary internship before you buy a 2BHK back in Kothrud.` }
+      ];
+    },
+    choices: () => [
+      {
+        text: "“I wanted to build my own life before somebody handed me a pre-assembled one. Lately I feel like I brought the box with me.”",
+        sub: "Open the door all the way.",
+        effect: (s) => {
+          s.stats.honesty += 2; s.stats.openness += 1;
+          s.flags.pune_truth = true;
+          addMemory(s, "Told Tara the real reason you left Pune over 9 PM Iranian chai.");
+        },
+        next: "c2_powercut"
+      },
+      {
+        text: "“Mostly to see if I could survive Bandra brokers without crying. Still pending.”",
+        sub: "Keep it witty and protected.",
+        effect: (s) => { s.stats.spark += 1; s.stats.guard += 1; },
+        next: "c2_powercut"
+      }
+    ]
+  };
+
+  STORY["c2_powercut"] = {
+    chapter: 2,
+    chapterTitle: "Cardamom & Wet Cement",
+    location: "PALI NAKA STAIRWELL · FRIDAY, 23:55",
+    weather: "storm",
+    progress: 50,
+    body: (s) => {
+      const shirtReturn = s.flags.gave_shirt
+        ? `When you reach Bandra, she pulls your washed, damp-smelling navy overshirt from her bag—then stops halfway. “Wait. If I give it back now, it’ll get wet again before I reach my lane.” She slips it back over her yellow kurta instead, smiling sideways. “Consider this an unscheduled lease extension.”`
+        : `By the time the train drops you at Bandra Station, the drizzle has turned back into a thick, wind-whipped downpour.`;
+
+      return [
+        { type: "p", text: shirtReturn },
+        { type: "p", text: `Halfway down Pali Naka, every streetlamp blinks twice and dies. A transformer somewhere near Hill Road pops with a muffled blue flash. Your entire lane drops into ink-black dark, lit only by two passing scooter headlights and the yellow glow of phones.` },
+        { type: "p", text: `“No way I’m walking down Ranwar lane in pitch dark alone,” Tara says, laughing nervously as thunder rolls low across the sea. “Give me ten minutes on your stairs until BEST restores the grid?”` },
+        { type: "p", text: `Your third-floor landing has a small arched window that smells of wet jasmine from the neighbour’s pot. Sid is out in Alibaug for an ad shoot until Saturday night, so the whole building feels hushed. You both sit side by side on the cool mosaic step, knees drawn up, two phone flashlights pointed upward to turn the ceiling into a soft pale halo.` },
+        { type: "p", text: `Tara pulls out a tangled pair of wired Apple earphones from her bag and hands you the left bud.` },
+        { type: "p", text: `“Rule,” she whispers, leaning her shoulder lightly against the damp wall—close enough that you feel the heat coming off her sleeve. “You only get one song before the power comes back.”` }
+      ];
+    },
+    choices: () => [
+      {
+        text: "Put on an old, shamelessly romantic Hindi track (‘Iktara’ or ‘Kabira’) and just sit in the quiet with her.",
+        sub: "Let the silence do the heavy lifting.",
+        effect: (s) => {
+          s.stats.warmth += 2; s.stats.openness += 1;
+          addMemory(s, "Shared one pair of wired earphones during a Pali Hill blackout.");
+        },
+        next: "c2_end_walk"
+      },
+      {
+        text: "Put on loud chaotic 2000s Bollywood (‘Chammak Challo’) so neither of you gets dangerously serious in the dark.",
+        sub: "Choose laughter over tension.",
+        effect: (s) => { s.stats.spark += 2; s.stats.guard += 1; },
+        next: "c2_end_walk"
+      },
+      {
+        text: "Skip the music. Ask gently: “Tara… why do I feel like you’re memorizing Mumbai before leaving it?”",
+        sub: "Name the quiet ache you’ve been noticing.",
+        effect: (s) => {
+          s.stats.honesty += 2; s.stats.openness += 1;
+          s.flags.asked_leaving_early = true;
+          addMemory(s, "Asked Tara in the blackout if she was secretly preparing to leave Mumbai.");
+        },
+        next: "c2_end_walk"
+      }
+    ]
+  };
+
+  STORY["c2_end_walk"] = {
+    chapter: 2,
+    chapterTitle: "Cardamom & Wet Cement",
+    location: "RANWAR VILLAGE LANE · 00:35",
+    weather: "mist",
+    progress: 54,
+    body: (s) => {
+      const response = s.flags.asked_leaving_early
+        ? `She went completely quiet for four heartbeats. In the dim stairwell light, you saw her jaw tighten—not angry, just caught off-guard. <em>“You notice too much,”</em> she whispered, taking the earphone out. <em>“I applied for a fellowship in the Netherlands four months ago. Haven’t heard back yet. Probably won’t.”</em> She looked at your hands. <em>“Can we please not talk about things that haven’t happened yet?”</em>`
+        : `Halfway through the song, the hallway tube-light flickers violently back to life, making both of you squint and groan. She pulls the earphone out, hair tangled, eyes bright and soft at once.`;
+
+      return [
+        { type: "p", text: response },
+        { type: "p", text: `You walk her back to Ranwar Village anyway—electricity or not—carrying a borrowed ₹100 umbrella whose one metal rib pokes out like a broken wing. Neither of you takes the middle of it cleanly, so your right shoulder gets soaked while your left arm stays dry.` },
+        { type: "p", text: `At the blue gate, she pauses with one foot on the first step. Rain drips steadily from the awning between your faces.` },
+        { type: "p", text: `“Tomorrow,” she says, testing the word like she’s unsure how heavy it is. “Saturday. Are you free, or does Rohan need sparkly buttons on bank penalties?”` },
+        { type: "p", text: `“Completely free,” you hear yourself say before your brain even checks your calendar.` },
+        { type: "p", text: `She smiles—not the teasing Dadar smile, something smaller and infinitely more dangerous—and turns up the stairs.` }
+      ];
+    },
+    choices: () => [
+      {
+        text: "Watch the light click on in her second-floor window, then walk home.",
+        next: "c3_aai_call"
+      }
+    ]
+  };
+
+  /* ============================================================================
+     CHAPTER III: THE UNFINISHED MAP OF BANDRA
+  ============================================================================ */
+
+  STORY["c3_aai_call"] = {
+    chapter: 3,
+    chapterTitle: "The Unfinished Map of Bandra",
+    location: "YOUR BANDRA 2BHK · SATURDAY, 09:42",
+    weather: "drizzle",
+    progress: 57,
+    body: () => [
+      { type: "p", text: `Saturday morning starts with a leak going <em>plip… plip… plip</em> into the blue plastic bucket beside your desk, and your mother’s voice on speakerphone.` },
+      { type: "p", text: `“Kabir, did you eat properly or only Swiggy?” Aai asks, with the gentle maternal radar that can hear an empty fridge over cellular waves. “And tell me—your Baba was asking yesterday whether that PayPulse company finalized your Senior Lead promotion. Next month our rent-renewal comes up too, no? He keeps saying if you just moved back to Pune—”` },
+      { type: "p", text: `“Aai, it’s 9:42 on a Saturday,” you groan, rubbing sleep from your eyes while boiling water for instant Nescafé. “I’m twenty-five, not retiring.”` },
+      { type: "p", text: `“Twenty-five is exactly when people lose two years chasing blurry things, beta,” she says softly—not scolding, which somehow hurts worse. “Also, Minal auntie’s daughter shifted to Powai for her MBA. Very sweet girl. Just saying.”` },
+      { type: "p", text: `You stare at the ceiling water stain shaped vaguely like Sri Lanka. Your phone vibrates once on the kitchen counter: a message from Tara.` },
+      {
+        type: "chat",
+        header: "Tara (Dadar Ticket)",
+        status: "online",
+        messages: [
+          { from: "them", text: "Emergency. Do not bring an umbrella that flips inside out like an angry jellyfish.", time: "09:44" },
+          { from: "them", text: "Meet me at 2 PM? I have a dumb idea.", time: "09:44" }
+        ]
+      }
+    ],
+    choices: () => [
+      {
+        text: "Tell Aai gently: “I hear you, Aai, really. Let me handle Mumbai my way for a little longer, okay?”",
+        sub: "Stand your ground without hurting her.",
+        effect: (s) => { s.stats.courage += 1; s.stats.honesty += 1; s.flags.aai_honest = true; },
+        next: "c3_saturday_meet"
+      },
+      {
+        text: "Smooth it over: “Promotion meeting is Tuesday, everything’s totally on track. Don’t worry, Baba will be happy.”",
+        sub: "Give her the answer that lets her sleep peacefully.",
+        effect: (s) => { s.stats.duty += 2; s.stats.guard += 1; },
+        next: "c3_saturday_meet"
+      },
+      {
+        text: "Change the track with warmth: “Aai, your medu vadas literally saved a stranger’s life on Tuesday. Send recipe.”",
+        sub: "Deflect with love and keep the peace.",
+        effect: (s) => { s.stats.warmth += 1; },
+        next: "c3_saturday_meet"
+      }
+    ]
+  };
+
+  STORY["c3_saturday_meet"] = {
+    chapter: 3,
+    chapterTitle: "The Unfinished Map of Bandra",
+    location: "HILL ROAD, BANDRA · SATURDAY, 14:10",
+    weather: "mist",
+    progress: 60,
+    body: () => [
+      { type: "p", text: `By 2 PM, the monsoon settles into that rare silver-grey pause where Bandra smells like wet bougainvillea, roasted bhutta, and hot butter from Hearsch Bakery.` },
+      { type: "p", text: `Tara is waiting outside a tiny stationery shop near Chapel Road wearing green cargo pants, an oversized black hoodie, and two massive plastic ponchos she bought for ₹60 each off a street vendor.` },
+      { type: "p", text: `“Fashion week has arrived,” she declares, tossing a neon-yellow poncho at your chest. “Look, we have four hours before evening traffic loses its mind. Two options, Kabir. Option one: we wander the old Portuguese lanes behind Ranwar and Pali, steal dry pakoras from street corners, and hunt that secondhand bookstore with the rude cat.”` },
+      { type: "p", text: `“And option two?”` },
+      { type: "p", text: `“We take an auto to Versova, hop on the rickety wooden ferry to Madh Island in grey mist, and pretend we don’t have real jobs or parents asking about our LinkedIn titles.”` }
+    ],
+    choices: () => [
+      {
+        text: "“Show me the Portuguese lanes. I want to see the Mumbai you keep trying to save.”",
+        sub: "Step into her world.",
+        effect: (s) => {
+          s.stats.openness += 1; s.stats.trust += 1;
+          s.flags.ch3_date = "ranwar";
+          addMemory(s, "Wandered the rainy Portuguese lanes of Ranwar and Bandra’s hidden bookshop.");
+        },
+        next: "c3_ranwar_walk"
+      },
+      {
+        text: "“Versova ferry. Anyone who buys ₹60 neon ponchos deserves open sea.”",
+        sub: "Escape the city together for an afternoon.",
+        effect: (s) => {
+          s.stats.spark += 1; s.stats.courage += 1;
+          s.flags.ch3_date = "ferry";
+          addMemory(s, "Crossed the grey Versova–Madh ferry in matching ₹60 neon ponchos.");
+        },
+        next: "c3_ferry_versova"
+      }
+    ]
+  };
+
+  STORY["c3_ranwar_walk"] = {
+    chapter: 3,
+    chapterTitle: "The Unfinished Map of Bandra",
+    location: "CHAPEL ROAD & RANWAR LANES · 15:30",
+    weather: "drizzle",
+    progress: 64,
+    body: (s) => [
+      { type: "p", text: `For two hours, Bandra shrinks to the width of narrow cobblestones and painted wooden porches. Tara knows which bungalows were built in 1912, which baker hides extra cinnamon in the puff pastry, and which yellow tabby cat outside Veronica’s expects chin scratches before letting you pass.` },
+      { type: "p", text: `At a crammed hole-in-the-wall bookshop where paperbacks are stacked up to the fan, she pulls out an old 1998 monograph on Bombay Art Deco, blows dust off the spine, and slips a faded postcard from inside—a sepia shot of Marine Drive with only twelve cars on the road.` },
+      { type: "p", text: `“See?” she says, eyes lit up in a way that makes your chest do something stupid and quiet. “Nobody builds things meant to outlast them anymore. Everything’s built for two-year leases and ‘pivot’ decks.”` },
+      { type: "p", text: `Outside under a dripping banyan tree, sharing one paper plate of steaming chicken momos and fiery red chutney, her phone chimes—a sharp, formal email notification sound instead of her usual WhatsApp ping. She glances down at her screen, and for three seconds, all the warmth drains out of her posture.` },
+      { type: "p", text: `${s.flags.asked_leaving_early ? "She catches you watching her face and exhales sharply. “It’s Delft,” she mutters, flipping her phone face down on the wet plastic stool. “They moved the final interview shortlist to this Sunday.”" : "“Everything okay?” you ask softly. She hesitates, locks her phone face down on the stool, and swallows hard. “Yeah. Just… I got shortlisted for a two-year heritage fellowship in the Netherlands. TU Delft. Didn’t tell anyone yet because I didn’t think they’d even read my portfolio.”"}` },
+      { type: "p", text: `A drop of water falls off the banyan leaf and lands squarely between your wrists on the bench.` },
+      { type: "p", text: `“Tara,” you say carefully. “Wait—if they offer it to you… would you go?”` },
+      { type: "p", text: `She stares at the steam rising off the last momo. “Two weeks ago I would’ve packed before finishing the sentence. Now I don’t even know why my stomach feels weird when I look at the email.”` }
+    ],
+    choices: () => [
+      {
+        text: "“Don’t decide from fear either way. Come—let’s get out of this drizzle before we catch pneumonia.”",
+        sub: "Steady her without making it about yourself yet.",
+        effect: (s) => { s.stats.trust += 1; s.stats.warmth += 1; },
+        next: "c3_studio_rain"
+      },
+      {
+        text: "“Wait—is ‘weird’ good or terrifying? Because honestly, looking at your face just scared me a little too.”",
+        sub: "Admit the quiet truth out loud.",
+        effect: (s) => { s.stats.honesty += 2; s.stats.openness += 1; },
+        next: "c3_studio_rain"
+      }
+    ]
+  };
+
+  STORY["c3_ferry_versova"] = {
+    chapter: 3,
+    chapterTitle: "The Unfinished Map of Bandra",
+    location: "VERSOVA–MADH FERRY · 16:05",
+    weather: "mist",
+    progress: 64,
+    body: (s) => [
+      { type: "p", text: `The wooden ferry groans away from the Versova jetty through choppy slate-green creek water. Around you are three fishermen with coiled nets, two college kids filming reels in the wind, and a grey horizon where sky and Arabian Sea refuse to draw a border.` },
+      { type: "p", text: `Tara leans against the chipped blue railing, neon-yellow poncho flapping like a ridiculous cape, laughing as salt spray hits her glasses. You pull your handkerchief out and wipe the lenses carefully while she holds still, suddenly quiet, looking up at your chin.` },
+      { type: "p", text: `“You have weirdly steady hands,” she murmurs when you hand the glasses back.` },
+      { type: "p", text: `“Years of zooming Figma frames to 400%,” you say, and she laughs—soft, close, drowned half a second later by the ferry horn.` },
+      { type: "p", text: `On the quiet Madh side, under an empty concrete shelter overlooking wet palms, her phone chimes—a crisp formal email ping. She checks it, goes motionless for four heartbeats, and looks out toward the black fishing boats bobbing in the creek.` },
+      { type: "p", text: `${s.flags.asked_leaving_early ? "“Final round email from Delft,” she says flatly, not turning around. “Sunday. Meaning next week this stops being hypothetical.”" : "“Remember how I told you I liked things that stay put?” she says quietly, turning her phone off without showing you the screen. “Turns out I applied for a two-year architectural fellowship in the Netherlands four months ago. Just got the shortlist email.”"}` },
+      { type: "p", text: `The wind whips damp hair across her cheek. “I thought getting shortlisted would feel like winning. Why does it feel like standing on a moving train?”` }
+    ],
+    choices: () => [
+      {
+        text: "“Because you didn’t expect to actually care about anything still waiting on the platform.”",
+        sub: "Say what you both feel without blinking.",
+        effect: (s) => { s.stats.honesty += 2; s.stats.openness += 1; },
+        next: "c3_studio_rain"
+      },
+      {
+        text: "Slip an arm lightly beside hers on the cold railing. “First, congratulations. That’s huge, Tara. Second, let’s get warm.”",
+        sub: "Celebrate her first; protect her space.",
+        effect: (s) => { s.stats.trust += 1; s.stats.warmth += 1; },
+        next: "c3_studio_rain"
+      }
+    ]
+  };
+
+  STORY["c3_studio_rain"] = {
+    chapter: 3,
+    chapterTitle: "The Unfinished Map of Bandra",
+    location: "TARA’S RANWAR STUDIO · 18:45",
+    weather: "indoor",
+    progress: 68,
+    body: () => [
+      { type: "p", text: `By 6:45 PM, the sky opens again with vengeance, driving both of you up the steep wooden stairs to Tara’s tiny rented studio-room in Ranwar Village.` },
+      { type: "p", text: `The whole place is barely bigger than Sid’s bedroom, yet it feels startlingly alive. One wall is painted faded mustard yellow; masking tape holds rows of watercolor doorways, chalk elevations, and faded tram tickets. Fairy lights with three dead bulbs drape crookedly over a drafting table piled high with tracing paper. A small balcony door rattles against the wind, letting in the cool smell of wet mango leaves.` },
+      { type: "p", text: `“Rule number one,” Tara says, tossing her soaked tote onto a cane chair and kicking off her red Converse. “Don’t judge the crooked bookshelf. Rule number two: my geyser only works if you threaten it, so dry towel is on the hook.”` },
+      { type: "p", text: `When the building’s old fuse trips five minutes later—leaving only her rechargeable LED camping lantern casting warm amber light across the floorboards—neither of you bothers going downstairs to reset the box. Instead, you stand shoulder to shoulder in the three-foot kitchenette making late-evening masala Maggi with extra chopped green chillies and ginger chai in mismatched mugs.` },
+      { type: "p", text: `Outside, rain drums steadily on the corrugated awning above the window. Inside, the tiny room smells of cardamom, damp denim, and turpentine.` }
+    ],
+    choices: () => [
+      {
+        text: "Sit cross-legged beside her on the dhurrie rug and talk about the weirdest dreams you both had at nineteen.",
+        sub: "Let the evening soften into ease.",
+        effect: (s) => { s.stats.warmth += 1; s.stats.openness += 1; },
+        next: "c3_closer"
+      },
+      {
+        text: "Pick up one of her charcoal sketches gently and ask what she hates most about her own work.",
+        sub: "Go straight beneath the surface.",
+        effect: (s) => { s.stats.trust += 1; s.stats.honesty += 1; },
+        next: "c3_closer"
+      }
+    ]
+  };
+
+  STORY["c3_closer"] = {
+    chapter: 3,
+    chapterTitle: "The Unfinished Map of Bandra",
+    location: "TARA’S RANWAR STUDIO · 22:10",
+    weather: "indoor",
+    progress: 72,
+    body: (s) => [
+      { type: "p", text: `Hours vanish the way they only do when two people stop checking their phones.` },
+      { type: "p", text: `At 10:10 PM, the steel bowls are empty. You’re sitting on the woven dhurrie rug with your back against the edge of her drafting table because sketches cover every inch of her single bed. Tara sits half-turned toward you, knees pulled up, sleeves rolled past her elbows.` },
+      { type: "p", text: `${s.flags.gave_shirt ? "She’s actually wearing your navy overshirt over a faded grey tee—wrinkled, soft, looking far better on her than it ever looked on you." : "A stray strand of dry curl keeps falling across her cheek every time she tilts her head."}` },
+      { type: "p", text: `She’s mid-sentence explaining why old Bandra verandahs were designed for cross-breeze—gesturing earnestly with one hand—when you laugh softly at the dead-serious way she says <em>“louvred timber.”</em>` },
+      { type: "p", text: `Tara stops mid-word. “What? Why are you smiling like that?”` },
+      { type: "p", text: `“Nothing,” you say quietly. “Just realizing I haven’t checked my phone in four hours. Which is a modern medical miracle.”` },
+      { type: "p", text: `The lantern flickers slightly against the mustard wall. The laughter drains out of the space between you, replaced by something infinitely quieter and heavier. Her eyes drop once to your mouth, then come straight back up to your eyes—not looking away, waiting.` },
+      { type: "p", text: `The distance between you is maybe eight inches of warm air.` }
+    ],
+    choices: () => [
+      {
+        text: "Lean forward slowly, brush the stray curl behind her ear, and kiss her.",
+        sub: "Stop thinking. Close the eight inches.",
+        effect: (s) => {
+          s.stats.spark += 2; s.stats.openness += 2; s.stats.courage += 1;
+          s.flags.ch3_moment = "kissed";
+          addMemory(s, "Kissed Tara by lantern light on the floor of her Ranwar studio.");
+        },
+        next: "c3_kiss"
+      },
+      {
+        text: "Reach out instead and lace your fingers slowly through hers on the rug.",
+        sub: "Choose tenderness over urgency—especially with everything hanging over next week.",
+        effect: (s) => {
+          s.stats.trust += 2; s.stats.warmth += 2; s.stats.honesty += 1;
+          s.flags.ch3_moment = "hand";
+          addMemory(s, "Held Tara’s hand through the blackout instead of rushing the moment.");
+        },
+        next: "c3_hand"
+      },
+      {
+        text: "Look down at your empty chai mug and crack a quiet joke to break the tension.",
+        sub: "Pull back. If she might leave in six weeks, don’t break yourself open first.",
+        effect: (s) => {
+          s.stats.guard += 2; s.stats.friction += 1;
+          s.flags.ch3_moment = "pulled_back";
+          addMemory(s, "Pulled back when the lantern light got too close in Ranwar Village.");
+        },
+        next: "c3_pullback"
+      }
+    ]
+  };
+
+  STORY["c3_kiss"] = {
+    chapter: 3,
+    chapterTitle: "The Unfinished Map of Bandra",
+    location: "TARA’S RANWAR STUDIO · 22:15",
+    weather: "indoor",
+    progress: 75,
+    body: () => [
+      { type: "p", text: `Your knuckles graze her jaw first—giving her half a second to turn away if she wants to. She doesn’t. Instead she exhales softly against your cheek, her fingers catching the collar of your t-shirt as you close the distance.` },
+      { type: "p", text: `She tastes faintly of cardamom chai and green chilli, and the kiss starts slow, almost careful—like two people testing whether thin ice will hold—before deepening into something honest and breathless that makes your pulse thunder in your ears louder than the rain outside.` },
+      { type: "p", text: `When you pull back an inch, her forehead rests lightly against yours. Both of you are breathing fast in the dim amber glow.` },
+      { type: "p", text: `“Oh,” she whispers, a shaky half-laugh catching in her throat. “Okay. Well. That ruins my whole plan of being very cool and chill about you.”` },
+      { type: "p", text: `You thumb the corner of her collarbone gently. “Good. Your cool plan was terrible anyway.”` }
+    ],
+    choices: () => [
+      { text: "Stay a little longer before heading out into the 11 PM rain.", next: "c3_aftermath" }
+    ]
+  };
+
+  STORY["c3_hand"] = {
+    chapter: 3,
+    chapterTitle: "The Unfinished Map of Bandra",
+    location: "TARA’S RANWAR STUDIO · 22:15",
+    weather: "indoor",
+    progress: 75,
+    body: () => [
+      { type: "p", text: `You don’t lean in to kiss her. Instead, you reach across the rug and rest your palm open beside hers. For one heartbeat she looks startled—then her fingers slide between yours and squeeze back hard.` },
+      { type: "p", text: `“Why didn’t you…” she starts softly, then catches herself, flushing slightly in the warm lantern glow. She shifts closer anyway until her shoulder rests solidly against yours.` },
+      { type: "p", text: `“Because I like you enough not to treat tonight like a movie scene where we pretend Sunday doesn’t exist,” you say honestly, thumb brushing over her knuckle. “I want to know what’s real with you.”` },
+      { type: "p", text: `Tara looks down at your joined hands for a long time. When she finally speaks, her voice is barely louder than the rain on the tin awning. <em>“God, Kabir. That’s way scarier than kissing me.”</em>` }
+    ],
+    choices: () => [
+      { text: "Keep holding her hand until the lantern begins to dim.", next: "c3_aftermath" }
+    ]
+  };
+
+  STORY["c3_pullback"] = {
+    chapter: 3,
+    chapterTitle: "The Unfinished Map of Bandra",
+    location: "TARA’S RANWAR STUDIO · 22:15",
+    weather: "indoor",
+    progress: 75,
+    body: () => [
+      { type: "p", text: `Your throat tightens. Six weeks. Netherlands. Your own promotion meeting on Tuesday. You drop your gaze to the chipped blue mug between your knees and say lightly, “Also, pretty sure your Maggi still needs more salt, Gordon Ramsay.”` },
+      { type: "p", text: `The silence after the joke lands wrong immediately—like dropping a glass in an empty room.` },
+      { type: "p", text: `Tara blinks once. The softness in her shoulders snaps back into neat, polite posture. She pulls her knees closer to her chest, wraps both arms around her shins, and lets out a small, dry laugh. “Right. Yeah. Good point.”` },
+      { type: "p", text: `Ten minutes later, when the ceiling bulb hums back on, neither of you mentions the dark.` }
+    ],
+    choices: () => [
+      { text: "Put your shoes on at the door and say goodnight politely.", next: "c3_aftermath" }
+    ]
+  };
+
+  STORY["c3_aftermath"] = {
+    chapter: 3,
+    chapterTitle: "The Unfinished Map of Bandra",
+    location: "PALI NAKA LANE · 23:20",
+    weather: "drizzle",
+    progress: 77,
+    body: (s) => {
+      const mood = s.flags.ch3_moment === "kissed"
+        ? `Walking back down Chapel Road at 11:20 PM, you feel completely unmoored in the best way. Rain streaks your glasses and you don’t even wipe them, grinning like an idiot at a stray cat sitting on an autorickshaw roof because your mouth still remembers the warmth of hers.`
+        : s.flags.ch3_moment === "hand"
+        ? `Walking home through warm drizzle, your right palm still feels the phantom pressure of her fingers laced through yours. It feels quieter than infatuation and vastly heavier—like standing at the edge of a deep pool knowing exactly how cold the water is before you jump.`
+        : `Walking home through empty Pali Naka, your hands shoved deep into damp pockets, you keep replaying the two seconds before you made that stupid Maggi joke. Every neon shop sign reflected in the puddles feels weirdly loud and lonely.`;
+
+      return [
+        { type: "p", text: mood },
+        { type: "p", text: `Neither of you knows yet that tomorrow morning’s inbox is going to tear the weekend wide open.` }
+      ];
+    },
+    choices: () => [
+      { text: "Turn the key in your Bandra lock and face Sunday.", next: "c4_sunday_emails" }
+    ]
+  };
+
+  /* ============================================================================
+     CHAPTER IV: WHAT THE TIDE LEAVES BEHIND
+  ============================================================================ */
+
+  STORY["c4_sunday_emails"] = {
+    chapter: 4,
+    chapterTitle: "What the Tide Leaves Behind",
+    location: "YOUR DESK · SUNDAY, 13:15",
+    weather: "drizzle",
+    progress: 80,
+    body: () => [
+      { type: "p", text: `Sunday arrives like a sobering glass of cold water.` },
+      { type: "p", text: `At 1:15 PM, while nursing leftover toast at your desk, you open your personal Gmail—the one you haven’t checked seriously since April—and freeze halfway through a sip of coffee.` },
+      {
+        type: "prop",
+        kind: "email",
+        data: {
+          label: "PERSONAL INBOX · UNREAD",
+          subject: "Studio Kaveri — Portfolio Callback & Tuesday Pitch Slot",
+          from: "Ananya Rao <ananya@studiokaveri.in>",
+          body: "Hi Kabir,<br><br>We finally worked through our Q3 applications and kept coming back to your transit typography & local-storytelling case study. We’re a small independent design collective (half Mumbai, half remote/collaborative exchanges), pay is definitely leaner than fintech, and runway is tight—but we want designers who care about real human texture.<br><br>Can you do a 15-minute live concept pitch this Tuesday at 11:00 AM?"
+        }
+      },
+      { type: "p", text: `At the exact same time, your work laptop pings on the corner of the table. An automated calendar invite from <strong>Rohan Mehra</strong>: <em>“Kabir — Senior Product Lead Calibration & Comp Band Review — Tuesday, 11:00 AM.”</em>` },
+      { type: "p", text: `Before you can even process the cosmic joke of both meetings landing at Tuesday 11:00 AM, your phone lights up with a screenshot from Tara.` },
+      {
+        type: "chat",
+        header: "Tara (Dadar Ticket)",
+        status: "online",
+        messages: [
+          { from: "them", text: "Had the Delft panel call at noon. They offered me the conditional spot. Leaves in 6 weeks.", time: "15:48" },
+          { from: "them", text: "AND Nandini ma’am just called saying Rustom Mansion’s local heritage trust finally cleared half the restoration grant. Wants me to co-lead it if I stay. Which could still collapse if the builder sues.", time: "15:49" },
+          { from: "them", text: "I feel like I’m losing my mind. Can we meet tonight?", time: "15:50" }
+        ]
+      }
+    ],
+    choices: () => [
+      {
+        text: "Text back right away: “9:30 at Carter Road, our usual bench near the rocks. I have news too.”",
+        next: "c4_sid_reality"
+      }
+    ]
+  };
+
+  STORY["c4_sid_reality"] = {
+    chapter: 4,
+    chapterTitle: "What the Tide Leaves Behind",
+    location: "BANDRA KITCHEN · SUNDAY, 18:10",
+    weather: "indoor",
+    progress: 82,
+    body: () => [
+      { type: "p", text: `At 6 PM, Sid stands barefoot in the kitchen frying eggs while you stare blankly at Ananya’s email on your laptop.` },
+      { type: "p", text: `“You’re already writing the ‘Thank you so much for this opportunity, unfortunately my current commitments…’ reply in your head, aren’t you?” Sid says, not even turning around from the pan.` },
+      { type: "p", text: `“Sid, Studio Kaveri pays forty percent less than PayPulse. Rohan’s literally putting my Senior title through on Tuesday. My dad has a spreadsheet of my cousin’s mutual funds.”` },
+      { type: "p", text: `Sid slides the egg onto a chipped plate, leans his hip against the counter, and drops the clown act completely—the rare, terrifyingly sharp version of your best friend you only see twice a year.` },
+      { type: "p", text: `“Bro,” he says quietly. “You’ve lived in this flat with me for twenty-four months. You spend your entire life making sure Rohan isn’t annoyed, making sure Aunty in Pune isn’t stressed, making sure nobody ever thinks Kabir let them down. Have you checked once if <em>you’re</em> pissed at yourself?”` }
+    ],
+    choices: () => [
+      {
+        text: "Open the Studio Kaveri brief anyway and spend two hours sketching rough ideas before meeting Tara.",
+        sub: "At least see what happens when you don’t kill your own chance first.",
+        effect: (s) => {
+          s.stats.courage += 2; s.stats.honesty += 1;
+          s.flags.prepped_pitch = true;
+          addMemory(s, "Refused to decline Studio Kaveri prematurely and spent Sunday evening sketching a pitch.");
+        },
+        next: "c4_carter_road"
+      },
+      {
+        text: "Close the laptop lid. “Real life isn’t an indie movie, Sid. Rent is ₹32,000 a month.”",
+        sub: "Protect stability. Focus on Tuesday’s promotion.",
+        effect: (s) => { s.stats.duty += 2; s.stats.guard += 1; },
+        next: "c4_carter_road"
+      },
+      {
+        text: "“I’m honestly just scared, man. What if I bet on the leap and end up twenty-six and broke?”",
+        sub: "Admit the fear out loud to your best friend.",
+        effect: (s) => { s.stats.honesty += 1; s.stats.openness += 1; },
+        next: "c4_carter_road"
+      }
+    ]
+  };
+
+  STORY["c4_carter_road"] = {
+    chapter: 4,
+    chapterTitle: "What the Tide Leaves Behind",
+    location: "CARTER ROAD PROMENADE · SUNDAY, 21:35",
+    weather: "storm",
+    progress: 85,
+    body: (s) => {
+      const greeting = s.flags.ch3_moment === "kissed"
+        ? `When she reaches the wet concrete parapet, she steps right up to you, touches your wrist briefly—searching your eyes as if checking whether last night survived daylight—before dropping onto the stone beside you.`
+        : s.flags.ch3_moment === "hand"
+        ? `She walks up with both hands buried in her hoodie pockets, offers a tired small smile, and sits three inches away on the damp parapet.`
+        : `She sits a careful foot away on the sea-wall, hugging her knees, looking straight out at the churning black water instead of at you.`;
+
+      return [
+        { type: "p", text: `High tide at Carter Road in July sounds like freight trains crashing into concrete. Salt spray mists your faces under the orange sodium lamps; couples have long since fled the promenade, leaving only a lone corn-roaster packing up his cart under a torn tarp.` },
+        { type: "p", text: greeting },
+        { type: "p", text: `“So,” Tara says over the roar of the sea, pulling a strand of wet hair behind her ear. “Delft gives me until Thursday morning to accept. Six weeks after that, I’m packing winter coats I don’t even own.” She turns to look at you. “Meanwhile Nandini wants an answer on Rustom Mansion by Wednesday—meaning I stay here, earn peanut-butter money, and fight a greedy developer who might bulldoze the whole block anyway.”` },
+        { type: "p", text: `You tell her about Studio Kaveri—and Rohan’s 11 AM Senior Lead meeting sitting directly on top of it.` },
+        { type: "p", text: `Tara laughs once, short and joyless, looking up at the bruised black clouds. “God. We really picked a hell of a week to meet on Platform 4, didn’t we?”` },
+        { type: "p", text: `Then her voice drops—sharp, tired, stripped of every cute joke from the past five days.` },
+        { type: "p", text: `${s.flags.ch3_moment === "pulled_back" ? "“Look at me, Kabir. Last night you pulled away the second things got real. Tonight you’re already half-talking yourself out of Kaveri. Tell me honestly—do you ever let yourself want something without keeping one foot by the exit?”" : "“Don’t do the polite Kabir thing right now where you tell me whatever makes my life easier. Look at me and tell me what you actually think. What are we even doing?”"}` }
+      ];
+    },
+    choices: () => [
+      {
+        text: "“I’m terrified that if I stop pretending I’m chill and tell you I’m falling for you, you’ll still pack your bags in six weeks.”",
+        sub: "Drop every piece of armor in the wind.",
+        effect: (s) => {
+          s.stats.honesty += 2; s.stats.openness += 2; s.stats.courage += 1;
+          s.flags.c4_choice = "honest";
+          addMemory(s, "Told Tara the raw truth in the wind at Carter Road without hiding behind jokes.");
+        },
+        next: "c4_argument_honest"
+      },
+      {
+        text: "“Maybe you *want* Amsterdam because leaving is cleaner than staying in Mumbai and risking failure.”",
+        sub: "Say the sharpest truth—knowing it will cut her.",
+        effect: (s) => {
+          s.stats.friction += 2; s.stats.honesty += 1; s.stats.guard += 1;
+          s.flags.c4_choice = "fight";
+          addMemory(s, "Accused Tara at Carter Road of using Amsterdam as an escape hatch.");
+        },
+        next: "c4_argument_fight"
+      },
+      {
+        text: "“You worked four years for something like Delft, Tara. Take it. We barely met Tuesday—I wouldn’t ask you to shrink for me.”",
+        sub: "Be noble. Close the door quietly before she can.",
+        effect: (s) => {
+          s.stats.guard += 2; s.stats.duty += 1;
+          s.flags.c4_choice = "noble";
+          addMemory(s, "Played the noble realist at Carter Road and told her to take Amsterdam.");
+        },
+        next: "c4_argument_noble"
+      },
+      {
+        text: "“Can we just breathe? Neither of us has to solve the next two years on a wet parapet at 10 PM.”",
+        sub: "Reach for warmth and buy time.",
+        effect: (s) => {
+          s.stats.warmth += 1; s.stats.guard += 1;
+          s.flags.c4_choice = "drift";
+          addMemory(s, "Asked for one more breath before making impossible promises.");
+        },
+        next: "c4_argument_drift"
+      }
+    ]
+  };
+
+  STORY["c4_argument_honest"] = {
+    chapter: 4,
+    chapterTitle: "What the Tide Leaves Behind",
+    location: "CARTER ROAD PROMENADE · SUNDAY, 22:05",
+    weather: "storm",
+    progress: 88,
+    body: () => [
+      { type: "p", text: `The honesty lands so nakedly in the wet salt air that Tara freezes.` },
+      { type: "p", text: `For five long seconds, only the sea fills the space between you. A wave slaps the tetrapods below, sending cold spray across both your ankles.` },
+      { type: "p", text: `“Kabir…” Her voice cracks slightly, and she presses the heel of her palm against her forehead as if holding something back. “I’m twenty-four. My brother walked out on everyone without looking back, my dad checks my bank balance every month like I’m made of glass, and five days ago I met a guy holding cold medu vadas who made Mumbai feel livable again.”` },
+      { type: "p", text: `She lowers her hand. Her eyes are bright and furious with tears she refuses to let spill. “Do you know how unfair it is that you showed up right when I finally got a plane ticket out?”` },
+      { type: "p", text: `“I didn’t ask you to stay for me,” you say quietly, though your voice shakes. “I just refused to lie and pretend I don’t care.”` },
+      { type: "p", text: `She wipes her cheek fast with the back of her wrist. “I need forty-eight hours where nobody pulls on me, okay? You have Tuesday morning. So do I.”` }
+    ],
+    choices: () => [{ text: "Nod slowly and walk her to a waiting rickshaw.", next: "c4_rain_parting" }]
+  };
+
+  STORY["c4_argument_fight"] = {
+    chapter: 4,
+    chapterTitle: "What the Tide Leaves Behind",
+    location: "CARTER ROAD PROMENADE · SUNDAY, 22:05",
+    weather: "storm",
+    progress: 88,
+    body: () => [
+      { type: "p", text: `Her chin snaps up like you slapped her.` },
+      { type: "p", text: `“Excuse me?” Tara stands straight off the parapet, rain darkening the shoulders of her hoodie. “I bust my ass measuring crumbling roofs in forty-degree heat while your company designs confetti for late fees, and you think I’m <em>running away</em>?”` },
+      { type: "p", text: `“I didn’t say you aren’t talented,” you shoot back, louder than you meant, heart hammering defensively. “I said you’ve been talking about people leaving since Friday—and the second Rustom Mansion actually gives you a shot right here, you’re terrified of staying and watching it break your heart!”` },
+      { type: "p", text: `Dead silence. Even the wind seems to drop a notch.` },
+      { type: "p", text: `Tara stares at you—hurt slicing clean past anger. “Wow,” she whispers. “Five days, Kabir. You know me five days and you think you’ve cracked my whole life open.” She slings her bag hard onto her shoulder. “Good luck with your promotion on Tuesday.”` }
+    ],
+    choices: () => [{ text: "Watch her hail an auto alone before you can catch your breath.", next: "c4_rain_parting" }]
+  };
+
+  STORY["c4_argument_noble"] = {
+    chapter: 4,
+    chapterTitle: "What the Tide Leaves Behind",
+    location: "CARTER ROAD PROMENADE · SUNDAY, 22:05",
+    weather: "storm",
+    progress: 88,
+    body: () => [
+      { type: "p", text: `You say it smoothly, gently, wearing the exact calm voice you use when telling your mother not to worry.` },
+      { type: "p", text: `Tara listens without interrupting. Slowly, something closes behind her eyes—like wooden shutters latching before a storm.` },
+      { type: "p", text: `“Right,” she says softly, looking down at her wet Converse. “We barely met Tuesday. Very sensible of you, Kabir. Nobody gets bruised if nobody expects anything.”` },
+      { type: "p", text: `“Tara, I didn’t mean it like it doesn’t matter—”` },
+      { type: "p", text: `“No, you’re right,” she interrupts with a small, brittle smile that breaks your stomach open. “I’m glad one of us is being practical. Go crush your Tuesday review.”` }
+    ],
+    choices: () => [{ text: "Stand alone by the sea-wall after her auto turns the corner.", next: "c4_rain_parting" }]
+  };
+
+  STORY["c4_argument_drift"] = {
+    chapter: 4,
+    chapterTitle: "What the Tide Leaves Behind",
+    location: "CARTER ROAD PROMENADE · SUNDAY, 22:05",
+    weather: "storm",
+    progress: 88,
+    body: () => [
+      { type: "p", text: `She lets out a long, shaky breath and leans her forehead briefly against your shoulder—just three seconds, heavy and exhausted.` },
+      { type: "p", text: `“I hate that you’re right and I hate that waiting feels impossible,” she murmurs into the wet cotton of your shirt. “Two days, Kabir. Get through Tuesday. Let me sit in Rustom Mansion one more time without crying, and then let’s see what’s left standing.”` },
+      { type: "p", text: `You rest your cheek lightly against the top of her damp hair. Neither of you makes a promise you aren’t sure you can keep.` }
+    ],
+    choices: () => [{ text: "Flag down an auto for her and watch the red tail-lights blur.", next: "c4_rain_parting" }]
+  };
+
+  STORY["c4_rain_parting"] = {
+    chapter: 4,
+    chapterTitle: "What the Tide Leaves Behind",
+    location: "BANDRA WEST · SUNDAY, 23:45",
+    weather: "drizzle",
+    progress: 90,
+    body: () => [
+      { type: "p", text: `By midnight, Mumbai feels vast and indifferent again. No fairy lights, no shared earphones, no jokes about medu vada. Just the ceiling fan clicking <em>tik-tik-tik</em> over your head while Tuesday sits forty-eight hours away like an unlit tunnel.` }
+    ],
+    choices: () => [
+      { text: "Turn off the bedroom light and wait for Monday.", next: "c5_monday_silence" }
+    ]
+  };
+
+  /* ============================================================================
+     CHAPTER V: THE SPACE BETWEEN TWO TRAINS
+  ============================================================================ */
+
+  STORY["c5_monday_silence"] = {
+    chapter: 5,
+    chapterTitle: "The Space Between Two Trains",
+    location: "LOWER PAREL OFFICE · MONDAY, 13:40",
+    weather: "mist",
+    progress: 91,
+    body: (s) => {
+      const mondayMood = s.flags.c4_choice === "fight"
+        ? `Monday smells like burnt office espresso and dry pride. Your WhatsApp chat with Tara sits untouched since Sunday night—no blue ticks, no typing indicator, just the cold grey weight of words you threw like stones in the dark.`
+        : s.flags.c4_choice === "noble"
+        ? `Monday moves in eerie slow motion. You open Figma, close Slack, stare at your wallet on the desk where the Dadar ticket still pokes out half an inch. You told her to go because you thought it was generous. Why does it feel like cowardice?`
+        : `Monday passes through a thick woollen fog. You answer three Slack threads on autopilot, drink two lukewarm coffees, and catch yourself staring at the clock on your screen wondering whether Tara is sitting inside Rustom Mansion right now.`;
+
+      return [
+        { type: "p", text: mondayMood },
+        { type: "p", text: `At 1:40 PM, while everyone else argues over biryani bowls in the cafeteria, you sit alone on the concrete stairwell by the fire exit and pull out the crumpled Western Railway ticket. The Sharpie ink is smudged at the corner where your thumb keeps rubbing it.` },
+        { type: "p", text: `<em>98204-XX719 — Tara (don’t text ‘wyd’ at 2pm).</em>` },
+        { type: "p", text: `It isn’t 2 PM yet. Your screen shows 1:42.` }
+      ];
+    },
+    choices: () => [
+      {
+        text: "Text her something small and honest: “Not asking for an answer today. Just hoping you slept, and rooting for you.”",
+        sub: "Break the silence without demanding anything back.",
+        effect: (s) => {
+          s.stats.warmth += 1; s.stats.honesty += 1;
+          s.flags.sent_monday_text = true;
+          addMemory(s, "Sent a quiet, zero-pressure message on Monday when silence felt easier.");
+        },
+        next: "c5_tuesday_crossroads"
+      },
+      {
+        text: "Slip the ticket back into your wallet and keep the chat quiet. She asked for space; honor it.",
+        sub: "Stay disciplined and focus on tomorrow morning.",
+        effect: (s) => { s.stats.guard += 1; },
+        next: "c5_tuesday_crossroads"
+      }
+    ]
+  };
+
+  STORY["c5_tuesday_crossroads"] = {
+    chapter: 5,
+    chapterTitle: "The Space Between Two Trains",
+    location: "YOUR BANDRA DESK · TUESDAY, 10:35",
+    weather: "drizzle",
+    progress: 93,
+    body: (s) => {
+      const replyNote = s.flags.sent_monday_text
+        ? `At 11 PM last night, Tara replied with a single line: <em>“Thank you, Kabir. Truly. Good luck at 11 tomorrow.”</em>`
+        : `Your chat with Tara stayed silent all Monday—just two people sitting on opposite sides of Tuesday morning.`;
+
+      return [
+        { type: "p", text: replyNote },
+        { type: "p", text: `Tuesday, 10:35 AM. Rain taps briskly against your bedroom window. You worked from home this morning so you wouldn’t get trapped on the Western Line, wearing your cleanest pressed white shirt over track pants nobody on Zoom can see.` },
+        { type: "p", text: `Two browser tabs sit side by side on your laptop screen.` },
+        { type: "p", text: `Left tab: <strong>Google Meet — PayPulse Senior Product Lead Calibration (Rohan & VP Vikram)</strong>. Safe rent. A 28% raise. Your parents finally exhaling on Sunday phone calls.` },
+        { type: "p", text: `Right tab: <strong>Studio Kaveri — Live 15-Minute Concept Pitch (Ananya Rao)</strong>. ${s.flags.prepped_pitch ? "Your rough transit-typography sketches sit open beside your mouse, messy and electric." : "An empty Figma canvas and four bullet points you jotted down at 7 AM."} Lower salary, scary six-month runway, and the first work in three years that actually feels like <em>yours</em>.` },
+        { type: "p", text: `Twenty-five minutes on the clock. Once you decline one, you can’t un-ring that bell.` }
+      ];
+    },
+    choices: () => [
+      {
+        text: "Slack Rohan asking to push the review to Thursday, open the Studio Kaveri tab, and bet on yourself.",
+        sub: "Risk looking flaky at PayPulse. Take the scary pitch.",
+        effect: (s) => {
+          s.stats.courage += 2; s.stats.openness += 1;
+          s.flags.pitched_kaveri = true;
+          addMemory(s, "Chose the Studio Kaveri pitch at 11 AM over a guaranteed corporate promotion.");
+        },
+        next: "c5_pitch"
+      },
+      {
+        text: "Send Ananya a polite email declining the Studio Kaveri slot, straighten your collar, and join Rohan’s call.",
+        sub: "Choose stability. Keep your promises in Pune and Mumbai.",
+        effect: (s) => {
+          s.stats.duty += 2; s.stats.guard += 1;
+          s.flags.took_promotion = true;
+          addMemory(s, "Declined Studio Kaveri and stepped into your Senior Lead promotion at PayPulse.");
+        },
+        next: "c5_promo"
+      }
+    ]
+  };
+
+  STORY["c5_pitch"] = {
+    chapter: 5,
+    chapterTitle: "The Space Between Two Trains",
+    location: "GOOGLE MEET · STUDIO KAVERI · 11:18",
+    weather: "golden",
+    progress: 94,
+    body: (s) => [
+      { type: "p", text: `Rohan replies to your Slack reschedule with a tight <em>“Sure, let’s revisit Thursday, hope nothing urgent.”</em> You feel a cold prickle behind your neck—and ignore it, clicking <strong>Join Now</strong> on Studio Kaveri.` },
+      { type: "p", text: `Ananya Rao and her co-founder Dev aren’t wearing Patagonia vests or asking about engagement funnels. They’re sitting in a sunlit, chaotic room in Bandra-Kurla with handmade paper samples taped behind them.` },
+      { type: "p", text: `${s.flags.prepped_pitch ? "Because you spent Sunday night sketching, your voice stops shaking after ninety seconds. You walk them through your concept—turning Mumbai’s vanishing painted bus-stop signage and station boards into a living civic type system, complete with a tiny tribute to a crumpled Dadar–Bandra ticket." : "For the first three minutes you ramble nervously—until you stop trying to sound like a PayPulse slide deck and just talk plainly about why cities feel lonelier when every screen looks identical."}` },
+      { type: "p", text: `When you finish, Dev leans back and smiles. Ananya taps her pen once against her notebook.` },
+      { type: "p", text: `“Look, Kabir,” she says candidly. “We can’t match fintech money. What we *do* have is a five-month independent cultural transit commission—three months in Mumbai, plus a fall design-residency partnership in Rotterdam and Delft if you want the exchange seat—and zero confetti buttons.”` },
+      { type: "p", text: `Your heart misses an entire beat. <em>Rotterdam and Delft.</em> Wait—Delft is forty minutes by train from Amsterdam.` },
+      { type: "p", text: `“Take until Friday,” Ananya adds, closing her laptop. “Either way, don’t go back to hiding behind safe rectangles, okay?”` }
+    ],
+    choices: () => [{ text: "Close your laptop with trembling hands and stare at the ceiling.", next: "c5_baba_call" }]
+  };
+
+  STORY["c5_promo"] = {
+    chapter: 5,
+    chapterTitle: "The Space Between Two Trains",
+    location: "PAYPULSE CONFERENCE CALL · 11:35",
+    weather: "mist",
+    progress: 94,
+    body: () => [
+      { type: "p", text: `Typing <em>“Hi Ananya, thank you so much for considering my portfolio, unfortunately…”</em> takes forty seconds and feels like folding a paper boat and pushing it down a storm drain.` },
+      { type: "p", text: `Ten minutes later, Vikram beams from his Bangalore webcam. “Kabir’s been rock-solid all quarter, Rohan. Reliable, zero drama, delivers on time. Welcome to Senior Product Lead—HR will send the revised comp letter by 4 PM.”` },
+      { type: "p", text: `Everyone claps briefly in little video boxes. Slack lights up with party-popper emojis.` },
+      { type: "p", text: `You sit in your silent Bandra bedroom after the call drops. The 28% raise sits right there in black and white. Your rent won’t hurt anymore. You can upgrade your mother’s fridge in Pune next Diwali without checking your balance twice.` },
+      { type: "p", text: `And yet, looking at your reflection in the dark laptop screen, all you hear is Sid’s voice in the kitchen: <em>Reliable. Zero drama.</em>` }
+    ],
+    choices: () => [{ text: "Make tea, finish the afternoon, and wait for night.", next: "c5_baba_call" }]
+  };
+
+  STORY["c5_baba_call"] = {
+    chapter: 5,
+    chapterTitle: "The Space Between Two Trains",
+    location: "YOUR BALCONY · TUESDAY, 21:20",
+    weather: "drizzle",
+    progress: 95,
+    body: (s) => [
+      { type: "p", text: `At 9:20 PM, your phone rings. Not Aai—<strong>Baba</strong>.` },
+      { type: "p", text: `Your father almost never calls on weekdays unless the bank OTP bounced or India lost a Test match by tea. You step out onto the narrow balcony where rain mist cools your forehead.` },
+      { type: "p", text: `“Hello, Kabir?” His voice is steady, slightly raspy. “Aai told me today was your promotion meeting. I thought… let me ask directly instead of hovering through your mother.”` },
+      { type: "p", text: `Across the lane, a scooter horn blares once and fades. Behind you inside the living room, Sid quietly turns the TV volume down to zero.` },
+      { type: "p", text: `“Baba,” you start, looking at the dark wet leaves of the gulmohar tree below.` }
+    ],
+    choices: () => [
+      {
+        text: "Tell him the truth—even the scary part about what you actually want your twenties to feel like.",
+        sub: "Stop performing the safe son for once.",
+        effect: (s) => {
+          s.stats.honesty += 2; s.stats.courage += 1;
+          s.flags.baba_truth = true;
+          addMemory(s, "Told your father the unvarnished truth on the Tuesday night phone call.");
+        },
+        next: "c5_baba_reply"
+      },
+      {
+        text: "Keep it easy and reassuring: “Everything went fine, Baba. Don’t worry about me at all.”",
+        sub: "Protect him from your uncertainty.",
+        effect: (s) => { s.stats.guard += 1; s.stats.duty += 1; },
+        next: "c5_baba_reply"
+      }
+    ]
+  };
+
+  STORY["c5_baba_reply"] = {
+    chapter: 5,
+    chapterTitle: "The Space Between Two Trains",
+    location: "YOUR BALCONY · TUESDAY, 21:28",
+    weather: "drizzle",
+    progress: 96,
+    body: (s) => {
+      let babaWords = "";
+      if (s.flags.baba_truth && s.flags.pitched_kaveri) {
+        babaWords = `For three long seconds, your father says nothing. Your chest braces for the lecture about EMI, stability, and how boys from Pune don’t throw away corporate titles. Instead, Baba sighs—a surprisingly human sound. <em>“When I was twenty-six, someone offered me a transfer to open a small workshop in Baroda,”</em> he says quietly. <em>“I turned it down in two hours because I was scared of disappointing my father. Forty years later, I still remember the train I didn’t get on.”</em> His voice softens. <em>“Just don’t be careless, Kabir. Being scared isn’t a reason to stop.”</em>`;
+      } else if (s.flags.baba_truth) {
+        babaWords = `You tell him honestly—that you got the promotion, and you feel strangely hollow inside it. Your father goes quiet for a beat, then says softly, <em>“Security is a good umbrella, beta. Just make sure you don’t forget to step outside once the rain stops.”</em>`;
+      } else {
+        babaWords = `“Good, good,” Baba says, instantly relieved, launching into a two-minute story about his cousin’s new inverter before handing the phone back to Aai. Hanging up, the balcony feels twice as small and twice as quiet.`;
+      }
+
+      return [
+        { type: "p", text: babaWords },
+        { type: "p", text: `Wednesday comes and goes in grey stillness. Then, at 7:15 PM—just as thunder rolls low across Bandra again—your phone buzzes on the table.` }
+      ];
+    },
+    choices: () => [
+      { text: "Pick up the phone and read the message.", next: "c5_wednesday_signal" }
+    ]
+  };
+
+  STORY["c5_wednesday_signal"] = {
+    chapter: 5,
+    chapterTitle: "The Space Between Two Trains",
+    location: "YOUR BANDRA 2BHK · WEDNESDAY, 19:15",
+    weather: "storm",
+    progress: 97,
+    body: (s) => {
+      const highFriction = s.flags.c4_choice === "fight" || s.stats.guard >= 4;
+      const msg = highFriction
+        ? [
+            { from: "them", text: "Hey. Wrapping up final keys at Rustom Mansion tonight before Nandini locks the gate at 9.", time: "19:14" },
+            { from: "them", text: "If you’re free and want your overshirt / one last proper goodbye without shouting in the wind, I’m here. Totally fine if you’re busy too.", time: "19:14" }
+          ]
+        : [
+            { from: "them", text: "Last night inside Rustom Mansion before Nandini submits the paperwork at 9 AM.", time: "19:14" },
+            { from: "them", text: "Rain just started again and I have zero umbrella and way too many thoughts. Meet me?", time: "19:15" }
+          ];
+
+      return [
+        {
+          type: "chat",
+          header: "Tara (Dadar Ticket)",
+          status: "online",
+          messages: msg
+        },
+        { type: "p", text: `Sid looks up from his phone across the sofa, reads your face in half a second, and tosses his spare windcheater onto your lap without saying a single word.` },
+        { type: "p", text: `Rain rattles against the window panes. Fort is forty-five minutes by local train. The 7:38 fast from Bandra leaves in twenty-three minutes.` }
+      ];
+    },
+    choices: () => [
+      {
+        text: "Grab your keys, shove the Dadar ticket into your pocket, and sprint for the 7:38 fast train.",
+        sub: "Show up—whatever waits at the end of the line.",
+        effect: (s) => {
+          s.stats.courage += 1; s.stats.openness += 1;
+          addMemory(s, "Ran through Wednesday evening rain to meet Tara one last time at Rustom Mansion.");
+        },
+        next: "c6_reunion"
+      },
+      {
+        text: "Type out an honest reply, stare at the blinking cursor for five minutes, and decide to protect what’s left of your peace.",
+        sub: "Let the 7:38 train leave without you.",
+        condition: (s) => s.stats.guard >= 2 || s.flags.took_promotion || s.flags.c4_choice === "fight" || s.flags.c4_choice === "noble",
+        effect: (s) => {
+          s.stats.guard += 2;
+          addMemory(s, "Stayed behind on Wednesday night while the 7:38 local pulled out without you.");
+        },
+        next: "ending_5"
+      }
+    ]
+  };
+
+  /* ============================================================================
+     CHAPTER VI: AFTER THE LAST LOCAL (AND 5 ENDINGS)
+  ============================================================================ */
+
+  STORY["c6_reunion"] = {
+    chapter: 6,
+    chapterTitle: "After the Last Local",
+    location: "RUSTOM MANSION, FORT · WEDNESDAY, 20:40",
+    weather: "storm",
+    progress: 98,
+    body: (s) => {
+      const opening = s.flags.c4_choice === "fight"
+        ? `When you push open the heavy iron side-gate of Rustom Mansion soaked from head to toe, Tara isn’t sitting on the stairs. She’s standing beneath the dusty stained-glass dome holding a flashlight, looking small inside an oversized sweater. For a second neither of you speaks—only rain drumming fifty feet overhead on the skylight glass.`
+        : `You climb the dark spiral stairs of Rustom Mansion two at a time, lungs burning, hair dripping into your eyes. Under the stained-glass dome, Tara sits on an overturned paint crate beside two paper cups of lukewarm cutting chai she somehow kept warm inside a foil bag. When she hears your footsteps, she looks up—and exhales as if she’s been holding that breath since Sunday.`;
+
+      const shirtCallback = s.flags.gave_shirt
+        ? `Beside her canvas bag sits your navy overshirt, neatly folded, smelling faintly of sandalwood soap.`
+        : `Her sketchbook lies open beside her knees, charcoal smudged across the heel of her left palm.`;
+
+      return [
+        { type: "p", text: opening },
+        { type: "p", text: shirtCallback },
+        { type: "p", text: `“Hey,” she says softly.` },
+        { type: "p", text: `“Hey.” You step under the dome, water pooling around your sneakers on the cracked Minton tiles.` },
+        { type: "p", text: `“Tell me how Tuesday went first,” Tara says, watching your face carefully. “And don’t give me the polite version.”` },
+        { type: "p", text: `${s.flags.pitched_kaveri ? "You sit down across from her on the bottom step and tell her everything—cancelling Rohan, pitching Studio Kaveri, Ananya’s offer, and the insane coincidence of their autumn Rotterdam-Delft exchange." : "You tell her quietly—declining Studio Kaveri, taking the Senior Lead title, and that strange hollow echo in the room after everyone stopped clapping."}` },
+        { type: "p", text: `Tara listens without interrupting once. When you finish, she pulls two folded letters out of her tote—one crisp blue Delft acceptance packet, one coffee-stained municipal heritage trust brief—and sets them side by side on the cracked tile floor between you.` },
+        { type: "p", text: `“Tomorrow morning is the deadline,” she whispers, looking straight into your eyes. “Before I sign either page… I just need to know which Kabir is sitting across from me tonight.”` }
+      ];
+    },
+    choices: (s) => [
+      {
+        text: "“Don’t miss the plane, and don’t leave me behind either. Studio Kaveri has that fall residency in Delft—let’s take the crazy leap together.”",
+        sub: "Earned by pitching Studio Kaveri & choosing bold honesty.",
+        condition: (s) => s.flags.pitched_kaveri && (s.stats.honesty + s.stats.courage + s.stats.openness >= 7),
+        effect: (s) => { addMemory(s, "Chose the terrified, wide-open leap with Tara at Rustom Mansion."); },
+        next: "ending_1"
+      },
+      {
+        text: "“Look at this place, Tara—not at me. Tell me honestly: do you actually want Delft, or were you just scared nothing in Mumbai was worth fighting for?”",
+        sub: "Earned through deep trust & warmth—helping her choose what she truly wants.",
+        condition: (s) => (s.stats.trust + s.stats.warmth + s.stats.honesty >= 6) && s.flags.c4_choice !== "fight",
+        effect: (s) => { addMemory(s, "Stood beneath the stained-glass dome and reminded her why Mumbai still belonged to her."); },
+        next: "ending_2"
+      },
+      {
+        text: "“You have to go to Delft, Tara. I won’t lie and pretend our timelines fit cleanly—and I love what we found too much to make you shrink.”",
+        sub: "The honest, loving goodbye without bitterness.",
+        condition: (s) => s.stats.honesty >= 2 || s.stats.trust >= 2,
+        effect: (s) => { addMemory(s, "Refused to lie about timelines and let her fly with your full blessing."); },
+        next: "ending_4"
+      },
+      {
+        text: "Pull back from the heavy papers altogether. “Forget Thursday for four hours. Walk Marine Drive with me until sunrise?”",
+        sub: "Protect tonight. Leave the hardest words unspoken.",
+        effect: (s) => { addMemory(s, "Walked Marine Drive until dawn without ever saying the three words sitting behind your teeth."); },
+        next: "ending_3"
+      },
+      {
+        text: "Step back slowly toward the stairs. “I shouldn’t have come here to confuse you. Have a good flight, Tara.”",
+        sub: "Let pride and armor have the final word.",
+        condition: (s) => s.stats.guard >= 3 || s.stats.friction >= 2,
+        effect: (s) => { addMemory(s, "Walked back down the Rustom Mansion stairs before either of you could break the glass."); },
+        next: "ending_5"
+      }
+    ]
+  };
+
+  /* ---------------- THE 5 DISTINCT ENDINGS ---------------- */
+
+  STORY["ending_1"] = {
+    chapter: 6,
+    chapterTitle: "After the Last Local",
+    location: "CHHATRAPATI SHIVAJI TERMINUS · TERMINAL 2 · SIX WEEKS LATER",
+    weather: "dawn",
+    progress: 100,
+    ending: {
+      id: "ending_1",
+      num: "I",
+      title: "Two Return Tickets, One Suitcase",
+      subtitle: "For choosing the leap over the ledge."
+    },
+    body: (s) => [
+      { type: "p", text: `Under the cracked stained-glass dome of Rustom Mansion, Tara stared at you for five stunned seconds before laughing through sudden tears—a sharp, disbelieving sound that bounced off ninety-year-old walls.` },
+      { type: "p", text: `<em>“You absolute idiot,”</em> she whispered, grabbing your soaked collar and pulling you down until your forehead knocked against hers. <em>“You actually deferred a corporate promotion for transit fonts and a girl you met next to cold medu vadas?”</em>` },
+      { type: "divider" },
+      { type: "p", text: `Six weeks later, at 3:10 AM inside Terminal 2’s chaotic departure hall, the monsoon finally breaks outside the tall glass walls.` },
+      { type: "p", text: `It isn’t glamorous. You took the Studio Kaveri offer, sold your old monitor to Sid (who cried dramatically for forty seconds at the gate before stealing your remaining Swiggy coupons), and burned half your savings on a six-month visa and a winter coat bought off Linking Road that definitely isn’t waterproof.` },
+      { type: "p", text: `Beside you in the check-in queue, Tara is fiercely arguing with the weighing scale over a 23.4-kilogram battered suitcase stuffed with charcoal tubes, two jars of your Aai’s mango pickle, and ${s.flags.gave_shirt ? "your permanently stolen navy overshirt" : "a framed print of Rustom Mansion’s spiral stairs"}—which Nandini ma’am promised to fight for with a junior fellow while Tara takes the European urban-conservation term.` },
+      { type: "p", text: `“Your bag is overweight by four hundred grams,” Tara mutters, tossing you a pair of thick woollen socks to stuff into your backpack.` },
+      { type: "p", text: `You zip your passport pouch shut. Tucked cleanly inside the clear plastic sleeve next to your boarding pass—marked <strong>BOM → AMS</strong>—sits a laminated, slightly yellowed Western Railway ticket with faded Sharpie handwriting on the back.` },
+      { type: "p", text: `Tara catches sight of it, stops wrestling the zipper, and softens completely.` },
+      { type: "p", text: `“Are you terrified?” she asks quietly, slipping her warm fingers between yours as the boarding call crackles overhead.` },
+      { type: "p", text: `“Out of my mind,” you admit, pulling her suitcase handle with your free hand as you step together toward the glowing security escalators. “Also weirdly hungry.”` },
+      { type: "p", text: `Tara grins—the exact crooked, fearless grin from Dadar Platform 4—and leans her head briefly against your shoulder as Mumbai’s amber lights blur below the rising glass.` },
+      { type: "quote", text: `Some trains are meant to be missed—so you finally stop waiting on the platform and build a life worth catching.` }
+    ],
+    choices: () => []
+  };
+
+  STORY["ending_2"] = {
+    chapter: 6,
+    chapterTitle: "After the Last Local",
+    location: "RANWAR VILLAGE, BANDRA · FOUR MONTHS LATER",
+    weather: "golden",
+    progress: 100,
+    ending: {
+      id: "ending_2",
+      num: "II",
+      title: "The Monsoon We Kept",
+      subtitle: "For staying, building, and rooting a real life in the city you chose."
+    },
+    body: (s) => [
+      { type: "p", text: `Beneath Rustom Mansion’s stained-glass dome that Wednesday night, your question didn’t make her angry. Instead, Tara dropped her chin onto her knees and went quiet for a full minute while rain hissed against the glass overhead.` },
+      { type: "p", text: `Then she reached into her tote, pulled out a folded letter she hadn’t shown you yet, and slid it across the tiles. It was a signed municipal partnership confirmation from Nandini ma’am—dated <strong>4:30 PM that afternoon</strong>.` },
+      { type: "p", text: `<em>“I already turned down Delft before I texted you,”</em> she whispered, eyes shining. <em>“Because every time I pictured Amsterdam, I kept thinking about my brother—how easy it is to confuse running away with bravery. This building is messy and underfunded and half-broken. So is this city. And for the first time in years, I don’t want to leave before I finish what I love.”</em>` },
+      { type: "divider" },
+      { type: "p", text: `Four months later, October heat has finally dried the moss off Bandra’s compound walls.` },
+      { type: "p", text: `The ceiling fan in your tiny shared Ranwar flat—yours and hers now, after Sid moved in with his girlfriend in Andheri—still makes a rhythmic <em>tik-tik-tik</em> click on speed 3. A water stain shaped vaguely like Sri Lanka still sits in the corner above the kettle.` },
+      { type: "p", text: `You’re sitting barefoot on the balcony ledge with a mug of ginger chai and ${s.flags.pitched_kaveri ? "your Studio Kaveri typography proofs spread across two crates—two months into designing Mumbai’s cleanest local signage overhaul yet." : "your laptop open to freelance design sprints you took on after finally leaving PayPulse’s 11 PM confetti meetings behind."} Down on the street, a black-and-yellow cab honks lazily around a sleeping dog.` },
+      { type: "p", text: `The front door creaks open. Tara walks in covered in white limestone dust, holding two bruised Alphonso mangoes and a rolled blueprint under one arm. She kicks off her red Converse, drops onto the dhurrie beside your knees, and steals the chai straight out of your hands.` },
+      { type: "p", text: `“The builder backed down,” she says breathlessly, grinning so wide her cheeks ache. “Heritage committee cleared Phase Two scaffolding for Rustom Mansion this morning.”` },
+      { type: "p", text: `You pull her down by the wrist until she’s laughing against your chest, lime dust smearing across your black t-shirt. Out on the street, someone’s radio plays an old Kishore Kumar track through an open window.` },
+      { type: "quote", text: `Home isn’t where nothing ever leaks or breaks. It’s whoever stays in the room with a bucket when the ceiling starts to drip.` }
+    ],
+    choices: () => []
+  };
+
+  STORY["ending_3"] = {
+    chapter: 6,
+    chapterTitle: "After the Last Local",
+    location: "MARINE DRIVE · 05:25 AM (AND TWO WINTERS LATER)",
+    weather: "dawn",
+    progress: 100,
+    ending: {
+      id: "ending_3",
+      num: "III",
+      title: "What We Almost Said at Marine Drive",
+      subtitle: "For a love so gentle neither of you dared break its glass."
+    },
+    body: () => [
+      { type: "p", text: `You walked from Horniman Circle to Nariman Point at 1 AM, then all the way up the curving stone necklace of Marine Drive until the black sea turned slate, then pale violet, then bruised rose gold.` },
+      { type: "p", text: `And it was, objectively, the best night of your twenty-fifth year.` },
+      { type: "p", text: `You ate ₹20 bhutta off a stray early-morning cart. You invented ridiculous fake biographies for joggers running past at 5 AM. She rested her head on your shoulder for twenty silent minutes while the Queen’s Necklace streetlights blinked off one by one. Every single time your fingers brushed hers, a sharp sentence rose right behind your teeth—<em>Don’t go. Wait for me. Tell me to come with you.</em>` },
+      { type: "p", text: `And every single time, both of you smiled politely instead, too terrified of ruining the perfection of the night by asking for a morning it couldn’t promise.` },
+      { type: "p", text: `At 5:45 AM outside Churchgate Station, she hugged you hard enough to bruise your ribs, whispered, <em>“Look after yourself, Kabir,”</em> and disappeared into the grey dawn.` },
+      { type: "divider" },
+      { type: "p", text: `<strong>Two Winters Later · Kala Ghoda, Mumbai</strong>` },
+      { type: "p", text: `You’re twenty-seven now. Better shoes, steadier bank balance, a creative job that doesn’t swallow your Sundays. On a cool November evening, you step out of Kitab Khana holding two paperbacks just as an unseasonal drizzle catches pedestrians off-guard.` },
+      { type: "p", text: `Across the glistening lane, under the restored limestone arch of a quiet heritage gallery, a woman in a faded denim jacket stands shaking water off an umbrella—laughing at something a friend beside her just said.` },
+      { type: "p", text: `For half a second your heart stops dead in your chest. She turns slightly—catches your eye across ten yards of wet tarmac.` },
+      { type: "p", text: `Both of you freeze. Neither crosses the street, because her flight back to Rotterdam is probably Tuesday and your life has finally settled into gentler grooves—yet when she raises two fingers in a small, unmistakable wave, smiling that exact crooked Dadar smile, something inside you still wonders what five brave words at 5 AM on Marine Drive might have built.` },
+      { type: "quote", text: `Not every love story ends in failure just because it ends. Some people arrive to wake you up, then quietly let you walk into the rest of your life.` }
+    ],
+    choices: () => []
+  };
+
+  STORY["ending_4"] = {
+    chapter: 6,
+    chapterTitle: "After the Last Local",
+    location: "ANDHERI EAST · FRIDAY, 05:10 AM",
+    weather: "dawn",
+    progress: 100,
+    ending: {
+      id: "ending_4",
+      num: "IV",
+      title: "Before the Concrete Dries",
+      subtitle: "For loving someone honestly enough to let their wings open without bitterness."
+    },
+    body: () => [
+      { type: "p", text: `There are no raised voices in Rustom Mansion that night. Just two twenty-five-year-olds sitting on cold stone tiles, finally brave enough not to lie to make the hurt go away.` },
+      { type: "p", text: `“If I tell you to stay, I’ll spend the next two years terrified every time Rustom Mansion stalls,” you say quietly, wiping water off your face. “And if I force myself onto a plane just because I’m scared of losing you, I’ll resent my own cowardice before winter ends.”` },
+      { type: "p", text: `Tara cries silently then—not loud sobs, just steady hot tears rolling down her chin while she holds both of your hands tight against her chest. <em>“Why couldn’t we have met a year earlier, Kabir?”</em>` },
+      { type: "p", text: `“Because a year ago I wouldn’t have been honest enough to know what I was looking at.”` },
+      { type: "divider" },
+      { type: "p", text: `Six weeks later, at 5:10 AM outside her lane in Ranwar before the airport cab arrives, you kneel on the wet pavement tying a stubborn zip-tie around a broken buckle on her blue suitcase.` },
+      { type: "p", text: `Milk crates clatter off a cycle down the road. The air smells crisp, washed clean, faintly like ginger from the early-morning tapri at the corner where you shared your very last cutting chai ten minutes ago.` },
+      { type: "p", text: `When the Uber flashes its hazard lights at the end of the lane, Tara doesn’t look away. She wraps both arms around your neck, burying her face against your collarbone until your collar is damp with tears.` },
+      { type: "p", text: `“Write good things, okay?” she whispers into your shoulder. “Not confetti for banks. Real things.”` },
+      { type: "p", text: `“Only if you restore something ridiculous and send me a terrible sketch of it.”` },
+      { type: "p", text: `Inside the cab, just before the door clicks shut, she pulls out a Sharpie, signs the margin of your old Dadar–Bandra ticket one last time—<em>“Safe flight into your own life, Kabir.”</em>—and presses it into your palm.` },
+      { type: "p", text: `You stand under the paling streetlamp until the red tail-lights turn onto Hill Road. It hurts like hell—clean, honest, unpoisoned pain—and for the first time in years, you don’t wish you’d stayed behind glass to avoid it.` },
+      { type: "quote", text: `Loving someone at twenty-five sometimes means standing on the platform with a full heart and waving as their train finally leaves on time.` }
+    ],
+    choices: () => []
+  };
+
+  STORY["ending_5"] = {
+    chapter: 6,
+    chapterTitle: "After the Last Local",
+    location: "BANDRA–WORLI SEA LINK · WEDNESDAY, 23:10",
+    weather: "storm",
+    progress: 100,
+    ending: {
+      id: "ending_5",
+      num: "V",
+      title: "The Text That Stayed in Drafts",
+      subtitle: "For choosing armor over risk—and finally stepping out into the rain alone."
+    },
+    body: () => [
+      { type: "p", text: `At 11:10 PM on Wednesday night, you’re sitting in the quiet back seat of an air-conditioned Uber Premier crossing the Bandra–Worli Sea Link after a late team celebration in Lower Parel.` },
+      { type: "p", text: `The cabin smells faintly of leather polish and vanilla. Rain streaks the tinted side glass in long silver diagonals, blurring the orange sodium lamps of the bridge into clean, unreachable halos.` },
+      { type: "p", text: `Your phone buzzes in your lap: PayPulse HR confirming your new Senior Product Lead title and updated payroll band. Right below it sits your unopened WhatsApp thread with Tara. Three hours old now. No blue ticks from you.` },
+      { type: "p", text: `You open the chat. Your thumbs type sixteen honest words before your brain steps in, careful and polite as always:` },
+      {
+        type: "prop",
+        kind: "draft",
+        data: {
+          label: "WHATSAPP · UNSENT DRAFT",
+          body: "I’m sorry I was a coward tonight, Tara. You deserved someone who didn’t flinch the second things got real."
+        }
+      },
+      { type: "p", text: `For four traffic lights past Worli Sea Face, your thumb hovers over the green send arrow. Then you highlight the whole sentence, press backspace once, and watch it vanish.` },
+      { type: "p", text: `She’ll board her flight. You’ll wake up tomorrow at 8:30 AM, iron a fresh shirt, answer Rohan’s messages on time, and tell your parents in Pune that Mumbai is treating you wonderfully.` },
+      { type: "p", text: `Yet just past Dadar Chowpatty, watching a lone guy under a crooked ₹100 umbrella shield a soggy paper bag from a splashing BEST bus, something inside your chest finally snaps awake.` },
+      { type: "p", text: `“Bhaiya,” you tell the driver suddenly. “Can you stop right here by Shivaji Park? I’ll walk the rest.”` },
+      { type: "p", text: `The driver blinks in the mirror—it’s pouring outside—and pulls over. You leave your umbrella folded inside your bag, step out into the warm July deluge, and let the rain soak straight through your crisp promoted shirt. It doesn’t bring Tara back tonight. But as you stand there dripping on the pavement, breathing in wet earth and exhaust, you swear silently to yourself that you will never hide behind a safe glass window again.` },
+      { type: "quote", text: `Even a missed train teaches you something—if you finally stop pretending you never wanted to run.` }
+    ],
+    choices: () => []
+  };
+
+  /* ---------------- Boot Game ---------------- */
+  renderTitle();
+})();
+</script>
+</body>
+</html>

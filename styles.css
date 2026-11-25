@@ -1248,7 +1248,7 @@ body.wip-page {
 }
 
 /* ==========================================================================
-   LIST PAGES (MAIN-CONTENT-LIST, BLOGS-LIST, POEMS-LIST)
+   LIST PAGES (MAIN-CONTENT-LIST, BLOGS-LIST, POEMS-LIST, EPISODES-LIST)
    ========================================================================== */
 .list-hero-title,
 .hero-card #blogs-header {
@@ -1405,10 +1405,10 @@ body.games-page {
     box-shadow 0.22s ease;
 }
 
-.cat-blogs  { background: var(--pop-mint); transform: rotate(-1.2deg); }
-.cat-poems  { background: var(--pop-pink); transform: rotate(1.2deg); }
-.cat-essays { background: var(--yellow-main); transform: rotate(-1deg); }
-.cat-nsfw   { background: var(--pop-coral); color: var(--paper-white); transform: rotate(1.2deg); }
+.cat-episodes { background: var(--pop-cyan); transform: rotate(-1.2deg); }
+.cat-poems    { background: var(--pop-pink); transform: rotate(1.2deg); }
+.cat-blogs    { background: var(--pop-mint); transform: rotate(-1deg); }
+.cat-nsfw     { background: var(--pop-coral); color: var(--paper-white); transform: rotate(1.2deg); }
 
 .cat-nsfw .hub-cat-name {
   color: var(--paper-white);
@@ -1972,7 +1972,7 @@ body.games-page {
 }
 
 /* ==========================================================================
-   BLOGS-LIST & POEMS-LIST — SCROLLABLE CARTOON NOTEBOOK / LEDGER SYSTEM
+   BLOGS-LIST, POEMS-LIST & EPISODES-LIST — SCROLLABLE CARTOON NOTEBOOK / LEDGER SYSTEM
    ========================================================================== */
 .ledger-main {
   flex: 1;
@@ -2006,8 +2006,9 @@ body.games-page {
   flex-wrap: wrap;
 }
 
-.header-mint { background: var(--pop-mint); }
-.header-pink { background: var(--pop-pink); }
+.header-mint   { background: var(--pop-mint); }
+.header-pink   { background: var(--pop-pink); }
+.header-cyan   { background: var(--pop-cyan); }
 
 .ledger-title-group {
   display: flex;
@@ -2186,7 +2187,7 @@ body.games-page {
 }
 
 /* ==========================================================================
-   BLOG, POEM, ESSAY & NSFW READING PAGES — CALM EDITORIAL MANUSCRIPT THEME
+   BLOG, POEM & NSFW READING PAGES — CALM EDITORIAL MANUSCRIPT THEME
    (Toned-down playfulness, warm literary paper, seamless music + text reader)
    ========================================================================== */
 body.reader-page {
@@ -2346,7 +2347,6 @@ body.reader-page {
 
 .kicker-blog  { background: #BCEEE0; }
 .kicker-poem  { background: #FFD2E4; }
-.kicker-essay { background: #FFE680; }
 .kicker-nsfw  { background: #FFC2B4; }
 
 #blog-title {
