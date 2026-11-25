@@ -1972,7 +1972,111 @@ body.games-page {
 }
 
 /* ==========================================================================
-   BLOGS-LIST, POEMS-LIST & EPISODES-LIST — SCROLLABLE CARTOON NOTEBOOK / LEDGER SYSTEM
+   EPISODES-LIST — BOOK-COVER STORY CARD EXTENSIONS (SHARES .games-* SYSTEM)
+   ========================================================================== */
+.episodes-banner-header {
+  background: var(--pop-cyan);
+}
+
+.episodes-banner-header .hub-title {
+  color: var(--ink);
+  text-shadow: 3.5px 3.5px 0px var(--paper-white);
+}
+
+.episodes-banner-desc {
+  font-family: var(--font);
+  font-size: clamp(0.88rem, 1.2vw, 1rem);
+  font-weight: 700;
+  color: var(--ink);
+  opacity: 0.88;
+  margin: 0.45rem 0 0;
+  line-height: 1.4;
+}
+
+.episodes-ai-note {
+  margin: 0.25rem auto 0;
+  padding: 0.45rem 1rem;
+  background: rgba(255, 253, 247, 0.68);
+  border: 2px dashed rgba(20, 20, 19, 0.28);
+  border-radius: 12px;
+  font-family: var(--font);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgba(20, 20, 19, 0.72);
+  text-align: center;
+  max-width: 560px;
+}
+
+.episodes-grid {
+  grid-template-columns: repeat(auto-fit, minmax(275px, 340px));
+}
+
+.episode-card .game-visual-stage {
+  height: 196px;
+}
+
+/* Story Theme: Monsoon Night (After the Last Local) */
+.game-card.card-monsoon {
+  background: #1B263B;
+}
+
+.game-card.card-monsoon .game-title {
+  color: var(--paper-white);
+}
+
+.game-card.card-monsoon .game-subtitle {
+  color: #F2BA67;
+  opacity: 1;
+}
+
+.game-card.card-monsoon .game-desc {
+  color: rgba(255, 253, 247, 0.9);
+}
+
+.game-card.card-monsoon .game-tag {
+  background: #E5A954;
+  color: var(--ink);
+}
+
+.game-card.card-monsoon .game-badge {
+  background: var(--pop-coral);
+  color: var(--paper-white);
+}
+
+.game-card.card-monsoon .ctrl-pill {
+  background: rgba(255, 253, 247, 0.12);
+  border-color: rgba(255, 253, 247, 0.35);
+  color: var(--paper-white);
+  box-shadow: 1.5px 1.5px 0px rgba(0, 0, 0, 0.55);
+}
+
+.game-card.card-monsoon .game-action-row {
+  border-top-color: rgba(255, 253, 247, 0.22);
+}
+
+.game-card.card-monsoon .game-play-btn {
+  background: #E5A954;
+  color: var(--ink);
+}
+
+.game-card.card-monsoon:hover .game-play-btn {
+  background: var(--pop-coral);
+  color: var(--paper-white);
+}
+
+.game-card.card-monsoon .game-card-arrow {
+  background: #E5A954;
+  color: var(--ink);
+}
+
+.game-card.card-monsoon:hover .game-card-arrow,
+.game-card.card-monsoon:focus-visible .game-card-arrow {
+  background: var(--paper-white);
+  color: var(--ink);
+}
+
+/* ==========================================================================
+   BLOGS-LIST & POEMS-LIST — SCROLLABLE CARTOON NOTEBOOK / LEDGER SYSTEM
    ========================================================================== */
 .ledger-main {
   flex: 1;
