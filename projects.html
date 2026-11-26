@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects — Pratik's Website</title>
+    <link rel="icon" type="image/png" href="assets/images/PK-Logo-Light.png">
+    <link rel="apple-touch-icon" href="assets/images/PK-Logo-Light.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Fredoka:wght@500;600;700&family=MuseoModerno:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=20261127e">
+</head>
+<body class="cartoon-home projects-page">
+    <!-- Distinct Projects Background: Studio Mint-Sage Drafting Mat + Isometric 3D Blocks -->
+    <div class="bg-decor projects-bg-decor" aria-hidden="true">
+        <div class="bg-drafting-mat"></div>
+
+        <!-- Top-Right Floating Isometric 3D Block Cluster -->
+        <svg class="projects-decor-cubes" viewBox="0 0 240 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Top Cube -->
+            <path d="M120 24 L176 56 L120 88 L64 56 Z" fill="#FFD43B" stroke="#141413" stroke-width="4.5" stroke-linejoin="round"/>
+            <path d="M64 56 L120 88 L120 152 L64 120 Z" fill="#FF5733" stroke="#141413" stroke-width="4.5" stroke-linejoin="round"/>
+            <path d="M176 56 L176 120 L120 152 L120 88 Z" fill="#4CC9F0" stroke="#141413" stroke-width="4.5" stroke-linejoin="round"/>
+        </svg>
+
+        <!-- Bottom-Left Stepped Geometric Ribbon -->
+        <svg class="projects-decor-steps" viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 220 V110 H70 V145 H140 V180 H220 V220 Z" fill="#FFD43B" stroke="#141413" stroke-width="4.5" stroke-linejoin="round"/>
+            <path d="M0 220 V155 H55 V185 H120 V220 Z" fill="#FF70A6" stroke="#141413" stroke-width="4.5" stroke-linejoin="round"/>
+        </svg>
+    </div>
+
+    <!-- Interactive Click-Burst Canvas -->
+    <canvas id="pop-canvas" aria-hidden="true"></canvas>
+
+    <!-- Main Cartoon Framed Board -->
+    <div class="cartoon-board projects-board">
+        <!-- TOP BENTO NAVBAR -->
+        <div class="top-bento-bar">
+            <a href="index.html" class="bento-block brand-block" aria-label="Pratik Home">
+                <img src="assets/images/PK-Logo-Dark.png" alt="PK Logo" class="brand-badge-logo">
+                <span class="brand-badge-text">pkthethug.in</span>
+            </a>
+
+            <nav class="bento-block nav-block" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html" class="nav-pill pill-yellow">← Home</a></li>
+                    <li><a href="who-tf.html" class="nav-pill pill-coral">Who TF</a></li>
+                    <li><a href="Writings/writings-content-master.html" class="nav-pill pill-mint">With Love</a></li>
+                    <li><a href="games.html" class="nav-pill pill-pink">Games</a></li>
+                </ul>
+            </nav>
+
+            <div class="flower-wrapper" id="groovy-flower" title="Spin me!">
+                <svg class="daisy-svg" width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g stroke="#141413" stroke-width="4.5">
+                        <ellipse cx="100" cy="36" rx="22" ry="32" fill="#FF5733"/>
+                        <ellipse cx="100" cy="164" rx="22" ry="32" fill="#FF5733"/>
+                        <ellipse cx="36" cy="100" rx="32" ry="22" fill="#FF5733"/>
+                        <ellipse cx="164" cy="100" rx="32" ry="22" fill="#FF5733"/>
+                        <ellipse cx="55" cy="55" rx="22" ry="32" transform="rotate(-45 55 55)" fill="#FF70A6"/>
+                        <ellipse cx="145" cy="145" rx="22" ry="32" transform="rotate(-45 145 145)" fill="#FF70A6"/>
+                        <ellipse cx="145" cy="55" rx="22" ry="32" transform="rotate(45 145 55)" fill="#FF70A6"/>
+                        <ellipse cx="55" cy="145" rx="22" ry="32" transform="rotate(45 55 145)" fill="#FF70A6"/>
+                        <circle cx="100" cy="100" r="34" fill="#FFD43B"/>
+                    </g>
+                    <circle cx="90" cy="94" r="4" fill="#141413"/>
+                    <circle cx="110" cy="94" r="4" fill="#141413"/>
+                    <path d="M88 106 Q100 116 112 106" stroke="#141413" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+            </div>
+        </div>
+
+        <!-- MAIN PROJECTS TIMELINE STAGE -->
+        <main class="projects-main">
+            <!-- SECTION 1: HERO CARD -->
+            <section class="projects-hero-section" aria-label="Projects Intro">
+                <div class="projects-manifesto-wrap">
+                    <div class="manifesto-layer manifesto-layer-back" aria-hidden="true"></div>
+                    <div class="manifesto-layer manifesto-layer-mid" aria-hidden="true"></div>
+
+                    <div class="projects-manifesto-card">
+                        <span class="hub-kicker-pill projects-kicker">02 ★ THE LOG</span>
+
+                        <div class="projects-title-row">
+                            <span class="hammer-badge" aria-hidden="true">🔨</span>
+                            <h1 class="projects-poster-title">Projects</h1>
+                        </div>
+
+                        <div class="projects-manifesto-banner">
+                            <p class="projects-manifesto-text">
+                                Originally, this page was meant to act like a resume or CV or some shit like that.
+                                <span class="manifesto-underline">No fucks given about those things anymore.</span>
+                                So here’s just an overview of the work I’ve done and things I’ve indulged in over the years, for people who might care.
+                            </p>
+                        </div>
+
+                        <div class="projects-hero-meta">
+                            <span class="meta-chip chip-cyan">🔍 Click Any Image to Zoom</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- STICKY YEAR SCRUBBER BAR -->
+            <nav class="timeline-warp-bar" id="timeline-warp-bar" aria-label="Jump to Year">
+                <span class="warp-label">TIMELINE:</span>
+                <div class="warp-pills-track">
+                    <a href="#year-2015" class="warp-pill is-active" data-year="2015">2015</a>
+                    <a href="#year-2016" class="warp-pill" data-year="2016">2016</a>
+                    <a href="#year-2017" class="warp-pill" data-year="2017">2017</a>
+                    <a href="#year-2018" class="warp-pill" data-year="2018">2018</a>
+                    <a href="#year-2019" class="warp-pill" data-year="2019">2019–20</a>
+                    <a href="#year-2021" class="warp-pill" data-year="2021">2021</a>
+                    <a href="#year-2022" class="warp-pill" data-year="2022">2022</a>
+                    <a href="#year-2023" class="warp-pill" data-year="2023">2023</a>
+                    <a href="#year-2024" class="warp-pill" data-year="2024">2024</a>
+                    <a href="#year-2025" class="warp-pill" data-year="2025">2025</a>
+                    <a href="#year-2026" class="warp-pill" data-year="2026">2026</a>
+                </div>
+            </nav>
+
+            <!-- SECTION 2: THE TIMELINE (2015 -> 2026) -->
+            <div class="timeline-odyssey" id="timeline-odyssey">
+                <div class="timeline-spine" aria-hidden="true"></div>
+
+                <!-- 2015 -->
+                <article class="timeline-node" id="year-2015" data-year-node="2015">
+                    <div class="timeline-card accent-mint">
+                        <div class="timeline-card-header">
+                            <span class="year-pill pill-mint">2015</span>
+                            <h2 class="timeline-title">My First Game — Apple Catcher</h2>
+                        </div>
+
+                        <div class="timeline-card-body layout-split">
+                            <div class="timeline-copy">
+                                <p class="timeline-desc">
+                                    Somehow in 7th Std., I got to know that creating games is possible. And it started it all for me.
+                                </p>
+                            </div>
+
+                            <div class="timeline-media-single">
+                                <figure class="media-frame frame-pixel lightbox-trigger" tabindex="0" role="button"
+                                    data-full="assets/images/projects/2015-1.png"
+                                    data-year="2015"
+                                    data-caption="2015 — My First Game: Apple Catcher">
+                                    <div class="shot-img-wrap">
+                                        <img src="assets/images/projects/2015-1.png" alt="2015 Apple Catcher game" loading="lazy">
+                                        <span class="zoom-pill" aria-hidden="true">🔍 Zoom</span>
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 2016 -->
+                <article class="timeline-node" id="year-2016" data-year-node="2016">
+                    <div class="timeline-card accent-cyan">
+                        <div class="timeline-card-header">
+                            <span class="year-pill pill-cyan">2016</span>
+                            <h2 class="timeline-title">Discovered and Learned 3D Game Development</h2>
+                        </div>
+
+                        <div class="timeline-card-body">
+                            <div class="timeline-copy">
+                                <p class="timeline-desc">
+                                    Blew my mind. Started programming here.
+                                </p>
+                            </div>
+
+                            <div class="timeline-media-grid grid-2">
+                                <figure class="media-frame lightbox-trigger" tabindex="0" role="button"
+                                    data-full="assets/images/projects/2016-1.png"
+                                    data-year="2016"
+                                    data-caption="2016 — 3D Game Development">
+                                    <div class="shot-img-wrap">
+                                        <img src="assets/images/projects/2016-1.png" alt="2016 3D car prototype" loading="lazy">
+                                        <span class="zoom-pill" aria-hidden="true">🔍 Zoom</span>
+                                    </div>
+                                </figure>
+
+                                <figure class="media-frame lightbox-trigger" tabindex="0" role="button"
+                                    data-full="assets/images/projects/2016-2.png"
+                                    data-year="2016"
+                                    data-caption="2016 — 3D Game Development">
+                                    <div class="shot-img-wrap">
+                                        <img src="assets/images/projects/2016-2.png" alt="2016 Roll a ball 3D game" loading="lazy">
+                                        <span class="zoom-pill" aria-hidden="true">🔍 Zoom</span>
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 2017 -->
+                <article class="timeline-node" id="year-2017" data-year-node="2017">
+                    <div class="timeline-card accent-orange">
+                        <div class="timeline-card-header">
+                            <span class="year-pill pill-orange">2017</span>
+                            <h2 class="timeline-title">Learned Better Visuals and Presentation</h2>
+                        </div>
+
+                        <div class="timeline-card-body">
+                            <div class="timeline-media-grid grid-2">
+                                <figure class="media-frame lightbox-trigger" tabindex="0" role="button"
+                                    data-full="assets/images/projects/2017-1.png"
+                                    data-year="2017"
+                                    data-caption="2017 — Better visuals and lighting">
+                                    <div class="shot-img-wrap">
+                                        <img src="assets/images/projects/2017-1.png" alt="2017 Cave campfire lighting scene" loading="lazy">
+                                        <span class="zoom-pill" aria-hidden="true">🔍 Zoom</span>
+                                    </div>
+                                </figure>
+
+                                <figure class="media-frame lightbox-trigger" tabindex="0" role="button"
+                                    data-full="assets/images/projects/2017-2.png"
+                                    data-year="2017"
+                                    data-caption="2017 — Environment design and presentation">
+                                    <div class="shot-img-wrap">
+                                        <img src="assets/images/projects/2017-2.png" alt="2017 River and forest environment" loading="lazy">
+                                        <span class="zoom-pill" aria-hidden="true">🔍 Zoom</span>
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 2018 -->
+                <article class="timeline-node" id="year-2018" data-year-node="2018">
+                    <div class="timeline-card accent-purple">
+                        <div class="timeline-card-header">
+                            <span class="year-pill pill-purple">2018</span>
+                            <h2 class="timeline-title">Learned 3D Modelling</h2>
+                        </div>
+
+                        <div class="timeline-card-body">
+                            <div class="timeline-media-grid grid-2">
+                                <figure class="media-frame lightbox-trigger" tabindex="0" role="button"
+                                    data-full="assets/images/projects/2018-1.png"
+                                    data-year="2018"
+                                    data-caption="2018 — Low-poly lighthouse island 3D model">
+                                    <div class="shot-img-wrap">
+                                        <img src="assets/images/projects/2018-1.png" alt="2018 Low poly lighthouse island render" loading="lazy">
+                                        <span class="zoom-pill" aria-hidden="true">🔍 Zoom</span>
+                                    </div>
+                                </figure>
+
+                                <figure class="media-frame lightbox-trigger" tabindex="0" role="button"
+                                    data-full="assets/images/projects/2018-2.png"
+                                    data-year="2018"
+                                    data-caption="2018 — 3D Modelling render">
+                                    <div class="shot-img-wrap">
+                                        <img src="assets/images/projects/2018-2.png" alt="2018 Blender monkey and primitives render" loading="lazy">
+                                        <span class="zoom-pill" aria-hidden="true">🔍 Zoom</span>
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 2019 - 2020 -->
+                <article class="timeline-node" id="year-2019" data-year-node="2019">
+                    <div class="timeline-card accent-pink">
+                        <div class="timeline-card-header">
+                            <span class="year-pill pill-pink">2019 – 2020</span>
+                            <h2 class="timeline-title">Whack Games — My Indie Page</h2>
+                        </div>
+
+                        <div class="timeline-card-body">
+                            <div class="timeline-copy">
+                                <p class="timeline-desc">
+                                    Released games on Android. Learned a lot of new stuff other than gamedev—SEO, ASO, etc.
+                                </p>
+                            </div>
+
+                            <div class="whack-showcase-grid">
+                                <figure class="media-frame whack-main-shot lightbox-trigger" tabindex="0" role="button"
+                                    data-full="assets/images/projects/2019-2020-1.png"
+                                    data-year="2019 – 2020"
+                                    data-caption="2019–2020 — Whack Games: Ball Bounce 3D">
+                                    <div class="shot-img-wrap">
+                                        <img src="assets/images/projects/2019-2020-1.png" alt="Ball Bounce 3D title screen" loading="lazy">
+                                        <span class="zoom-pill" aria-hidden="true">🔍 Zoom</span>
+                                    </div>
+                                </figure>
+
+                                <div class="whack-phone-col">
+                                    <figure class="phone-mockup-frame lightbox-trigger" tabindex="0" role="button"
+                                        data-full="assets/images/projects/2019-2020-2.png"
+                                        data-year="2019 – 2020"
+                                        data-caption="2019–2020 — Whack Games: The Shape Arena">
+                                        <div class="phone-notch" aria-hidden="true"></div>
+                                        <div class="phone-screen-wrap">
+                                            <img src="assets/images/projects/2019-2020-2.png" alt="The Shape Arena mobile game" loading="lazy">
+                                            <span class="zoom-pill" aria-hidden="true">🔍 Zoom</span>
+                                        </div>
+                                        <div class="phone-home-bar" aria-hidden="true"></div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 2021 -->
+                <article class="timeline-node" id="year-2021" data-year-node="2021">
+                    <div class="timeline-card accent-coral">
+                        <div class="timeline-card-header">
+                            <span class="year-pill pill-coral">2021</span>
+                            <h2 class="timeline-title">Project Strawberry</h2>
+                        </div>
+
+                        <div class="timeline-card-body">
+                            <div class="timeline-copy">
+                                <p class="timeline-desc">
+                                    Started as a cloud gaming project. Turned my home PC into a gaming server and played games on low-spec laptops remotely.
+                                    <span class="timeline-subnote">(Images from a pitch deck I made)</span>
+                                </p>
+                            </div>
+
+                            <div class="timeline-media-grid grid-2">
+                                <figure class="media-frame frame-slide lightbox-trigger" tabindex="0" role="button"
+                                    data-full="assets/images/projects/2021-1.png"
+                                    data-year="2021"
+                                    data-caption="2021 — Project Strawberry Developer Framework (PSDF)">
+                                    <div class="shot-img-wrap">
+                                        <img src="assets/images/projects/2021-1.png" alt="Project Strawberry Developer Framework slide" loading="lazy">
+                                        <span class="zoom-pill" aria-hidden="true">🔍 Zoom</span>
+                                    </div>
+                                </figure>
+
+                                <figure class="media-frame frame-slide lightbox-trigger" tabindex="0" role="button"
+                                    data-full="assets/images/projects/2021-2.png"
+                                    data-year="2021"
+                                    data-caption="2021 — Project Strawberry Web Applications">
+                                    <div class="shot-img-wrap">
+                                        <img src="assets/images/projects/2021-2.png" alt="Project Strawberry Product Web Applications slide" loading="lazy">
+                                        <span class="zoom-pill" aria-hidden="true">🔍 Zoom</span>
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 2022 -->
+                <article class="timeline-node" id="year-2022" data-year-node="2022">
+                    <div class="timeline-card accent-yellow">
+                        <div class="timeline-card-header">
+                            <span class="year-pill pill-yellow">2022</span>
+                            <h2 class="timeline-title">Pivoted Project Strawberry &amp; Started SR’verse</h2>
+                        </div>
+
+                        <div class="timeline-card-body">
+                            <div class="timeline-copy">
+                                <p class="timeline-desc">
+                                    Pivoted Project Strawberry to build something very different. A 3D Interactive Platform for College Students. Lol.
+                                </p>
+                                <p class="timeline-desc">
+                                    Started work on SR’verse, a part of Project Strawberry.
+                                </p>
+                            </div>
+
+                            <div class="timeline-media-grid grid-2022-large">
+                                <figure class="media-frame frame-2022-wide lightbox-trigger" tabindex="0" role="button"
+                                    data-full="assets/images/projects/2022-1.png"
+                                    data-year="2022"
+                                    data-caption="2022 — Working on SR'verse in Unity">
+                                    <div class="shot-img-wrap">
+                                        <img src="assets/images/projects/2022-1.png" alt="2022 SR'verse editor view" loading="lazy">
+                                        <span class="zoom-pill" aria-hidden="true">🔍 Zoom</span>
+                                    </div>
+                                </figure>
+
+                                <figure class="media-frame lightbox-trigger" tabindex="0" role="button"
+                                    data-full="assets/images/projects/2022-2.png"
+                                    data-year="2022"
+                                    data-caption="2022 — SR'verse campus exterior">
+                                    <div class="shot-img-wrap">
+                                        <img src="assets/images/projects/2022-2.png" alt="2022 SR'verse campus exterior" loading="lazy">
+                                        <span class="zoom-pill" aria-hidden="true">🔍 Zoom</span>
+                                    </div>
+                                </figure>
+
+                                <figure class="media-frame lightbox-trigger" tabindex="0" role="button"
+                                    data-full="assets/images/projects/2022-3.png"
+                                    data-year="2022"
+                                    data-caption="2022 — SR'verse auditorium">
+                                    <div class="shot-img-wrap">
+                                        <img src="assets/images/projects/2022-3.png" alt="2022 SR'verse auditorium" loading="lazy">
+                                        <span class="zoom-pill" aria-hidden="true">🔍 Zoom</span>
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 2023 -->
+                <article class="timeline-node" id="year-2023" data-year-node="2023">
+                    <div class="timeline-card accent-mint card-featured-video">
+                        <div class="timeline-card-header">
+                            <span class="year-pill pill-mint">2023</span>
+                            <h2 class="timeline-title">SR’verse — World’s First University Metaverse</h2>
+                        </div>
+
+                        <div class="timeline-card-body theater-layout">
+                            <div class="timeline-copy">
+                                <p class="timeline-desc">
+                                    Or so it was supposed to be.
+                                </p>
+                                <p class="timeline-desc">
+                                    At this point in time, we were a team of 10 people. This was probably our peak.
+                                </p>
+                                <p class="timeline-desc">
+                                    Released an offline demo. Watch the trailer right here, you’ll get a good idea on what it was.
+                                </p>
+                                <a href="https://www.youtube.com/watch?v=dYtGRvoJPa4" target="_blank" rel="noopener noreferrer" class="yt-external-btn">
+                                    <span>Open on YouTube</span>
+                                    <span aria-hidden="true">↗</span>
+                                </a>
+                            </div>
+
+                            <div class="video-frame-card">
+                                <div class="video-aspect-16x9">
+                                    <iframe
+                                        src="https://www.youtube-nocookie.com/embed/dYtGRvoJPa4?rel=0"
+                                        title="SR'verse Demo Trailer (2023)"
+                                        loading="lazy"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin"
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 2024 -->
+                <article class="timeline-node" id="year-2024" data-year-node="2024">
+                    <div class="timeline-card accent-blue">
+                        <div class="timeline-card-header">
+                            <span class="year-pill pill-blue">2024</span>
+                            <h2 class="timeline-title">Pixacity</h2>
+                        </div>
+
+                        <div class="timeline-card-body layout-split">
+                            <div class="timeline-copy">
+                                <p class="timeline-desc">
+                                    Rebranded Project Strawberry. And heavily focused on creating a working online version of SR’verse. But ultimately we couldn’t do that.
+                                </p>
+                                <p class="timeline-desc">
+                                    We persevered till the end of the year, and early 2025. But in the end, the journey came to an end.
+                                </p>
+                            </div>
+
+                            <div class="timeline-media-single">
+                                <figure class="media-frame lightbox-trigger" tabindex="0" role="button"
+                                    data-full="assets/images/projects/2024-1.png"
+                                    data-year="2024"
+                                    data-caption="2024 — Pixacity">
+                                    <div class="shot-img-wrap">
+                                        <img src="assets/images/projects/2024-1.png" alt="2024 Pixacity 3D render" loading="lazy">
+                                        <span class="zoom-pill" aria-hidden="true">🔍 Zoom</span>
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 2025 -->
+                <article class="timeline-node" id="year-2025" data-year-node="2025">
+                    <div class="timeline-card accent-pink card-compact-text">
+                        <div class="timeline-card-header">
+                            <span class="year-pill pill-pink">2025</span>
+                            <h2 class="timeline-title">Back to Studying</h2>
+                        </div>
+
+                        <div class="timeline-card-body">
+                            <div class="timeline-copy">
+                                <p class="timeline-desc">
+                                    Got back to studying. One of the most transformative years of my life. But ironically, didn’t do anything game/tech related lol. Wrote poetry in the free time though.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 2026 -->
+                <article class="timeline-node" id="year-2026" data-year-node="2026">
+                    <div class="timeline-card accent-yellow card-finale">
+                        <div class="timeline-card-header">
+                            <span class="year-pill pill-yellow">2026</span>
+                            <h2 class="timeline-title">Making Games &amp; Writing Again</h2>
+                        </div>
+
+                        <div class="timeline-card-body">
+                            <div class="timeline-copy">
+                                <p class="timeline-desc">
+                                    3/4th of the year went to studying still. But recently, started making games and writing again. So almost everything you see on the website right now, is what I’ve been up to lately. So yeah, go check them out!
+                                </p>
+                            </div>
+
+                            <div class="finale-links-row">
+                                <a href="games.html" class="finale-link-btn btn-games">
+                                    <span class="finale-link-label">Games</span>
+                                    <span class="finale-link-arrow" aria-hidden="true">↗</span>
+                                </a>
+
+                                <a href="Writings/writings-content-master.html" class="finale-link-btn btn-writings">
+                                    <span class="finale-link-label">Writings</span>
+                                    <span class="finale-link-arrow" aria-hidden="true">↗</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </main>
+
+        <!-- FOOTER BAR -->
+        <footer>
+            <div class="footer-container">
+                <div class="form">
+                    <div class="email-subscription">
+                        <form action="https://script.google.com/macros/s/AKfycbzonX0G6GFRdC-sG7LsboDOTNGik_qf_2Ud517Xhx5Og6XKJYGaRTc9VYGaYeimQqvWLQ/exec" method="post" target="_blank">
+                            <input type="email" name="email" placeholder="Enter email..." required>
+                            <button type="submit">
+                                <span>Submit</span>
+                                <span class="btn-arrow" aria-hidden="true">→</span>
+                            </button>
+                        </form>
+                    </div>
+                    <p class="footer-text">To ping you when yours truly drops a new blog, episode or game</p>
+                </div>
+
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/pratiik_kumar/" target="_blank" rel="noopener noreferrer" class="social-circle social-ig" title="Instagram">
+                        <img src="assets/images/instagram-icon.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/pratik-kumar69/" target="_blank" rel="noopener noreferrer" class="social-circle social-li" title="LinkedIn">
+                        <img src="assets/images/linkedin-icon.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://x.com/kpratik_ps" target="_blank" rel="noopener noreferrer" class="social-circle social-tw" title="Twitter">
+                        <img src="assets/images/twitter-icon.png" alt="Twitter">
+                    </a>
+                    <a href="https://www.youtube.com/@pkthethug" target="_blank" rel="noopener noreferrer" class="social-circle social-yt" title="YouTube">
+                        <img src="assets/images/youtube-icon.png" alt="YouTube">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- CARTOON IMAGE LIGHTBOX MODAL -->
+    <div class="cartoon-lightbox" id="project-lightbox" role="dialog" aria-modal="true" aria-label="Project Image Viewer" hidden>
+        <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+        <div class="lightbox-dialog">
+            <div class="lightbox-top-bar">
+                <span class="lightbox-year-pill" id="lightbox-year">2015</span>
+                <span class="lightbox-counter" id="lightbox-counter">1 / 15</span>
+                <button type="button" class="lightbox-close-btn" id="lightbox-close" aria-label="Close image viewer">✕ CLOSE</button>
+            </div>
+            <div class="lightbox-stage">
+                <button type="button" class="lightbox-nav-btn lightbox-prev" id="lightbox-prev" aria-label="Previous image">◀</button>
+                <img src="" alt="" class="lightbox-img" id="lightbox-img">
+                <button type="button" class="lightbox-nav-btn lightbox-next" id="lightbox-next" aria-label="Next image">▶</button>
+            </div>
+            <p class="lightbox-caption" id="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <script src="scripts/cartoon-pop.js"></script>
+    <script src="scripts/projects-interactive.js"></script>
+</body>
+</html>
