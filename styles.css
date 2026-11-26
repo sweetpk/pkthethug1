@@ -3020,321 +3020,139 @@ body.intro-page {
   box-shadow: 1.5px 1.5px 0px var(--ink);
 }
 
-/* KINETIC POP-ART MARQUEE RIBBON */
-.intro-marquee {
-  width: 100%;
-  overflow: hidden;
-  background: var(--ink);
-  color: var(--yellow-main);
-  border: var(--border-heavy);
-  border-radius: 999px;
-  padding: 0.52rem 0;
-  box-shadow: 5px 5px 0px var(--pop-coral);
-  user-select: none;
-}
-
-.intro-marquee-track {
-  display: flex;
-  width: max-content;
-  animation: marqueeScroll 28s linear infinite;
-}
-
-.intro-marquee-group {
-  display: flex;
-  align-items: center;
-  gap: 2.2rem;
-  padding-right: 2.2rem;
-  font-family: var(--font-cartoon);
-  font-size: 0.88rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-}
-
-.intro-marquee-group span {
-  white-space: nowrap;
-}
-
-@keyframes marqueeScroll {
-  from { transform: translate3d(0, 0, 0); }
-  to { transform: translate3d(-50%, 0, 0); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .intro-marquee-track {
-    animation: none;
-  }
-}
-
-/* SECTION 2: (MY) BIG FOUR — UNIFIED TOP-TO-BOTTOM ARTIFACT CARDS */
+/* SECTION 2: (MY) BIG FOUR — STAGGERED ZIG-ZAG SPLIT STORYBOARD */
 .big-four-section {
   width: 100%;
 }
 
-.artifact-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: clamp(1.1rem, 2.2vw, 1.6rem);
+.big4-storyboard {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.35rem, 2.8vh, 1.95rem);
   width: 100%;
 }
 
-.artifact-card {
+.split-panel {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: minmax(250px, 340px) 1fr;
+  width: 93%;
   background: var(--paper-white);
   border: var(--border-heavy);
-  border-radius: 22px;
-  box-shadow: var(--shadow-lg);
+  border-radius: 26px;
+  box-shadow: 9px 9px 0px var(--ink);
   color: var(--ink);
   text-decoration: none;
   overflow: hidden;
   transition:
-    transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1),
-    box-shadow 0.22s ease;
+    transform 0.24s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.24s ease;
 }
 
-a.artifact-card:hover,
-a.artifact-card:focus-visible {
-  transform: translate(-4px, -6px);
-  box-shadow: 11px 11px 0px var(--ink);
+/* Staggered left / right zig-zag flow */
+.split-panel.align-left {
+  align-self: flex-start;
+}
+
+.split-panel.align-right {
+  align-self: flex-end;
+  grid-template-columns: 1fr minmax(250px, 340px);
+}
+
+.split-panel.align-right .split-title-wing {
+  order: 2;
+  border-right: none;
+  border-left: var(--border-heavy);
+}
+
+.split-panel.align-right .split-story-wing {
+  order: 1;
+}
+
+a.split-panel:hover,
+a.split-panel:focus-visible {
+  transform: translate(-5px, -6px);
+  box-shadow: 14px 14px 0px var(--ink);
   z-index: 5;
   outline: none;
 }
 
-a.artifact-card:active {
+a.split-panel:active {
   transform: translate(2px, 2px);
-  box-shadow: 3px 3px 0px var(--ink);
+  box-shadow: 4px 4px 0px var(--ink);
 }
 
-/* Uniform 30px Artifact Top Strip across all 4 cards */
-.artifact-top-strip {
-  height: 30px;
-  width: 100%;
-  flex-shrink: 0;
-  border-bottom: var(--border-thick);
-}
-
-/* 01: Games Retro Arcade Header (Yellow Bezel + D-Pad + Buttons) */
-.strip-arcade {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 1.1rem;
-  background: var(--yellow-main);
-}
-
-.arcade-dpad-row {
-  display: flex;
-  align-items: center;
-  gap: 0.55rem;
-}
-
-.arcade-dpad-plus {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 18px;
-  height: 18px;
-  background: var(--ink);
-  color: var(--yellow-main);
-  border-radius: 4px;
-  font-family: var(--font-cartoon);
-  font-size: 0.95rem;
-  font-weight: 900;
-  line-height: 1;
-}
-
-.arcade-pixel-pips {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.arcade-pixel-pips i {
-  display: block;
-  width: 7px;
-  height: 7px;
-  background: var(--pop-coral);
-  border: 1.5px solid var(--ink);
-  border-radius: 2px;
-}
-
-.arcade-dots {
-  display: flex;
-  align-items: center;
-  gap: 0.42rem;
-}
-
-.arcade-dots span {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border: 2px solid var(--ink);
-  box-shadow: 1.5px 1.5px 0px var(--ink);
-}
-
-.arcade-dots .dot-y { background: var(--pop-cyan); }
-.arcade-dots .dot-c { background: var(--pop-coral); }
-
-/* 02: Top-Spiral Notebook Binder */
-.strip-spiral {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 0 1rem;
-  background: var(--pop-pink);
-}
-
-.strip-spiral span {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: var(--paper-white);
-  border: 2.5px solid var(--ink);
-  box-shadow: 1.5px 1.5px 0px var(--ink);
-}
-
-/* 03: Pantone Color-Swatch Bar */
-.strip-swatches {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.strip-swatches span:not(:last-child) {
-  border-right: var(--border-thick);
-}
-
-/* 04: Cinema Clapperboard Hinged Stripes */
-.strip-clapper {
-  transform-origin: left bottom;
-  background: repeating-linear-gradient(
-    -45deg,
-    var(--ink) 0px,
-    var(--ink) 16px,
-    var(--yellow-main) 16px,
-    var(--yellow-main) 32px
-  );
-}
-
-.artifact-clapper {
+.split-panel.is-unlinked {
   cursor: pointer;
   user-select: none;
 }
 
-.artifact-clapper:hover {
-  transform: translate(-3px, -5px);
-  box-shadow: 10px 10px 0px var(--ink);
+.split-panel.is-unlinked:hover {
+  transform: translate(-4px, -5px);
+  box-shadow: 13px 13px 0px var(--ink);
 }
 
-.artifact-clapper.is-clapping .strip-clapper {
-  animation: clapperSnap 0.36s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-@keyframes clapperSnap {
-  0%   { transform: rotate(0deg); }
-  35%  { transform: rotate(-5deg); }
-  70%  { transform: rotate(1.5deg); }
-  100% { transform: rotate(0deg); }
-}
-
-/* Unified Card Body & Backgrounds */
-.artifact-body {
-  flex: 1;
+/* Colored Title Wing */
+.split-title-wing {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 0.9rem;
-  padding: clamp(1.1rem, 2.2vw, 1.45rem);
+  gap: 0.6rem;
+  padding: clamp(1.25rem, 2.4vw, 1.75rem) clamp(1.35rem, 2.6vw, 1.85rem);
+  border-right: var(--border-heavy);
+  overflow: hidden;
 }
 
-.artifact-cartridge .artifact-body {
-  background-color: var(--pop-orange);
-  background-image: radial-gradient(rgba(20, 20, 19, 0.11) 1.4px, transparent 1.4px);
-  background-size: 18px 18px;
-  color: var(--ink);
-}
+.panel-games .split-title-wing   { background: var(--pop-orange); }
+.panel-writing .split-title-wing { background: var(--pop-pink); }
+.panel-design .split-title-wing  { background: var(--yellow-main); }
+.panel-film .split-title-wing    { background: var(--pop-cyan); }
 
-.artifact-cartridge .big4-num {
-  background: var(--paper-white);
-  color: var(--ink);
-  box-shadow: 2.5px 2.5px 0px var(--ink);
-}
-
-.artifact-cartridge .big4-title {
-  color: var(--ink);
-  text-shadow: 2.5px 2.5px 0px var(--yellow-main);
-}
-
-.artifact-cartridge .big4-desc {
-  color: rgba(20, 20, 19, 0.92);
-}
-
-.artifact-cartridge .artifact-arrow {
-  background: var(--ink);
+/* Oversized Graphic Numeral */
+.split-giant-num {
+  display: inline-block;
+  font-family: var(--font-groovy);
+  font-size: clamp(2.6rem, 4.4vw, 3.6rem);
+  line-height: 0.92;
   color: var(--paper-white);
+  -webkit-text-stroke: 2.5px var(--ink);
+  text-shadow: 4px 4px 0px var(--ink);
+  letter-spacing: 0.02em;
+  transition: transform 0.24s cubic-bezier(0.34, 1.56, 0.64, 1);
+  align-self: flex-start;
 }
 
-.artifact-cartridge:hover .artifact-arrow {
-  background: var(--yellow-main);
-  color: var(--ink);
-  box-shadow: 0 0 0 2px var(--ink);
+.split-panel:hover .split-giant-num {
+  transform: translateY(-3px) rotate(-4deg) scale(1.06);
 }
 
-.artifact-notebook .artifact-body {
-  background-color: var(--paper-white);
-  background-image: repeating-linear-gradient(
-    to bottom,
-    transparent 0px,
-    transparent 27px,
-    rgba(59, 130, 246, 0.16) 27px,
-    rgba(59, 130, 246, 0.16) 28.5px
-  );
-}
-
-.artifact-swatch .artifact-body {
-  background-color: var(--yellow-pale);
-  background-image:
-    linear-gradient(to right, rgba(20, 20, 19, 0.065) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(20, 20, 19, 0.065) 1px, transparent 1px);
-  background-size: 22px 22px;
-}
-
-.artifact-clapper .artifact-body {
-  background: var(--pop-cyan);
-}
-
-.artifact-head-row {
+.split-title-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0.75rem;
+  gap: 0.85rem;
 }
 
-.big4-num {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-cartoon);
-  font-size: 0.88rem;
+.big4-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 2.8vw, 2.3rem);
   font-weight: 800;
-  letter-spacing: 0.06em;
-  background: var(--paper-white);
+  letter-spacing: -0.025em;
+  line-height: 1.05;
   color: var(--ink);
-  border: 2.5px solid var(--ink);
-  border-radius: 999px;
-  padding: 0.2rem 0.72rem;
-  box-shadow: 2.5px 2.5px 0px var(--ink);
+  margin: 0;
 }
 
 .big4-icon-box,
 .vinyl-badge {
-  width: 48px;
-  height: 48px;
+  width: 52px;
+  height: 52px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  filter: drop-shadow(2.5px 2.5px 0px rgba(20, 20, 19, 0.22));
+  filter: drop-shadow(3px 3px 0px rgba(20, 20, 19, 0.24));
   transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
@@ -3344,211 +3162,235 @@ a.artifact-card:active {
   height: 100%;
 }
 
-.artifact-card:hover .big4-icon-box {
-  transform: scale(1.1) rotate(-6deg);
+.split-panel:hover .big4-icon-box {
+  transform: scale(1.12) rotate(-8deg);
 }
 
-.artifact-clapper:hover .vinyl-badge {
+.panel-film:hover .vinyl-badge {
   animation: slowSpin 3.5s linear infinite;
 }
 
-.big4-copy {
+/* Crisp Paper-White Story Wing */
+.split-story-wing {
   display: flex;
-  flex-direction: column;
-  gap: 0.38rem;
-}
-
-.big4-title {
-  font-family: var(--font-display);
-  font-size: clamp(1.5rem, 2.4vw, 1.98rem);
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  line-height: 1.1;
-  color: var(--ink);
-  margin: 0;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(1.1rem, 2.4vw, 1.85rem);
+  padding: clamp(1.35rem, 2.8vw, 2rem) clamp(1.45rem, 3vw, 2.25rem);
+  background: var(--paper-white);
 }
 
 .big4-desc {
   font-family: var(--font);
-  font-size: clamp(0.98rem, 1.28vw, 1.1rem);
+  font-size: clamp(1.05rem, 1.45vw, 1.22rem);
   font-weight: 700;
-  line-height: 1.52;
-  color: rgba(20, 20, 19, 0.9);
+  line-height: 1.62;
+  color: var(--ink);
   margin: 0;
+  max-width: 58ch;
 }
 
-.artifact-foot-row {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-top: auto;
-}
-
-.artifact-arrow {
-  width: 34px;
-  height: 34px;
+.split-action-arrow {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: var(--ink);
-  color: var(--paper-white);
-  border-radius: 50%;
-  font-weight: 800;
-  font-size: 0.98rem;
-  transition: transform 0.22s ease, background-color 0.22s ease, color 0.22s ease;
-}
-
-a.artifact-card:hover .artifact-arrow {
-  transform: rotate(45deg) scale(1.12);
   background: var(--yellow-main);
   color: var(--ink);
-  box-shadow: 0 0 0 2px var(--ink);
+  border: var(--border-thick);
+  border-radius: 50%;
+  box-shadow: 3.5px 3.5px 0px var(--ink);
+  font-weight: 900;
+  font-size: 1.2rem;
+  transition:
+    transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1),
+    background-color 0.22s ease,
+    color 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+a.split-panel:hover .split-action-arrow {
+  transform: rotate(45deg) scale(1.12);
+  background: var(--pop-coral);
+  color: var(--paper-white);
+  box-shadow: 4px 4px 0px var(--ink);
 }
 
 .music-note-pop {
+  flex-shrink: 0;
   font-family: var(--font-cartoon);
-  font-size: 0.98rem;
+  font-size: 1.05rem;
   font-weight: 800;
   background: var(--yellow-main);
-  border: 2px solid var(--ink);
+  border: 2.5px solid var(--ink);
   border-radius: 999px;
-  padding: 0.16rem 0.65rem;
-  box-shadow: 2px 2px 0px var(--ink);
+  padding: 0.42rem 0.85rem;
+  box-shadow: 3px 3px 0px var(--ink);
   transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-.artifact-clapper.is-clapping .music-note-pop {
-  transform: scale(1.2) rotate(-8deg);
+.panel-film.is-clapping .music-note-pop {
+  transform: scale(1.22) rotate(-8deg);
   background: var(--pop-pink);
 }
 
-/* SECTION 3: LORE QUEST CARD + TWO-TONE HUB TICKET */
-.intro-bottom-bento {
+@keyframes clapperSnap {
+  0%   { transform: rotate(0deg); }
+  35%  { transform: rotate(-5deg); }
+  70%  { transform: rotate(1.5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* SECTION 3: PINNED COMIC ASIDE RIBBON (HISTORY & HIGH FANTASY) */
+.intro-aside-strip {
   width: 100%;
-  display: grid;
-  grid-template-columns: 0.92fr 1.28fr;
-  gap: clamp(1.1rem, 2.2vw, 1.6rem);
-  align-items: stretch;
-}
-
-.lore-scroll-card {
-  position: relative;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  gap: 1.1rem;
-  padding: clamp(1.25rem, 2.4vw, 1.65rem);
-  background: #D4C2FF;
-  border: var(--border-heavy);
-  border-radius: 22px;
-  box-shadow: var(--shadow-lg);
-  overflow: hidden;
 }
 
-.lore-compass-bg {
-  position: absolute;
-  right: -22px;
-  bottom: -22px;
-  width: 120px;
-  height: 120px;
-  opacity: 0.16;
-  pointer-events: none;
-}
-
-.lore-art-strip {
+.aside-banner {
   position: relative;
-  z-index: 2;
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  justify-content: center;
+  gap: clamp(1rem, 2.4vw, 1.75rem);
+  width: 100%;
+  max-width: 860px;
+  padding: clamp(1.05rem, 2vw, 1.35rem) clamp(1.35rem, 3vw, 2.2rem);
+  background: #D4C2FF;
+  border: var(--border-heavy);
+  border-radius: 999px;
+  box-shadow: var(--shadow-lg);
 }
 
-.lore-sticker-badge {
+.aside-sticker {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 64px;
-  height: 54px;
-  padding: 0.4rem;
+  width: 60px;
+  height: 52px;
+  padding: 0.35rem;
   background: var(--paper-white);
   border: 2.5px solid var(--ink);
-  border-radius: 15px;
+  border-radius: 16px;
   box-shadow: 3px 3px 0px var(--ink);
+  flex-shrink: 0;
   transition: transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-.lore-sticker-history {
+.aside-sticker-left {
   background: var(--yellow-pale);
-  transform: rotate(-3deg);
+  transform: rotate(-6deg);
 }
 
-.lore-sticker-fantasy {
+.aside-sticker-right {
   background: var(--paper-white);
-  transform: rotate(3deg);
+  transform: rotate(6deg);
 }
 
-.lore-scroll-card:hover .lore-sticker-history {
-  transform: rotate(-7deg) translateY(-2px);
+.aside-banner:hover .aside-sticker-left {
+  transform: rotate(-12deg) scale(1.08);
 }
 
-.lore-scroll-card:hover .lore-sticker-fantasy {
-  transform: rotate(7deg) translateY(-2px);
+.aside-banner:hover .aside-sticker-right {
+  transform: rotate(12deg) scale(1.08);
 }
 
-.lore-sticker-badge svg {
+.aside-sticker svg {
   width: 100%;
   height: 100%;
 }
 
 .intro-lore-text {
-  position: relative;
-  z-index: 2;
   font-family: var(--font-display);
-  font-size: clamp(1.12rem, 1.52vw, 1.28rem);
+  font-size: clamp(1.1rem, 1.6vw, 1.32rem);
   font-weight: 800;
-  line-height: 1.45;
+  line-height: 1.4;
   letter-spacing: -0.01em;
   color: var(--ink);
+  text-align: center;
   margin: 0;
 }
 
-/* Right: Clean Two-Tone Hub Ticket + Cya! Stub */
-.hub-ticket {
+/* SECTION 4: FULL-WIDTH STACKED FINALE STAGE + CYA! SIGNATURE STAMP */
+.intro-finale-stage {
+  width: 100%;
+}
+
+.finale-stack-wrap {
   position: relative;
+  width: 100%;
+  padding-right: 14px;
+  padding-bottom: 14px;
+}
+
+.finale-layer {
+  position: absolute;
+  inset: 0 14px 14px 0;
+  border: var(--border-heavy);
+  border-radius: 26px;
+  pointer-events: none;
+}
+
+.finale-layer-back {
+  background: var(--yellow-main);
+  transform: translate(14px, 14px);
+}
+
+.finale-card {
+  position: relative;
+  z-index: 2;
   display: grid;
-  grid-template-columns: 1fr 142px;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: clamp(1.25rem, 3vw, 2.5rem);
   background: var(--pop-coral);
   border: var(--border-heavy);
-  border-radius: 22px;
-  box-shadow: var(--shadow-lg);
-  overflow: hidden;
+  border-radius: 26px;
+  padding: clamp(1.5rem, 3vw, 2.25rem) clamp(1.5rem, 3.2vw, 2.5rem);
 }
 
-.hub-ticket-main {
+.finale-copy {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 0.75rem;
-  padding: clamp(1.25rem, 2.4vw, 1.65rem);
 }
 
-.intro-hub-text {
-  font-family: var(--font);
-  font-size: clamp(1rem, 1.35vw, 1.14rem);
-  font-weight: 700;
-  line-height: 1.55;
+.finale-headline {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 1.85vw, 1.52rem);
+  font-weight: 800;
+  line-height: 1.52;
   color: var(--paper-white);
   margin: 0;
 }
 
-.hub-ticket-stub {
-  position: relative;
+.finale-hub-pill {
+  display: inline-block;
+  background: var(--yellow-main);
+  color: var(--ink);
+  border: 2.5px solid var(--ink);
+  border-radius: 12px;
+  padding: 0.06em 0.45em;
+  margin-right: 0.3rem;
+  box-shadow: 3px 3px 0px var(--ink);
+}
+
+.finale-subtext {
+  font-family: var(--font);
+  font-size: clamp(1.02rem, 1.4vw, 1.18rem);
+  font-weight: 700;
+  line-height: 1.58;
+  color: rgba(255, 253, 247, 0.95);
+  margin: 0;
+}
+
+.finale-stamp-col {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--yellow-main);
-  border-left: 3.5px dashed var(--ink);
-  padding: 1rem;
   cursor: pointer;
   user-select: none;
 }
@@ -3556,23 +3398,24 @@ a.artifact-card:hover .artifact-arrow {
 .cya-stamp {
   display: inline-block;
   font-family: var(--font-groovy);
-  font-size: clamp(1.6rem, 2.5vw, 2.1rem);
+  font-size: clamp(1.9rem, 3.2vw, 2.65rem);
   line-height: 1;
   background: var(--paper-white);
   color: var(--ink);
-  border: var(--border-thick);
-  border-radius: 16px;
-  padding: 0.5rem 1rem;
-  box-shadow: 4px 4px 0px var(--ink);
-  transform: rotate(-4deg);
-  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  border: var(--border-heavy);
+  border-radius: 20px;
+  padding: 0.65rem 1.35rem;
+  box-shadow: 6px 6px 0px var(--ink);
+  transform: rotate(-5deg);
+  transition: transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-.hub-ticket-stub:hover .cya-stamp {
+.finale-stamp-col:hover .cya-stamp {
   transform: rotate(3deg) scale(1.08);
+  background: var(--yellow-main);
 }
 
-.hub-ticket-stub.is-popped .cya-stamp {
+.finale-stamp-col.is-popped .cya-stamp {
   animation: clapperSnap 0.35s ease;
 }
 
@@ -3687,18 +3530,46 @@ a.artifact-card:hover .artifact-arrow {
     transform: translateX(-50%) rotate(135deg);
   }
 
-  .intro-bottom-bento {
+  .split-panel,
+  .split-panel.align-right {
+    width: 100%;
     grid-template-columns: 1fr;
   }
 
-  .hub-ticket {
-    grid-template-columns: 1fr;
-  }
-
-  .hub-ticket-stub {
+  .split-panel.align-right .split-title-wing {
+    order: 1;
     border-left: none;
-    border-top: 3.5px dashed var(--ink);
-    padding: 0.95rem 1.2rem;
+  }
+
+  .split-panel.align-right .split-story-wing {
+    order: 2;
+  }
+
+  .split-title-wing {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-right: none;
+    border-bottom: var(--border-heavy);
+    padding: 1rem 1.25rem;
+  }
+
+  .split-title-row {
+    gap: 0.75rem;
+  }
+
+  .aside-banner {
+    border-radius: 24px;
+    padding: 1.1rem 1.25rem;
+  }
+
+  .finale-card {
+    grid-template-columns: 1fr;
+    justify-items: flex-start;
+  }
+
+  .finale-stamp-col {
+    justify-self: flex-end;
   }
 }
 
@@ -3953,55 +3824,101 @@ a.artifact-card:hover .artifact-arrow {
     line-height: 1.85;
   }
 
-  .intro-marquee {
-    padding: 0.44rem 0;
-    box-shadow: 4px 4px 0px var(--pop-coral);
+  .big4-storyboard {
+    gap: 1.15rem;
   }
 
-  .intro-marquee-track {
-    font-size: 0.78rem;
-  }
-
-  .artifact-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .artifact-card {
+  .split-panel {
     border-radius: 18px;
     box-shadow: 6px 6px 0px var(--ink);
   }
 
-  .artifact-top-strip {
-    height: 24px;
+  .split-title-wing {
+    padding: 0.85rem 1rem;
   }
 
-  .artifact-body {
-    padding: 1rem;
-    gap: 0.75rem;
+  .split-giant-num {
+    font-size: 2.15rem;
+  }
+
+  .big4-title {
+    font-size: 1.45rem;
   }
 
   .big4-icon-box,
   .vinyl-badge {
-    width: 42px;
-    height: 42px;
+    width: 40px;
+    height: 40px;
   }
 
-  .lore-scroll-card,
-  .hub-ticket {
+  .split-story-wing {
+    padding: 1.05rem 1rem;
+    gap: 0.85rem;
+  }
+
+  .big4-desc {
+    font-size: 0.98rem;
+    line-height: 1.55;
+  }
+
+  .split-action-arrow {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+
+  .aside-banner {
+    flex-wrap: wrap;
     border-radius: 18px;
+    padding: 1rem;
+    gap: 0.75rem;
     box-shadow: 6px 6px 0px var(--ink);
   }
 
-  .lore-scroll-card,
-  .hub-ticket-main {
-    padding: 1.15rem 1.05rem;
+  .aside-sticker {
+    width: 48px;
+    height: 42px;
+  }
+
+  .intro-lore-text {
+    width: 100%;
+    order: 3;
+    font-size: 1.04rem;
+  }
+
+  .finale-stack-wrap {
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+
+  .finale-layer {
+    inset: 0 10px 10px 0;
+    border-radius: 18px;
+  }
+
+  .finale-layer-back {
+    transform: translate(10px, 10px);
+  }
+
+  .finale-card {
+    border-radius: 18px;
+    padding: 1.2rem 1.05rem;
+    gap: 1rem;
+  }
+
+  .finale-headline {
+    font-size: 1.08rem;
+    line-height: 1.55;
+  }
+
+  .finale-subtext {
+    font-size: 0.96rem;
   }
 
   .cya-stamp {
-    font-size: 1.45rem;
-    padding: 0.42rem 0.95rem;
-    border-radius: 12px;
+    font-size: 1.55rem;
+    padding: 0.45rem 1rem;
+    border-radius: 14px;
   }
 
   .ledger-sheet {

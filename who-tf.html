@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Fredoka:wght@500;600;700&family=MuseoModerno:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20261125b">
+    <link rel="stylesheet" href="styles.css?v=20261127f">
 </head>
 <body class="cartoon-home intro-page">
     <!-- Distinct Inner-Page Background (Warm Sketchbook Grid + Pop-Art Doodles) -->
@@ -119,60 +119,16 @@
                 </div>
             </section>
 
-            <!-- KINETIC POP-ART MARQUEE RIBBON -->
-            <div class="intro-marquee" aria-hidden="true">
-                <div class="intro-marquee-track">
-                    <div class="intro-marquee-group">
-                        <span>★ GAMES</span>
-                        <span>✦ WRITING</span>
-                        <span>★ DESIGN</span>
-                        <span>✦ FILM &amp; MUSIC</span>
-                        <span>★ HISTORY</span>
-                        <span>✦ HIGH FANTASY</span>
-                        <span>★ GAMES</span>
-                        <span>✦ WRITING</span>
-                        <span>★ DESIGN</span>
-                        <span>✦ FILM &amp; MUSIC</span>
-                        <span>★ HISTORY</span>
-                        <span>✦ HIGH FANTASY</span>
-                    </div>
-                    <div class="intro-marquee-group">
-                        <span>★ GAMES</span>
-                        <span>✦ WRITING</span>
-                        <span>★ DESIGN</span>
-                        <span>✦ FILM &amp; MUSIC</span>
-                        <span>★ HISTORY</span>
-                        <span>✦ HIGH FANTASY</span>
-                        <span>★ GAMES</span>
-                        <span>✦ WRITING</span>
-                        <span>★ DESIGN</span>
-                        <span>✦ FILM &amp; MUSIC</span>
-                        <span>★ HISTORY</span>
-                        <span>✦ HIGH FANTASY</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- SECTION 2: (MY) BIG FOUR — UNIFIED ORIENTATION, 4 CUSTOM ARTIFACT HEADERS -->
+            <!-- SECTION 2: (MY) BIG FOUR — STAGGERED ZIG-ZAG SPLIT STORYBOARD -->
             <section class="big-four-section" id="big-four-section" aria-label="My Big Four">
-                <div class="artifact-grid">
-                    <!-- 01: Games — Midnight Arcade Cabinet Theme -->
-                    <a href="games.html" class="artifact-card artifact-cartridge">
-                        <div class="artifact-top-strip strip-arcade" aria-hidden="true">
-                            <div class="arcade-dpad-row">
-                                <span class="arcade-dpad-plus">+</span>
-                                <span class="arcade-pixel-pips"><i></i><i></i><i></i></span>
-                            </div>
-                            <div class="arcade-dots">
-                                <span class="dot-y"></span>
-                                <span class="dot-c"></span>
-                            </div>
-                        </div>
-                        <div class="artifact-body">
-                            <div class="artifact-head-row">
-                                <span class="big4-num">01</span>
+                <div class="big4-storyboard">
+                    <!-- 01: Games (Title Left / Story Right) -->
+                    <a href="games.html" class="split-panel panel-games align-left">
+                        <div class="split-title-wing">
+                            <span class="split-giant-num">01</span>
+                            <div class="split-title-row">
+                                <h2 class="big4-title">Games</h2>
                                 <div class="big4-icon-box" aria-hidden="true">
-                                    <!-- Cartoon Arcade Joystick SVG -->
                                     <svg width="52" height="50" viewBox="0 0 60 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect x="6" y="34" width="48" height="18" rx="6" fill="#FFD43B" stroke="#141413" stroke-width="3.5"/>
                                         <path d="M18 34 C18 29 22 27 26 27 C30 27 34 29 34 34 Z" fill="#141413"/>
@@ -185,24 +141,19 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="big4-copy">
-                                <h2 class="big4-title">Games</h2>
-                                <p class="big4-desc">I play games. I make games. And you can play quite a few of them right here. You'd be surprised by just how good my "browser" games can be!</p>
-                            </div>
-                            <div class="artifact-foot-row">
-                                <span class="artifact-arrow" aria-hidden="true">↗</span>
-                            </div>
+                        </div>
+                        <div class="split-story-wing">
+                            <p class="big4-desc">I play games. I make games. And you can play quite a few of them right here. You'd be surprised by just how good my "browser" games can be!</p>
+                            <span class="split-action-arrow" aria-hidden="true">↗</span>
                         </div>
                     </a>
 
-                    <!-- 02: Writing — Top-Spiral Ruled Notebook -->
-                    <a href="Writings/writings-content-master.html" class="artifact-card artifact-notebook">
-                        <div class="artifact-top-strip strip-spiral" aria-hidden="true">
-                            <span></span><span></span><span></span><span></span><span></span><span></span>
-                        </div>
-                        <div class="artifact-body">
-                            <div class="artifact-head-row">
-                                <span class="big4-num">02</span>
+                    <!-- 02: Writing (Story Left / Title Right) -->
+                    <a href="Writings/writings-content-master.html" class="split-panel panel-writing align-right">
+                        <div class="split-title-wing">
+                            <span class="split-giant-num">02</span>
+                            <div class="split-title-row">
+                                <h2 class="big4-title">Writing</h2>
                                 <div class="big4-icon-box" aria-hidden="true">
                                     <svg width="48" height="48" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect x="10" y="6" width="32" height="42" rx="5" fill="#FFFDF7" stroke="#141413" stroke-width="3.5"/>
@@ -213,27 +164,19 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="big4-copy">
-                                <h2 class="big4-title">Writing</h2>
-                                <p class="big4-desc">I write. Stories. Poems. Blogs. All kinds of stuff. And then there are my "Episodes". I think you'll enjoy them. Go see what they're all about!.</p>
-                            </div>
-                            <div class="artifact-foot-row">
-                                <span class="artifact-arrow" aria-hidden="true">↗</span>
-                            </div>
+                        </div>
+                        <div class="split-story-wing">
+                            <p class="big4-desc">I write. Stories. Poems. Blogs. All kinds of stuff. And then there are my "Episodes". I think you'll enjoy them. Go see what they're all about!</p>
+                            <span class="split-action-arrow" aria-hidden="true">↗</span>
                         </div>
                     </a>
 
-                    <!-- 03: Design — Pantone Color-Swatch & Blueprint Drafting Sheet -->
-                    <a href="projects.html" class="artifact-card artifact-swatch">
-                        <div class="artifact-top-strip strip-swatches" aria-hidden="true">
-                            <span style="background:#FF5733;"></span>
-                            <span style="background:#FFD43B;"></span>
-                            <span style="background:#00D2A0;"></span>
-                            <span style="background:#4CC9F0;"></span>
-                        </div>
-                        <div class="artifact-body">
-                            <div class="artifact-head-row">
-                                <span class="big4-num">03</span>
+                    <!-- 03: Design (Title Left / Story Right) -->
+                    <a href="projects.html" class="split-panel panel-design align-left">
+                        <div class="split-title-wing">
+                            <span class="split-giant-num">03</span>
+                            <div class="split-title-row">
+                                <h2 class="big4-title">Design</h2>
                                 <div class="big4-icon-box" aria-hidden="true">
                                     <svg width="48" height="48" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M28 8 C15 8 7 17 7 28 C7 38 15 47 26 47 C30 47 32 44 31 41 C30 38 32 35 35 35 H41 C46 35 50 31 50 25 C50 15 40 8 28 8 Z" fill="#FFFDF7" stroke="#141413" stroke-width="3.5" stroke-linejoin="round"/>
@@ -244,22 +187,19 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="big4-copy">
-                                <h2 class="big4-title">Design</h2>
-                                <p class="big4-desc">I design. Websites. UI. And all kinds of digital experiences. Beyond just games.</p>
-                            </div>
-                            <div class="artifact-foot-row">
-                                <span class="artifact-arrow" aria-hidden="true">↗</span>
-                            </div>
+                        </div>
+                        <div class="split-story-wing">
+                            <p class="big4-desc">I design. Websites. UI. And all kinds of digital experiences. Beyond just games.</p>
+                            <span class="split-action-arrow" aria-hidden="true">↗</span>
                         </div>
                     </a>
 
-                    <!-- 04: Film & Music — Interactive Clapperboard + Acoustic Guitar Strum -->
-                    <div class="artifact-card artifact-clapper is-unlinked" id="film-music-card" role="button" tabindex="0" aria-label="Film and Music — tap for guitar strum">
-                        <div class="artifact-top-strip strip-clapper" aria-hidden="true"></div>
-                        <div class="artifact-body">
-                            <div class="artifact-head-row">
-                                <span class="big4-num">04</span>
+                    <!-- 04: Film & Music (Story Left / Title Right — Interactive Guitar Strum) -->
+                    <div class="split-panel panel-film align-right is-unlinked" id="film-music-card" role="button" tabindex="0" aria-label="Film and Music — tap for guitar strum">
+                        <div class="split-title-wing">
+                            <span class="split-giant-num">04</span>
+                            <div class="split-title-row">
+                                <h2 class="big4-title">Film &amp; Music</h2>
                                 <div class="vinyl-badge" aria-hidden="true">
                                     <svg width="48" height="48" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="28" cy="28" r="24" fill="#141413"/>
@@ -269,65 +209,61 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="big4-copy">
-                                <h2 class="big4-title">Film &amp; Music</h2>
-                                <p class="big4-desc">I make films. Play a little guitar. And I’m learning music production. Will start presenting them soon too.</p>
-                            </div>
-                            <div class="artifact-foot-row">
-                                <span class="music-note-pop" aria-hidden="true">♪ ♫</span>
-                            </div>
+                        </div>
+                        <div class="split-story-wing">
+                            <p class="big4-desc">I make films. Play a little guitar. And I’m learning music production. Will start presenting them soon too.</p>
+                            <span class="music-note-pop" aria-hidden="true">♪ ♫</span>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- SECTION 3: LORE QUEST CARD + TWO-TONE HUB TICKET -->
-            <section class="intro-bottom-bento" aria-label="More About Me">
-                <!-- Left: Lore Card (History & High Fantasy) -->
-                <div class="lore-scroll-card">
-                    <svg class="lore-compass-bg" width="120" height="120" viewBox="0 0 120 120" fill="none" aria-hidden="true">
-                        <circle cx="60" cy="60" r="48" stroke="#141413" stroke-width="2.5" stroke-dasharray="6 6"/>
-                        <path d="M60 6 L69 51 L114 60 L69 69 L60 114 L51 69 L6 60 L51 51 Z" stroke="#141413" stroke-width="2.5" fill="none"/>
-                    </svg>
-
-                    <div class="lore-art-strip" aria-hidden="true">
-                        <div class="lore-sticker-badge lore-sticker-history">
-                            <svg width="64" height="56" viewBox="0 0 64 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14 10 H48 C53 10 56 13 56 17 C56 21 53 24 48 24 H46 V46 C46 49 43 51 39 51 H13 C9 51 6 48 6 44 C6 40 9 37 14 37 H16 V17 C16 13 13 10 14 10 Z" fill="#FFFDF7" stroke="#141413" stroke-width="3.2" stroke-linejoin="round"/>
-                                <path d="M14 10 C10 10 8 13 8 17 C8 21 10 24 14 24 H16" fill="#FFD43B" stroke="#141413" stroke-width="3.2" stroke-linejoin="round"/>
-                                <line x1="23" y1="22" x2="39" y2="22" stroke="#141413" stroke-width="3" stroke-linecap="round"/>
-                                <line x1="23" y1="30" x2="39" y2="30" stroke="#141413" stroke-width="3" stroke-linecap="round"/>
-                                <line x1="23" y1="38" x2="33" y2="38" stroke="#141413" stroke-width="3" stroke-linecap="round"/>
-                            </svg>
-                        </div>
-                        <div class="lore-sticker-badge lore-sticker-fantasy">
-                            <svg width="68" height="56" viewBox="0 0 68 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8 14 C16 10 26 11 34 17 C42 11 52 10 60 14 V44 C52 40 42 41 34 47 C26 41 16 40 8 44 Z" fill="#FFD43B" stroke="#141413" stroke-width="3.2" stroke-linejoin="round"/>
-                                <line x1="34" y1="17" x2="34" y2="47" stroke="#141413" stroke-width="3.2"/>
-                                <path d="M47 6 L49 12 L55 14 L49 16 L47 22 L45 16 L39 14 L45 12 Z" fill="#FF70A6" stroke="#141413" stroke-width="2.2" stroke-linejoin="round"/>
-                                <path d="M15 23 H27 M15 30 H25 M41 25 H53 M43 32 H53" stroke="#141413" stroke-width="2.8" stroke-linecap="round"/>
-                            </svg>
-                        </div>
+            <!-- SECTION 3: PINNED COMIC ASIDE RIBBON (HISTORY & HIGH FANTASY) -->
+            <section class="intro-aside-strip" aria-label="Side Note">
+                <div class="aside-banner">
+                    <div class="aside-sticker aside-sticker-left" aria-hidden="true">
+                        <svg width="54" height="48" viewBox="0 0 64 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 10 H48 C53 10 56 13 56 17 C56 21 53 24 48 24 H46 V46 C46 49 43 51 39 51 H13 C9 51 6 48 6 44 C6 40 9 37 14 37 H16 V17 C16 13 13 10 14 10 Z" fill="#FFFDF7" stroke="#141413" stroke-width="3.2" stroke-linejoin="round"/>
+                            <path d="M14 10 C10 10 8 13 8 17 C8 21 10 24 14 24 H16" fill="#FFD43B" stroke="#141413" stroke-width="3.2" stroke-linejoin="round"/>
+                            <line x1="23" y1="22" x2="39" y2="22" stroke="#141413" stroke-width="3" stroke-linecap="round"/>
+                            <line x1="23" y1="30" x2="39" y2="30" stroke="#141413" stroke-width="3" stroke-linecap="round"/>
+                            <line x1="23" y1="38" x2="33" y2="38" stroke="#141413" stroke-width="3" stroke-linecap="round"/>
+                        </svg>
                     </div>
 
                     <p class="intro-lore-text">
                         Also, I am a student of history. A big one. I also read a lot of high fantasy.
                     </p>
-                </div>
 
-                <!-- Right: Clean Two-Tone Hub Ticket + Cya! Stub -->
-                <div class="hub-ticket">
-                    <div class="hub-ticket-main">
-                        <p class="intro-hub-text">
-                            This website is my hub. Please, feel free to roam about. Read, play games &amp; explore. You won’t be bored, trust me.
-                        </p>
-                        <p class="intro-hub-text">
-                            I put out new content almost every day, and some crazy games and experiences are coming. So stay tuned!
-                        </p>
+                    <div class="aside-sticker aside-sticker-right" aria-hidden="true">
+                        <svg width="56" height="48" viewBox="0 0 68 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 14 C16 10 26 11 34 17 C42 11 52 10 60 14 V44 C52 40 42 41 34 47 C26 41 16 40 8 44 Z" fill="#FFD43B" stroke="#141413" stroke-width="3.2" stroke-linejoin="round"/>
+                            <line x1="34" y1="17" x2="34" y2="47" stroke="#141413" stroke-width="3.2"/>
+                            <path d="M47 6 L49 12 L55 14 L49 16 L47 22 L45 16 L39 14 L45 12 Z" fill="#FF70A6" stroke="#141413" stroke-width="2.2" stroke-linejoin="round"/>
+                            <path d="M15 23 H27 M15 30 H25 M41 25 H53 M43 32 H53" stroke="#141413" stroke-width="2.8" stroke-linecap="round"/>
+                        </svg>
                     </div>
+                </div>
+            </section>
 
-                    <div class="hub-ticket-stub" id="cya-stub" role="button" tabindex="0" aria-label="Cya!">
-                        <span class="cya-stamp">Cya!</span>
+            <!-- SECTION 4: FULL-WIDTH STACKED FINALE STAGE + CYA! SIGNATURE STAMP -->
+            <section class="intro-finale-stage" aria-label="Welcome to My Hub">
+                <div class="finale-stack-wrap">
+                    <div class="finale-layer finale-layer-back" aria-hidden="true"></div>
+                    <div class="finale-card">
+                        <div class="finale-copy">
+                            <p class="finale-headline">
+                                <span class="finale-hub-pill">This website is my hub.</span>
+                                Please, feel free to roam about. Read, play games &amp; explore. You won’t be bored, trust me.
+                            </p>
+                            <p class="finale-subtext">
+                                I put out new content almost every day, and some crazy games and experiences are coming. So stay tuned!
+                            </p>
+                        </div>
+
+                        <div class="finale-stamp-col" id="cya-stub" role="button" tabindex="0" aria-label="Cya!">
+                            <span class="cya-stamp">Cya!</span>
+                        </div>
                     </div>
                 </div>
             </section>
