@@ -4258,7 +4258,7 @@ body.projects-page {
   margin-left: calc(-1 * clamp(1.4rem, 3vw, 2.3rem));
   margin-right: calc(-1 * clamp(1.4rem, 3vw, 2.3rem));
   padding: 0.95rem clamp(1.4rem, 3vw, 2.3rem);
-  background: var(--yellow-pale);
+  background: var(--yellow-main);
   border-top: var(--border-thick);
   border-bottom: var(--border-thick);
 }
@@ -4293,7 +4293,7 @@ body.projects-page {
   border: 2px solid var(--ink);
   border-radius: 999px;
   box-shadow: 2px 2px 0px var(--ink);
-  background: #C8F2FF;
+  background: var(--pop-cyan);
   color: var(--ink);
 }
 
@@ -4454,25 +4454,32 @@ body.projects-page {
   100% { transform: scale(1); }
 }
 
-/* Card Header with Year Pill + Title */
+/* Card Header with Year Pill + Title (Bright Technicolor Shades) */
 .timeline-card-header {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 0.75rem;
   padding: 0.9rem clamp(1.15rem, 2.2vw, 1.6rem);
-  background: var(--yellow-pale);
+  background: var(--yellow-main);
   border-bottom: var(--border-thick);
 }
 
-.accent-mint .timeline-card-header   { background: #D5FAEE; }
-.accent-cyan .timeline-card-header   { background: #D8F4FF; }
-.accent-orange .timeline-card-header { background: #FFE6C7; }
-.accent-purple .timeline-card-header { background: #EDE2FF; }
-.accent-pink .timeline-card-header   { background: #FFDCEB; }
-.accent-coral .timeline-card-header  { background: #FFE0D8; }
-.accent-yellow .timeline-card-header { background: var(--yellow-pale); }
-.accent-blue .timeline-card-header   { background: #DCEBFF; }
+.accent-mint .timeline-card-header   { background: var(--pop-mint); }
+.accent-cyan .timeline-card-header   { background: var(--pop-cyan); }
+.accent-orange .timeline-card-header { background: var(--pop-orange); }
+.accent-purple .timeline-card-header { background: var(--pop-purple); }
+.accent-pink .timeline-card-header   { background: var(--pop-pink); }
+.accent-coral .timeline-card-header  { background: var(--pop-coral); }
+.accent-yellow .timeline-card-header { background: var(--yellow-main); }
+.accent-blue .timeline-card-header   { background: var(--pop-blue); }
+
+.accent-purple .timeline-title,
+.accent-coral .timeline-title,
+.accent-blue .timeline-title {
+  color: var(--paper-white);
+  text-shadow: 2px 2px 0px var(--ink);
+}
 
 .year-pill {
   display: inline-flex;
@@ -4486,19 +4493,26 @@ body.projects-page {
   border: 2.5px solid var(--ink);
   border-radius: 999px;
   box-shadow: 2.5px 2.5px 0px var(--ink);
-  background: var(--yellow-main);
+  background: var(--paper-white);
   color: var(--ink);
   flex-shrink: 0;
 }
 
-.year-pill.pill-mint   { background: var(--pop-mint); }
-.year-pill.pill-cyan   { background: var(--pop-cyan); }
-.year-pill.pill-orange { background: var(--pop-orange); }
-.year-pill.pill-purple { background: #D4C2FF; }
-.year-pill.pill-pink   { background: var(--pop-pink); }
-.year-pill.pill-coral  { background: var(--pop-coral); color: var(--paper-white); }
-.year-pill.pill-yellow { background: var(--yellow-main); }
-.year-pill.pill-blue   { background: var(--pop-blue); color: var(--paper-white); }
+.year-pill.pill-mint,
+.year-pill.pill-cyan,
+.year-pill.pill-orange,
+.year-pill.pill-pink,
+.year-pill.pill-yellow {
+  background: var(--paper-white);
+  color: var(--ink);
+}
+
+.year-pill.pill-purple,
+.year-pill.pill-coral,
+.year-pill.pill-blue {
+  background: var(--yellow-main);
+  color: var(--ink);
+}
 
 .timeline-title {
   font-family: var(--font-display);
