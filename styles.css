@@ -2008,7 +2008,8 @@ body.games-page {
 }
 
 .episodes-grid {
-  grid-template-columns: repeat(auto-fit, minmax(275px, 340px));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 320px));
+  max-width: 1040px;
 }
 
 .episode-card .game-visual-stage {
@@ -2132,6 +2133,67 @@ body.games-page {
 
 .game-card.card-delhi:hover .game-card-arrow,
 .game-card.card-delhi:focus-visible .game-card-arrow {
+  background: var(--paper-white);
+  color: var(--ink);
+}
+
+/* Story Theme: Chandigarh Sodium Fog & Bruised Rust (No One Saw Us Leave) */
+.game-card.card-chandigarh {
+  background: #23191B;
+}
+
+.game-card.card-chandigarh .game-title {
+  color: var(--paper-white);
+  text-shadow: 2px 2px 0px rgba(20, 20, 19, 0.35);
+}
+
+.game-card.card-chandigarh .game-subtitle {
+  color: #E3A054;
+  opacity: 1;
+}
+
+.game-card.card-chandigarh .game-desc {
+  color: rgba(255, 253, 247, 0.92);
+}
+
+.game-card.card-chandigarh .game-tag {
+  background: #C95B4C;
+  color: var(--paper-white);
+}
+
+.game-card.card-chandigarh .game-badge {
+  background: #E3A054;
+  color: var(--ink);
+}
+
+.game-card.card-chandigarh .ctrl-pill {
+  background: rgba(255, 253, 247, 0.12);
+  border-color: rgba(255, 253, 247, 0.36);
+  color: var(--paper-white);
+  box-shadow: 1.5px 1.5px 0px rgba(0, 0, 0, 0.6);
+}
+
+.game-card.card-chandigarh .game-action-row {
+  border-top-color: rgba(255, 253, 247, 0.22);
+}
+
+.game-card.card-chandigarh .game-play-btn {
+  background: #E3A054;
+  color: var(--ink);
+}
+
+.game-card.card-chandigarh:hover .game-play-btn {
+  background: #C95B4C;
+  color: var(--paper-white);
+}
+
+.game-card.card-chandigarh .game-card-arrow {
+  background: #E3A054;
+  color: var(--ink);
+}
+
+.game-card.card-chandigarh:hover .game-card-arrow,
+.game-card.card-chandigarh:focus-visible .game-card-arrow {
   background: var(--paper-white);
   color: var(--ink);
 }
