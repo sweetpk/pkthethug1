@@ -2,30 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <title>Thaye-Thaye // Tactical Arena FPS</title>
     <link rel="icon" type="image/png" href="./assets/PK-Logo-Light-Da-0JOHX.png">
     <link rel="apple-touch-icon" href="./assets/PK-Logo-Light-Da-0JOHX.png">
-    <script type="module" crossorigin src="./assets/template-BQoQCUim.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/template-CVGObuop.css">
+    <script type="module" crossorigin src="./assets/template-BMUDzc0X.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/template-DJKzwc4H.css">
   </head>
   <body>
-    <!-- Desktop-Only Gate for Touch-Only Devices -->
-    <div id="desktop-only-overlay" class="desktop-only-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="desktop-only-title">
-      <div class="desktop-only-card">
-        <div class="desktop-only-badge">DESKTOP REQUIRED // KEYBOARD + MOUSE</div>
-        <div class="desktop-only-icon" aria-hidden="true">🖥️</div>
-        <h1 id="desktop-only-title" class="desktop-only-title">THAYE<span>-THAYE</span></h1>
-        <p class="desktop-only-subtitle">Desktop Machines Only</p>
+    <!-- Mobile Portrait Orientation Recommendation Overlay (Touch-Only Devices in Portrait) -->
+    <div id="mobile-orient-overlay" class="desktop-only-overlay mobile-orient-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="mobile-orient-title">
+      <div class="desktop-only-card mobile-orient-card">
+        <div class="desktop-only-badge">TACTICAL MOBILE HUD // LANDSCAPE</div>
+        <div class="desktop-only-icon orient-phone-icon" aria-hidden="true">📱↻</div>
+        <h1 id="mobile-orient-title" class="desktop-only-title">THAYE<span>-THAYE</span></h1>
+        <p class="desktop-only-subtitle">Rotate Phone to Landscape</p>
         <p class="desktop-only-desc">
-          Thaye-Thaye is a fast-paced 3D tactical arena FPS built for desktop keyboard &amp; mouse pointer-lock controls. Touch-only mobile and tablet devices are not supported.
+          Rotate your device horizontally for the full dual-thumb arena FPS layout with virtual movement stick, free-look aim, and tactical combat controls.
         </p>
         <div class="desktop-only-reqs">
-          <span><b>WASD</b> Movement</span>
-          <span><b>MOUSE</b> Pointer-Lock Aim</span>
-          <span><b>1–5 / G / R</b> Combat Controls</span>
+          <span><b>LEFT THUMB</b> Move + Auto-Sprint</span>
+          <span><b>RIGHT THUMB</b> Free Aim &amp; Fire</span>
+          <span><b>HUD SLOTS</b> Tap Weapons 1–5</span>
         </div>
-        <a href="../../games.html" class="desktop-only-back">← BACK TO ARCADE</a>
+        <button type="button" id="btn-orient-continue" class="desktop-only-back orient-continue-btn">CONTINUE ANYWAY →</button>
+        <a href="../../games.html" class="desktop-only-back orient-back-link">← BACK TO ARCADE</a>
       </div>
     </div>
 
@@ -128,6 +129,57 @@
           <span id="ammo-mag" class="ammo-mag">30</span>
           <span class="ammo-sep">/</span>
           <span id="ammo-reserve" class="ammo-reserve">120</span>
+        </div>
+      </div>
+
+      <!-- Mobile Touch Controls Layer (Strictly hidden on desktop; active only in body.touch-mode) -->
+      <div id="mobile-touch-layer" class="mobile-touch-layer" aria-label="Touch Combat Controls">
+        <!-- Top-Left Utility Pills -->
+        <div class="mob-util-bar">
+          <button type="button" id="btn-mob-pause" class="mob-util-btn" aria-label="Pause Match">⏸ PAUSE</button>
+          <button type="button" id="btn-mob-score" class="mob-util-btn" aria-label="Toggle Scoreboard">📊 SCORE</button>
+          <button type="button" id="btn-mob-cam" class="mob-util-btn" aria-label="Toggle Camera View">1P / 3P</button>
+        </div>
+
+        <!-- Left Half: Virtual Movement Thumbstick (with outer-rim Auto-Sprint) -->
+        <div id="mob-joy-zone" class="mob-joy-zone">
+          <div id="mob-joy-base" class="mob-joy-base">
+            <div id="mob-sprint-badge" class="mob-sprint-badge">⚡ SPRINT</div>
+            <div class="mob-joy-ring"></div>
+            <div id="mob-joy-knob" class="mob-joy-knob"></div>
+          </div>
+        </div>
+
+        <!-- Right Half: Free 3D Touch Look Surface -->
+        <div id="mob-look-zone" class="mob-look-zone"></div>
+
+        <!-- Bottom-Right: Tactical Combat Action Arc -->
+        <div class="mob-action-cluster">
+          <button type="button" id="btn-mob-fire" class="mob-btn mob-btn-fire" aria-label="Fire Weapon">
+            <span class="mob-fire-reticle"></span>
+            <span class="mob-btn-lbl">FIRE</span>
+          </button>
+          <button type="button" id="btn-mob-ads" class="mob-btn mob-btn-ads" aria-label="Aim Down Sights">
+            <span class="mob-btn-icon">🎯</span>
+            <span class="mob-btn-lbl">ADS</span>
+          </button>
+          <button type="button" id="btn-mob-jump" class="mob-btn mob-btn-jump" aria-label="Jump">
+            <span class="mob-btn-icon">⏫</span>
+            <span class="mob-btn-lbl">JUMP</span>
+          </button>
+          <button type="button" id="btn-mob-crouch" class="mob-btn mob-btn-crouch" aria-label="Crouch">
+            <span class="mob-btn-icon">⏬</span>
+            <span class="mob-btn-lbl">CROUCH</span>
+          </button>
+          <button type="button" id="btn-mob-reload" class="mob-btn mob-btn-reload" aria-label="Reload Weapon">
+            <span class="mob-btn-icon">🔄</span>
+            <span class="mob-btn-lbl">RELOAD</span>
+          </button>
+          <button type="button" id="btn-mob-frag" class="mob-btn mob-btn-frag" aria-label="Throw Frag Grenade">
+            <span class="mob-btn-icon">💣</span>
+            <span class="mob-btn-lbl">FRAG</span>
+            <b id="mob-frag-count" class="mob-frag-badge">3</b>
+          </button>
         </div>
       </div>
 
@@ -300,7 +352,7 @@
             </div>
 
             <div class="menu-section slider-box">
-              <label class="menu-label">MOUSE SENSITIVITY <span id="sens-val">1.0</span></label>
+              <label class="menu-label"><span id="sens-label-text">MOUSE SENSITIVITY</span> <span id="sens-val">1.0</span></label>
               <input id="opt-sens" type="range" min="0.3" max="2.5" step="0.1" value="1.0" />
             </div>
             <div class="menu-section slider-box">
@@ -318,7 +370,7 @@
               <button type="button" class="back-btn" data-back="home">← BACK</button>
               <span class="stage-title">CONTROLS</span>
             </div>
-            <div class="controls-grid">
+            <div class="controls-grid" id="desktop-controls-grid">
               <div class="ctrl-row"><kbd>W A S D</kbd><span>Move Operative</span></div>
               <div class="ctrl-row"><kbd>SPACE</kbd><span>Jump / Vault</span></div>
               <div class="ctrl-row"><kbd>SHIFT</kbd><span>Tactical Sprint</span></div>
@@ -331,6 +383,16 @@
               <div class="ctrl-row"><kbd>R</kbd><span>Reload Weapon</span></div>
               <div class="ctrl-row"><kbd>F</kbd><span>Toggle Fullscreen</span></div>
               <div class="ctrl-row"><kbd>TAB / ESC</kbd><span>Scoreboard / Pause</span></div>
+            </div>
+            <div class="controls-grid mobile-controls-grid" id="mobile-controls-grid">
+              <div class="ctrl-row"><kbd>LEFT STICK</kbd><span>Move + Outer-Rim Auto-Sprint</span></div>
+              <div class="ctrl-row"><kbd>RIGHT DRAG</kbd><span>360° Free Look &amp; Aim</span></div>
+              <div class="ctrl-row"><kbd>FIRE BTN</kbd><span>Hold &amp; Drag to Shoot + Track</span></div>
+              <div class="ctrl-row"><kbd>ADS BTN</kbd><span>Toggle Aim Down Sights</span></div>
+              <div class="ctrl-row"><kbd>JUMP / CROUCH</kbd><span>Vault Ledges / Toggle Crouch</span></div>
+              <div class="ctrl-row"><kbd>FRAG / RELOAD</kbd><span>Quick Grenade / Reload Mag</span></div>
+              <div class="ctrl-row"><kbd>SLOTS 1 - 5</kbd><span>Tap Weapon Cards to Switch</span></div>
+              <div class="ctrl-row"><kbd>1P/3P • SCORE</kbd><span>Top-Left Camera &amp; Standings</span></div>
             </div>
           </div>
         </section>

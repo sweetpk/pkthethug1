@@ -9,7 +9,8 @@ const ZONE_LABELS = {
 };
 
 export class HudController {
-  constructor() {
+  constructor(isTouchMode = false) {
+    this.isTouchMode = !!isTouchMode;
     this.menuOverlay = document.getElementById("menu-overlay");
     this.gameoverOverlay = document.getElementById("gameover-overlay");
     this.hud = document.getElementById("hud");
@@ -36,6 +37,13 @@ export class HudController {
     this.limbStatusEl = document.getElementById("limb-status");
     this.grenadeWarning = document.getElementById("grenade-warning");
     this.weaponSlots = document.querySelectorAll(".w-slot");
+
+    this.mobAdsBtn = document.getElementById("btn-mob-ads");
+    this.mobCrouchBtn = document.getElementById("btn-mob-crouch");
+    this.mobReloadBtn = document.getElementById("btn-mob-reload");
+    this.mobFragBtn = document.getElementById("btn-mob-frag");
+    this.mobFragCountEl = document.getElementById("mob-frag-count");
+    this.mobCamBtn = document.getElementById("btn-mob-cam");
 
     this.crosshair = document.getElementById("crosshair");
     this.hitmarker = document.getElementById("hitmarker");
@@ -292,7 +300,47 @@ export class HudController {
       this.stancePill.classList.toggle("crippled", crippled);
     }
     if (this.camModePill) {
-      this.camModePill.textContent = isThirdPerson ? "3P [V]" : "1P [V]";
+      this.camModePill.textContent = this.isTouchMode
+        ? isThirdPerson
+          ? "3P"
+          : "1P"
+        : isThirdPerson
+          ? "3P [V]"
+          : "1P [V]";
+    }
+    if (this.isTouchMode) {
+      const nadeCount = player.ammo.grenade?.mag ?? 0;
+      if (this.mobCamBtn) {
+        this.mobCamBtn.textContent = isThirdPerson ? "3P VIEW" : "1P VIEW";
+        this.mobCamBtn.classList.toggle("active", isThirdPerson);
+      }
+      if (this.mobAdsBtn) {
+        this.mobAdsBtn.classList.toggle("active", isADS);
+      }
+      if (this.mobCrouchBtn) {
+        const isCr = !player.isLegCrippled() && (player.isCrouching || player.crouchAlpha > 0.35);
+        this.mobCrouchBtn.classList.toggle("active", isCr);
+      }
+      if (this.mobFragCountEl) {
+        this.mobFragCountEl.textContent = String(nadeCount);
+      }
+      if (this.mobFragBtn) {
+        this.mobFragBtn.classList.toggle("empty", nadeCount <= 0);
+      }
+      if (this.mobReloadBtn) {
+        const stCur = WEAPON_STATS[player.activeWeapon];
+        const amCur = player.ammo[player.activeWeapon];
+        const canReload =
+          amCur &&
+          amCur.mag !== Infinity &&
+          player.activeWeapon !== "grenade" &&
+          amCur.mag < stCur.magSize &&
+          amCur.reserve > 0;
+        const lowMag =
+          canReload && amCur.mag <= Math.ceil(stCur.magSize * 0.25);
+        this.mobReloadBtn.classList.toggle("active", !!player.isReloading);
+        this.mobReloadBtn.classList.toggle("low-ammo", !!lowMag && !player.isReloading);
+      }
     }
     if (this.limbStatusEl) {
       const chips = [];

@@ -21,14 +21,15 @@ function isTouchOnlyDevice() {
   return false;
 }
 
-if (isTouchOnlyDevice()) {
-  document.getElementById("menu-overlay")?.classList.add("hidden");
-  document.getElementById("desktop-only-overlay")?.classList.remove("hidden");
-} else {
-  bootDesktopGame();
+const isTouchDevice = isTouchOnlyDevice();
+
+if (isTouchDevice) {
+  document.body.classList.add("touch-mode");
 }
 
-async function bootDesktopGame() {
+bootGame(isTouchDevice);
+
+async function bootGame(touchMode = false) {
   const [{ SoundEngine }, { HudController }, { GameEngine }] = await Promise.all([
     import("./audio/SoundEngine.js"),
     import("./ui/HudController.js"),
@@ -37,8 +38,41 @@ async function bootDesktopGame() {
 
   const canvas = document.getElementById("game-canvas");
   const sound = new SoundEngine();
-  const ui = new HudController();
-  const engine = new GameEngine(canvas, sound, ui);
+  const ui = new HudController(touchMode);
+  const engine = new GameEngine(canvas, sound, ui, touchMode);
+
+  if (touchMode) {
+    const sensLabelText = document.getElementById("sens-label-text");
+    if (sensLabelText) sensLabelText.textContent = "TOUCH LOOK SENSITIVITY";
+
+    const orientOverlay = document.getElementById("mobile-orient-overlay");
+    const btnOrientContinue = document.getElementById("btn-orient-continue");
+    let orientDismissed = false;
+
+    const checkMobileOrientation = () => {
+      if (!orientOverlay) return;
+      const isPortrait = window.innerHeight > window.innerWidth;
+      if (isPortrait && !orientDismissed) {
+        orientOverlay.classList.remove("hidden");
+        if (engine.state === "playing" && !engine.paused) {
+          engine.pauseMatch();
+        }
+      } else {
+        orientOverlay.classList.add("hidden");
+      }
+    };
+
+    btnOrientContinue?.addEventListener("click", () => {
+      orientDismissed = true;
+      orientOverlay?.classList.add("hidden");
+    });
+
+    window.addEventListener("resize", checkMobileOrientation);
+    window.addEventListener("orientationchange", () => {
+      setTimeout(checkMobileOrientation, 120);
+    });
+    checkMobileOrientation();
+  }
 
   // Fullscreen support
   const fsRoot = document.documentElement;
@@ -229,6 +263,7 @@ async function bootDesktopGame() {
     sound.stopReload();
     sound.resume();
     engine.paused = false;
+    engine.resetTouchInputs?.();
     engine.weaponSystem.setActiveViewmodel(engine.player?.activeWeapon, false);
     engine.cleanupMatch();
     engine.state = "menu";

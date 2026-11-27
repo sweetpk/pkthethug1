@@ -10,10 +10,11 @@ import { ProceduralAnimator } from "../characters/ProceduralAnimator.js";
 const BOT_NAMES = ["ARJUN", "ROHAN", "KABIR", "VIKRAM"];
 
 export class GameEngine {
-  constructor(canvas, sound, ui) {
+  constructor(canvas, sound, ui, isTouchMode = false) {
     this.canvas = canvas;
     this.sound = sound;
     this.ui = ui;
+    this.isTouchMode = !!isTouchMode;
 
     this.renderer = new THREE.WebGLRenderer({ canvas, antialias: true, powerPreference: "high-performance" });
     this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
@@ -75,6 +76,15 @@ export class GameEngine {
     this.tpsCamDist = 2.15;
     this.tpsAdsAlpha = 0;
     this.tpsRecoilZ = 0;
+
+    // Mobile touch state (strictly active only when this.isTouchMode === true)
+    this.touchMoveX = 0;
+    this.touchMoveY = 0;
+    this.touchSprint = false;
+    this.touchCrouch = false;
+    this.touchLooking = false;
+    this.scoreboardToggled = false;
+    this._resetTouchUI = null;
 
     this._bindEvents();
   }
@@ -224,9 +234,32 @@ export class GameEngine {
     this.camera.updateProjectionMatrix();
     this.state = "playing";
     this.weaponSystem.setActiveViewmodel(this.player.activeWeapon, !this.thirdPerson);
+    this.resetTouchInputs();
     this.ui.showMatchHUD(this.scoreLimit);
     this.ui.setPointerHint(false);
     this.requestLock();
+  }
+
+  resetTouchInputs() {
+    if (!this.isTouchMode) return;
+    this.touchMoveX = 0;
+    this.touchMoveY = 0;
+    this.touchSprint = false;
+    this.touchCrouch = false;
+    this.touchLooking = false;
+    this.scoreboardToggled = false;
+    this.mouseDown = false;
+    this.adsDown = false;
+    this._resetTouchUI?.();
+  }
+
+  pauseMatch() {
+    if (this.state !== "playing" || this.paused) return;
+    this.paused = true;
+    this.sound.pause();
+    this.resetTouchInputs();
+    this.ui.setScoreboardVisible(false, this.combatants);
+    this.ui.setPointerHint(true);
   }
 
   resumeMatch() {
@@ -239,6 +272,7 @@ export class GameEngine {
   }
 
   requestLock() {
+    if (this.isTouchMode) return;
     if (this.state === "playing" && document.pointerLockElement !== this.canvas) {
       Promise.resolve(this.canvas.requestPointerLock?.()).catch(() => {});
     }
@@ -350,6 +384,449 @@ export class GameEngine {
         this.ui.setScoreboardVisible(false, this.combatants);
       }
     });
+
+    if (this.isTouchMode) {
+      this._bindTouchEvents();
+    }
+  }
+
+  _bindTouchEvents() {
+    const joyZone = document.getElementById("mob-joy-zone");
+    const joyBase = document.getElementById("mob-joy-base");
+    const joyKnob = document.getElementById("mob-joy-knob");
+    const sprintBadge = document.getElementById("mob-sprint-badge");
+    const lookZone = document.getElementById("mob-look-zone");
+
+    const btnFire = document.getElementById("btn-mob-fire");
+    const btnAds = document.getElementById("btn-mob-ads");
+    const btnJump = document.getElementById("btn-mob-jump");
+    const btnCrouch = document.getElementById("btn-mob-crouch");
+    const btnReload = document.getElementById("btn-mob-reload");
+    const btnFrag = document.getElementById("btn-mob-frag");
+    const btnPause = document.getElementById("btn-mob-pause");
+    const btnScore = document.getElementById("btn-mob-score");
+    const btnCam = document.getElementById("btn-mob-cam");
+
+    let joyTouchId = null;
+    let joyOriginX = 0;
+    let joyOriginY = 0;
+    const maxRadius = 46;
+
+    let lookTouchId = null;
+    let lookLastX = 0;
+    let lookLastY = 0;
+
+    let fireTouchId = null;
+    let fireLastX = 0;
+    let fireLastY = 0;
+
+    const resetJoystickVisuals = () => {
+      joyTouchId = null;
+      this.touchMoveX = 0;
+      this.touchMoveY = 0;
+      this.touchSprint = false;
+      if (joyKnob) joyKnob.style.transform = "translate3d(0px, 0px, 0px)";
+      if (joyBase) {
+        joyBase.classList.remove("active", "sprinting");
+        joyBase.style.left = "";
+        joyBase.style.top = "";
+        joyBase.style.bottom = "";
+      }
+      if (sprintBadge) sprintBadge.classList.remove("active");
+    };
+
+    this._resetTouchUI = () => {
+      resetJoystickVisuals();
+      lookTouchId = null;
+      fireTouchId = null;
+      this.touchLooking = false;
+      btnFire?.classList.remove("active");
+      btnAds?.classList.remove("active");
+      btnCrouch?.classList.remove("active");
+    };
+
+    const updateJoystickFromTouch = (t) => {
+      const dx = t.clientX - joyOriginX;
+      const dy = t.clientY - joyOriginY;
+      const dist = Math.hypot(dx, dy);
+      const deadzone = 5;
+
+      if (dist <= deadzone) {
+        this.touchMoveX = 0;
+        this.touchMoveY = 0;
+        this.touchSprint = false;
+        if (joyKnob) joyKnob.style.transform = "translate3d(0px, 0px, 0px)";
+      } else {
+        const clampedDist = Math.min(maxRadius, dist);
+        const angle = Math.atan2(dy, dx);
+        const knobX = Math.cos(angle) * clampedDist;
+        const knobY = Math.sin(angle) * clampedDist;
+        if (joyKnob) {
+          joyKnob.style.transform = `translate3d(${knobX.toFixed(1)}px, ${knobY.toFixed(1)}px, 0px)`;
+        }
+
+        const norm = Math.min(1, (dist - deadzone) / (maxRadius - deadzone));
+        this.touchMoveX = Math.cos(angle) * norm;
+        this.touchMoveY = -Math.sin(angle) * norm;
+        this.touchSprint = dist >= maxRadius * 0.80 && this.touchMoveY > 0.45;
+        if (this.touchSprint && this.touchCrouch) {
+          this.touchCrouch = false;
+        }
+      }
+
+      const showSprint = this.touchSprint && !this.adsDown && !this.touchCrouch && !this.player?.isLegCrippled();
+      joyBase?.classList.toggle("sprinting", !!showSprint);
+      sprintBadge?.classList.toggle("active", !!showSprint);
+    };
+
+    if (joyZone) {
+      joyZone.addEventListener(
+        "touchstart",
+        (e) => {
+          e.preventDefault();
+          if (this.state !== "playing" || this.paused || joyTouchId !== null) return;
+          this.sound.init();
+          const t = e.changedTouches[0];
+          if (!t) return;
+          joyTouchId = t.identifier;
+
+          const zoneRect = joyZone.getBoundingClientRect();
+          const pad = 64;
+          const cx = THREE.MathUtils.clamp(t.clientX, zoneRect.left + pad, zoneRect.right - pad);
+          const cy = THREE.MathUtils.clamp(t.clientY, zoneRect.top + pad, zoneRect.bottom - pad);
+          joyOriginX = cx;
+          joyOriginY = cy;
+
+          if (joyBase) {
+            joyBase.classList.add("active");
+            joyBase.style.left = `${cx - zoneRect.left - 62}px`;
+            joyBase.style.top = `${cy - zoneRect.top - 62}px`;
+            joyBase.style.bottom = "auto";
+          }
+          updateJoystickFromTouch(t);
+        },
+        { passive: false }
+      );
+
+      joyZone.addEventListener(
+        "touchmove",
+        (e) => {
+          e.preventDefault();
+          if (joyTouchId === null) return;
+          for (let i = 0; i < e.changedTouches.length; i++) {
+            const t = e.changedTouches[i];
+            if (t.identifier === joyTouchId) {
+              updateJoystickFromTouch(t);
+              break;
+            }
+          }
+        },
+        { passive: false }
+      );
+
+      const endJoy = (e) => {
+        if (joyTouchId === null) return;
+        for (let i = 0; i < e.changedTouches.length; i++) {
+          if (e.changedTouches[i].identifier === joyTouchId) {
+            resetJoystickVisuals();
+            break;
+          }
+        }
+      };
+      joyZone.addEventListener("touchend", endJoy, { passive: false });
+      joyZone.addEventListener("touchcancel", endJoy, { passive: false });
+    }
+
+    if (lookZone) {
+      lookZone.addEventListener(
+        "touchstart",
+        (e) => {
+          e.preventDefault();
+          if (this.state !== "playing" || this.paused) return;
+          this.sound.init();
+          if (this.scoreboardToggled) {
+            this.scoreboardToggled = false;
+            this.ui.setScoreboardVisible(false, this.combatants);
+          }
+          if (lookTouchId !== null) return;
+          const t = e.changedTouches[0];
+          if (!t) return;
+          lookTouchId = t.identifier;
+          lookLastX = t.clientX;
+          lookLastY = t.clientY;
+          this.touchLooking = true;
+        },
+        { passive: false }
+      );
+
+      lookZone.addEventListener(
+        "touchmove",
+        (e) => {
+          e.preventDefault();
+          if (lookTouchId === null) return;
+          for (let i = 0; i < e.changedTouches.length; i++) {
+            const t = e.changedTouches[i];
+            if (t.identifier === lookTouchId) {
+              const dx = t.clientX - lookLastX;
+              const dy = t.clientY - lookLastY;
+              lookLastX = t.clientX;
+              lookLastY = t.clientY;
+              this._applyTouchLook(dx, dy);
+              break;
+            }
+          }
+        },
+        { passive: false }
+      );
+
+      const endLook = (e) => {
+        if (lookTouchId === null) return;
+        for (let i = 0; i < e.changedTouches.length; i++) {
+          if (e.changedTouches[i].identifier === lookTouchId) {
+            lookTouchId = null;
+            this.touchLooking = fireTouchId !== null;
+            break;
+          }
+        }
+      };
+      lookZone.addEventListener("touchend", endLook, { passive: false });
+      lookZone.addEventListener("touchcancel", endLook, { passive: false });
+    }
+
+    if (btnFire) {
+      btnFire.addEventListener(
+        "touchstart",
+        (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          if (this.state !== "playing" || this.paused) return;
+          this.sound.init();
+          const t = e.changedTouches[0];
+          if (t && fireTouchId === null) {
+            fireTouchId = t.identifier;
+            fireLastX = t.clientX;
+            fireLastY = t.clientY;
+          }
+          this.mouseDown = true;
+          this.touchLooking = true;
+          btnFire.classList.add("active");
+          this._tryPlayerFire(true);
+        },
+        { passive: false }
+      );
+
+      btnFire.addEventListener(
+        "touchmove",
+        (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          if (fireTouchId === null) return;
+          for (let i = 0; i < e.changedTouches.length; i++) {
+            const t = e.changedTouches[i];
+            if (t.identifier === fireTouchId) {
+              const dx = t.clientX - fireLastX;
+              const dy = t.clientY - fireLastY;
+              fireLastX = t.clientX;
+              fireLastY = t.clientY;
+              this._applyTouchLook(dx, dy);
+              break;
+            }
+          }
+        },
+        { passive: false }
+      );
+
+      const endFire = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        if (fireTouchId !== null) {
+          for (let i = 0; i < e.changedTouches.length; i++) {
+            if (e.changedTouches[i].identifier === fireTouchId) {
+              fireTouchId = null;
+              break;
+            }
+          }
+        }
+        if (fireTouchId === null) {
+          this.mouseDown = false;
+          this.touchLooking = lookTouchId !== null;
+          btnFire.classList.remove("active");
+        }
+      };
+      btnFire.addEventListener("touchend", endFire, { passive: false });
+      btnFire.addEventListener("touchcancel", endFire, { passive: false });
+    }
+
+    const bindTouchAction = (el, fn) => {
+      if (!el) return;
+      let touchedRecently = false;
+      el.addEventListener(
+        "touchstart",
+        (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          touchedRecently = true;
+          this.sound.init();
+          fn();
+          setTimeout(() => {
+            touchedRecently = false;
+          }, 350);
+        },
+        { passive: false }
+      );
+      el.addEventListener("click", (e) => {
+        if (touchedRecently) return;
+        e.stopPropagation();
+        this.sound.init();
+        fn();
+      });
+    };
+
+    bindTouchAction(btnAds, () => {
+      if (this.state !== "playing" || this.paused || !this.player?.alive) return;
+      if (this.player.activeWeapon === "knife" || this.player.activeWeapon === "grenade") {
+        this.adsDown = false;
+        return;
+      }
+      this.adsDown = !this.adsDown;
+    });
+
+    bindTouchAction(btnJump, () => {
+      if (this.state !== "playing" || this.paused || !this.player?.alive) return;
+      if (this.touchCrouch) {
+        this.touchCrouch = false;
+      }
+      this.jumpBufferTimer = 0.15;
+    });
+
+    const toggleCrouch = () => {
+      if (this.state !== "playing" || this.paused || !this.player?.alive) return;
+      if (this.player.isLegCrippled()) return;
+      this.touchCrouch = !this.touchCrouch;
+    };
+    bindTouchAction(btnCrouch, toggleCrouch);
+    bindTouchAction(document.getElementById("stance-pill"), toggleCrouch);
+
+    const triggerReload = () => {
+      if (this.state !== "playing" || this.paused || !this.player?.alive) return;
+      if (this.player.hasRightArm() && this.player.startReload()) {
+        this.adsDown = false;
+        this.sound.playReload(this.player.activeWeapon);
+      }
+    };
+    bindTouchAction(btnReload, triggerReload);
+    bindTouchAction(document.getElementById("ammo-readout"), triggerReload);
+
+    bindTouchAction(btnFrag, () => {
+      if (this.state !== "playing" || this.paused || !this.player?.alive) return;
+      this._throwQuickGrenade();
+    });
+
+    const toggleCam = () => {
+      if (this.state !== "playing" || this.paused) return;
+      this._toggleCameraView();
+    };
+    bindTouchAction(btnCam, toggleCam);
+    bindTouchAction(document.getElementById("cam-mode-pill"), toggleCam);
+
+    bindTouchAction(btnPause, () => {
+      if (this.state !== "playing") return;
+      if (this.paused) this.resumeMatch();
+      else this.pauseMatch();
+    });
+
+    const toggleScore = () => {
+      if (this.state !== "playing" || this.paused) return;
+      this.scoreboardToggled = !this.scoreboardToggled;
+      this.ui.setScoreboardVisible(this.scoreboardToggled, this.combatants);
+    };
+    bindTouchAction(btnScore, toggleScore);
+    bindTouchAction(document.querySelector(".hud-match-card"), toggleScore);
+    bindTouchAction(document.getElementById("scoreboard"), () => {
+      if (this.scoreboardToggled) {
+        this.scoreboardToggled = false;
+        this.ui.setScoreboardVisible(false, this.combatants);
+      }
+    });
+
+    document.querySelectorAll(".w-slot[data-weapon]").forEach((slot) => {
+      bindTouchAction(slot, () => {
+        if (this.state !== "playing" || this.paused || !this.player?.alive) return;
+        const w = slot.dataset.weapon;
+        if (w) {
+          if (w === "knife" || w === "grenade") this.adsDown = false;
+          this._switchPlayerWeapon(w);
+        }
+      });
+    });
+  }
+
+  _getTouchAimTarget(maxAngleCos = 0.984, maxRange = 28) {
+    const p = this.player;
+    if (!p || !p.alive) return null;
+    const { origin, dir } = this._getPlayerAimRay();
+    let bestTarget = null;
+    let bestDot = maxAngleCos;
+
+    for (const other of this.combatants) {
+      if (other === p || !other.alive) continue;
+      const drop = other.getStanceDrop();
+      const aimPt = new THREE.Vector3(
+        other.pos.x,
+        other.pos.y + 1.24 - (other.crouchAlpha || 0) * 0.38 - drop,
+        other.pos.z
+      );
+      const toBot = aimPt.clone().sub(origin);
+      const dist = toBot.length();
+      if (dist > maxRange || dist < 0.8) continue;
+      const dirTo = toBot.divideScalar(dist);
+      const dot = dir.dot(dirTo);
+      if (dot < bestDot) continue;
+
+      const wall = this.arena.raycast(origin, dirTo, dist - 0.15);
+      if (wall && wall.distance < dist - 0.25) continue;
+
+      bestDot = dot;
+      bestTarget = { combatant: other, aimPt, dirTo, dist, dot };
+    }
+    return bestTarget;
+  }
+
+  _applyTouchLook(dx, dy) {
+    if (this.state !== "playing" || this.paused || !this.player?.alive) return;
+    const canAds = this.adsDown && this.player.hasLeftArm() && this.player.hasRightArm();
+
+    // Sticky reticle friction when crosshair is already over a visible enemy on touch
+    const assistTarget = this._getTouchAimTarget(0.986, 30);
+    const stickyMult = assistTarget ? 0.68 : 1.0;
+
+    const baseSens = 0.0044 * this.sensitivity * (canAds ? 0.62 : 1.0) * stickyMult;
+    this.player.yaw -= dx * baseSens;
+    this.player.pitch = THREE.MathUtils.clamp(this.player.pitch - dy * baseSens * 0.88, -1.48, 1.48);
+    this.weaponSystem.addSway(dx * 1.4, dy * 1.4);
+  }
+
+  _applyTouchAimMagnetism(dt) {
+    const p = this.player;
+    if (!this.isTouchMode || !p || !p.alive || p.activeWeapon === "grenade") return;
+    const target = this._getTouchAimTarget(0.985, 26);
+    if (!target) return;
+
+    const eyeHeight = Math.max(0.45, 1.60 - p.crouchAlpha * 0.58 - p.getStanceDrop());
+    const eye = new THREE.Vector3(p.pos.x, p.pos.y + eyeHeight, p.pos.z);
+    const delta = target.aimPt.clone().sub(eye);
+    const horizDist = Math.max(0.01, Math.hypot(delta.x, delta.z));
+    const desiredYaw = Math.atan2(-delta.x, -delta.z);
+    const desiredPitch = THREE.MathUtils.clamp(Math.atan2(delta.y, horizDist), -1.42, 1.42);
+
+    let yawDiff = desiredYaw - p.yaw;
+    while (yawDiff > Math.PI) yawDiff -= Math.PI * 2;
+    while (yawDiff < -Math.PI) yawDiff += Math.PI * 2;
+    const pitchDiff = desiredPitch - p.pitch;
+
+    const pullStrength = this.mouseDown ? 4.2 : 2.5;
+    p.yaw += yawDiff * Math.min(1, dt * pullStrength);
+    p.pitch = THREE.MathUtils.clamp(p.pitch + pitchDiff * Math.min(1, dt * pullStrength * 0.75), -1.48, 1.48);
   }
 
   _toggleCameraView() {
@@ -748,6 +1225,34 @@ export class GameEngine {
         }
       }
 
+      // Touch-only subtle bullet magnetism for near-miss shots on small phone screens
+      if (!hitTarget && this.isTouchMode && shooter.isPlayer && st.id !== "knife") {
+        let bestMagDot = 0.9988; // ~2.8 degree cone
+        for (const other of this.combatants) {
+          if (other === shooter || !other.alive) continue;
+          const drop = other.getStanceDrop();
+          const chestPt = new THREE.Vector3(
+            other.pos.x,
+            other.pos.y + 1.18 - (other.crouchAlpha || 0) * 0.35 - drop,
+            other.pos.z
+          );
+          const toChest = chestPt.clone().sub(origin);
+          const dist = toChest.length();
+          if (dist > maxT || dist < 0.5) continue;
+          const dirTo = toChest.divideScalar(dist);
+          const dot = dir.dot(dirTo);
+          if (dot > bestMagDot) {
+            const snapRes = other.raycastHit(origin, dirTo, maxT);
+            if (snapRes && snapRes.distance < maxT) {
+              bestMagDot = dot;
+              maxT = snapRes.distance;
+              hitTarget = other;
+              hitRes = snapRes;
+            }
+          }
+        }
+      }
+
       // Wide sweeping melee cone fallback for reliable knife hits
       if (!hitTarget && st.id === "knife") {
         let bestMeleeDist = st.range;
@@ -951,6 +1456,10 @@ export class GameEngine {
     if (victim.isPlayer) {
       this.multiKillCount = 0;
       this.multiKillTimer = 0;
+      if (this.isTouchMode) {
+        this.adsDown = false;
+        this.touchCrouch = false;
+      }
       this.weaponSystem.setActiveViewmodel(this.player.activeWeapon, false);
       this.ui.showDeathOverlay(killer.name);
     }
@@ -964,6 +1473,7 @@ export class GameEngine {
   _endMatch() {
     this.state = "gameover";
     this.paused = false;
+    this.resetTouchInputs();
     this.sound.resume();
     if (document.pointerLockElement === this.canvas) {
       document.exitPointerLock?.();
@@ -1049,11 +1559,15 @@ export class GameEngine {
     if (this.keys["KeyS"] || this.keys["ArrowDown"]) fwdInput -= 1;
     if (this.keys["KeyD"] || this.keys["ArrowRight"]) rightInput += 1;
     if (this.keys["KeyA"] || this.keys["ArrowLeft"]) rightInput -= 1;
+    if (this.isTouchMode) {
+      fwdInput = THREE.MathUtils.clamp(fwdInput + this.touchMoveY, -1, 1);
+      rightInput = THREE.MathUtils.clamp(rightInput + this.touchMoveX, -1, 1);
+    }
 
     const crippled = p.isLegCrippled();
     const bothLegsLost = p.hasBothLegsSevered();
     const shiftHeld = !!(this.keys["ShiftLeft"] || this.keys["ShiftRight"]);
-    let wantCrouch = !crippled && !!this.keys["KeyC"];
+    let wantCrouch = !crippled && (!!this.keys["KeyC"] || (this.isTouchMode && this.touchCrouch));
     if (!crippled && !wantCrouch && p.crouchAlpha > 0.04) {
       const ceilCheck = this.arena.raycast(
         new THREE.Vector3(p.pos.x, p.pos.y + 0.9, p.pos.z),
@@ -1069,7 +1583,11 @@ export class GameEngine {
     p.height = Math.max(0.75, THREE.MathUtils.lerp(1.76, 1.14, p.crouchAlpha) - p.getStanceDrop());
 
     const effectiveAds = this.adsDown && p.hasLeftArm() && p.hasRightArm();
-    const wantSprint = shiftHeld && fwdInput > 0 && !effectiveAds && !wantCrouch && !crippled;
+    const wantSprint =
+      ((shiftHeld && fwdInput > 0) || (this.isTouchMode && this.touchSprint && fwdInput > 0.45)) &&
+      !effectiveAds &&
+      !wantCrouch &&
+      !crippled;
     p.isSprinting = wantSprint;
     const knifeBoost = p.activeWeapon === "knife" ? 1.2 : 1.0;
     const baseSpeed = wantCrouch ? 3.9 : wantSprint ? 9.2 : effectiveAds ? 4.6 : 6.8;
@@ -1079,7 +1597,12 @@ export class GameEngine {
     const fwd = new THREE.Vector3(-Math.sin(p.yaw), 0, -Math.cos(p.yaw));
     const right = new THREE.Vector3(Math.cos(p.yaw), 0, -Math.sin(p.yaw));
     const wishDir = new THREE.Vector3().addScaledVector(fwd, fwdInput).addScaledVector(right, rightInput);
-    if (wishDir.lengthSq() > 0) wishDir.normalize();
+    if (this.isTouchMode) {
+      const len = wishDir.length();
+      if (len > 1) wishDir.divideScalar(len);
+    } else if (wishDir.lengthSq() > 0) {
+      wishDir.normalize();
+    }
 
     // Coyote time + jump buffering for ultra-responsive jumps on ledges & ramps
     this.coyoteTimer = p.grounded ? 0.11 : Math.max(0, this.coyoteTimer - dt);
@@ -1121,11 +1644,15 @@ export class GameEngine {
     }
 
     // Continuous auto-fire & keep weapon pointed forward while shooting on the run
-    if (this.mouseDown && this.pointerLocked && p.hasRightArm()) {
+    if (this.mouseDown && (this.pointerLocked || this.isTouchMode) && p.hasRightArm()) {
       if (!p.isReloading && p.ammo[p.activeWeapon]?.mag > 0) {
         this.weaponSystem.fireHoldTimer = Math.max(this.weaponSystem.fireHoldTimer, 0.22);
       }
       this._tryPlayerFire(false);
+    }
+
+    if (this.isTouchMode && (this.mouseDown || this.touchLooking || Math.hypot(this.touchMoveX, this.touchMoveY) > 0.22)) {
+      this._applyTouchAimMagnetism(dt);
     }
 
     // Pickups check
