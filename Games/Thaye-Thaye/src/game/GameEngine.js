@@ -1889,9 +1889,18 @@ export class GameEngine {
         : this.menuStage === "home"
           ? new THREE.Vector3(-0.75 + swayX, 3.36, 4.95)
           : new THREE.Vector3(-0.82 + swayX, 3.38, 4.65);
+      const lookX = this.isTouchMode
+        ? isArsenal
+          ? -0.58
+          : this.menuStage === "home"
+            ? -0.82
+            : -0.96
+        : isArsenal
+          ? -0.30
+          : -0.62;
       const targetLook = isArsenal
-        ? new THREE.Vector3(-0.30, 3.40, 1.45)
-        : new THREE.Vector3(-0.62, 3.22, 1.45);
+        ? new THREE.Vector3(lookX, 3.40, 1.45)
+        : new THREE.Vector3(lookX, 3.22, 1.45);
       const targetFov = isArsenal ? 48 : 54;
 
       this.menuCamPos.lerp(targetPos, Math.min(1, dt * 5));

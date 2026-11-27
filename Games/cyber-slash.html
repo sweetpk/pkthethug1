@@ -931,12 +931,12 @@ h1.game-title span {
 <div id="rotatePrompt" role="dialog" aria-modal="true" aria-labelledby="rotateTitle">
   <div class="rotate-card">
     <div class="rotate-icon" aria-hidden="true">📱</div>
-    <h2 class="rotate-title" id="rotateTitle">BEST IN LANDSCAPE</h2>
+    <h2 class="rotate-title" id="rotateTitle">LANDSCAPE REQUIRED</h2>
     <p class="rotate-desc">
-      Rotate your phone sideways for full-arena tactical visibility and comfortable left-thumb move + right-thumb slow-mo slash controls.
+      Landscape fullscreen mode is required on mobile for full-arena tactical visibility and dual-thumb move + slow-mo slash controls.
     </p>
     <button type="button" class="cyber-btn" id="btnEnterLandscape" style="width:100%;font-size:14px;padding:12px 18px;">↻ ENTER LANDSCAPE + FULLSCREEN</button>
-    <button type="button" class="cyber-btn cyber-btn-ghost" id="btnDismissRotate" style="width:100%;">CONTINUE IN PORTRAIT</button>
+    <a href="../games.html" class="cyber-btn cyber-btn-ghost" style="width:100%;text-decoration:none;display:inline-flex;justify-content:center;">← BACK TO ARCADE</a>
   </div>
 </div>
 
@@ -1576,7 +1576,7 @@ function updateOrientationPrompt() {
   const portrait = window.innerHeight > window.innerWidth;
   const promptEl = document.getElementById('rotatePrompt');
   const hintBtn = document.getElementById('btnMenuRotateHint');
-  if (promptEl) promptEl.classList.toggle('visible', coarse && portrait && !rotateDismissed);
+  if (promptEl) promptEl.classList.toggle('visible', coarse && portrait);
   if (hintBtn) hintBtn.style.display = (coarse && portrait) ? 'inline-flex' : 'none';
 }
 
@@ -3439,17 +3439,13 @@ async function tryEnterLandscape() {
   sound.init(); sound.resume(); sound.playUi('confirm');
   try { if (reqFs && !getFsEl()) await Promise.resolve(reqFs.call(fsEl)); } catch (_) {}
   try { if (screen.orientation && screen.orientation.lock) await screen.orientation.lock('landscape'); } catch (_) {}
-  rotateDismissed = true;
   updateOrientationPrompt();
   resize();
+  setTimeout(resize, 150);
+  setTimeout(resize, 350);
 }
 document.getElementById('btnEnterLandscape').onclick = tryEnterLandscape;
 document.getElementById('btnMenuRotateHint').onclick = tryEnterLandscape;
-document.getElementById('btnDismissRotate').onclick = () => {
-  sound.init(); sound.resume(); sound.playUi('back');
-  rotateDismissed = true;
-  updateOrientationPrompt();
-};
 
 renderCodexGrid();
 syncCsUI();

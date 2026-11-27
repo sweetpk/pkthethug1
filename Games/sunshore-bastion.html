@@ -1122,12 +1122,12 @@
   <div id="rotatePrompt" role="dialog" aria-modal="true" aria-labelledby="rotateTitle">
     <div class="rotate-card">
       <div class="rotate-icon" aria-hidden="true">📱</div>
-      <h2 class="rotate-title" id="rotateTitle">BEST IN LANDSCAPE</h2>
+      <h2 class="rotate-title" id="rotateTitle">LANDSCAPE REQUIRED</h2>
       <p class="rotate-desc">
-        Rotate your phone sideways for wide horizon naval visibility and comfortable left-thumb helm + right-thumb broadside controls.
+        Landscape fullscreen mode is required on mobile for wide horizon naval visibility and dual-thumb helm + broadside controls.
       </p>
       <button type="button" class="nav-btn primary" id="btnEnterLandscape" style="justify-content:center;font-size:13px;padding:12px 14px;">↻ ENTER LANDSCAPE + FULLSCREEN</button>
-      <button type="button" class="nav-btn" id="btnDismissRotate" style="justify-content:center;font-size:12px;padding:10px 14px;">CONTINUE IN PORTRAIT</button>
+      <a href="../games.html" class="nav-btn" style="justify-content:center;font-size:12px;padding:10px 14px;text-decoration:none;">← BACK TO ARCADE</a>
     </div>
   </div>
 
@@ -3662,7 +3662,7 @@
     const portrait = window.innerHeight > window.innerWidth;
     const promptEl = document.getElementById('rotatePrompt');
     const hintBtn = document.getElementById('btnMenuRotateHint');
-    if (promptEl) promptEl.classList.toggle('visible', coarse && portrait && !rotateDismissed);
+    if (promptEl) promptEl.classList.toggle('visible', coarse && portrait);
     if (hintBtn) hintBtn.style.display = (coarse && portrait) ? 'inline-flex' : 'none';
   }
   async function tryEnterLandscape() {
@@ -3670,18 +3670,13 @@
     sfx.uiClick(1.1);
     try { if (reqFs && !getFsEl()) await Promise.resolve(reqFs.call(fsRoot)); } catch {}
     try { if (screen.orientation && screen.orientation.lock) await screen.orientation.lock('landscape'); } catch {}
-    rotateDismissed = true;
     updateOrientationPrompt();
     resize();
+    setTimeout(resize, 150);
+    setTimeout(resize, 350);
   }
   document.getElementById('btnEnterLandscape').addEventListener('click', tryEnterLandscape);
   document.getElementById('btnMenuRotateHint').addEventListener('click', tryEnterLandscape);
-  document.getElementById('btnDismissRotate').addEventListener('click', () => {
-    sfx.init();
-    sfx.uiClick(0.9);
-    rotateDismissed = true;
-    updateOrientationPrompt();
-  });
   updateOrientationPrompt();
 
   document.getElementById('bestScoreTxt').textContent = bestScore.toLocaleString();

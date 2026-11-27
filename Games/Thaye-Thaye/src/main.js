@@ -46,13 +46,12 @@ async function bootGame(touchMode = false) {
     if (sensLabelText) sensLabelText.textContent = "TOUCH LOOK SENSITIVITY";
 
     const orientOverlay = document.getElementById("mobile-orient-overlay");
-    const btnOrientContinue = document.getElementById("btn-orient-continue");
-    let orientDismissed = false;
+    const btnEnterLandscape = document.getElementById("btn-enter-landscape");
 
     const checkMobileOrientation = () => {
       if (!orientOverlay) return;
       const isPortrait = window.innerHeight > window.innerWidth;
-      if (isPortrait && !orientDismissed) {
+      if (isPortrait) {
         orientOverlay.classList.remove("hidden");
         if (engine.state === "playing" && !engine.paused) {
           engine.pauseMatch();
@@ -62,14 +61,33 @@ async function bootGame(touchMode = false) {
       }
     };
 
-    btnOrientContinue?.addEventListener("click", () => {
-      orientDismissed = true;
-      orientOverlay?.classList.add("hidden");
-    });
+    const tryEnterLandscape = async () => {
+      sound.init();
+      sound.playSwitch();
+      const rootEl = document.documentElement;
+      const rFs = rootEl.requestFullscreen || rootEl.webkitRequestFullscreen;
+      const curFs = document.fullscreenElement || document.webkitFullscreenElement;
+      try {
+        if (rFs && !curFs) {
+          await Promise.resolve(rFs.call(rootEl));
+        }
+      } catch (_) {}
+      try {
+        if (screen.orientation && screen.orientation.lock) {
+          await screen.orientation.lock("landscape");
+        }
+      } catch (_) {}
+      checkMobileOrientation();
+      setTimeout(checkMobileOrientation, 150);
+      setTimeout(checkMobileOrientation, 400);
+    };
+
+    btnEnterLandscape?.addEventListener("click", tryEnterLandscape);
 
     window.addEventListener("resize", checkMobileOrientation);
     window.addEventListener("orientationchange", () => {
       setTimeout(checkMobileOrientation, 120);
+      setTimeout(checkMobileOrientation, 350);
     });
     checkMobileOrientation();
   }

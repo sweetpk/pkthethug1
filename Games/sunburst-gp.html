@@ -1331,13 +1331,13 @@
 <div id="rotatePrompt" role="dialog" aria-modal="true" aria-labelledby="rotateTitle">
   <div class="rotate-card">
     <div class="rotate-icon" aria-hidden="true">📱</div>
-    <h2 class="rotate-title" id="rotateTitle">BEST IN LANDSCAPE</h2>
+    <h2 class="rotate-title" id="rotateTitle">LANDSCAPE REQUIRED</h2>
     <p class="rotate-desc">
-      Rotate your phone sideways for full-width 3D drift vision, larger speedometer HUD, and comfortable thumb steering.
+      Landscape fullscreen mode is required on mobile for full-width 3D drift vision, speedometer HUD, and dual-thumb steering.
     </p>
     <div class="rotate-actions">
       <button type="button" class="primary-btn" id="btnEnterLandscape">↻ ENTER LANDSCAPE + FULLSCREEN</button>
-      <button type="button" class="secondary-btn" id="btnDismissRotate">CONTINUE IN PORTRAIT</button>
+      <a href="../games.html" class="secondary-btn" style="text-decoration:none;display:inline-flex;justify-content:center;">← BACK TO ARCADE</a>
     </div>
   </div>
 </div>
@@ -3815,7 +3815,7 @@
     const promptEl = document.getElementById('rotatePrompt');
     const hintBtn = document.getElementById('btnMenuRotateHint');
     if (promptEl) {
-      const showPrompt = coarse && portrait && !rotateDismissed;
+      const showPrompt = coarse && portrait;
       promptEl.classList.toggle('visible', showPrompt);
     }
     if (hintBtn) {
@@ -5752,18 +5752,13 @@
         await screen.orientation.lock('landscape');
       }
     } catch (_) {}
-    rotateDismissed = true;
     updateOrientationPrompt();
     resize();
+    setTimeout(resize, 150);
+    setTimeout(resize, 350);
   }
   document.getElementById('btnEnterLandscape').onclick = tryEnterLandscape;
   document.getElementById('btnMenuRotateHint').onclick = tryEnterLandscape;
-  document.getElementById('btnDismissRotate').onclick = () => {
-    audio.init();
-    audio.playUi('back');
-    rotateDismissed = true;
-    updateOrientationPrompt();
-  };
 
   // Unified Settings Toggles (Menu Settings + Pause Settings)
   function toggleMusicSetting() {
