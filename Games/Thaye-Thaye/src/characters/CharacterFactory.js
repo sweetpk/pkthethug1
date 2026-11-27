@@ -135,6 +135,28 @@ export const GORE_BONE_MAT = new THREE.MeshToonMaterial({
 export class CharacterFactory {
   constructor() {
     this.template = null;
+    this.goreGeos = {};
+  }
+
+  _getGoreGeos(zoneName, radius) {
+    if (!this.goreGeos[zoneName]) {
+      this.goreGeos[zoneName] = {
+        capFlesh: new THREE.SphereGeometry(radius * 0.72, 8, 6),
+        capBone: new THREE.CylinderGeometry(radius * 0.22, radius * 0.22, radius * 0.65, 6),
+        stumpFlesh: new THREE.SphereGeometry(radius * 0.78, 8, 6),
+        stumpBone: new THREE.CylinderGeometry(radius * 0.2, radius * 0.22, radius * 0.75, 6),
+      };
+    }
+    return this.goreGeos[zoneName];
+  }
+
+  disposeCharacter(charInst) {
+    if (!charInst) return;
+    if (charInst.meshMaterials) {
+      for (const mat of Object.values(charInst.meshMaterials)) {
+        mat?.dispose?.();
+      }
+    }
   }
 
   async load() {
@@ -411,15 +433,10 @@ export class CharacterFactory {
       group.add(mesh);
     }
 
-    const cap = new THREE.Mesh(
-      new THREE.SphereGeometry(sub.radius * 0.72, 8, 6),
-      GORE_FLESH_MAT
-    );
+    const gg = this._getGoreGeos(zoneName, sub.radius);
+    const cap = new THREE.Mesh(gg.capFlesh, GORE_FLESH_MAT);
     cap.scale.set(1, 0.55, 1);
-    const boneNub = new THREE.Mesh(
-      new THREE.CylinderGeometry(sub.radius * 0.22, sub.radius * 0.22, sub.radius * 0.65, 6),
-      GORE_BONE_MAT
-    );
+    const boneNub = new THREE.Mesh(gg.capBone, GORE_BONE_MAT);
     group.add(cap, boneNub);
 
     return group;
@@ -439,15 +456,10 @@ export class CharacterFactory {
     primaryRoot.scale.set(0.0001, 0.0001, 0.0001);
     const parentBone = charInst.bones[cfg.stumpParent] || primaryRoot.parent;
     if (parentBone) {
+      const gg = this._getGoreGeos(zoneName, cfg.radius);
       const stump = new THREE.Group();
-      const flesh = new THREE.Mesh(
-        new THREE.SphereGeometry(cfg.radius * 0.78, 8, 6),
-        GORE_FLESH_MAT
-      );
-      const bone = new THREE.Mesh(
-        new THREE.CylinderGeometry(cfg.radius * 0.2, cfg.radius * 0.22, cfg.radius * 0.75, 6),
-        GORE_BONE_MAT
-      );
+      const flesh = new THREE.Mesh(gg.stumpFlesh, GORE_FLESH_MAT);
+      const bone = new THREE.Mesh(gg.stumpBone, GORE_BONE_MAT);
       const wp = new THREE.Vector3();
       const ws = new THREE.Vector3();
       parentBone.getWorldScale(ws);

@@ -191,6 +191,10 @@ export class BotController {
     if (this.hasLos && this.enemy && this.enemy.alive) {
       this.enemySeenTime += dt;
     } else {
+      if (this.enemy && !this.enemy.alive) {
+        this.enemy = null;
+        this.losTimer = 0;
+      }
       this.enemySeenTime = 0;
       this.hasLos = false;
     }
@@ -288,23 +292,31 @@ export class BotController {
       targetYaw = Math.atan2(-delta.x, -delta.z);
       targetPitch = Math.atan2(delta.y, Math.hypot(delta.x, delta.z));
 
-      // Smart weapon selection by range
-      if (dist < 2.2) {
-        b.switchWeapon("knife");
-      } else if (dist < 7.8 && (b.ammo.shotgun.mag > 0 || b.ammo.shotgun.reserve > 0)) {
-        b.switchWeapon("shotgun");
-      } else if (dist > 15.5 && b.ammo.revolver.mag > 0 && Math.random() < 0.08) {
-        b.switchWeapon("revolver");
-      } else if (b.ammo.rifle.mag > 0 || b.ammo.rifle.reserve > 0) {
-        if (b.activeWeapon !== "revolver" || b.ammo.revolver.mag <= 0) {
+      // Smart weapon selection by range (only if shooting arm is intact and not mid-reload)
+      if (b.hasRightArm() && (!b.isReloading || dist < 2.1)) {
+        if (dist < 2.2) {
+          b.switchWeapon("knife");
+        } else if (dist < 7.8 && b.ammo.shotgun.mag > 0) {
+          b.switchWeapon("shotgun");
+        } else if (dist > 15.5 && b.ammo.revolver.mag > 0 && Math.random() < dt * 1.2) {
+          b.switchWeapon("revolver");
+        } else if (b.ammo.rifle.mag > 0) {
+          if (b.activeWeapon !== "revolver" || b.ammo.revolver.mag <= 0) {
+            b.switchWeapon("rifle");
+          }
+        } else if (b.ammo.shotgun.mag > 0) {
+          b.switchWeapon("shotgun");
+        } else if (b.ammo.revolver.mag > 0) {
+          b.switchWeapon("revolver");
+        } else if (b.ammo.rifle.reserve > 0) {
           b.switchWeapon("rifle");
+        } else if (b.ammo.shotgun.reserve > 0) {
+          b.switchWeapon("shotgun");
+        } else if (b.ammo.revolver.reserve > 0) {
+          b.switchWeapon("revolver");
+        } else {
+          b.switchWeapon("knife");
         }
-      } else if (b.ammo.revolver.mag > 0 || b.ammo.revolver.reserve > 0) {
-        b.switchWeapon("revolver");
-      } else if (b.ammo.shotgun.mag > 0 || b.ammo.shotgun.reserve > 0) {
-        b.switchWeapon("shotgun");
-      } else {
-        b.switchWeapon("knife");
       }
     } else if (moveDir.lengthSq() > 0.05) {
       targetYaw = Math.atan2(-moveDir.x, -moveDir.z);
@@ -317,9 +329,9 @@ export class BotController {
     b.yaw += diffYaw * Math.min(1, dt * this.cfg.aimSpeed);
     b.pitch = THREE.MathUtils.lerp(b.pitch, targetPitch, Math.min(1, dt * this.cfg.aimSpeed));
 
-    // Reload if empty
+    // Reload if empty (only when right arm is intact)
     const am = b.ammo[b.activeWeapon];
-    if (am && am.mag <= 0 && am.reserve > 0 && !b.isReloading) {
+    if (b.hasRightArm() && am && am.mag <= 0 && am.reserve > 0 && !b.isReloading) {
       b.startReload();
       return { action: "reload" };
     }
@@ -341,16 +353,19 @@ export class BotController {
       Math.abs(diffYaw) < 0.14
     ) {
       const dist = b.pos.distanceTo(this.enemy.pos);
-      if (this.nadeCooldown <= 0 && b.ammo.grenade?.mag > 0 && dist > 6.5 && dist < 17 && Math.random() < 0.18) {
-        this.nadeCooldown = 14 + Math.random() * 8;
-        b.fireCooldown = 0.75;
+      if (this.nadeCooldown <= 0 && b.ammo.grenade?.mag > 0 && dist > 6.5 && dist < 17 && Math.random() < dt * 0.65) {
         const eye = b.getEyePos();
         const aimDir = new THREE.Vector3(this.enemy.pos.x, this.enemy.pos.y + 1.0, this.enemy.pos.z)
           .sub(eye)
           .normalize();
         aimDir.y += 0.14;
         aimDir.normalize();
-        return { action: "grenade", origin: eye, dir: aimDir };
+        const nearBlock = this.arena.raycast(eye, aimDir, Math.min(4.2, dist * 0.6));
+        if (!nearBlock) {
+          this.nadeCooldown = 14 + Math.random() * 8;
+          b.fireCooldown = 0.75;
+          return { action: "grenade", origin: eye, dir: aimDir };
+        }
       }
 
       if (b.activeWeapon === "knife" && dist > 2.45) return null;

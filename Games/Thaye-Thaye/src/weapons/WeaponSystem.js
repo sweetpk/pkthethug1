@@ -270,6 +270,12 @@ export class WeaponSystem {
     for (const [id, vm] of Object.entries(this.vmWeapons)) {
       vm.visible = visible && id === weaponId;
     }
+    if (!visible) {
+      this.flashTimer = 0;
+      if (this.muzzleFlashMesh) this.muzzleFlashMesh.visible = false;
+      if (this.muzzleLight) this.muzzleLight.intensity = 0;
+      if (this.slashArcMesh) this.slashArcMesh.visible = false;
+    }
   }
 
   addSway(dx, dy) {
@@ -584,6 +590,16 @@ export class WeaponSystem {
   }
 
   clearProjectiles() {
+    for (const t of this.tracers) {
+      this.scene.remove(t.line);
+      t.geo.dispose();
+      t.mat.dispose();
+    }
+    this.tracers.length = 0;
+    for (const s of this.sparks) this.scene.remove(s.mesh);
+    this.sparks.length = 0;
+    for (const sh of this.shells) this.scene.remove(sh.mesh);
+    this.shells.length = 0;
     for (const g of this.grenades) this.scene.remove(g.mesh);
     this.grenades.length = 0;
     for (const b of this.blasts) {
@@ -593,6 +609,10 @@ export class WeaponSystem {
       b.waveMat.dispose();
     }
     this.blasts.length = 0;
+    this.flashTimer = 0;
+    if (this.muzzleFlashMesh) this.muzzleFlashMesh.visible = false;
+    if (this.muzzleLight) this.muzzleLight.intensity = 0;
+    if (this.slashArcMesh) this.slashArcMesh.visible = false;
     this.tpsFlashTimer = 0;
     if (this.tpsMuzzleFlash) this.tpsMuzzleFlash.visible = false;
     if (this.tpsMuzzleLight) this.tpsMuzzleLight.intensity = 0;

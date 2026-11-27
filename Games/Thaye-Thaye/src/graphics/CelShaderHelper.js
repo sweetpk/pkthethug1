@@ -2,6 +2,8 @@ import * as THREE from "three";
 
 let sharedGradientMap = null;
 let sharedEdgeMat = null;
+let sharedSkinnedOutlineMat = null;
+const outlineGeoCache = new WeakMap();
 
 export function getToonGradientMap() {
   if (sharedGradientMap) return sharedGradientMap;
@@ -101,31 +103,37 @@ function buildSmoothOutlineGeometry(srcGeo) {
  * Adds a view-space extruded BackSide ink outline SkinnedMesh sharing the character's skeleton.
  */
 export function addSkinnedInkOutline(skinnedMesh, outlineWidth = 0.0065) {
-  const outlineMat = new THREE.MeshToonMaterial({
-    color: 0x000000,
-    emissive: 0x0a0d14,
-    emissiveIntensity: 1.0,
-    side: THREE.BackSide,
-  });
-  outlineMat.onBeforeCompile = (shader) => {
-    shader.uniforms.uOutlineWidth = { value: outlineWidth };
-    shader.vertexShader = shader.vertexShader
-      .replace(
-        "#include <common>",
-        "#include <common>\nuniform float uOutlineWidth;"
-      )
-      .replace(
-        "#include <project_vertex>",
-        `#include <project_vertex>
-        vec3 viewNorm = normalize( transformedNormal );
-        vec4 clipNorm = projectionMatrix * vec4( viewNorm, 0.0 );
-        vec2 offsetDir = length( clipNorm.xy ) > 0.0001 ? normalize( clipNorm.xy ) : vec2( 0.0, 1.0 );
-        gl_Position.xy += offsetDir * uOutlineWidth * gl_Position.w;`
-      );
-  };
+  if (!sharedSkinnedOutlineMat) {
+    sharedSkinnedOutlineMat = new THREE.MeshToonMaterial({
+      color: 0x000000,
+      emissive: 0x0a0d14,
+      emissiveIntensity: 1.0,
+      side: THREE.BackSide,
+    });
+    sharedSkinnedOutlineMat.onBeforeCompile = (shader) => {
+      shader.uniforms.uOutlineWidth = { value: outlineWidth };
+      shader.vertexShader = shader.vertexShader
+        .replace(
+          "#include <common>",
+          "#include <common>\nuniform float uOutlineWidth;"
+        )
+        .replace(
+          "#include <project_vertex>",
+          `#include <project_vertex>
+          vec3 viewNorm = normalize( transformedNormal );
+          vec4 clipNorm = projectionMatrix * vec4( viewNorm, 0.0 );
+          vec2 offsetDir = length( clipNorm.xy ) > 0.0001 ? normalize( clipNorm.xy ) : vec2( 0.0, 1.0 );
+          gl_Position.xy += offsetDir * uOutlineWidth * gl_Position.w;`
+        );
+    };
+  }
 
-  const outlineGeo = buildSmoothOutlineGeometry(skinnedMesh.geometry);
-  const outlineMesh = new THREE.SkinnedMesh(outlineGeo, outlineMat);
+  let outlineGeo = outlineGeoCache.get(skinnedMesh.geometry);
+  if (!outlineGeo) {
+    outlineGeo = buildSmoothOutlineGeometry(skinnedMesh.geometry);
+    outlineGeoCache.set(skinnedMesh.geometry, outlineGeo);
+  }
+  const outlineMesh = new THREE.SkinnedMesh(outlineGeo, sharedSkinnedOutlineMat);
   outlineMesh.name = `${skinnedMesh.name}_Outline`;
   outlineMesh.position.copy(skinnedMesh.position);
   outlineMesh.quaternion.copy(skinnedMesh.quaternion);

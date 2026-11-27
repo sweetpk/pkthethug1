@@ -74,6 +74,7 @@ export class GameEngine {
     this.landDip = 0;
     this.thirdPerson = false;
     this.tpsCamDist = 2.15;
+    this.tpsActualDist = 2.15;
     this.tpsAdsAlpha = 0;
     this.tpsRecoilZ = 0;
 
@@ -110,6 +111,7 @@ export class GameEngine {
   _buildMenuPreview() {
     if (this.previewChar) {
       this.scene.remove(this.previewChar.root);
+      this.charFactory.disposeCharacter(this.previewChar);
       this.previewChar = null;
       this.previewAnimator = null;
     }
@@ -146,7 +148,7 @@ export class GameEngine {
 
   cleanupMatch() {
     for (const c of this.combatants) {
-      if (c.charInst?.root) this.scene.remove(c.charInst.root);
+      c.dispose?.();
     }
     this.ragdolls?.clearAll();
     this.weaponSystem.clearProjectiles();
@@ -175,6 +177,7 @@ export class GameEngine {
     // Clean previous match entities
     if (this.previewChar) {
       this.scene.remove(this.previewChar.root);
+      this.charFactory.disposeCharacter(this.previewChar);
       this.previewChar = null;
     }
     this.cleanupMatch();
@@ -443,6 +446,7 @@ export class GameEngine {
       btnFire?.classList.remove("active");
       btnAds?.classList.remove("active");
       btnCrouch?.classList.remove("active");
+      btnScore?.classList.remove("active");
     };
 
     const updateJoystickFromTouch = (t) => {
@@ -546,6 +550,7 @@ export class GameEngine {
           this.sound.init();
           if (this.scoreboardToggled) {
             this.scoreboardToggled = false;
+            btnScore?.classList.remove("active");
             this.ui.setScoreboardVisible(false, this.combatants);
           }
           if (lookTouchId !== null) return;
@@ -738,6 +743,7 @@ export class GameEngine {
     const toggleScore = () => {
       if (this.state !== "playing" || this.paused) return;
       this.scoreboardToggled = !this.scoreboardToggled;
+      btnScore?.classList.toggle("active", this.scoreboardToggled);
       this.ui.setScoreboardVisible(this.scoreboardToggled, this.combatants);
     };
     bindTouchAction(btnScore, toggleScore);
@@ -745,6 +751,7 @@ export class GameEngine {
     bindTouchAction(document.getElementById("scoreboard"), () => {
       if (this.scoreboardToggled) {
         this.scoreboardToggled = false;
+        btnScore?.classList.remove("active");
         this.ui.setScoreboardVisible(false, this.combatants);
       }
     });
@@ -758,6 +765,18 @@ export class GameEngine {
           this._switchPlayerWeapon(w);
         }
       });
+    });
+
+    // Auto-pause on mobile tab switch / backgrounding to prevent stuck touch states
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden && this.state === "playing" && !this.paused) {
+        this.pauseMatch();
+      }
+    });
+    window.addEventListener("blur", () => {
+      if (this.state === "playing" && !this.paused) {
+        this.pauseMatch();
+      }
     });
   }
 
@@ -883,7 +902,8 @@ export class GameEngine {
     const origin = new THREE.Vector3(p.pos.x, p.pos.y + eyeHeight, p.pos.z);
     const camOrigin = this.camera.position.clone();
     const camDir = new THREE.Vector3(0, 0, -1).applyQuaternion(this.camera.quaternion).normalize();
-    const minOffset = Math.max(0.5, this.tpsCamDist + 0.35);
+    const actualCamDist = this.tpsActualDist ?? this.tpsCamDist;
+    const minOffset = Math.max(0.35, actualCamDist * 0.85);
     const rayStart = camOrigin.clone().addScaledVector(camDir, minOffset);
 
     const wallHit = this.arena.raycast(rayStart, camDir, 80);
@@ -903,17 +923,17 @@ export class GameEngine {
     const p = this.player;
     if (!p || !p.alive || !p.hasRightArm() || p.isReloading || p.fireCooldown > 0) return;
     const st = WEAPON_STATS[p.activeWeapon];
-    if (!isClick && !st.auto) return;
-
     const am = p.ammo[p.activeWeapon];
     if (am.mag <= 0) {
       if (am.reserve > 0 && p.startReload()) {
+        this.adsDown = false;
         this.sound.playReload(p.activeWeapon);
-      } else {
+      } else if (isClick || st.auto) {
         this._switchPlayerWeapon("knife");
       }
       return;
     }
+    if (!isClick && !st.auto) return;
 
     const { origin, dir } = this._getPlayerAimRay();
 
@@ -945,6 +965,13 @@ export class GameEngine {
     if (!p.ammo.grenade || p.ammo.grenade.mag <= 0) return;
     const { origin, dir } = this._getPlayerAimRay();
     this._throwGrenade(p, origin, dir);
+    if (p.activeWeapon === "grenade" && p.ammo.grenade.mag <= 0) {
+      setTimeout(() => {
+        if (this.state === "playing" && !this.paused && this.player?.alive && this.player.activeWeapon === "grenade") {
+          this._switchPlayerWeapon(this.player.ammo.rifle.mag > 0 ? "rifle" : "knife");
+        }
+      }, 280);
+    }
   }
 
   _throwGrenade(thrower, origin, dir) {
@@ -966,8 +993,10 @@ export class GameEngine {
       thrower.animator.triggerSlash();
     }
 
-    const spawnPos = origin.clone().addScaledVector(dir, 0.55);
-    spawnPos.y -= 0.08;
+    const nearWall = this.arena.raycast(origin, dir, 0.65);
+    const fwdOffset = nearWall ? Math.max(0.10, nearWall.distance - 0.16) : 0.52;
+    const spawnPos = origin.clone().addScaledVector(dir, fwdOffset);
+    spawnPos.y -= 0.06;
     this.weaponSystem.spawnGrenade(spawnPos, dir, thrower, thrower.vel);
   }
 
@@ -1309,12 +1338,14 @@ export class GameEngine {
 
         this.ragdolls.spawnBloodBurst(hitRes.point, dir.clone().multiplyScalar(2.2), shooter.activeWeapon === "shotgun" ? 4 : 6, false);
         if (shooter.activeWeapon !== "knife") {
-          this.weaponSystem.spawnTracer(muzzleStart, hitRes.point, st.tracerColor);
+          const tracerOrigin = hitRes.distance < 0.75 ? origin.clone().lerp(muzzleStart, 0.35) : muzzleStart;
+          this.weaponSystem.spawnTracer(tracerOrigin, hitRes.point, st.tracerColor);
         }
       } else {
         const endPt = wallHit ? wallHit.point : origin.clone().addScaledVector(dir, st.range);
         if (shooter.activeWeapon !== "knife") {
-          this.weaponSystem.spawnTracer(muzzleStart, endPt, st.tracerColor);
+          const tracerOrigin = wallHit && wallHit.distance < 0.75 ? origin.clone().lerp(muzzleStart, 0.35) : muzzleStart;
+          this.weaponSystem.spawnTracer(tracerOrigin, endPt, st.tracerColor);
         }
         if (wallHit) {
           this.weaponSystem.spawnImpactSparks(wallHit.point, wallHit.normal, shooter.activeWeapon === "shotgun" ? 3 : 6);
@@ -1386,15 +1417,18 @@ export class GameEngine {
   }
 
   _handleKill(killer, victim, hitInfo, weaponStats) {
-    killer.kills += 1;
-    if (killer.isPlayer && killer.alive) {
-      killer.hp = Math.min(100, killer.hp + 15);
-      this.fovKick = Math.min(4.0, this.fovKick + 1.8);
-      if (this.multiKillTimer > 0) this.multiKillCount += 1;
-      else this.multiKillCount = 1;
-      this.multiKillTimer = 4.5;
-      if (this.multiKillCount >= 2) {
-        this.sound.playKillStreak(this.multiKillCount);
+    const isSelfKill = !killer || killer === victim;
+    if (!isSelfKill) {
+      killer.kills += 1;
+      if (killer.isPlayer && killer.alive) {
+        killer.hp = Math.min(100, killer.hp + 15);
+        this.fovKick = Math.min(4.0, this.fovKick + 1.8);
+        if (this.multiKillTimer > 0) this.multiKillCount += 1;
+        else this.multiKillCount = 1;
+        this.multiKillTimer = 4.5;
+        if (this.multiKillCount >= 2) {
+          this.sound.playKillStreak(this.multiKillCount);
+        }
       }
     }
 
@@ -1443,7 +1477,7 @@ export class GameEngine {
 
     this.ui.addKillFeed(killer, victim, weaponStats.label, hitInfo.headshot, dismemberedZone);
 
-    if (killer.isPlayer) {
+    if (killer?.isPlayer && !isSelfKill) {
       const tags = [];
       if (this.multiKillCount === 2) tags.push("DOUBLE KILL");
       else if (this.multiKillCount === 3) tags.push("TRIPLE KILL");
@@ -1456,23 +1490,28 @@ export class GameEngine {
     if (victim.isPlayer) {
       this.multiKillCount = 0;
       this.multiKillTimer = 0;
+      this.sound.stopReload();
       if (this.isTouchMode) {
         this.adsDown = false;
         this.touchCrouch = false;
+        this.mouseDown = false;
+        document.getElementById("btn-mob-fire")?.classList.remove("active");
       }
       this.weaponSystem.setActiveViewmodel(this.player.activeWeapon, false);
-      this.ui.showDeathOverlay(killer.name);
+      this.ui.showDeathOverlay(isSelfKill ? "YOURSELF" : killer.name);
     }
 
     // Check score limit victory!
-    if (killer.kills >= this.scoreLimit) {
+    if (!isSelfKill && killer.kills >= this.scoreLimit) {
       this._endMatch();
     }
   }
 
   _endMatch() {
+    if (this.state === "gameover") return;
     this.state = "gameover";
     this.paused = false;
+    this.sound.stopReload();
     this.resetTouchInputs();
     this.sound.resume();
     if (document.pointerLockElement === this.canvas) {
@@ -1539,6 +1578,9 @@ export class GameEngine {
         p.alive = false;
         p.deaths += 1;
         p.respawnTimer = 3.0;
+        p.isReloading = false;
+        p.reloadTimer = 0;
+        this.sound.stopReload();
         const killer = p.lastAttacker || p;
         const hitInfo = {
           point: new THREE.Vector3(p.pos.x, p.pos.y + 1.0 - p.getStanceDrop(), p.pos.z),
@@ -1704,6 +1746,7 @@ export class GameEngine {
       this.tpsCamDist = THREE.MathUtils.lerp(this.tpsCamDist, targetDist, distLerp);
       const maxSafeDist = backWall ? Math.max(0.35, backWall.distance - 0.14) : this.tpsCamDist + this.tpsRecoilZ;
       const finalDist = Math.min(this.tpsCamDist + this.tpsRecoilZ, maxSafeDist);
+      this.tpsActualDist = finalDist;
 
       this.camera.position.copy(shoulderPivot).addScaledVector(camFwd, -finalDist);
       this.camera.position.y = Math.max(p.pos.y + 0.22, this.camera.position.y);
@@ -1928,7 +1971,7 @@ export class GameEngine {
       this.matchClock += dt;
       this.arena.updatePickups(dt, this.matchClock);
       this._updatePlayer(dt);
-      this._updateBots(dt);
+      if (this.state === "playing") this._updateBots(dt);
       this.ragdolls.update(dt);
       this.weaponSystem.updateFX(
         dt,
@@ -1940,18 +1983,20 @@ export class GameEngine {
         }
       );
 
-      this.ui.updateHUD(
-        this.player,
-        this.combatants,
-        this.matchTime,
-        this.adsDown && this.player.hasLeftArm() && this.player.hasRightArm(),
-        this.weaponSystem.grenades,
-        this.camRecoilPitch,
-        this.thirdPerson
-      );
+      if (this.state === "playing") {
+        this.ui.updateHUD(
+          this.player,
+          this.combatants,
+          this.matchTime,
+          this.adsDown && this.player.hasLeftArm() && this.player.hasRightArm(),
+          this.weaponSystem.grenades,
+          this.camRecoilPitch,
+          this.thirdPerson
+        );
 
-      if (this.matchTime <= 0) {
-        this._endMatch();
+        if (this.matchTime <= 0) {
+          this._endMatch();
+        }
       }
     }
 

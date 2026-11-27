@@ -65,6 +65,8 @@ export class HudController {
 
     this.hitmarkerTimer = null;
     this.bannerTimer = null;
+    this._lastMiniHtml = "";
+    this._lastLimbHtml = "";
   }
 
   onAssetsReady() {
@@ -80,11 +82,16 @@ export class HudController {
   }
 
   showMatchHUD(scoreLimit) {
+    clearTimeout(this.bannerTimer);
+    clearTimeout(this.hitmarkerTimer);
+    this._lastMiniHtml = "";
+    this._lastLimbHtml = "";
     this.menuOverlay.classList.add("hidden");
     this.gameoverOverlay.classList.add("hidden");
     this.deathOverlay.classList.add("hidden");
     this.scoreboard.classList.add("hidden");
     this.killBanner.classList.add("hidden");
+    this.hitmarker.classList.remove("show", "kill");
     this.grenadeWarning?.classList.add("hidden");
     this.dmgVignette.classList.remove("low-hp");
     this.hud.classList.remove("hidden");
@@ -93,10 +100,14 @@ export class HudController {
   }
 
   showMenu() {
+    clearTimeout(this.bannerTimer);
+    clearTimeout(this.hitmarkerTimer);
     this.hud.classList.add("hidden");
     this.gameoverOverlay.classList.add("hidden");
     this.deathOverlay.classList.add("hidden");
     this.scoreboard.classList.add("hidden");
+    this.killBanner.classList.add("hidden");
+    this.hitmarker.classList.remove("show", "kill");
     this.grenadeWarning?.classList.add("hidden");
     this.dmgVignette.classList.remove("low-hp");
     this.menuOverlay.classList.remove("hidden");
@@ -251,9 +262,9 @@ export class HudController {
     const secs = Math.floor(matchTime % 60);
     this.timerEl.textContent = `${String(mins).padStart(2, "0")}:${String(secs).padStart(2, "0")}`;
 
-    // Mini standings
+    // Mini standings (only update DOM when standings change)
     const sorted = [...combatants].sort((a, b) => b.kills - a.kills);
-    this.miniStandingsEl.innerHTML = sorted
+    const miniHtml = sorted
       .map(
         (c) => `
       <div class="mini-pill ${c.isPlayer ? "is-player" : ""}">
@@ -264,6 +275,10 @@ export class HudController {
     `
       )
       .join("");
+    if (miniHtml !== this._lastMiniHtml) {
+      this._lastMiniHtml = miniHtml;
+      this.miniStandingsEl.innerHTML = miniHtml;
+    }
 
     // Vitals & Low-HP pulse
     const hp = Math.ceil(player.hp);
@@ -349,8 +364,12 @@ export class HudController {
       if (!player.hasLeftArm()) chips.push(`<span class="limb-chip">ONE-HANDED</span>`);
       if (player.hasBothLegsSevered()) chips.push(`<span class="limb-chip">NO LEGS</span>`);
       else if (player.isLegCrippled()) chips.push(`<span class="limb-chip">1 LEG LOST</span>`);
-      this.limbStatusEl.innerHTML = chips.join("");
-      this.limbStatusEl.classList.toggle("hidden", chips.length === 0);
+      const limbHtml = chips.join("");
+      if (limbHtml !== this._lastLimbHtml) {
+        this._lastLimbHtml = limbHtml;
+        this.limbStatusEl.innerHTML = limbHtml;
+        this.limbStatusEl.classList.toggle("hidden", chips.length === 0);
+      }
     }
 
     const st = WEAPON_STATS[player.activeWeapon];

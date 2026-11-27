@@ -102,8 +102,11 @@ export class Combatant {
   }
 
   _buildCharacter() {
-    if (this.charInst && this.charInst.root.parent) {
-      this.scene.remove(this.charInst.root);
+    if (this.charInst) {
+      if (this.charInst.root.parent) {
+        this.scene.remove(this.charInst.root);
+      }
+      this.charFactory.disposeCharacter(this.charInst);
     }
     this.charInst = this.charFactory.createCharacter(this.gender, this.palette);
     this.animator = new ProceduralAnimator(this.charInst);
@@ -358,5 +361,24 @@ export class Combatant {
       return { killed: true, actualDmg: dmg };
     }
     return { killed: false, actualDmg: dmg };
+  }
+
+  dispose() {
+    if (this.charInst) {
+      if (this.charInst.root) {
+        this.scene.remove(this.charInst.root);
+      }
+      this.charFactory.disposeCharacter(this.charInst);
+      this.charInst = null;
+    }
+    if (this.nameSprite) {
+      this.nameSprite.parent?.remove(this.nameSprite);
+      this.nameSprite.material?.dispose();
+      this.nameSprite = null;
+    }
+    if (this.nameTex) {
+      this.nameTex.dispose();
+      this.nameTex = null;
+    }
   }
 }

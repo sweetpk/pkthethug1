@@ -55,7 +55,9 @@ export class SoundEngine {
 
   init() {
     if (this.ctx) {
-      if (this.ctx.state === "suspended") this.ctx.resume();
+      if (this.ctx.state === "suspended" || this.ctx.state === "interrupted") {
+        this.ctx.resume().catch(() => {});
+      }
       this._decodePending();
       return;
     }
@@ -117,7 +119,7 @@ export class SoundEngine {
   }
 
   resume() {
-    if (this.ctx && this.ctx.state === "suspended") {
+    if (this.ctx && (this.ctx.state === "suspended" || this.ctx.state === "interrupted")) {
       this.ctx.resume().catch(() => {});
     }
   }

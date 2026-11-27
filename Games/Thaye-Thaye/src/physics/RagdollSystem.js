@@ -384,6 +384,7 @@ export class RagdollSystem {
       r.age += dt;
       if (r.age >= r.ttl) {
         this.scene.remove(r.charInst.root);
+        this.charFactory.disposeCharacter(r.charInst);
         this.ragdolls.splice(i, 1);
         continue;
       }
@@ -586,7 +587,10 @@ export class RagdollSystem {
   }
 
   clearAll() {
-    for (const r of this.ragdolls) this.scene.remove(r.charInst.root);
+    for (const r of this.ragdolls) {
+      this.scene.remove(r.charInst.root);
+      this.charFactory.disposeCharacter(r.charInst);
+    }
     for (const l of this.limbs) this.scene.remove(l.mesh);
     for (const w of this.droppedWeapons) this.scene.remove(w.mesh);
     for (const d of this.decals) this.scene.remove(d);
